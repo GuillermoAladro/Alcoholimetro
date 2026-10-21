@@ -69,3 +69,7 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 ## Guía de montaje del proyecto
 
 - `claude/guia-montaje-electrico.md` (v2, 20-10-2026), §1 filas 6 y 7, §2.4, §3, §4, §5.2 y §5.3. La leí en la copia local que me pasó el coordinador.
+
+## Otro enlace citado en la ficha
+
+- [JST: manuales de manejo de la serie XH (CHM-1-2321, CHM-1-2342 y CHM-1-151)](https://www.jst-mfg.com/product/index.php?type=10&series=277&doc=11&filename=CHM-1-2321.pdf%7CCHM-1-2342.pdf%7CCHM-1-151.pdf): crimpado e inserción.

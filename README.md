@@ -18,7 +18,7 @@ Proyecto personal de ingeniería para diseñar y construir un alcoholímetro com
 
 ## Estructura del repositorio
 
-- `componentes/` – ficha de cada componente: datasheets, problemas conocidos y notas de uso ([índice](componentes/README.md))
+- `componentes/` – ficha de cada uno de los 31 componentes de la hoja de compra: datasheets, problemas conocidos y notas de uso ([índice](componentes/README.md))
 - `carcasa/` – diseño y planos de la carcasa
 - `hardware/` – esquemas electrónicos
 - `firmware/` – código del controlador y la interfaz

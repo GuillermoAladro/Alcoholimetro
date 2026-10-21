@@ -93,4 +93,4 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 ## Notas
 
 - **El límite de búsquedas web se agotó** antes de poder buscar radio mínimo de curvatura, crecimiento microbiano en tubo de silicona y datos de PVC.
-- **Resoluciones del Consejo de Europa:** no encontré "CM/Res(2013)8" (mencionada en el encargo) como documento de siliconas; ver el apartado 3 de la ficha.
+- **Resoluciones del Consejo de Europa:** no encontré "CM/Res(2013)8" (mencionada en mi planteamiento inicial) como documento de siliconas; ver el apartado 3 de la ficha.

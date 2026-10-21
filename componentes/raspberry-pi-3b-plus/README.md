@@ -43,6 +43,7 @@ Fuente: [product brief RP-008338-DS-2](https://pip-assets.raspberrypi.com/catego
 | Temperatura de operación | 0 a 50 °C |
 | MTBF | 378 000 horas (Ground Benign) |
 | Huella mecánica | Igual que Pi 2 B y Pi 3 B |
+| Agujeros de montaje | 4 × Ø2,75 mm, separación 58 × 49 mm, a 3,5 mm de los bordes; el plano acota un círculo de Ø6 mm alrededor de cada uno. Alturas: GPIO 8,5 mm, USB 16 mm, Ethernet 13,5 mm, HDMI 6,5 mm. Si los agujeros van a GND: **no consta** en ningún documento (ver la [ficha #30](../separadores-nylon-m2-5/README.md)) | Plano RP-008337-DS-2 y DXF RP-008336-DS-1, leídos para la [ficha #30](../separadores-nylon-m2-5/README.md) |
 | Producción garantizada | Hasta enero de 2028 |
 
 ### GPIO (documentación oficial de hardware)

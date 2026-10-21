@@ -104,7 +104,7 @@ Foros (opiniones, no normas):
 ## Páginas que no pude abrir o que no aportaron
 
 - Amazon.es B08Z6FCR5Z: bloqueado por robots.
-- [REBT ITC-BT-19 (plcmadrid.es)](https://www.plcmadrid.es/wp-content/uploads/rebt/itc19/ITC-BT-19.pdf), citado en la guía: la herramienta pidió un permiso que no se contestó. No se reintentó.
+- [REBT ITC-BT-19 (plcmadrid.es)](https://www.plcmadrid.es/wp-content/uploads/rebt/itc19/ITC-BT-19.pdf), citado en la guía: la herramienta pidió un permiso que no se contestó y no se reintentó. Las fichas #22 y #23 la abrieron después en esta misma dirección.
 - [Schurter KD13.1101.151](https://www.schurter.com/en/part/KD13.1101.151): igual.
 - Vista previa de IEC 60335-1 ed. 6 en VDE-Verlag: el sitio la bloquea para la herramienta ("robots"). No se rodeó.
 - [DIYnot (hilo sobre IEC 60335-1)](https://www.diynot.com/diy/goto/post?id=2514833): bloqueado por robots.
