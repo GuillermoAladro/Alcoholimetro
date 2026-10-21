@@ -21,5 +21,8 @@ Una carpeta por componente del alcoholímetro, con su ficha técnica, documentos
 | 15 | Módulo C14 con fusible e interruptor | Entrada de red 230 V de la máquina | [modulo-c14-fusible-interruptor](modulo-c14-fusible-interruptor/README.md) |
 | 16 | Fusibles cerámicos 5×20 T2,5A | Protección de la entrada de red | [fusibles-ceramicos-5x20-t2-5a](fusibles-ceramicos-5x20-t2-5a/README.md) |
 | 17 | Cable de red Schuko a C13, 2 m | Conecta la máquina a la toma de pared | [cable-schuko-c13-2m](cable-schuko-c13-2m/README.md) |
+| 18 | Borne USB-A hembra con tornillos (x2) | Da 5 V al SumUp Solo y a la pantalla desde la WAGO | [borne-usb-a-hembra-tornillo](borne-usb-a-hembra-tornillo/README.md) |
+| 19 | Latiguillo micro-USB macho 22 AWG, 30 cm (x6) | Alimenta la Pi 3B+ desde la WAGO | [latiguillo-micro-usb-22awg](latiguillo-micro-usb-22awg/README.md) |
+| 20 | Bornas WAGO 221, surtido de 75 | Reparte el raíl de 5,20 V (+5 V y GND) | [wago-221-surtido](wago-221-surtido/README.md) |
 
 Cada ficha indica de dónde sale cada dato y marca lo que no está verificado. Los enlaces a PDF y páginas están reunidos en el `enlaces.md` de cada carpeta.
