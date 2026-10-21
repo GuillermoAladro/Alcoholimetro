@@ -7,6 +7,7 @@ Una carpeta por componente del alcoholímetro, con su ficha técnica, documentos
 | 1 | Raspberry Pi 3 Model B+ | Ordenador principal: sensor, pantalla, cámara y pago | [raspberry-pi-3b-plus](raspberry-pi-3b-plus/README.md) |
 | 2 | SanDisk High Endurance microSDHC 32 GB | Almacenamiento: sistema operativo y programa | [sandisk-high-endurance-32gb](sandisk-high-endurance-32gb/README.md) |
 | 3 | Raspberry Pi Camera Module 3 (estándar) | Foto al usuario | [raspberry-pi-camera-module-3](raspberry-pi-camera-module-3/README.md) |
+| 4 | Cable FFC de 15 pines, 50 cm (GeeekPi) | Une la cámara con el conector CSI de la Pi | [cable-ffc-camara-50cm](cable-ffc-camara-50cm/README.md) |
 | 5 | GeeekPi pantalla IPS 7", 1024×600, HDMI | Pantalla del usuario (instrucciones, cuenta atrás, resultado) | [pantalla-geeekpi-7-hdmi](pantalla-geeekpi-7-hdmi/README.md) |
 | 6 | Winsen ZE29A (alcohol en aliento) | Mide el alcohol: módulo de prueba de aliento por UART | [winsen-ze29a](winsen-ze29a/README.md) |
 | 7 | Cables JST-XH de 4 pines | Clavija del sensor ZE29A | [cables-jst-xh-4-pin](cables-jst-xh-4-pin/README.md) |
