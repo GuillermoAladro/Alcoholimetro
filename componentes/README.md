@@ -28,6 +28,8 @@ Una carpeta por componente del alcoholímetro, con su ficha técnica, documentos
 | 22 | Manguera H05VV-F 3G1,5 mm², 5 m | Cableado interno de 230 V y tierra | [cable-h05vv-f-3g1-5-5m](cable-h05vv-f-3g1-5-5m/README.md) |
 | 23 | Terminales de ojal M4 aislados 0,5-1,5 mm² (25 uds.) | Terminan los cables de tierra en el espárrago M4 | [terminales-ojal-m4](terminales-ojal-m4/README.md) |
 | 24 | Arandelas dentadas M4 (200 uds.) | Bloqueo y contacto de la tierra en el espárrago | [arandelas-dentadas-m4](arandelas-dentadas-m4/README.md) |
+| 26 | Surtido de tornillería inox M3 a M6 | Fijaciones generales (fuente, módulo C14, pantalla...) | [tornilleria-inox-m3-m6](tornilleria-inox-m3-m6/README.md) |
+| 27 | Kit de terminales faston aislados 2,8 / 4,8 / 6,3 mm | Conexiones del módulo C14, interruptor y pulsador | [kit-faston-aislados](kit-faston-aislados/README.md) |
 | 30 | Separadores hexagonales de nailon M2,5 (kit de 350) | Fijan la Pi (y el sensor) a la caja interior sin unir masas | [separadores-nylon-m2-5](separadores-nylon-m2-5/README.md) |
 
 Cada ficha indica de dónde sale cada dato y marca lo que no está verificado. Los enlaces a PDF y páginas están reunidos en el `enlaces.md` de cada carpeta.
