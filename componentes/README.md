@@ -35,6 +35,7 @@ Una carpeta por componente del alcoholímetro, con su ficha técnica, documentos
 | 29 | Cables Dupont ELEGOO, 120 uds. | Conexión a los pines 8, 9, 10 y 11 de la Pi | [cables-dupont-elegoo-120](cables-dupont-elegoo-120/README.md) |
 | 30 | Separadores hexagonales de nailon M2,5 (kit de 350) | Fijan la Pi (y el sensor) a la caja interior sin unir masas | [separadores-nylon-m2-5](separadores-nylon-m2-5/README.md) |
 | 31 | Pasacables de goma, surtido de 7 tamaños (260 uds.) | Protegen los cables en los agujeros de la chapa | [pasacables-goma](pasacables-goma/README.md) |
+| 32 | Portafusibles en línea 5 × 20 + fusibles rápidos (kit) | Un fusible en el +5 V de cada rama: 3 A Pi, 2 A Solo, 2 A pantalla, 1 A ZE29A. Pieza añadida el 21-10-2026 por la auditoría (H04); ficha corta | [portafusibles-en-linea-5x20](portafusibles-en-linea-5x20/README.md) |
 
 Lo que las fichas dejan abierto (decisiones, medidas por hacer y documentos que faltan) está reunido en [pendientes.md](pendientes.md).
 
