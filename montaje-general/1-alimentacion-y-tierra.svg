@@ -1,0 +1,238 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2170" height="1090" viewBox="0 0 2170 1090">
+<rect x="0" y="0" width="2170" height="1090" fill="#ffffff"/>
+<text x="40" y="52" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="start" fill="#1b2228" >MONTAJE GENERAL · Figura 1: alimentación (230 V → 5 V) y tierra</text>
+<text x="40" y="80" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" text-anchor="start" fill="#3a454f" >Bornes y pines con la numeración del fabricante. (#n) = número en la lista de componentes. ⚠ = sin confirmar: está explicado en el recuadro de abajo a la derecha.</text>
+<rect x="40" y="110" width="260" height="54" rx="10" fill="#fff6e8" stroke="#a3772a" stroke-width="1.6"/>
+<text x="52" y="135" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#1b2228" >Toma de pared 230 V</text>
+<text x="52" y="157.8" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >Schuko: L · N · PE</text>
+<path d="M170,164 L170,200" fill="none" stroke="#222222" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="170,200 163.7,186.5 176.3,186.5" fill="#222222"/>
+<rect x="40" y="200" width="260" height="54" rx="10" fill="#fff6e8" stroke="#a3772a" stroke-width="1.6"/>
+<text x="52" y="225" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b2228" >Cordón Schuko → C13, 2 m (#17)</text>
+<text x="52" y="247.8" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >el C13 se enchufa en el C14</text>
+<path d="M170,254 L170,290" fill="none" stroke="#222222" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="170,290 163.7,276.5 176.3,276.5" fill="#222222"/>
+<rect x="40" y="290" width="260" height="325" rx="10" fill="#fff6e8" stroke="#a3772a" stroke-width="1.6"/>
+<text x="52" y="315" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="start" fill="#1b2228" >Módulo C14 (#15)</text>
+<text x="52" y="330" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#3a454f" >trasera de la caja de arriba</text>
+<text x="52" y="366" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b2228" >L</text>
+<path d="M70,361 L92,361" fill="none" stroke="#8b5a2b" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="92" y="345" width="70" height="32" rx="4" fill="#ffffff" stroke="#a3772a" stroke-width="1.4"/>
+<text x="127" y="366" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#1b2228" >T2,5A</text>
+<path d="M162,361 L186,361" fill="none" stroke="#8b5a2b" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="52" y="436" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b2228" >N</text>
+<path d="M70,431 L186,431" fill="none" stroke="#2f6fd6" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="186" y="342" width="66" height="108" rx="4" fill="#ffffff" stroke="#a3772a" stroke-width="1.4"/>
+<text x="219" y="382" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="middle" fill="#1b2228" >inter-</text>
+<text x="219" y="398" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="middle" fill="#1b2228" >ruptor</text>
+<text x="219" y="414" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#b3261e" >⚠</text>
+<path d="M252,361 L300,361" fill="none" stroke="#8b5a2b" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M252,431 L300,431" fill="none" stroke="#2f6fd6" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="300" cy="361" r="5" fill="#ffffff" stroke="#222" stroke-width="1.8"/>
+<circle cx="300" cy="431" r="5" fill="#ffffff" stroke="#222" stroke-width="1.8"/>
+<text x="285" y="352" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="end" fill="#1b2228" >L'</text>
+<text x="285" y="422" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="end" fill="#1b2228" >N'</text>
+<text x="52" y="506" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b2228" >PE</text>
+<path d="M78,501 L96,501 L96,615" fill="none" stroke="#2e8b2e" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="butt"/>
+<path d="M78,501 L96,501 L96,615" fill="none" stroke="#f2d600" stroke-width="3.6" stroke-dasharray="9,9" stroke-linejoin="round"/>
+<circle cx="96" cy="615" r="5" fill="#ffffff" stroke="#222" stroke-width="1.8"/>
+<text x="116" y="532.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ esquema interno sin</text>
+<text x="116" y="548.33" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >confirmar: medirlo con</text>
+<text x="116" y="564.66" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >polímetro antes de</text>
+<text x="116" y="580.99" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >cablear (ficha #15, §4.3)</text>
+<rect x="420" y="290" width="260" height="325" rx="10" fill="#fdecea" stroke="#b04a44" stroke-width="1.6"/>
+<text x="432" y="315" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#1b2228" >Fuente Mean Well LRS-50-5 (#14)</text>
+<text x="432" y="490.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >5 V · 10 A · 50 W</text>
+<text x="432" y="507.04" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >se ajusta a 5,20 V midiendo en la Pi;</text>
+<text x="432" y="524.08" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >nunca por encima de 5,25 V</text>
+<text x="432" y="541.12" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >−V aislado de FG (1,25 kVAC)</text>
+<circle cx="420" cy="361" r="5" fill="#ffffff" stroke="#222" stroke-width="1.8"/>
+<text x="432" y="365" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="start" fill="#1b2228" >1  AC/L</text>
+<circle cx="420" cy="431" r="5" fill="#ffffff" stroke="#222" stroke-width="1.8"/>
+<text x="432" y="435" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="start" fill="#1b2228" >2  AC/N</text>
+<circle cx="520" cy="615" r="5" fill="#ffffff" stroke="#222" stroke-width="1.8"/>
+<text x="520" y="600" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="middle" fill="#1b2228" >3  FG (tierra)</text>
+<circle cx="680" cy="361" r="5" fill="#ffffff" stroke="#222" stroke-width="1.8"/>
+<text x="668" y="365" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="end" fill="#1b2228" >5  DC +V</text>
+<circle cx="680" cy="431" r="5" fill="#ffffff" stroke="#222" stroke-width="1.8"/>
+<text x="668" y="435" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="end" fill="#1b2228" >4  DC −V</text>
+<path d="M300,361 L420,361" fill="none" stroke="#8b5a2b" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="335.3" y="337.5" width="49.4" height="17.5" fill="#ffffff" opacity="0.92" rx="3"/>
+<text x="360" y="350" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#8b5a2b" >marrón</text>
+<path d="M300,431 L420,431" fill="none" stroke="#2f6fd6" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="342.2" y="407.5" width="35.6" height="17.5" fill="#ffffff" opacity="0.92" rx="3"/>
+<text x="360" y="420" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#2f6fd6" >azul</text>
+<text x="360" y="454" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#3a454f" >1,5 mm²</text>
+<rect x="760" y="120" width="290" height="80" rx="10" fill="#fdecea" stroke="#b04a44" stroke-width="1.6"/>
+<text x="772" y="145" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b2228" >WAGO 221-415 · +5 V (#20)</text>
+<rect x="760" y="930" width="290" height="80" rx="10" fill="#eeeeee" stroke="#555555" stroke-width="1.6"/>
+<text x="772" y="997" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b2228" >WAGO 221-415 · GND (#20)</text>
+<rect x="778" y="172" width="24" height="22" rx="3" fill="#ffffff" stroke="#b04a44" stroke-width="1.4"/>
+<text x="790" y="189" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#1b2228" >1</text>
+<rect x="778" y="936" width="24" height="22" rx="3" fill="#ffffff" stroke="#555555" stroke-width="1.4"/>
+<text x="790" y="953" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#1b2228" >1</text>
+<rect x="833" y="172" width="24" height="22" rx="3" fill="#ffffff" stroke="#b04a44" stroke-width="1.4"/>
+<text x="845" y="189" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#1b2228" >2</text>
+<rect x="833" y="936" width="24" height="22" rx="3" fill="#ffffff" stroke="#555555" stroke-width="1.4"/>
+<text x="845" y="953" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#1b2228" >2</text>
+<rect x="888" y="172" width="24" height="22" rx="3" fill="#ffffff" stroke="#b04a44" stroke-width="1.4"/>
+<text x="900" y="189" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#1b2228" >3</text>
+<rect x="888" y="936" width="24" height="22" rx="3" fill="#ffffff" stroke="#555555" stroke-width="1.4"/>
+<text x="900" y="953" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#1b2228" >3</text>
+<rect x="943" y="172" width="24" height="22" rx="3" fill="#ffffff" stroke="#b04a44" stroke-width="1.4"/>
+<text x="955" y="189" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#1b2228" >4</text>
+<rect x="943" y="936" width="24" height="22" rx="3" fill="#ffffff" stroke="#555555" stroke-width="1.4"/>
+<text x="955" y="953" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#1b2228" >4</text>
+<rect x="998" y="172" width="24" height="22" rx="3" fill="#ffffff" stroke="#b04a44" stroke-width="1.4"/>
+<text x="1010" y="189" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#1b2228" >5</text>
+<rect x="998" y="936" width="24" height="22" rx="3" fill="#ffffff" stroke="#555555" stroke-width="1.4"/>
+<text x="1010" y="953" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#1b2228" >5</text>
+<text x="760" y="108" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#3a454f" >polo 1 = troncal (rojo/negro 0,75 mm² con puntera) · polos 2 a 5 = cargas</text>
+<path d="M680,361 L790,361 L790,194" fill="none" stroke="#d0302a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M680,431 L790,431 L790,936" fill="none" stroke="#222222" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="1090" y="430" width="250" height="240" rx="10" fill="#e9f6ee" stroke="#4f8a63" stroke-width="1.6"/>
+<text x="1102" y="455" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b2228" >Raspberry Pi 3B+ (#1)</text>
+<text x="1102" y="477.8" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >puerto micro-USB (5 V)</text>
+<text x="1102" y="494.84000000000003" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >latiguillo micro-USB 22 AWG,</text>
+<text x="1102" y="511.88" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >cortado a ≤ 15 cm (#19):</text>
+<text x="1102" y="528.92" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >rojo → VBUS (pin 1)</text>
+<text x="1102" y="545.96" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >negro → GND (pin 5)</text>
+<text x="1102" y="563.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >D−, D+ e ID: cortar y aislar</text>
+<text x="1102" y="580.04" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ medir polaridad y calibre</text>
+<text x="1102" y="597.08" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >El AR9271 (#12) cuelga de un</text>
+<text x="1102" y="614.12" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >USB de la Pi, no de la WAGO</text>
+<circle cx="1215" cy="430" r="5" fill="#fdecea" stroke="#d0302a" stroke-width="1.8"/>
+<circle cx="1215" cy="670" r="5" fill="#eeeeee" stroke="#222222" stroke-width="1.8"/>
+<rect x="1355" y="430" width="250" height="240" rx="10" fill="#eef3fb" stroke="#4a6fa5" stroke-width="1.6"/>
+<text x="1367" y="455" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b2228" >Borne nº 1 → SumUp Solo</text>
+<text x="1367" y="477.8" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >borne USB-A hembra (#18):</text>
+<text x="1367" y="494.84000000000003" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >tornillos VCC y GND a la WAGO,</text>
+<text x="1367" y="511.88" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >D+ y D− unidos con un puente</text>
+<text x="1367" y="528.92" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >cable USB-A → USB-C acodado</text>
+<text x="1367" y="545.96" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >30 cm (#10) → USB-C del canto</text>
+<text x="1367" y="563.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >inferior del Solo (#9)</text>
+<text x="1367" y="580.04" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ puente D+/D− sin confirmar;</text>
+<text x="1367" y="597.08" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ USB-A de 1 a 1,5 A, pico 2 A</text>
+<circle cx="1480" cy="430" r="5" fill="#fdecea" stroke="#d0302a" stroke-width="1.8"/>
+<circle cx="1480" cy="670" r="5" fill="#eeeeee" stroke="#222222" stroke-width="1.8"/>
+<rect x="1620" y="430" width="250" height="240" rx="10" fill="#eef3fb" stroke="#4a6fa5" stroke-width="1.6"/>
+<text x="1632" y="455" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b2228" >Borne nº 2 → pantalla 7"</text>
+<text x="1632" y="477.8" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >borne USB-A hembra (#18):</text>
+<text x="1632" y="494.84000000000003" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >tornillos VCC y GND a la WAGO,</text>
+<text x="1632" y="511.88" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >D+ y D− unidos con un puente</text>
+<text x="1632" y="528.92" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >cable USB del paquete de la</text>
+<text x="1632" y="545.96" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >pantalla (#5) → USB-C «Power IN»</text>
+<text x="1632" y="563.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ ¿cable A→C o C→C? Un C→C</text>
+<text x="1632" y="580.04" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >no entra en el borne</text>
+<text x="1632" y="597.08" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >No conectar un USB Pi–pantalla</text>
+<circle cx="1745" cy="430" r="5" fill="#fdecea" stroke="#d0302a" stroke-width="1.8"/>
+<circle cx="1745" cy="670" r="5" fill="#eeeeee" stroke="#222222" stroke-width="1.8"/>
+<rect x="1885" y="430" width="250" height="240" rx="10" fill="#f3ecfa" stroke="#7b3fb8" stroke-width="1.6"/>
+<text x="1897" y="455" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b2228" >ZE29A (#6) · pines 1 y 2</text>
+<text x="1897" y="477.8" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >clavija de 4 pines, hilos de</text>
+<text x="1897" y="494.84000000000003" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >150 mm (#7, JST-XH ⚠)</text>
+<text x="1897" y="511.88" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >pin 1 (5 V) → rojo</text>
+<text x="1897" y="528.92" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >pin 2 (GND) → negro</text>
+<text x="1897" y="545.96" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >pines 3 y 4: UART con la Pi</text>
+<text x="1897" y="563.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >(figuras 2 y 3)</text>
+<text x="1897" y="580.04" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ tipo y paso del conector</text>
+<text x="1897" y="597.08" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >sin confirmar: medir con calibre</text>
+<text x="1897" y="614.12" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ serigrafía «Rx Tx GND 5V»</text>
+<circle cx="2010" cy="430" r="5" fill="#fdecea" stroke="#d0302a" stroke-width="1.8"/>
+<circle cx="2010" cy="670" r="5" fill="#eeeeee" stroke="#222222" stroke-width="1.8"/>
+<path d="M845,194 L845,390 L1215,390 L1215,424" fill="none" stroke="#d0302a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1215,424 1208.7,410.5 1221.3,410.5" fill="#d0302a"/>
+<path d="M900,194 L900,360 L1480,360 L1480,424" fill="none" stroke="#d0302a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1480,424 1473.7,410.5 1486.3,410.5" fill="#d0302a"/>
+<path d="M955,194 L955,330 L1745,330 L1745,424" fill="none" stroke="#d0302a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1745,424 1738.7,410.5 1751.3,410.5" fill="#d0302a"/>
+<path d="M1010,194 L1010,300 L2010,300 L2010,424" fill="none" stroke="#d0302a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="2010,424 2003.7,410.5 2016.3,410.5" fill="#d0302a"/>
+<path d="M845,936 L845,710 L1215,710 L1215,676" fill="none" stroke="#222222" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1215,676 1221.3,689.5 1208.7,689.5" fill="#222222"/>
+<path d="M900,936 L900,740 L1480,740 L1480,676" fill="none" stroke="#222222" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1480,676 1486.3,689.5 1473.7,689.5" fill="#222222"/>
+<path d="M955,936 L955,770 L1745,770 L1745,676" fill="none" stroke="#222222" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1745,676 1751.3,689.5 1738.7,689.5" fill="#222222"/>
+<path d="M1010,936 L1010,800 L2010,800 L2010,676" fill="none" stroke="#222222" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="2010,676 2016.3,689.5 2003.7,689.5" fill="#222222"/>
+<text x="1060" y="225" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="normal" text-anchor="start" fill="#3a454f" >El polo 2 de cada WAGO va a la Pi, el 3 al borne nº 1, el 4 al borne nº 2 y el 5 al ZE29A.</text>
+<text x="1060" y="243" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="normal" text-anchor="start" fill="#3a454f" >Cada rama: cable 2 × 0,75 mm² rojo/negro con puntera (#21, #28). Total típico ≈ 2,3 A, pico ≈ 5 A.</text>
+<rect x="1011.1" y="371.5" width="97.7" height="17.5" fill="#ffffff" opacity="0.92" rx="3"/>
+<text x="1060.0" y="384" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#d0302a" >+5 V · polo 2</text>
+<rect x="1014.6" y="691.5" width="90.8" height="17.5" fill="#ffffff" opacity="0.92" rx="3"/>
+<text x="1060.0" y="704" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#222222" >GND · polo 2</text>
+<rect x="1231.2" y="341.5" width="97.7" height="17.5" fill="#ffffff" opacity="0.92" rx="3"/>
+<text x="1280.0" y="354" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#d0302a" >+5 V · polo 3</text>
+<rect x="1234.6" y="721.5" width="90.8" height="17.5" fill="#ffffff" opacity="0.92" rx="3"/>
+<text x="1280.0" y="734" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#222222" >GND · polo 3</text>
+<rect x="1391.2" y="311.5" width="97.7" height="17.5" fill="#ffffff" opacity="0.92" rx="3"/>
+<text x="1440.0" y="324" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#d0302a" >+5 V · polo 4</text>
+<rect x="1394.6" y="751.5" width="90.8" height="17.5" fill="#ffffff" opacity="0.92" rx="3"/>
+<text x="1440.0" y="764" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#222222" >GND · polo 4</text>
+<rect x="1551.2" y="281.5" width="97.7" height="17.5" fill="#ffffff" opacity="0.92" rx="3"/>
+<text x="1600.0" y="294" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#d0302a" >+5 V · polo 5</text>
+<rect x="1554.6" y="781.5" width="90.8" height="17.5" fill="#ffffff" opacity="0.92" rx="3"/>
+<text x="1600.0" y="794" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#222222" >GND · polo 5</text>
+<rect x="60" y="760" width="280" height="220" rx="10" fill="#eaf6ea" stroke="#2e8b2e" stroke-width="1.6"/>
+<text x="72" y="785" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#1b2228" >Espárrago M4 × 20 (#25)</text>
+<text x="72" y="807.8" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >soldado al cuerpo cerca de la fuente,</text>
+<text x="72" y="824.8399999999999" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >pintura lijada hasta el metal</text>
+<text x="72" y="841.88" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" ></text>
+<text x="72" y="858.92" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >orden: chapa · arandela dentada</text>
+<text x="72" y="875.9599999999999" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >(#24) · ojal M4 (#23) del PE del</text>
+<text x="72" y="893.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >C14 · tuerca · contratuerca ·</text>
+<text x="72" y="910.04" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >arandela dentada · ojales de los</text>
+<text x="72" y="927.0799999999999" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >cables internos · tuerca</text>
+<path d="M96,615 L96,760" fill="none" stroke="#2e8b2e" stroke-width="4" stroke-linejoin="round" stroke-linecap="butt"/>
+<path d="M96,615 L96,760" fill="none" stroke="#f2d600" stroke-width="4" stroke-dasharray="9,9" stroke-linejoin="round"/>
+<polygon points="96,760 89.7,746.5 102.3,746.5" fill="#2e8b2e"/>
+<rect x="138.6" y="677.5" width="152.9" height="17.5" fill="#ffffff" opacity="0.92" rx="3"/>
+<text x="215" y="690" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="bold" text-anchor="middle" fill="#2e8b2e" >1ª tuerca: PE del C14</text>
+<text x="215" y="710" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#b3261e" >verde-amarillo 1,5 mm² ⚠</text>
+<text x="215" y="726" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#3a454f" >más largo que L y N</text>
+<circle cx="340" cy="805" r="5" fill="#eaf6ea" stroke="#2e8b2e" stroke-width="1.8"/>
+<circle cx="340" cy="855" r="5" fill="#eaf6ea" stroke="#2e8b2e" stroke-width="1.8"/>
+<circle cx="340" cy="905" r="5" fill="#eaf6ea" stroke="#2e8b2e" stroke-width="1.8"/>
+<circle cx="340" cy="955" r="5" fill="#eaf6ea" stroke="#2e8b2e" stroke-width="1.8"/>
+<path d="M340,805 L520,805 L520,620" fill="none" stroke="#2e8b2e" stroke-width="4" stroke-linejoin="round" stroke-linecap="butt"/>
+<path d="M340,805 L520,805 L520,620" fill="none" stroke="#f2d600" stroke-width="4" stroke-dasharray="9,9" stroke-linejoin="round"/>
+<polygon points="520,620 526.3,633.5 513.7,633.5" fill="#2e8b2e"/>
+<rect x="357.0" y="784.5" width="146.0" height="17.5" fill="#ffffff" opacity="0.92" rx="3"/>
+<text x="430" y="797" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="bold" text-anchor="middle" fill="#2e8b2e" >2ª tuerca: ojal → FG</text>
+<path d="M340,855 L430,855" fill="none" stroke="#2e8b2e" stroke-width="4" stroke-linejoin="round" stroke-linecap="butt"/>
+<path d="M340,855 L430,855" fill="none" stroke="#f2d600" stroke-width="4" stroke-dasharray="9,9" stroke-linejoin="round"/>
+<rect x="430" y="834" width="300" height="42" rx="10" fill="#eaf6ea" stroke="#2e8b2e" stroke-width="1.6"/>
+<text x="442" y="859" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="start" fill="#1b2228" >panel frontal, si es atornillado</text>
+<path d="M340,905 L430,905" fill="none" stroke="#2e8b2e" stroke-width="4" stroke-linejoin="round" stroke-linecap="butt"/>
+<path d="M340,905 L430,905" fill="none" stroke="#f2d600" stroke-width="4" stroke-dasharray="9,9" stroke-linejoin="round"/>
+<rect x="430" y="884" width="300" height="42" rx="10" fill="#eaf6ea" stroke="#2e8b2e" stroke-width="1.6"/>
+<text x="442" y="909" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="start" fill="#1b2228" >caja interior (cable flexible)</text>
+<path d="M340,955 L430,955" fill="none" stroke="#2e8b2e" stroke-width="4" stroke-linejoin="round" stroke-linecap="butt"/>
+<path d="M340,955 L430,955" fill="none" stroke="#f2d600" stroke-width="4" stroke-dasharray="9,9" stroke-linejoin="round"/>
+<rect x="430" y="934" width="300" height="42" rx="10" fill="#eaf6ea" stroke="#2e8b2e" stroke-width="1.6"/>
+<text x="442" y="959" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="start" fill="#1b2228" >cajón (cable flexible)</text>
+<text x="60" y="1010" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#3a454f" >Los muelles de la caja interior no sirven de tierra: por eso va un cable flexible con holgura.</text>
+<text x="60" y="1030" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#3a454f" >Techo, separador y bandeja ya tienen tierra por estar soldados al cuerpo.</text>
+<text x="60" y="1050" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#3a454f" >Sin interruptor ni fusible en la tierra. Medir continuidad (≤ 0,1 Ω) del PE del C14 a cada pieza metálica.</text>
+<rect x="1090" y="850" width="1045" height="215" rx="10" fill="#fff8f6" stroke="#b3261e" stroke-width="1.6"/>
+<text x="1102" y="875" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#b3261e" >⚠ Abiertos que afectan a esta figura (detalle en componentes/pendientes.md)</text>
+<text x="1102" y="898.75" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="normal" text-anchor="start" fill="#1b2228" >1. Esquema interno del C14: cuántos polos corta el interruptor y qué polo lleva el fusible (ficha #15, §4–5). Se mide con el módulo suelto.</text>
+<text x="1102" y="916.5" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="normal" text-anchor="start" fill="#1b2228" >2. Sección del cable de tierra: 1,5 mm² (guía) o 2,5 mm² (ITC-BT-19 §2.3 para instalación fija). Los ojales M4 de la hoja son de 0,5 a 1,5 mm².</text>
+<text x="1102" y="934.25" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="normal" text-anchor="start" fill="#1b2228" >3. Un solo espárrago con cinco ojales es punto único de fallo; la única fuente encontrada recomienda 2–3 ojales por espárrago (fichas #23, #25).</text>
+<text x="1102" y="952.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="normal" text-anchor="start" fill="#1b2228" >4. Protección del raíl de 5 V: la LRS-50-5 limita entre 10,6 y 14,4 A y el cable de 0,75 mm² está dado para 6 A. Falta fusible o PTC por rama.</text>
+<text x="1102" y="969.75" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="normal" text-anchor="start" fill="#1b2228" >5. Borne USB-A: clasificación habitual 1–1,5 A frente a un pico de 2 A del Solo; el puente D+/D− no está probado con el Solo (fichas #9, #10, #18).</text>
+<text x="1102" y="987.5" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="normal" text-anchor="start" fill="#1b2228" >6. −V aislado de tierra: decidir si se une a tierra y en qué único punto (fichas #14, #30). Hoy el −V flota.</text>
+<text x="1102" y="1005.25" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="normal" text-anchor="start" fill="#1b2228" >7. Polaridad real y calibre de cada latiguillo micro-USB y de los Dupont: se miden al recibirlos (fichas #19, #29).</text>
+<path d="M1100,143 L1146,143" fill="none" stroke="#8b5a2b" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1154" y="148" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#1b2228" >fase 230 V</text>
+<path d="M1290,143 L1336,143" fill="none" stroke="#2f6fd6" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1344" y="148" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#1b2228" >neutro 230 V</text>
+<path d="M1480,143 L1526,143" fill="none" stroke="#2e8b2e" stroke-width="4" stroke-linejoin="round" stroke-linecap="butt"/>
+<path d="M1480,143 L1526,143" fill="none" stroke="#f2d600" stroke-width="4" stroke-dasharray="9,9" stroke-linejoin="round"/>
+<text x="1534" y="148" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#1b2228" >tierra</text>
+<path d="M1670,143 L1716,143" fill="none" stroke="#d0302a" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1724" y="148" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#1b2228" >+5 V</text>
+<path d="M1860,143 L1906,143" fill="none" stroke="#222222" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1914" y="148" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#1b2228" >GND (0 V)</text>
+</svg>
