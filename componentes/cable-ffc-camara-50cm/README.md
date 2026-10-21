@@ -43,15 +43,15 @@ Cable plano (FFC) que une la [Raspberry Pi Camera Module 3](../raspberry-pi-came
 | Característica | Valor | Fuente |
 |---|---|---|
 | Conector de la Pi (CSI "CAMERA") | 15 pines, "estándar"; es el de todas las Pi hasta la Pi 4 incluida | [documentación oficial de cámaras](https://www.raspberrypi.com/documentation/accessories/camera.html) |
-| Conector de la cámara | FPC de 15 × 1 mm; cable incluido de 200 mm | [product brief RP-008151-DS-1](https://pip-assets.raspberrypi.com/categories/786-raspberry-pi-camera-module-3/documents/RP-008151-DS-1-camera-module-3-product-brief.pdf) |
+| Conector de la cámara | FPC de 15 × 1 mm; cable incluido de 200 mm | [product brief RP-008151-DS-1](https://pip-assets.raspberrypi.com/categories/786-raspberry-pi-camera-module-3/documents/RP-008151-DS-1-camera-module-3-product-brief.pdf) ([copia local](../raspberry-pi-camera-module-3/datasheets/RP-008151-DS-1-camera-module-3-product-brief.pdf)) |
 | Paso del conector estándar | 1 mm, 15 vías | [Kiwi Electronics](https://www.kiwi-electronics.com/en/raspberry-pi-camera-accessories-133/raspberry-pi-camera-cable-standard-mini-500mm-11590) (tienda), coincide con el brief |
-| Conector J1 del módulo 3 | Amphenol SFW15R-1STE1LF: 1 mm, 15 contactos, ZIF, contacto inferior ("bottom") | [esquema RP-008969-SD-3](https://pip-assets.raspberrypi.com/categories/1207-design-files/documents/RP-008969-SD-3-Raspberry%20Pi%20Camera%20Module%203%20Reference%20Schematic.pdf), [RS Components](https://uk.rs-online.com/web/p/fpc-connectors/1822728P) |
+| Conector J1 del módulo 3 | Amphenol SFW15R-1STE1LF: 1 mm, 15 contactos, ZIF, contacto inferior ("bottom") | [esquema RP-008969-SD-3](https://pip-assets.raspberrypi.com/categories/1207-design-files/documents/RP-008969-SD-3-Raspberry%20Pi%20Camera%20Module%203%20Reference%20Schematic.pdf) ([copia local](../raspberry-pi-camera-module-3/datasheets/RP-008969-SD-3-Raspberry_Pi_Camera_Module_3_Reference_Schematic.pdf)), [RS Components](https://uk.rs-online.com/web/p/fpc-connectors/1822728P) |
 | Carriles | La Pi 3B+ usa CAM1 con dos carriles de datos y el reloj. El conector de 15 vías solo soporta los carriles 0 y 1 | [esquema reducido RP-008339-DS-1](https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008339-DS-1-raspberry-pi-3-b-plus-reduced-schematics.pdf), esquema del módulo 3 |
 | Diferenciales | 3 pares (D0, D1, CK); un GND entre pares | pinout de [Microchip](https://onlinedocs.microchip.com/oxy/GUID-BABA2044-2D69-4FCC-A1E3-98FD36992888-en-US-3/GUID-3B439A68-A4F9-43C5-AB4C-78DD6E1D8D7F.html), [Zephyr](https://docs.zephyrproject.org/latest/build/dts/api/bindings/gpio/raspberrypi,csi-connector.html), [Arducam](https://blog.arducam.com/?p=20543) |
 
 ### 2.2 El cable oficial de 200 mm (referencia)
 
-Fuente: [plano RP-008146-DS-1](https://pip-assets.raspberrypi.com/categories/786-raspberry-pi-camera-module-3/documents/RP-008146-DS-1-standard-camera-cable-200mm-reference-drawing.pdf), leído entero. El plano dice "DO NOT SCALE DRAWING".
+Fuente: [plano RP-008146-DS-1](https://pip-assets.raspberrypi.com/categories/786-raspberry-pi-camera-module-3/documents/RP-008146-DS-1-standard-camera-cable-200mm-reference-drawing.pdf) ([copia local](datasheets/RP-008146-DS-1-standard-camera-cable-200mm-reference-drawing.pdf)), leído entero. El plano dice "DO NOT SCALE DRAWING".
 
 | Característica | Valor | Tolerancia |
 |---|---|---|
@@ -86,10 +86,10 @@ Son datos de fabricantes de FFC, no de este cable.
 
 | Característica | Valor | Fuente |
 |---|---|---|
-| Construcción | Conductores planos de cobre (a menudo estañado) laminados entre dos películas de PET; los extremos llevan un refuerzo en la cara opuesta a los contactos | [LCSC Cable](https://lcsccable.com/services/ffcfpc-cable), [Wikipedia](https://en.wikipedia.org/wiki/Flexible_flat_cable), [Würth](https://www.we-online.com/components/products/datasheet/687733100002.pdf) |
+| Construcción | Conductores planos de cobre (a menudo estañado) laminados entre dos películas de PET; los extremos llevan un refuerzo en la cara opuesta a los contactos | [LCSC Cable](https://lcsccable.com/services/ffcfpc-cable), [Wikipedia](https://en.wikipedia.org/wiki/Flexible_flat_cable), [Würth](https://www.we-online.com/components/products/datasheet/687733100002.pdf) ([copia local](datasheets/687733100002.pdf)) |
 | Espesor del extremo enchufable | 0,30 mm | [W+P](https://wppro.com/en/series/599) |
 | Espesor del conductor (opciones) | 0,035, 0,05 o 0,10 mm | [W+P](https://wppro.com/en/series/599), [GCT](https://static.chipdip.ru/lib/010/DOC042010627.pdf) |
-| Tensión máxima | 60 V AC (el tipo estándar de W+P: 30 V AC) | [Molex 151660241](https://www.farnell.com/datasheets/4726909.pdf), [Würth](https://www.we-online.com/components/products/datasheet/687733100002.pdf), [W+P](https://wppro.com/en/series/599) |
+| Tensión máxima | 60 V AC (el tipo estándar de W+P: 30 V AC) | [Molex 151660241](https://www.farnell.com/datasheets/4726909.pdf), [Würth](https://www.we-online.com/components/products/datasheet/687733100002.pdf) ([copia local](datasheets/687733100002.pdf)), [W+P](https://wppro.com/en/series/599) |
 | Temperatura | −40 a +105 °C (Molex); −30 a +105 °C (Würth, W+P tipo HT); +80 °C máx. en el tipo estándar de W+P | mismas fuentes |
 | Resistencia del conductor, paso 1,0 mm | 1,1 Ω/m máx. | [GCT](https://static.chipdip.ru/lib/010/DOC042010627.pdf) |
 | Resistencia de aislamiento | ≥ 1000 MΩ a 500 V CC, 1 min | GCT |
@@ -115,16 +115,16 @@ Son datos de fabricantes de FFC, no de este cable.
 
 | Documento | Referencia | Formato | Enlace |
 |---|---|---|---|
-| Plano del cable oficial de cámara, 200 mm | RP-008146-DS-1 | PDF | [descargar](https://pip-assets.raspberrypi.com/categories/786-raspberry-pi-camera-module-3/documents/RP-008146-DS-1-standard-camera-cable-200mm-reference-drawing.pdf) |
-| Product brief de la Camera Module 3 | RP-008151-DS-1 | PDF | [descargar](https://pip-assets.raspberrypi.com/categories/786-raspberry-pi-camera-module-3/documents/RP-008151-DS-1-camera-module-3-product-brief.pdf) |
-| Esquema de referencia de la Camera Module 3 (conector J1) | RP-008969-SD-3 | PDF | [descargar](https://pip-assets.raspberrypi.com/categories/1207-design-files/documents/RP-008969-SD-3-Raspberry%20Pi%20Camera%20Module%203%20Reference%20Schematic.pdf) |
+| Plano del cable oficial de cámara, 200 mm | RP-008146-DS-1 | PDF | [descargar](https://pip-assets.raspberrypi.com/categories/786-raspberry-pi-camera-module-3/documents/RP-008146-DS-1-standard-camera-cable-200mm-reference-drawing.pdf) ([copia local](datasheets/RP-008146-DS-1-standard-camera-cable-200mm-reference-drawing.pdf)) |
+| Product brief de la Camera Module 3 | RP-008151-DS-1 | PDF | [descargar](https://pip-assets.raspberrypi.com/categories/786-raspberry-pi-camera-module-3/documents/RP-008151-DS-1-camera-module-3-product-brief.pdf) ([copia local](../raspberry-pi-camera-module-3/datasheets/RP-008151-DS-1-camera-module-3-product-brief.pdf)) |
+| Esquema de referencia de la Camera Module 3 (conector J1) | RP-008969-SD-3 | PDF | [descargar](https://pip-assets.raspberrypi.com/categories/1207-design-files/documents/RP-008969-SD-3-Raspberry%20Pi%20Camera%20Module%203%20Reference%20Schematic.pdf) ([copia local](../raspberry-pi-camera-module-3/datasheets/RP-008969-SD-3-Raspberry_Pi_Camera_Module_3_Reference_Schematic.pdf)) |
 | Esquema reducido de la Pi 3B+ | RP-008339-DS-1 | PDF | [descargar](https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008339-DS-1-raspberry-pi-3-b-plus-reduced-schematics.pdf) |
 | Product brief de la Pi 3B+ | RP-008338-DS-2 | PDF | [descargar](https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008338-DS-2-raspberry-pi-3-b-plus-product-brief.pdf) |
-| Dibujo Molex SD-15267-001, FFC de 1,00 mm (tipos A y D), rev. B | SD-15267-001 | PDF | [descargar](https://www.farnell.com/cad/4000125.pdf) |
+| Dibujo Molex SD-15267-001, FFC de 1,00 mm (tipos A y D), rev. B | SD-15267-001 | PDF | [descargar](https://www.farnell.com/cad/4000125.pdf) ([copia local](datasheets/4000125.pdf)) |
 | Especificación GCT de FFC estándar, rev. A (07/07/23) | sin referencia visible | PDF | [descargar](https://static.chipdip.ru/lib/010/DOC042010627.pdf) |
-| Hoja de datos Würth WR-FFC tipo 2, 0,5 mm (ejemplo de ensayos) | 687733100002 | PDF | [descargar](https://www.we-online.com/components/products/datasheet/687733100002.pdf) |
+| Hoja de datos Würth WR-FFC tipo 2, 0,5 mm (ejemplo de ensayos) | 687733100002 | PDF | [descargar](https://www.we-online.com/components/products/datasheet/687733100002.pdf) ([copia local](datasheets/687733100002.pdf)) |
 | Hoja de datos Molex 151660241 (FFC de 0,5 mm, tipo A) | 151660241 | PDF | [descargar](https://www.farnell.com/datasheets/4726909.pdf) |
-| Serie de conectores Amphenol FCI SFW/SLW (1,00 mm), información general | sin referencia visible | PDF | [descargar](https://docs.rs-online.com/446a/0900766b816ade50.pdf) |
+| Serie de conectores Amphenol FCI SFW/SLW (1,00 mm), información general | sin referencia visible | PDF | [descargar](https://docs.rs-online.com/446a/0900766b816ade50.pdf) ([copia local](datasheets/0900766b816ade50.pdf)) |
 | Hoja de datos del cable oficial de 500 mm (SC1130) | SC1130 | PDF | [enlace de Farnell](https://www.farnell.com/datasheets/4759386.pdf) (**no pude abrirlo**: el permiso de la herramienta no se concedió) |
 | Dibujo del cable Adafruit CFF100-15F1-XXX-BK | CFF100-15F1-XXX-BK | PDF | [enlace](https://cdn-shop.adafruit.com/product-files/2143/flex_cables_CFF100-15F1-XXX-BK.PDF) (**no pude abrirlo**, mismo motivo) |
 
@@ -323,7 +323,7 @@ No hay informes verificados (sección 6). La ficha de la cámara ya marca esto c
 
 - Flexión: ver 7.2.
 - Daños de fábrica: no he encontrado un estudio de calidad de cables FFC de Amazon. Lo que hay son incidencias aisladas: una cámara con cable que llegó con un pliegue del embalaje, que el moderador de la tienda consideró inocuo (el hilo no resuelve la causa; no era un cable de Amazon) ([Core Electronics](https://forum.core-electronics.com.au/t/camera-board-v2-issue/1357)); y los casos de tipo equivocado. **Los fallos que se esperan de cualquier FFC** (pista de cobre rota por un pliegue, aislante picado o delaminado, extremo sin refuerzo, contactos rayados o sucios, longitud fuera de tolerancia) **son deducción mía**, no están documentados para este cable.
-- Los fabricantes dan tolerancias de longitud de ±2 mm a ±5 mm según el cable ([Molex SD-15267-001](https://www.farnell.com/cad/4000125.pdf); plano oficial: ±1 mm a 200 mm), así que un cable de "50 cm" que mida 49 o 51 cm no es un defecto.
+- Los fabricantes dan tolerancias de longitud de ±2 mm a ±5 mm según el cable ([Molex SD-15267-001](https://www.farnell.com/cad/4000125.pdf) ([copia local](datasheets/4000125.pdf)); plano oficial: ±1 mm a 200 mm), así que un cable de "50 cm" que mida 49 o 51 cm no es un defecto.
 
 ### 8.8 a 8.10
 
@@ -337,7 +337,7 @@ Haz estas comprobaciones el mismo día, dentro del plazo de devolución. Los umb
 
 ### 9.1 Con calibre y a simple vista
 
-1. **Anchura 16,0 mm ± 0,1** y **15 conductores**, con el primero a ~1 mm del borde ([plano oficial](https://pip-assets.raspberrypi.com/categories/786-raspberry-pi-camera-module-3/documents/RP-008146-DS-1-standard-camera-cable-200mm-reference-drawing.pdf)). Entre el centro del primero y el del último, 14 mm (cálculo mío).
+1. **Anchura 16,0 mm ± 0,1** y **15 conductores**, con el primero a ~1 mm del borde ([plano oficial](https://pip-assets.raspberrypi.com/categories/786-raspberry-pi-camera-module-3/documents/RP-008146-DS-1-standard-camera-cable-200mm-reference-drawing.pdf) ([copia local](datasheets/RP-008146-DS-1-standard-camera-cable-200mm-reference-drawing.pdf))). Entre el centro del primero y el del último, 14 mm (cálculo mío).
 2. **Paso 1,00 mm** y conductor de ~0,7 mm.
 3. **Espesor del extremo enchufable: 0,30 mm** (oficial: 0,309 ± 0,05). Mídelo con un micrómetro o un calibre, con el cable relajado.
 4. **Refuerzo en los dos extremos**, en la cara contraria a los contactos, de unos 6 mm de largo. Un extremo sin refuerzo es demasiado fino para el ZIF.
@@ -414,5 +414,7 @@ Son conclusiones mías, no afirmaciones de las fuentes.
 - **Las normas del cable** (UL, RoHS, REACH): sin declaración del fabricante.
 
 ## 13. Fuentes
+
+Copias locales de los documentos descargados: [lista en enlaces.md](enlaces.md#copias-locales-de-los-documentos) y carpeta [`datasheets/`](datasheets/).
 
 Todos los enlaces, ordenados por tipo, en [`enlaces.md`](enlaces.md).

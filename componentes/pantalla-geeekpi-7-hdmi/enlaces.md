@@ -33,7 +33,7 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 ## Documentación de Raspberry Pi: configuración de pantalla (KMS)
 
-- [Resolución de problemas de salida HDMI con KMS, RP-004341-WP-2 (PDF)](https://pip-assets.raspberrypi.com/categories/1259-audio-camera-and-display/documents/RP-004341-WP-2-Troubleshooting%20KMS%20HDMI%20output.pdf)
+- [Resolución de problemas de salida HDMI con KMS, RP-004341-WP-2 (PDF)](https://pip-assets.raspberrypi.com/categories/1259-audio-camera-and-display/documents/RP-004341-WP-2-Troubleshooting%20KMS%20HDMI%20output.pdf) ([copia local](datasheets/RP-004341-WP-2-Troubleshooting_KMS_HDMI_output.pdf))
 - [Documentación de configuración (pantalla, `video=`, apagado de pantalla)](https://www.raspberrypi.com/documentation/computers/configuration.html)
 - [Opciones antiguas de `config.txt` (no funcionan en Bookworm y posteriores)](https://www.raspberrypi.com/documentation/computers/legacy_config_txt.html)
 - [Referencia de `config.txt`](https://www.raspberrypi.com/documentation/computers/config_txt.html) (la página renderizada se cortaba antes de la sección de vídeo; leí el texto fuente en el repositorio)
@@ -57,7 +57,7 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 - [Waveshare 7inch HDMI LCD (C): wiki](https://waveshare.com/wiki/7inch_HDMI_LCD_(C)) y [plantilla de especificaciones](https://www.waveshare.com/wiki/Template:7inch_HDMI_LCD_C_Spec) (300 cd/m², 2,5 W, 490 mA, 4,75–5,25 V, 0–60 °C, 154,21 × 85,92 mm)
 - [Elecrow 7" IPS HD Touch Screen-D (DLH05170B): wiki](https://elecrow.com/wiki/7inch_IPS_HD_Touch_Screen-D.html) (320 cd/m², 2,55 W)
-- [Displaytech DT070BTFT-HB: datasheet del panel (PDF)](https://www.mouser.com/datasheet/2/1015/DT070BTFT-HB-Displaytech-Spec-1649616.pdf) (7" IPS, 500 cd/m², 25.000 h, −20 a 70 °C, 164,9 × 100,0 mm)
+- [Displaytech DT070BTFT-HB: datasheet del panel (PDF)](https://www.mouser.com/datasheet/2/1015/DT070BTFT-HB-Displaytech-Spec-1649616.pdf) ([copia local](datasheets/DT070BTFT-HB-Displaytech-Spec-1649616.pdf)) (7" IPS, 500 cd/m², 25.000 h, −20 a 70 °C, 164,9 × 100,0 mm)
 - [LCDwiki: 7inch HDMI Display (H)](https://lcdwiki.com/7inch_HDMI_Display_(H)) (táctil, sin brillo ni temperatura publicados)
 - [Adafruit: 1024×600 non-touch display #2299](https://learn.adafruit.com/hdmi-uberguide/2299-display-no-touchscreen-1024x600-hdmi-slash-vga-slash-ntsc-slash-pal) (página de 2014, configuración heredada)
 - [RobotShop: guía de ajustes de una 7" de 1024×600 (PDF)](https://cdn.robotshop.com/media/s/suf/rb-suf-110/pdf/raspberry_pi_7__hd_1024_600_tft_lcd_screen_display_settings_-_wiki.pdf) (otro modelo)
@@ -65,7 +65,7 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 ## Alternativas
 
 - [Raspberry Pi Touch Display 2: página del producto](https://www.raspberrypi.com/products/touch-display-2/)
-- [Touch Display 2, 7 pulgadas: product brief RP-010429-MM-3 (PDF)](https://pip-assets.raspberrypi.com/categories/1083-raspberry-pi-touch-display-2/documents/RP-010429-MM-3-touch-display-2-7-inch-product-brief.pdf)
+- [Touch Display 2, 7 pulgadas: product brief RP-010429-MM-3 (PDF)](https://pip-assets.raspberrypi.com/categories/1083-raspberry-pi-touch-display-2/documents/RP-010429-MM-3-touch-display-2-7-inch-product-brief.pdf) ([copia local](datasheets/RP-010429-MM-3-touch-display-2-7-inch-product-brief.pdf))
 - [Touch Display 2, 7 pulgadas: modelo STEP RP-009154-DD-3 (ZIP)](https://pip-assets.raspberrypi.com/categories/1083-raspberry-pi-touch-display-2/documents/RP-009154-DD-3-raspberry-pi-touch-display-2-step-7inch.zip)
 - [Touch Display 2: product brief genérico RP-009106-MM-8 (PDF)](https://pip-assets.raspberrypi.com/categories/1083-raspberry-pi-touch-display-2/documents/RP-009106-MM-8-touch-display-2-product-brief.pdf) (no abierto)
 - [Catálogo de documentos de Touch Display 2](https://pip.raspberrypi.com/categories/1083-raspberry-pi-touch-display-2)
@@ -91,3 +91,13 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 ## No pude hacer
 
 - Más búsquedas web: se agotó el presupuesto de búsquedas de la sesión antes de poder buscar reseñas, foros y problemas de GeeekPi/52Pi y de pantallas baratas de 7" con caída de tensión. No usé otros medios para saltarme el límite.
+
+## Copias locales de los documentos
+
+Documentos descargados el 21-10-2026 y guardados en el repositorio. Si un documento tiene enlace original en esta ficha, aparece junto a él como "copia local".
+
+**En esta carpeta (`datasheets/`):**
+
+- [DT070BTFT-HB-Displaytech-Spec-1649616.pdf](datasheets/DT070BTFT-HB-Displaytech-Spec-1649616.pdf): TFT LCD Module / Product Specification / DT070BTFT-HB
+- [RP-004341-WP-2-Troubleshooting_KMS_HDMI_output.pdf](datasheets/RP-004341-WP-2-Troubleshooting_KMS_HDMI_output.pdf): Troubleshooting KMS HDMI output / Raspberry Pi Ltd / 2023-11-13: githash: 5385809-clean (white paper de KMS) (archivo original: `RP-004341-WP-2-Troubleshooting KMS HDMI output.pdf`)
+- [RP-010429-MM-3-touch-display-2-7-inch-product-brief.pdf](datasheets/RP-010429-MM-3-touch-display-2-7-inch-product-brief.pdf): Raspberry Pi | Raspberry Pi Touch Display 2 – 7″ Portrait / Raspberry Pi Touch Display 2 –

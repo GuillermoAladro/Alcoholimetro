@@ -4,7 +4,7 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 ## Winsen: producto y manual del ZE29A
 
-- [Manual V1.1 del ZE29A-C2H5OH (PDF)](https://www.winsen-sensor.com/d/files/manual/ze29a-c2h5oh.pdf). Leído tres veces con preguntas distintas. Sin fecha ni historial de revisiones.
+- [Manual V1.1 del ZE29A-C2H5OH (PDF)](https://www.winsen-sensor.com/d/files/manual/ze29a-c2h5oh.pdf) ([copia local](datasheets/ze29a-c2h5oh.pdf)). Leído tres veces con preguntas distintas. Sin fecha ni historial de revisiones.
 - [Ficha del producto](https://www.winsen-sensor.com/product/ze29a-c2h5oh.html). Leída. Menciona un interfaz 1602 reservado y "rich communication interfaces".
 - [Misma ficha en otra ruta](https://winsen-sensor.com/sensors/alcohol-sensor/ze29a-c2h5oh.html). Salió en búsqueda; no abierta.
 - [Lista de sensores de alcohol de Winsen](https://winsen-sensor.com/alcohol-sensor). Leída (ZE29A, ZE30, ZE31, ME2, MQ-3B, MQ303B, MP-3B, GM-302B/C).
@@ -44,7 +44,7 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 ## Tecnología de celdas de combustible y referencias de la industria
 
-- [Dart Sensors: hoja de datos de celdas de aliento de 16 mm](https://www.dart-sensors.com/wp-content/uploads/2021/10/16mm_breath_alcohol_sensor_product_datasheet.pdf). Leída dos veces.
+- [Dart Sensors: hoja de datos de celdas de aliento de 16 mm](https://www.dart-sensors.com/wp-content/uploads/2021/10/16mm_breath_alcohol_sensor_product_datasheet.pdf) ([copia local](datasheets/16mm_breath_alcohol_sensor_product_datasheet.pdf)). Leída dos veces.
 - [Dart Sensors en Made in Britain](https://www.madeinbritain.org/members/dart-sensors). Salió en búsqueda; no abierto.
 - [Intoximeters: libro blanco de celdas de combustible](https://www.intox.com/fuel-cell-white-paper/). Leído.
 - [Alcopro: ¿responde el Alco-Sensor a las cetonas diabéticas?](https://alcopro.com/?p=19267). Leído. [Alcopro: hechos sobre celdas de combustible](https://alcopro.com/fuel-cell-facts/): no abierto.
@@ -56,7 +56,7 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 ## Normativa: España, UE y metrología
 
-- [BOE: Orden ITC/3707/2006, texto original (PDF)](https://www.boe.es/boe/dias/2006/12/07/pdfs/A42985-42990.pdf). Leído.
+- [BOE: Orden ITC/3707/2006, texto original (PDF)](https://www.boe.es/boe/dias/2006/12/07/pdfs/A42985-42990.pdf) ([copia local](datasheets/A42985-42990.pdf)). Leído.
 - [BOE: ITC/3707/2006 consolidada (derogada)](https://www.boe.es/eli/es/o/2006/11/22/itc3707/con). Leída.
 - [iberley: copia de la ITC/3707/2006](https://www.iberley.es/legislacion/orden-itc-3707-2006-22-noviembre-regula-control-metrologico-estado-instrumentos-destinados-medir-concentracion-alcohol-aire-espirado-4156772). Leída. La marca "vigente"; **contradice al BOE**.
 - [BOE: Orden ICT/155/2020 (ELI)](https://www.boe.es/eli/es/o/2020/02/07/ict155/con) y [PDF BOE-A-2020-2573](https://www.boe.es/boe/dias/2020/02/24/pdfs/BOE-A-2020-2573.pdf). Leídos solo en parte: **la herramienta cortó el texto antes del Anexo XIII**.
@@ -65,7 +65,7 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 - [BOE: Orden ITC/3748/2006 (contadores de máquinas recreativas, derogada)](https://www.boe.es/eli/es/o/2006/11/22/itc3748/con). Leída. **No es la de etilómetros**; la menciono solo para evitar la confusión (mi herramienta devolvió su contenido al pedirle otra referencia del BOE).
 - [Eroski Consumer (2007): alcoholímetros en locales de ocio](https://www.consumer.es/?p=33931). Leído. Anterior a la ICT/155/2020.
 - [Directiva 2014/32/UE explicada (euronorm.net)](https://www.euronorm.net/content/ce-marking/directives/explanation/2014-32-eu.php). Leída; fuente secundaria. Texto oficial de la directiva en [EUR-Lex](https://eur-lex.europa.eu/eli/dir/2014/32/2015-01-27/eng): salió en búsqueda; no abierto.
-- [OIML R 126 (2012)](https://www.oiml.org/en/files/pdf_r/r126-e12.pdf). Leído.
+- [OIML R 126 (2012)](https://www.oiml.org/en/files/pdf_r/r126-e12.pdf) ([copia local](datasheets/r126-e12.pdf)). Leído.
 - [tuteorica.com: art. 20 RGC, tasas de alcohol](https://tuteorica.com/normativa-de-trafico/rgc/tasas-de-alcohol-en-sangre-y-aire-espirado-art-20-rgc/). Leído; fuente secundaria. BOE del Reglamento General de Circulación: **no abierto**.
 
 ## Normativa china (de dónde parecen salir las unidades del módulo)
@@ -77,3 +77,16 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 ## Cómo me ayudó la búsqueda (limitaciones)
 
 - Mi presupuesto de búsquedas web se agotó antes de buscar: placa "WS19", AliExpress/Mouser/DigiKey, GitHub y foros sobre la serie ZE, siloxanos en celdas electroquímicas, Lion/Alphasense/SGX.
+
+## Copias locales de los documentos
+
+Documentos descargados el 21-10-2026 y guardados en el repositorio. Si un documento tiene enlace original en esta ficha, aparece junto a él como "copia local".
+
+**En esta carpeta (`datasheets/`):**
+
+- [16mm_breath_alcohol_sensor_product_datasheet.pdf](datasheets/16mm_breath_alcohol_sensor_product_datasheet.pdf): DART SENSORS / BREATH ALCOHOL SENSORS / These sensors are of the two-electrode
+- [A42985-42990.pdf](datasheets/A42985-42990.pdf): BOE núm. 292 (07-12-2006): Orden ITC/3707/2006, control metrológico de los instrumentos que miden alcohol en el aire espirado
+- [me2-c2h5oh-f16.pdf](datasheets/me2-c2h5oh-f16.pdf): Winsen ME2-C2H5OH-Ф16, sensor electroquímico de alcohol, manual V1.2 (sensor alternativo) (archivo original: `me2-c2h5oh-#U044416.pdf`)
+- [me2-co-0-1000ppm-manual-ver1_3.pdf](datasheets/me2-co-0-1000ppm-manual-ver1_3.pdf): Winsen ME2-CO, sensor electroquímico de monóxido de carbono, manual ver. 1.3 (referencia de la familia ME2) (archivo original: `me2-co-0-1000ppm-manual#Uff08ver1_3#Uff09.pdf`)
+- [r126-e12.pdf](datasheets/r126-e12.pdf): INTERNATIONAL / RECOMMENDATION / OIML R 126
+- [ze29a-c2h5oh.pdf](datasheets/ze29a-c2h5oh.pdf): Winsen ZE29A-C2H5OH: manual del módulo de sensor de alcohol, V1.1

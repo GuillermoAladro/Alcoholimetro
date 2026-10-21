@@ -5,9 +5,9 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 ## Documentación oficial de Raspberry Pi
 
 - [Documentación oficial de cámaras](https://www.raspberrypi.com/documentation/accessories/camera.html) (orientación del cable, "contactos lejos de la tapa", cables Standard-Standard y Standard-Mini; leída casi entera, la herramienta cortó los últimos 4000 caracteres)
-- [Plano del cable de cámara de 200 mm (RP-008146-DS-1)](https://pip-assets.raspberrypi.com/categories/786-raspberry-pi-camera-module-3/documents/RP-008146-DS-1-standard-camera-cable-200mm-reference-drawing.pdf) (PDF)
-- [Product brief de la Camera Module 3 (RP-008151-DS-1)](https://pip-assets.raspberrypi.com/categories/786-raspberry-pi-camera-module-3/documents/RP-008151-DS-1-camera-module-3-product-brief.pdf) (PDF)
-- [Esquema de referencia de la Camera Module 3 (RP-008969-SD-3)](https://pip-assets.raspberrypi.com/categories/1207-design-files/documents/RP-008969-SD-3-Raspberry%20Pi%20Camera%20Module%203%20Reference%20Schematic.pdf) (PDF; conector J1 SFW15R-1STE1LF, nota de carriles; la extracción no dio números de pin)
+- [Plano del cable de cámara de 200 mm (RP-008146-DS-1)](https://pip-assets.raspberrypi.com/categories/786-raspberry-pi-camera-module-3/documents/RP-008146-DS-1-standard-camera-cable-200mm-reference-drawing.pdf) ([copia local](datasheets/RP-008146-DS-1-standard-camera-cable-200mm-reference-drawing.pdf)) (PDF)
+- [Product brief de la Camera Module 3 (RP-008151-DS-1)](https://pip-assets.raspberrypi.com/categories/786-raspberry-pi-camera-module-3/documents/RP-008151-DS-1-camera-module-3-product-brief.pdf) ([copia local](../raspberry-pi-camera-module-3/datasheets/RP-008151-DS-1-camera-module-3-product-brief.pdf)) (PDF)
+- [Esquema de referencia de la Camera Module 3 (RP-008969-SD-3)](https://pip-assets.raspberrypi.com/categories/1207-design-files/documents/RP-008969-SD-3-Raspberry%20Pi%20Camera%20Module%203%20Reference%20Schematic.pdf) ([copia local](../raspberry-pi-camera-module-3/datasheets/RP-008969-SD-3-Raspberry_Pi_Camera_Module_3_Reference_Schematic.pdf)) (PDF; conector J1 SFW15R-1STE1LF, nota de carriles; la extracción no dio números de pin)
 - [Esquema reducido de la Pi 3B+ (RP-008339-DS-1)](https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008339-DS-1-raspberry-pi-3-b-plus-reduced-schematics.pdf) (PDF; la guía enlaza `datasheets.raspberrypi.com/rpi3/raspberry-pi-3-b-plus-reduced-schematics.pdf`, que redirige aquí. La extracción dio los nombres de las señales CSI pero no los pines)
 - [Product brief de la Pi 3B+ (RP-008338-DS-2)](https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008338-DS-2-raspberry-pi-3-b-plus-product-brief.pdf) (PDF; solo dice "MIPI CSI camera port"; la guía enlaza `datasheets.raspberrypi.com/rpi3/raspberry-pi-3-b-plus-product-brief.pdf`, que redirige aquí)
 - [Datasheet del ensamblaje de sensor Standard FOV normal (RP-009992-DS-1)](https://pip-assets.raspberrypi.com/categories/1207-design-files/documents/RP-009992-DS-1-camera-module-3-sensor-assembly-standard-normalfov-datasheet.pdf) (PDF; **la herramienta lo vio vacío o sin texto**: no aportó nada)
@@ -43,11 +43,11 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 ## FFC genérico: especificaciones y normas
 
-- [Molex SD-15267-001: FFC de 1,00 mm, tipos A y D (PDF)](https://www.farnell.com/cad/4000125.pdf)
+- [Molex SD-15267-001: FFC de 1,00 mm, tipos A y D (PDF)](https://www.farnell.com/cad/4000125.pdf) ([copia local](datasheets/4000125.pdf))
 - [Molex 151660241: FFC de 0,5 mm, tipo A (PDF)](https://www.farnell.com/datasheets/4726909.pdf)
 - [Molex 152670304: FFC de 1,00 mm, 14 circuitos, tipo D](https://www.molex.com/en-us/products/part-detail/152670304) (página de producto, sin PDF)
 - [Especificación GCT de FFC estándar, rev. A (PDF)](https://static.chipdip.ru/lib/010/DOC042010627.pdf)
-- [Würth WR-FFC tipo 2, 0,5 mm (PDF)](https://www.we-online.com/components/products/datasheet/687733100002.pdf)
+- [Würth WR-FFC tipo 2, 0,5 mm (PDF)](https://www.we-online.com/components/products/datasheet/687733100002.pdf) ([copia local](datasheets/687733100002.pdf))
 - [W+P serie 599, Flex Flat Cable](https://wppro.com/en/series/599)
 - [LCSC Cable: FFC/FPC](https://lcsccable.com/services/ffcfpc-cable) (marketing de un fabricante; cifras de radio y ciclos sin verificar)
 - [DigiKey/Molex: FFC/FPC Connector and Cable Compatibility Basics](https://www.digikey.com/en/blog/ffc-fpc-connector-and-cable-compatibility-basics) (la herramienta solo devolvió el menú, no el cuerpo del artículo)
@@ -57,7 +57,7 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 ## Conectores ZIF y reparación
 
 - [RS Components: Amphenol SFW15R-1STE1LF](https://uk.rs-online.com/web/p/fpc-connectors/1822728P) (1 mm, 15 contactos, ZIF, contacto inferior, sin bloqueo)
-- [Amphenol FCI: series HFW/HLW/SFW/SLW de 1,00 mm (PDF en RS)](https://docs.rs-online.com/446a/0900766b816ade50.pdf) (sin ciclos de inserción ni espesor de cable)
+- [Amphenol FCI: series HFW/HLW/SFW/SLW de 1,00 mm (PDF en RS)](https://docs.rs-online.com/446a/0900766b816ade50.pdf) ([copia local](datasheets/0900766b816ade50.pdf)) (sin ciclos de inserción ni espesor de cable)
 - [Adafruit 4728: conector CSI/DSI de repuesto](https://adafruit.com/product/4728)
 - [The Pi Hut: conector CSI/DSI de repuesto](https://thepihut.com/collections/raspberry-pi-camera/products/replacement-csi-dsi-connector-for-raspberry-pi-repair-part)
 - [Foro de NVIDIA: lengüeta del conector CSI rota](https://forums.developer.nvidia.com/t/csi-camera-connector-broke/76806)
@@ -92,3 +92,19 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 - [geeekpi.com](https://www.geeekpi.com) (**la herramienta no pudo abrirlo**: robots.txt; no lo rodeé)
 - [TinyTronics: cable de 50 cm, ref. RPICAMFPC50CM](https://www.tinytronics.nl/en/cables-and-connectors/cables-and-adapters/ffc/raspberry-pi-camera-cable-15-pin-fpc-flex-50cm) (sin marca, paso ni tipo)
 - [desertcart: Pastall 6 cables](https://www.desertcart.tw/products/208589668) (ejemplo de metadatos poco fiables: "RF Connector")
+
+## Copias locales de los documentos
+
+Documentos descargados el 21-10-2026 y guardados en el repositorio. Si un documento tiene enlace original en esta ficha, aparece junto a él como "copia local".
+
+**En esta carpeta (`datasheets/`):**
+
+- [0900766b816ade50.pdf](datasheets/0900766b816ade50.pdf): Conectores flex serie HFW, paso 1,00 mm (hoja de datos vía RS; conector del cable de la cámara)
+- [4000125.pdf](datasheets/4000125.pdf): Plano de un cable FFC con longitudes de 8, 9 y 10 pulgadas (4000125)
+- [687733100002.pdf](datasheets/687733100002.pdf): Würth Elektronik 687733100002: plano con dimensiones y propiedades del artículo
+- [RP-008146-DS-1-standard-camera-cable-200mm-reference-drawing.pdf](datasheets/RP-008146-DS-1-standard-camera-cable-200mm-reference-drawing.pdf): Raspberry Pi, cable de cámara estándar de 200 mm: plano de referencia (RP-008146-DS-1)
+
+**Citados en esta ficha y guardados en otra carpeta:**
+
+- [RP-008151-DS-1-camera-module-3-product-brief.pdf](../raspberry-pi-camera-module-3/datasheets/RP-008151-DS-1-camera-module-3-product-brief.pdf): product brief RP-008151-DS-1
+- [RP-008969-SD-3-Raspberry_Pi_Camera_Module_3_Reference_Schematic.pdf](../raspberry-pi-camera-module-3/datasheets/RP-008969-SD-3-Raspberry_Pi_Camera_Module_3_Reference_Schematic.pdf): CONTENTS: / PAGE1 - CONTENTS / PAGE2 - CAMERA (esquema RP-008969-SD-3)

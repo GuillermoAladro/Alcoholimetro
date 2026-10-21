@@ -30,7 +30,7 @@ Cámara que hace la foto al usuario antes de mostrarla en pantalla junto al resu
 
 ## 2. Especificaciones
 
-Fuente: [product brief RP-008151-DS-1](https://pip-assets.raspberrypi.com/categories/786-raspberry-pi-camera-module-3/documents/RP-008151-DS-1-camera-module-3-product-brief.pdf) (junio de 2024), salvo donde se indica.
+Fuente: [product brief RP-008151-DS-1](https://pip-assets.raspberrypi.com/categories/786-raspberry-pi-camera-module-3/documents/RP-008151-DS-1-camera-module-3-product-brief.pdf) ([copia local](datasheets/RP-008151-DS-1-camera-module-3-product-brief.pdf)) (junio de 2024), salvo donde se indica.
 
 | Característica | Valor |
 |---|---|
@@ -65,15 +65,15 @@ Catálogo oficial del producto: <https://pip.raspberrypi.com/categories/786-rasp
 
 | Documento | Referencia | Formato | Enlace |
 |---|---|---|---|
-| Product brief | RP-008151-DS-1 | PDF (1,2 MB) | [descargar](https://pip-assets.raspberrypi.com/categories/786-raspberry-pi-camera-module-3/documents/RP-008151-DS-1-camera-module-3-product-brief.pdf) |
-| Plano mecánico (Standard) | RP-008153-DS-1 | PDF (930 KB) | [descargar](https://pip-assets.raspberrypi.com/categories/1207-design-files/documents/RP-008153-DS-1-camera-module-3-standard-mechanical-drawing.pdf) |
-| Modelo 3D STEP | RP-008154-DS-1 | ZIP (9,5 MB) | [descargar](https://pip-assets.raspberrypi.com/categories/1207-design-files/documents/RP-008154-DS-1-camera-module-3-step.zip) |
-| Esquema de referencia | RP-008969-SD-3 | PDF (260 KB) | [descargar](https://pip-assets.raspberrypi.com/categories/1207-design-files/documents/RP-008969-SD-3-Raspberry%20Pi%20Camera%20Module%203%20Reference%20Schematic.pdf) |
-| Lista de materiales de referencia (BOM) | RP-008970-BM-2 | XLSX (12 KB) | [descargar](https://pip-assets.raspberrypi.com/categories/1207-design-files/documents/RP-008970-BM-2-RASPBERRY%20PI%20CAMERA%20MODULE%203%20Reference%20Design%20BOM.xlsx) |
-| Plano del cable de cámara de 200 mm | RP-008146-DS-1 | PDF (52 KB) | [descargar](https://pip-assets.raspberrypi.com/categories/786-raspberry-pi-camera-module-3/documents/RP-008146-DS-1-standard-camera-cable-200mm-reference-drawing.pdf) |
+| Product brief | RP-008151-DS-1 | PDF (1,2 MB) | [descargar](https://pip-assets.raspberrypi.com/categories/786-raspberry-pi-camera-module-3/documents/RP-008151-DS-1-camera-module-3-product-brief.pdf) ([copia local](datasheets/RP-008151-DS-1-camera-module-3-product-brief.pdf)) |
+| Plano mecánico (Standard) | RP-008153-DS-1 | PDF (930 KB) | [descargar](https://pip-assets.raspberrypi.com/categories/1207-design-files/documents/RP-008153-DS-1-camera-module-3-standard-mechanical-drawing.pdf) ([copia local](datasheets/RP-008153-DS-1-camera-module-3-standard-mechanical-drawing.pdf)) |
+| Modelo 3D STEP | RP-008154-DS-1 | ZIP (9,5 MB) | [descargar](https://pip-assets.raspberrypi.com/categories/1207-design-files/documents/RP-008154-DS-1-camera-module-3-step.zip) ([copia local](datasheets/RP-008154-DS-1-camera-module-3-step.zip)) |
+| Esquema de referencia | RP-008969-SD-3 | PDF (260 KB) | [descargar](https://pip-assets.raspberrypi.com/categories/1207-design-files/documents/RP-008969-SD-3-Raspberry%20Pi%20Camera%20Module%203%20Reference%20Schematic.pdf) ([copia local](datasheets/RP-008969-SD-3-Raspberry_Pi_Camera_Module_3_Reference_Schematic.pdf)) |
+| Lista de materiales de referencia (BOM) | RP-008970-BM-2 | XLSX (12 KB) | [descargar](https://pip-assets.raspberrypi.com/categories/1207-design-files/documents/RP-008970-BM-2-RASPBERRY%20PI%20CAMERA%20MODULE%203%20Reference%20Design%20BOM.xlsx) ([copia local](datasheets/RP-008970-BM-2-RASPBERRY_PI_CAMERA_MODULE_3_Reference_Design_BOM.xlsx)) |
+| Plano del cable de cámara de 200 mm | RP-008146-DS-1 | PDF (52 KB) | [descargar](https://pip-assets.raspberrypi.com/categories/786-raspberry-pi-camera-module-3/documents/RP-008146-DS-1-standard-camera-cable-200mm-reference-drawing.pdf) ([copia local](../cable-ffc-camara-50cm/datasheets/RP-008146-DS-1-standard-camera-cable-200mm-reference-drawing.pdf)) |
 | Manual de Picamera2 (86 págs.) | RP-008156-DS-6 | PDF (2,8 MB) | [descargar](https://pip-assets.raspberrypi.com/categories/786-raspberry-pi-camera-module-3/documents/RP-008156-DS-6-picamera2-manual.pdf) |
-| PCN 42: IMX708 con OTP preprogramada | RP-009691-PC-1 | PDF (110 KB) | [descargar](https://pip-assets.raspberrypi.com/categories/1321-pcn/documents/RP-009691-PC-1-PCN%2042_%20IMX708%20Preprogrammed%20OTP.pdf) |
-| PCN 43: eliminación de la EEPROM interna | RP-009692-PC-1 | PDF (75 KB) | [descargar](https://pip-assets.raspberrypi.com/categories/1321-pcn/documents/RP-009692-PC-1-PCN%2043_%20Camera%20Module%203%20Internal%20EEPROM%20removal.pdf) |
+| PCN 42: IMX708 con OTP preprogramada | RP-009691-PC-1 | PDF (110 KB) | [descargar](https://pip-assets.raspberrypi.com/categories/1321-pcn/documents/RP-009691-PC-1-PCN%2042_%20IMX708%20Preprogrammed%20OTP.pdf) ([copia local](datasheets/RP-009691-PC-1-PCN_42__IMX708_Preprogrammed_OTP.pdf)) |
+| PCN 43: eliminación de la EEPROM interna | RP-009692-PC-1 | PDF (75 KB) | [descargar](https://pip-assets.raspberrypi.com/categories/1321-pcn/documents/RP-009692-PC-1-PCN%2043_%20Camera%20Module%203%20Internal%20EEPROM%20removal.pdf) ([copia local](datasheets/RP-009692-PC-1-PCN_43__Camera_Module_3_Internal_EEPROM_removal.pdf)) |
 
 Otras secciones del catálogo (no he abierto su contenido):
 
@@ -87,8 +87,8 @@ Más información: [página del producto](https://www.raspberrypi.com/products/c
 
 ### Qué dicen los avisos de cambio de producto
 
-- **PCN 43** ([RP-009692-PC-1](https://pip-assets.raspberrypi.com/categories/1321-pcn/documents/RP-009692-PC-1-PCN%2043_%20Camera%20Module%203%20Internal%20EEPROM%20removal.pdf), 30-1-2026): se elimina por completo la EEPROM interna del módulo, porque ese componente deja de fabricarse. Efectivo desde abril de 2026. Sin cambios físicos ni eléctricos, y **no hay forma de distinguir unidades viejas de nuevas por hardware**. Quien use la EEPROM tiene que rediseñar.
-- **PCN 42** ([RP-009691-PC-1](https://pip-assets.raspberrypi.com/categories/1321-pcn/documents/RP-009691-PC-1-PCN%2042_%20IMX708%20Preprogrammed%20OTP.pdf), julio de 2026): el proveedor del sensor IMX708 empieza a entregarlo con la memoria OTP ya grabada con el tipo de lente y si es NoIR. Sin cambios mecánicos ni eléctricos. Con `dmesg | fgrep -i imx708` se lee un ID cuyos dos primeros dígitos tras `0x` son `03` y los dos siguientes indican el modelo: `01` estándar con filtro IR, `02` gran angular, `81` estándar NoIR, `82` gran angular NoIR.
+- **PCN 43** ([RP-009692-PC-1](https://pip-assets.raspberrypi.com/categories/1321-pcn/documents/RP-009692-PC-1-PCN%2043_%20Camera%20Module%203%20Internal%20EEPROM%20removal.pdf) ([copia local](datasheets/RP-009692-PC-1-PCN_43__Camera_Module_3_Internal_EEPROM_removal.pdf)), 30-1-2026): se elimina por completo la EEPROM interna del módulo, porque ese componente deja de fabricarse. Efectivo desde abril de 2026. Sin cambios físicos ni eléctricos, y **no hay forma de distinguir unidades viejas de nuevas por hardware**. Quien use la EEPROM tiene que rediseñar.
+- **PCN 42** ([RP-009691-PC-1](https://pip-assets.raspberrypi.com/categories/1321-pcn/documents/RP-009691-PC-1-PCN%2042_%20IMX708%20Preprogrammed%20OTP.pdf) ([copia local](datasheets/RP-009691-PC-1-PCN_42__IMX708_Preprogrammed_OTP.pdf)), julio de 2026): el proveedor del sensor IMX708 empieza a entregarlo con la memoria OTP ya grabada con el tipo de lente y si es NoIR. Sin cambios mecánicos ni eléctricos. Con `dmesg | fgrep -i imx708` se lee un ID cuyos dos primeros dígitos tras `0x` son `03` y los dos siguientes indican el modelo: `01` estándar con filtro IR, `02` gran angular, `81` estándar NoIR, `82` gran angular NoIR.
 - Ninguno de los dos documentos menciona la Raspberry Pi 3 ni versiones mínimas de kernel o libcamera.
 
 ## 4. Software y uso con la Pi 3B+
@@ -178,5 +178,7 @@ Son conclusiones mías, no afirmaciones de las fuentes.
 - **El comportamiento del autofoco de la versión Standard en luz de bar** (poca luz): no encontré pruebas.
 
 ## 8. Fuentes
+
+Copias locales de los documentos descargados: [lista en enlaces.md](enlaces.md#copias-locales-de-los-documentos) y carpeta [`datasheets/`](datasheets/).
 
 Todos los enlaces, ordenados por tipo, en [`enlaces.md`](enlaces.md).

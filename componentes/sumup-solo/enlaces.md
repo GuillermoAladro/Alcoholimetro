@@ -17,14 +17,14 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 Enlaces directos tal como aparecen en la web legal de SumUp Irlanda. No he descargado nada.
 
-- [Declaración CE de conformidad del Solo (solo pude leer la primera página)](https://assets.ctfassets.net/txhaodyqr481/69X8uFuoC14J77oE7y0ga8/6a87808687c1ab91894566478f0f1ace/SumUp_Solo_CE_Declaration_of_Conformity_Access__signed.pdf)
-- [Declaración CE de conformidad de la base (Solo y Solo Lite) (no lo leí)](https://assets.ctfassets.net/txhaodyqr481/5kKlBQRnxozVjiYJb7IpEL/7e57d2de1f1d77dfb51708a08b397d08/Solo___Solo_Lite_Cradle_CE_Declaration_of_conformity_.pdf)
-- [Certificados EMV nivel 1 y nivel 2 (no lo leí)](https://assets.ctfassets.net/txhaodyqr481/1YhCykQLzZ9UZ6k7RlUMsF/df72479f9ff162a8e0d6a377f20d991d/EMV_Level_1_and_Level_2_certificates.pdf)
-- [Certificado Mastercard TQM (no lo leí)](https://images.ctfassets.net/txhaodyqr481/OBCr86lqISJTuYM4ETM2P/1f35b8a36e3eb18e7c67ad90b881fba3/211025_-_TQM_SoC_Labels__Sum_Up__TQM5064__3_.pdf)
+- [Declaración CE de conformidad del Solo (solo pude leer la primera página)](https://assets.ctfassets.net/txhaodyqr481/69X8uFuoC14J77oE7y0ga8/6a87808687c1ab91894566478f0f1ace/SumUp_Solo_CE_Declaration_of_Conformity_Access__signed.pdf) ([copia local](datasheets/SumUp_Solo_CE_Declaration_of_Conformity_Access__signed.pdf))
+- [Declaración CE de conformidad de la base (Solo y Solo Lite) (no lo leí)](https://assets.ctfassets.net/txhaodyqr481/5kKlBQRnxozVjiYJb7IpEL/7e57d2de1f1d77dfb51708a08b397d08/Solo___Solo_Lite_Cradle_CE_Declaration_of_conformity_.pdf) ([copia local](datasheets/Solo___Solo_Lite_Cradle_CE_Declaration_of_conformity_.pdf))
+- [Certificados EMV nivel 1 y nivel 2 (no lo leí)](https://assets.ctfassets.net/txhaodyqr481/1YhCykQLzZ9UZ6k7RlUMsF/df72479f9ff162a8e0d6a377f20d991d/EMV_Level_1_and_Level_2_certificates.pdf) ([copia local](datasheets/EMV_Level_1_and_Level_2_certificates.pdf))
+- [Certificado Mastercard TQM (no lo leí)](https://images.ctfassets.net/txhaodyqr481/OBCr86lqISJTuYM4ETM2P/1f35b8a36e3eb18e7c67ad90b881fba3/211025_-_TQM_SoC_Labels__Sum_Up__TQM5064__3_.pdf) ([copia local](datasheets/211025_-_TQM_SoC_Labels__Sum_Up__TQM5064__3_.pdf))
 - [Certificado ISO 9001:2015 de SumUp (no lo leí)](https://assets.ctfassets.net/txhaodyqr481/1FwKWZrMquh0LC6vJCAFgL/97f97b879b4464ee1adeceaa3f136efc/SumUp_ISO_9001_2015_certificate_2023.pdf)
 - [Declaración CE de la impresora del Solo (fuera de alcance; no lo leí)](https://assets.ctfassets.net/txhaodyqr481/4IRk5h8O0ZOyAvV6U10MAF/42f7b1ca15d0de4752bc08af6155dc5d/Printer_CE_Declaration_of_conformity.pdf)
 - [Declaración CE del Solo Lite (fuera de alcance; no lo leí)](https://assets.ctfassets.net/txhaodyqr481/16UwFKn5XJhEFD0KQQ40PL/439b9cc4996fbe2b1cbd76513e378261/Solo_Lite_CE_Declaration_of_Conformity_Access_signed.pdf)
-- [Ficha técnica de un retailer, "BRI42258" (no es de SumUp: batería de 1,6 Ah, 100 operaciones por carga)](https://ik.imagekit.io/pimberly/595e406f0f15f30010780448/cd32c72b/62ea63129b3cd64ff4000200/BRI42258_TECH.pdf)
+- [Ficha técnica de un retailer, "BRI42258" (no es de SumUp: batería de 1,6 Ah, 100 operaciones por carga)](https://ik.imagekit.io/pimberly/595e406f0f15f30010780448/cd32c72b/62ea63129b3cd64ff4000200/BRI42258_TECH.pdf) ([copia local](datasheets/BRI42258_TECH.pdf))
 - [Guía de usuario del Solo (SOLO002) en el expediente FCC, PDF de 13 páginas](https://fccid.io/2A39U-SOLO002/User-Manual/Users-Manual-5919604)
 - [Especificación OpenAPI de SumUp: `openapi.json` en la raíz del repositorio sumup-py (commit del 20-10-2026)](https://github.com/sumup/sumup-py)
 
@@ -136,3 +136,15 @@ En inglés (Reino Unido):
 - Los PDF de certificados de arriba: la herramienta de lectura web no los abrió; en el visor del navegador solo vi la primera página de la declaración CE del Solo.
 - Amazon.es: bloquea el acceso por robots; no insistí.
 - Galaxus y Argos (páginas de producto del Solo): cargaron sin texto de reseñas.
+
+## Copias locales de los documentos
+
+Documentos descargados el 21-10-2026 y guardados en el repositorio. Si un documento tiene enlace original en esta ficha, aparece junto a él como "copia local".
+
+**En esta carpeta (`datasheets/`):**
+
+- [211025_-_TQM_SoC_Labels__Sum_Up__TQM5064__3_.pdf](datasheets/211025_-_TQM_SoC_Labels__Sum_Up__TQM5064__3_.pdf): Terminal Quality Management / Statement of Compliance / This is to confirm that Mastercard Approval Authority
+- [BRI42258_TECH.pdf](datasheets/BRI42258_TECH.pdf): SumUp Solo: ficha técnica del lector (BRI42258)
+- [EMV_Level_1_and_Level_2_certificates.pdf](datasheets/EMV_Level_1_and_Level_2_certificates.pdf): Date: March 14, 2022 / James Turner / SumUp Limited
+- [Solo___Solo_Lite_Cradle_CE_Declaration_of_conformity_.pdf](datasheets/Solo___Solo_Lite_Cradle_CE_Declaration_of_conformity_.pdf): CE Declaration of Conformity / SumUp Limited / Block 8, Harcourt Center, Charlotte Way, D02 K850, Dublin, Ireland
+- [SumUp_Solo_CE_Declaration_of_Conformity_Access__signed.pdf](datasheets/SumUp_Solo_CE_Declaration_of_Conformity_Access__signed.pdf): CE Declaration of Conformity / SumUp Limited / Block 8, Harcourt Center, Charlotte Way, D02 A9N9, Dublin, Ireland (Declaración CE)

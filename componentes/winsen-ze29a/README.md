@@ -29,7 +29,7 @@ Es la pieza que mide. Un módulo de Winsen con sensor electroquímico de etanol,
 
 ## 1. Resumen para el proyecto
 
-- **No es un sensor que da ppm: es un módulo de "prueba de aliento" con su propia máquina de estados.** Detecta el soplido (sensor de presión), toma la muestra con un electroimán y devuelve un único resultado en **mg/100 mL** (equivalente en sangre, convención china). No hay lectura continua ni valor bruto. ([manual V1.1](https://www.winsen-sensor.com/d/files/manual/ze29a-c2h5oh.pdf))
+- **No es un sensor que da ppm: es un módulo de "prueba de aliento" con su propia máquina de estados.** Detecta el soplido (sensor de presión), toma la muestra con un electroimán y devuelve un único resultado en **mg/100 mL** (equivalente en sangre, convención china). No hay lectura continua ni valor bruto. ([manual V1.1](https://www.winsen-sensor.com/d/files/manual/ze29a-c2h5oh.pdf) ([copia local](datasheets/ze29a-c2h5oh.pdf)))
 - **El manual V1.1 no da vida útil, deriva, intervalo de calibración, humedad ni tiempo de recuperación.** Tampoco hay ningún comando para calibrar ni para leer el valor bruto. Con este módulo no puedes ver desde la Pi si el sensor deriva, salvo con pruebas de control (aire limpio y un patrón). Hay que pedir esos datos a Winsen **antes** de fabricar en serie.
 - **La guía de montaje acierta casi todo.** Pines, protocolo, checksum, estados, tiempos y rangos coinciden con el manual. Cuatro matices importantes: "el módulo no empieza solo" **no está en el manual** (es una deducción); la conversión **÷220 a mg/L** tampoco; la vida de "unos 2 años" es de **otros** modelos de Winsen; y el conector **JST-XH no está confirmado** (el manual solo da 4 pines). El checksum `48` del foro de Arduino es **erróneo**: el correcto es `46`. Detalle en la [sección 4](#4-verificación-de-la-guía-de-montaje-24).
 - **El rango de trabajo es 10–40 °C y no hay dato de humedad.** El aliento sale a unos 34–35 °C y húmedo; la condensación en el tubo es un riesgo real (el fabricante de celdas Dart pide un recorrido corto y calentado ≥ 35 °C).
@@ -39,7 +39,7 @@ Es la pieza que mide. Un módulo de Winsen con sensor electroquímico de etanol,
 
 ## 2. Especificaciones
 
-Fuente principal: [manual V1.1](https://www.winsen-sensor.com/d/files/manual/ze29a-c2h5oh.pdf) (sin fecha). La copia de [robu.in](https://robu.in/wp-content/uploads/2023/02/ZE29A-DATASHEET.pdf) tiene las mismas cifras. "Ficha" = [página del producto](https://www.winsen-sensor.com/product/ze29a-c2h5oh.html).
+Fuente principal: [manual V1.1](https://www.winsen-sensor.com/d/files/manual/ze29a-c2h5oh.pdf) ([copia local](datasheets/ze29a-c2h5oh.pdf)) (sin fecha). La copia de [robu.in](https://robu.in/wp-content/uploads/2023/02/ZE29A-DATASHEET.pdf) tiene las mismas cifras. "Ficha" = [página del producto](https://www.winsen-sensor.com/product/ze29a-c2h5oh.html).
 
 | Característica | Valor | Fuente |
 |---|---|---|
@@ -78,7 +78,7 @@ Conversiones de unidades que uso en esta ficha (todas **cálculo mío**):
 
 | Documento | Referencia | Formato | Enlace |
 |---|---|---|---|
-| Manual de usuario ZE29A-C2H5OH | V1.1, sin fecha | PDF | [descargar](https://www.winsen-sensor.com/d/files/manual/ze29a-c2h5oh.pdf) |
+| Manual de usuario ZE29A-C2H5OH | V1.1, sin fecha | PDF | [descargar](https://www.winsen-sensor.com/d/files/manual/ze29a-c2h5oh.pdf) ([copia local](datasheets/ze29a-c2h5oh.pdf)) |
 | Copia del manual (distribuidor robu.in) | V1.1; subida 02/2023 según la ruta | PDF | [descargar](https://robu.in/wp-content/uploads/2023/02/ZE29A-DATASHEET.pdf) |
 | Copia en HTML (manuals.plus) | Sin versión; tiene un apartado "Dimension" vacío | Web | [abrir](https://manuals.plus/winsen/ze29a-c2h5oh-alcohol-sensor-module-manual) |
 | Ficha de producto de Winsen | — | Web | [abrir](https://www.winsen-sensor.com/product/ze29a-c2h5oh.html) |
@@ -86,9 +86,9 @@ Conversiones de unidades que uso en esta ficha (todas **cálculo mío**):
 | Manual de la celda hermana ME2-C2H5OH-Ф16 | V1.2, sin fecha | PDF | [descargar](https://www.winsen-sensor.com/d/files/manual/me2-c2h5oh-%D1%8416.pdf) |
 | Manual de la celda hermana ME2-C2H5OH-13×13 | V1.2, 26-7-2022 | PDF | [descargar](https://www.winsen-sensor.com/d/files/manual/me2-c2h5oh-13%C3%9713.pdf) |
 | Manual del ZE31-C2H5OH (ambiental, **no** aliento) | No abierto | PDF | [descargar](https://www.winsen-sensor.com/d/files/manual/ze31-c2h5oh.pdf) |
-| Hoja de datos de celda de aliento Dart 16 mm (referencia de la industria) | — | PDF | [descargar](https://www.dart-sensors.com/wp-content/uploads/2021/10/16mm_breath_alcohol_sensor_product_datasheet.pdf) |
-| OIML R 126 (2012), analizadores de aliento evidenciales | R 126 ed. 2012 | PDF | [descargar](https://www.oiml.org/en/files/pdf_r/r126-e12.pdf) |
-| Orden ITC/3707/2006 (derogada) | BOE núm. 292, 7-12-2006 | PDF | [descargar](https://www.boe.es/boe/dias/2006/12/07/pdfs/A42985-42990.pdf) |
+| Hoja de datos de celda de aliento Dart 16 mm (referencia de la industria) | — | PDF | [descargar](https://www.dart-sensors.com/wp-content/uploads/2021/10/16mm_breath_alcohol_sensor_product_datasheet.pdf) ([copia local](datasheets/16mm_breath_alcohol_sensor_product_datasheet.pdf)) |
+| OIML R 126 (2012), analizadores de aliento evidenciales | R 126 ed. 2012 | PDF | [descargar](https://www.oiml.org/en/files/pdf_r/r126-e12.pdf) ([copia local](datasheets/r126-e12.pdf)) |
+| Orden ITC/3707/2006 (derogada) | BOE núm. 292, 7-12-2006 | PDF | [descargar](https://www.boe.es/boe/dias/2006/12/07/pdfs/A42985-42990.pdf) ([copia local](datasheets/A42985-42990.pdf)) |
 | Orden ICT/155/2020 (vigente; Anexo XIII = etilómetros) | BOE núm. 47, 24-2-2020 | PDF | [descargar](https://www.boe.es/boe/dias/2020/02/24/pdfs/BOE-A-2020-2573.pdf) |
 | NHTSA, interferencia de acetona (Flores y Frank) | DOT HS 806 922, 1985 | PDF | [descargar](https://rosap.ntl.bts.gov/view/dot/1406/dot_1406_DS1.pdf) |
 | Intoximeters, libro blanco de celdas de combustible | Sin fecha (datos de los años 90) | Web | [abrir](https://www.intox.com/fuel-cell-white-paper/) |
@@ -301,7 +301,7 @@ El módulo parece pensado para el mercado chino. Los umbrales por defecto (20 y 
 
 | Sustancia | Respuesta en celdas de combustible de aliento | Fuente |
 |---|---|---|
-| Etanol (enjuague bucal, desinfectante de manos, bebida reciente) | Lee como alcohol. El alcohol residual en la boca es un riesgo de sobrecarga | [Dart](https://www.dart-sensors.com/wp-content/uploads/2021/10/16mm_breath_alcohol_sensor_product_datasheet.pdf); [OIML R 126](https://www.oiml.org/en/files/pdf_r/r126-e12.pdf) (15 min sin meter nada en la boca). Ver nota |
+| Etanol (enjuague bucal, desinfectante de manos, bebida reciente) | Lee como alcohol. El alcohol residual en la boca es un riesgo de sobrecarga | [Dart](https://www.dart-sensors.com/wp-content/uploads/2021/10/16mm_breath_alcohol_sensor_product_datasheet.pdf) ([copia local](datasheets/16mm_breath_alcohol_sensor_product_datasheet.pdf)); [OIML R 126](https://www.oiml.org/en/files/pdf_r/r126-e12.pdf) ([copia local](datasheets/r126-e12.pdf)) (15 min sin meter nada en la boca). Ver nota |
 | Isopropanol (desinfectante, limpiador) | Lee. Alco-Sensor: 0,042 con una dosis equivalente a 0,1 de BAC | [Intoximeters](https://www.intox.com/fuel-cell-white-paper/); Dart (sensible) |
 | Metanol | Lee. Alco-Sensor: 0,043–0,047 con equivalente a 0,1 | Intoximeters; Dart (sensible) |
 | Acetona | 0,0 en Alco-Sensor III y IV; "sin sensibilidad" según Dart | Intoximeters; Dart |
@@ -327,7 +327,7 @@ Notas:
 - **Referencias de la industria:**
   - Dräger Alcotest 7000: calibración cada **12 meses**, frente a los 6 meses "típicos" de otros ([Dräger](https://www.draeger.com/en_uk/Products/Alcotest-7000)).
   - AlcoSense: recalibrar cada **12 meses**, 23,99 £ en su laboratorio ([AlcoSense](https://www.alcosense.co.uk/alcosense/calibration-and-servicing.html)).
-  - Dart: en equipos evidenciales de la policía británica, cada **6 meses** por ley; vida de la celda de 3 a 5 años; el pico de salida baja con la edad ([Dart](https://www.dart-sensors.com/wp-content/uploads/2021/10/16mm_breath_alcohol_sensor_product_datasheet.pdf)).
+  - Dart: en equipos evidenciales de la policía británica, cada **6 meses** por ley; vida de la celda de 3 a 5 años; el pico de salida baja con la edad ([Dart](https://www.dart-sensors.com/wp-content/uploads/2021/10/16mm_breath_alcohol_sensor_product_datasheet.pdf) ([copia local](datasheets/16mm_breath_alcohol_sensor_product_datasheet.pdf))).
   - Un distribuidor español recomendaba limpiar y recalibrar las máquinas de bar cada 4–5 meses; un laboratorio de calibración costaba más de 5.000 € ([Eroski Consumer, 2007](https://www.consumer.es/?p=33931), anterior a la norma vigente).
   - **Lion:** no encontré fuente.
 - **Qué se espera del instrumento:** OIML R 126 pide deriva a largo plazo menor de 0,020 mg/L en dos meses a 0,40 mg/L. El ZE29A no declara deriva.
@@ -338,7 +338,7 @@ Notas:
 
 - El manual no da tiempo de recuperación. Solo dice que tras uso prolongado en alta concentración la recuperación es lenta.
 - Libro blanco de Intoximeters: en medición por pico, pruebas positivas repetidas bajaban las lecturas y la recuperación podía tardar "16 a 24 horas"; el método de integral que defiende lo evita. Es dato del fabricante y de estudios antiguos; **desconocemos qué hace el ZE29A**.
-- Dart: la línea base puede derivar a negativo tras pruebas repetidas ([Dart](https://www.dart-sensors.com/wp-content/uploads/2021/10/16mm_breath_alcohol_sensor_product_datasheet.pdf)).
+- Dart: la línea base puede derivar a negativo tras pruebas repetidas ([Dart](https://www.dart-sensors.com/wp-content/uploads/2021/10/16mm_breath_alcohol_sensor_product_datasheet.pdf) ([copia local](datasheets/16mm_breath_alcohol_sensor_product_datasheet.pdf))).
 - **Conclusión mía:** sin lectura bruta, el único indicador es el comportamiento. Registra el resultado de cada prueba y, tras un resultado alto, impón una pausa mínima antes de la siguiente. Esa pausa hay que medirla en banco (soplido alto, y luego soplidos en blanco hasta que el valor vuelva a ≈ 0).
 
 ## 7. Fallos, bugs y problemas conocidos
@@ -369,13 +369,13 @@ Los nueve comandos son: estado, resultado, cambio de estado, tiempo de soplido, 
 
 ### 7.3 Exactitud frente a un instrumento legal
 
-El ZE29A declara ± 0,050 mg/L por debajo de 0,400 mg/L. OIML R 126 exige en servicio ± 0,030 mg/L o 7,5 % (lo mayor), y ± 0,020 mg/L o 5 % al principio ([OIML](https://www.oiml.org/en/files/pdf_r/r126-e12.pdf)). Con el límite español de 0,25 mg/L, ± 0,05 mg/L es un ± 20 % (cálculo mío). Es coherente con "orientativo".
+El ZE29A declara ± 0,050 mg/L por debajo de 0,400 mg/L. OIML R 126 exige en servicio ± 0,030 mg/L o 7,5 % (lo mayor), y ± 0,020 mg/L o 5 % al principio ([OIML](https://www.oiml.org/en/files/pdf_r/r126-e12.pdf) ([copia local](datasheets/r126-e12.pdf))). Con el límite español de 0,25 mg/L, ± 0,05 mg/L es un ± 20 % (cálculo mío). Es coherente con "orientativo".
 
 ### 7.4 Temperatura, humedad y condensación
 
 - El rango de trabajo es 10–40 °C. La guía usa 40 °C como límite para decidir si añade un ventilador (porque el Solo admite hasta 40 °C); el sensor va dentro de la caja interior, cerca de la Pi.
-- Dart pide mantener el recorrido de gas corto y calentarlo a al menos 35 °C para evitar condensación, y avisa de que extremos de humedad pueden dañar la celda o provocar fuga de electrolito ([Dart](https://www.dart-sensors.com/wp-content/uploads/2021/10/16mm_breath_alcohol_sensor_product_datasheet.pdf)).
-- La salida de la celda sube con la temperatura entre unos 20 y 40 °C y luego baja; hace falta compensación por unidad ([Dart](https://www.dart-sensors.com/wp-content/uploads/2021/10/16mm_breath_alcohol_sensor_product_datasheet.pdf)). El ZE29A lleva compensación interna, pero **no se documenta su calidad**.
+- Dart pide mantener el recorrido de gas corto y calentarlo a al menos 35 °C para evitar condensación, y avisa de que extremos de humedad pueden dañar la celda o provocar fuga de electrolito ([Dart](https://www.dart-sensors.com/wp-content/uploads/2021/10/16mm_breath_alcohol_sensor_product_datasheet.pdf) ([copia local](datasheets/16mm_breath_alcohol_sensor_product_datasheet.pdf))).
+- La salida de la celda sube con la temperatura entre unos 20 y 40 °C y luego baja; hace falta compensación por unidad ([Dart](https://www.dart-sensors.com/wp-content/uploads/2021/10/16mm_breath_alcohol_sensor_product_datasheet.pdf) ([copia local](datasheets/16mm_breath_alcohol_sensor_product_datasheet.pdf))). El ZE29A lleva compensación interna, pero **no se documenta su calidad**.
 - El manual de las celdas ME2 pone 15–90 % HR sin condensación ([13×13](https://www.winsen-sensor.com/d/files/manual/me2-c2h5oh-13%C3%9713.pdf)). Un aliento a 35 °C y casi saturado entra en un tubo a 20–25 °C: la condensación es probable. **Tubo corto y pendiente hacia fuera**, conclusión mía.
 
 ### 7.5 Alcohol residual, enjuague y desinfectante
@@ -415,12 +415,12 @@ La página del producto lleva "© 2025" y la tienda de Winsen muestra 499 unidad
 
 Solo lo que dicen las fuentes. **No es asesoramiento legal.**
 
-1. **Orden ITC/3707/2006: está derogada.** Regulaba el control metrológico del Estado de los etilómetros usados para imponer sanciones, hacer pruebas judiciales o aplicar normas que exijan su uso (art. 1). La derogó la Orden ICT/155/2020 (disposición derogatoria única, letra n), con efectos del 24-10-2020. Fuentes: [BOE, texto de la ITC/3707/2006](https://www.boe.es/boe/dias/2006/12/07/pdfs/A42985-42990.pdf), [BOE consolidado](https://www.boe.es/eli/es/o/2006/11/22/itc3707/con) y [BOE, ICT/155/2020](https://www.boe.es/boe/dias/2020/02/24/pdfs/BOE-A-2020-2573.pdf). **Discrepancia:** una copia comercial del texto ([iberley.es](https://www.iberley.es/legislacion/orden-itc-3707-2006-22-noviembre-regula-control-metrologico-estado-instrumentos-destinados-medir-concentracion-alcohol-aire-espirado-4156772)) todavía la marca "vigente"; manda el BOE. (Otra orden de la misma fecha, la ITC/3748/2006, es de los contadores de máquinas recreativas y también está derogada; **no la confundas**.)
+1. **Orden ITC/3707/2006: está derogada.** Regulaba el control metrológico del Estado de los etilómetros usados para imponer sanciones, hacer pruebas judiciales o aplicar normas que exijan su uso (art. 1). La derogó la Orden ICT/155/2020 (disposición derogatoria única, letra n), con efectos del 24-10-2020. Fuentes: [BOE, texto de la ITC/3707/2006](https://www.boe.es/boe/dias/2006/12/07/pdfs/A42985-42990.pdf) ([copia local](datasheets/A42985-42990.pdf)), [BOE consolidado](https://www.boe.es/eli/es/o/2006/11/22/itc3707/con) y [BOE, ICT/155/2020](https://www.boe.es/boe/dias/2020/02/24/pdfs/BOE-A-2020-2573.pdf). **Discrepancia:** una copia comercial del texto ([iberley.es](https://www.iberley.es/legislacion/orden-itc-3707-2006-22-noviembre-regula-control-metrologico-estado-instrumentos-destinados-medir-concentracion-alcohol-aire-espirado-4156772)) todavía la marca "vigente"; manda el BOE. (Otra orden de la misma fecha, la ITC/3748/2006, es de los contadores de máquinas recreativas y también está derogada; **no la confundas**.)
 2. **Orden ICT/155/2020** regula el control metrológico de una lista de instrumentos que se usen para los fines del art. 8.1 de la Ley 32/2014: interés público, salud y seguridad públicas, protección e información de consumidores, recaudación, sanciones, peritajes judiciales, comercio leal y otros. El **Anexo XIII** es "Instrumentos destinados a medir la concentración de alcohol en el aire espirado". **No pude leer el anexo** (mi herramienta corta el texto antes). Por otras fuentes:
    - Un listado de instrumentos con control metrológico de la Junta de Andalucía (marzo de 2026) incluye los etilómetros bajo la ICT/155/2020, Anexo XIII, con **verificación de 1 año** ([PDF](https://juntadeandalucia.es/sites/default/files/2026-03/20260323.INSTRUMENTOS_CONTROL_METROLOGICO.pdf)).
    - Una compilación secundaria ([causadirecta.com](https://mail.causadirecta.com/ficheros/ICT-155_EMP%20Etil%C3%B3metros.pdf)) cita errores máximos de 0,020 mg/L o 5 % en el primer año y 0,030 mg/L o 7,5 % con más de un año, según OIML R 126. **Sin verificar en el BOE.**
 3. **Directiva de instrumentos de medida (2014/32/UE):** los etilómetros no figuran entre los instrumentos cubiertos, según [euronorm.net](https://www.euronorm.net/content/ce-marking/directives/explanation/2014-32-eu.php) (fuente secundaria). De ahí deduzco (conclusión mía) que la regulación es nacional. **No abrí el texto de la directiva.**
-4. **OIML R 126 (2012):** cubre solo los analizadores **evidenciales** cuantitativos; excluye los de cribado y los de "pasa / no pasa" ([OIML](https://www.oiml.org/en/files/pdf_r/r126-e12.pdf)).
+4. **OIML R 126 (2012):** cubre solo los analizadores **evidenciales** cuantitativos; excluye los de cribado y los de "pasa / no pasa" ([OIML](https://www.oiml.org/en/files/pdf_r/r126-e12.pdf) ([copia local](datasheets/r126-e12.pdf))).
 5. **Eroski Consumer (2007):** los tickets de las máquinas de bar no tienen validez como prueba en un control; las máquinas no estaban homologadas ni se verificaban periódicamente; la DGT advertía de que no todas eran fiables ([Consumer](https://www.consumer.es/?p=33931)). **Es anterior a la ICT/155/2020**: puede no reflejar la situación actual.
 6. **La guía** propone mostrar el resultado como "orientativo".
 
@@ -463,9 +463,9 @@ Solo hay motivo para mirarlas por los huecos de la [sección 7](#7-fallos-bugs-y
 
 | Opción | Qué es | Pros | Contras | Fuente |
 |---|---|---|---|---|
-| **Seguir con el ZE29A** | Módulo cerrado | Detecta soplido, muestrea, calcula. Integración mínima (UART) | Sin datos de vida, deriva ni humedad. No recalibrable | [Manual](https://www.winsen-sensor.com/d/files/manual/ze29a-c2h5oh.pdf) |
+| **Seguir con el ZE29A** | Módulo cerrado | Detecta soplido, muestrea, calcula. Integración mínima (UART) | Sin datos de vida, deriva ni humedad. No recalibrable | [Manual](https://www.winsen-sensor.com/d/files/manual/ze29a-c2h5oh.pdf) ([copia local](datasheets/ze29a-c2h5oh.pdf)) |
 | **Celda Winsen ME2-C2H5OH** (Ф16 o 13×13) | Celda suelta, 0–1 mg/L | Valor bruto y deriva controlables. Datos: T90 ≤ 20 s, estabilidad < 2 %/mes, vida 2–3 años | Hay que diseñar el amplificador, la bomba o electroimán, el sensor de presión y el firmware. Precalentar > 48 h. Los dos manuales **discrepan** en sensibilidad (6 ± 2 frente a 15–125 µA/(mg/L)), vida (2 frente a 3 años) y temperatura | [Ф16](https://www.winsen-sensor.com/d/files/manual/me2-c2h5oh-%D1%8416.pdf), [13×13](https://www.winsen-sensor.com/d/files/manual/me2-c2h5oh-13%C3%9713.pdf) |
-| **Celdas Dart Sensors** (16 mm; variantes Economy, Standard, Professional, High Duty Cycle) | Celda de aliento de diseño evidencial | Vida de 3 a 5 años. Documentación completa de comportamiento (temperatura, respuesta, interferentes) | Requiere electrónica propia. No confirmé compra en la UE ni precios (la página de DigiKey que vi no listaba alcohol) | [Dart](https://www.dart-sensors.com/wp-content/uploads/2021/10/16mm_breath_alcohol_sensor_product_datasheet.pdf) |
+| **Celdas Dart Sensors** (16 mm; variantes Economy, Standard, Professional, High Duty Cycle) | Celda de aliento de diseño evidencial | Vida de 3 a 5 años. Documentación completa de comportamiento (temperatura, respuesta, interferentes) | Requiere electrónica propia. No confirmé compra en la UE ni precios (la página de DigiKey que vi no listaba alcohol) | [Dart](https://www.dart-sensors.com/wp-content/uploads/2021/10/16mm_breath_alcohol_sensor_product_datasheet.pdf) ([copia local](datasheets/16mm_breath_alcohol_sensor_product_datasheet.pdf)) |
 | **Instrumentos completos** (Dräger Alcotest 7000, AlcoSense) | Aparatos de mano | Calibración documentada cada 12 meses | No son módulos integrables; no los he visto en versión OEM | [Dräger](https://www.draeger.com/en_uk/Products/Alcotest-7000), [AlcoSense](https://www.alcosense.co.uk/alcosense/calibration-and-servicing.html) |
 | **No sirven** | ZE30, ZE31, DFRobot SEN0376 (0–5 ppm); MQ-3, MQ303B, MP-3B (semiconductor) | — | Rango ambiental o tecnología inadecuada | [Winsen](https://winsen-sensor.com/alcohol-sensor), [Farnell](https://uk.farnell.com/dfrobot/sen0376/gravity-alcohol-sensor/dp/3769863) |
 
@@ -535,5 +535,7 @@ Son conclusiones mías, no afirmaciones de las fuentes.
 - **Autenticidad:** no tengo fotos del original para comparar.
 
 ## 13. Fuentes
+
+Copias locales de los documentos descargados: [lista en enlaces.md](enlaces.md#copias-locales-de-los-documentos) y carpeta [`datasheets/`](datasheets/).
 
 Todos los enlaces, ordenados por tipo y con nota de lo que no pude abrir, en [`enlaces.md`](enlaces.md).
