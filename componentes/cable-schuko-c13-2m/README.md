@@ -43,9 +43,9 @@ Valores de referencia de un cordón correcto del tipo que describe la hoja. **No
 | Corriente del enchufe según el cable | 10 A / 250 V con cable de 0,75 o 1,0 mm²; 16 A / 250 V con 1,5 mm² (ficha de un enchufe moldeado CEE 7/7) | [Signal & Power YP-23](https://www.signalandpower.com/collections/all/products/cee7-7-schuko-power-cord-plug-yp-23) |
 | Norma del enchufe | DIN VDE 0620-1 (licencia VDE 40005197 en esa ficha); DIN 49441 | [Signal & Power YP-23](https://www.signalandpower.com/collections/all/products/cee7-7-schuko-power-cord-plug-yp-23), [Wikipedia: CEE 7](https://en.wikipedia.org/wiki/CEE_7) |
 | Simetría | La toma Schuko es simétrica y sin polarizar: el enchufe entra de dos formas y la fase puede estar en cualquiera de las dos patillas | [Wikipedia: Schuko](https://en.wikipedia.org/wiki/Schuko) |
-| Conector | C13 (clase I, con tierra), 10 A, 250 V | [Wikipedia: IEC 60320](https://en.wikipedia.org/wiki/IEC_60320), [Schaffner IL 13](https://docs.rs-online.com/3280/A700000015073926.pdf) |
-| Temperatura máxima de la patilla | 70 °C para C13/C14 (120 °C es de C15/C16) | [Wikipedia: IEC 60320](https://en.wikipedia.org/wiki/IEC_60320), [Schaffner IL 13](https://docs.rs-online.com/3280/A700000015073926.pdf) |
-| Alcance de IEC 60320-1 | Tensión asignada hasta 250 V c.a., corriente hasta 16 A. Ambiente de uso de −5 a +40 °C, con media de 24 h de hasta 35 °C | [Vista previa IEC 60320-1 ed. 3.0 (ANSI)](https://webstore.ansi.org/preview-pages/IEC/preview_iec60320-1%7Bed3.0%7Den.pdf) |
+| Conector | C13 (clase I, con tierra), 10 A, 250 V | [Wikipedia: IEC 60320](https://en.wikipedia.org/wiki/IEC_60320), [Schaffner IL 13](https://docs.rs-online.com/3280/A700000015073926.pdf) ([copia local](datasheets/A700000015073926.pdf)) |
+| Temperatura máxima de la patilla | 70 °C para C13/C14 (120 °C es de C15/C16) | [Wikipedia: IEC 60320](https://en.wikipedia.org/wiki/IEC_60320), [Schaffner IL 13](https://docs.rs-online.com/3280/A700000015073926.pdf) ([copia local](datasheets/A700000015073926.pdf)) |
+| Alcance de IEC 60320-1 | Tensión asignada hasta 250 V c.a., corriente hasta 16 A. Ambiente de uso de −5 a +40 °C, con media de 24 h de hasta 35 °C | [Vista previa IEC 60320-1 ed. 3.0 (ANSI)](https://webstore.ansi.org/preview-pages/IEC/preview_iec60320-1%7Bed3.0%7Den.pdf) ([copia local](datasheets/preview_iec60320-1_ed3.0_en.pdf)) |
 | Tipo de cable | H05VV-F: PVC, 300/500 V, tipo "ordinary duty" | [Letronic](https://www.letronic.de/en/produkte/datenblatt/353/h05vv-f-acc-to-vde-0285), [BASEC](https://www.basec.org.uk/uploads/certificates/227-001-030.pdf) |
 | Norma del cable | EN 50525-2-11 (2011). DIN la publica como DIN EN 50525-2-11:2012-01 y dice que sustituye a DIN VDE 0281-12 y 0281-5. Aviso mío: VDE 0281-5 es la versión alemana de HD 21.5 (conocimiento mío, no leído en la fuente) | [DIN Media](https://www.dinmedia.de/en/standard/din-en-50525-2-11/146332248) |
 | Resistencia del conductor (3G0,75) | Máx. 26 Ω/km a 20 °C (clase 5). Para 3G1,0: 19,5; para 3G1,5: 13,3 | [Nexans](https://latrivenetacavi.nexans.com/en/products/industrial-and-logistics/industrial-Eca-class/H05VV-F38485.html), [Multicomp Pro](https://cdn3.components.ru/pdf/902384.pdf) |
@@ -64,30 +64,30 @@ Un cable de red no tiene "datasheet" propio: la ficha es la norma del cable, la 
 
 | Documento | Referencia | Formato | Enlace |
 |---|---|---|---|
-| Conectores de aparato (C13/C14) | IEC 60320-1 / EN IEC 60320-1:2021 (cancela EN 60320-1:2015) | Portada y vista previa | [Vista previa ed. 3.0 (ANSI)](https://webstore.ansi.org/preview-pages/IEC/preview_iec60320-1%7Bed3.0%7Den.pdf) · [Portada eslovaca de la edición 2021](https://normy.normoff.gov.sk/norma/134085/nahlad) |
+| Conectores de aparato (C13/C14) | IEC 60320-1 / EN IEC 60320-1:2021 (cancela EN 60320-1:2015) | Portada y vista previa | [Vista previa ed. 3.0 (ANSI)](https://webstore.ansi.org/preview-pages/IEC/preview_iec60320-1%7Bed3.0%7Den.pdf) ([copia local](datasheets/preview_iec60320-1_ed3.0_en.pdf)) · [Portada eslovaca de la edición 2021](https://normy.normoff.gov.sk/norma/134085/nahlad) |
 | Cables flexibles de PVC (H05VV-F) | EN 50525-2-11:2011 (DIN EN 50525-2-11:2012-01) | Ficha de venta | [DIN Media](https://www.dinmedia.de/en/standard/din-en-50525-2-11/146332248) |
 | Certificado de un fabricante de cable H05VV-F | BASEC 227/001/030 (caducó el 31-07-2021) | PDF | [Descargar](https://www.basec.org.uk/uploads/certificates/227-001-030.pdf) |
 | Cables flexibles de PVC (IEC) | IEC 60227-5 (cables flexibles) | No abierto | Sin enlace: no lo he visto en ninguna página |
 | Cables de goma (H05RR-F) | EN 50525-2-21 | No abierto | Sin enlace: no lo he visto en ninguna página |
 | Cordones y cordones de interconexión | IEC 60799 | Vista previa bloqueada para mi herramienta (robots) | Sin enlace verificado |
 | Enchufes y tomas | IEC 60884-1; DIN VDE 0620-1; DIN 49441; DIN 49440-1 | Solo citados por otras páginas | [Wikipedia: CEE 7](https://en.wikipedia.org/wiki/CEE_7), [Wikipedia: Schuko](https://en.wikipedia.org/wiki/Schuko) |
-| Seguridad de aparatos | IEC 60335-1 (cláusula 25: conexión a la red y cables exteriores) | Solo su título, en el índice de la vista previa de la parte 2-82 | [Vista previa de IEC 60335-2-82 (ANSI)](https://webstore.ansi.org/preview-pages/IEC/preview_iec60335-2-82%7Bed2.1%7Db.pdf) |
-| Máquinas recreativas y de servicio personal | IEC 60335-2-82:2024 (4.ª ed.) | Ficha y vista previa | [EVS](https://evs.ee/en/iec-60335-2-82-2024) · [Vista previa ed. 2.1 (ANSI)](https://webstore.ansi.org/preview-pages/IEC/preview_iec60335-2-82%7Bed2.1%7Db.pdf) |
-| REBT, receptores | ITC-BT-43, apartado 2.5 | PDF | [Copia en plcmadrid.es](https://www.plcmadrid.es/wp-content/uploads/ITC-BT-43.pdf) · [Normatia](https://normatia.com/es/normativa/rebt/2025/itc-bt-43-instalacion-de-receptores-prescripciones-generales/) |
-| REBT, colores de conductores | ITC-BT-19, apartado 2.2.4 | PDF | [Copia en plcmadrid.es](https://www.plcmadrid.es/wp-content/uploads/rebt/itc19/ITC-BT-19.pdf) |
-| Cordón con bloqueo IEC Lock (Schaffner/TE) | IL 13, IL 13 P, IL 19 | PDF | [Descargar](https://docs.rs-online.com/3280/A700000015073926.pdf) |
-| Conector hembra de aparato Schurter con muesca V-Lock (ilustra el principio; no es una base C14) | 6600-3, variantes con sufijo ".21" | PDF | [Descargar](https://www.schurter.com/pdf/english/typ_6600-3.pdf) |
+| Seguridad de aparatos | IEC 60335-1 (cláusula 25: conexión a la red y cables exteriores) | Solo su título, en el índice de la vista previa de la parte 2-82 | [Vista previa de IEC 60335-2-82 (ANSI)](https://webstore.ansi.org/preview-pages/IEC/preview_iec60335-2-82%7Bed2.1%7Db.pdf) ([copia local](../documentos-compartidos/normas/preview_iec60335-2-82_ed2.1_b.pdf)) |
+| Máquinas recreativas y de servicio personal | IEC 60335-2-82:2024 (4.ª ed.) | Ficha y vista previa | [EVS](https://evs.ee/en/iec-60335-2-82-2024) · [Vista previa ed. 2.1 (ANSI)](https://webstore.ansi.org/preview-pages/IEC/preview_iec60335-2-82%7Bed2.1%7Db.pdf) ([copia local](../documentos-compartidos/normas/preview_iec60335-2-82_ed2.1_b.pdf)) |
+| REBT, receptores | ITC-BT-43, apartado 2.5 | PDF | [Copia en plcmadrid.es](https://www.plcmadrid.es/wp-content/uploads/ITC-BT-43.pdf) ([copia local](datasheets/ITC-BT-43.pdf)) · [Normatia](https://normatia.com/es/normativa/rebt/2025/itc-bt-43-instalacion-de-receptores-prescripciones-generales/) |
+| REBT, colores de conductores | ITC-BT-19, apartado 2.2.4 | PDF | [Copia en plcmadrid.es](https://www.plcmadrid.es/wp-content/uploads/rebt/itc19/ITC-BT-19.pdf) ([copia local](../documentos-compartidos/normas/ITC-BT-19.pdf)) |
+| Cordón con bloqueo IEC Lock (Schaffner/TE) | IL 13, IL 13 P, IL 19 | PDF | [Descargar](https://docs.rs-online.com/3280/A700000015073926.pdf) ([copia local](datasheets/A700000015073926.pdf)) |
+| Conector hembra de aparato Schurter con muesca V-Lock (ilustra el principio; no es una base C14) | 6600-3, variantes con sufijo ".21" | PDF | [Descargar](https://www.schurter.com/pdf/english/typ_6600-3.pdf) ([copia local](datasheets/typ_6600-3.pdf)) |
 | Base C14 de 10 A con V-Lock (Schurter), listada por Farnell | GSF1.1201.31.21 | Página de distribuidor | [Farnell](https://uk.farnell.com/v-lock-iec-power-cords) |
-| Catálogo de cordones internacionales (Interpower) | Marcado, colores y diámetros | PDF | [Descargar](https://blog.interpower.com/hubfs/Interpower_March2018/Docs/intl-cord-set-config-darker.pdf) · [Catálogo 2004](https://www.interpower.com/docs/6000_eem_2004.pdf) |
+| Catálogo de cordones internacionales (Interpower) | Marcado, colores y diámetros | PDF | [Descargar](https://blog.interpower.com/hubfs/Interpower_March2018/Docs/intl-cord-set-config-darker.pdf) ([copia local](datasheets/intl-cord-set-config-darker.pdf)) · [Catálogo 2004](https://www.interpower.com/docs/6000_eem_2004.pdf) |
 | Catálogo de International Configurations | Tabla "0,75 mm² a 6 A, 1,0 a 10 A, 1,5 a 16 A" | PDF | [Descargar](https://internationalconfigurations.com/docs/Catalog_CS09/CS09_12.pdf) |
 | Ficha de H05VV-F (Multicomp Pro) | Resistencia y tabla por sección | PDF | [Descargar](https://cdn3.components.ru/pdf/902384.pdf) |
-| Ficha de un cordón con C13 moldeado (RS PRO) | 3 × 0,75 mm², 10 A, IEC 60227 | PDF | [Descargar](https://www.farnell.com/datasheets/3179146.pdf) |
+| Ficha de un cordón con C13 moldeado (RS PRO) | 3 × 0,75 mm², 10 A, IEC 60227 | PDF | [Descargar](https://www.farnell.com/datasheets/3179146.pdf) ([copia local](datasheets/3179146.pdf)) |
 
 ### Qué dicen los más relevantes
 
 - **IEC 60320-1** (vista previa de la ed. 3.0): el alcance es hasta 250 V y 16 A. El índice tiene la cláusula 16 (fuerzas de inserción y extracción, con máxima en 16.2 y mínima en 16.3), la 22.2 (anclaje del cable en el conector, con ensayo de tracción en 22.2.3) y la Tabla 9 ("tipo y sección nominal de los cables"). **No pude ver ni las fuerzas ni la tabla.** La numeración puede haber cambiado en la edición de 2021.
 - **EN 50525-2-11:** es la norma europea del H05VV-F. Según DIN, cubre cables de PVC flexibles de hasta 300/500 V "para la conexión de aparatos domésticos a la red fija". Sustituye a las partes de HD 21 que antes cubrían este cable ([DIN Media](https://www.dinmedia.de/en/standard/din-en-50525-2-11/146332248)). El certificado de BASEC la cita como "BS EN 50525-2-11:2011", con aislante tipo TI2 y cubierta tipo TM2, conductor de clase 5 de 0,75 a 4 mm² y marcado de origen más hilo trazador ([BASEC](https://www.basec.org.uk/uploads/certificates/227-001-030.pdf)).
-- **ITC-BT-43, apartado 2.5** (texto en la [copia de plcmadrid.es](https://www.plcmadrid.es/wp-content/uploads/ITC-BT-43.pdf)):
+- **ITC-BT-43, apartado 2.5** (texto en la [copia de plcmadrid.es](https://www.plcmadrid.es/wp-content/uploads/ITC-BT-43.pdf) ([copia local](datasheets/ITC-BT-43.pdf))):
   - el receptor se conecta "por intermedio de un cable apto para usos móviles";
   - para uso doméstico o análogo, el cable flexible debe estar "fijado permanentemente al aparato" o "fijado al aparato por medio de un conector";
   - los cables, a la entrada del aparato, "estarán protegidos contra los riesgos de tracción";
@@ -95,7 +95,7 @@ Un cable de red no tiene "datasheet" propio: la ficha es la norma del cable, la 
   - tensión asignada del cable: la de alimentación y "nunca inferior a 300/300 V";
   - sección: "no serán inferiores a 0,5 mm²";
   - clavijas conformes a UNE 20315 o UNE EN 50075.
-- **ITC-BT-19, apartado 2.2.4:** neutro de color azul claro, protección de verde-amarillo, fases en marrón, negro o gris ([plcmadrid.es](https://www.plcmadrid.es/wp-content/uploads/rebt/itc19/ITC-BT-19.pdf)). Es el código de colores de la instalación; los cordones usan el de HD 308 (marrón, azul, verde-amarillo).
+- **ITC-BT-19, apartado 2.2.4:** neutro de color azul claro, protección de verde-amarillo, fases en marrón, negro o gris ([plcmadrid.es](https://www.plcmadrid.es/wp-content/uploads/rebt/itc19/ITC-BT-19.pdf) ([copia local](../documentos-compartidos/normas/ITC-BT-19.pdf))). Es el código de colores de la instalación; los cordones usan el de HD 308 (marrón, azul, verde-amarillo).
 - **IEC 60335-2-82:2024:** según EVS cubre máquinas recreativas y de servicio personal comerciales de hasta 250 V monofásicas; se basa en IEC 60335-1:2020. En el índice de la vista previa aparece la cláusula 25, "Conexión a la red y cables exteriores flexibles", pero **su texto no es visible**. Una máquina de este tipo probablemente cae aquí (así lo dice la guía §9); no lo he comprobado.
 
 ## 4. Sección y tipo de cable: qué dice cada fuente
@@ -105,14 +105,14 @@ La pregunta de partida era qué sección lleva un cable Schuko–C13 de 2 m y po
 | Fuente | Qué dice | Tipo |
 |---|---|---|
 | [Schurter](https://schurter.com/en/knowledge/power-cords) | Tabla por clase de conector: **10 A** (en frío): 0,75 mm² mínimo, cable 60227 IEC 53 o 60245 IEC 53. 16 A: 1 mm². 2,5 A: 0,75 mm² (0,5 mm² si el cable mide ≤ 2 m y es clase II). 6 A: 0,75 mm², cable 60227 IEC 52. Para cables de más de 2 m: 1 mm² con 10 A y 1,5 mm² con 16 A | Fabricante, resume la norma |
-| [Interpower, hoja de configuraciones internacionales](https://blog.interpower.com/hubfs/Interpower_March2018/Docs/intl-cord-set-config-darker.pdf) | Nota al pie: "Cord set may not exceed 2 meters on .75mm2 cable. Reference IEC 60320-1". La hoja aplica notas parecidas de 2 m a las filas de 1,0 y 0,5 mm² (no sé a qué corriente corresponde cada una) | Fabricante |
+| [Interpower, hoja de configuraciones internacionales](https://blog.interpower.com/hubfs/Interpower_March2018/Docs/intl-cord-set-config-darker.pdf) ([copia local](datasheets/intl-cord-set-config-darker.pdf)) | Nota al pie: "Cord set may not exceed 2 meters on .75mm2 cable. Reference IEC 60320-1". La hoja aplica notas parecidas de 2 m a las filas de 1,0 y 0,5 mm² (no sé a qué corriente corresponde cada una) | Fabricante |
 | [Machine Design, nota de Interpower (2006)](https://www.machinedesign.com/archive/molded-power-cords-danish-medical) | Cordones moldeados para equipos de hasta 10 A / 250 V: existencias de cable HAR de 0,75 mm² en 2,0 m y de 1,00 mm² en 2,5 m | Fabricante, nota antigua |
 | [International Configurations, catálogo](https://internationalconfigurations.com/docs/Catalog_CS09/CS09_12.pdf) | "0.75 mm2 @6 Ampere, 1.0 mm2 @ 10 Ampere, 1.5 mm2 @ 16 Ampere" (cordones de 2,5 m y 1,8 m) | Fabricante |
 | [RS PRO, cable 3G0,75](https://uk.rs-online.com/web/p/power-cable/7756110) | Corriente asignada del cable: 6 A | Distribuidor |
-| [Schaffner IL 13](https://docs.rs-online.com/3280/A700000015073926.pdf) | Cordones con C13 de 10 A, versión Europa: H05VV-F **3 × 1,00 mm²**; C19 (versión Europa): 3 × 1,50 mm² | Fabricante |
+| [Schaffner IL 13](https://docs.rs-online.com/3280/A700000015073926.pdf) ([copia local](datasheets/A700000015073926.pdf)) | Cordones con C13 de 10 A, versión Europa: H05VV-F **3 × 1,00 mm²**; C19 (versión Europa): 3 × 1,50 mm² | Fabricante |
 | [Signal & Power YP-23](https://www.signalandpower.com/collections/all/products/cee7-7-schuko-power-cord-plug-yp-23) | Enchufe CEE 7/7: 10 A con 0,75 o 1,0 mm²; 16 A solo con 1,5 mm² | Fabricante de enchufes |
 | [Foro mikrocontroller.net](https://www.mikrocontroller.net/topic/356904) | Un usuario copia (de Sengpiel, no de la norma) una tabla de VDE 0100-520: aparatos hasta 2,5 A y cable ≤ 2 m: 0,5 mm²; aparatos hasta 10 A con conectores de hasta 10 A: 0,75 mm² | Foro, tercera mano |
-| [ITC-BT-43](https://www.plcmadrid.es/wp-content/uploads/ITC-BT-43.pdf) | Mínimo legal en España para cables de receptores: 0,5 mm² | Reglamento |
+| [ITC-BT-43](https://www.plcmadrid.es/wp-content/uploads/ITC-BT-43.pdf) ([copia local](datasheets/ITC-BT-43.pdf)) | Mínimo legal en España para cables de receptores: 0,5 mm² | Reglamento |
 
 **Lectura mía:**
 
@@ -131,7 +131,7 @@ Lo que he visto impreso en cable armonizado (no es la lista de la norma):
 - La marca armonizada **<HAR>** puede ir en la cubierta, en un hilo interior o con un hilo trazador ([Interpower](https://www.interpower.com/docs/6000_eem_2004.pdf)).
 - Helukabel marca además la longitud en metros en la cubierta ([Helukabel](https://shop.helukabel.com/us-en/h05vv-f-05vv-f-m29450/30125)).
 - BASEC certifica el cable con marca de origen y, opcionalmente, un hilo de color ([BASEC](https://www.basec.org.uk/uploads/certificates/227-001-030.pdf)).
-- Los enchufes y conectores certificados llevan el logotipo del organismo (VDE, ENEC) y un número de licencia: p. ej. licencia VDE 40005197 en [Signal & Power](https://www.signalandpower.com/collections/all/products/cee7-7-schuko-power-cord-plug-yp-23) y certificado VDE 40017345 en el [conector 6600-3 de Schurter](https://www.schurter.com/pdf/english/typ_6600-3.pdf). El anuncio de un cordón CEE 7/7–C13 en Galaxus lista "ENEC10 y VDE" ([Good Connections](https://www.galaxus.de/en/s4/product/good-connections-mains-cable-earthing-contact-plug-type-ef-cee-77-angled-to-c13-straight-white-075-m-18210747)).
+- Los enchufes y conectores certificados llevan el logotipo del organismo (VDE, ENEC) y un número de licencia: p. ej. licencia VDE 40005197 en [Signal & Power](https://www.signalandpower.com/collections/all/products/cee7-7-schuko-power-cord-plug-yp-23) y certificado VDE 40017345 en el [conector 6600-3 de Schurter](https://www.schurter.com/pdf/english/typ_6600-3.pdf) ([copia local](datasheets/typ_6600-3.pdf)). El anuncio de un cordón CEE 7/7–C13 en Galaxus lista "ENEC10 y VDE" ([Good Connections](https://www.galaxus.de/en/s4/product/good-connections-mains-cable-earthing-contact-plug-type-ef-cee-77-angled-to-c13-straight-white-075-m-18210747)).
 
 **No he podido leer el artículo de EN 50525-1 que fija qué es obligatorio imprimir.** Mi regla práctica (conclusión mía): al menos fabricante o marca de origen, **<HAR>** (o marca del organismo), "H05VV-F" y "3G0,75" (o 3 x 0,75). Si falta cualquiera, no vale como prueba de nada.
 
@@ -169,13 +169,13 @@ La norma de los conectores (IEC 60320-1) define acoplamientos **sin bloqueo**: h
 
 | Opción | Cómo funciona | Encaja en una C14 genérica | Fuente |
 |---|---|---|---|
-| **IEC Lock+ / IL 13 (Schaffner/TE)** | C13 con un mecanismo interno que agarra el pin de tierra; se suelta con un deslizador. Fuerza de bloqueo típica 200 N (Schaffner) o 300 N (Scolmore LOCK+). Versiones recta, acodada hacia arriba y hacia abajo | Sí: "cualquier base IEC estándar" | [Canford](https://www.canford.co.uk/AC-MAINS-POWER-LEADS-IEC-LOCK+), [Schaffner IL 13](https://docs.rs-online.com/3280/A700000015073926.pdf), [Argosy (Scolmore)](https://www.argosycable.com/product/lock-c13-updown-iec-connector), [Electropages](https://electropages.com/2022/08/innovative-iec-connector-two-locking-systems-power-connector-range) |
-| **V-Lock (Schurter)** | Un pasador del conector entra en una muesca de la base; se suelta con una palanca amarilla. Mínimo 200 N de extracción | **No**: exige una base con muesca (sufijo ".21"; Farnell lista la GSF1.1201.31.21, C14 de 10 A) | [Farnell](https://uk.farnell.com/v-lock-iec-power-cords), [Schurter 6600-3](https://www.schurter.com/pdf/english/typ_6600-3.pdf) (conector hembra con la misma muesca) |
+| **IEC Lock+ / IL 13 (Schaffner/TE)** | C13 con un mecanismo interno que agarra el pin de tierra; se suelta con un deslizador. Fuerza de bloqueo típica 200 N (Schaffner) o 300 N (Scolmore LOCK+). Versiones recta, acodada hacia arriba y hacia abajo | Sí: "cualquier base IEC estándar" | [Canford](https://www.canford.co.uk/AC-MAINS-POWER-LEADS-IEC-LOCK+), [Schaffner IL 13](https://docs.rs-online.com/3280/A700000015073926.pdf) ([copia local](datasheets/A700000015073926.pdf)), [Argosy (Scolmore)](https://www.argosycable.com/product/lock-c13-updown-iec-connector), [Electropages](https://electropages.com/2022/08/innovative-iec-connector-two-locking-systems-power-connector-range) |
+| **V-Lock (Schurter)** | Un pasador del conector entra en una muesca de la base; se suelta con una palanca amarilla. Mínimo 200 N de extracción | **No**: exige una base con muesca (sufijo ".21"; Farnell lista la GSF1.1201.31.21, C14 de 10 A) | [Farnell](https://uk.farnell.com/v-lock-iec-power-cords), [Schurter 6600-3](https://www.schurter.com/pdf/english/typ_6600-3.pdf) ([copia local](datasheets/typ_6600-3.pdf)) (conector hembra con la misma muesca) |
 | **Bloqueos de tornillo o sin herramientas (Interpower)** | Abrazadera alrededor del C13 que se fija a la base | **Solo con bases de montaje con tornillos** | [Interpower](https://www.interpower.com/ic/designers/in-depth-product-line-information/More-information-on-Connector-Locks.html) |
 | **Abrazadera de cable propia en el panel** | El cable queda sujeto a la carcasa para que el tirón vaya a la abrazadera y no al conector | Sí, es mecánica de la carcasa | Conclusión mía |
 | **Bridas** | Atar el cable a un punto fijo | Sí, pero ver REBT abajo | ITC-BT-43 |
 
-- **REBT:** ITC-BT-43 §2.5 dice que no se permite anudar los cables o atarlos al receptor ([copia en plcmadrid.es](https://www.plcmadrid.es/wp-content/uploads/ITC-BT-43.pdf)). Es una prohibición dirigida a quien sustituye un anclaje por un nudo. **Mi lectura: las bridas como único anclaje no son prudentes; una abrazadera diseñada para cable, o un conector con bloqueo, sí.** No he encontrado una interpretación oficial.
+- **REBT:** ITC-BT-43 §2.5 dice que no se permite anudar los cables o atarlos al receptor ([copia en plcmadrid.es](https://www.plcmadrid.es/wp-content/uploads/ITC-BT-43.pdf) ([copia local](datasheets/ITC-BT-43.pdf))). Es una prohibición dirigida a quien sustituye un anclaje por un nudo. **Mi lectura: las bridas como único anclaje no son prudentes; una abrazadera diseñada para cable, o un conector con bloqueo, sí.** No he encontrado una interpretación oficial.
 - Todos los bloqueos **grapan el C13 al pin de tierra o a la base**: antes de comprar 10 cordones, prueba uno en la base C14 del módulo #15, que es genérica y no he visto. Puede que el pin de tierra no tenga la forma o la tolerancia del estándar.
 - Interpower avisa de que "un conector parcialmente acoplado podría causar un incendio", así que el C13 debe quedar del todo encajado, con o sin bloqueo ([Interpower](https://www.interpower.com/ic/designers/in-depth-product-line-information/More-information-on-Connector-Locks.html)).
 - **Qué dice la guía:** "con una C14 el cable es desmontable y el propio conector C13 hace de anclaje" (§2.7). Es cierto en un sentido y engañoso en otro:
@@ -339,5 +339,7 @@ Son conclusiones mías, no afirmaciones de las fuentes.
 - **Ninguna compra ni medida física:** todas las comprobaciones del apartado 7 son recomendaciones mías, no hechas.
 
 ## 10. Fuentes
+
+Copias locales de los documentos descargados: [lista en enlaces.md](enlaces.md#copias-locales-de-los-documentos) y carpeta [`datasheets/`](datasheets/).
 
 Todos los enlaces, ordenados por tipo, en [`enlaces.md`](enlaces.md).

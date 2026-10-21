@@ -5,7 +5,7 @@ Todas las páginas y PDF consultados para la [ficha](README.md), reunidos el 21-
 ## Documentos oficiales de Mean Well
 
 - [Hoja LRS-50 (LRS-50-SPEC), oficial](https://www.meanwell.com/Upload/PDF/LRS-50/LRS-50-SPEC.PDF) — **no abierto: mi herramienta rechazó la petición** (permiso sin resolver). Es el documento que me diste.
-- [Manual de instalación "Enclosed Type", inglés, oficial](https://www.meanwell.com/Upload/PDF/Enclosed_Type_EN.pdf) — **no abierto** (misma razón). Leí una copia (abajo).
+- [Manual de instalación "Enclosed Type", inglés, oficial](https://www.meanwell.com/Upload/PDF/Enclosed_Type_EN.pdf) ([copia local](datasheets/Enclosed_Type_EN.pdf)) — **no abierto** (misma razón). Leí una copia (abajo).
 - [Manual de instalación "Enclosed Type", español](https://www.meanwell.com/Upload/PDF/Enclosed_Type_SP.pdf) y [italiano](https://www.meanwell.com/Upload/PDF/Enclosed_Type_IT.pdf) — salieron en la búsqueda, no abiertos.
 - [Página de documentos y software de la LRS-50](https://www.meanwell.com/webapp/product/search.aspx?prod=LRS-50) — enlace que da Elmark; no abierto.
 - [Declaración CE LRS-35,50 en meanwell.com](https://www.meanwell.com/upload/pdf/LRS-35/LRS-35,50-CE-dec.pdf) — enlace que da Elmark; no abierto.
@@ -16,19 +16,19 @@ Todas las páginas y PDF consultados para la [ficha](README.md), reunidos el 21-
 
 ## PDF para descargar (copias de la hoja, de la más nueva a la más antigua)
 
-- [LRS-50-SPEC 2025-04-07, Mean Well Australia](https://www.meanwellaustralia.com.au/sites/default/files/2025-05/MEAN%20WELL%20LRS-50%20DATA%20SHEET.pdf) — abierto. **Hoja de referencia de la ficha.**
+- [LRS-50-SPEC 2025-04-07, Mean Well Australia](https://www.meanwellaustralia.com.au/sites/default/files/2025-05/MEAN%20WELL%20LRS-50%20DATA%20SHEET.pdf) ([copia local](datasheets/MEAN_WELL_LRS-50_DATA_SHEET.pdf)) — abierto. **Hoja de referencia de la ficha.**
 - [LRS-50-SPEC 2022-02-18, Angst+Pfister (apsoparts)](https://www.apsoparts.com/media/downloads/asset//std.lang.all/05/22/LRS-50_1680-21407-0000-E-0522.pdf) — abierto.
-- [LRS-50-SPEC 2019-07-23, pulsar.pl](https://lib.pulsar.pl/karta/es/LRS-50-5.pdf) — abierto (con traducción automática al español).
+- [LRS-50-SPEC 2019-07-23, pulsar.pl](https://lib.pulsar.pl/karta/es/LRS-50-5.pdf) ([copia local](datasheets/LRS-50-5.pdf)) — abierto (con traducción automática al español).
 - [LRS-50-SPEC 2015-12-31, RS Components](https://docs.rs-online.com/19bc/0900766b814e41ec.pdf) — abierto.
 - [LRS-50-SPEC 2015-06-16, piekarz.pl](https://piekarz.pl/pdf/27180) — abierto.
 - [Copia sin fecha visible, Rapid Electronics](https://static.rapidonline.com/pdf/85-5643_v1.pdf) — abierto. Contenido igual que la de 2015-06-16; es la que mejor conserva el texto de las notas 1 a 9.
-- Otras copias que **no abrí**: [Electrokit, hoja](https://www.electrokit.com/upload/quick/d2/7a/6dad_LRS-50-tds.pdf) (rechazada por la herramienta), [Metaltex](https://metaltex.com.br/cdn/shop/files/LRS-50-SPEC.pdf?v=16745386383833487491), [hqewimg](https://dfsimg2.hqewimg.com/group5/M00/0F/F9/wKhk3mTxNhyAGswvAAu67suohUg923.pdf).
+- Otras copias que **no abrí**: [Electrokit, hoja](https://www.electrokit.com/upload/quick/d2/7a/6dad_LRS-50-tds.pdf) (rechazada por la herramienta), [Metaltex](https://metaltex.com.br/cdn/shop/files/LRS-50-SPEC.pdf?v=16745386383833487491) ([copia local](datasheets/LRS-50-SPEC.pdf)), [hqewimg](https://dfsimg2.hqewimg.com/group5/M00/0F/F9/wKhk3mTxNhyAGswvAAu67suohUg923.pdf).
 - Según Angst+Pfister existe una hoja con código `LRS-50_1680-21407-1178-E-0925.pdf` y un manual `Inst-Manual-Enclosed_1680-21407-0096-E-0122.pdf`: **no tengo enlace ni los he leído**.
 
 ## Manual de instalación
 
-- [Enclosed_Type_EN.pdf, copia de montersi.pl](https://www.montersi.pl/instrukcje/Enclosed_Type_EN.pdf) — abierto. Sin fecha ni versión visibles. Lo que sale: M3,5 y 8-10 kgf·cm para la serie LRS, tabla de calibres, "FG must be connected to earth ground", 10-15 cm a fuentes de calor.
-- [Manual de instalación fechado 2024.10.16, Mean Well Australia](https://www.meanwellaustralia.com.au/sites/default/files/2024-11/Enclosed%20Power%20Supply%20Installation%20Manual.pdf) — abierto. Cubre la LRS; once advertencias (la 9 pide equipo circundante V1 o superior para la LRS, norma taiwanesa); la fila de la LRS en la tabla de tornillos salió desordenada.
+- [Enclosed_Type_EN.pdf, copia de montersi.pl](https://www.montersi.pl/instrukcje/Enclosed_Type_EN.pdf) ([copia local](datasheets/Enclosed_Type_EN.pdf)) — abierto. Sin fecha ni versión visibles. Lo que sale: M3,5 y 8-10 kgf·cm para la serie LRS, tabla de calibres, "FG must be connected to earth ground", 10-15 cm a fuentes de calor.
+- [Manual de instalación fechado 2024.10.16, Mean Well Australia](https://www.meanwellaustralia.com.au/sites/default/files/2024-11/Enclosed%20Power%20Supply%20Installation%20Manual.pdf) ([copia local](datasheets/Enclosed_Power_Supply_Installation_Manual.pdf)) — abierto. Cubre la LRS; once advertencias (la 9 pide equipo circundante V1 o superior para la LRS, norma taiwanesa); la fila de la LRS en la tabla de tornillos salió desordenada.
 - [Manual en Electrokit (LRS-manual.pdf)](https://www.electrokit.com/upload/quick/a8/ad/b694_LRS-manual.pdf) — rechazado por la herramienta.
 - [Copia en Electrokit ("Enclosed Type.pdf")](https://www.electrokit.com/upload/product/41017/41017959/Enclosed%20Type.pdf) — salió en la búsqueda, no abierto.
 - [Pasaporte técnico ruso de Varton (LRS-35 a 350)](https://www.varton.ru/files/VARTON/Паспорта/LED лента/Блоки питания Meanwell рус/Technical passport LRS-35_50_75_100_150_150F_200_350.pdf) — abierto. **No es de Mean Well**: es de un distribuidor. Dice clase I, 60 % de potencia a +70 °C, garantía de 3 años. El enlace tiene espacios y letras cirílicas: puede que haya que copiarlo tal cual.
@@ -36,7 +36,7 @@ Todas las páginas y PDF consultados para la [ficha](README.md), reunidos el 21-
 
 ## Declaración de conformidad y certificados
 
-- [Declaración CE LRS-35,50, versión 4, 12-1-2017 (Mean Well Australia)](https://meanwellaustralia.com.au/sites/default/files/2024-09/MEAN%20WELL%20LRS-50%20CE%20DECLARATION.pdf) — abierto. Cita EN 60950-1, EN 60335-1:2012 y EN 55022/55032; certificados TÜV R50311822, R50313790, R50313121.
+- [Declaración CE LRS-35,50, versión 4, 12-1-2017 (Mean Well Australia)](https://meanwellaustralia.com.au/sites/default/files/2024-09/MEAN%20WELL%20LRS-50%20CE%20DECLARATION.pdf) ([copia local](datasheets/MEAN_WELL_LRS-50_CE_DECLARATION.pdf)) — abierto. Cita EN 60950-1, EN 60335-1:2012 y EN 55022/55032; certificados TÜV R50311822, R50313790, R50313121.
 - [Certificado LRS-50_CER_001, Digimax](https://www.digimax.it/media_import/ALIMENTATORI/MEANWELL/ACDC%20ENCLOSED/LRS-50/LRS-50_CER_001.pdf) — **no abierto: robots.txt lo impide.** (El enlace original tenía espacios en la ruta; aquí van codificados.)
 - [Hilo de Digi-Key: cómo encontrar informes, certificados y 3D de Mean Well](https://forum.digikey.com/t/finding-meanwell-test-report-certificates-3d-stp-file/61323) — abierto.
 - [Hilo en japonés de Digi-Key sobre lo mismo](https://forum.digikey.com/t/meanwell-3d-step/63528) — no abierto.
@@ -46,7 +46,7 @@ Todas las páginas y PDF consultados para la [ficha](README.md), reunidos el 21-
 ## Normas y seguridad
 
 - [EVS: EN IEC 60335-2-82:2022](https://www.evs.ee/en/evs-en-iec-60335-2-82-2022) — abierto. Alcance (máquinas recreativas y de servicio personal), nueva edición 2026 y A1:2025; marca la edición 2022 como retirada desde el 16-9-2026.
-- Salieron en la búsqueda, **no abiertos**: [EVS, IEC 60335-2-82:2024](https://evs.ee/en/iec-60335-2-82-2024), [Genorma, A1:2025](https://genorma.com/en/standards/en-iec-60335-2-82-2022-a1-2025), [vista previa ANSI de la ed. 2.1](https://webstore.ansi.org/preview-pages/IEC/preview_iec60335-2-82%7Bed2.1%7Db.pdf).
+- Salieron en la búsqueda, **no abiertos**: [EVS, IEC 60335-2-82:2024](https://evs.ee/en/iec-60335-2-82-2024), [Genorma, A1:2025](https://genorma.com/en/standards/en-iec-60335-2-82-2022-a1-2025), [vista previa ANSI de la ed. 2.1](https://webstore.ansi.org/preview-pages/IEC/preview_iec60335-2-82%7Bed2.1%7Db.pdf) ([copia local](../documentos-compartidos/normas/preview_iec60335-2-82_ed2.1_b.pdf)).
 - [EE Power: la familia LRS completa el cambio a IEC/EN 62368-1 (26-11-2019)](https://eepower.com/new-industry-products/mean-well-announces-lrs-family-completed-ieculen62368-safety-upgrade) — abierto. No da fecha de lote.
 
 ## Falsificaciones y autenticidad
@@ -71,7 +71,7 @@ Todas las páginas y PDF consultados para la [ficha](README.md), reunidos el 21-
 ## Fusible de entrada
 
 - [Littelfuse 215, hoja (cerámico 5×20 lento)](https://littelfuse.com/%7E/media/electronics/datasheets/fuses/littelfuse_fuse_215_datasheet.pdf.pdf) — abierto. T2,5A: I²t de fusión 22,29 A²s.
-- [Littelfuse, Fuseology Design Guide](https://info.littelfuse.com/hubfs/Fuseology%20Design%20Guide.pdf) — abierto (criterio del 22 % y del 75 %).
+- [Littelfuse, Fuseology Design Guide](https://info.littelfuse.com/hubfs/Fuseology%20Design%20Guide.pdf) ([copia local](../fusibles-ceramicos-5x20-t2-5a/datasheets/Fuseology_Design_Guide.pdf)) — abierto (criterio del 22 % y del 75 %).
 - Salieron en la búsqueda, no abiertos: [COSEL: cómo elegir un fusible externo](https://www.cosel.com/en/contact/product/faq/a0047.html), [EEVblog: ¿fusible en una fuente pequeña?](https://www.eevblog.com/forum/beginners/fuse-in-small-power-supply-needed).
 
 ## Distribuidores (fichas de producto)
@@ -87,8 +87,27 @@ Todas las páginas y PDF consultados para la [ficha](README.md), reunidos el 21-
 
 ## Alternativas
 
-- [RS: Mean Well IRM-60-5](https://uk.rs-online.com/web/p/switching-power-supplies/1358967) — abierto. Hoja IRM-60 en [docs.rs-online.com](https://docs.rs-online.com/cd12/0900766b815c75ea.pdf), no abierta.
+- [RS: Mean Well IRM-60-5](https://uk.rs-online.com/web/p/switching-power-supplies/1358967) — abierto. Hoja IRM-60 en [docs.rs-online.com](https://docs.rs-online.com/cd12/0900766b815c75ea.pdf) ([copia local](datasheets/0900766b815c75ea.pdf)), no abierta.
 
 ## Disponibilidad
 
 - [Digi-Key: "Availability of LRS-100-24?" (27-8-2026 y mensajes hasta el 19-10-2026)](https://forum.digikey.com/t/availability-of-lrs-100-24/71596) — abierto. Venta suspendida de "ciertos productos" de Mean Well por la lista UFLPA (AiSHi). No habla de la LRS-50-5.
+
+## Copias locales de los documentos
+
+Documentos descargados el 21-10-2026 y guardados en el repositorio. Si un documento tiene enlace original en esta ficha, aparece junto a él como "copia local".
+
+**En esta carpeta (`datasheets/`):**
+
+- [0900766b815c75ea.pdf](datasheets/0900766b815c75ea.pdf): Mean Well IRM-60, fuente encapsulada de 60 W (hoja de datos vía RS; alternativa a la LRS-50-5)
+- [Enclosed_Power_Supply_Installation_Manual.pdf](datasheets/Enclosed_Power_Supply_Installation_Manual.pdf): Installation Manual /  Type：Enclosed Type Switching Power Supply / (Families: CSP, DPU, ENP, ERP, G3, HDP, HEP, HRP, HRP-N, HRP-N (Mean Well Australia) (archivo original: `Enclosed Power Supply Installation Manual.pdf`)
+- [Enclosed_Type_EN.pdf](datasheets/Enclosed_Type_EN.pdf): Installation Manual /  Type：Enclosed Type Switching Power Supply / (Families: CSP, DPU, ENP, ERP, G3, HDP, HEP, HRP, HRP-N, HRP-N
+- [LRS-50-5.pdf](datasheets/LRS-50-5.pdf): Fuente de alimentación conmutada de salida / única de 50 W / Serie
+- [LRS-50-SPEC.pdf](datasheets/LRS-50-SPEC.pdf): 50W Single Output Switching Power Supply / L R S - 5 0 series / User’s Manual
+- [MEAN_WELL_LRS-50_CE_DECLARATION.pdf](datasheets/MEAN_WELL_LRS-50_CE_DECLARATION.pdf): For the following equipment： / Declaration of Conformity / Product Name: Switching Power Supplies (Mean Well Australia) (archivo original: `MEAN WELL LRS-50 CE DECLARATION.pdf`)
+- [MEAN_WELL_LRS-50_DATA_SHEET.pdf](datasheets/MEAN_WELL_LRS-50_DATA_SHEET.pdf): 50W Single Output Switching Power Supply / L R S - 5 0 series / User’s Manual (archivo original: `MEAN WELL LRS-50 DATA SHEET.pdf`)
+
+**Citados en esta ficha y guardados en otra carpeta:**
+
+- [Fuseology_Design_Guide.pdf](../fusibles-ceramicos-5x20-t2-5a/datasheets/Fuseology_Design_Guide.pdf): Fuseology / Design Guide / A guide to selecting the right (enlace de la guía)
+- [preview_iec60335-2-82_ed2.1_b.pdf](../documentos-compartidos/normas/preview_iec60335-2-82_ed2.1_b.pdf): Vista previa de IEC 60335-2-82 (ANSI)

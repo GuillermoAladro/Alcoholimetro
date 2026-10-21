@@ -48,5 +48,8 @@ Resumen de lo que las 31 fichas dejan abierto: decisiones tuyas, medidas que hay
 
 ## 4. Documentos que aún no están en el repositorio
 
-- Camera Module 3: faltan por descargar RP-008151-DS-1, RP-008153-DS-1 (dibujo mecánico, necesario para las cotas del agujero de Ø10 mm del objetivo), RP-008969-SD-3, RP-008146-DS-1, los avisos PCN 42/43, el STEP y el BOM. Los enlaces están en [`raspberry-pi-camera-module-3/enlaces.md`](raspberry-pi-camera-module-3/enlaces.md).
-- En el resto de fichas los PDF están enlazados pero no descargados en el repositorio. Solo la Pi y la SanDisk tienen carpeta `datasheets/`.
+El 21-10-2026 se subieron 144 documentos descargados por ti (carpeta `datasheets/` de cada ficha y [`documentos-compartidos/`](documentos-compartidos/README.md) para los que citan varias fichas). Los PDF del Camera Module 3 (RP-008151, RP-008153, RP-008969, RP-008146, avisos PCN 42 y 43, STEP y BOM) ya están en [`raspberry-pi-camera-module-3/datasheets/`](raspberry-pi-camera-module-3/datasheets/).
+
+- En cada `enlaces.md`, un enlace a PDF que **no** lleva la etiqueta "copia local" sigue sin estar descargado. Son unas 300 líneas de enlace en total, con espejos y versiones repetidas del mismo documento, así que el número de documentos distintos es menor.
+- Las copias locales no se han leído enteras: se comprobó que abren, su tipo y su primera página. Los números de las fichas que salieron de resúmenes de terceros (no del PDF) siguen sin verificar contra la copia local salvo que la ficha diga "verificado con copia local".
+- Algunos de los documentos subidos son vistas previas o extractos de normas de pago (IEC 60320-1, IEC 60335-2-82, HD 308 S2) o documentos con derechos de terceros (zips de USB-IF, informes de ensayo). El repositorio es público: conviene decidir si se dejan o se quitan y se queda solo el enlace.

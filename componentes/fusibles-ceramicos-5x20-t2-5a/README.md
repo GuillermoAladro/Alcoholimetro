@@ -37,7 +37,7 @@ Fusible de protección de la entrada de red de 230 V. Va en el portafusibles del
 |---|---|---|
 | `T` | Retardado (time-lag). Los símbolos FF/F/M/T/TT son relativos: no fijan un tiempo de apertura, manda la curva del fabricante | Artículo de Viox, que cita IEC 60127-1 ([viox.com](https://viox.com/fr/cartridge-fuse-guide/)); fuente secundaria |
 | `2.5A` | Corriente nominal. Los fusibles IEC pueden llevarla de forma continua al 100 %; los UL 248-14 solo al 75 % | Libro blanco de Schurter ([escies.org](https://escies.org/download/webDocumentFile?id=62211)). Littelfuse recomienda no pasar del 75 % a 25 °C ([catálogo Fuseology, pág. 4](https://electronicscatalogs.littelfuse.com/Fuseology-Selection-Guide/4/)) |
-| `H` | Alta capacidad de corte: 1500 A a 250 VAC, factor de potencia 0,7–0,8 | Schurter SPT ([hoja](https://static.maritex.eu/file/display/uDMBx1Wpo_qWGmasJyt6eIcp2XA-1AuE/SPT_5x20.pdf)); Eaton y Bel dan también 1500 A |
+| `H` | Alta capacidad de corte: 1500 A a 250 VAC, factor de potencia 0,7–0,8 | Schurter SPT ([hoja](https://static.maritex.eu/file/display/uDMBx1Wpo_qWGmasJyt6eIcp2XA-1AuE/SPT_5x20.pdf) ([copia local](datasheets/SPT_5x20.pdf))); Eaton y Bel dan también 1500 A |
 | `250V` | Tensión nominal alterna | Todas las hojas. La SPT de Schurter añade 300 VDC |
 | Orden del marcado | Corriente nominal, símbolo de capacidad de corte (H, L o E) y tensión nominal | Resumen de IEC 60127-2:2014 en [DIN Media](https://www.dinmedia.de/en/standard/din-en-60127-2/229904237) |
 
@@ -60,7 +60,7 @@ El símbolo de capacidad de corte es H (alta), L (baja) o E (mejorada) (DIN Medi
 | Disipación a 1,5 In | 2,5 W máx. | 2,5 W máx.; 0,6 W típ. | No la da | No la da | No la da |
 | Temperatura de trabajo | −55 a +125 °C | −55 a +125 °C | −55 a +125 °C "con derating" | No la da | No la da |
 
-Fuentes: [Littelfuse 215, copia de Chipdip](https://static.chipdip.ru/lib/198/DOC043198391.pdf) y [ficha de producto 021502.5](https://littelfuse.com/products/fuses/cartridge-fuses/5x20mm-fuses/215/21502_5.aspx); [Schurter SPT](https://static.maritex.eu/file/display/uDMBx1Wpo_qWGmasJyt6eIcp2XA-1AuE/SPT_5x20.pdf); [Eaton S505](https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/data-sheet/eaton-s505-ferrule-time-delay-ceramic-tube-fuses-data-sheet.pdf); [ESKA 522.700](https://static.rapidonline.com/pdf/523987_da_ml_01.pdf) (tabla extraída con columnas dudosas; la fila 522.721 de 2,5 A da 180 mV y 32,00 A²s); [Bel 5HT](https://www.alldatasheet.com/html-pdf/2166831/BEL/5HT%202.5-R/64/1/5HT%202.5-R.html) (espejo de alldatasheet, sin la tabla de 2,5 A).
+Fuentes: [Littelfuse 215, copia de Chipdip](https://static.chipdip.ru/lib/198/DOC043198391.pdf) y [ficha de producto 021502.5](https://littelfuse.com/products/fuses/cartridge-fuses/5x20mm-fuses/215/21502_5.aspx); [Schurter SPT](https://static.maritex.eu/file/display/uDMBx1Wpo_qWGmasJyt6eIcp2XA-1AuE/SPT_5x20.pdf) ([copia local](datasheets/SPT_5x20.pdf)); [Eaton S505](https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/data-sheet/eaton-s505-ferrule-time-delay-ceramic-tube-fuses-data-sheet.pdf) ([copia local](datasheets/eaton-s505-ferrule-time-delay-ceramic-tube-fuses-data-sheet.pdf)); [ESKA 522.700](https://static.rapidonline.com/pdf/523987_da_ml_01.pdf) ([copia local](datasheets/523987_da_ml_01.pdf)) (tabla extraída con columnas dudosas; la fila 522.721 de 2,5 A da 180 mV y 32,00 A²s); [Bel 5HT](https://www.alldatasheet.com/html-pdf/2166831/BEL/5HT%202.5-R/64/1/5HT%202.5-R.html) (espejo de alldatasheet, sin la tabla de 2,5 A).
 
 Notas:
 
@@ -76,18 +76,18 @@ Notas:
 |---|---|---|---|
 | Littelfuse 215, hoja de datos (la de la guía) | Rev. 11/30/21 según la copia | PDF | [enlace de la guía](https://littelfuse.com/%7E/media/electronics/datasheets/fuses/littelfuse_fuse_215_datasheet.pdf.pdf) (**no se abrió**, ver apartado 7) · [copia de Chipdip, leída](https://static.chipdip.ru/lib/198/DOC043198391.pdf) |
 | Littelfuse 215, ficha del 2,5 A | 021502.5 | Web | [littelfuse.com](https://littelfuse.com/products/fuses/cartridge-fuses/5x20mm-fuses/215/21502_5.aspx) |
-| Littelfuse, Fuseology Design Guide (la de la guía) | | PDF | [enlace de la guía](https://info.littelfuse.com/hubfs/Fuseology%20Design%20Guide.pdf) (**no se abrió**) |
+| Littelfuse, Fuseology Design Guide (la de la guía) | | PDF | [enlace de la guía](https://info.littelfuse.com/hubfs/Fuseology%20Design%20Guide.pdf) ([copia local](datasheets/Fuseology_Design_Guide.pdf)) (**no se abrió**) |
 | Littelfuse, catálogo Fuseology Selection Guide, pág. 4 | | Web | [electronicscatalogs.littelfuse.com](https://electronicscatalogs.littelfuse.com/Fuseology-Selection-Guide/4/) |
-| Schurter SPT 5×20 (2,5 A: 0001.2508) | IEC 60127-2/5 | PDF | [copia de Maritex](https://static.maritex.eu/file/display/uDMBx1Wpo_qWGmasJyt6eIcp2XA-1AuE/SPT_5x20.pdf) |
+| Schurter SPT 5×20 (2,5 A: 0001.2508) | IEC 60127-2/5 | PDF | [copia de Maritex](https://static.maritex.eu/file/display/uDMBx1Wpo_qWGmasJyt6eIcp2XA-1AuE/SPT_5x20.pdf) ([copia local](datasheets/SPT_5x20.pdf)) |
 | Schurter, libro blanco "Fuse Selection: Find the Right Fuse!" | Código 0165.0607 / 10.11 | PDF | [copia en ESCIES](https://escies.org/download/webDocumentFile?id=62211) |
-| Eaton Bussmann S505 | | PDF | [eaton.com](https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/data-sheet/eaton-s505-ferrule-time-delay-ceramic-tube-fuses-data-sheet.pdf) |
+| Eaton Bussmann S505 | | PDF | [eaton.com](https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/data-sheet/eaton-s505-ferrule-time-delay-ceramic-tube-fuses-data-sheet.pdf) ([copia local](datasheets/eaton-s505-ferrule-time-delay-ceramic-tube-fuses-data-sheet.pdf)) |
 | Bel Fuse 5HT / 5HTP | IEC 60127-2 hoja 5 | HTML (espejo) | [alldatasheet.com](https://www.alldatasheet.com/html-pdf/2166831/BEL/5HT%202.5-R/64/1/5HT%202.5-R.html) |
-| ESKA 522.700 | EN 60127-2-5 | PDF | [Rapid](https://static.rapidonline.com/pdf/523987_da_ml_01.pdf) |
+| ESKA 522.700 | EN 60127-2-5 | PDF | [Rapid](https://static.rapidonline.com/pdf/523987_da_ml_01.pdf) ([copia local](datasheets/523987_da_ml_01.pdf)) |
 | Mean Well LRS-50, hoja de datos (la de la guía) | | PDF | [enlace de la guía](https://www.meanwell.com/Upload/PDF/LRS-50/LRS-50-SPEC.PDF) (**no se abrió**) |
 | Mean Well LRS-50, copia de RS | LRS-50-SPEC 2015-12-31 | PDF | [docs.rs-online.com](https://docs.rs-online.com/19bc/0900766b814e41ec.pdf) |
-| Mean Well LRS-50, copia de Mean Well Australia | LRS-50-SPEC 2025-04-07 | PDF | [meanwellaustralia.com.au](https://www.meanwellaustralia.com.au/sites/default/files/2025-05/MEAN%20WELL%20LRS-50%20DATA%20SHEET.pdf) |
+| Mean Well LRS-50, copia de Mean Well Australia | LRS-50-SPEC 2025-04-07 | PDF | [meanwellaustralia.com.au](https://www.meanwellaustralia.com.au/sites/default/files/2025-05/MEAN%20WELL%20LRS-50%20DATA%20SHEET.pdf) ([copia local](../meanwell-lrs-50-5/datasheets/MEAN_WELL_LRS-50_DATA_SHEET.pdf)) |
 | Mean Well, catálogo industrial, pág. 4 | LRS 35–100 W | Web | [meanwell.com](https://www.meanwell.com/catalog/product/files/basic-html/page4.html) |
-| Mean Well, manual de instalación (la de la guía) | | PDF | [Enclosed_Type_EN.pdf](https://www.meanwell.com/Upload/PDF/Enclosed_Type_EN.pdf) |
+| Mean Well, manual de instalación (la de la guía) | | PDF | [Enclosed_Type_EN.pdf](https://www.meanwell.com/Upload/PDF/Enclosed_Type_EN.pdf) ([copia local](../meanwell-lrs-50-5/datasheets/Enclosed_Type_EN.pdf)) |
 | IEC 60127-2:2014, resumen | DIN EN 60127-2:2015-07 | Web | [DIN Media](https://www.dinmedia.de/en/standard/din-en-60127-2/229904237) |
 | Schurter PG05, módulos de entrada sin filtro (1 y 2 polos) | 22.04.2015 | PDF | [docs.rs-online.com](https://docs.rs-online.com/34dc/0900766b81441f21.pdf) |
 | IEC 62368-1, marcado de fusibles (resumen de UL) | F.3.5.3 | PDF | [japan.ul.com](https://japan.ul.com/wp-content/uploads/sites/27/2014/06/1_techbrief_equipmentmarkings.pdf) |
@@ -136,7 +136,7 @@ Los tres coinciden en todas las filas, y ESKA da los mismos límites en su banda
 | Corriente de entrada (típ.) | 0,95 A a 115 VAC y **0,56 A a 230 VAC** | Mismas copias. El texto extraído da un solo par para toda la serie, **no por modelo** |
 | Pico de arranque en frío | **45 A a 230 VAC** ("COLD START 45A/230VAC") | Mismas copias: confirma la guía. La copia de RS lo rotula "Typ."; el [catálogo, pág. 4](https://www.meanwell.com/catalog/product/files/basic-html/page4.html) lo rotula "max." y da 45, 65 y 50 A para cuatro columnas (LRS-35/50/75/100) sin poder asignarlos por modelo |
 | Duración del pico | **No la da** | — |
-| Fusible interno | **No lo cita** en lo que pude leer | Copias de la hoja y [manual de instalación](https://www.meanwell.com/Upload/PDF/Enclosed_Type_EN.pdf) |
+| Fusible interno | **No lo cita** en lo que pude leer | Copias de la hoja y [manual de instalación](https://www.meanwell.com/Upload/PDF/Enclosed_Type_EN.pdf) ([copia local](../meanwell-lrs-50-5/datasheets/Enclosed_Type_EN.pdf)) |
 | Corriente de fuga | < 0,75 mA a 240 VAC | Copias de la hoja |
 | Protección de salida | Sobrecarga 110–150 %, modo hipo con recuperación automática | Copias de la hoja |
 
@@ -206,13 +206,13 @@ El fusible no protege la carga: la máquina toma 0,1–0,25 A y el T2,5A no abre
 | 41 A (2,55 In) | Máx. 150 ms | Entre 1 y 60 s (la hoja de Schneider es ambigua en qué calibres) |
 | 80 a 160 A (5 a 10 In) | Máx. 150 ms | Disparo magnético instantáneo (curva C) |
 
-Fuentes de la columna derecha: [Schneider Acti9](https://frrq.cvg.utn.edu.ar/pluginfile.php/7184/mod_resource/content/1/Curvas%20de%20disparo%20Acti9.PDF) (3600 s para 1,13 y 1,45 In; 60 s y 1 s para 2,55 In) y [Voltimum](https://content.voltimum.com/es/26860/14interruptoresmagnetotermicosydiferenciales_09_21.pdf) (curva C: 5 a 10 In; curva B: 3 a 5 In).
+Fuentes de la columna derecha: [Schneider Acti9](https://frrq.cvg.utn.edu.ar/pluginfile.php/7184/mod_resource/content/1/Curvas%20de%20disparo%20Acti9.PDF) ([copia local](datasheets/Curvas_de_disparo_Acti9.PDF)) (3600 s para 1,13 y 1,45 In; 60 s y 1 s para 2,55 In) y [Voltimum](https://content.voltimum.com/es/26860/14interruptoresmagnetotermicosydiferenciales_09_21.pdf) (curva C: 5 a 10 In; curva B: 3 a 5 In).
 
 Conclusión: **entre unos 7 y unos 80 A el T2,5A corta mucho antes que el magnetotérmico de la instalación**. Por encima de 80-160 A los dos disparan en milisegundos, y entonces cuenta la capacidad de corte del fusible.
 
 **Capacidad de corte frente a la corriente de cortocircuito posible** (cálculo mío con hipótesis; la medida buena la da un electricista con un medidor de impedancia de bucle): en un enchufe a 3 o 10 m del cuadro, con cable de 2,5 mm² (cobre, 0,0172 Ω·mm²/m) e impedancia de fuente de 0,1 a 0,3 Ω, salen entre unos 500 A y 1,6 kA. Un fusible H (1500 A) rinde en ese rango; un fusible de vidrio L (35 A o 10 × In) queda muy por debajo. Si la corriente posible en el enchufe del bar superase 1,5 kA, el fusible H no sería suficiente (punto a medir, apartado 6).
 
-**Qué garantiza el REBT:** la ITC-BT-19 ([enlace de la guía](https://www.plcmadrid.es/wp-content/uploads/rebt/itc19/ITC-BT-19.pdf)), que sí pude abrir, trata la instalación y no trata fusibles internos de equipos. La ITC-BT-22 (protección contra sobreintensidades) no la pude abrir: **sin verificar**. Mi conclusión: la protección del bar protege el cable de la instalación, no el cableado interno de la máquina, y su curva puede tardar mucho en cortar fallos moderados. De ahí el fusible propio.
+**Qué garantiza el REBT:** la ITC-BT-19 ([enlace de la guía](https://www.plcmadrid.es/wp-content/uploads/rebt/itc19/ITC-BT-19.pdf) ([copia local](../documentos-compartidos/normas/ITC-BT-19.pdf))), que sí pude abrir, trata la instalación y no trata fusibles internos de equipos. La ITC-BT-22 (protección contra sobreintensidades) no la pude abrir: **sin verificar**. Mi conclusión: la protección del bar protege el cable de la instalación, no el cableado interno de la máquina, y su curva puede tardar mucho en cortar fallos moderados. De ahí el fusible propio.
 
 ### 4.5 El fusible interno de la fuente: ¿redundante?
 
@@ -339,5 +339,7 @@ Son conclusiones mías, no afirmaciones de las fuentes.
 - **Cuál de los dos polos lleva el fusible en el módulo C14 (#15)** y si su cajón tiene dos alojamientos.
 
 ## 8. Fuentes
+
+Copias locales de los documentos descargados: [lista en enlaces.md](enlaces.md#copias-locales-de-los-documentos) y carpeta [`datasheets/`](datasheets/).
 
 Todos los enlaces, ordenados por tipo y con nota en los que no se abrieron, en [`enlaces.md`](enlaces.md).

@@ -67,7 +67,7 @@ Las normas están de pago. Solo extractos y vistas previas.
 
 - [ETICS/ENEC: uso indebido de la marca](https://enec.com/misusing-the-enec-mark/)
 - [ENEC: verificar certificados](https://enec.com/search-enec-certificates/) (la página solo mostró un botón de búsqueda; no se probó)
-- [UL Demko: aviso de licencia ENEC 15 falsificada (2022)](https://etics.org/doc/doc_20368_main1_ENEC+%20Fradulent%20ENEC-01983-PLUS-UL_UL%20Demko%202022-08-10%281%29.pdf) (no es un módulo C14)
+- [UL Demko: aviso de licencia ENEC 15 falsificada (2022)](https://etics.org/doc/doc_20368_main1_ENEC+%20Fradulent%20ENEC-01983-PLUS-UL_UL%20Demko%202022-08-10%281%29.pdf) ([copia local](datasheets/ENEC-fraudulent-license-UL-Demko-2022-08-10.pdf)) (no es un módulo C14)
 - [VDE: uso ilegal de la marca](https://www2.vde.com/en/Institute/OnlineService/VDE-approved-products/Pages/Unlawful_use.aspx)
 - [IAEI: "When in Doubt, Check it Out" (Intertek, 2014)](https://iaeimagazine.org/?p=12984)
 - [Mike Holt: hilo sobre certificaciones falsas](https://forums.mikeholt.com/threads/certs.142888/)
@@ -99,12 +99,12 @@ Foros (opiniones, no normas):
 
 ## Pruebas de tierra
 
-- [IET: ensayo de continuidad de tierra en servicio](https://electrical.theiet.org/media/1658/in-service-inspection-and-testing-of-electrical-equipment-the-earth-continuity-test.pdf) (citado también en la guía del proyecto)
+- [IET: ensayo de continuidad de tierra en servicio](https://electrical.theiet.org/media/1658/in-service-inspection-and-testing-of-electrical-equipment-the-earth-continuity-test.pdf) ([copia local](../documentos-compartidos/normas/in-service-inspection-and-testing-of-electrical-equipment-the-earth-continuity-test.pdf)) (citado también en la guía del proyecto)
 
 ## Páginas que no pude abrir o que no aportaron
 
 - Amazon.es B08Z6FCR5Z: bloqueado por robots.
-- [REBT ITC-BT-19 (plcmadrid.es)](https://www.plcmadrid.es/wp-content/uploads/rebt/itc19/ITC-BT-19.pdf), citado en la guía: la herramienta pidió un permiso que no se contestó y no se reintentó. Las fichas #22 y #23 la abrieron después en esta misma dirección.
+- [REBT ITC-BT-19 (plcmadrid.es)](https://www.plcmadrid.es/wp-content/uploads/rebt/itc19/ITC-BT-19.pdf) ([copia local](../documentos-compartidos/normas/ITC-BT-19.pdf)), citado en la guía: la herramienta pidió un permiso que no se contestó y no se reintentó. Las fichas #22 y #23 la abrieron después en esta misma dirección.
 - [Schurter KD13.1101.151](https://www.schurter.com/en/part/KD13.1101.151): igual.
 - Vista previa de IEC 60335-1 ed. 6 en VDE-Verlag: el sitio la bloquea para la herramienta ("robots"). No se rodeó.
 - [DIYnot (hilo sobre IEC 60335-1)](https://www.diynot.com/diy/goto/post?id=2514833): bloqueado por robots.
@@ -112,3 +112,21 @@ Foros (opiniones, no normas):
 - [E-T-A: white paper "Sichere zweipolige Trennung"](https://www.e-t-a.de/fileadmin/user_upload/Ordnerstruktur/pdf-Data/Broschures_Magazines_etc/White_Papers/White_paper_de/E-T-A_Whitepaper_Sichere_zweipolige_Trennung.pdf): la página devolvió un aviso de mantenimiento, no el documento. Sería una fuente útil sobre el corte bipolar.
 - Safety Gate (RAPEX) y CPSC: dos búsquedas sobre retiradas de módulos C14 o interruptores no devolvieron nada de esta categoría. El portal de Safety Gate no se consultó directamente.
 - Presupuesto de búsquedas web agotado antes de consultar: edición vigente de IEC 61058-1, IEC 60320-1 e IEC 60127-6; valores de tracción de faston; hilos de foros sobre este tipo de módulo (neón que parpadea, soldaduras frías, etc.).
+
+## Copias locales de los documentos
+
+Documentos descargados el 21-10-2026 y guardados en el repositorio. Si un documento tiene enlace original en esta ficha, aparece junto a él como "copia local".
+
+**En esta carpeta (`datasheets/`):**
+
+- [0900766b815867ba.pdf](datasheets/0900766b815867ba.pdf): RS PRO EMI-13: conector C14 (RS 811-7229)
+- [2351262.pdf](datasheets/2351262.pdf): Power entry modules without line filter / IEC Appliance Inlet C14 with Fuseholder 1- or 2-pole, Line Switch 2-pole and Voltage Sel (KD)
+- [625732.pdf](datasheets/625732.pdf): POLYSNAP® POWER INLET MODULES / C14 IEC Fused Inlet - Polyflange / VERTICAL MODULE ARRANGEMENT (catálogo Polysnap)
+- [A700000008623303.pdf](datasheets/A700000008623303.pdf): Schurter, serie con interruptor de 2 polos y clip
+- [ENEC-fraudulent-license-UL-Demko-2022-08-10.pdf](datasheets/ENEC-fraudulent-license-UL-Demko-2022-08-10.pdf): UL Demko, aviso del 10-08-2022 sobre una licencia ENEC+ falsa (ENEC-01983-PLUS-UL) (archivo original: `ENEC+ Fradulent ENEC-01983-PLUS-UL_UL Demko 2022-08-10(1).pdf`)
+
+**Citados en esta ficha y guardados en otra carpeta:**
+
+- [Fuseology_Design_Guide.pdf](../fusibles-ceramicos-5x20-t2-5a/datasheets/Fuseology_Design_Guide.pdf): Fuseology / Design Guide / A guide to selecting the right (enlace de la guía)
+- [ITC-BT-19.pdf](../documentos-compartidos/normas/ITC-BT-19.pdf): ITC-BT-19: instalaciones interiores o receptoras, prescripciones generales (REBT)
+- [in-service-inspection-and-testing-of-electrical-equipment-the-earth-continuity-test.pdf](../documentos-compartidos/normas/in-service-inspection-and-testing-of-electrical-equipment-the-earth-continuity-test.pdf): IET, Inspección y ensayo en servicio de equipos eléctricos: ensayo de continuidad de tierra

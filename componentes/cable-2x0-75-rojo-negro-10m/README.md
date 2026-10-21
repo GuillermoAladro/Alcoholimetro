@@ -113,7 +113,7 @@ Un cable genérico no tiene datasheet. La "ficha" es la norma del conductor y la
 
 | Documento | Referencia | Formato | Enlace |
 |---|---|---|---|
-| Resistencia de conductores por clase y sección (copia de la norma de conductores) | DIN EN 60228 (VDE 0295), tabla "T11" de Lapp | PDF | [Descargar](https://t3.lappcdn.com/fileadmin/DAM/Miltronic_Denmark/4_servicecenter/T11.pdf) |
+| Resistencia de conductores por clase y sección (copia de la norma de conductores) | DIN EN 60228 (VDE 0295), tabla "T11" de Lapp | PDF | [Descargar](https://t3.lappcdn.com/fileadmin/DAM/Miltronic_Denmark/4_servicecenter/T11.pdf) ([copia local](datasheets/T11.pdf)) |
 | Misma tabla en una web técnica | IEC 60228 (la página cita también IEC 60287 por error) | Web | [mycableengineering](https://mycableengineering.com/knowledge-base/iec-60228-dc-resistance) |
 | Ficha del H03VVH2-F (Letronic) | Artículo 2852075610 | PDF | [Descargar](https://letronic.de/en/produkte/kabel/pdf/679/h03vvh2-f.pdf) |
 | Ficha del H03VVH2-F (Nexans, Noruega) | EN 50525-2-11 | Web | [Ver](https://www.nexans.no/en/products/Building-Wires-and-Cables/Standard-wires-and-cables/Standard-Installation-cables-and-wires/PL---PMH/H03VVH2-F--536929547.html) |
@@ -122,12 +122,12 @@ Un cable genérico no tiene datasheet. La "ficha" es la norma del conductor y la
 | Cable plano 2192Y 2 × 0,75 (electrical4less) | BS EN 50525-2-11 | Web | [Ver](https://www.electrical4less.co.uk/product/2-core-0-75mm-flat-flexible-pvc-cable-2192y-1m/) |
 | EN 50525-2-12 (sumario) | DIN EN 50525-2-12 (VDE 0285-525-2-12):2012-01 | PDF (solo sumario) | [Ver](https://www.vde-verlag.de/previewpdf/70285002.pdf) |
 | EN 50525-2-11 (ficha de venta) | DIN EN 50525-2-11:2012-01 | Web | [DIN Media](https://www.dinmedia.de/en/standard/din-en-50525-2-11/146332248) (citada en la [ficha del cable Schuko](../cable-schuko-c13-2m/README.md), **no la reabrí**) |
-| Corriente admisible de cables flexibles (resumen de VDE 0298-4, tabla 11) | Bayka TD06 | PDF | [Inglés](https://www.bayka.de/wp-content/uploads/2022/11/TD06EN-current-carrying-capacity-flexible-copper-cables-and-wires.pdf) · [Alemán](https://www.bayka.de/wp-content/uploads/2022/03/TD06DE-Strombelastbarkeit-flexible-Kupferkabel-und-Leitungen.pdf) |
+| Corriente admisible de cables flexibles (resumen de VDE 0298-4, tabla 11) | Bayka TD06 | PDF | [Inglés](https://www.bayka.de/wp-content/uploads/2022/11/TD06EN-current-carrying-capacity-flexible-copper-cables-and-wires.pdf) ([copia local](datasheets/TD06EN-current-carrying-capacity-flexible-copper-cables-and-wires.pdf)) · [Alemán](https://www.bayka.de/wp-content/uploads/2022/03/TD06DE-Strombelastbarkeit-flexible-Kupferkabel-und-Leitungen.pdf) |
 | Corriente admisible en máquinas (resumen atribuido a EN 60204-1) | Kollmorgen | Web | [Ver](https://www.kollmorgen.com/content/strombelastbarkeit-0) |
 | REBT, instalaciones a muy baja tensión | ITC-BT-36 | Web | [Normatia](https://normatia.com/es/normativa/rebt/2025/itc-bt-36-instalaciones-a-muy-baja-tension/) |
-| REBT, prescripciones generales (intensidades, colores, aislamiento) | ITC-BT-19 | PDF | [Descargar](https://www.plcmadrid.es/wp-content/uploads/rebt/itc19/ITC-BT-19.pdf) |
+| REBT, prescripciones generales (intensidades, colores, aislamiento) | ITC-BT-19 | PDF | [Descargar](https://www.plcmadrid.es/wp-content/uploads/rebt/itc19/ITC-BT-19.pdf) ([copia local](../documentos-compartidos/normas/ITC-BT-19.pdf)) |
 | CPR para cables (preguntas frecuentes de Nexans) | EN 50575 | Web | [Ver](https://www.nexans.co.uk/en/business/buildings/building/Fire-safety/Construction-Products-Regulation/FAQ-on-CPR.html) |
-| CPR y la industria del cable (Prysmian) | EN 50575 | PDF | [Descargar](https://tr.prysmian.com/sites/tr.prysmian.com/files/2025-01/Construction_Products_Regulations_and_Cable_Industry.pdf) |
+| CPR y la industria del cable (Prysmian) | EN 50575 | PDF | [Descargar](https://tr.prysmian.com/sites/tr.prysmian.com/files/2025-01/Construction_Products_Regulations_and_Cable_Industry.pdf) ([copia local](datasheets/Construction_Products_Regulations_and_Cable_Industry.pdf)) |
 | Aviso de ACI sobre cable flexible de CCA | 21-9-2018 | Web | [Ver](https://www.aci.org.uk/news/aci-warns-dangerous-turkish-flexible-cord) |
 | Aviso de ACI sobre cable CAT 5e de CCA | ACI/131/12, dic. 2012 | Web/PDF | [Ver](https://www.aci.org.uk/download_file/view/6/191) |
 | Fluke Networks sobre CCA | Blog | Web | [Ver](https://de.flukenetworks.com/blog/cabling-chronicles/cca-not-worth-savings-or-risk) |
@@ -152,7 +152,7 @@ Un cable genérico no tiene datasheet. La "ficha" es la norma del conductor y la
 
 | Sección | Clase 2 (rígido) | Clases 5-6 (flexible), cobre | Clases 5-6, cobre estañado | Fuente |
 |---|---|---|---|---|
-| 0,5 mm² | 36,0 Ω/km | 39,0 Ω/km | 40,1 Ω/km | [Lapp T11](https://t3.lappcdn.com/fileadmin/DAM/Miltronic_Denmark/4_servicecenter/T11.pdf) |
+| 0,5 mm² | 36,0 Ω/km | 39,0 Ω/km | 40,1 Ω/km | [Lapp T11](https://t3.lappcdn.com/fileadmin/DAM/Miltronic_Denmark/4_servicecenter/T11.pdf) ([copia local](datasheets/T11.pdf)) |
 | **0,75 mm²** | 24,5 | **26,0** | 26,7 | Lapp T11, mycableengineering |
 | 1,0 mm² | 18,1 | 19,5 | 20,0 | Lapp T11 |
 | 1,5 mm² | 12,1 | 13,3 | 13,7 | Lapp T11 |
@@ -226,7 +226,7 @@ Los 10 m de cable, con los dos conductores unidos en un extremo, forman un lazo 
 | Manual de Mean Well | AWG 18 (0,75 mm²) hasta 6 A; reducir al 80 % con cinco o más hilos | Ver [ficha de la LRS-50-5](../meanwell-lrs-50-5/README.md) | Fabricante; no reabierto |
 | [Bayka, resumen de VDE 0298-4 tabla 11](https://www.bayka.de/wp-content/uploads/2022/03/TD06DE-Strombelastbarkeit-flexible-Kupferkabel-und-Leitungen.pdf) | **15, 6, 6 y 12 A** en cuatro columnas (nº de hilos cargados: 1, 2, 3, "2 o 3") | "Frei in Luft" y "auf oder an Flächen". **No pude asignar cada valor a su columna.** Temperatura no indicada | Secundaria |
 | [Kollmorgen, atribuido a EN 60204-1](https://www.kollmorgen.com/content/strombelastbarkeit-0) | 10,4 A (cable en bandeja abierta), 8,5 A (un cable en canal), 6,8 A (dos cables en canal) | A 40 °C de ambiente, PVC. **No cita el número de tabla** (yo la recuerdo como tabla 6, sin verificar) | Secundaria |
-| [ITC-BT-19 §2.2.3](https://www.plcmadrid.es/wp-content/uploads/rebt/itc19/ITC-BT-19.pdf) | **Sin valor:** remite a UNE 20460-5-523 y a su tabla 1 (aire a 40 °C) | La extracción no devolvió los valores de la tabla 1, así que no sé si lista 0,75 mm² | Reglamento |
+| [ITC-BT-19 §2.2.3](https://www.plcmadrid.es/wp-content/uploads/rebt/itc19/ITC-BT-19.pdf) ([copia local](../documentos-compartidos/normas/ITC-BT-19.pdf)) | **Sin valor:** remite a UNE 20460-5-523 y a su tabla 1 (aire a 40 °C) | La extracción no devolvió los valores de la tabla 1, así que no sé si lista 0,75 mm² | Reglamento |
 | IEC 60364-5-52 | **No abierta** | — | — |
 
 **Conclusión mía:**
@@ -294,7 +294,7 @@ La guía mete el cable de 5 V en la misma caja que la entrada de red. La LRS-50-
 | Fuente | Qué dice | Alcance |
 |---|---|---|
 | [ITC-BT-36 §1 y §2.2](https://normatia.com/es/normativa/rebt/2025/itc-bt-36-instalaciones-a-muy-baja-tension/) (REBT, texto en Normatia) | MBTS es hasta 50 V c.a. o 75 V c.c. Los conductores MBTS y los de cualquier otro circuito se separan con **una** de estas medidas: separación física; **vaina no metálica además del aislamiento principal**; pantalla metálica a tierra; o, en un mismo cable o grupo de conductores, **aislamiento de los conductores MBTS para la tensión más alta que deban soportar**. El texto que recibí no habla de compartir caja | Reglamento de **instalaciones**. **No es la norma de producto de la máquina**; sirve de referencia |
-| [ITC-BT-19 §2.9, tabla 3](https://www.plcmadrid.es/wp-content/uploads/rebt/itc19/ITC-BT-19.pdf) | Aislamiento de una instalación MBTS/MBTP: ensayo a **250 V c.c.**, mínimo **0,25 MΩ**; hasta 500 V: 500 V c.c. y 0,5 MΩ | Instalaciones. Se mide con las cargas desconectadas |
+| [ITC-BT-19 §2.9, tabla 3](https://www.plcmadrid.es/wp-content/uploads/rebt/itc19/ITC-BT-19.pdf) ([copia local](../documentos-compartidos/normas/ITC-BT-19.pdf)) | Aislamiento de una instalación MBTS/MBTP: ensayo a **250 V c.c.**, mínimo **0,25 MΩ**; hasta 500 V: 500 V c.c. y 0,5 MΩ | Instalaciones. Se mide con las cargas desconectadas |
 | [Whitepaper de un laboratorio](https://uploads-ssl.webflow.com/5964a1de0dff681f24a9308b/5b69410c762831d5962091e1_Weekly%20Whitepaper%20%2369%20-%20Understanding%20Fixing%20of%20Wiring.pdf) (no cita ninguna norma ni cláusula) | El cableado de baja tensión debe ser apto para la tensión más alta con la que pueda entrar en contacto. La terminación de un cable cuenta como fallo único: si, al soltarse, el cable puede llegar a un circuito de red, necesita **aislamiento doble o reforzado**. Una brida junto a la terminación o un doble crimpado son sujeción secundaria. Un exceso de holgura que pueda unir red y SELV exige aislamiento doble o reforzado | Genérico (UL, CSA, EN, IEC); autor no identificado en lo que recibí. **No es una norma** |
 | [Datos de cable](#3-especificaciones-de-referencia) | H03/H05 de PVC: 300/300 V. Anuncios de cable rojo/negro y HO3VH-H: 50 V | Fabricantes y vendedores |
 | [Ficha de la LRS-50-5](../meanwell-lrs-50-5/README.md) | Aislamiento entrada-salida de 4 kVAC en la hoja de datos de 2025; el lado de 5 V está aislado **en la fuente** | La fuente, no el cableado |
@@ -338,7 +338,7 @@ La guía mete el cable de 5 V en la misma caja que la entrada de red. La LRS-50-
 
 ### 8.3 CPR (reglamento de productos de construcción)
 
-- El CPR y EN 50575 se aplican a los cables para instalación **permanente en edificios** (cables para el suministro de electricidad y comunicaciones en edificios, según [Nexans](https://www.nexans.co.uk/en/business/buildings/building/Fire-safety/Construction-Products-Regulation/FAQ-on-CPR.html)). Marcado CE obligatorio desde el 1-7-2017 (fin del periodo de coexistencia, misma fuente). Prysmian los describe como cables de potencia, control y comunicaciones en cualquier estructura ([Prysmian](https://tr.prysmian.com/sites/tr.prysmian.com/files/2025-01/Construction_Products_Regulations_and_Cable_Industry.pdf)).
+- El CPR y EN 50575 se aplican a los cables para instalación **permanente en edificios** (cables para el suministro de electricidad y comunicaciones en edificios, según [Nexans](https://www.nexans.co.uk/en/business/buildings/building/Fire-safety/Construction-Products-Regulation/FAQ-on-CPR.html)). Marcado CE obligatorio desde el 1-7-2017 (fin del periodo de coexistencia, misma fuente). Prysmian los describe como cables de potencia, control y comunicaciones en cualquier estructura ([Prysmian](https://tr.prysmian.com/sites/tr.prysmian.com/files/2025-01/Construction_Products_Regulations_and_Cable_Industry.pdf) ([copia local](datasheets/Construction_Products_Regulations_and_Cable_Industry.pdf))).
 - **Ninguna de las dos fuentes nombra los cables flexibles ni los cables internos de aparatos.** Mi lectura: un cable dentro de la máquina **no es un producto de construcción** y no necesita clase CPR. Es lectura mía; **no he leído el reglamento ni EN 50575**.
 - Aunque no sea obligatorio, hay vendedores que lo declaran (Electrokit: Eca). No es una garantía de nada para este uso.
 
@@ -399,7 +399,7 @@ Un fallo de terminación es un fallo único con consecuencias: un hilo que se su
 
 ### 9.8 Negro como GND
 
-La ITC-BT-19 §2.2.4 asigna **marrón, negro o gris a las fases**, azul claro al neutro y verde-amarillo a la protección ([ITC-BT-19](https://www.plcmadrid.es/wp-content/uploads/rebt/itc19/ITC-BT-19.pdf)). En tu montaje, los 230 V usan marrón, azul y verde-amarillo (guía §5.1), así que no hay confusión hoy; un electricista que abra la caja podría tomar el negro de 5 V por una fase. **Etiqueta** el raíl de 5 V.
+La ITC-BT-19 §2.2.4 asigna **marrón, negro o gris a las fases**, azul claro al neutro y verde-amarillo a la protección ([ITC-BT-19](https://www.plcmadrid.es/wp-content/uploads/rebt/itc19/ITC-BT-19.pdf) ([copia local](../documentos-compartidos/normas/ITC-BT-19.pdf))). En tu montaje, los 230 V usan marrón, azul y verde-amarillo (guía §5.1), así que no hay confusión hoy; un electricista que abra la caja podría tomar el negro de 5 V por una fase. **Etiqueta** el raíl de 5 V.
 
 ## 10. Montaje: terminales, polaridad, fijación y curvatura
 
@@ -526,5 +526,7 @@ Son conclusiones mías, no afirmaciones de las fuentes.
 - **Ninguna compra ni medida física:** todas las comprobaciones del apartado 11 son recomendaciones mías, no hechas.
 
 ## 15. Fuentes
+
+Copias locales de los documentos descargados: [lista en enlaces.md](enlaces.md#copias-locales-de-los-documentos) y carpeta [`datasheets/`](datasheets/).
 
 Todos los enlaces, ordenados por tipo, en [`enlaces.md`](enlaces.md).

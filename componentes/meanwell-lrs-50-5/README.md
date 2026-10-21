@@ -94,9 +94,9 @@ El texto cambia entre versiones. Esto importa si compras unidades de lotes disti
 |---|---|---|---|---|---|
 | 2015-06-16 | 645 K h (MIL) | 5,75-6,9 V | UL 60950-1, TÜV EN 60950-1, EN 60335-1, EN 61558 | EN 55022 | [piekarz.pl](https://piekarz.pl/pdf/27180), [Rapid](https://static.rapidonline.com/pdf/85-5643_v1.pdf) (sin fecha visible, mismo contenido) |
 | 2015-12-31 | 645 K h (MIL) | 5,9-7,3 V | Igual que 2015-06 | EN 55022 | [RS](https://docs.rs-online.com/19bc/0900766b814e41ec.pdf) |
-| 2019-07-23 | 645 K h (MIL) | 5,9-7,3 V | UL 62368-1, TÜV EN 62368-1, EN 60335-1, EN 61558 | EN 55032 | [pulsar.pl](https://lib.pulsar.pl/karta/es/LRS-50-5.pdf) |
+| 2019-07-23 | 645 K h (MIL) | 5,9-7,3 V | UL 62368-1, TÜV EN 62368-1, EN 60335-1, EN 61558 | EN 55032 | [pulsar.pl](https://lib.pulsar.pl/karta/es/LRS-50-5.pdf) ([copia local](datasheets/LRS-50-5.pdf)) |
 | 2022-02-18 | 3149,8 K (Telcordia) y 561,6 K (MIL) | 5,9-7,3 V | Igual que 2019 | EN 55032 | [apsoparts](https://www.apsoparts.com/media/downloads/asset//std.lang.all/05/22/LRS-50_1680-21407-0000-E-0522.pdf) |
-| 2025-04-07 | 3149,8 K y 561,6 K | 5,9-7,3 V | Igual que 2019 | EN 55032; inmunidad con EN 55035 | [Mean Well Australia](https://www.meanwellaustralia.com.au/sites/default/files/2025-05/MEAN%20WELL%20LRS-50%20DATA%20SHEET.pdf) |
+| 2025-04-07 | 3149,8 K y 561,6 K | 5,9-7,3 V | Igual que 2019 | EN 55032; inmunidad con EN 55035 | [Mean Well Australia](https://www.meanwellaustralia.com.au/sites/default/files/2025-05/MEAN%20WELL%20LRS-50%20DATA%20SHEET.pdf) ([copia local](datasheets/MEAN_WELL_LRS-50_DATA_SHEET.pdf)) |
 
 Mean Well anunció en noviembre de 2019 que la familia LRS había completado el cambio a EN/IEC 62368-1 en octubre de 2019, sin dar fecha de lote ni modelos ([EE Power](https://eepower.com/new-industry-products/mean-well-announces-lrs-family-completed-ieculen62368-safety-upgrade)). **Una unidad de stock antiguo puede ser de antes de ese cambio.**
 
@@ -124,29 +124,29 @@ Mean Well anunció en noviembre de 2019 que la familia LRS había completado el 
 
 | Clave | Documento | Enlace |
 |---|---|---|
-| H25 | Hoja LRS-50-SPEC 2025-04-07 (copia de Mean Well Australia) | [PDF](https://www.meanwellaustralia.com.au/sites/default/files/2025-05/MEAN%20WELL%20LRS-50%20DATA%20SHEET.pdf) |
+| H25 | Hoja LRS-50-SPEC 2025-04-07 (copia de Mean Well Australia) | [PDF](https://www.meanwellaustralia.com.au/sites/default/files/2025-05/MEAN%20WELL%20LRS-50%20DATA%20SHEET.pdf) ([copia local](datasheets/MEAN_WELL_LRS-50_DATA_SHEET.pdf)) |
 | H22 | Hoja LRS-50-SPEC 2022-02-18 (apsoparts) | [PDF](https://www.apsoparts.com/media/downloads/asset//std.lang.all/05/22/LRS-50_1680-21407-0000-E-0522.pdf) |
-| H19 | Hoja LRS-50-SPEC 2019-07-23 (pulsar.pl) | [PDF](https://lib.pulsar.pl/karta/es/LRS-50-5.pdf) |
+| H19 | Hoja LRS-50-SPEC 2019-07-23 (pulsar.pl) | [PDF](https://lib.pulsar.pl/karta/es/LRS-50-5.pdf) ([copia local](datasheets/LRS-50-5.pdf)) |
 | H15b | Hoja LRS-50-SPEC 2015-12-31 (RS) | [PDF](https://docs.rs-online.com/19bc/0900766b814e41ec.pdf) |
 | H15 | Hoja LRS-50-SPEC 2015-06-16 (piekarz.pl) y copia sin fecha (Rapid) | [PDF](https://piekarz.pl/pdf/27180) · [PDF](https://static.rapidonline.com/pdf/85-5643_v1.pdf) |
-| Manual | Manual de instalación "Enclosed Type" (copia de montersi.pl, sin fecha visible) | [PDF](https://www.montersi.pl/instrukcje/Enclosed_Type_EN.pdf) |
-| Manual24 | Manual de instalación "Enclosed Type Switching Power Supply", fechado 2024.10.16 (copia de Mean Well Australia) | [PDF](https://www.meanwellaustralia.com.au/sites/default/files/2024-11/Enclosed%20Power%20Supply%20Installation%20Manual.pdf) |
+| Manual | Manual de instalación "Enclosed Type" (copia de montersi.pl, sin fecha visible) | [PDF](https://www.montersi.pl/instrukcje/Enclosed_Type_EN.pdf) ([copia local](datasheets/Enclosed_Type_EN.pdf)) |
+| Manual24 | Manual de instalación "Enclosed Type Switching Power Supply", fechado 2024.10.16 (copia de Mean Well Australia) | [PDF](https://www.meanwellaustralia.com.au/sites/default/files/2024-11/Enclosed%20Power%20Supply%20Installation%20Manual.pdf) ([copia local](datasheets/Enclosed_Power_Supply_Installation_Manual.pdf)) |
 
 ### Tabla de documentos
 
 | Documento | Referencia | Formato | Enlace |
 |---|---|---|---|
 | Hoja LRS-50 (oficial, **no pude abrirla**) | LRS-50-SPEC | PDF | [meanwell.com](https://www.meanwell.com/Upload/PDF/LRS-50/LRS-50-SPEC.PDF) |
-| Manual de instalación, inglés (oficial, **no pude abrirlo**) | Enclosed_Type_EN | PDF | [meanwell.com](https://www.meanwell.com/Upload/PDF/Enclosed_Type_EN.pdf) |
-| Manual de instalación 2024.10.16 (copia leída) | Enclosed Power Supply Installation Manual | PDF | [Mean Well Australia](https://www.meanwellaustralia.com.au/sites/default/files/2024-11/Enclosed%20Power%20Supply%20Installation%20Manual.pdf) |
+| Manual de instalación, inglés (oficial, **no pude abrirlo**) | Enclosed_Type_EN | PDF | [meanwell.com](https://www.meanwell.com/Upload/PDF/Enclosed_Type_EN.pdf) ([copia local](datasheets/Enclosed_Type_EN.pdf)) |
+| Manual de instalación 2024.10.16 (copia leída) | Enclosed Power Supply Installation Manual | PDF | [Mean Well Australia](https://www.meanwellaustralia.com.au/sites/default/files/2024-11/Enclosed%20Power%20Supply%20Installation%20Manual.pdf) ([copia local](datasheets/Enclosed_Power_Supply_Installation_Manual.pdf)) |
 | Manual de instalación, **español** (no abierto) | Enclosed_Type_SP | PDF | [meanwell.com](https://www.meanwell.com/Upload/PDF/Enclosed_Type_SP.pdf) |
 | Manual de instalación, italiano (no abierto) | Enclosed_Type_IT | PDF | [meanwell.com](https://www.meanwell.com/Upload/PDF/Enclosed_Type_IT.pdf) |
-| Declaración CE de conformidad LRS-35/50, versión 4, 12-1-2017 (copia leída) | LRS-50 CE DECLARATION | PDF | [Mean Well Australia](https://meanwellaustralia.com.au/sites/default/files/2024-09/MEAN%20WELL%20LRS-50%20CE%20DECLARATION.pdf) |
+| Declaración CE de conformidad LRS-35/50, versión 4, 12-1-2017 (copia leída) | LRS-50 CE DECLARATION | PDF | [Mean Well Australia](https://meanwellaustralia.com.au/sites/default/files/2024-09/MEAN%20WELL%20LRS-50%20CE%20DECLARATION.pdf) ([copia local](datasheets/MEAN_WELL_LRS-50_CE_DECLARATION.pdf)) |
 | Misma declaración en el sitio de Mean Well (según Elmark; no abierta) | LRS-35,50-CE-dec | PDF | [meanwell.com](https://www.meanwell.com/upload/pdf/LRS-35/LRS-35,50-CE-dec.pdf) |
 | Certificado LRS-50 (**robots.txt me impidió abrirlo**) | LRS-50_CER_001 | PDF | [digimax.it](https://www.digimax.it/media_import/ALIMENTATORI/MEANWELL/ACDC%20ENCLOSED/LRS-50/LRS-50_CER_001.pdf) (el enlace tal como salió tenía espacios en la ruta; aquí están codificados) |
 | Página de documentos y software (informes, certificados CB y TÜV, 3D) | LRS-50 | Web | [meanwell.com](https://www.meanwell.com/webapp/product/search.aspx?prod=LRS-50) (no abierta) |
 | Información del fabricante e importador, guía rápida y seguridad (Elmark) | — | PDF | [cdn.elmark.com.pl/32063](https://cdn.elmark.com.pl/32063) (**rechazado por la herramienta**; puede tener la información de seguridad y del importador en la UE) |
-| Modelo 3D / hoja en un distribuidor brasileño | LRS-50-SPEC / lrs-50-3d | PDF y ZIP | [PDF](https://metaltex.com.br/cdn/shop/files/LRS-50-SPEC.pdf?v=16745386383833487491) · [ZIP](https://metaltex.com.br/cdn/shop/files/lrs-50-3d.zip?v=6287321075361797459) (no abiertos) |
+| Modelo 3D / hoja en un distribuidor brasileño | LRS-50-SPEC / lrs-50-3d | PDF y ZIP | [PDF](https://metaltex.com.br/cdn/shop/files/LRS-50-SPEC.pdf?v=16745386383833487491) ([copia local](datasheets/LRS-50-SPEC.pdf)) · [ZIP](https://metaltex.com.br/cdn/shop/files/lrs-50-3d.zip?v=6287321075361797459) (no abiertos) |
 | Catálogo industrial de Mean Well, página 4 (serie LRS) | — | Web | [page4.html](https://www.meanwell.com/catalog/product/files/basic-html/page4.html) |
 
 Cómo llegar a los certificados CB y TÜV y a los informes de ensayo: según un hilo de Digi-Key, desde [meanwellusa.com](https://www.meanwellusa.com/) se busca "LRS-50", se abre la ficha y se pulsa "Report, Certificate, etc." ([hilo](https://forum.digikey.com/t/finding-meanwell-test-report-certificates-3d-stp-file/61323)). Ojo: la ficha de RS enlaza como "LRS-50 Series Datasheet" una hoja con marca **2015-12-31** (la H15b), es decir, antigua. Los distribuidores no siempre enlazan la versión vigente.
@@ -339,7 +339,7 @@ El valor de la guía (≈ 1,5 A²s) corresponde al extremo alto. El pico real se
 
 **Fusible T2,5A cerámico (Littelfuse 215, familia de referencia de la guía):** I²t de fusión nominal **22,29 A²s** (a 10 veces la corriente nominal), caída máx. 180 mV a 2,5 A, 250 V, norma IEC 60127-2 hoja 5 ([hoja](https://littelfuse.com/%7E/media/electronics/datasheets/fuses/littelfuse_fuse_215_datasheet.pdf.pdf)). Otros valores de la misma hoja: 2 A, 11,68 A²s; 3,15 A, 43,26 A²s. La guía (§2.7) da "22 A²s" para el T2,5A: **coincide**.
 
-**Criterio de Littelfuse ([Fuseology, p. 3-5 y 8](https://info.littelfuse.com/hubfs/Fuseology%20Design%20Guide.pdf)):** para 100 000 pulsos, el I²t del pulso no debe pasar del **22 %** del I²t de fusión nominal (como pauta general, no más del 20 %); en régimen continuo, no más del 75 % de la corriente nominal.
+**Criterio de Littelfuse ([Fuseology, p. 3-5 y 8](https://info.littelfuse.com/hubfs/Fuseology%20Design%20Guide.pdf) ([copia local](../fusibles-ceramicos-5x20-t2-5a/datasheets/Fuseology_Design_Guide.pdf))):** para 100 000 pulsos, el I²t del pulso no debe pasar del **22 %** del I²t de fusión nominal (como pauta general, no más del 20 %); en régimen continuo, no más del 75 % de la corriente nominal.
 
 | Comprobación | Resultado (cálculo mío) |
 |---|---|
@@ -361,7 +361,7 @@ El valor de la guía (≈ 1,5 A²s) corresponde al extremo alto. El pico real se
 - **Riesgo de suministro (agosto-octubre de 2026):** en el foro de Digi-Key, una respuesta atribuida a Digi-Key (27-8-2026) dice que, por la inclusión de Hunan Aihua Group (AiSHi) en la lista de entidades de la ley estadounidense UFLPA, **han detenido la venta de "select products" de proveedores afectados, entre ellos Mean Well, "until further notice"**, sin dar plazo. El hilo trata de la LRS-100-24, no de la LRS-50-5, y un participante aconseja cualificar una segunda fuente. Es una ley de EE. UU.; **no he comprobado que afecte al suministro en España/UE ni a la LRS-50-5** ([hilo](https://forum.digikey.com/t/availability-of-lrs-100-24/71596)).
 
 **Alternativas oficiales (solo si hay motivo):**
-- **Mean Well IRM-60-5** (5 V, 10 A, 50 W): encapsulada en silicona, **clase II (sin borne de tierra)**, 87 × 52 × 29,5 mm, montaje en PCB, EN/IEC 62368-1; eficiencia 84 %; −30 a +70 °C ([RS](https://uk.rs-online.com/web/p/switching-power-supplies/1358967), hoja [IRM-60](https://docs.rs-online.com/cd12/0900766b815c75ea.pdf), no abierta). Ventaja: sin bornes de 230 V al aire ni dependencia del cable de tierra de la fuente. Inconvenientes: se monta en una placa, no se sustituye tornillo a tornillo, y el listado de RS no cita EN 60335-1 (solo EN/IEC 62368-1).
+- **Mean Well IRM-60-5** (5 V, 10 A, 50 W): encapsulada en silicona, **clase II (sin borne de tierra)**, 87 × 52 × 29,5 mm, montaje en PCB, EN/IEC 62368-1; eficiencia 84 %; −30 a +70 °C ([RS](https://uk.rs-online.com/web/p/switching-power-supplies/1358967), hoja [IRM-60](https://docs.rs-online.com/cd12/0900766b815c75ea.pdf) ([copia local](datasheets/0900766b815c75ea.pdf)), no abierta). Ventaja: sin bornes de 230 V al aire ni dependencia del cable de tierra de la fuente. Inconvenientes: se monta en una placa, no se sustituye tornillo a tornillo, y el listado de RS no cita EN 60335-1 (solo EN/IEC 62368-1).
 - **Sin sustituto 1:1 que haya comprobado.** Otras LRS (LRS-35-5, LRS-75-5) comparten formato y bornes, pero cambian la potencia; no las he comparado.
 
 ## 8. Recomendaciones para el alcoholímetro
@@ -403,5 +403,7 @@ Son conclusiones mías, no afirmaciones de las fuentes.
 - **Que el ASIN corresponda a la revisión de 2025** o a un lote anterior a octubre de 2019.
 
 ## 10. Fuentes
+
+Copias locales de los documentos descargados: [lista en enlaces.md](enlaces.md#copias-locales-de-los-documentos) y carpeta [`datasheets/`](datasheets/).
 
 Todos los enlaces, ordenados por tipo y con la nota de los que no pude abrir, en [`enlaces.md`](enlaces.md).

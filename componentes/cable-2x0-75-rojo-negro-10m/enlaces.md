@@ -4,7 +4,7 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 ## Resistencia de conductores (IEC 60228 / DIN EN 60228)
 
-- [Lapp, tabla T11 de resistencias y estructura del conductor (PDF)](https://t3.lappcdn.com/fileadmin/DAM/Miltronic_Denmark/4_servicecenter/T11.pdf). Cita DIN EN 60228 (VDE 0295). 0,75 mm² a 20 °C: clase 2, 24,5 Ω/km; clases 5-6, 26,0; estañado clases 5-6, 26,7.
+- [Lapp, tabla T11 de resistencias y estructura del conductor (PDF)](https://t3.lappcdn.com/fileadmin/DAM/Miltronic_Denmark/4_servicecenter/T11.pdf) ([copia local](datasheets/T11.pdf)). Cita DIN EN 60228 (VDE 0295). 0,75 mm² a 20 °C: clase 2, 24,5 Ω/km; clases 5-6, 26,0; estañado clases 5-6, 26,7.
 - [mycableengineering: resistencia en CC según IEC 60228](https://mycableengineering.com/knowledge-base/iec-60228-dc-resistance). Mismos valores para 0,75 mm². La página cita también IEC 60287 en el cuerpo (parece un error).
 - [Bayka: resistencia de conductores](https://www.bayka.de/en/service/technical-information/conductor-resistance). Salió en la búsqueda; **no la abrí**.
 
@@ -34,11 +34,11 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 ## Corriente admisible
 
-- [Bayka TD06 (inglés): corriente admisible de cables flexibles, VDE 0298-4 tabla 11 (PDF)](https://www.bayka.de/wp-content/uploads/2022/11/TD06EN-current-carrying-capacity-flexible-copper-cables-and-wires.pdf). Para 0,75 mm²: 15, 6, 6 y 12 A en cuatro columnas que no pude asignar; factores de agrupamiento de la tabla 26.
+- [Bayka TD06 (inglés): corriente admisible de cables flexibles, VDE 0298-4 tabla 11 (PDF)](https://www.bayka.de/wp-content/uploads/2022/11/TD06EN-current-carrying-capacity-flexible-copper-cables-and-wires.pdf) ([copia local](datasheets/TD06EN-current-carrying-capacity-flexible-copper-cables-and-wires.pdf)). Para 0,75 mm²: 15, 6, 6 y 12 A en cuatro columnas que no pude asignar; factores de agrupamiento de la tabla 26.
 - [Bayka TD06DE (alemán) (PDF)](https://www.bayka.de/wp-content/uploads/2022/03/TD06DE-Strombelastbarkeit-flexible-Kupferkabel-und-Leitungen.pdf). Mismos valores; encabezados "Anzahl der belasteten Adern: 1, 2, 3, 2 oder 3".
 - [Kollmorgen: corriente admisible (EN 60204-1, según la página)](https://www.kollmorgen.com/content/strombelastbarkeit-0). 0,75 mm²: 10,4 A, 8,5 A y 6,8 A según instalación, a 40 °C; factores de temperatura de 30 a 60 °C. No cita el número de tabla.
 - [Comentario a DIN VDE 0298-4:2003-08 en Voltimum (PDF)](https://content.voltimum.com/de/136186/2005011125511186E0298-4.pdf). Solo comentario; **no contiene la tabla 11**.
-- [REBT ITC-BT-19 (PDF en plcmadrid.es)](https://www.plcmadrid.es/wp-content/uploads/rebt/itc19/ITC-BT-19.pdf). §2.2.3 (intensidades, remite a UNE 20460-5-523), §2.2.4 (colores), §2.9 y tabla 3 (aislamiento: MBTS 250 V c.c., 0,25 MΩ).
+- [REBT ITC-BT-19 (PDF en plcmadrid.es)](https://www.plcmadrid.es/wp-content/uploads/rebt/itc19/ITC-BT-19.pdf) ([copia local](../documentos-compartidos/normas/ITC-BT-19.pdf)). §2.2.3 (intensidades, remite a UNE 20460-5-523), §2.2.4 (colores), §2.9 y tabla 3 (aislamiento: MBTS 250 V c.c., 0,25 MΩ).
 
 ## Aislamiento, SELV y separación de los 230 V
 
@@ -61,7 +61,7 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 ## Normativa de producto: CPR, RoHS, LVD
 
 - [Nexans: preguntas frecuentes sobre el CPR](https://www.nexans.co.uk/en/business/buildings/building/Fire-safety/Construction-Products-Regulation/FAQ-on-CPR.html). Cables para instalación permanente en edificios; EN 50575; fin del periodo de coexistencia el 1-7-2017.
-- [Prysmian: Construction Products Regulations and Cable Industry (PDF)](https://tr.prysmian.com/sites/tr.prysmian.com/files/2025-01/Construction_Products_Regulations_and_Cable_Industry.pdf). EN 50575; no trata los cables flexibles ni las clases (tabla no extraída).
+- [Prysmian: Construction Products Regulations and Cable Industry (PDF)](https://tr.prysmian.com/sites/tr.prysmian.com/files/2025-01/Construction_Products_Regulations_and_Cable_Industry.pdf) ([copia local](datasheets/Construction_Products_Regulations_and_Cable_Industry.pdf)). EN 50575; no trata los cables flexibles ni las clases (tabla no extraída).
 - [Wikipedia: RoHS](https://en.wikipedia.org/wiki/Restriction_of_Hazardous_Substances_Directive). Cuatro ftalatos al 0,1 % desde el 22-7-2019. Abierta directamente.
 - [Wikipedia: PVC](https://en.wikipedia.org/wiki/Polyvinyl_chloride). Cloro y llama, HCl, plastificantes que migran, estabilizantes. Abierta directamente.
 - [EUR-Lex: Directiva 2014/35/UE (versión ELI)](https://eur-lex.europa.eu/eli/dir/2014/35/oj/eng). Mi herramienta recibió solo la cabecera. **Sin texto.**
@@ -94,3 +94,17 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 - **EUR-Lex:** solo devolvió cabeceras (ver arriba).
 - **Bayka (página de resistencia de conductores), Voltimum:** la página de resistencia de Bayka no la abrí (la de corrientes admisibles, TD06, sí); Voltimum es un comentario sin la tabla 11.
 - **Búsquedas web:** 16, en un presupuesto compartido. No busqué Which?, Test-Achats, OCU ni Stiftung Warentest por separado, ni UL 2468/1007, ni REACH/ECHA, ni GPSR.
+
+## Copias locales de los documentos
+
+Documentos descargados el 21-10-2026 y guardados en el repositorio. Si un documento tiene enlace original en esta ficha, aparece junto a él como "copia local".
+
+**En esta carpeta (`datasheets/`):**
+
+- [Construction_Products_Regulations_and_Cable_Industry.pdf](datasheets/Construction_Products_Regulations_and_Cable_Industry.pdf): The planet’s pathways / Construction Products Regulations and Cable Industry
+- [T11.pdf](datasheets/T11.pdf): Lapp T11: resistencia de conductores y estructura de los hilos, métrica
+- [TD06EN-current-carrying-capacity-flexible-copper-cables-and-wires.pdf](datasheets/TD06EN-current-carrying-capacity-flexible-copper-cables-and-wires.pdf): FLEXIBLE COPPER CABLES AND WIRES / acc. to DIN VDE 0298-4 (VDE 0298-4) / Bayka products
+
+**Citados en esta ficha y guardados en otra carpeta:**
+
+- [ITC-BT-19.pdf](../documentos-compartidos/normas/ITC-BT-19.pdf): ITC-BT-19: instalaciones interiores o receptoras, prescripciones generales (REBT)

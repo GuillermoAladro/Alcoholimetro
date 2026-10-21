@@ -4,7 +4,7 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 ## Hoja de datos del 221-415 (WAGO y copias)
 
-- [Hoja de datos 221-415, "Stand 19.05.2026", 7 págs., alemán (copia de ottofischer.ch)](https://www.ottofischer.ch/pim/1721f4dc-ce56-44e2-9334-09e62241dc1d/WAGO_221-415de.pdf) (abierta, dos veces). Es la fuente principal de especificaciones, aprobaciones y la frase sobre punteras.
+- [Hoja de datos 221-415, "Stand 19.05.2026", 7 págs., alemán (copia de ottofischer.ch)](https://www.ottofischer.ch/pim/1721f4dc-ce56-44e2-9334-09e62241dc1d/WAGO_221-415de.pdf) ([copia local](datasheets/WAGO_221-415de.pdf)) (abierta, dos veces). Es la fuente principal de especificaciones, aprobaciones y la frase sobre punteras.
 - [Hoja de datos 221-415, 06-04-2021, 8 págs. (copia de LCSC, emitida por WAGO Electronic (Tianjin))](https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2106061734_WAGO-221-415_C2765050.pdf) (abierta).
 - [Hoja de datos 221-415 en `wago.com`](https://www.wago.com/de/products/datasheets/221-415.pdf?product=221-415&lang=de) (**no abierta**: la herramienta la rechazó, aparece en el contenido de la página de osd-schenck). No la reintenté.
 - [Datos paramétricos 221-415 en rlocman (agregador)](https://www.rlocman.es/datasheet/data.html?di=537187) (abierta; sin enlace a PDF). Su variante [221-412](https://www.rlocman.es/datasheet/data.html?di=537185) salió en una búsqueda (no abierta).
@@ -74,3 +74,12 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 - Guía de montaje del proyecto (§1 fila 20, §3, §4, §5.1, §5.2): copia local en el espacio de trabajo, no está en el repositorio.
 - [Ficha de los cables JST-XH](../cables-jst-xh-4-pin/README.md): ya recoge el rango de la 221-415 para los hilos de 22 AWG.
 - [Ficha del cable USB-A a USB-C acodado](../cable-usb-a-usb-c-90-30cm/README.md): caída de tensión en el cable desde la regleta.
+
+## Copias locales de los documentos
+
+Documentos descargados el 21-10-2026 y guardados en el repositorio. Si un documento tiene enlace original en esta ficha, aparece junto a él como "copia local".
+
+**En esta carpeta (`datasheets/`):**
+
+- [WAGO_221-415_hoja-de-datos-zh.pdf](datasheets/WAGO_221-415_hoja-de-datos-zh.pdf): Hoja de datos WAGO 221-415, versión en chino (la misma serie que la hoja alemana) (archivo original: `fb22c0dd529a06cd8845b4312f11b684.pdf`)
+- [WAGO_221-415de.pdf](datasheets/WAGO_221-415de.pdf): Datenblatt | Artikelnummer: 221-415 / Verbindungsklemme mit Hebeln; für alle Leiterarten; max. 4 mm²; 5 Leiter; Gehäusefarbe (ottofischer.ch) (archivo original: `1721f4dc-ce56-44e2-9334-09e62241dc1d.pdf`)

@@ -34,7 +34,7 @@ Regletas de palanca que reparten el raíl de 5,20 V. En cada máquina se usan **
 
 ## 2. Especificaciones
 
-Fuente principal: hoja de datos del 221-415 de WAGO, **versión "Stand 19.05.2026", 7 páginas, en alemán**, en una copia de [ottofischer.ch](https://www.ottofischer.ch/pim/1721f4dc-ce56-44e2-9334-09e62241dc1d/WAGO_221-415de.pdf) (leída). Segunda fuente: copia más antigua (06-04-2021, 8 páginas, emitida por WAGO Electronic (Tianjin)) en [LCSC](https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2106061734_WAGO-221-415_C2765050.pdf) (leída). Las dos son copias de distribuidores; **no pude abrir el PDF en `wago.com`** (ver sección 3). Donde difieren, lo indico.
+Fuente principal: hoja de datos del 221-415 de WAGO, **versión "Stand 19.05.2026", 7 páginas, en alemán**, en una copia de [ottofischer.ch](https://www.ottofischer.ch/pim/1721f4dc-ce56-44e2-9334-09e62241dc1d/WAGO_221-415de.pdf) ([copia local](datasheets/WAGO_221-415de.pdf)) (leída). Segunda fuente: copia más antigua (06-04-2021, 8 páginas, emitida por WAGO Electronic (Tianjin)) en [LCSC](https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2106061734_WAGO-221-415_C2765050.pdf) (leída). Las dos son copias de distribuidores; **no pude abrir el PDF en `wago.com`** (ver sección 3). Donde difieren, lo indico.
 
 | Característica | Valor | Fuente |
 |---|---|---|
@@ -82,7 +82,7 @@ Notas:
 | Documento | Referencia | Formato | Enlace |
 |---|---|---|---|
 | Hoja de datos 221-415 en `wago.com` | Sin referencia (dirección vista en una tienda) | PDF | [datasheet](https://www.wago.com/de/products/datasheets/221-415.pdf?product=221-415&lang=de) (**no abierto**: la herramienta lo rechazó) |
-| Hoja de datos 221-415, "Stand 19.05.2026", 7 págs. (copia de ottofischer.ch) | Artículo 221-415 | PDF, alemán | [descargar](https://www.ottofischer.ch/pim/1721f4dc-ce56-44e2-9334-09e62241dc1d/WAGO_221-415de.pdf) |
+| Hoja de datos 221-415, "Stand 19.05.2026", 7 págs. (copia de ottofischer.ch) | Artículo 221-415 | PDF, alemán | [descargar](https://www.ottofischer.ch/pim/1721f4dc-ce56-44e2-9334-09e62241dc1d/WAGO_221-415de.pdf) ([copia local](datasheets/WAGO_221-415de.pdf)) |
 | Hoja de datos 221-415, 06-04-2021, 8 págs. (copia de LCSC) | Emitida por WAGO Electronic (Tianjin) | PDF | [descargar](https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2106061734_WAGO-221-415_C2765050.pdf) |
 | Datos paramétricos 221-415 (rlocman) | di=537187 | Web | [ver](https://www.rlocman.es/datasheet/data.html?di=537187) |
 | Página del producto 221-415 en WAGO (versión Reino Unido) | 221-415 | Web | [ver](https://www.wago.com/gb/installation-terminal-blocks-and-connectors/splicing-connector-with-levers/p/221-415) (sin pestañas de descargas en lo que pude leer) |
@@ -371,5 +371,7 @@ Son conclusiones mías, no afirmaciones de las fuentes.
 - **Los hilos de foro que no abrí** (comentarios de Hackaday, otros hilos de Mike Holt, ipcamtalk y IET).
 
 ## 10. Fuentes
+
+Copias locales de los documentos descargados: [lista en enlaces.md](enlaces.md#copias-locales-de-los-documentos) y carpeta [`datasheets/`](datasheets/).
 
 Todos los enlaces, ordenados por tipo y con nota en los que no pude abrir, en [`enlaces.md`](enlaces.md).
