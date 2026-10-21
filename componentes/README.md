@@ -12,6 +12,7 @@ Una carpeta por componente del alcoholímetro, con su ficha técnica, documentos
 | 6 | Winsen ZE29A (alcohol en aliento) | Mide el alcohol: módulo de prueba de aliento por UART | [winsen-ze29a](winsen-ze29a/README.md) |
 | 7 | Cables JST-XH de 4 pines | Clavija del sensor ZE29A | [cables-jst-xh-4-pin](cables-jst-xh-4-pin/README.md) |
 | 8 | Tubo de silicona de 6 mm | Lleva el aliento de la boquilla al sensor | [tubo-silicona-6mm](tubo-silicona-6mm/README.md) |
+| 9 | SumUp Solo con base de carga | Cobro con tarjeta (Cloud API) | [sumup-solo](sumup-solo/README.md) |
 | 10 | Cable USB-A a USB-C acodado 90°, 30 cm | Alimenta el SumUp Solo desde el borne USB-A | [cable-usb-a-usb-c-90-30cm](cable-usb-a-usb-c-90-30cm/README.md) |
 | 11 | Pulsador arcade 30 mm (EG STARTS) | Botón de inicio de la prueba (GPIO17) | [pulsador-arcade-30mm](pulsador-arcade-30mm/README.md) |
 | 12 | Adaptador Wi-Fi USB AR9271 | Wi-Fi de la Pi con la antena fuera de la chapa | [adaptador-wifi-ar9271](adaptador-wifi-ar9271/README.md) |
