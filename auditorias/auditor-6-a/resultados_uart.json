@@ -1,0 +1,85 @@
+{
+  "scope": "offline Python; fake serial. No sensor or Pi connected. Partial reads simulate a timeout before all 8 bytes are available; not ordinary fast UART packet splitting.",
+  "manual_frames_checked": 18,
+  "manual_frames_valid": 18,
+  "warmup_command": "ff 01 87 32 00 00 00 00 46",
+  "sample_result_raw": 90,
+  "serial_frame_duration_ms": 9.375,
+  "unprotected_missing_response": "TypeError",
+  "tests": [
+    {
+      "name": "valid",
+      "input": "ff 85 31 00 00 00 00 00 4a",
+      "readme_frame": "ff 85 31 00 00 00 00 00 4a",
+      "reference_frame": "ff 85 31 00 00 00 00 00 4a",
+      "expected": "ff 85 31 00 00 00 00 00 4a",
+      "readme_pass": true,
+      "reference_pass": true
+    },
+    {
+      "name": "non_FF_noise",
+      "input": "00 22 ff 85 31 00 00 00 00 00 4a",
+      "readme_frame": "ff 85 31 00 00 00 00 00 4a",
+      "reference_frame": "ff 85 31 00 00 00 00 00 4a",
+      "expected": "ff 85 31 00 00 00 00 00 4a",
+      "readme_pass": true,
+      "reference_pass": true
+    },
+    {
+      "name": "spurious_FF",
+      "input": "ff ff 85 31 00 00 00 00 00 4a",
+      "readme_frame": null,
+      "reference_frame": "ff 85 31 00 00 00 00 00 4a",
+      "expected": "ff 85 31 00 00 00 00 00 4a",
+      "readme_pass": false,
+      "reference_pass": true
+    },
+    {
+      "name": "fragmented_read",
+      "input": "ff 85 31 00 00 00 00 00 4a",
+      "readme_frame": null,
+      "reference_frame": "ff 85 31 00 00 00 00 00 4a",
+      "expected": "ff 85 31 00 00 00 00 00 4a",
+      "readme_pass": false,
+      "reference_pass": true
+    },
+    {
+      "name": "checksum_corrupt",
+      "input": "ff 85 31 00 00 00 00 00 4b",
+      "readme_frame": null,
+      "reference_frame": null,
+      "expected": null,
+      "readme_pass": true,
+      "reference_pass": true
+    },
+    {
+      "name": "truncated",
+      "input": "ff 85 31 00 00",
+      "readme_frame": null,
+      "reference_frame": null,
+      "expected": null,
+      "readme_pass": true,
+      "reference_pass": true
+    },
+    {
+      "name": "corrupt_then_valid",
+      "input": "ff 85 31 00 00 00 00 00 4b ff 85 31 00 00 00 00 00 4a",
+      "readme_frame": "ff 85 31 00 00 00 00 00 4a",
+      "reference_frame": "ff 85 31 00 00 00 00 00 4a",
+      "expected": "ff 85 31 00 00 00 00 00 4a",
+      "readme_pass": true,
+      "reference_pass": true
+    },
+    {
+      "name": "wrong_command_then_valid",
+      "input": "ff 88 04 00 00 00 00 00 74 ff 85 31 00 00 00 00 00 4a",
+      "readme_frame": null,
+      "reference_frame": "ff 85 31 00 00 00 00 00 4a",
+      "expected": "ff 85 31 00 00 00 00 00 4a",
+      "readme_pass": false,
+      "reference_pass": true
+    }
+  ],
+  "readme_passes": 5,
+  "reference_passes": 8
+}

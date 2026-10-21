@@ -1,0 +1,4701 @@
+{
+  "auditor": "Auditor 6-A",
+  "baseline_commit": "84be97669a9efec43e79b3dadc4af5e87458c41a",
+  "model": "DC resistivo nodal de corriente constante; no SPICE/EMC/termico/metrologia",
+  "limits": "Ventana 4.75–5.25V es objetivo de proyecto, no rango universal USB ni prueba fabricante pantalla/Solo. Cargas incluyen Pi+perifericos por escenario, no corrientes medidas. Resistencias de contacto y longitudes desconocidas son hipotesis. Sin capacitancias, regulacion dinamica, backfeed ni fallo de semiconductores. Barrido principal estrella sin retornos HDMI/USB/RF; 6 escenarios adicionales incluyen solo masa HDMI hipotetica.",
+  "wires": [
+    {
+      "wire": "W1",
+      "from": "Toma de pared (Schuko)",
+      "to": "Módulo C14 (#15), entrada",
+      "method": "Cordón Schuko → C13 de 2 m (#17)",
+      "notes": "El C13 se enchufa en el C14. El módulo tiene que ir bien fijado a la chapa: el tirón del cable lo aguanta la fijación (ficha #15, §6.4)",
+      "source_line": 49
+    },
+    {
+      "wire": "W2",
+      "from": "C14, pestaña de la fase (la que sale del portafusibles con el T2,5A)",
+      "to": "Interruptor, contacto A",
+      "method": "Marrón 1,5 mm², faston hembra aislado (#27)",
+      "notes": "⚠ Qué pestaña es la de la fase y qué faston es el A: se mide con el módulo suelto (apartado 4, punto 1)",
+      "source_line": 50
+    },
+    {
+      "wire": "W3",
+      "from": "C14, pestaña del neutro",
+      "to": "Interruptor, contacto C (solo en el caso 1)",
+      "method": "Azul 1,5 mm², faston hembra aislado",
+      "notes": "⚠ En el caso 2 no existe: el neutro va directo a W5",
+      "source_line": 51
+    },
+    {
+      "wire": "W4",
+      "from": "Interruptor, contacto B (el que cierra con A)",
+      "to": "LRS-50-5, borne 1 (AC/L)",
+      "method": "Marrón 1,5 mm². Faston en el módulo, puntera (#28) en la fuente",
+      "notes": "",
+      "source_line": 52
+    },
+    {
+      "wire": "W5",
+      "from": "Interruptor, contacto D (caso 1) o pestaña del neutro del C14 (caso 2)",
+      "to": "LRS-50-5, borne 2 (AC/N)",
+      "method": "Azul 1,5 mm². Faston en el módulo, puntera en la fuente",
+      "notes": "",
+      "source_line": 53
+    },
+    {
+      "wire": "W6",
+      "from": "C14, contacto de tierra (PE)",
+      "to": "Espárrago M4 × 20 (#25), 1ª tuerca",
+      "method": "Verde-amarillo. Faston en el C14, ojal M4 (#23) con arandela dentada (#24) en el espárrago",
+      "notes": "⚠ Sección: 1,5 mm² (guía) o 2,5 mm² (ITC-BT-19 §2.3). Más largo que L y N. Sin fusible ni interruptor en la tierra",
+      "source_line": 54
+    },
+    {
+      "wire": "W7",
+      "from": "Espárrago, 2ª tuerca",
+      "to": "LRS-50-5, borne 3 (FG)",
+      "method": "Verde-amarillo, ojal M4 / puntera",
+      "notes": "",
+      "source_line": 55
+    },
+    {
+      "wire": "W8",
+      "from": "Espárrago, 2ª tuerca",
+      "to": "Panel frontal, si va atornillado",
+      "method": "Verde-amarillo, ojal M4 en los dos extremos",
+      "notes": "",
+      "source_line": 56
+    },
+    {
+      "wire": "W9",
+      "from": "Espárrago, 2ª tuerca",
+      "to": "Caja interior (la suspendida)",
+      "method": "Verde-amarillo flexible, con holgura, ojal M4",
+      "notes": "Los muelles no valen como tierra",
+      "source_line": 57
+    },
+    {
+      "wire": "W10",
+      "from": "Espárrago, 2ª tuerca",
+      "to": "Cajón",
+      "method": "Verde-amarillo flexible, con holgura, ojal M4",
+      "notes": "",
+      "source_line": 58
+    },
+    {
+      "wire": "W11",
+      "from": "LRS-50-5, borne 5 (DC +V)",
+      "to": "WAGO «+5 V», polo 1",
+      "method": "Rojo 0,75 mm² (#21), puntera (#28)",
+      "notes": "⚠ Sin fusible ni PTC por rama: la fuente limita entre 10,6 y 14,4 A y el cable está dado para 6 A",
+      "source_line": 72
+    },
+    {
+      "wire": "W12",
+      "from": "LRS-50-5, borne 4 (DC −V)",
+      "to": "WAGO «GND», polo 1",
+      "method": "Negro 0,75 mm², puntera",
+      "notes": "El −V flota respecto a tierra. ⚠ Decidir si se une a tierra y en qué único punto",
+      "source_line": 73
+    },
+    {
+      "wire": "W13",
+      "from": "Polo 2 de las dos WAGO",
+      "to": "Raspberry Pi, puerto micro-USB",
+      "method": "Latiguillo micro-USB 22 AWG, ≤ 15 cm (#19): rojo → VBUS (pin 1), negro → GND (pin 5)",
+      "notes": "El anuncio dice que son 6 cables de 30 cm, uno rojo y uno negro, sin datos, pero no dice cuál va a VBUS. ⚠ Rojo = VBUS es la convención: medir polaridad y calibre antes de cortar",
+      "source_line": 74
+    },
+    {
+      "wire": "W14",
+      "from": "Polo 3 de las dos WAGO",
+      "to": "Borne USB-A nº 1 (#18), tornillos «+» y «−»",
+      "method": "Rojo y negro 0,75 mm², puntera (el borne admite AWG 28 a 16). D+ y D− unidos con un hilo corto; S (malla) sin conectar",
+      "notes": "Los cinco tornillos van rotulados S, +, D−, D+ y − (anuncio, texto y foto). ⚠ El puente D+/D− no está probado con el Solo. ⚠ Un USB-A suele ir para 1 a 1,5 A y el pico estimado del Solo es de 2 A",
+      "source_line": 75
+    },
+    {
+      "wire": "W15",
+      "from": "Borne USB-A nº 1 (conector hembra)",
+      "to": "SumUp Solo (#9), USB-C del canto de abajo",
+      "method": "Cable USB-A → USB-C acodado 90°, 30 cm (#10)",
+      "notes": "USB-C en el canto de abajo: se ve en una foto del anuncio (no es una medida). El cable que trae el Solo es C–C y no entra en el borne; la base de carga no se usa. ⚠ El anuncio del cable da 5 V y 3,1 A y 480 Mbit/s, pero no dice qué punta es la acodada ni la resistencia de 56 kΩ en el pin CC; el conector tiene que caber en la ranura de 14 × 9 mm del separador",
+      "source_line": 76
+    },
+    {
+      "wire": "W16",
+      "from": "Polo 4 de las dos WAGO",
+      "to": "Borne USB-A nº 2 (#18), tornillos «+» y «−»",
+      "method": "Igual que W14",
+      "notes": "⚠ Igual que W14. La pantalla tira de unos 0,5 A, así que aquí no hay problema de corriente",
+      "source_line": 77
+    },
+    {
+      "wire": "W17",
+      "from": "Borne USB-A nº 2 (conector hembra)",
+      "to": "Pantalla (#5), USB-C «Power IN»",
+      "method": "Cable «USB a USB-C» del paquete de la pantalla",
+      "notes": "La pantalla tiene un solo USB-C, junto al HDMI y al selector de la retroiluminación, en el mismo canto. ⚠ El anuncio no escribe «A»: lo normal es A → C y hay que comprobarlo al recibirlo, porque un C → C no entra en el borne. ⚠ Una reseña dice que el contacto de alimentación falla con un roce: sujetar el cable. No conectar el cable USB Pi–pantalla de la wiki de 52Pi",
+      "source_line": 78
+    },
+    {
+      "wire": "W18",
+      "from": "Polo 5 de las dos WAGO",
+      "to": "ZE29A (#6), pin 1 (5 V) y pin 2 (GND)",
+      "method": "Dos hilos de la clavija de 4 pines, 150 mm, 22 AWG (#7)",
+      "notes": "El J1 del módulo es un conector blanco de 4 vías con la serigrafía «Rx Tx GND 5V» (fotos del anuncio): el pin 1 del manual es el extremo «5V». Los hilos vienen amarillo, blanco, rojo y negro, y el anuncio no dice qué color va en cada posición: se mira en la clavija y se cablea por posición, no por color. ⚠ Tipo y paso del conector sin confirmar (la carcasa mide unos 11 a 12 mm en la foto, lo que apunta a JST-XH de 12,4 mm pero no lo prueba)",
+      "source_line": 79
+    },
+    {
+      "wire": "W19",
+      "from": "Pi, pin 8 (GPIO14, TXD)",
+      "to": "ZE29A, pin 4 (RX)",
+      "method": "Hilo de la clavija con Dupont hembra (#29) en la Pi",
+      "notes": "UART 9600 baudios, 8N1, 3,3 V. TX va a RX",
+      "source_line": 85
+    },
+    {
+      "wire": "W20",
+      "from": "ZE29A, pin 3 (TX)",
+      "to": "Pi, pin 10 (GPIO15, RXD)",
+      "method": "Igual",
+      "notes": "La serigrafía del J1 cuadra con el manual. ⚠ Comprobarlo en la placa recibida antes de dar tensión",
+      "source_line": 86
+    },
+    {
+      "wire": "W21",
+      "from": "Pulsador (#11), faston A del microinterruptor",
+      "to": "Pi, pin 11 (GPIO17)",
+      "method": "Faston hembra 2,8 mm (#27) en el pulsador, Dupont hembra en la Pi",
+      "notes": "La Pi pone el pull-up (`gpiozero.Button(17)`)",
+      "source_line": 87
+    },
+    {
+      "wire": "W22",
+      "from": "Pulsador, faston B del microinterruptor",
+      "to": "Pi, pin 9 (GND)",
+      "method": "Igual",
+      "notes": "A y B son intercambiables. El pulsador tiene 4 faston de 2,8 mm: 2 del microinterruptor (los dos que van juntos en un extremo del cuerpo gris, en la foto del anuncio) y 2 del LED, que no se conectan. ⚠ Ningún terminal va rotulado: con el polímetro en continuidad, el par que cierra al pulsar es el del interruptor",
+      "source_line": 88
+    },
+    {
+      "wire": "W23",
+      "from": "Pi, HDMI",
+      "to": "Pantalla, entrada HDMI",
+      "method": "Cable HDMI que trae la pantalla",
+      "notes": "Tamaño completo en los dos extremos",
+      "source_line": 89
+    },
+    {
+      "wire": "W24",
+      "from": "Pi, conector CSI «CAMERA»",
+      "to": "Camera Module 3 (#3), conector J1",
+      "method": "Cable FFC de 15 pines, paso 1,0 mm, 50 cm (#4)",
+      "notes": "El anuncio es un pack de tres cables (50, 100 y 200 cm). ⚠ No dice si los contactos están en la misma cara o en caras opuestas: hace falta «caras opuestas». Lado de la Pi: contactos hacia el conector HDMI. Lado de la cámara: hacia su placa. Con la Pi apagada",
+      "source_line": 90
+    },
+    {
+      "wire": "W25",
+      "from": "Pi, un puerto USB 2.0 (cualquiera de los 4)",
+      "to": "Adaptador Wi-Fi AR9271 (#12)",
+      "method": "El propio adaptador",
+      "notes": "",
+      "source_line": 91
+    },
+    {
+      "wire": "W26",
+      "from": "AR9271, conector RP-SMA",
+      "to": "Antena en el techo",
+      "method": "Alargo RP-SMA de 30 cm (#13) hasta el jack de panel (taladro de Ø6,5 mm); la antena se enrosca fuera",
+      "notes": "⚠ Macho y hembra del alargo, a comprobar al recibirlo. El jack toca el techo (tierra) y une la malla a tierra (ficha #13, §4.5)",
+      "source_line": 92
+    },
+    {
+      "wire": "W27",
+      "from": "Pi, ranura microSD",
+      "to": "SanDisk High Endurance 32 GB (#2)",
+      "method": "—",
+      "notes": "",
+      "source_line": 93
+    },
+    {
+      "wire": "W28",
+      "from": "Boquilla del panel",
+      "to": "ZE29A, toma de aire",
+      "method": "Tubo de silicona de 6 mm (#8)",
+      "notes": "Es un tubo, no un cable. ⚠ Opción A/B de la boquilla y barrera interior pendientes",
+      "source_line": 94
+    },
+    {
+      "wire": "W29",
+      "from": "Pi (por el AR9271)",
+      "to": "SumUp Solo",
+      "method": "Internet: Pi y Solo se conectan por Wi-Fi de 2,4 GHz al router del bar. La Pi crea el cobro con `POST /readers/{id}/checkout` y consulta el resultado con `GET /readers/{id}/checkout/{id}`",
+      "notes": "Sin conexión no se puede cobrar. Plan B: router 4G",
+      "source_line": 100
+    }
+  ],
+  "checks": [
+    {
+      "id": "DC-KCL",
+      "status": "PASS",
+      "detail": "112 circuitos coinciden con ecuacion analitica y KCL a <1e-9"
+    },
+    {
+      "id": "NET-W01-W29",
+      "status": "PASS",
+      "detail": "29 conexiones extraidas del documento; no confirma conectores fisicos"
+    },
+    {
+      "id": "HDMI-RETORNO",
+      "status": "RISK_CONFIRMED_IN_MODEL",
+      "detail": "6 escenarios con masa HDMI hipotetica, KCL cumple; retorno Pi abierto hace circular2A por HDMI en modelo de corriente constante. No se predice consumo real tras colapso."
+    },
+    {
+      "id": "BASE-MARGEN",
+      "status": "OUTSIDE_WINDOW_IN_MODEL",
+      "detail": "51/108 escenarios salen de ventana de ingenieria elegida"
+    },
+    {
+      "id": "BASE-SOBRETENSION",
+      "status": "OUTSIDE_WINDOW_IN_MODEL",
+      "detail": "envolvente 5.317000V; techo proyecto5.25V, ZE29A5.3V; sin sumar ripple; no valor medido"
+    },
+    {
+      "id": "PROPUESTA-DC",
+      "status": "PASS_CONDITIONAL",
+      "detail": "ver escenarios; la hipotesis de ripple y tolerancia debe validarse"
+    },
+    {
+      "id": "C14",
+      "status": "BLOCKED",
+      "detail": "no hay esquema del componente exacto para simular red"
+    },
+    {
+      "id": "FUSIBLES",
+      "status": "BLOCKED",
+      "detail": "faltan curvas/I2t/modelo hiccup y cargas dinamicas"
+    },
+    {
+      "id": "HARDWARE",
+      "status": "NOT_RUN",
+      "detail": "sin circuito fisico ni instrumentos conectados"
+    }
+  ],
+  "named_scenarios": [
+    {
+      "name": "base_5A",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.04,
+      "trunk_loop_ohm": 0.03,
+      "branch_loop_ohm": [
+        0.0559,
+        0.0874,
+        0.0874,
+        0.0559
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 5.050000000000001,
+      "loads_v": [
+        4.9382,
+        4.8752,
+        5.0063,
+        5.022050000000001
+      ],
+      "source_a": 4.999999999999953,
+      "return_a": 5.000000000000001,
+      "ground_offsets_v": [
+        0.13090000000000002,
+        0.16240000000000002,
+        0.09684999999999999,
+        0.08897500000000001
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "base_desfavorable_5A",
+      "source_v": 5.08,
+      "trunk_one_way_m": 1,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.06417439999999999,
+      "branch_loop_ohm": [
+        0.21839948,
+        0.25485128,
+        0.25485128,
+        0.21839948
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 4.759128,
+      "loads_v": [
+        4.32232904,
+        4.249425439999999,
+        4.631702359999999,
+        4.649928259999999
+      ],
+      "source_a": 5.000000000000022,
+      "return_a": 5.0,
+      "ground_offsets_v": [
+        0.37883548,
+        0.41528728,
+        0.22414881999999997,
+        0.21503587
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "propuesta_nominal_5_5A",
+      "source_v": 5.1,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.04,
+      "trunk_loop_ohm": 0.01065,
+      "branch_loop_ohm": [
+        0.0559,
+        0.0874,
+        0.0874,
+        0.0559
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 5.041425,
+      "loads_v": [
+        4.901674999999999,
+        4.866624999999999,
+        4.997725,
+        5.013475000000001
+      ],
+      "source_a": 5.499999999999941,
+      "return_a": 5.5,
+      "ground_offsets_v": [
+        0.0991625,
+        0.1166875,
+        0.0511375,
+        0.04326250000000001
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "propuesta_hipotesis_baja_5_5A",
+      "source_v": 5.0089999999999995,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.04,
+      "trunk_loop_ohm": 0.01169538,
+      "branch_loop_ohm": [
+        0.05839948,
+        0.09485127999999998,
+        0.09485127999999998,
+        0.05839948
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 2.6645352591003757e-15,
+      "bus_v": 4.94467541,
+      "loads_v": [
+        4.7986767100000005,
+        4.754972850000001,
+        4.89724977,
+        4.915475670000002
+      ],
+      "source_a": 5.499999999999849,
+      "return_a": 5.500000000000001,
+      "ground_offsets_v": [
+        0.10516164500000001,
+        0.127013575,
+        0.055875115,
+        0.046762165000000015
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    }
+  ],
+  "source_envelope": {
+    "baseline_set_v": 5.2,
+    "line_fraction": 0.005,
+    "load_fraction": 0.01,
+    "temp_fraction_25_to_50": 0.0075,
+    "baseline_high_without_ripple_v": 5.317,
+    "proposal_set_v": 5.1,
+    "proposal_assumed_residual_fraction": 0.01,
+    "proposal_assumed_ripple_half_v": 0.04,
+    "proposal_assumed_high_v": 5.191,
+    "warning": "80mVpp NO garantizado por nota7 LRS a carga0-50%; +1% residual propuesta es objetivo a validar, no dato garantizado."
+  },
+  "fault_sensitivity": {
+    "source_overload_w": [
+      55.00000000000001,
+      75.0
+    ],
+    "at_5_2V_a": [
+      10.576923076923078,
+      14.423076923076923
+    ],
+    "trunk_0_75_0_5m_power_at_12A_w": 3.7439999999999998,
+    "same_trunk_power_at_5A_w": 0.65,
+    "proposed_fuses_a": [
+      3,
+      3,
+      3,
+      2
+    ],
+    "sum_fuses_a": 11,
+    "status": "coordinacion sin demostrar; no predice temperatura ni tiempo disparo ni corriente real hiccup"
+  },
+  "parallel_hdmi_ground_scenarios": [
+    {
+      "hdmi_ground_ohm": 0.05,
+      "pi_return_open": false,
+      "bus_v": 5.050000000000001,
+      "loads_v": [
+        4.946023242909988,
+        4.8752,
+        4.9940683107274975,
+        5.022050000000001
+      ],
+      "source_a": 4.999999999999953,
+      "return_a": 5.000000000000001,
+      "ground_offsets_v": [
+        0.12307675709001234,
+        0.16240000000000002,
+        0.10908168927250311,
+        0.08897500000000001
+      ],
+      "hdmi_ground_a": 0.27990135635018454
+    },
+    {
+      "hdmi_ground_ohm": 0.05,
+      "pi_return_open": true,
+      "bus_v": 5.050000000000001,
+      "loads_v": [
+        4.7848500000000005,
+        4.8752,
+        4.918900000000001,
+        5.022050000000001
+      ],
+      "source_a": 4.999999999999953,
+      "return_a": 5.0,
+      "ground_offsets_v": [
+        0.28425000000000006,
+        0.16240000000000002,
+        0.18425,
+        0.088975
+      ],
+      "hdmi_ground_a": 2.000000000000001
+    },
+    {
+      "hdmi_ground_ohm": 0.2,
+      "pi_return_open": false,
+      "bus_v": 5.050000000000001,
+      "loads_v": [
+        4.94170339591386,
+        4.8752,
+        5.000822418553286,
+        5.02205
+      ],
+      "source_a": 4.999999999999953,
+      "return_a": 5.000000000000001,
+      "ground_offsets_v": [
+        0.12739660408614026,
+        0.16240000000000002,
+        0.10232758144671454,
+        0.08897500000000003
+      ],
+      "hdmi_ground_a": 0.12534511319712857
+    },
+    {
+      "hdmi_ground_ohm": 0.2,
+      "pi_return_open": true,
+      "bus_v": 5.050000000000001,
+      "loads_v": [
+        4.484850000000001,
+        4.8752,
+        4.918900000000001,
+        5.022050000000001
+      ],
+      "source_a": 4.999999999999953,
+      "return_a": 5.0,
+      "ground_offsets_v": [
+        0.58425,
+        0.16240000000000002,
+        0.18425,
+        0.088975
+      ],
+      "hdmi_ground_a": 2.0
+    },
+    {
+      "hdmi_ground_ohm": 1.0,
+      "pi_return_open": false,
+      "bus_v": 5.050000000000001,
+      "loads_v": [
+        4.9390880674660576,
+        4.8752,
+        5.004911500956469,
+        5.022050000000001
+      ],
+      "source_a": 4.999999999999953,
+      "return_a": 5.000000000000001,
+      "ground_offsets_v": [
+        0.13001193253394297,
+        0.1624,
+        0.09823849904353099,
+        0.08897500000000001
+      ],
+      "hdmi_ground_a": 0.03177343349041198
+    },
+    {
+      "hdmi_ground_ohm": 1.0,
+      "pi_return_open": true,
+      "bus_v": 5.050000000000001,
+      "loads_v": [
+        2.8848500000000006,
+        4.8752,
+        4.918900000000001,
+        5.022050000000001
+      ],
+      "source_a": 4.999999999999953,
+      "return_a": 5.0,
+      "ground_offsets_v": [
+        2.18425,
+        0.16240000000000002,
+        0.18425,
+        0.088975
+      ],
+      "hdmi_ground_a": 2.0
+    }
+  ],
+  "sweep": [
+    {
+      "name": "tipico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.017,
+      "branch_loop_ohm": [
+        0.0359,
+        0.0674,
+        0.0674,
+        0.0359
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 5.0409000000000015,
+      "loads_v": [
+        5.008590000000001,
+        4.986980000000002,
+        5.007200000000001,
+        5.0373100000000015
+      ],
+      "source_a": 2.299999999999864,
+      "return_a": 2.300000000000001,
+      "ground_offsets_v": [
+        0.035705000000000015,
+        0.04651000000000002,
+        0.036400000000000016,
+        0.02134500000000001
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.017,
+      "branch_loop_ohm": [
+        0.0359,
+        0.0674,
+        0.0674,
+        0.0359
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 4.995000000000001,
+      "loads_v": [
+        4.923200000000001,
+        4.860200000000002,
+        4.961300000000001,
+        4.977050000000001
+      ],
+      "source_a": 4.999999999999841,
+      "return_a": 5.000000000000002,
+      "ground_offsets_v": [
+        0.07840000000000003,
+        0.10990000000000003,
+        0.059350000000000014,
+        0.05147500000000002
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.017,
+      "branch_loop_ohm": [
+        0.0359,
+        0.0674,
+        0.0674,
+        0.0359
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 4.986500000000001,
+      "loads_v": [
+        4.896750000000002,
+        4.851700000000001,
+        4.952800000000002,
+        4.968550000000001
+      ],
+      "source_a": 5.499999999999825,
+      "return_a": 5.500000000000001,
+      "ground_offsets_v": [
+        0.09162500000000001,
+        0.11415,
+        0.06360000000000002,
+        0.05572500000000002
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.017,
+      "branch_loop_ohm": [
+        0.0359,
+        0.0674,
+        0.0674,
+        0.0359
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 5.160900000000002,
+      "loads_v": [
+        5.128590000000001,
+        5.106980000000002,
+        5.127200000000002,
+        5.157310000000002
+      ],
+      "source_a": 2.299999999999864,
+      "return_a": 2.300000000000001,
+      "ground_offsets_v": [
+        0.035705000000000015,
+        0.04651000000000002,
+        0.036400000000000016,
+        0.02134500000000001
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.017,
+      "branch_loop_ohm": [
+        0.0359,
+        0.0674,
+        0.0674,
+        0.0359
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 5.115000000000001,
+      "loads_v": [
+        5.0432000000000015,
+        4.980200000000002,
+        5.0813000000000015,
+        5.097050000000001
+      ],
+      "source_a": 4.999999999999841,
+      "return_a": 5.000000000000002,
+      "ground_offsets_v": [
+        0.07840000000000003,
+        0.10990000000000003,
+        0.059350000000000014,
+        0.05147500000000002
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.017,
+      "branch_loop_ohm": [
+        0.0359,
+        0.0674,
+        0.0674,
+        0.0359
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 5.106500000000001,
+      "loads_v": [
+        5.016750000000002,
+        4.971700000000001,
+        5.072800000000003,
+        5.088550000000002
+      ],
+      "source_a": 5.499999999999825,
+      "return_a": 5.500000000000001,
+      "ground_offsets_v": [
+        0.09162500000000001,
+        0.11415,
+        0.06360000000000002,
+        0.05572500000000002
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.017,
+      "branch_loop_ohm": [
+        0.1159,
+        0.1474,
+        0.1474,
+        0.1159
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 5.040899999999999,
+      "loads_v": [
+        4.936589999999999,
+        4.922979999999999,
+        4.967199999999998,
+        5.029309999999999
+      ],
+      "source_a": 2.3000000000001775,
+      "return_a": 2.2999999999999994,
+      "ground_offsets_v": [
+        0.071705,
+        0.07851,
+        0.056399999999999985,
+        0.02534499999999999
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.017,
+      "branch_loop_ohm": [
+        0.1159,
+        0.1474,
+        0.1474,
+        0.1159
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 2.6645352591003757e-15,
+      "bus_v": 4.994999999999997,
+      "loads_v": [
+        4.763199999999998,
+        4.700199999999999,
+        4.921299999999999,
+        4.9370499999999975
+      ],
+      "source_a": 5.0000000000002585,
+      "return_a": 4.999999999999999,
+      "ground_offsets_v": [
+        0.15839999999999999,
+        0.18989999999999996,
+        0.07934999999999999,
+        0.07147499999999998
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.017,
+      "branch_loop_ohm": [
+        0.1159,
+        0.1474,
+        0.1474,
+        0.1159
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 2.6645352591003757e-15,
+      "bus_v": 4.986499999999999,
+      "loads_v": [
+        4.696749999999998,
+        4.691699999999998,
+        4.912799999999998,
+        4.928549999999998
+      ],
+      "source_a": 5.5000000000001386,
+      "return_a": 5.499999999999999,
+      "ground_offsets_v": [
+        0.191625,
+        0.19415,
+        0.08359999999999998,
+        0.07572499999999997
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.017,
+      "branch_loop_ohm": [
+        0.1159,
+        0.1474,
+        0.1474,
+        0.1159
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 5.160899999999999,
+      "loads_v": [
+        5.056589999999999,
+        5.042979999999999,
+        5.087199999999999,
+        5.14931
+      ],
+      "source_a": 2.3000000000001775,
+      "return_a": 2.2999999999999994,
+      "ground_offsets_v": [
+        0.071705,
+        0.07851,
+        0.056399999999999985,
+        0.02534499999999999
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.017,
+      "branch_loop_ohm": [
+        0.1159,
+        0.1474,
+        0.1474,
+        0.1159
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 5.114999999999999,
+      "loads_v": [
+        4.8831999999999995,
+        4.8202,
+        5.0413,
+        5.0570499999999985
+      ],
+      "source_a": 5.00000000000005,
+      "return_a": 4.999999999999999,
+      "ground_offsets_v": [
+        0.15839999999999999,
+        0.18989999999999996,
+        0.07934999999999999,
+        0.07147499999999998
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.017,
+      "branch_loop_ohm": [
+        0.1159,
+        0.1474,
+        0.1474,
+        0.1159
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 5.1065,
+      "loads_v": [
+        4.816749999999999,
+        4.811699999999999,
+        5.032799999999999,
+        5.048549999999999
+      ],
+      "source_a": 5.500000000000034,
+      "return_a": 5.499999999999999,
+      "ground_offsets_v": [
+        0.191625,
+        0.19415,
+        0.08359999999999998,
+        0.07572499999999997
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.017,
+      "branch_loop_ohm": [
+        0.2159,
+        0.2474,
+        0.2474,
+        0.2159
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 5.0409,
+      "loads_v": [
+        4.84659,
+        4.84298,
+        4.9171999999999985,
+        5.019309999999999
+      ],
+      "source_a": 2.300000000000073,
+      "return_a": 2.2999999999999994,
+      "ground_offsets_v": [
+        0.11670500000000002,
+        0.11850999999999998,
+        0.08139999999999999,
+        0.030344999999999994
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.017,
+      "branch_loop_ohm": [
+        0.2159,
+        0.2474,
+        0.2474,
+        0.2159
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 4.994999999999998,
+      "loads_v": [
+        4.563199999999999,
+        4.5001999999999995,
+        4.871299999999999,
+        4.887049999999999
+      ],
+      "source_a": 5.0000000000001545,
+      "return_a": 4.999999999999998,
+      "ground_offsets_v": [
+        0.2584,
+        0.2898999999999999,
+        0.10435,
+        0.09647499999999998
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.017,
+      "branch_loop_ohm": [
+        0.2159,
+        0.2474,
+        0.2474,
+        0.2159
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 2.6645352591003757e-15,
+      "bus_v": 4.986499999999999,
+      "loads_v": [
+        4.446749999999999,
+        4.491699999999999,
+        4.862799999999999,
+        4.878549999999998
+      ],
+      "source_a": 5.5000000000001386,
+      "return_a": 5.499999999999999,
+      "ground_offsets_v": [
+        0.31662500000000005,
+        0.29414999999999997,
+        0.10859999999999999,
+        0.10072499999999998
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.017,
+      "branch_loop_ohm": [
+        0.2159,
+        0.2474,
+        0.2474,
+        0.2159
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 5.160899999999999,
+      "loads_v": [
+        4.966589999999999,
+        4.962979999999998,
+        5.037199999999998,
+        5.139309999999998
+      ],
+      "source_a": 2.3000000000001775,
+      "return_a": 2.2999999999999994,
+      "ground_offsets_v": [
+        0.11670500000000002,
+        0.11850999999999998,
+        0.08139999999999999,
+        0.030344999999999994
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.017,
+      "branch_loop_ohm": [
+        0.2159,
+        0.2474,
+        0.2474,
+        0.2159
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 3.552713678800501e-15,
+      "bus_v": 5.114999999999998,
+      "loads_v": [
+        4.6831999999999985,
+        4.620199999999997,
+        4.991299999999997,
+        5.007049999999998
+      ],
+      "source_a": 5.0000000000001545,
+      "return_a": 4.999999999999998,
+      "ground_offsets_v": [
+        0.2584,
+        0.2898999999999999,
+        0.10435,
+        0.09647499999999998
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.017,
+      "branch_loop_ohm": [
+        0.2159,
+        0.2474,
+        0.2474,
+        0.2159
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 2.6645352591003757e-15,
+      "bus_v": 5.106499999999999,
+      "loads_v": [
+        4.566749999999998,
+        4.611699999999998,
+        4.982799999999998,
+        4.998549999999998
+      ],
+      "source_a": 5.5000000000001386,
+      "return_a": 5.499999999999999,
+      "ground_offsets_v": [
+        0.31662500000000005,
+        0.29414999999999997,
+        0.10859999999999999,
+        0.10072499999999998
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.0190436,
+      "branch_loop_ohm": [
+        0.03839948,
+        0.07485127999999999,
+        0.07485127999999999,
+        0.03839948
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 5.036199719999999,
+      "loads_v": [
+        5.001640187999999,
+        4.976318695999999,
+        4.998774079999999,
+        5.032359771999999
+      ],
+      "source_a": 2.300000000000147,
+      "return_a": 2.2999999999999994,
+      "ground_offsets_v": [
+        0.039179906,
+        0.05184065199999999,
+        0.04061295999999999,
+        0.023820113999999996
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.0190436,
+      "branch_loop_ohm": [
+        0.03839948,
+        0.07485127999999999,
+        0.07485127999999999,
+        0.03839948
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 4.984781999999999,
+      "loads_v": [
+        4.907983039999999,
+        4.835079439999999,
+        4.947356359999999,
+        4.965582259999999
+      ],
+      "source_a": 5.000000000000141,
+      "return_a": 4.999999999999999,
+      "ground_offsets_v": [
+        0.08600848,
+        0.12246027999999999,
+        0.06632181999999999,
+        0.057208869999999995
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.0190436,
+      "branch_loop_ohm": [
+        0.03839948,
+        0.07485127999999999,
+        0.07485127999999999,
+        0.03839948
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 4.975260199999999,
+      "loads_v": [
+        4.879261499999999,
+        4.825557639999999,
+        4.93783456,
+        4.95606046
+      ],
+      "source_a": 5.5000000000000435,
+      "return_a": 5.499999999999998,
+      "ground_offsets_v": [
+        0.10036925,
+        0.12722117999999996,
+        0.07108271999999999,
+        0.06196976999999999
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.0190436,
+      "branch_loop_ohm": [
+        0.03839948,
+        0.07485127999999999,
+        0.07485127999999999,
+        0.03839948
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 5.15619972,
+      "loads_v": [
+        5.121640187999999,
+        5.096318695999998,
+        5.118774079999999,
+        5.152359771999999
+      ],
+      "source_a": 2.3000000000000536,
+      "return_a": 2.2999999999999994,
+      "ground_offsets_v": [
+        0.039179906,
+        0.05184065199999999,
+        0.04061295999999999,
+        0.023820113999999996
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.0190436,
+      "branch_loop_ohm": [
+        0.03839948,
+        0.07485127999999999,
+        0.07485127999999999,
+        0.03839948
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 5.104782,
+      "loads_v": [
+        5.027983039999999,
+        4.955079439999999,
+        5.067356359999999,
+        5.08558226
+      ],
+      "source_a": 5.000000000000048,
+      "return_a": 4.999999999999999,
+      "ground_offsets_v": [
+        0.08600848,
+        0.12246027999999999,
+        0.06632181999999999,
+        0.057208869999999995
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.0190436,
+      "branch_loop_ohm": [
+        0.03839948,
+        0.07485127999999999,
+        0.07485127999999999,
+        0.03839948
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 5.0952601999999985,
+      "loads_v": [
+        4.999261499999999,
+        4.945557639999999,
+        5.05783456,
+        5.076060459999999
+      ],
+      "source_a": 5.500000000000137,
+      "return_a": 5.499999999999998,
+      "ground_offsets_v": [
+        0.10036925,
+        0.12722117999999996,
+        0.07108271999999999,
+        0.06196976999999999
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.0190436,
+      "branch_loop_ohm": [
+        0.11839948,
+        0.15485127999999998,
+        0.15485127999999998,
+        0.11839948
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 5.03619972,
+      "loads_v": [
+        4.9296401880000005,
+        4.912318696,
+        4.9587740799999995,
+        5.024359772
+      ],
+      "source_a": 2.3000000000000536,
+      "return_a": 2.3000000000000003,
+      "ground_offsets_v": [
+        0.075179906,
+        0.083840652,
+        0.06061296,
+        0.027820114000000003
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.0190436,
+      "branch_loop_ohm": [
+        0.11839948,
+        0.15485127999999998,
+        0.15485127999999998,
+        0.11839948
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 4.984782,
+      "loads_v": [
+        4.747983039999999,
+        4.67507944,
+        4.90735636,
+        4.9255822600000005
+      ],
+      "source_a": 5.000000000000048,
+      "return_a": 5.0,
+      "ground_offsets_v": [
+        0.16600847999999999,
+        0.20246027999999996,
+        0.08632182000000001,
+        0.07720887
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.0190436,
+      "branch_loop_ohm": [
+        0.11839948,
+        0.15485127999999998,
+        0.15485127999999998,
+        0.11839948
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 4.975260199999999,
+      "loads_v": [
+        4.6792615,
+        4.665557639999999,
+        4.897834560000001,
+        4.916060460000001
+      ],
+      "source_a": 5.5000000000000435,
+      "return_a": 5.499999999999999,
+      "ground_offsets_v": [
+        0.20036925000000003,
+        0.20722117999999998,
+        0.09108272,
+        0.08196977
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.0190436,
+      "branch_loop_ohm": [
+        0.11839948,
+        0.15485127999999998,
+        0.15485127999999998,
+        0.11839948
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 5.15619972,
+      "loads_v": [
+        5.049640187999999,
+        5.032318696,
+        5.0787740800000005,
+        5.1443597720000005
+      ],
+      "source_a": 2.3000000000000536,
+      "return_a": 2.3000000000000003,
+      "ground_offsets_v": [
+        0.075179906,
+        0.083840652,
+        0.06061296,
+        0.027820114000000003
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.0190436,
+      "branch_loop_ohm": [
+        0.11839948,
+        0.15485127999999998,
+        0.15485127999999998,
+        0.11839948
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 5.104781999999999,
+      "loads_v": [
+        4.867983039999999,
+        4.795079439999999,
+        5.02735636,
+        5.045582259999999
+      ],
+      "source_a": 5.000000000000141,
+      "return_a": 5.0,
+      "ground_offsets_v": [
+        0.16600847999999999,
+        0.20246027999999996,
+        0.08632182000000001,
+        0.07720887
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.0190436,
+      "branch_loop_ohm": [
+        0.11839948,
+        0.15485127999999998,
+        0.15485127999999998,
+        0.11839948
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 5.095260199999999,
+      "loads_v": [
+        4.7992615,
+        4.7855576399999995,
+        5.01783456,
+        5.03606046
+      ],
+      "source_a": 5.5000000000000435,
+      "return_a": 5.499999999999999,
+      "ground_offsets_v": [
+        0.20036925000000003,
+        0.20722117999999998,
+        0.09108272,
+        0.08196977
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.0190436,
+      "branch_loop_ohm": [
+        0.21839948,
+        0.25485128,
+        0.25485128,
+        0.21839948
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 5.036199720000001,
+      "loads_v": [
+        4.8396401880000015,
+        4.832318696000001,
+        4.9087740800000015,
+        5.0143597720000015
+      ],
+      "source_a": 2.2999999999999603,
+      "return_a": 2.3000000000000003,
+      "ground_offsets_v": [
+        0.12017990600000002,
+        0.12384065200000002,
+        0.08561296000000002,
+        0.03282011400000001
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.0190436,
+      "branch_loop_ohm": [
+        0.21839948,
+        0.25485128,
+        0.25485128,
+        0.21839948
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 4.984782000000001,
+      "loads_v": [
+        4.547983040000001,
+        4.47507944,
+        4.857356360000001,
+        4.87558226
+      ],
+      "source_a": 4.999999999999955,
+      "return_a": 5.0,
+      "ground_offsets_v": [
+        0.26600848,
+        0.30246028,
+        0.11132182000000003,
+        0.10220887000000002
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.0190436,
+      "branch_loop_ohm": [
+        0.21839948,
+        0.25485128,
+        0.25485128,
+        0.21839948
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 4.9752602,
+      "loads_v": [
+        4.429261500000001,
+        4.46555764,
+        4.847834560000001,
+        4.86606046
+      ],
+      "source_a": 5.49999999999995,
+      "return_a": 5.499999999999999,
+      "ground_offsets_v": [
+        0.32536925000000005,
+        0.3072211800000001,
+        0.11608272000000003,
+        0.10696977000000002
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.0190436,
+      "branch_loop_ohm": [
+        0.21839948,
+        0.25485128,
+        0.25485128,
+        0.21839948
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 5.156199720000002,
+      "loads_v": [
+        4.959640188000002,
+        4.952318696000002,
+        5.028774080000002,
+        5.134359772000001
+      ],
+      "source_a": 2.299999999999867,
+      "return_a": 2.3000000000000003,
+      "ground_offsets_v": [
+        0.12017990600000002,
+        0.12384065200000002,
+        0.08561296000000002,
+        0.03282011400000001
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.0190436,
+      "branch_loop_ohm": [
+        0.21839948,
+        0.25485128,
+        0.25485128,
+        0.21839948
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 5.104782000000001,
+      "loads_v": [
+        4.667983040000001,
+        4.59507944,
+        4.977356360000002,
+        4.995582260000001
+      ],
+      "source_a": 4.999999999999955,
+      "return_a": 5.0,
+      "ground_offsets_v": [
+        0.26600848,
+        0.30246028,
+        0.11132182000000003,
+        0.10220887000000002
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.25,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.0190436,
+      "branch_loop_ohm": [
+        0.21839948,
+        0.25485128,
+        0.25485128,
+        0.21839948
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 5.0952602,
+      "loads_v": [
+        4.549261500000002,
+        4.585557640000002,
+        4.967834560000002,
+        4.986060460000002
+      ],
+      "source_a": 5.49999999999995,
+      "return_a": 5.499999999999999,
+      "ground_offsets_v": [
+        0.32536925000000005,
+        0.3072211800000001,
+        0.11608272000000003,
+        0.10696977000000002
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.03,
+      "branch_loop_ohm": [
+        0.0359,
+        0.0674,
+        0.0674,
+        0.0359
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 2.6645352591003757e-15,
+      "bus_v": 5.011000000000003,
+      "loads_v": [
+        4.978690000000003,
+        4.957080000000003,
+        4.977300000000003,
+        5.007410000000003
+      ],
+      "source_a": 2.299999999999791,
+      "return_a": 2.300000000000001,
+      "ground_offsets_v": [
+        0.05065500000000002,
+        0.061460000000000035,
+        0.051350000000000035,
+        0.03629500000000002
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.03,
+      "branch_loop_ohm": [
+        0.0359,
+        0.0674,
+        0.0674,
+        0.0359
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 3.552713678800501e-15,
+      "bus_v": 4.930000000000003,
+      "loads_v": [
+        4.858200000000003,
+        4.795200000000003,
+        4.896300000000004,
+        4.912050000000003
+      ],
+      "source_a": 4.999999999999775,
+      "return_a": 5.000000000000003,
+      "ground_offsets_v": [
+        0.11090000000000004,
+        0.14240000000000005,
+        0.09185000000000006,
+        0.08397500000000004
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.03,
+      "branch_loop_ohm": [
+        0.0359,
+        0.0674,
+        0.0674,
+        0.0359
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 3.552713678800501e-15,
+      "bus_v": 4.915000000000003,
+      "loads_v": [
+        4.825250000000003,
+        4.780200000000003,
+        4.881300000000003,
+        4.897050000000003
+      ],
+      "source_a": 5.499999999999794,
+      "return_a": 5.5000000000000036,
+      "ground_offsets_v": [
+        0.12737500000000004,
+        0.14990000000000006,
+        0.09935000000000005,
+        0.09147500000000003
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.03,
+      "branch_loop_ohm": [
+        0.0359,
+        0.0674,
+        0.0674,
+        0.0359
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 2.6645352591003757e-15,
+      "bus_v": 5.131000000000003,
+      "loads_v": [
+        5.098690000000002,
+        5.077080000000002,
+        5.097300000000003,
+        5.127410000000003
+      ],
+      "source_a": 2.299999999999791,
+      "return_a": 2.300000000000001,
+      "ground_offsets_v": [
+        0.05065500000000002,
+        0.061460000000000035,
+        0.051350000000000035,
+        0.03629500000000002
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.03,
+      "branch_loop_ohm": [
+        0.0359,
+        0.0674,
+        0.0674,
+        0.0359
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 3.552713678800501e-15,
+      "bus_v": 5.050000000000003,
+      "loads_v": [
+        4.978200000000003,
+        4.915200000000003,
+        5.016300000000004,
+        5.0320500000000035
+      ],
+      "source_a": 4.999999999999775,
+      "return_a": 5.000000000000003,
+      "ground_offsets_v": [
+        0.11090000000000004,
+        0.14240000000000005,
+        0.09185000000000006,
+        0.08397500000000004
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.03,
+      "branch_loop_ohm": [
+        0.0359,
+        0.0674,
+        0.0674,
+        0.0359
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 4.440892098500626e-15,
+      "bus_v": 5.035000000000003,
+      "loads_v": [
+        4.945250000000003,
+        4.900200000000004,
+        5.001300000000003,
+        5.017050000000003
+      ],
+      "source_a": 5.499999999999794,
+      "return_a": 5.5000000000000036,
+      "ground_offsets_v": [
+        0.12737500000000004,
+        0.14990000000000006,
+        0.09935000000000005,
+        0.09147500000000003
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.03,
+      "branch_loop_ohm": [
+        0.1159,
+        0.1474,
+        0.1474,
+        0.1159
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 5.011,
+      "loads_v": [
+        4.906690000000001,
+        4.893080000000001,
+        4.937300000000001,
+        4.999410000000001
+      ],
+      "source_a": 2.2999999999999687,
+      "return_a": 2.3000000000000007,
+      "ground_offsets_v": [
+        0.08665500000000001,
+        0.09346000000000002,
+        0.07135000000000002,
+        0.04029500000000001
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.03,
+      "branch_loop_ohm": [
+        0.1159,
+        0.1474,
+        0.1474,
+        0.1159
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 4.930000000000001,
+      "loads_v": [
+        4.698200000000001,
+        4.6352,
+        4.856300000000001,
+        4.872050000000001
+      ],
+      "source_a": 4.999999999999953,
+      "return_a": 5.000000000000001,
+      "ground_offsets_v": [
+        0.19090000000000001,
+        0.22240000000000001,
+        0.11185,
+        0.10397500000000001
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.03,
+      "branch_loop_ohm": [
+        0.1159,
+        0.1474,
+        0.1474,
+        0.1159
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 4.915000000000001,
+      "loads_v": [
+        4.625250000000001,
+        4.620200000000001,
+        4.841300000000001,
+        4.857050000000001
+      ],
+      "source_a": 5.499999999999972,
+      "return_a": 5.500000000000001,
+      "ground_offsets_v": [
+        0.227375,
+        0.22990000000000002,
+        0.11935000000000001,
+        0.11147500000000002
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.03,
+      "branch_loop_ohm": [
+        0.1159,
+        0.1474,
+        0.1474,
+        0.1159
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 5.131,
+      "loads_v": [
+        5.02669,
+        5.013080000000001,
+        5.0573000000000015,
+        5.11941
+      ],
+      "source_a": 2.2999999999999687,
+      "return_a": 2.3000000000000007,
+      "ground_offsets_v": [
+        0.08665500000000001,
+        0.09346000000000002,
+        0.07135000000000002,
+        0.04029500000000001
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.03,
+      "branch_loop_ohm": [
+        0.1159,
+        0.1474,
+        0.1474,
+        0.1159
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 5.05,
+      "loads_v": [
+        4.8182,
+        4.7552,
+        4.9763,
+        4.99205
+      ],
+      "source_a": 5.000000000000012,
+      "return_a": 5.000000000000001,
+      "ground_offsets_v": [
+        0.19090000000000001,
+        0.22240000000000001,
+        0.11185,
+        0.10397500000000001
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.03,
+      "branch_loop_ohm": [
+        0.1159,
+        0.1474,
+        0.1474,
+        0.1159
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 5.035,
+      "loads_v": [
+        4.7452499999999995,
+        4.740200000000001,
+        4.9613000000000005,
+        4.977049999999999
+      ],
+      "source_a": 5.500000000000031,
+      "return_a": 5.500000000000001,
+      "ground_offsets_v": [
+        0.227375,
+        0.22990000000000002,
+        0.11935000000000001,
+        0.11147500000000002
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.03,
+      "branch_loop_ohm": [
+        0.2159,
+        0.2474,
+        0.2474,
+        0.2159
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 5.010999999999998,
+      "loads_v": [
+        4.816689999999999,
+        4.8130799999999985,
+        4.887299999999999,
+        4.989409999999999
+      ],
+      "source_a": 2.3000000000000873,
+      "return_a": 2.2999999999999994,
+      "ground_offsets_v": [
+        0.131655,
+        0.13346,
+        0.09634999999999999,
+        0.045294999999999995
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.03,
+      "branch_loop_ohm": [
+        0.2159,
+        0.2474,
+        0.2474,
+        0.2159
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 4.929999999999999,
+      "loads_v": [
+        4.4982,
+        4.4352,
+        4.8063,
+        4.822049999999999
+      ],
+      "source_a": 5.000000000000071,
+      "return_a": 4.999999999999999,
+      "ground_offsets_v": [
+        0.29089999999999994,
+        0.3223999999999999,
+        0.13685,
+        0.128975
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.03,
+      "branch_loop_ohm": [
+        0.2159,
+        0.2474,
+        0.2474,
+        0.2159
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 2.6645352591003757e-15,
+      "bus_v": 4.914999999999999,
+      "loads_v": [
+        4.375249999999998,
+        4.4201999999999995,
+        4.7913,
+        4.807049999999999
+      ],
+      "source_a": 5.500000000000091,
+      "return_a": 5.499999999999999,
+      "ground_offsets_v": [
+        0.352375,
+        0.32989999999999997,
+        0.14434999999999998,
+        0.13647499999999999
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.03,
+      "branch_loop_ohm": [
+        0.2159,
+        0.2474,
+        0.2474,
+        0.2159
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 2.6645352591003757e-15,
+      "bus_v": 5.130999999999999,
+      "loads_v": [
+        4.936689999999999,
+        4.933079999999998,
+        5.007299999999998,
+        5.109409999999998
+      ],
+      "source_a": 2.3000000000000282,
+      "return_a": 2.2999999999999994,
+      "ground_offsets_v": [
+        0.131655,
+        0.13346,
+        0.09634999999999999,
+        0.045294999999999995
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.03,
+      "branch_loop_ohm": [
+        0.2159,
+        0.2474,
+        0.2474,
+        0.2159
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 5.049999999999999,
+      "loads_v": [
+        4.618199999999999,
+        4.555199999999999,
+        4.9262999999999995,
+        4.942049999999999
+      ],
+      "source_a": 5.000000000000071,
+      "return_a": 4.999999999999999,
+      "ground_offsets_v": [
+        0.29089999999999994,
+        0.3223999999999999,
+        0.13685,
+        0.128975
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.03,
+      "branch_loop_ohm": [
+        0.2159,
+        0.2474,
+        0.2474,
+        0.2159
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 5.035,
+      "loads_v": [
+        4.495249999999999,
+        4.540199999999999,
+        4.911299999999999,
+        4.9270499999999995
+      ],
+      "source_a": 5.500000000000031,
+      "return_a": 5.499999999999999,
+      "ground_offsets_v": [
+        0.352375,
+        0.32989999999999997,
+        0.14434999999999998,
+        0.13647499999999999
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.0340872,
+      "branch_loop_ohm": [
+        0.03839948,
+        0.07485127999999999,
+        0.07485127999999999,
+        0.03839948
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 5.001599439999998,
+      "loads_v": [
+        4.9670399079999985,
+        4.941718416,
+        4.964173799999998,
+        4.997759491999998
+      ],
+      "source_a": 2.300000000000116,
+      "return_a": 2.2999999999999994,
+      "ground_offsets_v": [
+        0.056480045999999985,
+        0.06914079199999999,
+        0.057913099999999995,
+        0.04112025399999999
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.0340872,
+      "branch_loop_ohm": [
+        0.03839948,
+        0.07485127999999999,
+        0.07485127999999999,
+        0.03839948
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 4.909563999999999,
+      "loads_v": [
+        4.83276504,
+        4.75986144,
+        4.872138359999999,
+        4.890364259999999
+      ],
+      "source_a": 5.000000000000067,
+      "return_a": 4.999999999999998,
+      "ground_offsets_v": [
+        0.12361747999999996,
+        0.16006927999999998,
+        0.10393081999999998,
+        0.09481786999999997
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.0340872,
+      "branch_loop_ohm": [
+        0.03839948,
+        0.07485127999999999,
+        0.07485127999999999,
+        0.03839948
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 4.8925203999999995,
+      "loads_v": [
+        4.796521699999999,
+        4.74281784,
+        4.855094759999999,
+        4.873320659999999
+      ],
+      "source_a": 5.500000000000042,
+      "return_a": 5.499999999999997,
+      "ground_offsets_v": [
+        0.14173914999999995,
+        0.16859107999999998,
+        0.11245261999999998,
+        0.10333966999999995
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.0340872,
+      "branch_loop_ohm": [
+        0.03839948,
+        0.07485127999999999,
+        0.07485127999999999,
+        0.03839948
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 5.121599439999998,
+      "loads_v": [
+        5.087039907999999,
+        5.061718415999999,
+        5.0841737999999985,
+        5.1177594919999985
+      ],
+      "source_a": 2.300000000000116,
+      "return_a": 2.2999999999999994,
+      "ground_offsets_v": [
+        0.056480045999999985,
+        0.06914079199999999,
+        0.057913099999999995,
+        0.04112025399999999
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.0340872,
+      "branch_loop_ohm": [
+        0.03839948,
+        0.07485127999999999,
+        0.07485127999999999,
+        0.03839948
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 2.6645352591003757e-15,
+      "bus_v": 5.029563999999998,
+      "loads_v": [
+        4.952765039999998,
+        4.879861439999999,
+        4.992138359999998,
+        5.0103642599999985
+      ],
+      "source_a": 5.000000000000118,
+      "return_a": 4.999999999999998,
+      "ground_offsets_v": [
+        0.12361747999999996,
+        0.16006927999999998,
+        0.10393081999999998,
+        0.09481786999999997
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.0340872,
+      "branch_loop_ohm": [
+        0.03839948,
+        0.07485127999999999,
+        0.07485127999999999,
+        0.03839948
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 3.552713678800501e-15,
+      "bus_v": 5.012520399999998,
+      "loads_v": [
+        4.916521699999997,
+        4.862817839999998,
+        4.975094759999998,
+        4.9933206599999975
+      ],
+      "source_a": 5.500000000000146,
+      "return_a": 5.499999999999997,
+      "ground_offsets_v": [
+        0.14173914999999995,
+        0.16859107999999998,
+        0.11245261999999998,
+        0.10333966999999995
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.0340872,
+      "branch_loop_ohm": [
+        0.11839948,
+        0.15485127999999998,
+        0.15485127999999998,
+        0.11839948
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 2.6645352591003757e-15,
+      "bus_v": 5.0015994400000015,
+      "loads_v": [
+        4.895039908000001,
+        4.877718416000001,
+        4.924173800000002,
+        4.989759492000001
+      ],
+      "source_a": 2.2999999999999075,
+      "return_a": 2.3000000000000007,
+      "ground_offsets_v": [
+        0.09248004600000001,
+        0.10114079200000001,
+        0.0779131,
+        0.04512025400000001
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.0340872,
+      "branch_loop_ohm": [
+        0.11839948,
+        0.15485127999999998,
+        0.15485127999999998,
+        0.11839948
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 4.909564000000001,
+      "loads_v": [
+        4.672765040000002,
+        4.5998614400000015,
+        4.832138360000002,
+        4.850364260000001
+      ],
+      "source_a": 4.99999999999991,
+      "return_a": 5.000000000000001,
+      "ground_offsets_v": [
+        0.20361748000000002,
+        0.24006927999999997,
+        0.12393082000000002,
+        0.11481787000000002
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.0340872,
+      "branch_loop_ohm": [
+        0.11839948,
+        0.15485127999999998,
+        0.15485127999999998,
+        0.11839948
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 4.892520400000001,
+      "loads_v": [
+        4.596521700000001,
+        4.5828178400000015,
+        4.815094760000001,
+        4.833320660000001
+      ],
+      "source_a": 5.499999999999938,
+      "return_a": 5.500000000000001,
+      "ground_offsets_v": [
+        0.24173915000000004,
+        0.24859108,
+        0.13245262000000002,
+        0.12333967000000003
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.0340872,
+      "branch_loop_ohm": [
+        0.11839948,
+        0.15485127999999998,
+        0.15485127999999998,
+        0.11839948
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 5.12159944,
+      "loads_v": [
+        5.015039908,
+        4.997718416000001,
+        5.044173800000001,
+        5.109759492
+      ],
+      "source_a": 2.300000000000012,
+      "return_a": 2.3000000000000007,
+      "ground_offsets_v": [
+        0.09248004600000001,
+        0.10114079200000001,
+        0.0779131,
+        0.04512025400000001
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.0340872,
+      "branch_loop_ohm": [
+        0.11839948,
+        0.15485127999999998,
+        0.15485127999999998,
+        0.11839948
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 0.0,
+      "bus_v": 5.029564000000001,
+      "loads_v": [
+        4.792765040000001,
+        4.719861440000001,
+        4.95213836,
+        4.97036426
+      ],
+      "source_a": 4.999999999999962,
+      "return_a": 5.000000000000001,
+      "ground_offsets_v": [
+        0.20361748000000002,
+        0.24006927999999997,
+        0.12393082000000002,
+        0.11481787000000002
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.0340872,
+      "branch_loop_ohm": [
+        0.11839948,
+        0.15485127999999998,
+        0.15485127999999998,
+        0.11839948
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 5.012520400000001,
+      "loads_v": [
+        4.7165217,
+        4.702817840000002,
+        4.935094760000002,
+        4.953320660000001
+      ],
+      "source_a": 5.499999999999938,
+      "return_a": 5.500000000000001,
+      "ground_offsets_v": [
+        0.24173915000000004,
+        0.24859108,
+        0.13245262000000002,
+        0.12333967000000003
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.0340872,
+      "branch_loop_ohm": [
+        0.21839948,
+        0.25485128,
+        0.25485128,
+        0.21839948
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 5.001599439999999,
+      "loads_v": [
+        4.805039907999999,
+        4.797718415999999,
+        4.874173799999999,
+        4.979759491999998
+      ],
+      "source_a": 2.3000000000000638,
+      "return_a": 2.2999999999999994,
+      "ground_offsets_v": [
+        0.137480046,
+        0.14114079200000001,
+        0.1029131,
+        0.05012025399999999
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.0340872,
+      "branch_loop_ohm": [
+        0.21839948,
+        0.25485128,
+        0.25485128,
+        0.21839948
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 4.909564,
+      "loads_v": [
+        4.47276504,
+        4.39986144,
+        4.782138359999999,
+        4.8003642599999985
+      ],
+      "source_a": 5.000000000000014,
+      "return_a": 4.999999999999998,
+      "ground_offsets_v": [
+        0.30361748,
+        0.34006928,
+        0.14893082,
+        0.13981786999999996
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.08,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.0340872,
+      "branch_loop_ohm": [
+        0.21839948,
+        0.25485128,
+        0.25485128,
+        0.21839948
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 4.8925203999999995,
+      "loads_v": [
+        4.3465216999999985,
+        4.382817839999999,
+        4.765094759999999,
+        4.7833206599999984
+      ],
+      "source_a": 5.500000000000042,
+      "return_a": 5.499999999999999,
+      "ground_offsets_v": [
+        0.36673915,
+        0.34859108000000005,
+        0.15745262,
+        0.14833966999999995
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.0340872,
+      "branch_loop_ohm": [
+        0.21839948,
+        0.25485128,
+        0.25485128,
+        0.21839948
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 5.12159944,
+      "loads_v": [
+        4.925039907999999,
+        4.917718416,
+        4.994173799999999,
+        5.099759491999999
+      ],
+      "source_a": 2.300000000000012,
+      "return_a": 2.2999999999999994,
+      "ground_offsets_v": [
+        0.137480046,
+        0.14114079200000001,
+        0.1029131,
+        0.05012025399999999
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.0340872,
+      "branch_loop_ohm": [
+        0.21839948,
+        0.25485128,
+        0.25485128,
+        0.21839948
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 5.029564,
+      "loads_v": [
+        4.59276504,
+        4.519861440000001,
+        4.9021383599999995,
+        4.920364259999999
+      ],
+      "source_a": 5.000000000000014,
+      "return_a": 4.999999999999998,
+      "ground_offsets_v": [
+        0.30361748,
+        0.34006928,
+        0.14893082,
+        0.13981786999999996
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.2,
+      "trunk_one_way_m": 0.5,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.0340872,
+      "branch_loop_ohm": [
+        0.21839948,
+        0.25485128,
+        0.25485128,
+        0.21839948
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 5.0125204,
+      "loads_v": [
+        4.4665216999999995,
+        4.502817839999999,
+        4.885094759999999,
+        4.9033206599999986
+      ],
+      "source_a": 5.500000000000042,
+      "return_a": 5.499999999999999,
+      "ground_offsets_v": [
+        0.36673915,
+        0.34859108000000005,
+        0.15745262,
+        0.14833966999999995
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.055999999999999994,
+      "branch_loop_ohm": [
+        0.0359,
+        0.0674,
+        0.0674,
+        0.0359
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 3.552713678800501e-15,
+      "bus_v": 4.951199999999997,
+      "loads_v": [
+        4.9188899999999975,
+        4.897279999999997,
+        4.917499999999998,
+        4.947609999999998
+      ],
+      "source_a": 2.3000000000000957,
+      "return_a": 2.2999999999999985,
+      "ground_offsets_v": [
+        0.08055499999999996,
+        0.09135999999999996,
+        0.08124999999999996,
+        0.06619499999999996
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.055999999999999994,
+      "branch_loop_ohm": [
+        0.0359,
+        0.0674,
+        0.0674,
+        0.0359
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 2.6645352591003757e-15,
+      "bus_v": 4.799999999999998,
+      "loads_v": [
+        4.7281999999999975,
+        4.665199999999997,
+        4.7662999999999975,
+        4.782049999999997
+      ],
+      "source_a": 5.000000000000084,
+      "return_a": 4.999999999999997,
+      "ground_offsets_v": [
+        0.17589999999999992,
+        0.2073999999999999,
+        0.15684999999999988,
+        0.1489749999999999
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.08,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.055999999999999994,
+      "branch_loop_ohm": [
+        0.0359,
+        0.0674,
+        0.0674,
+        0.0359
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 3.552713678800501e-15,
+      "bus_v": 4.771999999999998,
+      "loads_v": [
+        4.682249999999997,
+        4.637199999999996,
+        4.738299999999997,
+        4.754049999999997
+      ],
+      "source_a": 5.500000000000092,
+      "return_a": 5.4999999999999964,
+      "ground_offsets_v": [
+        0.1988749999999999,
+        0.22139999999999987,
+        0.17084999999999986,
+        0.1629749999999999
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.055999999999999994,
+      "branch_loop_ohm": [
+        0.0359,
+        0.0674,
+        0.0674,
+        0.0359
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 3.552713678800501e-15,
+      "bus_v": 5.0711999999999975,
+      "loads_v": [
+        5.038889999999997,
+        5.017279999999997,
+        5.037499999999997,
+        5.067609999999998
+      ],
+      "source_a": 2.3000000000000957,
+      "return_a": 2.2999999999999985,
+      "ground_offsets_v": [
+        0.08055499999999996,
+        0.09135999999999996,
+        0.08124999999999996,
+        0.06619499999999996
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.055999999999999994,
+      "branch_loop_ohm": [
+        0.0359,
+        0.0674,
+        0.0674,
+        0.0359
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 2.6645352591003757e-15,
+      "bus_v": 4.919999999999998,
+      "loads_v": [
+        4.8481999999999985,
+        4.785199999999997,
+        4.886299999999998,
+        4.902049999999998
+      ],
+      "source_a": 5.000000000000084,
+      "return_a": 4.999999999999997,
+      "ground_offsets_v": [
+        0.17589999999999992,
+        0.2073999999999999,
+        0.15684999999999988,
+        0.1489749999999999
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.2,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.055999999999999994,
+      "branch_loop_ohm": [
+        0.0359,
+        0.0674,
+        0.0674,
+        0.0359
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 3.552713678800501e-15,
+      "bus_v": 4.891999999999998,
+      "loads_v": [
+        4.802249999999997,
+        4.7571999999999965,
+        4.858299999999997,
+        4.874049999999997
+      ],
+      "source_a": 5.500000000000092,
+      "return_a": 5.4999999999999964,
+      "ground_offsets_v": [
+        0.1988749999999999,
+        0.22139999999999987,
+        0.17084999999999986,
+        0.1629749999999999
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.055999999999999994,
+      "branch_loop_ohm": [
+        0.1159,
+        0.1474,
+        0.1474,
+        0.1159
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 4.951200000000002,
+      "loads_v": [
+        4.846890000000002,
+        4.833280000000002,
+        4.877500000000002,
+        4.939610000000002
+      ],
+      "source_a": 2.299999999999937,
+      "return_a": 2.3000000000000007,
+      "ground_offsets_v": [
+        0.11655500000000002,
+        0.12336000000000001,
+        0.10125000000000002,
+        0.07019500000000002
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.055999999999999994,
+      "branch_loop_ohm": [
+        0.1159,
+        0.1474,
+        0.1474,
+        0.1159
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 2.6645352591003757e-15,
+      "bus_v": 4.8000000000000025,
+      "loads_v": [
+        4.568200000000001,
+        4.505200000000002,
+        4.726300000000003,
+        4.742050000000002
+      ],
+      "source_a": 4.999999999999925,
+      "return_a": 5.000000000000003,
+      "ground_offsets_v": [
+        0.25590000000000007,
+        0.28740000000000004,
+        0.17685000000000006,
+        0.16897500000000004
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.08,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.055999999999999994,
+      "branch_loop_ohm": [
+        0.1159,
+        0.1474,
+        0.1474,
+        0.1159
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 4.772000000000002,
+      "loads_v": [
+        4.482250000000001,
+        4.477200000000002,
+        4.698300000000002,
+        4.714050000000001
+      ],
+      "source_a": 5.499999999999934,
+      "return_a": 5.500000000000003,
+      "ground_offsets_v": [
+        0.29887500000000006,
+        0.30140000000000006,
+        0.19085000000000005,
+        0.18297500000000005
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.055999999999999994,
+      "branch_loop_ohm": [
+        0.1159,
+        0.1474,
+        0.1474,
+        0.1159
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 5.071200000000002,
+      "loads_v": [
+        4.966890000000002,
+        4.953280000000002,
+        4.997500000000002,
+        5.059610000000002
+      ],
+      "source_a": 2.299999999999937,
+      "return_a": 2.3000000000000007,
+      "ground_offsets_v": [
+        0.11655500000000002,
+        0.12336000000000001,
+        0.10125000000000002,
+        0.07019500000000002
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.055999999999999994,
+      "branch_loop_ohm": [
+        0.1159,
+        0.1474,
+        0.1474,
+        0.1159
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 2.6645352591003757e-15,
+      "bus_v": 4.920000000000003,
+      "loads_v": [
+        4.688200000000002,
+        4.625200000000002,
+        4.846300000000003,
+        4.862050000000003
+      ],
+      "source_a": 4.999999999999925,
+      "return_a": 5.000000000000003,
+      "ground_offsets_v": [
+        0.25590000000000007,
+        0.28740000000000004,
+        0.17685000000000006,
+        0.16897500000000004
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.2,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.055999999999999994,
+      "branch_loop_ohm": [
+        0.1159,
+        0.1474,
+        0.1474,
+        0.1159
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 2.6645352591003757e-15,
+      "bus_v": 4.892000000000002,
+      "loads_v": [
+        4.602250000000002,
+        4.597200000000003,
+        4.8183000000000025,
+        4.834050000000002
+      ],
+      "source_a": 5.499999999999934,
+      "return_a": 5.500000000000003,
+      "ground_offsets_v": [
+        0.29887500000000006,
+        0.30140000000000006,
+        0.19085000000000005,
+        0.18297500000000005
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.055999999999999994,
+      "branch_loop_ohm": [
+        0.2159,
+        0.2474,
+        0.2474,
+        0.2159
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 2.6645352591003757e-15,
+      "bus_v": 4.951200000000002,
+      "loads_v": [
+        4.756890000000002,
+        4.753280000000001,
+        4.827500000000002,
+        4.929610000000002
+      ],
+      "source_a": 2.299999999999937,
+      "return_a": 2.300000000000001,
+      "ground_offsets_v": [
+        0.16155500000000006,
+        0.16336000000000003,
+        0.12625000000000003,
+        0.07519500000000003
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.055999999999999994,
+      "branch_loop_ohm": [
+        0.2159,
+        0.2474,
+        0.2474,
+        0.2159
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 4.800000000000002,
+      "loads_v": [
+        4.368200000000002,
+        4.305200000000002,
+        4.676300000000001,
+        4.692050000000002
+      ],
+      "source_a": 4.999999999999957,
+      "return_a": 5.000000000000002,
+      "ground_offsets_v": [
+        0.35590000000000005,
+        0.3874,
+        0.20185000000000003,
+        0.19397500000000004
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.08,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.055999999999999994,
+      "branch_loop_ohm": [
+        0.2159,
+        0.2474,
+        0.2474,
+        0.2159
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 2.6645352591003757e-15,
+      "bus_v": 4.772000000000002,
+      "loads_v": [
+        4.232250000000001,
+        4.2772000000000014,
+        4.6483000000000025,
+        4.664050000000001
+      ],
+      "source_a": 5.499999999999934,
+      "return_a": 5.500000000000002,
+      "ground_offsets_v": [
+        0.42387500000000006,
+        0.4014,
+        0.21585000000000004,
+        0.207975
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.055999999999999994,
+      "branch_loop_ohm": [
+        0.2159,
+        0.2474,
+        0.2474,
+        0.2159
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 5.071200000000001,
+      "loads_v": [
+        4.876890000000001,
+        4.873280000000002,
+        4.947500000000002,
+        5.049610000000001
+      ],
+      "source_a": 2.299999999999969,
+      "return_a": 2.300000000000001,
+      "ground_offsets_v": [
+        0.16155500000000006,
+        0.16336000000000003,
+        0.12625000000000003,
+        0.07519500000000003
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.055999999999999994,
+      "branch_loop_ohm": [
+        0.2159,
+        0.2474,
+        0.2474,
+        0.2159
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 4.920000000000002,
+      "loads_v": [
+        4.488200000000001,
+        4.425200000000001,
+        4.7963000000000005,
+        4.812050000000001
+      ],
+      "source_a": 4.999999999999957,
+      "return_a": 5.000000000000002,
+      "ground_offsets_v": [
+        0.35590000000000005,
+        0.3874,
+        0.20185000000000003,
+        0.19397500000000004
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.2,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 20,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.055999999999999994,
+      "branch_loop_ohm": [
+        0.2159,
+        0.2474,
+        0.2474,
+        0.2159
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 4.892000000000002,
+      "loads_v": [
+        4.352250000000002,
+        4.3972000000000016,
+        4.768300000000002,
+        4.7840500000000015
+      ],
+      "source_a": 5.499999999999934,
+      "return_a": 5.500000000000002,
+      "ground_offsets_v": [
+        0.42387500000000006,
+        0.4014,
+        0.21585000000000004,
+        0.207975
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.06417439999999999,
+      "branch_loop_ohm": [
+        0.03839948,
+        0.07485127999999999,
+        0.07485127999999999,
+        0.03839948
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 4.932398879999999,
+      "loads_v": [
+        4.897839347999998,
+        4.872517855999998,
+        4.894973239999999,
+        4.928558931999999
+      ],
+      "source_a": 2.3000000000000425,
+      "return_a": 2.2999999999999994,
+      "ground_offsets_v": [
+        0.09108032599999996,
+        0.10374107199999995,
+        0.09251337999999995,
+        0.07572053399999996
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.06417439999999999,
+      "branch_loop_ohm": [
+        0.03839948,
+        0.07485127999999999,
+        0.07485127999999999,
+        0.03839948
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 2.6645352591003757e-15,
+      "bus_v": 4.759128,
+      "loads_v": [
+        4.682329039999998,
+        4.609425439999998,
+        4.721702359999998,
+        4.739928259999999
+      ],
+      "source_a": 5.000000000000022,
+      "return_a": 4.999999999999999,
+      "ground_offsets_v": [
+        0.19883547999999993,
+        0.23528727999999988,
+        0.17914881999999993,
+        0.17003586999999995
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.08,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.06417439999999999,
+      "branch_loop_ohm": [
+        0.03839948,
+        0.07485127999999999,
+        0.07485127999999999,
+        0.03839948
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 3.552713678800501e-15,
+      "bus_v": 4.727040799999999,
+      "loads_v": [
+        4.631042099999998,
+        4.577338239999997,
+        4.689615159999998,
+        4.707841059999998
+      ],
+      "source_a": 5.500000000000041,
+      "return_a": 5.499999999999999,
+      "ground_offsets_v": [
+        0.2244789499999999,
+        0.2513308799999999,
+        0.19519241999999992,
+        0.18607946999999994
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.06417439999999999,
+      "branch_loop_ohm": [
+        0.03839948,
+        0.07485127999999999,
+        0.07485127999999999,
+        0.03839948
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 5.052398879999999,
+      "loads_v": [
+        5.017839347999999,
+        4.992517855999998,
+        5.014973239999999,
+        5.048558931999999
+      ],
+      "source_a": 2.3000000000000425,
+      "return_a": 2.2999999999999994,
+      "ground_offsets_v": [
+        0.09108032599999996,
+        0.10374107199999995,
+        0.09251337999999995,
+        0.07572053399999996
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.06417439999999999,
+      "branch_loop_ohm": [
+        0.03839948,
+        0.07485127999999999,
+        0.07485127999999999,
+        0.03839948
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 4.879128,
+      "loads_v": [
+        4.80232904,
+        4.729425439999999,
+        4.841702359999999,
+        4.85992826
+      ],
+      "source_a": 5.000000000000022,
+      "return_a": 4.999999999999999,
+      "ground_offsets_v": [
+        0.19883547999999993,
+        0.23528727999999988,
+        0.17914881999999993,
+        0.17003586999999995
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.2,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.02,
+      "trunk_loop_ohm": 0.06417439999999999,
+      "branch_loop_ohm": [
+        0.03839948,
+        0.07485127999999999,
+        0.07485127999999999,
+        0.03839948
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 2.6645352591003757e-15,
+      "bus_v": 4.8470407999999985,
+      "loads_v": [
+        4.7510420999999985,
+        4.697338239999998,
+        4.809615159999999,
+        4.827841059999999
+      ],
+      "source_a": 5.500000000000041,
+      "return_a": 5.499999999999999,
+      "ground_offsets_v": [
+        0.2244789499999999,
+        0.2513308799999999,
+        0.19519241999999992,
+        0.18607946999999994
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.06417439999999999,
+      "branch_loop_ohm": [
+        0.11839948,
+        0.15485127999999998,
+        0.15485127999999998,
+        0.11839948
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 4.93239888,
+      "loads_v": [
+        4.825839348,
+        4.808517855999998,
+        4.854973239999999,
+        4.920558932
+      ],
+      "source_a": 2.3000000000000145,
+      "return_a": 2.3,
+      "ground_offsets_v": [
+        0.127080326,
+        0.13574107199999996,
+        0.11251337999999998,
+        0.079720534
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.06417439999999999,
+      "branch_loop_ohm": [
+        0.11839948,
+        0.15485127999999998,
+        0.15485127999999998,
+        0.11839948
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 4.759128,
+      "loads_v": [
+        4.52232904,
+        4.449425439999999,
+        4.681702359999999,
+        4.69992826
+      ],
+      "source_a": 5.000000000000022,
+      "return_a": 5.0,
+      "ground_offsets_v": [
+        0.27883547999999997,
+        0.3152872799999999,
+        0.19914881999999992,
+        0.19003586999999997
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.08,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.06417439999999999,
+      "branch_loop_ohm": [
+        0.11839948,
+        0.15485127999999998,
+        0.15485127999999998,
+        0.11839948
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 4.727040799999998,
+      "loads_v": [
+        4.4310421,
+        4.417338239999999,
+        4.649615159999999,
+        4.66784106
+      ],
+      "source_a": 5.500000000000041,
+      "return_a": 5.5,
+      "ground_offsets_v": [
+        0.32447894999999993,
+        0.3313308799999999,
+        0.21519242,
+        0.20607947
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.06417439999999999,
+      "branch_loop_ohm": [
+        0.11839948,
+        0.15485127999999998,
+        0.15485127999999998,
+        0.11839948
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 5.05239888,
+      "loads_v": [
+        4.945839348,
+        4.928517855999999,
+        4.974973239999999,
+        5.040558932
+      ],
+      "source_a": 2.3000000000000145,
+      "return_a": 2.3,
+      "ground_offsets_v": [
+        0.127080326,
+        0.13574107199999996,
+        0.11251337999999998,
+        0.079720534
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.06417439999999999,
+      "branch_loop_ohm": [
+        0.11839948,
+        0.15485127999999998,
+        0.15485127999999998,
+        0.11839948
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 4.879127999999999,
+      "loads_v": [
+        4.64232904,
+        4.569425439999999,
+        4.801702359999999,
+        4.819928259999999
+      ],
+      "source_a": 5.00000000000005,
+      "return_a": 5.0,
+      "ground_offsets_v": [
+        0.27883547999999997,
+        0.3152872799999999,
+        0.19914881999999992,
+        0.19003586999999997
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.2,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.1,
+      "trunk_loop_ohm": 0.06417439999999999,
+      "branch_loop_ohm": [
+        0.11839948,
+        0.15485127999999998,
+        0.15485127999999998,
+        0.11839948
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 4.847040799999999,
+      "loads_v": [
+        4.5510421,
+        4.537338239999999,
+        4.769615159999998,
+        4.78784106
+      ],
+      "source_a": 5.500000000000013,
+      "return_a": 5.5,
+      "ground_offsets_v": [
+        0.32447894999999993,
+        0.3313308799999999,
+        0.21519242,
+        0.20607947
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.06417439999999999,
+      "branch_loop_ohm": [
+        0.21839948,
+        0.25485128,
+        0.25485128,
+        0.21839948
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 4.93239888,
+      "loads_v": [
+        4.735839348000001,
+        4.728517856,
+        4.804973240000001,
+        4.910558932000001
+      ],
+      "source_a": 2.3000000000000145,
+      "return_a": 2.3000000000000003,
+      "ground_offsets_v": [
+        0.172080326,
+        0.175741072,
+        0.13751338,
+        0.084720534
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.08,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.06417439999999999,
+      "branch_loop_ohm": [
+        0.21839948,
+        0.25485128,
+        0.25485128,
+        0.21839948
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 1.7763568394002505e-15,
+      "bus_v": 4.759128,
+      "loads_v": [
+        4.32232904,
+        4.249425439999999,
+        4.631702359999999,
+        4.649928259999999
+      ],
+      "source_a": 5.000000000000022,
+      "return_a": 5.0,
+      "ground_offsets_v": [
+        0.37883548,
+        0.41528728,
+        0.22414881999999997,
+        0.21503587
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.08,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.06417439999999999,
+      "branch_loop_ohm": [
+        0.21839948,
+        0.25485128,
+        0.25485128,
+        0.21839948
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 4.727040799999999,
+      "loads_v": [
+        4.181042099999999,
+        4.217338239999999,
+        4.599615159999999,
+        4.61784106
+      ],
+      "source_a": 5.500000000000013,
+      "return_a": 5.5,
+      "ground_offsets_v": [
+        0.4494789500000001,
+        0.4313308800000001,
+        0.24019241999999996,
+        0.23107946999999998
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "tipico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.06417439999999999,
+      "branch_loop_ohm": [
+        0.21839948,
+        0.25485128,
+        0.25485128,
+        0.21839948
+      ],
+      "currents_a": [
+        0.9,
+        0.8,
+        0.5,
+        0.1
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 5.052398880000001,
+      "loads_v": [
+        4.855839348000001,
+        4.848517856,
+        4.92497324,
+        5.030558932000001
+      ],
+      "source_a": 2.299999999999987,
+      "return_a": 2.3000000000000003,
+      "ground_offsets_v": [
+        0.172080326,
+        0.175741072,
+        0.13751338,
+        0.084720534
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": true
+    },
+    {
+      "name": "pico_guia",
+      "source_v": 5.2,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.06417439999999999,
+      "branch_loop_ohm": [
+        0.21839948,
+        0.25485128,
+        0.25485128,
+        0.21839948
+      ],
+      "currents_a": [
+        2,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 4.8791280000000015,
+      "loads_v": [
+        4.442329040000001,
+        4.36942544,
+        4.751702360000001,
+        4.76992826
+      ],
+      "source_a": 4.999999999999967,
+      "return_a": 5.0,
+      "ground_offsets_v": [
+        0.37883548,
+        0.41528728,
+        0.22414881999999997,
+        0.21503587
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    },
+    {
+      "name": "reserva_pi_2_5A",
+      "source_v": 5.2,
+      "trunk_one_way_m": 1.0,
+      "temp_c": 60,
+      "contact_loop_ohm": 0.2,
+      "trunk_loop_ohm": 0.06417439999999999,
+      "branch_loop_ohm": [
+        0.21839948,
+        0.25485128,
+        0.25485128,
+        0.21839948
+      ],
+      "currents_a": [
+        2.5,
+        2,
+        0.5,
+        0.5
+      ],
+      "analytic_error_v": 8.881784197001252e-16,
+      "bus_v": 4.8470408,
+      "loads_v": [
+        4.3010421,
+        4.33733824,
+        4.719615160000001,
+        4.73784106
+      ],
+      "source_a": 5.499999999999986,
+      "return_a": 5.5,
+      "ground_offsets_v": [
+        0.4494789500000001,
+        0.4313308800000001,
+        0.24019241999999996,
+        0.23107946999999998
+      ],
+      "hdmi_ground_a": null,
+      "engineering_window_4_75_to_5_25": false
+    }
+  ]
+}

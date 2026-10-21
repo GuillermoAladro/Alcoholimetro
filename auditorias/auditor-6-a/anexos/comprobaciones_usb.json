@@ -1,0 +1,52 @@
+{
+  "kind": "analytical topology and Ohm-law scenarios, NOT SPICE or hardware validation",
+  "tests": [
+    {
+      "test": "baseline Pi power return path",
+      "result": true
+    },
+    {
+      "test": "W13 black open still has return via HDMI and display branch",
+      "result": true,
+      "implication": "latent fault; HDMI not designed as Pi supply return"
+    },
+    {
+      "test": "RF shield bonded to USB GND makes Pi GND-to-PE connected",
+      "result": true,
+      "condition": "requires confirmation RF shield-to-USB GND on actual AR9271"
+    }
+  ],
+  "voltage_scenarios": [
+    {
+      "source_v": 5.1,
+      "trunk_current_a_assumed": 6,
+      "trunk_length_m_one_way_assumed": 0.3,
+      "trunk_r_ohm": 0.01376,
+      "pi_current_a_assumed": 2.5,
+      "pi_branch_r_ohm": 0.175888,
+      "pi_rail_v": 4.57772,
+      "above_nominal_4_63": false
+    },
+    {
+      "source_v": 5.15,
+      "trunk_current_a_assumed": 6,
+      "trunk_length_m_one_way_assumed": 0.3,
+      "trunk_r_ohm": 0.01376,
+      "pi_current_a_assumed": 2.5,
+      "pi_branch_r_ohm": 0.175888,
+      "pi_rail_v": 4.62772,
+      "above_nominal_4_63": false
+    },
+    {
+      "source_v": 5.2,
+      "trunk_current_a_assumed": 6,
+      "trunk_length_m_one_way_assumed": 0.3,
+      "trunk_r_ohm": 0.01376,
+      "pi_current_a_assumed": 2.5,
+      "pi_branch_r_ohm": 0.175888,
+      "pi_rail_v": 4.67772,
+      "above_nominal_4_63": true
+    }
+  ],
+  "assumptions": "22AWG copper resistance 52.96 mOhm/m at 20C; 15cm each conductor; contact pair 60mOhm, F1 100mOhm post-trip upper scenario. NOT initial max guaranteed nor measured values. Loads and lengths assumed."
+}

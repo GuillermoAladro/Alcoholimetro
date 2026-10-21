@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="507" height="330" preserveAspectRatio="xMinYMin meet" viewBox="0 0 507 330" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="507" height="330"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-330)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="507" height="330" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="12" y="315" style="font-family: A6ArialBold; font-size: 13px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,630) scale(1,-1)">Propuesta eléctrica R1 · Auditor 6-A</text>
+			<text x="12" y="301" style="font-family: A6Arial; font-size: 8.6px;fill: rgb(31%,38%,43%); stroke:none;" transform="translate(0,602) scale(1,-1)">Esquema conceptual · requisitos pendientes de validar antes del montaje</text>
+			<rect x="12" y="253" width="111" height="37" rx="4" ry="4" style="stroke: rgb(9%,16%,22%); stroke-linecap: butt; stroke-width: 0.85; fill: rgb(94%,96%,97%); fill-rule: evenodd;"/>
+			<text x="38.32275390625" y="274.0" style="font-family: A6ArialBold; font-size: 10px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,548) scale(1,-1)">Entrada C14</text>
+			<text x="33.033203125" y="263.0" style="font-family: A6Arial; font-size: 8px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,526) scale(1,-1)">modelo identificado</text>
+			<rect x="145" y="253" width="153" height="37" rx="4" ry="4" style="stroke: rgb(9%,16%,22%); stroke-linecap: butt; stroke-width: 0.85; fill: rgb(94%,96%,97%); fill-rule: evenodd;"/>
+			<text x="172.13623046875" y="274.0" style="font-family: A6ArialBold; font-size: 9.4px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,548) scale(1,-1)">Protección de entrada</text>
+			<text x="182.451953125" y="263.0" style="font-family: A6Arial; font-size: 8.7px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,526) scale(1,-1)">+ corte bipolar L y N</text>
+			<rect x="320" y="253" width="175" height="37" rx="4" ry="4" style="stroke: rgb(9%,16%,22%); stroke-linecap: butt; stroke-width: 0.85; fill: rgb(94%,96%,97%); fill-rule: evenodd;"/>
+			<text x="357.351318359375" y="274.0" style="font-family: A6ArialBold; font-size: 9.5px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,548) scale(1,-1)">LRS-50-5 · entrada AC</text>
+			<text x="358.5822265625" y="263.0" style="font-family: A6Arial; font-size: 8.8px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,526) scale(1,-1)">borne 1 / L     borne 2 / N</text>
+			<path d="M 123,272 L 145,272 Z" style="stroke: rgb(9%,16%,22%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<polygon points="145 272, 140 269, 140 275" style="stroke: rgb(9%,16%,22%); stroke-linecap: butt; stroke-width: 0.2; fill: rgb(9%,16%,22%); fill-rule: evenodd;"/>
+			<path d="M 298,272 L 320,272 Z" style="stroke: rgb(9%,16%,22%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<polygon points="320 272, 315 269, 315 275" style="stroke: rgb(9%,16%,22%); stroke-linecap: butt; stroke-width: 0.2; fill: rgb(9%,16%,22%); fill-rule: evenodd;"/>
+			<text x="128.7868896484375" y="280" style="font-family: A6Arial; font-size: 6.7px;fill: rgb(31%,38%,43%); stroke:none;" transform="translate(0,560) scale(1,-1)">L,N</text>
+			<text x="303.7868896484375" y="280" style="font-family: A6Arial; font-size: 6.7px;fill: rgb(31%,38%,43%); stroke:none;" transform="translate(0,560) scale(1,-1)">L,N</text>
+			<path d="M 68,253 L 68,231 Z" style="stroke: rgb(9%,45%,26%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<path d="M 68,231 L 495,231 Z" style="stroke: rgb(9%,45%,26%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="495 231, 490 228, 490 234" style="stroke: rgb(9%,45%,26%); stroke-linecap: butt; stroke-width: 0.2; fill: rgb(9%,45%,26%); fill-rule: evenodd;"/>
+			<path d="M 407,231 L 407,253 Z" style="stroke: rgb(9%,45%,26%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<text x="80" y="237" style="font-family: A6Arial; font-size: 8.5px;fill: rgb(9%,45%,26%); stroke:none;" transform="translate(0,474) scale(1,-1)">PE continuo · sin corte ni fusible</text>
+			<text x="416" y="241" style="font-family: A6Arial; font-size: 8px;fill: rgb(9%,45%,26%); stroke:none;" transform="translate(0,482) scale(1,-1)">3 / FG</text>
+			<text x="396.848876953125" y="218" style="font-family: A6Arial; font-size: 8.7px;fill: rgb(9%,45%,26%); stroke:none;" transform="translate(0,436) scale(1,-1)">A chasis y partes móviles</text>
+			<rect x="12" y="181" width="89" height="29" rx="4" ry="4" style="stroke: rgb(71%,20%,23%); stroke-linecap: butt; stroke-width: 0.85; fill: rgb(100%,95%,95%); fill-rule: evenodd;"/>
+			<text x="33.383251953125" y="192.5" style="font-family: A6ArialBold; font-size: 9.4px;fill: rgb(71%,20%,23%); stroke:none;" transform="translate(0,385) scale(1,-1)">LRS 5 / +V</text>
+			<rect x="121" y="181" width="141" height="29" rx="4" ry="4" style="stroke: rgb(71%,20%,23%); stroke-linecap: butt; stroke-width: 0.85; fill: rgb(100%,95%,95%); fill-rule: evenodd;"/>
+			<text x="139.9237060546875" y="192.5" style="font-family: A6ArialBold; font-size: 9.1px;fill: rgb(71%,20%,23%); stroke:none;" transform="translate(0,385) scale(1,-1)">Protección principal DC</text>
+			<path d="M 101,195.5 L 121,195.5 Z" style="stroke: rgb(71%,20%,23%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<polygon points="121 195.5, 116 192.5, 116 198.5" style="stroke: rgb(71%,20%,23%); stroke-linecap: butt; stroke-width: 0.2; fill: rgb(71%,20%,23%); fill-rule: evenodd;"/>
+			<path d="M 262,195.5 L 315,195.5 Z" style="stroke: rgb(71%,20%,23%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<path d="M 315,195.5 L 315,168 Z" style="stroke: rgb(71%,20%,23%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<text x="325" y="192" style="font-family: A6Arial; font-size: 8.3px;fill: rgb(71%,20%,23%); stroke:none;" transform="translate(0,384) scale(1,-1)">Distribución DC +</text>
+			<path d="M 67,168 L 439,168 Z" style="stroke: rgb(71%,20%,23%); stroke-linecap: butt; stroke-width: 1.5;"/>
+			<path d="M 67,168 L 67,154 Z" style="stroke: rgb(71%,20%,23%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<polygon points="67 154, 64 159, 70 159" style="stroke: rgb(71%,20%,23%); stroke-linecap: butt; stroke-width: 0.2; fill: rgb(71%,20%,23%); fill-rule: evenodd;"/>
+			<rect x="20" y="123" width="94" height="31" rx="4" ry="4" style="stroke: rgb(71%,20%,23%); stroke-linecap: butt; stroke-width: 0.85; fill: rgb(100%,95%,95%); fill-rule: evenodd;"/>
+			<text x="37.92265625" y="141.0" style="font-family: A6ArialBold; font-size: 9.1px;fill: rgb(71%,20%,23%); stroke:none;" transform="translate(0,282) scale(1,-1)">Protección Pi</text>
+			<text x="35.996142578125" y="130.0" style="font-family: A6Arial; font-size: 7.8px;fill: rgb(71%,20%,23%); stroke:none;" transform="translate(0,260) scale(1,-1)">antes del latiguillo</text>
+			<path d="M 67,123 L 67,109 Z" style="stroke: rgb(71%,20%,23%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<polygon points="67 109, 64 114, 70 114" style="stroke: rgb(71%,20%,23%); stroke-linecap: butt; stroke-width: 0.2; fill: rgb(71%,20%,23%); fill-rule: evenodd;"/>
+			<rect x="20" y="65" width="94" height="44" rx="4" ry="4" style="stroke: rgb(13%,38%,54%); stroke-linecap: butt; stroke-width: 0.85; fill: rgb(94%,96%,98%); fill-rule: evenodd;"/>
+			<text x="28.1502685546875" y="95.0" style="font-family: A6ArialBold; font-size: 8.5px;fill: rgb(13%,38%,54%); stroke:none;" transform="translate(0,190) scale(1,-1)">Pi 3B+ · micro-USB</text>
+			<text x="44.771484375" y="84.0" style="font-family: A6Arial; font-size: 8px;fill: rgb(13%,38%,54%); stroke:none;" transform="translate(0,168) scale(1,-1)">CSI: cámara</text>
+			<text x="42.09765625" y="73.0" style="font-family: A6Arial; font-size: 8px;fill: rgb(13%,38%,54%); stroke:none;" transform="translate(0,146) scale(1,-1)">USB: AR9271</text>
+			<path d="M 67,65 L 67,49 Z" style="stroke: rgb(9%,16%,22%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<path d="M 191,168 L 191,154 Z" style="stroke: rgb(71%,20%,23%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<polygon points="191 154, 188 159, 194 159" style="stroke: rgb(71%,20%,23%); stroke-linecap: butt; stroke-width: 0.2; fill: rgb(71%,20%,23%); fill-rule: evenodd;"/>
+			<rect x="144" y="123" width="94" height="31" rx="4" ry="4" style="stroke: rgb(71%,20%,23%); stroke-linecap: butt; stroke-width: 0.85; fill: rgb(100%,95%,95%); fill-rule: evenodd;"/>
+			<text x="156.364013671875" y="141.0" style="font-family: A6ArialBold; font-size: 9.1px;fill: rgb(71%,20%,23%); stroke:none;" transform="translate(0,282) scale(1,-1)">Protección Solo</text>
+			<text x="162.5955078125" y="130.0" style="font-family: A6Arial; font-size: 7.8px;fill: rgb(71%,20%,23%); stroke:none;" transform="translate(0,260) scale(1,-1)">puerto protegido</text>
+			<path d="M 191,123 L 191,109 Z" style="stroke: rgb(71%,20%,23%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<polygon points="191 109, 188 114, 194 114" style="stroke: rgb(71%,20%,23%); stroke-linecap: butt; stroke-width: 0.2; fill: rgb(71%,20%,23%); fill-rule: evenodd;"/>
+			<rect x="144" y="65" width="94" height="44" rx="4" ry="4" style="stroke: rgb(13%,38%,54%); stroke-linecap: butt; stroke-width: 0.85; fill: rgb(94%,96%,98%); fill-rule: evenodd;"/>
+			<text x="157.7443359375" y="95.0" style="font-family: A6ArialBold; font-size: 8.8px;fill: rgb(13%,38%,54%); stroke:none;" transform="translate(0,190) scale(1,-1)">Puerto de carga</text>
+			<text x="166.759765625" y="84.0" style="font-family: A6Arial; font-size: 8px;fill: rgb(13%,38%,54%); stroke:none;" transform="translate(0,168) scale(1,-1)">documentado</text>
+			<text x="162.99248046875" y="73.0" style="font-family: A6Arial; font-size: 8.4px;fill: rgb(13%,38%,54%); stroke:none;" transform="translate(0,146) scale(1,-1)">→ USB-C Solo</text>
+			<path d="M 191,65 L 191,49 Z" style="stroke: rgb(9%,16%,22%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<path d="M 315,168 L 315,154 Z" style="stroke: rgb(71%,20%,23%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<polygon points="315 154, 312 159, 318 159" style="stroke: rgb(71%,20%,23%); stroke-linecap: butt; stroke-width: 0.2; fill: rgb(71%,20%,23%); fill-rule: evenodd;"/>
+			<rect x="268" y="123" width="94" height="31" rx="4" ry="4" style="stroke: rgb(71%,20%,23%); stroke-linecap: butt; stroke-width: 0.85; fill: rgb(100%,95%,95%); fill-rule: evenodd;"/>
+			<text x="276.256640625" y="141.0" style="font-family: A6ArialBold; font-size: 8.4px;fill: rgb(71%,20%,23%); stroke:none;" transform="translate(0,282) scale(1,-1)">Protección pantalla</text>
+			<text x="282.476513671875" y="130.0" style="font-family: A6Arial; font-size: 7.8px;fill: rgb(71%,20%,23%); stroke:none;" transform="translate(0,260) scale(1,-1)">según entrada real</text>
+			<path d="M 315,123 L 315,109 Z" style="stroke: rgb(71%,20%,23%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<polygon points="315 109, 312 114, 318 114" style="stroke: rgb(71%,20%,23%); stroke-linecap: butt; stroke-width: 0.2; fill: rgb(71%,20%,23%); fill-rule: evenodd;"/>
+			<rect x="268" y="65" width="94" height="44" rx="4" ry="4" style="stroke: rgb(13%,38%,54%); stroke-linecap: butt; stroke-width: 0.85; fill: rgb(94%,96%,98%); fill-rule: evenodd;"/>
+			<text x="284.994140625" y="95.0" style="font-family: A6ArialBold; font-size: 9px;fill: rgb(13%,38%,54%); stroke:none;" transform="translate(0,190) scale(1,-1)">Pantalla HDMI</text>
+			<text x="292.54296875" y="84.0" style="font-family: A6Arial; font-size: 8px;fill: rgb(13%,38%,54%); stroke:none;" transform="translate(0,168) scale(1,-1)">alimentación</text>
+			<text x="290.759765625" y="73.0" style="font-family: A6Arial; font-size: 8px;fill: rgb(13%,38%,54%); stroke:none;" transform="translate(0,146) scale(1,-1)">documentada</text>
+			<path d="M 315,65 L 315,49 Z" style="stroke: rgb(9%,16%,22%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<path d="M 439,168 L 439,154 Z" style="stroke: rgb(71%,20%,23%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<polygon points="439 154, 436 159, 442 159" style="stroke: rgb(71%,20%,23%); stroke-linecap: butt; stroke-width: 0.2; fill: rgb(71%,20%,23%); fill-rule: evenodd;"/>
+			<rect x="392" y="123" width="94" height="31" rx="4" ry="4" style="stroke: rgb(71%,20%,23%); stroke-linecap: butt; stroke-width: 0.85; fill: rgb(100%,95%,95%); fill-rule: evenodd;"/>
+			<text x="401.0458251953125" y="141.0" style="font-family: A6ArialBold; font-size: 8.7px;fill: rgb(71%,20%,23%); stroke:none;" transform="translate(0,282) scale(1,-1)">Protección sensor</text>
+			<text x="403.441064453125" y="130.0" style="font-family: A6Arial; font-size: 7.8px;fill: rgb(71%,20%,23%); stroke:none;" transform="translate(0,260) scale(1,-1)">según demanda real</text>
+			<path d="M 439,123 L 439,109 Z" style="stroke: rgb(71%,20%,23%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<polygon points="439 109, 436 114, 442 114" style="stroke: rgb(71%,20%,23%); stroke-linecap: butt; stroke-width: 0.2; fill: rgb(71%,20%,23%); fill-rule: evenodd;"/>
+			<rect x="392" y="65" width="94" height="44" rx="4" ry="4" style="stroke: rgb(13%,38%,54%); stroke-linecap: butt; stroke-width: 0.85; fill: rgb(94%,96%,98%); fill-rule: evenodd;"/>
+			<text x="424.216552734375" y="95.0" style="font-family: A6ArialBold; font-size: 9.5px;fill: rgb(13%,38%,54%); stroke:none;" transform="translate(0,190) scale(1,-1)">ZE29A</text>
+			<text x="424.546875" y="84.0" style="font-family: A6Arial; font-size: 8px;fill: rgb(13%,38%,54%); stroke:none;" transform="translate(0,168) scale(1,-1)">J1/1 Vin</text>
+			<text x="421.439453125" y="73.0" style="font-family: A6Arial; font-size: 8px;fill: rgb(13%,38%,54%); stroke:none;" transform="translate(0,146) scale(1,-1)">J1/2 GND</text>
+			<path d="M 439,65 L 439,49 Z" style="stroke: rgb(9%,16%,22%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<path d="M 67,49 L 439,49 Z" style="stroke: rgb(9%,16%,22%); stroke-linecap: butt; stroke-width: 1.5;"/>
+			<path d="M 67,49 L 67,38 Z" style="stroke: rgb(9%,16%,22%); stroke-linecap: butt; stroke-width: 1.2;"/>
+			<rect x="12" y="13" width="110" height="25" rx="4" ry="4" style="stroke: rgb(9%,16%,22%); stroke-linecap: butt; stroke-width: 0.85; fill: rgb(94%,96%,97%); fill-rule: evenodd;"/>
+			<text x="43.883251953125" y="22.5" style="font-family: A6ArialBold; font-size: 9.4px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,45) scale(1,-1)">LRS 4 / −V</text>
+			<text x="133" y="34" style="font-family: A6Arial; font-size: 8.6px;fill: rgb(9%,16%,22%); stroke:none;" transform="translate(0,68) scale(1,-1)">Retornos individuales al distribuidor 0 V</text>
+			<text x="133" y="21" style="font-family: A6Arial; font-size: 7.7px;fill: rgb(31%,38%,43%); stroke:none;" transform="translate(0,42) scale(1,-1)">HDMI / USB / RF: mapa de masas y unión 0 V–PE pendientes</text>
+			<text x="12" y="3" style="font-family: A6Arial; font-size: 7.5px;fill: rgb(31%,38%,43%); stroke:none;" transform="translate(0,6) scale(1,-1)">Calibres y modelos por cerrar. Las líneas de señal no se representan como retornos de potencia.</text>
+		</g>
+	</g>
+</svg>

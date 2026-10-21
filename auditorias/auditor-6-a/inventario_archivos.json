@@ -1,0 +1,3547 @@
+{
+  "auditor": "Auditor 6-A",
+  "baseline_commit": "84be97669a9efec43e79b3dadc4af5e87458c41a",
+  "hash_scope": "Contenido canónico de los blobs Git del commit base, no bytes del checkout Windows. bytes y sha256 corresponden al blob; git_blob es SHA-1 de la cabecera Git «blob <tamaño>\\0» y su contenido. Los 234 hashes de objeto se han verificado independientemente. Para diferencias del checkout se leyó git show HEAD:ruta.",
+  "coverage_note": "Se conserva la metadata de extracción y cobertura del inventario original, incluidas páginas y miembros ZIP; no se han reextraído PDF. Inventario íntegro no equivale a inspección visual exhaustiva. Se han eliminado recursivamente referencias temporales text_file. Los contadores de texto de archivos con líneas se ajustan al contenido canónico.",
+  "summary": {
+    "files": 234,
+    "total_bytes": 198526533,
+    "types": {
+      ".dxf": 1,
+      ".md": 69,
+      ".pdf": 150,
+      ".png": 4,
+      ".sh": 1,
+      ".svg": 4,
+      ".xlsx": 1,
+      ".zip": 4
+    },
+    "pdf_files": 150,
+    "pdf_pages": 1541,
+    "zip_files": 4,
+    "zip_members": 58,
+    "git_blobs_verified": 234,
+    "checkout_different_files": 74,
+    "checkout_crlf_only_files": 74,
+    "checkout_non_crlf_differences": 0,
+    "checkout_extra_bytes": 16523
+  },
+  "checkout_differences": [
+    {
+      "path": "LISTA-DE-COMPRA.md",
+      "checkout_bytes": 10359,
+      "canonical_bytes": 10285,
+      "difference_bytes": 74,
+      "crlf_only": true
+    },
+    {
+      "path": "MONTAJE-GENERAL.md",
+      "checkout_bytes": 35196,
+      "canonical_bytes": 34938,
+      "difference_bytes": 258,
+      "crlf_only": true
+    },
+    {
+      "path": "README.md",
+      "checkout_bytes": 1638,
+      "canonical_bytes": 1603,
+      "difference_bytes": 35,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/README.md",
+      "checkout_bytes": 5376,
+      "canonical_bytes": 5335,
+      "difference_bytes": 41,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/adaptador-wifi-ar9271/README.md",
+      "checkout_bytes": 60644,
+      "canonical_bytes": 60266,
+      "difference_bytes": 378,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/adaptador-wifi-ar9271/enlaces.md",
+      "checkout_bytes": 17442,
+      "canonical_bytes": 17334,
+      "difference_bytes": 108,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/alargo-antena-rp-sma-30cm/README.md",
+      "checkout_bytes": 48887,
+      "canonical_bytes": 48462,
+      "difference_bytes": 425,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/alargo-antena-rp-sma-30cm/enlaces.md",
+      "checkout_bytes": 14940,
+      "canonical_bytes": 14833,
+      "difference_bytes": 107,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/arandelas-dentadas-m4/README.md",
+      "checkout_bytes": 55836,
+      "canonical_bytes": 55456,
+      "difference_bytes": 380,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/arandelas-dentadas-m4/enlaces.md",
+      "checkout_bytes": 12546,
+      "canonical_bytes": 12446,
+      "difference_bytes": 100,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/borne-usb-a-hembra-tornillo/README.md",
+      "checkout_bytes": 49533,
+      "canonical_bytes": 49122,
+      "difference_bytes": 411,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/borne-usb-a-hembra-tornillo/enlaces.md",
+      "checkout_bytes": 17094,
+      "canonical_bytes": 16987,
+      "difference_bytes": 107,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/cable-2x0-75-rojo-negro-10m/README.md",
+      "checkout_bytes": 67289,
+      "canonical_bytes": 66757,
+      "difference_bytes": 532,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/cable-2x0-75-rojo-negro-10m/enlaces.md",
+      "checkout_bytes": 15365,
+      "canonical_bytes": 15255,
+      "difference_bytes": 110,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/cable-ffc-camara-50cm/README.md",
+      "checkout_bytes": 49819,
+      "canonical_bytes": 49397,
+      "difference_bytes": 422,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/cable-ffc-camara-50cm/enlaces.md",
+      "checkout_bytes": 14592,
+      "canonical_bytes": 14482,
+      "difference_bytes": 110,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/cable-h05vv-f-3g1-5-5m/README.md",
+      "checkout_bytes": 55370,
+      "canonical_bytes": 54957,
+      "difference_bytes": 413,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/cable-h05vv-f-3g1-5-5m/enlaces.md",
+      "checkout_bytes": 17989,
+      "canonical_bytes": 17883,
+      "difference_bytes": 106,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/cable-schuko-c13-2m/README.md",
+      "checkout_bytes": 50983,
+      "canonical_bytes": 50638,
+      "difference_bytes": 345,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/cable-schuko-c13-2m/enlaces.md",
+      "checkout_bytes": 11594,
+      "canonical_bytes": 11498,
+      "difference_bytes": 96,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/cable-usb-a-usb-c-90-30cm/README.md",
+      "checkout_bytes": 35242,
+      "canonical_bytes": 34981,
+      "difference_bytes": 261,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/cable-usb-a-usb-c-90-30cm/enlaces.md",
+      "checkout_bytes": 11079,
+      "canonical_bytes": 10991,
+      "difference_bytes": 88,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/cables-dupont-elegoo-120/README.md",
+      "checkout_bytes": 55170,
+      "canonical_bytes": 54781,
+      "difference_bytes": 389,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/cables-dupont-elegoo-120/enlaces.md",
+      "checkout_bytes": 14186,
+      "canonical_bytes": 14088,
+      "difference_bytes": 98,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/cables-jst-xh-4-pin/README.md",
+      "checkout_bytes": 38118,
+      "canonical_bytes": 37759,
+      "difference_bytes": 359,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/cables-jst-xh-4-pin/enlaces.md",
+      "checkout_bytes": 8633,
+      "canonical_bytes": 8549,
+      "difference_bytes": 84,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/crimpadora-y-punteras/README.md",
+      "checkout_bytes": 69268,
+      "canonical_bytes": 68741,
+      "difference_bytes": 527,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/crimpadora-y-punteras/enlaces.md",
+      "checkout_bytes": 16412,
+      "canonical_bytes": 16312,
+      "difference_bytes": 100,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/documentos-compartidos/README.md",
+      "checkout_bytes": 3109,
+      "canonical_bytes": 3088,
+      "difference_bytes": 21,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/esparragos-soldar-m4x20/README.md",
+      "checkout_bytes": 61117,
+      "canonical_bytes": 60719,
+      "difference_bytes": 398,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/esparragos-soldar-m4x20/enlaces.md",
+      "checkout_bytes": 13342,
+      "canonical_bytes": 13252,
+      "difference_bytes": 90,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/fusibles-ceramicos-5x20-t2-5a/README.md",
+      "checkout_bytes": 43694,
+      "canonical_bytes": 43349,
+      "difference_bytes": 345,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/fusibles-ceramicos-5x20-t2-5a/enlaces.md",
+      "checkout_bytes": 13786,
+      "canonical_bytes": 13692,
+      "difference_bytes": 94,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/kit-faston-aislados/README.md",
+      "checkout_bytes": 57585,
+      "canonical_bytes": 57211,
+      "difference_bytes": 374,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/kit-faston-aislados/enlaces.md",
+      "checkout_bytes": 16194,
+      "canonical_bytes": 16076,
+      "difference_bytes": 118,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/latiguillo-micro-usb-22awg/README.md",
+      "checkout_bytes": 49342,
+      "canonical_bytes": 49012,
+      "difference_bytes": 330,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/latiguillo-micro-usb-22awg/enlaces.md",
+      "checkout_bytes": 13618,
+      "canonical_bytes": 13543,
+      "difference_bytes": 75,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/meanwell-lrs-50-5/README.md",
+      "checkout_bytes": 56333,
+      "canonical_bytes": 55924,
+      "difference_bytes": 409,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/meanwell-lrs-50-5/enlaces.md",
+      "checkout_bytes": 16436,
+      "canonical_bytes": 16323,
+      "difference_bytes": 113,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/modulo-c14-fusible-interruptor/README.md",
+      "checkout_bytes": 71690,
+      "canonical_bytes": 71183,
+      "difference_bytes": 507,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/modulo-c14-fusible-interruptor/enlaces.md",
+      "checkout_bytes": 13469,
+      "canonical_bytes": 13337,
+      "difference_bytes": 132,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/pantalla-geeekpi-7-hdmi/README.md",
+      "checkout_bytes": 52240,
+      "canonical_bytes": 51836,
+      "difference_bytes": 404,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/pantalla-geeekpi-7-hdmi/enlaces.md",
+      "checkout_bytes": 12325,
+      "canonical_bytes": 12222,
+      "difference_bytes": 103,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/pasacables-goma/README.md",
+      "checkout_bytes": 54460,
+      "canonical_bytes": 54049,
+      "difference_bytes": 411,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/pasacables-goma/enlaces.md",
+      "checkout_bytes": 14700,
+      "canonical_bytes": 14601,
+      "difference_bytes": 99,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/pendientes.md",
+      "checkout_bytes": 11623,
+      "canonical_bytes": 11551,
+      "difference_bytes": 72,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/pulsador-arcade-30mm/README.md",
+      "checkout_bytes": 57694,
+      "canonical_bytes": 57255,
+      "difference_bytes": 439,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/pulsador-arcade-30mm/enlaces.md",
+      "checkout_bytes": 12899,
+      "canonical_bytes": 12775,
+      "difference_bytes": 124,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/raspberry-pi-3b-plus/README.md",
+      "checkout_bytes": 19414,
+      "canonical_bytes": 19202,
+      "difference_bytes": 212,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/raspberry-pi-3b-plus/datasheets/descargar.sh",
+      "checkout_bytes": 1281,
+      "canonical_bytes": 1255,
+      "difference_bytes": 26,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/raspberry-pi-3b-plus/enlaces.md",
+      "checkout_bytes": 4653,
+      "canonical_bytes": 4606,
+      "difference_bytes": 47,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/raspberry-pi-camera-module-3/README.md",
+      "checkout_bytes": 18262,
+      "canonical_bytes": 18078,
+      "difference_bytes": 184,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/raspberry-pi-camera-module-3/enlaces.md",
+      "checkout_bytes": 7500,
+      "canonical_bytes": 7444,
+      "difference_bytes": 56,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/sandisk-high-endurance-32gb/README.md",
+      "checkout_bytes": 20301,
+      "canonical_bytes": 20087,
+      "difference_bytes": 214,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/sandisk-high-endurance-32gb/enlaces.md",
+      "checkout_bytes": 5722,
+      "canonical_bytes": 5666,
+      "difference_bytes": 56,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/separadores-nylon-m2-5/README.md",
+      "checkout_bytes": 52390,
+      "canonical_bytes": 51972,
+      "difference_bytes": 418,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/separadores-nylon-m2-5/enlaces.md",
+      "checkout_bytes": 15259,
+      "canonical_bytes": 15171,
+      "difference_bytes": 88,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/sumup-solo/README.md",
+      "checkout_bytes": 62353,
+      "canonical_bytes": 61944,
+      "difference_bytes": 409,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/sumup-solo/enlaces.md",
+      "checkout_bytes": 15745,
+      "canonical_bytes": 15595,
+      "difference_bytes": 150,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/terminales-ojal-m4/README.md",
+      "checkout_bytes": 67479,
+      "canonical_bytes": 66997,
+      "difference_bytes": 482,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/terminales-ojal-m4/enlaces.md",
+      "checkout_bytes": 11648,
+      "canonical_bytes": 11538,
+      "difference_bytes": 110,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/tornilleria-inox-m3-m6/README.md",
+      "checkout_bytes": 60144,
+      "canonical_bytes": 59702,
+      "difference_bytes": 442,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/tornilleria-inox-m3-m6/enlaces.md",
+      "checkout_bytes": 17925,
+      "canonical_bytes": 17806,
+      "difference_bytes": 119,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/tubo-silicona-6mm/README.md",
+      "checkout_bytes": 48566,
+      "canonical_bytes": 48217,
+      "difference_bytes": 349,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/tubo-silicona-6mm/enlaces.md",
+      "checkout_bytes": 15457,
+      "canonical_bytes": 15345,
+      "difference_bytes": 112,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/wago-221-surtido/README.md",
+      "checkout_bytes": 48347,
+      "canonical_bytes": 47970,
+      "difference_bytes": 377,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/wago-221-surtido/enlaces.md",
+      "checkout_bytes": 12419,
+      "canonical_bytes": 12334,
+      "difference_bytes": 85,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/winsen-ze29a/README.md",
+      "checkout_bytes": 55412,
+      "canonical_bytes": 54869,
+      "difference_bytes": 543,
+      "crlf_only": true
+    },
+    {
+      "path": "componentes/winsen-ze29a/enlaces.md",
+      "checkout_bytes": 11014,
+      "canonical_bytes": 10922,
+      "difference_bytes": 92,
+      "crlf_only": true
+    },
+    {
+      "path": "montaje-general/1-alimentacion-y-tierra.svg",
+      "checkout_bytes": 40993,
+      "canonical_bytes": 40746,
+      "difference_bytes": 247,
+      "crlf_only": true
+    },
+    {
+      "path": "montaje-general/2-pi-puertos-y-senales.svg",
+      "checkout_bytes": 30981,
+      "canonical_bytes": 30812,
+      "difference_bytes": 169,
+      "crlf_only": true
+    },
+    {
+      "path": "montaje-general/3-gpio-40-pines.svg",
+      "checkout_bytes": 33798,
+      "canonical_bytes": 33598,
+      "difference_bytes": 200,
+      "crlf_only": true
+    },
+    {
+      "path": "montaje-general/4-donde-va-cada-pieza.svg",
+      "checkout_bytes": 18145,
+      "canonical_bytes": 18056,
+      "difference_bytes": 89,
+      "crlf_only": true
+    },
+    {
+      "path": "montaje-general/anuncios-amazon-21-10-2026.md",
+      "checkout_bytes": 7803,
+      "canonical_bytes": 7678,
+      "difference_bytes": 125,
+      "crlf_only": true
+    }
+  ],
+  "files": [
+    {
+      "path": "LISTA-DE-COMPRA.md",
+      "bytes": 10285,
+      "sha256": "8c9e8c412349e7f2b9fa9e7b11a4d72b7f26a5168ef8d511eb879a7acd3dbc3c",
+      "git_blob": "5c499718e6cd8c8671ab0d31183243f5c712f973",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 10119,
+      "lines": 74
+    },
+    {
+      "path": "MONTAJE-GENERAL.md",
+      "bytes": 34938,
+      "sha256": "8159a71504cb1195b99f748a3820dfce0a30f9bea18d044da78c6c8b07c18cf9",
+      "git_blob": "23642a25ab54452ed85311df0d7e41234fdbcdf3",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 34320,
+      "lines": 258
+    },
+    {
+      "path": "README.md",
+      "bytes": 1603,
+      "sha256": "a63b0bd29121489c54e35dda67bd9a4b1c9e912deb68d21bdb2733862174d50e",
+      "git_blob": "fad32f3c0599a4c268dba41233a32021416f7a4a",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 1566,
+      "lines": 35
+    },
+    {
+      "path": "componentes/README.md",
+      "bytes": 5335,
+      "sha256": "c1811ac589ab0fb5cd1d75fa08f8127456b5ea3e829eab5b6dbf14d8c50fdce3",
+      "git_blob": "07f1b30c37394fb581b2ceab9daf5525488bdbcf",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 5295,
+      "lines": 41
+    },
+    {
+      "path": "componentes/adaptador-wifi-ar9271/README.md",
+      "bytes": 60266,
+      "sha256": "f84021d312bc8f7c97566fc3068c18c5a979b84fc92fcd696205543798386385",
+      "git_blob": "fee34e4893a805ef85cb089881f188cc69c98fea",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 59591,
+      "lines": 378
+    },
+    {
+      "path": "componentes/adaptador-wifi-ar9271/datasheets/AR9271.pdf",
+      "bytes": 2782045,
+      "sha256": "39d3c50828d21ea18d036d340caf13c0f5b0303e6e4a39f3ba01e627cc5b4956",
+      "git_blob": "5212e9d25c3fa95ae5a12b29c60251c9c2e8991a",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 152,
+      "text_chars": 409498,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/adaptador-wifi-ar9271/datasheets/TPE-N150USB-spec-sheet.pdf",
+      "bytes": 843556,
+      "sha256": "1d101da8a0c7b399e5764dabb719138f6b00fa8063884c84f08036488e9a701e",
+      "git_blob": "2c1c57336c5f89498957ca91b18c8fc7e030e1d7",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 11,
+      "text_chars": 11311,
+      "low_text_pages": [
+        5,
+        11
+      ]
+    },
+    {
+      "path": "componentes/adaptador-wifi-ar9271/datasheets/datasheet_tl-wn722n.pdf",
+      "bytes": 117038,
+      "sha256": "aaa26f83fb639a4548f3995deea0e82ccecb2a89bb9260de6f73a63d29ad7141",
+      "git_blob": "74a0e4f504be1f6f10a88dc173418175fddad041",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 3,
+      "text_chars": 9246,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/adaptador-wifi-ar9271/datasheets/en_300328v020202p.pdf",
+      "bytes": 1571870,
+      "sha256": "35211bae77e40e835908d1b8757e82bbbb8895aee71d5e0a0a22131d4101a376",
+      "git_blob": "1bc86570ffefdb43d4a1962724b44f40536ff84d",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 101,
+      "text_chars": 314122,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/adaptador-wifi-ar9271/enlaces.md",
+      "bytes": 17334,
+      "sha256": "41620b9619edc9bcd37835be41eb2963f84f7e9f0ed7b886c27304629bb625e2",
+      "git_blob": "25911887e766075b1cc5b50f880bcf30f5228ee5",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 17266,
+      "lines": 108
+    },
+    {
+      "path": "componentes/alargo-antena-rp-sma-30cm/README.md",
+      "bytes": 48462,
+      "sha256": "2b5fdcbbd4b7a3e7463c71d30a68866c3d8c55a1e797d9a8be457437ec7d9e14",
+      "git_blob": "478faedef159388da66e6a047425c1aba00d2d05",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 47792,
+      "lines": 425
+    },
+    {
+      "path": "componentes/alargo-antena-rp-sma-30cm/datasheets/60311052111534.pdf",
+      "bytes": 992541,
+      "sha256": "d3b9c491d148be242b9d1d7f4c5f0aedc7f67f7770498397c4d8bfeffe2db471",
+      "git_blob": "d656acc5c36b64c00fe4bfd0103df3d0819dd6d1",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 7,
+      "text_chars": 62430,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/alargo-antena-rp-sma-30cm/datasheets/8216_techdata.pdf",
+      "bytes": 227959,
+      "sha256": "106c03a6677947a388f3f07e129e933732cedc98e3617f4320b1d2f4b0549d70",
+      "git_blob": "5b477247b8fcb225eacaaf948a65f3c27f7d17b1",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 2,
+      "text_chars": 5176,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/alargo-antena-rp-sma-30cm/datasheets/CBD01.07.0100C.pdf",
+      "bytes": 2542168,
+      "sha256": "aa9ba293e50321535672d176642a8d9eafcd1f279ba14090ccefda114c8cdabc",
+      "git_blob": "774642fc5e0841179865b495d09cef7aee5ce95d",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 19,
+      "text_chars": 9268,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/alargo-antena-rp-sma-30cm/datasheets/FMC0212174LF.pdf",
+      "bytes": 436361,
+      "sha256": "157e8c520f70538cf166b92d7771be7618e27deb7af178023f36797860446020",
+      "git_blob": "9d81e054a2e320a91b1cdf9fbaa5996e0e96ea5f",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 3,
+      "text_chars": 7930,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/alargo-antena-rp-sma-30cm/datasheets/RG316DS.pdf",
+      "bytes": 593605,
+      "sha256": "b671fb1d1cc750629767b8bafc0783c978ee49269dd8644a518b5c434c457573",
+      "git_blob": "55779fa536c84ccec228ceaac59eca72e8207319",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 3,
+      "text_chars": 6088,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/alargo-antena-rp-sma-30cm/datasheets/TAOGLAS-Reverse-Polarity-SMA-Application-Note-APN-12-8-001.A.pdf",
+      "bytes": 395279,
+      "sha256": "4deeb9ebee7d09b0184662a69840039b7ffe4a87b43d7dfbb2ef40b7e49e6463",
+      "git_blob": "3644f9f44232e7985364921f39b9106fe64e4ef5",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 1,
+      "text_chars": 2133,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/alargo-antena-rp-sma-30cm/enlaces.md",
+      "bytes": 14833,
+      "sha256": "cadad0117fecf1989088991cdd3a69c77b0cf03c4d5054b538cb022c896b03bb",
+      "git_blob": "be9a86e7f8707995d8b346d8e91e292d4ab14f42",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 14761,
+      "lines": 107
+    },
+    {
+      "path": "componentes/arandelas-dentadas-m4/README.md",
+      "bytes": 55456,
+      "sha256": "4ebfe5e9403a2603e8a716ff419dd09813517e4c70a5893632af37829d8de20d",
+      "git_blob": "06da176f9c8c79ff775f843ba8566ddaabffdf47",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 54716,
+      "lines": 380
+    },
+    {
+      "path": "componentes/arandelas-dentadas-m4/datasheets/0900766b816b073d.pdf",
+      "bytes": 5641202,
+      "sha256": "7f6b4a564acac5893b31b18c564c604672996fd8c102a10c4e11cf53d778397a",
+      "git_blob": "3f68952233529f79e46645c2d0802fbc24ff8aa9",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 56,
+      "text_chars": 296825,
+      "low_text_pages": [
+        1
+      ]
+    },
+    {
+      "path": "componentes/arandelas-dentadas-m4/datasheets/2337766.pdf",
+      "bytes": 141112,
+      "sha256": "2515f87d8bf004ddfe70c22ecc62068b1bb761e4754b6510008a88818481abdc",
+      "git_blob": "f1bc767e639753944ad351f1b18bbc1bc0b11881",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 1,
+      "text_chars": 3101,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/arandelas-dentadas-m4/datasheets/A700000006887825.pdf",
+      "bytes": 218105,
+      "sha256": "3599f21365e0f8a9948b6a78f0d116145f93e8978a734e728fba9dd355b50a06",
+      "git_blob": "735e9bbbaeaf366da109a9e9e2dc8854f45da0f3",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 3,
+      "text_chars": 2535,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/arandelas-dentadas-m4/datasheets/A700000011338889.pdf",
+      "bytes": 216071,
+      "sha256": "702cfa610835c52f5caff49b4b3b743ddedbe11b0cb9e377f0678f0fb1102d77",
+      "git_blob": "1c308a466c56d88c2d396c21f10056d27552a52c",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 3,
+      "text_chars": 2577,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/arandelas-dentadas-m4/datasheets/BN_787.pdf",
+      "bytes": 91099,
+      "sha256": "f0200ebb8eb093d46da6e46276e3813d502de4527f77638b32a92fafeb81017f",
+      "git_blob": "fb02de0bf29998d0485e351169471f8269239c9f",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 1,
+      "text_chars": 2233,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/arandelas-dentadas-m4/datasheets/BUL86513.pdf",
+      "bytes": 86217,
+      "sha256": "5ea55d3068ae8f3e816b95bcc6e662dc6bf6acbbb17f159971bff853161d2a19",
+      "git_blob": "6d5b1a7207b634df2f96c32a2f4814279820f8b3",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 1,
+      "text_chars": 2007,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/arandelas-dentadas-m4/datasheets/RGW-100-1Y_Product_Page-225273.pdf",
+      "bytes": 95317,
+      "sha256": "8569ee6a02b42458a7e4fdff36abe506067b5080e0d3d98222e610abaf990ae0",
+      "git_blob": "1cc27d857f7dd65fac12427a39f7d3a9d1920c2c",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 2,
+      "text_chars": 3819,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/arandelas-dentadas-m4/enlaces.md",
+      "bytes": 12446,
+      "sha256": "e4b7ae1fde2818b5d4884ff49c4d94b68d3e182290320469f193c1399861affa",
+      "git_blob": "a526014e69b0fb60282f6ce866ca7b1baaefddb1",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 12361,
+      "lines": 100
+    },
+    {
+      "path": "componentes/borne-usb-a-hembra-tornillo/README.md",
+      "bytes": 49122,
+      "sha256": "c4a492d769da9b1aa7bdb2e249ab17e93db9cc80ee49b0bb204a82bc07025500",
+      "git_blob": "7fb98329b1167f9d133c31655938e58b8a50aa9a",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 48303,
+      "lines": 411
+    },
+    {
+      "path": "componentes/borne-usb-a-hembra-tornillo/datasheets/2856485.pdf",
+      "bytes": 182830,
+      "sha256": "820c27011d17f7ed7297c5739f6386377fb7d639fb16541dd3028aded72002a2",
+      "git_blob": "393ca90393c2d5837b56ffed1fabb4b9f163d3a2",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 1,
+      "text_chars": 3520,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/borne-usb-a-hembra-tornillo/datasheets/2905819.pdf",
+      "bytes": 1466523,
+      "sha256": "0c4dd5d21edc5ee81eb6e89a164e60553ac9169f5efe4bfd1e230b18120bb00e",
+      "git_blob": "159e9b1740bd2dc09ea86b5da45777692c5d0d8e",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 3,
+      "text_chars": 1568,
+      "low_text_pages": [
+        3
+      ]
+    },
+    {
+      "path": "componentes/borne-usb-a-hembra-tornillo/datasheets/3927991.pdf",
+      "bytes": 174017,
+      "sha256": "15d2daee30af48d5e1873f5a4339e7cf1127b4c9c6866427c1327bb96bb1f06b",
+      "git_blob": "8ec279f0a58f575ab136f6a59da493e55d247d3c",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 1,
+      "text_chars": 5673,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/borne-usb-a-hembra-tornillo/datasheets/61400826021.pdf",
+      "bytes": 666597,
+      "sha256": "c3df594ecee42c91af560e86d3da75173327f263a66552cc9932457e82d10f46",
+      "git_blob": "78aada842bf2d0a00e82cd67ce9e23c1d8522c35",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 7,
+      "text_chars": 55962,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/borne-usb-a-hembra-tornillo/datasheets/A700000008643305.pdf",
+      "bytes": 214588,
+      "sha256": "fb680d5bf15c7b17023156188aa415db970165c2cd1b5ccc9b4e44588333bd85",
+      "git_blob": "e6f1edf66cf9c4506512060236cfb7c4dc2926fd",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 9,
+      "text_chars": 25091,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/borne-usb-a-hembra-tornillo/datasheets/USB_Sockets.pdf",
+      "bytes": 406897,
+      "sha256": "151f3fe52f85e8302bedb6214c97449be5cf165b4a469c77db9f51c355edaabf",
+      "git_blob": "27a607dc3038c1f43af2a34f7018878cd51d1f5a",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 3,
+      "text_chars": 19191,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/borne-usb-a-hembra-tornillo/enlaces.md",
+      "bytes": 16987,
+      "sha256": "d8cb89d4a112b72de1bd35e3569ba25ae5ede518eac12ab286ba16f00e43495c",
+      "git_blob": "abd6c640acde5408946844d0b37000e0152b1f76",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 16831,
+      "lines": 107
+    },
+    {
+      "path": "componentes/cable-2x0-75-rojo-negro-10m/README.md",
+      "bytes": 66757,
+      "sha256": "c80758b7c657c8fea1df33e6496d691551df6c0432e7eca497f0f931c6c7c413",
+      "git_blob": "f22547772b114fa4418d57868299c341fad0b62b",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 65632,
+      "lines": 532
+    },
+    {
+      "path": "componentes/cable-2x0-75-rojo-negro-10m/datasheets/Construction_Products_Regulations_and_Cable_Industry.pdf",
+      "bytes": 176017,
+      "sha256": "16278e4d2ad9487e13e5bf68045a95f46a147b015192a58019c47df8479c1f66",
+      "git_blob": "c9f00b24a3c5b9bf689c62fe0427096ca481c3f4",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 3,
+      "text_chars": 6870,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/cable-2x0-75-rojo-negro-10m/datasheets/T11.pdf",
+      "bytes": 68712,
+      "sha256": "2dd96a2de194cd906ff0a3b763a28c9f7b54127980a29113aaa5ea9e2e5bd07e",
+      "git_blob": "ec8fa4d486fc32861c993dc28282ed79389d545d",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 1,
+      "text_chars": 8818,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/cable-2x0-75-rojo-negro-10m/datasheets/TD06EN-current-carrying-capacity-flexible-copper-cables-and-wires.pdf",
+      "bytes": 91012,
+      "sha256": "1d513747112d89a025233e7eb9c7b74994dd3e96e03a3a7591ab896e9d2e2f47",
+      "git_blob": "c7d1dcef3a8d01ca99270d1565741a162c3e29bb",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 3,
+      "text_chars": 9997,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/cable-2x0-75-rojo-negro-10m/enlaces.md",
+      "bytes": 15255,
+      "sha256": "368c7756e0ce0bbce2e36ea0426e155ebe4b39e83ad86274076c4107a29f98c3",
+      "git_blob": "b6134248025fd1d1c9b8f78a1a02dc4cfd6ecf91",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 15068,
+      "lines": 110
+    },
+    {
+      "path": "componentes/cable-ffc-camara-50cm/README.md",
+      "bytes": 49397,
+      "sha256": "748477c2378f3e7e87e1223165afd73189c39fbfd8e090b9e0b9d13c0d8473c5",
+      "git_blob": "988d7f20f7a59627ad096bb7bcfb98b00527b006",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 48766,
+      "lines": 422
+    },
+    {
+      "path": "componentes/cable-ffc-camara-50cm/datasheets/0900766b816ade50.pdf",
+      "bytes": 181311,
+      "sha256": "9b00b9f78418512d30705853426b63803450b90623fceea5c92a717690b3c5ca",
+      "git_blob": "b05cb4b336f2fa4f29084ab042e2c829d3ecbaa2",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 8,
+      "text_chars": 16305,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/cable-ffc-camara-50cm/datasheets/4000125.pdf",
+      "bytes": 748163,
+      "sha256": "8fe9a0e63380240b9697caadc5caf44fefa2318b18b7e4a01a678caaf6633ef9",
+      "git_blob": "ebb0907df2c850ef388bd985176192f81c7a0edf",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 2,
+      "text_chars": 25410,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/cable-ffc-camara-50cm/datasheets/687733100002.pdf",
+      "bytes": 384995,
+      "sha256": "358b9cd9bb53c9a9dc74267d3df7f3b0f9d9a8623fa59469d8df93bc98c096a4",
+      "git_blob": "165bd11a6a305c64e1791eb7bf1b15bd264054a2",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 6,
+      "text_chars": 49217,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/cable-ffc-camara-50cm/datasheets/RP-008146-DS-1-standard-camera-cable-200mm-reference-drawing.pdf",
+      "bytes": 53662,
+      "sha256": "eb57535be81b6d63e3cc5cb77ac26c84727f5b52f147819186e56bee0eab117d",
+      "git_blob": "faeab45121bb5eea8e270cc0f667028352c95572",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 1,
+      "text_chars": 6060,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/cable-ffc-camara-50cm/enlaces.md",
+      "bytes": 14482,
+      "sha256": "40fbfe59e2882f9fbd21d863dd1f6823adf6a84c2693a52c48e467e59d52733a",
+      "git_blob": "164bccc105f336fa77cf2ff0c3479835d4f21bd9",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 14399,
+      "lines": 110
+    },
+    {
+      "path": "componentes/cable-h05vv-f-3g1-5-5m/README.md",
+      "bytes": 54957,
+      "sha256": "e73c3f435c1b462c4b4961949d91410fd4288154922332f03cf82b4234d4c40c",
+      "git_blob": "c496815169ee973e28d0c9bb1cfcc7e7d5310c86",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 53965,
+      "lines": 413
+    },
+    {
+      "path": "componentes/cable-h05vv-f-3g1-5-5m/datasheets/EU_declaration_of_conformity_H_05VV-F.pdf",
+      "bytes": 116813,
+      "sha256": "5d9cdd698c51b65a07c18c54c80d5f6044de50cb360181f2eac77c7125db0f86",
+      "git_blob": "24bceb3c0d5508f5bf15f23cd0e1a8928fda3cdb",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 1,
+      "text_chars": 1464,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/cable-h05vv-f-3g1-5-5m/datasheets/H05VV-F.pdf",
+      "bytes": 175456,
+      "sha256": "acda9e4f69063719142b3c18e560176a05b38e559e2a73678bf55a46728ebf83",
+      "git_blob": "376709699dcbf4e6647470e06fe2914794ca9e13",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 2,
+      "text_chars": 5285,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/cable-h05vv-f-3g1-5-5m/datasheets/HD_308_S2-2001.pdf",
+      "bytes": 148943,
+      "sha256": "9569c6ea04bd53c89012e50b05a4414e8f3a73a99ea694c4a5dfa3111e1442c4",
+      "git_blob": "12696f9247f2537371231cb5c6513e58084ad3a9",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 5,
+      "text_chars": 8077,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/cable-h05vv-f-3g1-5-5m/datasheets/OznurKabloWeb-ENG-Catalogue-18.pdf",
+      "bytes": 86180,
+      "sha256": "712dcd195a02c87d745548719da8f9a2038664ac09ed717f2d3d863caa8f496e",
+      "git_blob": "8e68b82dea9c8665804972e1b89233eb62dfafc4",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 1,
+      "text_chars": 3110,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/cable-h05vv-f-3g1-5-5m/datasheets/T11_Conductor_resistances_and_strand_structure_metric_kr.pdf",
+      "bytes": 181791,
+      "sha256": "ad9258bad64a0c34fc30dc22df8bb1e1b749b39fb5a14a3243aa4ef5265321e3",
+      "git_blob": "edca96e18f08fb01e567fa558adcc847f4d4393e",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 1,
+      "text_chars": 9031,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/cable-h05vv-f-3g1-5-5m/datasheets/adatlap-1152275-toemlos-vezetek-h05vv-f-3-g-15-mm-fekete-faber-kabel-030020-meteraru.pdf",
+      "bytes": 351009,
+      "sha256": "9816a24e42029215554d3ab7b12c155eb502589481c8d9c5ca5f2b2b2be2b4ca",
+      "git_blob": "0e71625b7266f0f1b703e69f00baeef4805727c6",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 2,
+      "text_chars": 6238,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/cable-h05vv-f-3g1-5-5m/datasheets/f0a2dcc6c9bf486fbe1ae684bc0f9c6b.pdf",
+      "bytes": 81568,
+      "sha256": "955e93c007f4261248152bad44e7bc9159fbf6c26a61958b79dd38676b41949b",
+      "git_blob": "cce4e200678bb1ea9b19240b6137294b10ef1eb7",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 1,
+      "text_chars": 4051,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/cable-h05vv-f-3g1-5-5m/enlaces.md",
+      "bytes": 17883,
+      "sha256": "5449afa7eecdd35192ffaf3568d4a2ad2e0e2e1b505c482120509922e07464ac",
+      "git_blob": "22c6286c0803400be9be615e3d5e645954e6bd77",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 17658,
+      "lines": 106
+    },
+    {
+      "path": "componentes/cable-schuko-c13-2m/README.md",
+      "bytes": 50638,
+      "sha256": "0e51d81237745da028205aa066fc87308223c91a1c9280d49afd2adabea4f37d",
+      "git_blob": "768689e20ab76a22d2dea1c685d0255fef1d805b",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 49855,
+      "lines": 345
+    },
+    {
+      "path": "componentes/cable-schuko-c13-2m/datasheets/3179146.pdf",
+      "bytes": 282490,
+      "sha256": "dd98de21db4de902ce837005048ae7b0fef8940c16ee38a2f54d929af3e03653",
+      "git_blob": "b9e4548f2966f7d90cafc11224b0ba6e05e68ccb",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 1,
+      "text_chars": 2892,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/cable-schuko-c13-2m/datasheets/A700000015073926.pdf",
+      "bytes": 3866420,
+      "sha256": "da8de165ced8dbbfd97f03fd9d319a2d0f6e57942df2ec9a541c72f9126c9b4e",
+      "git_blob": "a13673d51f1dd9dd79b9726e60325f9dcef5061a",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 5,
+      "text_chars": 38650,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/cable-schuko-c13-2m/datasheets/ITC-BT-43.pdf",
+      "bytes": 2281470,
+      "sha256": "a1049fed09c3accf404d24f80e0beb48dfe4f6df18ae7789f8732255917215df",
+      "git_blob": "62c2daa42889d6b212ec464e8a618d3ae8b29f62",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 10,
+      "text_chars": 24493,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/cable-schuko-c13-2m/datasheets/intl-cord-set-config-darker.pdf",
+      "bytes": 869375,
+      "sha256": "dbb13a41a9c6723db0e223b9c2fb5d8d998b066feb3dcd29689567441d997a46",
+      "git_blob": "d11c3fd43dbb07954056be496e0bf9aead8333e6",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 2,
+      "text_chars": 6650,
+      "low_text_pages": [
+        2
+      ]
+    },
+    {
+      "path": "componentes/cable-schuko-c13-2m/datasheets/preview_iec60320-1_ed3.0_en.pdf",
+      "bytes": 584384,
+      "sha256": "b2352f98b4b3834391d7e415743bcff6ff806a9ef831df6385f9a18c6bd9d0d5",
+      "git_blob": "47bc01bd877fec6ab0f57becc6c87a60ba1abaf7",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 9,
+      "text_chars": 35312,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/cable-schuko-c13-2m/datasheets/typ_6600-3.pdf",
+      "bytes": 373448,
+      "sha256": "98f9f451e3641e0b8f35a40401f6467bf74a21bd15906b2c9d632b0e74c92f08",
+      "git_blob": "f57a0306499e1bc61a559f4eed34b173f46a6515",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 4,
+      "text_chars": 18654,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/cable-schuko-c13-2m/enlaces.md",
+      "bytes": 11498,
+      "sha256": "879313b430f57232da1530dafe28538c3260de0c2c426c33fa3c40a27a2a1d66",
+      "git_blob": "d27dc4069ac8c66ddfc99e250460cf86ce1d3e1e",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 11397,
+      "lines": 96
+    },
+    {
+      "path": "componentes/cable-usb-a-usb-c-90-30cm/README.md",
+      "bytes": 34981,
+      "sha256": "eadcbadcc3644c3131b58e70657fa925b1ab9ff32a11771211be72dec5c7339e",
+      "git_blob": "6f82532c23a291a3ef05e7f1271cc281b6cf0edc",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 34424,
+      "lines": 261
+    },
+    {
+      "path": "componentes/cable-usb-a-usb-c-90-30cm/enlaces.md",
+      "bytes": 10991,
+      "sha256": "8285195b32a1a89f5e0cd909e0277271a30f5c9108256796fec9b3ee5c2c7174",
+      "git_blob": "3fa4adff182bf63b1c2e89b4fe25d1d93b301f58",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 10919,
+      "lines": 88
+    },
+    {
+      "path": "componentes/cables-dupont-elegoo-120/README.md",
+      "bytes": 54781,
+      "sha256": "dd9d8861a7f23ed047fabb07954bb2db781c8f080f1363429931eab8e32231c8",
+      "git_blob": "981f62ab2538a8326f0b4daaaafcb77f83d08ca9",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 54207,
+      "lines": 389
+    },
+    {
+      "path": "componentes/cables-dupont-elegoo-120/datasheets/bwb_dubox_wtb.pdf",
+      "bytes": 374525,
+      "sha256": "2437b79d95602e8bc8328d990659507b48575139110f0b70c084ca344ad8c0ea",
+      "git_blob": "467a37554a125fd9f9437f63bdc075ab0d56377d",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 3,
+      "text_chars": 9928,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/cables-dupont-elegoo-120/datasheets/fci-basics-handtool-dubox-ctw.pdf",
+      "bytes": 427369,
+      "sha256": "ed3cf0ebe348f73a9b074228dc31c497e3eb1d56bb451ef02b373265a68bbc0f",
+      "git_blob": "414b656d6c70d2575e5a9d1090bbec62f808f8c4",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 3,
+      "text_chars": 3095,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/cables-dupont-elegoo-120/enlaces.md",
+      "bytes": 14088,
+      "sha256": "634afbfa38b29427cc1395ecc94214e7ba6bd53aee55b6c084e789c5c84059bf",
+      "git_blob": "9a2f4d46122265c3a96d4445a96efe569edba39a",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 13998,
+      "lines": 98
+    },
+    {
+      "path": "componentes/cables-jst-xh-4-pin/README.md",
+      "bytes": 37759,
+      "sha256": "4e26763a35f405bd160733fa298dadae91af6187671733cd4fe2a163bb21e13d",
+      "git_blob": "062ffdfb495d7101d899f09d86943ab289c26cbb",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 37251,
+      "lines": 359
+    },
+    {
+      "path": "componentes/cables-jst-xh-4-pin/enlaces.md",
+      "bytes": 8549,
+      "sha256": "44fd7fbad2e10aa0f3e4bc5821f61dc66f3dc6a834e64ebdd74bc8a3165e4be2",
+      "git_blob": "e06ee4c2238fdfa0270b1478cd682d6e44d8e3c1",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 8486,
+      "lines": 84
+    },
+    {
+      "path": "componentes/crimpadora-y-punteras/README.md",
+      "bytes": 68741,
+      "sha256": "14728471d6438d316e8c9de42e3c0868ba4ee1e5bf5d1f6ff3136c8cd28a6f42",
+      "git_blob": "1e723194f91ad2403c170bfffa8a2330f8f8491d",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 67772,
+      "lines": 527
+    },
+    {
+      "path": "componentes/crimpadora-y-punteras/datasheets/06-3521_v1.pdf",
+      "bytes": 1851549,
+      "sha256": "18e9dad72a2abf4b9b56e27fccc6ab3efa070150b61d4c378e62ba7a598fffc0",
+      "git_blob": "b9120d03bf2339198f47e889b25911e4e80e80eb",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 1,
+      "text_chars": 1099,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/crimpadora-y-punteras/datasheets/1540293_EN_Aderendhuelsen_LoRes.pdf",
+      "bytes": 983484,
+      "sha256": "7d2d26122306f2260952e2ffb526474ba954a91760cc7b97b507a24087cea2eb",
+      "git_blob": "f9d7fbe02468b89b154552765ed96d5661cd32cd",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 1,
+      "text_chars": 47057,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/crimpadora-y-punteras/datasheets/3200069-1475656.pdf",
+      "bytes": 54911,
+      "sha256": "62a2296c8196f2bac6bcc5be29720450a5f030be15ee4deb49591ac2e8c911b2",
+      "git_blob": "cd4d1d4901b9c2fc2bceae7fa290f7a40a19c7ab",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 4,
+      "text_chars": 5900,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/crimpadora-y-punteras/datasheets/9014350000_en.pdf",
+      "bytes": 1068754,
+      "sha256": "35308fad638a89df236f4deefb477bb11df1d11fb1378d1070add2197d1b5b1f",
+      "git_blob": "ef20aeb9ae111b51268e34f0859eac2aae1258bc",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 43,
+      "text_chars": 95796,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/crimpadora-y-punteras/datasheets/A700000014794324.pdf",
+      "bytes": 243720,
+      "sha256": "7f5e1816f239fe742b6be0dbb65179545c87ac057f0470880f30b533c731ed9c",
+      "git_blob": "b9923d5db51b79effdbdb9f44903e97876a43176",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 7,
+      "text_chars": 7727,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/crimpadora-y-punteras/datasheets/MB_wire_end_ferrules_EN_WEB.pdf",
+      "bytes": 5029882,
+      "sha256": "c3f48a00d20750afe39406ebce078afc1fe0bbc6d15d0935d07c4e724e1bd539",
+      "git_blob": "483c6007462a27d88e3fb52708b482d9db6cf88f",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 21,
+      "text_chars": 174311,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/crimpadora-y-punteras/datasheets/PhoenixContact-Tables_Norm_Cross_Section.pdf",
+      "bytes": 27401,
+      "sha256": "3c28d70337c794b54835bbb1af042f028da8db4815a5834b0f6c6f1a71b46e1c",
+      "git_blob": "1d30e7e25119be54763f16aa28618bcd44b1f00a",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 1,
+      "text_chars": 6728,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/crimpadora-y-punteras/enlaces.md",
+      "bytes": 16312,
+      "sha256": "35de3ba8eafd31689315fb4f260953b9b8e9cd78e9cc32ae61e8b7fc4a7f37f2",
+      "git_blob": "079e3f0f0def02d375e1001a85c2c62518f6ea70",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 16199,
+      "lines": 100
+    },
+    {
+      "path": "componentes/documentos-compartidos/README.md",
+      "bytes": 3088,
+      "sha256": "ea5e479a77e7b1b4ba30b17b84bc2c2273be9d0b3cc26d160de10a5972c5c86d",
+      "git_blob": "75222dead2b00d3b82d1d6b454ae1f9723401d8e",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 3082,
+      "lines": 21
+    },
+    {
+      "path": "componentes/documentos-compartidos/normas/ITC-BT-19.pdf",
+      "bytes": 2592122,
+      "sha256": "a7512598224d6ee49b51ad5a2a793b33b88c904ee050134a6d2174c4627c4890",
+      "git_blob": "c35e392be5c9baa32e763a7ef6adbf1cd294240c",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 16,
+      "text_chars": 36709,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/documentos-compartidos/normas/ITC-BT-36.pdf",
+      "bytes": 2536535,
+      "sha256": "2e78749d2808873fe9c7c0e5945e37a27cac711c2cab9e0a3a7e89032a50f97e",
+      "git_blob": "37091d222d0c1c55035936e2a03a4c9aef8e76e3",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 10,
+      "text_chars": 22085,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/documentos-compartidos/normas/SOLiC-Test-Report-No-2013.pdf",
+      "bytes": 409583,
+      "sha256": "b1efcf1ea917bbb5370ddcc67fba2c6bf63fe702d78cc71964a022cdd41dded1",
+      "git_blob": "bc73c75eed6ec9810052c3345e5a63451b86330f",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 21,
+      "text_chars": 38355,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/documentos-compartidos/normas/in-service-inspection-and-testing-of-electrical-equipment-the-earth-continuity-test.pdf",
+      "bytes": 133361,
+      "sha256": "f25b087b3f72a3d5f284d0531e3949819dcf6a4d38e91d6a554574fb64b7019b",
+      "git_blob": "2d67f6921f001d5d92eae4e73db26147853d2ab6",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 3,
+      "text_chars": 16868,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/documentos-compartidos/normas/preview_iec60335-2-82_ed2.1_b.pdf",
+      "bytes": 439674,
+      "sha256": "b7e1647e0a21c78564d59a1bf621c4920bc16b1229c58268bae4f8e24adbdc6b",
+      "git_blob": "b62768d359ac3a1757f65611b5bcaa858b85ef33",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 13,
+      "text_chars": 49991,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/documentos-compartidos/usb/BCv1.2_070312_0.zip",
+      "bytes": 1371538,
+      "sha256": "ea4fa630c609a2ff90c548782a10d46170d435ae6d9693be8cad23e7f66289a2",
+      "git_blob": "7960941a0e8922b4fde245c7b5f65852fa2b53de",
+      "type": ".zip",
+      "status": "ZIP integro comprobado, miembros inventariados; PDFs extraidos",
+      "members": [
+        {
+          "path": "BCv1.2_070312/BCv1.2_070312/Battery Charging V1_2 ADOPTERS AGREEMENT - Device Class Spec.pdf",
+          "bytes": 25560,
+          "sha256": "1430cbc522a6f14350aaff6854d1dd8dcdc2df2f3634f14190dacd131a1ed448",
+          "pages": 5,
+          "text_chars": 13066,
+          "low_text_pages": []
+        },
+        {
+          "path": "BCv1.2_070312/BCv1.2_070312/Battery_Charging_Errata_Rev_1.2.pdf",
+          "bytes": 176003,
+          "sha256": "7b3c196e2b9285784aaf01b36e20cbe99d57dab47696ce378a540f440f75add7",
+          "pages": 3,
+          "text_chars": 6279,
+          "low_text_pages": []
+        },
+        {
+          "path": "BCv1.2_070312/BCv1.2_070312/Battery_Charging_Errata_Rev_1.2_2012-03-15.pdf",
+          "bytes": 120736,
+          "sha256": "ae963f8800cd7768766e2d19f3492ee3565aec10a3d9b324ed64a85e3662725e",
+          "pages": 5,
+          "text_chars": 9685,
+          "low_text_pages": []
+        },
+        {
+          "path": "BCv1.2_070312/BCv1.2_070312/BC1.2 plus errata 2012-3-15.pdf",
+          "bytes": 501114,
+          "sha256": "f76a1d13545a9e6ff78cdf7b100f16d96b6218e1038b4f54f6d57d54aa481bd9",
+          "pages": 72,
+          "text_chars": 166569,
+          "low_text_pages": []
+        },
+        {
+          "path": "BCv1.2_070312/BCv1.2_070312/BC1.2_without errata 2010-12-7.pdf",
+          "bytes": 757887,
+          "sha256": "160ad7f3435553f86c16754af8128889d1fd4f1d4b69d3e7aa38b39766c83810",
+          "pages": 71,
+          "text_chars": 141767,
+          "low_text_pages": []
+        }
+      ]
+    },
+    {
+      "path": "componentes/documentos-compartidos/usb/USB_Type-C_2.5_Release_202603.zip",
+      "bytes": 29756254,
+      "sha256": "603c2cb0ea356d367fea61f8747a21981f0da9abae4d8ec15556e0063edb81b5",
+      "git_blob": "221771a1a63785e9c2af25939cd08f730deaa94f",
+      "type": ".zip",
+      "status": "ZIP integro comprobado, miembros inventariados; PDFs extraidos",
+      "members": [
+        {
+          "path": "USB Type-C 2.5 Release 202603/Release 2.4 ECNs incorporated into Release 2.5/USB Type-C R2.4 ECN Attached.SRC Clarification on Vbus duration.pdf",
+          "bytes": 154427,
+          "sha256": "1d1951ccce50dc6b5a62cd680ec7002f308d2c7db95860881bd9aefa5a8f4447",
+          "pages": 2,
+          "text_chars": 1900,
+          "low_text_pages": []
+        },
+        {
+          "path": "USB Type-C 2.5 Release 202603/Release 2.4 ECNs incorporated into Release 2.5/USB Type-C R2.4 ECN Clarify Assured and Shared Capacity Definitions 20250403.pdf",
+          "bytes": 313317,
+          "sha256": "5125bc064bf3ae769a70ccbb6030ae80eed4596716776067b408b510ecb0614a",
+          "pages": 2,
+          "text_chars": 3137,
+          "low_text_pages": []
+        },
+        {
+          "path": "USB Type-C 2.5 Release 202603/Release 2.4 ECNs incorporated into Release 2.5/USB Type-C R2.4 ECN Clarify PDP in Section 4.6.2.4 20260205.pdf",
+          "bytes": 283826,
+          "sha256": "61955b0838b94ae907da6934ea1ef65d705415d000d1a9d59218acc61c770e44",
+          "pages": 2,
+          "text_chars": 2463,
+          "low_text_pages": []
+        },
+        {
+          "path": "USB Type-C 2.5 Release 202603/Release 2.4 ECNs incorporated into Release 2.5/USB Type-C R2.4 ECN LRD Cleanup r2.pdf",
+          "bytes": 834745,
+          "sha256": "7447ec2452608f9e9d483cde80b8c5fc74b6dd7c1ef59ef5c1d6ff66c5c637f0",
+          "pages": 22,
+          "text_chars": 54136,
+          "low_text_pages": []
+        },
+        {
+          "path": "USB Type-C 2.5 Release 202603/Release 2.4 ECNs incorporated into Release 2.5/USB Type-C R2.4 ECN Ra Requirements 20250313.pdf",
+          "bytes": 335643,
+          "sha256": "30c937b06d0aa0360201b8cdeae72f9361bcce20c42287afa8d42f6a260194f3",
+          "pages": 4,
+          "text_chars": 5067,
+          "low_text_pages": []
+        },
+        {
+          "path": "USB Type-C 2.5 Release 202603/Release 2.4 ECNs incorporated into Release 2.5/USB Type-C R2.4 ECN Section 4.5.2.4 Updates 20250313.pdf",
+          "bytes": 545416,
+          "sha256": "8412ee45b10604ac126444952483088146858658294ff694b4ae13cf30937afc",
+          "pages": 5,
+          "text_chars": 8750,
+          "low_text_pages": []
+        },
+        {
+          "path": "USB Type-C 2.5 Release 202603/Release 2.4 ECNs incorporated into Release 2.5/USB Type-C R2.4 ECN Sink CC Pin Voltages Revised_11-25.pdf",
+          "bytes": 335797,
+          "sha256": "8e892a89ddba1f5fc615ad5e93c70b1e54b345b055abd661f0890eb1aade2ec5",
+          "pages": 4,
+          "text_chars": 7485,
+          "low_text_pages": []
+        },
+        {
+          "path": "USB Type-C 2.5 Release 202603/Release 2.4 ECNs incorporated into Release 2.5/USB Type-C R2.4 ECN Sink with Accessory Support State Transition.pdf",
+          "bytes": 568195,
+          "sha256": "e45334add9d0a43a2b044fbb0241e50e92c54be423f7becfb386c420e2064d51",
+          "pages": 5,
+          "text_chars": 6105,
+          "low_text_pages": []
+        },
+        {
+          "path": "USB Type-C 2.5 Release 202603/Release 2.4 ECNs incorporated into Release 2.5/USB Type-C R2.4 ECN Source Rp Clarification r1.pdf",
+          "bytes": 202879,
+          "sha256": "34b9bd964af247831d70914f67b5e14005a84e5f7ddacd2c4366115f84a9f7f0",
+          "pages": 2,
+          "text_chars": 3824,
+          "low_text_pages": []
+        },
+        {
+          "path": "USB Type-C 2.5 Release 202603/USB 3_0 Adopters Agreement PDF Submission Update 20230219.pdf",
+          "bytes": 193266,
+          "sha256": "dd52485b7009291cfe72915b15d5a7a3a18571ac25f09e2547a6d50448fff5f5",
+          "pages": 6,
+          "text_chars": 15857,
+          "low_text_pages": []
+        },
+        {
+          "path": "USB Type-C 2.5 Release 202603/USB Type-C Spec R2.5 - March 2026 Compared to R2.4.pdf",
+          "bytes": 15790128,
+          "sha256": "34c01559cd9f804dfd06b79057d027e6b3606eb12e08d34830605e8c73a274b2",
+          "pages": 446,
+          "text_chars": 1309157,
+          "low_text_pages": []
+        },
+        {
+          "path": "USB Type-C 2.5 Release 202603/USB Type-C Spec R2.5 - March 2026.pdf",
+          "bytes": 15750907,
+          "sha256": "6636cd61387a2f78b0fa96c8ea86ccc0f39ec59f98821cdb57b206d31445a328",
+          "pages": 442,
+          "text_chars": 1291432,
+          "low_text_pages": []
+        }
+      ]
+    },
+    {
+      "path": "componentes/documentos-compartidos/usb/usb_20_20250603.zip",
+      "bytes": 14489344,
+      "sha256": "5fe9c53c04033818af396e8852b3acbca5c3a76ba92fab549fd81cd0ea7b3692",
+      "git_blob": "2751e055d75ceb4027f265a799c26d41549bc514",
+      "type": ".zip",
+      "status": "ZIP integro comprobado, miembros inventariados; PDFs extraidos",
+      "members": [
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/2002_05_28_errata.pdf",
+          "bytes": 176056,
+          "sha256": "0d5d8aa0128ae08c78928765da3ab10d6ec913732e13f5357ed085a5ceabf481",
+          "pages": 7,
+          "text_chars": 19057,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/5V Short Circuit Withstand ECN.pdf",
+          "bytes": 25950,
+          "sha256": "db641c18e53c776feae8856d8cbf4e6c43c5edc97286ea53861ae8376106577a",
+          "pages": 2,
+          "text_chars": 4987,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/Connect Timing ECN.pdf",
+          "bytes": 171397,
+          "sha256": "31528541e9d829b1401fd0c747829012c56e6d6d6b12d8f1591ff4cb6549b73b",
+          "pages": 6,
+          "text_chars": 15720,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/Device Capacitance ECN.pdf",
+          "bytes": 14057,
+          "sha256": "a6a8213b57001e3397e9376a287c09c882d9870ac1ef465465104321385a24d1",
+          "pages": 2,
+          "text_chars": 2681,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/Disconnect_Supplement_HSIC_v1.0_18Sep2013.pdf",
+          "bytes": 79646,
+          "sha256": "d4b8c631a398500b7dca32eb9aa8bcce1fc207d49b8629eb15c28b6f67b3e658",
+          "pages": 8,
+          "text_chars": 13253,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/ECN for Core Spec TEST_MODE selector values.pdf",
+          "bytes": 23174,
+          "sha256": "12fe237ad69f8d217892f4b48a7f64d022f2f73e71fce8996e8638b5058cc68b",
+          "pages": 3,
+          "text_chars": 4425,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/ecn1-usb20-miniB-revd.pdf",
+          "bytes": 981022,
+          "sha256": "051d8c81b51c31663af21c2fab1ce5e4610cd2d9348d3f46d97691351a3cfbc8",
+          "pages": 45,
+          "text_chars": 109768,
+          "low_text_pages": [
+            2
+          ]
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/errata-092800-1207001.pdf",
+          "bytes": 138383,
+          "sha256": "1b94cd1cf303bdf0aba75a76d6a9333a357fa4ad626a57a76d6f132cb1498f23",
+          "pages": 31,
+          "text_chars": 60454,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/High Speed Inter-Chip_1_0 final.pdf",
+          "bytes": 157694,
+          "sha256": "78d0ba51e31ee86fdfb572c78baaabcb9999468a4e8b39aa805b28b59d2e8e74",
+          "pages": 16,
+          "text_chars": 24886,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/HSIC_ECN_21May2012.pdf",
+          "bytes": 89452,
+          "sha256": "952820684e44974256cafdb551f9e75ba32360ac2346f84e1da41c91ded65120",
+          "pages": 6,
+          "text_chars": 12777,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/Inter-Chip USB Supplement to the USB 2.0 Specification_1.0.pdf",
+          "bytes": 353949,
+          "sha256": "7ebdc280f47cf61bc1e44b2dc41f043d22d3715d510027acaea20a6e72329468",
+          "pages": 48,
+          "text_chars": 105627,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/InterfaceAssociationDescriptor_ecn.pdf",
+          "bytes": 142347,
+          "sha256": "494239252b46aed214ef4a22828c0a623b0ec0dac812ef249dc49a1d995c08a7",
+          "pages": 5,
+          "text_chars": 10599,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/Micro-USB_final/Clarification on the Chamfer on USB 2 0 Micro Connectors ECN .pdf",
+          "bytes": 134738,
+          "sha256": "ef89fce875fdd83eab3b61dd1e5b50e064a3b2210f1de884dc3725fc58d96220",
+          "pages": 4,
+          "text_chars": 2351,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/Micro-USB_final/Maximum Unmating Force Value Definition to USB 2 0 Micro Connectors ECN.pdf",
+          "bytes": 61931,
+          "sha256": "6898cc4b19ea3b95fd5a2d5de3e5933ebfe6f85f6857f082d442174121eb7b55",
+          "pages": 3,
+          "text_chars": 3503,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/Micro-USB_final/Micro-USB Cables and Connectors ADOPTERS AGREEMENT - Device Class Spec.pdf",
+          "bytes": 27172,
+          "sha256": "c5c48c7a6758b3850ff8486726c7069dcc4c8c2278fd559bca3966c997869f8b",
+          "pages": 5,
+          "text_chars": 13532,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/Micro-USB_final/Micro-USB ECN for Cable R3.pdf",
+          "bytes": 39511,
+          "sha256": "e71ada26e09018a1aa679ef0184dc0443a38e9b09a43a4d0df263597c1781635",
+          "pages": 3,
+          "text_chars": 3863,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/Micro-USB_final/MicroUSB ECN.pdf",
+          "bytes": 44936,
+          "sha256": "23e28803f42b533ea46c118d8e1c7a24ea654ca2301631a441cd517ef46ab16f",
+          "pages": 2,
+          "text_chars": 2485,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/Micro-USB_final/Micro-USB_1_01.pdf",
+          "bytes": 1231932,
+          "sha256": "64157f55767eb32ab0d999e0ddff637744d0feaf316f05203826e7e0b0a9d883",
+          "pages": 36,
+          "text_chars": 43140,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/Micro-USB_final/XV-4687C ECN Proposal for Micro USB.pdf",
+          "bytes": 415253,
+          "sha256": "3393cf4a7eaae39f291d8342f9bed78354e1be597f614d14a4af0f522737850e",
+          "pages": 23,
+          "text_chars": 66433,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/Micro-USB_final/XV-4687C_Supplement Quad cable R1.pdf",
+          "bytes": 268535,
+          "sha256": "531c5f79b57afe8d17df641f5d05e93da716c845873e29a8845313e6f029e35b",
+          "pages": 15,
+          "text_chars": 22312,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/resistor_ecn.pdf",
+          "bytes": 135192,
+          "sha256": "7d54e297fd8b79706a37912a899d20dca08d01861b940f4ebe2c11498d492e51",
+          "pages": 5,
+          "text_chars": 14073,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/rnd_chmfr_ECNFINAL.pdf",
+          "bytes": 62267,
+          "sha256": "03eb52b6603db492c4e543440aea0a0fe03b294fc99c3a24723abeaf90400d91",
+          "pages": 3,
+          "text_chars": 2052,
+          "low_text_pages": [
+            2,
+            3
+          ]
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/Suspend Current ECN.pdf",
+          "bytes": 71263,
+          "sha256": "1e3375761a72c37eebd198e48bccf528a4bd153bc56cc124e1f88c72722d5019",
+          "pages": 2,
+          "text_chars": 4347,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/UnicodeECN.pdf",
+          "bytes": 86055,
+          "sha256": "5964609e49fbd08d25deeceafdf4fe1e1cc0c6699493df3691e780010c73f7c1",
+          "pages": 2,
+          "text_chars": 2188,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/USB 2 0 Material Change ECN.pdf",
+          "bytes": 16296,
+          "sha256": "464ce303e918e5a7ab4dbcf34c8e2e7684549e2d083c7dcac2a3750a4a65dba3",
+          "pages": 3,
+          "text_chars": 6207,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/USB 2.0 DCR ECN.pdf",
+          "bytes": 925068,
+          "sha256": "af334155f70cf12ac9abe69b587b9144dab310da46962cbc2c211cd521c57825",
+          "pages": 16,
+          "text_chars": 35811,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/USB 2.0 Double Isochronous IN ECN.pdf",
+          "bytes": 328798,
+          "sha256": "687989bdf0b7be4076ff29e3094ccefb9600467e513791998a15b3d043df9771",
+          "pages": 6,
+          "text_chars": 12720,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/USB 2.0 ECN VBUS Max Limit.pdf",
+          "bytes": 49944,
+          "sha256": "9ea1f49b46f295e71e175d950ffaebd9edfd82f831787c40e74c2486d7773767",
+          "pages": 5,
+          "text_chars": 10805,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/USB 2.0 eUSB2 Repeater ECN.pdf",
+          "bytes": 245754,
+          "sha256": "1c382e61b389ef545c358517df297c687528ff21358eac11f0ed815d69818d04",
+          "pages": 6,
+          "text_chars": 21032,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/USB 2.0 Phase-Locked SOFs ECN.pdf",
+          "bytes": 14199,
+          "sha256": "f466459b6af8dd7c3f2d6947fa94077da5c2f23882f32dc638971f74c211fb68",
+          "pages": 2,
+          "text_chars": 3571,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/USB 2_0 Adopters Agreement - PDF Submission Update 20230216.pdf",
+          "bytes": 162119,
+          "sha256": "ee6f829e5b3f8fd8fc7b3c0250a4573cd5f525f869b215590409de0ee5c94e47",
+          "pages": 6,
+          "text_chars": 13738,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/USB OTG and Embedded Host/USB OTG ECN/USB OTGEH ECN Maximum Vbus Voltage OTGEH2.0.1.1A.001.pdf",
+          "bytes": 63548,
+          "sha256": "b5198de9e7af2bfd5a708b6e5259bf69fb728c529d96518a10a99bcc9a611278",
+          "pages": 4,
+          "text_chars": 6997,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/USB OTG and Embedded Host/USB OTG v2.0_ Amendment final_052609.pdf",
+          "bytes": 12537,
+          "sha256": "39bf293cdde1edc2b86734715a057593dfa9db7ea851b5eec765ca735d01855e",
+          "pages": 1,
+          "text_chars": 2822,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/USB OTG and Embedded Host/USB_OTG_and_EH_2-0-version 1_1a.pdf",
+          "bytes": 1587151,
+          "sha256": "8498707ad9d0820cf0b58f0fd9298548c6633162c0594907efe7305a849cc5bc",
+          "pages": 96,
+          "text_chars": 296268,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/usb_20.pdf",
+          "bytes": 5983789,
+          "sha256": "d39698a33486c399124af92bd02e4f978fd9a836b5cf4e52e6e4633eb1d89f61",
+          "pages": 650,
+          "text_chars": 1932211,
+          "low_text_pages": [
+            4,
+            28,
+            112,
+            146,
+            222,
+            466,
+            592,
+            600,
+            650
+          ]
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/USB2_LinkPowerMangement_ECN[final].pdf",
+          "bytes": 991241,
+          "sha256": "9774dc93323695b44c7781d2bc18bdd4dddefb936c185eea9fa792d92a3bd75d",
+          "pages": 29,
+          "text_chars": 97758,
+          "low_text_pages": []
+        },
+        {
+          "path": "usb_20_20250603/usb_20_20240927/usb_20_20240927/USB2-LPM-Errata-final.pdf",
+          "bytes": 506487,
+          "sha256": "824c06e7cc05cc189a8e0039d3c8dc39f82caf32f603c63363cb24a6efe205f7",
+          "pages": 8,
+          "text_chars": 22968,
+          "low_text_pages": []
+        }
+      ]
+    },
+    {
+      "path": "componentes/esparragos-soldar-m4x20/README.md",
+      "bytes": 60719,
+      "sha256": "3297a34730dd14f0560bb6367089d46c0ef7420770f501b5736176eadcc27625",
+      "git_blob": "c356e79f1d80dde189cafc9ce679a23c13268c53",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 59841,
+      "lines": 398
+    },
+    {
+      "path": "componentes/esparragos-soldar-m4x20/datasheets/28208_FA_Soyer_PS-9_data.pdf",
+      "bytes": 750096,
+      "sha256": "4bc1ed1264081a17133f82b4520bb79844701b83cb787fe25ae26902963274ba",
+      "git_blob": "6bd4a960168fbd3f0deb062b40ddfd4608bcc56f",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 2,
+      "text_chars": 13940,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/esparragos-soldar-m4x20/datasheets/52139189425.pdf",
+      "bytes": 100767,
+      "sha256": "c5b5246a1f2bd0339981d04d0c4adc07acf164539ad04a63c042c5ec08b222c9",
+      "git_blob": "1b4fb387658d4aa3d4d7f9c2d56b8b7d7a1ee4c3",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 2,
+      "text_chars": 4281,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/esparragos-soldar-m4x20/datasheets/Grounding_and_Corrosion_of_Dissimilar_Materials-SUlemek.pdf",
+      "bytes": 1619263,
+      "sha256": "f2d8e930026f1f3bd980428a177c73c167833a398a953152481a95a54f1724e1",
+      "git_blob": "b7c1f83c8b480a97e9a1bdb44d8afc0b47fb20e0",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 21,
+      "text_chars": 23786,
+      "low_text_pages": [
+        21
+      ]
+    },
+    {
+      "path": "componentes/esparragos-soldar-m4x20/datasheets/Introduction-to-Taylor-Studwelding-Systems-single-pages.pdf",
+      "bytes": 2372408,
+      "sha256": "f8664a28bcb48aad70025dc7e84a5767c49e18191006695fbecaac6b5fb334e8",
+      "git_blob": "ee2685bdb1ebe17a6e9b15ee678e03f6e199f583",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 6,
+      "text_chars": 18919,
+      "low_text_pages": [
+        1
+      ]
+    },
+    {
+      "path": "componentes/esparragos-soldar-m4x20/datasheets/Sonderdruck_metallbau_1_2019.pdf",
+      "bytes": 366153,
+      "sha256": "6035e9a3f292098122581bf4de4de49e84ec6238efeaa7bae12758d21ad78f5f",
+      "git_blob": "d5efe44061349bdda986eb68642b3bf5079e8352",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 3,
+      "text_chars": 16474,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/esparragos-soldar-m4x20/datasheets/produktinfo_ps-1k07.2022.pdf",
+      "bytes": 786398,
+      "sha256": "37342e86eb9eaff78497bfdd3cb09681cd8d22001c307cf55e9023f2dd9eb7d5",
+      "git_blob": "2f5895a81be2bb71925b3022decb1138b68dc6b2",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 2,
+      "text_chars": 14579,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/esparragos-soldar-m4x20/enlaces.md",
+      "bytes": 13252,
+      "sha256": "d13172f8c1f8936e508c2aa4f8a4a3fb4a79bb83cbe8283bbe5f138a4098d382",
+      "git_blob": "1d87c5ef364c34d42d5a0906e8366cfec0325f0d",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 13146,
+      "lines": 90
+    },
+    {
+      "path": "componentes/fusibles-ceramicos-5x20-t2-5a/README.md",
+      "bytes": 43349,
+      "sha256": "d21b947ece46eaaa33e2f0a558491427e852662e1d70f418b3fe4fb31253dbd7",
+      "git_blob": "28f97067fbc26c1a24aa5559ad7ae1d4267407f0",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 42606,
+      "lines": 345
+    },
+    {
+      "path": "componentes/fusibles-ceramicos-5x20-t2-5a/datasheets/523987_da_ml_01.pdf",
+      "bytes": 72608,
+      "sha256": "0cf724f51242c8958a1004f89fa50209aa056d8c1b1547e3a48eee8a818c4561",
+      "git_blob": "83a5a331974b8f15289cce063c6125d39caa89b4",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 1,
+      "text_chars": 5363,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/fusibles-ceramicos-5x20-t2-5a/datasheets/Curvas_de_disparo_Acti9.PDF",
+      "bytes": 211926,
+      "sha256": "536eda839f032041852ca410e0766ccd9916180c8eb4f66dac115c722a2be670",
+      "git_blob": "1ac3f5916c30d4c4b4da1f1d7ec339009018c1fe",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 2,
+      "text_chars": 9521,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/fusibles-ceramicos-5x20-t2-5a/datasheets/Fuseology_Design_Guide.pdf",
+      "bytes": 3969558,
+      "sha256": "a7cbc7b271ced25865d2a8eddf410aafaace715dd5d826e5e6e107e84211661b",
+      "git_blob": "ce48fd8505eb750f6e93d8cdd43ccb1adcf41f78",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 9,
+      "text_chars": 175562,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/fusibles-ceramicos-5x20-t2-5a/datasheets/SPT_5x20.pdf",
+      "bytes": 348362,
+      "sha256": "95063c4cf2ec2a40985b5661dbf54893b8e69b491be5417c7448b06219cebc52",
+      "git_blob": "8e22056ec4e3ffb3083fca23c881c0afb1910006",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 4,
+      "text_chars": 15308,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/fusibles-ceramicos-5x20-t2-5a/datasheets/criteria_for_correct_fuse_selection.pdf",
+      "bytes": 823820,
+      "sha256": "2dc92bc38cd9dcf16a53e14be75d49c9974bdcf9d6430bbe092d3a9b23256a5d",
+      "git_blob": "86f051cc576e12a38944cf0249db128ae60425f4",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 4,
+      "text_chars": 27075,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/fusibles-ceramicos-5x20-t2-5a/datasheets/eaton-s505-ferrule-time-delay-ceramic-tube-fuses-data-sheet.pdf",
+      "bytes": 761922,
+      "sha256": "e20020303c13c11bad30a5e59868f028a7f48c25ed3199640bc3a6c1f358c663",
+      "git_blob": "e14d478f290a71ac0a62064ff0800bb4ce9902b5",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 4,
+      "text_chars": 12554,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/fusibles-ceramicos-5x20-t2-5a/enlaces.md",
+      "bytes": 13692,
+      "sha256": "cd9be0ca187fd8f33ed2c4dbe631bdc5a9db2dbb5d7f085e76ee279ea3e71491",
+      "git_blob": "c5688547419d563767a9b5e67a6a4a5daa1024f9",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 13555,
+      "lines": 94
+    },
+    {
+      "path": "componentes/kit-faston-aislados/README.md",
+      "bytes": 57211,
+      "sha256": "bda42bb2a668f750c132b4372a86f45752ae5a30dc28de2597125eaaa947c153",
+      "git_blob": "d212fb1ce3cfc48b1735ba0ca6f41b8a42728d7f",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 56318,
+      "lines": 374
+    },
+    {
+      "path": "componentes/kit-faston-aislados/datasheets/0900766b812c0b94.pdf",
+      "bytes": 231312,
+      "sha256": "1a59f583c6d21e3c7df13eb13ee7fa7bf3fccbe997d692d078772d8854c27994",
+      "git_blob": "47e3c79ecf24b21783112cc98714a21cfa660a3f",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 5,
+      "text_chars": 5363,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/kit-faston-aislados/datasheets/2672036.pdf",
+      "bytes": 346109,
+      "sha256": "bf5029995cbbe5185bfe4e7a1aa820776f2b6eee26e5117e69cd8b8b2314a525",
+      "git_blob": "60a9d917fc9c9f9e5b485b519f02dc2a6e15098c",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 5,
+      "text_chars": 16265,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/kit-faston-aislados/datasheets/3945.pdf",
+      "bytes": 40650,
+      "sha256": "14f5953b1d45c388c13675b9368b99923e8d4367598a9645c3dc99017dc1c197",
+      "git_blob": "79518e1f3d5909505d8a6946eeb2a40dc158dce2",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 7,
+      "text_chars": 19952,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/kit-faston-aislados/datasheets/A700000011111237.pdf",
+      "bytes": 226631,
+      "sha256": "925b53bc2a959b0509923bfae670f4777f05e0bbcaef30f57ef8b5c25c196080",
+      "git_blob": "b32ecade00ac998963de8b1bd73fcb6b3bccb1a4",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 1,
+      "text_chars": 1443,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/kit-faston-aislados/datasheets/A700000011290009.pdf",
+      "bytes": 76999,
+      "sha256": "f96b3011ad8ccc5f5860f92e198ef65fa728919a432ba5bb7d5da4bbee7c128e",
+      "git_blob": "a442b2b6fa070ddcfa217037ab70f4fb1382d4d5",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 1,
+      "text_chars": 6129,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/kit-faston-aislados/datasheets/A700000015454362.pdf",
+      "bytes": 537370,
+      "sha256": "7fbfcfb2fe02e4699ba7f7872fa14caabc54123f3bddca86ce552bbc66cff85a",
+      "git_blob": "37255f33690f5fe7d0c0782eacb5de12e470a28e",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 15,
+      "text_chars": 124868,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/kit-faston-aislados/datasheets/TEConnectivityFASTONQuickReferenceGuide.pdf",
+      "bytes": 376250,
+      "sha256": "8d61330885d140843665b6d9159e44c70e5069151c5b384f24091f90eafc35e5",
+      "git_blob": "744ec11fc231c9977b327a8240429925fb321911",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 4,
+      "text_chars": 14342,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/kit-faston-aislados/datasheets/tehnicni-podatki-737405-ploscati-tulec-sirina-63-mm-debelina-08-mm-180-delno-izoliran-modre-barve-cimco-180232-1-kos.pdf",
+      "bytes": 87070,
+      "sha256": "a881e9cd8edec595e2bf4b85c9e9058c056b62921c9caff0eee5447ed475de86",
+      "git_blob": "425063caa3fd784d887520240ef50c8a064176b8",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 1,
+      "text_chars": 6418,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/kit-faston-aislados/datasheets/wire_pull_test_standards.pdf",
+      "bytes": 16460,
+      "sha256": "b812969f921d0af68343acd9e76ac5455f1b088b1608fdcc8c30e47d1f75f68e",
+      "git_blob": "fba7c5f47f28a81a21487ee3e555817599630cd1",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 1,
+      "text_chars": 4951,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/kit-faston-aislados/enlaces.md",
+      "bytes": 16076,
+      "sha256": "fe0cfa62d21c2f16dcb54210ad5f616769e2043004ed5a28d4f0ad55b4bad19b",
+      "git_blob": "d3e17ca8d8dbada4d6e00188c006693aff05e813",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 15973,
+      "lines": 118
+    },
+    {
+      "path": "componentes/latiguillo-micro-usb-22awg/README.md",
+      "bytes": 49012,
+      "sha256": "65c97c33d0e19ccb6b73f265821db5ce05bb73fbd6a7372856c261671ca14c81",
+      "git_blob": "58d9b9d4ff77024a873dcb95c7f8aff78a7769fd",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 48189,
+      "lines": 330
+    },
+    {
+      "path": "componentes/latiguillo-micro-usb-22awg/datasheets/FLUKE_Application_Note_Copper_Clad_Aluminum_CCA_Cables.pdf",
+      "bytes": 367576,
+      "sha256": "e44b35b712dfedec9fa901c8fcc5e7054ced016cd435e078d5d2678338687643",
+      "git_blob": "9a09712596fdc0697221af8e5d6dc6792da55a43",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 5,
+      "text_chars": 16051,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/latiguillo-micro-usb-22awg/datasheets/Micro-USB_1_01.pdf",
+      "bytes": 1231932,
+      "sha256": "64157f55767eb32ab0d999e0ddff637744d0feaf316f05203826e7e0b0a9d883",
+      "git_blob": "0f2f3b664bc02dbe84930e2cfab07989320dff4a",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 36,
+      "text_chars": 43140,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/latiguillo-micro-usb-22awg/enlaces.md",
+      "bytes": 13543,
+      "sha256": "58e4b81b0a33bddfa6a20ce6fe39925959c4ab093fb33be77d2b14813545f74f",
+      "git_blob": "a3f65f652fb5f42c2d4a27a2c4ce2e438903e1c3",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 13431,
+      "lines": 75
+    },
+    {
+      "path": "componentes/meanwell-lrs-50-5/README.md",
+      "bytes": 55924,
+      "sha256": "c0f09176170db7e83de4c27b4df7085f6947421548dbe35024d1b8aaaf466927",
+      "git_blob": "b6ac66feb0ed1475d311ab919de6a53821eba867",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 55074,
+      "lines": 409
+    },
+    {
+      "path": "componentes/meanwell-lrs-50-5/datasheets/0900766b815c75ea.pdf",
+      "bytes": 551069,
+      "sha256": "fb2b0406e1d9d7171ef2b5eac5e8e2c8d816a0a7cf24895fc194ccd6de3e9c03",
+      "git_blob": "b37ceb8c66ddc2c8fbd04ad765969a56b5681bc7",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 4,
+      "text_chars": 16292,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/meanwell-lrs-50-5/datasheets/Enclosed_Power_Supply_Installation_Manual.pdf",
+      "bytes": 422775,
+      "sha256": "5a15bd81bd18092af9df2554f0b69b7ae40ec8ce0679b88291832017f00e7630",
+      "git_blob": "b2580a0bd241181dc66b2a863e516aa60c19bcde",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 9,
+      "text_chars": 17275,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/meanwell-lrs-50-5/datasheets/Enclosed_Type_EN.pdf",
+      "bytes": 1032314,
+      "sha256": "3e40e59123e5c23d498a468e851f89e5a9d89d99fdbdc82fe8c19348294e4940",
+      "git_blob": "c6ae8ac04deab67c0bf224b443d773e10a5464b0",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 9,
+      "text_chars": 17356,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/meanwell-lrs-50-5/datasheets/LRS-50-5.pdf",
+      "bytes": 395390,
+      "sha256": "cfba7fcaad5589738fd1b2957b3caf3f213d77018c15cfa0452f94eb1ed3e97f",
+      "git_blob": "beaeb35b2e0d7c1e5e0090cc07a463c6d0be1620",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 5,
+      "text_chars": 17343,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/meanwell-lrs-50-5/datasheets/LRS-50-SPEC.pdf",
+      "bytes": 689356,
+      "sha256": "4ff46f63eab7b5275359f1d65f409aebebb6ccac0ab5c161e557557d474c8e6c",
+      "git_blob": "0ce181e76d8125e6b511e0f1dbdb890e65f7a010",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 4,
+      "text_chars": 29617,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/meanwell-lrs-50-5/datasheets/MEAN_WELL_LRS-50_CE_DECLARATION.pdf",
+      "bytes": 444454,
+      "sha256": "8d2ef8bcea9bb62121922e88a360de2d59e65d335b7b70fc8c94ade86538406b",
+      "git_blob": "97de67ba4a033079709624c7a178c43f5af0c62b",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 1,
+      "text_chars": 3100,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/meanwell-lrs-50-5/datasheets/MEAN_WELL_LRS-50_DATA_SHEET.pdf",
+      "bytes": 192253,
+      "sha256": "68c326d7ff1b929d2b79a53d52a14750d37bb98687a5317637a20477df48f96b",
+      "git_blob": "eee8a5c12afe0986825cb1e5ef13fc34df11cb86",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 4,
+      "text_chars": 31556,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/meanwell-lrs-50-5/enlaces.md",
+      "bytes": 16323,
+      "sha256": "1c62394e3d48a2344c27d933e0c115f7bde22226bd14c41bacfab7bc84c28965",
+      "git_blob": "3ab0e703cbcd3fb4156c7c1f43cd741e2077582d",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 16061,
+      "lines": 113
+    },
+    {
+      "path": "componentes/modulo-c14-fusible-interruptor/README.md",
+      "bytes": 71183,
+      "sha256": "9884bda1b36ae83c9aa8d202ddd52d7730b740c77385f0d14200dbfc10b5151f",
+      "git_blob": "bf6ac9790d1c9e4b4bf5403e8cf00957530cc15e",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 69694,
+      "lines": 507
+    },
+    {
+      "path": "componentes/modulo-c14-fusible-interruptor/datasheets/0900766b815867ba.pdf",
+      "bytes": 868463,
+      "sha256": "303a8f3a92c86ceac38274b85715dc24dd5d4553f42edde9b07e71d5bd73adde",
+      "git_blob": "4e28837d0847a8ab6162411e9a31bd84bfb16f7e",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 2,
+      "text_chars": 1810,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/modulo-c14-fusible-interruptor/datasheets/2351262.pdf",
+      "bytes": 635629,
+      "sha256": "c03ee7bdd4ca0a4b4a8ddb36f0f686e7718298e77fc1f4f36830d476593e8e63",
+      "git_blob": "15a9308f7b04d46246b7a3f13ccb0921df04cfa7",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 5,
+      "text_chars": 24260,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/modulo-c14-fusible-interruptor/datasheets/625732.pdf",
+      "bytes": 84585,
+      "sha256": "b940404d70c63f1ebf21ee5310d151c6ff520713ea498a550df1f609c3b80eaf",
+      "git_blob": "7c9deca35224c1a1419b67696f533a5fde6a5605",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 2,
+      "text_chars": 10735,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/modulo-c14-fusible-interruptor/datasheets/A700000008623303.pdf",
+      "bytes": 403803,
+      "sha256": "1d9ad67f6ea1967927025005cab268102614f75fff10d7e2589eae5670454270",
+      "git_blob": "3fb5f3c9fa8327b530a0d1c7e91e1bfec1ba1a44",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 5,
+      "text_chars": 24893,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/modulo-c14-fusible-interruptor/datasheets/ENEC-fraudulent-license-UL-Demko-2022-08-10.pdf",
+      "bytes": 215333,
+      "sha256": "a922e3d37dc22a0d51f9a4256736a40af25cadebc04087406dab37d40786030d",
+      "git_blob": "47c08cace4f756267decbc550494d5ba8fcf5c99",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 1,
+      "text_chars": 625,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/modulo-c14-fusible-interruptor/enlaces.md",
+      "bytes": 13337,
+      "sha256": "a3c6357d585e0153009fa436124e0980bb520fbc6a1cd95f3e3d984e00e46527",
+      "git_blob": "b9555ff50e55c6ad2062ae22943e074a9ae9bf1a",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 13246,
+      "lines": 132
+    },
+    {
+      "path": "componentes/pantalla-geeekpi-7-hdmi/README.md",
+      "bytes": 51836,
+      "sha256": "4a111aca4ace4a5b857bd45b21089c657133cc76d5b06c04bcc28dc6f40a0623",
+      "git_blob": "11270db91934085ec4972c0d50675d1f588a2b3a",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 51024,
+      "lines": 404
+    },
+    {
+      "path": "componentes/pantalla-geeekpi-7-hdmi/datasheets/DT070BTFT-HB-Displaytech-Spec-1649616.pdf",
+      "bytes": 7893394,
+      "sha256": "e168f5f5498d2261e56ed06dd17ad159c8a27b66036f93d7d61c91c1bf182122",
+      "git_blob": "4b90d336ee45206491f4d7a86e5aba0927ba13ce",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 16,
+      "text_chars": 19293,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/pantalla-geeekpi-7-hdmi/datasheets/RP-004341-WP-2-Troubleshooting_KMS_HDMI_output.pdf",
+      "bytes": 274091,
+      "sha256": "fa2a3283fdaf1e32c15f72052aadfb4d1ee4820c38ace77924aedb8585468fe6",
+      "git_blob": "8991f5ad4aeef8ac26e4757933efa475f944d420",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 12,
+      "text_chars": 23960,
+      "low_text_pages": [
+        12
+      ]
+    },
+    {
+      "path": "componentes/pantalla-geeekpi-7-hdmi/datasheets/RP-010429-MM-3-touch-display-2-7-inch-product-brief.pdf",
+      "bytes": 9702301,
+      "sha256": "9a54a8d7621ef95cc0810362fc611781649443a326eefd9ffbcb98af6f92af29",
+      "git_blob": "16998d98be4eb14b37dc2f42481cba8f6be09b3f",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 8,
+      "text_chars": 4794,
+      "low_text_pages": [
+        7
+      ]
+    },
+    {
+      "path": "componentes/pantalla-geeekpi-7-hdmi/enlaces.md",
+      "bytes": 12222,
+      "sha256": "176c7c0b84bdd363bd380bdffed84d0f08c13be002d2248be5c557f9ee2afb56",
+      "git_blob": "07987cdf8c0a6337e29767e06d7cc3343f43a1a0",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 12122,
+      "lines": 103
+    },
+    {
+      "path": "componentes/pasacables-goma/README.md",
+      "bytes": 54049,
+      "sha256": "60cd6a02f85a64d95c9148a18fb21357b7de8550d4a0217efa289196484071a4",
+      "git_blob": "a0835c2729c57ac18d6241b03b7ccf97eec2d0ce",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 53223,
+      "lines": 411
+    },
+    {
+      "path": "componentes/pasacables-goma/enlaces.md",
+      "bytes": 14601,
+      "sha256": "216248bc630c1af2d9a25c4133f80a7b6235de26bd62dff848dd2e56a282da17",
+      "git_blob": "45da5585542d116578f7346858a712c5070d4497",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 14499,
+      "lines": 99
+    },
+    {
+      "path": "componentes/pendientes.md",
+      "bytes": 11551,
+      "sha256": "9920ae86290b12ed78cfb1a085dda0696f06f4622fc8361edf1f7e58cf1b581a",
+      "git_blob": "87fe6f123243bbe575c411ce435cb5ef7dff7746",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 11399,
+      "lines": 72
+    },
+    {
+      "path": "componentes/pulsador-arcade-30mm/README.md",
+      "bytes": 57255,
+      "sha256": "6d68575ea384bfbba2dde267995cc9e424d8006aa711354fba5879fa57611185",
+      "git_blob": "c9fc3dd16cd66b67e68c253d03108d0f51368793",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 56430,
+      "lines": 439
+    },
+    {
+      "path": "componentes/pulsador-arcade-30mm/datasheets/1564503.pdf",
+      "bytes": 667819,
+      "sha256": "8215de0b526d40c0328ca469611cc62c49e1d4908ad64fa9157af3272d8a04bd",
+      "git_blob": "4704d28819484198a12c83d74fa571d87f52df36",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 32,
+      "text_chars": 190904,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/pulsador-arcade-30mm/datasheets/RP-008249-DS-1-bcm2835-peripherals.pdf",
+      "bytes": 1489399,
+      "sha256": "5e446658d154c4447381ef62c1a3ce4102715e437fe488e2b93e798b60c4004e",
+      "git_blob": "7f674bec03c1a817b151cc77971a949e36b3f2e5",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 205,
+      "text_chars": 457254,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/pulsador-arcade-30mm/datasheets/schurter_shris05004-1-1758128.pdf",
+      "bytes": 627210,
+      "sha256": "ff73a3632e0980bae1bcce0cb992f3bdc55070677c87996d6ac571278ed944b0",
+      "git_blob": "466714f87f19dfaaccb45c281b9b09c9629c7672",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 22,
+      "text_chars": 36966,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/pulsador-arcade-30mm/datasheets/sszt871.pdf",
+      "bytes": 327475,
+      "sha256": "91db610fec915172ce611d227eee730ef6284ccdca44d767610dcb270a1d160f",
+      "git_blob": "f3f964c573e58e43f0de5280dad37e1282a13fac",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 3,
+      "text_chars": 7724,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/pulsador-arcade-30mm/enlaces.md",
+      "bytes": 12775,
+      "sha256": "d9c8f096f320ff19d10bd091fc51f82585157023ec88af93f0d0bd85f2178a63",
+      "git_blob": "fee35cd5f5092a78b1ab578a078d8eff137c07ea",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 12686,
+      "lines": 124
+    },
+    {
+      "path": "componentes/raspberry-pi-3b-plus/README.md",
+      "bytes": 19202,
+      "sha256": "aeee9d3f728e01d747855afcd947c80df0279e4aa793ac78b7487e631ad3fe0f",
+      "git_blob": "3976f3bad0dea922737727a01dc2ccebb56bba0b",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 18988,
+      "lines": 212
+    },
+    {
+      "path": "componentes/raspberry-pi-3b-plus/datasheets/RP-000092-CF-1-CB_certificate.pdf",
+      "bytes": 181650,
+      "sha256": "6d23f723de86110fda377c1fb25de6410560fffda85a51fbb1dc321c08c80827",
+      "git_blob": "30ba9b81f6680d878482fea40742012304356b97",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 2,
+      "text_chars": 4569,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/raspberry-pi-3b-plus/datasheets/RP-000116-CF-1-FCC.pdf",
+      "bytes": 643826,
+      "sha256": "07c87741580fd398332f7930a75f127808a629b667a9b306a76f28e9f11e436c",
+      "git_blob": "7d2f8a22f2b6dcb0230f414807af9eb0edc7d1cd",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 3,
+      "text_chars": 0,
+      "low_text_pages": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "path": "componentes/raspberry-pi-3b-plus/datasheets/RP-001265-CF-3-rpi-3bplus_EU_Declaration_of_Conformity_DoC.pdf",
+      "bytes": 178173,
+      "sha256": "759bcb2e3b37af8d9bcf24cdb1dab5db676461a5def89629157e80d2666ca3cc",
+      "git_blob": "98656fee8ceb74dc8dc3af959826fd7f4d03b9d6",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 2,
+      "text_chars": 7742,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/raspberry-pi-3b-plus/datasheets/RP-003337-PC-1-Pi3B__Revision_9_PCN.pdf",
+      "bytes": 10846266,
+      "sha256": "6246a9fae9f3d71198649ba840aa3d7a9d7327448d3705f42ed0b02a97cc443f",
+      "git_blob": "b5408dd84f1d637d50858a6da6a3092dd58b5a45",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 7,
+      "text_chars": 6700,
+      "low_text_pages": [
+        7
+      ]
+    },
+    {
+      "path": "componentes/raspberry-pi-3b-plus/datasheets/RP-008156-DS-6-picamera2-manual.pdf",
+      "bytes": 2915581,
+      "sha256": "7eb9cae4030fce5ba5270288d323cc7fd7fa202e1d37f7bef29e87f0edbac715",
+      "git_blob": "4c31ec874f3a88ec5a4721cf30739ccf395a4575",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 86,
+      "text_chars": 278096,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/raspberry-pi-3b-plus/datasheets/RP-008160-DS-1-raspberry-pi-3-b-plus-case-mechanical-drawing.pdf",
+      "bytes": 895578,
+      "sha256": "fc701b987e47eaa51cdbd64bb3ddbc351c5be315d96999af71c25ba85842636f",
+      "git_blob": "d9c918e8d03f00aad3425cb609f07b18f2c87af1",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 1,
+      "text_chars": 942,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/raspberry-pi-3b-plus/datasheets/RP-008336-DS-1-raspberry-pi-3-b-plus-mechanical-drawing.dxf",
+      "bytes": 1575157,
+      "sha256": "f6fdcebff36d43da2da8800fa68b10fc7db8bf8c907a836f558c1754b086689e",
+      "git_blob": "03e97b2a2c2e7589f671913ea677fbd769d341d1",
+      "type": ".dxf",
+      "status": "texto disponible para lectura",
+      "text_chars": 1575157,
+      "lines": 211198
+    },
+    {
+      "path": "componentes/raspberry-pi-3b-plus/datasheets/RP-008337-DS-2-raspberry-pi-3-b-plus-mechanical-drawing.pdf",
+      "bytes": 14070,
+      "sha256": "967b7e123670d7f4ef4bd93b0add8e24e6a54910f3d98a09eab68753c5db1e63",
+      "git_blob": "cafa28e7e736c7e2b7a25e332c981258530ffbbb",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 1,
+      "text_chars": 0,
+      "low_text_pages": [
+        1
+      ]
+    },
+    {
+      "path": "componentes/raspberry-pi-3b-plus/datasheets/RP-008338-DS-2-raspberry-pi-3-b-plus-product-brief.pdf",
+      "bytes": 869105,
+      "sha256": "345192be568ea8ab2f1f7bdb43ca5edf36e20bdd9b1bf96081299a91a2a88f3f",
+      "git_blob": "eb1d8059a220e8928422f048cb27170b2666b009",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 6,
+      "text_chars": 5920,
+      "low_text_pages": [
+        6
+      ]
+    },
+    {
+      "path": "componentes/raspberry-pi-3b-plus/datasheets/RP-008339-DS-1-raspberry-pi-3-b-plus-reduced-schematics.pdf",
+      "bytes": 76713,
+      "sha256": "d012d5d0d69c495f24726ea96271e9884aa7bd8873c2694bb1028a8b7b2f6f95",
+      "git_blob": "c759b1242fb89d9a34df8b1992660cc0f2ae0b58",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 1,
+      "text_chars": 90489,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/raspberry-pi-3b-plus/datasheets/descargar.sh",
+      "bytes": 1255,
+      "sha256": "35e617c72c8ff8b631b94845a98d304cbfce8a12044c285f0701581cac914b09",
+      "git_blob": "bdd7ef3f96529734309778a379223d8954b0d61e",
+      "type": ".sh",
+      "status": "texto disponible para lectura",
+      "text_chars": 1255,
+      "lines": 26
+    },
+    {
+      "path": "componentes/raspberry-pi-3b-plus/enlaces.md",
+      "bytes": 4606,
+      "sha256": "7d893a28e9f4708c6eb29ca2b09ef62dce8414c21ec429f2fb61c14a00b68ad1",
+      "git_blob": "661d06198cffd24354a8b213c3391557e3f6496b",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 4588,
+      "lines": 47
+    },
+    {
+      "path": "componentes/raspberry-pi-camera-module-3/README.md",
+      "bytes": 18078,
+      "sha256": "506938e4872dff65231afa1e3a9ec50f899b966e8dbbac2acd47ab265c9b986c",
+      "git_blob": "57678df17a610b8d051d958d62f66e1c2ab59204",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 17892,
+      "lines": 184
+    },
+    {
+      "path": "componentes/raspberry-pi-camera-module-3/datasheets/RP-008151-DS-1-camera-module-3-product-brief.pdf",
+      "bytes": 1244344,
+      "sha256": "578efcad6337696a29b9c068815a01d63ddcf7beacf584051d61cf1cddeeaf0a",
+      "git_blob": "de9b376ee0bcc680c3693edeaba424393e8653c4",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 7,
+      "text_chars": 8152,
+      "low_text_pages": [
+        7
+      ]
+    },
+    {
+      "path": "componentes/raspberry-pi-camera-module-3/datasheets/RP-008153-DS-1-camera-module-3-standard-mechanical-drawing.pdf",
+      "bytes": 949985,
+      "sha256": "bde27f5ab38dd46aa05713bbb17c6e8acc4cb1d48ff9109df511256f6fbc66ac",
+      "git_blob": "b982acd7008873195cc33e948e55b58f981099a0",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 1,
+      "text_chars": 1026,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/raspberry-pi-camera-module-3/datasheets/RP-008154-DS-1-camera-module-3-step.zip",
+      "bytes": 9971996,
+      "sha256": "b2e2026ea5322bddf1ddcbae97c094822ee9e0ca92d7bc5c748f60a8b5ef6683",
+      "git_blob": "03391ac44d8595d32f14fb36ac5b6c2be18414d6",
+      "type": ".zip",
+      "status": "ZIP integro comprobado, miembros inventariados; PDFs extraidos",
+      "members": [
+        {
+          "path": "Camera_module_3_wide_model_simple.stp",
+          "bytes": 29900214,
+          "sha256": "b13715ed4fac37ef8357ffddf824cfafe923e55aa849941c5508986cc625c994"
+        },
+        {
+          "path": "__MACOSX/._Camera_module_3_wide_model_simple.stp",
+          "bytes": 410,
+          "sha256": "478823b0a6f6980388219a9840fe1d51b514376acbf4b8080d448ea93e2788c3"
+        },
+        {
+          "path": "Camera_module_3_std_model_simple.stp",
+          "bytes": 30848133,
+          "sha256": "ecbc4b091e51f31c6186b81ad68d4205b8dceec0d90c116cd7fd699e1f1c5702"
+        },
+        {
+          "path": "__MACOSX/._Camera_module_3_std_model_simple.stp",
+          "bytes": 410,
+          "sha256": "51745e9ffa59da0354f6b5e7618a09f512540f1cdd15ae2c1c3784f284164498"
+        }
+      ]
+    },
+    {
+      "path": "componentes/raspberry-pi-camera-module-3/datasheets/RP-008969-SD-3-Raspberry_Pi_Camera_Module_3_Reference_Schematic.pdf",
+      "bytes": 264744,
+      "sha256": "a527a9edc4d2b75f938f0b19d5c33ae1f482beb8e964f4f14260c786025a581b",
+      "git_blob": "cfc2d400ebf63625891ca41f87b766b425531ca5",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 2,
+      "text_chars": 46083,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/raspberry-pi-camera-module-3/datasheets/RP-008970-BM-2-RASPBERRY_PI_CAMERA_MODULE_3_Reference_Design_BOM.xlsx",
+      "bytes": 11996,
+      "sha256": "f4a89385435f4f40d03a313b88cccb2e593c6a3122f6af558f36fd8ffb14ff05",
+      "git_blob": "3b7b341babf3b6f85741af89c62a8c41b4e195f5",
+      "type": ".xlsx",
+      "status": "libro abierto, celdas inventariadas",
+      "sheets": {
+        "RP-008842-ES - RASPBERRY PI CAM": {
+          "rows": 22,
+          "columns": 7
+        }
+      }
+    },
+    {
+      "path": "componentes/raspberry-pi-camera-module-3/datasheets/RP-009691-PC-1-PCN_42__IMX708_Preprogrammed_OTP.pdf",
+      "bytes": 111423,
+      "sha256": "c6f2e5023b98a3022ba52bf0df744ce93e19e13abe09a07c1a7a778cd68b4348",
+      "git_blob": "2b751d397e917f8a8a0487e75707100e00367c80",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 6,
+      "text_chars": 6242,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/raspberry-pi-camera-module-3/datasheets/RP-009692-PC-1-PCN_43__Camera_Module_3_Internal_EEPROM_removal.pdf",
+      "bytes": 77034,
+      "sha256": "d11db483fcfae6eaeba6ee0cd2953937cce7e2c3c777a09aff63c5dcb0c00472",
+      "git_blob": "f22a521308c4c3cdfcd26b5c9c31f84d4ccfb9fe",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 6,
+      "text_chars": 5017,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/raspberry-pi-camera-module-3/enlaces.md",
+      "bytes": 7444,
+      "sha256": "cfb2e363a5d9b14b7a3683a2561eacc574ea7624431a13cf60398b7fba957772",
+      "git_blob": "eee643fc3c103bd324ade3267e337cb09a65ed00",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 7412,
+      "lines": 56
+    },
+    {
+      "path": "componentes/sandisk-high-endurance-32gb/README.md",
+      "bytes": 20087,
+      "sha256": "f51c8272904124d2e105bdf9c9d555b8986ac9b339ee8b37f134379e93d949b8",
+      "git_blob": "e5fe5e7db349b1be2605492d317bc7c98e7c6cb3",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 19877,
+      "lines": 214
+    },
+    {
+      "path": "componentes/sandisk-high-endurance-32gb/datasheets/data-sheet-high-endurance-uhs-i-microsd.pdf",
+      "bytes": 918571,
+      "sha256": "51ee4fd91669fcb99e9c58b60f1274d809e51a49bc64522a71182c878085a1d6",
+      "git_blob": "d6a7aeb1c21d18362457a2056478b064cca4c81b",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 2,
+      "text_chars": 7409,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/sandisk-high-endurance-32gb/datasheets/microsd-high-endurance-set-up-sheet-europa-2019.pdf",
+      "bytes": 753957,
+      "sha256": "90481180944063dee80bcc50bf4573e1abb230a580b7ebdc49af358511a753aa",
+      "git_blob": "4b64a00e8f10efae7eaee3488a42a223c957fbbe",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 2,
+      "text_chars": 5887,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/sandisk-high-endurance-32gb/enlaces.md",
+      "bytes": 5666,
+      "sha256": "0d46a7c51e152ac41c85b10b31d09144335e001800e88ed054e570d2129c4fb3",
+      "git_blob": "e6f2a4212108cb054d27e5d69fa1246c31483d91",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 5640,
+      "lines": 56
+    },
+    {
+      "path": "componentes/separadores-nylon-m2-5/README.md",
+      "bytes": 51972,
+      "sha256": "1d1410da78a60d97b42bcc8d7aa741b32ab16b1ace47806cc759679e0e9f1c95",
+      "git_blob": "67d81b750246167bb8c9e3a6225771e1c07e69a2",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 51216,
+      "lines": 418
+    },
+    {
+      "path": "componentes/separadores-nylon-m2-5/datasheets/0900766b816cd289.pdf",
+      "bytes": 109072,
+      "sha256": "9efe554eb5c94f6ee307fd7e64c29162c64352c3e857299eba66fc0a6f906650",
+      "git_blob": "e76323a1776bd5cdfb2b0c6c1f13c8a8af71da72",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 2,
+      "text_chars": 17324,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/separadores-nylon-m2-5/datasheets/LOCTITE-THREADLOCKER-BLUE-242-en_US.pdf",
+      "bytes": 228288,
+      "sha256": "f23b160023ca9e64332864b03fab91078249616632387c50cd07f33194a15dee",
+      "git_blob": "ff4ffd5724a2e5b6fb057e0a8b3aa4d1dd89c061",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 4,
+      "text_chars": 18393,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/separadores-nylon-m2-5/datasheets/Polymershapes_Ensigner_DataSheet-TECAMID-66-natural.pdf",
+      "bytes": 61942,
+      "sha256": "6bf77e56ef9feb65b8dae12d18782ffcff162375256107df384398a76790805c",
+      "git_blob": "b96213d414a36b0f1085eaf371c312934bee5c3c",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 1,
+      "text_chars": 7760,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/separadores-nylon-m2-5/datasheets/RP-008281-DS-1-hat-plus-specification.pdf",
+      "bytes": 1210200,
+      "sha256": "3a0932253767147038383162ac9f4b5aac3adb048c30bd1f9177a462a054ca1e",
+      "git_blob": "3f1ee840507b39b1b0fc542ccd1cd3584df640fb",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 21,
+      "text_chars": 41052,
+      "low_text_pages": [
+        21
+      ]
+    },
+    {
+      "path": "componentes/separadores-nylon-m2-5/datasheets/ULTRAMID-A3K-product-information-2026-09.pdf",
+      "bytes": 44552,
+      "sha256": "6ac339372c9d88495f8bd1f7590f677d2a91f6c4c2cfa7f029f7c6c87692d9b8",
+      "git_blob": "05db740245d602cc54e2476f5ae9464e31d48fdd",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 2,
+      "text_chars": 8201,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/separadores-nylon-m2-5/enlaces.md",
+      "bytes": 15171,
+      "sha256": "11f3356622bcf0d30088c7a76372686b1dca2473faad541af9a0c1d1db3ad77d",
+      "git_blob": "9f521c638209c6187e82c76069e2f4e5db4f0d74",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 15041,
+      "lines": 88
+    },
+    {
+      "path": "componentes/sumup-solo/README.md",
+      "bytes": 61944,
+      "sha256": "5b83968afda9c58fb8da21e13f0ad3099a1e686dff0b681082aca91c9968d9f3",
+      "git_blob": "8667781b6aa01f80d85f6da7602391e8be35210b",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 61086,
+      "lines": 409
+    },
+    {
+      "path": "componentes/sumup-solo/datasheets/211025_-_TQM_SoC_Labels__Sum_Up__TQM5064__3_.pdf",
+      "bytes": 182381,
+      "sha256": "a4ce4a4b990e5013ef6927bdbd83c8efc3b9e2b8515d0dafbb0e14299dd802f9",
+      "git_blob": "41df405356393e818cde9079b64ee7a07b176c42",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 2,
+      "text_chars": 4997,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/sumup-solo/datasheets/BRI42258_TECH.pdf",
+      "bytes": 412676,
+      "sha256": "c20ae0a8fdf63081a9c64d38a3bc4871db912f22c627b96c59d00397305360e2",
+      "git_blob": "0028aec8958cac6586cfa4b142646795a4f30662",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 1,
+      "text_chars": 3598,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/sumup-solo/datasheets/EMV_Level_1_and_Level_2_certificates.pdf",
+      "bytes": 913147,
+      "sha256": "dff989dbaafb7a7322078d4b54f08201a25922929f43a01c1e0143539317f760",
+      "git_blob": "e28bbb1fb06d4e34123bd218c7ce83f8cb98011d",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 8,
+      "text_chars": 15045,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/sumup-solo/datasheets/Solo___Solo_Lite_Cradle_CE_Declaration_of_conformity_.pdf",
+      "bytes": 155437,
+      "sha256": "55f86a36f5659aa0b6e940890791530deef52bfde4fc75ed34fab0086251be71",
+      "git_blob": "63fc934d7a743b2e07460bca2abe999e354af61a",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 1,
+      "text_chars": 1260,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/sumup-solo/datasheets/SumUp_Solo_CE_Declaration_of_Conformity_Access__signed.pdf",
+      "bytes": 389070,
+      "sha256": "d8b68183f5ff00d504a6309dda0a21a5a0d1b40d320c096527cf393927fda3cd",
+      "git_blob": "836e79716c637ba62fe05d8135a4719fea0eece6",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 2,
+      "text_chars": 1712,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/sumup-solo/enlaces.md",
+      "bytes": 15595,
+      "sha256": "000c8b05fff08d0a403e78f78a1b1c2c236fa8008504b8d9b9f9789eef37d528",
+      "git_blob": "8ea1fcb5eebe4305d4f5fc936e1c14a6b4e76398",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 15471,
+      "lines": 150
+    },
+    {
+      "path": "componentes/terminales-ojal-m4/README.md",
+      "bytes": 66997,
+      "sha256": "d3cdaad65f42d3dc8d05838c5b49f1d668bbf3967bd10ccbcdcd30cd3718cdf1",
+      "git_blob": "d546c1822155c4d727d6d99b1921c99e7e85514e",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 66085,
+      "lines": 482
+    },
+    {
+      "path": "componentes/terminales-ojal-m4/datasheets/0900766b81529c0d.pdf",
+      "bytes": 313734,
+      "sha256": "6bd3378ce9e8da0b4941d9f53e441b25034f775ce99a93e0952a0562e43a5962",
+      "git_blob": "a8140d9980ae27c36088afc3c0bdce1bcb612cc0",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 2,
+      "text_chars": 926,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/terminales-ojal-m4/datasheets/A700000006574165.pdf",
+      "bytes": 2532236,
+      "sha256": "27dd2cf179da04eda262aa9d8c214356b3ec89d21cf09748f4866af6763b6fd3",
+      "git_blob": "9e8a0031b386d7b2fe89fe4dff256f606464a2c1",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 7,
+      "text_chars": 3119,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/terminales-ojal-m4/datasheets/A700000007945278.pdf",
+      "bytes": 385522,
+      "sha256": "2f8e297c619b26a14b87f1b0fcdc34b07883254e3e2962bd661726c94be9910d",
+      "git_blob": "c4f6b2b0c68db260c81596dc1d025415304901d2",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 6,
+      "text_chars": 3970,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/terminales-ojal-m4/datasheets/Quality_Crimp_Handbook.pdf",
+      "bytes": 959143,
+      "sha256": "202745c6390db7b685dd76e16e6d7c259922ea09cce595205cf98d7d3808625d",
+      "git_blob": "7bf15ee609bd5a7de17aba53d785d6e65ad737c0",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 24,
+      "text_chars": 76090,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/terminales-ojal-m4/datasheets/datasheet-676042-phoenix-contact-3240018-ring-terminal-hole-o43-mm-partially-insulated-red-100-pcs.pdf",
+      "bytes": 78507,
+      "sha256": "af3d417529095363a66a117d13779fa06883a7f3a4717f796534f155d6989438",
+      "git_blob": "2790f946c00308edef79f5fad9d5f13dbca8c8af",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 3,
+      "text_chars": 3569,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/terminales-ojal-m4/enlaces.md",
+      "bytes": 11538,
+      "sha256": "2e77ee8ded87f82109cc1e17f7cd6545bff98c35559c8395c29983689f2d22ca",
+      "git_blob": "1ab84fa8e628ce44fe690664727b786d63dad9cc",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 11460,
+      "lines": 110
+    },
+    {
+      "path": "componentes/tornilleria-inox-m3-m6/README.md",
+      "bytes": 59702,
+      "sha256": "158f5d2d5d0929519a7a2e92f6efef93a87ed3b42ae50ea2c9a1780c4d78259b",
+      "git_blob": "6d68c6e953950352e309a4c1ea22c9876204dd94",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 58919,
+      "lines": 442
+    },
+    {
+      "path": "componentes/tornilleria-inox-m3-m6/datasheets/A700000007879576.pdf",
+      "bytes": 653151,
+      "sha256": "f4cc586bd470220ec0637659d530889fa7b98a8000c6205a7e1258e5292662ea",
+      "git_blob": "4cdd3912242e1c0637b08742262d22505de10b62",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 5,
+      "text_chars": 3713,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/tornilleria-inox-m3-m6/datasheets/A700000007879596.pdf",
+      "bytes": 617041,
+      "sha256": "13c5db48c651def97ff6dc2ba72c33ccfe9da9fc10a7104ef46aa12ea837d4dc",
+      "git_blob": "35cf0b318a06980570736868ff1ac49b33fecffc",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 4,
+      "text_chars": 3626,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/tornilleria-inox-m3-m6/datasheets/A700000008786735.pdf",
+      "bytes": 83492,
+      "sha256": "5e17e8d87202ee53f95cd0b849f849dbf1000f768bb3bbbe23da2f489c5d29d8",
+      "git_blob": "09f94abe2191d542fe975cebd966bbe511f843ae",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 4,
+      "text_chars": 26433,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/tornilleria-inox-m3-m6/datasheets/Mechanical_Properties_Metric_Fasteners_Jan_2016.pdf",
+      "bytes": 330142,
+      "sha256": "b633b7303f52a8b560fd92ef630706cf2c075fc1d8df28a752f1e92cb37bbee6",
+      "git_blob": "8858dbd80b91c0c3452b8d6d6d567d41602011f4",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 2,
+      "text_chars": 2438,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/tornilleria-inox-m3-m6/datasheets/NORD-LOCK_Washers_Catalogue.pdf",
+      "bytes": 1070339,
+      "sha256": "b7f1c31cfdf911094f53c5b7c2e50d5fa235d556bfb40baead74613dd7c8389a",
+      "git_blob": "54932ef57fa980c3d2d7677613e6fd71e7061d03",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 16,
+      "text_chars": 67909,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/tornilleria-inox-m3-m6/datasheets/Property_Classes_Screws_Nuts.pdf",
+      "bytes": 109222,
+      "sha256": "42e15dae2822477a428b3cfe5b852b584fa13cc56c8ef1ebd1dcbf4de48cdb83",
+      "git_blob": "eb57a3eed19b8124c31fc43b881d6fba08bf8d27",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 1,
+      "text_chars": 6322,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/tornilleria-inox-m3-m6/datasheets/Torque-Tension-Relationship-for-Metric-Stainless-Steel-Fasteners-A2-and-A4-70-Feb-2016.pdf",
+      "bytes": 236793,
+      "sha256": "016b2f7e8accdad10d00784217a0d4747a7ccbef9bc0e6d5fd66331949a53671",
+      "git_blob": "e36fbfd409a8ef6c524187f0ae8bba1016247542",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 1,
+      "text_chars": 3898,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/tornilleria-inox-m3-m6/enlaces.md",
+      "bytes": 17806,
+      "sha256": "6ecc8f98c4fee5a12cc13fb2a24cd85d4df6757460950bfc9f4bda14912c8824",
+      "git_blob": "88e2dad5d7c6730af7ce810948fef87481c7ba24",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 17675,
+      "lines": 119
+    },
+    {
+      "path": "componentes/tubo-silicona-6mm/README.md",
+      "bytes": 48217,
+      "sha256": "de46d7f431563d7776b469df75784de170f71d35e00245fd9199a75c7ae6eeb0",
+      "git_blob": "cba47cd1c3471d6f81491ef20f70900365b01680",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 47546,
+      "lines": 349
+    },
+    {
+      "path": "componentes/tubo-silicona-6mm/datasheets/SPEC-AN-111-Integration-Guidelines.pdf",
+      "bytes": 454343,
+      "sha256": "cfddea61cc22209e15ad2bce2acf1eaeee41e2a90116dd190b043ec985dccb98",
+      "git_blob": "dc26af8e13ed3aa824eaa918db7d00c139eeb827",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 5,
+      "text_chars": 11084,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/tubo-silicona-6mm/datasheets/Wacker_ELASTOSIL-M-4630-A_ComplianceSheet_0925.pdf",
+      "bytes": 109157,
+      "sha256": "13eaa13bfa6c67368b91f29be83d71517154d78d0b6394dac5dc84f44a24c931",
+      "git_blob": "6835b51b87335411e6e8675cba775b6caaf487ab",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 5,
+      "text_chars": 9222,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/tubo-silicona-6mm/datasheets/XV-Silicones.pdf",
+      "bytes": 525175,
+      "sha256": "c9988e8a9d657042e1bddbf330cd370ecb6995075d3adc32ae8e91be155a5e91",
+      "git_blob": "1cecd345a4f342b6de1f5feb7659c7bfcf6ef577",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 5,
+      "text_chars": 13691,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/tubo-silicona-6mm/datasheets/dot_1733_DS1.pdf",
+      "bytes": 488718,
+      "sha256": "042702d284bd524a4f9026c3a8a4995a7c9fe2a962c489ec163d67d6bb80aeeb",
+      "git_blob": "b3287621a4870c5a33e1ef8bb44351edec4ce29a",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 10,
+      "text_chars": 23297,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/tubo-silicona-6mm/datasheets/r126-1-e21.pdf",
+      "bytes": 633666,
+      "sha256": "395ff71bd51deea8f058ce95847801448b29fce0a90e3e996e548dcb402b7cdb",
+      "git_blob": "71d927ca957af872dd59aeb5738d588be5d06d05",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 48,
+      "text_chars": 124985,
+      "low_text_pages": [
+        2
+      ]
+    },
+    {
+      "path": "componentes/tubo-silicona-6mm/enlaces.md",
+      "bytes": 15345,
+      "sha256": "d904ae811d106ac0f5e1c1837b9f8e44edcaf4057dbec19229d73834647493ca",
+      "git_blob": "45c57805ede192b3d56af54817921f51eb09d49c",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 15251,
+      "lines": 112
+    },
+    {
+      "path": "componentes/wago-221-surtido/README.md",
+      "bytes": 47970,
+      "sha256": "abb743168525c5180b4539ff1da3f21eae5ba8491deacd4878d4743e2b39d36f",
+      "git_blob": "fde368257b3a33b4ce1cf6e271c90b78c241fb13",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 47228,
+      "lines": 377
+    },
+    {
+      "path": "componentes/wago-221-surtido/datasheets/WAGO_221-415_hoja-de-datos-zh.pdf",
+      "bytes": 931638,
+      "sha256": "c48514a003517136427c551a2935d92680b386883c6a13d23d1723468e615dc5",
+      "git_blob": "54b0a84e6a5e3e48337b1809feb9b98278529dba",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 8,
+      "text_chars": 13550,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/wago-221-surtido/datasheets/WAGO_221-415de.pdf",
+      "bytes": 10217480,
+      "sha256": "34c363666dc065c31b1a0db4dd41569af5123824dab06f9880f5e31be08720b1",
+      "git_blob": "3d75f1ba31bd88bd0c058bab8888db970294a245",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 7,
+      "text_chars": 351484,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/wago-221-surtido/enlaces.md",
+      "bytes": 12334,
+      "sha256": "4d5c8bfe3bb5aab2b642dc6608c136a94a44f24241faf174991fc16bc7ed481b",
+      "git_blob": "d059bc8f4bea3a7ac985a023df61983f6b5ab50c",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 12201,
+      "lines": 85
+    },
+    {
+      "path": "componentes/winsen-ze29a/README.md",
+      "bytes": 54869,
+      "sha256": "f82981e69eb005cf4b7a38cc951e477d7d0a1e03655471f44f184fa87fcf1d71",
+      "git_blob": "9266f4934a4a7402b692cdfe4c4068cfa33ff938",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 53934,
+      "lines": 543
+    },
+    {
+      "path": "componentes/winsen-ze29a/datasheets/16mm_breath_alcohol_sensor_product_datasheet.pdf",
+      "bytes": 416186,
+      "sha256": "6a3d4116275f7a631e8e7819433d847033fcf1cd61ba6148076e6f64c44d06ec",
+      "git_blob": "6d897ba833886ecd70477c95298b2a7ad36ccd32",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 7,
+      "text_chars": 14654,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/winsen-ze29a/datasheets/A42985-42990.pdf",
+      "bytes": 194115,
+      "sha256": "b361da2654efe26e4af40a0c2ffe2d9f891c42e8695bc873b7f4c7bab61d2cde",
+      "git_blob": "2471c804a711dcc46e24940f72eea6ddd16c376c",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 6,
+      "text_chars": 38653,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/winsen-ze29a/datasheets/me2-c2h5oh-f16.pdf",
+      "bytes": 606548,
+      "sha256": "de20e673c8c8c259945c9a9c47b3ed0468718d8bdb2bad4f779e3237b229d00e",
+      "git_blob": "5a368d0be6f1b102f5e0c48121067e50aecfd0d4",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 4,
+      "text_chars": 5586,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/winsen-ze29a/datasheets/me2-co-0-1000ppm-manual-ver1_3.pdf",
+      "bytes": 352496,
+      "sha256": "f12d35c77aab1c4d7fad5f985fea11b7291eabf592badc2351c1781f83dfb4ec",
+      "git_blob": "b4f206444cca5c8b3c6aa9fe9d81365741fa999d",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 5,
+      "text_chars": 7896,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/winsen-ze29a/datasheets/r126-e12.pdf",
+      "bytes": 470281,
+      "sha256": "de955a426f8b99580ded71962b48baebc89ff774d24035454ad201832bb0f5c0",
+      "git_blob": "f134dcb0e9cdf60ff7dcbe3d8e59811f73a95e32",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 69,
+      "text_chars": 148021,
+      "low_text_pages": [
+        2
+      ]
+    },
+    {
+      "path": "componentes/winsen-ze29a/datasheets/ze29a-c2h5oh.pdf",
+      "bytes": 415836,
+      "sha256": "0c019dc06b3aaaeb573cc90404b3aee9230b91cd55425fcad01088e5aae8e4bf",
+      "git_blob": "dac75059ea46fc02dc97d472ca619eac7ae970da",
+      "type": ".pdf",
+      "status": "texto extraido todas las paginas; revision visual selectiva",
+      "pages": 10,
+      "text_chars": 22826,
+      "low_text_pages": []
+    },
+    {
+      "path": "componentes/winsen-ze29a/enlaces.md",
+      "bytes": 10922,
+      "sha256": "25a81d225e05836c6cbbde2b6176cbb095d1498769c0dc3d4723ad406bbb47fa",
+      "git_blob": "2b6d18020d66a60ea6e10a95f14c3bb1bcdf6d0c",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 10777,
+      "lines": 92
+    },
+    {
+      "path": "montaje-general/1-alimentacion-y-tierra.png",
+      "bytes": 376955,
+      "sha256": "29492e68caa3ad44175e943781604a8a0918a98607d78476c31dd0bfa04d8da9",
+      "git_blob": "98da37d02b96c57286a58733874804df168d5538",
+      "type": ".png",
+      "status": "imagen abierta; revision visual",
+      "width": 2170,
+      "height": 1090
+    },
+    {
+      "path": "montaje-general/1-alimentacion-y-tierra.svg",
+      "bytes": 40746,
+      "sha256": "89266c8f87c7e487fbfdde47c4d49df7ff134367defad30f071ae2dd6d71dcb0",
+      "git_blob": "d7b5401b24e16896a0a157e957276f349dcf98e2",
+      "type": ".svg",
+      "status": "texto disponible para lectura",
+      "text_chars": 40560,
+      "lines": 247
+    },
+    {
+      "path": "montaje-general/2-pi-puertos-y-senales.png",
+      "bytes": 392033,
+      "sha256": "e9ee0c9fbdf82d1f7d9eb238d748121bca3bba53bcce020c0b5e0d71caa0681a",
+      "git_blob": "6770131a33ec907e10299137be135d4a7786978c",
+      "type": ".png",
+      "status": "imagen abierta; revision visual",
+      "width": 2170,
+      "height": 1250
+    },
+    {
+      "path": "montaje-general/2-pi-puertos-y-senales.svg",
+      "bytes": 30812,
+      "sha256": "559b04eab68988e639b1454cb3af4f0c46c53be9bf1955352302c42c8755383b",
+      "git_blob": "bd92c938c1f2c2038c5264b9f45c2a9e3bbb7cc6",
+      "type": ".svg",
+      "status": "texto disponible para lectura",
+      "text_chars": 30698,
+      "lines": 169
+    },
+    {
+      "path": "montaje-general/3-gpio-40-pines.png",
+      "bytes": 252473,
+      "sha256": "6dbbe2715d7120071b7c31f1f0e8750c9655cb246c3827c0c7266126a1d8621a",
+      "git_blob": "cd6339b0af8a6f8ddb72e27249455bbed06e63a9",
+      "type": ".png",
+      "status": "imagen abierta; revision visual",
+      "width": 1600,
+      "height": 960
+    },
+    {
+      "path": "montaje-general/3-gpio-40-pines.svg",
+      "bytes": 33598,
+      "sha256": "75c2eec1452f2ddb3f38a5d40d344eedd5633744236d02b70b9fc6bd98813317",
+      "git_blob": "007efbe8d111202cff2c5182a077f7cba25cdcc7",
+      "type": ".svg",
+      "status": "texto disponible para lectura",
+      "text_chars": 33544,
+      "lines": 200
+    },
+    {
+      "path": "montaje-general/4-donde-va-cada-pieza.png",
+      "bytes": 285458,
+      "sha256": "349cc77e1f4fee8fef812de5e9f661a44adcc4fdbc07eb5dc7cecea5035ee39f",
+      "git_blob": "82322c66b3cb6f4c844162a55992137da7aebf25",
+      "type": ".png",
+      "status": "imagen abierta; revision visual",
+      "width": 1560,
+      "height": 1070
+    },
+    {
+      "path": "montaje-general/4-donde-va-cada-pieza.svg",
+      "bytes": 18056,
+      "sha256": "482105e35b065a751f68479562515a094a589da69ad8200f0dacde4e2edfffa1",
+      "git_blob": "1f5eb6bd5b9657bcfda92daab3dd4993538be35e",
+      "type": ".svg",
+      "status": "texto disponible para lectura",
+      "text_chars": 17931,
+      "lines": 89
+    },
+    {
+      "path": "montaje-general/anuncios-amazon-21-10-2026.md",
+      "bytes": 7678,
+      "sha256": "cef097c23d04dfa8aadfbc180e152fbf6e1b8a0b249c3d9e7299cbd5025c0af9",
+      "git_blob": "8a7b34cdfdaf371dca3368803a2514b233d2a0ae",
+      "type": ".md",
+      "status": "texto disponible para lectura",
+      "text_chars": 7546,
+      "lines": 125
+    }
+  ]
+}
