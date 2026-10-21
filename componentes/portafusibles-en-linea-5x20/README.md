@@ -9,8 +9,8 @@ Pieza nueva del 21-10-2026. Sale del hallazgo H04 de la auditoría técnica 1.0 
 ## 1. Resumen para el proyecto
 
 - **Qué es:** un kit con 5 portafusibles en línea para fusible de 5 × 20 mm (cuerpo de rosca con dos hilos) y 150 fusibles rápidos de vidrio, 15 de cada valor: 0,5, 1, 2, 3, 4, 5, 8, 10, 15 y 20 A.
-- **Para qué:** un portafusibles en el troncal de +5 V, pegado a la fuente (F 8 A), y uno en el +5 V de cada una de las cuatro ramas: Pi (F 3 A), SumUp Solo (F 2 A), pantalla (F 2 A) y ZE29A (F 1 A). Se usan los cinco; sobran fusibles de todos los valores. Las cuatro auditorías del repositorio (6.1-S F04, 6-A A6A-03, P H2, 5.6 C-03) piden protección del troncal además de la de cada rama.
-- **Dónde va:** el del troncal entre el borne 5 de la fuente y el polo 1 de la WAGO «+5 V» (W11); los de rama entre el polo 2 a 5 de la WAGO «+5 V» y la carga, lo más cerca posible de la WAGO ([MONTAJE GENERAL](../../MONTAJE-GENERAL.md), W13, W14, W16 y W18). Solo en el +5 V, nunca en el GND.
+- **Para qué:** un portafusibles en el troncal de +5 V, pegado a la fuente (F 5 A), y uno en el +5 V de cada una de las cuatro ramas: Pi (F 3 A, en su propia línea desde los bornes de la fuente), SumUp Solo (F 2 A), pantalla (F 2 A) y ZE29A (F 1 A). Se usan los cinco; sobran fusibles de todos los valores. Las cuatro auditorías del repositorio (6.1-S F04, 6-A A6A-03, P H2, 5.6 C-03) piden protección del troncal además de la de cada rama.
+- **Dónde va:** el del troncal entre el borne 5 de la fuente y el polo 1 de la WAGO «+5 V» (W11); el de la Pi en su línea propia desde el borne 5 (W13); los demás entre los polos 3 a 5 de la WAGO «+5 V» y la carga, lo más cerca posible de la WAGO ([MONTAJE GENERAL](../../MONTAJE-GENERAL.md), W13, W14, W16 y W18). Solo en el +5 V, nunca en el GND.
 - **Compra:** [B07KQ46H6K](https://www.amazon.es/dp/B07KQ46H6K), 9,99 € el 21-10-2026.
 
 ## 2. Lo que dice el anuncio
@@ -29,15 +29,15 @@ Pieza nueva del 21-10-2026. Sale del hallazgo H04 de la auditoría técnica 1.0 
 
 | Rama | Corriente típica | Pico estimado | Fusible | Por qué |
 |---|---|---|---|---|
-| Troncal (las cuatro ramas) | 2,3 a 2,9 A | 5 A (5,5 A si el Solo llega a 2 A) | **F 8 A** | Protege el cable de 0,75 mm² entre la fuente y la WAGO; la fuente solo entra en hipo a partir de 11 A. Un fusible no limita al instante y el hipo puede retrasar la fusión (auditoría 6.1-S F04): se ensaya en banco con cargas ficticias |
-| Raspberry Pi 3B+ + cámara + AR9271 | 0,9 A | 2,0 A | **F 3 A** | La Pi lleva su propio polifusible de 2,5 A; el de la rama protege el latiguillo de 22 AWG |
+| Troncal (Solo, pantalla y ZE29A; la Pi va aparte) | 1,4 a 2 A | 3 a 3,5 A | **F 5 A** | Protege el cable de 0,75 mm² entre la fuente y la WAGO; la fuente solo entra en hipo a partir de 11 A. Un fusible no limita al instante y el hipo puede retrasar la fusión (auditoría 6.1-S F04): se ensaya en banco con cargas ficticias |
+| Raspberry Pi 3B+ + cámara + AR9271 | 0,9 A | 2,0 A | **F 3 A** | La Pi lleva su propio polifusible de 2,5 A; el de la rama protege el latiguillo de 22 AWG. Va en una línea propia desde los bornes de la fuente para no cargar con la caída del troncal (MONTAJE GENERAL, W13) |
 | SumUp Solo cargando | 0,5 A | 1,5 A | **F 2 A** | Con cable A → C el Solo ve una fuente de 500 mA; si reconoce el puente D+/D−, hasta 1,5 A |
 | Pantalla 7" | 1 A (5 W, anuncio) | 1 A | **F 2 A** | Arranque de la retroiluminación sin dato |
 | ZE29A | < 0,5 A (manual) | < 0,5 A | **F 1 A** | El electroimán de la toma de muestra no tiene corriente publicada |
 
 Los calibres son de papel: **se confirman midiendo cada rama con una pinza amperimétrica** (MONTAJE GENERAL, apartado 4, punto 8). Si un fusible funde al arrancar, se sube un escalón.
 
-Los hilos de 16 AWG entran en la WAGO 221 (admite de 0,14 a 4 mm²) sin puntera, pelados a 11 mm; en W13 y W18 el otro extremo se empalma con el latiguillo de 22 AWG o con el hilo de la clavija en una WAGO 221-412 del surtido (#20); en W14 y W16 entra directo en el tornillo del borne USB-A (admite AWG 28 a 16); en W11 lleva puntera en el borne 5 de la fuente. Los 25 cm de hilo se acortan.
+Los hilos de 16 AWG entran en la WAGO 221 (admite de 0,14 a 4 mm²) sin puntera, pelados a 11 mm; en W13 los dos extremos se empalman en WAGO 221-412 (con el rojo de 0,75 mm² que sale del borne 5 y con el latiguillo de 22 AWG); en W18 el de salida se empalma con el hilo de la clavija en otra 221-412; en W14 y W16 entra directo en el tornillo del borne USB-A (admite AWG 28 a 16); en W11 el hilo del lado de la fuente lleva puntera doble en el borne 5 junto con el rojo de la rama de la Pi. Los 25 cm de hilo se acortan.
 
 ## 4. Qué comprobar al recibirlo
 

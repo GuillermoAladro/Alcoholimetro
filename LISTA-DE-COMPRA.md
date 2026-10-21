@@ -1,6 +1,6 @@
 # Lista de compra (Amazon.es)
 
-Los 32 componentes del alcoholímetro con su enlace de compra (31 de la guía más el kit de fusibles por rama que añadió la auditoría). Es la lista de la guía de montaje eléctrico v2 (20-10-2026, del Project), con la misma numeración que las fichas de [`componentes/`](componentes/README.md) y que el [MONTAJE GENERAL](MONTAJE-GENERAL.md).
+Los 32 componentes del alcoholímetro con su enlace de compra (31 de la guía más el kit de fusibles por rama que añadió la auditoría). El orden de montaje y las pruebas están en [MONTAJE PASO A PASO](MONTAJE-PASO-A-PASO.md); para el banco hace falta además el material de su fase 0. Es la lista de la guía de montaje eléctrico v2 (20-10-2026, del Project), con la misma numeración que las fichas de [`componentes/`](componentes/README.md) y que el [MONTAJE GENERAL](MONTAJE-GENERAL.md).
 
 - Enlace de cada pieza: `https://www.amazon.es/dp/<ASIN>`. El ASIN es la referencia fija; **los precios son los vistos en Amazon.es el 19 y 20-10-2026 y cambian a menudo.**
 - Todo se puede pedir en Amazon.es, que es la regla del proyecto.
@@ -50,7 +50,7 @@ Subtotal: **416,13 €**.
 | 29 | Cables de señal | Dupont ELEGOO, 120 uds. | [B01NGTXASZ](https://www.amazon.es/dp/B01NGTXASZ) | 9,99 € | [ficha](componentes/cables-dupont-elegoo-120/README.md) | Para los pines de la Pi |
 | 30 | Separadores | Columnas hexagonales M2.5 de nylon (350 uds.) | [B0G4G7WQRM](https://www.amazon.es/dp/B0G4G7WQRM) | 9,99 € | [ficha](componentes/separadores-nylon-m2-5/README.md) | Para la Pi y el sensor |
 | 31 | Pasacables | De goma, 7 tamaños (260 uds.) | [B0B5DLWVZ2](https://www.amazon.es/dp/B0B5DLWVZ2) | 7,99 € | [ficha](componentes/pasacables-goma/README.md) | En todos los agujeros de chapa por donde pase cable |
-| 32 | Fusibles por rama de 5 V | Kit: 5 portafusibles en línea 5 × 20 con hilo de 16 AWG + 150 fusibles rápidos de vidrio (0,5 a 20 A) | [B07KQ46H6K](https://www.amazon.es/dp/B07KQ46H6K) | 9,99 € | [ficha](componentes/portafusibles-en-linea-5x20/README.md) | **Añadido el 21-10-2026** por el hallazgo H04 de la auditoría: un fusible en el troncal (8 A) y en el +5 V de cada rama (3 A Pi, 2 A Solo, 2 A pantalla, 1 A ZE29A); se usan los cinco portafusibles. Precio visto el 21-10-2026 |
+| 32 | Fusibles por rama de 5 V | Kit: 5 portafusibles en línea 5 × 20 con hilo de 16 AWG + 150 fusibles rápidos de vidrio (0,5 a 20 A) | [B07KQ46H6K](https://www.amazon.es/dp/B07KQ46H6K) | 9,99 € | [ficha](componentes/portafusibles-en-linea-5x20/README.md) | **Añadido el 21-10-2026** por el hallazgo H04 de la auditoría: un fusible en el troncal (5 A) y en el +5 V de cada rama (3 A Pi, 2 A Solo, 2 A pantalla, 1 A ZE29A); se usan los cinco portafusibles. Precio visto el 21-10-2026 |
 
 Subtotal: **230,44 €**.
 
@@ -73,5 +73,5 @@ No está en las 31 fichas. Lo propone la guía por si el Wi-Fi del bar no sirve:
 - **#11 Pulsador:** la guía habla de NO, COM y NC. El pulsador solo tiene dos contactos de interruptor (más dos del LED), así que no hay NO, COM ni NC.
 - **#7 Clavija XH:** la guía la compra «por si el ZE29A no trae su cable»; el anuncio del ZE29A no dice si lo trae.
 - **#9 SumUp Solo:** el USB-C está en el canto de abajo (foto del anuncio).
-- **#32 (nuevo):** la auditoría 1.0 (H04) y las cuatro auditorías del repositorio piden fusible en el troncal y en cada rama de 5 V. El kit B07KQ46H6K trae 5 portafusibles y fusibles de 1, 2, 3 y 8 A; detalle en [MONTAJE GENERAL](MONTAJE-GENERAL.md), W11 a W18.
-- **Piezas que las auditorías del 21-10-2026 piden y que no están en esta lista** (ver MONTAJE GENERAL, 5.2): tapa aislante para los bornes de 230 V de la fuente; arandelas aislantes para el jack RP-SMA del techo; tornillería M2 para la cámara (sus taladros son de 2,2 mm); resistencias de 1 kΩ para la UART y el pulsador si se adoptan; y, si el módulo C14 resulta de un polo o sin esquema, una entrada C14 bipolar documentada que lo sustituya.
+- **#32 (nuevo):** la auditoría 1.0 (H04) y las cuatro auditorías del repositorio piden fusible en el troncal y en cada rama de 5 V. El kit B07KQ46H6K trae 5 portafusibles y fusibles de 1, 2, 3 y 5 A; detalle en [MONTAJE GENERAL](MONTAJE-GENERAL.md), W11 a W18.
+- **Piezas que las auditorías del 21-10-2026 piden y que no están en esta lista** (ver MONTAJE GENERAL, 5.2): tapa aislante para los bornes de 230 V de la fuente; arandelas aislantes para el jack RP-SMA del techo; dos punteras dobles de 2 × 0,75 mm² para los bornes 4 y 5 de la fuente, si el kit #28 no las trae; tornillería M2 para la cámara (sus taladros son de 2,2 mm); resistencias de 1 kΩ para la UART y el pulsador si se adoptan; y, si el módulo C14 resulta de un polo o sin esquema, una entrada C14 bipolar documentada que lo sustituya.
