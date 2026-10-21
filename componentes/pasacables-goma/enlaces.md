@@ -54,8 +54,8 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 - [Directiva Delegada (UE) 2015/863, EUR-Lex (HTML)](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32015L0863). Abierta: DEHP, BBP, DBP y DIBP, 0,1 %. Una variante sin `/HTML/` abrió solo la cabecera.
 - [Real Decreto 219/2013 (RoHS en España), BOE](https://www.boe.es/eli/es/rd/2013/03/22/219). Abierto: lista seis sustancias y no cita los ftalatos.
 - [REBT, Real Decreto 842/2002, BOE (índice)](https://www.boe.es/buscar/act.php?id=BOE-A-2002-18099). Abierto; solo el índice con anclas a las ITC (`#ib-19`, `#ib-21`), sin su texto.
-- [ITC-BT-19 (plcmadrid.es)](https://www.plcmadrid.es/wp-content/uploads/rebt/itc19/ITC-BT-19.pdf). Abierta (la misma que enlaza la guía).
-- [ITC-BT-36, instalaciones a muy baja tensión (plcmadrid.es)](https://www.plcmadrid.es/wp-content/uploads/rebt/itc36/ITC-BT-36.pdf). Abierta.
+- [ITC-BT-19 (plcmadrid.es)](https://www.plcmadrid.es/wp-content/uploads/rebt/itc19/ITC-BT-19.pdf) ([copia local](../documentos-compartidos/normas/ITC-BT-19.pdf)). Abierta (la misma que enlaza la guía).
+- [ITC-BT-36, instalaciones a muy baja tensión (plcmadrid.es)](https://www.plcmadrid.es/wp-content/uploads/rebt/itc36/ITC-BT-36.pdf) ([copia local](../documentos-compartidos/normas/ITC-BT-36.pdf)). Abierta.
 - **No abierta:** ITC-BT-21. Intenté `https://www.plcmadrid.es/wp-content/uploads/rebt/itc21/ITC-BT-21.pdf` y la herramienta lo bloqueó (PROVENANCE_REQUIRED); no he podido verificar que esa dirección exista.
 - **Rechazadas por la herramienta:** la vista previa de IEC 60335-1 ed. 6.0 en [vde-verlag.de](https://www.vde-verlag.de/iec-normen/preview-pdf/info_iec60335-1{ed6.0}en.pdf) (ROBOTS_DISALLOWED, no la rodeé) y la de [webstore.iec.ch](https://webstore.iec.ch/preview/info_iec60335-1%7Bed6.0%7Den.pdf) (bloqueada, no reintentada).
 - Documento de decisiones OSM sobre IEC 60335-1 en [etics.org](https://etics.org/doc/doc_18139_main1_OSMHA%202022%20DECISIONSHEETS_60335-1%2026042022.pdf): abierto, pero devolvió "Access denied".
@@ -88,3 +88,12 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 - [Tubo de silicona de 6 mm](../tubo-silicona-6mm/README.md): diámetro interior o exterior sin aclarar.
 - [Latiguillo micro-USB](../latiguillo-micro-usb-22awg/README.md): choque entre "15 cm" y "holgura".
 - [Módulo C14](../modulo-c14-fusible-interruptor/README.md), [alargo de antena RP-SMA](../alargo-antena-rp-sma-30cm/README.md) y [pulsador arcade](../pulsador-arcade-30mm/README.md): el grosor de la chapa no consta en la guía.
+
+## Copias locales de los documentos
+
+Documentos descargados el 21-10-2026 y guardados en el repositorio. Si un documento tiene enlace original en esta ficha, aparece junto a él como "copia local".
+
+**Citados en esta ficha y guardados en otra carpeta:**
+
+- [ITC-BT-19.pdf](../documentos-compartidos/normas/ITC-BT-19.pdf): ITC-BT-19: instalaciones interiores o receptoras, prescripciones generales (REBT)
+- [ITC-BT-36.pdf](../documentos-compartidos/normas/ITC-BT-36.pdf): ITC-BT-36: instalaciones a muy baja tensión (REBT)

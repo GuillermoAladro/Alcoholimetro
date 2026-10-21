@@ -80,3 +80,21 @@ Foros (opiniones, no normas):
 - Vistas en las búsquedas y no abiertas: [vista previa de IEC 63522-33 en VDE-Verlag](https://www.vde-verlag.de/iec-normen/255372/iec-63522-33-2025.html) (otra norma), [UNE](https://www.une.org/encuentra-tu-norma/busca-tu-norma/iec?c=114772), [Misumi, tabla en la versión de EE. UU.](https://us.misumi-ec.com/blog/galvanic-compatiblity-and-corrosion-table), [Panduit en Van Meter (RGTBS...)](https://www.vanmeterinc.com/product/panduit-rgtbs1032g-c-7149824), [Strong-Tie sobre corrosión galvánica](https://seblog.strongtie.com/2016/12/galvanic-corrosion/).
 - No consulté Würth, HECO, Hilti, Burndy, Thomas & Betts ni Hubbell: ninguna búsqueda me llevó a una página suya sobre arandelas dentadas o tierras, y el presupuesto de búsquedas web se agotó (15 llamadas).
 - No he podido leer las normas: DIN 6797, DIN 6798, EN 60335-1, EN IEC 60335-2-82, IEC 61439-1, UL 467, UL 508A, NFPA 70 (NEC), ISO 3506-1, ISO 16130, DIN 65151 ni ASME B18.21.1. Solo las menciones que hacen las fuentes de arriba.
+
+## Copias locales de los documentos
+
+Documentos descargados el 21-10-2026 y guardados en el repositorio. Si un documento tiene enlace original en esta ficha, aparece junto a él como "copia local".
+
+**En esta carpeta (`datasheets/`):**
+
+- [0900766b816b073d.pdf](datasheets/0900766b816b073d.pdf): FASTENERS / Selection Guide / rspro.com (RS guía)
+- [2337766.pdf](datasheets/2337766.pdf): External Toothed Lock Washer / DIN 6797A / Specifications: (Duratool)
+- [A700000006887825.pdf](datasheets/A700000006887825.pdf): Washers / Used with threaded / fasteners (for
+- [A700000011338889.pdf](datasheets/A700000011338889.pdf): External Serrated Washers / Used with threaded / fasteners (for
+- [BN_787.pdf](datasheets/BN_787.pdf): DIN 6797 A / 350-425 HV / Standard withdrawn (Bossard BN 787)
+- [BUL86513.pdf](datasheets/BUL86513.pdf): GRDT375 - GROUND KIT / BUL86513 / REV. B
+- [RGW-100-1Y_Product_Page-225273.pdf](datasheets/RGW-100-1Y_Product_Page-225273.pdf): System / PHYSICAL INFRASTRUCTURE SOLUTIONS / Copper (Panduit) (archivo original: `RGW-100-1Y Product Page-225273.pdf`)
+
+**Citados en esta ficha y guardados en otra carpeta:**
+
+- [in-service-inspection-and-testing-of-electrical-equipment-the-earth-continuity-test.pdf](../documentos-compartidos/normas/in-service-inspection-and-testing-of-electrical-equipment-the-earth-continuity-test.pdf): IET, Inspección y ensayo en servicio de equipos eléctricos: ensayo de continuidad de tierra

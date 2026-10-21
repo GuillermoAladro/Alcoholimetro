@@ -12,7 +12,7 @@ Copias locales de los cuatro primeros en [`../raspberry-pi-3b-plus/datasheets/`]
 - [Product brief RP-008338-DS-2 (PDF)](https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008338-DS-2-raspberry-pi-3-b-plus-product-brief.pdf). Texto extraído en local: sin datos de montaje.
 - [Plano de la caja oficial RP-008160-DS-1 (PDF)](https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008160-DS-1-raspberry-pi-3-b-plus-case-mechanical-drawing.pdf). Mirado en local: solo dimensiones exteriores de la caja; no se usa.
 - [Catálogo oficial de la Pi 3B+](https://pip.raspberrypi.com/categories/532-raspberry-pi-3-model-b). Referencia de la ficha de la Pi.
-- [Especificación HAT+ RP-008281-DS-1 (PDF)](https://pip-assets.raspberrypi.com/categories/1215-raspberry-pi-hat/documents/RP-008281-DS-1-hat-plus-specification.pdf). Leído. El texto no da cotas de agujeros ni zonas de exclusión; pide separadores de 15 mm o más para apilar una HAT+ (no aplica). La URL corta `datasheets.raspberrypi.com/hat/hat-plus-specification.pdf` redirige a esta.
+- [Especificación HAT+ RP-008281-DS-1 (PDF)](https://pip-assets.raspberrypi.com/categories/1215-raspberry-pi-hat/documents/RP-008281-DS-1-hat-plus-specification.pdf) ([copia local](datasheets/RP-008281-DS-1-hat-plus-specification.pdf)). Leído. El texto no da cotas de agujeros ni zonas de exclusión; pide separadores de 15 mm o más para apilar una HAT+ (no aplica). La URL corta `datasheets.raspberrypi.com/hat/hat-plus-specification.pdf` redirige a esta.
 - [Repositorio `raspberrypi/hats`](https://github.com/raspberrypi/hats). Leída la página principal (enlaza a las especificaciones mecánicas HAT y uHAT, sin cifras).
 - [Especificación mecánica HAT: `hat-board-mechanical.pdf`](https://github.com/raspberrypi/hats/blob/master/hat-board-mechanical.pdf). **Rechazado:** la herramienta no pudo abrir el PDF de GitHub (política del sitio). No lo he rodeado.
 - [Raspberry Pi, 2012: plantilla con agujeros de montaje de la Model B rev. 2](https://www.raspberrypi.com/news/raspberry-pi-rev2-template-with-mounting-holes/). Leída. Dice que los agujeros ayudan a los robots en la producción y avisa de que apretar mucho puede aplastar la placa. Los comentarios son de lectores.
@@ -35,7 +35,7 @@ Copias locales de los cuatro primeros en [`../raspberry-pi-3b-plus/datasheets/`]
 
 - [BASF Ultramid A3K, hoja de producto (PDF)](https://download.basf.com/p1/8a8082587fd4b608017fd64108ab6d3b/en/ULTRAMID_A3K_Product_Data_Sheet_Asia_PacificEurope_English.pdf). Leída. Módulo en seco y acondicionado, fluencia a 1.000 h, humedad, resistividad, CTI. No da UL 94 ni rigidez dieléctrica.
 - [Ensinger TECAMID 66 natural, página europea](https://www.ensingerplastics.com/en/shapes/pa66-tecamid-66-natural). Leída (la página se truncó a los 100.000 caracteres de 169.000). UL 94 HB, Tg 47 °C, 100 °C continuo.
-- [Ensinger TECAMID 66 natural, hoja de EE. UU. versión A1, 12-02-2019 (PDF, copia en Polymershapes)](https://www.polymershapes.com/wp-content/uploads/2020/04/Polymershapes_Ensigner_DataSheet-TECAMID-66-natural.pdf). Leída. UL 94 V-2, 85 °C continuo, 8,5 % de saturación. Unidades de algunas cifras mal extraídas.
+- [Ensinger TECAMID 66 natural, hoja de EE. UU. versión A1, 12-02-2019 (PDF, copia en Polymershapes)](https://www.polymershapes.com/wp-content/uploads/2020/04/Polymershapes_Ensigner_DataSheet-TECAMID-66-natural.pdf) ([copia local](datasheets/Polymershapes_Ensigner_DataSheet-TECAMID-66-natural.pdf)). Leída. UL 94 V-2, 85 °C continuo, 8,5 % de saturación. Unidades de algunas cifras mal extraídas.
 - [Ensinger TECAMID 66, otra copia de la hoja de EE. UU. (Modern Plastics, 2015)](https://www.modernplastics.com/wp-content/uploads/2015/04/TECAMID-66.pdf). Leída. Misma estructura; absorción a 24 h de 1,2 % frente al 0,45 % de la versión de 2019.
 - [Polymershapes: TECAMID 66 negro (PDF)](https://polymershapes.com/wp-content/uploads/2025/08/Polymershapes_Ensigner_DataSheet-TECAMID-66-black.pdf), [TECAMID 66 HI](https://www.polymershapes.com/wp-content/uploads/2020/04/Polymershapes_Ensigner_DataSheet-TECAMID-66-HI.pdf). Salieron en la búsqueda; **no abiertos**.
 - [Wikipedia: Nylon](https://en.wikipedia.org/wiki/Nylon). Leída. Higroscopia, plastificación por agua, fusión de PA66 y PA6.
@@ -45,7 +45,7 @@ Copias locales de los cuatro primeros en [`../raspberry-pi-3b-plus/datasheets/`]
 
 ## Separadores y kits de nailon
 
-- [Würth WA-SPAIE 971060155, hoja (PDF)](https://docs.rs-online.com/57e3/0900766b816cd289.pdf). Leída. Rev. 001.002, 10-01-2019; UL 94 HB, de −30 a +110 °C.
+- [Würth WA-SPAIE 971060155, hoja (PDF)](https://docs.rs-online.com/57e3/0900766b816cd289.pdf) ([copia local](datasheets/0900766b816cd289.pdf)). Leída. Rev. 001.002, 10-01-2019; UL 94 HB, de −30 a +110 °C.
 - [Würth WA-SPAIE 971200155, hoja (PDF)](https://docs.rs-online.com/bd08/A700000007100033.pdf). Leída. Mismas condiciones; rosca interior de 10 mm.
 - [RS: Würth 971060155 (M2,5, 6 mm + 8 mm)](https://kr.rs-online.com/web/p/standoffs/1841664). Leída. Datos de dimensiones; no da UL 94 ni temperatura. Otros listados de RS de Würth (sin abrir): [1841916](https://za.rs-online.com/web/p/standoffs/1841916), [1841663](https://no.rs-online.com/web/p/standoffs/1841663), [1841660](https://nz.rs-online.com/web/p/standoffs/1841660), [1841999](https://za.rs-online.com/web/p/standoffs/1841999).
 - [RS: Würth 971200155 (20 mm)](https://uk.rs-online.com/web/p/standoffs/2052936/). Leída. **Da de −55 a +150 °C, que contradice la hoja del fabricante.**
@@ -63,10 +63,26 @@ Copias locales de los cuatro primeros en [`../raspberry-pi-3b-plus/datasheets/`]
 - [Wikipedia: ISO metric screw thread](https://en.wikipedia.org/wiki/ISO_metric_screw_thread). Leída. M2,5: paso grueso 0,45 mm y fino 0,35 mm (ISO 262); clases 6g y 6H.
 - [fasten.it: DIN 34810](https://fasten.it/en/norms/norm/din_34810). Leída. Alcance M3 a M10; pares de 0,1 N·m (M3), 0,25 (M4), 0,5 (M5), 0,8 (M6), 1,8 (M8), 3,5 (M10). **Resumen web de la norma de pago; no he visto la norma.**
 - [Bossard: pares de apriete de tornillos de plástico, PA6.6](https://www.bossard.com/ch-en/assembly-technology-expert/technical-information-and-tools/technical-resources/preload-and-tightening-torques/tightening-torques-for-plastic-screws--polyamide-66) y [versión sueca](https://bossard.com/se-sv/assembly-technology-expert/teknisk-information-och-verktyg/teknisk-information/preload-and-tightening-torques/tightening-torques-for-plastic-screws--polyamide-66). Leídas: **la tabla no estaba en el texto**; solo las condiciones (20 °C, acondicionado, 150 rpm, DIN 34810). Hay un capítulo descargable que no se pudo abrir.
-- [Henkel Loctite Threadlocker Blue 242 (PDF)](https://datasheets.tdx.henkel.com/LOCTITE-THREADLOCKER-BLUE-242-en_US.pdf). Leída. "No es para plásticos termoplásticos" por riesgo de grietas por tensión.
+- [Henkel Loctite Threadlocker Blue 242 (PDF)](https://datasheets.tdx.henkel.com/LOCTITE-THREADLOCKER-BLUE-242-en_US.pdf) ([copia local](datasheets/LOCTITE-THREADLOCKER-BLUE-242-en_US.pdf)). Leída. "No es para plásticos termoplásticos" por riesgo de grietas por tensión.
 - Salieron en la búsqueda y no se abrieron: [Accu: pares de apriete](https://accu-components.com/p/389-high-tensile-steel-fasteners-recommended-tightening-torques), [Engineers Edge: Nylon torque theory](https://ns2.engineersedge.com/engineering-forum/showthread.php/6470-Nylon-Torque-Theory), otras hojas de Loctite ([220](https://datasheets.tdx.henkel.com/LOCTITE-220-en_GL.pdf), [915](https://datasheets.tdx.henkel.com/LOCTITE-915-en_GL.pdf)).
 
 ## Sensor ZE29A y otras fichas del proyecto
 
-- [Manual V1.1 del ZE29A (PDF)](https://www.winsen-sensor.com/d/files/manual/ze29a-c2h5oh.pdf). Leído de nuevo para esta ficha: 85 × 33 × 18 mm, sin dibujo ni agujeros; notas de fijación y de golpes.
+- [Manual V1.1 del ZE29A (PDF)](https://www.winsen-sensor.com/d/files/manual/ze29a-c2h5oh.pdf) ([copia local](../winsen-ze29a/datasheets/ze29a-c2h5oh.pdf)). Leído de nuevo para esta ficha: 85 × 33 × 18 mm, sin dibujo ni agujeros; notas de fijación y de golpes.
 - [Ficha del ZE29A](../winsen-ze29a/README.md), [ficha de la Raspberry Pi 3B+](../raspberry-pi-3b-plus/README.md) y [ficha de la Mean Well LRS-50-5](../meanwell-lrs-50-5/README.md) (aislamiento entre salida y FG).
+
+## Copias locales de los documentos
+
+Documentos descargados el 21-10-2026 y guardados en el repositorio. Si un documento tiene enlace original en esta ficha, aparece junto a él como "copia local".
+
+**En esta carpeta (`datasheets/`):**
+
+- [0900766b816cd289.pdf](datasheets/0900766b816cd289.pdf): Würth Elektronik, separador hexagonal de poliamida WA-SPAIE 971060155 (hoja de datos vía RS)
+- [LOCTITE-THREADLOCKER-BLUE-242-en_US.pdf](datasheets/LOCTITE-THREADLOCKER-BLUE-242-en_US.pdf): Technical Data Sheet / Revision: October 5, 2024 / Supersedes: April 20, 2024
+- [Polymershapes_Ensigner_DataSheet-TECAMID-66-natural.pdf](datasheets/Polymershapes_Ensigner_DataSheet-TECAMID-66-natural.pdf): TECAMID® 66 natural - Stock Shapes / Chemic al Des ignat ion / PA 66 (Polyamide 66)
+- [RP-008281-DS-1-hat-plus-specification.pdf](datasheets/RP-008281-DS-1-hat-plus-specification.pdf): Raspberry Pi HAT+ Specification / 6df06cc-clean / 2024-12-05:
+- [ULTRAMID-A3K-product-information-2026-09.pdf](datasheets/ULTRAMID-A3K-product-information-2026-09.pdf): BASF, Ultramid A3K (PA66), Product Information 09/2026 (archivo original: `ULTRAMID#U00ae+A3K.pdf`)
+
+**Citados en esta ficha y guardados en otra carpeta:**
+
+- [ze29a-c2h5oh.pdf](../winsen-ze29a/datasheets/ze29a-c2h5oh.pdf): Winsen ZE29A-C2H5OH: manual del módulo de sensor de alcohol, V1.1

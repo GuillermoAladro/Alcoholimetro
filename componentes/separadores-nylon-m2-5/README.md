@@ -78,7 +78,7 @@ El anuncio no se ve, así que estas filas no son datos de tu kit: son ejemplos d
 
 | Producto | Material | Llave / rosca | Inflamabilidad | Temperatura | Fuente |
 |---|---|---|---|---|---|
-| Würth WA-SPAIE 971060155 (M-H, cuerpo 6 mm) | Poliamida (no dice PA6 o PA66), negro | Llave 5; rosca M2,5; rosca interior de 4 mm y espiga de 8 mm | UL 94 HB | De −30 a +110 °C | [Hoja](https://docs.rs-online.com/57e3/0900766b816cd289.pdf) |
+| Würth WA-SPAIE 971060155 (M-H, cuerpo 6 mm) | Poliamida (no dice PA6 o PA66), negro | Llave 5; rosca M2,5; rosca interior de 4 mm y espiga de 8 mm | UL 94 HB | De −30 a +110 °C | [Hoja](https://docs.rs-online.com/57e3/0900766b816cd289.pdf) ([copia local](datasheets/0900766b816cd289.pdf)) |
 | Würth WA-SPAIE 971200155 (cuerpo 20 mm) | Poliamida, negro | Llave 5; rosca interior de 10 mm y espiga de 8 mm | UL 94 HB | De −30 a +110 °C en la hoja; **de −55 a +150 °C en el listado de RS** | [Hoja](https://docs.rs-online.com/bd08/A700000007100033.pdf), [listado RS](https://uk.rs-online.com/web/p/standoffs/2052936/) |
 | Essentra, separadores hexagonales aislantes | "Nylon 6", natural; también "Nylon 6 con latón" | Llave de 6,0 a 12,7 mm; rosca M2,5 a M6; longitudes de 8 a 55 mm | UL 94 V-2 | De −40 a 105 °C (solo en algunas variantes) | [Essentra](https://www.essentracomponents.com/en-gb/p/hexagonal-insulation-standoffs) |
 | Essentra 36F / CBMFTS / NTS (con cinta adhesiva) | Nailon 6/6 | M-H; sin medidas en la página | UL 94 V-2 | De −40 a +85 °C | [Mouser](https://www.mouser.hk/new/essentra/essentra-36f-cbmfts-nts-hexagonal-standoffs) |
@@ -100,7 +100,7 @@ Ninguna de estas hojas es de tu kit. Sirven para saber **qué esperar** de un PA
 | Límite elástico | 85 MPa en seco y 50 MPa acondicionado | BASF A3K |
 | Módulo de fluencia a 1.000 h | 700 MPa (deformación ≤ 0,5 %, 23 °C, acondicionado) | BASF A3K |
 | Humedad absorbida en equilibrio | De 2,5 a 3,1 % a 23 °C y 50 % de humedad relativa; de 8 a 9 % de saturación en agua | BASF A3K |
-| Saturación en agua | 8,5 % | Ensinger TECAMID 66 ([EE. UU.](https://www.polymershapes.com/wp-content/uploads/2020/04/Polymershapes_Ensigner_DataSheet-TECAMID-66-natural.pdf)) |
+| Saturación en agua | 8,5 % | Ensinger TECAMID 66 ([EE. UU.](https://www.polymershapes.com/wp-content/uploads/2020/04/Polymershapes_Ensigner_DataSheet-TECAMID-66-natural.pdf) ([copia local](datasheets/Polymershapes_Ensigner_DataSheet-TECAMID-66-natural.pdf))) |
 | Temperatura de transición vítrea (Tg) | 47 °C | Ensinger TECAMID 66 ([UE](https://www.ensingerplastics.com/en/shapes/pa66-tecamid-66-natural)). No dice en qué estado de humedad |
 | Fusión | 260 °C (BASF) y 258 °C (Ensinger); la Wikipedia da 265 °C para PA66 y 220 °C para PA6 | BASF A3K, Ensinger UE, [Wikipedia](https://en.wikipedia.org/wiki/Nylon) |
 | Temperatura de uso continuo | **85 °C** (hoja de Ensinger de EE. UU.) y **100 °C** (hoja de Ensinger de la UE); corto plazo 149 °C y 170 °C | Ensinger, las dos hojas |
@@ -123,16 +123,16 @@ No hay hoja de datos de tu kit. Estos son los documentos que aplican: los de la 
 | Plano mecánico de la Pi 3B+ (CAD) | RP-008336-DS-1 | DXF | [descargar](https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008336-DS-1-raspberry-pi-3-b-plus-mechanical-drawing.dxf) |
 | Esquema reducido de la Pi 3B+ | RP-008339-DS-1 | PDF | [descargar](https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008339-DS-1-raspberry-pi-3-b-plus-reduced-schematics.pdf) |
 | Product brief de la Pi 3B+ | RP-008338-DS-2 | PDF | [descargar](https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008338-DS-2-raspberry-pi-3-b-plus-product-brief.pdf) |
-| Especificación HAT+ | RP-008281-DS-1 | PDF | [descargar](https://pip-assets.raspberrypi.com/categories/1215-raspberry-pi-hat/documents/RP-008281-DS-1-hat-plus-specification.pdf) |
+| Especificación HAT+ | RP-008281-DS-1 | PDF | [descargar](https://pip-assets.raspberrypi.com/categories/1215-raspberry-pi-hat/documents/RP-008281-DS-1-hat-plus-specification.pdf) ([copia local](datasheets/RP-008281-DS-1-hat-plus-specification.pdf)) |
 | Especificación mecánica HAT (repositorio `raspberrypi/hats`) | `hat-board-mechanical.pdf` | PDF | [ver en GitHub](https://github.com/raspberrypi/hats/blob/master/hat-board-mechanical.pdf) (**no abierto**: GitHub rechazó la herramienta) |
 | Hoja de datos BASF Ultramid A3K (PA66 sin refuerzo) | Sin referencia | PDF | [descargar](https://download.basf.com/p1/8a8082587fd4b608017fd64108ab6d3b/en/ULTRAMID_A3K_Product_Data_Sheet_Asia_PacificEurope_English.pdf) |
 | Ensinger TECAMID 66 natural (UE) | Sin referencia | Web | [ver](https://www.ensingerplastics.com/en/shapes/pa66-tecamid-66-natural) |
-| Ensinger TECAMID 66 natural (EE. UU., versión A1, 12-02-2019) | Sin referencia | PDF | [descargar](https://www.polymershapes.com/wp-content/uploads/2020/04/Polymershapes_Ensigner_DataSheet-TECAMID-66-natural.pdf) |
-| Würth Elektronik WA-SPAIE 971060155 (separador M-H de 6 mm) | Rev. 001.002, 10-01-2019 | PDF | [descargar](https://docs.rs-online.com/57e3/0900766b816cd289.pdf) |
+| Ensinger TECAMID 66 natural (EE. UU., versión A1, 12-02-2019) | Sin referencia | PDF | [descargar](https://www.polymershapes.com/wp-content/uploads/2020/04/Polymershapes_Ensigner_DataSheet-TECAMID-66-natural.pdf) ([copia local](datasheets/Polymershapes_Ensigner_DataSheet-TECAMID-66-natural.pdf)) |
+| Würth Elektronik WA-SPAIE 971060155 (separador M-H de 6 mm) | Rev. 001.002, 10-01-2019 | PDF | [descargar](https://docs.rs-online.com/57e3/0900766b816cd289.pdf) ([copia local](datasheets/0900766b816cd289.pdf)) |
 | Würth Elektronik WA-SPAIE 971200155 (separador M-H de 20 mm) | Sin referencia | PDF | [descargar](https://docs.rs-online.com/bd08/A700000007100033.pdf) |
-| Henkel Loctite Threadlocker Blue 242 | Revisión 5-10-2024 | PDF | [descargar](https://datasheets.tdx.henkel.com/LOCTITE-THREADLOCKER-BLUE-242-en_US.pdf) |
+| Henkel Loctite Threadlocker Blue 242 | Revisión 5-10-2024 | PDF | [descargar](https://datasheets.tdx.henkel.com/LOCTITE-THREADLOCKER-BLUE-242-en_US.pdf) ([copia local](datasheets/LOCTITE-THREADLOCKER-BLUE-242-en_US.pdf)) |
 | DIN 34810 (tornillos de plástico, M3 a M10) | DIN 34810:2018-04 | Norma de pago (solo leí un resumen web) | [resumen en fasten.it](https://fasten.it/en/norms/norm/din_34810) |
-| Manual del Winsen ZE29A | V1.1 | PDF | [descargar](https://www.winsen-sensor.com/d/files/manual/ze29a-c2h5oh.pdf) |
+| Manual del Winsen ZE29A | V1.1 | PDF | [descargar](https://www.winsen-sensor.com/d/files/manual/ze29a-c2h5oh.pdf) ([copia local](../winsen-ze29a/datasheets/ze29a-c2h5oh.pdf)) |
 
 ### Qué dicen los más relevantes
 
@@ -363,7 +363,7 @@ Solo si el kit falla o si algún requisito (UL 94, temperatura) lo exige. Dispon
 
 | Alternativa | Qué dicen las fuentes | Comentario |
 |---|---|---|
-| **Würth WA-SPAIE** (por ejemplo, 971060155, cuerpo 6 mm, M-H M2,5) | PA negro, UL 94 HB, de −30 a +110 °C, tolerancia ISO 2768-1 m ([hoja](https://docs.rs-online.com/57e3/0900766b816cd289.pdf)) | La única con hoja del fabricante que he leído. No dice PA6 o PA66. No he comprobado el precio |
+| **Würth WA-SPAIE** (por ejemplo, 971060155, cuerpo 6 mm, M-H M2,5) | PA negro, UL 94 HB, de −30 a +110 °C, tolerancia ISO 2768-1 m ([hoja](https://docs.rs-online.com/57e3/0900766b816cd289.pdf) ([copia local](datasheets/0900766b816cd289.pdf))) | La única con hoja del fabricante que he leído. No dice PA6 o PA66. No he comprobado el precio |
 | **Essentra, separadores hexagonales aislantes** | Nailon 6, UL 94 V-2, M2,5 a M6, desde 8 mm ([Essentra](https://www.essentracomponents.com/en-gb/p/hexagonal-insulation-standoffs)) | UL 94 V-2 documentado. La longitud mínima de la página es 8 mm |
 | **Multicomp RPI-NYLON-STANDOFF-KIT** (Farnell 2543622) | Nailon, hecho para Pi, RoHS, origen Taiwán ([Farnell](https://ie.farnell.com/multicomp/rpi-nylon-standoff-kit/threaded-standoffs-kit-raspberry/dp/2543622)) | Solo 12 piezas; longitudes no dadas |
 | **Separadores de aluminio o latón** | Existen separadores de aluminio de 11 mm para Pi ([Pololu](https://www.pololu.com/product/1952)). Conducen | **No sirven aquí** si el agujero va a GND y la caja a tierra (4.2). Solo si se quiere unir −V a tierra a propósito |
@@ -412,5 +412,7 @@ Son conclusiones mías, no afirmaciones de las fuentes.
 - **La mayor parte de lo que cito de las hojas de BASF, Ensinger y Würth** lo leyó mi herramienta (que resume el PDF); no he abierto los PDF yo mismo. Si una cifra es crítica, comprueba el PDF.
 
 ## 10. Fuentes
+
+Copias locales de los documentos descargados: [lista en enlaces.md](enlaces.md#copias-locales-de-los-documentos) y carpeta [`datasheets/`](datasheets/).
 
 Todos los enlaces, ordenados por tipo y con nota en los que no pude abrir, en [`enlaces.md`](enlaces.md).

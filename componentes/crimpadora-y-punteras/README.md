@@ -31,7 +31,7 @@ Es la única herramienta de crimpado de la hoja de compra. Sirve para poner punt
 
 - **La observación de las otras fichas se confirma en lo esencial, con un matiz.** Una crimpadora autoajustable de punteras está descrita por los fabricantes solo para punteras (Knipex la define según DIN 46228-1 y -4: [RS](https://uk.rs-online.com/web/p/crimp-tools/3368179)), y el catálogo de McMaster separa estas herramientas de las de terminales ([McMaster](https://www.mcmaster.com/products/wire-and-cable-crimpers/for-wire-gauge~8)). **Los ojales aislados (#23) no caben en las mordazas y los terminales Dupont/JST (#7, #29) necesitan otra herramienta.** Para los faston aislados (#27) no hay fuente que respalde un crimpado correcto: un usuario dice que su herramienta barata sí crimpa horquillas y empalmes pequeños, sin medir tracción. La guía no incluye la herramienta para ninguno de los dos grupos. No he visto tu anuncio, así que lo afirmo para la clase, no para tu modelo. Detalle y fuentes en el apartado 2.
 - **Proponer una segunda herramienta está justificado:** una crimpadora de trinquete para terminales preaislados de 0,5-6 mm². Los ojales M4 de tierra y los faston del módulo C14 forman parte del camino de tierra y de la entrada de 230 V. Apartado 10.
-- **Nada del anuncio garantiza que herramienta y punteras cumplan la norma.** Knipex, Weidmüller y Phoenix declaran DIN 46228-1 y -4 para sus herramientas y punteras. Los listados baratos que leí no declaran ninguna norma. UL 486F ensaya la puntera junto con su herramienta ([Weidmüller](https://assets.dam.weidmueller.com/assets/api/adbb75f5-316f-41db-81c0-dd7dfacff88b/Original/MB_wire_end_ferrules_EN_WEB.pdf)). Lo tienes que demostrar tú con una prueba de tracción: 30 N para 0,75 mm² y 40 N para 1,5 mm² (IEC 60999-1 y UL 486F, según [Phoenix Contact](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original)).
+- **Nada del anuncio garantiza que herramienta y punteras cumplan la norma.** Knipex, Weidmüller y Phoenix declaran DIN 46228-1 y -4 para sus herramientas y punteras. Los listados baratos que leí no declaran ninguna norma. UL 486F ensaya la puntera junto con su herramienta ([Weidmüller](https://assets.dam.weidmueller.com/assets/api/adbb75f5-316f-41db-81c0-dd7dfacff88b/Original/MB_wire_end_ferrules_EN_WEB.pdf) ([copia local](datasheets/MB_wire_end_ferrules_EN_WEB.pdf))). Lo tienes que demostrar tú con una prueba de tracción: 30 N para 0,75 mm² y 40 N para 1,5 mm² (IEC 60999-1 y UL 486F, según [Phoenix Contact](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original) ([copia local](datasheets/1540293_EN_Aderendhuelsen_LoRes.pdf))).
 - **El código de colores que citas es DIN 46228-4 y lo he verificado, pero existen otros dos que lo contradicen** (negro es 1,5 mm² en DIN y en el francés, y 6 mm² en el alemán antiguo; gris es 0,75, 2,5 o 4 mm² según el código). No te fíes del color: mide el diámetro del tubo de cobre con calibre (apartado 5).
 - **Pelado: unos 10 mm para una puntera de "8"** (el 8 del nombre es la longitud del cobre visible, no la del pelado). Weidmüller da 10 mm de pelado para punteras de 8 mm de contacto y Phoenix da 11 mm como máximo (apartado 5).
 - **El riesgo no es el calor en los bornes de 230 V, sino la tierra y el raíl de 5 V** (cálculo mío, apartado 6). L y N llevan unas décimas de amperio, así que un crimpado malo apenas calienta; el peligro ahí es que el hilo se salga. El borne FG tiene que poder llevar la corriente de un fallo. En el raíl de 5 V, un crimpado de 100 mΩ a 5 A se come 0,5 V de los 0,57 V de margen de la Pi.
@@ -52,7 +52,7 @@ Las otras fichas ya apuntan a la misma conclusión. La de los ojales cita a McMa
 
 **Cuidado con el texto de los anuncios.** Un listado de una herramienta de la misma clase dice que sirve para "la mayoría de terminales de manguito aislados y no aislados y conectores" ([listado Flytuo](https://alaniazapoved.ru/products/hexagonal-crimping-tool-awg23-10-hsc8-6-6-self-adjusting-rat/205851316)). "Terminal de manguito" (sleeve terminal) es una puntera. No es un ojal ni un faston. Si el anuncio de tu herramienta dice algo parecido, no lo tomes como permiso para ojales.
 
-**Por qué importa la diferencia de exigencia (cálculo mío con datos de las fuentes).** La tracción mínima que se pide a una puntera de 0,75 mm² es 30 N ([Phoenix](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original)). A un terminal crimpado en AWG 18 (UL 486A) se le pide 20 lbf, unos 89 N, y en AWG 16 30 lbf, unos 133 N ([Cirris](https://cirris.com/crimp-pull-testers-pullout-force-per-wire-size/), en libras; conversión mía). Es unas tres veces más. La puntera no es lo que sostiene el cable: lo sostiene el tornillo. El ojal de tierra sí lo sostiene el crimpado.
+**Por qué importa la diferencia de exigencia (cálculo mío con datos de las fuentes).** La tracción mínima que se pide a una puntera de 0,75 mm² es 30 N ([Phoenix](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original) ([copia local](datasheets/1540293_EN_Aderendhuelsen_LoRes.pdf))). A un terminal crimpado en AWG 18 (UL 486A) se le pide 20 lbf, unos 89 N, y en AWG 16 30 lbf, unos 133 N ([Cirris](https://cirris.com/crimp-pull-testers-pullout-force-per-wire-size/), en libras; conversión mía). Es unas tres veces más. La puntera no es lo que sostiene el cable: lo sostiene el tornillo. El ojal de tierra sí lo sostiene el crimpado.
 
 ## 3. Especificaciones
 
@@ -74,7 +74,7 @@ Una búsqueda del ASIN no devolvió el anuncio. Devolvió listados de otras tien
 |---|---|---|---|---|---|---|
 | Aongray (YPC, Reino Unido) | 0,25-10 mm² (AWG 23-7) | No indicado | "Self-adjustable ratchet action" | No indicado | 9,99 £ | [YPC](https://www.ypc.co.uk/product/ferrule-crimper-plier-aongray-self-adjustable-ratchat-wire-crimping-tool-0-25-10mm%c2%b2-awg23-7-crimping-pliers-to-crimp-the-bootlace-ferrules-ferrule-crimper-plier/) |
 | Flytuo HSC8 6-6 | 0,25-6 mm² (AWG 23-10) | **Hexagonal** | Trinquete, "se ajusta solo" | No indicado | No indicado | [listado](https://alaniazapoved.ru/products/hexagonal-crimping-tool-awg23-10-hsc8-6-6-self-adjusting-rat/205851316) |
-| Quadrios 23T030 (Rapid) | 0,25-10 mm² (AWG 23-7) | Cuatro mandriles, crimpado **cuadrado** | Ajuste automático al diámetro, ajuste fino de la presión del trinquete, palanca de liberación | 363 g | No indicado | [Rapid](https://static.rapidonline.com/pdf/06-3521_v1.pdf) |
+| Quadrios 23T030 (Rapid) | 0,25-10 mm² (AWG 23-7) | Cuatro mandriles, crimpado **cuadrado** | Ajuste automático al diámetro, ajuste fino de la presión del trinquete, palanca de liberación | 363 g | No indicado | [Rapid](https://static.rapidonline.com/pdf/06-3521_v1.pdf) ([copia local](datasheets/06-3521_v1.pdf)) |
 
 Qué se puede decir de la clase (mío, apoyado en esos tres listados):
 
@@ -95,7 +95,7 @@ Qué se puede decir de la clase (mío, apoyado en esos tres listados):
 | Knipex 97 53 04 | 0,08-16 mm² (AWG 28 a 5-6, la página no es coherente) | **Cuadrado** | Autoajustable. Bloqueo forzado liberable. Presión calibrada en fábrica | 180 mm. 460 g (fuente secundaria) | Punteras según DIN 46228-1 y -4 | [RS](https://uk.rs-online.com/web/p/crimp-tools/3368179), [Sancogrup](https://www.sancogrup.ro/en/self-adjusting-crimping-pliers-for-wire-ferrules-lateral-access-180-mm-knipex-975304.html) |
 | Knipex 97 53 09 | 0,08-10 mm² y 16 mm² (selector) | No indicado | Autoajustable. Trinquete liberable. Entrada frontal | 190 mm | DIN 46228-1 y -4 | [Hoffmann](https://www.hoffmann-group.com/GB/en/houk/p/97%2053%2009-) |
 | Knipex 97 53 14 | 0,08-16 mm² (AWG 28-8) | **Hexagonal** | Autoajustable. Trinquete | 180 mm. 445 g | DIN 46228-1 y -4 | [ficha Knipex (ES)](https://www.knipex.com/sites/default/files/Product%20data%20sheet%20ES%2097%2053%2014.pdf) |
-| Weidmüller PZ 6 Roto | 0,14-6 mm² (AWG 26-10) | Trapezoidal | Trinquete con liberación. Ajuste: no indicado | 423,66 g | Ninguna en la ficha | [Weidmüller](https://datasheet.weidmueller.com/pdf/en/9014350000/scope/1) |
+| Weidmüller PZ 6 Roto | 0,14-6 mm² (AWG 26-10) | Trapezoidal | Trinquete con liberación. Ajuste: no indicado | 423,66 g | Ninguna en la ficha | [Weidmüller](https://datasheet.weidmueller.com/pdf/en/9014350000/scope/1) ([copia local](datasheets/9014350000_en.pdf)) |
 | Weidmüller PZ 6/5 | 0,25-6 mm² (AWG 24-10) | Trapezoidal, cinco estaciones | Trinquete con liberación | 433 g | Ninguna en la ficha | [Weidmüller](https://datasheet.weidmueller.com/pdf/en/9011460000/scope/2) |
 | Phoenix Contact CRIMPFOX 6 (1212034) | 0,25-6 mm² (AWG 24-10) | Trapezoidal, cinco posiciones (0,25-0,75 / 1-1,5 / 2,5 / 4 / 6 mm²) | Fuerza de crimpado reajustable. Bloqueo de presión desbloqueable sin herramienta | 198 mm. 444,2 g | DIN 46228-1 y -4 | [Phoenix](https://www.phoenixcontact.com/us/products/1212034/pdf) |
 
@@ -121,7 +121,7 @@ Diferencias que importan:
 | 6 mm² | amarillo | verde | negro |
 | 10 mm² | rojo | marrón | marfil |
 
-Fuentes: [Phoenix Contact, "What you should know about ferrules"](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original) (primaria; las columnas salieron en el orden DIN, francés, especial), contrastada con [Stex24](https://stex24.com/guide/wire-ferrules) (secundaria, con la misma tabla) y con un hilo de [electronicwerkstatt](https://forum.electronicwerkstatt.de/phpBB/Elektroinstallation/farbe_von_aderendhuelsen-t61770f17_bs0.html) donde se lista la serie antigua de Weidmüller.
+Fuentes: [Phoenix Contact, "What you should know about ferrules"](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original) ([copia local](datasheets/1540293_EN_Aderendhuelsen_LoRes.pdf)) (primaria; las columnas salieron en el orden DIN, francés, especial), contrastada con [Stex24](https://stex24.com/guide/wire-ferrules) (secundaria, con la misma tabla) y con un hilo de [electronicwerkstatt](https://forum.electronicwerkstatt.de/phpBB/Elektroinstallation/farbe_von_aderendhuelsen-t61770f17_bs0.html) donde se lista la serie antigua de Weidmüller.
 
 Divergencias que te afectan:
 
@@ -129,9 +129,9 @@ Divergencias que te afectan:
 - **Gris** es 0,75 mm² y también 4 mm² en DIN, 2,5 mm² en el francés. En DIN conviven en el mismo color 0,75 y 4 mm²: solo el tamaño las distingue.
 - **Rojo** es 1 mm² en DIN, y 1,5 mm² en el alemán antiguo. Un hilo del foro cuenta que se mezclan punteras rojas de 1 y 1,5 mm² y que eso dificulta la inspección.
 - **Blanco** es 0,5 en DIN y francés, y 0,75 en el alemán antiguo.
-- **Los colores de 0,14, 0,25 y 0,34 mm² no son de la norma DIN.** Ni los de 70 a 120 mm² ([Phoenix](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original), [Wikipedia DE](https://de.wikipedia.org/wiki/Aderendh%C3%BClse)). La puntera de 0,34 mm² (la de AWG 22) tendrá el color que decida el fabricante.
+- **Los colores de 0,14, 0,25 y 0,34 mm² no son de la norma DIN.** Ni los de 70 a 120 mm² ([Phoenix](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original) ([copia local](datasheets/1540293_EN_Aderendhuelsen_LoRes.pdf)), [Wikipedia DE](https://de.wikipedia.org/wiki/Aderendh%C3%BClse)). La puntera de 0,34 mm² (la de AWG 22) tendrá el color que decida el fabricante.
 - **Tabla UL 486F:** la tabla de Phoenix tiene una columna para UL 486F, pero mi lectura no alineó las columnas y **no puedo decir qué color da UL 486F**.
-- Un mismo fabricante puede vender dos series. Phoenix vende la AI 2,5-8 GY, de color gris, cuyo collarín sigue el código francés (la ficha lo dice; no da la sección explícitamente y la deduzco del nombre: en DIN el gris sería 0,75 o 4 mm², no 2,5) ([ficha](https://www.mouser.com/datasheet/2/324/4/3200069-1475656.pdf)). Un surtido barato puede usar cualquiera de los códigos, o uno propio.
+- Un mismo fabricante puede vender dos series. Phoenix vende la AI 2,5-8 GY, de color gris, cuyo collarín sigue el código francés (la ficha lo dice; no da la sección explícitamente y la deduzco del nombre: en DIN el gris sería 0,75 o 4 mm², no 2,5) ([ficha](https://www.mouser.com/datasheet/2/324/4/3200069-1475656.pdf) ([copia local](datasheets/3200069-1475656.pdf))). Un surtido barato puede usar cualquiera de los códigos, o uno propio.
 
 **Dimensiones** (Phoenix, tabla de punteras con collarín; d1 es el diámetro del tubo de cobre, d2 el del collarín; l1 es el largo total y l2 el largo del cobre visible):
 
@@ -144,7 +144,7 @@ Divergencias que te afectan:
 | **1,5 mm²** | 16 | **1,7** | 3,5 | 14/8 · 16/10 · 18/12 · 24/18 |
 | 2,5 mm² | 14 | 2,2 | 4,2 | 14/8 · 18/12 · 24/18 |
 
-Weidmüller da los mismos valores de d1 y d2 para 0,5, 1,5 y 2,5 mm² ([catálogo](https://assets.dam.weidmueller.com/assets/api/adbb75f5-316f-41db-81c0-dd7dfacff88b/Original/MB_wire_end_ferrules_EN_WEB.pdf)). Las equivalencias AWG-mm² son aproximadas (1 mm² no tiene AWG propio). Un ejemplo concreto: la Phoenix AI 0,75-8 GY mide 14 mm de largo total, 8 mm de contacto y 1,3 mm de diámetro, con collarín de polipropileno y cobre estañado blando; cumple DIN 46228-4 y UL 486F-E ([Phoenix](https://www.phoenixcontact.com/us/products/3200519/pdf)).
+Weidmüller da los mismos valores de d1 y d2 para 0,5, 1,5 y 2,5 mm² ([catálogo](https://assets.dam.weidmueller.com/assets/api/adbb75f5-316f-41db-81c0-dd7dfacff88b/Original/MB_wire_end_ferrules_EN_WEB.pdf) ([copia local](datasheets/MB_wire_end_ferrules_EN_WEB.pdf))). Las equivalencias AWG-mm² son aproximadas (1 mm² no tiene AWG propio). Un ejemplo concreto: la Phoenix AI 0,75-8 GY mide 14 mm de largo total, 8 mm de contacto y 1,3 mm de diámetro, con collarín de polipropileno y cobre estañado blando; cumple DIN 46228-4 y UL 486F-E ([Phoenix](https://www.phoenixcontact.com/us/products/3200519/pdf)).
 
 **Fuerza de arrancamiento exigida** (Phoenix, columna "IEC 60999-1" y columna "UL 486F"; el catálogo de Weidmüller da los mismos valores IEC para 0,75 mm² y siguientes):
 
@@ -159,7 +159,7 @@ Weidmüller da los mismos valores de d1 y d2 para 0,5, 1,5 y 2,5 mm² ([catálog
 
 Procedimiento de ensayo según Phoenix: tirar a 25 mm/min hasta alcanzar la fuerza mínima, mantenerla un minuto y comprobar que la puntera no se mueve; luego seguir hasta que el conductor se suelte y anotar el máximo. La fila UL 486F del catálogo de Weidmüller da 20 N para las tres secciones más pequeñas de su tabla, donde Phoenix da 10, 15 y 20 N. Las dos fuentes coinciden en 30 N para 0,75 mm² y 40 N para 1,5 mm².
 
-**Atención a otra tabla.** La hoja de Phoenix sobre tablas de normas ([Mouser](https://www.mouser.lt/pdfdocs/PhoenixContact-Tables_Norm_Cross_Section.pdf)) lista, junto a estos valores, otros mucho mayores (85 N para 0,75 mm², 150 N para 1,5 mm²). Los encabezados de esas columnas salieron ilegibles en mi lectura. Por el contexto (la tabla mezcla IEC 60999-1, IEC 60352-2 y UL 486A/B) pertenecen a normas de terminales crimpados, **no a las punteras**. No exijas 150 N a una puntera de 1,5 mm² por haber visto esa tabla. Esa atribución es mía y **sin verificar**.
+**Atención a otra tabla.** La hoja de Phoenix sobre tablas de normas ([Mouser](https://www.mouser.lt/pdfdocs/PhoenixContact-Tables_Norm_Cross_Section.pdf) ([copia local](datasheets/PhoenixContact-Tables_Norm_Cross_Section.pdf))) lista, junto a estos valores, otros mucho mayores (85 N para 0,75 mm², 150 N para 1,5 mm²). Los encabezados de esas columnas salieron ilegibles en mi lectura. Por el contexto (la tabla mezcla IEC 60999-1, IEC 60352-2 y UL 486A/B) pertenecen a normas de terminales crimpados, **no a las punteras**. No exijas 150 N a una puntera de 1,5 mm² por haber visto esa tabla. Esa atribución es mía y **sin verificar**.
 
 ## 4. Documentos oficiales y normas
 
@@ -169,35 +169,35 @@ Están de pago. **No he leído ninguna.** Lo que sé de ellas viene de catálogo
 
 | Norma | Tema | Qué he podido leer | Dónde |
 |---|---|---|---|
-| DIN 46228-4 | Punteras con collarín (0,5 a 50 mm²) | Edición 2020-03 según Wikipedia. Phoenix cita en otras fichas la edición 2017-05 para el diseño y 1990-09 para las dimensiones. **El texto, no** | [Wikipedia DE](https://de.wikipedia.org/wiki/Aderendh%C3%BClse), [Phoenix 3200069](https://www.mouser.com/datasheet/2/324/4/3200069-1475656.pdf) |
+| DIN 46228-4 | Punteras con collarín (0,5 a 50 mm²) | Edición 2020-03 según Wikipedia. Phoenix cita en otras fichas la edición 2017-05 para el diseño y 1990-09 para las dimensiones. **El texto, no** | [Wikipedia DE](https://de.wikipedia.org/wiki/Aderendh%C3%BClse), [Phoenix 3200069](https://www.mouser.com/datasheet/2/324/4/3200069-1475656.pdf) ([copia local](datasheets/3200069-1475656.pdf)) |
 | DIN 46228-1 | Punteras sin collarín | Solo el nombre, en las fichas de herramientas | [RS, Knipex](https://uk.rs-online.com/web/p/crimp-tools/3368179) |
-| IEC 60999-1 (EN 60999-1) | Bornes de tornillo: fuerzas de arrancamiento | Los valores, a través de Phoenix y Weidmüller. Weidmüller dice que la norma, junto con la EN 60947-1, trae también requisitos de calibre de crimpado ("crimp gauge"). **No pude abrir la vista previa de VDE** (robots.txt) | [Phoenix](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original), [Weidmüller](https://assets.dam.weidmueller.com/assets/api/adbb75f5-316f-41db-81c0-dd7dfacff88b/Original/MB_wire_end_ferrules_EN_WEB.pdf) |
+| IEC 60999-1 (EN 60999-1) | Bornes de tornillo: fuerzas de arrancamiento | Los valores, a través de Phoenix y Weidmüller. Weidmüller dice que la norma, junto con la EN 60947-1, trae también requisitos de calibre de crimpado ("crimp gauge"). **No pude abrir la vista previa de VDE** (robots.txt) | [Phoenix](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original) ([copia local](datasheets/1540293_EN_Aderendhuelsen_LoRes.pdf)), [Weidmüller](https://assets.dam.weidmueller.com/assets/api/adbb75f5-316f-41db-81c0-dd7dfacff88b/Original/MB_wire_end_ferrules_EN_WEB.pdf) ([copia local](datasheets/MB_wire_end_ferrules_EN_WEB.pdf)) |
 | IEC 60947-1 y -7-1 | Aparamenta y bornes de conexión | **Nada.** Weidmüller y Phoenix solo mencionan IEC/EN 60947-1 | — |
 | IEC / EN 60352-2 | Conexiones crimpadas | Weidmüller recomienda usar herramienta y contacto del mismo fabricante. Phoenix la cita para los defectos de pelado y de crimpado. **Texto: no** | [Weidmüller](https://weidmueller.com/int/company/press/trade_press_news/crimping_the_right_way___made_easy.jsp) |
-| UL 486F (partes A, E, F) | Punteras: A sin aislar, E aisladas, F gemelas | Solo la clasificación (Phoenix). Weidmüller: UL ensaya la puntera junto con su herramienta y da una aprobación conjunta | [Phoenix](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original) |
-| DIN EN 60228 | Clases de conductor (1, 2, 5, 6) | Solo que la puntera es para clases 2, 5 y 6, no para la clase 1 (rígido) | [Phoenix](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original), [Weidmüller](https://assets.dam.weidmueller.com/assets/api/adbb75f5-316f-41db-81c0-dd7dfacff88b/Original/MB_wire_end_ferrules_EN_WEB.pdf) |
+| UL 486F (partes A, E, F) | Punteras: A sin aislar, E aisladas, F gemelas | Solo la clasificación (Phoenix). Weidmüller: UL ensaya la puntera junto con su herramienta y da una aprobación conjunta | [Phoenix](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original) ([copia local](datasheets/1540293_EN_Aderendhuelsen_LoRes.pdf)) |
+| DIN EN 60228 | Clases de conductor (1, 2, 5, 6) | Solo que la puntera es para clases 2, 5 y 6, no para la clase 1 (rígido) | [Phoenix](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original) ([copia local](datasheets/1540293_EN_Aderendhuelsen_LoRes.pdf)), [Weidmüller](https://assets.dam.weidmueller.com/assets/api/adbb75f5-316f-41db-81c0-dd7dfacff88b/Original/MB_wire_end_ferrules_EN_WEB.pdf) ([copia local](datasheets/MB_wire_end_ferrules_EN_WEB.pdf)) |
 | DIN 41641-1 | Herramientas de crimpado | Weidmüller: las herramientas normalizadas aguantan al menos 50 000 ciclos sin perder calidad | [Weidmüller](https://weidmueller.com/int/company/press/trade_press_news/crimping_the_right_way___made_easy.jsp) |
 | VDE 0100-520 (edición 2003-06) | Instalaciones eléctricas | Wikipedia la cita a propósito de las soldaduras en circuitos de potencia. No leí la norma ni sé qué cláusula | [Wikipedia DE](https://de.wikipedia.org/wiki/Aderendh%C3%BClse) |
-| ITC-BT-19 (REBT) | Instalaciones interiores | Leí el texto: pide bornes o regletas para unir conductores y terminales "adecuados" por encima de 6 mm². **No dice nada de punteras ni de conductores flexibles.** Es de instalación fija, no de aparato | [PDF](https://www.plcmadrid.es/wp-content/uploads/rebt/itc19/ITC-BT-19.pdf) |
+| ITC-BT-19 (REBT) | Instalaciones interiores | Leí el texto: pide bornes o regletas para unir conductores y terminales "adecuados" por encima de 6 mm². **No dice nada de punteras ni de conductores flexibles.** Es de instalación fija, no de aparato | [PDF](https://www.plcmadrid.es/wp-content/uploads/rebt/itc19/ITC-BT-19.pdf) ([copia local](../documentos-compartidos/normas/ITC-BT-19.pdf)) |
 
 ### 4.2 Documentos de fabricante
 
 | Documento | Referencia | Formato | Enlace |
 |---|---|---|---|
-| Phoenix Contact, "What you should know about ferrules" | 3011103048 MNR 1540293/2023-04-01/00 | PDF | [descargar](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original) |
-| Weidmüller, catálogo de punteras (MB) | MB_wire_end_ferrules_EN_WEB | PDF | [descargar](https://assets.dam.weidmueller.com/assets/api/adbb75f5-316f-41db-81c0-dd7dfacff88b/Original/MB_wire_end_ferrules_EN_WEB.pdf) |
+| Phoenix Contact, "What you should know about ferrules" | 3011103048 MNR 1540293/2023-04-01/00 | PDF | [descargar](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original) ([copia local](datasheets/1540293_EN_Aderendhuelsen_LoRes.pdf)) |
+| Weidmüller, catálogo de punteras (MB) | MB_wire_end_ferrules_EN_WEB | PDF | [descargar](https://assets.dam.weidmueller.com/assets/api/adbb75f5-316f-41db-81c0-dd7dfacff88b/Original/MB_wire_end_ferrules_EN_WEB.pdf) ([copia local](datasheets/MB_wire_end_ferrules_EN_WEB.pdf)) |
 | Weidmüller, "Crimping the right way" | Artículo | Web | [leer](https://weidmueller.com/int/company/press/trade_press_news/crimping_the_right_way___made_easy.jsp) |
 | Phoenix, AI 0,75-8 GY | 3200519 | PDF | [descargar](https://www.phoenixcontact.com/us/products/3200519/pdf) |
-| Phoenix, AI 2,5-8 GY (código francés) | 3200069 | PDF | [descargar](https://www.mouser.com/datasheet/2/324/4/3200069-1475656.pdf) |
-| Phoenix, AI 6-12 GN | 3200108 | PDF | [descargar](https://docs.rs-online.com/6789/A700000014794324.pdf) |
-| Phoenix, tablas de normas por sección | — | PDF | [descargar](https://www.mouser.lt/pdfdocs/PhoenixContact-Tables_Norm_Cross_Section.pdf) |
+| Phoenix, AI 2,5-8 GY (código francés) | 3200069 | PDF | [descargar](https://www.mouser.com/datasheet/2/324/4/3200069-1475656.pdf) ([copia local](datasheets/3200069-1475656.pdf)) |
+| Phoenix, AI 6-12 GN | 3200108 | PDF | [descargar](https://docs.rs-online.com/6789/A700000014794324.pdf) ([copia local](datasheets/A700000014794324.pdf)) |
+| Phoenix, tablas de normas por sección | — | PDF | [descargar](https://www.mouser.lt/pdfdocs/PhoenixContact-Tables_Norm_Cross_Section.pdf) ([copia local](datasheets/PhoenixContact-Tables_Norm_Cross_Section.pdf)) |
 | Phoenix, CRIMPFOX 6 | 1212034 | PDF | [descargar](https://www.phoenixcontact.com/us/products/1212034/pdf) |
-| Weidmüller, PZ 6 Roto | 9014350000 | PDF | [descargar](https://datasheet.weidmueller.com/pdf/en/9014350000/scope/1) |
+| Weidmüller, PZ 6 Roto | 9014350000 | PDF | [descargar](https://datasheet.weidmueller.com/pdf/en/9014350000/scope/1) ([copia local](datasheets/9014350000_en.pdf)) |
 | Weidmüller, PZ 6/5 | 9011460000 | PDF | [descargar](https://datasheet.weidmueller.com/pdf/en/9011460000/scope/2) |
 | Knipex 97 53 14, ficha (ES) | 97 53 14 | PDF | [descargar](https://www.knipex.com/sites/default/files/Product%20data%20sheet%20ES%2097%2053%2014.pdf) |
 | Knipex 97 53 04, ficha (EN) | 97 53 04 | PDF | [enlace](https://www.knipex.com/sites/default/files/Product%20data%20sheet%20EN%2097%2053%2004.pdf) (**no pude abrirlo**: error de la herramienta) |
-| Rapid, pinzas autoajustables Quadrios | 23T030 (06-3521) | PDF | [descargar](https://static.rapidonline.com/pdf/06-3521_v1.pdf) |
-| Mean Well, manual de instalación (caja cerrada) | Enclosed_Type_EN | PDF | [descargar](https://www.meanwell.com/Upload/PDF/Enclosed_Type_EN.pdf) |
+| Rapid, pinzas autoajustables Quadrios | 23T030 (06-3521) | PDF | [descargar](https://static.rapidonline.com/pdf/06-3521_v1.pdf) ([copia local](datasheets/06-3521_v1.pdf)) |
+| Mean Well, manual de instalación (caja cerrada) | Enclosed_Type_EN | PDF | [descargar](https://www.meanwell.com/Upload/PDF/Enclosed_Type_EN.pdf) ([copia local](../meanwell-lrs-50-5/datasheets/Enclosed_Type_EN.pdf)) |
 
 ### 4.3 Qué dicen los más relevantes
 
@@ -227,8 +227,8 @@ Los efectos de abajo son mi análisis. Se apoyan en lo que dicen las fuentes sob
 | Puntera mayor que el hilo (por ejemplo una de 0,5 mm² en AWG 22, 0,33 mm²: el hilo llena el 65 %) | El crimpado no comprime las hebras. La puntera se deforma en rombo en vez de en cuadrado y puede resbalar. Con la 0,34 el llenado sería del 96 % | Un comentario sobre la Knipex en [element14](https://community.element14.com/products/roadtest/rv/roadtest_reviews/58/knipex-self-adjusting-crimping-plier-review) dice que un hilo fino deforma el crimpado en rombo. Un participante de [HomemadeTools](https://homemadetools.net/forum/self-adjusting-crimping-pliers-gif-85731) cuenta punteras que se salían |
 | Puntera menor que el hilo (0,75 mm² en un hilo de 1,5 mm²) | El hilo no entra. Si recortas hebras para que entre, bajas la sección. Si lo fuerzas, se parte el collarín o se abre el tubo | Mío |
 | Puntera de 1,5 mm² en un cable de 0,75 mm² | Igual que la primera fila | Mío |
-| Confundir el gris de 0,75 mm² con el gris de 4 mm² | La de 4 mm² (d1 = 2,8 mm) en un hilo de 0,75 mm² da un crimpado flojo | Código DIN: dos secciones con el mismo color. Dimensiones: [Phoenix](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original) |
-| El cable es más fino de lo que dice | La puntera "correcta" queda grande. Phoenix recuerda que la sección nominal se define por conductancia, no por geometría | [Phoenix](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original) |
+| Confundir el gris de 0,75 mm² con el gris de 4 mm² | La de 4 mm² (d1 = 2,8 mm) en un hilo de 0,75 mm² da un crimpado flojo | Código DIN: dos secciones con el mismo color. Dimensiones: [Phoenix](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original) ([copia local](datasheets/1540293_EN_Aderendhuelsen_LoRes.pdf)) |
+| El cable es más fino de lo que dice | La puntera "correcta" queda grande. Phoenix recuerda que la sección nominal se define por conductancia, no por geometría | [Phoenix](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original) ([copia local](datasheets/1540293_EN_Aderendhuelsen_LoRes.pdf)) |
 
 ### 5.3 Longitud de pelado y de cobre
 
@@ -245,7 +245,7 @@ El número del nombre de la puntera (8, 10, 12) es la **longitud del cobre visib
 
 Por tanto, para una puntera de "8" (la habitual para 0,75 y 1,5 mm²): **pela 10 mm** (Weidmüller) y nunca más de 11 mm (Phoenix). Para una de "10", pela 12 mm, o 13 mm como máximo (cálculo mío con las reglas de +2 mm de Weidmüller y +3 mm de Phoenix; no encontré un valor explícito para "10"). La WAGO 221 pide 11 mm de pelado y lleva un indicador en el lateral (ficha #20); una puntera de "8" de Phoenix, con 11 mm de pelado máximo, encaja con esa marca.
 
-Resultado buscado: las hebras llegan hasta el borde de la puntera y sobresalen como mucho 0,5 mm ([Weidmüller](https://assets.dam.weidmueller.com/assets/api/adbb75f5-316f-41db-81c0-dd7dfacff88b/Original/MB_wire_end_ferrules_EN_WEB.pdf), [Phoenix](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original)). Si lo pelas corto, el cobre no llega al final del tubo; si lo pelas largo, quedan hebras fuera del collarín.
+Resultado buscado: las hebras llegan hasta el borde de la puntera y sobresalen como mucho 0,5 mm ([Weidmüller](https://assets.dam.weidmueller.com/assets/api/adbb75f5-316f-41db-81c0-dd7dfacff88b/Original/MB_wire_end_ferrules_EN_WEB.pdf) ([copia local](datasheets/MB_wire_end_ferrules_EN_WEB.pdf)), [Phoenix](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original) ([copia local](datasheets/1540293_EN_Aderendhuelsen_LoRes.pdf))). Si lo pelas corto, el cobre no llega al final del tubo; si lo pelas largo, quedan hebras fuera del collarín.
 
 **La longitud de la puntera tiene que caber en el borne.** No sé cuánto fondo tienen los bornes de la LRS-50-5, las WAGO ni los bornes USB-A (#18). Mide la profundidad del borne con calibre y elige 8 mm de cobre si hay duda (apartado 9).
 
@@ -272,7 +272,7 @@ La guía fija 5,20 V en la fuente y el umbral de subtensión de la Pi en 4,63 V 
 
 ### 6.2 El borne de la fuente
 
-Del manual de instalación de Mean Well ([Enclosed_Type_EN.pdf](https://www.meanwell.com/Upload/PDF/Enclosed_Type_EN.pdf), leído con una herramienta de resumen):
+Del manual de instalación de Mean Well ([Enclosed_Type_EN.pdf](https://www.meanwell.com/Upload/PDF/Enclosed_Type_EN.pdf) ([copia local](../meanwell-lrs-50-5/datasheets/Enclosed_Type_EN.pdf)), leído con una herramienta de resumen):
 
 - La fila de la serie LRS (de la LRS-035 a la LRS-600, la LRS-50 incluida) indica tornillo **M3,5 y un par de 8-10**. **En mi lectura la tabla no daba la unidad.** La ficha de la fuente (#14) lo da en kgf·cm según otra copia del manual (montersi.pl), lo que equivale a unos 0,78-0,98 N·m (conversión mía). Con esto el valor queda **probable pero no confirmado** para la LRS-50-5.
 - Tabla de calibre recomendada: AWG 18 (0,75 mm²) para hasta 6 A; AWG 14 (1,5 mm²) de 10 a 16 A. Con cinco o más hilos, reducir al 80 %.
@@ -285,7 +285,7 @@ No pude abrir la hoja de datos LRS-50 de Mean Well (permiso sin contestar), así
 
 Lo que dicen las fuentes:
 
-- Las punteras son para conductores de clase 2, 5 y 6; el conductor macizo (clase 1) no se admite ([Weidmüller](https://assets.dam.weidmueller.com/assets/api/adbb75f5-316f-41db-81c0-dd7dfacff88b/Original/MB_wire_end_ferrules_EN_WEB.pdf), [Phoenix](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original)).
+- Las punteras son para conductores de clase 2, 5 y 6; el conductor macizo (clase 1) no se admite ([Weidmüller](https://assets.dam.weidmueller.com/assets/api/adbb75f5-316f-41db-81c0-dd7dfacff88b/Original/MB_wire_end_ferrules_EN_WEB.pdf) ([copia local](datasheets/MB_wire_end_ferrules_EN_WEB.pdf)), [Phoenix](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original) ([copia local](datasheets/1540293_EN_Aderendhuelsen_LoRes.pdf))).
 - Mean Well pide que entren todos los hilos del conductor.
 - Wikipedia (DE) cita VDE 0100-520:2003-06 a propósito de las soldaduras en circuitos de potencia ([Wikipedia](https://de.wikipedia.org/wiki/Aderendh%C3%BClse)). No leí la norma ni sé qué exige.
 
@@ -358,7 +358,7 @@ Phoenix y Wikipedia DE listan los defectos típicos: hebras sueltas fuera del co
 
 ### 8.5 Material de las punteras
 
-Phoenix describe las suyas con tubo de cobre de pureza superior al 99,9 % (CU-DHP o CU-ETP), recocido, con dureza máxima de 105 HV y estaño de al menos 3 µm; collarín de polipropileno hasta 105 °C ([Phoenix](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original)). Un surtido barato de Rapid (otro producto) declara aislante de PVC con 75 °C para las aisladas ([Rapid 13-3277](https://static.rapidonline.com/pdf/13-3277_v1.pdf)). **No sé de qué son las tuyas.** Un cobre duro o un latón se agrieta al crimpar. Un collarín de PVC con límite de 75 °C deja margen si la caja se mantiene por debajo de los 40 °C que pide la guía para el sensor; si se calienta más junto a la fuente, el límite se acerca (mío).
+Phoenix describe las suyas con tubo de cobre de pureza superior al 99,9 % (CU-DHP o CU-ETP), recocido, con dureza máxima de 105 HV y estaño de al menos 3 µm; collarín de polipropileno hasta 105 °C ([Phoenix](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original) ([copia local](datasheets/1540293_EN_Aderendhuelsen_LoRes.pdf))). Un surtido barato de Rapid (otro producto) declara aislante de PVC con 75 °C para las aisladas ([Rapid 13-3277](https://static.rapidonline.com/pdf/13-3277_v1.pdf)). **No sé de qué son las tuyas.** Un cobre duro o un latón se agrieta al crimpar. Un collarín de PVC con límite de 75 °C deja margen si la caja se mantiene por debajo de los 40 °C que pide la guía para el sensor; si se calienta más junto a la fuente, el límite se acerca (mío).
 
 ### 8.6 Sin norma ni trazabilidad
 
@@ -373,7 +373,7 @@ No sé qué traerá el anuncio. Este protocolo sirve igual.
 | Qué | Cómo | Criterio |
 |---|---|---|
 | Recuento por sección | Cuenta cada compartimento. Anota cuántas de 0,34, 0,75 y 1,5 | Sin faltas en las tres que usas (apartado 7) |
-| Sección real | Calibre: diámetro del tubo de cobre (d1) de 5 punteras de cada sección | 0,34 mm²: 0,8 mm. 0,5: 1,0. **0,75: 1,2.** 1: 1,4. **1,5: 1,7.** 2,5: 2,2. 4: 2,8 ([Phoenix](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original)). Tolerancia de un calibre barato, ± 0,1 mm |
+| Sección real | Calibre: diámetro del tubo de cobre (d1) de 5 punteras de cada sección | 0,34 mm²: 0,8 mm. 0,5: 1,0. **0,75: 1,2.** 1: 1,4. **1,5: 1,7.** 2,5: 2,2. 4: 2,8 ([Phoenix](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original) ([copia local](datasheets/1540293_EN_Aderendhuelsen_LoRes.pdf))). Tolerancia de un calibre barato, ± 0,1 mm |
 | Colores | Compara con la tabla del apartado 3.4 | Si el gris de 0,75 mm² mide 2,8 mm de d1, es de 4 mm² o de otro código |
 | Material | Mira el tubo: color cobre, estaño continuo, sin grietas. Crimpa una y revisa | Un tubo de latón (amarillo) o que se agrieta no vale |
 | Collarín | Sin rebabas ni deformaciones. Entra el aislante del hilo hasta el fondo | — |
@@ -395,11 +395,11 @@ Haz 10 por cada sección que uses, con el cable real: 0,75 mm² en el cable de #
 | Prueba | Cómo | Criterio | Fuente |
 |---|---|---|---|
 | Pelado | Pela 10 mm (puntera de 8 mm de cobre) | Sin hebras cortadas | Apartado 5 |
-| Inspección visual (lupa o móvil con zoom) | Mira el extremo y el lateral | Sin hebras sueltas ni fuera del collarín. Las hebras llegan al borde y sobresalen unos 0,5 mm como mucho. Sin grietas ni puntera abierta. Collarín sin deformar. Sin rebabas excesivas | [Phoenix](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original), [Wikipedia DE](https://de.wikipedia.org/wiki/Aderendh%C3%BClse) |
+| Inspección visual (lupa o móvil con zoom) | Mira el extremo y el lateral | Sin hebras sueltas ni fuera del collarín. Las hebras llegan al borde y sobresalen unos 0,5 mm como mucho. Sin grietas ni puntera abierta. Collarín sin deformar. Sin rebabas excesivas | [Phoenix](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original) ([copia local](datasheets/1540293_EN_Aderendhuelsen_LoRes.pdf)), [Wikipedia DE](https://de.wikipedia.org/wiki/Aderendh%C3%BClse) |
 | Forma del crimpado | Mira la sección de la puntera | Cuadrado (o hexagonal, si es hexagonal) y simétrico. Un rombo o una "S" indican hilo fino o herramienta desajustada | Mío; element14 |
 | Dimensión | Mide con calibre el ancho del crimpado en una cara | Anota el valor por sección. Será tu referencia (apartado 11) | Mío |
 | Tracción manual | Tira con fuerza sostenida de cada una | No se mueve nada | Mío |
-| **Tracción medida** | Sujeta la puntera en un borne de prueba apretado y cuelga un peso del cable durante un minuto, sin tirones. Una báscula colgante de equipaje de hasta 10 kg sirve | **0,75 mm²: aguanta 3,1 kg (30 N). 1,5 mm²: aguanta 4,1 kg (40 N)**; pasa si la puntera no se mueve (valores y criterio de [Phoenix](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original); el montaje casero y los kg son míos) | Phoenix |
+| **Tracción medida** | Sujeta la puntera en un borne de prueba apretado y cuelga un peso del cable durante un minuto, sin tirones. Una báscula colgante de equipaje de hasta 10 kg sirve | **0,75 mm²: aguanta 3,1 kg (30 N). 1,5 mm²: aguanta 4,1 kg (40 N)**; pasa si la puntera no se mueve (valores y criterio de [Phoenix](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original) ([copia local](datasheets/1540293_EN_Aderendhuelsen_LoRes.pdf)); el montaje casero y los kg son míos) | Phoenix |
 | Tracción hasta rotura | Con 3 unidades de cada sección | El máximo debe superar con holgura los 30 y 40 N | Phoenix |
 | Corte | Corta a lo largo del crimpado una puntera de cada sección con un cortaalambres fino y mira la sección | Las hebras forman una masa compacta, sin huecos grandes ni hebras cortadas | Wikipedia DE (micrografías; esto es la versión casera, mía) |
 | Todas las del lote de prueba | — | **Una sola que falle rechaza la herramienta o el lote** (criterio mío) | Mío |
@@ -478,7 +478,7 @@ Qué hacer (mío):
 | # | La guía dice | Lo que he encontrado | Fuente |
 |---|---|---|---|
 | 1 | §1, #28: "Crimpadora autoajustable + 1250 punteras" y no incluye herramienta para ojales (#23), faston (#27) ni Dupont/JST (#7, #29) | **Se confirma el hueco** para ojales y Dupont/JST. Para faston aislados, no hay fuente que respalde que esta clase de herramienta los crimpe bien (un foro dice que sí en terminales pequeños, sin medir). Los fabricantes la declaran solo para punteras | Apartado 2 |
-| 2 | §5.1 y §5.2: punteras de 1,5 mm² en L, N y FG, y de 0,75 mm² en +V y −V de la LRS-50-5 | Coherente con el calibre recomendado por Mean Well (AWG 18 hasta 6 A, AWG 14 de 10 a 16 A). **Mean Well no menciona punteras**: es decisión de la guía | [Mean Well](https://www.meanwell.com/Upload/PDF/Enclosed_Type_EN.pdf) |
+| 2 | §5.1 y §5.2: punteras de 1,5 mm² en L, N y FG, y de 0,75 mm² en +V y −V de la LRS-50-5 | Coherente con el calibre recomendado por Mean Well (AWG 18 hasta 6 A, AWG 14 de 10 a 16 A). **Mean Well no menciona punteras**: es decisión de la guía | [Mean Well](https://www.meanwell.com/Upload/PDF/Enclosed_Type_EN.pdf) ([copia local](../meanwell-lrs-50-5/datasheets/Enclosed_Type_EN.pdf)) |
 | 3 | §1: "Unos 160 € son herramientas y kits que sobran: crimpadora, WAGO…" | La crimpadora se usa en cada máquina (5 a 23 punteras). Lo que sobra es el surtido, no la herramienta | Apartado 7 |
 | 4 | §5.2: "Troncal… con puntera en la fuente" | Falta la **longitud de pelado**. Para punteras de 8 mm de cobre, 10 mm (Weidmüller) y 11 mm como máximo (Phoenix) | Apartado 5.3 |
 | 5 | §5.1: "Faston en el C14; puntera en la LRS" | Correcto, pero necesita **dos herramientas**: la de este surtido para la LRS y otra de preaislados para el faston | Apartado 10 |
@@ -521,5 +521,7 @@ Son conclusiones mías, no afirmaciones de las fuentes.
 - **Búsquedas:** usé unas 15 búsquedas web y el resto fueron páginas abiertas. Quedan abiertos los puntos de arriba.
 
 ## 15. Fuentes
+
+Copias locales de los documentos descargados: [lista en enlaces.md](enlaces.md#copias-locales-de-los-documentos) y carpeta [`datasheets/`](datasheets/).
 
 Todos los enlaces, ordenados por tipo, y una lista de lo que no se pudo abrir, en [`enlaces.md`](enlaces.md).

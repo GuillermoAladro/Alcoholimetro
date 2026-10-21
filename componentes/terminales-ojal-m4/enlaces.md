@@ -89,3 +89,22 @@ Las normas están de pago. Solo extractos, informes de ensayo y resúmenes.
 | romagis.rcc.int, informe IEC/EN 60335-1 (resultado de búsqueda) | La página no contiene el informe; solo listados |
 | cdn.intertek.com, aviso 60335-2-3 | Es un aviso de actualización de planchas, sin las cláusulas pedidas |
 | Documentos de Bürklin, RS (dibujos, fichas de kit, información del fabricante) | Aparecen enlazados en las páginas de producto; no se abrieron |
+
+## Copias locales de los documentos
+
+Documentos descargados el 21-10-2026 y guardados en el repositorio. Si un documento tiene enlace original en esta ficha, aparece junto a él como "copia local".
+
+**En esta carpeta (`datasheets/`):**
+
+- [0900766b81529c0d.pdf](datasheets/0900766b81529c0d.pdf): RS Pro serie RNYD: terminales aislados de nailon (RS 267-3622)
+- [A700000006574165.pdf](datasheets/A700000006574165.pdf): RS PRO 801 Kit / (800 Piece Insulated Terminal + 1 Crimp tool) / Stock number: 613-9952 (ficha del kit RS PRO)
+- [A700000007945278.pdf](datasheets/A700000007945278.pdf): Ring Terminals / Copper body / material for high
+- [Quality_Crimp_Handbook.pdf](datasheets/Quality_Crimp_Handbook.pdf): Quality Crimp Handbook / QUALITY CRIMPING / HANDBOOK (archivo original: `Quality Crimp Handbook.pdf`)
+- [datasheet-676042-phoenix-contact-3240018-ring-terminal-hole-o43-mm-partially-insulated-red-100-pcs.pdf](datasheets/datasheet-676042-phoenix-contact-3240018-ring-terminal-hole-o43-mm-partially-insulated-red-100-pcs.pdf): Phoenix Contact C-RCI 1,5/M4 (3240018): terminal de ojal M4 rojo, hoja del catálogo (alemán)
+
+**Citados en esta ficha y guardados en otra carpeta:**
+
+- [Grounding_and_Corrosion_of_Dissimilar_Materials-SUlemek.pdf](../esparragos-soldar-m4x20/datasheets/Grounding_and_Corrosion_of_Dissimilar_Materials-SUlemek.pdf): Grounding and Corrosion of / Dissimilar Materials / Presented by: Svetlana Ulemek,
+- [ITC-BT-19.pdf](../documentos-compartidos/normas/ITC-BT-19.pdf): ITC-BT-19: instalaciones interiores o receptoras, prescripciones generales (REBT)
+- [SOLiC-Test-Report-No-2013.pdf](../documentos-compartidos/normas/SOLiC-Test-Report-No-2013.pdf): Informe de ensayo SOLiC n.º 2013 (modelo AF2.1), citado como referencia de ensayo de continuidad de tierra
+- [adatlap-1152275-toemlos-vezetek-h05vv-f-3-g-15-mm-fekete-faber-kabel-030020-meteraru.pdf](../cable-h05vv-f-3g1-5-5m/datasheets/adatlap-1152275-toemlos-vezetek-h05vv-f-3-g-15-mm-fekete-faber-kabel-030020-meteraru.pdf): PVC insulated cord / H05VV-F / Application: Suitable for medium mechanical stress in household, kitchen and office rooms. For hous

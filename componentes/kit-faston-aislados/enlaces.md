@@ -21,7 +21,7 @@ Las normas están de pago. Solo extractos y alcances.
 - [EVS: EN 60352-2:2006](https://www.evs.ee/en/evs-en-60352-2-2006) (crimpados; sustituida por EN IEC 60352-2:2024 desde el 16-12-2024)
 - VDE Verlag, vista previa de IEC 60352-2: <https://www.vde-verlag.de/iec-normen/preview-pdf/info_iec60352-2{ed2.1}b.pdf> (**no se pudo abrir**: el sitio rechaza la herramienta; no lo rodeé)
 - [DIN: DIN 46342-1 (borrador de 1981, retirado)](https://www.din.de/en/getting-involved/standards-committees/dke/drafts/wdc-beuth:din21:2355750) (solo el título)
-- DIN 46244, 46245, 46247, 46340 y 46341: sin enlace de la norma. Las referencias a las tres primeras salen de las fichas de [Hilpress](https://www.hilpress.com/product-datasheet/9ba5ab8c4969450ca61286e6d5017c77/create), [Vogt](https://docs.rs-online.com/8033/A700000011290009.pdf) y [Cimco](https://asset.conrad.com/media10/add/160267/c1/-/de/000737405DS01/tehnicni-podatki-737405-ploscati-tulec-sirina-63-mm-debelina-08-mm-180-delno-izoliran-modre-barve-cimco-180232-1-kos.pdf). De 46340 y 46341 no encontré nada.
+- DIN 46244, 46245, 46247, 46340 y 46341: sin enlace de la norma. Las referencias a las tres primeras salen de las fichas de [Hilpress](https://www.hilpress.com/product-datasheet/9ba5ab8c4969450ca61286e6d5017c77/create), [Vogt](https://docs.rs-online.com/8033/A700000011290009.pdf) ([copia local](datasheets/A700000011290009.pdf)) y [Cimco](https://asset.conrad.com/media10/add/160267/c1/-/de/000737405DS01/tehnicni-podatki-737405-ploscati-tulec-sirina-63-mm-debelina-08-mm-180-delno-izoliran-modre-barve-cimco-180232-1-kos.pdf) ([copia local](datasheets/tehnicni-podatki-737405-ploscati-tulec-sirina-63-mm-debelina-08-mm-180-delno-izoliran-modre-barve-cimco-180232-1-kos.pdf)). De 46340 y 46341 no encontré nada.
 - [Wikipedia: IEC 60320](https://en.wikipedia.org/wiki/IEC_60320) (C13/C14: 70 °C en los pines; citada por la ficha del C14)
 
 ## TE Connectivity (FASTON)
@@ -68,7 +68,7 @@ Las normas están de pago. Solo extractos y alcances.
 ## Crimpado y fuerza de arrancamiento
 
 - [Cirris: fuerza de tracción por calibre](https://cirris.com/crimp-pull-testers-pullout-force-per-wire-size/) (tablas SAE AS7928, MIL-T-7928G, UL 486A, UL 486C, DIN 41611/3, NASA-STD 8739.4; fuente secundaria)
-- [Checkline: normas de tracción de hilo](https://www.checkline.com/res/products/126307/wire_pull_test_standards.pdf) (tabla UL 486 y MIL-T-7928; fuente secundaria)
+- [Checkline: normas de tracción de hilo](https://www.checkline.com/res/products/126307/wire_pull_test_standards.pdf) ([copia local](datasheets/wire_pull_test_standards.pdf)) (tabla UL 486 y MIL-T-7928; fuente secundaria)
 - [Knipex 97 52 06 en Rapid (terminales aislados, perfil oval, 0,5-6 mm²)](https://www.rapidonline.com/catalogue/product/50-4513)
 - [Knipex PreciForce 97 52 35 (perfil F, 3 posiciones)](https://www.knipex-tools.com/products/crimping-pliers/knipex-preciforce/knipex-preciforce-crimping-pliers-insulated-terminals-plug-connectors-and-butt-connectors/975235) (la página se contradice sobre si es para aislados o sin aislar)
 - [ITS: Knipex 97 53 14 (punteras, autoajustable, 0,08-16 mm²)](https://its.co.uk/pd/knipex-self-adjusting-hexagonal-wire-ferrules-crimping-pliers-180mm-_kni975314.htm)
@@ -95,4 +95,24 @@ Las normas están de pago. Solo extractos y alcances.
 
 - [Ficha del módulo C14 (#15)](../modulo-c14-fusible-interruptor/README.md)
 - [Ficha del pulsador arcade (#11)](../pulsador-arcade-30mm/README.md)
-- [IET: ensayo de continuidad de tierra](https://electrical.theiet.org/media/1658/in-service-inspection-and-testing-of-electrical-equipment-the-earth-continuity-test.pdf) (citado desde la ficha del C14)
+- [IET: ensayo de continuidad de tierra](https://electrical.theiet.org/media/1658/in-service-inspection-and-testing-of-electrical-equipment-the-earth-continuity-test.pdf) ([copia local](../documentos-compartidos/normas/in-service-inspection-and-testing-of-electrical-equipment-the-earth-continuity-test.pdf)) (citado desde la ficha del C14)
+
+## Copias locales de los documentos
+
+Documentos descargados el 21-10-2026 y guardados en el repositorio. Si un documento tiene enlace original en esta ficha, aparece junto a él como "copia local".
+
+**En esta carpeta (`datasheets/`):**
+
+- [0900766b812c0b94.pdf](datasheets/0900766b812c0b94.pdf): Phoenix Contact C-SCMI 2,5/6,3×0,8 (3240059): terminal faston hembra aislado, hoja del catálogo
+- [2672036.pdf](datasheets/2672036.pdf): Product / 11Mar11 Rev D / Ultra-Fast Fully Insulated FASTON* Receptacle Terminals (TE 108-2043 Rev D)
+- [3945.pdf](datasheets/3945.pdf): Flachsteckhülsen / mit Isolation / Clips femelles plats (Vogt 3945)
+- [A700000011111237.pdf](datasheets/A700000011111237.pdf): Blade Receptacles / FEATURES: / Nylon, fully-insulated
+- [A700000011290009.pdf](datasheets/A700000011290009.pdf): Steckhülsen und Flachstecker isoliert 2,8 mm / Clips femelles et languettes plates isolés
+- [A700000015454362.pdf](datasheets/A700000015454362.pdf): FASTON Terminals (Insulated and Uninsulated) / Ultra-Fast Fully Insulated FASTON Receptacles and Tabs (TE 82004)
+- [TEConnectivityFASTONQuickReferenceGuide.pdf](datasheets/TEConnectivityFASTONQuickReferenceGuide.pdf): Quick Reference Guide / FASTON Terminals / Speed of application – uniform reliability – low per-line cost. These advantages have m
+- [tehnicni-podatki-737405-ploscati-tulec-sirina-63-mm-debelina-08-mm-180-delno-izoliran-modre-barve-cimco-180232-1-kos.pdf](datasheets/tehnicni-podatki-737405-ploscati-tulec-sirina-63-mm-debelina-08-mm-180-delno-izoliran-modre-barve-cimco-180232-1-kos.pdf): Cimco 180232: faston hembra aislado de 6,3 × 0,8 mm, azul (hoja eslovena, DIN 46245)
+- [wire_pull_test_standards.pdf](datasheets/wire_pull_test_standards.pdf): TABLE 12-1 / CRIMP TENSILE STRENGTH 1/ / Minimum Tensile (Checkline)
+
+**Citados en esta ficha y guardados en otra carpeta:**
+
+- [in-service-inspection-and-testing-of-electrical-equipment-the-earth-continuity-test.pdf](../documentos-compartidos/normas/in-service-inspection-and-testing-of-electrical-equipment-the-earth-continuity-test.pdf): IET, Inspección y ensayo en servicio de equipos eléctricos: ensayo de continuidad de tierra

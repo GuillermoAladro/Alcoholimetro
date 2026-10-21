@@ -131,8 +131,8 @@ Un surtido genérico no tiene datasheet. Estos son los documentos de referencia 
 | EVS-EN IEC 60335-2-82:2022 | Alcance y ediciones | Web | [ver](https://www.evs.ee/en/evs-en-iec-60335-2-82-2022) |
 | Directiva Delegada (UE) 2015/863 (ftalatos en RoHS) | Anexo II de 2011/65/UE | HTML | [ver](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32015L0863) |
 | Real Decreto 219/2013 (RoHS en España) | BOE | Web | [ver](https://www.boe.es/eli/es/rd/2013/03/22/219) |
-| ITC-BT-19, instalaciones interiores: prescripciones generales | REBT | PDF | [ver](https://www.plcmadrid.es/wp-content/uploads/rebt/itc19/ITC-BT-19.pdf) |
-| ITC-BT-36, instalaciones a muy baja tensión | REBT | PDF | [ver](https://www.plcmadrid.es/wp-content/uploads/rebt/itc36/ITC-BT-36.pdf) |
+| ITC-BT-19, instalaciones interiores: prescripciones generales | REBT | PDF | [ver](https://www.plcmadrid.es/wp-content/uploads/rebt/itc19/ITC-BT-19.pdf) ([copia local](../documentos-compartidos/normas/ITC-BT-19.pdf)) |
+| ITC-BT-36, instalaciones a muy baja tensión | REBT | PDF | [ver](https://www.plcmadrid.es/wp-content/uploads/rebt/itc36/ITC-BT-36.pdf) ([copia local](../documentos-compartidos/normas/ITC-BT-36.pdf)) |
 
 ### Qué dicen los más relevantes
 
@@ -155,9 +155,9 @@ Un surtido genérico no tiene datasheet. Estos son los documentos de referencia 
 
 **REBT (ITC-BT-19, ITC-BT-21, ITC-BT-36)**
 
-- La ITC-BT-19 se aplica a las "instalaciones interiores" de edificios (sección 1). Sobre pasos por paredes y techos (sección 2.3) pide protección con tubo de resistencia mecánica adecuada y que los conductores de protección estén protegidos contra el deterioro en los pasos. **No contiene** nada sobre aristas, orificios, boquillas ni pasamuros de envolventes ([ITC-BT-19](https://www.plcmadrid.es/wp-content/uploads/rebt/itc19/ITC-BT-19.pdf)).
+- La ITC-BT-19 se aplica a las "instalaciones interiores" de edificios (sección 1). Sobre pasos por paredes y techos (sección 2.3) pide protección con tubo de resistencia mecánica adecuada y que los conductores de protección estén protegidos contra el deterioro en los pasos. **No contiene** nada sobre aristas, orificios, boquillas ni pasamuros de envolventes ([ITC-BT-19](https://www.plcmadrid.es/wp-content/uploads/rebt/itc19/ITC-BT-19.pdf) ([copia local](../documentos-compartidos/normas/ITC-BT-19.pdf))).
 - **La ITC-BT-21 no la he podido abrir** (la herramienta bloqueó la dirección). La ITC-BT-19 la cita para los tubos de canalizaciones empotradas y, de memoria (sin verificar), trata de tubos y canales protectoras. Qué dice sobre extremos de tubo o boquillas: **sin verificar**.
-- La ITC-BT-36, sección 2.2, para circuitos MBTS/MBTP: la separación respecto a cualquier otro circuito se logra con separación física, con una vaina no metálica adicional, con una pantalla o vaina metálica a tierra, o con aislamiento para la tensión más alta en un cable multiconductor ([ITC-BT-36](https://www.plcmadrid.es/wp-content/uploads/rebt/itc36/ITC-BT-36.pdf)). No trata de que pasen por el mismo agujero.
+- La ITC-BT-36, sección 2.2, para circuitos MBTS/MBTP: la separación respecto a cualquier otro circuito se logra con separación física, con una vaina no metálica adicional, con una pantalla o vaina metálica a tierra, o con aislamiento para la tensión más alta en un cable multiconductor ([ITC-BT-36](https://www.plcmadrid.es/wp-content/uploads/rebt/itc36/ITC-BT-36.pdf) ([copia local](../documentos-compartidos/normas/ITC-BT-36.pdf))). No trata de que pasen por el mismo agujero.
 - **Conclusión mía:** el REBT regula instalaciones de edificios, no el cableado interno de un aparato. No impone pasacables en esta máquina. Sirve de referencia para la regla de no mezclar red y 5 V (sección 4.5).
 
 **RoHS y ftalatos**
@@ -405,5 +405,7 @@ Nota sobre mi planteamiento inicial (no es una discrepancia con la guía): se ha
 - **La temperatura real del separador** junto a la fuente.
 
 ## 11. Fuentes
+
+Copias locales de los documentos descargados: [lista en enlaces.md](enlaces.md#copias-locales-de-los-documentos).
 
 Todos los enlaces, ordenados por tipo y con nota en los que no pude abrir, en [`enlaces.md`](enlaces.md).

@@ -9,17 +9,17 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 - [Foro electronicwerkstatt: color de las punteras](https://forum.electronicwerkstatt.de/phpBB/Elektroinstallation/farbe_von_aderendhuelsen-t61770f17_bs0.html). Abierto. Serie antigua de Weidmüller y quejas por mezcla de colores (foro).
 - [IEC 60999-1, vista previa de VDE-Verlag](https://www.vde-verlag.de/iec-normen/preview-pdf/info_iec60999-1{ed2.0}b.pdf). **No pude abrirlo** (robots.txt). El enlace lleva llaves tal como salió en el buscador.
 - Páginas de venta de IEC 60999-1 que salieron en la búsqueda y **no abrí**: [VDE-Verlag](https://vde-verlag.de/iec-normen/209102/iec-60999-1-1999.html), [AFNOR](https://www.boutique.afnor.org/en-gb/standard/iec-6099911999/connecting-devices-electrical-copper-conductors-safety-requirements-for-scr/xs105574/244281), [SAI Global, SN EN 60999-1:2000](https://infostore.saiglobal.com/en-us/Standards/SN-EN-60999-1-2000-1045081_SAIG_SNV_SNV_2436260/).
-- [ITC-BT-19 (REBT), copia de plcmadrid.es](https://www.plcmadrid.es/wp-content/uploads/rebt/itc19/ITC-BT-19.pdf). Abierto. Apartados 2.3 y 2.11: bornes o regletas para unir; terminales adecuados por encima de 6 mm². No habla de punteras.
+- [ITC-BT-19 (REBT), copia de plcmadrid.es](https://www.plcmadrid.es/wp-content/uploads/rebt/itc19/ITC-BT-19.pdf) ([copia local](../documentos-compartidos/normas/ITC-BT-19.pdf)). Abierto. Apartados 2.3 y 2.11: bornes o regletas para unir; terminales adecuados por encima de 6 mm². No habla de punteras.
 
 ## Punteras: documentos de fabricante (PDF)
 
-- [Phoenix Contact, "What you should know about ferrules" (3011103048 MNR 1540293/2023-04-01/00)](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original). PDF abierto. Colores, dimensiones, perfiles, pelado, tabla de arrancamiento y criterios visuales. Es la fuente principal de la ficha.
-- [Weidmüller, catálogo de punteras (MB_wire_end_ferrules_EN_WEB)](https://assets.dam.weidmueller.com/assets/api/adbb75f5-316f-41db-81c0-dd7dfacff88b/Original/MB_wire_end_ferrules_EN_WEB.pdf). PDF abierto (leído con una herramienta de resumen). Normas, dimensiones con pelado, perfiles, tabla de arrancamiento IEC y UL 486F.
+- [Phoenix Contact, "What you should know about ferrules" (3011103048 MNR 1540293/2023-04-01/00)](https://assets.phoenixcontact.com/file/257a95b8-0ae0-4b65-8476-514c169bc2ba/media/original) ([copia local](datasheets/1540293_EN_Aderendhuelsen_LoRes.pdf)). PDF abierto. Colores, dimensiones, perfiles, pelado, tabla de arrancamiento y criterios visuales. Es la fuente principal de la ficha.
+- [Weidmüller, catálogo de punteras (MB_wire_end_ferrules_EN_WEB)](https://assets.dam.weidmueller.com/assets/api/adbb75f5-316f-41db-81c0-dd7dfacff88b/Original/MB_wire_end_ferrules_EN_WEB.pdf) ([copia local](datasheets/MB_wire_end_ferrules_EN_WEB.pdf)). PDF abierto (leído con una herramienta de resumen). Normas, dimensiones con pelado, perfiles, tabla de arrancamiento IEC y UL 486F.
 - [Weidmüller, "Crimping the right way – made easy"](https://weidmueller.com/int/company/press/trade_press_news/crimping_the_right_way___made_easy.jsp). Abierto. DIN EN 60352-2, 50 000 ciclos de las herramientas DIN 41641-1, trinquete que se abre al terminar.
 - [Phoenix Contact AI 0,75-8 GY, página](https://www.phoenixcontact.com/en-ae/products/ferrule-ai-075-8-gy-3200519) y [PDF (3200519)](https://www.phoenixcontact.com/us/products/3200519/pdf). Abiertos. 14 mm de largo, 8 mm de contacto, 11 mm de pelado máximo, DIN 46228-4 y UL 486F-E, cULus E488001.
-- [Phoenix Contact AI 2,5-8 GY (3200069), PDF en Mouser](https://www.mouser.com/datasheet/2/324/4/3200069-1475656.pdf). Abierto. Collarín basado en el código francés NF C 63-023.
-- [Phoenix Contact AI 6-12 GN (3200108), PDF en RS](https://docs.rs-online.com/6789/A700000014794324.pdf). Abierto. 20 mm de largo, 12 mm de contacto, 15 mm de pelado máximo.
-- [Phoenix Contact, tablas de normas por sección (en Mouser)](https://www.mouser.lt/pdfdocs/PhoenixContact-Tables_Norm_Cross_Section.pdf). Abierto. Encabezados ilegibles: ver la ficha, apartado 3.4.
+- [Phoenix Contact AI 2,5-8 GY (3200069), PDF en Mouser](https://www.mouser.com/datasheet/2/324/4/3200069-1475656.pdf) ([copia local](datasheets/3200069-1475656.pdf)). Abierto. Collarín basado en el código francés NF C 63-023.
+- [Phoenix Contact AI 6-12 GN (3200108), PDF en RS](https://docs.rs-online.com/6789/A700000014794324.pdf) ([copia local](datasheets/A700000014794324.pdf)). Abierto. 20 mm de largo, 12 mm de contacto, 15 mm de pelado máximo.
+- [Phoenix Contact, tablas de normas por sección (en Mouser)](https://www.mouser.lt/pdfdocs/PhoenixContact-Tables_Norm_Cross_Section.pdf) ([copia local](datasheets/PhoenixContact-Tables_Norm_Cross_Section.pdf)). Abierto. Encabezados ilegibles: ver la ficha, apartado 3.4.
 - [Würth, punteras con collarín según DIN 46228-4 (0,75 mm², gris)](https://eshop.wurth.ae/Wire-end-ferrule-with-plastic-sleeve-according-to-DIN-46228-Part-4-WENDFER-DIN46228-CU-J2N-GREY-075X100/0557300753.sku/en/US/AED). Abierto. 16 mm de largo, 10 mm de contacto.
 - [Rapid 13-3277, surtido de 3750 punteras (PDF)](https://static.rapidonline.com/pdf/13-3277_v1.pdf). Abierto. Solo como ejemplo de un surtido genérico: colores DIN, collarín de PVC de 75 °C, reparto de 50 a 500 por sección.
 - [RS PRO, surtido con código francés](https://ch.rs-online.com/web/p/products/2280321). Abierto. Sin tabla de colores ni normas.
@@ -37,14 +37,14 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 - [Knipex: página general de pinzas de crimpado](https://www.knipex.com/products/crimping-pliers). Abierto. Sin referencias.
 - [Reseña de la Knipex 97 53 04 en element14](https://community.element14.com/products/roadtest/rv/roadtest_reviews/58/knipex-self-adjusting-crimping-plier-review). Abierto. Presión de fábrica, trinquete, cuadrado, prueba de tracción, comentarios sobre herramientas baratas.
 - **No pude abrir**, por error de la herramienta (no los rodeé): [Knipex 97 53 04, ficha EN (PDF)](https://www.knipex.com/sites/default/files/Product%20data%20sheet%20EN%2097%2053%2004.pdf), [Knipex 97 53 04, página](https://www.knipex.com/products/crimping-pliers/self-adjusting-crimping-pliers-for-wire-ferrules-with-lateral-access/self-adjusting-crimping-pliers-wire-ferrules-lateral-access/975304), [Knipex EE. UU., 97 53 04](https://knipex.com/en-us/products/crimping-pliers/self-adjusting/self-adjusting-crimping-pliers-wire-ferrules/975304).
-- [Weidmüller PZ 6 Roto (9014350000)](https://datasheet.weidmueller.com/pdf/en/9014350000/scope/1). Abierto. 0,14-6 mm², trapezoidal, 423,66 g.
+- [Weidmüller PZ 6 Roto (9014350000)](https://datasheet.weidmueller.com/pdf/en/9014350000/scope/1) ([copia local](datasheets/9014350000_en.pdf)). Abierto. 0,14-6 mm², trapezoidal, 423,66 g.
 - [Weidmüller PZ 6/5 (9011460000)](https://datasheet.weidmueller.com/pdf/en/9011460000/scope/2). Abierto. 0,25-6 mm², trapezoidal, 433 g.
 - [Phoenix Contact CRIMPFOX 6 (1212034)](https://www.phoenixcontact.com/us/products/1212034/pdf). Abierto. 0,25-6 mm², trapezoidal, cinco posiciones, 198 mm, 444,2 g.
 - Salieron en la búsqueda y **no abrí**: [Weidmüller PZ 6 Roto en Farnell](https://ie.farnell.com/weidmuller/9014350000/crimp-tool-stripax-pz-roto/dp/4394082), [PDF en Digi-Key](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/4283/9014350000.pdf), [Fabory, Knipex](https://www.fabory.com/en-NL/p/K1175354180), [anserjo, 97 53 04](https://www.anserjo.com/pdf/2780465/97%2053%2004).
 
 ## Crimpadoras baratas de la misma clase (no son tu anuncio)
 
-- [Rapid 23T030, pinzas autoajustables Quadrios (06-3521)](https://static.rapidonline.com/pdf/06-3521_v1.pdf). PDF abierto. 0,25-10 mm², cuatro mandriles, cuadrado, 363 g.
+- [Rapid 23T030, pinzas autoajustables Quadrios (06-3521)](https://static.rapidonline.com/pdf/06-3521_v1.pdf) ([copia local](datasheets/06-3521_v1.pdf)). PDF abierto. 0,25-10 mm², cuatro mandriles, cuadrado, 363 g.
 - [YPC: Aongray, 0,25-10 mm² (AWG 23-7)](https://www.ypc.co.uk/product/ferrule-crimper-plier-aongray-self-adjustable-ratchat-wire-crimping-tool-0-25-10mm%c2%b2-awg23-7-crimping-pliers-to-crimp-the-bootlace-ferrules-ferrule-crimper-plier/). Abierto. Solo metadatos: 9,99 £.
 - [Listado Flytuo HSC8 6-6 (alaniazapoved.ru)](https://alaniazapoved.ru/products/hexagonal-crimping-tool-awg23-10-hsc8-6-6-self-adjusting-rat/205851316). Abierto. Hexagonal, 0,25-6 mm².
 - [ManoMano.es: kit de 1250 piezas con herramienta autoajustable](https://www.manomano.es/p/kit-de-herramientas-de-crimpado-de-ferulas-con-kit-de-terminales-de-ferulas-de-cable-de-1250-piezas-herramienta-de-crimpado-autoajustable-herramienta-de-crimpado-de-ferulas-para-awg-237-0-25-10-228879402). **No abrió**; solo leí el título en el resultado de búsqueda.
@@ -68,7 +68,7 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 ## Fuente de alimentación y regletas (solo lo que toca a esta pieza)
 
-- [Mean Well, manual de instalación de caja cerrada (Enclosed_Type_EN.pdf)](https://www.meanwell.com/Upload/PDF/Enclosed_Type_EN.pdf). PDF abierto (leído con una herramienta de resumen). LRS: M3,5, par "8-10" sin unidad en mi lectura; tabla de calibres; "todos los hilos tienen que entrar". No menciona punteras.
+- [Mean Well, manual de instalación de caja cerrada (Enclosed_Type_EN.pdf)](https://www.meanwell.com/Upload/PDF/Enclosed_Type_EN.pdf) ([copia local](../meanwell-lrs-50-5/datasheets/Enclosed_Type_EN.pdf)). PDF abierto (leído con una herramienta de resumen). LRS: M3,5, par "8-10" sin unidad en mi lectura; tabla de calibres; "todos los hilos tienen que entrar". No menciona punteras.
 - [Mean Well LRS-50, hoja de datos](https://www.meanwell.com/Upload/PDF/LRS-50/LRS-50-SPEC.PDF). **No pude abrirla**: la herramienta pidió un permiso que no se contestó. No la rodeé.
 - WAGO: [página de la 221-415](https://www.wago.com/global/installation-terminal-blocks-and-connectors/splicing-connector-with-levers/p/221-415), **permiso sin contestar, no abierta**. Los dos PDF de RS que abrí ([uno](https://docs.rs-online.com/7a0c/A700000015887608.pdf), [otro](https://docs.rs-online.com/b708/A700000015887532.pdf)) eran de la serie 2231, no de la 221, y no los uso.
 
@@ -79,3 +79,22 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 ## Otros enlaces citados en la ficha
 
 - [Foro Vesuvius: problema con la entrada IEC de una máquina de café](https://www.tapatalk.com/groups/vesuvius/power-inlet-problem-and-solution-s-t475.html): anécdota de un neutro suelto en la entrada IEC que produjo un arco (apartado de seguridad; la misma fuente aparece en la ficha del módulo C14, #15).
+
+## Copias locales de los documentos
+
+Documentos descargados el 21-10-2026 y guardados en el repositorio. Si un documento tiene enlace original en esta ficha, aparece junto a él como "copia local".
+
+**En esta carpeta (`datasheets/`):**
+
+- [06-3521_v1.pdf](datasheets/06-3521_v1.pdf): Self Adjusting Wire-End Ferrule Crimping Pliers / Range 0.25...10 mm² (AWG 23-7)
+- [1540293_EN_Aderendhuelsen_LoRes.pdf](datasheets/1540293_EN_Aderendhuelsen_LoRes.pdf): Phoenix Contact, "What you should know about ferrules"
+- [3200069-1475656.pdf](datasheets/3200069-1475656.pdf): Phoenix Contact AI 2,5-8 GY (3200069): puntera, hoja del catálogo
+- [9014350000_en.pdf](datasheets/9014350000_en.pdf): Weidmüller PZ 6 Roto (9014350000), hoja de datos
+- [A700000014794324.pdf](datasheets/A700000014794324.pdf): Phoenix Contact AI 6-12 GN: puntera, hoja del catálogo (alemán)
+- [MB_wire_end_ferrules_EN_WEB.pdf](datasheets/MB_wire_end_ferrules_EN_WEB.pdf): Workplace Solutions / Wire-end ferrules / The vast product range for almost all fields of application
+- [PhoenixContact-Tables_Norm_Cross_Section.pdf](datasheets/PhoenixContact-Tables_Norm_Cross_Section.pdf): Metric / JIS type / AWG/MCM equivalent
+
+**Citados en esta ficha y guardados en otra carpeta:**
+
+- [Enclosed_Type_EN.pdf](../meanwell-lrs-50-5/datasheets/Enclosed_Type_EN.pdf): Installation Manual /  Type：Enclosed Type Switching Power Supply / (Families: CSP, DPU, ENP, ERP, G3, HDP, HEP, HRP, HRP-N, HRP-N
+- [ITC-BT-19.pdf](../documentos-compartidos/normas/ITC-BT-19.pdf): ITC-BT-19: instalaciones interiores o receptoras, prescripciones generales (REBT)

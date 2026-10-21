@@ -22,9 +22,9 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 ## Propiedades mecánicas y pares de apriete
 
-- [Fastenal, "Mechanical Properties Metric Fasteners" (enero de 2016, PDF)](https://www.fastenal.com/content/feds/pdf/2016/01/Mechanical%20Properties%20Metric%20Fasteners%20Jan%202016.pdf). Abierto: clases 50/70/80 de la serie austenítica (A1, A2, A4): 500/210, 700/450, 800/600 MPa. Sin pares, dureza ni alargamiento.
-- [Fastenal, "Torque-Tension Relationship for Metric Stainless Steel Fasteners A2 and A4 70" (febrero de 2016, PDF)](https://crafter.fastenal.com/static-assets/pdfs/technical-resources/Torque-Tension-Relationship-for-Metric-Stainless-Steel-Fasteners-A2-and-A4-70-Feb-2016.pdf). Abierto: M3 a M6 con fuerzas de rotura y de límite elástico, pares lubricado (K = 0,16) y en seco (K = 0,35) y avisos de grippado.
-- [Berger, "Property Classes Screws Nuts" (PDF)](https://assets.berger-tools.co.uk/pdfs/Property_Classes_Screws_Nuts.pdf). Abierto: clases 50/70/80 de tornillos y tuercas (DIN ISO 3506-1 y -2), pareado de clases.
+- [Fastenal, "Mechanical Properties Metric Fasteners" (enero de 2016, PDF)](https://www.fastenal.com/content/feds/pdf/2016/01/Mechanical%20Properties%20Metric%20Fasteners%20Jan%202016.pdf) ([copia local](datasheets/Mechanical_Properties_Metric_Fasteners_Jan_2016.pdf)). Abierto: clases 50/70/80 de la serie austenítica (A1, A2, A4): 500/210, 700/450, 800/600 MPa. Sin pares, dureza ni alargamiento.
+- [Fastenal, "Torque-Tension Relationship for Metric Stainless Steel Fasteners A2 and A4 70" (febrero de 2016, PDF)](https://crafter.fastenal.com/static-assets/pdfs/technical-resources/Torque-Tension-Relationship-for-Metric-Stainless-Steel-Fasteners-A2-and-A4-70-Feb-2016.pdf) ([copia local](datasheets/Torque-Tension-Relationship-for-Metric-Stainless-Steel-Fasteners-A2-and-A4-70-Feb-2016.pdf)). Abierto: M3 a M6 con fuerzas de rotura y de límite elástico, pares lubricado (K = 0,16) y en seco (K = 0,35) y avisos de grippado.
+- [Berger, "Property Classes Screws Nuts" (PDF)](https://assets.berger-tools.co.uk/pdfs/Property_Classes_Screws_Nuts.pdf) ([copia local](datasheets/Property_Classes_Screws_Nuts.pdf)). Abierto: clases 50/70/80 de tornillos y tuercas (DIN ISO 3506-1 y -2), pareado de clases.
 - [Optimas, pre-carga y pares de inox](https://optimas.com/technical-resources/stainless-steel-fasteners-pre-load-and-tightening-torques/). Abierto: A2-70 y A4-80 con μ = 0,1, 0,2 y 0,3; "para orientación", sin supuestos.
 - [TR Fastenings, pre-carga y pares de inox (rosca métrica gruesa)](https://trfastenings.com/knowledge-base/metric-screws/stainless-steel-pre-load-and-tightening-torques). Abierto: la misma tabla y, además, el par de rotura mínimo (M3 A2-70: 1,6 N·m). Una cifra de A1-50 (M4, μ = 0,2) parece errata.
 - [Optimas, pares de tornillos con hueco hexagonal (DIN 7991, ISO 7380...)](https://international.optimas.com/technical-resources/socket-screws-tightening-torques). Abierto: no trae el DIN 912/ISO 4762; trae DIN 6912, 7894, 7991 e ISO 7380. Cabeceras desordenadas.
@@ -50,10 +50,10 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 - [Nord-Lock, Junker (vídeo, página de texto)](https://www.nord-lock.com/link/8bc1485d52684ff68b4ca5366646fa8d.aspx). Abierto: cita DIN 65151 e ISO 16130; sin resultados.
 - [Nord-Lock, "how it works"](https://nord-lock.com/shop/everyday-applications/how-it-works). Abierto, pero solo mostró una página de contacto.
 - [Bossard / Nord-Lock, folleto (03-2023, PDF)](https://www.bossard.com/dk-da/-/media/0d163628d10f470f99186aa4cd1221ec.pdf). Abierto.
-- [Nord-Lock, catálogo de arandelas (versión en pulgadas, PDF)](https://mmintercom.com/upload/publish/197/NORD-LOCK%20Washers%20Catalogue.pdf). Abierto. El enlace tal como salió en la búsqueda llevaba espacios; aquí están codificados.
+- [Nord-Lock, catálogo de arandelas (versión en pulgadas, PDF)](https://mmintercom.com/upload/publish/197/NORD-LOCK%20Washers%20Catalogue.pdf) ([copia local](datasheets/NORD-LOCK_Washers_Catalogue.pdf)). Abierto. El enlace tal como salió en la búsqueda llevaba espacios; aquí están codificados.
 - [Henkel, "¿Por qué un fijador LOCTITE es mejor que una arandela elástica?"](https://www.henkel-adhesives.com/dk/en/insights/all-insights/blog/why-is-loctite-threadlocker-better-than-a-spring-washer.html). Abierto: es un blog de marketing del fabricante, sin datos de Junker.
 - [LOCTITE 243, ficha de RS](https://ie.rs-online.com/web/p/thread-lock/2432648). Abierto.
-- [LOCTITE 243, hoja técnica (nov. 2020, copia de RS, PDF)](https://docs.rs-online.com/e55b/A700000008786735.pdf). Abierto: ensayos ISO 10964 en M10, aviso de plásticos, activador.
+- [LOCTITE 243, hoja técnica (nov. 2020, copia de RS, PDF)](https://docs.rs-online.com/e55b/A700000008786735.pdf) ([copia local](datasheets/A700000008786735.pdf)). Abierto: ensayos ISO 10964 en M10, aviso de plásticos, activador.
 - [LOCTITE 243, hoja de seguridad (copia de RS, PDF)](https://docs.rs-online.com/c7a7/0900766b80d76619.pdf). **No abierta.**
 - [Aims Industrial, guía del LOCTITE 243](https://aimsindustrial.com.au/en-nz/blogs/product-guides/loctite-243-guide). Abierto: fuente secundaria (distribuidor); recomienda el 222 por debajo de M6.
 - [Wikipedia, Locknut](https://en.wikipedia.org/wiki/Locknut). Abierto: no da el límite de temperatura de las tuercas de nailon.
@@ -79,15 +79,15 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 ## Dibujo mecánico de la LRS-50 (copias de la hoja)
 
-- [Mean Well Australia, LRS-50 DATA SHEET (2025-04-07, PDF)](https://www.meanwellaustralia.com.au/sites/default/files/2025-05/MEAN%20WELL%20LRS-50%20DATA%20SHEET.pdf). Abierto: "Case No.239A Unit:mm Tolerance:±1", "2-M3 L=3.0", "2-M3 L=5". Sin etiquetas lateral/inferior.
-- [pulsar.pl, LRS-50-5 (2019-07-23, PDF traducido)](https://lib.pulsar.pl/karta/es/LRS-50-5.pdf). Abierto: mismo dibujo.
+- [Mean Well Australia, LRS-50 DATA SHEET (2025-04-07, PDF)](https://www.meanwellaustralia.com.au/sites/default/files/2025-05/MEAN%20WELL%20LRS-50%20DATA%20SHEET.pdf) ([copia local](../meanwell-lrs-50-5/datasheets/MEAN_WELL_LRS-50_DATA_SHEET.pdf)). Abierto: "Case No.239A Unit:mm Tolerance:±1", "2-M3 L=3.0", "2-M3 L=5". Sin etiquetas lateral/inferior.
+- [pulsar.pl, LRS-50-5 (2019-07-23, PDF traducido)](https://lib.pulsar.pl/karta/es/LRS-50-5.pdf) ([copia local](../meanwell-lrs-50-5/datasheets/LRS-50-5.pdf)). Abierto: mismo dibujo.
 - [RS, LRS-50 (2015-12-31, PDF)](https://docs.rs-online.com/19bc/0900766b814e41ec.pdf). Abierto: mismo dibujo.
 - Hoja oficial en meanwell.com: no intentada por mí. La [ficha #14](../meanwell-lrs-50-5/README.md) dice que la herramienta la rechazó.
 
 ## Kits comparables (no son el del proyecto)
 
-- [RS Pro 281-978, kit de 3.168 piezas M2 a M6 (PDF)](https://docs.rs-online.com/3bcd/A700000007879576.pdf). Abierto: DIN 85, DIN 963A, DIN 934, DIN 125; A2 304; M3 en 6, 10, 12 y 20 mm. La ficha se contradice en la cabeza (cruz y ranura).
-- [RS Pro 393-169, kit de 490 piezas M3 a M6, cabeza botón (PDF)](https://docs.rs-online.com/3719/A700000007879596.pdf). Abierto: "DIN 7380", A2 304, M3 en 8 y 10 mm.
+- [RS Pro 281-978, kit de 3.168 piezas M2 a M6 (PDF)](https://docs.rs-online.com/3bcd/A700000007879576.pdf) ([copia local](datasheets/A700000007879576.pdf)). Abierto: DIN 85, DIN 963A, DIN 934, DIN 125; A2 304; M3 en 6, 10, 12 y 20 mm. La ficha se contradice en la cabeza (cruz y ranura).
+- [RS Pro 393-169, kit de 490 piezas M3 a M6, cabeza botón (PDF)](https://docs.rs-online.com/3719/A700000007879596.pdf) ([copia local](datasheets/A700000007879596.pdf)). Abierto: "DIN 7380", A2 304, M3 en 8 y 10 mm.
 - [ManoMano, kit INFINITE de 150 piezas M5](https://www.manomano.es/p/sechskantschrauben-set-304-edelstahl-m5x150-stuck-verschiedene-montagegroen-m5x101214162025mm-muttern-unterlegscheiben-federscheiben-rostschutz-209680352). Abierto: "AISI 304 (EN 10088)", incluye arandelas Grower. La descripción de la cabeza es contradictoria.
 - [Bodega Aurrera, kit de 400 piezas M3 a M6](https://www.bodegaaurrera.com.mx/ip/herramientas-manuales/juego-de-tuercas-de-tornillos-con-cabeza-hexagonal-400-uds-m3-m4-m5-m6-surtido-de-acero-inoxidable-304-universal-para-coches-y-camiones/00939307216227). **No abierto** (error de la herramienta).
 - Vistos en una búsqueda y **no abiertos:** [Mercado Libre, kit de 320 piezas](https://www.mercadolibre.com.co/shorts/clips/wb9Mab/kit-surtido-320-piezas-tornillos-tuercas-arandelas), [eBay, Kays Fasteners](https://www.ebay.es/str/kaysfasteners), [kit Kadrick de 1230 piezas (revendedor ruso)](https://www.alaniazapoved.ru/products/kadrick-1230-pcs-m2-m3-m4-m5-metric-screw-aassortment4mm-20mm-304-stainless-steel-hex-socket-button-head-cap-bolts-nuts-washers-kit-with-4-hex-wrenches/200809306).
@@ -98,3 +98,22 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 - [Wikipedia, Washer (hardware)](https://en.wikipedia.org/wiki/Washer_(hardware)). Abierto: ISO 7089/7090, DIN 125 (retirada y sustituida), DIN 127 B, NASA 1990.
 - [Wikipedia, Set screw](https://en.wikipedia.org/wiki/Set_screw). Abierto: tipos de punta, ISO 4029.
 - `en.wikipedia.org/wiki/Socket_head_cap_screw`: **no abierto** (la herramienta devolvió `URL_NOT_FOUND`). Las cabezas de ISO 4762 e ISO 7380-1 de la ficha son de memoria.
+
+## Copias locales de los documentos
+
+Documentos descargados el 21-10-2026 y guardados en el repositorio. Si un documento tiene enlace original en esta ficha, aparece junto a él como "copia local".
+
+**En esta carpeta (`datasheets/`):**
+
+- [A700000007879576.pdf](datasheets/A700000007879576.pdf): Kits de tornillos y pernos / CARACTERÍSTICA / Tornillos mecánicos (RS 281-978)
+- [A700000007879596.pdf](datasheets/A700000007879596.pdf): Kits de tornillos y pernos / CARACTERÍSTICA / Tornillos de cabeza (RS 393-169)
+- [A700000008786735.pdf](datasheets/A700000008786735.pdf): Technical Data Sheet / LOCTITE® 243™ / November -2020
+- [Mechanical_Properties_Metric_Fasteners_Jan_2016.pdf](datasheets/Mechanical_Properties_Metric_Fasteners_Jan_2016.pdf): Engineering and Design Support / Mechanical Properties of Externally Threaded Fasteners per ISO 898‐1 (archivo original: `Mechanical Properties Metric Fasteners Jan 2016.pdf`)
+- [NORD-LOCK_Washers_Catalogue.pdf](datasheets/NORD-LOCK_Washers_Catalogue.pdf): ENGLISH • UNC / NORD-LOCK WASHERS / The original wedge-locking solution (archivo original: `NORD-LOCK Washers Catalogue.pdf`)
+- [Property_Classes_Screws_Nuts.pdf](datasheets/Property_Classes_Screws_Nuts.pdf): Property Classes of Screws and Nuts / Extract DIN ISO 898-1 / DIN ISO 898-2 / DIN ISO 3506-1 / DIN ISO 3506-2
+- [Torque-Tension-Relationship-for-Metric-Stainless-Steel-Fasteners-A2-and-A4-70-Feb-2016.pdf](datasheets/Torque-Tension-Relationship-for-Metric-Stainless-Steel-Fasteners-A2-and-A4-70-Feb-2016.pdf): Torque Values for A2-70 or A4-70 Metric Stainless Steel Fasteners / Caution: Stainless steel fasteners tend to gall, especially wi
+
+**Citados en esta ficha y guardados en otra carpeta:**
+
+- [LRS-50-5.pdf](../meanwell-lrs-50-5/datasheets/LRS-50-5.pdf): Fuente de alimentación conmutada de salida / única de 50 W / Serie
+- [MEAN_WELL_LRS-50_DATA_SHEET.pdf](../meanwell-lrs-50-5/datasheets/MEAN_WELL_LRS-50_DATA_SHEET.pdf): 50W Single Output Switching Power Supply / L R S - 5 0 series / User’s Manual

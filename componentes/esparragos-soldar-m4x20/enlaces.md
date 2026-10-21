@@ -69,3 +69,22 @@ Las normas están de pago. Solo directorios, resúmenes y extractos.
 - **soyer.de (portada)**, **bolts.co.uk (portada)**: la herramienta pidió un permiso que no se contestó. No se reintentaron.
 - **de.wikipedia.org, "Bolzenschweißen"**: no encontrada con la URL probada.
 - Sin intentar por falta de búsquedas: Köster, TR Electronic, Hilti, PEM, Böllhoff, ISO 13918, ISO 14555, ISO 3506-1, IEC 60417 (base de datos), IEC 61439-1.
+
+## Copias locales de los documentos
+
+Documentos descargados el 21-10-2026 y guardados en el repositorio. Si un documento tiene enlace original en esta ficha, aparece junto a él como "copia local".
+
+**En esta carpeta (`datasheets/`):**
+
+- [28208_FA_Soyer_PS-9_data.pdf](datasheets/28208_FA_Soyer_PS-9_data.pdf): Bolzenschweißpistole Spitzenzündung | CD stud welding gun / Artikel-Nr. / Item No.: P01080 (Soyer PS-9)
+- [52139189425.pdf](datasheets/52139189425.pdf): Keller & Kalmbach, espárrago de soldar M4 × 25 A2-50, ISO 13918 PT (impreso del artículo)
+- [Grounding_and_Corrosion_of_Dissimilar_Materials-SUlemek.pdf](datasheets/Grounding_and_Corrosion_of_Dissimilar_Materials-SUlemek.pdf): Grounding and Corrosion of / Dissimilar Materials / Presented by: Svetlana Ulemek,
+- [Introduction-to-Taylor-Studwelding-Systems-single-pages.pdf](datasheets/Introduction-to-Taylor-Studwelding-Systems-single-pages.pdf): Taylor Studwelding, introducción a los sistemas de soldadura de espárragos (descarga de condensador)
+- [Sonderdruck_metallbau_1_2019.pdf](datasheets/Sonderdruck_metallbau_1_2019.pdf): Sonderdruck aus metallbau 1/2019 / Heinz Soyer Bolzenschweißtechnik / TECHNIK
+- [produktinfo_ps-1k07.2022.pdf](datasheets/produktinfo_ps-1k07.2022.pdf): Bolzenschweißpistole Spitzenzündung | CD stud welding gun / PS-1K / PS-1K
+
+**Citados en esta ficha y guardados en otra carpeta:**
+
+- [ITC-BT-19.pdf](../documentos-compartidos/normas/ITC-BT-19.pdf): ITC-BT-19: instalaciones interiores o receptoras, prescripciones generales (REBT)
+- [SOLiC-Test-Report-No-2013.pdf](../documentos-compartidos/normas/SOLiC-Test-Report-No-2013.pdf): Informe de ensayo SOLiC n.º 2013 (modelo AF2.1), citado como referencia de ensayo de continuidad de tierra
+- [in-service-inspection-and-testing-of-electrical-equipment-the-earth-continuity-test.pdf](../documentos-compartidos/normas/in-service-inspection-and-testing-of-electrical-equipment-the-earth-continuity-test.pdf): IET, Inspección y ensayo en servicio de equipos eléctricos: ensayo de continuidad de tierra
