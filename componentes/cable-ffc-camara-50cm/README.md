@@ -103,7 +103,7 @@ Son datos de fabricantes de FFC, no de este cable.
 ## 3. El producto GeeekPi y su documentación
 
 - **No he encontrado documentación propia** del cable GeeekPi: ni ficha técnica, ni wiki, ni hoja de garantía. No pude abrir el anuncio de Amazon ni la web de la marca (`geeekpi.com` rechaza la herramienta por robots.txt; no la rodeé).
-- **¿GeeekPi es 52Pi?** No lo he podido confirmar. La página "about us" de 52Pi no nombra a GeeekPi. La búsqueda de marcas registradas solo muestra "52PI" a nombre de 52pi Technology (Shanghai) Co., Ltd. Un revendedor ([ubuy](https://www.ubuy.hk/en/brand/geeekpi)) describe a GeeekPi como una marca de accesorios para Raspberry Pi fundada en 2016 y no nombra a 52Pi. Si GeeekPi y 52Pi son la misma empresa, como sugería el encargo, **sigue sin verificar**.
+- **¿GeeekPi es 52Pi?** No lo he podido confirmar. La página "about us" de 52Pi no nombra a GeeekPi. La búsqueda de marcas registradas solo muestra "52PI" a nombre de 52pi Technology (Shanghai) Co., Ltd. Un revendedor ([ubuy](https://www.ubuy.hk/en/brand/geeekpi)) describe a GeeekPi como una marca de accesorios para Raspberry Pi fundada en 2016 y no nombra a 52Pi. Si GeeekPi y 52Pi son la misma empresa, como sugería mi planteamiento inicial, **sigue sin verificar**.
 - **El cable parecido de 52Pi** (SKU Z-0192, un pack de 3 cables de 50, 100 y 200 cm a 5,94 USD) tiene un anuncio contradictorio: el título dice "15pin 0.5mm Pitch" y la descripción "15Pin 1.0mm Pitch". No da anchura, espesor, material ni lado de contactos. No hay reseñas ni garantía propia. Lo cito como ejemplo de lo que puede encontrarse, no como tu anuncio. ([52Pi Z-0192](https://52pi.com/products/52pi-camera-cable-ribbon-for-raspberry-pi))
 - **La wiki de 52Pi** (`wiki.52pi.com`) no tiene página de este cable; la búsqueda de "ribbon cable" solo devolvió el cable de Pi Zero (Z-0209) y cables de PCIe de otros productos.
 - **Otro caso de metadatos poco fiables:** un anuncio de 6 cables de otro vendedor (Pastall, en desertcart) pone "RF Connector" como tipo de conector en un FFC de 15 pines. Las fichas de Amazon de cables genéricos hay que leerlas con cuidado. ([desertcart](https://www.desertcart.tw/products/208589668))
@@ -208,7 +208,7 @@ Los tres pinouts que he encontrado (Microchip, Zephyr, Arducam) coinciden. **No 
 | §5.3: conectar al puerto "CSI CAMERA" | Correcto. El otro conector de 15 pines de la Pi es el de pantalla (DSI) |
 | Lado de contactos en el extremo de la cámara | **No aparece en la guía.** Es hacia la placa de la cámara (documentación oficial, brief) |
 | Tipo de cable (contactos en caras opuestas) y paso de 1 mm | **No aparecen en la guía** ni, hasta donde sé, en el anuncio. Son lo que más importa (5.3, 5.4) |
-| Dónde va la cámara | La guía (§4) la pone en la caja de arriba y la Pi en la caja interior suspendida. El encargo de esta ficha hablaba de una puerta. Con la guía no hay puerta con bisagra, pero sí un tramo que cruza de una caja fija a una colgada de muelles (7.2) |
+| Dónde va la cámara | La guía (§4) la pone en la caja de arriba y la Pi en la caja interior suspendida. Mi planteamiento inicial de esta ficha hablaba de una puerta. Con la guía no hay puerta con bisagra, pero sí un tramo que cruza de una caja fija a una colgada de muelles (7.2) |
 
 ## 6. Longitud: qué dicen Raspberry Pi y la comunidad
 

@@ -15,6 +15,7 @@ Una carpeta por componente del alcoholímetro, con su ficha técnica, documentos
 | 10 | Cable USB-A a USB-C acodado 90°, 30 cm | Alimenta el SumUp Solo desde el borne USB-A | [cable-usb-a-usb-c-90-30cm](cable-usb-a-usb-c-90-30cm/README.md) |
 | 11 | Pulsador arcade 30 mm (EG STARTS) | Botón de inicio de la prueba (GPIO17) | [pulsador-arcade-30mm](pulsador-arcade-30mm/README.md) |
 | 13 | Alargo de antena RP-SMA, 30 cm | Saca la antena Wi-Fi por el techo de la chapa | [alargo-antena-rp-sma-30cm](alargo-antena-rp-sma-30cm/README.md) |
+| 14 | Fuente Mean Well LRS-50-5 (5 V, 10 A) | Fuente única de 5 V de la máquina (230 V) | [meanwell-lrs-50-5](meanwell-lrs-50-5/README.md) |
 | 15 | Módulo C14 con fusible e interruptor | Entrada de red 230 V de la máquina | [modulo-c14-fusible-interruptor](modulo-c14-fusible-interruptor/README.md) |
 | 16 | Fusibles cerámicos 5×20 T2,5A | Protección de la entrada de red | [fusibles-ceramicos-5x20-t2-5a](fusibles-ceramicos-5x20-t2-5a/README.md) |
 | 17 | Cable de red Schuko a C13, 2 m | Conecta la máquina a la toma de pared | [cable-schuko-c13-2m](cable-schuko-c13-2m/README.md) |

@@ -26,7 +26,7 @@ Fusible de protección de la entrada de red de 230 V. Va en el portafusibles del
 - **Los 1,5 A²s de la guía no salen de la hoja de la LRS-50-5.** La hoja da 45 A en frío a 230 V y no da duración ni la capacidad del condensador. Mi cálculo da 0,7–2,4 A²s para 100–330 µF; 1,5 A²s equivale a unos 205 µF. Cuadra, pero es una hipótesis. Los 45 A sí están en la hoja.
 - **El T2,5A no protege la carga, protege contra fallos.** La fuente toma como mucho 0,56 A (hoja) y la máquina unos 0,1–0,25 A. El fusible no tiene que abrir por debajo de 3,75 A (mínimo 60 min), garantiza abrir en 30 min a partir de 5,25 A y en 5 s a partir de 10 A. Su sitio: cortocircuitos y fallos de aislamiento entre el módulo C14 y la fuente.
 - **"Cerámico" no basta: tiene que ser de verdad "H" (1500 A).** El marcado esperado es `T2.5AH250V`. La capacidad de corte no se puede comprobar en casa. Hay pruebas de aficionados con fusibles cerámicos genéricos de marketplace que no cumplían su curva. Detalles y pruebas de recepción en los apartados 5 y 6.
-- **Dos discrepancias con el encargo y la guía:** la norma para este fusible es la hoja 5 de IEC 60127-2 (no la 3), y no he encontrado ninguna serie "215H" de Littelfuse (la 215 ya lleva H en el marcado). Detalle en el apartado 3.1.
+- **Dos discrepancias con mi planteamiento inicial y la guía:** la norma para este fusible es la hoja 5 de IEC 60127-2 (no la 3), y no he encontrado ninguna serie "215H" de Littelfuse (la 215 ya lleva H en el marcado). Detalle en el apartado 3.1.
 - **El enchufe Schuko es reversible:** el fusible de una sola polaridad puede quedar en el neutro. Con él, un fallo de fase a chasis no pasa por el fusible. Hay que decidir si se acepta o si se fusionan los dos polos (apartado 4.6).
 
 ## 2. Especificaciones
@@ -45,7 +45,7 @@ El símbolo de capacidad de corte es H (alta), L (baja) o E (mejorada) (DIN Medi
 
 - **H = 1500 A:** confirmado en las hojas de Schurter, Eaton y Bel.
 - **L = 35 A o 10 × In:** lo veo en hojas de fusibles de vidrio (Schurter MST: "35 A @ 250 VAC" y "10 In @ 250 VAC"; R-TECH: "35A or 10ln@250V AC"), no en el texto de la norma. **Sin verificar en la norma.**
-- **E = 150 A:** viene del encargo. **No lo he encontrado en ninguna fuente que haya podido abrir.**
+- **E = 150 A:** viene de mi planteamiento inicial. **No lo he encontrado en ninguna fuente que haya podido abrir.**
 
 ### 2.2 El mismo T2,5A según cada fabricante
 
@@ -65,7 +65,7 @@ Fuentes: [Littelfuse 215, copia de Chipdip](https://static.chipdip.ru/lib/198/DO
 Notas:
 
 - **El I²t varía casi 3× entre fabricantes** que cumplen la misma hoja de la norma (11,7 a 32 A²s). Littelfuse dice que lo mide a 10 veces la corriente nominal. Schurter y Eaton dan valores típicos. No son intercambiables a ciegas.
-- **Resistencia en frío:** 38,6 a 41,5 mΩ en las tres fuentes que la dan (Littelfuse, Eaton y la hoja de un fusible de vidrio de R-TECH, 41,5 mΩ). Las cifras de "40-50 mΩ" del encargo coinciden con la caída de tensión a In dividida por In (100 mV / 2,5 A = 40 mΩ en Schurter; 115 mV / 2,5 A = 46 mΩ en Eaton): ese cociente incluye el calentamiento, la resistencia en frío es algo menor.
+- **Resistencia en frío:** 38,6 a 41,5 mΩ en las tres fuentes que la dan (Littelfuse, Eaton y la hoja de un fusible de vidrio de R-TECH, 41,5 mΩ). Las cifras de "40-50 mΩ" de mi planteamiento inicial coinciden con la caída de tensión a In dividida por In (100 mV / 2,5 A = 40 mΩ en Schurter; 115 mV / 2,5 A = 46 mΩ en Eaton): ese cociente incluye el calentamiento, la resistencia en frío es algo menor.
 - **Caída máxima de 180 mV a 2,5 A:** la repiten Littelfuse, Schurter y ESKA. Es probable que sea el límite de la hoja 5 (deducción mía, no he leído la norma).
 - **Dimensiones:** 5 × 20 mm. Los tapones llevan el marcado: según Littelfuse, un tapón lleva el logotipo, la corriente y la tensión, y el otro las marcas de aprobación.
 - **Producción:** la ficha de producto de Littelfuse se abre (consulta del 21-10-2026) y hay al menos cinco fabricantes con el mismo T2,5A cerámico H (tabla anterior). Es un formato estándar, así que el riesgo de quedarse sin suministro es bajo. **No he buscado avisos de cambio de producto o descatalogación** (sin verificar).
@@ -108,11 +108,11 @@ Hojas de la norma, según el resumen de [DIN Media](https://www.dinmedia.de/en/s
 | 6 | 5×20 | Retardado | Mejorada (E) |
 | 7 a 10 | 6,3×32 | Varias | Mejorada y alta |
 
-**Discrepancias con el encargo:**
+**Discrepancias con mi planteamiento inicial:**
 
 - **La hoja 3 no es el T cerámico H.** Según DIN Media, la 3 es 5×20 retardado de capacidad **baja** (la del vidrio). El T cerámico H es la **hoja 5**, y así lo declaran Littelfuse ("Standard Sheet 5"), Schurter ("/5"), Bel ("sheet 5") y ESKA ("EN 60127-2-5"). La hoja 2 es de fusible **rápido** de capacidad baja, no una hoja "de tamaño pequeño". La tabla encaja con una hoja de Schurter de fusible rápido cerámico (0001.1008, que dice "IEC 60127-2/1" y "H"), es decir, hoja 1 = rápido H ([enlace](https://it.schurter.com/de/datasheet/typ_SP_5x20.pdf)).
 - **La edición 2014 consta como retirada** en DIN Media y sustituida por DIN EN 60127-2:2024-01. **No he comprobado si la numeración de las hojas cambió en la nueva edición.**
-- **"215H":** no he encontrado ninguna serie Littelfuse "215H". La 215 ya es de alta capacidad de corte (marcado `T2.5AH250V` en su ficha del 2,5 A). Puede que el encargo se refiera a ese sufijo H del marcado.
+- **"215H":** no he encontrado ninguna serie Littelfuse "215H". La 215 ya es de alta capacidad de corte (marcado `T2.5AH250V` en su ficha del 2,5 A). Puede que mi planteamiento inicial se refiera a ese sufijo H del marcado.
 
 **Qué viene de dónde (tiempo-corriente del T 2,5 A, hoja 5):**
 

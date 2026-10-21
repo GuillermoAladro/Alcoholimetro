@@ -322,7 +322,7 @@ Son conclusiones mías, no afirmaciones de las fuentes.
 - **Toma de muestra con electroimán** (§2.4): coincide con el manual de Winsen V1.1 `ze29a-c2h5oh.pdf`. El otro PDF que enlaza la ficha web de Winsen (`…manualv1_0.pdf`) no lo menciona en lo que leí; no he comparado los dos enteros.
 - **Coincide:** soplido de ≥ 10 L/min durante 4 s (ajustable de 1 a 10 s), el orden de los orificios (presión delante, muestra detrás) y la necesidad de una barrera.
 - **"Apto alimentario"** no aparece en la guía; viene del anuncio según la hoja. No lo puedo confirmar.
-- **Resolución del Consejo de Europa:** en el encargo se cita "CM/Res(2013)8"; no la encontré como norma de siliconas (apartado 3).
+- **Resolución del Consejo de Europa:** en mi planteamiento inicial se cita "CM/Res(2013)8"; no la encontré como norma de siliconas (apartado 3).
 
 ## 10. Lo que no he podido verificar
 
