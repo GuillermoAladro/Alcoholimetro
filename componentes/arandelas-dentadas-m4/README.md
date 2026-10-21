@@ -61,7 +61,7 @@ El espárrago M4 tiene 4 mm de diámetro exterior de rosca, así que el agujero 
 | Denominación | Qué es | Fuente |
 |---|---|---|
 | DIN 6797 A | Dientes exteriores. La que mejor retiene, por la mayor circunferencia. **Es la que cubre tu uso.** | [Wikipedia](https://en.wikipedia.org/wiki/Washer_(hardware)), [RS guía](https://docs.rs-online.com/3d85/0900766b816b073d.pdf) |
-| DIN 6797 J | Dientes interiores. "Más estética". Los dientes quedan bajo el ojal | Wikipedia, RS guía |
+| DIN 6797 J | Dientes interiores. Más estética, según Wikipedia. Los dientes quedan bajo el ojal | Wikipedia, RS guía |
 | DIN 6797 V | Forma para tornillos de cabeza avellanada. La letra V la recuerdo de memoria; Wikipedia describe el tipo "countersunk" sin letra. **No aplica a este uso.** No es "de tazón" | Wikipedia (sin verificar la letra) |
 | DIN 6798 A / J | Familia "serrated" en el catálogo de RS (la J figura como "internal serrated" y la A como "external tooth"). Mismas cotas M4 que la 6797 A en RS. **No he verificado en qué se diferencia de la 6797** (número de dientes, forma) | [RS guía](https://docs.rs-online.com/3d85/0900766b816b073d.pdf), [RS 287-4187](https://pt.rs-online.com/web/p/arandelas/2874187) |
 | ASME B18.21.1 | Norma americana (pulgadas) de arandelas dentadas interiores, exteriores, combinadas y avellanadas | Wikipedia |
@@ -82,8 +82,8 @@ El espárrago M4 tiene 4 mm de diámetro exterior de rosca, así que el agujero 
 
 Notas:
 
-- **"A2" confunde.** RS PRO 276-869 y 526-596 aparecen como "acero, grado A2, zinc brillante" ([RS](https://es.rs-online.com/web/p/arandelas/0276869)). Es contradictorio: A2 es el nombre del inoxidable. Un anuncio que diga "A2" no prueba que sea inoxidable.
-- **Zincado:** la guía de selección de RS lo describe como de "resistencia a la corrosión moderada, adecuado para uso interior en ambiente seco" ([RS guía](https://docs.rs-online.com/3d85/0900766b816b073d.pdf), p. 4).
+- **"A2" confunde.** RS PRO 276-869 y 526-596 aparecen como acero, grado A2, con zinc brillante ([RS](https://es.rs-online.com/web/p/arandelas/0276869)). Es contradictorio: A2 es el nombre del inoxidable. Un anuncio que diga "A2" no prueba que sea inoxidable.
+- **Zincado:** la guía de selección de RS lo describe como de resistencia a la corrosión moderada, adecuado para uso interior en ambiente seco ([RS guía](https://docs.rs-online.com/3d85/0900766b816b073d.pdf), p. 4).
 - **Hidrógeno:** Bossard avisa de que las piezas de acero galvanizadas de 360 HV o más y sometidas a tracción pueden romper por fragilización por hidrógeno y de que el horneado no lo elimina del todo ([Bossard, notas de uso](https://www.bossard.com/global-en/knowledge-hub/resources/notes-on-use/)). Una arandela trabaja casi a compresión, así que el riesgo me parece bajo (mío).
 
 ## 3. Documentos oficiales y normas
@@ -325,7 +325,7 @@ La designación DIN 6797 está retirada según Bossard, pero la pieza es un art�
 
 ## 9. Discrepancias con la guía y con las cifras de partida
 
-"Notas de partida" son las cifras y normas que venían apuntadas en el encargo de esta ficha (dureza, par, normas citadas) y que no están en la guía. Las contrasto igual que las de la guía.
+"Notas de partida" son las cifras y normas que venían apuntadas en mi planteamiento inicial de esta ficha (dureza, par, normas citadas) y que no están en la guía. Las contrasto igual que las de la guía.
 
 | # | La guía o las notas de partida dicen | Lo que he encontrado | Fuente |
 |---|---|---|---|

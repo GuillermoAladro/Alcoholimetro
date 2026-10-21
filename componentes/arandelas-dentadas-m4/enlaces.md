@@ -38,7 +38,7 @@ Guías de montaje de fabricantes de equipos:
 - Hammond, boletín BUL86513 (kit de tierra para armarios: sin pintura exterior o con hilos de tierra): <https://www.hammfg.com/files/parts/bulletins/BUL86513.pdf>
 - Gigamon, guía de hardware, conexiones (superficie limpia, antioxidante, recubrimientos no conductores fuera, tornillo de tierra M4): <https://docs.gigamon.com/doclib610/Content/HW-G-TAP-A-2/Connections.html>
 - IBM Docs, "Installing the ac outlet-mounting plate without ac outlets" (arandela dentada bajo el ojal de tierra): <https://www.ibm.com/docs/TI0002C/p8hbf/withoutac.htm>
-- Panduit, kit de arandelas perforadoras de pintura RGW-100-1Y (ficha en Mouser): <https://www.mouser.com/datasheet/2/319/RGW-100-1Y Product Page-225273.pdf>
+- Panduit, kit de arandelas perforadoras de pintura RGW-100-1Y (ficha en Mouser): <https://www.mouser.com/datasheet/2/319/RGW-100-1Y%20Product%20Page-225273.pdf>
 - Schneider Electric, FAQ FA368289 (continuidad de tierra del Masterpact; cita IEC 61439-1 8.4.3.2.2): <https://www.se.com/us/en/faqs/FA368289/>
 - Siemens, kit de terminal de tierra HG61234 / HG656 (no aporta nada sobre arandelas): <https://media.distributordatasolutions.com/siemenssi/2019q4/df184452b21898c0b79b33871e09e9de962d99fb.pdf>
 

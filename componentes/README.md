@@ -24,5 +24,7 @@ Una carpeta por componente del alcoholímetro, con su ficha técnica, documentos
 | 18 | Borne USB-A hembra con tornillos (x2) | Da 5 V al SumUp Solo y a la pantalla desde la WAGO | [borne-usb-a-hembra-tornillo](borne-usb-a-hembra-tornillo/README.md) |
 | 19 | Latiguillo micro-USB macho 22 AWG, 30 cm (x6) | Alimenta la Pi 3B+ desde la WAGO | [latiguillo-micro-usb-22awg](latiguillo-micro-usb-22awg/README.md) |
 | 20 | Bornas WAGO 221, surtido de 75 | Reparte el raíl de 5,20 V (+5 V y GND) | [wago-221-surtido](wago-221-surtido/README.md) |
+| 23 | Terminales de ojal M4 aislados 0,5-1,5 mm² (25 uds.) | Terminan los cables de tierra en el espárrago M4 | [terminales-ojal-m4](terminales-ojal-m4/README.md) |
+| 24 | Arandelas dentadas M4 (200 uds.) | Bloqueo y contacto de la tierra en el espárrago | [arandelas-dentadas-m4](arandelas-dentadas-m4/README.md) |
 
 Cada ficha indica de dónde sale cada dato y marca lo que no está verificado. Los enlaces a PDF y páginas están reunidos en el `enlaces.md` de cada carpeta.

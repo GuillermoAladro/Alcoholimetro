@@ -22,8 +22,8 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
   - Información del fabricante (**no abierto**): <https://docs.rs-online.com/d49a/A700000014368092.pdf>
 - RS PRO 613-9249 (vinilo, rojo, M4), página: <https://de.rs-online.com/web/p/products/6139249>
   - Ficha RS PRO: <https://docs.rs-online.com/d324/A700000007945278.pdf>
-  - Plano de cotas (**no abierto**): <https://docs.rs-online.com/021b/0900766b8157a7d2.pdf>
-  - Ficha del kit (**no abierto**): <https://docs.rs-online.com/2883/A700000006574165.pdf>
+  - Plano de cotas: <https://docs.rs-online.com/021b/0900766b8157a7d2.pdf> (**el PDF no tiene texto legible**)
+  - Ficha del kit 613-9952 (rojo, azul y amarillo; código de colores): <https://docs.rs-online.com/2883/A700000006574165.pdf>
   - Ficha en alemán (**no abierto**): <https://docs.rs-online.com/f18b/A700000007876892.pdf>
   - Información del fabricante (**no abierto**): <https://docs.rs-online.com/982f/A700000014368124.pdf>
 - RS PRO 534-216A (PVC, rojo, M4; datos contradictorios en la página): <https://de.rs-online.com/web/p/ringkabelschuh/0534216A>
@@ -84,6 +84,7 @@ Las normas están de pago. Solo extractos, informes de ensayo y resúmenes.
 | etics.org, hojas de decisión de EN 60335-1 (2022) | Página de acceso denegado (pide usuario y contraseña) |
 | zajadacz.de (PDF de un resultado de búsqueda) | Página de inicio de sesión de un portal de clientes |
 | docs.rs-online.com/f0e4/0900766b815a39b3.pdf (TE PIDG 31886) | El PDF no tiene texto legible |
+| docs.rs-online.com/021b/0900766b8157a7d2.pdf (plano de cotas del RS PRO 613-9249) | El PDF no tiene texto legible |
 | buerklin.com, ficha EN de Klauke (6192en.pdf) | "Robots disallowed" |
 | romagis.rcc.int, informe IEC/EN 60335-1 (resultado de búsqueda) | La página no contiene el informe; solo listados |
 | cdn.intertek.com, aviso 60335-2-3 | Es un aviso de actualización de planchas, sin las cláusulas pedidas |
