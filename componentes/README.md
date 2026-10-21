@@ -1,6 +1,6 @@
 # Componentes
 
-Una carpeta por componente del alcoholímetro, con su ficha técnica, documentos oficiales, problemas conocidos y notas de uso en el proyecto. El orden es el de la hoja de componentes.
+Una carpeta por componente del alcoholímetro, con su ficha técnica, documentos oficiales, problemas conocidos y notas de uso en el proyecto. El orden es el de la hoja de componentes. Los enlaces de compra están en la [lista de compra](../LISTA-DE-COMPRA.md).
 
 | # | Componente | Función | Ficha |
 |---|---|---|---|

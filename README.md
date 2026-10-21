@@ -18,6 +18,7 @@ Proyecto personal de ingeniería para diseñar y construir un alcoholímetro com
 
 ## Estructura del repositorio
 
+- `LISTA-DE-COMPRA.md` – los 31 componentes con su enlace de Amazon.es, precio y ficha
 - `MONTAJE-GENERAL.md` – esquema de conexión de todos los componentes: puerto, borne o pin exacto de cada cable (figuras en `montaje-general/`)
 - `componentes/` – ficha de cada uno de los 31 componentes de la hoja de compra: datasheets, problemas conocidos y notas de uso ([índice](componentes/README.md))
 - `carcasa/` – diseño y planos de la carcasa
