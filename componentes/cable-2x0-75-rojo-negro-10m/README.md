@@ -53,9 +53,9 @@ Cuatro familias de cable explican casi todo lo que se vende como "2 × 0,75 mm²
 
 ### 2.2 Lo que se puede asegurar sin ficha del vendedor
 
-- **Casi nada del tipo.** Un cable rojo/negro no sigue el código de colores de los cables armonizados (marrón y azul para dos hilos; Letronic cita VDE 0293 / HD 308). Por tanto, un 2 × 0,75 rojo/negro **no es un H03VVH2-F** y lo normal es que sea un cable sin norma armonizada. Es conclusión mía.
+- **Casi nada del tipo.** Un cable rojo/negro no sigue el código de colores de los cables armonizados (marrón y azul para dos hilos; Letronic cita VDE 0293 / HD 308). Por tanto, lo normal es que un 2 × 0,75 rojo/negro **no sea un H03VVH2-F** y no tenga norma armonizada. Es conclusión mía.
 - **"2 × 0,75 mm²" es un nombre comercial.** La sección real se comprueba contando hilos y midiendo su diámetro (n × π × d² / 4): 24 hilos de 0,20 mm dan 0,754 mm²; 16 hilos de 0,20 mm dan 0,503 mm²; 58 hilos de 0,11 mm dan 0,551 mm² (cálculos míos). Eso no dice nada del metal.
-- **El precio no es una señal.** Tu hoja da 1,41 €/m. toom pide 7,99 € por 10 m de un HO3VH-H de 50 V; Electrokit, 99 SEK con IVA por 10 m de uno de 50 V. Los precios cambian y no los he cruzado con el contenido.
+- **El precio no es una señal.** Tu hoja da 1,41 €/m. toom pide 7,99 € por 10 m de un HO3VH-H de 50 V; Electrokit, 99 SEK con IVA por 10 m de uno de 50 V. No he convertido monedas ni comparado calidades.
 - **Sin marcas impresas, el cable no se identifica.** En un cable armonizado debe ir impreso el origen, la marca armonizada y la designación (ver [ficha del cable Schuko](../cable-schuko-c13-2m/README.md#marcado-qué-debe-ir-impreso)). Un cable "sin nada" puede ser cualquier cosa de la tabla.
 
 ### 2.3 Lo que debe decir el anuncio (o el vendedor, por escrito)
@@ -131,7 +131,7 @@ Un cable genérico no tiene datasheet. La "ficha" es la norma del conductor y la
 | Aviso de ACI sobre cable flexible de CCA | 21-9-2018 | Web | [Ver](https://www.aci.org.uk/news/aci-warns-dangerous-turkish-flexible-cord) |
 | Aviso de ACI sobre cable CAT 5e de CCA | ACI/131/12, dic. 2012 | Web/PDF | [Ver](https://www.aci.org.uk/download_file/view/6/191) |
 | Fluke Networks sobre CCA | Blog | Web | [Ver](https://de.flukenetworks.com/blog/cabling-chronicles/cca-not-worth-savings-or-risk) |
-| Mello, diferencias entre CCA y aluminio | Whitepaper | PDF | [Descargar](https://www.mikeholt.com/files/PDF/64ae21784d8c117de3647122_Mello Whitepaper-Performance Differences Between CCA and Al.pdf) |
+| Mello, diferencias entre CCA y aluminio | Whitepaper | PDF | [Descargar](https://www.mikeholt.com/files/PDF/64ae21784d8c117de3647122_Mello%20Whitepaper-Performance%20Differences%20Between%20CCA%20and%20Al.pdf) |
 | Prueba de cables de altavoz de cobre y CCA a 5,2 V y 3 A | techtest.org | Web | [Ver](https://techtest.org/7-lautsprecherkabel-querschnitte-und-typen-im-vergleich/) |
 | Fijación del cableado interno y SELV (whitepaper de un laboratorio) | "Weekly Whitepaper #69" | PDF | [Descargar](https://uploads-ssl.webflow.com/5964a1de0dff681f24a9308b/5b69410c762831d5962091e1_Weekly%20Whitepaper%20%2369%20-%20Understanding%20Fixing%20of%20Wiring.pdf) |
 | WAGO 221-415, datos | Copia en rlocman | Web | [Ver](https://www.rlocman.es/datasheet/data.html?di=537187) |
@@ -163,15 +163,15 @@ Un cable genérico no tiene datasheet. La "ficha" es la norma del conductor y la
 
 ### 5.2 Pruebas y casos publicados
 
-Lo que he encontrado, por orden de fiabilidad. **No hay ninguno de un cable de 2 × 0,75 mm² vendido en Amazon.** Solo busqué una vez en alemán; **no encontré pruebas de Which?, Test-Achats, OCU ni Stiftung Warentest** sobre este tipo de cable (no es que no existan: no las vi).
+Lo que he encontrado. **No hay ninguno de un cable de 2 × 0,75 mm² vendido en Amazon.** Solo busqué una vez en alemán; **no encontré pruebas de Which?, Test-Achats, OCU ni Stiftung Warentest** sobre este tipo de cable (no es que no existan: no las vi).
 
 | Fuente | Qué encontró | Tipo |
 |---|---|---|
 | [ACI, 2018](https://www.aci.org.uk/news/aci-warns-dangerous-turkish-flexible-cord) | Cable flexible de PVC de 1,5 y 2,5 mm² con CCA: resistencia mayor que el máximo de las normas; 2,5 mm² "apenas" equivalía a 1,0 mm² en capacidad. Los hilos se rompen al flexionar | Asociación de cables homologados, ensayo de muestras |
 | [ACI, 2012](https://www.aci.org.uk/download_file/view/6/191) | Cable CAT 5e de CCA: las versiones baratas tienen "menos del 20 % de cobre"; fallos de resistencia a más de 70-90 m. Es cable de red, no de potencia | Misma entidad |
 | [Fluke Networks](https://de.flukenetworks.com/blog/cabling-chronicles/cca-not-worth-savings-or-risk) | La resistencia del aluminio es "aproximadamente un 55 % mayor" que la del cobre del mismo diámetro; el rascado muestra el aluminio plateado; **el peso se puede falsear con lastre** | Fabricante de instrumentos, cable de red |
-| [Mello (Mike Holt)](https://www.mikeholt.com/files/PDF/64ae21784d8c117de3647122_Mello%20Whitepaper-Performance%20Differences%20Between%20CCA%20and%20Al.pdf) | CCA: 10 % de la sección es cobre (27 % de la masa); la capa de cobre es la que toca los conectores | Whitepaper de un fabricante de conectores, cable de potencia de edificios |
-| [techtest.org](https://techtest.org/7-lautsprecherkabel-querschnitte-y-typen-im-vergleich/) | Medida a 5,2 V y 3 A en 4 m (lazo de 8 m): el cable de **0,75 de CCA perdió "más de 1 V"**. No da ohmios | Web de aficionado, una sola medida |
+| [Mello (Mike Holt)](https://www.mikeholt.com/files/PDF/64ae21784d8c117de3647122_Mello%20Whitepaper-Performance%20Differences%20Between%20CCA%20and%20Al.pdf) | CCA: 10 % de la sección es cobre (27 % de la masa); la capa de cobre es la que toca los conectores | Whitepaper alojado por Mike Holt; autor no identificado en lo que recibí. Compara cable de potencia de edificio (AWG 10 y 12) |
+| [techtest.org](https://techtest.org/7-lautsprecherkabel-querschnitte-und-typen-im-vergleich/) | Medida a 5,2 V y 3 A en 4 m (lazo de 8 m): el cable de **0,75 de CCA perdió "más de 1 V"**. No da ohmios | Web de aficionado, una sola medida |
 | [Electrokit](https://www.electrokit.com/en/kabel-2x0.75mmcu-rod/svart-10m), [su ficha](https://www.electrokit.com/upload/quick/ce/5b/ff38_41023634-41023637.pdf) | Cables "Cu 2 × 0,75" cuyos hilos suman 0,55 y 0,50 mm² (cálculo mío). Puede ser una errata de la ficha o un cable más fino que el anunciado: no lo sé | Vendedor |
 | [Kabelscheune](https://www.kabelscheune.de/Lautsprecherkabel/Lautsprecherkabel-2x0-75-mm-CCA-rot-schwarz.html) | Se vende como "2 × 0,75 mm²" un cable de CCA de 2 × 24 × 0,20 mm | Vendedor, con el metal declarado |
 | [Wikipedia: CCA](https://en.wikipedia.org/wiki/Copper-clad_aluminium_wire) | Para CC el CCA tiene más resistencia. Afirma que no hay historial de recalentamiento en conexiones de CCA y que no conoce falsificaciones de cable de edificio de baja tensión en CCA | Enciclopedia; la página no cita cifras |
@@ -184,13 +184,13 @@ Cálculo mío: el cobre y el aluminio conducen en paralelo, así que la conducti
 
 | Dato | Valor |
 |---|---|
-| Conductividad del CCA con 10 % de cobre | 37,8 a 39,7 MS/m (65-68 % del cobre) |
+| Conductividad del CCA con 10 % de cobre | 37,8 a 39,7 MS/m (65 a 69 % del cobre) |
 | Resistencia relativa al cobre | **×1,46 a ×1,54** (+46 % a +54 %) |
 | Resistencia de un conductor de 0,75 mm² | 33,6 a 35,3 mΩ/m, frente a 23,0 mΩ/m del cobre ideal |
 | Densidad | 3,33 g/cm³; el cobre es el 26,9 % de la masa (coincide con el 27 % de Mello) |
-| Masa de los dos conductores de 0,75 mm² | 5,0 g/m, frente a 13,4 g/m del cobre: unos 90 g menos en 10 m (con el factor de cableado de Letronic, 14,4 / 13,4) |
+| Masa de los dos conductores de 0,75 mm² | 5,0 g/m, frente a 13,4 g/m del cobre: 85 a 90 g menos en 10 m (90 g con el factor de cableado que sale de la ficha de Letronic, 14,4 / 13,4) |
 
-- **La medida de techtest.org** (más de 1 V a 3 A en un lazo de 8 m) implica **más de 41 mΩ/m por conductor**, es decir, **más de ×1,8** frente al cobre ideal (cálculo mío). Es más que mi estimación del 10 %: cuadraría con un CCA de menos cobre o con una sección inferior a la anunciada. Una medida, de una web sin metodología publicada.
+- **La medida de techtest.org** (más de 1 V a 3 A en un lazo de 8 m) implica **más de 41 mΩ/m por conductor**, es decir, **más de ×1,8** frente al cobre ideal (cálculo mío; la medida incluye contactos que no sé cuánto suman). Es más que mi estimación del 10 %: cuadraría con un CCA de menos cobre o con una sección inferior a la anunciada. Una medida, de una web sin metodología publicada.
 - El porcentaje de cobre de un cable concreto es **desconocido**; el ACI sugiere que algunos cables lo reducen mucho (2,5 mm² que valen como 1,0 mm²).
 
 ### 5.4 Qué resistencia debe dar el rollo de 10 m
@@ -275,7 +275,7 @@ Tensión en la entrada de la Pi, restando la caída del troncal a 5 A y la del l
 |---|---|---|
 | 0,5 m, cobre en el máximo | 5,04 V | 4,92 V |
 | 1,0 m, cobre en el máximo | 4,91 V | 4,79 V |
-| 0,5 m, CCA (estimación) | 5,00 V | 4,88 V |
+| 0,5 m, CCA (estimación) | 4,99 V | 4,87 V |
 | 1,0 m, CCA (estimación) | 4,82 V | 4,70 V |
 | 0,5 m, según la medida de techtest.org | 4,96 V | 4,84 V |
 | 1,0 m, según la medida de techtest.org | 4,75 V | **4,63 V** |
@@ -301,7 +301,7 @@ La guía mete el cable de 5 V en la misma caja que la entrada de red. La LRS-50-
 
 ### 7.2 Lo que no pude leer
 
-- **EN 60335-1** (cláusulas de cableado interno, conexiones y aislamiento) e IEC 60335-2-82: de pago. La vista previa de IEC 60335-1 en VDE-Verlag está bloqueada por robots.txt para mi herramienta. **No puedo decir qué tensión de ensayo exige (1500 V, 2000 V) ni si basta el aislamiento básico del cable.** Las cifras de 1500/2000 V que mencionabas **no las he visto**. La única tensión de ensayo que vi en un cable es la de fábrica del H05VV-F (2.000 V, [Letronic](https://www.letronic.de/en/produkte/datenblatt/353/h05vv-f-acc-to-vde-0285), citado en la ficha del cable Schuko), que no es este cable ni esta norma.
+- **EN 60335-1** (cláusulas de cableado interno, conexiones y aislamiento) e IEC 60335-2-82: de pago. La vista previa de IEC 60335-1 en VDE-Verlag está bloqueada por robots.txt para mi herramienta. **No puedo decir qué tensión de ensayo exige (1500 V, 2000 V) ni si basta el aislamiento básico del cable.** Las cifras de 1500/2000 V de mi planteamiento inicial **no las he visto**. La única tensión de ensayo que vi en un cable es la de fábrica del H05VV-F (2.000 V, [Letronic](https://www.letronic.de/en/produkte/datenblatt/353/h05vv-f-acc-to-vde-0285), citado en la ficha del cable Schuko), que no es este cable ni esta norma.
 - **EN 62368-1, EN 60204-1 (cap. 14), IEC 60364-4-41:** no los he leído.
 - **Los espesores de aislamiento y las tensiones de ensayo de EN 50525-2-11** (de pago).
 
@@ -309,15 +309,16 @@ La guía mete el cable de 5 V en la misma caja que la entrada de red. La LRS-50-
 
 1. **Tensión asignada.** Si dice 300/300 V o 300/500 V, el aislante de cada hilo está pensado para tensión de red monofásica (230 V), en el sentido de ITC-BT-36. Si dice 50 V, 12 V o nada, **no tienes base para meterlo junto a L, N o FG sin más medidas.**
 2. **Vaina.** Un cable plano con vaina (H03VVH2-F) tiene dos capas (aislante y vaina) por hilo. Un cable paralelo sin vaina (HO3VH-H, zip cord, cable de altavoz) tiene una sola capa, que además se raspa con facilidad en un borde de chapa.
-3. **Espesor del aislante.** Se puede estimar del diámetro exterior: en un par de 2,5 mm de espesor con un conductor de ~1,1 mm sale una pared de ~0,7 mm; en uno de 2,2 mm, ~0,55 mm (cálculo mío con el diámetro del conductor del Nexans NO). No pude leer el espesor mínimo normalizado.
+3. **Espesor del aislante.** Solo se puede estimar a ojo del diámetro exterior: con un hilo aislado de ~2,5 mm (suposición mía a partir del ancho de 5,6 mm del cable plano) y un conductor de 1,1 mm (Nexans NO), la pared sale de ~0,7 mm (cálculo mío). No pude leer el espesor mínimo normalizado.
 4. **Norma o marca de laboratorio** (EN 50525-2-11, <HAR>, UL). Sin marca, el cable no se puede identificar.
 
 ### 7.4 Conclusiones mías
 
-1. **Trata el cableado de 5 V como un SELV que puede tocar la red si algo falla**, aunque el cable sea bueno. Un hilo suelto de un cable rojo junto al borne L es un 230 V en el raíl de 5 V: la Pi, el Solo y la pantalla recibirían la tensión de red. Por eso: puntera en +V y −V; ningún hilo suelto; sujeción secundaria (brida) a 2-3 cm de la terminación; holgura mínima; los cables de 5 V **no comparten brida ni recorrido con L, N o FG**, y si se cruzan, que sea en ángulo recto.
+1. **Trata el cableado de 5 V como un SELV que puede tocar la red si algo falla**, aunque el cable sea bueno. Un hilo suelto de un cable rojo junto al borne L pone 230 V en el raíl de 5 V: la Pi, el Solo y la pantalla podrían recibir la tensión de red. Por eso: puntera en +V y −V; ningún hilo suelto; sujeción secundaria (brida) a 2-3 cm de la terminación; holgura mínima; los cables de 5 V **no comparten brida ni recorrido con L, N o FG**, y si se cruzan, que sea en ángulo recto.
 2. **Cable.** Lo más sencillo: cable plano con vaina de 300/300 V documentado, o el cable de 5 V dentro de una funda de PVC o termorretráctil donde pase a menos de unos centímetros de los 230 V. Si tu cable de Amazon no declara 300 V y vaina, la funda es la solución más barata. Las distancias concretas **no las he podido fundamentar** en una norma que haya podido leer.
 3. **Mide el aislamiento** con la máquina montada, sin red, con las cargas desconectadas y L y N unidos: entre el +V/−V unidos y el conjunto L/N/FG. La referencia es la tabla 3 de la ITC-BT-19 (250 V, 0,25 MΩ para MBTS). La hoja de la LRS da 100 MΩ a 500 V entre entrada, salida y FG ([ficha de la LRS](../meanwell-lrs-50-5/README.md)). Es una referencia de instalación, no un ensayo de producto.
-4. **Pregunta al electricista** que revise los 230 V (guía, cabecera) por el cableado de 5 V de la misma caja, y a un laboratorio o consultor de EN 60335-1 antes del marcado CE.
+4. **Tierra del raíl.** ITC-BT-36 §3 (misma fuente) pide que las partes activas MBTS no se conecten a tierra ni a partes activas de otros circuitos. La guía §5.2 no une el −V a ningún otro punto, y eso es coherente. La [ficha de la LRS](../meanwell-lrs-50-5/README.md) deja abierta la pregunta de unir −V a FG por inmunidad a descargas: si algún día se hace, el circuito pasaría a ser MBTP, que admite tierra funcional (ITC-BT-36 §1 y §4). Es una lectura mía del texto.
+5. **Pregunta al electricista** que revise los 230 V (guía, cabecera) por el cableado de 5 V de la misma caja, y a un laboratorio o consultor de EN 60335-1 antes del marcado CE.
 
 ## 8. Llama, humos y normativa de producto
 
@@ -337,13 +338,13 @@ La guía mete el cable de 5 V en la misma caja que la entrada de red. La LRS-50-
 
 ### 8.3 CPR (reglamento de productos de construcción)
 
-- El CPR y EN 50575 se aplican a los cables para instalación **permanente en edificios** ("para el suministro de electricidad y comunicaciones en edificios", [Nexans](https://www.nexans.co.uk/en/business/buildings/building/Fire-safety/Construction-Products-Regulation/FAQ-on-CPR.html)). Marcado CE obligatorio desde el 1-7-2017 (fin del periodo de coexistencia, misma fuente). Prysmian los describe como cables de potencia, control y comunicaciones "en cualquier estructura" ([Prysmian](https://tr.prysmian.com/sites/tr.prysmian.com/files/2025-01/Construction_Products_Regulations_and_Cable_Industry.pdf)).
+- El CPR y EN 50575 se aplican a los cables para instalación **permanente en edificios** (cables para el suministro de electricidad y comunicaciones en edificios, según [Nexans](https://www.nexans.co.uk/en/business/buildings/building/Fire-safety/Construction-Products-Regulation/FAQ-on-CPR.html)). Marcado CE obligatorio desde el 1-7-2017 (fin del periodo de coexistencia, misma fuente). Prysmian los describe como cables de potencia, control y comunicaciones en cualquier estructura ([Prysmian](https://tr.prysmian.com/sites/tr.prysmian.com/files/2025-01/Construction_Products_Regulations_and_Cable_Industry.pdf)).
 - **Ninguna de las dos fuentes nombra los cables flexibles ni los cables internos de aparatos.** Mi lectura: un cable dentro de la máquina **no es un producto de construcción** y no necesita clase CPR. Es lectura mía; **no he leído el reglamento ni EN 50575**.
 - Aunque no sea obligatorio, hay vendedores que lo declaran (Electrokit: Eca). No es una garantía de nada para este uso.
 
 ### 8.4 Marcado CE y directiva de baja tensión
 
-- El alcance de la directiva 2014/35/UE es de **50 a 1.000 V en c.a. y de 75 a 1.500 V en c.c.** Es conocimiento mío (confirmado por la propia herramienta de lectura desde su memoria, no desde la página): EUR-Lex solo devolvió la cabecera. Un cable de 5 V vendido suelto queda por debajo y, por eso, no suele llevar declaración de baja tensión ni marca <HAR>.
+- El alcance de la directiva 2014/35/UE es de **50 a 1.000 V en c.a. y de 75 a 1.500 V en c.c.** Es conocimiento mío: EUR-Lex solo devolvió la cabecera, y la herramienta de lectura me dio las mismas cifras desde su memoria, no desde la página. Un cable de 5 V vendido suelto queda por debajo y, por eso, no suele llevar declaración de baja tensión ni marca <HAR>.
 - La máquina sí está dentro de la directiva por sus 230 V; el cable de 5 V es una pieza de ella. La norma de producto probable es la serie EN 60335 (guía §9). No he leído nada de ella.
 - **Reglamento general de seguridad de los productos (GPSR):** no lo he investigado. El anuncio de Amazon debería llevar los datos del fabricante, pero no lo he comprobado.
 
@@ -383,18 +384,18 @@ Un fallo de terminación es un fallo único con consecuencias: un hilo que se su
 
 - La LRS-50-5 limita entre 10,6 y 14,4 A (ver [ficha de la LRS](../meanwell-lrs-50-5/README.md)). El cable de 0,75 mm² está asignado a 6 A.
 - Un cortocircuito en el cable de la pantalla o del Solo, o un hilo que toque la chapa, sigue limitado por la fuente. En modo *hiccup* la corriente media es menor, pero **no sé cuánto** ni cuánto tarda el PVC en llegar a 70 °C.
-- **Con 0,75 mm² no hay un fusible estándar que proteja el cable y deje pasar el pico de 5 A:** el margen entre 5 A y 6 A es de 1 A (cálculo mío). La [ficha de la pantalla](../pantalla-geeekpi-7-hdmi/README.md) ya sugiere un fusible o PTC en la rama de la pantalla. Es un asunto del diseño del raíl.
+- **Con 0,75 mm² es difícil proteger el cable con un fusible:** el margen entre el pico (5 A) y el valor del cable (6 A) es de 1 A, demasiado estrecho para que el fusible no salte con el pico (conclusión mía). La [ficha de la pantalla](../pantalla-geeekpi-7-hdmi/README.md) ya sugiere un fusible o PTC en la rama de la pantalla. Es un asunto del diseño del raíl.
 
 ### 9.6 Rollo doblado, pliegues y PVC frío
 
-- La brief decía que el rollo sale de fábrica doblado en cuatro. **No tengo datos del embalaje de este anuncio.** Un pliegue brusco en un cable plano puede agrietar el PVC o abrir el puente entre los dos hilos (conclusión mía).
+- Tu planteamiento decía que el rollo sale de fábrica doblado en cuatro. **No tengo datos del embalaje de este anuncio.** Un pliegue brusco en un cable plano puede agrietar el PVC o abrir el puente entre los dos hilos (conclusión mía).
 - Los fabricantes dan un mínimo de **−5 °C en movimiento** (Letronic) o **−15 °C de uso** (electrical4less). Es otoño: **no desenrolles ni flexiones el cable recién llegado de un transporte frío**; déjalo varias horas a temperatura ambiente (conclusión mía).
 
 ### 9.7 Aislante pegado, cobre oxidado, colores y endurecimiento
 
 - **Sin fuente.** Los cables baratos a veces dejan el aislante pegado a los hilos finos y se pelan mal; los hilos de cobre sin estañar se oscurecen con la humedad. Es conocimiento general mío, no una cita.
 - El PVC flexible lleva plastificantes que **migran** con el tiempo ([Wikipedia: PVC](https://en.wikipedia.org/wiki/Polyvinyl_chloride)), y esa pérdida puede volverlo más rígido (conclusión mía; la página no habla de envejecimiento). La temperatura máxima del PVC es de 70 °C según los fabricantes: mantén el cable alejado de la carcasa de la LRS ([apartado 10](#10-montaje-terminales-polaridad-fijación-y-curvatura)).
-- El cobre estañado resiste mejor la humedad; tiene un máximo de resistencia un 2,7 % mayor (26,7 frente a 26,0 Ω/km, Lapp T11).
+- El cobre estañado resiste mejor la humedad (conocimiento mío, sin fuente); tiene un máximo de resistencia un 2,7 % mayor (26,7 frente a 26,0 Ω/km, Lapp T11).
 
 ### 9.8 Negro como GND
 
@@ -419,14 +420,14 @@ La ITC-BT-19 §2.2.4 asigna **marrón, negro o gris a las fases**, azul claro al
 ### 10.2 Identificación de polos
 
 - **Rojo = +5 V, negro = GND**, en todo el montaje. Es la convención habitual de continua; el cable USB tiene rojo y negro para VBUS y GND (conocimiento mío, sin fuente).
-- **Antes de conectar ninguna carga**, con la LRS ya encendida y sin cargas, mide con el polímetro: rojo (+) hacia negro (−) en cada borne USB-A, cada polo de la WAGO y la clavija del Pi. Una polaridad invertida en un borne de tornillo se paga con la Pi, el Solo o la pantalla.
-- Comprueba también **la continuidad de cada color de extremo a extremo** antes de cortar el rollo: en un cable de cable paralelo cada conductor es independiente, y un color mal puesto en fábrica no es imposible (conclusión mía).
+- **Antes de conectar ninguna carga**, con la LRS encendida y sin cargas, mide con el polímetro rojo (+) y negro (−) en cada borne USB-A, en cada polo de la WAGO y en el extremo del latiguillo de la Pi. La tensión es de 5 V, pero la caja contiene 230 V: sigue las precauciones de la guía. Una polaridad invertida en un borne de tornillo se paga con la Pi, el Solo o la pantalla.
+- Comprueba también **la continuidad de cada color de extremo a extremo**: en un par paralelo cada conductor es independiente y un color mal puesto en fábrica no es imposible (conclusión mía).
 
 ### 10.3 Fijación
 
 - Sujeta con bridas **sin apretar** (que el cable gire dentro) o con abrazaderas de tornillo o adhesivas; la brida apretada sobre un par plano sin vaina puede aplastar el aislante (conclusión mía).
 - Una brida de sujeción secundaria **a 2-3 cm de cada terminación** (whitepaper del apartado 7.1).
-- **Lejos de lo caliente.** El PVC llega a 70 °C como mucho (fabricantes). El manual de Mean Well pide 10-15 cm de separación si el equipo vecino es una fuente de calor y no hay curva de temperatura de la carcasa de la LRS-50-5 que yo pueda leer ([ficha de la LRS](../meanwell-lrs-50-5/README.md)): no apoyes el cable sobre la chapa perforada y **mide la temperatura** en la prueba final.
+- **Lejos de lo caliente.** El PVC llega a 70 °C como mucho (fabricantes). El manual de Mean Well pide 10-15 cm de separación si el equipo vecino es una fuente de calor ([ficha de la LRS](../meanwell-lrs-50-5/README.md)). No encontré una temperatura de carcasa de la LRS-50-5 que pueda citar: no apoyes el cable sobre la chapa perforada de la fuente y **mide la temperatura** en la prueba final.
 - **Separado de los 230 V**: recorrido propio, sin bridas compartidas con L, N o FG ([apartado 7.4](#74-conclusiones-mías)).
 - Pasacables de goma (#31) en todos los agujeros de chapa por donde pase el cable (guía).
 
@@ -439,7 +440,7 @@ Cálculo mío con las reglas de los fabricantes (Letronic: 3 × Ø fijo y 5 × �
 | Doblando la cara plana (espesor 4,0 mm) | 12 mm | 20 mm |
 | Doblando de canto (5,6 mm) | 17 mm | 28 mm |
 
-- Los fabricantes no aclaran a qué lado del cable plano se refiere Ø. Para un cable de otra sección (p. ej. 2,4 × 5,2 mm), las cifras serán proporcionales. Es una interpretación mía.
+- Los fabricantes no aclaran a qué lado del cable plano se refiere Ø. Para un cable más fino (p. ej. el de Kabelscheune, 2,4 × 5,2 mm), las cifras serían proporcionalmente menores. Es una interpretación mía.
 - Evita curvar de canto un par paralelo: tiende a abrir el puente.
 - Separa el puente solo lo necesario para llegar a cada borne.
 
@@ -458,18 +459,18 @@ Todo esto es **conclusión mía**, salvo lo que cito. Sin red de 230 V.
 4. **Dimensiones exteriores.** Compáralas con la ficha o el anuncio.
 5. **Corta una muestra de 10 cm y pélala.** Cuenta los hilos y mide uno con un micrómetro o un calibre. Calcula n × π × d² / 4 por conductor (24 × 0,20 mm = 0,754 mm²). **Si da menos de 0,7 mm², no es un 0,75 mm².**
 6. **Color de los hilos.** Raspa un hilo con una cuchilla: el cobre es rojizo por dentro; el aluminio, plateado. Dobla varios hilos de ida y vuelta 90°: el CCA se rompe antes que el cobre, y la fractura deja ver el núcleo plateado. **Compara con un hilo de cobre que sepas bueno**; el color de un extremo pelado puede engañar (un lector de techtest.org dice que los extremos de CCA parecen de cobre).
-7. **Peso.** Pesa los 10 m en una báscula de cocina. La diferencia esperada entre cobre y CCA es de ~90 g (cálculo mío) sobre un cable que pesa unos 250-400 g (35-40 kg/km, para el cable plano con vaina; el sin vaina pesa menos). **Prueba débil**: la masa del PVC varía de un fabricante a otro, y el peso se puede falsear con lastre (Fluke Networks, para cable de red).
+7. **Peso.** Pesa los 10 m en una báscula de cocina. La diferencia esperada entre cobre y CCA es de ~90 g (cálculo mío) sobre un cable que pesa unos 320-400 g (32-40 kg/km, para el cable plano con vaina; el sin vaina pesa menos). **Prueba débil**: la masa del PVC varía de un fabricante a otro, y el peso se puede falsear con lastre (Fluke Networks, para cable de red).
 8. **El imán no sirve** para distinguir CCA: ni el cobre ni el aluminio son magnéticos. Solo detectaría hilos de cobre sobre acero (conocimiento mío, sin fuente). **Tampoco la llama** ([8.1](#81-llama-y-humos)).
 
 **C. Medida eléctrica (la prueba clave)**
 
 9. **Método (cuatro hilos).** Une los dos conductores en un extremo (retuércelos y atorníllalos). En el otro extremo, conecta una fuente de laboratorio en limitación de corriente a **2 A** y mide con un polímetro en voltios la tensión **directamente entre los dos conductores del cable**, con pinzas aparte de las de la fuente. Divide por la corriente medida. Mide la temperatura ambiente.
-10. **Resultado esperado (20 °C):** ver la [tabla del apartado 5.4](#54-qué-resistencia-debe-dar-el-rollo-de-10-m). Cobre bueno: 0,92-1,04 V a 2 A. Más de 1,2 V a 2 A: sospecha. Más de 1,5 V: no es un 0,75 mm² de cobre. Corrige por temperatura (+0,4 % por kelvin sobre 20 °C, factor mío) y por la longitud real.
-11. **Por qué 10 m:** con 20 m de conductor, el valor se mide con un polímetro normal y las pinzas aportan poco. En el cordón Schuko de 2 m (otra ficha) la misma prueba da solo décimas de mΩ y exige más cuidado.
+10. **Resultado esperado (20 °C):** ver la [tabla del apartado 5.4](#54-qué-resistencia-debe-dar-el-rollo-de-10-m). Cobre bueno: 0,92-1,04 V a 2 A; hasta 1,1 V es compatible. Entre 1,1 y 1,2 V es dudoso: repite con la longitud y la temperatura reales. De 1,2 a 1,5 V es CCA o cobre fino. Por encima de 1,5 V, peor aún. Corrige por temperatura (+0,4 % por kelvin sobre 20 °C, factor mío) y por la longitud real.
+11. **Por qué 10 m:** con 20 m de conductor, la tensión a 2 A es de ~1 V, unas cinco veces la de un cordón de 2 m (ver la [ficha del cable Schuko](../cable-schuko-c13-2m/README.md)), y se mide con un polímetro normal.
 
 **D. Aislamiento**
 
-12. **Entre los dos conductores y a un hilo de agua**: con el rollo suelto, mide entre conductores con un medidor de aislamiento. **No pases de la tensión que soporte el cable**: si el anuncio dice 50 V, no apliques 250 V. Para un cable de 300/300 V, 250 V c.c. es el ensayo de la tabla 3 de la ITC-BT-19 para circuitos MBTS (0,25 MΩ como mínimo; para el cable suelto debería salir muy por encima). Es una referencia de instalación, no un ensayo de producto.
+12. **Entre los dos conductores**, con el rollo suelto y seco, mide con un medidor de aislamiento. **No pases de la tensión que soporte el cable**: si el anuncio dice 50 V, no apliques 250 V. Para un cable de 300/300 V, 250 V c.c. es el ensayo de la tabla 3 de la ITC-BT-19 para circuitos MBTS (0,25 MΩ como mínimo; para el cable suelto debería salir muy por encima). Es una referencia de instalación, no un ensayo de producto.
 
 **E. Ya montado**
 
@@ -486,7 +487,7 @@ Solo hay motivo si el cable de Amazon no se puede documentar. Datos de las ficha
 | **Electrokit 2 × 0,75 Cu rojo/negro** | Cobre OFC, 50 V, 70 °C, Eca, 99 SEK por 10 m ([Electrokit](https://www.electrokit.com/en/kabel-2x0.75mmcu-rod/svart-10m)) | Construcción que suma 0,55 mm² (cálculo mío); 50 V; agotado hasta el 30-10-2026. **No lo recomiendo sin medirlo** |
 | **Cable unipolar flexible de 0,75 mm² (H05V-K / H07V-K) en rojo y negro** | — | Existe y su tensión asignada es mayor que la de un cable de altavoz (conocimiento mío); **no abrí ninguna ficha**. Tendrías que usar dos cables sueltos |
 | **Troncal de 1,0 mm²** | Máximo de IEC 60228: 19,5 Ω/km frente a 26,0 (Lapp T11): 25 % menos de caída | Solo si el troncal ha de ser largo; con 0,5 m no hace falta. Comprueba que cabe en el borne |
-| **Troncal de 1,5 mm² con un fusible común** | 13,3 Ω/km; cordón asignado a 16 A (IEC 60799, no leída) frente a 10,6-14,4 A de la LRS | Idea mía: con el troncal por encima de la corriente de la fuente, solo las ramas necesitan protección. **Sin verificar**; es diseño del raíl |
+| **Troncal de 1,5 mm²** | 13,3 Ω/km (Lapp T11); un cordón de 1,5 mm² se asigna a 16 A (International Configurations, ver la [ficha del cable Schuko](../cable-schuko-c13-2m/README.md)), frente a 10,6-14,4 A de la LRS | Idea mía: con el troncal por encima de la corriente de la fuente, solo las ramas necesitarían protección propia. **Sin verificar**; es diseño del raíl. Comprueba que 1,5 mm² cabe en el borne de la LRS |
 
 ## 13. Recomendaciones para el alcoholímetro
 
@@ -518,7 +519,7 @@ Son conclusiones mías, no afirmaciones de las fuentes.
 - **Que Eca equivalga al ensayo de una llama vertical.**
 - **Coeficiente de temperatura (0,00393 /K), densidades y la conductividad del aluminio de 35,5 MS/m:** valores míos, de memoria. La de 37,7 MS/m viene de techtest.org.
 - **El ciclo de trabajo del modo *hiccup* de la LRS** y cuánto tarda un 0,75 mm² en calentarse con 10,6-14,4 A.
-- **El subida de 7 K a 5 A:** escalado mío desde 12 A = 40 K, no es una medida.
+- **La subida de 7 K a 5 A:** escalado mío desde 12 A = 40 K, no es una medida.
 - **Longitud de pelado de la puntera de 0,75 mm² y sección máxima del borne de la LRS.**
 - **Bornes USB-A (#18) y regleta WAGO (#20):** no he visto sus fichas; los datos de la WAGO son de una copia de distribuidor y no dicen nada sobre punteras.
 - **Páginas bloqueadas o fallidas:** Faber Kabel (acceso denegado a mi herramienta, no insistí), plcmadrid.es ITC-BT-36 (permiso sin respuesta, usé Normatia), de.wikipedia.org (permiso sin respuesta), vista previa de IEC 60335-1 en VDE-Verlag (robots.txt). Ver [`enlaces.md`](enlaces.md).
