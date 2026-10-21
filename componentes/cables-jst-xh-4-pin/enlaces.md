@@ -19,7 +19,7 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 ## Winsen ZE29A (manual y páginas de producto)
 
-- [Manual V1.1, ze29a-c2h5oh.pdf](https://www.winsen-sensor.com/d/files/manual/ze29a-c2h5oh.pdf) (leído con una herramienta que extrae el texto; no vi las imágenes)
+- [Manual V1.1, ze29a-c2h5oh.pdf](https://www.winsen-sensor.com/d/files/manual/ze29a-c2h5oh.pdf) ([copia local](../winsen-ze29a/datasheets/ze29a-c2h5oh.pdf)) (leído con una herramienta que extrae el texto; no vi las imágenes)
 - [Mismo manual V1.1 con otro nombre de archivo](https://www.winsen-sensor.com/d/files/ze29a-alcohol-module-manualv1_0.pdf)
 - [Copia del manual en robu.in](https://robu.in/wp-content/uploads/2023/02/ZE29A-DATASHEET.pdf)
 - [Copia en HTML en manuals.plus](https://manuals.plus/winsen/ze29a-c2h5oh-alcohol-sensor-module-manual)
@@ -36,7 +36,7 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 ## Crimpado, tracción y cable
 
-- [Molex, Quality Crimping Handbook (rev. C, 2009)](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2931/Quality%20Crimp%20Handbook.pdf): criterios de inspección visual, pruebas de tracción y altura de crimpado
+- [Molex, Quality Crimping Handbook (rev. C, 2009)](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2931/Quality%20Crimp%20Handbook.pdf) ([copia local](../terminales-ojal-m4/datasheets/Quality_Crimp_Handbook.pdf)): criterios de inspección visual, pruebas de tracción y altura de crimpado
 - [Cirris: fuerza mínima de arranque por calibre](https://cirris.com/crimp-pull-testers-pullout-force-per-wire-size/) (UL 486A, DIN 41611/3, NASA-STD 8739.4, SAE AS7928; valores en libras)
 - [Wikipedia: American wire gauge](https://en.wikipedia.org/wiki/American_wire_gauge) (diámetros y resistencias)
 - [Wikipedia: cable de aluminio revestido de cobre](https://en.wikipedia.org/wiki/Copper-clad_aluminium_wire) (no da cifras de resistencia ni habla de oxidación)
@@ -73,3 +73,12 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 ## Otro enlace citado en la ficha
 
 - [JST: manuales de manejo de la serie XH (CHM-1-2321, CHM-1-2342 y CHM-1-151)](https://www.jst-mfg.com/product/index.php?type=10&series=277&doc=11&filename=CHM-1-2321.pdf%7CCHM-1-2342.pdf%7CCHM-1-151.pdf): crimpado e inserción.
+
+## Copias locales de los documentos
+
+Documentos descargados el 21-10-2026 y guardados en el repositorio. Si un documento tiene enlace original en esta ficha, aparece junto a él como "copia local".
+
+**Citados en esta ficha y guardados en otra carpeta:**
+
+- [Quality_Crimp_Handbook.pdf](../terminales-ojal-m4/datasheets/Quality_Crimp_Handbook.pdf): Quality Crimp Handbook / QUALITY CRIMPING / HANDBOOK
+- [ze29a-c2h5oh.pdf](../winsen-ze29a/datasheets/ze29a-c2h5oh.pdf): Winsen ZE29A-C2H5OH: manual del módulo de sensor de alcohol, V1.1

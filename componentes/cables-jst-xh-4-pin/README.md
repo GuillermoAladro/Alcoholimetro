@@ -69,7 +69,7 @@ Nota sobre el material de la carcasa: el PDF actual de jst-mfg.com, tal como lo 
 
 ### 2.2 Lado del sensor ZE29A (lo que importa al cable)
 
-Fuente: [manual de Winsen V1.1](https://www.winsen-sensor.com/d/files/manual/ze29a-c2h5oh.pdf), leído con una herramienta que extrae el texto (no he visto las imágenes del PDF).
+Fuente: [manual de Winsen V1.1](https://www.winsen-sensor.com/d/files/manual/ze29a-c2h5oh.pdf) ([copia local](../winsen-ze29a/datasheets/ze29a-c2h5oh.pdf)), leído con una herramienta que extrae el texto (no he visto las imágenes del PDF).
 
 | Característica | Valor |
 |---|---|
@@ -117,10 +117,10 @@ Fuente: [Wikipedia, American wire gauge](https://en.wikipedia.org/wiki/American_
 | Planos 2D de ejemplo | XHP-1, B2B-XH-A | PDF | [XHP-1](https://www.jst-mfg.com/product/index.php?type=10&series=277&doc=4&filename=XHP-1.pdf) · [B2B-XH-A](https://www.jst-mfg.com/product/index.php?type=10&series=277&doc=4&filename=B2B-XH-A.pdf) (la tabla de la página ofrece lo mismo para cada referencia, incluida la XHP-4) |
 | Manuales de manejo (crimpado e inserción) | CHM-1-2321, CHM-1-2342, CHM-1-151 | PDF | [enlace de JST](https://www.jst-mfg.com/product/index.php?type=10&series=277&doc=11&filename=CHM-1-2321.pdf%7CCHM-1-2342.pdf%7CCHM-1-151.pdf) (el original lleva barras verticales, aquí codificadas) (**no pude abrirlo**: devuelve la portada) |
 | Lista de normas registradas en el extranjero | | PDF | [descargar](https://www.jst-mfg.com/product/pdf/list_of_registered_overseas_standards.pdf) (no lo abrí) |
-| Manual del módulo ZE29A-C2H5OH V1.1 | | PDF | [descargar](https://www.winsen-sensor.com/d/files/manual/ze29a-c2h5oh.pdf) |
+| Manual del módulo ZE29A-C2H5OH V1.1 | | PDF | [descargar](https://www.winsen-sensor.com/d/files/manual/ze29a-c2h5oh.pdf) ([copia local](../winsen-ze29a/datasheets/ze29a-c2h5oh.pdf)) |
 | El mismo manual V1.1 con otro nombre de archivo | ze29a-alcohol-module-manualv1_0 | PDF | [descargar](https://www.winsen-sensor.com/d/files/ze29a-alcohol-module-manualv1_0.pdf) |
 | Esquema reducido de la Pi 3B+ (conector J8) | RP-008339-DS-1 | PDF | [descargar](https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008339-DS-1-raspberry-pi-3-b-plus-reduced-schematics.pdf) · copia local en [`../raspberry-pi-3b-plus/datasheets/`](../raspberry-pi-3b-plus/datasheets/RP-008339-DS-1-raspberry-pi-3-b-plus-reduced-schematics.pdf) |
-| Molex, Quality Crimping Handbook (rev. C, 2009) | TM-638000029 | PDF | [descargar](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2931/Quality%20Crimp%20Handbook.pdf) |
+| Molex, Quality Crimping Handbook (rev. C, 2009) | TM-638000029 | PDF | [descargar](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2931/Quality%20Crimp%20Handbook.pdf) ([copia local](../terminales-ojal-m4/datasheets/Quality_Crimp_Handbook.pdf)) |
 | Cirris, fuerzas mínimas de arranque de crimpado por calibre | | Web | [página](https://cirris.com/crimp-pull-testers-pullout-force-per-wire-size/) |
 | WAGO 221-415, hoja de datos (copia de un distribuidor) | | Web | [radiolocman](https://www.radiolocman.com/datasheet/data.html?di=537187) |
 
@@ -230,7 +230,7 @@ El manual de Winsen solo avisa de "prestar atención" a los 5 V; no da protecci�
 
 ### 5.5 Crimpado frío o contacto mal asentado
 
-- El manual de crimpado de Molex ([Quality Crimping Handbook](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2931/Quality%20Crimp%20Handbook.pdf)) lista defectos típicos: hebras cortadas o rayadas, aislante bajo el crimpado del conductor, crimpado del aislante flojo o demasiado apretado, boca de campana ausente o excesiva, y altura de crimpado incorrecta.
+- El manual de crimpado de Molex ([Quality Crimping Handbook](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2931/Quality%20Crimp%20Handbook.pdf) ([copia local](../terminales-ojal-m4/datasheets/Quality_Crimp_Handbook.pdf))) lista defectos típicos: hebras cortadas o rayadas, aislante bajo el crimpado del conductor, crimpado del aislante flojo o demasiado apretado, boca de campana ausente o excesiva, y altura de crimpado incorrecta.
 - Sobre cables baratos de tipo Dupont (no XH), hay testimonios de crimpados sin hilo dentro, hilos rotos que dan contacto según se doble el cable, y extremos que se parten ([mikrocontroller.net, abril de 2021](https://www.mikrocontroller.net/topic/516562)). Un usuario de EEVblog ([marzo de 2019](https://eevblog.com/forum/beginners/voltage-drop-at-breadboard)) cita lo mismo: hilo demasiado fino, no de cobre y crimpados mal hechos. **No son kits XH**, pero la fabricación barata es la misma.
 - **Un contacto que no ha enganchado en la carcasa** también falla. Es una deducción mía: el contacto debe oírse o notarse al asentarse y no deslizarse hacia atrás con un tirón suave.
 
@@ -351,5 +351,7 @@ La guía lleva el GND del sensor solo a la WAGO y dice "no hagas más uniones de
 - **Longitud real necesaria** entre el sensor y las WAGO: faltan las cotas.
 
 ## 8. Fuentes
+
+Copias locales de los documentos descargados: [lista en enlaces.md](enlaces.md#copias-locales-de-los-documentos).
 
 Todos los enlaces, ordenados por tipo y con nota de los que no pude abrir, en [`enlaces.md`](enlaces.md).
