@@ -14,6 +14,7 @@ Una carpeta por componente del alcoholímetro, con su ficha técnica, documentos
 | 8 | Tubo de silicona de 6 mm | Lleva el aliento de la boquilla al sensor | [tubo-silicona-6mm](tubo-silicona-6mm/README.md) |
 | 10 | Cable USB-A a USB-C acodado 90°, 30 cm | Alimenta el SumUp Solo desde el borne USB-A | [cable-usb-a-usb-c-90-30cm](cable-usb-a-usb-c-90-30cm/README.md) |
 | 11 | Pulsador arcade 30 mm (EG STARTS) | Botón de inicio de la prueba (GPIO17) | [pulsador-arcade-30mm](pulsador-arcade-30mm/README.md) |
+| 12 | Adaptador Wi-Fi USB AR9271 | Wi-Fi de la Pi con la antena fuera de la chapa | [adaptador-wifi-ar9271](adaptador-wifi-ar9271/README.md) |
 | 13 | Alargo de antena RP-SMA, 30 cm | Saca la antena Wi-Fi por el techo de la chapa | [alargo-antena-rp-sma-30cm](alargo-antena-rp-sma-30cm/README.md) |
 | 14 | Fuente Mean Well LRS-50-5 (5 V, 10 A) | Fuente única de 5 V de la máquina (230 V) | [meanwell-lrs-50-5](meanwell-lrs-50-5/README.md) |
 | 15 | Módulo C14 con fusible e interruptor | Entrada de red 230 V de la máquina | [modulo-c14-fusible-interruptor](modulo-c14-fusible-interruptor/README.md) |
