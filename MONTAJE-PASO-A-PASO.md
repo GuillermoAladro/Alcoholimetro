@@ -20,8 +20,8 @@ Cómo montar el circuito del alcoholímetro por fases: con qué piezas y qué pr
 
 ## Reglas para todo el montaje
 
-1. **La parte de 230 V (fases 4 y 8) la hace o la revisa un electricista.** Nadie toca la fuente ni el módulo C14 con el cordón enchufado. Apagar el interruptor no basta: lo que hay antes del interruptor sigue con tensión.
-2. **Cables de señal y fusibles se cambian con todo apagado.** Vale para la UART, el FFC de la cámara, el pulsador y el HDMI. La única excepción es la prueba P6.13, que se hace a propósito.
+1. **La parte de 230 V (fases 4 y 8) la hace o la revisa un electricista.** Con el cordón enchufado nadie toca el módulo C14 ni los bornes 1, 2 y 3 de la fuente. Apagar el interruptor no basta: lo que hay antes del interruptor sigue con tensión. Con la fuente enchufada solo se trabaja en el lado de 5 V (bornes 4 y 5, trimmer, regletas y ramas), con la tapa de los bornes de 230 V puesta y con herramienta aislada.
+2. **Cables de señal y fusibles se cambian con todo apagado.** Vale para la UART, el FFC de la cámara, el pulsador y el HDMI. Las únicas excepciones son las pruebas P5.7 y P6.13, que se hacen a propósito y supervisadas.
 3. **Nunca 5 V en un pin del GPIO.** Los únicos pines de 5 V son el 2 y el 4.
 4. **Antes de conectar una carga, mide su rama sin carga:** tensión y polaridad.
 5. **No subas el trimmer de la fuente para tapar una caída de tensión.** El tope es 5,12 V.
@@ -56,6 +56,7 @@ Cómo montar el circuito del alcoholímetro por fases: con qué piezas y qué pr
 - Un cargador USB-A de 5 V y 2 A para la pantalla.
 - Un cargador USB-C para el Solo, que se usa con su propio cable C–C.
 - Un medidor USB (USB tester) que lea tensión y corriente. Mejor si viene con una carga USB de 1 A y 2 A.
+- Un adaptador de prueba USB-C (breakout) con los pines CC y VBUS accesibles, para medir los 56 kΩ del cable acodado (P1.5).
 - Cargas ficticias: resistencias de potencia de cuerpo de aluminio, atornilladas a una chapa porque se calientan:
 
   | Resistencia | Corriente a 5,1 V | Disipa |
@@ -89,7 +90,7 @@ Cómo montar el circuito del alcoholímetro por fases: con qué piezas y qué pr
 | P1.2 | Fuente (#14) | Lee la etiqueta y la serigrafía de los bornes | LRS-50-5; bornes 1 AC/L, 2 AC/N, 3 FG, 4 −V, 5 +V | Devolverla |
 | P1.3 | Fusibles (#16 y kit #32) | Busca en la etiqueta de la caja los valores que se usan: T2,5A, F 1, 2, 3 y 5 A. Mide la continuidad de uno de cada | Cada uno da continuidad | El grabado del cristal se lee mal: fíate de la caja |
 | P1.4 | Bornes USB-A (#18), los dos | Continuidad del tornillo «+» al pin 1 del conector hembra y del «−» al pin 4 | Las dos dan continuidad | Otro borne |
-| P1.5 | Cable acodado (#10) | Mira los dos extremos y qué punta es la acodada. Prueba si la punta del Solo pasa por una ranura de 14 × 9 mm | Es A → C y la punta cabe | Otro cable. Los 56 kΩ del pin CC los comprueba P3.13 |
+| P1.5 | Cable acodado (#10) | Mira los dos extremos y qué punta es la acodada. Prueba si la punta del Solo pasa por una ranura de 14 × 9 mm. Con el adaptador USB-C, mide entre CC y VBUS en la punta C (MONTAJE GENERAL, apartado 4, punto 5) | Es A → C, la punta cabe y entre CC y VBUS hay 56 kΩ ±5 % (de 53,2 a 58,8 kΩ) | Otro cable. Sin adaptador, P3.13 da solo un indicio |
 | P1.6 | Cable de alimentación de la pantalla (viene con #5) | Mira el extremo grande | Es USB-A | Comprar un cable A → C aparte |
 | P1.7 | Latiguillo micro-USB (#19) | Enchúfalo en la Pi **apagada**. Mide continuidad del hilo rojo al pin 2 del GPIO y del negro al pin 6. El micro-USB pasa por el polifusible F1 a los pines de 5 V (esquema RP-008339) | Rojo con el pin 2 y negro con el pin 6 | Si sale al revés, marca los hilos: manda la medida, no el color. Rasca un extremo: si debajo del cobre se ve gris, es aluminio cobreado y conviene otro |
 | P1.8 | ZE29A (#6) | Calibre en el conector J1 para el paso. Lee la serigrafía. Mide sus dos tomas de aire: qué son (racor, tubito o agujero) y su diámetro | J1 identificado, serigrafía «Rx Tx GND 5V», tomas medidas | Si el J1 no es XH, busca una clavija que sí encaje |
@@ -97,7 +98,7 @@ Cómo montar el circuito del alcoholímetro por fases: con qué piezas y qué pr
 | P1.10 | Cable FFC (#4) | Pon el cable plano sobre la mesa | El metal de una punta se ve por arriba y el de la otra por abajo («caras opuestas») | Prueba otro cable del pack |
 | P1.11 | Pulsador (#11) | Busca con el polímetro el par de faston que cierra al pulsar | Dos faston identificados y marcados | — |
 | P1.12 | Tubo de silicona (#8) | Diámetro interior y exterior con calibre | Medidas apuntadas | — |
-| P1.13 | WAGO (#20) | Aparta las piezas que se van a usar | 2 × 221-415, 1 × 221-413 y 4 × 221-412 | — |
+| P1.13 | WAGO (#20) | Aparta las piezas que se van a usar | 2 × 221-415, 1 × 221-413 y 5 × 221-412 | — |
 
 **Para pasar a la fase 2:** P1.2 a P1.13 pasan y P1.1 está decidida, aunque la entrada nueva aún no haya llegado.
 
@@ -179,7 +180,8 @@ from signal import pause
 n = 0
 def contar():
     global n; n += 1; print(n)
-Button(17, bounce_time=0.05).when_pressed = contar
+boton = Button(17, bounce_time=0.05)   # guardado en una variable: si no, gpiozero lo cierra
+boton.when_pressed = contar
 pause()
 ```
 
@@ -192,15 +194,16 @@ Conecta el adaptador a un USB de la Pi (W25) y enrosca su antena.
 | P3.8 | `lsusb` e `iw dev` | Aparece `0cf3:9271` (Atheros AR9271) y hay dos interfaces, `wlan0` y `wlan1` | Instala `firmware-atheros`. Si el chip es otro, devuelve el adaptador |
 | P3.9 | `nmcli device wifi connect <tu-red> password <clave> ifname wlan1` y luego `ping -I wlan1 1.1.1.1` | Responde | — |
 
-**Fija los nombres `wlan0` y `wlan1` por la dirección MAC** (un archivo `.link` de systemd) para que no se intercambien al arrancar (W30).
+**Ata cada conexión a su radio por la dirección MAC**, para que no se intercambien al arrancar (W30). Mira las MAC con `ip link` y ejecuta `sudo nmcli connection modify <conexión del bar> 802-11-wireless.mac-address <MAC del AR9271>`. Renombrar las interfaces a `wlan0` y `wlan1` con un archivo `.link` no sirve: son nombres del kernel y systemd avisa de que el resultado es impredecible.
 
 ### 3.5 Punto de acceso para el Solo (wlan0)
 
-Ejecuta `nmcli device wifi hotspot ifname wlan0 band bg channel <1, 6 u 11> ssid <red-maquina> password <clave>`. Elige el canal más lejos posible del de tu router (W29).
+1. Ejecuta `sudo nmcli device wifi hotspot ifname wlan0 band bg channel <1, 6 u 11> ssid <red-maquina> password <clave>`. Elige el canal más lejos posible del de tu router (W29).
+2. **Ese comando crea la conexión sin arranque automático.** Mira su nombre con `nmcli connection show` (suele ser `Hotspot`) y ejecuta `sudo nmcli connection modify Hotspot connection.autoconnect yes connection.autoconnect-priority 100 802-11-wireless.mac-address <MAC del Wi-Fi interno>` (tutorial de Raspberry Pi).
 
 | Prueba | Cómo | Pasa si |
 |---|---|---|
-| P3.10 | Conecta un móvil a la red de la máquina | Navega por Internet a través de la Pi |
+| P3.10 | Conecta un móvil a la red de la máquina. Luego reinicia la Pi con `sudo reboot` y vuelve a probar sin tocar nada | Navega por Internet a través de la Pi, también después del reinicio |
 
 ### 3.6 SumUp Solo (#9), primero con su propio cargador
 
@@ -210,7 +213,7 @@ Las cuatro auditorías piden validar la carga del Solo con su cargador antes de 
 |---|---|---|---|
 | P3.11 | Cárgalo con su cable C–C y el cargador USB-C, con el medidor USB en medio | Marca corriente y la batería sube | Contacta con SumUp |
 | P3.12 | Conecta el Solo a la red de la máquina (2,4 GHz) desde su pantalla. Configura la Cloud API: sandbox, Solo virtual, emparejar el real y `GET /readers/{id}/status`. Haz un cobro de 1 € con tu tarjeta | `ONLINE`, firmware 3.3.39.0 o superior y el cobro sale | Firmware antiguo: actualizar el Solo |
-| P3.13 | Cárgalo ahora con el cable acodado (#10) desde el cargador de la pantalla | Carga igual. Si no carga con este cable y sí con el suyo, al cable le falta la resistencia de 56 kΩ | Otro cable |
+| P3.13 | Cárgalo ahora con el cable acodado (#10) desde el cargador de la pantalla | Carga igual. Si no carga, cambian a la vez el cable y el cargador: prueba ese cargador con otro cable A → C antes de culpar al cable. Es un indicio; la medida buena es la de P1.5 | Otro cable |
 | P3.14 | Apaga el Solo, desenchúfalo, espera un minuto y vuelve a enchufarlo | **Apunta si se enciende solo.** Si no se enciende, la máquina no cobrará después de un corte de luz: hay que resolverlo con SumUp antes de instalarla (MONTAJE GENERAL, apartado 4, punto 15) | No bloquea el montaje, pero sí la instalación en un bar |
 
 **Para pasar a la fase 4:** P2.1 a P3.13 pasan y P3.14 está apuntada.
@@ -227,18 +230,18 @@ Las cuatro auditorías piden validar la carga del Solo con su cargador antes de 
 
 **Montaje en banco:**
 
-- El C14 va montado en una chapa con su recorte o en una caja de pruebas aislante, **nunca suelto**.
+- El C14 va montado en una caja de pruebas aislante o en una chapa con su recorte, **nunca suelto**. **Si es una chapa, se une también al PE** con un ojal (#23) y su arandela dentada (#24): es metal accesible a dos centímetros de los faston de 230 V.
 - La fuente va con la tapa de bornes puesta, sobre una base aislante.
 - **Tierra provisional:** un hilo verde-amarillo directo del PE del C14 al borne 3 (FG) de la fuente. En la fase 8 lo sustituyen W6 y W7.
 - Cablea W2 a W5 según el esquema que salió en P1.1. Los faston se crimpan con la crimpadora de terminales preaislados.
 
 | Prueba | Cómo | Pasa si | Si no pasa |
 |---|---|---|---|
-| P4.1 | **Sin enchufar.** Mide entre L y N del enchufe del C14, con el interruptor en O y en I. Mide también del PE del C14 a la carcasa de la fuente | Entre L y N, nunca 0 Ω (con la fuente conectada el polímetro puede marcar un valor que sube: es su condensador de entrada). Del PE a la carcasa, 0,1 Ω o menos | Revisar el cableado |
+| P4.1 | **Sin enchufar.** Mide entre L y N del enchufe del C14, con el interruptor en O y en I. Mide también del PE del C14 a la carcasa de la fuente | Entre L y N, nunca 0 Ω (con la fuente conectada el polímetro puede marcar un valor que sube: es su condensador de entrada). Del PE a la carcasa de la fuente y a la chapa del C14, si la hay, 0,1 Ω o menos | Revisar el cableado |
 | P4.2 | Haz cinco crimpados de prueba con la misma herramienta y tira de ellos con fuerza | Ninguno se suelta. La ficha da al menos 133 N para 16 AWG (#23 y #27) | Otra herramienta u otro terminal |
-| P4.3 | **Primer enchufado**, con el interruptor en O y sin tocar nada. Pasa a I y vuelve a O | En I: LED verde de la fuente y lámpara encendidos. En O: los dos apagados | Desenchufar y revisar W2 a W5 |
-| P4.4 | Sin carga, mide entre los bornes 4 y 5 y ajusta el trimmer | 5,10 V | — |
-| P4.5 | Cinco arranques: interruptor en I, luego en O, desenchufa y espera un minuto antes del siguiente | El T2,5A no se funde y cada vez da 5,10 V | Revisar el fusible y la coordinación (ficha #16) |
+| P4.3 | **Primer enchufado**, con el interruptor en O y sin tocar nada. Pasa a I y vuelve a O | En I: LED verde de la fuente encendido, y la lámpara del interruptor si la tiene. En O: los dos apagados | Desenchufar y revisar W2 a W5 |
+| P4.4 | Cinco arranques: interruptor en I, luego en O, desenchufa y espera un minuto antes del siguiente | El T2,5A no se funde y la fuente arranca cada vez | Revisar el fusible y la coordinación (ficha #16) |
+| P4.5 | Sin carga, mide entre los bornes 4 y 5 y ajusta el trimmer con un destornillador aislado y la tapa de bornes puesta (regla 1) | 5,10 V | — |
 | P4.6 | Rizado sin carga con el osciloscopio | Apunta los mVp-p. Sin carga la fuente trabaja en ráfaga (nota 7 de su hoja): sirve de referencia | — |
 | P4.7 | Déjala 15 minutos encendida sin carga | Nada huele y la fuente está, como mucho, tibia | Desenchufar y revisar |
 
@@ -248,7 +251,7 @@ Todavía sin la Pi, el Solo, la pantalla ni el sensor.
 
 **Piezas:**
 
-- WAGO (#20): 2 × 221-415, 1 × 221-413 y 4 × 221-412.
+- WAGO (#20): 2 × 221-415, 1 × 221-413 y 5 × 221-412.
 - Cable rojo y negro de 0,75 mm² (#21).
 - Punteras y punteras dobles (#28).
 - Los cinco portafusibles (#32): F 5 A, F 3 A, F 2 A, F 2 A y F 1 A.
@@ -257,7 +260,7 @@ Todavía sin la Pi, el Solo, la pantalla ni el sensor.
 **Cableado, con la fuente desenchufada:**
 
 1. **Troncal (W11 y W12).**
-   - Borne 5: puntera doble con el rojo del troncal y el rojo de la rama de la Pi. El troncal pasa por el portafusibles **F 5 A** y llega a la WAGO «+5 V», polo 1. Como mucho 25 cm.
+   - Borne 5: puntera doble con el rojo del troncal y el rojo de la rama de la Pi. El rojo del troncal se empalma en una 221-412 con el hilo de entrada del portafusibles **F 5 A**, y el hilo de salida entra directo en el polo 1 de la WAGO «+5 V». Como mucho 25 cm en total. El hilo de 16 AWG del portafusibles no cabe en una puntera doble de 2 × 0,75 mm² con otro hilo: por eso el empalme.
    - Borne 4: puntera doble con el negro del troncal y el negro de la rama de la Pi. El troncal va al polo 1 de la WAGO 221-413 «−V», y de su polo 2 al polo 1 de la WAGO «GND». El polo 3 queda libre hasta W12b, en la fase 8.
 2. **Rama de la Pi (W13), directa a la fuente.**
    - Rojo: del borne 5 a una 221-412, de ahí al portafusibles **F 3 A** y a otra 221-412 donde se empalmará el rojo del latiguillo.
@@ -284,7 +287,7 @@ Todavía sin la Pi, el Solo, la pantalla ni el sensor.
 | P5.4 | **Las cuatro cargas a la vez** (unos 4,5 A). Mismas medidas y calcula las resistencias (fórmulas debajo) | R_troncal de 0,04 Ω o menos, R de la rama de la Pi de 0,06 Ω o menos y tensión prevista en la Pi de 4,90 V o más **(mío)** | Mide la caída en cada contacto: más de 10 mV a 2 A en uno solo indica un contacto malo **(mío)**. Rehazlo o acorta el cable. No subas el trimmer por encima de 5,12 V |
 | P5.5 | Rizado con el osciloscopio en el extremo de cada rama, primero con las cuatro cargas y después solo con la del ZE29A (unos 0,5 A, el 5 % de la fuente: el peor caso de la nota 7) | En todas las ramas, pico de 5,25 V o menos (continua más medio rizado). Apunta los mVp-p | **Para.** Decide antes de seguir: filtro medido o cambiar de fuente (auditorías 6.1-S F05 y 5.6 C-05) |
 | P5.6 | Una hora con las cuatro cargas | Ningún fusible fundido. Portafusibles, empalmes y bornes por debajo de 60 °C **(mío)** | El contacto que se calienta está mal hecho |
-| P5.7 | **Opcional y supervisada.** Con las cargas puestas y gafas, une con un hilo corto de 0,75 mm² la salida del fusible del ZE29A con su GND, como mucho 2 s. Repite en la rama de la Pi | Se funde el fusible de esa rama, el F 5 A del troncal no, y las otras ramas vuelven a 5,0 V o más **(mío)** | Si la fuente entra en hipo y el fusible no se funde en 2 s, la protección no coordina: no sigas (auditoría 6.1-S F04) |
+| P5.7 | **Obligatoria antes de la fase 6 y supervisada.** Es la única prueba de que los fusibles se funden antes de que la fuente entre en hipo, y se hace con cargas ficticias, nunca con la Pi o el Solo (MONTAJE GENERAL, 5.2; auditoría 6.1-S F04). Con las cargas puestas y gafas, une con un hilo corto de 0,75 mm² la salida del fusible del ZE29A con su GND, como mucho 2 s. Repite en la rama de la Pi | Se funde el fusible de esa rama, el F 5 A del troncal no, y las otras ramas vuelven a 5,0 V o más **(mío)** | Si la fuente entra en hipo y el fusible no se funde en 2 s, la protección no coordina: no sigas (auditoría 6.1-S F04) |
 
 **Cálculo de P5.4:**
 
@@ -301,11 +304,11 @@ Fuente en banco con la tierra provisional de la fase 4. **Orden: sensor, Pi, pan
 
 ### 6.1 Sensor ZE29A, solo la alimentación
 
-Mete la clavija en el J1 y cablea por la posición que apuntaste en P1.9: el hilo del pin 1 a la 221-412 de su fusible y el del pin 2 a la WAGO «GND» (W18). **Los hilos de los pines 3 y 4 quedan sueltos y aislados.**
+Cablea la clavija por la posición que apuntaste en P1.9: el hilo del pin 1 a la 221-412 de su fusible y el del pin 2 a la WAGO «GND» (W18). **Los hilos de los pines 3 y 4 quedan sueltos y aislados.** La clavija todavía no va en el sensor: primero se mide suelta (P6.1).
 
 | Prueba | Cómo | Pasa si | Si no pasa |
 |---|---|---|---|
-| P6.1 | Tensión entre los pines 1 y 2, medida en el conector | Entre 4,7 y 5,3 V (manual: 5 V ±0,3 V) | — |
+| P6.1 | Enchufa con la clavija **suelta** y mide entre sus posiciones 1 y 2. Desenchufa, mete la clavija en el J1, vuelve a enchufar y mide entre los pines 1 y 2 del sensor | Suelta: entre 4,7 y 5,3 V y con el + en la posición 1. Puesta: lo mismo (manual: 5 V ±0,3 V) | Si la polaridad sale al revés, no metas la clavija: corrige el cableado con todo desenchufado |
 | P6.2 | Tensión del pin 3 (TX) frente a GND | Unos 3,3 V | **Si da 5 V, para:** conectado a la Pi, la dañaría |
 | P6.3 | Corriente de la rama en reposo, con la pinza | Apúntala. Por debajo de 0,5 A (manual) | — |
 
@@ -368,7 +371,7 @@ Solo si pasaron P3.11 a P3.13. Conecta el Solo al borne nº 1 con el cable acoda
 | P6.10 | Todo a la vez: cámara en directo, Wi-Fi del bar, el Solo en la red de la máquina, pantalla al máximo. Mide la Pi entre los pines 4 y 6 y ejecuta `vcgencmd get_throttled` | 4,90 V o más y `0x0` durante 30 minutos | Fase 5, P5.4: rehacer contactos y acortar cables |
 | P6.11 | Corriente de cada rama con la pinza, en reposo y en el pico: arranque de la Pi, foto, Solo cargando desde batería baja y retroiluminación al encender. El pico del sensor se mide en la fase 7 | Cada fusible queda por encima del pico con margen (MONTAJE GENERAL, apartado 4, punto 8) | Sube ese fusible un escalón, no más |
 | P6.12 | Rizado con el osciloscopio en cada carga real | Pico de 5,25 V o menos | Como en P5.5 |
-| P6.13 | **Prueba de apagado parcial, supervisada. Es la única vez que se quita un fusible con la máquina encendida, a propósito** (es 5 V). Con todo funcionando, desenrosca el portafusibles del sensor | La Pi sigue funcionando y `orden(0x85)` da «sin respuesta», no datos raros. Mide el pin 1 del sensor: si pasa de 1 V, el TX de la Pi lo está alimentando por la UART y hacen falta las resistencias de 1 kΩ (W19) **(mío; auditorías 6.1-S F12 y 6-A A6A-07)** | Vuelve a poner el fusible **con todo apagado** |
+| P6.13 | **Prueba de apagado parcial, supervisada. Solo con las resistencias de 1 kΩ de la UART puestas** (W19 y W20): limitan la corriente a unos 3 mA y la prueba no usa la Pi ni el sensor de carga de sacrificio (auditorías 6.1-S §9.2 y 6-A A6A-07). Sin ellas, **no se hace**. Con todo funcionando, desenrosca el portafusibles del sensor (es 5 V) | La Pi sigue funcionando y `orden(0x85)` da «sin respuesta», no datos raros. El pin 1 del sensor se queda por debajo de 1 V **(mío)** | Si pasa de 1 V, el TX de la Pi está alimentando el sensor por la UART: hace falta un búfer con Ioff (W19). Vuelve a poner el fusible **con todo apagado** |
 
 ## Fase 7. El tubo de soplido y la prueba de medida
 
@@ -380,9 +383,9 @@ Solo si pasaron P3.11 a P3.13. Conecta el Solo al borne nº 1 con el cable acoda
 |---|---|---|---|
 | P7.1 | `orden(0x92)` | Apunta el umbral de presión (por defecto 8) | — |
 | P7.2 | `orden(0x87, (0x32,0,0,0,0))`. Espera a 0x33 y sopla fuerte y seguido 4 s | Pasa por 0x34 (soplando), 0x36 (calculando) y 0x37 (resultado listo) | Si se queda en 0x33, mejora la barrera o revisa el orden de las tomas antes de bajar el umbral con 0x93 |
-| P7.3 | Sopla 2 s y para | Pasa a 0x35 (soplido cortado) y a los 3 s vuelve a 0x32 (manual) | — |
-| P7.4 | Sin haber bebido, tres soplidos. Lee cada resultado con `orden(0x86)` | Menos de 20 mg/100 mL, alarma 0x00 (manual) | Revisa que el tubo no huela a disolvente y deja ventilar el tubo nuevo (ficha #8) |
-| P7.5 | Después de una cerveza, tres soplidos en la máquina y tres en el alcoholímetro de referencia | Apunta las seis lecturas. **No las conviertas a mg/L**: el /220 es una deducción y Winsen no ha confirmado la unidad (auditorías H01 y 6.1-S F14) | — |
+| P7.3 | Vuelve a arrancar con `orden(0x87, (0x32,0,0,0,0))`: en 0x37 se puede pasar directo a 0x32, y si han pasado 20 s el módulo ya está en 0x31. Espera a 0x33, sopla 2 s y para | Pasa a 0x35 (soplido cortado) y a los 3 s vuelve a 0x32 (manual) | — |
+| P7.4 | Sin haber bebido, tres soplidos. **Cada soplido es un ciclo completo:** arranca con 0x87 y 0x32, espera a 0x33, sopla 4 s y, cuando llegue a 0x37, lee el resultado con `orden(0x86)` antes de que pasen 20 s (después el módulo vuelve solo a 0x31 y 0x86 ya no vale) | Menos de 20 mg/100 mL, alarma 0x00 (manual) | Revisa que el tubo no huela a disolvente y deja ventilar el tubo nuevo (ficha #8) |
+| P7.5 | Después de una cerveza, tres soplidos en la máquina (un ciclo completo cada uno, como en P7.4) y tres en el alcoholímetro de referencia | Apunta las seis lecturas. **No las conviertas a mg/L**: el /220 es una deducción y Winsen no ha confirmado la unidad (auditorías H01 y 6.1-S F14) | — |
 | P7.6 | Veinte soplidos seguidos y mira el tubo | No hay agua acumulada en la toma de muestra **(mío)** | Más pendiente o una trampa de condensación |
 
 Durante P7.2 mide con la pinza el pico de corriente del sensor al tomar la muestra: completa P6.11.
@@ -452,7 +455,7 @@ Copia esta tabla y añade una fila por prueba. Una prueba sin apuntar cuenta com
 | Prueba | Fecha | Pieza o número de serie | Valor medido | Pasa (sí/no) | Nota |
 |---|---|---|---|---|---|
 | P1.1 | | Módulo C14 | Esquema: … | | Foto del esquema |
-| P4.4 | | LRS-50-5 | … V | | |
+| P4.5 | | LRS-50-5 | … V | | |
 | P5.4 | | Reparto de 5 V | R_troncal … Ω · R_Pi … Ω · prevista en la Pi … V | | |
 | P6.10 | | Máquina en banco | Pi … V · `get_throttled` … | | |
 | … | | | | | |
