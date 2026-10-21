@@ -93,7 +93,7 @@ Documentación de software y hardware:
 - [Anuncio de Raspberry Pi OS Trixie](https://www.raspberrypi.com/news/trixie-the-new-version-of-raspberry-pi-os/)
 - [Manual de Picamera2](https://datasheets.raspberrypi.com/camera/picamera2-manual.pdf)
 
-> Los PDF no están copiados en este repositorio porque el entorno donde se preparó no podía descargarlos. El script [`datasheets/descargar.sh`](datasheets/descargar.sh) los baja todos a tu ordenador.
+> Copias locales de todos estos documentos (más el [manual de Picamera2](datasheets/RP-008156-DS-6-picamera2-manual.pdf)) en la carpeta [`datasheets/`](datasheets/). Descargados de las fuentes oficiales el 21-10-2026. Si quieres actualizarlos, [`datasheets/descargar.sh`](datasheets/descargar.sh) los vuelve a bajar.
 
 ### Qué dice el aviso de cambio Rev 9 (RP-003337-PC-1)
 
