@@ -10,8 +10,8 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 ## Especificación del conector micro-USB
 
-- [USB 2.0 Micro-USB Cables and Connectors Specification, Rev. 1.01 (4-4-2007), copia en git.nefarius.at](https://git.nefarius.at/nefarius/USB-Bluetooth-Specs/media/branch/master/usb_20_0702115/Micro-USB_final/Micro-USB_1_01.pdf): **leída** (tres consultas). Copia de terceros, no de usb.org. Da: pines y colores típicos (Tabla 4-2), resistencia de contacto de 30 mΩ (5.2), 1,8 A mínimo en los contactos 1 y 5 (5.3.2), +30 °C de subida (5.3), fuerzas de inserción y extracción (6.2 y 6.3), 70 mΩ para adaptadores (4.5.8) y temperatura de funcionamiento (6.1). No da calibre, vibración ni dimensiones del sobremoldeado en el texto extraído (Figura 4-5, p. 18, no legible).
-- [La misma ruta con `raw`](https://git.nefarius.at/nefarius/USB-Bluetooth-Specs/raw/branch/master/usb_20_0702115/Micro-USB_final/Micro-USB_1_01.pdf): devuelve un puntero de Git LFS (1.231.932 bytes), no el PDF. Sirve `media` en lugar de `raw`.
+- [USB 2.0 Micro-USB Cables and Connectors Specification, Rev. 1.01 (4-4-2007), copia en git.nefarius.at](https://git.nefarius.at/nefarius/USB-Bluetooth-Specs/media/branch/master/usb_20_0702115/Micro-USB_final/Micro-USB_1_01.pdf) ([copia local](datasheets/Micro-USB_1_01.pdf)): **leída** (tres consultas). Copia de terceros, no de usb.org. Da: pines y colores típicos (Tabla 4-2), resistencia de contacto de 30 mΩ (5.2), 1,8 A mínimo en los contactos 1 y 5 (5.3.2), +30 °C de subida (5.3), fuerzas de inserción y extracción (6.2 y 6.3), 70 mΩ para adaptadores (4.5.8) y temperatura de funcionamiento (6.1). No da calibre, vibración ni dimensiones del sobremoldeado en el texto extraído (Figura 4-5, p. 18, no legible).
+- [La misma ruta con `raw`](https://git.nefarius.at/nefarius/USB-Bluetooth-Specs/raw/branch/master/usb_20_0702115/Micro-USB_final/Micro-USB_1_01.pdf) ([copia local](datasheets/Micro-USB_1_01.pdf)): devuelve un puntero de Git LFS (1.231.932 bytes), no el PDF. Sirve `media` en lugar de `raw`.
 - [Página oficial de la especificación USB 2.0 (usb.org)](https://usb.org/document-library/usb-20-specification): enlace tomado de la ficha hermana del cable USB-C. **No abierto.** No he comprobado si el ZIP oficial incluye la carpeta Micro-USB.
 
 ## Raspberry Pi 3B+: documentos oficiales
@@ -52,7 +52,7 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 - [Wikipedia: American wire gauge](https://en.wikipedia.org/wiki/American_wire_gauge): leído. Resistencia por metro de 20 a 28 AWG (cobre macizo a 20 °C) y columnas de corriente admisible.
 - [Wikipedia: Copper-clad aluminium wire](https://en.wikipedia.org/wiki/Copper-clad_aluminium_wire): leído. No da % IACS ni resistividad; dice que tiene más resistencia en continua y es difícil de soldar.
-- [Fluke Networks: CCA, nota de aplicación (copia en cccassoc.org)](https://cccassoc.org/wp-content/uploads/2020/03/FLUKE_Application_Note_Copper_Clad_Aluminum_CCA_Cables.pdf): leído. Aluminio macizo, un 55 % más de resistencia en continua que el cobre; prueba de rascado; desequilibrio de resistencia en continua como indicador.
+- [Fluke Networks: CCA, nota de aplicación (copia en cccassoc.org)](https://cccassoc.org/wp-content/uploads/2020/03/FLUKE_Application_Note_Copper_Clad_Aluminum_CCA_Cables.pdf) ([copia local](datasheets/FLUKE_Application_Note_Copper_Clad_Aluminum_CCA_Cables.pdf)): leído. Aluminio macizo, un 55 % más de resistencia en continua que el cobre; prueba de rascado; desequilibrio de resistencia en continua como indicador.
 - [EEVblog: micro-USB test jig and results (2013)](https://eevblog.com/forum/reviews/quick-and-dirty-micro-usb-test-jig-and-results): leído. Tabla de resistencias medidas de cables micro-USB.
 - [Grant Trebbin: USB cable resistance (2015)](https://www.grant-trebbin.com/2015/08/usb-cable-resistance.html): leído. Un hilo de un cable corto barato midió 76 mΩ.
 - [EPEC: causas de fallo en cables](https://www.epectec.com/articles/what-causes-cable-assemblies-to-fail-and-how-to-avoid-them.html): no reabierto; citado de la ficha del cable USB-A a USB-C.
@@ -64,3 +64,12 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 - Conector roto o aflojado: [element14, "Is my Pi broken"](https://community.element14.com/products/raspberry-pi/f/forum/18916/is-my-pi-broken), [element14, "Pi 3 board failure"](https://community.element14.com/products/raspberry-pi/f/forum/30630/pi-3-board-failure/103594), [sudomod](https://sudomod.com/forum/viewtopic.php?p=67020), [Pimoroni, On/Off SHIM](https://forums.pimoroni.com/t/on-off-shim-bad-usb-port/5817).
 - Alimentación por GPIO: [element14, "Is it safe to power a Raspberry Pi from battery"](https://community.element14.com/products/raspberry-pi/f/forum/1491/is-it-safe-to-power-a-raspberry-pi-from-battery-s/82820), [element14, "Raspberry Pi fuse"](https://community.element14.com/products/raspberry-pi/f/forum/11461/raspberry-pi-fuse---have-you-ever-tripped-it), [RetroPie, NESPi](https://retropie.org.uk/forum/post/124092), [StereoPi](https://forum.stereopi.com/viewtopic.php?f=5&p=1295).
 - Venta del alimentador oficial: [CanaKit](https://www.canakit.com/raspberry-pi-adapter-power-supply-2-5a.html), [Cool Components](https://coolcomponents.co.uk/products/official-2-5amp-5-1v-power-supply-for-raspberry-pi-3-model-b).
+
+## Copias locales de los documentos
+
+Documentos descargados el 21-10-2026 y guardados en el repositorio. Si un documento tiene enlace original en esta ficha, aparece junto a él como "copia local".
+
+**En esta carpeta (`datasheets/`):**
+
+- [FLUKE_Application_Note_Copper_Clad_Aluminum_CCA_Cables.pdf](datasheets/FLUKE_Application_Note_Copper_Clad_Aluminum_CCA_Cables.pdf): Application Note: Copper Clad Aluminum(CCA) Cables / Introduction / There are growing concerns in the network equipment industry a
+- [Micro-USB_1_01.pdf](datasheets/Micro-USB_1_01.pdf): USB-IF, Micro-USB Cables and Connectors Specification, rev. 1.01 (04-2007; copia no oficial en git.nefarius.at)

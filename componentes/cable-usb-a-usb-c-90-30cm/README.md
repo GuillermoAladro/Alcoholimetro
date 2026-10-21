@@ -62,15 +62,15 @@ Un cable genérico no tiene datasheet. Estas son las normas que aplican. Los ZIP
 
 | Documento | Referencia | Formato | Enlace |
 |---|---|---|---|
-| USB Type-C Cable and Connector Specification | Release 2.5 (listada el 08-04-2026) | ZIP, 28,38 MB | [descargar](https://www.usb.org/sites/default/files/USB%20Type-C%202.5%20Release%20202603.zip) · [página](https://usb.org/document-library/usb-type-cr-cable-and-connector-specification-release-25) |
-| USB 2.0 Specification | ZIP con ECN hasta abril de 2025 (listado 03-06-2025) | ZIP, 13,82 MB | [descargar](https://usb.org/sites/default/files/usb_20_20250603.zip) · [página](https://usb.org/document-library/usb-20-specification) |
-| USB Battery Charging Specification v1.2 | BC 1.2 (listada 11-12-2019) | ZIP | [descargar](https://usb.org/sites/default/files/BCv1.2_070312_0.zip) · [página](https://usb.org/document-library/battery-charging-v12-spec-and-adopters-agreement) |
+| USB Type-C Cable and Connector Specification | Release 2.5 (listada el 08-04-2026) | ZIP, 28,38 MB | [descargar](https://www.usb.org/sites/default/files/USB%20Type-C%202.5%20Release%20202603.zip) ([copia local](../documentos-compartidos/usb/USB_Type-C_2.5_Release_202603.zip)) · [página](https://usb.org/document-library/usb-type-cr-cable-and-connector-specification-release-25) |
+| USB 2.0 Specification | ZIP con ECN hasta abril de 2025 (listado 03-06-2025) | ZIP, 13,82 MB | [descargar](https://usb.org/sites/default/files/usb_20_20250603.zip) ([copia local](../documentos-compartidos/usb/usb_20_20250603.zip)) · [página](https://usb.org/document-library/usb-20-specification) |
+| USB Battery Charging Specification v1.2 | BC 1.2 (listada 11-12-2019) | ZIP | [descargar](https://usb.org/sites/default/files/BCv1.2_070312_0.zip) ([copia local](../documentos-compartidos/usb/BCv1.2_070312_0.zip)) · [página](https://usb.org/document-library/battery-charging-v12-spec-and-adopters-agreement) |
 | ECN "Legacy Cable Rp Tolerance" (Type-C Release 1.0, 11-08-2014) | Form 20140811-ECN | PDF, copia no oficial | [ver](https://docs.ampnuts.ru/eevblog.docs/Standards/USB%203.1/usb_31_030215/USB%20Type-C/USB%20Type-C%20ECNs/USB%20Type-C%20ECN%20Legacy%20Cable%20Rp%20Tolerance%20v4.pdf) |
 | Google (Chromium OS): consejos sobre cables y adaptadores USB-C | Sin referencia | Web | [ver](https://chromium.org/chromium-os/developer-library/reference/hardware/cable-and-adapter-tips-and-tricks) |
 | Programa de cumplimiento de USB-IF | Sin referencia | Web | [ver](https://usb.org/node/579) |
 | Integrators List (productos certificados) | Sin referencia | Web | [cms.usb.org](https://cms.usb.org/) (la página del programa remite a `cms.usb.org/integrators-list`) |
 | Manual del SumUp Solo (copia de terceros) | Sin referencia | Web | [manuals.plus](https://manuals.plus/sumup/solo-card-reader-manual) |
-| Ficha técnica del Solo en Currys | BRI42258_TECH | PDF | [ver](https://ik.imagekit.io/pimberly/595e406f0f15f30010780448/cd32c72b/62ea63129b3cd64ff4000200/BRI42258_TECH.pdf) |
+| Ficha técnica del Solo en Currys | BRI42258_TECH | PDF | [ver](https://ik.imagekit.io/pimberly/595e406f0f15f30010780448/cd32c72b/62ea63129b3cd64ff4000200/BRI42258_TECH.pdf) ([copia local](../sumup-solo/datasheets/BRI42258_TECH.pdf)) |
 
 ### Qué dicen los más relevantes
 
@@ -253,5 +253,7 @@ Son conclusiones mías, no afirmaciones de las fuentes.
 - **Política de devolución de Amazon.es** y marcado CE/RoHS del anuncio.
 
 ## 9. Fuentes
+
+Copias locales de los documentos descargados: [lista en enlaces.md](enlaces.md#copias-locales-de-los-documentos).
 
 Todos los enlaces, ordenados por tipo y con nota en los que no pude abrir, en [`enlaces.md`](enlaces.md).

@@ -18,9 +18,9 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 ## Conector Dupont de referencia y cabecera de 2,54 mm
 
-- [Amphenol FCI Dubox, hoja de datos wire-to-board (PDF)](https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/boardwiretoboard/bwb_dubox_wtb.pdf) (3 A, 15 y 20 mΩ, 200 ciclos, inserción 1,30 N, extracción 0,30 N, retención 15 N; sin enclavamiento)
+- [Amphenol FCI Dubox, hoja de datos wire-to-board (PDF)](https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/boardwiretoboard/bwb_dubox_wtb.pdf) ([copia local](datasheets/bwb_dubox_wtb.pdf)) (3 A, 15 y 20 mΩ, 200 ciclos, inserción 1,30 N, extracción 0,30 N, retención 15 N; sin enclavamiento)
 - [TTI, Amphenol FCI Dubox 2,54 mm](https://www.tti.com/content/ttiinc/en/manufacturers/amphenol/products/amphenol-fci-dubox-2-54mm-crimp-wire-connectors.html) (descripción; enlaces a las hojas de abajo)
-- [Amphenol FCI, herramientas de crimpado Dubox CTW (PDF)](https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/boardwiretoboard/fci-basics-handtool-dubox-ctw.pdf) (herramientas 10164488-001 y 10164489-001; sin cifras de crimpado)
+- [Amphenol FCI, herramientas de crimpado Dubox CTW (PDF)](https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/boardwiretoboard/fci-basics-handtool-dubox-ctw.pdf) ([copia local](datasheets/fci-basics-handtool-dubox-ctw.pdf)) (herramientas 10164488-001 y 10164489-001; sin cifras de crimpado)
 - [Amphenol FCI, cables precrimpados (PDF)](https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/boardwiretoboard/fci-basics-crimp-lead.pdf) (**sin datos útiles**: solo la oferta de cables precrimpados de 300 mm)
 - Otros dos PDF de Amphenol enlazados desde la página de TTI y **no abiertos**: [dubox_productpresentation.pdf](https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/customerpresentation/dubox_productpresentation.pdf) y [bwb_dubox_shunts.pdf](https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/boardwiretoboard/bwb_dubox_shunts.pdf)
 - [Harwin M20-1070200, carcasa hembra de 2+2 posiciones](https://www.harwin.com/products/M20-1070200) (3 A, 0,64 mm cuadrado, no polarizada, PPE+PS UL94V-1, −25 a +85 °C)
@@ -87,3 +87,12 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 ## Guía de montaje del proyecto
 
 - `claude/guia-montaje-electrico.md` (v2, 20-10-2026), §1 fila 29, §2.4, §3, §4 y §5.3. La leí en la copia local que me pasó el coordinador.
+
+## Copias locales de los documentos
+
+Documentos descargados el 21-10-2026 y guardados en el repositorio. Si un documento tiene enlace original en esta ficha, aparece junto a él como "copia local".
+
+**En esta carpeta (`datasheets/`):**
+
+- [bwb_dubox_wtb.pdf](datasheets/bwb_dubox_wtb.pdf): Dubox® Wire-to-Board / MODULAR, RELIABLE, AND / COMPACT SOLUTION (Dubox, hoja de datos)
+- [fci-basics-handtool-dubox-ctw.pdf](datasheets/fci-basics-handtool-dubox-ctw.pdf): Dubox® 2.54mm Hand Tool / PROFESSIONAL, FAST & ROBUST / HAND TOOL

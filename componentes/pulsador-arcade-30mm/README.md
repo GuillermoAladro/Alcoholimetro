@@ -115,17 +115,17 @@ No hay documento del fabricante. Esta tabla reúne lo que sirve para verificar l
 | Documento | Referencia | Formato | Enlace |
 |---|---|---|---|
 | Documentación de hardware de Raspberry Pi (GPIO: tensiones, pull-up, corriente) | sección GPIO | HTML | [raspberrypi.com](https://www.raspberrypi.com/documentation/hardware/raspberrypi/) |
-| BCM2835 ARM Peripherals (capítulo 6, GPIO) | RP-008249-DS-1 | PDF | [descargar](https://pip-assets.raspberrypi.com/categories/579-raspberry-pi-zero/documents/RP-008249-DS-1-bcm2835-peripherals.pdf) (mi herramienta solo leyó hasta la página 53) |
+| BCM2835 ARM Peripherals (capítulo 6, GPIO) | RP-008249-DS-1 | PDF | [descargar](https://pip-assets.raspberrypi.com/categories/579-raspberry-pi-zero/documents/RP-008249-DS-1-bcm2835-peripherals.pdf) ([copia local](datasheets/RP-008249-DS-1-bcm2835-peripherals.pdf)) (mi herramienta solo leyó hasta la página 53) |
 | Esquema reducido de la Pi 3B+ | RP-008339-DS-1 | PDF | [descargar](https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008339-DS-1-raspberry-pi-3-b-plus-reduced-schematics.pdf) |
 | gpiozero, clase `Button` (código fuente) | `input_devices.py` | Python | [GitHub](https://raw.githubusercontent.com/gpiozero/gpiozero/master/gpiozero/input_devices.py) |
 | Nota de aplicación de relés de Tyco Electronics (TE): contactos, películas, bajo nivel | 13C3236, 12-00 | PDF | [descargar](https://www.digital-loggers.com/relaycare.pdf) (copia en un servidor ajeno a TE) |
 | Datos técnicos de contactos de C&K Components (catálogo, págs. N-7 a N-10) | catálogo C&K | PDF | [descargar](https://static.chipdip.ru/lib/181/DOC015181139.pdf) (copia en un servidor ajeno a C&K) |
 | Omron: qué microinterruptores sirven para microcarga | FAQ de Omron | HTML | copia en [Digi-Key](https://forum.digikey.com/t/which-basic-switches-are-suitable-for-microload/35331) y [problemas bajo la carga mínima](https://forum.digikey.com/t/what-problems-may-occur-if-the-set-current-is-below-the-minimum-applicable-load-for-a-basic-switch/35390) |
 | Omron D2MV (plata y oro): carga mínima y vida | página de Misumi | HTML | [Misumi](https://vn.misumi-ec.com/vona2/detail/221000559071/) |
-| Schurter MSM, pulsador antivandálico de acero inoxidable | nombre de archivo: schurter_shris05004-1-1758128 (copia de Mouser) | PDF | [descargar](https://mouser.com/datasheet/2/358/schurter_shris05004-1-1758128.pdf) |
+| Schurter MSM, pulsador antivandálico de acero inoxidable | nombre de archivo: schurter_shris05004-1-1758128 (copia de Mouser) | PDF | [descargar](https://mouser.com/datasheet/2/358/schurter_shris05004-1-1758128.pdf) ([copia local](datasheets/schurter_shris05004-1-1758128.pdf)) |
 | Schurter MSM 22 (copia de RS) | nombre de archivo: 0900766b8141c4e2 | PDF | [descargar](https://docs.rs-online.com/88f6/0900766b8141c4e2.pdf) |
-| APEM, serie AV (antivandálico y de seguridad) | nombre de archivo: Farnell 1564503 | PDF | [descargar](https://www.farnell.com/datasheets/1564503.pdf) |
-| TI, ESD Fundamentals Part 2: IEC 61000-4-2 | SSZT871 | PDF | [descargar](https://edgeworker.ti.com/lit/pdf/sszt871) |
+| APEM, serie AV (antivandálico y de seguridad) | nombre de archivo: Farnell 1564503 | PDF | [descargar](https://www.farnell.com/datasheets/1564503.pdf) ([copia local](datasheets/1564503.pdf)) |
+| TI, ESD Fundamentals Part 2: IEC 61000-4-2 | SSZT871 | PDF | [descargar](https://edgeworker.ti.com/lit/pdf/sszt871) ([copia local](datasheets/sszt871.pdf)) |
 | Analog Devices, rebote de interruptores y ESD | artículo técnico | HTML | [analog.com](https://www.analog.com/en/resources/technical-articles/switch-bounce-and-other-dirty-little-secrets.html) |
 
 ### Qué dicen los más relevantes
@@ -233,7 +233,7 @@ Los tres son pulsadores industriales o antivandálicos de la gama de 16-30 mm. D
 
 | | Schurter MSM | APEM AV | Eaton M22S-D-X (RMQ-Titan) |
 |---|---|---|---|
-| Material | Carcasa y actuador de acero inoxidable ([datasheet](https://mouser.com/datasheet/2/358/schurter_shris05004-1-1758128.pdf)) | Carcasa PBT o poliamida; buje y actuador de acero inoxidable, latón niquelado o cromado, según modelo ([Farnell](https://www.farnell.com/datasheets/1564503.pdf)) | No consta en la hoja que leí |
+| Material | Carcasa y actuador de acero inoxidable ([datasheet](https://mouser.com/datasheet/2/358/schurter_shris05004-1-1758128.pdf) ([copia local](datasheets/schurter_shris05004-1-1758128.pdf))) | Carcasa PBT o poliamida; buje y actuador de acero inoxidable, latón niquelado o cromado, según modelo ([Farnell](https://www.farnell.com/datasheets/1564503.pdf) ([copia local](datasheets/1564503.pdf))) | No consta en la hoja que leí |
 | Tamaños / agujero | Ø16, 19, 22 y 30 mm. MSM 22: rosca M22×1 | Ø19,2 mm o Ø22,2 mm en la mayoría; Ø16,2 y Ø24,2 en otros | 22,5 mm |
 | Grosor de panel | MSM 22: máx. 5-6 mm según versión ([hoja RS](https://docs.rs-online.com/88f6/0900766b8141c4e2.pdf)) | 1-11 mm (antivandálico y Ø19/22) | no consta |
 | IP | **IP67 en la zona de contactos** del lado frontal; el actuador móvil es IP40 al frente | IP65 a IP67 o IP69K según modelo (solo versiones selladas) | IP67 e IP69K, NEMA 4X ([hoja de un distribuidor](https://vdam.kdsi.net/digital_asset_manager/file_download.php?vi=8736462)) |
@@ -264,7 +264,7 @@ Notas:
 | Adafruit avisa de que, con los pines expuestos, la Pi se daña fácilmente por descarga estática o conexiones erróneas. No se debe aplicar a un GPIO menos de 0 V ni más de 5 V. (Adafruit pone el límite en 5 V; la documentación de Raspberry Pi dice que las entradas son tolerantes a 3,3 V, y es la que manda) | [Adafruit](https://learn.adafruit.com/raspberry-pi-care-and-troubleshooting/warning) |
 | En el esquema reducido de la Pi 3B+ mi herramienta no vio resistencias, diodos ESD ni filtros en la red de GPIO17. **La extracción no incluye las conexiones de los componentes pasivos**, así que no puedo asegurarlo | [Esquema](https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008339-DS-1-raspberry-pi-3-b-plus-reduced-schematics.pdf) |
 | Un participante de un foro de element14 dice, de segunda mano, que tocar los GPIO puede colgar la Pi y que las pruebas EMC no lo reprodujeron. Sin fuente primaria | [element14](https://community.element14.com/products/raspberry-pi/f/forum/18853/cases-and-esd-concerns/21157) |
-| IEC 61000-4-2: nivel 4 = ±8 kV por contacto y ±15 kV en aire. El generador usa 330 Ω y 150 pF | [Wikipedia](https://en.wikipedia.org/wiki/IEC_61000-4-2), [TI SSZT871](https://edgeworker.ti.com/lit/pdf/sszt871) |
+| IEC 61000-4-2: nivel 4 = ±8 kV por contacto y ±15 kV en aire. El generador usa 330 Ω y 150 pF | [Wikipedia](https://en.wikipedia.org/wiki/IEC_61000-4-2), [TI SSZT871](https://edgeworker.ti.com/lit/pdf/sszt871) ([copia local](datasheets/sszt871.pdf)) |
 | Modelo de cuerpo humano (HBM): 100 pF y 1,5 kΩ (JEDEC); otra especificación usa 150 pF y 330 Ω | [Wikipedia](https://en.wikipedia.org/wiki/Electrostatic_discharge) |
 | Layout recomendado: **diodo TVS junto al conector y resistencia en serie junto al integrado**. La resistencia sola suele bastar para un pin de IC; un TVS sin impedancia en serie es improbable que proteja bien una entrada de alta impedancia. No da valores | [LearnEMC](https://learnemc.com/qotw-230724) |
 | Un antirrebote por software no protege contra sobretensión ni ESD. Existen integrados que añaden antirrebote, ±25 V de sobretensión y ±15 kV de ESD (MAX6816/17/18) | [Analog Devices](https://www.analog.com/en/resources/technical-articles/switch-bounce-and-other-dirty-little-secrets.html) |
@@ -431,5 +431,7 @@ Son conclusiones mías, no afirmaciones de las fuentes.
 - **Convenio de color (IEC 60073 / EN 60204-1)** y la norma de producto aplicable al ESD de la máquina: no consultadas.
 
 ## 15. Fuentes
+
+Copias locales de los documentos descargados: [lista en enlaces.md](enlaces.md#copias-locales-de-los-documentos) y carpeta [`datasheets/`](datasheets/).
 
 Todos los enlaces, ordenados por tipo y con nota de los que no pude abrir, en [`enlaces.md`](enlaces.md).

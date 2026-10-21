@@ -47,7 +47,7 @@ El anuncio no se ha podido abrir. Esta tabla separa lo que dice tu hoja de lo qu
 | Dureza Shore A | No indicada | **Sin verificar** |
 | Color / transparencia | No indicado | **Sin verificar** |
 | Fabricante y lote | Desconocidos | **Sin verificar** |
-| Temperatura de trabajo | No indicada | Basta con saber que el aliento sale a unos 34 °C ([SWOV](https://swov.nl/en/publicatie/influence-temperature-breath-alcohol-analysis)) y que el sensor trabaja a 10–40 °C ([manual de Winsen](https://www.winsen-sensor.com/d/files/manual/ze29a-c2h5oh.pdf)). Cualquier silicona aguanta ese rango |
+| Temperatura de trabajo | No indicada | Basta con saber que el aliento sale a unos 34 °C ([SWOV](https://swov.nl/en/publicatie/influence-temperature-breath-alcohol-analysis)) y que el sensor trabaja a 10–40 °C ([manual de Winsen](https://www.winsen-sensor.com/d/files/manual/ze29a-c2h5oh.pdf) ([copia local](../winsen-ze29a/datasheets/ze29a-c2h5oh.pdf))). Cualquier silicona aguanta ese rango |
 
 **Referencias de lo que suele publicar un fabricante serio** (no son tu tubo, solo para saber qué pedir):
 
@@ -67,25 +67,25 @@ No hay datasheet del tubo. Lo que hay son los documentos del sensor al que se co
 
 | Documento | Referencia | Formato | Enlace |
 |---|---|---|---|
-| Manual del Winsen ZE29A-C2H5OH | V1.1, sin fecha | PDF | [descargar](https://www.winsen-sensor.com/d/files/manual/ze29a-c2h5oh.pdf) |
+| Manual del Winsen ZE29A-C2H5OH | V1.1, sin fecha | PDF | [descargar](https://www.winsen-sensor.com/d/files/manual/ze29a-c2h5oh.pdf) ([copia local](../winsen-ze29a/datasheets/ze29a-c2h5oh.pdf)) |
 | Manual enlazado en la ficha web del ZE29A (otro archivo) | `ze29a-alcohol-module-manualv1_0.pdf` | PDF | [descargar](https://www.winsen-sensor.com/d/files/ze29a-alcohol-module-manualv1_0.pdf) |
 | FDA, 21 CFR 177.2600, caucho para uso repetido | eCFR | Web | [abrir](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-177/subpart-C/section-177.2600) |
 | Reglamento (CE) 1935/2004, marco de materiales en contacto con alimentos | CELEX 32004R1935 | Web | [abrir](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32004R1935) |
 | Reglamento (UE) 10/2011, plásticos (art. 2.2 excluye la silicona) | CELEX 32011R0010 | Web | [abrir](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32011R0010) |
-| BfR, Recomendación XV, Siliconas (traducción no oficial, versión del 1-2-2023) | BfR XV | PDF | [descargar](https://www.bfr.bund.de/cm/349/XV-Silicones.pdf) |
+| BfR, Recomendación XV, Siliconas (traducción no oficial, versión del 1-2-2023) | BfR XV | PDF | [descargar](https://www.bfr.bund.de/cm/349/XV-Silicones.pdf) ([copia local](datasheets/XV-Silicones.pdf)) |
 | Consejo de Europa, Resolución sobre siliconas para contacto con alimentos | ResAP(2004)5 | PDF | [descargar](https://rm.coe.int/16805db897) |
-| OIML R 126-1:2021, analizadores de aliento evidenciales | R 126-1 | PDF | [descargar](https://www.oiml.org/en/files/pdf_r/r126-1-e21.pdf) |
+| OIML R 126-1:2021, analizadores de aliento evidenciales | R 126-1 | PDF | [descargar](https://www.oiml.org/en/files/pdf_r/r126-1-e21.pdf) ([copia local](datasheets/r126-1-e21.pdf)) |
 | Dräger Alcotest 6820, instrucciones de uso | 9033765 | PDF | [descargar](https://www.draeger.com/Content/Documents/Products/alcotest-6820-gb-ifu-9033765-en.pdf) |
-| NHTSA, arrastre entre soplidos en el Alco-Sensor IV (Conde, 2002) | DOT HS 809 424 | PDF | [descargar](https://rosap.ntl.bts.gov/view/dot/1733/dot_1733_DS1.pdf) |
+| NHTSA, arrastre entre soplidos en el Alco-Sensor IV (Conde, 2002) | DOT HS 809 424 | PDF | [descargar](https://rosap.ntl.bts.gov/view/dot/1733/dot_1733_DS1.pdf) ([copia local](datasheets/dot_1733_DS1.pdf)) |
 | HSE, efecto del tipo de tubo en sistemas de muestreo de detectores de gas | RR635 | Web | [abrir](https://hse.gov.uk/RESEARCH/rrhtm/rr635.htm) |
 | Deming et al., retrasos de compuestos en tubos por interacción con la pared (AMT, 2019) | amt-2019-25 | PDF (preprint) | [descargar](https://amt.copernicus.org/preprints/amt-2019-25/amt-2019-25.pdf) |
-| SPEC Sensors, guía de integración de sensores electroquímicos | AN-111 | PDF | [descargar](https://www.interlinkelectronics.com/downloads/subsidiary-docs/spec-sensors/SPEC-AN-111-Integration-Guidelines.pdf) |
+| SPEC Sensors, guía de integración de sensores electroquímicos | AN-111 | PDF | [descargar](https://www.interlinkelectronics.com/downloads/subsidiary-docs/spec-sensors/SPEC-AN-111-Integration-Guidelines.pdf) ([copia local](datasheets/SPEC-AN-111-Integration-Guidelines.pdf)) |
 | Winsen, manual del sensor electroquímico ME2-CO (otro sensor, mismo fabricante) | Ver 1.3 | PDF | [descargar](https://www.winsen-sensor.com/d/files/me2-co-0-1000ppm-manual%EF%BC%88ver1_3%EF%BC%89.pdf) |
-| Ejemplo de ficha de conformidad de un fabricante de silicona (Wacker, ELASTOSIL M 4630 A/B) | v1.18, 04/2025 | PDF | [descargar](https://assets.testequity.com/te1/Documents/pdf/wacker/Wacker_ELASTOSIL-M-4630-A_ComplianceSheet_0925.pdf) |
+| Ejemplo de ficha de conformidad de un fabricante de silicona (Wacker, ELASTOSIL M 4630 A/B) | v1.18, 04/2025 | PDF | [descargar](https://assets.testequity.com/te1/Documents/pdf/wacker/Wacker_ELASTOSIL-M-4630-A_ComplianceSheet_0925.pdf) ([copia local](datasheets/Wacker_ELASTOSIL-M-4630-A_ComplianceSheet_0925.pdf)) |
 
 ### Qué dice el manual del ZE29A sobre el tubo
 
-Fuente: [manual de Winsen V1.1](https://www.winsen-sensor.com/d/files/manual/ze29a-c2h5oh.pdf), leído con la herramienta de lectura web. No contiene figuras ni pies de figura.
+Fuente: [manual de Winsen V1.1](https://www.winsen-sensor.com/d/files/manual/ze29a-c2h5oh.pdf) ([copia local](../winsen-ze29a/datasheets/ze29a-c2h5oh.pdf)), leído con la herramienta de lectura web. No contiene figuras ni pies de figura.
 
 - El módulo hay que usarlo con una **boquilla de soplido diseñada por el cliente**. El manual no da diámetros, ni tubo, ni racor, ni dibujo.
 - Dos puntos de diseño: una **barrera** en la boquilla que genere la señal de presión, y el **orificio de presión delante y el de muestra detrás**, en el sentido del soplido. El sentido del soplido tiene que ser fijo.
@@ -150,7 +150,7 @@ Cálculo mío. El volumen es el de la tabla de la [sección 2](#2-especificacion
 
 ### Flujo y pérdida de carga
 
-El módulo exige ≥ 10 L/min. Dräger declara > 8 L/min y > 1,2 L de volumen para el Alcotest 6820 ([instrucciones](https://www.draeger.com/Content/Documents/Products/alcotest-6820-gb-ifu-9033765-en.pdf)). La norma OIML R 126-1 pide ≥ 0,1 L/s (6 L/min), ≥ 1,2 L y ≥ 3 s, y limita la contrapresión a 25 hPa a 0,2 L/s (12 L/min) ([OIML](https://www.oiml.org/en/files/pdf_r/r126-1-e21.pdf)).
+El módulo exige ≥ 10 L/min. Dräger declara > 8 L/min y > 1,2 L de volumen para el Alcotest 6820 ([instrucciones](https://www.draeger.com/Content/Documents/Products/alcotest-6820-gb-ifu-9033765-en.pdf)). La norma OIML R 126-1 pide ≥ 0,1 L/s (6 L/min), ≥ 1,2 L y ≥ 3 s, y limita la contrapresión a 25 hPa a 0,2 L/s (12 L/min) ([OIML](https://www.oiml.org/en/files/pdf_r/r126-1-e21.pdf) ([copia local](datasheets/r126-1-e21.pdf))).
 
 Pérdida de carga de un tubo liso, aire a 35 °C. **Cálculo mío**, con la fórmula de Darcy y Blasius para flujo turbulento y 64/Re para laminar. En este régimen (Re entre 1.300 y 3.800, entre laminar y turbulento) es un orden de magnitud, con un error de ±50 %:
 
@@ -186,7 +186,7 @@ Ver [sección 4](#4-uso-en-el-alcoholímetro-diámetro-longitud-volumen-flujo). 
 ### 5.2 "Apto alimentario" sin certificado
 
 - **Sin un documento del fabricante no se puede asegurar nada**: ni el tipo de silicona, ni el curado, ni los volátiles, ni la migración. Un anuncio de Amazon no es una declaración de conformidad.
-- No hay medida armonizada de la UE para silicona, así que no existe un "marcado" oficial que buscar. Lo que sí existe es una **ficha o declaración del fabricante**. Wacker, por ejemplo, publica una para su materia prima, con las normas que cumple, y avisa de que la aprobación de los ingredientes no garantiza que el producto acabado sea seguro: eso lo debe asegurar quien fabrica el tubo ([ficha Wacker](https://assets.testequity.com/te1/Documents/pdf/wacker/Wacker_ELASTOSIL-M-4630-A_ComplianceSheet_0925.pdf)).
+- No hay medida armonizada de la UE para silicona, así que no existe un "marcado" oficial que buscar. Lo que sí existe es una **ficha o declaración del fabricante**. Wacker, por ejemplo, publica una para su materia prima, con las normas que cumple, y avisa de que la aprobación de los ingredientes no garantiza que el producto acabado sea seguro: eso lo debe asegurar quien fabrica el tubo ([ficha Wacker](https://assets.testequity.com/te1/Documents/pdf/wacker/Wacker_ELASTOSIL-M-4630-A_ComplianceSheet_0925.pdf) ([copia local](datasheets/Wacker_ELASTOSIL-M-4630-A_ComplianceSheet_0925.pdf))).
 - Según el resumen que leí del 1935/2004, el art. 15 exige "para contacto con alimentos", una indicación de uso o el símbolo oficial en materiales que aún no están en contacto con alimentos, salvo los claramente alimentarios. Que un tubo vendido al metro no lleve nada de eso no prueba nada en ningún sentido.
 - **Ojo con el criterio:** "alimentario" mide la migración hacia comida y bebida, no el desprendimiento de vapores hacia un sensor ni lo que respira una persona. Sirve como indicio de calidad (pocos volátiles y poco olor), no como garantía para este uso.
 
@@ -196,7 +196,7 @@ Ver [sección 4](#4-uso-en-el-alcoholímetro-diámetro-longitud-volumen-flujo). 
 
 - **Winsen, manual del ME2-CO** (otro sensor electroquímico, mismo fabricante): pide evitar el contacto con disolventes orgánicos, incluidos la goma de silicona y otros adhesivos. El manual del ZE29A **no** dice nada de silicona. ([ME2-CO](https://www.winsen-sensor.com/d/files/me2-co-0-1000ppm-manual%EF%BC%88ver1_3%EF%BC%89.pdf))
 - **Figaro, sensores electroquímicos**: evitar zonas con adhesivos o productos capilares con silicona, o con goma de silicona; "los vapores de silicona pueden obstruir la vía de difusión del gas". Los vapores de alcoholes, acetona o aceites volátiles se adsorben en la capa sensora y causan una deriva temporal. ([Figaro](https://figarosensor.com/attention/electrochemical-type.html))
-- **SPEC Sensors, AN-111**: no usar silicona ni recubrimientos conformados alrededor del sensor ni de sus orificios de gas, y minimizar los materiales que desprenden olor perceptible. No da guía sobre tubo de muestreo. ([AN-111](https://www.interlinkelectronics.com/downloads/subsidiary-docs/spec-sensors/SPEC-AN-111-Integration-Guidelines.pdf))
+- **SPEC Sensors, AN-111**: no usar silicona ni recubrimientos conformados alrededor del sensor ni de sus orificios de gas, y minimizar los materiales que desprenden olor perceptible. No da guía sobre tubo de muestreo. ([AN-111](https://www.interlinkelectronics.com/downloads/subsidiary-docs/spec-sensors/SPEC-AN-111-Integration-Guidelines.pdf) ([copia local](datasheets/SPEC-AN-111-Integration-Guidelines.pdf)))
 - **Black Line Safety**: los sensores electroquímicos son los más sensibles a envenenamiento y deriva; cita vapores de silicona, disolventes y lubricantes. ([Black Line](https://help.blacklinesafety.com/en/cartridges-and-sensors/cartridge-documentation/cartridge-technical-user-manual/maintenance-guidelines-and-replacement-indicators/sensor-poisoning-and-drift))
 - **En sentido contrario:** [West Coast Safety](https://wcsafety.com/blogs/reference/gas-sensor-poisoning) dice que el envenenamiento por silicona es específico de los sensores catalíticos (de perla). [Conspec](https://conspec-controls.com/support/sensor-poisons/) lista las siliconas como veneno de perla catalítica. Ambas fuentes son comerciales y no hablan de sensores de pila de combustible.
 - **Mecanismo:** el envenenamiento por siloxanos está bien descrito en sensores catalíticos (se deposita sílice) ([patente US 11650188](https://patents.google.com/patent/US11650188)). En catalizadores de platino de pilas de combustible, un estudio con siloxano difenílico bloqueó la reacción de reducción de oxígeno cuando se mezcló con el catalizador, y no cuando se inyectó en el electrolito ([arXiv 2002.11698](https://arxiv.org/abs/2002.11698)). Es una analogía lejana, no una prueba sobre el ZE29A.
@@ -215,12 +215,12 @@ Ver [sección 4](#4-uso-en-el-alcoholímetro-diámetro-longitud-volumen-flujo). 
   - HSE RR635: con **PTFE y FEP** el retraso de H2S, NO y NO2 es mínimo. **Tygon** alarga mucho el T90 de H2S y NO y no es adecuado para tolueno (más de una hora). El estudio no incluye silicona. ([HSE](https://hse.gov.uk/RESEARCH/rrhtm/rr635.htm))
   - Deming et al. (2019): con cetonas de C6 a C14, el **PFA** tuvo el menor retraso, el FEP casi igual y el PTFE bastante más. No probaron silicona, Tygon ni PVC. Son compuestos mucho menos volátiles que el etanol, así que no se pueden trasladar tal cual. ([AMT 2019](https://amt.copernicus.org/preprints/amt-2019-25/amt-2019-25.pdf))
   - AMT 2024: los polímeros de difusión rápida (polipropileno, polietileno y silicona conductora) absorben el compuesto en el volumen de la pared. Con silicona conductora los retrasos fueron de 2 a 3 órdenes de magnitud mayores que en otros tubos; tras una hora solo habían pasado cetonas C6 (cerca del 80 %) y C8 (cerca del 30 %). ([AMT 2024](https://amt.copernicus.org/articles/17/1545/2024/)) Otra vez, compuestos pesados y silicona cargada.
-- **Memoria medida en alcoholímetros reales:** la NHTSA midió en el Alco-Sensor IV, a 10 °C, que parte del etanol y el agua del soplido se condensa en las superficies frías de la vía de aire y el siguiente soplido lo arrastra. En un ensayo la lectura residual bajó de 0,071 a 0,032 BrAC en unos 10 minutos sin soplar. ([Conde, 2002](https://rosap.ntl.bts.gov/view/dot/1733/dot_1733_DS1.pdf)) No es un estudio de silicona.
+- **Memoria medida en alcoholímetros reales:** la NHTSA midió en el Alco-Sensor IV, a 10 °C, que parte del etanol y el agua del soplido se condensa en las superficies frías de la vía de aire y el siguiente soplido lo arrastra. En un ensayo la lectura residual bajó de 0,071 a 0,032 BrAC en unos 10 minutos sin soplar. ([Conde, 2002](https://rosap.ntl.bts.gov/view/dot/1733/dot_1733_DS1.pdf) ([copia local](datasheets/dot_1733_DS1.pdf))) No es un estudio de silicona.
 - **Referencia de tolerancia:** la OIML R 126-1 exige que la memoria entre soplidos sea de ±0,010 mg/L como máximo (evidenciales). El ZE29A declara ±0,050 mg/L por debajo de 0,4 mg/L, así que un arrastre del tubo solo se nota si llega a falsos positivos con 0 g/L o a una deriva visible en el segundo soplido (mi lectura).
 
 ### 5.5 Condensación del aliento
 
-- El aliento sale a unos 34 °C y saturado de humedad ([SWOV](https://swov.nl/en/publicatie/influence-temperature-breath-alcohol-analysis); la NHTSA dice "saturado" también). En las superficies más frías condensa agua, y el etanol se disuelve en ella. La NHTSA lo describe como la causa del arrastre entre soplidos en un instrumento sin calentar ([NHTSA](https://rosap.ntl.bts.gov/view/dot/1733/dot_1733_DS1.pdf)).
+- El aliento sale a unos 34 °C y saturado de humedad ([SWOV](https://swov.nl/en/publicatie/influence-temperature-breath-alcohol-analysis); la NHTSA dice "saturado" también). En las superficies más frías condensa agua, y el etanol se disuelve en ella. La NHTSA lo describe como la causa del arrastre entre soplidos en un instrumento sin calentar ([NHTSA](https://rosap.ntl.bts.gov/view/dot/1733/dot_1733_DS1.pdf) ([copia local](datasheets/dot_1733_DS1.pdf))).
 - **Cantidad (cálculo mío con la fórmula de Magnus):** el aire saturado contiene 37,5 g/m³ de agua a 34 °C y 23,0 g/m³ a 25 °C. Si se enfría hasta la temperatura de la pared, se condensan unos 14,5 g/m³ a 25 °C y 24,7 g/m³ a 15 °C. Con un soplido de 0,67 L (10 L/min durante 4 s), eso es de 10 a 16 mg de agua por soplido. Pocos mg, pero se acumulan con cada usuario y el tubo no se seca solo si queda en un tramo frío o en bucle.
 - **Práctica profesional:** el Dräger Alcotest 9510 lleva una manguera de aliento **calentada** que "evita la condensación", y la celda de combustible también va calentada ([Dräger](https://www.draeger.com/en_uk/Products/Alcotest-9510)). El Alco-Sensor IV tiene un accesorio calentado para limpiar la vía de aire (NHTSA).
 - **En este proyecto:** el tubo va dentro de una máquina cerrada de chapa con rejillas, en un bar. La temperatura interior de la máquina es una incógnita (la guía la mide al final). Un tubo corto y recto, **inclinado para que el condensado caiga hacia la boquilla y no hacia el sensor**, reduce el riesgo. No hay forma de calentar el tubo con lo que lista la guía.
@@ -343,5 +343,7 @@ Son conclusiones mías, no afirmaciones de las fuentes.
 - **Búsquedas:** se agotó el límite de búsquedas web antes de poder buscar datos de radio mínimo de curvatura, de crecimiento microbiano y de PVC.
 
 ## 11. Fuentes
+
+Copias locales de los documentos descargados: [lista en enlaces.md](enlaces.md#copias-locales-de-los-documentos) y carpeta [`datasheets/`](datasheets/).
 
 Todos los enlaces, ordenados por tipo, en [`enlaces.md`](enlaces.md).

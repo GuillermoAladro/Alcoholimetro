@@ -11,8 +11,8 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 Los enlaces de USB-IF los tomé de la [ficha #10](../cable-usb-a-usb-c-90-30cm/enlaces.md), que los vio en usb.org. **No los abrí yo.**
 
-- [USB Battery Charging Specification v1.2 (página)](https://usb.org/document-library/battery-charging-v12-spec-and-adopters-agreement) · [ZIP](https://usb.org/sites/default/files/BCv1.2_070312_0.zip)
-- [USB 2.0 Specification (página)](https://usb.org/document-library/usb-20-specification) · [ZIP, 13,82 MB](https://usb.org/sites/default/files/usb_20_20250603.zip)
+- [USB Battery Charging Specification v1.2 (página)](https://usb.org/document-library/battery-charging-v12-spec-and-adopters-agreement) · [ZIP](https://usb.org/sites/default/files/BCv1.2_070312_0.zip) ([copia local](../documentos-compartidos/usb/BCv1.2_070312_0.zip))
+- [USB 2.0 Specification (página)](https://usb.org/document-library/usb-20-specification) · [ZIP, 13,82 MB](https://usb.org/sites/default/files/usb_20_20250603.zip) ([copia local](../documentos-compartidos/usb/usb_20_20250603.zip))
 - [usb_20.pdf, copia no oficial de 2011 (git.nefarius.at)](https://git.nefarius.at/nefarius/USB-Bluetooth-Specs/media/branch/master/usb_20_0702115/usb_20.pdf): solo se leyó el índice (el cuerpo no es legible con la herramienta). Capítulo 6, sección 6.5.3 "Series A and Series B Receptacles", p. 94, y 6.7 "Electrical, Mechanical, and Environmental Compliance Standards", p. 106.
 
 ## Detección de cargador (D+/D−, BC 1.2, Apple, Samsung)
@@ -28,27 +28,27 @@ Los enlaces de USB-IF los tomé de la [ficha #10](../cable-usb-a-usb-c-90-30cm/e
 
 ## Conectores USB-A hembra (fabricantes)
 
-- [Molex PS-105057-001, USB 105057-0001 (copia en RS)](https://docs.rs-online.com/6a44/A700000008643305.pdf): leído. 1,5 A, 30/100 mΩ, subida de 30 °C a 1,5 A, fuerzas de enchufado y desenchufado.
+- [Molex PS-105057-001, USB 105057-0001 (copia en RS)](https://docs.rs-online.com/6a44/A700000008643305.pdf) ([copia local](datasheets/A700000008643305.pdf)): leído. 1,5 A, 30/100 mΩ, subida de 30 °C a 1,5 A, fuerzas de enchufado y desenchufado.
 - [RS UK, Molex 105057-0001](https://uk.rs-online.com/web/p/products/8967579): leído (1,5 A, 30 V). Otras dos hojas enlazadas ahí: [Type A 2.0mm shielded USB PCB receptacle](https://docs.rs-online.com/1d8d/0900766b8144c2a4.pdf) (**se abrió vacía, sin texto**) y [105057-0001 Part Details](https://docs.rs-online.com/15f7/0900766b815ec912.pdf) (**no abierta**).
 - [DigiKey UK, Molex 1050570001](https://www.digikey.co.uk/en/products/detail/molex/1050570001/3045207): abierta; no muestra la tabla de atributos.
-- [Würth 61400826021, ficha](https://www.we-online.com/components/products/datasheet/61400826021.pdf): leída. USB 2.0 tipo A doble, 1,5 A, 20 mΩ, 1.500 ciclos.
+- [Würth 61400826021, ficha](https://www.we-online.com/components/products/datasheet/61400826021.pdf) ([copia local](datasheets/61400826021.pdf)): leída. USB 2.0 tipo A doble, 1,5 A, 20 mΩ, 1.500 ciclos.
 - [Kycon KUSBVLPX (Mouser)](https://www.mouser.be/new/kycon/kycon-kusbvlpx-usb-receptacles): leído. 1 A, 30 mΩ.
 - [Kycon KUSBVXHT alta retención (Mouser)](https://www.mouser.in/new/kycon/kycon-high-retention-usb/): leído. 1,5 A, extracción 15 N mín., enchufado 35 N máx.
-- [Mill-Max, zócalos USB (PDF)](https://www.mill-max.com/sites/default/files/external/assets/2017-12/USB%20Sockets.pdf): leído. 1 A por contacto para 30 °C de subida, p. 150.
+- [Mill-Max, zócalos USB (PDF)](https://www.mill-max.com/sites/default/files/external/assets/2017-12/USB%20Sockets.pdf) ([copia local](datasheets/USB_Sockets.pdf)): leído. 1 A por contacto para 30 °C de subida, p. 150.
 - [Kyoritsu, conector USB A/B](https://www.kyohritsu.com/eclib/OTHER/FIG/CONNECTOR/3505.pdf): leído (es una página web). 1,5 A (USB 1.0) y 2,5 A (USB 2.0).
 - [Future Electronics, GCT USB1135-15-9-L-B](https://www.futureelectronics.com/p/5134155): leído. USB 3.0 tipo A de 9 contactos, 3 A.
 - [GCT USB1135, ficha](https://gct.co/files/drawings/usb1135.pdf): **no abierta** (el servidor rechazó la herramienta; no la rodeé).
 - [Amphenol GSB19111KHR (DigiKey)](https://azcus.digikey.com/en/products/detail/amphenol-icc-commercial-products/GSB19111KHR/16819057): **no abierta** (el servidor rechazó la herramienta).
 - Vistos en una búsqueda y **no abiertos**: [GCT USB1135 en DigiKey](https://www.digikey.it/en/products/detail/gct/USB1135-15-9-L-B/13545895), [GCT USB1130-15-A](https://www.digikey.nl/en/products/detail/gct/USB1130-15-A/13546504), [GCT USB1130-15-A en Future](https://www.futureelectronics.com/p/interconnect--usb-to-ttl-rs232-rs422-rs485-cables/usb1130-15-a-gct-5161878), [GCT USB1015 (DigiKey)](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5335/USB1015_Spec.pdf), [Farnell 3621527](https://www.farnell.com/datasheets/3621527.pdf).
-- [Multicomp USB-A-S-RA (Farnell, PDF)](https://www.farnell.com/datasheets/2856485.pdf): leído. 1,5 A, 30 mΩ, –20 a +60 °C.
+- [Multicomp USB-A-S-RA (Farnell, PDF)](https://www.farnell.com/datasheets/2856485.pdf) ([copia local](datasheets/2856485.pdf)): leído. 1,5 A, 30 mΩ, –20 a +60 °C.
 - [Hoja "USB 2.0 - A Connector" en chipdip (pie de página de Distrelec)](https://static.chipdip.ru/lib/628/DOC041628005.pdf): leída. 1,5 A por pin, 30 mΩ.
 - Multicomp Pro MC32603 (USB-A **macho** acodado), [Farnell 3157114](https://www.farnell.com/datasheets/3157114.pdf): leído; es un enchufe y no un receptáculo, 1,5 A. Otros resultados de la búsqueda sin abrir: [chipdip DOC041628393](https://static.chipdip.ru/lib/628/DOC041628393.pdf), [chipdip DOC041628000](https://static.chipdip.ru/lib/628/DOC041628000.pdf), [Farnell cad 3154543](https://www.farnell.com/cad/3154543.pdf), [components.ru 6674251](https://cdn.components.ru/media/PDF/6674251.pdf), [Molex PS-48204 (copia MAN)](https://extranet.mandieselturbo.com/electronics/datasheets/Molex/48204%20Series/PS-48204-001-001.pdf), [Würth 1725344 (RS)](https://nz.rs-online.com/web/p/usb-connectors/1725344), [eicom 1652453](https://cdn.eicom.ru/media/PDF/1652453.pdf).
 - Lumberg 2410 08 (USB-A macho acodado, 1 A): [página](https://www.lumberg.com/en/products/product/2410+08), citada en la [ficha #10](../cable-usb-a-usb-c-90-30cm/README.md); **no la abrí**.
 
 ## Placas "USB-A hembra a bornes" comparables
 
-- [CamdenBoss CIM/USBA en Farnell (PDF)](https://www.farnell.com/datasheets/3927991.pdf) y [element14](https://nz.element14.com/camdenboss/cim-usba/tb-interface-usb-a-recpt-tb/dp/221181701): leídos. Módulo de carril DIN, 30 V CC y 100 mA, tornillo M3, 0,2-4 mm², par máx. 0,5 N·m.
-- [CPC/Farnell, USB2 A Screw Termination Keystone Socket (KUA2bk), PDF](https://www.farnell.com/datasheets/2905819.pdf): leído. "500 mA a 5 V", "para datos, no para carga". Página del producto [cpc.farnell.com](https://cpc.farnell.com/tuk/kua2bkdpm/usb2-a-d-universal-screw-term/dp/CN22299): no abierta.
+- [CamdenBoss CIM/USBA en Farnell (PDF)](https://www.farnell.com/datasheets/3927991.pdf) ([copia local](datasheets/3927991.pdf)) y [element14](https://nz.element14.com/camdenboss/cim-usba/tb-interface-usb-a-recpt-tb/dp/221181701): leídos. Módulo de carril DIN, 30 V CC y 100 mA, tornillo M3, 0,2-4 mm², par máx. 0,5 N·m.
+- [CPC/Farnell, USB2 A Screw Termination Keystone Socket (KUA2bk), PDF](https://www.farnell.com/datasheets/2905819.pdf) ([copia local](datasheets/2905819.pdf)): leído. "500 mA a 5 V", "para datos, no para carga". Página del producto [cpc.farnell.com](https://cpc.farnell.com/tuk/kua2bkdpm/usb2-a-d-universal-screw-term/dp/CN22299): no abierta.
 - [Delock 66653, características](https://www.delock.com/produkt/66653/merkmale.html): leído. Hasta 500 mA, paso 2,54 mm. Su [PDF](https://delock.com/produkt/66653/pdf.html?sprache=en): no abierto.
 - [Danbit: USB 2.0 Type-A hembra a 4 bornes (USB4AF-TERM)](https://danbit.dk/en/stik/25543-usb-20-type-a-female-to-4-pin-screw-terminal-connector-shielded.html): leído; no da corriente, paso ni calibre.
 - [SparkFun: USB Type A Female Breakout, guía](https://learn.sparkfun.com/tutorials/usb-type-a-female-breakout-hookup-guide/all): leída. Sin protecciones citadas; rotulado VCC, D−, D+, GND. Otras páginas del mismo producto vistas y no abiertas: [Core Electronics](https://core-electronics.com.au/usb-type-a-female-breakout.html), [Little Bird](https://littlebirdelectronics.com.au/products/sparkfun-usb-type-a-female-breakout), [bipom](https://www.bipom.com/products/us/2899934.html).
@@ -71,7 +71,7 @@ Los enlaces de USB-IF los tomé de la [ficha #10](../cable-usb-a-usb-c-90-30cm/e
 
 ## Seguridad y normativa
 
-- [ITC-BT-36, Instalaciones a muy baja tensión (plcmadrid.es)](https://www.plcmadrid.es/wp-content/uploads/ITC-BT-36.pdf): leída. Apartado 1 (MBTS/MBTP/MBTF, 50 V CA / 75 V CC), 2.1 (fuentes), 2.2 (separación y conductos).
+- [ITC-BT-36, Instalaciones a muy baja tensión (plcmadrid.es)](https://www.plcmadrid.es/wp-content/uploads/ITC-BT-36.pdf) ([copia local](../documentos-compartidos/normas/ITC-BT-36.pdf)): leída. Apartado 1 (MBTS/MBTP/MBTF, 50 V CA / 75 V CC), 2.1 (fuentes), 2.2 (separación y conductos).
 - Vistos en una búsqueda y no abiertos: [Normatia: ITC-BT-36](https://normatia.com/es/normativa/rebt/2025/itc-bt-36-instalaciones-a-muy-baja-tension/), [REBT 2002 (UPM)](https://www.etsist.upm.es/estaticos/catedra-coitt/web_ICT/Documentacion/REBT_2002.pdf).
 - [onsemi TND6506, nota técnica sobre protección USB-C](https://www.onsemi.com/download/white-papers/pdf/tnd6506-d.pdf): leída para buscar polaridad inversa. **No la trata** (solo corriente inversa y sobretensión en VBUS). Otros vistos en la búsqueda y no abiertos: [TI SLYY105](https://ti.com/lit/SLYY105), [Slashdot: algunos cables USB-C reversibles pueden dañar](https://hardware.slashdot.org/story/16/02/05/2241255/some-reversible-usb-c-cablesadapters-could-cause-irreversible-damage), [components101](https://components101.com/node/841).
 
@@ -86,3 +86,22 @@ Los enlaces de USB-IF los tomé de la [ficha #10](../cable-usb-a-usb-c-90-30cm/e
 - [SumUp Solo](../sumup-solo/README.md): batería de 6,16 Wh, consumo no publicado, manual que pide el cargador original.
 - [Pantalla GeeekPi 7"](../pantalla-geeekpi-7-hdmi/README.md): consumo sin dato oficial, duda A→C o C→C, propuesta de fusible o PTC.
 - [Mean Well LRS-50-5](../meanwell-lrs-50-5/README.md): OCP en 110-150 %, aislamiento, normas.
+
+## Copias locales de los documentos
+
+Documentos descargados el 21-10-2026 y guardados en el repositorio. Si un documento tiene enlace original en esta ficha, aparece junto a él como "copia local".
+
+**En esta carpeta (`datasheets/`):**
+
+- [2856485.pdf](datasheets/2856485.pdf): USB 2.0 Type A Receptacle / Single Port, Right Angle PCB / Specifications:
+- [2905819.pdf](datasheets/2905819.pdf): USB2 A Screw Termination Keystone Socket / KUA2bk / KUA2wh (Farnell, ficha)
+- [3927991.pdf](datasheets/3927991.pdf): R E L AY B A S E S / I N T E R FA C E M O D U L E S / I N T E R FA C E M O D U L E S & R E L AY B A S E S (CamdenBoss)
+- [61400826021.pdf](datasheets/61400826021.pdf): Würth Elektronik 61400826021: plano acotado (tolerancia general ±0,10 mm)
+- [A700000008643305.pdf](datasheets/A700000008643305.pdf): PRODUCT SPECIFICATION / TITLE / USB SERIES CONNECTOR
+- [USB_Sockets.pdf](datasheets/USB_Sockets.pdf): MAXIMUM SOLUTIONS / Mill-Max USB Connectors / Standard USB Features (archivo original: `USB Sockets.pdf`)
+
+**Citados en esta ficha y guardados en otra carpeta:**
+
+- [BCv1.2_070312_0.zip](../documentos-compartidos/usb/BCv1.2_070312_0.zip): USB-IF, Battery Charging Specification Rev. 1.2 (ZIP)
+- [ITC-BT-36.pdf](../documentos-compartidos/normas/ITC-BT-36.pdf): ITC-BT-36: instalaciones a muy baja tensión (REBT)
+- [usb_20_20250603.zip](../documentos-compartidos/usb/usb_20_20250603.zip): USB-IF, USB 2.0 Specification (ZIP, 06-2025)

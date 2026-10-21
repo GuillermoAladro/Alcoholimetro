@@ -31,7 +31,7 @@ Es una pieza genérica sin datasheet. Esta ficha documenta qué dicen los conect
 - **El puente D+/D− es una técnica real, pero solo sirve si el aparato la reconoce.** Un cargador dedicado de la especificación USB Battery Charging 1.2 (BC 1.2) une D+ y D− con 200 Ω como máximo, y un cortocircuito directo vale ([Microchip](https://developerhelp.microchip.com/xwiki/bin/view/applications/usb/power-delivery/battery-charging/)). Apple, Samsung y otros usan tensiones en D+/D− en vez del puente ([TI](https://static.chipdip.ru/lib/162/DOC013162143.pdf), [happytrees](https://happytrees.org/USB_charger_data_pins)). **Ninguna fuente dice que el Solo o la pantalla usen BC 1.2.** Sin reconocimiento, el estándar USB deja al aparato en 100 mA.
 - **La fuente de 10 A no protege este borne.** Una fuente de tensión da lo que el aparato pide, así que un Solo que ignore el límite de 100 mA o 1,5 A no se frena solo. Un cortocircuito en la placa tampoco lo cortaría la LRS hasta corrientes muy por encima de lo que aguantan las pistas. **Falta un fusible o PTC por rama** (propuesta mía, apartado 8).
 - **VCC/GND hay que comprobarlos antes de dar tensión; D+/D− no importan.** Como van unidos por el puente, un D+ y D− intercambiados en la serigrafía son inocuos. Un VCC y GND cruzados no. El orden estándar del USB-A es 1 VBUS, 2 D−, 3 D+, 4 GND ([Wikipedia](https://en.wikipedia.org/wiki/USB_hardware)), pero tu placa puede no seguirlo. La prueba de continuidad del apartado 6 lo comprueba sin tensión.
-- **Mecánica: dos puntos débiles típicos.** Los tornillos de bornero se aflojan con vibración y ciclos de temperatura ([JLCPCB](https://jlcpcb.com/blog/pcb-terminal-blocks-guide)). Y los conectores USB-A transmiten a la placa hasta 35 N al enchufar y 10-15 N mínimos al desenchufar según la ficha ([Molex](https://docs.rs-online.com/6a44/A700000008643305.pdf), [Kycon](https://www.mouser.in/new/kycon/kycon-high-retention-usb/)); **la fuerza que aguantan sus soldaduras a la placa no está publicada** en ninguna ficha que haya podido abrir. Hay que fijar la placa y sujetar el cable.
+- **Mecánica: dos puntos débiles típicos.** Los tornillos de bornero se aflojan con vibración y ciclos de temperatura ([JLCPCB](https://jlcpcb.com/blog/pcb-terminal-blocks-guide)). Y los conectores USB-A transmiten a la placa hasta 35 N al enchufar y 10-15 N mínimos al desenchufar según la ficha ([Molex](https://docs.rs-online.com/6a44/A700000008643305.pdf) ([copia local](datasheets/A700000008643305.pdf)), [Kycon](https://www.mouser.in/new/kycon/kycon-high-retention-usb/)); **la fuerza que aguantan sus soldaduras a la placa no está publicada** en ninguna ficha que haya podido abrir. Hay que fijar la placa y sujetar el cable.
 
 ### Discrepancias con la guía de montaje y con el enunciado
 
@@ -57,7 +57,7 @@ El anuncio no se ha podido leer. La tabla separa lo que se **sabe del tipo de pi
 | Calibre de cable admitido | **Sin verificar.** La guía usa 0,75 mm² | Ver apartado 4.4 |
 | Orden y rotulado de los bornes | **Sin verificar** | Ver apartado 4.5 |
 | Corriente nominal | **Sin verificar** | |
-| Protecciones (fusible reseteable, TVS, LED, diodo) | **Sin verificar.** Las placas comparables que he leído no llevan ninguna | [SparkFun](https://learn.sparkfun.com/tutorials/usb-type-a-female-breakout-hookup-guide/all), [Open Electronics](https://oe2.open-electronics.org/?p=56711), [CamdenBoss](https://www.farnell.com/datasheets/3927991.pdf) (no mencionan ninguna) |
+| Protecciones (fusible reseteable, TVS, LED, diodo) | **Sin verificar.** Las placas comparables que he leído no llevan ninguna | [SparkFun](https://learn.sparkfun.com/tutorials/usb-type-a-female-breakout-hookup-guide/all), [Open Electronics](https://oe2.open-electronics.org/?p=56711), [CamdenBoss](https://www.farnell.com/datasheets/3927991.pdf) ([copia local](datasheets/3927991.pdf)) (no mencionan ninguna) |
 | Tamaño, agujeros de fijación, grosor de cobre, ancho de pistas | **Sin verificar** | |
 | Blindaje del conector (¿a GND, flotante?) | **Sin verificar** | |
 
@@ -80,14 +80,14 @@ Son los conectores en sí, no tu placa. Muestran el rango de corriente que da la
 
 | Pieza | Corriente | Resistencia de contacto | Otros datos | Fuente |
 |---|---|---|---|---|
-| Molex 105057-0001 (USB-A simple, recto, THT) | **1,5 A** (30 V) | 30 mΩ máx. inicial; 100 mΩ tras ciclos | Subida de temperatura máx. 30 °C a 1,5 A; –40 a +85 °C incluida la subida; enchufar 35 N máx.; desenchufar 10 N mín.; 20.000 ciclos | [Molex PS-105057-001](https://docs.rs-online.com/6a44/A700000008643305.pdf) |
-| Würth 61400826021 (USB 2.0 A **doble**, apilado) | 1,5 A | 20 mΩ máx. | 1.500 ciclos; –40 a +105 °C; soldadura por ola | [Würth](https://www.we-online.com/components/products/datasheet/61400826021.pdf) |
+| Molex 105057-0001 (USB-A simple, recto, THT) | **1,5 A** (30 V) | 30 mΩ máx. inicial; 100 mΩ tras ciclos | Subida de temperatura máx. 30 °C a 1,5 A; –40 a +85 °C incluida la subida; enchufar 35 N máx.; desenchufar 10 N mín.; 20.000 ciclos | [Molex PS-105057-001](https://docs.rs-online.com/6a44/A700000008643305.pdf) ([copia local](datasheets/A700000008643305.pdf)) |
+| Würth 61400826021 (USB 2.0 A **doble**, apilado) | 1,5 A | 20 mΩ máx. | 1.500 ciclos; –40 a +105 °C; soldadura por ola | [Würth](https://www.we-online.com/components/products/datasheet/61400826021.pdf) ([copia local](datasheets/61400826021.pdf)) |
 | Kycon KUSBVLPX (perfil bajo) | **1 A** | 30 mΩ máx. | Carcasa de latón niquelado, THT | [Mouser](https://www.mouser.be/new/kycon/kycon-kusbvlpx-usb-receptacles) |
 | Kycon KUSBVXHT (alta retención) | 1,5 A | 30 mΩ máx. | Extracción mín. 15 N; 1.500 ciclos; "50 % más de retención" que los estándar | [Mouser](https://www.mouser.in/new/kycon/kycon-high-retention-usb/) |
-| Mill-Max (hoja de zócalos USB) | **1 A** por contacto para 30 °C de subida | "50 m" (unidad perdida en la extracción) | Patas de posicionamiento acodadas para retención en la placa | [Mill-Max](https://www.mill-max.com/sites/default/files/external/assets/2017-12/USB%20Sockets.pdf) |
+| Mill-Max (hoja de zócalos USB) | **1 A** por contacto para 30 °C de subida | "50 m" (unidad perdida en la extracción) | Patas de posicionamiento acodadas para retención en la placa | [Mill-Max](https://www.mill-max.com/sites/default/files/external/assets/2017-12/USB%20Sockets.pdf) ([copia local](datasheets/USB_Sockets.pdf)) |
 | Kyoritsu (conector USB A/B, página web) | 1,5 A (USB 1.0) y **2,5 A (USB 2.0)** | 30 mΩ máx. | 1.500 ciclos; enchufar 35 N; desenchufar 10 N | [Kyoritsu](https://www.kyohritsu.com/eclib/OTHER/FIG/CONNECTOR/3505.pdf) |
 | GCT USB1135 (USB 3.0 tipo A, **9 contactos**) | **3 A** (30 V) | No indicada en la ficha del distribuidor | 20.000 ciclos; patas de blindaje en acero inoxidable "para mejor retención" | [Future Electronics](https://www.futureelectronics.com/p/5134155) (la ficha de GCT no se abrió, ver [enlaces.md](enlaces.md)) |
-| Multicomp USB-A-S-RA (USB 2.0 A simple, acodado a PCB) | 1,5 A (250 V CA, 30 V CA) | 30 mΩ máx. | –20 a +60 °C; no dice nada de retención | [Farnell](https://www.farnell.com/datasheets/2856485.pdf) |
+| Multicomp USB-A-S-RA (USB 2.0 A simple, acodado a PCB) | 1,5 A (250 V CA, 30 V CA) | 30 mΩ máx. | –20 a +60 °C; no dice nada de retención | [Farnell](https://www.farnell.com/datasheets/2856485.pdf) ([copia local](datasheets/2856485.pdf)) |
 | "USB 2.0 A connector" de Distrelec (fabricante no indicado) | 1,5 A máx. **por pin** | 30 mΩ máx. | –55 a +85 °C; sin ciclos ni retención | [chipdip (copia)](https://static.chipdip.ru/lib/628/DOC041628005.pdf) |
 | Lumberg 2410 08 (USB-A **macho** acodado) | 1 A | | | Según la [ficha #10](../cable-usb-a-usb-c-90-30cm/README.md); no lo abrí |
 
@@ -97,8 +97,8 @@ Lectura: el USB-A estándar suele darse para 1 a 1,5 A. Las cifras de 2,5 y 3 A 
 
 | Placa | Corriente | Bornes | Fuente |
 |---|---|---|---|
-| CamdenBoss CIM/USBA (módulo para carril DIN) | **30 V CC, 100 mA** | Tornillo M3, 0,2-4 mm² (30-12 AWG), pelado 6 mm, par máx. 0,5 N·m; +5V, D−, D+, GND y blindaje aparte | [Farnell, ficha](https://www.farnell.com/datasheets/3927991.pdf), [element14](https://nz.element14.com/camdenboss/cim-usba/tb-interface-usb-a-recpt-tb/dp/221181701) |
-| CPC/Farnell "USB2 A Screw Termination Keystone Socket" (KUA2bk; fabricante no indicado) | "500 mA a 5 V"; "para transmisión de datos, no para carga" | Hilos de 0,4-1,3 mm de diámetro (16-26 AWG); dos puntos de tierra para el blindaje | [Farnell, ficha](https://www.farnell.com/datasheets/2905819.pdf) |
+| CamdenBoss CIM/USBA (módulo para carril DIN) | **30 V CC, 100 mA** | Tornillo M3, 0,2-4 mm² (30-12 AWG), pelado 6 mm, par máx. 0,5 N·m; +5V, D−, D+, GND y blindaje aparte | [Farnell, ficha](https://www.farnell.com/datasheets/3927991.pdf) ([copia local](datasheets/3927991.pdf)), [element14](https://nz.element14.com/camdenboss/cim-usba/tb-interface-usb-a-recpt-tb/dp/221181701) |
+| CPC/Farnell "USB2 A Screw Termination Keystone Socket" (KUA2bk; fabricante no indicado) | "500 mA a 5 V"; "para transmisión de datos, no para carga" | Hilos de 0,4-1,3 mm de diámetro (16-26 AWG); dos puntos de tierra para el blindaje | [Farnell, ficha](https://www.farnell.com/datasheets/2905819.pdf) ([copia local](datasheets/2905819.pdf)) |
 | Delock 66653 (adaptador USB-A hembra a 4 pines) | Hasta 500 mA a 5 V | Pines de soldar de 2,54 mm (no tornillo); 32,3 × 16,0 × 8,0 mm | [Delock](https://www.delock.com/produkt/66653/merkmale.html) |
 | SparkFun USB Type A Female Breakout | Sin dato | Cabecera de 0,1"; placa de 1,00" × 0,80" con 4 agujeros; rotulado VCC, D−, D+, GND; sin protecciones citadas | [SparkFun](https://learn.sparkfun.com/tutorials/usb-type-a-female-breakout-hookup-guide/all) |
 
@@ -109,7 +109,7 @@ Estas placas no son la tuya. Pero las tres que he podido leer con datos de corri
 | Bloque | Cable | Pelado | Par de apriete | Fuente |
 |---|---|---|---|---|
 | Phoenix Contact, ficha 1751251 (3 posiciones, **paso 3,5 mm**, serie MKDS) | 0,14-1,5 mm² rígido y flexible (AWG 26-16). **Con puntera: solo 0,25-0,5 mm²** | 5 mm | 0,22-0,25 N·m | [Phoenix (copia en MAN)](https://extranet.mandieselturbo.com/electronics/datasheets/Phoenix/MKDS%20Series/1751251_04_en_04.pdf) |
-| CamdenBoss CIM/USBA (tornillo M3) | 0,2-4 mm² (30-12 AWG) | 6 mm | máx. 0,5 N·m | [Farnell](https://www.farnell.com/datasheets/3927991.pdf) |
+| CamdenBoss CIM/USBA (tornillo M3) | 0,2-4 mm² (30-12 AWG) | 6 mm | máx. 0,5 N·m | [Farnell](https://www.farnell.com/datasheets/3927991.pdf) ([copia local](datasheets/3927991.pdf)) |
 | Multicomp, bornero de PCB **paso 5,08 mm** | 0,2-4 mm² (26-12 AWG) | No indicado | 7,0 lb-pulgada (≈ 0,79 N·m, conversión mía) | [Farnell](https://www.farnell.com/datasheets/1600406.pdf) |
 
 - **Deducción mía:** un cable flexible de 0,75 mm² entra desnudo en un bornero de 3,5 mm como el de Phoenix (0,14-1,5 mm²), pero **una puntera de 0,75 mm² no entra** (el límite con puntera es 0,5 mm²). En un bloque de 5,08 mm entra con y sin puntera, a falta de medir la puntera real.
@@ -136,23 +136,23 @@ Un borne genérico no tiene datasheet. Estos son los documentos que aplican. **N
 
 | Documento | Referencia | Formato | Enlace |
 |---|---|---|---|
-| USB Battery Charging Specification v1.2 | BC 1.2 (listada 11-12-2019) | ZIP | [descargar](https://usb.org/sites/default/files/BCv1.2_070312_0.zip) · [página](https://usb.org/document-library/battery-charging-v12-spec-and-adopters-agreement) (enlaces tomados de la [ficha #10](../cable-usb-a-usb-c-90-30cm/README.md); no los abrí) |
-| USB 2.0 Specification | ZIP con ECN hasta abril de 2025 | ZIP, 13,82 MB | [descargar](https://usb.org/sites/default/files/usb_20_20250603.zip) · [página](https://usb.org/document-library/usb-20-specification) (ídem; no abrí) |
+| USB Battery Charging Specification v1.2 | BC 1.2 (listada 11-12-2019) | ZIP | [descargar](https://usb.org/sites/default/files/BCv1.2_070312_0.zip) ([copia local](../documentos-compartidos/usb/BCv1.2_070312_0.zip)) · [página](https://usb.org/document-library/battery-charging-v12-spec-and-adopters-agreement) (enlaces tomados de la [ficha #10](../cable-usb-a-usb-c-90-30cm/README.md); no los abrí) |
+| USB 2.0 Specification | ZIP con ECN hasta abril de 2025 | ZIP, 13,82 MB | [descargar](https://usb.org/sites/default/files/usb_20_20250603.zip) ([copia local](../documentos-compartidos/usb/usb_20_20250603.zip)) · [página](https://usb.org/document-library/usb-20-specification) (ídem; no abrí) |
 | USB 2.0 Specification, copia no oficial de 2011 | Capítulo 6: conectores, 6.5.3 receptáculos A y B (p. 94) | PDF | [usb_20.pdf](https://git.nefarius.at/nefarius/USB-Bluetooth-Specs/media/branch/master/usb_20_0702115/usb_20.pdf). Solo se pudo leer el índice |
 | TI TPS2513/TPS2513A/TPS2514/TPS2514A, "USB Dedicated Charging Port Controller" | SLVSBY8B (09-2013) | PDF | [copia en chipdip](https://static.chipdip.ru/lib/162/DOC013162143.pdf) · enlace oficial de TI visto en una búsqueda: [ti.com/lit/gpn/TPS2513](https://ti.com/lit/gpn/TPS2513) (no abierto) |
 | Microchip: carga por USB (BC 1.2) | Sin referencia | Web | [ver](https://developerhelp.microchip.com/xwiki/bin/view/applications/usb/power-delivery/battery-charging/) |
-| Molex, especificación de producto del USB 105057-0001 | PS-105057-001 (EC SH2009-0472 A, 27-11-2008) | PDF, 9 págs. | [ver](https://docs.rs-online.com/6a44/A700000008643305.pdf) |
-| Würth WR-COM USB 2.0 tipo A doble | 61400826021 | PDF, 7 págs. | [ver](https://www.we-online.com/components/products/datasheet/61400826021.pdf) |
+| Molex, especificación de producto del USB 105057-0001 | PS-105057-001 (EC SH2009-0472 A, 27-11-2008) | PDF, 9 págs. | [ver](https://docs.rs-online.com/6a44/A700000008643305.pdf) ([copia local](datasheets/A700000008643305.pdf)) |
+| Würth WR-COM USB 2.0 tipo A doble | 61400826021 | PDF, 7 págs. | [ver](https://www.we-online.com/components/products/datasheet/61400826021.pdf) ([copia local](datasheets/61400826021.pdf)) |
 | Kycon KUSBVLPX (perfil bajo) y KUSBVXHT (alta retención) | Páginas de producto en Mouser | Web | [KUSBVLPX](https://www.mouser.be/new/kycon/kycon-kusbvlpx-usb-receptacles) · [KUSBVXHT](https://www.mouser.in/new/kycon/kycon-high-retention-usb/) |
-| Mill-Max, zócalos USB | Hoja PR589, págs. 148-150 | PDF | [ver](https://www.mill-max.com/sites/default/files/external/assets/2017-12/USB%20Sockets.pdf) |
+| Mill-Max, zócalos USB | Hoja PR589, págs. 148-150 | PDF | [ver](https://www.mill-max.com/sites/default/files/external/assets/2017-12/USB%20Sockets.pdf) ([copia local](datasheets/USB_Sockets.pdf)) |
 | Kyoritsu, conector USB A/B | Página de producto | Web (se descarga como PDF) | [ver](https://www.kyohritsu.com/eclib/OTHER/FIG/CONNECTOR/3505.pdf) |
-| Multicomp USB-A-S-RA | Hoja de 1 página | PDF | [ver](https://www.farnell.com/datasheets/2856485.pdf) |
+| Multicomp USB-A-S-RA | Hoja de 1 página | PDF | [ver](https://www.farnell.com/datasheets/2856485.pdf) ([copia local](datasheets/2856485.pdf)) |
 | GCT USB1135 (USB 3.0 tipo A, 3 A) | Ficha del fabricante: **no abierta** | PDF | [ver](https://gct.co/files/drawings/usb1135.pdf) · [listado en Future](https://www.futureelectronics.com/p/5134155) |
-| CamdenBoss CIM/USBA | Código Farnell 221181701 | PDF | [ver](https://www.farnell.com/datasheets/3927991.pdf) |
-| CPC/Farnell, USB2 A tornillo (KUA2bk) | Fechada 30-01-2020 | PDF | [ver](https://www.farnell.com/datasheets/2905819.pdf) |
+| CamdenBoss CIM/USBA | Código Farnell 221181701 | PDF | [ver](https://www.farnell.com/datasheets/3927991.pdf) ([copia local](datasheets/3927991.pdf)) |
+| CPC/Farnell, USB2 A tornillo (KUA2bk) | Fechada 30-01-2020 | PDF | [ver](https://www.farnell.com/datasheets/2905819.pdf) ([copia local](datasheets/2905819.pdf)) |
 | Phoenix Contact, bornero de PCB 3,5 mm | Item 1751251 | PDF | [ver](https://extranet.mandieselturbo.com/electronics/datasheets/Phoenix/MKDS%20Series/1751251_04_en_04.pdf) |
 | Multicomp, bornero de PCB 5,08 mm | MC000034 a MC000041 (28-05-2012) | PDF | [ver](https://www.farnell.com/datasheets/1600406.pdf) |
-| ITC-BT-36, Instalaciones a muy baja tensión (REBT) | ITC-BT-36 | PDF | [ver](https://www.plcmadrid.es/wp-content/uploads/ITC-BT-36.pdf) |
+| ITC-BT-36, Instalaciones a muy baja tensión (REBT) | ITC-BT-36 | PDF | [ver](https://www.plcmadrid.es/wp-content/uploads/ITC-BT-36.pdf) ([copia local](../documentos-compartidos/normas/ITC-BT-36.pdf)) |
 
 ### Qué dicen los más relevantes
 
@@ -165,7 +165,7 @@ Un borne genérico no tiene datasheet. Estos son los documentos que aplican. **N
 
 **Conector USB-A de Molex (PS-105057-001)**
 
-- 1,5 A máximos, 30 mΩ de contacto inicial y 100 mΩ tras las pruebas de ciclos, subida de temperatura máxima de 30 °C a 1,5 A ([Molex](https://docs.rs-online.com/6a44/A700000008643305.pdf), secciones 3.3 y 3.6).
+- 1,5 A máximos, 30 mΩ de contacto inicial y 100 mΩ tras las pruebas de ciclos, subida de temperatura máxima de 30 °C a 1,5 A ([Molex](https://docs.rs-online.com/6a44/A700000008643305.pdf) ([copia local](datasheets/A700000008643305.pdf)), secciones 3.3 y 3.6).
 - Fuerza de enchufado 35 N máx. y de desenchufado 10 N mín.; retención del terminal en su carcasa 5 N mín. **No da la fuerza de retención del conector en la placa** ni la de tirón del cable (sección 3.7).
 
 ## 4. Uso en el proyecto
@@ -251,7 +251,7 @@ LRS-50-5 (5,20 V) → WAGO 221-415 (polos 3 y 4) → 0,75 mm² (VCC y GND) → B
 
 ### 4.6 Seguridad: 5 V junto a 230 V
 
-- **Nivel de tensión.** 5 V CC está muy por debajo del límite de MBTS: 50 V CA o 75 V CC ([ITC-BT-36, apartado 1](https://www.plcmadrid.es/wp-content/uploads/ITC-BT-36.pdf)). La fuente aísla la salida de la red (ficha de la fuente: 4 kVAC entrada-salida en ensayo).
+- **Nivel de tensión.** 5 V CC está muy por debajo del límite de MBTS: 50 V CA o 75 V CC ([ITC-BT-36, apartado 1](https://www.plcmadrid.es/wp-content/uploads/ITC-BT-36.pdf) ([copia local](../documentos-compartidos/normas/ITC-BT-36.pdf))). La fuente aísla la salida de la red (ficha de la fuente: 4 kVAC entrada-salida en ensayo).
 - **Fuente MBTS.** El apartado 2.1 de la ITC-BT-36 pide que un circuito MBTS se alimente de una fuente con transformador de aislamiento de seguridad (cita la UNE-EN 60742) u otra de nivel de aislamiento equivalente. La hoja de la LRS-50-5 cita EN 61558-1 y -2-16 ([ficha de la fuente](../meanwell-lrs-50-5/README.md)). **Que eso cumpla el requisito de la ITC no lo he comprobado** (las normas son de pago).
 - **Separación.** El apartado 2.2 pide una "separación de protección" entre los conductores MBTS y los de cualquier otro circuito, y la admite por separación física, por una cubierta no metálica adicional, por una pantalla o vaina metálica, o por aislamiento para la tensión más alta. Si los cables no tienen resistencia mecánica suficiente, deben ir en conductos que los protejan (pág. 4). **No da una distancia en mm** en lo que leí. La norma de producto de la guía (EN 60335) es de pago y **no la he leído**.
 - **Identificación.** La guía usa marrón (L), azul (N) y verde-amarillo (tierra) para la red, y rojo y negro para los 5 V. No he encontrado una norma que fije el color de un cable de 5 V; mantén rojo/negro **solo** para los 5 V y etiqueta las regletas.
@@ -299,7 +299,7 @@ Ver apartado 4.3. El fallo no es peligroso para la placa. Es peligroso para el s
 
 ### 5.5 Conector arrancado y soldaduras
 
-- La fuerza de enchufar un USB-A llega a 35 N y la de desenchufar es de 10 N como mínimo (15 N en un conector de alta retención) ([Molex](https://docs.rs-online.com/6a44/A700000008643305.pdf), [Kycon](https://www.mouser.in/new/kycon/kycon-high-retention-usb/), [Kyoritsu](https://www.kyohritsu.com/eclib/OTHER/FIG/CONNECTOR/3505.pdf)). Todo eso pasa por las patas del conector a la placa.
+- La fuerza de enchufar un USB-A llega a 35 N y la de desenchufar es de 10 N como mínimo (15 N en un conector de alta retención) ([Molex](https://docs.rs-online.com/6a44/A700000008643305.pdf) ([copia local](datasheets/A700000008643305.pdf)), [Kycon](https://www.mouser.in/new/kycon/kycon-high-retention-usb/), [Kyoritsu](https://www.kyohritsu.com/eclib/OTHER/FIG/CONNECTOR/3505.pdf)). Todo eso pasa por las patas del conector a la placa.
 - Molex no da fuerza de retención a la placa. Mill-Max habla de patas de posicionamiento acodadas "para retención" y GCT de patas de blindaje de acero inoxidable "para mejor retención", sin cifras (ver apartado 2.3). **No hay un valor publicado que me diga cuánto aguanta la soldadura de tu placa.**
 - El mismo problema de tensión mecánica existe en los bornes: JLCPCB dice que la tensión de inserción y apriete pasa sobre todo al taladro metalizado de la pata, y que un pad pequeño o una soldadura escasa pueden agrietarse (JLCPCB).
 - **Observación mía:** con un cable de 30 cm acodado de por medio, un tirón accidental al abrir la máquina llega al conector. Sujeta el cable y fija la placa.
@@ -354,7 +354,7 @@ Solo hay motivo si la corriente real del Solo pasa de 1 A o la placa falla las p
 
 1. **Quitar el conector USB-A de la cadena de potencia (mía).** Cortar el extremo USB-A del cable del Solo (y del de la pantalla, si lo es de tipo A) y cablear VCC y GND directamente a la regleta, y D+/D− unidos entre sí. Quita el eslabón más débil. Inconvenientes: se pierde el cable original, hay que empalmar hilos de 24-28 AWG (cuyo calibre se desconoce), y la regleta WAGO 221 tiene un mínimo de cable que no he comprobado. Lo mejor es empalmar con soldadura y termorretráctil a un tramo de 0,75 mm², con tracción sujeta.
 2. **Conector de potencia superior si diseñas una placa propia.** Existen receptáculos USB-A de 3 A con 9 contactos y patas de acero inoxidable (GCT USB1135, [Future Electronics](https://www.futureelectronics.com/p/5134155)); es un componente suelto, no un borne listo.
-3. **Módulo de carril DIN CamdenBoss CIM/USBA.** Tiene bornes y tornillo M3 de 0,2-4 mm², pero está dado para **100 mA** ([Farnell](https://www.farnell.com/datasheets/3927991.pdf)). **No sirve para alimentar el Solo.**
+3. **Módulo de carril DIN CamdenBoss CIM/USBA.** Tiene bornes y tornillo M3 de 0,2-4 mm², pero está dado para **100 mA** ([Farnell](https://www.farnell.com/datasheets/3927991.pdf) ([copia local](datasheets/3927991.pdf))). **No sirve para alimentar el Solo.**
 4. **Módulo de carga USB para carril DIN.** WAGO tiene uno con un USB 2.0 tipo A, hasta 1,5 A, con detección automática de la señal D+/D− y protección de sobrecorriente, pero con **entrada de 10 a 30 V CC**, no 5 V ([Control Design](https://www.controldesign.com/vendors/products/2015/wago-rail-mount-charging-module)). No encaja con una fuente de 5 V; implicaría una fuente de 12 o 24 V. No he comprobado disponibilidad ni precio.
 5. **Controlador de puerto de carga con autodetección (TI TPS2513A/TPS2514A).** Hace el puente BC 1.2 y los modos de Apple y Samsung en uno ([TI](https://static.chipdip.ru/lib/162/DOC013162143.pdf)). Es un chip, no un módulo; solo tendría sentido si el Solo exigiera otro modo. Hay circuitos equivalentes de otros fabricantes en LCSC (PJ5102SG, AT5102SG) que vi en una búsqueda y no abrí.
 
@@ -403,5 +403,7 @@ Son conclusiones mías, no afirmaciones de las fuentes.
 - **Garantía y política de devolución** de Amazon.es y marcado CE/RoHS del anuncio.
 
 ## 10. Fuentes
+
+Copias locales de los documentos descargados: [lista en enlaces.md](enlaces.md#copias-locales-de-los-documentos) y carpeta [`datasheets/`](datasheets/).
 
 Todos los enlaces, ordenados por tipo y con nota en los que no pude abrir, en [`enlaces.md`](enlaces.md).

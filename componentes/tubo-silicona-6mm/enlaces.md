@@ -14,7 +14,7 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 ## Sensor Winsen ZE29A (a donde se conecta el tubo)
 
-- [Manual del ZE29A-C2H5OH, V1.1 (PDF)](https://www.winsen-sensor.com/d/files/manual/ze29a-c2h5oh.pdf)
+- [Manual del ZE29A-C2H5OH, V1.1 (PDF)](https://www.winsen-sensor.com/d/files/manual/ze29a-c2h5oh.pdf) ([copia local](../winsen-ze29a/datasheets/ze29a-c2h5oh.pdf))
 - [Manual enlazado en la ficha web, `ze29a-alcohol-module-manualv1_0.pdf` (PDF)](https://www.winsen-sensor.com/d/files/ze29a-alcohol-module-manualv1_0.pdf)
 - [Copia del manual en robu.in (PDF, de terceros)](https://robu.in/wp-content/uploads/2023/02/ZE29A-DATASHEET.pdf)
 - [Ficha del producto en winsen-sensor.com](https://winsen-sensor.com/sensors/alcohol-sensor/ze29a-c2h5oh.html) (otras URL de la misma ficha: [winsen-sensor.com/product](https://www.winsen-sensor.com/product/ze29a-c2h5oh.html), [tienda Winsen](https://shop.winsen-sensor.com/products/ze29a-c2h5oh-electrochemical-alcohol-module), no abiertas)
@@ -26,7 +26,7 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 - [eCFR: 21 CFR 177.2600, caucho para uso repetido](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-177/subpart-C/section-177.2600)
 - [EUR-Lex: Reglamento (CE) 1935/2004](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32004R1935) (la herramienta no devolvió el Anexo I)
 - [EUR-Lex: Reglamento (UE) 10/2011](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32011R0010) (art. 2.2; la herramienta no leyó los últimos 4.600 caracteres)
-- [BfR XV Siliconas, traducción no oficial, 1-2-2023 (PDF)](https://www.bfr.bund.de/cm/349/XV-Silicones.pdf)
+- [BfR XV Siliconas, traducción no oficial, 1-2-2023 (PDF)](https://www.bfr.bund.de/cm/349/XV-Silicones.pdf) ([copia local](datasheets/XV-Silicones.pdf))
 - BfR XV, otras versiones (no abiertas): [PDF](https://www.bfr.bund.de/cm/343/XV-Silicone.pdf) · [empfehlungen.bfr.bund.de](https://empfehlungen.bfr.bund.de/recommendations/150/pdf?locale=en)
 - [Consejo de Europa: ResAP(2004)5, siliconas (PDF)](https://rm.coe.int/16805db897)
 - [Consejo de Europa: borrador P-SG(2004)13 de la resolución sobre siliconas (PDF)](https://rm.coe.int/090000168092942b) (abierto; es un borrador con huecos)
@@ -40,7 +40,7 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 - [SGS: ensayos de materiales en contacto con alimentos para silicona](https://ticmall.sgs.com/en/service_details/hl-food-contact-materials-testing-for-silicone-containers)
 - [Food Packaging Forum: siliconas](https://www.foodpackagingforum.org/food-packaging-health/silicones) (2015; puede estar desfasado)
 - [Estudio suizo (BLV) sobre estabilidad térmica y migración en moldes de silicona (PDF)](https://www.blv.admin.ch/dam/blv/fr/dokumente/gebrauchsgegenstaende/materialien-in-kontakt-mit-lebensmitteln/heat-stability-migration-silicone-baking-moulds.pdf.download.pdf/heat-stability-migration-silicone-baking-moulds.pdf)
-- [Wacker: ficha de conformidad de ELASTOSIL M 4630 A/B (PDF), ejemplo de documento de fabricante](https://assets.testequity.com/te1/Documents/pdf/wacker/Wacker_ELASTOSIL-M-4630-A_ComplianceSheet_0925.pdf)
+- [Wacker: ficha de conformidad de ELASTOSIL M 4630 A/B (PDF), ejemplo de documento de fabricante](https://assets.testequity.com/te1/Documents/pdf/wacker/Wacker_ELASTOSIL-M-4630-A_ComplianceSheet_0925.pdf) ([copia local](datasheets/Wacker_ELASTOSIL-M-4630-A_ComplianceSheet_0925.pdf))
 - Otras fichas Wacker, no abiertas: [M 4670 A](https://assets.testequity.com/te1/Documents/pdf/wacker/Wacker_ELASTOSIL-M-4670-A_ComplianceSheet_0925.pdf)
 - [UL: Alemania actualiza las recomendaciones de materiales en contacto con alimentos](https://www.ul.com/news/food-contact-materials-germany-updates-recommendations-food-contact-materials) (no abierto)
 
@@ -48,7 +48,7 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 - [Winsen: manual del sensor electroquímico ME2-CO, Ver 1.3 (PDF)](https://www.winsen-sensor.com/d/files/me2-co-0-1000ppm-manual%EF%BC%88ver1_3%EF%BC%89.pdf)
 - [Figaro: precauciones para sensores electroquímicos](https://figarosensor.com/attention/electrochemical-type.html)
-- [SPEC Sensors: guía de integración AN-111 (PDF)](https://www.interlinkelectronics.com/downloads/subsidiary-docs/spec-sensors/SPEC-AN-111-Integration-Guidelines.pdf)
+- [SPEC Sensors: guía de integración AN-111 (PDF)](https://www.interlinkelectronics.com/downloads/subsidiary-docs/spec-sensors/SPEC-AN-111-Integration-Guidelines.pdf) ([copia local](datasheets/SPEC-AN-111-Integration-Guidelines.pdf))
 - [Black Line Safety: envenenamiento y deriva de sensores](https://help.blacklinesafety.com/en/cartridges-and-sensors/cartridge-documentation/cartridge-technical-user-manual/maintenance-guidelines-and-replacement-indicators/sensor-poisoning-and-drift)
 - [West Coast Safety: envenenamiento de sensores de gas](https://wcsafety.com/blogs/reference/gas-sensor-poisoning)
 - [Conspec: venenos de sensores](https://conspec-controls.com/support/sensor-poisons/)
@@ -79,10 +79,10 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 ## Alcoholímetros, higiene y condensación
 
-- [OIML R 126-1:2021, analizadores de aliento evidenciales (PDF)](https://www.oiml.org/en/files/pdf_r/r126-1-e21.pdf) (también [R 126 parte P, no abierta](https://www.oiml.org/en/files/pdf_r/r126-p-e21.pdf))
+- [OIML R 126-1:2021, analizadores de aliento evidenciales (PDF)](https://www.oiml.org/en/files/pdf_r/r126-1-e21.pdf) ([copia local](datasheets/r126-1-e21.pdf)) (también [R 126 parte P, no abierta](https://www.oiml.org/en/files/pdf_r/r126-p-e21.pdf))
 - [Dräger Alcotest 6820, instrucciones de uso (PDF)](https://www.draeger.com/Content/Documents/Products/alcotest-6820-gb-ifu-9033765-en.pdf)
 - [Dräger Alcotest 9510: manguera de aliento calentada](https://www.draeger.com/en_uk/Products/Alcotest-9510)
-- [NHTSA DOT HS 809 424: arrastre entre soplidos en el Alco-Sensor IV (PDF)](https://rosap.ntl.bts.gov/view/dot/1733/dot_1733_DS1.pdf)
+- [NHTSA DOT HS 809 424: arrastre entre soplidos en el Alco-Sensor IV (PDF)](https://rosap.ntl.bts.gov/view/dot/1733/dot_1733_DS1.pdf) ([copia local](datasheets/dot_1733_DS1.pdf))
 - [SWOV: influencia de la temperatura en el análisis de alcohol en aliento](https://swov.nl/en/publicatie/influence-temperature-breath-alcohol-analysis) (solo el resumen)
 - [Alcolizer: cómo limpiar los instrumentos](https://alcolizer.com/how-to-clean-your-alcolizer-technology-instruments/)
 - [Alcolizer: higiene del alcoholímetro](https://alcolizer.com/winter-safety-breathalyser-hygiene-best-practices/) (no habla de condensación)
@@ -94,3 +94,19 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 - **El límite de búsquedas web se agotó** antes de poder buscar radio mínimo de curvatura, crecimiento microbiano en tubo de silicona y datos de PVC.
 - **Resoluciones del Consejo de Europa:** no encontré "CM/Res(2013)8" (mencionada en mi planteamiento inicial) como documento de siliconas; ver el apartado 3 de la ficha.
+
+## Copias locales de los documentos
+
+Documentos descargados el 21-10-2026 y guardados en el repositorio. Si un documento tiene enlace original en esta ficha, aparece junto a él como "copia local".
+
+**En esta carpeta (`datasheets/`):**
+
+- [SPEC-AN-111-Integration-Guidelines.pdf](datasheets/SPEC-AN-111-Integration-Guidelines.pdf): Application Note AN-111 / Integration Guidelines for SPEC Sensors / Scope
+- [Wacker_ELASTOSIL-M-4630-A_ComplianceSheet_0925.pdf](datasheets/Wacker_ELASTOSIL-M-4630-A_ComplianceSheet_0925.pdf): Regulatory Product Information / ELASTOSIL® M 4630 A/B / RoHS (Restriction of Hazardous Substances)
+- [XV-Silicones.pdf](datasheets/XV-Silicones.pdf): This is an unofficial translation. Only the German version is binding. / XV. Silicones
+- [dot_1733_DS1.pdf](datasheets/dot_1733_DS1.pdf): NHTSA DOT HS 809 424 (03-2002): ensayo de efecto de arrastre con el Alco-Sensor IV a 10 °C
+- [r126-1-e21.pdf](datasheets/r126-1-e21.pdf): INTERNATIONAL / RECOMMENDATION / OIML R 126-1
+
+**Citados en esta ficha y guardados en otra carpeta:**
+
+- [ze29a-c2h5oh.pdf](../winsen-ze29a/datasheets/ze29a-c2h5oh.pdf): Winsen ZE29A-C2H5OH: manual del módulo de sensor de alcohol, V1.1

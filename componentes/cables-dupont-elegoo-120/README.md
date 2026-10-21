@@ -79,7 +79,7 @@ Otra marca que salió en la búsqueda y **no es este producto**: EDGELEC (Newegg
 | Cable admitido | 32 a 28, 30 a 22 o 22 a 20 AWG, según contacto | 22 a 30 AWG |
 | Bloqueo | No lo menciona ("locating feature available") | "Not polarised"; no lista bloqueo |
 
-Fuentes: [Dubox, hoja de datos](https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/boardwiretoboard/bwb_dubox_wtb.pdf) y [página de TTI](https://www.tti.com/content/ttiinc/en/manufacturers/amphenol/products/amphenol-fci-dubox-2-54mm-crimp-wire-connectors.html) (3 A, 200 ciclos); [Harwin M20-1070200](https://www.harwin.com/products/M20-1070200) (carcasa de 2+2 posiciones); [Harwin M20-1180042](https://www.harwin.com/products/M20-1180042) y [M20-1160042 en CPC Farnell](https://cpc.farnell.com/harwin/m20-1160042/contact-socket-crimp-30-22awg/dp/CN25464) (contactos). La hoja de Dubox escribe la resistencia con "MΩ"; es una errata evidente de "mΩ".
+Fuentes: [Dubox, hoja de datos](https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/boardwiretoboard/bwb_dubox_wtb.pdf) ([copia local](datasheets/bwb_dubox_wtb.pdf)) y [página de TTI](https://www.tti.com/content/ttiinc/en/manufacturers/amphenol/products/amphenol-fci-dubox-2-54mm-crimp-wire-connectors.html) (3 A, 200 ciclos); [Harwin M20-1070200](https://www.harwin.com/products/M20-1070200) (carcasa de 2+2 posiciones); [Harwin M20-1180042](https://www.harwin.com/products/M20-1180042) y [M20-1160042 en CPC Farnell](https://cpc.farnell.com/harwin/m20-1160042/contact-socket-crimp-30-22awg/dp/CN25464) (contactos). La hoja de Dubox escribe la resistencia con "MΩ"; es una errata evidente de "mΩ".
 
 Dos conclusiones que salen de esas cifras (cálculos míos):
 
@@ -122,8 +122,8 @@ No hay ficha técnica, manual ni declaración de conformidad de ELEGOO para este
 |---|---|---|---|
 | ELEGOO, página del producto (Reino Unido) | EL-CP-004 según terceros | Web | [uk.elegoo.com](https://uk.elegoo.com/products/elegoo-multicolored-dupont-wire-kit) |
 | ELEGOO, página del producto (EE. UU.) | Igual | Web | [elegoo.com](https://www.elegoo.com/products/elegoo-multicolored-dupont-wire-kit) |
-| Amphenol FCI, Dubox wire-to-board (carcasas y contactos) | bwb_dubox_wtb | PDF | [descargar](https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/boardwiretoboard/bwb_dubox_wtb.pdf) |
-| Amphenol FCI, herramientas de crimpado Dubox | 10164488-001 (AWG 20-22), 10164489-001 (AWG 22-30) | PDF | [descargar](https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/boardwiretoboard/fci-basics-handtool-dubox-ctw.pdf) |
+| Amphenol FCI, Dubox wire-to-board (carcasas y contactos) | bwb_dubox_wtb | PDF | [descargar](https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/boardwiretoboard/bwb_dubox_wtb.pdf) ([copia local](datasheets/bwb_dubox_wtb.pdf)) |
+| Amphenol FCI, herramientas de crimpado Dubox | 10164488-001 (AWG 20-22), 10164489-001 (AWG 22-30) | PDF | [descargar](https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/boardwiretoboard/fci-basics-handtool-dubox-ctw.pdf) ([copia local](datasheets/fci-basics-handtool-dubox-ctw.pdf)) |
 | Harwin M20, hoja del contacto de crimpado hembra | DRG-00379 (M20-118) | PDF | [descargar](https://content.harwin.com/asset/d742d022-1905-41c8-b996-8feb2ed262c8/DRG-00379-Technical-Drawing-Datasheet-M20-118-pdf.pdf) (**no la abrí**; enlace visto en la página del producto) |
 | Harwin M20, hoja de la carcasa de 2+2 posiciones | DRG-00377 (M20-107) | PDF | [descargar](https://content.harwin.com/asset/b4f1d83e-6b34-4617-ba41-3cc2c2450892/DRG-00377-Technical-Drawing-Datasheet-M20-107-pdf.pdf) (**no pude abrirla**: la herramienta la bloqueó) |
 | Harwin, catálogo M20 | 2898005 | PDF | [descargar](https://www.farnell.com/datasheets/2898005.pdf) (**no pude abrirlo**: bloqueado) |
@@ -213,7 +213,7 @@ Cuándo hace falta: para poner un terminal Dupont hembra en los hilos de 22 AWG 
 - **Herramientas** (sin precios de Amazon.es):
   - **IWISS SN-28B:** ratchet, AWG 28 a 18, terminales de 2,5, 2,54 y 3,96 mm; 16,99 USD en la tienda de IWISS ([iwiss.com](https://iwiss.com/products/sn-28b-dupont-crimping-tool-for-3-96mm-2-54mm-2-5mm-pitch-dupont-jst-xh-vh-connectors-awg-18-to-28)). Las matrices vienen sin marcar y la tensión del ratchet se ajusta con una prueba de tirón.
   - **Engineer PA-09:** sin ratchet, AWG 32 a 20, la más recomendada en la [guía de microcontrollerslab](https://microcontrollerslab.com/best-crimping-tools-for-jst-dupont-connectors-buying-guide/). No vi su precio.
-  - Para contactos propios de FCI: herramientas 10164488-001 (AWG 20-22) y 10164489-001 (AWG 22-30) de la [hoja de Amphenol](https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/boardwiretoboard/fci-basics-handtool-dubox-ctw.pdf). Son para esos contactos, no un estándar de Dupont.
+  - Para contactos propios de FCI: herramientas 10164488-001 (AWG 20-22) y 10164489-001 (AWG 22-30) de la [hoja de Amphenol](https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/boardwiretoboard/fci-basics-handtool-dubox-ctw.pdf) ([copia local](datasheets/fci-basics-handtool-dubox-ctw.pdf)). Son para esos contactos, no un estándar de Dupont.
   - La crimpadora autoajustable de la hoja (#28) parece de punteras ([ficha de JST-XH, 5.11](../cables-jst-xh-4-pin/README.md#511-falta-una-herramienta-para-el-extremo-dupont)); no la he visto.
 - **Consejos de los foros y guías:**
   - Pelar unos 2 mm (microcontrollerslab); pelar más deja las garras del aislante sobre cobre desnudo y sin alivio de tracción. El valor exacto lo da el terminal: mira su hoja.
@@ -383,5 +383,7 @@ Pruebas destructivas solo sobre hilos sobrantes. **No pruebes el ajuste con los 
 - **Mediciones reales** de resistencia, extracción o vida de los contactos del kit: no he tenido el producto.
 
 ## 9. Fuentes
+
+Copias locales de los documentos descargados: [lista en enlaces.md](enlaces.md#copias-locales-de-los-documentos) y carpeta [`datasheets/`](datasheets/).
 
 Todos los enlaces, ordenados por tipo y con nota de los que no pude abrir, en [`enlaces.md`](enlaces.md).

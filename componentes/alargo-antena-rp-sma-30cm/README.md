@@ -39,13 +39,13 @@ Cable coaxial corto con un conector RP-SMA "macho" en un extremo y un RP-SMA "he
 | Precio | 9,99 € (unos 5 € por unidad, cálculo mío) | Hoja de componentes |
 | Función | Sacar la antena del adaptador AR9271 por el techo | Guía §2.9 y §4 |
 | Tipo de cable (RG174, RG316, RG178, 1,13 mm...) | **Sin verificar** | No he visto el anuncio |
-| Si "30 cm" es longitud entre extremos de conector | **Sin verificar.** Fairview mide así sus ensamblajes (de extremo a extremo de conector) | [Fairview FMC0212174LF](https://www.fairviewmicrowave.com/images/productPDF/FMC0212174LF.pdf) |
+| Si "30 cm" es longitud entre extremos de conector | **Sin verificar.** Fairview mide así sus ensamblajes (de extremo a extremo de conector) | [Fairview FMC0212174LF](https://www.fairviewmicrowave.com/images/productPDF/FMC0212174LF.pdf) ([copia local](datasheets/FMC0212174LF.pdf)) |
 | Tuerca, arandela, junta, longitud de rosca, planos "D" | **Sin verificar** | |
 | VSWR, pérdida de inserción, fabricante | **Sin verificar** (un alargo genérico no suele publicarlos) | |
 
 ### 2.2 Los cuatro conectores: SMA y RP-SMA
 
-Fuentes: [Wikipedia, SMA connector](https://en.wikipedia.org/wiki/SMA_connector) y [Taoglas, nota de aplicación APN-12-8-001](https://www.taoglas.com/wp-content/uploads/pdf/TAOGLAS-Reverse-Polarity-SMA-Application-Note-APN-12-8-001.A.pdf). Coinciden en la tabla.
+Fuentes: [Wikipedia, SMA connector](https://en.wikipedia.org/wiki/SMA_connector) y [Taoglas, nota de aplicación APN-12-8-001](https://www.taoglas.com/wp-content/uploads/pdf/TAOGLAS-Reverse-Polarity-SMA-Application-Note-APN-12-8-001.A.pdf) ([copia local](datasheets/TAOGLAS-Reverse-Polarity-SMA-Application-Note-APN-12-8-001.A.pdf)). Coinciden en la tabla.
 
 | Nombre | Rosca | Contacto central | Nombres equivalentes |
 |---|---|---|---|
@@ -73,8 +73,8 @@ No sé qué cable lleva el anuncio. Estas son las opciones habituales con cifras
 
 | Cable | Ø exterior | Atenuación cerca de 2,4 GHz | 30 cm (cálculo mío) | Radio mínimo publicado | Fuente |
 |---|---|---|---|---|---|
-| RG174 | 2,79 mm | 53,0 dB/100 ft a 2,34 GHz (1,74 dB/m). A 1 GHz, 34,0 dB/100 ft | 0,52 dB a 2,34 GHz; unos 0,53 dB a 2,44 GHz (escalado por √f) | Belden: 28 mm (instalación). koax24: 14 mm una vez, 28 mm con flexión repetida. Prysmian: 5 × Ø (13,5 mm) sin carga, 10 × Ø (27 mm) con carga | [Belden 8216](https://www.mouser.lt/datasheet/3/6/1/8216_techdata.pdf), [Taoglas CAB.T01](https://www.mouser.com/datasheet/2/398/CAB.T01-238242.pdf), [koax24](https://blog.koax24.de/en/tag/rg316-en/), [Prysmian](https://www.prysmian.com/sites/www.prysmian.com/files/media/documents/hf25e.pdf) |
-| RG316 | 2,9 mm | 30 dB/100 ft a 1 GHz y 54,5 dB/100 ft a 3 GHz; **sin punto a 2,4 GHz** | Unos 0,48 dB (interpolación mía, con margen de unos ±2 dB/100 ft) | 15 mm (flexión repetida) | [Fairview RG316-DS](https://fairviewmicrowave.com/content/dam/infinite-electronics/product-assets/fairview-microwave/product-datasheets/RG316DS.pdf) |
+| RG174 | 2,79 mm | 53,0 dB/100 ft a 2,34 GHz (1,74 dB/m). A 1 GHz, 34,0 dB/100 ft | 0,52 dB a 2,34 GHz; unos 0,53 dB a 2,44 GHz (escalado por √f) | Belden: 28 mm (instalación). koax24: 14 mm una vez, 28 mm con flexión repetida. Prysmian: 5 × Ø (13,5 mm) sin carga, 10 × Ø (27 mm) con carga | [Belden 8216](https://www.mouser.lt/datasheet/3/6/1/8216_techdata.pdf) ([copia local](datasheets/8216_techdata.pdf)), [Taoglas CAB.T01](https://www.mouser.com/datasheet/2/398/CAB.T01-238242.pdf), [koax24](https://blog.koax24.de/en/tag/rg316-en/), [Prysmian](https://www.prysmian.com/sites/www.prysmian.com/files/media/documents/hf25e.pdf) |
+| RG316 | 2,9 mm | 30 dB/100 ft a 1 GHz y 54,5 dB/100 ft a 3 GHz; **sin punto a 2,4 GHz** | Unos 0,48 dB (interpolación mía, con margen de unos ±2 dB/100 ft) | 15 mm (flexión repetida) | [Fairview RG316-DS](https://fairviewmicrowave.com/content/dam/infinite-electronics/product-assets/fairview-microwave/product-datasheets/RG316DS.pdf) ([copia local](datasheets/RG316DS.pdf)) |
 | RG178 | 1,8 mm | 2,61 dB/m a 2,4 GHz | 0,78 dB | 10 y 18 mm, y 27 mm "dinámico" (las etiquetas salieron ambiguas) | [Huber+Suhner RG 178 B/U](https://shop.richardsonrfpd.com/docs/rfpd/hubersuhnerrg_178_budatasheet.pdf) |
 | LMR-100A | 2,79 mm | 35,2 dB/100 ft a 2,0 GHz y 39,8 a 2,5 GHz | Unos 0,39 dB (interpolación mía) | 6,4 mm instalación, 25,4 mm repetido | [Times Microwave LMR-100A](https://www.mouser.com/datasheet/2/18/1/LMR_100A-1842100.pdf) |
 | Micro-coaxial "1.13" | 1,13 mm | 3,2 dB/m a 2,4 GHz | 0,96 dB | 4,5 mm | [Delock 89608](https://www.tme.com/Document/9f18bac6f129c1d4cdbdfd13c1a69db6/DELOCK-89608_EN.pdf) |
@@ -92,7 +92,7 @@ Notas:
 
 | Característica | Valor | Fuente |
 |---|---|---|
-| Rosca del cuerpo | **1/4"-36 UNS-2A** (verificada) | [Würth 60311052111534](https://www.we-online.com/components/products/datasheet/60311052111534.pdf). Wikipedia: SMA tiene 1/4 de pulgada y 36 hilos por pulgada |
+| Rosca del cuerpo | **1/4"-36 UNS-2A** (verificada) | [Würth 60311052111534](https://www.we-online.com/components/products/datasheet/60311052111534.pdf) ([copia local](datasheets/60311052111534.pdf)). Wikipedia: SMA tiene 1/4 de pulgada y 36 hilos por pulgada |
 | Agujero de panel | Ø6,5 ± 0,05 mm. La hoja de Würth anota también "6 ± 0,05" y "5,85 flat" sin explicarlo | Würth |
 | Agujero en RP-SMA hembra de panel de Amphenol (crimpado, para RG58) | **6,5 × 6 mm**. Son dos cotas: sugiere un agujero con plano (tipo "D"), inferencia mía | [RS, Amphenol RF RSMA6411A1-3GT50G-1-50](https://uk.rs-online.com/web/p/coaxial-connectors/7009574) |
 | Grosor máximo de panel | Würth: 2,8 mm. Amphenol SMA6411A4 (SMA, no RP, crimpado para RG174/RG316): 3,2 mm | Würth; [Electrokit](https://www.electrokit.com/en/sma-hona-rg174-crimp) |
@@ -122,23 +122,23 @@ No hay ficha del fabricante de este alargo. Estos son los documentos de piezas e
 
 | Documento | Referencia | Formato | Enlace |
 |---|---|---|---|
-| Taoglas, Reverse Polarity SMA Connectors (nota de aplicación) | APN-12-8-001 | PDF | [descargar](https://www.taoglas.com/wp-content/uploads/pdf/TAOGLAS-Reverse-Polarity-SMA-Application-Note-APN-12-8-001.A.pdf) |
-| Würth Elektronik, SMA hembra acodado THT (interfaz de panel, IP67) | 60311052111534 | PDF | [descargar](https://www.we-online.com/components/products/datasheet/60311052111534.pdf) |
+| Taoglas, Reverse Polarity SMA Connectors (nota de aplicación) | APN-12-8-001 | PDF | [descargar](https://www.taoglas.com/wp-content/uploads/pdf/TAOGLAS-Reverse-Polarity-SMA-Application-Note-APN-12-8-001.A.pdf) ([copia local](datasheets/TAOGLAS-Reverse-Polarity-SMA-Application-Note-APN-12-8-001.A.pdf)) |
+| Würth Elektronik, SMA hembra acodado THT (interfaz de panel, IP67) | 60311052111534 | PDF | [descargar](https://www.we-online.com/components/products/datasheet/60311052111534.pdf) ([copia local](datasheets/60311052111534.pdf)) |
 | Würth Elektronik, SMA hembra acodado THT (la hoja que cita la junta de silicona) | 60311082111559 | PDF | [descargar](https://www.we-online.com/components/products/datasheet/60311082111559.pdf) |
-| Fairview Microwave, ensamblaje RG174 SMA macho a SMA hembra de panel | FMC0212174LF | PDF | [descargar](https://www.fairviewmicrowave.com/images/productPDF/FMC0212174LF.pdf) |
-| Belden 8216 (RG174), datos técnicos | 8216 | PDF | [descargar](https://www.mouser.lt/datasheet/3/6/1/8216_techdata.pdf) |
+| Fairview Microwave, ensamblaje RG174 SMA macho a SMA hembra de panel | FMC0212174LF | PDF | [descargar](https://www.fairviewmicrowave.com/images/productPDF/FMC0212174LF.pdf) ([copia local](datasheets/FMC0212174LF.pdf)) |
+| Belden 8216 (RG174), datos técnicos | 8216 | PDF | [descargar](https://www.mouser.lt/datasheet/3/6/1/8216_techdata.pdf) ([copia local](datasheets/8216_techdata.pdf)) |
 | Taoglas, especificación de ensamblaje con 100 mm de RG-174 (atenuación a 2,34 GHz) | CAB.T01 / SPE-12-8-153/B/WY | PDF | [descargar](https://www.mouser.com/datasheet/2/398/CAB.T01-238242.pdf) |
 | Taoglas, mismo cable en otro ensamblaje | CAB.0101 | PDF | [descargar](https://taoglas.com/datasheets/CAB.0101.pdf) |
 | Fairview Microwave, cable RG174 | RG174 | PDF | [descargar](https://www.fairviewmicrowave.com/content/dam/infinite-electronics/product-assets/fairview-microwave/product-datasheets/RG174.pdf) |
 | Prysmian (Draka), cable RG174, 19-08-2008 | hf25e v1.0 | PDF | [descargar](https://www.prysmian.com/sites/www.prysmian.com/files/media/documents/hf25e.pdf) |
-| Fairview Microwave, cable RG316 | RG316-DS | PDF | [descargar](https://fairviewmicrowave.com/content/dam/infinite-electronics/product-assets/fairview-microwave/product-datasheets/RG316DS.pdf) |
+| Fairview Microwave, cable RG316 | RG316-DS | PDF | [descargar](https://fairviewmicrowave.com/content/dam/infinite-electronics/product-assets/fairview-microwave/product-datasheets/RG316DS.pdf) ([copia local](datasheets/RG316DS.pdf)) |
 | Huber+Suhner, cable RG 178 B/U | RG178 B/U | PDF | [descargar](https://shop.richardsonrfpd.com/docs/rfpd/hubersuhnerrg_178_budatasheet.pdf) |
 | Times Microwave, LMR-100A | 1842100 | PDF | [descargar](https://www.mouser.com/datasheet/2/18/1/LMR_100A-1842100.pdf) |
 | Delock, cable de antena 1,13 mm (MHF I a MHF I, 20 cm) | 89608 | PDF | [descargar](https://www.tme.com/Document/9f18bac6f129c1d4cdbdfd13c1a69db6/DELOCK-89608_EN.pdf) |
 | Delock, cable de antena SMA hembra de panel a MHF I, 1 m | 89919 | PDF | [descargar](https://www.tme.eu/Document/091f545f3eb67bc0de9b3b8997560ef5/DELOCK-89919_EN.pdf) |
 | Delock, cable RP-SMA plug a RP-SMA jack, CFD200, 2 m | 88430 | PDF | [descargar](https://media.bechtle.com/asrc/180712/1c4b3d4ee288fc9434f5175bf56070570/c3/-/ffa136914a8e4f869f52ffe48a8401c7/antenna-cable-sma-rp-m-sma-rp-f-2m-data-sheet-1) |
-| Taoglas, antena dipolo de cable 2,4 GHz (guía de distancia a metal) | CBD01.07.0100C | PDF | [descargar](https://www.taoglas.com/datasheets/CBD01.07.0100C.pdf) |
-| ETSI EN 300 328 V2.2.2 (banda de 2,4 GHz) | EN 300 328 | PDF | [descargar](https://www.etsi.org/deliver/etsi_en/300300_300399/300328/02.02.02_60/en_300328v020202p.pdf) |
+| Taoglas, antena dipolo de cable 2,4 GHz (guía de distancia a metal) | CBD01.07.0100C | PDF | [descargar](https://www.taoglas.com/datasheets/CBD01.07.0100C.pdf) ([copia local](datasheets/CBD01.07.0100C.pdf)) |
+| ETSI EN 300 328 V2.2.2 (banda de 2,4 GHz) | EN 300 328 | PDF | [descargar](https://www.etsi.org/deliver/etsi_en/300300_300399/300328/02.02.02_60/en_300328v020202p.pdf) ([copia local](../adaptador-wifi-ar9271/datasheets/en_300328v020202p.pdf)) |
 | 47 CFR 15.203, requisito de antena (FCC) | 15.203 | Web | [eCFR](https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-15/subpart-C/subject-group-ECFR1a3a8a3e4f5cd5e/section-15.203) |
 | Amphenol RF, RP-SMA hembra de panel, crimpado (ficha en RS) | RSMA6411A1-3GT50G-1-50 | Web | [RS](https://uk.rs-online.com/web/p/coaxial-connectors/7009574) |
 
@@ -419,5 +419,7 @@ Son conclusiones mías, no afirmaciones de las fuentes.
 - **Qué atenuación mete la caja de acero a la antena interna de la Pi:** no la he visto en ninguna fuente.
 
 ## 8. Fuentes
+
+Copias locales de los documentos descargados: [lista en enlaces.md](enlaces.md#copias-locales-de-los-documentos) y carpeta [`datasheets/`](datasheets/).
 
 Todos los enlaces, ordenados por tipo y con nota de los que no pude abrir, en [`enlaces.md`](enlaces.md).

@@ -4,11 +4,11 @@ Todas las páginas y archivos consultados para la [ficha](README.md), reunidos e
 
 ## Chip y módulos con el chip: documentos del fabricante
 
-- [Datasheet AR9271, rev. 2.0, nov. 2011 (copia de Olimex, PDF)](https://www.olimex.com/Products/USB-Modules/WiFi/MOD-WIFI-AR9271-ANT/resources/AR9271.pdf). Abierto; la extracción llega hasta las secciones de registros y **no incluye las tablas eléctricas** (sección 6).
-- [Especificación TPE-N150USB (AR9271/UB93), ver. 1.22, 05-05-2016 (PDF)](https://thinkpenguin.com/files/TPE-N150USB-spec-sheet.pdf). Abierto. [Réplica](https://libre.thinkpenguin.com/files/TPE-N150USB-spec-sheet.pdf) (encontrada en la búsqueda, no abierta).
+- [Datasheet AR9271, rev. 2.0, nov. 2011 (copia de Olimex, PDF)](https://www.olimex.com/Products/USB-Modules/WiFi/MOD-WIFI-AR9271-ANT/resources/AR9271.pdf) ([copia local](datasheets/AR9271.pdf)). Abierto; la extracción llega hasta las secciones de registros y **no incluye las tablas eléctricas** (sección 6).
+- [Especificación TPE-N150USB (AR9271/UB93), ver. 1.22, 05-05-2016 (PDF)](https://thinkpenguin.com/files/TPE-N150USB-spec-sheet.pdf) ([copia local](datasheets/TPE-N150USB-spec-sheet.pdf)). Abierto. [Réplica](https://libre.thinkpenguin.com/files/TPE-N150USB-spec-sheet.pdf) ([copia local](datasheets/TPE-N150USB-spec-sheet.pdf)) (encontrada en la búsqueda, no abierta).
 - [ThinkPenguin: instalación del firmware en Debian](https://thinkpenguin.com/gnu-linux/penguin-wireless-n-usb-adapter-gnu-linux-tpe-n150usb-debian-firmware-install). Abierto.
 - [Alfa AWUS036NHA (EOL, agotado)](https://www.alfa.com.tw/products/awus036nha). Abierto. La página de descargas, [info.alfa.com.tw/awus036nha](https://info.alfa.com.tw/awus036nha), **no se pudo abrir** (la herramienta la bloqueó).
-- [TP-Link TL-WN722N, hoja en una tienda (PDF)](https://shop.aodatacloud.es/medias/datasheet_tl-wn722n.pdf). Abierto; no da versión de hardware ni chip.
+- [TP-Link TL-WN722N, hoja en una tienda (PDF)](https://shop.aodatacloud.es/medias/datasheet_tl-wn722n.pdf) ([copia local](datasheets/datasheet_tl-wn722n.pdf)). Abierto; no da versión de hardware ni chip.
 - [TP-Link TL-WN722N, página de Dinamarca](https://www.tp-link.com/dk/home-networking/adapter/tl-wn722n/). Abierto; no da versión ni chip.
 - [SparkLAN WUBA-171GN (AR9271)](https://embeddedworks.net/product/wlan382). Abierto; sin enlace a datasheet.
 - Encontrados en la búsqueda y no abiertos: [SparkLAN WUBA-171GN (otra URL)](https://www.embeddedworks.net/wlan382/), [TechInfoDepot: AR9271](https://techinfodepot.shoutwiki.com/wiki/TechInfoDepot:Atheros/AR9271) (la página devolvió un bloqueo anti-robots), [TechInfoDepot: ath9k_htc](https://techinfodepot.shoutwiki.com/wiki/Ath9k_htc), [OpenBSD athn(4)](https://man.openbsd.org/athn).
@@ -80,7 +80,7 @@ Todos abiertos (en bruto, en `raw.githubusercontent.com/raspberrypi/linux/rpi-6.
 
 - [Real Decreto 188/2016, BOE núm. 113, 10-05-2016](https://www.boe.es/eli/es/rd/2016/05/06/188). Abierto (el texto entregado se corta tras el artículo 36; no incluye los anexos).
 - [Directiva 2014/53/UE en EUR-Lex](https://eur-lex.europa.eu/eli/dir/2014/53/oj/eng). Abierta; solo metadatos (fechas de adopción, publicación y entrada en vigor), sin el articulado. La [versión en español](https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32014L0053) dio lo mismo.
-- [ETSI EN 300 328 V2.2.2 (2019-07), PDF](https://www.etsi.org/deliver/etsi_en/300300_300399/300328/02.02.02_60/en_300328v020202p.pdf). Abierto, con partes truncadas.
+- [ETSI EN 300 328 V2.2.2 (2019-07), PDF](https://www.etsi.org/deliver/etsi_en/300300_300399/300328/02.02.02_60/en_300328v020202p.pdf) ([copia local](datasheets/en_300328v020202p.pdf)). Abierto, con partes truncadas.
 - [Comisión Europea: página de la Directiva de equipos radioeléctricos](https://single-market-economy.ec.europa.eu/sectors/electrical-and-electronic-engineering-industries-eei/radio-equipment-directive-red_en) (enlazada en la guía). **No se pudo abrir.**
 - No consultados: Reglamento Delegado (UE) 2022/30 (ciberseguridad), `wireless-regdb` (entrada de España), reglamento europeo de dispositivos de corto alcance.
 
@@ -95,3 +95,14 @@ Todos abiertos (en bruto, en `raw.githubusercontent.com/raspberrypi/linux/rpi-6.
 ## Amazon
 
 - [Anuncio B0CBW6THN1](https://www.amazon.es/dp/B0CBW6THN1). **Bloqueado** (`ROBOTS_DISALLOWED`). El precio y la referencia son los de la hoja.
+
+## Copias locales de los documentos
+
+Documentos descargados el 21-10-2026 y guardados en el repositorio. Si un documento tiene enlace original en esta ficha, aparece junto a él como "copia local".
+
+**En esta carpeta (`datasheets/`):**
+
+- [AR9271.pdf](datasheets/AR9271.pdf): Qualcomm Atheros AR9271: hoja de datos rev. 2.0 (11-2011)
+- [TPE-N150USB-spec-sheet.pdf](datasheets/TPE-N150USB-spec-sheet.pdf): TPE-N150USB Speciﬁca�on / 802.11n b/g wiﬁ USB adapter (1T1R), UB93/AR9271 (hoja del TPE-N150USB)
+- [datasheet_tl-wn722n.pdf](datasheets/datasheet_tl-wn722n.pdf): TP-Link TL-WN722N adaptador y tarjeta de red WLAN 150 Mbit/s / Marca : TP-Link (hoja del TL-WN722N)
+- [en_300328v020202p.pdf](datasheets/en_300328v020202p.pdf): ETSI EN 300 328 V2.2.2, 4.3.2.2.3

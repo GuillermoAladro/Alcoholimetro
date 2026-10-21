@@ -54,7 +54,7 @@ Amazon.es no se consultó (precio y texto del anuncio: los de la hoja del usuari
 - [Documentación de hardware de Raspberry Pi (GPIO, pull-up de 50-65 kΩ, niveles de entrada)](https://www.raspberrypi.com/documentation/hardware/raspberrypi/)
 - [Documentación de Raspberry Pi: GPIO y cabecera de 40 pines](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html)
 - [GitHub, raspberrypi/documentation, cambio 2461 (tabla con R_PU y R_PD de 50 a 65 kΩ)](https://github.com/raspberrypi/documentation/pull/2461/files)
-- PDF: [BCM2835 ARM Peripherals, RP-008249-DS-1](https://pip-assets.raspberrypi.com/categories/579-raspberry-pi-zero/documents/RP-008249-DS-1-bcm2835-peripherals.pdf) (la herramienta solo leyó hasta la página 53 de 200; el capítulo 6, GPIO, no lo vi). Enlace corto que redirige: `https://datasheets.raspberrypi.com/bcm2835/bcm2835-peripherals.pdf`
+- PDF: [BCM2835 ARM Peripherals, RP-008249-DS-1](https://pip-assets.raspberrypi.com/categories/579-raspberry-pi-zero/documents/RP-008249-DS-1-bcm2835-peripherals.pdf) ([copia local](datasheets/RP-008249-DS-1-bcm2835-peripherals.pdf)) (la herramienta solo leyó hasta la página 53 de 200; el capítulo 6, GPIO, no lo vi). Enlace corto que redirige: `https://datasheets.raspberrypi.com/bcm2835/bcm2835-peripherals.pdf`
 - PDF: [Esquema reducido de la Pi 3B+, RP-008339-DS-1](https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008339-DS-1-raspberry-pi-3-b-plus-reduced-schematics.pdf)
 - [pinout.xyz: GPIO](https://pinout.xyz/pinout/gpio) y [GPIO17, pin 11](https://pinout.xyz/pinout/pin11_gpio17)
 - [gpiozero: input_devices.py (clase Button)](https://raw.githubusercontent.com/gpiozero/gpiozero/master/gpiozero/input_devices.py)
@@ -70,7 +70,7 @@ Amazon.es no se consultó (precio y texto del anuncio: los de la hoja del usuari
 
 ## ESD y protección de entradas
 
-- PDF: [TI, ESD Fundamentals Part 2: IEC 61000-4-2 Rating (SSZT871)](https://edgeworker.ti.com/lit/pdf/sszt871)
+- PDF: [TI, ESD Fundamentals Part 2: IEC 61000-4-2 Rating (SSZT871)](https://edgeworker.ti.com/lit/pdf/sszt871) ([copia local](datasheets/sszt871.pdf))
 - [LearnEMC: Question of the Week, 24-7-2023 (TVS cerca del conector, resistencia cerca del IC)](https://learnemc.com/qotw-230724)
 - [Adafruit: cuidado de la Raspberry Pi, advertencias](https://learn.adafruit.com/raspberry-pi-care-and-troubleshooting/warning)
 - [element14: cajas y ESD (comentarios de usuarios)](https://community.element14.com/products/raspberry-pi/f/forum/18853/cases-and-esd-concerns/21157)
@@ -80,10 +80,10 @@ Amazon.es no se consultó (precio y texto del anuncio: los de la hoja del usuari
 
 ## Robustez y alternativas antivandálicas
 
-- PDF: [Schurter MSM, datasheet (copia de Mouser)](https://mouser.com/datasheet/2/358/schurter_shris05004-1-1758128.pdf)
+- PDF: [Schurter MSM, datasheet (copia de Mouser)](https://mouser.com/datasheet/2/358/schurter_shris05004-1-1758128.pdf) ([copia local](datasheets/schurter_shris05004-1-1758128.pdf))
 - PDF: [Schurter MSM 22, datasheet (copia de RS)](https://docs.rs-online.com/88f6/0900766b8141c4e2.pdf)
 - [RS: Schurter MSM 22, ficha del producto (se retira del catálogo)](https://uk.rs-online.com/web/p/push-button-switches/1737946?gb=s)
-- PDF: [APEM, serie AV (copia de Farnell)](https://www.farnell.com/datasheets/1564503.pdf)
+- PDF: [APEM, serie AV (copia de Farnell)](https://www.farnell.com/datasheets/1564503.pdf) ([copia local](datasheets/1564503.pdf))
 - PDF: [Eaton M22S-D-X, hoja de un distribuidor (poco detalle)](https://vdam.kdsi.net/digital_asset_manager/file_download.php?vi=8736462)
 - [Wikipedia: IP Code](https://en.wikipedia.org/wiki/IP_Code)
 - [Wikipedia: IK code](https://en.wikipedia.org/wiki/IK_code)
@@ -111,3 +111,14 @@ Amazon.es no se consultó (precio y texto del anuncio: los de la hoja del usuari
 - **Wikipedia, IK_Code (con mayúscula):** no existe; la correcta es `IK_code`.
 - **Páginas de APEM (blog) y de Eaton con ficha completa:** la de APEM redirige a `apem.com/news/...` y no la seguí (usé la hoja de Farnell); no abrí la ficha completa de Eaton.
 - **Búsquedas pendientes:** se agotó el presupuesto de búsquedas web antes de buscar experiencias de operadores de arcade con derrames, botones arcade estancos y otros antivandálicos.
+
+## Copias locales de los documentos
+
+Documentos descargados el 21-10-2026 y guardados en el repositorio. Si un documento tiene enlace original en esta ficha, aparece junto a él como "copia local".
+
+**En esta carpeta (`datasheets/`):**
+
+- [1564503.pdf](datasheets/1564503.pdf): Pulsadores antivandálicos y de seguridad, serie AV (hoja de datos)
+- [RP-008249-DS-1-bcm2835-peripherals.pdf](datasheets/RP-008249-DS-1-bcm2835-peripherals.pdf): BCM2835 ARM Peripherals / All rights reserved / Broadcom Europe Ltd. 406 Science Park Milton Road Cambridge CB4 0WW
+- [schurter_shris05004-1-1758128.pdf](datasheets/schurter_shris05004-1-1758128.pdf): Schurter, manual de producto del pulsador antivandálico MSM
+- [sszt871.pdf](datasheets/sszt871.pdf): Texas Instruments, "ESD Fundamentals Part 2: IEC 61000-4-2 Rating" (artículo técnico)

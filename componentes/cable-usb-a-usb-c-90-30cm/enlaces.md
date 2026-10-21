@@ -11,9 +11,9 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 ## Normas y documentos de USB-IF (para descargar)
 
 - [Document Library de USB-IF](https://usb.org/documents)
-- [USB Type-C Cable and Connector Specification, Release 2.5 (página)](https://usb.org/document-library/usb-type-cr-cable-and-connector-specification-release-25) · [ZIP, 28,38 MB](https://www.usb.org/sites/default/files/USB%20Type-C%202.5%20Release%20202603.zip). El ZIP **no se pudo abrir**.
-- [USB 2.0 Specification (página)](https://usb.org/document-library/usb-20-specification) · [ZIP, 13,82 MB](https://usb.org/sites/default/files/usb_20_20250603.zip). **No se pudo abrir.**
-- [Battery Charging v1.2 Spec and Adopters Agreement (página)](https://usb.org/document-library/battery-charging-v12-spec-and-adopters-agreement) · [ZIP](https://usb.org/sites/default/files/BCv1.2_070312_0.zip). **No se pudo abrir.**
+- [USB Type-C Cable and Connector Specification, Release 2.5 (página)](https://usb.org/document-library/usb-type-cr-cable-and-connector-specification-release-25) · [ZIP, 28,38 MB](https://www.usb.org/sites/default/files/USB%20Type-C%202.5%20Release%20202603.zip) ([copia local](../documentos-compartidos/usb/USB_Type-C_2.5_Release_202603.zip)). El ZIP **no se pudo abrir**.
+- [USB 2.0 Specification (página)](https://usb.org/document-library/usb-20-specification) · [ZIP, 13,82 MB](https://usb.org/sites/default/files/usb_20_20250603.zip) ([copia local](../documentos-compartidos/usb/usb_20_20250603.zip)). **No se pudo abrir.**
+- [Battery Charging v1.2 Spec and Adopters Agreement (página)](https://usb.org/document-library/battery-charging-v12-spec-and-adopters-agreement) · [ZIP](https://usb.org/sites/default/files/BCv1.2_070312_0.zip) ([copia local](../documentos-compartidos/usb/BCv1.2_070312_0.zip)). **No se pudo abrir.**
 - [Programa de cumplimiento de USB-IF](https://usb.org/node/579) (remite a `cms.usb.org/integrators-list`) · [cms.usb.org](https://cms.usb.org/) (no abierto)
 - [audioXpress: nuevo programa Certified USB Logo (1-10-2021)](https://audioxpress.com/news/new-certified-usb-logo-program-for-usb4-usb-type-c-and-usb-power-delivery-specifications)
 
@@ -63,7 +63,7 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 ## SumUp Solo (consumidor del cable)
 
 - [Manual del Solo en manuals.plus](https://manuals.plus/sumup/solo-card-reader-manual): copia de terceros, leída (cargar solo con cable y adaptador autorizados, 12 h, batería de 6,16 Wh). Un primer intento con la variante `/trackback` falló.
-- [Ficha técnica del Solo (Currys, PDF BRI42258_TECH)](https://ik.imagekit.io/pimberly/595e406f0f15f30010780448/cd32c72b/62ea63129b3cd64ff4000200/BRI42258_TECH.pdf)
+- [Ficha técnica del Solo (Currys, PDF BRI42258_TECH)](https://ik.imagekit.io/pimberly/595e406f0f15f30010780448/cd32c72b/62ea63129b3cd64ff4000200/BRI42258_TECH.pdf) ([copia local](../sumup-solo/datasheets/BRI42258_TECH.pdf))
 - [SumUp: presentación del Solo (carga con base o por USB-C)](https://www.sumup.com/en-gb/card-reader-solo-learn-more/)
 - Páginas de ayuda de SumUp: [visión general del Solo](https://help.sumup.com/en-US/articles/7m7xB884fHboMUpBrtOtdL-sumup-solo-overview) y [carga y batería (título "Get the most out of your card reader")](https://help.sumup.com/en-IE/articles/5O4zuxJ7i8LBXcGMFXj11G). Las abrí y **no cargaron contenido del artículo**.
 - Tiendas, sin datos de carga útiles: [Galaxus](https://www.galaxus.de/en/s12/product/sumup-solo-pos-system-17546314), [AgozTech](https://agoztech.com/en-se/products/usb-c-cable-fast-charger-for-sumup-solo). Sin abrir: [if Design Award de la base de carga](https://ifdesign.com/de/winner-ranking/project/sumup-solo-charging-station-cradle/297222) (error de la herramienta).
@@ -75,3 +75,14 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 ## Otras fichas del repositorio
 
 - [Raspberry Pi 3B+](../raspberry-pi-3b-plus/README.md): el umbral de subtensión de 4,63 V es de la Pi y no del Solo.
+
+## Copias locales de los documentos
+
+Documentos descargados el 21-10-2026 y guardados en el repositorio. Si un documento tiene enlace original en esta ficha, aparece junto a él como "copia local".
+
+**Citados en esta ficha y guardados en otra carpeta:**
+
+- [BCv1.2_070312_0.zip](../documentos-compartidos/usb/BCv1.2_070312_0.zip): USB-IF, Battery Charging Specification Rev. 1.2 (ZIP)
+- [BRI42258_TECH.pdf](../sumup-solo/datasheets/BRI42258_TECH.pdf): SumUp Solo: ficha técnica del lector (BRI42258)
+- [USB_Type-C_2.5_Release_202603.zip](../documentos-compartidos/usb/USB_Type-C_2.5_Release_202603.zip): USB-IF, USB Type-C Specification Release 2.5 (ZIP, 03-2026)
+- [usb_20_20250603.zip](../documentos-compartidos/usb/usb_20_20250603.zip): USB-IF, USB 2.0 Specification (ZIP, 06-2025)

@@ -4,7 +4,7 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 ## Definición de RP-SMA y géneros de conector
 
-- [Taoglas, Reverse Polarity SMA Connectors, APN-12-8-001 (PDF)](https://www.taoglas.com/wp-content/uploads/pdf/TAOGLAS-Reverse-Polarity-SMA-Application-Note-APN-12-8-001.A.pdf). Abierto. Define plug y jack RP-SMA. Una errata en los pies de las figuras 3 y 4.
+- [Taoglas, Reverse Polarity SMA Connectors, APN-12-8-001 (PDF)](https://www.taoglas.com/wp-content/uploads/pdf/TAOGLAS-Reverse-Polarity-SMA-Application-Note-APN-12-8-001.A.pdf) ([copia local](datasheets/TAOGLAS-Reverse-Polarity-SMA-Application-Note-APN-12-8-001.A.pdf)). Abierto. Define plug y jack RP-SMA. Una errata en los pies de las figuras 3 y 4.
 - [Wikipedia: SMA connector](https://en.wikipedia.org/wiki/SMA_connector). Abierto. Fuente secundaria: tabla de las cuatro combinaciones, rosca 1/4" con 36 hilos, pares de apriete, llave de 5/16".
 - No pude abrir (protección anti-robots): [Pasternack, "What you need to know about reverse polarized connectors"](https://www.pasternack.com/blog/rf-components/coaxial-connectors/need-know-reverse-polarized-connectors/).
 - No pude abrir: [L-com, SMA hembra de panel para RG174](https://www.l-com.com/coaxial-sma-female-bulkhead-crimp-for-rg174-188-316-cable) y [L-com, RP-SMA jack de panel](https://www.l-com.com/coaxial-rp-sma-jack-bulkhead-crimp-for-rg174-188-316-100-series-cable).
@@ -12,7 +12,7 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 ## Conectores y montaje en panel
 
-- [Würth Elektronik 60311052111534 (PDF)](https://www.we-online.com/components/products/datasheet/60311052111534.pdf). Abierto. SMA hembra acodado THT: rosca 1/4"-36 UNS-2A, agujero Ø6,5, panel de 2,8 mm máx., par 57 N·cm, IP67, 500 ciclos.
+- [Würth Elektronik 60311052111534 (PDF)](https://www.we-online.com/components/products/datasheet/60311052111534.pdf) ([copia local](datasheets/60311052111534.pdf)). Abierto. SMA hembra acodado THT: rosca 1/4"-36 UNS-2A, agujero Ø6,5, panel de 2,8 mm máx., par 57 N·cm, IP67, 500 ciclos.
 - [Würth Elektronik 60311082111559 (PDF)](https://www.we-online.com/components/products/datasheet/60311082111559.pdf). Abierto. Mismo conector con junta de silicona citada, retención del contacto 26,7 N.
 - [RS: Amphenol RF RSMA6411A1-3GT50G-1-50](https://uk.rs-online.com/web/p/coaxial-connectors/7009574). Abierto. RP-SMA hembra de panel, crimpado, para RG58; agujero 6,5 × 6 mm.
 - [Electrokit: Amphenol SMA6411A4-3GT50G-5-50](https://www.electrokit.com/en/sma-hona-rg174-crimp). Abierto. SMA de panel, panel de 3,2 mm máx., para RG174/RG316.
@@ -24,12 +24,12 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 ## Cables coaxiales
 
-- [Belden 8216 (RG174), datos técnicos en Mouser (PDF)](https://www.mouser.lt/datasheet/3/6/1/8216_techdata.pdf). Abierto. La tabla de atenuación termina en 1 GHz.
+- [Belden 8216 (RG174), datos técnicos en Mouser (PDF)](https://www.mouser.lt/datasheet/3/6/1/8216_techdata.pdf) ([copia local](datasheets/8216_techdata.pdf)). Abierto. La tabla de atenuación termina en 1 GHz.
 - [Belden 8216, página del producto](https://belden.com/products/Cable/Coax-Triax-Cable/50-Ohm-Coax-Cable/8216). Encontrado y no abierto.
 - [Fairview Microwave, RG174 (PDF)](https://www.fairviewmicrowave.com/content/dam/infinite-electronics/product-assets/fairview-microwave/product-datasheets/RG174.pdf). Abierto. DC a 1000 MHz, sin radio de curvatura.
 - [Copia del mismo RG174 en RS (PDF)](https://assets.rs-online.com/v1719848250/Datasheets/7f8ec9b5a4ae59812d162d76a390fc41.pdf). Abierto; la cabecera dice "Times Microwave Systems" y el fabricante es Fairview (incoherencia de la copia).
 - [Prysmian (Draka), RG174, hf25e (PDF)](https://www.prysmian.com/sites/www.prysmian.com/files/media/documents/hf25e.pdf). Abierto. Atenuación hasta 1 GHz; radio mínimo 5 × y 10 × el diámetro.
-- [Fairview Microwave, RG316-DS (PDF)](https://fairviewmicrowave.com/content/dam/infinite-electronics/product-assets/fairview-microwave/product-datasheets/RG316DS.pdf). Abierto. Atenuación a 0,1, 0,4, 1 y 3 GHz.
+- [Fairview Microwave, RG316-DS (PDF)](https://fairviewmicrowave.com/content/dam/infinite-electronics/product-assets/fairview-microwave/product-datasheets/RG316DS.pdf) ([copia local](datasheets/RG316DS.pdf)). Abierto. Atenuación a 0,1, 0,4, 1 y 3 GHz.
 - [Huber+Suhner RG 178 B/U, copia de Richardson RFPD (PDF)](https://shop.richardsonrfpd.com/docs/rfpd/hubersuhnerrg_178_budatasheet.pdf). Abierto. Tabla de atenuación hasta 3 GHz.
 - [Times Microwave LMR-100A, copia de Mouser (PDF)](https://www.mouser.com/datasheet/2/18/1/LMR_100A-1842100.pdf). Abierto.
 - [koax24: comparación RG174 y RG316](https://blog.koax24.de/en/tag/rg316-en/). Abierto. Cifras de atenuación sin unidad clara.
@@ -41,7 +41,7 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 ## Ensamblajes de cable de fabricantes
 
-- [Fairview Microwave FMC0212174LF (PDF)](https://www.fairviewmicrowave.com/images/productPDF/FMC0212174LF.pdf). Abierto. Ensamblaje RG174 SMA macho a SMA hembra de panel: VSWR 1,35, par 4 in·lbf.
+- [Fairview Microwave FMC0212174LF (PDF)](https://www.fairviewmicrowave.com/images/productPDF/FMC0212174LF.pdf) ([copia local](datasheets/FMC0212174LF.pdf)). Abierto. Ensamblaje RG174 SMA macho a SMA hembra de panel: VSWR 1,35, par 4 in·lbf.
 - [Taoglas CAB.T01, especificación (PDF en Mouser)](https://www.mouser.com/datasheet/2/398/CAB.T01-238242.pdf). Abierto. Atenuación del RG-174 hasta 2,34 GHz.
 - [Taoglas CAB.0101 (PDF)](https://taoglas.com/datasheets/CAB.0101.pdf). Abierto. Mismo cable, SMA hembra de panel con O-ring.
 - [Delock 88430: RP-SMA plug a RP-SMA jack, CFD200, 2 m (Bechtle, PDF)](https://media.bechtle.com/asrc/180712/1c4b3d4ee288fc9434f5175bf56070570/c3/-/ffa136914a8e4f869f52ffe48a8401c7/antenna-cable-sma-rp-m-sma-rp-f-2m-data-sheet-1). Abierto.
@@ -59,7 +59,7 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 ## Antenas, plano de masa y orientación
 
-- [Taoglas CBD01.07.0100C, dipolo de cable de 2,4 GHz (PDF)](https://www.taoglas.com/datasheets/CBD01.07.0100C.pdf). Abierto. Distancias a metal.
+- [Taoglas CBD01.07.0100C, dipolo de cable de 2,4 GHz (PDF)](https://www.taoglas.com/datasheets/CBD01.07.0100C.pdf) ([copia local](datasheets/CBD01.07.0100C.pdf)). Abierto. Distancias a metal.
 - [Wikipedia: Dipole antenna](https://en.wikipedia.org/wiki/Dipole_antenna). Abierto. Fuente secundaria.
 - [Wikipedia: Monopole antenna](https://en.wikipedia.org/wiki/Monopole_antenna). Abierto. Fuente secundaria: tamaño del plano de masa.
 - [Wikipedia: Rubber ducky antenna](https://en.wikipedia.org/wiki/Rubber_ducky_antenna). Abierto.
@@ -70,7 +70,7 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 ## Normativa
 
-- [ETSI EN 300 328 V2.2.2 (PDF)](https://www.etsi.org/deliver/etsi_en/300300_300399/300328/02.02.02_60/en_300328v020202p.pdf). Abierto, en parte (el texto extraído quedó cortado). La búsqueda lo mostraba con barras invertidas en la ruta (`etsi_en\300300_300399\...`); aquí va con barras normales.
+- [ETSI EN 300 328 V2.2.2 (PDF)](https://www.etsi.org/deliver/etsi_en/300300_300399/300328/02.02.02_60/en_300328v020202p.pdf) ([copia local](../adaptador-wifi-ar9271/datasheets/en_300328v020202p.pdf)). Abierto, en parte (el texto extraído quedó cortado). La búsqueda lo mostraba con barras invertidas en la ruta (`etsi_en\300300_300399\...`); aquí va con barras normales.
 - [eCFR, 47 CFR 15.203](https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-15/subpart-C/subject-group-ECFR1a3a8a3e4f5cd5e/section-15.203). Abierto directamente.
 - [Wiki de Radimation sobre EN 300 328](https://wiki.radimation.com/wiki/index.php/ETSI_EN300328). Abierto: nada útil sobre antenas ni cables.
 - Encontrados y no abiertos: [I.B. Lenhardt, EN 300 328](https://ib-lenhardt.com/fr/kb/glossaire/etsi-en-300-328), [I.B. Lenhardt, EIRP](https://ib-lenhardt.com/de/wissen/gl/eirp), [testxchange, EN 300 328](https://www.testxchange.com/pruefnorm/din-en-300328), [comparación de versiones EN 300 328 V2.1.1 y V2.2.2 (PDF)](https://portal.etsi.org/Portals/0/TBpages/edithelp/Docs/Compared_versions/300000_300499/300328/en_300328v222_v211.pdf).
@@ -78,11 +78,30 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 ## Adaptador AR9271 (solo para el balance de enlace)
 
-- [Olimex, AR9271 (PDF)](https://www.olimex.com/Products/USB-Modules/WiFi/MOD-WIFI-AR9271-ANT/resources/AR9271.pdf). Abierto, en parte: no salieron las secciones de potencia de salida ni de sensibilidad.
-- [ThinkPenguin TPE-N150USB (PDF)](https://thinkpenguin.com/files/TPE-N150USB-spec-sheet.pdf). Abierto. Potencia y sensibilidad (módulo con antenas internas, solo como orden de magnitud).
+- [Olimex, AR9271 (PDF)](https://www.olimex.com/Products/USB-Modules/WiFi/MOD-WIFI-AR9271-ANT/resources/AR9271.pdf) ([copia local](../adaptador-wifi-ar9271/datasheets/AR9271.pdf)). Abierto, en parte: no salieron las secciones de potencia de salida ni de sensibilidad.
+- [ThinkPenguin TPE-N150USB (PDF)](https://thinkpenguin.com/files/TPE-N150USB-spec-sheet.pdf) ([copia local](../adaptador-wifi-ar9271/datasheets/TPE-N150USB-spec-sheet.pdf)). Abierto. Potencia y sensibilidad (módulo con antenas internas, solo como orden de magnitud).
 - [SparkLAN WUBA-171GN](https://www.sparklan.com/product/wuba-171gn). Abierto. Potencia y sensibilidad; módulo marcado como "no recomendado para nuevos diseños".
 - Encontrados y no abiertos: [TechInfoDepot, AR9271](https://techinfodepot.shoutwiki.com/wiki/TechInfoDepot:Atheros/AR9271), [Linux wireless, ath9k_htc](https://wireless.docs.kernel.org/en/latest/en/users/drivers/ath9k_htc.html).
 
 ## Compra
 
 - Anuncio de Amazon.es (ASIN B0FJRPC7MN): `https://www.amazon.es/dp/B0FJRPC7MN`. No abierto: Amazon bloquea el acceso. Una búsqueda por el ASIN en un buscador no devolvió nada del anuncio.
+
+## Copias locales de los documentos
+
+Documentos descargados el 21-10-2026 y guardados en el repositorio. Si un documento tiene enlace original en esta ficha, aparece junto a él como "copia local".
+
+**En esta carpeta (`datasheets/`):**
+
+- [60311052111534.pdf](datasheets/60311052111534.pdf): Dimensions: [mm] / Recommended Hole Pattern: [mm] / 8 Hex (Würth 60311052111534)
+- [8216_techdata.pdf](datasheets/8216_techdata.pdf): Product: 8216 / 50 Ohm Wireless Transmission Coax, RG-174, 26 AWG Str BCCS, 90% TC (Belden 8216)
+- [CBD01.07.0100C.pdf](datasheets/CBD01.07.0100C.pdf): Antena dipolo de cable 2,4 GHz CBD01.07.0100C (especificación)
+- [FMC0212174LF.pdf](datasheets/FMC0212174LF.pdf): FMC0212174LF / SMA Male to SMA Female Bulkhead Cable / RG174 Coax with LF Solder (Fairview FMC0212174LF)
+- [RG316DS.pdf](datasheets/RG316DS.pdf): RG316DS / RG316-DS Flexible Coax Cable Tan FEP Jacket / Electrical Specifications (Fairview RG316-DS)
+- [TAOGLAS-Reverse-Polarity-SMA-Application-Note-APN-12-8-001.A.pdf](datasheets/TAOGLAS-Reverse-Polarity-SMA-Application-Note-APN-12-8-001.A.pdf): Taoglas, nota de aplicación APN-12-8-001
+
+**Citados en esta ficha y guardados en otra carpeta:**
+
+- [AR9271.pdf](../adaptador-wifi-ar9271/datasheets/AR9271.pdf): Qualcomm Atheros AR9271: hoja de datos rev. 2.0 (11-2011)
+- [TPE-N150USB-spec-sheet.pdf](../adaptador-wifi-ar9271/datasheets/TPE-N150USB-spec-sheet.pdf): TPE-N150USB Speciﬁca�on / 802.11n b/g wiﬁ USB adapter (1T1R), UB93/AR9271 (hoja del TPE-N150USB)
+- [en_300328v020202p.pdf](../adaptador-wifi-ar9271/datasheets/en_300328v020202p.pdf): ETSI EN 300 328 V2.2.2, 4.3.2.2.3
