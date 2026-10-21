@@ -34,5 +34,6 @@ Una carpeta por componente del alcoholímetro, con su ficha técnica, documentos
 | 28 | Crimpadora autoajustable + 1250 punteras | Punteras en los bornes de la fuente y de las WAGO | [crimpadora-y-punteras](crimpadora-y-punteras/README.md) |
 | 29 | Cables Dupont ELEGOO, 120 uds. | Conexión a los pines 8, 9, 10 y 11 de la Pi | [cables-dupont-elegoo-120](cables-dupont-elegoo-120/README.md) |
 | 30 | Separadores hexagonales de nailon M2,5 (kit de 350) | Fijan la Pi (y el sensor) a la caja interior sin unir masas | [separadores-nylon-m2-5](separadores-nylon-m2-5/README.md) |
+| 31 | Pasacables de goma, surtido de 7 tamaños (260 uds.) | Protegen los cables en los agujeros de la chapa | [pasacables-goma](pasacables-goma/README.md) |
 
 Cada ficha indica de dónde sale cada dato y marca lo que no está verificado. Los enlaces a PDF y páginas están reunidos en el `enlaces.md` de cada carpeta.
