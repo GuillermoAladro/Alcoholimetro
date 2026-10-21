@@ -2,6 +2,8 @@
 
 Fuente única de la máquina. Convierte los 230 V de la red en 5 V y los reparte "en estrella" a la Raspberry Pi, el SumUp Solo, la pantalla y el sensor ZE29A. Va fija a la carcasa (tumbada sobre un separador), conectada a L, N y a tierra (borne FG) desde el módulo C14, y se ajusta a 5,20 V.
 
+> **Corrección de Auditor 6.1-S, 21-10-2026:** esta ficha contenía asignaciones erróneas de los bornes, corregidas abajo contra el dibujo del fabricante (PDF local `MEAN_WELL_LRS-50_DATA_SHEET.pdf`, p. 4). La numeración correcta es **1 AC/L, 2 AC/N, 3 FG, 4 DC -V, 5 DC +V**. El ajuste a 5,20 V y el montaje completo siguen pendientes de validación; véase la [auditoría eléctrica](../../auditorias/2026-10-21-auditor-6.1-s/AUDITORIA.md).
+
 - **Compra:** ASIN B06XWRCWZ9, 18,52 € (precio de la hoja de componentes del 19-20/10/2026).
 - **Referencia exacta:** Mean Well LRS-50-5, carcasa nº 239A.
 
@@ -71,7 +73,7 @@ Hoja de referencia: **LRS-50-SPEC 2025-04-07** (copia de Mean Well Australia), s
 | MTBF | 3149,8 K h mín. (Telcordia SR-332); 561,6 K h mín. (MIL-HDBK-217F, 25 °C) | H25 y H22. **H19 y anteriores: 645 K h (MIL-HDBK-217F, 25 °C)** |
 | Dimensiones | 99 × 82 × 30 mm (L × A × H), tolerancia ±1 mm | H25 p. 4* |
 | Peso | 0,21 kg | H25. [RS](https://uk.rs-online.com/web/p/switching-power-supplies/1065829) y Berrybase dicen 230 g |
-| Bornes | 5 pines: 1 = −V, 2 = +V, 3 = FG, 4 = AC/L, 5 = AC/N | H22 (explícito) y H15 (deducido) p. 4*. **Comprueba las marcas impresas en la fuente** |
+| Bornes | 5 pines: **1 = AC/L, 2 = AC/N, 3 = FG, 4 = DC −V, 5 = DC +V** | Corregido por Auditor 6.1-S contra `datasheets/MEAN_WELL_LRS-50_DATA_SHEET.pdf`, p. 4 (2025-04-07), inspección visual. Comprobar también las marcas de la unidad recibida |
 | Fijación | "2-M3 L=3.0" y "2-M3 L=5" | H25, H22, H19, H15b p. 4*. **No sé cuál es lateral y cuál inferior** (ver tabla de verificación) |
 | Refrigeración | Convección libre, sin ventilador; carcasa metálica con perforaciones | [Elmark](https://elmark-automation.com/shop/mean-well/enclosed-power-supply-lrs-50), [Electrokit](https://www.electrokit.com/en/switchat-nataggregat-5v-10a-mean-well-lrs-50-5) |
 | Indicador y ajuste | LED verde de encendido y potenciómetro V.ADJ | [ProtoSupplies](https://protosupplies.com/product/meanwell-power-supply5v-10a-50w/), [Electrokit](https://www.electrokit.com/en/switchat-nataggregat-5v-10a-mean-well-lrs-50-5) (fuentes secundarias) |
@@ -110,7 +112,7 @@ Mean Well anunció en noviembre de 2019 que la familia LRS había completado el 
 | Pico de arranque 45 A a 230 VAC | 45 A típ., arranque en frío, 230 VAC | Coincide. Es un valor **típico y en frío**; no hay dato en caliente (apartado 5.7) |
 | Fuga < 0,75 mA | < 0,75 mA **a 240 VAC** | Coincide; falta la tensión |
 | 99 × 82 × 30 mm | 99 × 82 × 30 mm | Coincide |
-| 5 bornes (L, N, FG, −V, +V) | 5 pines: −V, +V, FG, L, N | Coincide. **+V queda junto a FG y FG junto a L** |
+| 5 bornes (L, N, FG, −V, +V) | 1 AC/L, 2 AC/N, 3 FG, 4 DC −V, 5 DC +V | Corregido por Auditor 6.1-S contra el plano local p. 4. El orden es L, N, FG, −V, +V; no usar las adyacencias erróneas de la versión anterior |
 | Normas EN 62368-1 y EN 60335-1 | Ambas en la lista de la hoja 2025 | Coincide. La declaración CE pública cita normas antiguas (apartado 3) |
 | Clase I: el borne FG es obligatorio | El manual: "The ground (FG) must be connected to earth ground" y, en su tabla de cableado, "PE and FG (Class I only)". La hoja no dice "clase I" por escrito | Coincide con el manual. Un pasaporte ruso de un distribuidor sí dice "clase I" (secundario) |
 | Tornillos M3, 3 mm de penetración en los laterales y 5 mm en la base | Dibujo con "2-M3 L=3.0" y "2-M3 L=5" | **Las dos longitudes existen. La asignación lateral/inferior no la pude leer** en el texto del dibujo. Una copia de 2015 parece decir L=4,5 en vez de 3,0 (lectura única y confusa, sin confirmar). La ficha [#26](../tornilleria-inox-m3-m6/README.md) abrió tres copias (2015, 2019 y 2025) y en todas lee L=3.0; sospecha que el "4,5" viene de las cotas "4.5" y "92.5" del dibujo (hipótesis suya, sin confirmar) |
@@ -188,7 +190,7 @@ El potenciómetro V.ADJ da de 4,5 a 5,5 V. Al ajustar se mide con la carga conec
 
 ### 4.2 Bornes y cableado
 
-- **Orden de los bornes (hoja p. 4*):** −V, +V, FG, L, N. **+V está junto a FG y FG junto a L.** Un hilo en el borne equivocado puede poner 230 V en el chasis o en la salida. Comprueba las marcas impresas en la unidad y haz la prueba de continuidad y aislamiento sin red antes de enchufar.
+- **Orden de los bornes (plano local, p. 4, corregido por Auditor 6.1-S):** **1 AC/L, 2 AC/N, 3 FG, 4 DC −V, 5 DC +V**. FG queda entre N y −V. Un hilo en el borne equivocado puede poner 230 V en el chasis o en la salida. Comprueba las marcas impresas en la unidad; las comprobaciones de continuidad/aislamiento requieren el procedimiento apropiado y el equipo desconectado de red.
 - **Par de apriete:** 8-10 kgf·cm (≈ 0,8-1,0 N·m) en tornillos M3,5 según la copia de montersi.pl; **sin verificar para la LRS-50 en la copia de 2024** (apartado 3). Reapretar tras el primer ciclo térmico es una práctica general mía; el manual no lo dice.
 - **Hilos:** meter todos los filamentos en el borne (manual). La guía usa puntera en los bornes de la fuente: **no he podido comprobar la sección máxima de conductor ni el ancho útil del borne**, así que verifica que la puntera de 1,5 mm² (con collarín) cabe y que el tornillo la sujeta sin aplastarla.
 - **Cable de 5 V:** la guía usa 0,75 mm² (AWG 18) para un pico de 5 A; la tabla del manual da 6 A para ese calibre. Coincide.
@@ -260,7 +262,7 @@ El potenciómetro V.ADJ da de 4,5 a 5,5 V. Al ajustar se mide con la carga conec
 1. **Etiqueta frente a la hoja:** modelo exacto "LRS-50-5", salida 5 V 10 A, entrada de rango universal, marcas de seguridad coherentes con la hoja (TÜV, UL, CE...). Compara con una unidad comprada a un distribuidor. Los logotipos de los falsos pueden ser buenos (caso de febrero de 2026).
 2. **Número de serie:** que exista, sea legible y no esté repetido entre unidades del mismo pedido. Pregúntale al distribuidor o a Mean Well si pueden confirmarlo. La declaración CE v4 (2017) dice que vale "a partir del número de serie EB7xxxxxxx": no sé cómo codifica Mean Well sus series ni qué prefijo corresponde a una unidad de 2026, así que **no uses el prefijo para decidir**; pregunta cómo se lee.
 3. **Peso:** la hoja dice 0,21 kg; RS y Berrybase, 230 g. Pesa con una báscula de cocina; una unidad claramente más ligera (por ejemplo, 50 g de menos) es sospechosa. El umbral es mío.
-4. **Aspecto sin abrir:** carcasa de metal perforado, acabado, rótulos del borne (−V, +V, FG, L, N), potenciómetro y LED. **No abras la fuente**: el manual lo prohíbe y hay condensadores cargados.
+4. **Aspecto sin abrir:** carcasa de metal perforado, acabado, rótulos del borne (1 L, 2 N, 3 FG, 4 −V, 5 +V), potenciómetro y LED. **No abras la fuente**: el manual lo prohíbe y hay condensadores cargados.
 5. **Pruebas eléctricas por un electricista:** continuidad de tierra y resistencia de aislamiento a 500 VDC (la hoja da 100 MΩ entre entrada, salida y FG a esa tensión). No hagas un ensayo de rigidez dieléctrica (los 4 kVAC y 2 kVAC de la hoja son ensayos de fábrica) ni pruebas con red sin experiencia.
 6. **Factura y trazabilidad:** conserva la factura con el nombre del vendedor y el lote.
 

@@ -1,0 +1,530 @@
+{
+  "author": "Auditor 6.1-S",
+  "method": "ideal graph reachability; no parasitic, internal PSU or lamp model",
+  "scope": "Conditional topology, not physical assembly or product certification",
+  "case_count": 20,
+  "assertion_count": 48,
+  "cases": [
+    {
+      "topology": "SPST_single_fuse",
+      "orientation": "normal",
+      "switch": "OFF",
+      "open_fuse": null,
+      "line_reaches_LRS_L": false,
+      "line_reaches_LRS_N": false,
+      "line_reaches_C14_primary": true,
+      "pe_paths": {
+        "LRS_FG": true,
+        "CHASSIS": true,
+        "FRONT_PANEL": true,
+        "DRAWER": true,
+        "INNER_BOX": true
+      }
+    },
+    {
+      "topology": "SPST_single_fuse",
+      "orientation": "normal",
+      "switch": "OFF",
+      "open_fuse": "X",
+      "line_reaches_LRS_L": false,
+      "line_reaches_LRS_N": false,
+      "line_reaches_C14_primary": true,
+      "pe_paths": {
+        "LRS_FG": true,
+        "CHASSIS": true,
+        "FRONT_PANEL": true,
+        "DRAWER": true,
+        "INNER_BOX": true
+      }
+    },
+    {
+      "topology": "SPST_single_fuse",
+      "orientation": "normal",
+      "switch": "ON",
+      "open_fuse": null,
+      "line_reaches_LRS_L": true,
+      "line_reaches_LRS_N": false,
+      "line_reaches_C14_primary": true,
+      "pe_paths": {
+        "LRS_FG": true,
+        "CHASSIS": true,
+        "FRONT_PANEL": true,
+        "DRAWER": true,
+        "INNER_BOX": true
+      }
+    },
+    {
+      "topology": "SPST_single_fuse",
+      "orientation": "normal",
+      "switch": "ON",
+      "open_fuse": "X",
+      "line_reaches_LRS_L": false,
+      "line_reaches_LRS_N": false,
+      "line_reaches_C14_primary": true,
+      "pe_paths": {
+        "LRS_FG": true,
+        "CHASSIS": true,
+        "FRONT_PANEL": true,
+        "DRAWER": true,
+        "INNER_BOX": true
+      }
+    },
+    {
+      "topology": "SPST_single_fuse",
+      "orientation": "reversed",
+      "switch": "OFF",
+      "open_fuse": null,
+      "line_reaches_LRS_L": false,
+      "line_reaches_LRS_N": true,
+      "line_reaches_C14_primary": true,
+      "pe_paths": {
+        "LRS_FG": true,
+        "CHASSIS": true,
+        "FRONT_PANEL": true,
+        "DRAWER": true,
+        "INNER_BOX": true
+      }
+    },
+    {
+      "topology": "SPST_single_fuse",
+      "orientation": "reversed",
+      "switch": "OFF",
+      "open_fuse": "X",
+      "line_reaches_LRS_L": false,
+      "line_reaches_LRS_N": true,
+      "line_reaches_C14_primary": true,
+      "pe_paths": {
+        "LRS_FG": true,
+        "CHASSIS": true,
+        "FRONT_PANEL": true,
+        "DRAWER": true,
+        "INNER_BOX": true
+      }
+    },
+    {
+      "topology": "SPST_single_fuse",
+      "orientation": "reversed",
+      "switch": "ON",
+      "open_fuse": null,
+      "line_reaches_LRS_L": false,
+      "line_reaches_LRS_N": true,
+      "line_reaches_C14_primary": true,
+      "pe_paths": {
+        "LRS_FG": true,
+        "CHASSIS": true,
+        "FRONT_PANEL": true,
+        "DRAWER": true,
+        "INNER_BOX": true
+      }
+    },
+    {
+      "topology": "SPST_single_fuse",
+      "orientation": "reversed",
+      "switch": "ON",
+      "open_fuse": "X",
+      "line_reaches_LRS_L": false,
+      "line_reaches_LRS_N": true,
+      "line_reaches_C14_primary": true,
+      "pe_paths": {
+        "LRS_FG": true,
+        "CHASSIS": true,
+        "FRONT_PANEL": true,
+        "DRAWER": true,
+        "INNER_BOX": true
+      }
+    },
+    {
+      "topology": "DPST_two_fuses_candidate",
+      "orientation": "normal",
+      "switch": "OFF",
+      "open_fuse": null,
+      "line_reaches_LRS_L": false,
+      "line_reaches_LRS_N": false,
+      "line_reaches_C14_primary": true,
+      "pe_paths": {
+        "LRS_FG": true,
+        "CHASSIS": true,
+        "FRONT_PANEL": true,
+        "DRAWER": true,
+        "INNER_BOX": true
+      }
+    },
+    {
+      "topology": "DPST_two_fuses_candidate",
+      "orientation": "normal",
+      "switch": "OFF",
+      "open_fuse": "X",
+      "line_reaches_LRS_L": false,
+      "line_reaches_LRS_N": false,
+      "line_reaches_C14_primary": true,
+      "pe_paths": {
+        "LRS_FG": true,
+        "CHASSIS": true,
+        "FRONT_PANEL": true,
+        "DRAWER": true,
+        "INNER_BOX": true
+      }
+    },
+    {
+      "topology": "DPST_two_fuses_candidate",
+      "orientation": "normal",
+      "switch": "OFF",
+      "open_fuse": "Y",
+      "line_reaches_LRS_L": false,
+      "line_reaches_LRS_N": false,
+      "line_reaches_C14_primary": true,
+      "pe_paths": {
+        "LRS_FG": true,
+        "CHASSIS": true,
+        "FRONT_PANEL": true,
+        "DRAWER": true,
+        "INNER_BOX": true
+      }
+    },
+    {
+      "topology": "DPST_two_fuses_candidate",
+      "orientation": "normal",
+      "switch": "ON",
+      "open_fuse": null,
+      "line_reaches_LRS_L": true,
+      "line_reaches_LRS_N": false,
+      "line_reaches_C14_primary": true,
+      "pe_paths": {
+        "LRS_FG": true,
+        "CHASSIS": true,
+        "FRONT_PANEL": true,
+        "DRAWER": true,
+        "INNER_BOX": true
+      }
+    },
+    {
+      "topology": "DPST_two_fuses_candidate",
+      "orientation": "normal",
+      "switch": "ON",
+      "open_fuse": "X",
+      "line_reaches_LRS_L": false,
+      "line_reaches_LRS_N": false,
+      "line_reaches_C14_primary": true,
+      "pe_paths": {
+        "LRS_FG": true,
+        "CHASSIS": true,
+        "FRONT_PANEL": true,
+        "DRAWER": true,
+        "INNER_BOX": true
+      }
+    },
+    {
+      "topology": "DPST_two_fuses_candidate",
+      "orientation": "normal",
+      "switch": "ON",
+      "open_fuse": "Y",
+      "line_reaches_LRS_L": true,
+      "line_reaches_LRS_N": false,
+      "line_reaches_C14_primary": true,
+      "pe_paths": {
+        "LRS_FG": true,
+        "CHASSIS": true,
+        "FRONT_PANEL": true,
+        "DRAWER": true,
+        "INNER_BOX": true
+      }
+    },
+    {
+      "topology": "DPST_two_fuses_candidate",
+      "orientation": "reversed",
+      "switch": "OFF",
+      "open_fuse": null,
+      "line_reaches_LRS_L": false,
+      "line_reaches_LRS_N": false,
+      "line_reaches_C14_primary": true,
+      "pe_paths": {
+        "LRS_FG": true,
+        "CHASSIS": true,
+        "FRONT_PANEL": true,
+        "DRAWER": true,
+        "INNER_BOX": true
+      }
+    },
+    {
+      "topology": "DPST_two_fuses_candidate",
+      "orientation": "reversed",
+      "switch": "OFF",
+      "open_fuse": "X",
+      "line_reaches_LRS_L": false,
+      "line_reaches_LRS_N": false,
+      "line_reaches_C14_primary": true,
+      "pe_paths": {
+        "LRS_FG": true,
+        "CHASSIS": true,
+        "FRONT_PANEL": true,
+        "DRAWER": true,
+        "INNER_BOX": true
+      }
+    },
+    {
+      "topology": "DPST_two_fuses_candidate",
+      "orientation": "reversed",
+      "switch": "OFF",
+      "open_fuse": "Y",
+      "line_reaches_LRS_L": false,
+      "line_reaches_LRS_N": false,
+      "line_reaches_C14_primary": true,
+      "pe_paths": {
+        "LRS_FG": true,
+        "CHASSIS": true,
+        "FRONT_PANEL": true,
+        "DRAWER": true,
+        "INNER_BOX": true
+      }
+    },
+    {
+      "topology": "DPST_two_fuses_candidate",
+      "orientation": "reversed",
+      "switch": "ON",
+      "open_fuse": null,
+      "line_reaches_LRS_L": false,
+      "line_reaches_LRS_N": true,
+      "line_reaches_C14_primary": true,
+      "pe_paths": {
+        "LRS_FG": true,
+        "CHASSIS": true,
+        "FRONT_PANEL": true,
+        "DRAWER": true,
+        "INNER_BOX": true
+      }
+    },
+    {
+      "topology": "DPST_two_fuses_candidate",
+      "orientation": "reversed",
+      "switch": "ON",
+      "open_fuse": "X",
+      "line_reaches_LRS_L": false,
+      "line_reaches_LRS_N": true,
+      "line_reaches_C14_primary": true,
+      "pe_paths": {
+        "LRS_FG": true,
+        "CHASSIS": true,
+        "FRONT_PANEL": true,
+        "DRAWER": true,
+        "INNER_BOX": true
+      }
+    },
+    {
+      "topology": "DPST_two_fuses_candidate",
+      "orientation": "reversed",
+      "switch": "ON",
+      "open_fuse": "Y",
+      "line_reaches_LRS_L": false,
+      "line_reaches_LRS_N": false,
+      "line_reaches_C14_primary": true,
+      "pe_paths": {
+        "LRS_FG": true,
+        "CHASSIS": true,
+        "FRONT_PANEL": true,
+        "DRAWER": true,
+        "INNER_BOX": true
+      }
+    }
+  ],
+  "assertions": [
+    {
+      "name": "PE continuous for every switch/fuse state",
+      "passed": true
+    },
+    {
+      "name": "Primary remains connected while cord inserted",
+      "passed": true
+    },
+    {
+      "name": "PE continuous for every switch/fuse state",
+      "passed": true
+    },
+    {
+      "name": "Primary remains connected while cord inserted",
+      "passed": true
+    },
+    {
+      "name": "PE continuous for every switch/fuse state",
+      "passed": true
+    },
+    {
+      "name": "Primary remains connected while cord inserted",
+      "passed": true
+    },
+    {
+      "name": "PE continuous for every switch/fuse state",
+      "passed": true
+    },
+    {
+      "name": "Primary remains connected while cord inserted",
+      "passed": true
+    },
+    {
+      "name": "PE continuous for every switch/fuse state",
+      "passed": true
+    },
+    {
+      "name": "Primary remains connected while cord inserted",
+      "passed": true
+    },
+    {
+      "name": "PE continuous for every switch/fuse state",
+      "passed": true
+    },
+    {
+      "name": "Primary remains connected while cord inserted",
+      "passed": true
+    },
+    {
+      "name": "PE continuous for every switch/fuse state",
+      "passed": true
+    },
+    {
+      "name": "Primary remains connected while cord inserted",
+      "passed": true
+    },
+    {
+      "name": "PE continuous for every switch/fuse state",
+      "passed": true
+    },
+    {
+      "name": "Primary remains connected while cord inserted",
+      "passed": true
+    },
+    {
+      "name": "PE continuous for every switch/fuse state",
+      "passed": true
+    },
+    {
+      "name": "Primary remains connected while cord inserted",
+      "passed": true
+    },
+    {
+      "name": "DPST OFF removes line path to both LRS terminals",
+      "passed": true
+    },
+    {
+      "name": "PE continuous for every switch/fuse state",
+      "passed": true
+    },
+    {
+      "name": "Primary remains connected while cord inserted",
+      "passed": true
+    },
+    {
+      "name": "DPST OFF removes line path to both LRS terminals",
+      "passed": true
+    },
+    {
+      "name": "PE continuous for every switch/fuse state",
+      "passed": true
+    },
+    {
+      "name": "Primary remains connected while cord inserted",
+      "passed": true
+    },
+    {
+      "name": "DPST OFF removes line path to both LRS terminals",
+      "passed": true
+    },
+    {
+      "name": "PE continuous for every switch/fuse state",
+      "passed": true
+    },
+    {
+      "name": "Primary remains connected while cord inserted",
+      "passed": true
+    },
+    {
+      "name": "PE continuous for every switch/fuse state",
+      "passed": true
+    },
+    {
+      "name": "Primary remains connected while cord inserted",
+      "passed": true
+    },
+    {
+      "name": "PE continuous for every switch/fuse state",
+      "passed": true
+    },
+    {
+      "name": "Primary remains connected while cord inserted",
+      "passed": true
+    },
+    {
+      "name": "PE continuous for every switch/fuse state",
+      "passed": true
+    },
+    {
+      "name": "Primary remains connected while cord inserted",
+      "passed": true
+    },
+    {
+      "name": "DPST OFF removes line path to both LRS terminals",
+      "passed": true
+    },
+    {
+      "name": "PE continuous for every switch/fuse state",
+      "passed": true
+    },
+    {
+      "name": "Primary remains connected while cord inserted",
+      "passed": true
+    },
+    {
+      "name": "DPST OFF removes line path to both LRS terminals",
+      "passed": true
+    },
+    {
+      "name": "PE continuous for every switch/fuse state",
+      "passed": true
+    },
+    {
+      "name": "Primary remains connected while cord inserted",
+      "passed": true
+    },
+    {
+      "name": "DPST OFF removes line path to both LRS terminals",
+      "passed": true
+    },
+    {
+      "name": "PE continuous for every switch/fuse state",
+      "passed": true
+    },
+    {
+      "name": "Primary remains connected while cord inserted",
+      "passed": true
+    },
+    {
+      "name": "PE continuous for every switch/fuse state",
+      "passed": true
+    },
+    {
+      "name": "Primary remains connected while cord inserted",
+      "passed": true
+    },
+    {
+      "name": "PE continuous for every switch/fuse state",
+      "passed": true
+    },
+    {
+      "name": "Primary remains connected while cord inserted",
+      "passed": true
+    },
+    {
+      "name": "Counterexample: SPST OFF reversed keeps line at LRS_N",
+      "passed": true
+    },
+    {
+      "name": "Counterexample: one blown fuse does not provide full isolation",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "limitations": [
+    "Actual generic C14 contact map is unknown.",
+    "No prospective fault current, protective-trip time, insulation or thermal result.",
+    "An ideal PE edge does not prove the actual bond has low resistance.",
+    "PSU internal coupling and all leakage/EMI paths are deliberately not modeled."
+  ]
+}

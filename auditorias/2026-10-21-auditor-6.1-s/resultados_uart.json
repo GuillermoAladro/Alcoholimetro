@@ -1,0 +1,10 @@
+{
+  "author": "Auditor 6.1-S",
+  "type": "digital_protocol_checks",
+  "manual_frames": 18,
+  "test_methods": 14,
+  "failures": 0,
+  "errors": 0,
+  "successful": true,
+  "hardware_tested": false
+}

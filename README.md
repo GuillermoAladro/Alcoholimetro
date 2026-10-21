@@ -2,6 +2,10 @@
 
 Diseño de un alcoholímetro de pago desde cero: carcasa, electrónica y software de la interfaz.
 
+## Auditoría eléctrica
+
+[Auditoría de Auditor 6.1-S (21-10-2026)](auditorias/2026-10-21-auditor-6.1-s/AUDITORIA.md), con informe PDF y comprobaciones reproducibles. **Dictamen: diseño no liberado para energización.** Se han corregido las asignaciones peligrosas de bornes de la fuente y sus repeticiones en otras fichas. Las pruebas realizadas son documentales y digitales; no se ha ensayado un montaje físico.
+
 ## Descripción
 
 Proyecto personal de ingeniería para diseñar y construir un alcoholímetro completo y robusto. Nace de la experiencia con máquinas de pago comerciales que se averiaban constantemente: la idea es rehacerlo todo desde cero, empezando por la carcasa y avanzando hacia la integración de electrónica, sensor y una pantalla con interfaz propia.

@@ -1,0 +1,766 @@
+{
+  "auditor": "Auditor 6.1-S",
+  "date": "2026-10-21",
+  "base_commit": "84be97669a9efec43e79b3dadc4af5e87458c41a",
+  "method": "KVL DC + comprobaciones declarativas + inyección de fallos",
+  "physical_test": false,
+  "spice_test": false,
+  "circuit_approved": false,
+  "checks_passed": 14,
+  "checks_total": 14,
+  "interpretation": "PASS verifica el análisis o rechazo esperado, no valida hardware. Las reglas de topología comprueban declaraciones seleccionadas; no es ERC integral del listado W1-W29.",
+  "checks": [
+    {
+      "id": "T01_original_rechazado",
+      "pass": true,
+      "detail": [
+        "CORTE_NO_BIPOLAR",
+        "RAMA_SIN_PROTECCION:pi",
+        "RAMA_SIN_PROTECCION:solo",
+        "RAMA_SIN_PROTECCION:pantalla",
+        "RAMA_SIN_PROTECCION:sensor",
+        "CARGA_SOLO_NO_VERIFICADA"
+      ]
+    },
+    {
+      "id": "T02_topologia_propuesta_condicional",
+      "pass": true,
+      "detail": "Hipótesis de diseño cumplidas en el modelo; no piezas verificadas."
+    },
+    {
+      "id": "T03_mutaciones_detectadas",
+      "pass": true,
+      "detail": [
+        {
+          "fault": "bornes_invertidos",
+          "detected": [
+            "LRS_TERMINALES"
+          ]
+        },
+        {
+          "fault": "TX_con_TX",
+          "detected": [
+            "UART_TX_RX"
+          ]
+        },
+        {
+          "fault": "5V_en_UART",
+          "detected": [
+            "UART_TX_RX",
+            "GPIO_5V"
+          ]
+        },
+        {
+          "fault": "sensor_invertido",
+          "detected": [
+            "SENSOR_POLARIDAD"
+          ]
+        },
+        {
+          "fault": "tierra_cajon_abierta",
+          "detected": [
+            "PE_INCOMPLETO"
+          ]
+        },
+        {
+          "fault": "fusible_en_PE",
+          "detected": [
+            "PE_INTERRUMPIDO"
+          ]
+        },
+        {
+          "fault": "un_solo_polo",
+          "detected": [
+            "CORTE_NO_BIPOLAR"
+          ]
+        },
+        {
+          "fault": "LED_en_GPIO",
+          "detected": [
+            "PULSADOR"
+          ]
+        },
+        {
+          "fault": "rama_sensor_sin_proteger",
+          "detected": [
+            "RAMA_SIN_PROTECCION:sensor"
+          ]
+        },
+        {
+          "fault": "Solo_sin_cargador_validado",
+          "detected": [
+            "CARGA_SOLO_NO_VERIFICADA"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T04_contraejemplo_subtension",
+      "pass": true,
+      "detail": {
+        "assumptions": "5.20V-2%; R troncal=0.046 ohm; latiguillo22AWG0.15m; contactos supuestos",
+        "V_nominal_source_at_connectors": {
+          "pi": 4.80395,
+          "solo": 4.707,
+          "pantalla": 4.8870000000000005,
+          "sensor": 4.92839
+        },
+        "V_low_source_at_connectors": {
+          "pi": 4.69995,
+          "solo": 4.603,
+          "pantalla": 4.783,
+          "sensor": 4.82439
+        },
+        "node_note": "Original: Pi antes de F1, por tanto caída interna solo empeoraría esta cifra."
+      }
+    },
+    {
+      "id": "T05_5_20_sin_margen_sensor",
+      "pass": true,
+      "detail": {
+        "calculation_V": 5.304,
+        "warning": "Cribado de margen, no predicción tras ajuste. El +/-2% ya incluye línea y carga; no se suma otra vez. Rizado a baja carga no acotado por nota7."
+      }
+    },
+    {
+      "id": "T06_32_casos_propuesta",
+      "pass": true,
+      "detail": {
+        "cases": 32,
+        "minimum_V": {
+          "pi": 4.92,
+          "solo": 4.885,
+          "pantalla": 4.995,
+          "sensor": 4.995
+        },
+        "maximum_V": {
+          "pi": 5.2,
+          "solo": 5.2,
+          "pantalla": 5.2,
+          "sensor": 5.2
+        },
+        "nodes": {
+          "pi": "Red5V placa tras F1, medida GPIO5V/PP con GND próximo",
+          "solo": "USB-C entrada",
+          "pantalla": "PowerIN entrada",
+          "sensor": "J1pines1-2"
+        },
+        "note": "Pi R50mohm incluye F1/pistas. Este presupuesto total no está demostrado; no basta asignarlo al cable."
+      }
+    },
+    {
+      "id": "T07_cable_malo_no_aprobado",
+      "pass": true,
+      "detail": {
+        "pi": 4.545,
+        "solo": 4.885,
+        "pantalla": 4.995,
+        "sensor": 4.995
+      }
+    },
+    {
+      "id": "T08_potencia_estatica",
+      "pass": true,
+      "detail": {
+        "I_total_A": 5.5,
+        "P_upper_W": 28.6,
+        "warning": "Capacidad nominal a temperatura compatible; corrientes de cargas son hipótesis, no medidas."
+      }
+    },
+    {
+      "id": "T09_condensador_ante_deficit_5ms",
+      "pass": true,
+      "detail": {
+        "C_uF": 1000,
+        "I_step_A": 0.5,
+        "duration_ms": 5,
+        "droop_V": 2.5,
+        "hold_for_0_2V_ms": 0.4
+      }
+    },
+    {
+      "id": "T10_selectividad_ideal",
+      "pass": true,
+      "detail": [
+        {
+          "shorted_branch": "pi",
+          "ideal_limit_A": 3.0,
+          "total_A": 6.0,
+          "below_main_minimum_limit": true,
+          "warning": "Límite ideal; no respuesta transitoria, SOA ni tiempo de corte comprobados."
+        },
+        {
+          "shorted_branch": "solo",
+          "ideal_limit_A": 2.2,
+          "total_A": 5.7,
+          "below_main_minimum_limit": true,
+          "warning": "Límite ideal; no respuesta transitoria, SOA ni tiempo de corte comprobados."
+        },
+        {
+          "shorted_branch": "pantalla",
+          "ideal_limit_A": 0.75,
+          "total_A": 5.75,
+          "below_main_minimum_limit": true,
+          "warning": "Límite ideal; no respuesta transitoria, SOA ni tiempo de corte comprobados."
+        },
+        {
+          "shorted_branch": "sensor",
+          "ideal_limit_A": 0.65,
+          "total_A": 5.65,
+          "below_main_minimum_limit": true,
+          "warning": "Límite ideal; no respuesta transitoria, SOA ni tiempo de corte comprobados."
+        }
+      ]
+    },
+    {
+      "id": "T11_sobrecorriente_calienta",
+      "pass": true,
+      "detail": [
+        {
+          "I_A": 10.6,
+          "R_ohm": 0.05,
+          "P_W": 5.618
+        },
+        {
+          "I_A": 14.4,
+          "R_ohm": 0.05,
+          "P_W": 10.368000000000002
+        }
+      ]
+    },
+    {
+      "id": "T12_pulsador_logico",
+      "pass": true,
+      "detail": "Abierto con pull-up=3.3V; cerrado aGND=0V. No se simulan rebotes/ESD."
+    },
+    {
+      "id": "T13_servicio_sin_disparo_condicional",
+      "pass": true,
+      "detail": "Requisito de no disparo mínimo en caliente/con tolerancia; no verificado en componente."
+    },
+    {
+      "id": "T14_F1_puede_romper_presupuesto",
+      "pass": true,
+      "detail": {
+        "R_F1_scenario_ohm": 0.1,
+        "R_external_scenario_ohm": 0.035,
+        "V_PI_board": 4.7075,
+        "warning": "No eludir F1 por GPIO. Medir placa y revisar fuente/arquitectura si incumple."
+      }
+    }
+  ],
+  "proposal_corner_cases": [
+    {
+      "source_V": 5.1,
+      "currents_A": {
+        "pi": 0,
+        "solo": 0,
+        "pantalla": 0,
+        "sensor": 0
+      },
+      "load_V": {
+        "pi": 5.1,
+        "solo": 5.1,
+        "pantalla": 5.1,
+        "sensor": 5.1
+      },
+      "within_targets": true
+    },
+    {
+      "source_V": 5.1,
+      "currents_A": {
+        "pi": 0,
+        "solo": 0,
+        "pantalla": 0,
+        "sensor": 0.5
+      },
+      "load_V": {
+        "pi": 5.095,
+        "solo": 5.095,
+        "pantalla": 5.095,
+        "sensor": 5.045
+      },
+      "within_targets": true
+    },
+    {
+      "source_V": 5.1,
+      "currents_A": {
+        "pi": 0,
+        "solo": 0,
+        "pantalla": 0.5,
+        "sensor": 0
+      },
+      "load_V": {
+        "pi": 5.095,
+        "solo": 5.095,
+        "pantalla": 5.045,
+        "sensor": 5.095
+      },
+      "within_targets": true
+    },
+    {
+      "source_V": 5.1,
+      "currents_A": {
+        "pi": 0,
+        "solo": 0,
+        "pantalla": 0.5,
+        "sensor": 0.5
+      },
+      "load_V": {
+        "pi": 5.09,
+        "solo": 5.09,
+        "pantalla": 5.04,
+        "sensor": 5.04
+      },
+      "within_targets": true
+    },
+    {
+      "source_V": 5.1,
+      "currents_A": {
+        "pi": 0,
+        "solo": 2.0,
+        "pantalla": 0,
+        "sensor": 0
+      },
+      "load_V": {
+        "pi": 5.08,
+        "solo": 4.92,
+        "pantalla": 5.08,
+        "sensor": 5.08
+      },
+      "within_targets": true
+    },
+    {
+      "source_V": 5.1,
+      "currents_A": {
+        "pi": 0,
+        "solo": 2.0,
+        "pantalla": 0,
+        "sensor": 0.5
+      },
+      "load_V": {
+        "pi": 5.074999999999999,
+        "solo": 4.914999999999999,
+        "pantalla": 5.074999999999999,
+        "sensor": 5.0249999999999995
+      },
+      "within_targets": true
+    },
+    {
+      "source_V": 5.1,
+      "currents_A": {
+        "pi": 0,
+        "solo": 2.0,
+        "pantalla": 0.5,
+        "sensor": 0
+      },
+      "load_V": {
+        "pi": 5.074999999999999,
+        "solo": 4.914999999999999,
+        "pantalla": 5.0249999999999995,
+        "sensor": 5.074999999999999
+      },
+      "within_targets": true
+    },
+    {
+      "source_V": 5.1,
+      "currents_A": {
+        "pi": 0,
+        "solo": 2.0,
+        "pantalla": 0.5,
+        "sensor": 0.5
+      },
+      "load_V": {
+        "pi": 5.069999999999999,
+        "solo": 4.909999999999999,
+        "pantalla": 5.02,
+        "sensor": 5.02
+      },
+      "within_targets": true
+    },
+    {
+      "source_V": 5.1,
+      "currents_A": {
+        "pi": 2.5,
+        "solo": 0,
+        "pantalla": 0,
+        "sensor": 0
+      },
+      "load_V": {
+        "pi": 4.949999999999999,
+        "solo": 5.074999999999999,
+        "pantalla": 5.074999999999999,
+        "sensor": 5.074999999999999
+      },
+      "within_targets": true
+    },
+    {
+      "source_V": 5.1,
+      "currents_A": {
+        "pi": 2.5,
+        "solo": 0,
+        "pantalla": 0,
+        "sensor": 0.5
+      },
+      "load_V": {
+        "pi": 4.944999999999999,
+        "solo": 5.069999999999999,
+        "pantalla": 5.069999999999999,
+        "sensor": 5.02
+      },
+      "within_targets": true
+    },
+    {
+      "source_V": 5.1,
+      "currents_A": {
+        "pi": 2.5,
+        "solo": 0,
+        "pantalla": 0.5,
+        "sensor": 0
+      },
+      "load_V": {
+        "pi": 4.944999999999999,
+        "solo": 5.069999999999999,
+        "pantalla": 5.02,
+        "sensor": 5.069999999999999
+      },
+      "within_targets": true
+    },
+    {
+      "source_V": 5.1,
+      "currents_A": {
+        "pi": 2.5,
+        "solo": 0,
+        "pantalla": 0.5,
+        "sensor": 0.5
+      },
+      "load_V": {
+        "pi": 4.9399999999999995,
+        "solo": 5.0649999999999995,
+        "pantalla": 5.015,
+        "sensor": 5.015
+      },
+      "within_targets": true
+    },
+    {
+      "source_V": 5.1,
+      "currents_A": {
+        "pi": 2.5,
+        "solo": 2.0,
+        "pantalla": 0,
+        "sensor": 0
+      },
+      "load_V": {
+        "pi": 4.93,
+        "solo": 4.895,
+        "pantalla": 5.055,
+        "sensor": 5.055
+      },
+      "within_targets": true
+    },
+    {
+      "source_V": 5.1,
+      "currents_A": {
+        "pi": 2.5,
+        "solo": 2.0,
+        "pantalla": 0,
+        "sensor": 0.5
+      },
+      "load_V": {
+        "pi": 4.925,
+        "solo": 4.89,
+        "pantalla": 5.05,
+        "sensor": 5.0
+      },
+      "within_targets": true
+    },
+    {
+      "source_V": 5.1,
+      "currents_A": {
+        "pi": 2.5,
+        "solo": 2.0,
+        "pantalla": 0.5,
+        "sensor": 0
+      },
+      "load_V": {
+        "pi": 4.925,
+        "solo": 4.89,
+        "pantalla": 5.0,
+        "sensor": 5.05
+      },
+      "within_targets": true
+    },
+    {
+      "source_V": 5.1,
+      "currents_A": {
+        "pi": 2.5,
+        "solo": 2.0,
+        "pantalla": 0.5,
+        "sensor": 0.5
+      },
+      "load_V": {
+        "pi": 4.92,
+        "solo": 4.885,
+        "pantalla": 4.995,
+        "sensor": 4.995
+      },
+      "within_targets": true
+    },
+    {
+      "source_V": 5.2,
+      "currents_A": {
+        "pi": 0,
+        "solo": 0,
+        "pantalla": 0,
+        "sensor": 0
+      },
+      "load_V": {
+        "pi": 5.2,
+        "solo": 5.2,
+        "pantalla": 5.2,
+        "sensor": 5.2
+      },
+      "within_targets": true
+    },
+    {
+      "source_V": 5.2,
+      "currents_A": {
+        "pi": 0,
+        "solo": 0,
+        "pantalla": 0,
+        "sensor": 0.5
+      },
+      "load_V": {
+        "pi": 5.195,
+        "solo": 5.195,
+        "pantalla": 5.195,
+        "sensor": 5.1450000000000005
+      },
+      "within_targets": true
+    },
+    {
+      "source_V": 5.2,
+      "currents_A": {
+        "pi": 0,
+        "solo": 0,
+        "pantalla": 0.5,
+        "sensor": 0
+      },
+      "load_V": {
+        "pi": 5.195,
+        "solo": 5.195,
+        "pantalla": 5.1450000000000005,
+        "sensor": 5.195
+      },
+      "within_targets": true
+    },
+    {
+      "source_V": 5.2,
+      "currents_A": {
+        "pi": 0,
+        "solo": 0,
+        "pantalla": 0.5,
+        "sensor": 0.5
+      },
+      "load_V": {
+        "pi": 5.19,
+        "solo": 5.19,
+        "pantalla": 5.140000000000001,
+        "sensor": 5.140000000000001
+      },
+      "within_targets": true
+    },
+    {
+      "source_V": 5.2,
+      "currents_A": {
+        "pi": 0,
+        "solo": 2.0,
+        "pantalla": 0,
+        "sensor": 0
+      },
+      "load_V": {
+        "pi": 5.180000000000001,
+        "solo": 5.0200000000000005,
+        "pantalla": 5.180000000000001,
+        "sensor": 5.180000000000001
+      },
+      "within_targets": true
+    },
+    {
+      "source_V": 5.2,
+      "currents_A": {
+        "pi": 0,
+        "solo": 2.0,
+        "pantalla": 0,
+        "sensor": 0.5
+      },
+      "load_V": {
+        "pi": 5.175,
+        "solo": 5.015,
+        "pantalla": 5.175,
+        "sensor": 5.125
+      },
+      "within_targets": true
+    },
+    {
+      "source_V": 5.2,
+      "currents_A": {
+        "pi": 0,
+        "solo": 2.0,
+        "pantalla": 0.5,
+        "sensor": 0
+      },
+      "load_V": {
+        "pi": 5.175,
+        "solo": 5.015,
+        "pantalla": 5.125,
+        "sensor": 5.175
+      },
+      "within_targets": true
+    },
+    {
+      "source_V": 5.2,
+      "currents_A": {
+        "pi": 0,
+        "solo": 2.0,
+        "pantalla": 0.5,
+        "sensor": 0.5
+      },
+      "load_V": {
+        "pi": 5.17,
+        "solo": 5.01,
+        "pantalla": 5.12,
+        "sensor": 5.12
+      },
+      "within_targets": true
+    },
+    {
+      "source_V": 5.2,
+      "currents_A": {
+        "pi": 2.5,
+        "solo": 0,
+        "pantalla": 0,
+        "sensor": 0
+      },
+      "load_V": {
+        "pi": 5.05,
+        "solo": 5.175,
+        "pantalla": 5.175,
+        "sensor": 5.175
+      },
+      "within_targets": true
+    },
+    {
+      "source_V": 5.2,
+      "currents_A": {
+        "pi": 2.5,
+        "solo": 0,
+        "pantalla": 0,
+        "sensor": 0.5
+      },
+      "load_V": {
+        "pi": 5.045,
+        "solo": 5.17,
+        "pantalla": 5.17,
+        "sensor": 5.12
+      },
+      "within_targets": true
+    },
+    {
+      "source_V": 5.2,
+      "currents_A": {
+        "pi": 2.5,
+        "solo": 0,
+        "pantalla": 0.5,
+        "sensor": 0
+      },
+      "load_V": {
+        "pi": 5.045,
+        "solo": 5.17,
+        "pantalla": 5.12,
+        "sensor": 5.17
+      },
+      "within_targets": true
+    },
+    {
+      "source_V": 5.2,
+      "currents_A": {
+        "pi": 2.5,
+        "solo": 0,
+        "pantalla": 0.5,
+        "sensor": 0.5
+      },
+      "load_V": {
+        "pi": 5.04,
+        "solo": 5.165,
+        "pantalla": 5.115,
+        "sensor": 5.115
+      },
+      "within_targets": true
+    },
+    {
+      "source_V": 5.2,
+      "currents_A": {
+        "pi": 2.5,
+        "solo": 2.0,
+        "pantalla": 0,
+        "sensor": 0
+      },
+      "load_V": {
+        "pi": 5.03,
+        "solo": 4.995,
+        "pantalla": 5.155,
+        "sensor": 5.155
+      },
+      "within_targets": true
+    },
+    {
+      "source_V": 5.2,
+      "currents_A": {
+        "pi": 2.5,
+        "solo": 2.0,
+        "pantalla": 0,
+        "sensor": 0.5
+      },
+      "load_V": {
+        "pi": 5.025,
+        "solo": 4.99,
+        "pantalla": 5.15,
+        "sensor": 5.1000000000000005
+      },
+      "within_targets": true
+    },
+    {
+      "source_V": 5.2,
+      "currents_A": {
+        "pi": 2.5,
+        "solo": 2.0,
+        "pantalla": 0.5,
+        "sensor": 0
+      },
+      "load_V": {
+        "pi": 5.025,
+        "solo": 4.99,
+        "pantalla": 5.1000000000000005,
+        "sensor": 5.15
+      },
+      "within_targets": true
+    },
+    {
+      "source_V": 5.2,
+      "currents_A": {
+        "pi": 2.5,
+        "solo": 2.0,
+        "pantalla": 0.5,
+        "sensor": 0.5
+      },
+      "load_V": {
+        "pi": 5.0200000000000005,
+        "solo": 4.985,
+        "pantalla": 5.095000000000001,
+        "sensor": 5.095000000000001
+      },
+      "within_targets": true
+    }
+  ]
+}

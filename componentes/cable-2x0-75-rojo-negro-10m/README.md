@@ -287,7 +287,7 @@ Tensión en la entrada de la Pi, restando la caída del troncal a 5 A y la del l
 
 ## 7. Aislamiento y separación de los 230 V
 
-La guía mete el cable de 5 V en la misma caja que la entrada de red. La LRS-50-5 tiene todos sus bornes en una misma regleta de cinco (−V, +V, FG, L, N, según la [ficha de la LRS](../meanwell-lrs-50-5/README.md)): **el +V queda al lado de FG y FG al lado de L.** Por ese motivo el aislamiento y el montaje de los cables de 5 V importan.
+La guía mete el cable de 5 V en la misma caja que la entrada de red. La LRS-50-5 tiene todos sus bornes en una misma regleta de cinco: **1 AC/L, 2 AC/N, 3 FG, 4 DC −V, 5 DC +V** (plano local del fabricante, p. 4; corrección de Auditor 6.1-S, 21-10-2026). FG queda entre N y −V. La separación y fijación del cableado AC/DC deben diseñarse; el orden anterior de esta ficha era erróneo.
 
 ### 7.1 Lo que sí he podido leer
 
@@ -374,7 +374,7 @@ Dos fichas de Electrokit para cable "2 × 0,75 mm² Cu rojo/negro" dan construcc
 
 ### 9.3 Aislamiento junto a los 230 V
 
-Ver [apartado 7](#7-aislamiento-y-separación-de-los-230-v). Un cable de 50 V y sin vaina, atado junto a L y N, es la combinación peligrosa. La LRS-50-5 tiene +V junto a FG y FG junto a L en su regleta.
+Ver [apartado 7](#7-aislamiento-y-separación-de-los-230-v). Un cable de 50 V y sin vaina, atado junto a L y N, es la combinación peligrosa. El orden correcto de la regleta LRS-50-5 es L, N, FG, −V, +V; FG es adyacente a N y −V (corregido por Auditor 6.1-S).
 
 ### 9.4 Terminación y sujeción
 

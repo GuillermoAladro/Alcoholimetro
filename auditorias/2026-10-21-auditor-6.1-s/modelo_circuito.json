@@ -1,0 +1,79 @@
+{
+  "auditor": "Auditor 6.1-S",
+  "base_commit": "84be97669a9efec43e79b3dadc4af5e87458c41a",
+  "basis": "MONTAJE-GENERAL.md, W1-W29; diseño antiguo explícito. Diseño A solo documentado por resumen §6.3.",
+  "status": "Modelo virtual. Original incompleto; propuesta condicionada a cumplir requisitos medidos.",
+  "original": {
+    "psu_terminals": {"1":"AC_L", "2":"AC_N", "3":"PE", "4":"DC_GND", "5":"DC_POS"},
+    "uart": [["PI.8","ZE29A.4"],["ZE29A.3","PI.10"]],
+    "sensor_power": {"1":"DC_POS","2":"DC_GND"},
+    "pe_destinations": ["PSU.FG","CUERPO","PANEL","CAJA_INTERIOR","CAJON"],
+    "pe_switched_or_fused": false,
+    "mains_poles_opened": null,
+    "gpio_button": ["PI.11","PI.9"],
+    "branch_protected": {"pi":false,"solo":false,"pantalla":false,"sensor":false},
+    "solo_supply_verified": false
+  },
+  "proposal": {
+    "note": "Los valores true describen condiciones exigidas; ninguna unidad física está aprobada.",
+    "psu_terminals": {"1":"AC_L", "2":"AC_N", "3":"PE", "4":"DC_GND", "5":"DC_POS"},
+    "uart": [["PI.8","ZE29A.4"],["ZE29A.3","PI.10"]],
+    "sensor_power": {"1":"DC_POS","2":"DC_GND"},
+    "pe_destinations": ["PSU.FG","CUERPO","PANEL","CAJA_INTERIOR","CAJON"],
+    "pe_switched_or_fused": false,
+    "mains_poles_opened": 2,
+    "gpio_button": ["PI.11","PI.9"],
+    "branch_protected": {"pi":true,"solo":true,"pantalla":true,"sensor":true},
+    "solo_supply_verified": true
+  },
+  "load_envelope_A": {
+    "note": "Envolvente de estudio, sin medida. Rama Pi incluye cámara y USB Wi-Fi dentro del presupuesto de2.5A. 2A Solo y0.5A pantalla son estimaciones a confirmar.",
+    "high": {"pi":2.5,"solo":2.0,"pantalla":0.5,"sensor":0.5}
+  },
+  "proposal_envelope": {
+    "note": "Requisitos instantáneos en todo régimen, incluyendo rizado/transitorios y resistencias en caliente de protecciones, conectores, cable de ida y retorno. En Pi los50mohm incluyen TAMBIEN F1 y pistas hasta la red5V de placa. Es un objetivo exigente NO demostrado, no una prestación garantizada de Pi/LRS.",
+    "source_instantaneous_range_V": [5.10,5.20],
+    "trunk_loop_max_ohm": 0.010,
+    "branch_loop_max_ohm": {"pi":0.050,"solo":0.080,"pantalla":0.100,"sensor":0.100},
+    "branch_current_limit_upper_A": {"pi":3.00,"solo":2.20,"pantalla":0.75,"sensor":0.65},
+    "branch_no_trip_min_A": {"pi":2.50,"solo":2.00,"pantalla":0.50,"sensor":0.50},
+    "main_current_limit_min_A": 7.0,
+    "voltage_nodes": {"pi":"Red5V placa tras F1, medida GPIO5V/PP con GND próximo","solo":"USB-C entrada","pantalla":"PowerIN entrada","sensor":"J1pines1-2"},
+    "current_limit_note": "Especificación funcional de distribución electrónica con corte/enclavamiento, sin referencia seleccionada ni SOA demostrada. Un fusible3A no es un limitador3A. No inferir estos valores de los fusibles del diseño A."
+  },
+  "voltage_acceptance_V": {
+    "note": "Criterios conservadores de este proyecto;4.90V Pi deja margen al detector4.63V +/-5%.5.25V es techo de proyecto, no máximo universal USB moderno. ZE29A4.7-5.3V viene de su manual.",
+    "pi":[4.90,5.25],"solo":[4.75,5.25],"pantalla":[4.75,5.25],"sensor":[4.70,5.30]
+  },
+  "connections": [
+    {"id":"W1","from":"PARED.SCHUKO","to":"C14.INPUT","domain":"AC","status":"cordón C13/PE; orientación reversible"},
+    {"id":"W2","from":"C14.FUSED_CONDUCTOR","to":"SW.A","domain":"AC","status":"terminal físico desconocido"},
+    {"id":"W3","from":"C14.OTHER_CONDUCTOR","to":"SW.C","domain":"AC","status":"solo hipótesis bipolar"},
+    {"id":"W4","from":"SW.B","to":"PSU.1_AC_L","domain":"AC","status":"LRS confirmado, módulo desconocido"},
+    {"id":"W5","from":"SW.D_OR_C14.N","to":"PSU.2_AC_N","domain":"AC","status":"alternativas incompatibles sin esquema"},
+    {"id":"W6","from":"C14.PE","to":"PE.BLOCK","domain":"PE","status":"sin corte ni fusible; mecánica pendiente"},
+    {"id":"W7","from":"PE.BLOCK","to":"PSU.3_FG","domain":"PE","status":"retorno de protección"},
+    {"id":"W8","from":"PE.BLOCK","to":"PANEL","domain":"PE","status":"unión dedicada si desmontable"},
+    {"id":"W9","from":"PE.BLOCK","to":"CAJA_INTERIOR","domain":"PE","status":"flexible con holgura"},
+    {"id":"W10","from":"PE.BLOCK","to":"CAJON","domain":"PE","status":"flexible; jamás depender de muelles/guías"},
+    {"id":"W11","from":"PSU.5_DC_POS","to":"WAGO_POS.1","domain":"DC","status":"original0.75mm2 sin protección troncal"},
+    {"id":"W12","from":"PSU.4_DC_GND","to":"WAGO_GND.1","domain":"DC","status":"no presupone aislamiento final de PE"},
+    {"id":"W13","from":"WAGO_POS.2/WAGO_GND.2","to":"PI.MICRO_USB.1/5","domain":"DC","status":"polaridad y R lazo pendientes"},
+    {"id":"W14","from":"WAGO_POS.3/WAGO_GND.3","to":"USB_A_SOLO.VBUS/GND","domain":"DC","status":"puenteD+/D- insuficiente para aprobar cargador"},
+    {"id":"W15","from":"USB_A_SOLO","to":"SOLO.USB_C","domain":"USB_POWER","status":"Rp56k; carga/referencia sin verificar"},
+    {"id":"W16","from":"WAGO_POS.4/WAGO_GND.4","to":"USB_A_DISPLAY.VBUS/GND","domain":"DC","status":"corriente/conector sin verificar"},
+    {"id":"W17","from":"USB_A_DISPLAY","to":"DISPLAY.USB_C_POWER","domain":"USB_POWER","status":"no conectar otro USB desde Pi"},
+    {"id":"W18","from":"WAGO_POS.5/WAGO_GND.5","to":"ZE29A.1/2","domain":"DC","status":"posición confirmada; conector físico desconocido"},
+    {"id":"W19","from":"PI.8_TXD","to":"ZE29A.4_RXD","domain":"UART_3V3","status":"9600_8N1; analizar apagado parcial"},
+    {"id":"W20","from":"ZE29A.3_TXD","to":"PI.10_RXD","domain":"UART_3V3","status":"9600_8N1; analizar apagado parcial"},
+    {"id":"W21","from":"BUTTON.CONTACT_A","to":"PI.11_GPIO17","domain":"GPIO","status":"pullup; diseño A lo omite"},
+    {"id":"W22","from":"BUTTON.CONTACT_B","to":"PI.9_GND","domain":"GPIO","status":"LED desconectado; diseño A lo omite"},
+    {"id":"W23","from":"PI.HDMI","to":"DISPLAY.HDMI","domain":"HDMI","status":"incluye masas, malla y H5V; no solo señal"},
+    {"id":"W24","from":"PI.CSI","to":"CAMERA3.J1","domain":"CSI_POWER_DATA","status":"Pi alimenta cámara; FFC15vías1mm"},
+    {"id":"W25","from":"PI.USB2","to":"AR9271.USB","domain":"USB_POWER_DATA","status":"Wi-Fi consume de Pi"},
+    {"id":"W26","from":"AR9271.RP_SMA","to":"ANTENNA.BULKHEAD","domain":"RF_SHIELD","status":"posible unión GND-PE por malla"},
+    {"id":"W27","from":"PI.SD_SLOT","to":"MICRO_SD","domain":"SD_POWER_DATA","status":"sin firmware instalado en este ensayo"},
+    {"id":"W28","from":"MOUTHPIECE","to":"ZE29A.PRESSURE_AND_SAMPLE","domain":"PNEUMATIC","status":"requiere barrera/orden/caudal, no probado"},
+    {"id":"W29","from":"PI.INTERNET","to":"SOLO.CLOUD","domain":"NETWORK","status":"sin cable eléctrico ni cobros reales en auditoría"}
+  ]
+}
