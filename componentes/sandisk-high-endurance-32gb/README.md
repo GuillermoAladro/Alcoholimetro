@@ -31,7 +31,7 @@ Tarjeta de memoria donde vive el sistema operativo y el programa del alcoholíme
 
 ## 2. Especificaciones
 
-Fuentes: [ficha oficial de SanDisk](https://www.sandisk.com/products/memory-cards/microsd-cards/sandisk-high-endurance-uhs-i-microsd) y [ficha de welectron](https://www.welectron.com/SanDisk-SDSQQNR-032G-GN6IA-High-Endurance-microSD-Card-32-GB-100-MB-s) (las dos coinciden).
+Fuentes: la [hoja de datos oficial de SanDisk](datasheets/data-sheet-high-endurance-uhs-i-microsd.pdf) (versión 05/23, leída entera), la [ficha web oficial](https://www.sandisk.com/products/memory-cards/microsd-cards/sandisk-high-endurance-uhs-i-microsd) y la [ficha de welectron](https://www.welectron.com/SanDisk-SDSQQNR-032G-GN6IA-High-Endurance-microSD-Card-32-GB-100-MB-s). Las tres coinciden en las cifras.
 
 | Característica | Valor |
 |---|---|
@@ -43,16 +43,18 @@ Fuentes: [ficha oficial de SanDisk](https://www.sandisk.com/products/memory-card
 | Horas de grabación | Hasta 2.500 h de vídeo Full HD (menos en 4K) |
 | Temperatura de funcionamiento | −25 a 85 °C |
 | Temperatura sin funcionar | −40 a 85 °C |
-| Resistencia | "A prueba de temperatura, agua, golpes y rayos X" (solo la tarjeta, sin el adaptador) |
+| Resistencia ambiental | "A prueba de temperatura, agua, golpes, humedad y rayos X" y, según la hoja de datos, también magnetismo. Solo la tarjeta, sin el adaptador |
 | Garantía | 2 años, limitada |
-| Dimensiones | 14,99 × 10,92 × 1,02 mm |
+| Dimensiones | Tarjeta 14,99 × 10,92 × 1,02 mm; adaptador SD 32 × 24 × 2,1 mm |
 | Certificaciones | CE, FCC, C-Tick/RCM, UKCA, EAC, ICES |
-| Incluye | Adaptador SD y 1 año de RescuePRO Deluxe (recuperación de datos, requiere registro) |
+| Incluye | Adaptador SD |
+| País de origen | China o Taiwán ([hoja de configuración](datasheets/microsd-high-endurance-set-up-sheet-europa-2019.pdf)) |
 
 Notas:
 
-- Las 2.500 horas se calculan con vídeo Full HD a 26 Mbps grabado en un solo dispositivo. Las velocidades son de pruebas internas y pueden ser menores según el dispositivo ([hoja técnica de la versión de 64 GB](https://media.bechtle.com/asrc/180712/1c4b3d4ee288fc9434f5175bf56070570/c3/-/bf1810916b55428dbd0b01cf136c1cea/microsdxc-64-go-sandisk-high-endurance-fiche-technique-1)).
-- La hoja técnica de 64 GB no da rangos de temperatura; los de −25/85 °C salen de la web de SanDisk.
+- La hoja de datos de 2023 da la resistencia de 2.500 horas para vídeo Full HD y avisa de que el 4K da menos horas. Los 26 Mbps, "grabado en un solo dispositivo", solo aparecen en la hoja de configuración de 2019.
+- Las velocidades son de pruebas internas y pueden ser menores según el dispositivo.
+- La hoja de 2019 menciona 1 año de RescuePRO Deluxe (recuperación de datos, con registro); la de 2023 ya no lo cita, así que no se puede dar por incluido.
 - Algunas tiendas publican datos erróneos. Por ejemplo, [Logics Technology](https://logicstechnology.com/products/sandisk-high-endurance-32-gb-class-10-uhs-i-u3-microsdhc) dice "20.000 horas" para la de 32 GB, cifra que corresponde a la de 256 GB.
 
 ## 3. Documentos oficiales
@@ -60,14 +62,16 @@ Notas:
 | Documento | Enlace |
 |---|---|
 | Ficha de producto 32 GB | [sandisk.com](https://www.sandisk.com/products/memory-cards/microsd-cards/sandisk-high-endurance-uhs-i-microsd) |
-| Hoja de datos de la línea (PDF) | [data-sheet-high-endurance-uhs-i-microsd.pdf](https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fsandisk%2Fproduct%2Fmemory-cards%2Fhigh-endurance-uhs-i-microsd%2Fdata-sheet-high-endurance-uhs-i-microsd.pdf) |
-| Hoja técnica (versión 64 GB, en francés) | [Bechtle](https://media.bechtle.com/asrc/180712/1c4b3d4ee288fc9434f5175bf56070570/c3/-/bf1810916b55428dbd0b01cf136c1cea/microsdxc-64-go-sandisk-high-endurance-fiche-technique-1) |
+| Hoja de datos de la línea, versión 05/23 (PDF, copia local) | [datasheets/data-sheet-high-endurance-uhs-i-microsd.pdf](datasheets/data-sheet-high-endurance-uhs-i-microsd.pdf) · [original](https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fsandisk%2Fproduct%2Fmemory-cards%2Fhigh-endurance-uhs-i-microsd%2Fdata-sheet-high-endurance-uhs-i-microsd.pdf) |
+| Hoja de configuración Europa/APAC, 32–256 GB, Rev. 04/19 (PDF, copia local) | [datasheets/microsd-high-endurance-set-up-sheet-europa-2019.pdf](datasheets/microsd-high-endurance-set-up-sheet-europa-2019.pdf) · [original en Bechtle](https://media.bechtle.com/asrc/180712/1c4b3d4ee288fc9434f5175bf56070570/c3/-/bf1810916b55428dbd0b01cf136c1cea/microsdxc-64-go-sandisk-high-endurance-fiche-technique-1) |
 | Garantía limitada de SanDisk | [sandisk.com](https://www.sandisk.com/support/store/warranty-policy/sandisk) |
 | Información sobre las horas de grabación | [sandisk.com/proof](https://www.sandisk.com/proof) |
-| Compatibilidad Full HD y 4K | [sandisk.com/HDUHS](https://www.sandisk.com/HDUHS) |
+| Compatibilidad Full HD y 4K | [sandisk.com/HD](https://www.sandisk.com/HD) (la ficha web usa [sandisk.com/HDUHS](https://www.sandisk.com/HDUHS)) |
 | Clases de velocidad (SD Association) | [sdcard.org](https://www.sdcard.org/consumers/speed) |
 
-> **No he podido leer el PDF oficial de la hoja de datos** (el servidor de SanDisk dio error), y el entorno donde preparé esto no puede descargar archivos. Los datos de la tabla salen de la web oficial y de la hoja de 64 GB. Si descargas el PDF y me lo pasas, lo subo a una carpeta `datasheets/` y compruebo que no contradice nada.
+> Los dos PDF se descargaron el 21-10-2026 y se han leído enteros. Coinciden con la web oficial. La hoja de configuración es de 2019 y la de datos de 2023: si hay diferencias futuras, manda la más reciente. Todos los enlaces web de esta ficha están reunidos en [`enlaces.md`](enlaces.md).
+>
+> La hoja de 2019 se llama "set-up sheet" y cubre las cuatro capacidades de 32 a 256 GB, no solo la de 64 GB (en un nombre de archivo de Bechtle aparece "64 Go").
 
 ## 4. Resistencia: qué dicen los números
 
@@ -181,7 +185,6 @@ Son conclusiones mías, no afirmaciones de las fuentes.
 
 ## 8. Lo que no he podido verificar
 
-- **La hoja de datos oficial en PDF:** el servidor devolvió error. Uso la web y la hoja de 64 GB.
 - **La base de datos de Matt Cole:** no he podido ver las filas de SanDisk, así que no sé cuál de las versiones de prensa es la correcta.
 - **Qué flash y qué controlador lleva la de 32 GB:** el desmontaje es de la de 128 GB.
 - **Rendimiento aleatorio (IOPS) de esta tarjeta.**
@@ -193,9 +196,9 @@ Son conclusiones mías, no afirmaciones de las fuentes.
 ## 9. Fuentes
 
 - [SanDisk: ficha del producto High Endurance microSD](https://www.sandisk.com/products/memory-cards/microsd-cards/sandisk-high-endurance-uhs-i-microsd)
-- [SanDisk: hoja de datos (PDF)](https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fsandisk%2Fproduct%2Fmemory-cards%2Fhigh-endurance-uhs-i-microsd%2Fdata-sheet-high-endurance-uhs-i-microsd.pdf)
+- [SanDisk: hoja de datos 05/23 (PDF)](https://www.sandisk.com/tools/documentRequestHandler?docPath=%2Fcontent%2Fdam%2Fdoc-library%2Fen_us%2Fassets%2Fpublic%2Fsandisk%2Fproduct%2Fmemory-cards%2Fhigh-endurance-uhs-i-microsd%2Fdata-sheet-high-endurance-uhs-i-microsd.pdf), con [copia local](datasheets/data-sheet-high-endurance-uhs-i-microsd.pdf)
 - [SanDisk: garantía limitada](https://www.sandisk.com/support/store/warranty-policy/sandisk)
-- [Hoja técnica de 64 GB (Bechtle)](https://media.bechtle.com/asrc/180712/1c4b3d4ee288fc9434f5175bf56070570/c3/-/bf1810916b55428dbd0b01cf136c1cea/microsdxc-64-go-sandisk-high-endurance-fiche-technique-1)
+- [Hoja de configuración Europa 32–256 GB, Rev. 04/19 (Bechtle)](https://media.bechtle.com/asrc/180712/1c4b3d4ee288fc9434f5175bf56070570/c3/-/bf1810916b55428dbd0b01cf136c1cea/microsdxc-64-go-sandisk-high-endurance-fiche-technique-1), con [copia local](datasheets/microsd-high-endurance-set-up-sheet-europa-2019.pdf)
 - [welectron: SDSQQNR-032G-GN6IA](https://www.welectron.com/SanDisk-SDSQQNR-032G-GN6IA-High-Endurance-microSD-Card-32-GB-100-MB-s)
 - [Logics Technology: SDSQQNR-032G-GN6IA](https://logicstechnology.com/products/sandisk-high-endurance-32-gb-class-10-uhs-i-u3-microsdhc)
 - [CDRinfo: SanDisk High Endurance 512 GB](https://www.cdrinfo.com/d7/content/sandisk-high-endurance-512gb-microsdxc)
