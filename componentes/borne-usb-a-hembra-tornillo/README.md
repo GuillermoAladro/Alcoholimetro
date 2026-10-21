@@ -7,6 +7,8 @@ Placa con un conector USB-A hembra y bornes de tornillo para sacar sus cuatro se
 
 > Investigación hecha el 21-10-2026. Cada dato indica de dónde sale. Lo que no he podido comprobar está marcado como **sin verificar**. Amazon bloquea el acceso a mi herramienta, así que no he podido ver el anuncio: el precio y la referencia son los de tu hoja. Una búsqueda del ASIN en la web no devolvió nada relacionado. **Marca, paso del bornero, calibre de cable admitido, orden real de los bornes, grosor de las pistas, corriente nominal y protecciones de tu placa son desconocidos.**
 
+> **Actualización 21-10-2026 (anuncio de Amazon.es leído).** Después de escribir esta ficha pude abrir el anuncio con el navegador integrado, así que lo que dice arriba de que Amazon bloquea el acceso ya no vale para esta pieza. Lo que cambia: cinco tornillos rotulados S, +, D−, D+ y −, en ese orden; el bloque de tornillos es enchufable; admite cable de AWG 28 a 16. La corriente máxima no consta. Ver el [detalle y origen de cada dato](../../montaje-general/anuncios-amazon-21-10-2026.md).
+
 Es una pieza genérica sin datasheet. Esta ficha documenta qué dicen los conectores y las placas comparables, qué exige USB al puente D+/D−, qué riesgos tiene en este montaje y qué hay que medir al recibirla.
 
 ## Índice

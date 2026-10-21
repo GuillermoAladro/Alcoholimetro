@@ -36,8 +36,8 @@
 <text x="814" y="790.64" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >3 USB y el resto del GPIO</text>
 <rect x="40" y="130" width="520" height="130" rx="10" fill="#eeeeee" stroke="#555555" stroke-width="1.6"/>
 <text x="52" y="155" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#1b2228" >Pantalla GeeekPi 7" (#5)</text>
-<text x="52" y="177.8" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >entrada HDMI de tamaño completo; sin táctil</text>
-<text x="52" y="194.84" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >alimentación: USB-C «Power IN» desde el borne nº 2 (fig. 1)</text>
+<text x="52" y="177.8" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >HDMI de tamaño completo y USB-C «Power IN» juntos en un canto</text>
+<text x="52" y="194.84" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >alimentación desde el borne nº 2 (fig. 1); sin táctil</text>
 <text x="52" y="211.88" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ no conectar el cable USB Pi–pantalla de la wiki de 52Pi</text>
 <text x="52" y="228.92000000000002" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >(daría un segundo camino de alimentación)</text>
 <path d="M560,210 L800,210" fill="none" stroke="#555555" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
@@ -50,7 +50,7 @@
 <text x="52" y="354.84000000000003" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >cable FFC de 15 pines, 50 cm (#4, GeeekPi):</text>
 <text x="52" y="371.88" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >· lado de la Pi: contactos hacia el conector HDMI</text>
 <text x="52" y="388.92" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >· lado de la cámara: contactos hacia su placa</text>
-<text x="52" y="405.96000000000004" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >· ⚠ el cable debe tener los contactos en caras opuestas</text>
+<text x="52" y="405.96000000000004" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >· ⚠ el anuncio no dice la cara de los contactos: «caras opuestas»</text>
 <text x="52" y="423.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >· conectar con la Pi apagada; no doblar ni tirar del cable</text>
 <text x="52" y="440.04" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >objetivo por el agujero Ø10 del panel</text>
 <path d="M560,330 L800,330" fill="none" stroke="#b07a00" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
@@ -61,7 +61,7 @@
 <text x="52" y="557.8" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >polo 2 de cada una</text>
 <text x="52" y="574.8399999999999" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >latiguillo micro-USB 22 AWG, ≤ 15 cm (#19)</text>
 <text x="52" y="591.88" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >rojo → VBUS (pin 1) · negro → GND (pin 5)</text>
-<text x="52" y="608.92" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ medir polaridad y calibre de cada latiguillo</text>
+<text x="52" y="608.92" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ el anuncio solo dice rojo y negro: medir polaridad y calibre</text>
 <path d="M600,510 L600,450 L800,450" fill="none" stroke="#d0302a" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M640,510 L640,464 L800,464" fill="none" stroke="#222222" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
 <rect x="640.4" y="427.0" width="159.2" height="18" fill="#ffffff" opacity="0.92" rx="3"/>
@@ -108,9 +108,9 @@
 <circle cx="1380" cy="407" r="5" fill="#f3ecfa" stroke="#7b3fb8" stroke-width="1.8"/>
 <text x="1394" y="411" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="start" fill="#1b2228" >pin 4 · RX (3,3 V)</text>
 <text x="1394" y="440.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >UART 9600 baudios, 8N1; clavija de 4 pines con hilos</text>
-<text x="1394" y="456.33" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >de 150 mm (#7)</text>
-<text x="1394" y="472.65999999999997" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ tipo de conector (JST-XH) y orden de pines sin</text>
-<text x="1394" y="488.99" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >confirmar: polímetro antes de dar tensión</text>
+<text x="1394" y="456.33" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >de 150 mm (#7). J1 rotulado «Rx Tx GND 5V» (foto)</text>
+<text x="1394" y="472.65999999999997" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ tipo y paso del conector (JST-XH) sin confirmar;</text>
+<text x="1394" y="488.99" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >color de cada hilo ↔ posición: mirar la clavija</text>
 <path d="M1150,383 L1380,383" fill="none" stroke="#7b3fb8" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M1150,407 L1380,407" fill="none" stroke="#b07fe0" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
 <text x="1162" y="432.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b2228" >TX del sensor → RXD de la Pi;</text>
@@ -122,18 +122,18 @@
 <rect x="1380" y="590" width="400" height="200" rx="10" fill="#e5f4f4" stroke="#0f8b8d" stroke-width="1.6"/>
 <text x="1392" y="615" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#1b2228" >Pulsador arcade 30 mm (#11)</text>
 <circle cx="1380" cy="630" r="5" fill="#e5f4f4" stroke="#0f8b8d" stroke-width="1.8"/>
-<text x="1394" y="634" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="start" fill="#1b2228" >NO</text>
+<text x="1394" y="634" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="start" fill="#1b2228" >faston A</text>
 <circle cx="1380" cy="664" r="5" fill="#e5f4f4" stroke="#0f8b8d" stroke-width="1.8"/>
-<text x="1394" y="668" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="start" fill="#1b2228" >COM</text>
+<text x="1394" y="668" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="start" fill="#1b2228" >faston B</text>
 <circle cx="1380" cy="698" r="5" fill="#e5f4f4" stroke="#0f8b8d" stroke-width="1.8"/>
-<text x="1394" y="702" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="start" fill="#1b2228" >NC</text>
-<text x="1450" y="634" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >→ pin 11 (GPIO17)</text>
-<text x="1450" y="668" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >→ pin 9 (GND)</text>
-<text x="1450" y="702" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#3a454f" >sin conectar (igual que el LED)</text>
+<text x="1394" y="702" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="start" fill="#1b2228" >2 faston LED</text>
+<text x="1470" y="634" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >→ pin 11 (GPIO17)</text>
+<text x="1470" y="668" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >→ pin 9 (GND), A y B intercambiables</text>
+<text x="1490" y="702" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#3a454f" >sin conectar (con polaridad)</text>
 <text x="1394" y="726.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >faston hembra 2,8 mm en el pulsador (#27),</text>
 <text x="1394" y="742.33" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >Dupont hembra en la Pi (#29)</text>
 <text x="1394" y="758.66" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >pull-up interno de la Pi, sin resistencia externa</text>
-<text x="1394" y="774.99" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ NO/COM/NC y terminales de 2,8 mm sin confirmar</text>
+<text x="1394" y="774.99" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >A y B = los dos faston del microinterruptor (anuncio)</text>
 <path d="M1150,500 L1290,500 L1290,630 L1380,630" fill="none" stroke="#0f8b8d" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M1150,524 L1250,524 L1250,664 L1380,664" fill="none" stroke="#222222" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
 <text x="40" y="940" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="start" fill="#1b2228" >Pago: no hay ningún cable entre la Pi y el SumUp Solo</text>
@@ -155,7 +155,7 @@
 <text x="1552" y="1036.85" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >alimentado por el cable USB-A → USB-C acodado (#10) desde el borne nº 1 (fig. 1)</text>
 <text x="1552" y="1053.1799999999998" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >contactless a través de la ventana de 78 × 78 mm del panel ⚠ (probar con tarjetas y móviles)</text>
 <text x="1552" y="1069.51" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >ranura de chip tapada: solo contactless</text>
-<text x="1552" y="1085.84" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ el Solo trae base de carga que el diseño no usa; la posición de su USB-C no está verificada</text>
+<text x="1552" y="1085.84" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >USB-C en el canto de abajo (foto del anuncio); trae base de carga que el diseño no usa</text>
 <path d="M400,1040 L560,1040" fill="none" stroke="#888888" stroke-width="3" stroke-dasharray="3,7" stroke-linejoin="round" stroke-linecap="round"/>
 <rect x="458.0" y="1017.0" width="44.0" height="18" fill="#ffffff" opacity="0.92" rx="3"/>
 <text x="480" y="1030" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="middle" fill="#3a454f" >Wi-Fi</text>

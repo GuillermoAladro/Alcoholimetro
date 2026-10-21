@@ -6,6 +6,8 @@ Es la pieza que mide. Un módulo de Winsen con sensor electroquímico de etanol,
 - **Fabricante:** Zhengzhou Winsen Electronics Technology Co., Ltd. (China).
 
 > Investigación hecha el 21-10-2026. Cada dato indica de dónde sale. Lo que no he podido comprobar está marcado como **sin verificar**. Amazon bloquea el acceso a mi herramienta, así que no he podido ver el anuncio: el precio y la referencia son los de tu hoja, y lo que digo del anuncio (placa WS19, conector "Rx Tx GND 5V") viene de tu guía de montaje.
+
+> **Actualización 21-10-2026 (anuncio de Amazon.es leído).** Después de escribir esta ficha pude abrir el anuncio con el navegador integrado, así que lo que dice arriba de que Amazon bloquea el acceso ya no vale para esta pieza. Lo que cambia: las fotos muestran un módulo verde (placa WS190626240-V1.0) con un conector J1 blanco de 4 vías en un borde corto y la serigrafía «Rx Tx GND 5V». Cuadra con el manual si el pin 1 es el extremo «5V». El paso del conector no consta (en la foto la carcasa mide unos 11 a 12 mm: cálculo mío). El anuncio no dice si trae cable. Ver el [detalle y origen de cada dato](../../montaje-general/anuncios-amazon-21-10-2026.md).
 >
 > Mis herramientas web **resumen** las páginas y los PDF; no puedo descargar archivos. Para compensarlo, recalculé a mano las 18 tramas de ejemplo del manual (ver [sección 4](#4-verificación-de-la-guía-de-montaje-24)): todas cuadran, así que la transcripción del protocolo es fiable. Aun así, abre el PDF para los detalles de dibujo (conector, tubo).
 

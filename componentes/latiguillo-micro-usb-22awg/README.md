@@ -7,6 +7,8 @@ Cable corto con un conector micro-USB macho en un extremo y los hilos pelados en
 
 > Investigación hecha el 21-10-2026. Cada dato indica de dónde sale. Lo que no he podido comprobar está marcado como **sin verificar**. Amazon bloquea el acceso a mi herramienta (`ROBOTS_DISALLOWED`), así que no he podido ver el anuncio: el precio, el ASIN y el calibre de 22 AWG son los de tu hoja. **Marca, vendedor, número de hilos, si lleva hilos de datos y cómo es el sobremoldeado del conector son desconocidos.**
 
+> **Actualización 21-10-2026 (anuncio de Amazon.es leído).** Después de escribir esta ficha pude abrir el anuncio con el navegador integrado, así que lo que dice arriba de que Amazon bloquea el acceso ya no vale para esta pieza. Lo que cambia: son 6 cables de 30 cm y 22 AWG, con un extremo micro-USB y el otro pelado y estañado. Solo llevan dos hilos, uno rojo y uno negro, sin datos, y no dice cuál va a VBUS. Los 12 V y 3 A del anuncio son datos de marketing. Ver el [detalle y origen de cada dato](../../montaje-general/anuncios-amazon-21-10-2026.md).
+
 Es una pieza genérica sin datasheet. Esta ficha documenta qué exige la especificación del conector, qué cae de tensión en este camino (cálculo propio con suposiciones explícitas), qué fallos hay documentados y qué medir con el polímetro al recibirla. La alimentación de la Pi en sí (umbral de subtensión, `vcgencmd get_throttled`, pines 4 y 6) ya está en la [ficha de la Pi](../raspberry-pi-3b-plus/README.md#41-subtensión); aquí no la repito, solo la completo.
 
 ## Índice

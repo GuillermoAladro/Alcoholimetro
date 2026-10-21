@@ -7,6 +7,8 @@ Lector que cobra el test. La Raspberry Pi crea el cobro por internet con la Clou
 
 > Investigación hecha el 21-10-2026. Cada dato indica de dónde sale. Lo que no he podido comprobar está marcado como **sin verificar**. Amazon bloquea el acceso a mi herramienta, así que no he podido ver el anuncio concreto: el precio y la referencia son los de tu hoja. **Esta pieza tiene riesgo de negocio**: separo lo que dicen los textos de SumUp de lo que deduzco yo. Para no copiar texto ajeno, casi todo está parafraseado; los números de cláusula te llevan al literal.
 
+> **Actualización 21-10-2026 (anuncio de Amazon.es leído).** Después de escribir esta ficha pude abrir el anuncio con el navegador integrado, así que lo que dice arriba de que Amazon bloquea el acceso ya no vale para esta pieza. Lo que cambia: en las fotos del anuncio el USB-C del lector está en el **canto de abajo**, hacia el centro, y el botón de encendido en el canto derecho (es lo que se ve en una foto, no una medida). El cable que trae es USB-C a USB-C (reseña con compra verificada). Con esto queda resuelto el pendiente de la posición del USB-C. Ver el [detalle y origen de cada dato](../../montaje-general/anuncios-amazon-21-10-2026.md).
+
 ## Índice
 
 1. [Resumen para el proyecto](#1-resumen-para-el-proyecto)

@@ -7,6 +7,8 @@ Cables precrimpados con conector tipo JST-XH de 4 pines. Sirven de "clavija" ent
 
 > Investigación hecha el 21-10-2026. Cada dato indica de dónde sale. Lo que no he podido comprobar está marcado como **sin verificar**. Amazon bloquea el acceso a mis herramientas y no intenté abrir el anuncio: el precio, el calibre, la longitud y el contenido del juego son los de tu hoja y la guía, no los he visto.
 
+> **Actualización 21-10-2026 (anuncio de Amazon.es leído).** Después de escribir esta ficha pude abrir el anuncio con el navegador integrado, así que lo que dice arriba de que Amazon bloquea el acceso ya no vale para esta pieza. Lo que cambia: el pack trae 25 clavijas hembra de 4 pines con hilo de 150 mm y 22 AWG (amarillo, blanco, rojo y negro) y 25 conectores sin hilo. El anuncio da el paso como 2,54 mm y no dice qué color va a cada posición. Ver el [detalle y origen de cada dato](../../montaje-general/anuncios-amazon-21-10-2026.md).
+
 ## Índice
 
 1. [Resumen para el proyecto](#1-resumen-para-el-proyecto)

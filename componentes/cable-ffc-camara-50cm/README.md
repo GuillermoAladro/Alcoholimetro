@@ -6,6 +6,8 @@ Cable plano (FFC) que une la [Raspberry Pi Camera Module 3](../raspberry-pi-came
 - **Marca en la hoja:** GeeekPi. No he podido confirmar que el anuncio coincida con ninguna ficha de fabricante (ver [sección 3](#3-el-producto-geeekpi-y-su-documentación)).
 
 > Investigación hecha el 21-10-2026. Cada dato indica de dónde sale. Lo que no he podido comprobar está marcado como **sin verificar**. Amazon bloquea el acceso automático (no he intentado eludirlo) y las búsquedas por el ASIN no devolvieron el anuncio, así que no he podido ver el anuncio concreto: la referencia y el precio son los de tu hoja, y **no sé qué pone el anuncio sobre paso, tipo de contactos ni anchura**.
+
+> **Actualización 21-10-2026 (anuncio de Amazon.es leído).** Después de escribir esta ficha pude abrir el anuncio con el navegador integrado, así que lo que dice arriba de que Amazon bloquea el acceso ya no vale para esta pieza. Lo que cambia: es un pack de tres cables (50, 100 y 200 cm), de 15 pines y paso 1,0 mm. No dice si los contactos están en la misma cara o en caras opuestas. Ver el [detalle y origen de cada dato](../../montaje-general/anuncios-amazon-21-10-2026.md).
 >
 > No repito aquí lo que ya dice la [ficha de la cámara](../raspberry-pi-camera-module-3/README.md) sobre el cable (apartado 5.5: el comentario de integridad de señal, el kit de extensión HDMI y el hilo de element14). Esta ficha profundiza.
 

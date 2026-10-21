@@ -7,6 +7,8 @@ Botón de inicio de la prueba. La pantalla no es táctil, así que el usuario em
 
 > Investigación hecha el 21-10-2026. Cada dato indica de dónde sale. Lo que no he podido comprobar está marcado como **sin verificar**. Amazon bloquea el acceso a mi herramienta y no insistí: el precio y lo que dice el anuncio de Amazon.es son los de tu hoja. Del mismo ASIN solo vi **los títulos** de Amazon.com y Amazon.ca en resultados de búsqueda. Mi herramienta de lectura web devuelve resúmenes, no el original: donde una cifra importa, doy el enlace para que la compruebes. Se agotó el presupuesto de búsquedas web antes de cerrar todo; lo pendiente está en la [sección 14](#14-lo-que-no-he-podido-verificar).
 
+> **Actualización 21-10-2026 (anuncio de Amazon.es leído).** Después de escribir esta ficha pude abrir el anuncio con el navegador integrado, así que lo que dice arriba de que Amazon bloquea el acceso ya no vale para esta pieza. Lo que cambia: tiene 4 faston de 2,8 mm: dos del microinterruptor y dos del LED con polaridad. **No existen NO, COM ni NC**: el interruptor tiene solo dos contactos, sin polaridad. Un faston del interruptor va al pin 9 (GND) y el otro al pin 11, en cualquier orden. Ningún terminal va rotulado: con el polímetro en continuidad, el par que cierra al pulsar es el del interruptor. Donde esta ficha habla de NO, COM y NC, vale esto. Ver el [detalle y origen de cada dato](../../montaje-general/anuncios-amazon-21-10-2026.md).
+
 ## Índice
 
 1. [Resumen para el proyecto](#1-resumen-para-el-proyecto)

@@ -36,10 +36,14 @@
 <path d="M78,501 L96,501 L96,615" fill="none" stroke="#2e8b2e" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="butt"/>
 <path d="M78,501 L96,501 L96,615" fill="none" stroke="#f2d600" stroke-width="3.6" stroke-dasharray="9,9" stroke-linejoin="round"/>
 <circle cx="96" cy="615" r="5" fill="#ffffff" stroke="#222" stroke-width="1.8"/>
-<text x="116" y="532.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ esquema interno sin</text>
-<text x="116" y="548.33" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >confirmar: medirlo con</text>
-<text x="116" y="564.66" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >polímetro antes de</text>
-<text x="116" y="580.99" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >cablear (ficha #15, §4.3)</text>
+<path d="M150,431 L150,470 L268,470 L268,431" fill="none" stroke="#2f6fd6" stroke-width="2.2" stroke-dasharray="6,4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="112" y="488" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#3a454f" >trazos: caso 2 (N directo</text>
+<text x="112" y="503" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#3a454f" >si el interruptor es de un polo)</text>
+<text x="112" y="530.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ esquema interno sin</text>
+<text x="112" y="546.33" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >confirmar: los dos dibujos</text>
+<text x="112" y="562.66" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >del vendedor no coinciden;</text>
+<text x="112" y="578.99" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >una reseña dice que están</text>
+<text x="112" y="595.3199999999999" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >mal. Medir (apartado 4)</text>
 <rect x="420" y="290" width="260" height="325" rx="10" fill="#fdecea" stroke="#b04a44" stroke-width="1.6"/>
 <text x="432" y="315" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#1b2228" >Fuente Mean Well LRS-50-5 (#14)</text>
 <text x="432" y="490.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >5 V · 10 A · 50 W</text>
@@ -98,47 +102,51 @@
 <text x="1102" y="528.92" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >rojo → VBUS (pin 1)</text>
 <text x="1102" y="545.96" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >negro → GND (pin 5)</text>
 <text x="1102" y="563.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >D−, D+ e ID: cortar y aislar</text>
-<text x="1102" y="580.04" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ medir polaridad y calibre</text>
-<text x="1102" y="597.08" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >El AR9271 (#12) cuelga de un</text>
-<text x="1102" y="614.12" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >USB de la Pi, no de la WAGO</text>
+<text x="1102" y="580.04" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ el anuncio solo dice rojo y</text>
+<text x="1102" y="597.08" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >negro: medir polaridad y calibre</text>
+<text x="1102" y="614.12" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >El AR9271 (#12) cuelga de un</text>
+<text x="1102" y="631.16" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >USB de la Pi, no de la WAGO</text>
 <circle cx="1215" cy="430" r="5" fill="#fdecea" stroke="#d0302a" stroke-width="1.8"/>
 <circle cx="1215" cy="670" r="5" fill="#eeeeee" stroke="#222222" stroke-width="1.8"/>
 <rect x="1355" y="430" width="250" height="240" rx="10" fill="#eef3fb" stroke="#4a6fa5" stroke-width="1.6"/>
 <text x="1367" y="455" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b2228" >Borne nº 1 → SumUp Solo</text>
-<text x="1367" y="477.8" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >borne USB-A hembra (#18):</text>
-<text x="1367" y="494.84000000000003" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >tornillos VCC y GND a la WAGO,</text>
-<text x="1367" y="511.88" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >D+ y D− unidos con un puente</text>
+<text x="1367" y="477.8" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >borne USB-A hembra (#18): tornillos</text>
+<text x="1367" y="494.84000000000003" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >«+» y «−» a la WAGO; D+ y D−</text>
+<text x="1367" y="511.88" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >unidos con un puente; S sin conectar</text>
 <text x="1367" y="528.92" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >cable USB-A → USB-C acodado</text>
 <text x="1367" y="545.96" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >30 cm (#10) → USB-C del Solo (#9)</text>
-<text x="1367" y="563.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ ¿USB-C del canto de abajo? Sin</text>
-<text x="1367" y="580.04" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >verificar; trae base de carga</text>
-<text x="1367" y="597.08" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ puente D+/D− sin confirmar;</text>
-<text x="1367" y="614.12" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ USB-A de 1 a 1,5 A, pico 2 A</text>
+<text x="1367" y="563.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >USB-C en el canto de abajo del Solo</text>
+<text x="1367" y="580.04" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >(foto del anuncio); trae base que</text>
+<text x="1367" y="597.08" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >este diseño no usa</text>
+<text x="1367" y="614.12" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ puente D+/D− sin confirmar;</text>
+<text x="1367" y="631.16" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ USB-A de 1 a 1,5 A, pico 2 A</text>
 <circle cx="1480" cy="430" r="5" fill="#fdecea" stroke="#d0302a" stroke-width="1.8"/>
 <circle cx="1480" cy="670" r="5" fill="#eeeeee" stroke="#222222" stroke-width="1.8"/>
 <rect x="1620" y="430" width="250" height="240" rx="10" fill="#eef3fb" stroke="#4a6fa5" stroke-width="1.6"/>
 <text x="1632" y="455" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b2228" >Borne nº 2 → pantalla 7"</text>
-<text x="1632" y="477.8" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >borne USB-A hembra (#18):</text>
-<text x="1632" y="494.84000000000003" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >tornillos VCC y GND a la WAGO,</text>
-<text x="1632" y="511.88" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >D+ y D− unidos con un puente</text>
-<text x="1632" y="528.92" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >cable USB del paquete de la</text>
-<text x="1632" y="545.96" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >pantalla (#5) → USB-C «Power IN»</text>
-<text x="1632" y="563.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ ¿cable A→C o C→C? Un C→C</text>
-<text x="1632" y="580.04" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >no entra en el borne</text>
-<text x="1632" y="597.08" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >No conectar un USB Pi–pantalla</text>
+<text x="1632" y="477.8" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >borne USB-A hembra (#18): tornillos</text>
+<text x="1632" y="494.84000000000003" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >«+» y «−» a la WAGO; D+ y D−</text>
+<text x="1632" y="511.88" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >unidos con un puente; S sin conectar</text>
+<text x="1632" y="528.92" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >cable «USB a USB-C» del paquete de</text>
+<text x="1632" y="545.96" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >la pantalla (#5) → USB-C «Power IN»</text>
+<text x="1632" y="563.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ el anuncio no dice «A»: un cable</text>
+<text x="1632" y="580.04" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >C → C no entra en el borne</text>
+<text x="1632" y="597.08" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ reseña: el contacto de entrada</text>
+<text x="1632" y="614.12" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >falla con un roce</text>
+<text x="1632" y="631.16" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >No conectar un USB Pi–pantalla</text>
 <circle cx="1745" cy="430" r="5" fill="#fdecea" stroke="#d0302a" stroke-width="1.8"/>
 <circle cx="1745" cy="670" r="5" fill="#eeeeee" stroke="#222222" stroke-width="1.8"/>
 <rect x="1885" y="430" width="250" height="240" rx="10" fill="#f3ecfa" stroke="#7b3fb8" stroke-width="1.6"/>
 <text x="1897" y="455" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b2228" >ZE29A (#6) · pines 1 y 2</text>
-<text x="1897" y="477.8" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >clavija de 4 pines, hilos de</text>
-<text x="1897" y="494.84000000000003" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >150 mm (#7, JST-XH ⚠)</text>
-<text x="1897" y="511.88" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >pin 1 (5 V) → rojo</text>
-<text x="1897" y="528.92" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >pin 2 (GND) → negro</text>
-<text x="1897" y="545.96" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >pines 3 y 4: UART con la Pi</text>
-<text x="1897" y="563.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >(figuras 2 y 3)</text>
-<text x="1897" y="580.04" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ tipo y paso del conector</text>
-<text x="1897" y="597.08" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >sin confirmar: medir con calibre</text>
-<text x="1897" y="614.12" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ serigrafía «Rx Tx GND 5V»</text>
+<text x="1897" y="477.8" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >clavija de 4 pines, hilos de 150</text>
+<text x="1897" y="494.84000000000003" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >mm (#7). J1 con «Rx Tx GND 5V»:</text>
+<text x="1897" y="511.88" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >el pin 1 es el extremo «5V»</text>
+<text x="1897" y="528.92" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >pin 1 (5 V) → rojo; 2 (GND) → negro</text>
+<text x="1897" y="545.96" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >pines 3 y 4: UART (figuras 2 y 3)</text>
+<text x="1897" y="563.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ tipo y paso del conector sin</text>
+<text x="1897" y="580.04" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >confirmar (foto: carcasa de 11–12</text>
+<text x="1897" y="597.08" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >mm): medir con calibre</text>
+<text x="1897" y="614.12" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ color ↔ posición: mirar la clavija</text>
 <circle cx="2010" cy="430" r="5" fill="#fdecea" stroke="#d0302a" stroke-width="1.8"/>
 <circle cx="2010" cy="670" r="5" fill="#eeeeee" stroke="#222222" stroke-width="1.8"/>
 <path d="M845,194 L845,390 L1215,390 L1215,424" fill="none" stroke="#d0302a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
@@ -218,7 +226,7 @@
 <text x="60" y="1050" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#3a454f" >Sin interruptor ni fusible en la tierra. Medir continuidad (≤ 0,1 Ω) del PE del C14 a cada pieza metálica.</text>
 <rect x="1090" y="850" width="1045" height="215" rx="10" fill="#fff8f6" stroke="#b3261e" stroke-width="1.6"/>
 <text x="1102" y="875" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#b3261e" >⚠ Abiertos que afectan a esta figura (detalle en componentes/pendientes.md)</text>
-<text x="1102" y="898.75" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="normal" text-anchor="start" fill="#1b2228" >1. Esquema interno del C14: cuántos polos corta el interruptor y qué polo lleva el fusible (ficha #15, §4–5). Se mide con el módulo suelto.</text>
+<text x="1102" y="898.75" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="normal" text-anchor="start" fill="#1b2228" >1. Esquema interno del C14: cuántos polos corta el interruptor y qué polo lleva el fusible. Los dos dibujos del vendedor no coinciden (ficha #15, §4–5).</text>
 <text x="1102" y="916.5" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="normal" text-anchor="start" fill="#1b2228" >2. Sección del cable de tierra: 1,5 mm² (guía) o 2,5 mm² (ITC-BT-19 §2.3 para instalación fija). Los ojales M4 de la hoja son de 0,5 a 1,5 mm².</text>
 <text x="1102" y="934.25" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="normal" text-anchor="start" fill="#1b2228" >3. Un solo espárrago con cinco ojales es punto único de fallo; la única fuente encontrada recomienda 2–3 ojales por espárrago (fichas #23, #25).</text>
 <text x="1102" y="952.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="normal" text-anchor="start" fill="#1b2228" >4. Protección del raíl de 5 V: la LRS-50-5 limita entre 10,6 y 14,4 A y el cable de 0,75 mm² está dado para 6 A. Falta fusible o PTC por rama.</text>

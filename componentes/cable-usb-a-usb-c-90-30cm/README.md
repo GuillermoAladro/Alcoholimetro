@@ -7,6 +7,8 @@ Cable corto que lleva los 5 V del borne USB-A de tornillo hasta el puerto USB-C 
 
 > Investigación hecha el 21-10-2026. Cada dato indica de dónde sale. Lo que no he podido comprobar está marcado como **sin verificar**. Amazon bloquea el acceso a mi herramienta, así que no he podido ver el anuncio: el precio y la referencia son los de tu hoja. No he encontrado el ASIN en ningún otro sitio, así que **marca, vendedor, calibre de los hilos y certificaciones del anuncio son desconocidos**.
 
+> **Actualización 21-10-2026 (anuncio de Amazon.es leído).** Después de escribir esta ficha pude abrir el anuncio con el navegador integrado, así que lo que dice arriba de que Amazon bloquea el acceso ya no vale para esta pieza. Lo que cambia: cable de 30 cm con una punta acodada a 90°, 5 V y 3,1 A de carga y 480 Mbit/s. No dice qué punta es la acodada ni consta la resistencia de 56 kΩ en el pin CC. Ver el [detalle y origen de cada dato](../../montaje-general/anuncios-amazon-21-10-2026.md).
+
 Es una pieza genérica sin datasheet. Esta ficha documenta qué exige la normativa a un cable así, qué impacto tiene en este montaje y qué hay que medir al recibirlo.
 
 ## Índice

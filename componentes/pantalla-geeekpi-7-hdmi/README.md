@@ -7,6 +7,8 @@ Pantalla del usuario: instrucciones, cuenta atrás del soplido, resultado y QR/c
 
 > Investigación hecha el 21-10-2026. Cada dato indica de dónde sale. Lo que no he podido comprobar está marcado como **sin verificar**. Amazon bloquea el acceso a mi herramienta, así que no he podido ver el anuncio concreto: el precio y la referencia son los de tu hoja. El fabricante publica muy poco de este modelo (ni consumo, ni rango de tensión, ni brillo real, ni plano). Donde uso cifras de otras pantallas de 7" lo digo.
 
+> **Actualización 21-10-2026 (anuncio de Amazon.es leído).** Después de escribir esta ficha pude abrir el anuncio con el navegador integrado, así que lo que dice arriba de que Amazon bloquea el acceso ya no vale para esta pieza. Lo que cambia: no es táctil. En un mismo canto están el USB-C «Power IN», el HDMI de tamaño completo y un selector de retroiluminación. En la caja viene un cable «USB to USB-C» (no dice si el extremo grande es A), un cable HDMI de tamaño completo, un adaptador a micro-HDMI y dos soportes. Una reseña dice que el contacto de alimentación falla con un roce. Ver el [detalle y origen de cada dato](../../montaje-general/anuncios-amazon-21-10-2026.md).
+
 ## Índice
 
 1. [Resumen para el proyecto](#1-resumen-para-el-proyecto)

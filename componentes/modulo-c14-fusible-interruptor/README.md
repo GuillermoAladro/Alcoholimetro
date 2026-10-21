@@ -7,6 +7,8 @@ Entrada de red de 230 V de la máquina. Va en la trasera de la caja de arriba. R
 
 > Investigación hecha el 21-10-2026. Cada dato indica de dónde sale. Lo que no he podido comprobar está marcado como **sin verificar**. Amazon bloquea el acceso a mi herramienta: **no he visto el anuncio B08Z6FCR5Z**. El precio, el ASIN y lo que dice el anuncio ("interruptor LED de 4 pines, 6 A / 250 V, fusible de 10 A") son los de tu hoja y tu guía. Esta pieza **no tiene ficha del fabricante**: lo que sigue se apoya en la norma, en módulos certificados de referencia (Schurter, Bulgin) y en fichas de módulos genéricos parecidos. Mi presupuesto de búsquedas web se agotó antes de poder cerrar algunos huecos; están en el apartado 12.
 
+> **Actualización 21-10-2026 (anuncio de Amazon.es leído).** Después de escribir esta ficha pude abrir el anuncio con el navegador integrado, así que lo que dice arriba de que Amazon bloquea el acceso ya no vale para esta pieza. Lo que cambia: terminales faston, 6 A a 250 V (y 10 A a 125 V), interruptor basculante con luz roja de 4 pines. El fusible aparece con dos valores (10 A y 5 A), sin tamaño, y las reseñas se contradicen sobre si viene. Los dos dibujos de cableado del vendedor no coinciden entre sí y dos reseñas dicen que están mal (el interruptor corta, pero la luz no se apaga). Una reseña cuenta que el interruptor falló a las dos semanas. **El esquema interno sigue sin salir del anuncio: hay que medirlo (§4.3).** Ver el [detalle y origen de cada dato](../../montaje-general/anuncios-amazon-21-10-2026.md).
+
 ## Índice
 
 1. [Resumen para el proyecto](#1-resumen-para-el-proyecto)
