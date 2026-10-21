@@ -135,6 +135,7 @@ Documentación de software y hardware:
   - SSD por USB como alternativa.
   - Probar la recuperación ante un corte de corriente simulado.
 - Los cortes de luz bruscos son el escenario normal en un bar: la raíz de solo lectura es la defensa principal.
+- La tarjeta elegida para el proyecto tiene su propia ficha: [SanDisk High Endurance 32 GB](../sandisk-high-endurance-32gb/README.md).
 - Hilos del foro oficial sobre el tema que encontré pero no pude abrir: [Pi 3 B+ Repeating MicroSD corruption](https://raspberrypi.org/forums/viewtopic.php?t=208079).
 
 ### 4.3 Temperatura
