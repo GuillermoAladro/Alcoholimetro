@@ -61,7 +61,7 @@ Techo, separador y bandeja ya tienen tierra por estar soldados al cuerpo. En el 
 | W12 | LRS-50-5, borne 4 (DC −V) | WAGO «GND», polo 1 | Negro 0,75 mm², puntera | El −V flota respecto a tierra. ⚠ Decidir si se une a tierra y en qué único punto |
 | W13 | Polo 2 de las dos WAGO | Raspberry Pi, puerto micro-USB | Latiguillo micro-USB 22 AWG, ≤ 15 cm (#19): rojo → VBUS (pin 1), negro → GND (pin 5). Datos (D−, D+, ID) cortados y aislados | ⚠ Medir polaridad y calibre de cada latiguillo antes de cortarlo |
 | W14 | Polo 3 de las dos WAGO | Borne USB-A nº 1 (#18), tornillos VCC y GND | Rojo y negro 0,75 mm², puntera. D+ y D− del borne unidos con un puente | ⚠ El puente D+/D− no está probado con el Solo. ⚠ Un USB-A suele ir para 1 a 1,5 A y el pico estimado del Solo es de 2 A |
-| W15 | Borne USB-A nº 1 (conector hembra) | SumUp Solo (#9), USB-C del canto inferior | Cable USB-A → USB-C acodado 90°, 30 cm (#10) | ⚠ Tiene que llevar datos y 56 kΩ en el pin CC; el conector tiene que caber en la ranura de 14 × 9 mm del separador |
+| W15 | Borne USB-A nº 1 (conector hembra) | SumUp Solo (#9), puerto USB-C | Cable USB-A → USB-C acodado 90°, 30 cm (#10) | ⚠ Posición del USB-C (la guía dice «canto de abajo») sin verificar: el manual en texto no incluye los dibujos. El Solo viene con una base de carga que este diseño no usa. El cable tiene que llevar datos y 56 kΩ en el pin CC, y el conector tiene que caber en la ranura de 14 × 9 mm del separador |
 | W16 | Polo 4 de las dos WAGO | Borne USB-A nº 2 (#18), tornillos VCC y GND | Igual que W14 | ⚠ Igual que W14 |
 | W17 | Borne USB-A nº 2 (conector hembra) | Pantalla (#5), USB-C «Power IN» | Cable USB del paquete de la pantalla | ⚠ No se sabe si es A → C o C → C; un C → C no entra en el borne. No conectar el cable USB Pi–pantalla de la wiki de 52Pi |
 | W18 | Polo 5 de las dos WAGO | ZE29A (#6), pin 1 (5 V) y pin 2 (GND) | Hilos rojo y negro de la clavija de 4 pines, 150 mm (#7) | ⚠ Tipo de conector (JST-XH) sin confirmar |
@@ -99,7 +99,7 @@ Techo, separador y bandeja ya tienen tierra por estar soldados al cuerpo. En el 
 | 6 | [ZE29A](componentes/winsen-ze29a/README.md) | Pines 1 y 2 a las WAGO (W18), pin 4 a Pi 8 y pin 3 a Pi 10 (W19, W20), toma de aire al tubo (W28) |
 | 7 | [Cables JST-XH](componentes/cables-jst-xh-4-pin/README.md) | La clavija de 4 pines del ZE29A: llevan los hilos W18 a W20 |
 | 8 | [Tubo de silicona](componentes/tubo-silicona-6mm/README.md) | Boquilla del panel → toma de aire del ZE29A (W28) |
-| 9 | [SumUp Solo](componentes/sumup-solo/README.md) | USB-C del canto inferior (W15) y Wi-Fi (W29) |
+| 9 | [SumUp Solo](componentes/sumup-solo/README.md) | Puerto USB-C (W15; ⚠ posición sin verificar) y Wi-Fi (W29) |
 | 10 | [Cable USB-A → USB-C](componentes/cable-usb-a-usb-c-90-30cm/README.md) | Del borne USB-A nº 1 al USB-C del Solo (W15) |
 | 11 | [Pulsador arcade](componentes/pulsador-arcade-30mm/README.md) | NO a Pi 11 y COM a Pi 9 (W21, W22) |
 | 12 | [Adaptador AR9271](componentes/adaptador-wifi-ar9271/README.md) | Un USB de la Pi (W25) y el alargo de antena (W26) |
@@ -145,6 +145,7 @@ Techo, separador y bandeja ya tienen tierra por estar soldados al cuerpo. En el 
 - **Protección del raíl de 5 V:** falta fusible o PTC por rama ([ficha #14](componentes/meanwell-lrs-50-5/README.md)).
 - **Bornes USB-A:** corriente que aguantan (1 a 1,5 A frente a un pico estimado de 2 A del Solo) y si el Solo reconoce el puente D+/D− como cargador ([fichas #9, #10 y #18](componentes/borne-usb-a-hembra-tornillo/README.md)).
 - **−V frente a tierra:** hoy el −V flota; unirlo es una decisión de un solo punto ([ficha #30](componentes/separadores-nylon-m2-5/README.md)).
+- **SumUp Solo:** dónde está su USB-C (la guía dice «canto de abajo» y la ficha no lo ha podido ver) y si carga bien sin su base de carga ([ficha #9](componentes/sumup-solo/README.md)).
 - **Conector del ZE29A:** el manual solo da los 4 pines; tipo y paso del conector sin confirmar ([ficha #6](componentes/winsen-ze29a/README.md), [ficha #7](componentes/cables-jst-xh-4-pin/README.md)).
 - **Pulsador:** que tenga NO, COM y NC y terminales de 2,8 mm ([ficha #11](componentes/pulsador-arcade-30mm/README.md)).
 - **Cable de la pantalla:** si es A → C o C → C ([ficha #5](componentes/pantalla-geeekpi-7-hdmi/README.md)).

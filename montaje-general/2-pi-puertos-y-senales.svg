@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="2170" height="1230" viewBox="0 0 2170 1230">
-<rect x="0" y="0" width="2170" height="1230" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="2170" height="1250" viewBox="0 0 2170 1250">
+<rect x="0" y="0" width="2170" height="1250" fill="#ffffff"/>
 <text x="40" y="52" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="start" fill="#1b2228" >MONTAJE GENERAL · Figura 2: puertos de la Raspberry Pi 3B+ y señales</text>
 <text x="40" y="80" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" text-anchor="start" fill="#3a454f" >Cada línea sale de un puerto o pin concreto de la Pi. Los pines del GPIO llevan el número FÍSICO del conector de 40 pines (detalle en la figura 3). Todo el GPIO es de 3,3 V.</text>
 <rect x="800" y="150" width="350" height="740" rx="10" fill="#e9f6ee" stroke="#4f8a63" stroke-width="2"/>
@@ -150,11 +150,12 @@
 <text x="1062" y="1015" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b2228" >Internet · SumUp Cloud API</text>
 <text x="1062" y="1037.8" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >API key y Affiliate Key en la Pi</text>
 <text x="1062" y="1054.84" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ sin conexión no se puede cobrar</text>
-<rect x="1540" y="990" width="590" height="100" rx="10" fill="#fff6e8" stroke="#a3772a" stroke-width="1.6"/>
+<rect x="1540" y="990" width="590" height="122" rx="10" fill="#fff6e8" stroke="#a3772a" stroke-width="1.6"/>
 <text x="1552" y="1015" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b2228" >SumUp Solo (#9)</text>
 <text x="1552" y="1036.85" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >alimentado por el cable USB-A → USB-C acodado (#10) desde el borne nº 1 (fig. 1)</text>
 <text x="1552" y="1053.1799999999998" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >contactless a través de la ventana de 78 × 78 mm del panel ⚠ (probar con tarjetas y móviles)</text>
 <text x="1552" y="1069.51" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >ranura de chip tapada: solo contactless</text>
+<text x="1552" y="1085.84" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ el Solo trae base de carga que el diseño no usa; la posición de su USB-C no está verificada</text>
 <path d="M400,1040 L560,1040" fill="none" stroke="#888888" stroke-width="3" stroke-dasharray="3,7" stroke-linejoin="round" stroke-linecap="round"/>
 <rect x="458.0" y="1017.0" width="44.0" height="18" fill="#ffffff" opacity="0.92" rx="3"/>
 <text x="480" y="1030" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="middle" fill="#3a454f" >Wi-Fi</text>

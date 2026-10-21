@@ -109,10 +109,11 @@
 <text x="1367" y="494.84000000000003" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >tornillos VCC y GND a la WAGO,</text>
 <text x="1367" y="511.88" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >D+ y D− unidos con un puente</text>
 <text x="1367" y="528.92" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >cable USB-A → USB-C acodado</text>
-<text x="1367" y="545.96" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >30 cm (#10) → USB-C del canto</text>
-<text x="1367" y="563.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >inferior del Solo (#9)</text>
-<text x="1367" y="580.04" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ puente D+/D− sin confirmar;</text>
-<text x="1367" y="597.08" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ USB-A de 1 a 1,5 A, pico 2 A</text>
+<text x="1367" y="545.96" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >30 cm (#10) → USB-C del Solo (#9)</text>
+<text x="1367" y="563.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ ¿USB-C del canto de abajo? Sin</text>
+<text x="1367" y="580.04" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >verificar; trae base de carga</text>
+<text x="1367" y="597.08" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ puente D+/D− sin confirmar;</text>
+<text x="1367" y="614.12" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ USB-A de 1 a 1,5 A, pico 2 A</text>
 <circle cx="1480" cy="430" r="5" fill="#fdecea" stroke="#d0302a" stroke-width="1.8"/>
 <circle cx="1480" cy="670" r="5" fill="#eeeeee" stroke="#222222" stroke-width="1.8"/>
 <rect x="1620" y="430" width="250" height="240" rx="10" fill="#eef3fb" stroke="#4a6fa5" stroke-width="1.6"/>
