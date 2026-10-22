@@ -12,6 +12,8 @@ Cómo se conecta cada componente de la máquina con los demás: de qué puerto, 
 
 **Hay dos documentos de diseño de la máquina y este sigue el más antiguo.** El cableado y la colocación de abajo siguen la guía de cableado y `decisiones-diseno.md` (19 y 20 de octubre). El Project tiene además `diseno-cajon-A.md`, fechado el 21-10-2026, que cambia las medidas, quita el pulsador y añade un portafusibles por rama. Está explicado en el apartado 6.3. Hasta que digas cuál manda, lo que cambia lleva la marca «diseño A».
 
+> **22-10-2026 · Sin botón en todo el proyecto.** La máquina no lleva pulsador: arranca cuando la cámara detecta a alguien. Todo lo que este documento dice del pulsador (#11) queda anulado: W21 y W22 no se cablean, los pines 9 y 11 de la Pi quedan libres, no hay agujero de Ø30 en el panel ni pull-up del pulsador. Detalle en [DECISIONES](DECISIONES.md), que también fija que manda el diseño A (cajón de componentes).
+
 **El orden de montaje y las pruebas de cada fase están en [MONTAJE PASO A PASO](MONTAJE-PASO-A-PASO.md).**
 
 **La parte de 230 V y la tierra:** si no tienes experiencia con red eléctrica, que un electricista la revise antes de enchufar.

@@ -1,5 +1,7 @@
 # Pulsador arcade de 30 mm (EG STARTS, pack de 5)
 
+> **Descartado el 22-10-2026: el proyecto no lleva botón.** La prueba arranca cuando la cámara detecta a alguien. Esta ficha se conserva solo como referencia. Ver [DECISIONES](../../DECISIONES.md).
+
 Botón de inicio de la prueba. La pantalla no es táctil, así que el usuario empieza con este pulsador. Va directo a la Raspberry Pi 3B+: contacto entre GPIO17 (pin físico 11) y GND (pin físico 9), con la resistencia pull-up interna de la Pi. El LED del botón no se conecta.
 
 - **Compra:** ASIN B01N11BDX9, 10,88 € por 5 unidades (precio de la hoja de componentes del 19-20/10/2026). Es la pieza nº 11 de la hoja.
