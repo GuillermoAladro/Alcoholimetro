@@ -14,7 +14,7 @@ Una carpeta por componente del alcoholímetro, con su ficha técnica, documentos
 | 8 | Tubo de silicona de 6 mm | Lleva el aliento de la boquilla al sensor | [tubo-silicona-6mm](tubo-silicona-6mm/README.md) |
 | 9 | SumUp Solo con base de carga | Cobro con tarjeta (Cloud API) | [sumup-solo](sumup-solo/README.md) |
 | 10 | Cable USB-A a USB-C acodado 90°, 30 cm | Alimenta el SumUp Solo desde el borne USB-A | [cable-usb-a-usb-c-90-30cm](cable-usb-a-usb-c-90-30cm/README.md) |
-| 11 | Pulsador arcade 30 mm (EG STARTS) | Botón de inicio de la prueba (GPIO17) | [pulsador-arcade-30mm](pulsador-arcade-30mm/README.md) |
+| 11 | ~~Pulsador arcade 30 mm (EG STARTS)~~ | **Eliminado el 22-10-2026:** el proyecto no lleva botón ([DECISIONES](../DECISIONES.md)) | [pulsador-arcade-30mm](pulsador-arcade-30mm/README.md) |
 | 12 | Adaptador Wi-Fi USB AR9271 | Wi-Fi de la Pi con la antena fuera de la chapa | [adaptador-wifi-ar9271](adaptador-wifi-ar9271/README.md) |
 | 13 | Alargo de antena RP-SMA, 30 cm | Saca la antena Wi-Fi por el techo de la chapa | [alargo-antena-rp-sma-30cm](alargo-antena-rp-sma-30cm/README.md) |
 | 14 | Fuente Mean Well LRS-50-5 (5 V, 10 A) | Fuente única de 5 V de la máquina (230 V) | [meanwell-lrs-50-5](meanwell-lrs-50-5/README.md) |
@@ -30,7 +30,7 @@ Una carpeta por componente del alcoholímetro, con su ficha técnica, documentos
 | 24 | Arandelas dentadas M4 (200 uds.) | Bloqueo y contacto de la tierra en el espárrago | [arandelas-dentadas-m4](arandelas-dentadas-m4/README.md) |
 | 25 | Espárragos M4 × 20 inox para soldar (20 uds.) | Punto de tierra de 230 V soldado a la chapa | [esparragos-soldar-m4x20](esparragos-soldar-m4x20/README.md) |
 | 26 | Surtido de tornillería inox M3 a M6 | Fijaciones generales (fuente, módulo C14, pantalla...) | [tornilleria-inox-m3-m6](tornilleria-inox-m3-m6/README.md) |
-| 27 | Kit de terminales faston aislados 2,8 / 4,8 / 6,3 mm | Conexiones del módulo C14, interruptor y pulsador | [kit-faston-aislados](kit-faston-aislados/README.md) |
+| 27 | Kit de terminales faston aislados 2,8 / 4,8 / 6,3 mm | Conexiones del módulo C14 e interruptor | [kit-faston-aislados](kit-faston-aislados/README.md) |
 | 28 | Crimpadora autoajustable + 1250 punteras | Punteras en los bornes de la fuente y de las WAGO | [crimpadora-y-punteras](crimpadora-y-punteras/README.md) |
 | 29 | Cables Dupont ELEGOO, 120 uds. | Conexión a los pines 8, 9, 10 y 11 de la Pi | [cables-dupont-elegoo-120](cables-dupont-elegoo-120/README.md) |
 | 30 | Separadores hexagonales de nailon M2,5 (kit de 350) | Fijan la Pi (y el sensor) a la caja interior sin unir masas | [separadores-nylon-m2-5](separadores-nylon-m2-5/README.md) |

@@ -4,6 +4,8 @@ Cómo montar el circuito del alcoholímetro por fases: con qué piezas y qué pr
 
 **Estado a 21-10-2026: es un procedimiento de papel. No se ha montado nada.** Sigue el diseño del MONTAJE GENERAL (guía de cableado y `decisiones-diseno.md`). Si al final manda el diseño A del 21-10-2026, cambian sobre todo las fases 3 (sin pulsador) y 8 (colocación y tierra).
 
+> **22-10-2026 · Sin botón en todo el proyecto.** La máquina no lleva pulsador: arranca cuando la cámara detecta a alguien. Todo lo que este documento dice del pulsador (#11) queda anulado: se saltan la prueba P1.11 y la fase 3.3, y la resistencia de pull-up del pulsador no hace falta. Detalle en [DECISIONES](DECISIONES.md), que también fija que manda el diseño A (cajón de componentes).
+
 **La idea:** ir de lo que no puede romper nada a lo que sí, y probar cada parte por separado antes de juntarla. El orden sigue el plan de banco de las auditorías (Auditor 6.1-S §9, 6-A §8, P §8 y 5.6 §9):
 
 1. Piezas sin tensión.

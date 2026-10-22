@@ -8,6 +8,8 @@ Los 32 componentes del alcoholímetro con su enlace de compra (31 de la guía m�
 
 > **Esta lista es la del diseño de 20-10-2026.** El Project tiene además `diseno-cajon-A.md` (21-10-2026), que cita su propia `Lista_de_piezas.xlsx` y añade piezas que aquí no están (por ejemplo cuatro portafusibles de pie). Esa hoja no está en el repositorio. Ver [MONTAJE GENERAL, apartado 6.3](MONTAJE-GENERAL.md).
 
+> **22-10-2026 · Sin botón en todo el proyecto.** La máquina no lleva pulsador: arranca cuando la cámara detecta a alguien. Todo lo que este documento dice del pulsador (#11) queda anulado: no se compra. Detalle en [DECISIONES](DECISIONES.md).
+
 ## Núcleo (1 a 13)
 
 | # | Pieza | Anuncio | Enlace | Precio | Ficha | Nota |
@@ -22,11 +24,11 @@ Los 32 componentes del alcoholímetro con su enlace de compra (31 de la guía m�
 | 8 | Tubo de soplido | Manguera de silicona de 6 mm, 1 m | [B0D9FJY1SG](https://www.amazon.es/dp/B0D9FJY1SG) | 6,99 € | [ficha](componentes/tubo-silicona-6mm/README.md) | Une la boquilla con el sensor |
 | 9 | Lector de tarjetas | SumUp Solo con base de carga | [B0C9V3LXTF](https://www.amazon.es/dp/B0C9V3LXTF) | 72,18 € | [ficha](componentes/sumup-solo/README.md) | Quedaba 1 en stock. La base de carga no se usa en este diseño |
 | 10 | Cable del Solo | USB-A → USB-C acodado 90°, 30 cm | [B0C8FS5FV2](https://www.amazon.es/dp/B0C8FS5FV2) | 4,99 € | [ficha](componentes/cable-usb-a-usb-c-90-30cm/README.md) | El USB-C está en el canto de abajo del Solo; el conector baja por una ranura de 14 × 9 mm del separador |
-| 11 | Botón de inicio | EG STARTS arcade de 30 mm (5 uds.) | [B01N11BDX9](https://www.amazon.es/dp/B01N11BDX9) | 10,88 € | [ficha](componentes/pulsador-arcade-30mm/README.md) | Hace falta porque la pantalla no es táctil. Su LED no se conecta |
+| 11 | ~~Botón de inicio~~ | ~~EG STARTS arcade de 30 mm (5 uds.)~~ | ~~[B01N11BDX9](https://www.amazon.es/dp/B01N11BDX9)~~ | ~~10,88 €~~ | [ficha](componentes/pulsador-arcade-30mm/README.md) | **Eliminado el 22-10-2026: no se compra.** El proyecto no lleva botón |
 | 12 | Wi-Fi | Adaptador USB **AR9271** con antena desmontable | [B0CBW6THN1](https://www.amazon.es/dp/B0CBW6THN1) | 16,24 € | [ficha](componentes/adaptador-wifi-ar9271/README.md) |  |
 | 13 | Alargo de antena | RP-SMA macho-hembra, 30 cm (2 uds.) | [B0FJRPC7MN](https://www.amazon.es/dp/B0FJRPC7MN) | 9,99 € | [ficha](componentes/alargo-antena-rp-sma-30cm/README.md) | Saca la antena por el techo |
 
-Subtotal: **416,13 €**.
+Subtotal: **405,25 €** (416,13 € con el pulsador, que ya no se compra).
 
 ## Alimentación, protección y material de montaje (14 a 32)
 
@@ -45,7 +47,7 @@ Subtotal: **416,13 €**.
 | 24 | Arandelas dentadas | M4 (200 uds.) | [B0B77J5FZS](https://www.amazon.es/dp/B0B77J5FZS) | 7,99 € | [ficha](componentes/arandelas-dentadas-m4/README.md) |  |
 | 25 | Espárragos de tierra | M4 × 20 inox para soldar por puntos (20 uds.) | [B0GSCLY4D7](https://www.amazon.es/dp/B0GSCLY4D7) | 8,40 € | [ficha](componentes/esparragos-soldar-m4x20/README.md) | De 20 mm para que quepan las dos tuercas con sus ojales (uno de 10 mm no llega) |
 | 26 | Tornillería | Surtido de tornillos, tuercas y arandelas M3–M6 inox | [B0BGRY2JGX](https://www.amazon.es/dp/B0BGRY2JGX) | 11,99 € | [ficha](componentes/tornilleria-inox-m3-m6/README.md) |  |
-| 27 | Faston | Kit de terminales faston aislados de 2,8, 4,8 y 6,3 mm | [B0B4H54KPS](https://www.amazon.es/dp/B0B4H54KPS) | 10,99 € | [ficha](componentes/kit-faston-aislados/README.md) | Para la toma C14 y el pulsador |
+| 27 | Faston | Kit de terminales faston aislados de 2,8, 4,8 y 6,3 mm | [B0B4H54KPS](https://www.amazon.es/dp/B0B4H54KPS) | 10,99 € | [ficha](componentes/kit-faston-aislados/README.md) | Para la toma C14 |
 | 28 | Crimpadora y punteras | Crimpadora autoajustable + 1250 punteras | [B0FQP6KDL4](https://www.amazon.es/dp/B0FQP6KDL4) | 15,98 € | [ficha](componentes/crimpadora-y-punteras/README.md) |  |
 | 29 | Cables de señal | Dupont ELEGOO, 120 uds. | [B01NGTXASZ](https://www.amazon.es/dp/B01NGTXASZ) | 9,99 € | [ficha](componentes/cables-dupont-elegoo-120/README.md) | Para los pines de la Pi |
 | 30 | Separadores | Columnas hexagonales M2.5 de nylon (350 uds.) | [B0G4G7WQRM](https://www.amazon.es/dp/B0G4G7WQRM) | 9,99 € | [ficha](componentes/separadores-nylon-m2-5/README.md) | Para la Pi y el sensor |
@@ -56,7 +58,7 @@ Subtotal: **230,44 €**.
 
 ## Total
 
-**Primer pedido: 646,57 €** (una unidad de cada línea, con los precios de arriba; la guía, sin el kit de fusibles, lo redondea a unos 640 €). Unos 160 € son herramientas y kits que sobran en pedidos siguientes: crimpadora, WAGO, rollos de cable y similares. La guía calcula unos 470 € de electrónica por cada máquina siguiente, sin contar la chapa.
+**Primer pedido: 635,69 €** sin el pulsador (646,57 € con él; una unidad de cada línea, con los precios de arriba; la guía, sin el kit de fusibles, lo redondea a unos 640 €). Unos 160 € son herramientas y kits que sobran en pedidos siguientes: crimpadora, WAGO, rollos de cable y similares. La guía calcula unos 470 € de electrónica por cada máquina siguiente, sin contar la chapa.
 
 ## Plan B de conexión (si el Wi-Fi del bar no vale)
 
@@ -70,7 +72,7 @@ No está en las 31 fichas. Lo propone la guía por si el Wi-Fi del bar no sirve:
 ## Lo que cambian los anuncios leídos el 21-10-2026
 
 - **#15 Módulo C14:** la guía dice que trae un fusible de 10 A que hay que cambiar. El anuncio da dos valores (10 A y 5 A) sin tamaño y las reseñas se contradicen sobre si viene. Se compra el T2,5A (#16) igualmente y se mide el esquema interno del módulo antes de cablearlo.
-- **#11 Pulsador:** la guía habla de NO, COM y NC. El pulsador solo tiene dos contactos de interruptor (más dos del LED), así que no hay NO, COM ni NC.
+- **#11 Pulsador** (ya no se usa, ver arriba): la guía habla de NO, COM y NC. El pulsador solo tiene dos contactos de interruptor (más dos del LED), así que no hay NO, COM ni NC.
 - **#7 Clavija XH:** la guía la compra «por si el ZE29A no trae su cable»; el anuncio del ZE29A no dice si lo trae.
 - **#9 SumUp Solo:** el USB-C está en el canto de abajo (foto del anuncio).
 - **#32 (nuevo):** la auditoría 1.0 (H04) y las cuatro auditorías del repositorio piden fusible en el troncal y en cada rama de 5 V. El kit B07KQ46H6K trae 5 portafusibles y fusibles de 1, 2, 3 y 5 A; detalle en [MONTAJE GENERAL](MONTAJE-GENERAL.md), W11 a W18.
