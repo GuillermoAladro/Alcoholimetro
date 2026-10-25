@@ -236,7 +236,14 @@ def cerradura_leva(eje=(0, 1, 0), largo_leva=32.0, leva=(0, 0, -1)):
     ex, ey, ez = eje
     def p(t):
         return (ex * t, ey * t, ez * t)
-    s = [("embellecedor", cyl(10.5, 2.0, p(-2.0), eje), METAL),
+    # cara exterior con su bombín y la ranura de la llave, para que se vea que es una cerradura (no un botón)
+    arriba = (0, 0, 1) if abs(ez) < 0.9 else (1, 0, 0)
+    lado = (ey * arriba[2] - ez * arriba[1], ez * arriba[0] - ex * arriba[2], ex * arriba[1] - ey * arriba[0])
+    emb = cyl(10.5, 2.0, p(-2.0), eje).cut(cyl(6.0, 2.02, p(-2.01), eje))
+    ranura = place(box(-0.9, 0.9, -2.35, -2.05, -4.0, 4.0), ex=lado, ey=eje, ez=arriba)
+    s = [("embellecedor", emb, METAL),
+         ("bombin", cyl(5.9, 2.2, p(-2.2), eje), LATON),
+         ("ranura_llave", ranura, NEGRO),
          ("cuerpo", cyl(9.0, 16.0, p(0), eje), METAL),
          ("tuerca", cyl(12.0, 3.0, p(4.5), eje), METAL)]
     lx, ly, lz = leva
