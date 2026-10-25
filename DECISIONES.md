@@ -21,18 +21,34 @@ Decisiones que afectan a todo el proyecto. Lo más nuevo va arriba. Si un docume
   - Que SumUp acepta consultar el estado cada 3 s; no publica límites.
   - Qué hacer si el sensor falla después de cobrar (reembolso).
 
+### Sin interruptor de red: la toma C14 ya no lleva el interruptor rojo
+
+- **Por qué:** el módulo C14 de antes (B08Z6FCR5Z) llevaba un interruptor basculante rojo con luz, y se veía por la ventana del lateral derecho. Era el único «botón» que quedaba en la máquina.
+- **Qué se pone:** una toma C14 con portafusibles y sin interruptor (Cablepelado, [B07CQ54BY4](https://www.amazon.es/dp/B07CQ54BY4)).
+  - Precio: 8,03 € en la tienda de Cablepelado; el de Amazon no lo he podido leer.
+  - No trae fusible: se pone el T2,5A (#16).
+- **Cómo se apaga:** la máquina se enciende al enchufarla y se apaga desenchufándola. Para sacar el cajón ya había que desenchufarla. **El enchufe de la pared tiene que quedar a mano, o el bar tiene que poder cortar esa toma:** que lo confirme el electricista.
+- **Cableado:** W2 y W3 van directos de la toma a los bornes 1 y 2 de la fuente; W4 y W5 desaparecen.
+- **En el CAD:**
+  - La toma se monta girada: tornillos M3 a 36 mm, uno encima de otro.
+  - Recorte de 31,9 × 27,65 mm en el lateral del cajón.
+  - La ventana de la carcasa pasa de 38 × 56 a 38 × 46.
+  - Sigue sin chocar nada y sin roces.
+  - Las medidas de la toma son las típicas de ese formato, no las del anuncio: se miden al recibirla.
+- **Sigue abierto:** el fusible está en un solo polo y el Schuko entra de las dos maneras, así que puede quedar en el neutro. Las auditorías piden una entrada con portafusibles de dos polos documentada ([pendientes](componentes/pendientes.md), n.º 13).
+
 ### El botón, fuera de todo el repositorio
 
 | Dónde | Qué ha cambiado |
 |---|---|
-| [LISTA DE COMPRA](LISTA-DE-COMPRA.md) | Fuera la línea 11 (pulsador, 10,88 €). Quedan 31 componentes y el primer pedido baja a 635,69 € |
+| [LISTA DE COMPRA](LISTA-DE-COMPRA.md) | Fuera la línea 11 (pulsador, 10,88 €). Quedan 31 componentes y el primer pedido baja a 635,69 € (636,02 € con la toma C14 nueva) |
 | [`componentes/`](componentes/README.md) | Borrada la ficha del pulsador (sigue en el historial de git, commit `dca2723`). El índice explica el hueco del número 11 |
 | Fichas de componentes | **Cables Dupont:** solo pines 8 y 10, con un alojamiento de 1 × 2. **Kit faston:** solo para 230 V. También limpias las fichas de la crimpadora, el C14, los pasacables y la pantalla |
 | [Pendientes](componentes/pendientes.md) | Revisados el 7 y el 18. Fuera la medida de los faston del pulsador; las medidas siguientes se renumeran |
 | [MONTAJE GENERAL](MONTAJE-GENERAL.md) | Fuera W21, W22, la pieza 11, el agujero de Ø30 del panel y el pull-up. El punto 10 del apartado 4 pasa a ser la comprobación del cobro continuo. Figuras 2, 3 y 4 rehechas |
 | [MONTAJE PASO A PASO](MONTAJE-PASO-A-PASO.md) | Fuera la prueba P1.11 y la fase 3.3; las pruebas y apartados siguientes se renumeran. Nueva prueba P6.14 de cobro continuo |
 | [Anuncios de Amazon.es](montaje-general/anuncios-amazon-21-10-2026.md) | Fuera el anuncio del pulsador |
-| [CAD del diseño A](carcasa/diseno-A/README.md) | Nunca tuvo botón; el texto explica cómo arranca la prueba |
+| [CAD del diseño A](carcasa/diseno-A/README.md) | No tenía pulsador. Tenía el interruptor rojo de la toma C14, que se quita (apartado anterior). La cerradura de la tapa se dibuja con su llave para que no parezca un botón |
 
 **No se tocan las auditorías** (`auditorias/` y los zips de la raíz): son informes de terceros con su fecha y hablan del pulsador porque entonces existía.
 

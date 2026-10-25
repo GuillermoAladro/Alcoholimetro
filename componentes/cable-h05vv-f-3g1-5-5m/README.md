@@ -1,6 +1,6 @@
 # Manguera H05VV-F 3G1,5 mm², 5 m
 
-Cable de 230 V y de tierra de la máquina. Se corta en trozos y se pela la funda: de cada trozo salen tres hilos, marrón (L), azul (N) y verde-amarillo (tierra). Con ellos se hacen los puentes del módulo C14 (#15) al interruptor, los hilos del interruptor a los bornes L y N de la LRS-50-5 (#14) y toda la red de tierra: C14, espárrago, fuente, panel, caja interior suspendida y cajón (guía §1 fila 22, §5.1 y §6).
+Cable de 230 V y de tierra de la máquina. Se corta en trozos y se pela la funda: de cada trozo salen tres hilos, marrón (L), azul (N) y verde-amarillo (tierra). Con ellos se hacen los hilos de la toma C14 (#15) a los bornes L y N de la LRS-50-5 (#14) y toda la red de tierra (desde el 25-10-2026 la toma no lleva interruptor): C14, espárrago, fuente, panel, caja interior suspendida y cajón (guía §1 fila 22, §5.1 y §6).
 
 - **Compra:** ASIN B07BDHJGKG, 27,74 € (precio de la hoja de componentes del 19-20-10-2026). Número 22 de la hoja.
 - **Aviso:** Amazon bloquea el acceso a mi herramienta. **No he visto el anuncio.** No sé la marca, si el cable lleva marcado HAR/VDE ni de qué cobre es. El precio y el ASIN son los de tu hoja. Una búsqueda del ASIN solo devolvió anuncios de otros cables.
@@ -124,10 +124,8 @@ Las longitudes son estimaciones mías sobre la guía §5.1. **Mide en tu carcasa
 
 | Tramo | Hilo | Largo supuesto |
 |---|---|---|
-| C14 entrada L → interruptor | marrón | 0,10 m |
-| C14 entrada N → interruptor | azul | 0,10 m |
-| Interruptor sale L → borne L de la LRS | marrón | 0,20 m |
-| Interruptor sale N → borne N de la LRS | azul | 0,20 m |
+| C14, pestaña con fusible → borne L de la LRS | marrón | 0,30 m |
+| C14, otra pestaña → borne N de la LRS | azul | 0,30 m |
 | C14 pin de tierra → espárrago | verde-amarillo | 0,15 m |
 | Espárrago → borne FG de la LRS | verde-amarillo | 0,15 m |
 | Espárrago → panel | verde-amarillo | 0,20 m |
@@ -160,7 +158,7 @@ Fuentes: Nexans IT/NO, [RS](https://docs.rs-online.com/f569/0900766b81159e0e.pdf
 - **EN 60335-1:** la plantilla de ensayo de BIS (IEC 60335-1:2020) muestra que la cláusula 23 trae un ensayo de alta tensión sobre el aislamiento básico de los cables interiores, y que la cláusula 27 trae el ensayo de tierra ("earth bond test"). **No he podido leer los requisitos.** Un cable de tipo normalizado (IEC 60227) suele estar contemplado como cableado interno aceptable; es recuerdo mío, **sin verificar**.
 - **EN 60204-1:** solo he visto el índice de una versión ucraniana de la edición 5.1 (tabla 5, "Minimum cross-sectional areas of copper conductors"; tabla 6, capacidades de PVC) y que la cláusula 13.2.2 trata el color del conductor de protección. **No he podido leer ninguna cláusula.** La guía no la nombra como aplicable; se usa aquí como referencia.
 - **Lo que cambia al quitar la funda (conclusión mía):** se pierde la capa que protege el aislante de los roces y los cortes. Queda solo el PVC de 0,7 mm. En una caja metálica con bordes de chapa, eso exige pasacables, bridas y recorridos sin roce (#31).
-- **Opción que mantiene la funda (conclusión mía):** donde L, N y tierra viajan juntos hacia la LRS (L y N desde el interruptor, FG desde el espárrago), se puede dejar la funda en el tramo central y pelar solo los extremos. Así queda un cable armonizado con doble capa en el recorrido. Depende de la distancia entre C14, espárrago y fuente en tu carcasa.
+- **Opción que mantiene la funda (conclusión mía):** donde L, N y tierra viajan juntos hacia la LRS (L y N desde la toma C14, FG desde el espárrago), se puede dejar la funda en el tramo central y pelar solo los extremos. Así queda un cable armonizado con doble capa en el recorrido. Depende de la distancia entre C14, espárrago y fuente en tu carcasa.
 
 ### 4.3 Temperatura dentro de la caja
 

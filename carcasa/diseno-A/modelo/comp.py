@@ -160,20 +160,23 @@ def fuente():
     return s
 
 
-# ---------------------------------------------------------------- toma C14 con fusible e interruptor (CABLEPELADO)
-C14 = dict(brida=(50.0, 31.0, 3.0), cuerpo=(47.5, 27.8, 22.0), bornes=8.0, agujeros=[(-20.0, 11.0), (20.0, -11.0)])
+# ---------------------------------------------------------------- toma C14 con portafusibles, SIN interruptor (CABLEPELADO)
+# Formato genérico de atornillar: brida 44,7 x 33,1, recorte 31,5 x 27,25, 25 mm de cuerpo, 2 tornillos M3 a 36 mm.
+# Se monta girada 90°: los tornillos quedan uno encima de otro y el cajón del fusible al lado del enchufe.
+C14 = dict(brida=(44.7, 33.1, 3.0), cuerpo=(27.25, 31.5, 25.0), bornes=8.0, agujeros=[(18.0, 0.0), (-18.0, 0.0)])
 
 
 def toma_c14():
     """Origen: centro de la cara exterior de la brida (y=0). El cuerpo entra hacia +Y.
-    Brida 50 x 31 (X x Z). Medidas típicas de este formato: confirmar con la pieza recibida."""
+    X = eje de los tornillos (vertical una vez montada), Z = enchufe y cajón del fusible uno al lado del otro.
+    Medidas típicas de este formato (de otra tienda): confirmar con la pieza recibida."""
     bw, bh, bt = C14["brida"]
     cw, ch, cd = C14["cuerpo"]
     return [("brida", box(-bw / 2, bw / 2, 0, bt, -bh / 2, bh / 2), NEGRO),
             ("cuerpo", box(-cw / 2, cw / 2, bt, bt + cd, -ch / 2, ch / 2), NEGRO),
-            ("conector", box(-22, -1, -0.2, 0, -11, 11), (0.2, 0.2, 0.2)),
-            ("interruptor", box(5, 21, -2.5, 0, -8, 8), ROJO),
-            ("bornes", box(-18, 18, bt + cd, bt + cd + C14["bornes"], -10, 10), METAL)]
+            ("conector", box(-10, 10, -0.2, 0, -14, 4), (0.2, 0.2, 0.2)),
+            ("cajon_fusible", box(-5, 5, -0.6, 0, 6, 13), GRIS_OSC),
+            ("bornes", box(-12, 12, bt + cd, bt + cd + C14["bornes"], -8, 8), METAL)]
 
 
 # ---------------------------------------------------------------- WAGO 221-415, borne USB-A, portafusibles
@@ -306,7 +309,7 @@ FUENTES = {
     "camara": "Raspberry Pi Camera Module 3: 25 x 24 x 11,5 mm, agujeros M2 iguales al Camera Module 2 (product brief)",
     "pi": "Raspberry Pi 3B+: plano mecánico oficial RP-008337 (85 x 56, agujeros 58 x 49 a 3,5 mm del borde)",
     "fuente": "Mean Well LRS-50-5: 99 x 82 x 30, 2 x M3 abajo (penetración máx. 3 mm), regleta de 5 bornes (ficha LRS-50)",
-    "c14": "Toma C14 3 en 1 (ASIN B08Z6FCR5Z): formato estándar; brida y recorte típicos, confirmar al recibirla",
+    "c14": "Toma C14 con portafusibles y sin interruptor (ASIN B07CQ54BY4): medidas típicas del formato de atornillar (brida 44,7 × 33,1, recorte 31,5 × 27,25, tornillos a 36 mm), confirmar al recibirla",
     "ze29a": "Winsen ZE29A: 85 x 33 x 18 mm (manual V1.1); tomas sin acotar en el manual",
     "wifi": "AR9271 VBESTLIFE (ASIN B0CBW6THN1): adaptador de pincho con RP-SMA (fotos del anuncio)",
     "wago": "WAGO 221-415: 29,9 x 18,6 x 8,3 mm (ficha WAGO)",

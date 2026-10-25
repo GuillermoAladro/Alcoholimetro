@@ -22,7 +22,7 @@ Cómo montar el circuito del alcoholímetro por fases: con qué piezas y qué pr
 
 ## Reglas para todo el montaje
 
-1. **La parte de 230 V (fases 4 y 8) la hace o la revisa un electricista.** Con el cordón enchufado nadie toca el módulo C14 ni los bornes 1, 2 y 3 de la fuente. Apagar el interruptor no basta: lo que hay antes del interruptor sigue con tensión. Con la fuente enchufada solo se trabaja en el lado de 5 V (bornes 4 y 5, trimmer, regletas y ramas), con la tapa de los bornes de 230 V puesta y con herramienta aislada.
+1. **La parte de 230 V (fases 4 y 8) la hace o la revisa un electricista.** Con el cordón enchufado nadie toca la toma C14 ni los bornes 1, 2 y 3 de la fuente. No hay interruptor: para cortar la corriente se desenchufa el cordón. Con la fuente enchufada solo se trabaja en el lado de 5 V (bornes 4 y 5, trimmer, regletas y ramas), con la tapa de los bornes de 230 V puesta y con herramienta aislada.
 2. **Cables de señal y fusibles se cambian con todo apagado.** Vale para la UART, el FFC de la cámara y el HDMI. Las únicas excepciones son las pruebas P5.7 y P6.13, que se hacen a propósito y supervisadas.
 3. **Nunca 5 V en un pin del GPIO.** Los únicos pines de 5 V son el 2 y el 4.
 4. **Antes de conectar una carga, mide su rama sin carga:** tensión y polaridad.
@@ -88,7 +88,7 @@ Cómo montar el circuito del alcoholímetro por fases: con qué piezas y qué pr
 
 | Prueba | Pieza | Cómo | Pasa si | Si no pasa |
 |---|---|---|---|---|
-| P1.1 | Módulo C14 (#15) | Protocolo del MONTAJE GENERAL, apartado 4, punto 1 (siete subpasos), con el fusible T2,5A puesto | El esquema que dibujas coincide con uno de fabricante y el interruptor corta los dos polos | Se compra una entrada C14 bipolar documentada. Puedes seguir con las fases 2 y 3 mientras llega, pero no con la 4 |
+| P1.1 | Toma C14 (#15) | Protocolo del MONTAJE GENERAL, apartado 4, punto 1 (seis subpasos), con el fusible T2,5A puesto | Sabes qué pestaña lleva el fusible, no tiene interruptor y no hay continuidad entre polos ni a tierra | Otra toma. Si se decide la entrada de dos polos documentada, puedes seguir con las fases 2 y 3 mientras llega, pero no con la 4 |
 | P1.2 | Fuente (#14) | Lee la etiqueta y la serigrafía de los bornes | LRS-50-5; bornes 1 AC/L, 2 AC/N, 3 FG, 4 −V, 5 +V | Devolverla |
 | P1.3 | Fusibles (#16 y kit #32) | Busca en la etiqueta de la caja los valores que se usan: T2,5A, F 1, 2, 3 y 5 A. Mide la continuidad de uno de cada | Cada uno da continuidad | El grabado del cristal se lee mal: fíate de la caja |
 | P1.4 | Bornes USB-A (#18), los dos | Continuidad del tornillo «+» al pin 1 del conector hembra y del «−» al pin 4 | Las dos dan continuidad | Otro borne |
@@ -203,7 +203,7 @@ Las cuatro auditorías piden validar la carga del Solo con su cargador antes de 
 **Piezas:**
 
 - Fuente (#14).
-- Módulo C14 (#15) o la entrada bipolar que lo sustituya.
+- Toma C14 (#15), o la entrada con portafusibles de dos polos que la sustituya.
 - Fusible T2,5A (#16) y cordón Schuko-C13 (#17).
 - Hilos marrón, azul y verde-amarillo de la manguera (#22).
 - Faston (#27), punteras (#28) y la tapa de bornes.
@@ -213,14 +213,14 @@ Las cuatro auditorías piden validar la carga del Solo con su cargador antes de 
 - El C14 va montado en una caja de pruebas aislante o en una chapa con su recorte, **nunca suelto**. **Si es una chapa, se une también al PE** con un ojal (#23) y su arandela dentada (#24): es metal accesible a dos centímetros de los faston de 230 V.
 - La fuente va con la tapa de bornes puesta, sobre una base aislante.
 - **Tierra provisional:** un hilo verde-amarillo directo del PE del C14 al borne 3 (FG) de la fuente. En la fase 8 lo sustituyen W6 y W7.
-- Cablea W2 a W5 según el esquema que salió en P1.1. Los faston se crimpan con la crimpadora de terminales preaislados.
+- Cablea W2 y W3: la pestaña con fusible (P1.1) va al borne 1. Los faston se crimpan con la crimpadora de terminales preaislados.
 
 | Prueba | Cómo | Pasa si | Si no pasa |
 |---|---|---|---|
-| P4.1 | **Sin enchufar.** Mide entre L y N del enchufe del C14, con el interruptor en O y en I. Mide también del PE del C14 a la carcasa de la fuente | Entre L y N, nunca 0 Ω (con la fuente conectada el polímetro puede marcar un valor que sube: es su condensador de entrada). Del PE a la carcasa de la fuente y a la chapa del C14, si la hay, 0,1 Ω o menos | Revisar el cableado |
+| P4.1 | **Sin enchufar.** Mide entre L y N del enchufe del C14. Mide también del PE del C14 a la carcasa de la fuente | Entre L y N, nunca 0 Ω (con la fuente conectada el polímetro puede marcar un valor que sube: es su condensador de entrada). Del PE a la carcasa de la fuente y a la chapa del C14, si la hay, 0,1 Ω o menos | Revisar el cableado |
 | P4.2 | Haz cinco crimpados de prueba con la misma herramienta y tira de ellos con fuerza | Ninguno se suelta. La ficha da al menos 133 N para 16 AWG (#23 y #27) | Otra herramienta u otro terminal |
-| P4.3 | **Primer enchufado**, con el interruptor en O y sin tocar nada. Pasa a I y vuelve a O | En I: LED verde de la fuente encendido, y la lámpara del interruptor si la tiene. En O: los dos apagados | Desenchufar y revisar W2 a W5 |
-| P4.4 | Cinco arranques: interruptor en I, luego en O, desenchufa y espera un minuto antes del siguiente | El T2,5A no se funde y la fuente arranca cada vez | Revisar el fusible y la coordinación (ficha #16) |
+| P4.3 | **Primer enchufado**, sin tocar nada. Después desenchufa | Enchufada: LED verde de la fuente encendido. Desenchufada: apagado | Desenchufar y revisar W2 y W3 |
+| P4.4 | Cinco arranques: enchufa, espera a que arranque, desenchufa y espera un minuto antes del siguiente | El T2,5A no se funde y la fuente arranca cada vez | Revisar el fusible y la coordinación (ficha #16) |
 | P4.5 | Sin carga, mide entre los bornes 4 y 5 y ajusta el trimmer con un destornillador aislado y la tapa de bornes puesta (regla 1) | 5,10 V | — |
 | P4.6 | Rizado sin carga con el osciloscopio | Apunta los mVp-p. Sin carga la fuente trabaja en ráfaga (nota 7 de su hoja): sirve de referencia | — |
 | P4.7 | Déjala 15 minutos encendida sin carga | Nada huele y la fuente está, como mucho, tibia | Desenchufar y revisar |
@@ -435,7 +435,7 @@ Copia esta tabla y añade una fila por prueba. Una prueba sin apuntar cuenta com
 
 | Prueba | Fecha | Pieza o número de serie | Valor medido | Pasa (sí/no) | Nota |
 |---|---|---|---|---|---|
-| P1.1 | | Módulo C14 | Esquema: … | | Foto del esquema |
+| P1.1 | | Toma C14 | Pestaña con fusible: … | | Foto de las pestañas |
 | P4.5 | | LRS-50-5 | … V | | |
 | P5.4 | | Reparto de 5 V | R_troncal … Ω · R_Pi … Ω · prevista en la Pi … V | | |
 | P6.10 | | Máquina en banco | Pi … V · `get_throttled` … | | |

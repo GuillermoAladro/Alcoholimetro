@@ -190,7 +190,7 @@ Lectura:
 
 El fusible no protege la carga: la máquina toma 0,1–0,25 A y el T2,5A no abre por debajo de 3,75 A (mínimo 60 min). Una sobrecarga moderada del lado de 230 V (por ejemplo, 4 o 5 A) no la corta en un tiempo útil. Lo que protege (conclusión mía):
 
-- Contra cortocircuitos y fallos fuertes en el tramo entre el portafusibles y la fuente: cable de 1,5 mm², fastones, interruptor (6 A según la guía) y la propia fuente.
+- Contra cortocircuitos y fallos fuertes en el tramo entre el portafusibles y la fuente: cable de 1,5 mm², fastones y la propia fuente (la toma ya no lleva interruptor).
 - No protege el cable de red (#17) ni el tramo C14-portafusibles: están antes del fusible.
 - La sobrecarga del lado de 5 V la limita la fuente (modo hipo, apartado 4.1).
 
@@ -216,7 +216,7 @@ Conclusión: **entre unos 7 y unos 80 A el T2,5A corta mucho antes que el magnet
 
 ### 4.5 El fusible interno de la fuente: ¿redundante?
 
-**No he podido verificar ni su valor ni su capacidad de corte:** la hoja no lo cita en lo que leí y el manual no lo menciona. Mi conclusión es que es **complementario, no redundante**: un fusible interno solo protege a la fuente de sus propios fallos y no protege el cable, los fastones ni el interruptor que quedan aguas arriba. Además, el interno no se sustituye y el externo sí.
+**No he podido verificar ni su valor ni su capacidad de corte:** la hoja no lo cita en lo que leí y el manual no lo menciona. Mi conclusión es que es **complementario, no redundante**: un fusible interno solo protege a la fuente de sus propios fallos y no protege el cable ni los fastones que quedan aguas arriba. Además, el interno no se sustituye y el externo sí.
 
 ### 4.6 Qué conductor lleva el fusible
 
@@ -310,7 +310,7 @@ Son conclusiones mías, no afirmaciones de las fuentes.
    - Prueba de apertura de una muestra (ensayo destructivo, con riesgo de proyecciones: protección ocular y una pantalla), con una fuente de laboratorio de baja tensión y corriente limitada, nunca con la red: a 10 A (400 %) debe abrir entre 0,095 y 5 s; a 6,9 A (275 %), entre 0,75 y 80 s. Si no abre, es un genérico falso o defectuoso (misma prueba que los hilos de EEVblog). **Es una prueba de la curva, no de la capacidad de corte.**
 4. **Medir la corriente de cortocircuito posible en el enchufe del bar** con un medidor de impedancia de bucle (un electricista lo tiene). Si supera 1,5 kA, no basta un fusible H de 1500 A (apartado 4.4). Pregunta también qué magnetotérmico y diferencial protegen esa toma.
 5. **Repuestos:** deja **2 fusibles por máquina** en el kit de servicio, en bolsa cerrada y seca, separados del resto. Con un paquete de 10 salen unas 3 máquinas (1 montado y 2 de repuesto). Guarda además 2-3 fusibles de cada lote sin usar, como referencia por si hay que comparar un fusible sospechoso.
-6. **Si un T2,5A se funde, no es mantenimiento, es un síntoma.** Cámbialo una vez; si se vuelve a fundir, no pongas uno mayor y busca el fallo (cable, interruptor, fuente) con la máquina desconectada.
+6. **Si un T2,5A se funde, no es mantenimiento, es un síntoma.** Cámbialo una vez; si se vuelve a fundir, no pongas uno mayor y busca el fallo (cable, fuente) con la máquina desconectada.
 7. **Quita y tira el fusible de 10 A del módulo** (o guárdalo marcado y aparte): un 10 A en la máquina deja sin protección práctica el tramo de 1,5 mm² y la fuente ante fallos de 10-25 A (apartado 5.9).
 8. **Etiqueta junto al portafusibles** (legible, resistente a la humedad y al calor), con este texto o similar:
 
@@ -319,7 +319,7 @@ Son conclusiones mías, no afirmaciones de las fuentes.
 
    **Por qué:** IEC 62368-1, apartado F.3.5.3, pide marcar los datos del fusible de recambio y explicar el código de marcado en las instrucciones si lo puede cambiar una persona normal ([resumen de UL](https://japan.ul.com/wp-content/uploads/sites/27/2014/06/1_techbrief_equipmentmarkings.pdf), fuente secundaria). **No he podido leer qué dice EN 60335-1 ni EN 60335-2-82 sobre el marcado de fusibles**, y la ITC-BT-19 no lo trata. Etiquetar es barato; confirma con un laboratorio o con el texto de la norma antes de la declaración de conformidad.
 9. **Polo del fusible:** decide con un electricista si se acepta el fusible en un solo conductor (apartado 4.6) o si se usa un módulo con dos fusibles. Si se usan dos, cuenta el doble de repuestos.
-10. **Prueba de funcionamiento del conjunto:** con el cable desenchufado, mide continuidad entre el pin de fase del C14 y el borne L de la fuente a través del fusible y el interruptor, y comprueba que con el fusible quitado no hay continuidad. Esto también te dice qué pin lleva el fusible (ficha de #15).
+10. **Prueba de funcionamiento del conjunto:** con el cable desenchufado, mide continuidad entre el pin de fase del C14 y el borne L de la fuente a través del fusible, y comprueba que con el fusible quitado no hay continuidad. Esto también te dice qué pin lleva el fusible (ficha de #15).
 11. **No encender y apagar seguido** (ya en la guía): es el caso en que sube el I²t del arranque (apartado 4.2).
 12. **Que un electricista revise la parte de 230 V y la tierra antes de enchufar** (aviso de la guía). El fusible no sustituye a la tierra.
 

@@ -22,7 +22,7 @@ Z_HUECO = 150.0           # el hueco del lateral izquierdo llega hasta aquí (de
 Z_TOP_P = 148.5           # borde superior del cajón de pajitas (igual que el diseño anterior)
 SB_H = 10.0        # silentblock
 GF = 12.0          # holgura panel-cajón: policarbonato 5 + tuerca 3,2 + 3,8 de aire
-GS_L, GS_R = 3.5, 7.0     # holgura lateral izquierda / derecha (a la derecha cabe la brida + interruptor de la C14)
+GS_L, GS_R = 3.5, 7.0     # holgura lateral izquierda / derecha (a la derecha cabe la brida de la C14 y sus tornillos)
 TOPE = 3.0
 TIRA = 18.0        # tira trasera fija del techo (tapa extraíble)
 BANDA = 32.0       # alto del faldón delantero de la tapa (lleva las cerraduras)
@@ -87,7 +87,7 @@ COMPRAS = {
     "E04": ("Raspberry Pi 3B+", "B0BNJPL4MW", 54.90),
     "E05": ("Adaptador Wi-Fi AR9271 con antena", "B0CBW6THN1", 16.24),
     "E06": ("Fuente Mean Well LRS-50-5", "B06XWRCWZ9", 18.52),
-    "E07": ("Toma C14 con fusible e interruptor", "B08Z6FCR5Z", 7.70),
+    "E07": ("Toma C14 con portafusibles, sin interruptor (Cablepelado)", "B07CQ54BY4", 8.03),
     "E08": ("WAGO 221-415 (kit 221)", "B09XB58ZXJ", 27.08),
     "E09": ("Borne USB-A hembra a tornillo", "B07V86XPL4", 10.99),
     "E10": ("Portafusibles en línea mini + fusibles", "B07Q495GQG", 9.49),
@@ -297,7 +297,9 @@ def construir(spec):
           + ("; ranura 4×14 de la leva" if any(sg < 0 for _, sg in cer) else "") + ("; agujero Ø6,5 de la antena" if lado_ant < 0 else ""))
     ld = box(W / 2 - T, W / 2, T, D - T, T, Hr)
     c14 = lay["c14"]                                                              # (y, z) local del centro de la toma
-    cuts = [box(W / 2 - 5, W / 2 + 5, c14[0] + OY - 19, c14[0] + OY + 19, zc(c14[1]) - 28, zc(c14[1]) + 28)]
+    VENT_C14 = (38.0, 46.0)                                                       # ventana del enchufe (y × z)
+    cuts = [box(W / 2 - 5, W / 2 + 5, c14[0] + OY - VENT_C14[0] / 2, c14[0] + OY + VENT_C14[0] / 2,
+                zc(c14[1]) - VENT_C14[1] / 2, zc(c14[1]) + VENT_C14[1] / 2)]
     for z0, z1 in lay["rejillas_der"]:
         cuts += vent_slots_x(Ky0 + 12, Ky1 - 12, zc(z0), zc(z1))
     if not esc_izq:
@@ -312,7 +314,7 @@ def construir(spec):
     cuts.append(hole_x(ym, zr1, 16.0).intersect(box(W / 2 - 5, W / 2 + 5, ym - 9, ym + 9, zr1, zr1 + 9)))
     ld = cut_all(ld, cuts)
     m.cotas["ranura_tapa_interior"] = dict(y=(ys0, ys1), z=(zr0, zr1), largo=ys1 - ys0, alto=zr1 - zr0)
-    m.fab("C", "Lateral derecho", ld, COL_CHAPA, notas="Ventana de acceso a la toma C14 (38 × 56), rejillas, "
+    m.fab("C", "Lateral derecho", ld, COL_CHAPA, notas=f"Ventana del enchufe de la toma C14 ({VENT_C14[0]:.0f} × {VENT_C14[1]:.0f}), rejillas, "
           f"ranura {zr1 - zr0:.1f} × {ys1 - ys0:.0f} de la tapa interior con muesca R8 encima"
           + ("; ranura 4×14 de la leva" if any(sg > 0 for _, sg in cer) else "") + ("; agujero Ø6,5 de la antena" if lado_ant > 0 else ""))
     # suelo y bandeja
@@ -403,7 +405,8 @@ def construir(spec):
     if not esc_izq:
         rzc.append(hole_x(ex[0] + OY, zc(ex[1]), 12.0))
     rz = cut_all(rz, rzc)
-    m.fab("K", "Lateral derecho del cajón", rz, COL_CART, movil=mv, notas="Recorte de la toma C14 (47,9 × 28,2) y 2 taladros M3")
+    m.fab("K", "Lateral derecho del cajón", rz, COL_CART, movil=mv,
+          notas=f"Recorte de la toma C14 ({chh + 0.4:.2f} × {cw + 0.4:.2f}, ancho × alto) y 2 taladros M3 a 36 mm, uno encima de otro")
     # sin asa: dos asideros (chapa de 3 mm con agujero para dos dedos) a ras del borde de arriba, por dentro de los laterales
     for nom, x0, x1, y0, y1, yh, yt in (("Asidero izquierdo", Kx0 + T, Kx0 + T + 30, 8 + OY, 48 + OY, 20 + OY, 38 + OY),
                                         ("Asidero derecho", Kx1 - T - 30, Kx1 - T, 28 + OY, 68 + OY, 40 + OY, 58 + OY)):
@@ -415,12 +418,13 @@ def construir(spec):
                  notas="Queda 3 mm por debajo de la tapa interior (que pasa por encima al deslizar); si el cajón se levanta, topa con ella")
     # topes laterales y delanteros del cajón
     c14w = (lay["c14"][0] + OY, zc(lay["c14"][1]))
+    bx_c14, bz_c14 = C.C14["brida"][1] / 2, C.C14["brida"][0] / 2                  # media brida en y y en z
     def libre_c14(yy, zz):
-        return abs(yy - c14w[0]) > 15.5 + 5 + 1 or abs(zz - c14w[1]) > 25 + 5 + 1
+        return abs(yy - c14w[0]) > bx_c14 + 5 + 1 or abs(zz - c14w[1]) > bz_c14 + 5 + 1
     for zz in (Kz0 + 25, Ktop - 25):
         for yy in (Ky0 + 12, Ky1 - 12):
             m.compra("H02", "Tope de goma 10×3", place_parts(C.tope_goma((-1, 0, 0)), at=(Kx0, yy, zz)), movil=mv)
-            z2 = zz if libre_c14(yy, zz) else (c14w[1] + 25 + 8)
+            z2 = zz if libre_c14(yy, zz) else (c14w[1] + bz_c14 + 8)
             m.compra("H02", "Tope de goma 10×3 (dos, uno encima de otro)", place_parts(C.tope_goma((1, 0, 0), 6.0), at=(Kx1, yy, z2)), movil=mv, uds=2)
         for xx in lay["topes_frente"]:
             m.compra("H02", "Tope de goma 10×3 (dos, uno encima de otro)", place_parts(C.tope_goma((0, -1, 0), 6.0), at=(xx, Ky0, zz)),
@@ -643,7 +647,7 @@ def colocar_componentes(m, spec, lay, L, g):
                                                   at=L(fx, Yin - C.FUENTE["H"], fz + C.FUENTE["W"])), movil=mv, electrico=True)
     # ---- C14 en el lateral derecho del cajón
     cy, czz = lay["c14"]
-    m.compra("E07", "Toma C14", place_parts(C.toma_c14(), ex=(0, 0, 1), ey=(-1, 0, 0), ez=(0, -1, 0),
+    m.compra("E07", "Toma C14 con portafusibles (sin interruptor)", place_parts(C.toma_c14(), ex=(0, 0, 1), ey=(-1, 0, 0), ez=(0, -1, 0),
                                             at=(g["Kx1"] + C.C14["brida"][2], cy + OY, czz + OZ)), movil=mv, electrico=True)
     # ---- reparto de 5 V (zona baja entre pantalla y caja de red)
     def P_(d):

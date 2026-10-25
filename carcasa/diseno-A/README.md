@@ -2,7 +2,7 @@
 
 > Copia en el repositorio del paquete `Alcoholimetro_A.zip`. Los números de pieza (A-C01, A-T01…) son los de los STEP, los DXF y el visor de esta carpeta. Decisiones generales en [DECISIONES](../../DECISIONES.md).
 
-21-10-2026 · Guillermo · actualizado el 22-10-2026 (tapa interior deslizante, faldón derecho de la tapa, antena hacia abajo) y el 25-10-2026 (sin botón: el Solo espera tarjeta todo el rato)
+21-10-2026 · Guillermo · actualizado el 22-10-2026 (tapa interior deslizante, faldón derecho de la tapa, antena hacia abajo) y el 25-10-2026 (sin botón: el Solo espera tarjeta todo el rato, y la toma C14 ya no lleva interruptor)
 
 ## 1. Qué hay en esta carpeta
 
@@ -32,7 +32,7 @@ Todas las chapas son **planas**: acero DC01 de 1,5 mm cortado por láser y unido
 | Cajón de pajitas | Sin tirador; 2 anillas con 2 candados |
 | Piezas a fabricar | 46 |
 | Chapa y policarbonato | 7,8 kg |
-| Botón | Ninguno en todo el proyecto: el SumUp Solo está siempre esperando tarjeta y la prueba empieza al pagar |
+| Botón | Ninguno en todo el proyecto, tampoco interruptor de red: el SumUp Solo está siempre esperando tarjeta y la prueba empieza al pagar; la máquina se apaga desenchufándola |
 | Primer pedido de compras | ~880 €, con herramientas y rollos que sobran; desglose en la lista |
 | Anclaje a la pared | 18 tirafondos 6 × 60 con taco de 8 mm, apretados desde dentro |
 
@@ -76,7 +76,8 @@ Todas las chapas son **planas**: acero DC01 de 1,5 mm cortado por láser y unido
   - detrás, 14 mm.
 
 **230 V.**
-- La toma C14 va en el lateral derecho **del cajón** y se enchufa por una ventana de la carcasa.
+- La toma C14 va en el lateral derecho **del cajón** y se enchufa por una ventana de la carcasa (38 × 46).
+- **Toma C14 con portafusibles y sin interruptor** (Cablepelado, B07CQ54BY4). La de antes llevaba un interruptor rojo que se veía por la ventana. Ahora la máquina se enciende al enchufarla y se apaga desenchufándola, y para sacar el cajón ya había que desenchufarla.
 - **Enclavamiento:** con el cable enchufado el cajón no puede subir, porque la clavija tropieza con la ventana.
 - La fuente y la C14 van en la **caja de red** (chapas rojas). Es una tapa en U que se quita con 2 tuercas M4; solo salen 5 V y tierra, por pasacables.
 
@@ -196,7 +197,7 @@ Todas las chapas son **planas**: acero DC01 de 1,5 mm cortado por láser y unido
 | Policarbonato interior V02 | 10 × Ø5 · boquilla Ø7 |
 | Lateral izquierdo C03 | Hueco del cajón de pajitas · rejillas · rejilla de escape del soplido |
 | Anillas de los candados | Ø9 (arco de 5 mm) |
-| Lateral derecho C04 | Ventana de la C14 38 × 56 · rejillas · ranura de la leva 4 × 14 · antena Ø6,5 · ranura de la tapa interior 2,1 × 90 con muesca R8 |
+| Lateral derecho C04 | Ventana del enchufe de la C14 38 × 46 · rejillas · ranura de la leva 4 × 14 · antena Ø6,5 · ranura de la tapa interior 2,1 × 90 con muesca R8 |
 | Trasera C02 | 18 agujeros Ø6,5 para la pared (3 columnas × 6 filas) |
 | Bandeja C06 | 4 × Ø4,5 de los silentblocks |
 | Faldón delantero de la tapa T03 | Ø18 de la cerradura |
@@ -204,7 +205,7 @@ Todas las chapas son **planas**: acero DC01 de 1,5 mm cortado por láser y unido
 | Trasera del cajón K03 | Fuente (M3), Pi (M2,5), sensor y bornes USB · pares de ranuras para bridas |
 | Base del cajón K01 | 4 × Ø6 que encajan en los silentblocks · rejilla bajo la fuente |
 | Lateral izquierdo del cajón K04 | Paso Ø12 del escape · rejillas |
-| Lateral derecho del cajón K05 | Recorte de la C14 · rejillas |
+| Lateral derecho del cajón K05 | Recorte de la C14 31,9 × 27,65 y 2 × M3 a 36 mm · rejillas |
 | Caja de red K07 / K08 / K10 / K11 | Pasacables Ø12 de 5 V y tierra · rejilla · Ø4,5 de las pestañas de fijación |
 | Asideros del cajón | Ø22 para los dedos |
 | Tapa interior T01 | Ninguno (chapa lisa) |
@@ -254,7 +255,7 @@ Todo lo necesario está conectado. En uso normal ninguna rama pasa del 50 % de s
 4. **Bornes USB‑A de 1 A.** Mide lo que pide el Solo cargando; si pasa de 1 A, cambia el borne por uno de 2–3 A.
 5. **Leva de la cerradura:** hay que cortarla a 20,5 mm.
 6. **Medidas a confirmar con las piezas en mano:**
-   - La C14 (y que el interruptor corte los dos polos).
+   - La C14: brida, recorte y tornillos son los típicos de este formato, no los del anuncio. Mirar también en qué patilla está el fusible: el enchufe Schuko entra de las dos maneras y el fusible puede quedar en el neutro.
    - Las tomas del ZE29A.
    - Los conectores de la pantalla.
 7. **HDMI acodado.** Si el cable que trae la pantalla ya es acodado, sobra.

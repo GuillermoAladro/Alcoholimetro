@@ -1,5 +1,10 @@
 # Módulo de entrada C14 con portafusibles e interruptor luminoso
 
+> **25-10-2026: la máquina ya no usa este módulo.** Se cambia por una toma C14 con portafusibles y **sin interruptor** (Cablepelado, [B07CQ54BY4](https://www.amazon.es/dp/B07CQ54BY4)): el interruptor rojo se veía por la ventana del lateral y el proyecto no lleva botones. Ver [DECISIONES](../../DECISIONES.md).
+> - Lo que esta ficha dice del interruptor y de la lámpara ya no aplica.
+> - Sigue valiendo lo de la entrada C14, el fusible T2,5A, las pestañas, la tierra y la fijación.
+> - Sigue abierto el fusible en un solo polo con un enchufe Schuko reversible (apartados 4 y 5).
+
 Entrada de red de 230 V de la máquina. Va en la trasera de la caja de arriba. Recibe el cable Schuko–C13 de 2 m (#17) y lleva el interruptor y el fusible. De él salen L y N (cable de 1,5 mm² con faston) a la fuente Mean Well LRS-50-5 (#14). El pin de tierra va al espárrago M4 de tierra.
 
 - **Compra:** ASIN B08Z6FCR5Z, 7,70 € (precio de la hoja de componentes del 19-20-10-2026).

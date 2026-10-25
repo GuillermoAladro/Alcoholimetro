@@ -194,7 +194,7 @@ Con la fuente apagada y los cables ya montados:
 ### 4.7 Seguridad y normativa
 
 - **5,2 V es baja tensión.** El riesgo para las personas es bajo; el riesgo es de incendio por un contacto flojo o de daño a los equipos por polaridad.
-- **230 V:** la guía no usa WAGO en la red. §5.1 usa faston (C14, interruptor), ojales (tierra) y punteras (bornes de la LRS). Verificado en la copia local de la guía.
+- **230 V:** la guía no usa WAGO en la red. §5.1 usa faston (C14), ojales (tierra) y punteras (bornes de la LRS). Verificado en la copia local de la guía.
 - **Por rating, la 221 sí admite 230 V** (450 V en la hoja de WAGO), pero el diseño no lo necesita y no lo recomiendo aquí.
 - **Marcado CE (guía §9):** si las bornas son genuinas, los certificados ENEC (EN 60998) y UL 486C de la hoja sirven de apoyo en el expediente. Un clon sin certificados lo debilita (deducción mía). Guarda factura, lote y hoja de datos de la pieza.
 

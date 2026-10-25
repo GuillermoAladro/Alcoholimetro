@@ -1,6 +1,6 @@
 # Kit de terminales faston aislados (hembra y macho) de 2,8, 4,8 y 6,3 mm
 
-Terminales de pala (faston) para la toma de red. Los de 4,8 mm (hembra aislada) van crimpados en los puentes de 1,5 mm² del módulo C14 (#15) y en los terminales del interruptor: **son conexiones de 230 V**. La máquina no lleva botón, así que los de 2,8 mm sobran. Los machos del kit no tienen sitio en el montaje de la guía (el módulo ya trae lengüeta) (mío).
+Terminales de pala (faston) para la toma de red. Los de 4,8 mm (hembra aislada) van crimpados en los hilos de 1,5 mm² que salen de la toma C14 (#15), que desde el 25-10-2026 no lleva interruptor: **son conexiones de 230 V**. La máquina no lleva botón, así que los de 2,8 mm sobran. Los machos del kit no tienen sitio en el montaje de la guía (el módulo ya trae lengüeta) (mío).
 
 - **Compra:** ASIN B0B4H54KPS, 10,99 € (precio de la hoja de componentes del 19-20/10/2026). Es la pieza nº 27 de la hoja.
 - **Es una pieza de 230 V.** Léela entera antes de crimpar nada. Si no tienes experiencia con red, que un electricista revise este cableado.
@@ -110,7 +110,7 @@ Los números de página son los que dio mi herramienta de lectura sobre el PDF d
 
 | Hilo (guía §5.1 y §5.3) | Sección | Terminal que propongo (mío) | Condición |
 |---|---|---|---|
-| Marrón y azul del C14 al interruptor, y del interruptor a la fuente | 1,5 mm² flexible | Hembra aislada **azul** (1,5-2,5 mm²), 4,8 × 0,8 si el módulo es 4,8 × 0,8, de **PA** | Aprobar la prueba de tirón (apartado 4.2) |
+| Marrón y azul de la toma C14 a la fuente | 1,5 mm² flexible | Hembra aislada **azul** (1,5-2,5 mm²), 4,8 × 0,8 si el módulo es 4,8 × 0,8, de **PA** | Aprobar la prueba de tirón (apartado 4.2) |
 | Verde-amarillo del pin de tierra del C14 | 1,5 mm² flexible | Igual, más largo que L y N | Mejor con retención o soldado (apartado 4.3) |
 
 ## 3. Documentos oficiales y normas
@@ -219,14 +219,13 @@ Fuentes: [Cirris](https://cirris.com/crimp-pull-testers-pullout-force-per-wire-s
 
 **Dirección.** Las hembras (receptáculos) van en el cable y las lengüetas (machos) en el equipo, de modo que **el cable desenchufado no deja una lengüeta viva al aire** (mío). Los machos del kit no tienen uso en la guía.
 
-**Cuántos terminales (cuenta mía, depende del esquema real del módulo, ficha #15):**
+**Cuántos terminales (cuenta mía, toma sin interruptor):**
 
 | Dónde | Hembras | Tamaño |
 |---|---|---|
-| Puentes C14 a interruptor (L y N), dos extremos | 4 | 4,8 mm (a confirmar) |
-| Interruptor a fuente (L y N), solo el extremo del interruptor | 2 | Igual |
+| Toma C14 a fuente (L y N), extremo de la toma | 2 | 4,8 mm (la tienda dice 4,8) |
 | Tierra, pin del C14 | 1 | 4,8 o 6,3 mm (a confirmar) |
-| **Total por máquina** | **unas 7, todas de 230 V** | |
+| **Total por máquina** | **3, todas de 230 V** | |
 
 Suma una reserva de crimpados de prueba y de errores. Un kit de cientos de piezas sobra.
 

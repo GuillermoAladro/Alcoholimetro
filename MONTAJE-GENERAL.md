@@ -2,7 +2,7 @@
 
 Cómo se conecta cada componente de la máquina con los demás: de qué puerto, borne o pin sale cada cable y adónde llega. Es el cableado de la guía de montaje eléctrico (v2, 20-10-2026) corregido con lo que han dejado las 31 fichas de [`componentes/`](componentes/README.md) y los documentos que descargaste.
 
-**Estado a 21-10-2026: es un esquema de papel. Nada se ha montado ni medido todavía.** Hoy he leído los anuncios de Amazon.es de nueve piezas ([resumen](montaje-general/anuncios-amazon-21-10-2026.md)). Cierran los tornillos del borne USB-A, los puertos de la pantalla y la posición del USB-C del Solo, y desmienten un supuesto de la guía: el esquema interno del C14 no se puede sacar del anuncio. Lo que sigue sin confirmar lleva ⚠ y está reunido en el apartado 5. Dos de esas dudas pueden cambiar el cableado: el esquema interno del módulo C14 y el tipo de conector del ZE29A.
+**Estado a 21-10-2026: es un esquema de papel. Nada se ha montado ni medido todavía.** Hoy he leído los anuncios de Amazon.es de ocho piezas ([resumen](montaje-general/anuncios-amazon-21-10-2026.md)). Cierran los tornillos del borne USB-A, los puertos de la pantalla y la posición del USB-C del Solo. Lo que sigue sin confirmar lleva ⚠ y está reunido en el apartado 5. Dos de esas dudas pueden cambiar el cableado: el esquema interno del módulo C14 y el tipo de conector del ZE29A.
 
 **Última corrección (21-10-2026, al escribir el paso a paso):** el cálculo de la tensión en la Pi olvidaba la caída del troncal. Con ella, colgando de la regleta, la Pi se quedaba en 4,88 V en uso normal y 4,62 V en el pico. Ahora **la Pi va directa a los bornes de la fuente con su fusible** (W13) y el troncal lleva un F 5 A (W11).
 
@@ -42,7 +42,7 @@ Cada figura está en SVG (el que se ve arriba) y en PNG (pincha en la imagen) de
 
 ## 1. Resumen
 
-- **230 V:** toma de pared → cordón Schuko-C13 (#17) → módulo C14 (#15) con fusible T2,5A (#16) e interruptor → fuente Mean Well LRS-50-5 (#14), bornes 1 (AC/L) y 2 (AC/N).
+- **230 V:** toma de pared → cordón Schuko-C13 (#17) → toma C14 (#15) con portafusibles (fusible T2,5A, #16) y **sin interruptor** → fuente Mean Well LRS-50-5 (#14), bornes 1 (AC/L) y 2 (AC/N). La máquina se enciende al enchufarla y se apaga desenchufándola.
 - **Tierra:** el pin de tierra del C14 va a un espárrago M4 soldado al cuerpo (#25). Del espárrago salen los cables de tierra a la fuente (borne 3, FG), al panel frontal, a la caja interior y al cajón.
 - **5 V:** la fuente, ajustada a **5,10 V** sin carga, da +V (borne 5) y −V (borne 4) a dos regletas WAGO 221-415 (#20), una de +5 V y otra de GND. Cada regleta tiene cinco polos: el 1 es el troncal, los polos 3 a 5 son el Solo, la pantalla y el ZE29A, y el 2 queda libre. **La Pi no cuelga de las regletas: va directa a los bornes 4 y 5 de la fuente, con su fusible de 3 A** (W13), para no cargar con la caída del troncal. Entre el borne 5 y la WAGO «+5 V» va un fusible de troncal de 5 A, y en el +5 V del Solo, la pantalla y el ZE29A un portafusibles en línea (#32) con un fusible rápido de vidrio de 5 × 20: 2 A, 2 A y 1 A. El −V se une a tierra en un solo punto (W12b).
 - **Las cuatro cargas de 5 V:** Raspberry Pi (puerto micro-USB, desde la fuente), SumUp Solo (borne USB-A nº 1 y cable a su USB-C), pantalla (borne USB-A nº 2 y cable a su USB-C) y sensor ZE29A (pines 1 y 2).
@@ -57,22 +57,21 @@ Cada figura está en SVG (el que se ve arriba) y en PNG (pincha en la imagen) de
 
 | N.º | De | A | Cable y terminales | Nota |
 |---|---|---|---|---|
-| W1 | Toma de pared (Schuko) | Módulo C14 (#15), entrada | Cordón Schuko → C13 de 2 m (#17) | El C13 se enchufa en el C14. El módulo tiene que ir bien fijado a la chapa: el tirón del cable lo aguanta la fijación (ficha #15, §6.4) |
-| W2 | C14, pestaña de la fase (la que sale del portafusibles con el T2,5A) | Interruptor, contacto A | Marrón 1,5 mm², faston hembra aislado (#27) | ⚠ Qué pestaña es la de la fase y qué faston es el A: se mide con el módulo suelto (apartado 4, punto 1) |
-| W3 | C14, pestaña del neutro | Interruptor, contacto C (solo en el caso 1) | Azul 1,5 mm², faston hembra aislado | ⚠ En el caso 2 no existe: el neutro va directo a W5 |
-| W4 | Interruptor, contacto B (el que cierra con A) | LRS-50-5, borne 1 (AC/L) | Marrón 1,5 mm². Faston en el módulo, puntera (#28) en la fuente | |
-| W5 | Interruptor, contacto D (caso 1) o pestaña del neutro del C14 (caso 2) | LRS-50-5, borne 2 (AC/N) | Azul 1,5 mm². Faston en el módulo, puntera en la fuente | |
+| W1 | Toma de pared (Schuko) | Toma C14 (#15), entrada | Cordón Schuko → C13 de 2 m (#17) | El C13 se enchufa en el C14. La toma tiene que ir bien fijada a la chapa: el tirón del cable lo aguanta la fijación (ficha #15, §6.4) |
+| W2 | C14, pestaña del polo con fusible (la que sale del portafusibles con el T2,5A) | LRS-50-5, borne 1 (AC/L) | Marrón 1,5 mm². Faston hembra aislado (#27) en la toma, puntera (#28) en la fuente | ⚠ Qué pestaña lleva el fusible: se mide con la toma suelta (apartado 4, punto 1) |
+| W3 | C14, pestaña del otro polo | LRS-50-5, borne 2 (AC/N) | Azul 1,5 mm². Faston en la toma, puntera en la fuente | |
 | W6 | C14, contacto de tierra (PE) | Espárrago M4 × 20 (#25), 1ª tuerca | Verde-amarillo. Faston en el C14, ojal M4 (#23) con arandela dentada (#24) en el espárrago | ⚠ Sección: 1,5 mm² (guía) o 2,5 mm² (ITC-BT-19 §2.3). Más largo que L y N. Sin fusible ni interruptor en la tierra |
 | W7 | Espárrago, 2ª tuerca | LRS-50-5, borne 3 (FG) | Verde-amarillo, ojal M4 / puntera | |
 | W8 | Espárrago, 2ª tuerca | Panel frontal, si va atornillado | Verde-amarillo, ojal M4 en los dos extremos | |
 | W9 | Espárrago, 2ª tuerca | Caja interior (la suspendida) | Verde-amarillo flexible, con holgura, ojal M4 | Los muelles no valen como tierra |
 | W10 | Espárrago, 2ª tuerca | Cajón | Verde-amarillo flexible, con holgura, ojal M4 | |
 
-**Los dos casos del interruptor del C14.** El anuncio dice que es un basculante con luz roja de 4 pines, pero no dice si corta uno o dos polos, y sus dos dibujos de cableado no coinciden entre sí ([anuncios](montaje-general/anuncios-amazon-21-10-2026.md)). Dos reseñas con compra verificada dicen que el dibujo del vendedor está mal: el interruptor corta, pero la luz no se apaga.
+**Sin interruptor (25-10-2026).** La toma es solo una entrada C14 con portafusibles: no tiene interruptor ni lámpara. El interruptor rojo del módulo anterior se veía por la ventana del lateral y se quitó. Por eso ya no existen W4 ni W5. La máquina se enciende al enchufarla y se apaga desenchufándola, y para sacar el cajón ya había que desenchufarla. **El enchufe de la pared tiene que quedar a mano, o el bar tiene que poder cortar esa toma:** que lo confirme el electricista.
 
-- **Caso 1, dos polos:** dos pares de contactos independientes (A–B y C–D). La lámpara puede ir en terminales propios o **dentro del interruptor, entre las dos salidas** (un DPST iluminado de cuatro terminales, como los del catálogo de Bulgin que cita la auditoría 6.1-S): entonces no hay terminales de lámpara y un neón se mide como circuito abierto. Es lo que dio por hecho la guía. Se cablea como W2 a W5.
-- **Caso 2, un polo con luz:** un solo par de contactos (A–B) y dos terminales de lámpara. Es lo que sugieren las reseñas, que hablan de un puente para la luz; no está confirmado. **En este caso el módulo no se usa** (siguiente punto). No se cablea la lámpara «a ver si se apaga»: una lámpara de 12 V a 230 V se quema y un neón no se distingue con el polímetro (auditorías 6.1-S F02 y 6-A A6A-02).
-- **Con un solo polo hay un problema de seguridad y las cuatro auditorías lo dejan como bloqueante:** el enchufe Schuko entra de las dos maneras, así que el fusible y el interruptor pueden quedar en el neutro y no en la fase. **Si el módulo resulta de un polo, o si su esquema medido no coincide con ningún esquema de fabricante, se sustituye por una entrada C14 bipolar con esquema documentado** (la familia Schurter KD/KM es el ejemplo que dan las auditorías; la variante y sus accesorios se eligen antes de comprar). «Aceptar el riesgo» no cierra el punto (ficha #15, §4 y §5; auditorías 6.1-S F02–F03, 6-A A6A-02, P H1, 5.6 C-02). Aun con corte bipolar, los bornes anteriores al interruptor siguen con tensión: para intervenir se desenchufa el cordón.
+- **El fusible sigue en un solo polo, y es un punto abierto de las auditorías.** El enchufe Schuko entra de las dos maneras, así que el T2,5A puede quedar en el neutro y no en la fase.
+  - Las cuatro auditorías piden una entrada C14 con esquema documentado. Sin interruptor, sería una con portafusibles de dos polos, por ejemplo de la familia [Schurter KE](https://at.schurter.com/en/datasheet/KE).
+  - «Aceptar el riesgo» no cierra el punto (ficha #15, §4 y §5; auditorías 6.1-S F02–F03, 6-A A6A-02, P H1, 5.6 C-02).
+- Las pestañas de la toma tienen tensión mientras el cordón esté enchufado: para intervenir se desenchufa.
 
 Techo, separador y bandeja ya tienen tierra por estar soldados al cuerpo. En el espárrago el orden es: chapa, arandela dentada, ojal del PE del C14, tuerca y contratuerca; encima, otra arandela dentada, los ojales de los cables internos y otra tuerca.
 
@@ -128,8 +127,8 @@ Techo, separador y bandeja ya tienen tierra por estar soldados al cuerpo. En el 
 | 10 | [Cable USB-A → USB-C](componentes/cable-usb-a-usb-c-90-30cm/README.md) | Del borne USB-A nº 1 al USB-C del Solo (W15) | [B0C8FS5FV2](https://www.amazon.es/dp/B0C8FS5FV2) |
 | 12 | [Adaptador AR9271](componentes/adaptador-wifi-ar9271/README.md) | Un USB de la Pi (W25) y el alargo de antena (W26). Es la radio que sale al router del bar (W30); el Wi-Fi interno de la Pi es el punto de acceso del Solo (W29) | [B0CBW6THN1](https://www.amazon.es/dp/B0CBW6THN1) |
 | 13 | [Alargo RP-SMA](componentes/alargo-antena-rp-sma-30cm/README.md) | Del AR9271 al jack de panel del techo (W26) | [B0FJRPC7MN](https://www.amazon.es/dp/B0FJRPC7MN) |
-| 14 | [Fuente LRS-50-5](componentes/meanwell-lrs-50-5/README.md) | Bornes 1 y 2 (W4, W5), 3 (W7), 4 (W12 y el negro de la Pi, W13) y 5 (W11 y el rojo de la Pi, W13), con puntera doble en 4 y 5. Ajustada a 5,10 V | [B06XWRCWZ9](https://www.amazon.es/dp/B06XWRCWZ9) |
-| 15 | [Módulo C14](componentes/modulo-c14-fusible-interruptor/README.md) | Cordón (W1), pestañas al interruptor (W2, W3), salidas a la fuente (W4, W5) y tierra (W6) | [B08Z6FCR5Z](https://www.amazon.es/dp/B08Z6FCR5Z) |
+| 14 | [Fuente LRS-50-5](componentes/meanwell-lrs-50-5/README.md) | Bornes 1 y 2 (W2, W3), 3 (W7), 4 (W12 y el negro de la Pi, W13) y 5 (W11 y el rojo de la Pi, W13), con puntera doble en 4 y 5. Ajustada a 5,10 V | [B06XWRCWZ9](https://www.amazon.es/dp/B06XWRCWZ9) |
+| 15 | [Toma C14](componentes/modulo-c14-fusible-interruptor/README.md) | Cordón (W1), salidas a la fuente (W2, W3) y tierra (W6). Con portafusibles y sin interruptor | [B07CQ54BY4](https://www.amazon.es/dp/B07CQ54BY4) |
 | 16 | [Fusibles T2,5A](componentes/fusibles-ceramicos-5x20-t2-5a/README.md) | En el portafusibles del C14 | [B0956XYTN6](https://www.amazon.es/dp/B0956XYTN6) |
 | 17 | [Cordón Schuko-C13](componentes/cable-schuko-c13-2m/README.md) | Toma de pared → C14 (W1) | [B00AOAJAUC](https://www.amazon.es/dp/B00AOAJAUC) |
 | 18 | [Bornes USB-A](componentes/borne-usb-a-hembra-tornillo/README.md) | Dos bornes: WAGO → cable del Solo (W14, W15) y WAGO → cable de la pantalla (W16, W17) | [B07V86XPL4](https://www.amazon.es/dp/B07V86XPL4) |
@@ -141,8 +140,8 @@ Techo, separador y bandeja ya tienen tierra por estar soldados al cuerpo. En el 
 | 24 | [Arandelas dentadas M4](componentes/arandelas-dentadas-m4/README.md) | En el espárrago, bajo cada ojal y bajo la tuerca | [B0B77J5FZS](https://www.amazon.es/dp/B0B77J5FZS) |
 | 25 | [Espárrago M4 × 20](componentes/esparragos-soldar-m4x20/README.md) | Punto de tierra, soldado al cuerpo (W6 a W10) | [B0GSCLY4D7](https://www.amazon.es/dp/B0GSCLY4D7) |
 | 26 | [Tornillería inox](componentes/tornilleria-inox-m3-m6/README.md) | Fijaciones (fuente, C14, pantalla). Sin función eléctrica. **En la LRS-50-5 la penetración máxima del tornillo M3 es de 3 mm por la base (99 × 82) y de 5 mm por el lateral (99 × 30)**: plano de la hoja de datos, p. 4, «2-M3 L=3.0» y «2-M3 L=5», comprobado en la imagen; la guía y la ficha #26 lo tenían al revés (auditorías 6.1-S F17 y 6-A A6A-14). Como la fuente va tumbada y se fija por la base, el tornillo entra 3 mm como máximo, descontando chapa y arandelas | [B0BGRY2JGX](https://www.amazon.es/dp/B0BGRY2JGX) |
-| 27 | [Kit faston](componentes/kit-faston-aislados/README.md) | Módulo C14 e interruptor (W2, W3, W4, W5, W6) | [B0B4H54KPS](https://www.amazon.es/dp/B0B4H54KPS) |
-| 28 | [Crimpadora y punteras](componentes/crimpadora-y-punteras/README.md) | Punteras en los bornes de la fuente y en las WAGO (W4, W5, W7, W11 a W14, W16, W18). En los bornes 4 y 5, **punteras dobles de 2 × 0,75 mm²** (W11 a W13): comprobar si el kit las trae | [B0FQP6KDL4](https://www.amazon.es/dp/B0FQP6KDL4) |
+| 27 | [Kit faston](componentes/kit-faston-aislados/README.md) | Toma C14 (W2, W3, W6) | [B0B4H54KPS](https://www.amazon.es/dp/B0B4H54KPS) |
+| 28 | [Crimpadora y punteras](componentes/crimpadora-y-punteras/README.md) | Punteras en los bornes de la fuente y en las WAGO (W2, W3, W7, W11 a W14, W16, W18). En los bornes 4 y 5, **punteras dobles de 2 × 0,75 mm²** (W11 a W13): comprobar si el kit las trae | [B0FQP6KDL4](https://www.amazon.es/dp/B0FQP6KDL4) |
 | 29 | [Cables Dupont](componentes/cables-dupont-elegoo-120/README.md) | Extremo de la Pi de los hilos de los pines 8 y 10 (W19 y W20) | [B01NGTXASZ](https://www.amazon.es/dp/B01NGTXASZ) |
 | 30 | [Separadores de nailon M2,5](componentes/separadores-nylon-m2-5/README.md) | Fijan la Pi y el sensor a la caja interior sin unir masas | [B0G4G7WQRM](https://www.amazon.es/dp/B0G4G7WQRM) |
 | 31 | [Pasacables de goma](componentes/pasacables-goma/README.md) | En cada agujero de chapa por donde pase un cable | [B0B5DLWVZ2](https://www.amazon.es/dp/B0B5DLWVZ2) |
@@ -150,14 +149,13 @@ Techo, separador y bandeja ya tienen tierra por estar soldados al cuerpo. En el 
 
 ## 4. Antes de dar tensión
 
-1. **Módulo C14, suelto, sin tensión y sin enchufar, con el fusible T2,5A puesto** (polímetro en continuidad; es el protocolo de la [ficha #15](componentes/modulo-c14-fusible-interruptor/README.md), §4.3 y §8.2):
-   1. Fotografía y numera los terminales de atrás. Apunta el tamaño de las lengüetas.
-   2. Interruptor: mide entre cada par de terminales con él en «O» y en «I». Los pares que cierran en «I» son los polos. Dos pares: caso 1 (bipolar). Un par: caso 2.
-   3. Lámpara: si hay terminales que no cierran nunca, son los de la lámpara; un neón se mide como circuito abierto (OL), así que «abierto» no demuestra que no haya lámpara. Si solo hay cuatro terminales y dos pares que cierran, la lámpara está dentro, entre las salidas. Mira la tensión marcada en el interruptor: tiene que ser de 230 V.
-   4. Fusible: mide entre cada pin del C14 y los terminales del portafusibles, con y sin fusible. El pin que solo cierra con el fusible puesto es el del polo con fusible. Si ningún pin va al portafusibles, el cableado de ese lado es externo y lo decides tú.
-   5. Entre L y N del C14 no debe haber continuidad en ninguna posición del interruptor, ni entre los terminales de un polo y los del otro o los de la lámpara.
-   6. Tierra: mide entre el pin central del C14 y su faston.
-   7. Dibuja el esquema real y busca un esquema de fabricante que coincida. **Si no coincide con ninguno, o si corta un solo polo, el módulo no se cablea:** se sustituye por una entrada bipolar documentada (W2 a W5).
+1. **Toma C14, suelta, sin tensión y sin enchufar, con el fusible T2,5A puesto** (polímetro en continuidad):
+   1. Fotografía las tres pestañas de atrás y apunta su tamaño (la tienda dice 4,8 mm).
+   2. Comprueba que no tiene interruptor ni lámpara: tres pestañas, una por pin.
+   3. Fusible: mide entre cada pin del enchufe y su pestaña, con y sin fusible. El pin que solo cierra con el fusible puesto es el del polo con fusible: su pestaña va al borne 1 de la fuente (W2).
+   4. Entre los dos polos no debe haber continuidad, ni de ninguno de los dos al pin de tierra.
+   5. Tierra: mide entre el pin central y su pestaña.
+   6. Si algo no cuadra, la toma no se cablea. El fusible en un solo polo sigue abierto aunque todo cuadre (W2 y W3).
 2. **Tierra:** continuidad del pin PE del C14 a cada pieza metálica, con 0,1 Ω como máximo. La medida buena se hace con un comprobador que inyecte 10 a 25 A.
 3. **Fuente sola, sin cargas:** comprueba la serigrafía de los bornes contra 1 AC/L, 2 AC/N, 3 FG, 4 −V, 5 +V. Mide entre los bornes 4 y 5 y ajusta el trimmer a **5,10 V como punto de partida**. Después, con todo conectado y encendido, mide en continua y con osciloscopio (20 MHz) en cada carga: en la Pi entre el pin 4 (5 V) y el 6 (GND) **4,90 V o más**; en el ZE29A, en el Solo y en la pantalla, pico por debajo de 5,25 V; rizado en carga típica (nota 7 de la hoja: puede salirse de los 80 mVp-p). Con esas medidas se fija el valor definitivo dentro de la ventana común; si la Pi da menos de 4,90 V, acorta o engorda el latiguillo antes de tocar el trimmer, y nunca pases de 5,12 V. Antes de ajustar, enchufa y desenchufa la fuente sola cinco veces con un minuto entre una y otra: el T2,5A tiene que aguantar el arranque en frío (45 A de pico según la hoja; su nota 6 avisa de que encender y apagar muy seguido alarga el arranque). Si el rizado se sale, un condensador en los bornes del ZE29A es un parche a medir, no una solución (auditoría 6.1-S §6.4). La Pi avisa de subtensión por debajo de 4,63 V ±5 % (ficha #1, §4.1).
 4. **Bornes USB-A:** con el polímetro y sin tensión, continuidad entre el tornillo «+» y el pin 1 (VBUS) del conector hembra, y entre el tornillo «−» y el pin 4 (GND). Con D+ y D− unidos, su orden no importa.
@@ -196,8 +194,8 @@ Techo, separador y bandeja ya tienen tierra por estar soldados al cuerpo. En el 
 
 ### 5.2 Sigue sin confirmar
 
-- **Esquema interno del C14:** cuántos polos corta el interruptor, cuál es el contacto y cuál la lámpara, y qué polo lleva el fusible. Los dos dibujos del vendedor no coinciden y dos reseñas dicen que están mal. Con un enchufe Schuko, que se puede insertar de las dos maneras, un fusible en un solo polo puede quedar en la fase o en el neutro ([ficha #15](componentes/modulo-c14-fusible-interruptor/README.md), §4 y §5). **Cierra con la medida del apartado 4.1, o con un módulo bipolar de esquema documentado.**
-- **Fusible del C14:** el anuncio da dos valores (10 A y 5 A), no dice el tamaño y las reseñas se contradicen sobre si viene. La guía compra el T2,5A de 5 × 20 (#16). **Se mira al recibirlo.** Tampoco consta el ancho y el grosor de las lengüetas ([ficha #27](componentes/kit-faston-aislados/README.md)).
+- **Qué polo lleva el fusible de la toma C14:** se mide (apartado 4, punto 1). Con un enchufe Schuko, que se puede insertar de las dos maneras, un fusible en un solo polo puede quedar en la fase o en el neutro ([ficha #15](componentes/modulo-c14-fusible-interruptor/README.md), §4 y §5). **Cierra con una entrada de portafusibles de dos polos con esquema documentado.**
+- **Toma C14 nueva (B07CQ54BY4):** no he podido leer su anuncio. La tienda de Cablepelado dice que no trae fusible y que las pestañas son de 4,8 mm; el T2,5A de 5 × 20 (#16) se compra aparte. Brida, recorte y tornillos son los típicos del formato: **se miden al recibirla** ([ficha #27](componentes/kit-faston-aislados/README.md)).
 - **Paso y tipo del J1 del ZE29A:** el manual solo da los 4 pines. **Se mide con calibre.**
 - **Cara de los contactos del FFC:** el anuncio no la dice ([ficha #4](componentes/cable-ffc-camara-50cm/README.md)). **Se ve al recibirlo.**
 - **Polaridad del latiguillo micro-USB:** rojo y negro sin más ([ficha #19](componentes/latiguillo-micro-usb-22awg/README.md)). **Se mide.**
@@ -235,7 +233,7 @@ Figura 4 y esta tabla juntan lo que dicen `decisiones-diseno.md` (20-10-2026) y 
 | Cámara (#3) | Caja de arriba, a la izquierda, con la lente en el agujero de Ø10 mm, a media altura del Solo | Lente al frente. El J1 de la cámara está en la cara contraria a la lente, así que la cinta sale hacia atrás | Decidido |
 | Fuente LRS-50-5 (#14) | Caja de arriba, tumbada sobre el separador, a la izquierda y contra la trasera, fijada por la base con M3 que entren 3 mm como máximo (hoja de datos, p. 4) | Qué lado lleva los bornes: sin decidir. Tienen que quedar al alcance de un destornillador, igual que el trimmer, y con tapa sobre los bornes 1, 2 y 3 | ⚠ Lado de los bornes y tapa sin decidir |
 | WAGO 221-415 ×2 (#20) | Junto a la fuente | Sin decidir | ⚠ Posición sin decidir |
-| Módulo C14 (#15) | Trasera de la caja de arriba, detrás del Solo | El C13 entra por detrás; los faston quedan dentro | ⚠ Hueco sin dibujar |
+| Toma C14 (#15) | Trasera de la caja de arriba, detrás del Solo | El C13 entra por detrás; los faston quedan dentro | ⚠ Hueco sin dibujar |
 | Espárrago de tierra (#25) | Soldado por dentro, cerca de la fuente | — | ⚠ Soldadura pendiente |
 | Antena y jack RP-SMA (#12, #13) | Techo, taladro de Ø6,5 mm | La antena sale por fuera y el alargo de 30 cm baja por el taladro | ⚠ Posición del taladro sin decidir |
 | Caja interior suspendida | Detrás de la pantalla: 167 × 63,5 × 118 mm, sobre muelles, con la Pi y el ZE29A | Se extrae hacia la izquierda | ⚠ Falta el agujero lateral y la altura exacta |
@@ -271,7 +269,7 @@ El Project tiene un segundo documento de diseño, firmado por Guillermo el 21-10
 | Tubo del soplido | Boquilla → toma de aire del ZE29A | Boquilla → T de presión → reductor de latón → T de alcohol → escape por una rejilla del lateral izquierdo | Cambia W28 |
 | Ventanas | Solo 78 × 78, cámara Ø10, pantalla 176 × 116 | Solo 85 × 85, cámara Ø12, pantalla 159 × 91, dos policarbonatos de 5 mm | Nada eléctrico |
 
-Lo demás de las conexiones (fuente, tierra del C14 a la fuente, W2 a W5, UART, HDMI, bornes USB-A) es igual en los dos. **Este documento no se ha rehecho sobre el diseño A.** Si es el vigente, hay que repasar W1, W6 a W10, W23, W24, W26 y W28, y rehacer la figura 4.
+Lo demás de las conexiones (fuente, tierra del C14 a la fuente, W2 y W3, UART, HDMI, bornes USB-A) es igual en los dos. **Este documento no se ha rehecho sobre el diseño A.** Si es el vigente, hay que repasar W1, W6 a W10, W23, W24, W26 y W28, y rehacer la figura 4.
 
 ## 7. Qué dicen las auditorías y qué queda cerrado aquí
 
@@ -286,7 +284,7 @@ Las dos auditorías (`analisis-auditoria.md`, 20-10-2026, y `analisis-auditoria-
 | H16 | El Solo queda dentro de acero: la Pi como punto de acceso | **Cerrado en papel:** W29 y W30, figura 2. Falta medir la señal |
 | Pantalla 1 A (auditoría 2.0) | La pantalla consume 5 W | **Cerrado:** W16 y pico total 5 A |
 | Fusible I²t (auditoría 2.0) | Quitar los 1,5 / 22 A²s sin fuente | No aparecen en este documento; el T2,5A se comprueba enchufando la fuente sola cinco veces (apartado 4, punto 3). La [ficha #16](componentes/fusibles-ceramicos-5x20-t2-5a/README.md) da el I²t con fuente |
-| C14 (auditoría 2.0) | Comprobar que corta los dos polos | **Cerrado:** protocolo del apartado 4, punto 1, y casos 1 y 2 en W2 a W5 |
+| C14 (auditoría 2.0) | Comprobar que corta los dos polos | **Ya no aplica:** desde el 25-10-2026 la toma no tiene interruptor. Queda qué polo lleva el fusible (apartado 4, punto 1) |
 | Crimpado (auditoría 2.0) | La crimpadora de punteras no vale para faston ni ojales | En 5.2 y en `pendientes.md`: hace falta una matriz para terminales aislados |
 | Kit WAGO (auditoría 2.0) | Son 25 de 2, 25 de 3 y 25 de 5 vías | **Cerrado:** fila 20 del apartado 3; la 221-413 de W12b sale de ahí |
 | H25 | Cables fijo → caja suspendida sin topes | Bucle de holgura y bridas en 6.2; los topes son del CAD |
@@ -307,7 +305,7 @@ Están en [`auditorias/2026-10-21-auditor-6.1-s/`](auditorias/2026-10-21-auditor
 | Lo que piden las cuatro | Qué hago aquí | Qué sigue abierto |
 |---|---|---|
 | Bornes de la fuente 1 L, 2 N, 3 FG, 4 −V, 5 +V en todos los documentos (6.1-S F01, 6-A A6A-01, P H3) | Ya era así; el auditor corrigió las fichas. Apartado 4, punto 3: cotejar la serigrafía de la unidad | Cotejo físico |
-| C14 genérico: no deducir el esquema contando terminales; sustituir por entrada bipolar documentada; no «aceptar el riesgo» (6.1-S F02–F03, 6-A A6A-02, P H1, 5.6 C-02) | W2 a W5 reescritos: el módulo solo se usa si su medida coincide con un esquema de fabricante y corta los dos polos; si no, entrada bipolar documentada | Referencia exacta del sustituto |
+| C14 genérico: no deducir el esquema contando terminales; sustituir por entrada bipolar documentada; no «aceptar el riesgo» (6.1-S F02–F03, 6-A A6A-02, P H1, 5.6 C-02) | Desde el 25-10-2026 la toma no tiene interruptor (W2 y W3). El fusible sigue en un solo polo: falta una entrada de portafusibles de dos polos documentada | Referencia exacta del sustituto |
 | Protección del troncal y de cada rama, con calibres confirmados por medida (6.1-S F04, 6-A A6A-03, P H2, 5.6 C-03) | F 5 A en el troncal, la Pi directa a la fuente con F 3 A, y 2 / 2 / 1 A en las demás ramas (#32). Las 5.6 y 6.1-S prefieren e-fuses con limitación: queda como mejora | Ensayo de corto con cargas ficticias; selectividad |
 | 5,10–5,12 V de partida, medir en cada carga, no compensar caídas con el trimmer; nota 7 del rizado (6.1-S F05, 6-A A6A-04, P H6/H15, 5.6 C-05) | W11 y apartado 4, punto 3 | La medida con osciloscopio |
 | Carga del Solo sin demostrar: validar con el cargador oficial; Rp 56 kΩ; borne sin corriente nominal (6.1-S F06, 6-A A6A-05, P H7, 5.6 C-06) | W14 y W15 reescritos; 5.2 | Ensayo con el Solo real y respuesta de SumUp |
@@ -332,7 +330,7 @@ Están en [`auditorias/2026-10-21-auditor-6.1-s/`](auditorias/2026-10-21-auditor
 - Guía de montaje eléctrico v2 (20-10-2026), apartados 1, 4, 5 y 8: lista de compra, dónde va cada cosa, cableado punto a punto y orden de pruebas.
 - `decisiones-diseno.md` (20-10-2026): medidas de la carcasa, alturas, ventanas y pendientes de la caja interior.
 - `diseno-cajon-A.md` (21-10-2026) y `cajon/specs.py`, del Project: el diseño A del apartado 6.3.
-- Anuncios de Amazon.es de las piezas #4, #5, #6, #7, #9, #10, #11, #15, #18 y #19, leídos el 21-10-2026: [resumen y origen de cada dato](montaje-general/anuncios-amazon-21-10-2026.md).
+- Anuncios de Amazon.es de las piezas #4, #5, #6, #7, #9, #10, #18 y #19, leídos el 21-10-2026: [resumen y origen de cada dato](montaje-general/anuncios-amazon-21-10-2026.md).
 - Las 31 fichas de [`componentes/`](componentes/README.md), con sus discrepancias con la guía.
 - Datasheet LRS-50 de Mean Well ([copia local](componentes/meanwell-lrs-50-5/datasheets/LRS-50-SPEC.pdf), versión 2025-04-07): numeración de los bornes (1 AC/L, 2 AC/N, 3 FG, 4 DC −V, 5 DC +V), rizado 80 mVp-p, regulación de carga ±1 %, ajuste 4,5–5,5 V, sobrecarga 110–150 % en modo hipo, arranque en frío 45 A, aislamiento salida–FG 1,25 kVAC.
 - Manual V1.1 del ZE29A de Winsen ([copia local](componentes/winsen-ze29a/datasheets/ze29a-c2h5oh.pdf)): pines 1 Vin, 2 GND, 3 TXD y 4 RXD, UART a 3,3 V TTL, 5 V ±0,3 V, < 500 mA; tramas y checksum; notas 1, 4 y 6 sobre el tubo de soplido (barrera, orden de las tomas, entrada sin bloquear).

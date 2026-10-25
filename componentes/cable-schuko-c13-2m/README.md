@@ -1,6 +1,6 @@
 # Cable de red Schuko (CEE 7/7) a C13, 2 m
 
-Une la toma de pared del bar con la base C14 de la máquina (pieza #15, con fusible e interruptor). Es lo único que conecta la máquina con la red de 230 V. El consumo de la máquina es de unos 14 W (0,1 A) según la guía de montaje; el pico de arranque de la fuente (unos 45 A) dura milisegundos.
+Une la toma de pared del bar con la base C14 de la máquina (pieza #15, con portafusibles y, desde el 25-10-2026, sin interruptor: la máquina se apaga desenchufando este cable). Es lo único que conecta la máquina con la red de 230 V. El consumo de la máquina es de unos 14 W (0,1 A) según la guía de montaje; el pico de arranque de la fuente (unos 45 A) dura milisegundos.
 
 - **Compra:** ASIN B00AOAJAUC, 7,00 € (precio de la hoja de componentes del 19-20-10-2026). Número 17 de la hoja.
 - **Aviso:** Amazon bloquea el acceso a mi herramienta. **No he visto el anuncio.** No sé qué sección de cable, qué tipo de cable, qué marcas ni qué longitud real tiene este cable concreto. El precio y la referencia son los de tu hoja.
@@ -139,7 +139,7 @@ Lo que he visto impreso en cable armonizado (no es la lista de la norma):
 
 ### 5.1 Polaridad, colores y continuidad pin a pin
 
-- **El Schuko es reversible.** El enchufe entra de dos formas y la fase puede estar en cualquiera de las dos patillas ([Wikipedia: Schuko](https://en.wikipedia.org/wiki/Schuko)). Por tanto, el hilo marrón del cordón puede ser fase o neutro en la pared. Qué implica para un fusible o un interruptor unipolar en el C14 se trata en la **ficha del módulo C14 (#15)**; aquí no lo repito.
+- **El Schuko es reversible.** El enchufe entra de dos formas y la fase puede estar en cualquiera de las dos patillas ([Wikipedia: Schuko](https://en.wikipedia.org/wiki/Schuko)). Por tanto, el hilo marrón del cordón puede ser fase o neutro en la pared. Qué implica para un fusible de un solo polo en el C14 se trata en la **ficha del módulo C14 (#15)**; aquí no lo repito.
 - **Código de colores del cordón:** marrón (L), azul (N), verde-amarillo (PE). En cordones armonizados el código es el de HD 308 ([Letronic](https://www.letronic.de/en/produkte/datenblatt/353/h05vv-f-acc-to-vde-0285)). Un cordón moldeado no deja ver los colores sin cortarlo: solo comprobarás la identidad por continuidad (apartado 7).
 - **Tierra:** el CEE 7/7 tiene **clips de tierra a los dos lados del cuerpo y, además, un contacto hembra** para el pivote de las tomas francesas/belgas ([Wikipedia: CEE 7](https://en.wikipedia.org/wiki/CEE_7)). El cable debe llevar tierra a los tres puntos del enchufe y al pin de tierra del C13. Compruébalo con continuidad: clip izquierdo, clip derecho y contacto hembra, cada uno contra el pin de tierra del C13.
 - **Posición de L y N en el C13:** el C13 es polarizado y con tierra ([Wikipedia: IEC 60320](https://en.wikipedia.org/wiki/IEC_60320)), pero **no he podido ver el dibujo de la norma** para indicar qué contacto es L y cuál N. Para el cordón no hace falta: solo hay que comprobar que cada patilla del enchufe va a un único contacto del C13 y que no hay cruces.

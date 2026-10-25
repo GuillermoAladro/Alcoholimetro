@@ -49,7 +49,7 @@ def puntos(L):
         ze_alc=(zx + 22, zy - 4, zz + 39), ze_pre=(zx + 66, zy - 4, zz + 39),
         psu_L=(fx - 7, Yin - 31.5, fz + 64.5), psu_N=(fx - 7, Yin - 31.5, fz + 55), psu_FG=(fx - 7, Yin - 31.5, fz + 45.5),
         psu_neg=(fx - 7, Yin - 31.5, fz + 36), psu_pos=(fx - 7, Yin - 31.5, fz + 26.5),
-        c14_in=(Xin1 + T - 29, c14y, c14z), boq=(L["boquilla"][0], 0.0, L["boquilla"][1]),
+        c14_in=(Xin1 + T - 32, c14y, c14z), boq=(L["boquilla"][0], 0.0, L["boquilla"][1]),
     )
     for k, d in enumerate(L["usb"]):
         x, y, z = d["at"]
