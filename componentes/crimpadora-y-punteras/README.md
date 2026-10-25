@@ -39,7 +39,7 @@ Es la única herramienta de crimpado de la hoja de compra. Sirve para poner punt
 
 ## 2. Qué crimpa y qué no crimpa esta herramienta
 
-Esta es la observación que las fichas de los cables JST-XH (apartados 5.11 y 6.1), del módulo C14 (apartado 6.2), del pulsador (apartado 9.3), de los ojales (#23, apartado 5.1) y de los faston (#27, apartado 4.1) señalan como hueco de la guía. Las fichas de #23 y #27 son deducciones de sus autores a partir de catálogos; ninguna había visto la herramienta. Aquí añado lo que dicen las fuentes de herramientas.
+Esta es la observación que las fichas de los cables JST-XH (apartados 5.11 y 6.1), del módulo C14 (apartado 6.2), de los ojales (#23, apartado 5.1) y de los faston (#27, apartado 4.1) señalan como hueco de la guía. Las fichas de #23 y #27 son deducciones de sus autores a partir de catálogos; ninguna había visto la herramienta. Aquí añado lo que dicen las fuentes de herramientas.
 
 | Terminal | Pieza de la hoja | ¿La crimpa esta herramienta? | Por qué | Qué hace falta |
 |---|---|---|---|---|

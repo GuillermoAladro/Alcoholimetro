@@ -1,6 +1,6 @@
 # Lista de compra (Amazon.es)
 
-Los 32 componentes del alcoholímetro con su enlace de compra (31 de la guía más el kit de fusibles por rama que añadió la auditoría). El orden de montaje y las pruebas están en [MONTAJE PASO A PASO](MONTAJE-PASO-A-PASO.md); para el banco hace falta además el material de su fase 0. Es la lista de la guía de montaje eléctrico v2 (20-10-2026, del Project), con la misma numeración que las fichas de [`componentes/`](componentes/README.md) y que el [MONTAJE GENERAL](MONTAJE-GENERAL.md).
+Los 31 componentes del alcoholímetro con su enlace de compra (30 de la guía, sin el pulsador, más el kit de fusibles por rama que añadió la auditoría). El orden de montaje y las pruebas están en [MONTAJE PASO A PASO](MONTAJE-PASO-A-PASO.md); para el banco hace falta además el material de su fase 0. Es la lista de la guía de montaje eléctrico v2 (20-10-2026, del Project), con la misma numeración que las fichas de [`componentes/`](componentes/README.md) y que el [MONTAJE GENERAL](MONTAJE-GENERAL.md).
 
 - Enlace de cada pieza: `https://www.amazon.es/dp/<ASIN>`. El ASIN es la referencia fija; **los precios son los vistos en Amazon.es el 19 y 20-10-2026 y cambian a menudo.**
 - Todo se puede pedir en Amazon.es, que es la regla del proyecto.
@@ -8,7 +8,7 @@ Los 32 componentes del alcoholímetro con su enlace de compra (31 de la guía m�
 
 > **Esta lista es la del diseño de 20-10-2026.** El Project tiene además `diseno-cajon-A.md` (21-10-2026), que cita su propia `Lista_de_piezas.xlsx` y añade piezas que aquí no están (por ejemplo cuatro portafusibles de pie). Esa hoja no está en el repositorio. Ver [MONTAJE GENERAL, apartado 6.3](MONTAJE-GENERAL.md).
 
-> **22-10-2026 · Sin botón en todo el proyecto.** La máquina no lleva pulsador: arranca cuando la cámara detecta a alguien. Todo lo que este documento dice del pulsador (#11) queda anulado: no se compra. Detalle en [DECISIONES](DECISIONES.md).
+> **Sin botón.** La máquina no lleva pulsador: el SumUp Solo está siempre esperando tarjeta y la prueba empieza al pagar. Por eso falta el número 11, que era el pulsador ([DECISIONES](DECISIONES.md)).
 
 ## Núcleo (1 a 13)
 
@@ -24,11 +24,10 @@ Los 32 componentes del alcoholímetro con su enlace de compra (31 de la guía m�
 | 8 | Tubo de soplido | Manguera de silicona de 6 mm, 1 m | [B0D9FJY1SG](https://www.amazon.es/dp/B0D9FJY1SG) | 6,99 € | [ficha](componentes/tubo-silicona-6mm/README.md) | Une la boquilla con el sensor |
 | 9 | Lector de tarjetas | SumUp Solo con base de carga | [B0C9V3LXTF](https://www.amazon.es/dp/B0C9V3LXTF) | 72,18 € | [ficha](componentes/sumup-solo/README.md) | Quedaba 1 en stock. La base de carga no se usa en este diseño |
 | 10 | Cable del Solo | USB-A → USB-C acodado 90°, 30 cm | [B0C8FS5FV2](https://www.amazon.es/dp/B0C8FS5FV2) | 4,99 € | [ficha](componentes/cable-usb-a-usb-c-90-30cm/README.md) | El USB-C está en el canto de abajo del Solo; el conector baja por una ranura de 14 × 9 mm del separador |
-| 11 | ~~Botón de inicio~~ | ~~EG STARTS arcade de 30 mm (5 uds.)~~ | ~~[B01N11BDX9](https://www.amazon.es/dp/B01N11BDX9)~~ | ~~10,88 €~~ | [ficha](componentes/pulsador-arcade-30mm/README.md) | **Eliminado el 22-10-2026: no se compra.** El proyecto no lleva botón |
 | 12 | Wi-Fi | Adaptador USB **AR9271** con antena desmontable | [B0CBW6THN1](https://www.amazon.es/dp/B0CBW6THN1) | 16,24 € | [ficha](componentes/adaptador-wifi-ar9271/README.md) |  |
 | 13 | Alargo de antena | RP-SMA macho-hembra, 30 cm (2 uds.) | [B0FJRPC7MN](https://www.amazon.es/dp/B0FJRPC7MN) | 9,99 € | [ficha](componentes/alargo-antena-rp-sma-30cm/README.md) | Saca la antena por el techo |
 
-Subtotal: **405,25 €** (416,13 € con el pulsador, que ya no se compra).
+Subtotal: **405,25 €**.
 
 ## Alimentación, protección y material de montaje (14 a 32)
 
@@ -58,7 +57,7 @@ Subtotal: **230,44 €**.
 
 ## Total
 
-**Primer pedido: 635,69 €** sin el pulsador (646,57 € con él; una unidad de cada línea, con los precios de arriba; la guía, sin el kit de fusibles, lo redondea a unos 640 €). Unos 160 € son herramientas y kits que sobran en pedidos siguientes: crimpadora, WAGO, rollos de cable y similares. La guía calcula unos 470 € de electrónica por cada máquina siguiente, sin contar la chapa.
+**Primer pedido: 635,69 €** (una unidad de cada línea, con los precios de arriba). Unos 160 € son herramientas y kits que sobran en pedidos siguientes: crimpadora, WAGO, rollos de cable y similares. La guía calcula unos 470 € de electrónica por cada máquina siguiente, sin contar la chapa.
 
 ## Plan B de conexión (si el Wi-Fi del bar no vale)
 
@@ -72,8 +71,7 @@ No está en las 31 fichas. Lo propone la guía por si el Wi-Fi del bar no sirve:
 ## Lo que cambian los anuncios leídos el 21-10-2026
 
 - **#15 Módulo C14:** la guía dice que trae un fusible de 10 A que hay que cambiar. El anuncio da dos valores (10 A y 5 A) sin tamaño y las reseñas se contradicen sobre si viene. Se compra el T2,5A (#16) igualmente y se mide el esquema interno del módulo antes de cablearlo.
-- **#11 Pulsador** (ya no se usa, ver arriba): la guía habla de NO, COM y NC. El pulsador solo tiene dos contactos de interruptor (más dos del LED), así que no hay NO, COM ni NC.
 - **#7 Clavija XH:** la guía la compra «por si el ZE29A no trae su cable»; el anuncio del ZE29A no dice si lo trae.
 - **#9 SumUp Solo:** el USB-C está en el canto de abajo (foto del anuncio).
 - **#32 (nuevo):** la auditoría 1.0 (H04) y las cuatro auditorías del repositorio piden fusible en el troncal y en cada rama de 5 V. El kit B07KQ46H6K trae 5 portafusibles y fusibles de 1, 2, 3 y 5 A; detalle en [MONTAJE GENERAL](MONTAJE-GENERAL.md), W11 a W18.
-- **Piezas que las auditorías del 21-10-2026 piden y que no están en esta lista** (ver MONTAJE GENERAL, 5.2): tapa aislante para los bornes de 230 V de la fuente; arandelas aislantes para el jack RP-SMA del techo; dos punteras dobles de 2 × 0,75 mm² para los bornes 4 y 5 de la fuente, si el kit #28 no las trae; tornillería M2 para la cámara (sus taladros son de 2,2 mm); resistencias de 1 kΩ para la UART y el pulsador si se adoptan; y, si el módulo C14 resulta de un polo o sin esquema, una entrada C14 bipolar documentada que lo sustituya.
+- **Piezas que las auditorías del 21-10-2026 piden y que no están en esta lista** (ver MONTAJE GENERAL, 5.2): tapa aislante para los bornes de 230 V de la fuente; arandelas aislantes para el jack RP-SMA del techo; dos punteras dobles de 2 × 0,75 mm² para los bornes 4 y 5 de la fuente, si el kit #28 no las trae; tornillería M2 para la cámara (sus taladros son de 2,2 mm); resistencias de 1 kΩ para la UART si se adoptan; y, si el módulo C14 resulta de un polo o sin esquema, una entrada C14 bipolar documentada que lo sustituya.

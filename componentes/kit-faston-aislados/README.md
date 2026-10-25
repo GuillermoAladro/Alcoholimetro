@@ -1,6 +1,6 @@
 # Kit de terminales faston aislados (hembra y macho) de 2,8, 4,8 y 6,3 mm
 
-Terminales de pala (faston) para dos usos. Los de 4,8 mm (hembra aislada) van crimpados en los puentes de 1,5 mm² del módulo C14 (#15) y en los terminales del interruptor: **son conexiones de 230 V**. Los de 2,8 mm van en el cable de señal del pulsador arcade (#11): **no es 230 V**. Los machos del kit no tienen sitio en el montaje de la guía (el módulo y el pulsador ya traen lengüeta) (mío).
+Terminales de pala (faston) para la toma de red. Los de 4,8 mm (hembra aislada) van crimpados en los puentes de 1,5 mm² del módulo C14 (#15) y en los terminales del interruptor: **son conexiones de 230 V**. La máquina no lleva botón, así que los de 2,8 mm sobran. Los machos del kit no tienen sitio en el montaje de la guía (el módulo ya trae lengüeta) (mío).
 
 - **Compra:** ASIN B0B4H54KPS, 10,99 € (precio de la hoja de componentes del 19-20/10/2026). Es la pieza nº 27 de la hoja.
 - **Es una pieza de 230 V.** Léela entera antes de crimpar nada. Si no tienes experiencia con red, que un electricista revise este cableado.
@@ -30,7 +30,6 @@ Terminales de pala (faston) para dos usos. Los de 4,8 mm (hembra aislada) van cr
 - **La crimpadora #28 (autoajustable, de punteras) probablemente no es la herramienta.** Knipex vende herramientas distintas para punteras (perfil hexagonal o cuadrado) y para terminales aislados (perfil "F" u oval, 3 posiciones, 0,5-6 mm²). Que una de punteras crimpe mal un faston aislado es **mi inferencia**; la comprobación es una prueba de tirón sobre 5 crimpados de prueba ([apartado 4.1](#41-herramienta-la-crimpadora-28)).
 - **La hembra tiene que casar con la lengüeta en ancho y en espesor.** TE lo dice sin matices: la serie del receptáculo debe coincidir con el ancho y el espesor de la lengüeta ([TE](https://mouser.com/pdfdocs/TEConnectivityFASTONQuickReferenceGuide.pdf) ([copia local](datasheets/TEConnectivityFASTONQuickReferenceGuide.pdf))). Existen 0,5 y 0,8 mm de espesor y mi kit no dice cuál trae. El módulo C14 de la hoja probablemente trae 4,8 × 0,8 (ficha del C14, sin confirmar para tu módulo).
 - **La corriente no es el problema; el contacto sí.** La máquina toma décimas de amperio de la red (guía §3 y ficha del C14). Los terminales de referencia aguantan entre 5 y 28 A según tamaño y hilo (apartado 2.4). Lo que puede fallar es un crimpado flojo o una hembra que se suelta, y **un faston suelto en la tierra no se nota**: la máquina sigue funcionando sin protección ([apartado 4.3](#43-retención-y-tirones)). Conviene **aislante de nylon (PA) y no de PVC**: el PVC se da para 70 °C (Klauke) y 75 °C (Vogt), con 60 °C en la tabla de carcasas de TE, los pines de un C14 se dimensionan a 70 °C y el PA llega a 105 °C ([apartado 2.4](#24-corriente-tensión-y-temperatura)).
-- **Para el pulsador, un faston genérico "rojo" no sirve para un hilo de 22-24 AWG.** Vogt tiene hembras de 2,8 mm para 0,14-0,5 mm² (26-22 AWG); existen pares de hilos ya crimpados ([apartado 4.4](#44-cableado-del-proyecto)).
 
 ## 2. Especificaciones
 
@@ -39,7 +38,7 @@ Terminales de pala (faston) para dos usos. Los de 4,8 mm (hembra aislada) van cr
 | Característica | Valor | Fuente |
 |---|---|---|
 | Producto | Kit de terminales faston aislados de 2,8, 4,8 y 6,3 mm (hembra y macho) | Hoja de compra #27 |
-| Uso | "Para la toma C14 y el pulsador" | Hoja de compra y guía §1 |
+| Uso | "Para la toma C14" | Hoja de compra y guía §1 |
 | Precio | 10,99 € | Hoja de compra |
 | Número de piezas, colores, rango de sección, material, aislante, espesor de lengüeta, herramientas incluidas | **No constan** | Sin verificar |
 
@@ -47,7 +46,7 @@ Terminales de pala (faston) para dos usos. Los de 4,8 mm (hembra aislada) van cr
 
 | Ancho × espesor | En pulgadas | Dónde se ve | Fuente |
 |---|---|---|---|
-| 2,8 × 0,5 mm | .110 × .020 | TE (serie 110); pulsadores arcade de Adafruit y Sanwa son de 2,8 mm | [TE](https://mouser.com/pdfdocs/TEConnectivityFASTONQuickReferenceGuide.pdf) ([copia local](datasheets/TEConnectivityFASTONQuickReferenceGuide.pdf)), ficha del pulsador |
+| 2,8 × 0,5 mm | .110 × .020 | TE (serie 110) | [TE](https://mouser.com/pdfdocs/TEConnectivityFASTONQuickReferenceGuide.pdf) ([copia local](datasheets/TEConnectivityFASTONQuickReferenceGuide.pdf)) |
 | 2,8 × 0,8 mm | .110 × .032 | Klauke 8201B, Vogt 389808, RND 465-00517 | [Bürklin](https://buerklin.com/en/p/klauke/flat-plugs/8201b/07F6765), [Vogt](https://docs.rs-online.com/8033/A700000011290009.pdf) ([copia local](datasheets/A700000011290009.pdf)), [Distrelec](https://docs.rs-online.com/f28c/A700000011111237.pdf) ([copia local](datasheets/A700000011111237.pdf)) |
 | 4,8 × 0,5 mm | .187 × .020 | TE, Cimco, Klauke 8302B (según Bürklin) | [TE](https://mouser.com/pdfdocs/TEConnectivityFASTONQuickReferenceGuide.pdf) ([copia local](datasheets/TEConnectivityFASTONQuickReferenceGuide.pdf)), [Conrad](https://asset.conrad.com/media10/add/160267/c1/-/de/000737405DS01/tehnicni-podatki-737405-ploscati-tulec-sirina-63-mm-debelina-08-mm-180-delno-izoliran-modre-barve-cimco-180232-1-kos.pdf) ([copia local](datasheets/tehnicni-podatki-737405-ploscati-tulec-sirina-63-mm-debelina-08-mm-180-delno-izoliran-modre-barve-cimco-180232-1-kos.pdf)), [Bürklin](https://buerklin.com/en/p/klauke/flat-plugs/8302b/07F6769) |
 | 4,8 × 0,8 mm | .187 × .032 | TE, Cimco, RND 465-00513. Es el de los módulos C14 genéricos y Schurter según la ficha del C14 | [TE](https://mouser.com/pdfdocs/TEConnectivityFASTONQuickReferenceGuide.pdf) ([copia local](datasheets/TEConnectivityFASTONQuickReferenceGuide.pdf)), [Distrelec](https://docs.rs-online.com/f28c/A700000011111237.pdf) ([copia local](datasheets/A700000011111237.pdf)) |
@@ -113,7 +112,6 @@ Los números de página son los que dio mi herramienta de lectura sobre el PDF d
 |---|---|---|---|
 | Marrón y azul del C14 al interruptor, y del interruptor a la fuente | 1,5 mm² flexible | Hembra aislada **azul** (1,5-2,5 mm²), 4,8 × 0,8 si el módulo es 4,8 × 0,8, de **PA** | Aprobar la prueba de tirón (apartado 4.2) |
 | Verde-amarillo del pin de tierra del C14 | 1,5 mm² flexible | Igual, más largo que L y N | Mejor con retención o soldado (apartado 4.3) |
-| Pulsador al pin de la Pi | 0,14-0,34 mm² (26-22 AWG, según el hilo) | Hembra de 2,8 mm para 0,14-0,5 mm², **no la roja genérica** | Apartado 4.4 |
 
 ## 3. Documentos oficiales y normas
 
@@ -228,19 +226,11 @@ Fuentes: [Cirris](https://cirris.com/crimp-pull-testers-pullout-force-per-wire-s
 | Puentes C14 a interruptor (L y N), dos extremos | 4 | 4,8 mm (a confirmar) |
 | Interruptor a fuente (L y N), solo el extremo del interruptor | 2 | Igual |
 | Tierra, pin del C14 | 1 | 4,8 o 6,3 mm (a confirmar) |
-| Pulsador | 2 | 2,8 mm |
-| **Total por máquina** | **unas 7 para 230 V + 2 para el pulsador** | |
+| **Total por máquina** | **unas 7, todas de 230 V** | |
 
 Suma una reserva de crimpados de prueba y de errores. Un kit de cientos de piezas sobra.
 
 **Tierra con faston.** La guía dice "Faston / ojal M4" para el pin de tierra del C14. La ficha del C14 habla del "terminal faston" del pin de tierra y de los faston estañados de 4,8 × 0,8 de Schurter KD ([ficha del C14](../modulo-c14-fusible-interruptor/README.md)); no es raro, pero tampoco está confirmado para tu módulo. Lo que hay que añadir es la medida de continuidad: la guía (§6) pide 0,1 Ω desde el pin de tierra del C14 a cada pieza metálica con un comprobador de 10-25 A. **Esa medida es la que detecta un faston de tierra flojo.** No he leído la cláusula de EN 60335-1 sobre conexiones de tierra (**sin verificar** si admite faston).
-
-**Pulsador (2,8 mm, señal).**
-
-- Hay que medir el ancho y el **espesor** de las lengüetas del pulsador (2,8 × 0,5 o 2,8 × 0,8) y comprar la hembra que coincida. La ficha del pulsador dice que el botón EG STARTS de este ASIN no publica terminales.
-- **¿Hay faston hembra de 2,8 mm para un hilo de 22 AWG (0,34 mm²)?** Sí, pero **no en el rojo genérico**. El rojo estándar es 0,5-1,0 mm² (Klauke 8201B: AWG 20-17) o 0,5-1,5 mm² (RND). Vogt tiene una serie de 2,8 mm (2,8 × 0,5 y 2,8 × 0,8) de **0,14-0,5 mm² (26-22 AWG)** en PVC, art. 389805 y 389808 ([Vogt](https://docs.rs-online.com/8033/A700000011290009.pdf) ([copia local](datasheets/A700000011290009.pdf))). TE tiene un violeta de 26-22 AWG en su gama Ultra-Fast ([TE 82004, pp. 91-92](https://docs.rs-online.com/1f29/A700000015454362.pdf) ([copia local](datasheets/A700000015454362.pdf))). Con 24 AWG (0,2 mm²) y un rojo de 0,5-1,0 mm², el crimpado puede quedar flojo (mío).
-- **Alternativas para el pulsador** (mías): usar para el pulsador un hilo de 0,5 mm² (20 AWG) con el rojo genérico; soldar el hilo a la lengüeta del pulsador (Adafruit dice que soldar a los conectores de sus botones es válido: [Adafruit](https://learn.adafruit.com/arcade-buttons?view=all)); o comprar hilos ya crimpados, como los "quick-connect wire pairs" de 0,11" (2,8 mm), 20 cm, de Adafruit (PID 1152, 10 uds., 4,95 USD), que tienen un conector JST XH de 2 pines en el otro extremo (se puede cortar). Adafruit no dice a qué botones encajan ni qué calibre de hilo llevan. En el pulsador el riesgo es bajo (3,3 V y unos 60 µA: ficha del pulsador).
-- La guía propone un solo hilo con Dupont hembra en la Pi y faston en el pulsador. Ese hilo tendría el calibre del Dupont (fino); la ficha del pulsador ya lo marca como pendiente. El calibre de los Dupont de ELEGOO (#29) **no lo he verificado**.
 
 ## 5. Fallos, bugs y problemas conocidos
 
@@ -259,7 +249,6 @@ La evidencia es **escasa y casi toda indirecta**: no encontré reseñas técnica
 | 9 | Sin aprobación (UL 310, VDE) ni tensión declarada | Media | TE 82004 (piezas no aprobadas); Phoenix, Klauke, Vogt sin tensión |
 | 10 | Error de uso: estañar, pelar largo, dos hilos por terminal | Media | Apartado 4.2 |
 | 11 | Terminal vivo accesible al público | Media-alta | Mío |
-| 12 | Hilo fino del pulsador en un faston de 0,5-1,0 mm² | Baja | Vogt, Klauke |
 
 ### 5.1 Crimpado con la herramienta equivocada
 Ver apartado 4.1. Es un riesgo probable porque el kit y la crimpadora son piezas distintas de la hoja, y la hoja describe la #28 como "autoajustable" y "punteras".
@@ -299,7 +288,6 @@ Hazlo **antes de crimpar nada**, con el módulo C14 en la mano. Compra dos kits 
 |---|---|---|---|
 | Qué trae el kit | Cuenta por tamaño; separa por ancho y color | Los tamaños y colores corresponden al anuncio | Mío |
 | Lengüeta del módulo C14 | Calibre digital: ancho (4,8 o 6,3) y **espesor** (0,5 u 0,8). Anota si hay agujero o hendidura | Lo que midas manda sobre lo que diga el vendedor | Ficha del C14, apartado 8 |
-| Lengüeta del pulsador | Igual (2,8 × 0,5 o 2,8 × 0,8) | Igual | Mío |
 | Hembra de prueba | Enchufa una hembra sin crimpar en cada lengüeta | Entra con esfuerzo moderado, sin holgura lateral, y **no se cae** al girar el módulo boca abajo | Mío (TE: ancho y espesor deben coincidir) |
 | Aislante | Envase o anuncio: PA/nylon o PVC. Si no lo dice, trátalo como PVC | PA | Apartados 2.4 y 5.3 |
 | Barril | Costura cerrada, sin rebabas ni óxido | Sí | Mío |
@@ -323,16 +311,15 @@ Solo si el kit resulta débil o la prueba de tirón falla. **No he comprobado di
 | # | La guía / mi planteamiento inicial dice | Lo que he encontrado | Fuente |
 |---|---|---|---|
 | 1 | Guía §5.1: "Faston hembra aislado" para los puentes de 1,5 mm² | Sin dato de tamaño, espesor ni rango de sección. **1,5 mm² cae entre el rojo y el azul**: azul (1,5-2,5) según TE, Klauke, Vogt, Cimco; rojo (0,5-1,5) también en Phoenix y RND | Apartado 2.3 |
-| 2 | Guía §5.3: "Dupont hembra en la Pi · faston 2,8 mm en el pulsador" | 22-24 AWG (0,2-0,34 mm²) queda por debajo del rango del rojo genérico (0,5-1,0 mm²) y el crimpado puede quedar flojo (mío). Hay una serie de 0,14-0,5 mm² de Vogt | Apartado 4.4 |
-| 3 | Guía §5.1: la tierra "Faston / ojal M4" | El faston de tierra suelto no se nota. La medida de continuidad de §6 lo detecta; no leí la cláusula de EN 60335-1 | Apartado 4.3 |
-| 4 | Guía §1 #27: "2,8, 4,8 y 6,3 mm" para el C14 | No hay contradicción, pero la guía no fija **espesor** (0,5/0,8), ni PA frente a PVC. El módulo C14 lleva probablemente 4,8 × 0,8 (no confirmado para el tuyo) | Apartado 2.2; ficha del C14 |
-| 5 | Planteamiento inicial: DIN 46244 = terminales planos hembra | En una ficha de Hilpress figura como norma de la **lengüeta**. Para las hembras aparecen DIN 46245 (aisladas: Vogt, Cimco) y DIN 46247 parte 1 (sin aislar: Hilpress) | Apartado 3.1 |
-| 6 | Planteamiento inicial: DIN 46340 y 46341 | **No encontré fuente** de su contenido | Apartado 3.1 |
-| 7 | Planteamiento inicial: "2,8 mm ~10 A, 4,8 mm 16 A, 6,3 mm 20-25 A" | TE: 14 A (2,8, hilo 1,5 mm²), 20 A (4,8, 2,5 mm²), 28 A (6,3, 4-6 mm²) en la guía rápida; 5-8 A (2,8) y 10-15 A (4,8) en el ensayo de calentamiento de 108-2043; Vogt: 10/15/25 A por sección. **Ninguna fuente da exactamente esos números** | Apartado 2.4 |
-| 8 | Planteamiento inicial: "el rojo es 0,5-1,0 o 0,5-1,5" | Confirmado: 0,5-1,0 (Klauke, Vogt, Cimco; TE 22-18 AWG) y 0,5-1,5 (Phoenix, RND). Y TE se contradice a sí mismo: 0,3-0,8 mm² en la tabla de un rojo .187 y 0,25-1,6 mm² en la tabla de colores de la misma serie | Apartado 2.3 |
-| 9 | Planteamiento inicial: "fuerza de arrancamiento exigida por UL 486A-B/IEC 60352-2" | UL 486A: 30 lbf (16 AWG) y 50 lbf (14 AWG), por fuentes secundarias. IEC 60352-2: **no leí valores** | Apartado 4.2 |
+| 2 | Guía §5.1: la tierra "Faston / ojal M4" | El faston de tierra suelto no se nota. La medida de continuidad de §6 lo detecta; no leí la cláusula de EN 60335-1 | Apartado 4.3 |
+| 3 | Guía §1 #27: "2,8, 4,8 y 6,3 mm" para el C14 | No hay contradicción, pero la guía no fija **espesor** (0,5/0,8), ni PA frente a PVC. El módulo C14 lleva probablemente 4,8 × 0,8 (no confirmado para el tuyo) | Apartado 2.2; ficha del C14 |
+| 4 | Planteamiento inicial: DIN 46244 = terminales planos hembra | En una ficha de Hilpress figura como norma de la **lengüeta**. Para las hembras aparecen DIN 46245 (aisladas: Vogt, Cimco) y DIN 46247 parte 1 (sin aislar: Hilpress) | Apartado 3.1 |
+| 5 | Planteamiento inicial: DIN 46340 y 46341 | **No encontré fuente** de su contenido | Apartado 3.1 |
+| 6 | Planteamiento inicial: "2,8 mm ~10 A, 4,8 mm 16 A, 6,3 mm 20-25 A" | TE: 14 A (2,8, hilo 1,5 mm²), 20 A (4,8, 2,5 mm²), 28 A (6,3, 4-6 mm²) en la guía rápida; 5-8 A (2,8) y 10-15 A (4,8) en el ensayo de calentamiento de 108-2043; Vogt: 10/15/25 A por sección. **Ninguna fuente da exactamente esos números** | Apartado 2.4 |
+| 7 | Planteamiento inicial: "el rojo es 0,5-1,0 o 0,5-1,5" | Confirmado: 0,5-1,0 (Klauke, Vogt, Cimco; TE 22-18 AWG) y 0,5-1,5 (Phoenix, RND). Y TE se contradice a sí mismo: 0,3-0,8 mm² en la tabla de un rojo .187 y 0,25-1,6 mm² en la tabla de colores de la misma serie | Apartado 2.3 |
+| 8 | Planteamiento inicial: "fuerza de arrancamiento exigida por UL 486A-B/IEC 60352-2" | UL 486A: 30 lbf (16 AWG) y 50 lbf (14 AWG), por fuentes secundarias. IEC 60352-2: **no leí valores** | Apartado 4.2 |
 
-Puntos que tocan a otras piezas (una línea cada uno): **#28** (la crimpadora autoajustable debe pasar la prueba del apartado 4.1 con terminales aislados), **#15** (tamaño y espesor de la lengüeta del módulo y si hay agujero), **#22** (diámetro exterior de cada hilo del H05VV-F 3G1,5, que decide el ajuste del manguito), **#23** (los ojales M4 "para 0,5-1,5 mm²" siguen el mismo convenio que el rojo de Phoenix/RND), **#11** (espesor y ancho de las lengüetas del pulsador) y **#29** (calibre real de los Dupont).
+Puntos que tocan a otras piezas (una línea cada uno): **#28** (la crimpadora autoajustable debe pasar la prueba del apartado 4.1 con terminales aislados), **#15** (tamaño y espesor de la lengüeta del módulo y si hay agujero), **#22** (diámetro exterior de cada hilo del H05VV-F 3G1,5, que decide el ajuste del manguito), **#23** (los ojales M4 "para 0,5-1,5 mm²" siguen el mismo convenio que el rojo de Phoenix/RND) y **#29** (calibre real de los Dupont).
 
 ## 9. Recomendaciones para el alcoholímetro
 
@@ -340,14 +327,13 @@ Son conclusiones mías, no afirmaciones de las fuentes.
 
 1. **No crimpes ningún cable de 230 V hasta superar la prueba del apartado 4.1** con tu herramienta y tus terminales. Si falla, usa una pinza de terminales aislados.
 2. **Usa el terminal azul (1,5-2,5 mm²) para los hilos de 1,5 mm².** El rojo solo si el envase dice "hasta 1,5 mm²" y supera la prueba de tirón de 147 N.
-3. **Mide antes de crimpar:** ancho y espesor de las lengüetas del C14 (#15) y del pulsador (#11). Compra o separa el espesor que coincida.
+3. **Mide antes de crimpar:** ancho y espesor de las lengüetas del C14 (#15). Compra o separa el espesor que coincida.
 4. **Prefiere PA (nylon) a PVC** en las posiciones de 230 V y en el pin de tierra.
 5. **Un hilo por terminal, sin estañar, pelado de 6-7 mm**, y brida del haz a un punto fijo cerca del módulo. El hilo de tierra, más largo y sujeto, y la continuidad de tierra medida con 10-25 A (guía §6).
-6. **Si el kit no demuestra calidad, compra solo para las 7 posiciones de 230 V** terminales de marca de PA (Klauke, Phoenix, Vogt o RND) y usa el kit para lo demás (el pulsador).
-7. **Para el pulsador:** mide la lengüeta; si el hilo es de 22-24 AWG, usa una hembra de 0,14-0,5 mm² (Vogt) o hilos con terminal ya crimpado, o hilo de 0,5 mm² con el rojo del kit.
-8. **Cubre los terminales sin usar del módulo y rotula la máquina:** "Desconectar el cable de red antes de abrir".
-9. **Guarda factura, fotos y lote** del kit y de las pruebas de tirón, para el expediente técnico de la máquina (RD 187/2016, según la guía).
-10. **Que un electricista revise** el cableado de 230 V antes de la primera conexión (guía, cabecera).
+6. **Si el kit no demuestra calidad, compra solo para las 7 posiciones de 230 V** terminales de marca de PA (Klauke, Phoenix, Vogt o RND); el kit queda para pruebas de crimpado.
+7. **Cubre los terminales sin usar del módulo y rotula la máquina:** "Desconectar el cable de red antes de abrir".
+8. **Guarda factura, fotos y lote** del kit y de las pruebas de tirón, para el expediente técnico de la máquina (RD 187/2016, según la guía).
+9. **Que un electricista revise** el cableado de 230 V antes de la primera conexión (guía, cabecera).
 
 ## 10. Lo que no he podido verificar
 
@@ -359,7 +345,7 @@ Son conclusiones mías, no afirmaciones de las fuentes.
 - **Si la crimpadora #28 crimpa bien un faston aislado**: es una inferencia mía; su ficha se hace aparte.
 - **La longitud de pelado del kit**, y si hay **ventana de inspección** o aislante translúcido (solo vi translúcido en TE Ultra-Fast Plus).
 - **Si el módulo C14 trae lengüetas con agujero o hendidura**, y su tamaño y espesor.
-- **El calibre de los Dupont de ELEGOO (#29)** y el de los hilos "quick-connect" de Adafruit.
+- **El calibre de los Dupont de ELEGOO (#29).**
 - **Retiradas** (CPSC, Safety Gate) de kits de faston: no las encontré. No consulté los portales directamente.
 - **El hilo de Home-Barista sobre un cableado quemado**: la herramienta pidió un permiso que no se contestó. No lo abrí. URLs: <https://www.home-barista.com/repairs/burnt-la-pavoni-europiccola-wiring-t104636-10.html> (página 2, error de la herramienta) y <https://www.home-barista.com/repairs/burnt-la-pavoni-europiccola-wiring-t104636.html> (página 1, permiso sin contestar).
 - **El diámetro de cada hilo del H05VV-F 3G1,5** (Nexans solo da el exterior máximo de 9,8 mm). Mi "unos 3 mm" es estimación sin fuente.

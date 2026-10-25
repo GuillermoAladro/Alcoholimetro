@@ -8,9 +8,9 @@ Diseño de un alcoholímetro de pago desde cero: carcasa, electrónica y softwar
 
 ## Decisiones
 
-[DECISIONES.md](DECISIONES.md) recoge lo que afecta a todo el proyecto. Lo último (22-10-2026):
-- **Sin botón en todo el proyecto:** la prueba arranca cuando la cámara detecta a alguien.
-- **Diseño actualizado:** manda el diseño A (cajón de componentes), con la tapa interior deslizante por el lateral derecho. CAD en [`carcasa/diseno-A/`](carcasa/diseno-A/README.md).
+[DECISIONES.md](DECISIONES.md) recoge lo que afecta a todo el proyecto. Lo último:
+- **Sin botón en todo el proyecto (25-10-2026):** el SumUp Solo está siempre esperando tarjeta y la prueba empieza al pagar.
+- **Diseño actualizado (22-10-2026):** manda el diseño A (cajón de componentes), con la tapa interior deslizante por el lateral derecho. CAD en [`carcasa/diseno-A/`](carcasa/diseno-A/README.md).
 
 ## Descripción
 
@@ -20,7 +20,7 @@ Proyecto personal de ingeniería para diseñar y construir un alcoholímetro com
 
 - Medición de alcohol con sensor dedicado
 - Pantalla con interfaz programada a medida
-- Sin botón: la prueba arranca cuando la cámara detecta a alguien
+- Sin botón: el lector de tarjetas está siempre esperando y la prueba empieza al pagar
 - Cámara para hacer fotos y mostrarlas en pantalla
 - Pago con tarjeta integrado
 - Microcontrolador de bajo coste (alternativa económica a una Raspberry Pi)

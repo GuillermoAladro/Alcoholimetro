@@ -9,7 +9,7 @@ Cada dato lleva una etiqueta de origen:
 - **Reseña:** lo cuenta un cliente con compra verificada.
 - **Cálculo mío:** lo he deducido yo y no lo garantiza nadie.
 
-Las fichas de [`componentes/`](../componentes/README.md) dicen en su cabecera que Amazon bloqueaba el acceso. Eso ya no es cierto para estas diez piezas; cada una tiene un aviso fechado al principio con lo que cambia.
+Las fichas de [`componentes/`](../componentes/README.md) dicen en su cabecera que Amazon bloqueaba el acceso. Eso ya no es cierto para estas nueve piezas; cada una tiene un aviso fechado al principio con lo que cambia.
 
 ## #15 Módulo C14 con fusible e interruptor (B08Z6FCR5Z)
 
@@ -33,18 +33,6 @@ Las fichas de [`componentes/`](../componentes/README.md) dicen en su cabecera qu
 | Cable | AWG 28 a 16 (el 0,75 mm² es AWG 18) | Texto |
 | Bloque de tornillos | Enchufable (se separa del conector USB) | Texto y foto |
 | Corriente máxima | No consta | — |
-
-## #11 Pulsador arcade EG STARTS (B01N11BDX9)
-
-| Dato | Valor | Origen |
-|---|---|---|
-| Pack | 5 botones de 30 mm con LED de 5 V, uno de cada color | Texto |
-| Terminales | 4 faston de 2,8 mm: 2 del microinterruptor y 2 del LED | Texto y foto |
-| Contactos del interruptor | **Dos**. No existen NO, COM ni NC | Texto y foto |
-| Polaridad | El LED sí la tiene; el interruptor no | Texto |
-| Cuáles son cuáles | En la foto, las dos patas del microinterruptor están juntas en un extremo del cuerpo gris y las del LED (doradas) en el otro. Ningún terminal lleva rótulo | Foto |
-| Agujero y cabeza | 30 mm y 33 mm | Texto |
-| Una reseña | Se queja de que no hay indicación de qué cable va a qué terminal | Reseña |
 
 ## #5 Pantalla GeeekPi 7" (B0CHMBCCJB)
 

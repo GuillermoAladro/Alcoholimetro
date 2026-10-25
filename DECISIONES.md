@@ -2,24 +2,45 @@
 
 Decisiones que afectan a todo el proyecto. Lo más nuevo va arriba. Si un documento del repositorio dice otra cosa, manda lo que pone aquí.
 
+## 25-10-2026
+
+### Sin botón: el SumUp Solo está siempre esperando tarjeta
+
+- **La máquina no lleva botón en ningún sitio.** El Solo está todo el rato esperando tarjeta:
+  - La Pi le deja un cobro abierto por la Cloud API.
+  - Cuando caduca sin pago (unos 60 s), abre otro.
+  - En cuanto alguien paga, empieza la prueba.
+- **No se cobra si la máquina no puede medir.** Antes de abrir cada cobro, la Pi comprueba que el sensor responde y que queda sitio para las fotos. Si algo falla, la pantalla dice «Fuera de servicio» y el Solo no pide tarjeta.
+- **La cámara ya no arranca nada.** Esto sustituye a lo del 22-10, que arrancaba la prueba al detectar a alguien con la cámara. Ahora la cámara solo hace la foto.
+- **Programa:** `programa/main.py` del Project ya funciona así.
+  - Los datos de SumUp van en `~/.config/alcoholimetro/sumup.json`; `instalar.sh` deja la plantilla.
+  - `--gratis` arranca pruebas sin cobrar, para el banco.
+  - Probado con un lector simulado; con el Solo real, no.
+- **Pendiente con el Solo real** (prueba P6.14 del [PASO A PASO](MONTAJE-PASO-A-PASO.md)):
+  - Cuánto dura de verdad un cobro abierto.
+  - Que SumUp acepta consultar el estado cada 3 s; no publica límites.
+  - Qué hacer si el sensor falla después de cobrar (reembolso).
+
+### El botón, fuera de todo el repositorio
+
+| Dónde | Qué ha cambiado |
+|---|---|
+| [LISTA DE COMPRA](LISTA-DE-COMPRA.md) | Fuera la línea 11 (pulsador, 10,88 €). Quedan 31 componentes y el primer pedido baja a 635,69 € |
+| [`componentes/`](componentes/README.md) | Borrada la ficha del pulsador (sigue en el historial de git, commit `dca2723`). El índice explica el hueco del número 11 |
+| Fichas de componentes | **Cables Dupont:** solo pines 8 y 10, con un alojamiento de 1 × 2. **Kit faston:** solo para 230 V. También limpias las fichas de la crimpadora, el C14, los pasacables y la pantalla |
+| [Pendientes](componentes/pendientes.md) | Revisados el 7 y el 18. Fuera la medida de los faston del pulsador; las medidas siguientes se renumeran |
+| [MONTAJE GENERAL](MONTAJE-GENERAL.md) | Fuera W21, W22, la pieza 11, el agujero de Ø30 del panel y el pull-up. El punto 10 del apartado 4 pasa a ser la comprobación del cobro continuo. Figuras 2, 3 y 4 rehechas |
+| [MONTAJE PASO A PASO](MONTAJE-PASO-A-PASO.md) | Fuera la prueba P1.11 y la fase 3.3; las pruebas y apartados siguientes se renumeran. Nueva prueba P6.14 de cobro continuo |
+| [Anuncios de Amazon.es](montaje-general/anuncios-amazon-21-10-2026.md) | Fuera el anuncio del pulsador |
+| [CAD del diseño A](carcasa/diseno-A/README.md) | Nunca tuvo botón; el texto explica cómo arranca la prueba |
+
+**No se tocan las auditorías** (`auditorias/` y los zips de la raíz): son informes de terceros con su fecha y hablan del pulsador porque entonces existía.
+
 ## 22-10-2026
 
 ### Sin botón en todo el proyecto
 
-La máquina **no lleva pulsador ni ningún otro botón**. La pantalla no es táctil, así que la prueba arranca cuando la cámara detecta a alguien delante. Después se cobra con el SumUp Solo y se sopla.
-
-| Qué | Dónde estaba | Qué pasa ahora |
-|---|---|---|
-| Pulsador arcade EG STARTS de 30 mm (#11, B01N11BDX9, 10,88 €) | [LISTA DE COMPRA](LISTA-DE-COMPRA.md) | **No se compra** |
-| Cables W21 y W22, pines 9 y 11 de la Pi (GPIO17) | [MONTAJE GENERAL](MONTAJE-GENERAL.md) | No se cablean. Los pines 9 y 11 quedan libres |
-| Pull-up de 1 kΩ del pulsador | MONTAJE GENERAL, pendientes #18 | No hace falta (la resistencia de la UART sigue pendiente) |
-| Agujero de Ø30 mm en el panel | MONTAJE GENERAL, apartado de colocación | No se taladra |
-| Prueba P1.11 y fase 3.3 | [MONTAJE PASO A PASO](MONTAJE-PASO-A-PASO.md) | Se saltan |
-| Clase `Pulsador`, `gpiozero` y grupo `gpio` | `programa/main.py` e `instalar.sh` (Project) | **Ya cambiado:** `main.py` espera a que la cámara detecte presencia (flujo pequeño de 320 × 240 comparado con un fondo que sigue a la luz) y no usa ningún GPIO |
-
-**Qué se queda:** el kit de faston (#27) sigue haciendo falta para la toma C14.
-
-**Pendiente:** ajustar en el bar, con la luz real, los umbrales de presencia de `main.py` (`DIF_PIXEL`, `FRACCION_PRESENCIA`, `VECES_SEGUIDAS`).
+Se decide que la máquina no lleva botón. Cómo arranca la prueba sin él está en la entrada del 25-10.
 
 ### Diseño actualizado: manda el diseño A (cajón de componentes)
 
@@ -48,7 +69,7 @@ El CAD está en [`carcasa/diseno-A/`](carcasa/diseno-A/README.md): visor 3D, STE
   - el cajón de componentes al subir;
   - el cajón de pajitas al salir.
 
-**Pendiente:** [MONTAJE GENERAL](MONTAJE-GENERAL.md), [MONTAJE PASO A PASO](MONTAJE-PASO-A-PASO.md) y la [LISTA DE COMPRA](LISTA-DE-COMPRA.md) todavía siguen el diseño anterior (19 y 20 de octubre). Ya llevan el aviso de que no hay pulsador, pero falta pasarlos al diseño A. Cambian sobre todo:
+**Pendiente:** [MONTAJE GENERAL](MONTAJE-GENERAL.md), [MONTAJE PASO A PASO](MONTAJE-PASO-A-PASO.md) y la [LISTA DE COMPRA](LISTA-DE-COMPRA.md) todavía siguen el diseño anterior (19 y 20 de octubre). Ya no tienen el pulsador, pero falta pasarlos al diseño A. Cambian sobre todo:
 - la colocación;
 - la tierra;
 - los fusibles por rama;

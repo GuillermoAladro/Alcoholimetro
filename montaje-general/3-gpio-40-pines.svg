@@ -28,13 +28,11 @@
 <text x="760" y="275" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="normal" text-anchor="end" fill="#1b2228" >GPIO4</text>
 <rect x="773" y="293" width="34" height="34" rx="4" fill="#222222" stroke="#55606a" stroke-width="1.4"/>
 <text x="790" y="315" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#ffffff" >9</text>
-<rect x="769" y="289" width="42" height="42" rx="6" fill="none" stroke="#222222" stroke-width="3.5"/>
 <rect x="837" y="293" width="34" height="34" rx="4" fill="#e8edf1" stroke="#55606a" stroke-width="1.4"/>
 <text x="854" y="315" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#1b2228" >10</text>
 <rect x="833" y="289" width="42" height="42" rx="6" fill="none" stroke="#b07fe0" stroke-width="3.5"/>
 <rect x="773" y="333" width="34" height="34" rx="4" fill="#e8edf1" stroke="#55606a" stroke-width="1.4"/>
 <text x="790" y="355" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#1b2228" >11</text>
-<rect x="769" y="329" width="42" height="42" rx="6" fill="none" stroke="#0f8b8d" stroke-width="3.5"/>
 <rect x="837" y="333" width="34" height="34" rx="4" fill="#e8edf1" stroke="#55606a" stroke-width="1.4"/>
 <text x="854" y="355" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#1b2228" >12</text>
 <text x="884" y="355" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="normal" text-anchor="start" fill="#1b2228" >GPIO18</text>
@@ -126,14 +124,12 @@
 <text x="957" y="275" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="middle" fill="#1b2228" >GPIO14 · TXD</text>
 <rect x="882" y="296" width="150" height="28" rx="14" fill="#ffffff" stroke="#b07fe0" stroke-width="2.5"/>
 <text x="957" y="315" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="middle" fill="#1b2228" >GPIO15 · RXD</text>
-<rect x="612" y="296" width="150" height="28" rx="14" fill="#ffffff" stroke="#222222" stroke-width="2.5"/>
-<text x="687" y="315" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="middle" fill="#1b2228" >GND</text>
-<rect x="612" y="336" width="150" height="28" rx="14" fill="#ffffff" stroke="#0f8b8d" stroke-width="2.5"/>
-<text x="687" y="355" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="middle" fill="#1b2228" >GPIO17</text>
-<rect x="762" y="244" width="110" height="132" rx="8" fill="none" stroke="#2f6fd6" stroke-width="2.4" stroke-dasharray="8,6"/>
+<text x="760" y="355" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="normal" text-anchor="end" fill="#1b2228" >GPIO17</text>
+<text x="760" y="315" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="normal" text-anchor="end" fill="#1b2228" >GND</text>
+<rect x="826" y="244" width="56" height="92" rx="8" fill="none" stroke="#2f6fd6" stroke-width="2.4" stroke-dasharray="8,6"/>
 <text x="750" y="275" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="1" font-weight="normal" text-anchor="start" fill="#1b2228" ></text>
-<text x="680" y="264" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="end" fill="#2f6fd6" >alojamiento Dupont 2×3</text>
-<text x="680" y="280" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="end" fill="#2f6fd6" >sobre los pines 7 a 12 →</text>
+<text x="680" y="264" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="end" fill="#2f6fd6" >alojamiento Dupont 1×2</text>
+<text x="680" y="280" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="end" fill="#2f6fd6" >sobre los pines 8 y 10 →</text>
 <rect x="1170" y="130" width="380" height="300" rx="10" fill="#f3ecfa" stroke="#7b3fb8" stroke-width="1.6"/>
 <text x="1182" y="155" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#1b2228" >Winsen ZE29A (#6)</text>
 <circle cx="1170" cy="190" r="5" fill="#f3ecfa" stroke="#7b3fb8" stroke-width="1.8"/>
@@ -155,29 +151,19 @@
 <path d="M1032,310 L1080,310 L1125,270 L1170,270" fill="none" stroke="#b07fe0" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
 <rect x="1045.8" y="235.5" width="118.4" height="17.5" fill="#ffffff" opacity="0.92" rx="3"/>
 <text x="1105" y="248" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#3a454f" >TX ↔ RX cruzados</text>
-<rect x="40" y="250" width="330" height="168" rx="10" fill="#e5f4f4" stroke="#0f8b8d" stroke-width="1.6"/>
-<text x="52" y="275" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#1b2228" >Pulsador arcade (#11)</text>
-<circle cx="370" cy="310" r="5" fill="#e5f4f4" stroke="#0f8b8d" stroke-width="1.8"/>
-<text x="356" y="314" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="end" fill="#1b2228" >faston B → pin 9 (GND)</text>
-<circle cx="370" cy="350" r="5" fill="#e5f4f4" stroke="#0f8b8d" stroke-width="1.8"/>
-<text x="356" y="354" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="end" fill="#1b2228" >faston A → pin 11 (GPIO17)</text>
-<text x="54" y="380" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#3a454f" >A y B: los dos faston del microinterruptor,</text>
-<text x="54" y="396" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#3a454f" >intercambiables. LED (2 faston): sin conectar</text>
-<path d="M612,310 L370,310" fill="none" stroke="#222222" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M612,350 L370,350" fill="none" stroke="#0f8b8d" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
 <rect x="40" y="470" width="540" height="290" rx="10" fill="#eef3fb" stroke="#2f6fd6" stroke-width="1.6"/>
-<text x="52" y="495" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b2228" >Cómo conectar los 4 hilos (decisión abierta, ficha #29)</text>
-<text x="52" y="517.8" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >Opción A: un solo alojamiento Dupont 2×3 sobre los pines</text>
-<text x="52" y="534.8399999999999" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >7 a 12. Hilos en 8, 9, 10 y 11; los pines 7 y 12 quedan vacíos.</text>
+<text x="52" y="495" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b2228" >Cómo conectar los 2 hilos (decisión abierta, ficha #29)</text>
+<text x="52" y="517.8" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >Opción A: un solo alojamiento Dupont 1×2 sobre los pines</text>
+<text x="52" y="534.8399999999999" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >8 y 10, que van seguidos en la misma fila.</text>
 <text x="52" y="551.88" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" ></text>
-<text x="52" y="568.92" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >Opción B: cuatro Dupont hembra sueltos (como vienen los</text>
-<text x="52" y="585.9599999999999" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >ELEGOO). Los pines 8 y 10 van en una fila y el 9 y el 11 en</text>
-<text x="52" y="603.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >la otra: un alojamiento de 1×2 no sirve.</text>
+<text x="52" y="568.92" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >Opción B: dos Dupont hembra sueltos (como vienen los</text>
+<text x="52" y="585.9599999999999" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >ELEGOO): cada uno se sujeta solo por su fricción.</text>
+<text x="52" y="603.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >Sin polarizar, cualquiera de las dos se puede poner corrida.</text>
 <text x="52" y="620.04" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" ></text>
 <text x="52" y="637.0799999999999" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >El Dupont hembra solo se garantiza con 0,30 N de extracción</text>
 <text x="52" y="654.1199999999999" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >por contacto: sujetar el haz con una brida y probar tirando.</text>
 <text x="52" y="671.16" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >Los ELEGOO vienen terminados en los dos extremos: para los</text>
-<text x="52" y="688.1999999999999" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >hilos de la clavija del sensor y del pulsador hay que crimpar</text>
+<text x="52" y="688.1999999999999" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >hilos de la clavija del sensor hay que crimpar</text>
 <text x="52" y="705.24" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >terminales Dupont con una crimpadora para ese tipo de</text>
 <text x="52" y="722.28" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >terminal (la de la lista es de punteras).</text>
 <rect x="1010" y="470" width="550" height="330" rx="10" fill="#fff8f6" stroke="#b3261e" stroke-width="1.6"/>
@@ -188,7 +174,7 @@
 <text x="1022" y="568.92" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" ></text>
 <text x="1022" y="585.9599999999999" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >· Los hilos de 5 V y GND del sensor (pines 1 y 2 del ZE29A)</text>
 <text x="1022" y="603.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >  van a la WAGO, nunca a un pin de la Pi. De la Pi solo se</text>
-<text x="1022" y="620.04" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >  usan los pines 8, 9, 10 y 11.</text>
+<text x="1022" y="620.04" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >  usan los pines 8 y 10. La máquina no lleva botón.</text>
 <text x="1022" y="637.0799999999999" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" ></text>
 <text x="1022" y="654.1199999999999" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >· Si el sensor no contesta al comando 0x85, cruzar TX y RX</text>
 <text x="1022" y="671.16" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >  antes de sospechar del módulo.</text>

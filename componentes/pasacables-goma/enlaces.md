@@ -87,7 +87,7 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 - [Cable 2 × 0,75 mm² rojo/negro](../cable-2x0-75-rojo-negro-10m/README.md): dimensiones y radio de curvatura.
 - [Tubo de silicona de 6 mm](../tubo-silicona-6mm/README.md): diámetro interior o exterior sin aclarar.
 - [Latiguillo micro-USB](../latiguillo-micro-usb-22awg/README.md): choque entre "15 cm" y "holgura".
-- [Módulo C14](../modulo-c14-fusible-interruptor/README.md), [alargo de antena RP-SMA](../alargo-antena-rp-sma-30cm/README.md) y [pulsador arcade](../pulsador-arcade-30mm/README.md): el grosor de la chapa no consta en la guía.
+- [Módulo C14](../modulo-c14-fusible-interruptor/README.md) y [alargo de antena RP-SMA](../alargo-antena-rp-sma-30cm/README.md): el grosor de la chapa no consta en la guía.
 
 ## Copias locales de los documentos
 

@@ -84,7 +84,7 @@ def solo():
         ("cuerpo", box(0, w, 0, t, 0, h), BLANCO),
         ("pantalla_tactil", box(7, w - 7, -0.15, 0, 13, h - 9), (0.05, 0.05, 0.07)),
         ("ranura_chip", box(12, w - 12, 5, 9, h - 0.2, h + 0.01), GRIS_OSC),
-        ("boton", box(w - 0.01, w + 0.6, 6, 12, 55, 68), GRIS_OSC),
+        ("tecla_encendido", box(w - 0.01, w + 0.6, 6, 12, 55, 68), GRIS_OSC),   # tecla de encendido del propio Solo
         ("clavija_usbc_90", box(w / 2 - 6, w / 2 + 6, 4, 13, -14, 0), NEGRO),
     ]
 

@@ -1,6 +1,6 @@
 # Pendientes que salen de las fichas de componentes
 
-Resumen de lo que las 31 fichas dejan abierto: decisiones tuyas, medidas que hay que tomar con calibre o polímetro, y documentos que faltan. Cada punto remite a la ficha donde está el detalle y la fuente. Esta lista se ha reunido el 21-10-2026 a partir de las fichas; si una ficha cambia, manda la ficha. Ese mismo día se leyeron los anuncios de Amazon.es de diez piezas ([resumen](../montaje-general/anuncios-amazon-21-10-2026.md)): lo que cerró y lo que sigue abierto está en el apartado 5.
+Resumen de lo que las fichas dejan abierto: decisiones tuyas, medidas que hay que tomar con calibre o polímetro, y documentos que faltan. Cada punto remite a la ficha donde está el detalle y la fuente. Esta lista se ha reunido el 21-10-2026 a partir de las fichas; si una ficha cambia, manda la ficha. Ese mismo día se leyeron los anuncios de Amazon.es de diez piezas ([resumen](../montaje-general/anuncios-amazon-21-10-2026.md)): lo que cerró y lo que sigue abierto está en el apartado 5.
 
 ## 1. Decisiones de diseño
 
@@ -12,7 +12,7 @@ Resumen de lo que las 31 fichas dejan abierto: decisiones tuyas, medidas que hay
 | 4 | Cómo soldar el espárrago: pistola de descarga de condensador en un taller de chapa, o alternativa (tuerca soldada, remache roscado) | Probablemente el espárrago sea de descarga de condensador y una soldadora de puntos normal no sirve (razonamiento de la ficha). Faltan material y espesor de la chapa | [#25](esparragos-soldar-m4x20/README.md) |
 | 5 | Herramienta de crimpado para terminales preaislados (ojales y faston) y para Dupont/JST | La crimpadora de la hoja es para punteras; no hay fuente que respalde que crimpe bien ojales ni faston | [#23](terminales-ojal-m4/README.md), [#27](kit-faston-aislados/README.md), [#28](crimpadora-y-punteras/README.md), [#29](cables-dupont-elegoo-120/README.md) |
 | 6 | Terminal faston para el cable de 1,5 mm²: azul de nailon, o rojo solo si el envase dice "hasta 1,5 mm²" | 1,5 mm² cae justo entre el rojo y el azul y los fabricantes no coinciden | [#27](kit-faston-aislados/README.md) |
-| 7 | Conexión de la Pi a la UART ~~y al pulsador~~ (sin pulsador desde el 22-10-2026; quedan los pines 8 y 10): alojamiento Dupont 2×3 sobre los pines 7 a 12, o placa de bornes | Los pines 8 y 10 comparten fila y el 9 y el 11 van en la otra; un alojamiento 1×2 no cubre los cuatro | [#29](cables-dupont-elegoo-120/README.md), [#7](cables-jst-xh-4-pin/README.md) |
+| 7 | Conexión de la Pi a la UART (pines 8 y 10): alojamiento Dupont 1×2 o placa de bornes | Los pines 8 y 10 van seguidos en la misma fila, así que basta un alojamiento 1×2; sigue el riesgo de ponerlo corrido o girado (MONTAJE GENERAL, apartado 4, punto 11) | [#29](cables-dupont-elegoo-120/README.md), [#7](cables-jst-xh-4-pin/README.md) |
 | 8 | Alimentación del Solo y de la pantalla por borne USB-A | El pico de 2 A de la guía supera la clasificación habitual de 1 a 1,5 A de un USB-A. Nada confirma que el Solo reconozca el puente D+/D− como cargador | [#18](borne-usb-a-hembra-tornillo/README.md), [#9](sumup-solo/README.md) |
 | 9 | Unir o no el −V (masa de 5 V) a tierra, y en qué punto. **Propuesta del 21-10-2026:** unirlo en un solo punto con una WAGO 221-413 (MONTAJE GENERAL, W12b); si no, aislar el jack RP-SMA del techo, que ya lo une | La fuente aísla 1,25 kVAC entre salida y tierra, así que el −V flota. Unirlo debe ser una decisión en un solo punto, no un efecto de los tornillos | [#30](separadores-nylon-m2-5/README.md), [#14](meanwell-lrs-50-5/README.md) |
 | 10 | Pasacables: tipo según el grosor real de la chapa | Los de uso general sirven para chapa de hasta 1,6 mm; para 2 a 6 mm hay que comprar por grosor. El "marco de 2,6 mm" de la guía es un solape, no el grosor | [#31](pasacables-goma/README.md) |
@@ -23,7 +23,7 @@ Resumen de lo que las 31 fichas dejan abierto: decisiones tuyas, medidas que hay
 | 13 | Módulo C14: medirlo; si corta un solo polo o su esquema no coincide con uno de fabricante, sustituirlo por una entrada bipolar documentada. **«Aceptar el riesgo» ya no es una opción:** las cuatro auditorías del 21-10-2026 lo dejan como bloqueante | El anuncio no da el esquema, sus dos dibujos no coinciden y dos reseñas dicen que están mal. Con un Schuko reversible, un fusible de un solo polo puede quedar en el neutro | [#15](modulo-c14-fusible-interruptor/README.md) |
 | 16 | Jack RP-SMA del techo aislado de la chapa (arandelas aislantes) para que el −V solo se una a tierra en W12b, o quede flotante de verdad | Si toca el techo, parte del retorno de la Pi vuelve por el USB del AR9271 y la malla del coaxial | [#13](alargo-antena-rp-sma-30cm/README.md) |
 | 17 | Tapa aislante para los bornes de 230 V de la fuente y recorrido del troncal de 5 V lejos de L y N | La fuente no trae tapa (auditorías P H4, 5.6 C-07) | [#14](meanwell-lrs-50-5/README.md), [#21](cable-2x0-75-rojo-negro-10m/README.md) |
-| 18 | Resistencias de 1 kΩ: en serie en la UART (apagado parcial). ~~Pull-up del pulsador~~: ya no hay pulsador (22-10-2026) | Auditorías 6.1-S F12/F19, 6-A A6A-07, P H12 | [#6](winsen-ze29a/README.md), [#11](pulsador-arcade-30mm/README.md) |
+| 18 | Resistencias de 1 kΩ en serie en la UART (apagado parcial) | Auditorías 6.1-S F12, 6-A A6A-07 | [#6](winsen-ze29a/README.md) |
 | 19 | Tornillería M2 para la cámara (taladros de 2,2 mm, plano RP-008153); no está en la lista | Auditoría 6.1-S F16 | [#3](raspberry-pi-camera-module-3/README.md) |
 
 ## 2. Medidas y pruebas por hacer (con la pieza en la mano)
@@ -48,13 +48,12 @@ Resumen de lo que las 31 fichas dejan abierto: decisiones tuyas, medidas que hay
 | 16 | Imanes, calibre y marcado de la tornillería inox al recibirla | Protocolo en la ficha | [#26](tornilleria-inox-m3-m6/README.md) |
 | 17 | Paso y tipo del conector J1 del ZE29A con calibre; que el pin 1 sea el extremo «5V» y que el TX en reposo dé unos 3,3 V | Serigrafía «Rx Tx GND 5V» en una foto del anuncio | [#6](winsen-ze29a/README.md), [#7](cables-jst-xh-4-pin/README.md) |
 | 18 | Cara de los contactos del cable FFC | El anuncio no la dice; hace falta «caras opuestas» | [#4](cable-ffc-camara-50cm/README.md) |
-| 19 | ~~Par de faston del pulsador que cierra al pulsar~~ No aplica: sin pulsador desde el 22-10-2026 | Sin rótulos; no hay NO, COM ni NC | [#11](pulsador-arcade-30mm/README.md) |
-| 20 | Continuidad del borne USB-A: tornillo «+» al pin 1 y «−» al pin 4 | Tornillos S, +, D−, D+ y − (anuncio) | [#18](borne-usb-a-hembra-tornillo/README.md) |
-| 21 | Corriente típica y de arranque de cada rama de 5 V con pinza, para confirmar los fusibles 3 / 2 / 2 / 1 A | Calibres de papel | [#32](portafusibles-en-linea-5x20/README.md) |
-| 22 | Tensión en la Pi (pin 4 frente a pin 6) con todo encendido: ≥ 4,90 V con la fuente a 5,10 V | Caída estimada de 0,12 a 0,26 V en latiguillo, micro-USB y polifusible | [#1](raspberry-pi-3b-plus/README.md), [#19](latiguillo-micro-usb-22awg/README.md) |
-| 23 | Señal Wi-Fi del Solo asociado a la Pi, con la máquina cerrada (`iw dev wlan0 station dump`): mejor que −70 dBm | La Pi está dentro de la caja interior de chapa | [#9](sumup-solo/README.md), [#12](adaptador-wifi-ar9271/README.md) |
-| 24 | Que el Solo se encienda solo al volver la corriente y quede `ONLINE` | Sin dato de SumUp; sin ello la máquina no cobra tras un corte de luz | [#9](sumup-solo/README.md) |
-| 25 | Cómo son las dos tomas de aire del ZE29A (presión y muestra) y que con la boquilla montada pasa de 0x33 a 0x34 al soplar | El manual exige barrera y orden de las tomas; no dice cómo son físicamente | [#6](winsen-ze29a/README.md), [#8](tubo-silicona-6mm/README.md) |
+| 19 | Continuidad del borne USB-A: tornillo «+» al pin 1 y «−» al pin 4 | Tornillos S, +, D−, D+ y − (anuncio) | [#18](borne-usb-a-hembra-tornillo/README.md) |
+| 20 | Corriente típica y de arranque de cada rama de 5 V con pinza, para confirmar los fusibles 3 / 2 / 2 / 1 A | Calibres de papel | [#32](portafusibles-en-linea-5x20/README.md) |
+| 21 | Tensión en la Pi (pin 4 frente a pin 6) con todo encendido: ≥ 4,90 V con la fuente a 5,10 V | Caída estimada de 0,12 a 0,26 V en latiguillo, micro-USB y polifusible | [#1](raspberry-pi-3b-plus/README.md), [#19](latiguillo-micro-usb-22awg/README.md) |
+| 22 | Señal Wi-Fi del Solo asociado a la Pi, con la máquina cerrada (`iw dev wlan0 station dump`): mejor que −70 dBm | La Pi está dentro de la caja interior de chapa | [#9](sumup-solo/README.md), [#12](adaptador-wifi-ar9271/README.md) |
+| 23 | Que el Solo se encienda solo al volver la corriente y quede `ONLINE` | Sin dato de SumUp; sin ello la máquina no cobra tras un corte de luz | [#9](sumup-solo/README.md) |
+| 24 | Cómo son las dos tomas de aire del ZE29A (presión y muestra) y que con la boquilla montada pasa de 0x33 a 0x34 al soplar | El manual exige barrera y orden de las tomas; no dice cómo son físicamente | [#6](winsen-ze29a/README.md), [#8](tubo-silicona-6mm/README.md) |
 
 ## 3. Cosas que hay que aclarar por escrito o con el fabricante
 
@@ -75,7 +74,6 @@ El 21-10-2026 se subieron 144 documentos descargados por ti (carpeta `datasheets
 
 Leídos en el navegador integrado. Cada dato lleva su origen en [`montaje-general/anuncios-amazon-21-10-2026.md`](../montaje-general/anuncios-amazon-21-10-2026.md).
 
-- **Pulsador (#11)** (descartado el 22-10-2026): no tiene NO, COM ni NC. Son 4 faston de 2,8 mm, dos del interruptor y dos del LED. Queda por medir cuál es cuál.
 - **USB-C del Solo (#9):** está en el canto de abajo (foto). Queda sin medir la distancia a la esquina y el tamaño de la ranura.
 - **Borne USB-A (#18):** tornillos S, +, D−, D+ y −. La corriente máxima no consta.
 - **Pantalla (#5):** un solo USB-C «Power IN» y un HDMI de tamaño completo, en el mismo canto. El cable «USB to USB-C» no dice si es A o C en el extremo grande.

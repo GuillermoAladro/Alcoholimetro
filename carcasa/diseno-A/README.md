@@ -2,7 +2,7 @@
 
 > Copia en el repositorio del paquete `Alcoholimetro_A.zip`. Los números de pieza (A-C01, A-T01…) son los de los STEP, los DXF y el visor de esta carpeta. Decisiones generales en [DECISIONES](../../DECISIONES.md).
 
-21-10-2026 · Guillermo · actualizado el 22-10-2026 (tapa interior deslizante, faldón derecho de la tapa, antena hacia abajo, sin botón)
+21-10-2026 · Guillermo · actualizado el 22-10-2026 (tapa interior deslizante, faldón derecho de la tapa, antena hacia abajo) y el 25-10-2026 (sin botón: el Solo espera tarjeta todo el rato)
 
 ## 1. Qué hay en esta carpeta
 
@@ -32,7 +32,7 @@ Todas las chapas son **planas**: acero DC01 de 1,5 mm cortado por láser y unido
 | Cajón de pajitas | Sin tirador; 2 anillas con 2 candados |
 | Piezas a fabricar | 46 |
 | Chapa y policarbonato | 7,8 kg |
-| Botón | Ninguno en todo el proyecto: la prueba arranca cuando la cámara detecta a alguien |
+| Botón | Ninguno en todo el proyecto: el SumUp Solo está siempre esperando tarjeta y la prueba empieza al pagar |
 | Primer pedido de compras | ~880 €, con herramientas y rollos que sobran; desglose en la lista |
 | Anclaje a la pared | 18 tirafondos 6 × 60 con taco de 8 mm, apretados desde dentro |
 
@@ -232,21 +232,20 @@ Todas las chapas son **planas**: acero DC01 de 1,5 mm cortado por láser y unido
 - Wi‑Fi: el Solo se conecta al punto de acceso de la Pi, y la Pi sale a Internet por el AR9271 con la antena por fuera.
 
 **Proceso de una prueba:**
-1. Reposo.
-2. Llega alguien.
-3. La Pi crea el cobro (SumUp Cloud API).
-4. El Solo pide la tarjeta y se cobra.
-5. La Pi arranca el ZE29A.
-6. «Coge una pajita y sopla».
-7. Soplando → calculando, y aquí se hace **la foto**.
-8. Resultado con la foto en pantalla.
-9. Vuelta a reposo.
+1. **Reposo:** el Solo enseña el precio y espera tarjeta todo el rato. La Pi le deja un cobro abierto (SumUp Cloud API) y, cuando caduca sin pago, abre otro.
+2. Antes de abrir cada cobro, la Pi comprueba que el sensor responde y que queda sitio para las fotos. Si no, pone «Fuera de servicio» y no cobra.
+3. Alguien paga con tarjeta o móvil sin contacto.
+4. La Pi arranca el ZE29A.
+5. «Coge una pajita y sopla».
+6. Soplando → calculando, y aquí se hace **la foto**.
+7. Resultado con la foto en pantalla.
+8. Vuelta a reposo.
 
 Todo lo necesario está conectado. En uso normal ninguna rama pasa del 50 % de su fusible; la Pi llega al 83 % en su pico máximo. El sensor recibe 5,1–5,2 V, y su máximo es 5,3 V.
 
 ## 7. Avisos y decisiones para ti
 
-1. **Sin botón, en todo el proyecto** (decidido el 22-10-2026). La pantalla no es táctil, así que la máquina arranca cuando la cámara detecta a alguien. El programa ya no usa el GPIO17 ni el pulsador.
+1. **Sin botón, en todo el proyecto** (25-10-2026). La pantalla no es táctil y no hay pulsador: el Solo está siempre esperando tarjeta y la prueba empieza al pagar. Del GPIO solo se usa la UART (pines 8 y 10).
 2. **La boquilla es un cuarto agujero**, imprescindible para soplar.
 3. **Solo sin contacto.** Los policarbonatos tapan el Solo: se paga con tarjeta o móvil sin contacto, sin chip ni PIN. Pendiente de preguntar a SumUp.
    - **Con dos policarbonatos la tarjeta queda a unos 20 mm del Solo** (con uno eran 14–15).
