@@ -11,6 +11,7 @@ Decisiones que afectan a todo el proyecto. Lo más nuevo va arriba. Si un docume
   - En espera pasa el top 10 con sus fotos y su valor, y anima a jugar.
   - El Solo pide tarjeta todo el rato. Al pagar: precalentar, «sopla» con una barra, cuenta atrás de 5 s con la cámara en directo, foto, resultado con el puesto («puesto 120 de 360 · top 34 %») y celebración.
   - Las fotos del top 10 se guardan siempre. Las demás se borran a las 24 h. El valor se queda en el ranking para siempre.
+- **Monigote presentador** (pedido el 26-10): un chico cachas sin camiseta basado en Guillermo. Saluda y señala el lector en la espera, enseña a soplar, anima, se hace un selfie en la cuenta atrás y reacciona al resultado. Dibujado en código (`nucleo/monigote.js`), sin fotos.
 - **Unidad: g/L** (el valor del sensor ÷ 100). El encargo decía «g/cl», que no es una unidad de alcoholemia. Sin conversión a mg/L (H01, 6.1-S F14) y sin frases sobre conducir (H02).
 - **Foto opcional sin botón:** se tapa la cámara durante la cuenta atrás. Enseñar las caras del top 10 en un bar puede necesitar consentimiento expreso (H17 y H18): consultarlo antes de instalar. Con `"fotos": false` funciona sin fotos.
 - **Robustez (máquina sola en un bar):**

@@ -54,5 +54,8 @@
     }
     return p.msMedio || 0;
   };
+  window.avanzar = (ms) => {
+    T += ms;
+  };
   window.listo = true;
 })();

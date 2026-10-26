@@ -23,6 +23,7 @@ const RAIZ = path.join(__dirname, "..");
 const SCRIPTS = {
   "util.js": "nucleo/util.js",
   "textos.js": "nucleo/textos.js",
+  "monigote.js": "nucleo/monigote.js",
   "pantalla.js": "nucleo/pantalla.js",
   "kiosco.js": "pi/kiosco/kiosco.js",
 };

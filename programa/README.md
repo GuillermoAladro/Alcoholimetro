@@ -14,6 +14,19 @@ Programa de la máquina: cobra con el SumUp Solo, mide con el ZE29A, hace la fot
 6. **Resultado** (20 s): la foto tipo polaroid, el valor contando hacia arriba, el titular según el puesto, «Puesto 120 de 360 · Top 34 %» con una barra del ranking, y fuegos, confeti o burbujas según el puesto (récord, top 10, alto, medio, bajo o cero).
 7. **Vuelta a la espera.**
 
+**El monigote** (`nucleo/monigote.js`): un chico cachas sin camiseta basado en Guillermo. Lleva el tupé castaño, las cejas gruesas, la barba de tres días, el lunar, la cadena y el anillo. Acompaña cada fase:
+- **Espera:** saluda, señala el lector, saca bíceps, levanta el pulgar y se hace un selfie, con bocadillos: «¡Hola! ¿Te atreves?», «Paga con tarjeta o con el móvil»…
+- **Pago:** celebra y levanta el pulgar.
+- **Preparando:** estira, calentando.
+- **¡Sopla!:** enseña a soplar con los mofletes hinchados.
+- **Soplando:** anima con el puño.
+- **Soplido cortado:** se encoge de hombros.
+- **Cuenta atrás:** se hace un selfie (y guiña). Tras la foto, pulgar arriba.
+- **Resultado:** espera pensando y luego reacciona: salta con un récord o un top 10, saca bíceps con un resultado alto, levanta el pulgar o guiña.
+- **Avisos:** se encoge de hombros. **Fuera de servicio:** echa una siesta.
+
+Está dibujado con el lienzo, sin imágenes. El torso y la cabeza se pintan una vez por tamaño, y el resto a 15 cuadros por segundo; a 10 si la Pi va justa.
+
 **Fotos y ranking:**
 - Todas las pruebas quedan para siempre en el ranking (solo el valor y la fecha).
 - Las fotos del top 10 se guardan mientras sigan en el top 10.
@@ -39,6 +52,7 @@ nucleo/      el programa: igual en la Pi y en la simulación
   almacen.js        ranking, partidas, fotos (24 h / top 10) y diario de cobros, a prueba de apagones
   ranking.js        puesto y top 10 con memoria constante (histograma)
   pantalla.js       todo lo que se ve (lienzo de 1024 × 600, animaciones)
+  monigote.js       el monigote presentador: posturas, caras y bocadillos
   textos.js         todos los textos de la pantalla
   reloj.js, util.js
 pi/          solo en la Pi

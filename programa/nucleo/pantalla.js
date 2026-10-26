@@ -11,15 +11,19 @@
  * - Calidad automática: si un cuadro tarda demasiado, se quitan sombras y se bajan partículas.
  * - Nada se queda quieto en la pantalla de espera (la pantalla puede quedarse marcada, ficha #5, apartado 7):
  *   todo se mueve y el conjunto se desplaza unos píxeles cada pocos minutos.
+ *
+ * El monigote (nucleo/monigote.js) acompaña cada fase: saluda y señala el lector en la espera, calienta mientras
+ * se prepara el sensor, enseña a soplar, anima mientras soplas, se hace un selfie en la cuenta atrás y celebra
+ * (o se encoge de hombros) con el resultado.
  */
 (function (raiz, fabrica) {
   "use strict";
   const enNode = typeof module === "object" && module.exports;
   const dep = (n) => (enNode ? require("./" + n) : raiz.ALC[n]);
-  const m = fabrica(dep("textos"));
+  const m = fabrica(dep("textos"), dep("monigote"));
   if (enNode) module.exports = m;
   else (raiz.ALC = raiz.ALC || {}).pantalla = m;
-})(typeof globalThis !== "undefined" ? globalThis : this, function (T) {
+})(typeof globalThis !== "undefined" ? globalThis : this, function (T, MON) {
   "use strict";
 
   const W = 1024;
@@ -535,6 +539,7 @@
       for (let i = 0; i < 12; i++) this.bokeh.push({ x: Math.random() * W, y: Math.random() * H, r: 30 + Math.random() * 70, v: 4 + Math.random() * 10, c: i % 3, f: Math.random() * 6 });
       this.cuadros = 0;
       this.recibida = 0;
+      this.mono = MON ? new MON.Monigote() : null;
     }
 
     ahora() {
@@ -902,11 +907,82 @@
       this._t(ctx, T.LEGAL, W / 2, y, { tam: 12.5, color: C.tenue, alin: "center", max: W - 60, alfa });
     }
 
+    // ---------------------------------------------------------------- el monigote
+    /** Pinta el monigote: (x, y) es el pie del dibujo (corte del muslo) y `alto` su altura en px. */
+    _mono(ctx, x, y, alto, pose, t) {
+      if (!this.mono) return;
+      this.mono.paso = this.calidad === "baja" ? 100 : 66;
+      this.mono.dibujar(ctx, x, y, alto, pose, t);
+    }
+
+    /**
+     * Coreografía con bocadillos: lista de [pose, ms, texto]. Pinta el monigote y, si el tramo tiene texto, el
+     * bocadillo encima de su cabeza (aparece y se va con el tramo).
+     */
+    _monoCoreo(ctx, x, y, alto, lista, t, bx, by) {
+      if (!this.mono) return;
+      this.mono.paso = this.calidad === "baja" ? 100 : 66;
+      this.mono.dibujar(
+        ctx,
+        x,
+        y,
+        alto,
+        lista.map((e) => [e[0], e[1]]),
+        t
+      );
+      let total = 0;
+      for (const e of lista) total += e[1];
+      let r = ((t % total) + total) % total;
+      let i = 0;
+      while (r >= lista[i][1]) {
+        r -= lista[i][1];
+        i++;
+      }
+      const txt = lista[i][2];
+      if (!txt) return;
+      const a = clamp(Math.min((r - 250) / 250, (lista[i][1] - r) / 250), 0, 1);
+      if (a <= 0) return;
+      const tope = y - alto; // punta del tupé
+      this._bocadillo(ctx, bx == null ? x : bx, by == null ? tope - 44 : by, txt, x + alto * 0.03, tope + 8, a);
+    }
+
+    /** Bocadillo de cómic centrado en (cx, cy) con la cola hacia (px, py). Una o dos líneas ("\n"). */
+    _bocadillo(ctx, cx, cy, txt, px, py, alfa = 1) {
+      const lineas = String(txt).split("\n");
+      const tam = 19;
+      let w = 0;
+      for (const l of lineas) w = Math.max(w, medir(ctx, l, tam, 800, TEXTO));
+      w = Math.min(230, w) + 30;
+      const h = lineas.length * (tam + 5) + 18;
+      const k = easeBack(alfa);
+      const a0 = ctx.globalAlpha;
+      ctx.save();
+      ctx.globalAlpha = a0 * alfa;
+      ctx.translate(cx, cy);
+      ctx.scale(k, k);
+      ctx.translate(-cx, -cy);
+      rectR(ctx, cx - w / 2, cy - h / 2, w, h, 16);
+      ctx.fillStyle = C.papel;
+      ctx.fill();
+      // cola
+      const bx = clamp(px, cx - w / 2 + 22, cx + w / 2 - 22);
+      ctx.beginPath();
+      ctx.moveTo(bx - 12, cy + h / 2 - 2);
+      ctx.lineTo(px, py);
+      ctx.lineTo(bx + 12, cy + h / 2 - 2);
+      ctx.closePath();
+      ctx.fill();
+      for (let i = 0; i < lineas.length; i++) this._t(ctx, lineas[i], cx, cy - h / 2 + 9 + (i + 1) * (tam + 5) - 6, { tam, peso: 800, color: "#1b0d02", alin: "center", max: 230 });
+      ctx.restore();
+      ctx.globalAlpha = a0;
+    }
+
     // ---------------------------------------------------------------- escenas
     _arranque(ctx, v, ahora) {
       this._t(ctx, "ALCOHOLÍMETRO", W / 2, H / 2 - 10, { tam: 86, peso: 900, familia: DISPLAY, alin: "center", color: C.tinta, glow: C.magenta, calidad: this.calidad });
       const n = Math.floor(ahora / 300) % 4;
       this._t(ctx, "Arrancando" + ".".repeat(n), W / 2, H / 2 + 46, { tam: 22, color: C.suave, alin: "center" });
+      this._mono(ctx, 900, 612, 300, "estira", ahora);
     }
 
     _fuera(ctx, v, ahora) {
@@ -914,6 +990,12 @@
       this._t(ctx, T.FUERA.titulo, W / 2, y - 10, { tam: 92, peso: 900, familia: DISPLAY, alin: "center", color: C.suave });
       this._t(ctx, T.FUERA.sub, W / 2, y + 44, { tam: 26, peso: 600, alin: "center", color: C.tenue });
       if (v.d && v.d.motivo) this._t(ctx, "(" + v.d.motivo + ")", W / 2, H - 40, { tam: 14, alin: "center", color: "#5b4d6b" });
+      // el monigote echa una siesta
+      this._mono(ctx, 905, 616, 330, "duerme", ahora);
+      for (let i = 0; i < 3; i++) {
+        const f = (ahora / 2400 + i / 3) % 1;
+        this._t(ctx, "Z", 960 + f * 50 + Math.sin(f * 6 + i) * 8, 330 - f * 120, { tam: 22 + f * 18, peso: 900, familia: DISPLAY, color: C.suave, alfa: Math.min(1, (1 - f) * 2.5, f * 6) });
+      }
     }
 
     _espera(ctx, v, ahora, tf) {
@@ -959,7 +1041,8 @@
         const e = top[this.carrusel.i];
         const entra = easeBack(k * 6);
         const sale = k > 0.9 ? easeInOut((k - 0.9) * 10) : 0;
-        const cx = lerp(560, 220, entra) - sale * 420;
+        // entra y sale por la izquierda: así no pasa por encima del monigote
+        const cx = lerp(-200, 220, entra) - sale * 420;
         const rot = (this.carrusel.i % 2 ? 0.05 : -0.045) + (1 - entra) * 0.25 - sale * 0.3;
         ctx.save();
         ctx.globalAlpha *= 1 - sale;
@@ -993,6 +1076,9 @@
           ctx.restore();
         }
       }
+
+      // --- el monigote, entre la foto y la lista: saluda, señala el lector, saca bíceps, se hace un selfie…
+      this._monoCoreo(ctx, 486, 506, 312, this._coreoEspera(v, puedePagar, n), ahora, 492, 150);
 
       // --- lista del top 10 (derecha): se compone en una capa y solo se rehace al cambiar algo
       const x0 = 600;
@@ -1030,6 +1116,26 @@
       }
       this._t(ctx, T.AVISO_FOTO, W / 2, 562, { tam: 12.5, color: C.suave, alin: "center", max: W - 60 });
       this._letraPequena(ctx, 582);
+    }
+
+    /** Lo que hace el monigote en la espera según se pueda pagar o no. */
+    _coreoEspera(v, puedePagar, n) {
+      if (v.pago && v.pago.estado === "rechazado") return [["encoge", 4000, "¡Uy! Prueba con\notra tarjeta"]];
+      if (!puedePagar && !v.gratis) {
+        if (v.pausa_ms > 0) return [["estira", 3000, "Un momento,\ncalentando…"], ["jarras", 3000, null]];
+        return [["piensa", 4500, "Ahora no se\npuede pagar…"], ["encoge", 3500, null]];
+      }
+      const senala = ((v.posiciones && v.posiciones.lector) || "arriba-derecha").includes("izquierda") ? "senala_i" : "senala_d";
+      if (!n) return [["senala_i", 3600, "¡Estrena\nel ranking!"], ["saluda", 3000, "¿Te atreves?"], [senala, 3400, "Paga con tarjeta\no con el móvil"], ["biceps", 3200, null]];
+      return [
+        ["saluda", 3200, "¡Hola! ¿Te atreves?"],
+        [senala, 3400, "Paga con tarjeta\no con el móvil"],
+        ["biceps", 3600, null],
+        ["pulgar", 3200, "¡Sal en el\nranking!"],
+        ["reposo", 2200, null],
+        ["selfie", 3800, "¡Y con foto!"],
+        ["jarras", 2600, null],
+      ];
     }
 
     /** Lista del top 10 (para la capa de la espera). (ox, oy): esquina de la capa. */
@@ -1114,6 +1220,7 @@
       const d = v.d || {};
       this._t(ctx, T.PAGADO.titulo, cx, 420, { tam: 64, peso: 900, familia: DISPLAY, alin: "center", color: C.tinta, alfa: clamp(tf / 300, 0, 1) });
       this._t(ctx, d.credito ? T.PAGADO.credito : T.PAGADO.sub, cx, 468, { tam: 26, peso: 600, alin: "center", color: C.suave, alfa: clamp((tf - 200) / 300, 0, 1) });
+      this._mono(ctx, 872, 574, 392, tf < 1300 ? "celebra" : "pulgar", tf);
       if (tf < 60 && !this._chispaPagado) {
         this._chispaPagado = true;
         this.p.explosion(cx, cy, 3, 50, 300);
@@ -1121,13 +1228,13 @@
       if (tf > 1000) this._chispaPagado = false;
     }
 
-    _pasos(ctx, x, y, activo, ahora) {
+    _pasos(ctx, x, y, activo, ahora, ancho = 470) {
       const pasos = T.PREPARANDO.pasos;
       for (let i = 0; i < pasos.length; i++) {
         const yy = y + i * 74;
         const on = i === activo;
         const hecho = i < activo;
-        rectR(ctx, x, yy, 470, 60, 14);
+        rectR(ctx, x, yy, ancho, 60, 14);
         ctx.fillStyle = on ? "rgba(255,176,46,0.18)" : "rgba(255,255,255,0.05)";
         ctx.fill();
         if (on) {
@@ -1140,7 +1247,7 @@
         ctx.arc(x + 34, yy + 30, 17, 0, Math.PI * 2);
         ctx.fill();
         this._t(ctx, hecho ? "✓" : String(i + 1), x + 34, yy + 38, { tam: 22, peso: 900, familia: DISPLAY, color: "#1b0d02", alin: "center" });
-        this._t(ctx, pasos[i], x + 64, yy + 38, { tam: 23, peso: on ? 800 : 600, color: on || hecho ? C.tinta : C.suave, max: 390 });
+        this._t(ctx, pasos[i], x + 64, yy + 38, { tam: 23, peso: on ? 800 : 600, color: on || hecho ? C.tinta : C.suave, max: ancho - 80 });
       }
     }
 
@@ -1149,13 +1256,14 @@
       const dur = d.duracion_ms || 10000;
       const frac = clamp(tf / dur, 0, 1);
       this._t(ctx, T.PREPARANDO.titulo, W / 2, 84, { tam: 54, peso: 900, familia: DISPLAY, alin: "center", color: C.tinta });
-      const cx = 250;
-      const cy = 320;
-      anillo(ctx, cx, cy, 120, 18, frac, C.ambar, "rgba(255,255,255,0.08)");
+      const cx = 190;
+      const cy = 318;
+      anillo(ctx, cx, cy, 112, 18, frac, C.ambar, "rgba(255,255,255,0.08)");
       const seg = Math.max(0, Math.ceil((dur - tf) / 1000));
-      this._t(ctx, String(seg), cx, cy + 40, { tam: 120, peso: 900, familia: DISPLAY, alin: "center", color: C.tinta });
+      this._t(ctx, String(seg), cx, cy + 40, { tam: 116, peso: 900, familia: DISPLAY, alin: "center", color: C.tinta });
       this._t(ctx, "segundos", cx, cy + 74, { tam: 18, color: C.suave, alin: "center" });
-      this._pasos(ctx, 470, 190, Math.min(2, Math.floor(frac * 3)), ahora);
+      this._pasos(ctx, 340, 190, Math.min(2, Math.floor(frac * 3)), ahora, 420);
+      this._mono(ctx, 892, 576, 372, [["estira", 2600], ["jarras", 1400]], tf);
       // la boquilla está encima de la pantalla
       const pb = (v.posiciones && v.posiciones.boquilla) || "arriba-izquierda";
       flecha(ctx, pb.includes("izquierda") ? 60 : W - 60, 50, pb, ahora, C.cian, 1);
@@ -1173,19 +1281,19 @@
       this._t(ctx, T.SOPLA.titulo, 0, 0, { tam: 190, peso: 900, familia: DISPLAY, alin: "center", base: "middle", color: C.tinta, glow: C.cian, glowTam: 30, calidad: this.calidad });
       ctx.restore();
       this._t(ctx, `${T.SOPLA.sub}, ${d.segundos || 4} segundos`, 380, 382, { tam: 30, peso: 800, alin: "center", color: C.cian });
-      globo(ctx, 790, 250, 46 + Math.sin(ahora / 300) * 3, C.magenta, ahora);
+      this._monoCoreo(ctx, 848, 584, 420, [["sopla", 99999, null]], ahora);
       const pb = (v.posiciones && v.posiciones.boquilla) || "arriba-izquierda";
       flecha(ctx, pb.includes("izquierda") ? 70 : W - 70, 60, pb, ahora, C.cian, 1.25);
       // tiempo que el sensor espera el soplido (1 min)
       const lim = d.limite_ms || 60000;
       const quedan = Math.max(0, Math.ceil((lim - tf) / 1000));
-      rectR(ctx, 212, 452, 600, 12, 6);
+      rectR(ctx, 110, 452, 540, 12, 6);
       ctx.fillStyle = "rgba(255,255,255,0.08)";
       ctx.fill();
-      rectR(ctx, 212, 452, 600 * clamp(1 - tf / lim, 0, 1), 12, 6);
+      rectR(ctx, 110, 452, 540 * clamp(1 - tf / lim, 0, 1), 12, 6);
       ctx.fillStyle = quedan <= 15 ? C.magenta : "rgba(47,227,232,0.7)";
       ctx.fill();
-      this._t(ctx, `Tienes ${quedan} s para empezar a soplar` + (d.cortes ? ` · intento ${d.cortes + 1} de ${d.max_cortes}` : ""), W / 2, 500, { tam: 20, color: C.suave, alin: "center" });
+      this._t(ctx, `Tienes ${quedan} s para empezar a soplar` + (d.cortes ? ` · intento ${d.cortes + 1} de ${d.max_cortes}` : ""), 380, 500, { tam: 20, color: C.suave, alin: "center", max: 600 });
       this._letraPequena(ctx, 584);
     }
 
@@ -1195,13 +1303,14 @@
       const frac = clamp(tf / dur, 0, 1);
       const frases = T.SOPLANDO;
       const f = frases[Math.min(frases.length - 1, Math.floor(frac * frases.length))];
-      this._t(ctx, f, 330, 150, { tam: 92, peso: 900, familia: DISPLAY, alin: "center", color: C.tinta, glow: C.magenta, calidad: this.calidad });
-      const r = 50 + easeOut(frac) * 150;
-      globo(ctx, 760, 300 - frac * 30, r, C.magenta, ahora, frac >= 1);
+      this._t(ctx, f, 300, 150, { tam: 92, peso: 900, familia: DISPLAY, alin: "center", color: C.tinta, glow: C.magenta, calidad: this.calidad, max: 520 });
+      this._mono(ctx, 942, 590, 330, "anima", ahora);
+      const r = 50 + easeOut(frac) * 125;
+      globo(ctx, 712, 300 - frac * 30, r, C.magenta, ahora, frac >= 1);
       // barra por segundos
       const segs = Math.round(dur / 1000);
-      const x0 = 80;
-      const ancho = 500;
+      const x0 = 60;
+      const ancho = 480;
       for (let i = 0; i < segs; i++) {
         const w = ancho / segs - 8;
         const x = x0 + i * (ancho / segs);
@@ -1219,9 +1328,9 @@
         }
         this._t(ctx, String(i + 1), x + w / 2, 312, { tam: 40, peso: 900, familia: DISPLAY, alin: "center", color: k >= 1 ? "#05262c" : "rgba(255,255,255,0.35)" });
       }
-      this._t(ctx, `${Math.round(frac * 100)} %`, 330, 400, { tam: 48, peso: 900, familia: DISPLAY, alin: "center", color: C.cian, vivo: true });
-      this._t(ctx, "No pares hasta que se llene", 330, 446, { tam: 22, color: C.suave, alin: "center" });
-      if (!saliendo && Math.random() < 0.5) this.p.chispa(760 + (Math.random() - 0.5) * r, 300 + r, (Math.random() - 0.5) * 40, 40 + Math.random() * 60, 2, 0.6, 2, 0);
+      this._t(ctx, `${Math.round(frac * 100)} %`, 300, 400, { tam: 48, peso: 900, familia: DISPLAY, alin: "center", color: C.cian, vivo: true });
+      this._t(ctx, "No pares hasta que se llene", 300, 446, { tam: 22, color: C.suave, alin: "center" });
+      if (!saliendo && Math.random() < 0.5) this.p.chispa(712 + (Math.random() - 0.5) * r, 300 + r, (Math.random() - 0.5) * 40, 40 + Math.random() * 60, 2, 0.6, 2, 0);
       this._ultimoGlobo = { r, frac };
       this._letraPequena(ctx, 584);
     }
@@ -1230,6 +1339,7 @@
       const d = v.d || {};
       const espera = d.espera_ms || 13000;
       const k = clamp(tf / 900, 0, 1);
+      this._mono(ctx, 872, 584, 400, tf < 2600 ? "encoge" : "jarras", tf);
       globo(ctx, 760 + k * 120, 300 - k * 200, 120 * (1 - easeOut(k)), C.magenta, ahora);
       this._t(ctx, T.CORTADO.titulo, 360, 200, { tam: 110, peso: 900, familia: DISPLAY, alin: "center", color: C.magenta, glow: C.magenta, calidad: this.calidad });
       this._t(ctx, `Hay que soplar ${d.segundos || 4} segundos seguidos`, 360, 262, { tam: 30, peso: 800, alin: "center", color: C.tinta });
@@ -1299,6 +1409,7 @@
       } else {
         this._t(ctx, "¡FOTO!", W / 2, 62, { tam: 50, peso: 900, familia: DISPLAY, alin: "center", color: C.tinta });
       }
+      this._mono(ctx, 958, 616, 330, d.flash ? "pulgar" : "selfie", ahora);
       // ficha "analizando"
       const puntos = ".".repeat(1 + (Math.floor(ahora / 350) % 3));
       rectR(ctx, W / 2 - 150, 516, 300, 42, 21);
@@ -1317,7 +1428,7 @@
       // --- foto (cae desde arriba)
       const kf = easeBack(tf / 700);
       const img = this.img.obtener(d.foto);
-      this._polaroid(ctx, `res:${d.id}:${d.foto_estado}`, img, !d.foto, 250, lerp(-260, 296, kf), 330, lerp(-0.4, -0.05, kf), (c, x, y, w, h) => {
+      this._polaroid(ctx, `res:${d.id}:${d.foto_estado}`, img, !d.foto, 184, lerp(-260, 292, kf), 296, lerp(-0.4, -0.05, kf), (c, x, y, w, h) => {
         const pie = d.foto_estado === "top" ? "¡Tu foto se queda en el top 10!" : d.foto_estado === "24h" ? "Tu foto se borra en 24 h" : d.foto_estado === "tapada" ? "Sin foto (cámara tapada)" : "Sin foto";
         texto(c, pie, x + w / 2, y + h * 0.6, { tam: 18, peso: 700, color: "#3a2a1a", alin: "center", max: w - 30 });
       });
@@ -1326,9 +1437,12 @@
       const valorNum = parseFloat(String(d.valor || "0").replace(",", ".")) || 0;
       const dec = String(d.valor || "").includes(",") ? String(d.valor).split(",")[1].length : 0;
       const mostrado = (valorNum * kv).toFixed(dec).replace(".", ",");
-      const xr = 735;
+      const xr = 772;
+      // --- el monigote, entre la foto y el resultado: espera el número y luego reacciona
+      const reaccion = { record: "celebra", top10: "celebra", alto: "biceps", medio: "pulgar", bajo: "biceps1", cero: "pulgar" }[d.celebracion] || "pulgar";
+      this._mono(ctx, 432, 566, 330, tf < 1900 ? "piensa" : reaccion, tf);
       this._t(ctx, "TU RESULTADO", xr, 96, { tam: 20, peso: 800, color: C.ambar, alin: "center", espaciado: 2, alfa: clamp(tf / 300, 0, 1) });
-      const tamV = this._t(ctx, mostrado, xr - 30, 238, { tam: 170, peso: 900, familia: DISPLAY, alin: "center", color: C.tinta, glow: "rgba(255,211,77,0.75)", glowTam: 28, max: 400, vivo: kv < 1 });
+      const tamV = this._t(ctx, mostrado, xr - 30, 238, { tam: 170, peso: 900, familia: DISPLAY, alin: "center", color: C.tinta, glow: "rgba(255,211,77,0.75)", glowTam: 28, max: 360, vivo: kv < 1 });
       this._t(ctx, d.unidad || v.unidad || "", xr - 30 + medir(ctx, mostrado, tamV, 900, DISPLAY) / 2 + 8, 238, { tam: 40, peso: 800, familia: DISPLAY, color: C.oro });
       if (d.saturado) this._t(ctx, "(lo máximo que mide el sensor)", xr, 270, { tam: 15, color: C.suave, alin: "center" });
       // --- titular
@@ -1337,9 +1451,9 @@
         ctx.save();
         ctx.translate(xr, 318);
         ctx.scale(kt, kt);
-        this._t(ctx, d.titular || "", 0, 0, { tam: 46, peso: 900, familia: DISPLAY, alin: "center", color: d.celebracion === "record" || d.celebracion === "top10" ? C.oro : C.tinta, max: 470, glow: d.celebracion === "record" ? C.magenta : null, calidad: this.calidad });
+        this._t(ctx, d.titular || "", 0, 0, { tam: 46, peso: 900, familia: DISPLAY, alin: "center", color: d.celebracion === "record" || d.celebracion === "top10" ? C.oro : C.tinta, max: 430, glow: d.celebracion === "record" ? C.magenta : null, calidad: this.calidad });
         ctx.restore();
-        this._t(ctx, d.frase || "", xr, 352, { tam: 19, peso: 600, alin: "center", color: C.suave, max: 480, alfa: clamp((tf - 2000) / 400, 0, 1) });
+        this._t(ctx, d.frase || "", xr, 352, { tam: 19, peso: 600, alin: "center", color: C.suave, max: 430, alfa: clamp((tf - 2000) / 400, 0, 1) });
       }
       // --- puesto en el ranking
       if (tf > 2500) {
@@ -1357,8 +1471,8 @@
           ctx.globalAlpha = 1;
           this._t(ctx, s, xr, y + 42, { tam: 26, peso: 900, familia: DISPLAY, alin: "center", color: "#1b0d02", alfa: a });
           // barra del ranking: de más (izquierda) a menos; la marca cae en tu puesto
-          const bx = xr - 230;
-          const bw = 460;
+          const bx = xr - 205;
+          const bw = 410;
           const by = y + 72;
           const g = ctx.createLinearGradient(bx, 0, bx + bw, 0);
           g.addColorStop(0, C.magenta);
@@ -1400,7 +1514,7 @@
         else if (c === "alto") p.confeti(70, 0, W, -10);
         else if (c === "medio") p.confeti(40, W * 0.45, W, -10);
         else if (c === "cero") p.burbujas(40, 0, W, H);
-        else p.explosion(735, 220, 0, 40, 220);
+        else p.explosion(772, 220, 0, 40, 220);
       }
       const cada = c === "record" ? 380 : c === "top10" ? 650 : c === "alto" ? 1300 : 0;
       if (cada && tf > 1200 && tf < 15000 && ahora - this.celebrado.ultimoFuego > cada) {
@@ -1436,6 +1550,7 @@
       this._t(ctx, d.texto || "", 0, 46, { tam: 30, peso: 800, alin: "center", color: C.verde, max: 700 });
       this._t(ctx, d.detalle || "", 0, 96, { tam: 20, alin: "center", color: C.suave, max: 700 });
       ctx.restore();
+      this._mono(ctx, 958, 622, 300, "encoge", ahora);
       const dur = d.duracion_ms || 9000;
       rectR(ctx, 0, H - 4, W * clamp(1 - tf / dur, 0, 1), 4, 2);
       ctx.fillStyle = "rgba(255,61,132,0.6)";

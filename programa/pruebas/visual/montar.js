@@ -14,7 +14,7 @@ const fuentes = [
   ["Archivo", 800, "pi/fuentes/archivo-latin-800-normal.woff2"],
 ];
 const css = fuentes.map(([f, w, p]) => `@font-face{font-family:"${f}";font-weight:${w};src:url(data:font/woff2;base64,${b64(p)}) format("woff2")}`).join("\n");
-const js = ["nucleo/util.js", "nucleo/textos.js", "nucleo/pantalla.js", "sim/camara_sim.js"].map((f) => `<script>/* ${f} */\n${lee(f)}\n</script>`).join("\n");
+const js = ["nucleo/util.js", "nucleo/textos.js", "nucleo/monigote.js", "nucleo/pantalla.js", "sim/camara_sim.js"].map((f) => `<script>/* ${f} */\n${lee(f)}\n</script>`).join("\n");
 const html = `<!doctype html><html><head><meta charset="utf-8"><style>${css}
 html,body{margin:0;background:#000}canvas{display:block}</style></head><body>
 <canvas id="cv" width="1024" height="600"></canvas>
