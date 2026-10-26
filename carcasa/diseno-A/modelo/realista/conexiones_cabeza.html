@@ -4,22 +4,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
 <style>
-/* Mesa de trabajo: escena 3D a la izquierda, hoja de verificación a la derecha (debajo en móvil) */
+/*FUENTES*/
+/* Mesa de trabajo: escena 3D a la izquierda, programa y verificación a la derecha (debajo en móvil) */
 :root{
   --bg:#e4e8eb; --panel:#f7f8f9; --panel-2:#eceff2; --ink:#162029; --muted:#56636f; --line:#c8d0d7;
   --accent:#d24d14; --accent-ink:#ffffff; --sel:#f0b400; --mesa:#cfd4d8;
   --ok:#2f7d4f; --ok-bg:#e3f1e8; --warn:#9a5d00; --warn-bg:#fbefd9; --err:#b3261e; --err-bg:#f9e1df;
+  --soplo:#0e7c86; --soplo-ink:#ffffff; --pant:#0b0711; --log:#10161c; --log-ink:#cfe3d4;
   --f-ui:"Archivo","Helvetica Neue",Arial,sans-serif;
   --f-mono:"JetBrains Mono","SFMono-Regular",Menlo,Consolas,monospace;
 }
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
   --bg:#12171c; --panel:#192027; --panel-2:#202932; --ink:#e4e9ee; --muted:#96a3af; --line:#2e3943;
   --accent:#ff7a3d; --accent-ink:#1a0d05; --sel:#ffc933; --mesa:#3a4047;
-  --ok:#6fcb93; --ok-bg:#183326; --warn:#f0b04a; --warn-bg:#352812; --err:#ff8a80; --err-bg:#3a1a18; color-scheme:dark } }
+  --ok:#6fcb93; --ok-bg:#183326; --warn:#f0b04a; --warn-bg:#352812; --err:#ff8a80; --err-bg:#3a1a18;
+  --soplo:#2fc6d0; --soplo-ink:#03262a; --pant:#000000; --log:#0a0e12; --log-ink:#cfe3d4; color-scheme:dark } }
 :root[data-theme="dark"]{
   --bg:#12171c; --panel:#192027; --panel-2:#202932; --ink:#e4e9ee; --muted:#96a3af; --line:#2e3943;
   --accent:#ff7a3d; --accent-ink:#1a0d05; --sel:#ffc933; --mesa:#3a4047;
-  --ok:#6fcb93; --ok-bg:#183326; --warn:#f0b04a; --warn-bg:#352812; --err:#ff8a80; --err-bg:#3a1a18; color-scheme:dark }
+  --ok:#6fcb93; --ok-bg:#183326; --warn:#f0b04a; --warn-bg:#352812; --err:#ff8a80; --err-bg:#3a1a18;
+  --soplo:#2fc6d0; --soplo-ink:#03262a; --pant:#000000; --log:#0a0e12; --log-ink:#cfe3d4; color-scheme:dark }
 html,body{height:100%}
 body{background:var(--bg);color:var(--ink);font-family:var(--f-ui);font-size:14px;margin:0;overflow:hidden}
 #app{height:100%;display:grid;grid-template-rows:auto 1fr;min-height:0}
@@ -30,7 +34,7 @@ header .sub{font-size:12.5px;color:var(--muted)}
 .cuenta{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap;font-family:var(--f-mono);font-size:12px}
 .pill{border-radius:999px;padding:2px 9px;font-weight:600}
 .pill.ok{background:var(--ok-bg);color:var(--ok)} .pill.aviso{background:var(--warn-bg);color:var(--warn)} .pill.error{background:var(--err-bg);color:var(--err)}
-main{display:grid;grid-template-columns:minmax(0,1fr) 400px;min-height:0}
+main{display:grid;grid-template-columns:minmax(0,1fr) 410px;min-height:0}
 #stage{position:relative;min-height:0;background:var(--mesa)}
 #v3d{position:absolute;inset:0}
 #v3d canvas{display:block}
@@ -43,10 +47,49 @@ main{display:grid;grid-template-columns:minmax(0,1fr) 400px;min-height:0}
 .chip{font:inherit;font-size:12px;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:5px;padding:4px 8px;cursor:pointer}
 .chip[aria-pressed="true"]{border-color:var(--accent);color:var(--accent);font-weight:600}
 #ayuda{position:absolute;left:max(12px,env(safe-area-inset-left,0px));bottom:12px;max-width:520px;margin-right:12px;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:7px 10px;font-size:12.5px;line-height:1.45;color:var(--muted)}
+/* vista grande de la pantalla y del lector */
+#grande{position:absolute;inset:0;background:var(--bg);display:flex;flex-direction:column;gap:12px;padding:18px;z-index:1000}
+#grande[hidden]{display:none}
+#grande .fila{flex:1;min-height:0;display:flex;gap:14px;align-items:center;justify-content:center}
+#slotGrande{flex:1 1 auto;min-width:0;max-width:calc((100vh - 200px) * 1024 / 600);aspect-ratio:1024/600;background:var(--pant);border-radius:10px;overflow:hidden;box-shadow:0 10px 40px rgba(0,0,0,.35);border:10px solid #111}
+#slotGrande canvas,#slotMini canvas{width:100%;height:100%;display:block}
+#slotSolo{flex:0 0 auto;width:min(22%,220px);aspect-ratio:1;border-radius:18px;border:8px solid #f4f4f2;background:#fff;box-shadow:0 10px 30px rgba(0,0,0,.3);overflow:hidden}
+#slotSolo canvas{width:100%;height:100%;display:block}
+#grande .pie{font-size:12.5px;color:var(--muted);text-align:center}
 aside{background:var(--panel);border-left:1px solid var(--line);min-height:0;overflow-y:auto}
-section.blk{padding:12px 14px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:8px}
+.tabs{display:flex;position:sticky;top:0;z-index:2;background:var(--panel);border-bottom:1px solid var(--line)}
+.tabs button{flex:1;font:inherit;font-weight:600;font-size:13.5px;background:none;border:0;border-bottom:3px solid transparent;color:var(--muted);padding:11px 8px 9px;cursor:pointer}
+.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+section.blk,details.blk{padding:12px 14px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:8px}
+details.blk>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:8px}
+details.blk>summary::-webkit-details-marker{display:none}
+details.blk>summary::before{content:"▶";font-size:10px;color:var(--muted);transition:transform .15s}
+details.blk[open]>summary::before{transform:rotate(90deg)}
 h2{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:0;font-weight:600}
+h3{font-size:12px;color:var(--muted);margin:4px 0 0;font-weight:600}
+.cabb{display:flex;align-items:center;justify-content:space-between;gap:8px}
 .nota{font-size:12px;color:var(--muted);line-height:1.45;margin:0}
+#slotMini{aspect-ratio:1024/600;background:var(--pant);border-radius:6px;overflow:hidden;border:4px solid #111;cursor:zoom-in}
+.estado{display:flex;flex-wrap:wrap;gap:4px 10px;font-family:var(--f-mono);font-size:11.5px;color:var(--muted)}
+.estado b{color:var(--ink);font-weight:600}
+.btn{font:inherit;font-size:12.5px;border:1px solid var(--line);background:var(--panel-2);color:var(--ink);border-radius:6px;padding:6px 10px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.btn.sm{font-size:12px;padding:4px 8px}
+.btn[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:600}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.btn.prim{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:700;font-size:15px;padding:11px 12px;justify-content:center}
+.btn.soplar{background:var(--soplo);border-color:var(--soplo);color:var(--soplo-ink);font-weight:700;font-size:15px;padding:13px 12px;justify-content:center;flex-direction:column;gap:6px;touch-action:none;user-select:none;-webkit-user-select:none}
+.btn.soplar.activo{filter:brightness(1.12);outline:3px solid var(--sel);outline-offset:1px}
+.barra{display:block;width:100%;height:6px;border-radius:3px;background:color-mix(in srgb,var(--soplo-ink) 25%,transparent);overflow:hidden}
+.barra i{display:block;height:100%;width:0;background:var(--soplo-ink)}
+.btns{display:flex;flex-wrap:wrap;gap:6px}
+.fila{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:12.5px}
+.fila output{font-family:var(--f-mono);font-weight:600}
+input[type=range]{width:100%;accent-color:var(--accent)}
+.seg{display:flex;gap:2px;background:var(--panel-2);border-radius:6px;padding:2px}
+.seg button{font:inherit;font-size:11.5px;border:0;background:none;color:var(--muted);border-radius:4px;padding:3px 7px;cursor:pointer}
+.seg button[aria-selected="true"]{background:var(--panel);color:var(--ink);font-weight:600}
+#log{margin:0;height:230px;overflow:auto;background:var(--log);color:var(--log-ink);border-radius:6px;padding:8px;font-family:var(--f-mono);font-size:11px;line-height:1.5;white-space:pre-wrap;overflow-wrap:anywhere}
+#log .av{color:#f0b04a} #log .er{color:#ff8a80} #log .tx{color:#8fd3ff} #log .rx{color:#b6f09c} #log .t{color:#6f7f8c}
 .glob{display:flex;flex-direction:column;gap:6px}
 .g{display:grid;grid-template-columns:14px 1fr;gap:8px;font-size:12.5px;line-height:1.4}
 .g b{font-weight:600}
@@ -73,9 +116,8 @@ h2{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--mute
 .v{display:grid;grid-template-columns:14px 1fr;gap:8px;font-size:12.5px;line-height:1.42;padding:6px 8px;border-radius:5px}
 .v.ok{background:var(--ok-bg)} .v.aviso{background:var(--warn-bg)} .v.error{background:var(--err-bg)}
 .v small{display:block;color:var(--muted);font-size:11px;margin-top:2px}
-.btn{font:inherit;font-size:12.5px;border:1px solid var(--line);background:var(--panel-2);color:var(--ink);border-radius:6px;padding:5px 9px;cursor:pointer}
-.btn[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:600}
-.btns{display:flex;flex-wrap:wrap;gap:6px}
+.tbl{width:100%;border-collapse:collapse;font-family:var(--f-mono);font-size:11px}
+.tbl td{padding:1px 4px;border-bottom:1px solid rgba(255,255,255,.06);vertical-align:top}
 :focus-visible{outline:2px solid var(--sel);outline-offset:2px}
 @media (max-width:860px){
   body{overflow:auto}
@@ -85,13 +127,14 @@ h2{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--mute
   aside{border-left:0;border-top:1px solid var(--line);overflow:visible}
   #ayuda{display:none}
   .cuenta{margin-left:0}
+  #slotSolo{width:28%}
 }
 </style>
 
 <div id="app">
   <header>
-    <h1>Alcoholímetro · conexiones sobre la mesa</h1>
-    <span class="sub">Diseño A · todo el cableado, cada cable a su borne, pin o boca</span>
+    <h1>Alcoholímetro · conexiones y programa</h1>
+    <span class="sub">Diseño A · todo el cableado, y el programa de la Raspberry Pi funcionando sobre el hardware simulado</span>
     <div class="cuenta" id="cuenta"></div>
   </header>
   <main>
@@ -99,16 +142,74 @@ h2{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--mute
       <div id="v3d"><div id="labels"></div>
         <div id="zonas"></div>
       </div>
-      <div id="ayuda">Toca un cable, una etiqueta W o una fila de la lista para ver qué une y qué se ha comprobado. La disposición sobre la mesa no es la de dentro de la máquina: las piezas están separadas para que se vea cada conexión.</div>
+      <div id="ayuda">La pantalla y el lector de la mesa muestran el programa en marcha. Paga con «Pasar tarjeta» y sopla con el botón (o la barra espaciadora). Toca un cable o una etiqueta W para ver qué une y qué se ha comprobado.</div>
+      <div id="grande" hidden>
+        <div class="fila"><div id="slotGrande"></div><div id="slotSolo"></div></div>
+        <div class="pie">Pantalla de 7" (1024 × 600) y pantalla del lector de tarjetas, tal como las pinta el programa · <button class="btn sm" id="bCerrarGrande">Volver a la mesa</button></div>
+      </div>
     </div>
     <aside>
-      <section class="blk" id="det"><h2>Conexión</h2><p class="nota">Elige una conexión para ver sus extremos, el cable y la verificación.</p></section>
-      <section class="blk">
-        <h2>Ver</h2>
-        <div class="btns"><button class="btn" id="bTags" aria-pressed="true">Etiquetas W</button><button class="btn" id="bNom" aria-pressed="false">Nombres de piezas</button><button class="btn" id="bSolo" aria-pressed="false">Solo la elegida</button></div>
-      </section>
-      <section class="blk"><h2>Comprobaciones generales</h2><div class="glob" id="glob"></div></section>
-      <div id="lista"></div>
+      <div class="tabs" role="tablist">
+        <button role="tab" id="tProg" aria-selected="true" aria-controls="pProg">Programa</button>
+        <button role="tab" id="tCon" aria-selected="false" aria-controls="pCon">Conexiones</button>
+      </div>
+      <div id="pProg" role="tabpanel" aria-labelledby="tProg">
+        <section class="blk">
+          <div class="cabb"><h2>Pantalla de la máquina</h2><button class="btn sm" id="bGrande">Ver en grande</button></div>
+          <div id="slotMini" title="Ver en grande"></div>
+          <div class="estado" id="simEstado">arrancando…</div>
+        </section>
+        <section class="blk">
+          <h2>Lo que hace la persona</h2>
+          <button class="btn prim" id="bTarjeta">Pasar tarjeta · pago correcto</button>
+          <p class="nota" id="hTarjeta">El lector solo acepta tarjeta cuando la pide en su pantalla.</p>
+          <button class="btn soplar" id="bSoplar"><span id="tSoplar">Mantén pulsado para soplar</span><span class="barra"><i id="iSoplo"></i></span></button>
+          <p class="nota">También con la barra espaciadora. Hay que soplar 4 s seguidos.</p>
+          <div class="fila"><label for="rAlc">Alcohol de quien sopla</label><output id="oAlc">0,45 g/L</output></div>
+          <input type="range" id="rAlc" min="0" max="2.4" step="0.01" value="0.45">
+          <div class="btns">
+            <button class="btn" id="bAzar">Al azar</button>
+            <button class="btn" id="bPersona">Otra persona</button>
+            <label class="btn" for="fFoto">Subir mi foto</label><input type="file" id="fFoto" accept="image/*" hidden>
+            <button class="btn" id="bTapar" aria-pressed="false">Tapar la cámara</button>
+          </div>
+        </section>
+        <details class="blk" id="dMas">
+          <summary><h2>Más pruebas y averías</h2></summary>
+          <div class="btns">
+            <button class="btn" id="bRechazo">Tarjeta rechazada</button>
+            <button class="btn" id="bPin">Pago lento (PIN, 25 s)</button>
+            <button class="btn" id="bCorte">Corte de luz</button>
+            <button class="btn" id="b24">Reloj +24 h</button>
+            <button class="btn" id="bRapido" aria-pressed="false">Precalentar en 2 s</button>
+          </div>
+          <h3>Averías (se pueden combinar)</h3>
+          <div class="btns" id="averias"></div>
+          <h3>Tarjeta SD simulada</h3>
+          <div class="btns"><button class="btn" id="bEjemplo">Añadir datos de ejemplo</button><button class="btn" id="bVaciar">Vaciar la tarjeta</button></div>
+          <p class="nota">Los datos se guardan en este navegador: al volver, el ranking y las fotos siguen ahí.</p>
+        </details>
+        <section class="blk">
+          <div class="cabb"><h2>Registro</h2>
+            <div class="seg" role="tablist" id="segLog">
+              <button role="tab" data-l="prog" aria-selected="true">Programa</button>
+              <button role="tab" data-l="uart" aria-selected="false">UART</button>
+              <button role="tab" data-l="sumup" aria-selected="false">SumUp</button>
+              <button role="tab" data-l="arch" aria-selected="false">Archivos</button>
+            </div>
+          </div>
+          <pre id="log" aria-live="off"></pre>
+        </section>
+      </div>
+      <div id="pCon" role="tabpanel" aria-labelledby="tCon" hidden>
+        <section class="blk" id="det"><h2>Conexión</h2><p class="nota">Elige una conexión para ver sus extremos, el cable y la verificación.</p></section>
+        <section class="blk">
+          <h2>Ver</h2>
+          <div class="btns"><button class="btn" id="bTags" aria-pressed="true">Etiquetas W</button><button class="btn" id="bNom" aria-pressed="false">Nombres de piezas</button><button class="btn" id="bSolo" aria-pressed="false">Solo la elegida</button></div>
+        </section>
+        <section class="blk"><h2>Comprobaciones generales</h2><div class="glob" id="glob"></div></section>
+        <div id="lista"></div>
+      </div>
     </aside>
   </main>
 </div>

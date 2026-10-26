@@ -170,6 +170,9 @@ for (const c of D.conexiones) {
 }
 ESC.sombras(raiz);
 raiz.traverse(o => { if (o.isMesh && o.material && o.material.transmission > 0.5) o.castShadow = false; });
+// la mesa no se mueve: el mapa de sombras se calcula una vez y no en cada cuadro (las pantallas animadas sí)
+renderer.shadowMap.autoUpdate = false;
+renderer.shadowMap.needsUpdate = true;
 
 // ---------------------------------------------------------------- etiquetas
 const tags = [];
@@ -225,11 +228,13 @@ function resaltar(id) {
   while (resaltados.length) { const o = resaltados.pop(); o.material.emissive.set(0x000000); o.material.emissiveIntensity = 1; }
   for (const t of tags) t.el.classList.toggle("sel", t.cab.c.id === id);
   for (const cab of CAB) if (cab.me) cab.me.visible = !soloSel || !id || cab.c.id === id;
+  renderer.shadowMap.needsUpdate = true;
   if (!id) return;
   const cab = CAB.find(c => c.c.id === id);
   if (cab && cab.me && cab.me.material.emissive) { cab.me.material.emissive.set(css("--sel")); cab.me.material.emissiveIntensity = 0.55; resaltados.push(cab.me); }
 }
 function elegir(id, desdeLista) {
+  if (!desdeLista && window.irAConexiones) window.irAConexiones();
   sel = id; resaltar(id);
   document.querySelectorAll(".con").forEach(r => r.classList.toggle("sel", r.dataset.id === id));
   const cab = CAB.find(c => c.c.id === id); if (!cab) return;
@@ -256,10 +261,15 @@ function enfocarCable(cab) {
   const dir = camera.position.clone().sub(controls.target);
   enfocar(b, 1.1, dir.y > 50 ? dir : V(0, 0.9, 0.75));
 }
-const ZONAS = [["Todo", null], ["230 V y tierra", "230 V y tierra"], ["Reparto de 5 V", "Reparto de 5 V"], ["Pi y periféricos", "Pi y periféricos"], ["Sensor y soplido", "Sensor y soplido"]];
+const ZONAS = [["Todo", null], ["Pantalla y lector", "pantalla"], ["230 V y tierra", "230 V y tierra"], ["Reparto de 5 V", "Reparto de 5 V"], ["Pi y periféricos", "Pi y periféricos"], ["Sensor y soplido", "Sensor y soplido"]];
 function zona(g) {
   document.querySelectorAll("#zonas .chip").forEach(b => b.setAttribute("aria-pressed", b.dataset.g === String(g)));
   const b = new THREE.Box3();
+  if (g === "pantalla") {
+    // la pantalla, el lector y la cámara de frente: para ver el programa en marcha
+    for (const id of ["pant", "solo", "cam"]) if (P[id] && P[id].g) b.expandByObject(P[id].g);
+    return enfocar(b, 0.92, V(0.05, 0.62, 1));
+  }
   for (const p of Object.values(P)) if (p.g && (!g || p.c.grupo === g)) b.expandByObject(p.g);
   enfocar(b, g ? 0.82 : 0.8, g ? V(0, 1.0, 0.72) : V(0, 1.05, 0.8));
 }
@@ -284,9 +294,17 @@ renderer.domElement.addEventListener("pointerup", e => {
 cuenta(); globales(); lista(); zona(null);
 let ini = null; try { ini = location.hash.slice(1) || null; } catch (e) {}
 if (ini && CAB.find(c => c.c.id === ini)) elegir(ini, true);
-const bucle = () => { controls.update(); renderer.render(scene, camera); lr.render(scene, camera); };
+// antesDeRender: la simulación del programa actualiza ahí las pantallas (texturas) y los cables que se iluminan
+let tUltimo = 0;
+const bucle = (t) => {
+  if (t - tUltimo < 30) return;          // como mucho ~33 cuadros por segundo: de sobra para la mesa
+  tUltimo = t;
+  if (window.antesDeRender) window.antesDeRender();
+  if (window.ocultar3D) return;
+  controls.update(); renderer.render(scene, camera); lr.render(scene, camera);
+};
 renderer.setAnimationLoop(bucle);
 window.pausar = () => renderer.setAnimationLoop(null);
-window.cuadro = () => { controls.update(); renderer.render(scene, camera); lr.render(scene, camera); return 0; };
-window.zona = zona; window.elegir = elegir; window.P = P; window.CAB = CAB;
+window.cuadro = () => { if (window.antesDeRender) window.antesDeRender(); controls.update(); renderer.render(scene, camera); lr.render(scene, camera); return 0; };
+window.zona = zona; window.elegir = elegir; window.P = P; window.CAB = CAB; window.ESCENA = { scene, camera, renderer, controls, raiz };
 window.listo = true;

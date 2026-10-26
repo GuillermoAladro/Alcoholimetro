@@ -9,7 +9,7 @@
 | Archivo | Qué es |
 |---|---|
 | `Visor_3D.html` | Visor 3D sin conexión (se abre con doble clic). Cada pieza se puede seleccionar y ocultar. Se mueven el cajón de pajitas, la tapa, la tapa interior y el cajón de componentes, y hay un botón para ocultar o ver la electrónica |
-| `Conexiones_3D.html` | Todos los componentes sobre una mesa con las 38 conexiones: cada cable con su terminal (faston, puntera, Dupont, XH…), su número W y la verificación de tensiones, corrientes, fusibles y masas |
+| `Conexiones_3D.html` | Dos pestañas. **Programa:** la Raspberry Pi simulada corre el programa real (`programa/`) y su pantalla se ve en la mesa; se paga con un botón, se sopla, se hace la foto y se ven el resultado y el ranking, con averías y cortes de luz. **Conexiones:** todos los componentes sobre una mesa con las 38 conexiones, cada cable con su terminal (faston, puntera, Dupont, XH…), su número W y la verificación de tensiones, corrientes, fusibles y masas. Se abre sin internet |
 | `CAD_A_Compacta/Conjunto_A.step` | La máquina entera montada (piezas fabricadas y compradas) para cualquier CAD: Fusion 360, SolidWorks, FreeCAD, Onshape… |
 | `CAD_A_Compacta/STEP_piezas/` | Un STEP por pieza a fabricar |
 | `CAD_A_Compacta/DXF_corte/` | Un DXF por chapa, listo para el láser (capa CORTE y una etiqueta con el número) |

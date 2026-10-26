@@ -4,6 +4,33 @@ Decisiones que afectan a todo el proyecto. Lo más nuevo va arriba. Si un docume
 
 ## 26-10-2026
 
+### Programa v2 para la Raspberry Pi (`programa/`)
+
+- **Sustituye a `main.py`, `ze29a.py` y `prueba_sensor.py`** del Project. Está en JavaScript (Node 20 en la Pi) y la pantalla es Chromium a pantalla completa. El mismo código corre en la Pi y en el banco 3D (`carcasa/diseno-A/Conexiones_3D.html`, pestaña **Programa**), con el hardware simulado.
+- **Qué hace:**
+  - En espera pasa el top 10 con sus fotos y su valor, y anima a jugar.
+  - El Solo pide tarjeta todo el rato. Al pagar: precalentar, «sopla» con una barra, cuenta atrás de 5 s con la cámara en directo, foto, resultado con el puesto («puesto 120 de 360 · top 34 %») y celebración.
+  - Las fotos del top 10 se guardan siempre. Las demás se borran a las 24 h. El valor se queda en el ranking para siempre.
+- **Unidad: g/L** (el valor del sensor ÷ 100). El encargo decía «g/cl», que no es una unidad de alcoholemia. Sin conversión a mg/L (H01, 6.1-S F14) y sin frases sobre conducir (H02).
+- **Foto opcional sin botón:** se tapa la cámara durante la cuenta atrás. Enseñar las caras del top 10 en un bar puede necesitar consentimiento expreso (H17 y H18): consultarlo antes de instalar. Con `"fotos": false` funciona sin fotos.
+- **Robustez (máquina sola en un bar):**
+  - systemd la reinicia siempre. Hay un perro guardián interno y otro de hardware, y se reinicia si una fase no avanza. Reinicio diario a las 05:00.
+  - Diario de cobros con fsync: tras un apagón, el pago sin prueba se convierte en prueba pendiente, como mucho 2 veces y dentro de 5 min. Si no, se reembolsa (más tarde, quien pagó seguramente se ha ido).
+  - Un pago lento (PIN) nunca se da por caducado. Una respuesta perdida se busca por `foreign_transaction_id` antes de anular el cobro.
+- **Dos revisiones independientes (26-10):**
+  - La primera encontró 12 fallos: pago lento (PIN) cerrado como caducado, pruebas gratis sin fin en un bucle de reinicios, reembolso tras ver el resultado, la revisión de fondo cancelando el cobro de la persona que está delante, entre otros.
+  - La segunda, sobre el cobro ya corregido, encontró 11 más: un pago descubierto tarde que se daba como prueba a otro, un pago que se quedaba en la cola, reembolsos que se daban por imposibles a los 40 min, un portal cautivo que llenaba el diario, entre otros.
+  - Todos corregidos, cada uno con su prueba (`pruebas/revision.test.js` y `revision2.test.js`), y un fuzz de horas de máquina al azar (`pruebas/fuzz.js`).
+- **Pruebas:**
+  - 76 pruebas automáticas con reloj virtual (300 partidas seguidas, apagones a mitad, tarjeta llena, UART con ruido…).
+  - Prueba de extremo a extremo con Chromium y prueba del banco 3D.
+- **Sin probar con hardware real** (`programa/README.md`, apartado 9):
+  - Las rutas de SumUp y la duración de un cobro.
+  - El ZE29A real.
+  - Los metadatos de `rpicam-vid`.
+  - Los milisegundos por cuadro en la Pi 3B+.
+- **La Affiliate Key de SumUp pasa a ser obligatoria:** sin ella el programa no cobra.
+
 ### Componentes a tamaño real en el CAD y conexiones comprobadas una a una
 
 - **Visor 3D:**
