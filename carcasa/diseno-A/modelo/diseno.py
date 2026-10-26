@@ -64,18 +64,22 @@ class Modelo:
                                 color=color, movil=movil, electrico=False, notas=notas, plana=plana))
         return pid
 
-    def compra(self, ref, nombre, subs, movil=None, electrico=False, notas="", grupo="H", uds=1):
-        """uds: unidades que cuenta en la lista de compra (0 si es la otra mitad de una pieza ya contada)."""
+    def compra(self, ref, nombre, subs, movil=None, electrico=False, notas="", grupo="H", uds=1, modelo=None):
+        """uds: unidades que cuenta en la lista de compra (0 si es la otra mitad de una pieza ya contada).
+        modelo: modelo detallado del visor {n, a, tf}; si no se da, se toma el que traen las partes colocadas."""
         n = sum(1 for p in self.piezas if p.get("ref") == ref) + 1
         pid = f"{self.letra}-{ref}.{n}"
         sol = fuse([s for _, s, _ in subs])
         self.piezas.append(dict(id=pid, ref=ref, nombre=nombre, grupo=grupo, tipo="comprada", solido=sol,
-                                subs=subs, color=subs[0][2], movil=movil, electrico=electrico, notas=notas, uds=uds))
+                                subs=subs, color=subs[0][2], movil=movil, electrico=electrico, notas=notas, uds=uds,
+                                modelo=modelo or getattr(subs, "modelo", None)))
         return pid
 
-    def cable(self, nombre, puntos, radio, color, movil="cajon_componentes", tipo="cable"):
+    def cable(self, nombre, puntos, radio, color, movil="cajon_componentes", tipo="cable", estilo=None, w=None, de=None, a=None, **extra):
+        """estilo: cómo lo dibuja el visor (pvc, verdeamarillo, hdmi, trenzado, coax, ffc, silicona, par…);
+        w: número de conexión del esquema (W2, W11…); de / a: qué une, para la verificación."""
         self.cables.append(dict(nombre=nombre, puntos=[tuple(round(c, 2) for c in p) for p in puntos],
-                                radio=radio, color=color, movil=movil, tipo=tipo))
+                                radio=radio, color=color, movil=movil, tipo=tipo, estilo=estilo or tipo, w=w, de=de, a=a, **extra))
 
 
 # ============================================================================ COMPRAS (lista común)
@@ -267,8 +271,10 @@ def construir(spec):
         cab = cq.Solid.makeCone(4.0, 2.0, 2.0, cq.Vector(x, -PC_T, z), cq.Vector(0, 1, 0))
         m.compra("H17", "Tornillo de seguridad M4 × 16 (Torx con pin, cabeza plana)",
                  [("tornillo", cab.fuse(cyl(2.0, 16.0, (x, -PC_T, z), (0, 1, 0))).clean(), C.METAL)],
+                 modelo=dict(n="torx_m4", a=[16, [0, 1, 0]], tf=dict(ex=[1, 0, 0], ey=[0, 1, 0], ez=[0, 0, 1], at=[x, -PC_T, z])),
                  notas="Atraviesa policarbonato exterior, panel y policarbonato interior; tuerca por dentro")
-        m.compra("H12", "Tuerca M4 con fijador de roscas", [("tuerca", tuerca_m4((x, T + PC_T, z)), C.METAL)])
+        m.compra("H12", "Tuerca M4 con fijador de roscas", [("tuerca", tuerca_m4((x, T + PC_T, z)), C.METAL)],
+                 modelo=dict(n="tuerca_m4", a=[[0, 1, 0]], tf=dict(ex=[1, 0, 0], ey=[0, 1, 0], ez=[0, 0, 1], at=[x, T + PC_T, z])))
     m.cotas["pc"] = (pcx1 - pcx0, pcz1 - pcz0)
     # trasera: 18 tornillos a la pared (3 columnas × 6 filas), agujeros redondos; se aprietan desde dentro con arandela ancha
     fij = fijaciones_pared(W, Ktop - 10.0)
@@ -522,6 +528,7 @@ def construir_cajon_pajitas(m, W, D, d):
         m.fab("P", f"Anilla para candado {k + 1} (tapa del cajón)", movil_, COL_CAJON, material="Acero DC01 3 mm", movil=mv, espesor=3.0,
               notas="Soldada a la tapa del cajón; vuela por delante y queda encima de la anilla fija. También sirve de tirador")
         m.compra("H18", "Candado de latón 30 mm (cierre igualado)", candado_30(xh, yh, z, z + 6.2), movil="candado",
+                 modelo=dict(n="candado_30", a=[xh, yh, z, z + 6.2], tf=dict(ex=[1, 0, 0], ey=[0, 1, 0], ez=[0, 0, 1], at=[0, 0, 0])),
                  notas="Se quita antes de sacar el cajón de pajitas")
 
 
@@ -609,8 +616,8 @@ def colocar_componentes(m, spec, lay, L, g):
     sx, sz = lay["pantalla"]
     P = place_parts(C.pantalla(), at=L(sx, 0, sz))
     m.compra("E01", "Pantalla 7\"", P, movil=mv, electrico=True)
-    m.compra("E16", "Clavija HDMI 90°", place_parts(C.pantalla_clavijas()[:1], at=L(sx, 0, sz)), movil=mv, electrico=True)
-    m.compra("E17", "Clavija USB-C 90° (pantalla)", place_parts(C.pantalla_clavijas()[1:], at=L(sx, 0, sz)), movil=mv, electrico=True)
+    m.compra("E16", "Clavija HDMI 90°", place_parts(C.clavija_hdmi90(), at=L(sx, 0, sz)), movil=mv, electrico=True)
+    m.compra("E17", "Clavija USB-C 90° (pantalla)", place_parts(C.clavija_usbc90(), at=L(sx, 0, sz)), movil=mv, electrico=True)
     for nombre, z0, z1 in (("Pletina inferior de la pantalla", sz - 7.0, sz + 4.5), ("Pletina superior de la pantalla", sz + 95.5, sz + 107.0)):
         xs0, xs1 = sx - 10, sx + 175
         b = box(xs0, xs1, 6.0 + OY, 7.5 + OY, z0 + OZ, z1 + OZ)
@@ -659,13 +666,13 @@ def colocar_componentes(m, spec, lay, L, g):
         m.compra("E09", f"Borne USB-A ({'pantalla' if k == 0 else 'Solo'})", place_parts(C.borne_usb(), **P_(d)), movil=mv, electrico=True)
     for k, d in enumerate(lay["fusibles"]):
         nom = ["Pi 3 A", "Solo 3 A", "Pantalla 3 A", "Sensor 2 A"][k]
-        m.compra("E10", f"Portafusible ({nom})", place_parts(C.portafusible(), **P_(d)), movil=mv, electrico=True)
+        m.compra("E10", f"Portafusible ({nom})", place_parts(C.portafusible(2 if "2 A" in nom else 3), **P_(d)), movil=mv, electrico=True)
     rb = lay["red"]
     # ---- ZE29A y tubo de soplido
     zx, zy, zz = lay["ze29a"]                    # esquina inferior izquierda de la placa, y de la cara de componentes
     m.compra("E11", "Sensor ZE29A", place_parts(C.ze29a(), at=L(zx, zy, zz)), movil=mv, electrico=True)
     # separadores del sensor (4 x M3, a confirmar con el módulo)
-    for ax, az in ((4, 4), (81, 4), (4, 29), (81, 29)):
+    for ax, az in C.ZE["agujeros"]:
         m.compra("H09", "Separador sensor", place_parts(C.separador(Yin - zy - 1.6, (0, 1, 0), 2.5), at=L(zx + ax, zy + 1.6, zz + az)), movil=mv)
     bx, bz = lay["boquilla"]
     m.compra("H10", "Pasacables de la boquilla", place_parts(C.arandela_pasacables(4.5, 7.5), at=L(bx, -T / 2, bz)), movil=mv)
@@ -689,6 +696,7 @@ def colocar_componentes(m, spec, lay, L, g):
            ("antena", cyl(5.0, 95, (x_r + sa * 11.5, ant[1], ant[2] - 4.5), (0, 0, -1)), C.NEGRO)]
     m.compra("E12", "Pasamuros RP-SMA + antena",
              place_parts(C.pasamuros_rpsma(), ex=(0, sa, 0), ey=(-sa, 0, 0), ez=(0, 0, 1), at=ant) + ext, electrico=True,
+             modelo=dict(n="pasamuros_antena", a=[], tf=dict(ex=[0, sa, 0], ey=[-sa, 0, 0], ez=[0, 0, 1], at=[round(v, 3) for v in ant])),
              notas="La antena del AR9271 se enrosca por fuera y se gira vertical HACIA ABAJO: hacia arriba cortaría el paso de la tapa interior")
     m.cotas["antena"] = ant
     # ---- cables y tubos

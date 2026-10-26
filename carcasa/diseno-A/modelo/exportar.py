@@ -37,14 +37,19 @@ def a_json(m, compras):
         else:
             n, asin, precio = compras.get(ref, (p["nombre"], "", 0))
             info.update(ref=ref, compra=n, asin=asin)
+            if p.get("modelo"):
+                info["modelo"] = p["modelo"]
         info["mallas"] = []
+        if info.get("modelo"):                 # el visor la dibuja con su modelo detallado: no hace falta la malla
+            piezas.append(info)
+            continue
         for sub, s, c in p["subs"]:
             mm = malla(s)
             mm["c"] = [round(x, 3) for x in c]
             mm["n"] = sub
             info["mallas"].append(mm)
         piezas.append(info)
-    return dict(letra=m.letra, nombre=m.nombre, descripcion=m.descripcion,
+    return dict(letra=m.letra, nombre=m.nombre, descripcion=m.descripcion, accesorios=m.cotas.get("accesorios", []),
                 cotas={k: (round(v, 2) if isinstance(v, float) else v) for k, v in m.cotas.items()
                        if isinstance(v, (int, float, str))},
                 piezas=piezas, cables=m.cables, movil=m.movil)

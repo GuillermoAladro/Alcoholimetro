@@ -6,3 +6,8 @@ Generador paramétrico (Python 3 + CadQuery 2.8).
 specs.py   : medidas y colocación de cada componente (diseño A) (aquí se cambian las cosas)
 diseno.py  : carcasa, tapas, cajones, soportes y lista de compras
 comp.py    : modelos de las piezas compradas con sus medidas reales
+cables_choques.py : comprueba que ningún cable atraviesa una pieza (muestrea cada recorrido)
+realista/  : modelos 3D de los componentes (three.js) y los dos visores
+  python netlist.py                    -> conexiones.json (conexiones y verificación)
+  python montar.py visor SALIDA.html offline|cdn
+  python montar.py conexiones SALIDA.html offline|cdn

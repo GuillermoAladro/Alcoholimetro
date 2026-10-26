@@ -9,7 +9,7 @@ def bbox_overlap(a, b, tol=0.0):
 
 
 PARES_BUSCADOS = [("Tuerca", "Espárrago"), ("Tuerca M4", "Tornillo de seguridad"), ("Separador", "Espárrago"), ("Pasacables", ""), ("AR9271", "Raspberry"),
-                  ("Clavija", "Pantalla 7"), ("Silentblock", "Bandeja"), ("Silentblock", "Base del cajón"),
+                  ("Clavija", "Pantalla 7"), ("Clavija HDMI recta", "Raspberry"), ("Clavija micro-USB", "Raspberry"), ("Clavija USB-A del cable", "Borne USB-A"), ("Clavija XH", "Sensor ZE29A"), ("Silentblock", "Bandeja"), ("Silentblock", "Base del cajón"),
                   ("Cerradura", "Faldón"), ("Pasamuros", "Tira trasera"), ("Pasamuros", "Tapa superior"),
                   ("Tirador", "Tapa (cierra"), ("Separador sensor", "Sensor ZE29A"), ("Espárrago", "Frente del cajón"),
                   ("Espárrago", "Panel frontal"), ("Espárrago", "Trasera"), ("Espárrago de tierra M4×20 (cajón)", "Lateral derecho del cajón"),

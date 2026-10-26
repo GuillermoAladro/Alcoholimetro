@@ -17,7 +17,14 @@ def place(shape, ex=(1, 0, 0), ey=(0, 1, 0), ez=(0, 0, 1), at=(0, 0, 0)):
 
 
 def place_parts(parts, **kw):
-    return [(n, place(s, **kw), c) for n, s, c in parts]
+    out = [(n, place(s, **kw), c) for n, s, c in parts]
+    mod = getattr(parts, "modelo", None)
+    if mod is None:
+        return out
+    from comp import Partes
+    tf = dict(ex=list(kw.get("ex", (1, 0, 0))), ey=list(kw.get("ey", (0, 1, 0))), ez=list(kw.get("ez", (0, 0, 1))),
+              at=[round(float(v), 3) for v in kw.get("at", (0, 0, 0))])
+    return Partes(out, dict(mod, tf=tf))
 
 
 def rot_x(deg):

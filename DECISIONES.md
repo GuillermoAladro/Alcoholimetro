@@ -2,6 +2,34 @@
 
 Decisiones que afectan a todo el proyecto. Lo más nuevo va arriba. Si un documento del repositorio dice otra cosa, manda lo que pone aquí.
 
+## 26-10-2026
+
+### Componentes a tamaño real en el CAD y conexiones comprobadas una a una
+
+- **Visor 3D:**
+  - Cada pieza comprada se dibuja con su forma real: Pi 3B+, Camera Module 3, pantalla 7", SumUp Solo, LRS-50-5, C14, WAGO, portafusibles, bornes USB, ZE29A, AR9271, T y reductores.
+  - Las medidas salen de las fichas. No se dibujan logotipos ni marcas.
+  - La chapa se ve como acero sin pintar o con colores por grupo.
+- **Nuevo `Conexiones_3D.html`.** Todas las piezas sobre una mesa con las 38 conexiones (W1…W28). Cada una lleva su terminal y su verificación.
+  - Resultado: 0 errores y 19 conexiones con aviso.
+- **Cambios en la colocación**, encontrados al modelar a tamaño real:
+  - La celda del ZE29A chocaba con la pared del cajón.
+  - Entre la C14 y la fuente no cabían faston y puntera.
+  - Las entradas de las WAGO quedaban debajo de la pantalla.
+  - Las bornas de los USB miraban al suelo.
+  - Todo corregido en `specs.py`: 0 choques, los 6 barridos limpios y ningún cable atraviesa una pieza.
+- **Abiertos** (no se cambian sin decidirlo):
+  - El troncal de 5 V no lleva fusible.
+  - Hay que confirmar los 5,20 V de la fuente frente al máximo de 5,3 V del ZE29A.
+  - La Pi cuelga del troncal y no va directa a la fuente.
+  - Los bornes USB van detrás de fusibles de 3 A.
+  - El −V va a tierra a través del coaxial.
+  - El fusible de la C14 está en un solo polo.
+- **Faltan en la lista:**
+  - Tubo de 4 mm.
+  - Tubo fino de 2 × 4.
+  - Reductores 6 → 2,5 para las tomas del ZE29A.
+
 ## 25-10-2026
 
 ### Sin botón: el SumUp Solo está siempre esperando tarjeta

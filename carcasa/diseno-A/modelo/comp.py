@@ -2,16 +2,31 @@
 Modelos 3D de los componentes comprados (electrónica y herrajes), a tamaño real.
 
 Cada función devuelve una lista de (subnombre, sólido, color) en coordenadas LOCALES del componente.
+Esa lista es un `Partes`: además recuerda qué modelo detallado del visor la representa (`modelo`), para que
+el visor dibuje la pieza con su aspecto real (modelos_elec.js / modelos_herr.js) en el mismo sitio.
+Los sólidos de aquí son la envolvente que usan las comprobaciones de choques y los STEP.
+
 Convenio de ejes en todo el proyecto:
     X = ancho (izquierda -> derecha mirando la máquina de frente)
     Y = fondo (0 = cara exterior del panel frontal; +Y hacia atrás)
     Z = alto (0 = suelo de la máquina)
-Las medidas salen de fichas oficiales o de los anuncios de Amazon (ver FUENTES al final).
+Las medidas salen de fichas oficiales, de los anuncios de Amazon y de las fotos de referencia (ver FUENTES al final).
 """
 import math
 import cadquery as cq
 
 V = cq.Vector
+
+
+class Partes(list):
+    """Lista de (subnombre, sólido, color) con el modelo detallado del visor que la representa."""
+    def __init__(self, it=(), modelo=None):
+        super().__init__(it)
+        self.modelo = modelo
+
+
+def _m(nombre, *args):
+    return dict(n=nombre, a=[list(a) if isinstance(a, tuple) else a for a in args])
 
 
 def box(x0, x1, y0, y1, z0, z1):
@@ -41,6 +56,7 @@ ROJO = (0.80, 0.12, 0.10)
 GOMA = (0.15, 0.15, 0.15)
 TRANSP = (0.85, 0.90, 0.95)
 LATON = (0.80, 0.62, 0.25)
+AZUL_CELDA = (0.12, 0.37, 0.84)
 
 
 # ---------------------------------------------------------------- pantalla GeeekPi EP-0170
@@ -48,29 +64,33 @@ PANT = dict(w=165.0, h=100.0, t_vidrio=6.0, act_w=154.21, act_h=85.92)
 
 
 def pantalla():
-    """Origen: esquina inferior izquierda de la cara del vidrio (y=0 cara delantera, crece hacia atrás)."""
+    """Origen: esquina inferior izquierda de la cara del vidrio (y=0 cara delantera, crece hacia atrás).
+    Detrás del módulo LCD va la controladora (placa negra de 96 × 52) con HDMI, USB-C y ruleta en el canto izquierdo."""
     w, h, tv = PANT["w"], PANT["h"], PANT["t_vidrio"]
     ax0, az0 = (w - PANT["act_w"]) / 2, (h - PANT["act_h"]) / 2
-    return [
+    return Partes([
         ("panel", box(0, w, 0, tv, 0, h), NEGRO),
         ("area_activa", box(ax0, ax0 + PANT["act_w"], -0.2, 0, az0, az0 + PANT["act_h"]), AZUL_PANT),
-        ("placa", box(6, w - 6, tv, tv + 1.6, 5, h - 5), (0.08, 0.08, 0.09)),
-        ("componentes", box(35, 130, tv + 1.6, tv + 5.5, 20, 80), GRIS_OSC),
-        ("fpc", box(60, 105, tv + 1.6, tv + 2.2, 2, 18), (0.85, 0.55, 0.20)),
+        ("controladora", box(0, 96, tv, tv + 1.65, 12, 64), (0.08, 0.08, 0.09)),
+        ("componentes", box(20, 75, tv + 1.65, tv + 2.8, 18, 46), GRIS_OSC),
+        ("fpc", box(96, 112, tv, tv + 0.2, 30, 70), (0.85, 0.55, 0.20)),
         # conectores en el canto izquierdo (visto de frente), según fotos del anuncio
-        ("hdmi_hembra", box(-0.5, 12, tv + 1.6, tv + 7.6, 18, 33), METAL),
-        ("usbc_hembra", box(-0.5, 7.5, tv + 1.6, tv + 5.1, 42, 51), METAL),
-        ("ruleta", cyl(3, 5, (-0.5, tv + 4.5, 70), (1, 0, 0)), NEGRO),
-    ]
+        ("hdmi_hembra", box(-0.5, 12, tv + 1.65, tv + 7.65, 18, 33), METAL),
+        ("usbc_hembra", box(-0.5, 7.5, tv + 1.65, tv + 5.05, 42.5, 51.5), METAL),
+        ("ruleta", cyl(3, 5, (-0.6, tv + 4.65, 70), (1, 0, 0)), NEGRO),
+    ], _m("pantalla"))
 
 
-def pantalla_clavijas():
-    """Clavijas acodadas que salen por el canto izquierdo (cable HDMI 90° y USB-C 90°)."""
+def clavija_hdmi90():
+    """Clavija HDMI acodada (cable E16) en la boca de la pantalla; el cable sale hacia atrás."""
     tv = PANT["t_vidrio"]
-    return [
-        ("clavija_hdmi_90", box(-17, -0.5, tv - 1, tv + 10, 16.5, 34.5), NEGRO),
-        ("clavija_usbc_90", box(-13, -0.5, tv + 0.5, tv + 7, 41, 52), NEGRO),
-    ]
+    return Partes([("clavija_hdmi_90", box(-12.9, -0.5, tv + 1.65 - 2, tv + 1.65 + 20.5, 15.3, 35.7), NEGRO)], _m("clavija_hdmi90_pantalla"))
+
+
+def clavija_usbc90():
+    """Clavija USB-C acodada (cable E17) en la boca de la pantalla; el cable sale hacia atrás."""
+    tv = PANT["t_vidrio"]
+    return Partes([("clavija_usbc_90", box(-9.3, -0.5, tv + 1.65 - 2.3, tv + 1.65 + 14.0, 40.8, 53.2), NEGRO)], _m("clavija_usbc90_pantalla"))
 
 
 # ---------------------------------------------------------------- SumUp Solo
@@ -78,15 +98,14 @@ SOLO = dict(w=83.16, h=83.02, t=17.6)
 
 
 def solo():
-    """Origen: esquina inferior izquierda de la cara frontal. USB-C en el canto de abajo, centrado."""
+    """Origen: esquina inferior izquierda de la cara frontal. USB-C en el canto de abajo, centrado (con su clavija acodada)."""
     w, h, t = SOLO["w"], SOLO["h"], SOLO["t"]
-    return [
+    return Partes([
         ("cuerpo", box(0, w, 0, t, 0, h), BLANCO),
-        ("pantalla_tactil", box(7, w - 7, -0.15, 0, 13, h - 9), (0.05, 0.05, 0.07)),
-        ("ranura_chip", box(12, w - 12, 5, 9, h - 0.2, h + 0.01), GRIS_OSC),
-        ("tecla_encendido", box(w - 0.01, w + 0.6, 6, 12, 55, 68), GRIS_OSC),   # tecla de encendido del propio Solo
-        ("clavija_usbc_90", box(w / 2 - 6, w / 2 + 6, 4, 13, -14, 0), NEGRO),
-    ]
+        ("pantalla_tactil", box(5, w - 5, -0.15, 0, 5, h - 5), (0.05, 0.05, 0.07)),
+        ("tecla_encendido", box(w - 0.01, w + 0.6, 6, 12, 56, 68), GRIS_OSC),   # tecla de encendido del propio Solo
+        ("clavija_usbc_90", box(w / 2 - 6.2, w / 2 + 6.2, t / 2 - 3.6, t / 2 + 12.5, -8.8, 0), NEGRO),
+    ], _m("solo"))
 
 
 # ---------------------------------------------------------------- Camera Module 3
@@ -95,17 +114,18 @@ CAM = dict(w=25.0, h=24.0, pcb=1.0, lente_x=12.5, lente_z=24.0 - 9.462, lente_al
 
 def camara():
     """Origen: esquina inferior izquierda de la cara DELANTERA de la placa (y=0).
-    La lente sobresale hacia delante (y negativa) 9,5 mm. Agujeros Ø2,2 (M2) a 2 mm de los bordes."""
+    Módulo de la lente: carcasa de 11,4 × 11,4 (foto) y barril que sobresale 9,5 mm hacia delante.
+    Agujeros Ø2,2 (M2) a 2 mm de los bordes; separadores hexagonales de nailon de 8 mm hacia delante."""
     w, h, p = CAM["w"], CAM["h"], CAM["pcb"]
     lx, lz, la = CAM["lente_x"], CAM["lente_z"], CAM["lente_alto"]
     agujeros = [(2, 2), (23, 2), (2, h - 9.5), (23, h - 9.5)]
     sol = [("placa", box(0, w, 0, p, 0, h), VERDE_PCB),
-           ("lente_soporte", box(lx - 4.25, lx + 4.25, -6.0, 0, lz - 4.25, lz + 4.25), NEGRO),
-           ("lente", cyl(3.2, la - 6.0, (lx, -6.0, lz), (0, -1, 0)), (0.05, 0.05, 0.06)),
+           ("lente_soporte", box(lx - 5.7, lx + 5.7, -5.6, 0, lz - 5.7, lz + 5.7), GRIS),
+           ("lente", cyl(3.9, la - 5.6, (lx, -5.6, lz), (0, -1, 0)), (0.05, 0.05, 0.06)),
            ("conector_fpc", box(1.5, w - 1.5, p, p + 3, 0, 5.5), (0.9, 0.9, 0.85))]
     for i, (ax, az) in enumerate(agujeros):
-        sol.append((f"separador_m2_{i}", cyl(1.6, CAM["sep"], (ax, 0, az), (0, -1, 0)), BLANCO))
-    return sol
+        sol.append((f"separador_m2_{i}", cyl(1.6, CAM["sep"], (ax, 0, az), (0, -1, 0)), NEGRO))
+    return Partes(sol, _m("camara", dict(separadores=CAM["sep"])))
 
 
 # ---------------------------------------------------------------- Raspberry Pi 3B+ (plano RP-008337)
@@ -121,26 +141,26 @@ def raspberry():
     s = [("placa", box(0, 85, 0, p, 0, 56), VERDE_PCB),
          ("usb_1", c(69.6, 87.1, 40.45, 53.55, 16.0), METAL),
          ("usb_2", c(69.6, 87.1, 22.45, 35.55, 16.0), METAL),
-         ("ethernet", c(65.5, 87.6, 2.25, 18.25, 13.5), METAL),
+         ("ethernet", c(65.5, 87.75, 2.25, 18.25, 13.5), METAL),
          ("hdmi", c(24.5, 39.5, -1.0, 11.5, 6.5), METAL),
          ("micro_usb", c(6.6, 14.6, -1.0, 4.6, 3.0), METAL),
-         ("audio", c(50.5, 56.5, 0, 12.0, 6.0), NEGRO),
+         ("audio", c(50.5, 56.5, -2.6, 12.0, 6.0), NEGRO),
          ("csi", c(43.0, 47.0, 1.0, 23.0, 5.5), (0.9, 0.9, 0.85)),
          ("dsi", c(1.0, 5.0, 16.0, 38.0, 5.5), (0.9, 0.9, 0.85)),
          ("gpio", c(7.1, 57.9, 50.0, 55.0, 8.5), NEGRO),
          ("soc", c(24.0, 38.0, 24.0, 38.0, 1.2), GRIS),
-         ("microsd", box(-2.5, 12.0, p, p + 1.2, 22.0, 34.0), NEGRO)]
+         ("microsd", box(-2.5, 12.5, p, p + 1.2, 22.5, 33.5), BLANCO)]
     for i, (ax, az) in enumerate(PI_AGUJEROS):
-        s.append((f"separador_m25_{i}", cyl(2.5, PI["sep"], (ax, p, az), (0, 1, 0)), BLANCO))
-    return s
+        s.append((f"separador_m25_{i}", cyl(2.5, PI["sep"], (ax, p, az), (0, 1, 0)), NEGRO))
+    return Partes(s, _m("raspberry", dict(separadores=PI["sep"])))
 
 
 # ---------------------------------------------------------------- adaptador Wi-Fi AR9271 (VBESTLIFE)
 def wifi_ar9271():
     """Origen: punta de la clavija USB-A; el adaptador crece hacia +X. Centrado en y=0, z=0."""
-    return [("clavija_usb", box(0, 12, -2.25, 2.25, -6, 6), METAL),
-            ("cuerpo", box(12, 84, -5.5, 5.5, -11, 11), NEGRO),
-            ("rpsma_hembra", cyl(4.0, 9, (84, 0, 0), (1, 0, 0)), DORADO)]
+    return Partes([("clavija_usb", box(0, 12.3, -2.25, 2.25, -6, 6), METAL),
+                   ("cuerpo", box(12, 84, -5.5, 5.5, -11, 11), NEGRO),
+                   ("rpsma_hembra", cyl(4.0, 9.2, (84, 0, 0), (1, 0, 0)), DORADO)], _m("wifi_ar9271"))
 
 
 # ---------------------------------------------------------------- Mean Well LRS-50-5 (ficha LRS-50, caso 239A)
@@ -152,12 +172,12 @@ def fuente():
     L (99) en X, W (82) en Z, H (30) en Y. Tapa perforada en y=0 (delante), base con 2 roscas M3 en y=30."""
     L, W, H = FUENTE["L"], FUENTE["W"], FUENTE["H"]
     s = [("chasis", box(0, L, 0, H, 0, W), (0.70, 0.71, 0.73)),
-         ("regleta", box(0.5, 13, -0.01, 12, 13, 69), NEGRO)]
+         ("regleta", box(0.2, 13, -1.4, 12, 13, 69), NEGRO)]
     for i in range(5):
         z = 17.5 + 9.5 * i
-        s.append((f"borne_{i+1}", cyl(1.6, 1.5, (7, -1.5, z), (0, 1, 0)), METAL))
-    s.append(("potenciometro", cyl(1.5, 1.0, (20, -1.0, 72), (0, 1, 0)), (0.9, 0.9, 0.3)))
-    return s
+        s.append((f"borne_{i+1}", cyl(2.6, 1.5, (7, -1.5, z), (0, 1, 0)), METAL))
+    s.append(("potenciometro", cyl(1.6, 1.2, (20, -0.0, 72), (0, 1, 0)), (0.9, 0.9, 0.3)))
+    return Partes(s, _m("fuente"))
 
 
 # ---------------------------------------------------------------- toma C14 con portafusibles, SIN interruptor (CABLEPELADO)
@@ -172,63 +192,86 @@ def toma_c14():
     Medidas típicas de este formato (de otra tienda): confirmar con la pieza recibida."""
     bw, bh, bt = C14["brida"]
     cw, ch, cd = C14["cuerpo"]
-    return [("brida", box(-bw / 2, bw / 2, 0, bt, -bh / 2, bh / 2), NEGRO),
-            ("cuerpo", box(-cw / 2, cw / 2, bt, bt + cd, -ch / 2, ch / 2), NEGRO),
-            ("conector", box(-10, 10, -0.2, 0, -14, 4), (0.2, 0.2, 0.2)),
-            ("cajon_fusible", box(-5, 5, -0.6, 0, 6, 13), GRIS_OSC),
-            ("bornes", box(-12, 12, bt + cd, bt + cd + C14["bornes"], -8, 8), METAL)]
+    return Partes([("brida", box(-bw / 2, bw / 2, 0, bt, -bh / 2, bh / 2), NEGRO),
+                   ("cuerpo", box(-cw / 2, cw / 2, bt, bt + cd, -ch / 2, ch / 2), NEGRO),
+                   ("cara", box(-14.6, 14.6, -0.9, 0, -16.2, 16.2), (0.2, 0.2, 0.2)),
+                   ("cajon_fusible", box(-11.5, 11.5, -1.15, -0.9, 3.2, 15.2), GRIS_OSC),
+                   ("bornes", box(-12, 12, bt + cd, bt + cd + C14["bornes"], -13, 11), METAL)], _m("toma_c14"))
 
 
 # ---------------------------------------------------------------- WAGO 221-415, borne USB-A, portafusibles
 def wago_415():
-    """29,9 (X) x 18,6 (Y) x 8,3 (Z). Origen en una esquina."""
+    """29,9 (X) x 18,6 (Y) x 8,3 (Z), palancas hasta 10,6. Origen en una esquina; bocas de los hilos en y=0."""
     s = [("cuerpo", box(0, 29.9, 0, 18.6, 0, 8.3), TRANSP)]
     for i in range(5):
-        s.append((f"palanca_{i}", box(1 + i * 5.8, 5.4 + i * 5.8, 8, 18.6, 8.3, 10.3), NARANJA))
-    return s
+        s.append((f"palanca_{i}", box(0.5 + i * 5.98, 5.5 + i * 5.98, 2.4, 18.9, 8.3, 10.6), NARANJA))
+    return Partes(s, _m("wago_415"))
 
 
 def borne_usb():
-    """Borne USB-A hembra a tornillo AAOTOKK: 50 x 21 x 12 mm. USB en x=0."""
-    return [("cuerpo", box(0, 50, 0, 21, 0, 12), (0.12, 0.30, 0.65)),
-            ("usb_a", box(-0.5, 14, 3, 18, 2, 9), METAL)]
+    """Borne USB-A hembra a tornillo: cuerpo negro de 50 x 19 x 12 y bloque de bornes verde de 21 mm. USB en x=0."""
+    return Partes([("cuerpo", box(14, 35, 1, 20, 0, 12), NEGRO),
+                   ("bornes", box(34.5, 50, 0, 21, 0.5, 11.8), (0.12, 0.6, 0.32)),
+                   ("usb_a", box(-0.5, 14, 3.95, 17.05, 3.2, 8.8), METAL)], _m("borne_usb"))
 
 
-def portafusible():
-    """Portafusible en línea de cuchilla mini (FULARR): 45 x 14 x 11 mm."""
-    return [("cuerpo", box(0, 45, 0, 14, 0, 11), NEGRO)]
+def portafusible(amperios=3):
+    """Portafusibles en línea para fusible MINI de cuchilla con tapa (foto: 23,5 × 12,5 × 13) y
+    manguitos hasta los hilos de 16 AWG: 45 mm de punta a punta. Hilos por los extremos x=0 y x=45, a y=7, z=4,6."""
+    return Partes([("cuerpo", box(10.75, 34.25, 0.75, 13.25, 0, 12.6), NEGRO),
+                   ("manguitos", box(0, 45, 2.8, 11.2, 0.4, 8.8), NEGRO),
+                   ("correa", box(33, 36.5, 5.0, 9.0, 5.5, 13.3), NEGRO)], _m("portafusible", dict(amperios=amperios)))
 
 
 # ---------------------------------------------------------------- Winsen ZE29A
-ZE = dict(L=85.0, W=33.0, H=18.0)
+ZE = dict(L=85.0, W=33.0, H=18.0, agujeros=[(2.5, 2.5), (82.5, 2.5), (2.5, 30.5), (82.5, 30.5)],
+          toma_presion=(18.5, -7.4, 28.3), toma_alcohol=(-6.8, -5.6, 13.0), j1_salida=(93.0, -3.0, 11.2))
 
 
 def ze29a():
-    """85 x 33 x 18 mm (manual Winsen). Placa en el plano XZ, de canto; componentes hacia -Y.
-    Las tomas de presión y de alcohol no están acotadas en el manual: se dibujan en el canto de arriba
-    como referencia y se conectan con tubo de silicona corto (posición a confirmar con el módulo)."""
-    L, W, H = ZE["L"], ZE["W"], ZE["H"]
-    return [("placa", box(0, L, 0, 1.6, 0, W), VERDE_PCB),
-            ("celda", cyl(10, H - 1.6, (22, 0, W / 2), (0, -1, 0)), (0.75, 0.75, 0.78)),
-            ("electroiman", box(38, 58, -12, 0, 5, 28), GRIS_OSC),
-            ("sensor_presion", box(62, 74, -8, 0, 8, 22), NEGRO),
-            ("conector_j1", box(77, 84, -6, 0, 10, 23), BLANCO),
-            ("toma_presion", cyl(2.0, 6, (66, -4, W), (0, 0, 1)), BLANCO),
-            ("toma_alcohol", cyl(2.0, 6, (22, -4, W), (0, 0, 1)), BLANCO)]
+    """85 x 33 mm (manual Winsen); las piezas, según las fotos del anuncio (a medir con el módulo en la mano).
+    Placa en el plano XZ, de canto; componentes hacia -Y. J1 (XH de 4 vías, entrada lateral) en el extremo derecho;
+    celda azul en el izquierdo, que sobresale 4,4 mm del canto, con su boquilla de muestra (toma de alcohol) hacia -X.
+    La toma de presión es la boquilla del sensor de presión (arriba a la izquierda) y mira hacia delante (-Y)."""
+    L, W = ZE["L"], ZE["W"]
+    return Partes([("placa", box(0, L, 0, 1.6, 0, W), VERDE_PCB),
+                   ("celda", cyl(8.0, 11.4, (3.6, 0, 14.3), (0, -1, 0)), AZUL_CELDA),
+                   ("toma_alcohol", cyl(1.1, 6.0, (-0.8, -5.6, 13.0), (-1, 0, 0)), AZUL_CELDA),
+                   ("bomba", box(27, 49.7, -11.2, 0, 6.8, 17.6), TRANSP),
+                   ("solenoide", box(49.7, 71.3, -12, 0, 5.7, 18.7), METAL),
+                   ("condensador", cyl(7.0, 24.5, (42.5, -7.2, 27.4), (1, 0, 0)), NEGRO),
+                   ("sensor_presion", box(14.4, 22.6, -3.4, 0, 24.8, 31.8), NEGRO),
+                   ("toma_presion", cyl(1.3, 4.0, (18.5, -3.4, 28.3), (0, -1, 0)), NEGRO),
+                   ("conector_j1", box(77.8, 85.7, -6, 0, 5.0, 17.4), BLANCO)], _m("ze29a"))
+
+
+# ---------------------------------------------------------------- neumática del soplido
+def te_6mm():
+    """Racor en T para tubo de 6 mm (PP): paso por ±X (espigas hasta 14 mm del centro), derivación por +Z."""
+    return Partes([("paso", cyl(3.6, 28, (-14, 0, 0), (1, 0, 0)), TRANSP),
+                   ("derivacion", cyl(3.6, 14, (0, 0, 0), (0, 0, 1)), TRANSP),
+                   ("cuerpo", box(-4.2, 4.2, -4.2, 4.2, -4.2, 4.2), TRANSP)], _m("te_6mm"))
+
+
+def reductor_6_4():
+    """Reductor de latón 6 → 4 mm (40 mm): espiga de 6 de x=0 a 16, collar hexagonal de 16 a 22, espiga de 4 de 22 a 40."""
+    return Partes([("espiga_6", cyl(3.4, 16, (0, 0, 0), (1, 0, 0)), LATON),
+                   ("collar", cyl(5.8, 6, (16, 0, 0), (1, 0, 0)), LATON),
+                   ("espiga_4", cyl(2.6, 18, (22, 0, 0), (1, 0, 0)), LATON)], _m("reductor_6_4"))
 
 
 # ---------------------------------------------------------------- herrajes
 def silentblock():
     """Silentblock M4 10 x 10 macho-macho. Origen en el centro de la base de goma."""
-    return [("goma", cyl(5, 10, (0, 0, 0), (0, 0, 1)), GOMA),
-            ("esparrago_inf", cyl(2, 10, (0, 0, -10), (0, 0, 1)), METAL),
-            ("esparrago_sup", cyl(2, 8, (0, 0, 10), (0, 0, 1)), METAL)]
+    return Partes([("goma", cyl(5, 10, (0, 0, 0), (0, 0, 1)), GOMA),
+                   ("esparrago_inf", cyl(2, 10, (0, 0, -10), (0, 0, 1)), METAL),
+                   ("esparrago_sup", cyl(2, 8, (0, 0, 10), (0, 0, 1)), METAL)], _m("silentblock"))
 
 
 def tope_goma(d=(0, 1, 0), e=3.0):
     """Tope adhesivo transparente Ø10 x 3 mm (e=6: dos topes pegados uno encima del otro).
     Origen en la cara pegada; crece en la dirección d."""
-    return [("tope", cyl(5, e, (0, 0, 0), d), TRANSP)]
+    return Partes([("tope", cyl(5, e, (0, 0, 0), d), TRANSP)], _m("tope_goma", d, e))
 
 
 def cerradura_leva(eje=(0, 1, 0), largo_leva=32.0, leva=(0, 0, -1)):
@@ -253,7 +296,7 @@ def cerradura_leva(eje=(0, 1, 0), largo_leva=32.0, leva=(0, 0, -1)):
     q = (ly * ez - lz * ey, lz * ex - lx * ez, lx * ey - ly * ex)       # leva x eje
     b = box(-6, largo_leva - 6, 0, 2, -6, 6)
     s.append(("leva", place(b, ex=leva, ey=eje, ez=q, at=p(16.0)), METAL))
-    return s
+    return Partes(s, _m("cerradura_leva", eje, largo_leva, leva))
 
 
 def bisagra_piano(L, eje="x", ala=16.0):
@@ -276,19 +319,20 @@ def tirador_96():
 
 
 def esparrago_m4(L, d=(0, 1, 0)):
-    """Espárrago M4 soldable por puntos (ORANXIN, inox 304). Origen en la base soldada."""
-    return [("esparrago", cyl(2.0, L, (0, 0, 0), d), METAL)]
+    """Espárrago M4 soldable por puntos (ORANXIN, inox 304), con su brida de Ø5,6. Origen en la base soldada."""
+    return Partes([("esparrago", cyl(2.0, L, (0, 0, 0), d), METAL)], _m("esparrago_m4", L, d))
 
 
 def separador(L, d=(0, 1, 0), r=3.5):
-    return [("separador", cyl(r, L, (0, 0, 0), d), BLANCO)]
+    """Separador hexagonal de nailon negro (kit M2,5). 'r' es el radio de la envolvente."""
+    return Partes([("separador", cyl(r, L, (0, 0, 0), d), NEGRO)], _m("separador", L, d, r))
 
 
 def pasamuros_rpsma():
     """Alargo RP-SMA: extremo hembra de chapa (agujero Ø6,5) con tuerca. Origen en la cara exterior; cuerpo hacia +Y local."""
-    return [("tuerca_ext", cyl(4.6, 2.5, (0, -2.5, 0), (0, 1, 0)), DORADO),
-            ("cuerpo", cyl(3.2, 14, (0, 0, 0), (0, 1, 0)), DORADO),
-            ("tuerca_int", cyl(4.6, 2.5, (0, 3, 0), (0, 1, 0)), DORADO)]
+    return Partes([("tuerca_ext", cyl(4.6, 2.5, (0, -2.5, 0), (0, 1, 0)), DORADO),
+                   ("cuerpo", cyl(3.2, 14, (0, 0, 0), (0, 1, 0)), DORADO),
+                   ("tuerca_int", cyl(4.6, 2.5, (0, 3, 0), (0, 1, 0)), DORADO)], _m("pasamuros_antena"))
 
 
 def antena():
@@ -300,19 +344,22 @@ def antena():
 def arandela_pasacables(r_int, r_ext=None, d=(0, 1, 0)):
     """Pasacables de goma (kit de 7 tamaños). Origen en el centro del agujero."""
     r_ext = r_ext or r_int + 3
-    return [("pasacables", cyl(r_ext, 4, tuple(-1.25 * c for c in d), d).cut(cyl(r_int, 4, tuple(-1.25 * c for c in d), d)), GOMA)]
+    return Partes([("pasacables", cyl(r_ext, 4, tuple(-1.25 * c for c in d), d).cut(cyl(r_int, 4, tuple(-1.25 * c for c in d), d)), GOMA)],
+                  _m("arandela_pasacables", r_int, r_ext, d))
 
 
 FUENTES = {
     "pantalla": "GeeekPi EP-0170 (ASIN B0CHMBCCJB): 165 x 100 x 8 mm, 5 W; conectores en un canto (fotos del anuncio y wiki 52Pi)",
     "solo": "SumUp Solo: 83,16 x 83,02 x 17,6 mm, USB-C en el canto inferior, ranura de chip arriba (manual SumUp)",
-    "camara": "Raspberry Pi Camera Module 3: 25 x 24 x 11,5 mm, agujeros M2 iguales al Camera Module 2 (product brief)",
+    "camara": "Raspberry Pi Camera Module 3: 25 x 24 x 11,5 mm, agujeros M2 iguales al Camera Module 2 (product brief); carcasa de la lente ~11,4 mm (foto)",
     "pi": "Raspberry Pi 3B+: plano mecánico oficial RP-008337 (85 x 56, agujeros 58 x 49 a 3,5 mm del borde)",
     "fuente": "Mean Well LRS-50-5: 99 x 82 x 30, 2 x M3 abajo (penetración máx. 3 mm), regleta de 5 bornes (ficha LRS-50)",
     "c14": "Toma C14 con portafusibles y sin interruptor (ASIN B07CQ54BY4): medidas típicas del formato de atornillar (brida 44,7 × 33,1, recorte 31,5 × 27,25, tornillos a 36 mm), confirmar al recibirla",
-    "ze29a": "Winsen ZE29A: 85 x 33 x 18 mm (manual V1.1); tomas sin acotar en el manual",
+    "ze29a": "Winsen ZE29A: 85 x 33 mm (manual V1.1); celda, bomba, condensador, sensor de presión y J1 medidos sobre las fotos del anuncio (a confirmar)",
     "wifi": "AR9271 VBESTLIFE (ASIN B0CBW6THN1): adaptador de pincho con RP-SMA (fotos del anuncio)",
     "wago": "WAGO 221-415: 29,9 x 18,6 x 8,3 mm (ficha WAGO)",
-    "usb": "Borne USB-A AAOTOKK (ASIN B07V86XPL4): 50 x 21 x 12 mm, 1 A",
+    "usb": "Borne USB-A (ASIN B07V86XPL4): 50 mm, bloque de bornes de 21 mm, cuerpo de 19 × 12 (foto con cotas del anuncio)",
+    "portafusible": "Portafusibles MINI en línea (ASIN B07Q495GQG): 23,5 × 12,5 × 13 mm (foto con cotas), hilo de 16 AWG",
+    "neumatica": "Racor en T de 6 mm (B0GT5XPRWK) y reductor de latón 6 → 4 de 40 mm (B0H38RDVZR), fotos con cotas del anuncio",
     "cerradura": "Cerradura de leva shinfly 16 mm (ASIN B0CRRBYJ2Y): agujero Ø18, cuerpo 16 mm, levas de 32 y 47 mm",
 }

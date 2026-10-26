@@ -15,7 +15,7 @@ OUT = sys.argv[1]
 FIJAS = {
     "E13": (1, "Un rollo da para varias máquinas (unos 40 cm por máquina)"),
     "E14": (2, "Dos T: toma de presión y toma de alcohol"),
-    "E15": (1, "Reductor de latón entre las dos T: es la restricción que crea la presión"),
+    "E15": (2, "Dos reductores del mismo pack (6→4 y 4→6) con un tramo de tubo de 4 mm entre ellos: es la barrera que crea la presión. El tubo de 4 mm no está en la lista"),
     "E17": (2, "Uno para la pantalla y otro para el Solo"),
     "E18": (1, "Se corta a 15 cm o menos"),
     "E19": (1, "UART y 5 V del sensor"),
@@ -40,7 +40,7 @@ MONTAJE = [
     ("M08", "Cables Dupont (120 uds.)", "B01NGTXASZ", 9.99, 1, 120, "Pines de la Pi"),
     ("M09", "Crimpadora + punteras (herramienta)", "B0FQP6KDL4", 15.98, 1, None, "Herramienta: solo la primera vez"),
 ]
-PACK = {"H17": 20, "H14": 30, "H15": 25, "H16": 100, "E17": 1, "H01": 4, "H06": 20, "H07": 20, "H09": 350, "H10": 260, "E12": 2, "E09": 2, "E18": 6, "E08": 25}
+PACK = {"E15": 4, "H17": 20, "H14": 30, "H15": 25, "H16": 100, "E17": 1, "H01": 4, "H06": 20, "H07": 20, "H09": 350, "H10": 260, "E12": 2, "E09": 2, "E18": 6, "E08": 25}
 
 AR = "Arial"
 F = Font(name=AR, size=10)

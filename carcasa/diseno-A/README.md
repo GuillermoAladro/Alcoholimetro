@@ -2,13 +2,14 @@
 
 > Copia en el repositorio del paquete `Alcoholimetro_A.zip`. Los números de pieza (A-C01, A-T01…) son los de los STEP, los DXF y el visor de esta carpeta. Decisiones generales en [DECISIONES](../../DECISIONES.md).
 
-21-10-2026 · Guillermo · actualizado el 22-10-2026 (tapa interior deslizante, faldón derecho de la tapa, antena hacia abajo) y el 25-10-2026 (sin botón: el Solo espera tarjeta todo el rato, y la toma C14 ya no lleva interruptor)
+21-10-2026 · Guillermo · actualizado el 22-10-2026 (tapa interior deslizante, faldón derecho de la tapa, antena hacia abajo) el 25-10-2026 (sin botón: el Solo espera tarjeta todo el rato, y la toma C14 ya no lleva interruptor) y el 26-10-2026 (componentes a tamaño real y conexiones comprobadas)
 
 ## 1. Qué hay en esta carpeta
 
 | Archivo | Qué es |
 |---|---|
 | `Visor_3D.html` | Visor 3D sin conexión (se abre con doble clic). Cada pieza se puede seleccionar y ocultar. Se mueven el cajón de pajitas, la tapa, la tapa interior y el cajón de componentes, y hay un botón para ocultar o ver la electrónica |
+| `Conexiones_3D.html` | Todos los componentes sobre una mesa con las 38 conexiones: cada cable con su terminal (faston, puntera, Dupont, XH…), su número W y la verificación de tensiones, corrientes, fusibles y masas |
 | `CAD_A_Compacta/Conjunto_A.step` | La máquina entera montada (piezas fabricadas y compradas) para cualquier CAD: Fusion 360, SolidWorks, FreeCAD, Onshape… |
 | `CAD_A_Compacta/STEP_piezas/` | Un STEP por pieza a fabricar |
 | `CAD_A_Compacta/DXF_corte/` | Un DXF por chapa, listo para el láser (capa CORTE y una etiqueta con el número) |
