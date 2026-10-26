@@ -69,7 +69,7 @@ Las normas están de pago. Solo extractos, informes de ensayo y resúmenes.
 ## Fichas de este mismo repositorio que se citan
 
 - [Fuente Mean Well LRS-50-5](../meanwell-lrs-50-5/README.md) (bornes M3,5, par, FG)
-- [Módulo C14 con fusible e interruptor](../modulo-c14-fusible-interruptor/README.md) (faston, tierra del módulo)
+- [Ficha de la toma C14 (#15)](../modulo-c14-fusible-interruptor/README.md) (faston, tierra del módulo)
 - [Cables JST-XH de 4 pines](../cables-jst-xh-4-pin/README.md) (tabla de fuerzas de arranque, sujeción de hilos)
 - [Cable Schuko a C13](../cable-schuko-c13-2m/README.md) (tierra, límite de 0,1 Ω)
 

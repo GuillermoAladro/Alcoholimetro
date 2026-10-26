@@ -1,10 +1,10 @@
 # Cables Dupont ELEGOO, 120 unidades (macho-macho, macho-hembra y hembra-hembra)
 
-Kit de 120 puentes con terminales Dupont de 2,54 mm: tres cintas separables de 40 hilos (macho-macho, macho-hembra y hembra-hembra) de unos 20 cm. En la guía de montaje es la pieza nº 29, "para los pines de la Pi": terminales Dupont hembra sobre los pines 8, 10, 11 y 9 de la cabecera de 40 pines de la Raspberry Pi 3B+. Esos cuatro pines llevan la UART al ZE29A (TX y RX) y el pulsador de inicio (GPIO17 y GND).
+Kit de 120 puentes con terminales Dupont de 2,54 mm: tres cintas separables de 40 hilos (macho-macho, macho-hembra y hembra-hembra) de unos 20 cm. En la guía de montaje es la pieza nº 29, "para los pines de la Pi": terminales Dupont hembra sobre los pines 8 y 10 de la cabecera de 40 pines de la Raspberry Pi 3B+, que llevan la UART al ZE29A (TX y RX). La máquina no lleva botón, así que no se usa ningún otro pin.
 
 - **Compra:** ASIN B01NGTXASZ, 9,99 € (precio de la hoja de componentes del 19-20/10/2026). Unos 0,083 € por hilo (cálculo mío).
 - **Fabricante y modelo:** ELEGOO, EL-CP-004 según Hackster y eBay (ver [2.1](#21-el-kit-según-las-tiendas)).
-- **Fichas relacionadas:** [cables JST-XH](../cables-jst-xh-4-pin/README.md) (la unión sensor a Pi: 4.2, 5.11, 6.5), [pulsador arcade](../pulsador-arcade-30mm/README.md) y [Raspberry Pi 3B+](../raspberry-pi-3b-plus/README.md). Aquí no repito lo que ya dicen.
+- **Fichas relacionadas:** [cables JST-XH](../cables-jst-xh-4-pin/README.md) (la unión sensor a Pi: 4.2, 5.11, 6.5) y [Raspberry Pi 3B+](../raspberry-pi-3b-plus/README.md). Aquí no repito lo que ya dicen.
 
 > Investigación hecha el 21-10-2026. Cada dato indica de dónde sale. Lo que no he podido comprobar está marcado como **sin verificar**. Amazon bloquea el acceso a mis herramientas y no intenté abrir el anuncio: el precio y el ASIN son los de tu hoja. Leí las páginas con una herramienta que devuelve resúmenes, no el texto original: donde una cifra importa, doy el enlace. Hice 13 búsquedas web; la 14.ª fue rechazada porque se agotó el presupuesto compartido. Lo pendiente está en la [sección 8](#8-lo-que-no-he-podido-verificar).
 
@@ -26,9 +26,9 @@ Kit de 120 puentes con terminales Dupont de 2,54 mm: tres cintas separables de 4
 
 - **No hay documentación del fabricante.** Las páginas de ELEGOO (Reino Unido y EE. UU.) solo dan la longitud (unos 20 cm) y el contenido (una cinta de 40 hilos de cada tipo). No dicen calibre, material del conductor, paso, corriente, origen ni garantía, y no enlazan ningún PDF. Es un puente de prototipado genérico, no un componente con ficha.
 - **El conductor sería aluminio cobreado (CCA), no cobre.** Cinco páginas de tiendas que parecen copiar el mismo anuncio (Hackster, tres de Desertcart y ManoMano) dicen "copper-clad aluminum and PVC". La web de ELEGOO no lo dice. **No encontré ninguna fuente con el calibre**, así que el "26 AWG" que se suele suponer no está confirmado. Consecuencias si es CCA: no se puede soldar con soldadura normal, no se debe cortar y empalmar a ciegas y, según Belden, aguanta peor las flexiones repetidas que el cobre ([5.1](#51-conductor-de-aluminio-cobreado-y-calibre-desconocido)).
-- **La corriente por estos hilos es de microamperios, así que el calibre no importa; sí importa el contacto.** Un conector Dupont de referencia (Amphenol Dubox) solo garantiza una fuerza de extracción de **0,30 N (30 gf) por contacto de oro**, y no menciona ningún bloqueo. Con la caja interior suspendida sobre muelles, es el punto débil probable del montaje. Los síntomas serían "el sensor a veces no responde" o botón que no arranca ([4.3](#43-uart-con-dupont-qué-pasa-cuando-el-contacto-falla)).
-- **Los cuatro pines no caben en un alojamiento de 1 × 2.** Los pines 8 y 10 van en una fila de la cabecera y el 9 y el 11 en la otra. Hacen falta dos alojamientos de 1 × 2, cuatro de 1 × 1 (como vienen los ELEGOO) o **un solo alojamiento de 2 × 3 sobre los pines 7 a 12** (propuesta mía, [4.2](#42-geometría-de-la-cabecera-y-alojamientos)). Un alojamiento sin polarizar corrido dos columnas hacia el pin 1 pone **5 V en el hilo que va al RX del sensor**.
-- **El kit no resuelve el hueco que ya señala la ficha de los JST-XH:** los hilos del sensor y del pulsador necesitan un terminal Dupont hembra en la Pi, y los ELEGOO vienen ya terminados en ambos extremos, sin terminales sueltos ni herramienta. Hay que crimpar (SN-28B o PA-09, [4.4](#44-terminar-los-extremos)) o aceptar un empalme.
+- **La corriente por estos hilos es de microamperios, así que el calibre no importa; sí importa el contacto.** Un conector Dupont de referencia (Amphenol Dubox) solo garantiza una fuerza de extracción de **0,30 N (30 gf) por contacto de oro**, y no menciona ningún bloqueo. Con la caja interior suspendida sobre muelles, es el punto débil probable del montaje. El síntoma sería "el sensor a veces no responde" ([4.3](#43-uart-con-dupont-qué-pasa-cuando-el-contacto-falla)).
+- **Los dos pines de la UART caben en un alojamiento de 1 × 2.** Los pines 8 y 10 van seguidos en la misma fila de la cabecera ([4.2](#42-geometría-de-la-cabecera-y-alojamientos)). Un alojamiento sin polarizar corrido dos columnas hacia el pin 1 pone **5 V en el hilo que va al RX del sensor**.
+- **El kit no resuelve el hueco que ya señala la ficha de los JST-XH:** los hilos del sensor necesitan un terminal Dupont hembra en la Pi, y los ELEGOO vienen ya terminados en ambos extremos, sin terminales sueltos ni herramienta. Hay que crimpar (SN-28B o PA-09, [4.4](#44-terminar-los-extremos)) o aceptar un empalme.
 - **Precio bajo (9,99 €), riesgo económico mínimo.** El riesgo es una unión intermitente en una máquina de bar. Se mitiga probando el lote al recibirlo, fijando el haz y poniendo contadores de errores de la UART en el software ([7](#7-recomendaciones-para-el-alcoholímetro)).
 
 ## 2. Especificaciones
@@ -84,7 +84,7 @@ Fuentes: [Dubox, hoja de datos](https://cdn.amphenol-cs.com/media/wysiwyg/files/
 Dos conclusiones que salen de esas cifras (cálculos míos):
 
 - **La fricción sobre el pin es el eslabón débil.** El contacto se sostiene en la carcasa con 15 N, pero solo se sujeta al pin con unos 0,3 N como mínimo: cincuenta veces menos. Un tirón del cable suelta el conector mucho antes de dañar el crimpado.
-- Con cuatro contactos, la retención mínima garantizada de una carcasa de 4 hilos sería de 4 × 0,30 = 1,2 N, si todos los contactos agarran bien. Es un mínimo de catálogo para contactos de oro; el de un kit barato puede ser menor.
+- Con dos contactos, la retención mínima garantizada de una carcasa de 2 hilos sería de 2 × 0,30 = 0,6 N, si todos los contactos agarran bien. Es un mínimo de catálogo para contactos de oro; el de un kit barato puede ser menor.
 
 ### 2.3 Cabecera de la Pi 3B+
 
@@ -95,7 +95,7 @@ Dos conclusiones que salen de esas cifras (cálculos míos):
 | Pin | 0,64 mm (0,025") cuadrado es la medida estándar de las cabeceras de 2,54 mm (Harwin da ese valor para sus contactos). **La documentación de Raspberry Pi que abrí no la da para la Pi.** Mídelo con calibre | Harwin; **sin verificar** en la Pi |
 | Altura sobre la placa | 8,5 mm ("Z-Height = 8.5") en el bloque de unos 51 mm junto al borde de la placa, que identifico como la cabecera por su tamaño | [Plano mecánico RP-008337-DS-2](../raspberry-pi-3b-plus/datasheets/RP-008337-DS-2-raspberry-pi-3-b-plus-mechanical-drawing.pdf), leído en imagen; la identificación es deducción mía |
 | Lógica | 3,3 V en todos los GPIO; no toleran 5 V | [Documentación de Raspberry Pi](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html) ("Do not use 5V for 3.3V components"), [pinout.xyz, UART](https://pinout.xyz/pinout/uart) ("The UART pins are 3.3v and are not level shifted") |
-| Pines 5 a 12 | 5 = GPIO3, 6 = GND, 7 = GPIO4, 8 = **GPIO14 (TXD0)**, 9 = GND, 10 = **GPIO15 (RXD0)**, 11 = **GPIO17**, 12 = GPIO18 | Esquema (J8); [pinout.xyz, pin 8](https://pinout.xyz/pinout/pin8_gpio14) para los nombres |
+| Pines 5 a 12 | 5 = GPIO3, 6 = GND, 7 = GPIO4, 8 = **GPIO14 (TXD0)**, 9 = GND, 10 = **GPIO15 (RXD0)**, 11 = GPIO17, 12 = GPIO18 | Esquema (J8); [pinout.xyz, pin 8](https://pinout.xyz/pinout/pin8_gpio14) para los nombres |
 | Pines de 5 V | 2 y 4 | [Ficha de los JST-XH, 3](../cables-jst-xh-4-pin/README.md) (lectura del esquema en imagen); en el texto extraído del esquema no vi los nombres de los pines de alimentación |
 
 Aviso del product brief de la Pi: la conexión de dispositivos incompatibles al GPIO "may affect compliance, result in damage to the unit, and invalidate the warranty", y los cables y conectores de los periféricos "must have adequate insulation" ([RP-008338-DS-2](../raspberry-pi-3b-plus/datasheets/RP-008338-DS-2-raspberry-pi-3-b-plus-product-brief.pdf), sección de advertencias).
@@ -111,7 +111,6 @@ Con las resistencias por kilómetro de la tabla AWG de la [ficha de los JST-XH (
 | 28 AWG | 43 mΩ | 66 mΩ |
 
 - Con dos contactos de 15 a 20 mΩ (referencia Dubox), el peor caso (28 AWG de CCA) da unos 0,1 Ω por hilo. A 1 mA son 0,1 mV. **La resistencia del hilo es irrelevante.** Un polímetro normal (resolución de 0,1 Ω) tampoco la distingue.
-- La carga del pulsador es de unos 51 a 66 µA ([ficha del pulsador, 5.2](../pulsador-arcade-30mm/README.md)), y la Pi lee "pulsado" mientras el contacto no pase de unos 19 a 24 kΩ. Para ese hilo cualquier cobre o CCA vale; lo que mata es un circuito abierto.
 - UART a 9600 baudios: un bit dura 104 µs, un byte de 10 bits 1,04 ms y una trama de 9 bytes (guía, §2.4) unos 9,4 ms. **Un corte de la línea de más o menos un bit ya puede alterar la trama.** Un contacto que vibra a escala de milisegundos es visible para la UART.
 
 ## 3. Documentos oficiales
@@ -146,12 +145,11 @@ No hay ficha técnica, manual ni declaración de conformidad de ELEGOO para este
 
 | Punto | Guía (`claude/guia-montaje-electrico.md`) | Hallazgo | Veredicto |
 |---|---|---|---|
-| Función de la pieza #29 | "Cables de señal. Para los pines de la Pi" (§1 fila 29) | Los cables vienen terminados con carcasa de 1 × 1 en **ambos** extremos. No hay terminales sueltos ni herramienta. Con ellos solos no se pone un Dupont hembra al hilo del JST-XH ni al faston del pulsador | **Hueco** (ya señalado en la ficha de los JST-XH, 5.11) |
+| Función de la pieza #29 | "Cables de señal. Para los pines de la Pi" (§1 fila 29) | Los cables vienen terminados con carcasa de 1 × 1 en **ambos** extremos. No hay terminales sueltos ni herramienta. Con ellos solos no se pone un Dupont hembra al hilo del JST-XH | **Hueco** (ya señalado en la ficha de los JST-XH, 5.11) |
 | UART | Pin 8 (GPIO14 TXD) y pin 10 (GPIO15 RXD) (§5.3) | Esquema J8: 8 = GPIO14 (TXD0), 10 = GPIO15 (RXD0) | Coincide |
-| Pulsador | Pin 11 (GPIO17) y pin 9 (GND) (§5.3) | Esquema: 11 = GPIO17. [pinout.xyz](https://pinout.xyz/pinout/pin8_gpio14) da el pin 9 como Ground | Coincide |
-| Un alojamiento para 8 y 10 | La ficha de los JST-XH propone uno de 1 × 2 | Cierto para 8 y 10 (misma fila). Pero 9 y 11 están **en la otra fila**: un 1 × 2 no cubre los cuatro | **Matiz**: ver 4.2 |
+| Un alojamiento para 8 y 10 | La ficha de los JST-XH propone uno de 1 × 2 | Cierto: 8 y 10 van seguidos en la misma fila | **Coincide**: ver 4.2 |
 | Calibre y material del cable | No lo dice | Calibre no publicado. Tiendas dicen aluminio cobreado | **Sin verificar**; no es el cobre que se suele suponer |
-| Longitud | No lo dice (el cable del pulsador no tiene medida en la guía) | 20 cm por hilo, sin cotas del montaje para saber si llega al pulsador | **Sin verificar** |
+| Longitud | No lo dice | 20 cm por hilo, sin cotas del montaje para saber si llegan de la Pi al ZE29A | **Sin verificar** |
 | Precio | 9,99 € | ELEGOO UK £5,99 y EE. UU. $6,59 | No es discrepancia: es el precio de Amazon.es en tu hoja |
 | ASIN | B01NGTXASZ | Hackster y Desertcart citan B01EV70C78 | **Sin resolver** |
 
@@ -171,8 +169,6 @@ Hilos que van a cada pin (según la guía §5.3 y la ficha de los JST-XH 4.2):
 |---|---|---|
 | 8 | exterior | Al pin 4 (RX) del ZE29A |
 | 10 | exterior | Al pin 3 (TX) del ZE29A |
-| 9 | interior | A COM del pulsador (GND) |
-| 11 | interior | A NO del pulsador (GPIO17) |
 
 **Sobre qué fila es la interior.** El texto de Raspberry Pi y de pinout.xyz que pude leer no lo dice (el diagrama es una imagen). Un artículo de Wevolver (secundario, sobre la Pi 4) lo da **al revés**: impares en la fila exterior. Lo que yo conozco de la placa es: pin 1 en el extremo de la microSD, con pad cuadrado en la cara inferior; impares en la fila interior; pares (con los dos de 5 V) en la fila del borde. **Es conocimiento general, sin fuente que haya podido citar: compruébalo en tu placa antes de crimpar nada.** Una comprobación sin tensión: con el polímetro en continuidad entre la carcasa metálica del USB y cada pin, los primeros GND desde el extremo del pin 1 son el 6 (3.ª columna, fila de los pares), el 9 (5.ª columna, fila de los impares) y el 14 (7.ª columna, fila de los pares). Desde el otro extremo el patrón es distinto (39, 34, 30). Eso identifica qué extremo es el del pin 1 y cuál es la fila de los impares. La lista de GND (6, 9, 14, 20, 25, 30, 34 y 39) es de memoria: **sin verificar**; solo el 6 y el 9 los vi en pinout.xyz.
 
@@ -180,19 +176,19 @@ Hilos que van a cada pin (según la guía §5.3 y la ficha de los JST-XH 4.2):
 
 | Opción | Cómo | Ventajas | Inconvenientes |
 |---|---|---|---|
-| A. Dos de 1 × 2 | Uno en 8 y 10 (fila exterior), otro en 9 y 11 (fila interior) | Fáciles de crimpar | Dos piezas sueltas, cada una con su fricción; se pueden confundir de fila |
-| B. **Uno de 2 × 3 sobre los pines 7 a 12** (mía) | Posiciones usadas: 8, 10 (exterior), 9, 11 (interior). Quedan vacías la 7 (GPIO4) y la 12 (GPIO18): son cavidades de plástico, no tocan nada | Un solo bloque que se enchufa de una vez y que mantiene los cuatro contactos alineados | Si no está polarizado (la Harwin de referencia no lo está), se puede enchufar girado 180° o corrido |
-| C. Cuatro de 1 × 1 (como vienen los ELEGOO) | Cada hilo en su pin. Solo vale si el otro extremo del hilo se corta y se termina por crimpado | No hace falta crimpar el lado de la Pi | Cuatro uniones independientes con 0,3 N cada una como mínimo; el peor caso |
-| D. 2 × 4 sobre los pines 5 a 12 (mía) | Añade el pin 6 (GND) en la fila exterior | Cubre la opción del tercer GND de la ficha de JST-XH 6.5 | Un contacto más. El pin 5 (GPIO3, con pull-up fijo según la [ficha de la Pi](../raspberry-pi-3b-plus/README.md)) queda con su cavidad vacía |
+| A. **Uno de 1 × 2 en los pines 8 y 10** | Los dos en la fila exterior, seguidos | Una sola pieza, fácil de crimpar | Si no está polarizado (la Harwin de referencia no lo está), se puede enchufar corrido, girado o en la otra fila |
+| B. Dos de 1 × 1 (como vienen los ELEGOO) | Cada hilo en su pin. Solo vale si el otro extremo del hilo se corta y se termina por crimpado | No hace falta crimpar el lado de la Pi | Dos uniones independientes con 0,3 N cada una como mínimo; el peor caso |
+| C. 1 × 3 en los pines 6, 8 y 10 (mía) | Añade el pin 6 (GND), que está en la misma fila, justo antes del 8 | Cubre la opción del tercer GND de la ficha de JST-XH 6.5 | Un contacto más |
 
-**Errores de colocación y su efecto** (opción B, cálculos míos a partir de la tabla de pines):
+**Errores de colocación y su efecto** (opción A, cálculos míos a partir de la tabla de pines):
 
 | Error | Qué pasa |
 |---|---|
-| Corrido **1 columna** hacia el pin 1 | El RX del sensor va al pin 6 (GND) y el TX del sensor al pin 8 (TXD de la Pi): dos salidas enfrentadas. El hilo GND del pulsador va al pin 7 (GPIO4) y el NO al pin 9 (GND): el pulsador no llega a GPIO17 |
+| Corrido **1 columna** hacia el pin 1 | El RX del sensor va al pin 6 (GND) y el TX del sensor al pin 8 (TXD de la Pi): dos salidas enfrentadas |
 | Corrido **2 columnas** hacia el pin 1 | El RX del sensor va al **pin 4 (5 V)** y el TX del sensor al pin 6 (GND): **5 V en una entrada de 3,3 V y una salida del sensor a masa** |
-| Corrido 1 columna hacia el pin 40 | Sin 5 V ni masa: el RX del sensor cae en el pin 10 (RXD), el TX en el 12 (GPIO18), el GND del pulsador en el 11 (GPIO17) y el NO en el 13 (GPIO27). No funciona, pero no quema |
-| Girado 180° sobre los mismos pines | El TX del sensor cae en el pin 9 (GND). El GND del pulsador cae en el pin 10 (RXD) y el NO en el pin 8 (TXD). El RX del sensor cae en el pin 11 (GPIO17) |
+| Corrido 1 columna hacia el pin 40 | Sin 5 V ni masa: el RX del sensor cae en el pin 10 (RXD) y el TX en el 12 (GPIO18). No funciona, pero no quema |
+| Girado 180° sobre los mismos pines | El TX del sensor cae en el pin 8 (TXD de la Pi) y su RX en el 10 (RXD): dos salidas enfrentadas y dos entradas juntas. No funciona |
+| En la otra fila (impares), a la misma altura | El RX del sensor cae en el pin 7 (GPIO4) y el TX en el 9 (GND): la salida del sensor queda a masa. No funciona |
 
 El peor caso es el segundo, y es fácil de cometer si se cuentan las columnas desde el lado equivocado de la cabecera. De ahí las comprobaciones de [4.5](#45-comprobación-antes-de-dar-tensión).
 
@@ -206,7 +202,7 @@ El peor caso es el segundo, y es fácil de cometer si se cuentan las columnas de
 
 ### 4.4 Terminar los extremos
 
-Cuándo hace falta: para poner un terminal Dupont hembra en los hilos de 22 AWG de los cables JST-XH (sensor) y en el hilo del pulsador. La ficha de los JST-XH (5.11) ya explica por qué no hay herramienta en la hoja; aquí va lo que he encontrado para hacerlo.
+Cuándo hace falta: para poner un terminal Dupont hembra en los hilos de 22 AWG de los cables JST-XH (sensor). La ficha de los JST-XH (5.11) ya explica por qué no hay herramienta en la hoja; aquí va lo que he encontrado para hacerlo.
 
 - **No cortes los ELEGOO para empalmar con soldadura si son de CCA.** [mikrocontroller.net](https://www.mikrocontroller.net/topic/516562) cuenta que el cobre se disuelve en el estaño en un segundo y el aluminio ya no moja, y [Wikipedia](https://en.wikipedia.org/wiki/Copper-clad_aluminium_wire) dice que el CCA "may be hard to solder". Si hay que empalmar, crimpa.
 - **El hilo de 22 AWG del kit JST-XH encaja directamente** en un contacto de crimpado Dupont hembra de 22 a 30 AWG (Harwin [M20-1180042](https://www.harwin.com/products/M20-1180042), [M20-1160042](https://cpc.farnell.com/harwin/m20-1160042/contact-socket-crimp-30-22awg/dp/CN25464)). En el caso de 22 AWG es el extremo grueso del rango del terminal: probar antes con un contacto de repuesto. **Es la forma más limpia**: no pasa por los ELEGOO.
@@ -221,7 +217,7 @@ Cuándo hace falta: para poner un terminal Dupont hembra en los hilos de 22 AWG 
   - Una soldadura "concentra cada ciclo de flexión en un punto rígido" ([Team FDM](https://www.teamfdm.com/blogs/entry/10-3d-printer-connectors-molex-jst-crimping/)).
   - Cuenta con malograr de 10 a 20 terminales hasta tomarle el punto (microcontrollerslab). En el Arduino Forum, un usuario cuenta una media de 1,5 a 2 pines por crimpado bueno.
   - **Tira de cada terminal** y repite si el hilo se mueve (Team FDM, microcontrollerslab). Las fuerzas de arranque de referencia para 26 y 28 AWG están en la tabla de la [ficha de JST-XH (6.2)](../cables-jst-xh-4-pin/README.md#62-qué-comprobar-al-recibir-el-lote).
-- **Dónde comprar terminales y carcasas:** no he visto un kit concreto en Amazon.es que pueda recomendar. El contacto Harwin M20-1160042 figura en CPC Farnell a 0,09 £ (desde 5 unidades) y 0,05 £ (desde 100), sin IVA, según la página del 21-10-2026; para una máquina con cuatro hilos el gasto es mínimo. **Sin verificar** disponibilidad y envío, y si ese contacto es el que lleva la carcasa que elijas.
+- **Dónde comprar terminales y carcasas:** no he visto un kit concreto en Amazon.es que pueda recomendar. El contacto Harwin M20-1160042 figura en CPC Farnell a 0,09 £ (desde 5 unidades) y 0,05 £ (desde 100), sin IVA, según la página del 21-10-2026; para una máquina con dos hilos el gasto es mínimo. **Sin verificar** disponibilidad y envío, y si ese contacto es el que lleva la carcasa que elijas.
 
 ### 4.5 Comprobación antes de dar tensión
 
@@ -229,9 +225,9 @@ Procedimiento mío, no sale de una fuente. Con todo apagado, salvo el paso 4.
 
 1. **Hilo por hilo, antes de montar:** continuidad de extremo a extremo con el polímetro, sin que suene con los vecinos.
 2. **Anota el orden:** marca el lado del pin 1 del alojamiento (rotulador, pintura) y apunta qué color va a cada posición (tabla de 4.2).
-3. **Con la Pi apagada**, enchufa el alojamiento y mide continuidad desde el extremo libre de cada hilo a la carcasa metálica del USB (GND): solo el hilo del GND debe sonar. Los otros tres no deben sonar con GND ni entre sí.
-4. **Con la Pi encendida y el ZE29A y el pulsador desconectados**, mide la tensión de cada hilo libre contra GND: **ninguno puede pasar de 3,3 V**. Si ves 5 V, el alojamiento está corrido hacia los pines 2 y 4: apaga y corrígelo. Con la UART abierta, el hilo del TX de la Pi (pin 8) debería leer 3,3 V (una UART en reposo está a nivel alto; **sin verificar en la Pi**) y el del GND 0 V: eso delata un corrimiento de una columna. Toca solo los extremos de los hilos, nunca los pines de la Pi con las puntas.
-5. **Primero el pulsador** (`gpiozero.Button(17)`, cuenta pulsaciones) y **después el sensor**: si la Pi manda tramas y el ZE29A no responde, comprueba el cruce TX/RX (el hilo del pin 8 al RX del sensor).
+3. **Con la Pi apagada**, enchufa el alojamiento y mide continuidad desde el extremo libre de cada hilo a la carcasa metálica del USB (GND): ningún hilo debe sonar con GND ni entre sí (si usas la opción C, solo el del pin 6).
+4. **Con la Pi encendida y el ZE29A desconectado**, mide la tensión de cada hilo libre contra GND: **ninguno puede pasar de 3,3 V**. Si ves 5 V, el alojamiento está corrido hacia los pines 2 y 4: apaga y corrígelo. Con la UART abierta, el hilo del TX de la Pi (pin 8) debería leer 3,3 V (una UART en reposo está a nivel alto; **sin verificar en la Pi**); si lee 0 V, el alojamiento está corrido sobre el pin 6. Toca solo los extremos de los hilos, nunca los pines de la Pi con las puntas.
+5. **Después, el sensor:** si la Pi manda tramas y el ZE29A no responde, comprueba el cruce TX/RX (el hilo del pin 8 al RX del sensor).
 6. **Prueba de tirón y de golpe con el sistema funcionando:** mueve el haz, tira suavemente de la carcasa y golpea la caja interior sobre sus muelles mientras el programa registra tramas erróneas. Si salta algo, el contacto es el problema.
 
 ## 5. Fallos, bugs y problemas conocidos
@@ -249,7 +245,6 @@ No encontré pruebas independientes de este kit en concreto (mediciones, desmont
 | 5.7 | Aislante y carcasas frágiles; sin tensión nominal | Media | mikrocontroller.net; Pi brief |
 | 5.8 | Faltan terminales y herramienta | Media | Deducción sobre la guía |
 | 5.9 | Datos del anuncio inconsistentes y ASIN | Baja-media | Tiendas |
-| 5.10 | Hilo demasiado fino para el faston del pulsador | Media | Arduino Forum; ficha del pulsador |
 
 ### 5.1 Conductor de aluminio cobreado y calibre desconocido
 
@@ -293,7 +288,7 @@ Ver [4.2](#42-geometría-de-la-cabecera-y-alojamientos). Es una deducción mía 
 ### 5.6 Oxidación y contactos de bajo nivel
 
 - En un hilo de All About Circuits, DonBradman dice haber visto **oxidarse los conectores con el tiempo**. Un solo testimonio.
-- Dubox lista contacto de oro o de estaño ([2.2](#22-conector-dupont-de-referencia-no-es-el-de-elegoo)). El material y el baño de los terminales de ELEGOO **no se publican**. Una unión de 3,3 V y microamperios es una carga de bajo nivel, el caso que tratan la [ficha del pulsador (sección 6)](../pulsador-arcade-30mm/README.md) y la [de los JST-XH (5.9)](../cables-jst-xh-4-pin/README.md#59-contactos-de-estaño-con-señales-de-bajo-nivel). No he encontrado cifras concretas para Dupont.
+- Dubox lista contacto de oro o de estaño ([2.2](#22-conector-dupont-de-referencia-no-es-el-de-elegoo)). El material y el baño de los terminales de ELEGOO **no se publican**. Una unión de 3,3 V y microamperios es una carga de bajo nivel, el caso que trata la [ficha de los JST-XH (5.9)](../cables-jst-xh-4-pin/README.md#59-contactos-de-estaño-con-señales-de-bajo-nivel). No he encontrado cifras concretas para Dupont.
 - Tampoco sé el chapado de los pines de la cabecera de la Pi 3B+ (no lo da ninguno de los documentos que abrí). Sin verificar.
 
 ### 5.7 Aislante y carcasas
@@ -311,17 +306,13 @@ Ver [4.4](#44-terminar-los-extremos) y la [ficha de los JST-XH, 5.11](../cables-
 
 Las tiendas se contradicen entre sí y consigo mismas (2.1). El ASIN de tu hoja no coincide con el que citan Hackster y Desertcart. No sé si es otro anuncio del mismo producto, otra variante o un error. Guarda una captura del anuncio y de la caja al recibirla.
 
-### 5.10 Hilo demasiado fino para el faston del pulsador
-
-La ficha del pulsador (9.3) ya avisa de que los fastons aislados se crimpan sobre 0,5 a 1,5 mm² (dato sin fuente en esa ficha) y los hilos Dupont de fábrica son mucho más finos. Con el calibre del kit desconocido, si fuera de 26 a 28 AWG serían 0,08 a 0,13 mm² (tabla AWG de la [ficha de JST-XH](../cables-jst-xh-4-pin/README.md#23-calibres-referencia-para-comprobar-el-cable)) y el crimpado del faston no agarraría. **No lo he podido verificar para tu kit de fastons**: mira el rango que trae. Alternativas: doblar el cobre sobre sí mismo antes de crimpar (consejo de microcontrollerslab para hilo fino) o usar un hilo más grueso. Con CCA, además, un faston crimpado sobre aluminio es mala idea (deducción mía a partir de 5.1).
-
 ## 6. Alternativas
 
 Solo incluyo productos que he visto en una página. Precios de las páginas indicadas, del 21-10-2026.
 
 | Alternativa | Qué resuelve | Inconvenientes | Fuente |
 |---|---|---|---|
-| **Alojamiento hembra multiposición crimpado** (2 × 3 sobre los pines 7 a 12) | Un solo bloque con el orden fijo y sin cuatro piezas sueltas | Hace falta herramienta y terminales; sigue sin bloqueo | 2.2, 4.4 |
+| **Alojamiento hembra multiposición crimpado** (1 × 2 sobre los pines 8 y 10) | Un solo bloque con el orden fijo y sin piezas sueltas | Hace falta herramienta y terminales; sigue sin bloqueo | 2.2, 4.4 |
 | **Pegar o bridar el haz** | Quita tracción y reduce movimiento | El pegamento no debe tocar la cabecera. En V1E se cita el termofusible como ayuda parcial, y el autor del hilo temía que el pegamento empeorara las cosas. En All About Circuits dos usuarios pegan las carcasas con cemento para maquetas | V1E, All About Circuits |
 | **Soldar los hilos a los pines de la cabecera** | Unión permanente | Cambiar una Pi obliga a desoldar; el CCA no se suelda | All About Circuits (DonBradman acabó soldando; MrChips lo sugirió con termorretráctil) |
 | **Placa de bornes de tornillo sobre la cabecera:** [52Pi GPIO Screw Terminal HAT EP-0129](https://thepihut.com/collections/raspberry-pi-store/products/gpio-screw-terminal-hat) | Tornillos en lugar de fricción; 4 separadores M2.5 en el paquete; "compatible with all 40-pin Raspberry Pi boards" y LED de estado; £13 en The Pi Hut y 14,44 USD en 52Pi | No dice paso ni calibre admitido; **no dice** si saca los 40 pines; suma altura; el enchufe a la cabecera sigue siendo por fricción (aunque con 40 contactos y separadores, deducción mía) | [The Pi Hut](https://thepihut.com/collections/raspberry-pi-store/products/gpio-screw-terminal-hat), [52Pi](https://52pi.com/products/52pi-gpio-screw-terminal-hat-for-raspberry-pi), [wiki 52Pi](https://wiki.52pi.com/index.php/GPIO_Screw_Terminal_Hat_SKU:_EP-0129) |
@@ -330,24 +321,24 @@ Solo incluyo productos que he visto en una página. Precios de las páginas indi
 | **Conectores con enclavamiento** (JST-XH, Molex KK 254, Micro-Fit) | Team FDM da al JST-XH como enclavado (JST dice "friction lock", ver 5.4) | Son conectores de cable a placa cuyo macho va soldado en la placa: **no se enchufan sobre los pines pelados de la Pi** (conocimiento general, sin fuente). Haría falta una placa intermedia con hembra abajo y XH arriba; **no he visto un producto concreto** | Team FDM; el resto sin verificar |
 | **Cable de cinta IDC de 40 pines o WAGO 2060** | Alternativas habituales | **No investigados** (sin presupuesto de búsqueda) | |
 
-Mi lectura, sin más datos: la placa de bornes cambia cuatro fricciones sueltas de 0,3 N cada una (mínimo de referencia) por un único acoplamiento de 40 contactos sujeto con separadores, y los hilos van atornillados. En teoría es más robusta. **Añade altura**, sigue enchufándose por fricción y no he podido leer el calibre que admite. Para pocas máquinas y un montaje cuidadoso, el alojamiento de 2 × 3 crimpado y bien sujeto es más barato.
+Mi lectura, sin más datos: la placa de bornes cambia dos fricciones sueltas de 0,3 N cada una (mínimo de referencia) por un único acoplamiento de 40 contactos sujeto con separadores, y los hilos van atornillados. En teoría es más robusta. **Añade altura**, sigue enchufándose por fricción y no he podido leer el calibre que admite. Para pocas máquinas y un montaje cuidadoso, el alojamiento de 1 × 2 crimpado y bien sujeto es más barato.
 
 ## 7. Recomendaciones para el alcoholímetro
 
 Son conclusiones mías, no afirmaciones de las fuentes.
 
-1. **Usa los ELEGOO para banco, no como arnés definitivo.** Sirven para probar la UART y el pulsador sobre la mesa y para tener repuestos. Para la máquina, termina los hilos de 22 AWG de cobre con terminales Dupont hembra crimpados en un alojamiento de varias posiciones.
-2. **Un solo alojamiento de 2 × 3 sobre los pines 7 a 12** (o 2 × 4 sobre 5 a 12 si decides el GND extra de la ficha JST-XH 6.5). **Marca el lado del pin 1** y comprueba con 4.5 antes de dar tensión. Evita la solución de cuatro 1 × 1 sueltos.
+1. **Usa los ELEGOO para banco, no como arnés definitivo.** Sirven para probar la UART sobre la mesa y para tener repuestos. Para la máquina, termina los hilos de 22 AWG de cobre con terminales Dupont hembra crimpados en un alojamiento de varias posiciones.
+2. **Un solo alojamiento de 1 × 2 sobre los pines 8 y 10** (o 1 × 3 sobre 6, 8 y 10 si decides el GND extra de la ficha JST-XH 6.5). **Marca el lado del pin 1** y comprueba con 4.5 antes de dar tensión. Evita dos 1 × 1 sueltos.
 3. **Compra una crimpadora de terminales abiertos para Dupont** (SN-28B o PA-09) y terminales y alojamientos de 2,54 mm. El gasto es pequeño frente a una máquina parada. Pruébala con terminales de repuesto (4.4).
 4. **Si usas los ELEGOO en la máquina de todas formas:** (a) pruébalos como en la tabla de abajo; (b) no los cortes ni los sueldes; (c) usa los hembra-hembra solo si encajan con firmeza en un pin de 0,64 mm; (d) fíjalos como en el punto 5.
 5. **Alivio de tracción:** brida a un punto fijo de la **misma caja interior que la Pi**, a unos 30 a 50 mm del alojamiento y con un seno de cable entre ese punto y la caja de arriba. Que cable y Pi se muevan juntos. Si pones adhesivo, solo entre el cable y el alojamiento, **nunca sobre la cabecera de la Pi** y sin que cubra los contactos.
 6. **Software defensivo en la UART:** contador de errores de suma de comprobación y de falta de respuesta por prueba y registro de ambos; **tratar "sin respuesta" como fallo del sensor**, no como "0"; y confirmar el resultado con dos lecturas coherentes antes de mostrarlo, por la tasa de 1/256 de 4.3. No cobrar si el sensor no responde.
-7. **Longitud:** 20 cm pueden ser pocos para el pulsador. No tengo las cotas entre el pulsador y la Pi (caja de arriba y caja interior suspendida). Con holgura para los muelles, mide en el 3D de la carcasa. Si no llega, usa hilo propio, no los puentes.
+7. **Longitud:** 20 cm pueden ser pocos entre la Pi y el ZE29A. No tengo las cotas entre los dos. Con holgura para los muelles, mide en el 3D de la carcasa. Si no llega, usa hilo propio, no los puentes.
 8. **Altura:** un alojamiento hembra sobre los 8,5 mm de la cabecera suma altura. Mide la holgura entre la cabecera y la pared de la caja interior (63,5 mm de profundidad según la guía), sobre todo si te decides por una placa de bornes.
 9. **Repuestos:** 3 o 4 alojamientos crimpados por máquina más un puñado de terminales sueltos. El resto del kit, para banco.
 10. **Segregación de tensiones:** arnés lejos de los bornes de 230 V y de la fuente conmutada, sujeto, con pasacables donde cruce chapa (ficha JST-XH, 6.3).
 11. **Compra de una tirada y registro del lote.** Es un producto genérico: no vi avisos de descatalogación (no lo busqué específicamente) y no hay nada que impida que un lote nuevo cambie de conductor o de terminal. Guarda la captura del anuncio y una foto de la caja, y repite las pruebas de abajo con cada lote nuevo.
-12. **Decisión pendiente (tuya):** para pocas máquinas, alojamiento 2 × 3 crimpado y bien sujeto. Para una flota en bares, valora una placa de bornes (sección 6) tras medir la altura y mirar el calibre que admite. No he visto cifras que permitan decidirlo por ti.
+12. **Decisión pendiente (tuya):** para pocas máquinas, alojamiento 1 × 2 crimpado y bien sujeto. Para una flota en bares, valora una placa de bornes (sección 6) tras medir la altura y mirar el calibre que admite. No he visto cifras que permitan decidirlo por ti.
 
 ### Qué comprobar al recibir el lote
 
@@ -378,8 +369,7 @@ Pruebas destructivas solo sobre hilos sobrantes. **No pruebes el ajuste con los 
 - **Un hilo concreto de foro de la Pi con UART y Dupont** que dé errores de trama. No lo encontré; lo del contacto intermitente aplicado a la UART es deducción mía.
 - **Páginas que la herramienta bloqueó** (no reintenté): [Samtec TSW](https://www.samtec.com/products/tsw), [SparkFun, GPIO pinout](https://learn.sparkfun.com/tutorials/raspberry-gpio/gpio-pinout), [Molex KK 254](https://www.molex.com/en-us/products/connector-families/kk-254), [catálogo Harwin M20 en Farnell](https://www.farnell.com/datasheets/2898005.pdf) y [el dibujo M20-107 de Harwin](https://content.harwin.com/asset/b4f1d83e-6b34-4617-ba41-3cc2c2450892/DRG-00377-Technical-Drawing-Datasheet-M20-107-pdf.pdf). Tampoco abrí el [dibujo M20-118](https://content.harwin.com/asset/d742d022-1905-41c8-b996-8feb2ed262c8/DRG-00379-Technical-Drawing-Datasheet-M20-118-pdf.pdf).
 - **Alternativas sin investigar:** cable de cinta IDC de 40 pines, WAGO 2060, placas intermedias de hembra a JST/Molex, alojamientos Dupont 2 × N concretos en Amazon.es, precio de la Engineer PA-09, paso y calibre de las placas de bornes 52Pi y Geekworm.
-- **Rango de cable de los fastons** del kit B0B4H54KPS: no lo he visto.
-- **Longitud necesaria entre la Pi y el pulsador:** faltan las cotas.
+- **Longitud necesaria entre la Pi y el ZE29A:** faltan las cotas.
 - **Mediciones reales** de resistencia, extracción o vida de los contactos del kit: no he tenido el producto.
 
 ## 9. Fuentes

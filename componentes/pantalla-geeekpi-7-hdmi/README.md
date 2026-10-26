@@ -1,6 +1,6 @@
 # GeeekPi pantalla IPS de 7", 1024×600, HDMI, sin táctil
 
-Pantalla del usuario: instrucciones, cuenta atrás del soplido, resultado y QR/cobro. Va a la Raspberry Pi 3B+ por HDMI y se alimenta de la rama de 5,20 V del proyecto. No es táctil: el usuario empieza con un pulsador arcade en GPIO17.
+Pantalla del usuario: instrucciones, cuenta atrás del soplido, resultado y QR/cobro. Va a la Raspberry Pi 3B+ por HDMI y se alimenta de la rama de 5,20 V del proyecto. No es táctil y la máquina no lleva botón: la prueba empieza al pagar en el SumUp Solo, que está siempre esperando tarjeta.
 
 - **Compra:** ASIN B0CHMBCCJB, 45,99 € (precio de la hoja de componentes del 19-20-10-2026).
 - **Documentación que cita la guía:** wiki de 52Pi, referencia EP-0170. Veredicto: **modelo probable, sin confirmar** (ver [apartado 3](#3-qué-modelo-es-exactamente)).

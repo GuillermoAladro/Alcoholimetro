@@ -1,0 +1,13 @@
+Generador paramétrico (Python 3 + CadQuery 2.8).
+  pip install cadquery openpyxl ezdxf
+  python probar.py A          -> construye el diseño A y busca choques
+  python barrer.py A          -> barridos: tapa, tapa interior saliendo por la ranura derecha, cajón de componentes subiendo, cajón de pajitas a la izquierda
+  python exportar_todo.py SALIDA A   -> STEP, DXF y datos del visor
+specs.py   : medidas y colocación de cada componente (diseño A) (aquí se cambian las cosas)
+diseno.py  : carcasa, tapas, cajones, soportes y lista de compras
+comp.py    : modelos de las piezas compradas con sus medidas reales
+cables_choques.py : comprueba que ningún cable atraviesa una pieza (muestrea cada recorrido)
+realista/  : modelos 3D de los componentes (three.js) y los dos visores
+  python netlist.py                    -> conexiones.json (conexiones y verificación)
+  python montar.py visor SALIDA.html offline|cdn
+  python montar.py conexiones SALIDA.html offline|cdn

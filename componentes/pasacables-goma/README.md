@@ -27,7 +27,7 @@ Es una pieza genérica sin datasheet. Esta ficha documenta qué dicen las fichas
 
 ## 1. Resumen para el proyecto
 
-- **El grosor de la chapa es el dato que decide todo y la guía no lo da.** Los "2,6 mm" de la guía son el solape del marco sobre el borde del Solo, (83,16 − 78) / 2 = 2,58 mm (cálculo mío, ya señalado en las fichas del [alargo de antena](../alargo-antena-rp-sma-30cm/README.md) y del [pulsador](../pulsador-arcade-30mm/README.md)), no un grosor. Los pasacables de goma de uso general se hacen para paneles finos: 1,6 mm en Heyco y en el TPE de Essentra, "típicamente 1,5 a 2 mm" en un surtido parecido de 260 piezas. Si la chapa es de 2,5 o 3 mm, **un surtido genérico probablemente no asienta** (deducción mía). Hay familias con ranura de 2,0 a 6,0 mm, pero hay que pedirlas por grosor ([sección 4.2](#42-ajuste-a-la-chapa-el-grosor)).
+- **El grosor de la chapa es el dato que decide todo y la guía no lo da.** Los "2,6 mm" de la guía son el solape del marco sobre el borde del Solo, (83,16 − 78) / 2 = 2,58 mm (cálculo mío, ya señalado en la ficha del [alargo de antena](../alargo-antena-rp-sma-30cm/README.md)), no un grosor. Los pasacables de goma de uso general se hacen para paneles finos: 1,6 mm en Heyco y en el TPE de Essentra, "típicamente 1,5 a 2 mm" en un surtido parecido de 260 piezas. Si la chapa es de 2,5 o 3 mm, **un surtido genérico probablemente no asienta** (deducción mía). Hay familias con ranura de 2,0 a 6,0 mm, pero hay que pedirlas por grosor ([sección 4.2](#42-ajuste-a-la-chapa-el-grosor)).
 - **Varios pasos no son un agujero redondo con un cable.** La guía ya habla de una ranura de 14 × 9 mm para el conector del Solo; la ficha del FFC pide una ranura de unos 18 × 3 mm para un cable plano de 16 mm; la pantalla trae un HDMI de tamaño completo. Un pasacables redondo del surtido no sirve para una ranura: hace falta un perfil de borde o un pasacables ovalado ([sección 4.3](#43-ajuste-al-cable-y-a-los-conectores)).
 - **El separador está junto a la fuente de 50 W.** La guía mueve el paso de cables a x ≈ +30 mm "porque la fuente lo tapa". Los pasacables de PVC de HellermannTyton están dados para −30 a +60 °C, y el PVC de Essentra, hasta 80 °C. La goma SBR y el nailon de Heyco llegan a 105 °C. Del anuncio no sé nada. Mide la temperatura en el separador antes de elegir material ([sección 5.3](#53-calor-cerca-de-la-fuente)).
 - **El pasacables no es aislamiento ni alivio de tracción.** Solo evita que el canto corte el cable. Los hilos de la manguera H05VV-F, pelada como pide la guía, quedan con solo 0,7 mm de PVC (ficha del [cable de 230 V](../cable-h05vv-f-3g1-5-5m/README.md)). Según la guía, ni L ni N cruzan el separador, solo la tierra (deducción mía, a confirmar en el diseño).
@@ -174,20 +174,20 @@ Fuente: guía de montaje, §1 filas 10, 13 y 31, §2.3, §4, §5.1 y §5.3, más
 
 | # | Paso | Qué lo atraviesa | Tamaño conocido | Observación |
 |---|---|---|---|---|
-| 1 | Separador → caja interior suspendida ("paso de cables", movido a x ≈ +30 mm) | Cables de la Pi (latiguillo micro-USB), del ZE29A (hilos de la clavija JST-XH), del pulsador (GPIO17 y GND) y tierra flexible | No consta | La guía dice que salen "con holgura". El latiguillo de 15 cm no deja holgura (ficha del [latiguillo](../latiguillo-micro-usb-22awg/README.md)) |
+| 1 | Separador → caja interior suspendida ("paso de cables", movido a x ≈ +30 mm) | Cables de la Pi (latiguillo micro-USB), del ZE29A (hilos de la clavija JST-XH) y tierra flexible | No consta | La guía dice que salen "con holgura". El latiguillo de 15 cm no deja holgura (ficha del [latiguillo](../latiguillo-micro-usb-22awg/README.md)) |
 | 2 | Separador, ranura del Solo | Conector USB-A → USB-C acodado del Solo | **14 × 9 mm** (guía §1 fila 10) | Es una ranura, no un agujero redondo |
 | 3 | Pi (caja interior) → cámara (caja de arriba) | Cable plano FFC de 15 pines | **16 mm de ancho** (ficha del [FFC](../cable-ffc-camara-50cm/README.md)); la ficha propone una ranura de unos 18 × 3 mm | Propuesta de esa ficha, no de la guía |
 | 4 | Panel → caja suspendida | Tubo de silicona de la boquilla al ZE29A (opción A de la guía §4) | "6 mm", sin saber si interior o exterior (ficha del [tubo](../tubo-silicona-6mm/README.md)) | Pasa un tubo, no un cable: el pasacables tiene que ceñir su diámetro exterior, que hay que medir |
 | 5 | Pi → pantalla | HDMI de tamaño completo (desde la Pi) y cable USB-C de alimentación de la pantalla (desde su borne USB-A, guía §1 fila 5 y §5.2) | Conector HDMI de tamaño completo: no cabe en los tamaños pequeños (observación mía, sin fuente) | El recorrido no consta |
 | 6 | Caja suspendida → techo | Adaptador Wi-Fi AR9271 y alargo RP-SMA | El taladro de Ø6,5 mm del techo lleva conector con tuerca (ficha del [alargo](../alargo-antena-rp-sma-30cm/README.md)), no pasacables | El recorrido hasta el techo no consta |
 | 7 | Tierra a la caja interior y al cajón | Verde-amarillo flexible "con holgura" (guía §5.1) | Hilo de 1,5 mm² con PVC de 0,7 mm (ficha del [cable de 230 V](../cable-h05vv-f-3g1-5-5m/README.md)) | Único conductor de la parte de red que cruza (deducción mía) |
-| 8 | Entrada C14, antena, pulsador (Ø30), lente (Ø10), rejillas | Recortes para piezas, no pasos de cable | | No llevan pasacables, pero **sus bordes también deben estar sin rebabas** |
+| 8 | Entrada C14, antena, lente (Ø10), rejillas | Recortes para piezas, no pasos de cable | | No llevan pasacables, pero **sus bordes también deben estar sin rebabas** |
 
 Los pasos 5 a 6 dependen de dónde esté cada pieza, que la guía no concreta. Si el HDMI es lo mayor que pasa por un hueco, el hueco lo fija el conector, no el cable.
 
 ### 4.2 Ajuste a la chapa: el grosor
 
-- **La guía no da el grosor.** Lo único parecido es el "marco de acero de 2,6 mm" (§0 y §2.5), que es el solape sobre el borde del Solo, no el grosor ((83,16 − 78) / 2 = 2,58 mm, cálculo mío). Las fichas del módulo C14, del alargo de antena y del pulsador ya piden medir la chapa por la misma razón.
+- **La guía no da el grosor.** Lo único parecido es el "marco de acero de 2,6 mm" (§0 y §2.5), que es el solape sobre el borde del Solo, no el grosor ((83,16 − 78) / 2 = 2,58 mm, cálculo mío). Las fichas del módulo C14 y del alargo de antena ya piden medir la chapa por la misma razón.
 - **Lo que admite la ranura de los pasacables que he visto:** 1,6 mm (Heyco, Essentra TPE); 2,0 y 3,0 mm (los dos Essentra de PVC de agujero grande); de 0,8 a 6,0 mm (HellermannTyton HV, según el listado de la tabla 2.3); "típicamente 1,5 a 2 mm" (el surtido de Probots). Un surtido de 7 tamaños pequeños de Amazon probablemente sea de 1 a 2 mm (suposición mía a partir de esos ejemplos).
 - **Regla de ajuste (mía, sin fuente):** la ranura debería ser igual al grosor de la chapa, con una décima o dos de tolerancia. Si la chapa es más gruesa que la ranura, el borde del agujero no entra en el surco y el pasacables se sale al tirar del cable. Si es más fina, queda flojo y gira.
 - **Cómo medir (mío):**
@@ -353,7 +353,7 @@ Solo hay motivo para cambiar si el grosor de la chapa no encaja, si hay un paso 
 
 Son conclusiones mías, no afirmaciones de las fuentes.
 
-1. **Mide la chapa antes de pedir nada** (sección 4.2). Es el dato que falta en la guía y condiciona los pasacables, el módulo C14, el alargo de antena y el pulsador.
+1. **Mide la chapa antes de pedir nada** (sección 4.2). Es el dato que falta en la guía y condiciona los pasacables, el módulo C14 y el alargo de antena.
 2. **Haz una lista de pasos** con el objeto mayor que atraviesa cada uno (haz, conector, ancho del FFC) y su forma (redonda o ranura). Con eso eliges dos o tres tallas y, para las ranuras, un perfil de borde.
 3. **No uses este surtido en los agujeros junto a 230 V ni junto a la fuente** hasta haber pasado la tabla 6, o hasta tener la ficha del vendedor. Para el prototipo vale; para la serie, usa piezas con datasheet (HellermannTyton, Heyco o Essentra) y guarda la ficha y la declaración RoHS en el expediente.
 4. **Si la chapa es de 2,5 mm o más**, compra por grosor (HV con H2 de 2,5 o 3,0 mm, o buje de nailon) en vez de rellenar con el surtido.
@@ -371,7 +371,7 @@ Son conclusiones mías, no afirmaciones de las fuentes.
 - **Cable USB acodado (#10):** la ranura de 14 × 9 mm del separador es igual.
 - **Tubo de silicona (#8):** si pasa por un agujero de la chapa, necesita su propio paso con borde protegido; el diámetro de 6 mm es interior o exterior, sin aclarar.
 - **Latiguillo micro-USB (#19):** el "≤ 15 cm" choca con la holgura que piden los pasacables de la caja suspendida (ya señalado en su ficha).
-- **Módulo C14 (#15), alargo (#13) y pulsador (#11):** sus fichas ya piden el grosor de la chapa; es el mismo dato.
+- **Módulo C14 (#15) y alargo (#13):** sus fichas ya piden el grosor de la chapa; es el mismo dato.
 - **Norma de producto:** EVS indica que la edición de 2022 de EN IEC 60335-2-82 se retira el 16-9-2026, y que su alcance excluye las máquinas expendedoras (IEC 60335-2-75). La guía cita la -2-82 como probable: conviene confirmar cuál aplica.
 
 ## 9. Discrepancias con la guía de montaje

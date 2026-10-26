@@ -1,5 +1,10 @@
 # Módulo de entrada C14 con portafusibles e interruptor luminoso
 
+> **25-10-2026: la máquina ya no usa este módulo.** Se cambia por una toma C14 con portafusibles y **sin interruptor** (Cablepelado, [B07CQ54BY4](https://www.amazon.es/dp/B07CQ54BY4)): el interruptor rojo se veía por la ventana del lateral y el proyecto no lleva botones. Ver [DECISIONES](../../DECISIONES.md).
+> - Lo que esta ficha dice del interruptor y de la lámpara ya no aplica.
+> - Sigue valiendo lo de la entrada C14, el fusible T2,5A, las pestañas, la tierra y la fijación.
+> - Sigue abierto el fusible en un solo polo con un enchufe Schuko reversible (apartados 4 y 5).
+
 Entrada de red de 230 V de la máquina. Va en la trasera de la caja de arriba. Recibe el cable Schuko–C13 de 2 m (#17) y lleva el interruptor y el fusible. De él salen L y N (cable de 1,5 mm² con faston) a la fuente Mean Well LRS-50-5 (#14). El pin de tierra va al espárrago M4 de tierra.
 
 - **Compra:** ASIN B08Z6FCR5Z, 7,70 € (precio de la hoja de componentes del 19-20-10-2026).
@@ -464,7 +469,7 @@ También aparecen en las fuentes: el Schurter PF11 (doble fusible, 6 A, clip de 
 | 1 | §2.7: "interruptor LED de 4 pines" y "comprueba con el polímetro que corta fase y neutro" | Correcto pedir la comprobación, pero **4 pines con luz pueden ser un interruptor unipolar con lámpara independiente**, no un bipolar. Hay que identificar la topología, no solo verificar que corta los dos | Apartado 4 |
 | 2 | §5.1: "C14, entrada L (tras el fusible) → interruptor, entra L", y N igual, como puentes | Supone que hay dos polos de interruptor y un fusible en L. En un módulo unipolar con lámpara, el puente de N iría a la lámpara. Y el fusible puede estar en el neutro según cómo se enchufe | Apartados 4 y 5 |
 | 3 | §5.1: "Los puentes del C14 siguen el dibujo del vendedor" | Las descripciones de vendedores de módulos parecidos se contradicen (SPST/DPST). No hay dibujo fiable. Manda la medida | Apartado 4.1 |
-| 4 | §1, #27: kit de faston de "2,8, 4,8 y 6,3 mm" para el C14 y el pulsador | No es una contradicción, es un aviso: los genéricos y Schurter tienen lengüeta de **4,8 × 0,8**, y 6,3 solo aparece en Bulgin. Mide la tuya y comprueba el grosor de la lengüeta contra el kit | Apartado 2.3 |
+| 4 | §1, #27: kit de faston de "2,8, 4,8 y 6,3 mm" para el C14 | No es una contradicción, es un aviso: los genéricos y Schurter tienen lengüeta de **4,8 × 0,8**, y 6,3 solo aparece en Bulgin. Mide la tuya y comprueba el grosor de la lengüeta contra el kit | Apartado 2.3 |
 | 5 | §2.7: el interruptor es de 6 A / 250 V | En módulos parecidos es "6 A/250 V o 10 A/125 V" ([MWMS](https://www.kaufland.at/product/470137149/)), y el título "10 A 250 V" es del conector. No contradice a la guía, pero conviene recordar que el límite lo pone el interruptor | Apartado 2.2 |
 | 6 | §2.7: "el propio conector C13 hace de anclaje" | No hay fuente primaria que lo diga así. Es plausible (el anclaje está en el cordón), pero la fuerza de enchufar y desenchufar la soporta la fijación del módulo a la chapa | Apartado 6.4 |
 | 7 | §9: "EN IEC 60335-2-82" | Según EVS, la edición de 2022 **se retira el 16-09-2026** y la sustituye la de 2026. Comprueba la edición vigente. Afecta a toda la máquina, no solo a esta pieza | Apartado 3.1 |

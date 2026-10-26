@@ -2,7 +2,9 @@
 
 Cómo montar el circuito del alcoholímetro por fases: con qué piezas y qué probar antes de pasar a la fase siguiente. Las conexiones (W1 a W30) y los números de pieza (#1 a #32) son los del [MONTAJE GENERAL](MONTAJE-GENERAL.md). Aquel documento dice qué va con qué; este dice en qué orden se monta y cómo se comprueba cada paso.
 
-**Estado a 21-10-2026: es un procedimiento de papel. No se ha montado nada.** Sigue el diseño del MONTAJE GENERAL (guía de cableado y `decisiones-diseno.md`). Si al final manda el diseño A del 21-10-2026, cambian sobre todo las fases 3 (sin pulsador) y 8 (colocación y tierra).
+**Estado a 21-10-2026: es un procedimiento de papel. No se ha montado nada.** Sigue el diseño del MONTAJE GENERAL (guía de cableado y `decisiones-diseno.md`). Desde el 22-10-2026 manda el diseño A (CAD en [`carcasa/diseno-A/`](carcasa/diseno-A/README.md)); con él cambia sobre todo la fase 8 (colocación y tierra), que falta rehacer.
+
+> **Sin botón.** La máquina no lleva pulsador: el SumUp Solo está siempre esperando tarjeta y la prueba empieza al pagar ([DECISIONES](DECISIONES.md)). El cobro continuo se prueba en P6.14.
 
 **La idea:** ir de lo que no puede romper nada a lo que sí, y probar cada parte por separado antes de juntarla. El orden sigue el plan de banco de las auditorías (Auditor 6.1-S §9, 6-A §8, P §8 y 5.6 §9):
 
@@ -20,8 +22,8 @@ Cómo montar el circuito del alcoholímetro por fases: con qué piezas y qué pr
 
 ## Reglas para todo el montaje
 
-1. **La parte de 230 V (fases 4 y 8) la hace o la revisa un electricista.** Con el cordón enchufado nadie toca el módulo C14 ni los bornes 1, 2 y 3 de la fuente. Apagar el interruptor no basta: lo que hay antes del interruptor sigue con tensión. Con la fuente enchufada solo se trabaja en el lado de 5 V (bornes 4 y 5, trimmer, regletas y ramas), con la tapa de los bornes de 230 V puesta y con herramienta aislada.
-2. **Cables de señal y fusibles se cambian con todo apagado.** Vale para la UART, el FFC de la cámara, el pulsador y el HDMI. Las únicas excepciones son las pruebas P5.7 y P6.13, que se hacen a propósito y supervisadas.
+1. **La parte de 230 V (fases 4 y 8) la hace o la revisa un electricista.** Con el cordón enchufado nadie toca la toma C14 ni los bornes 1, 2 y 3 de la fuente. No hay interruptor: para cortar la corriente se desenchufa el cordón. Con la fuente enchufada solo se trabaja en el lado de 5 V (bornes 4 y 5, trimmer, regletas y ramas), con la tapa de los bornes de 230 V puesta y con herramienta aislada.
+2. **Cables de señal y fusibles se cambian con todo apagado.** Vale para la UART, el FFC de la cámara y el HDMI. Las únicas excepciones son las pruebas P5.7 y P6.13, que se hacen a propósito y supervisadas.
 3. **Nunca 5 V en un pin del GPIO.** Los únicos pines de 5 V son el 2 y el 4.
 4. **Antes de conectar una carga, mide su rama sin carga:** tensión y polaridad.
 5. **No subas el trimmer de la fuente para tapar una caída de tensión.** El tope es 5,12 V.
@@ -33,9 +35,9 @@ Cómo montar el circuito del alcoholímetro por fases: con qué piezas y qué pr
 
 | Decisión | Dónde está explicada | Qué fase cambia |
 |---|---|---|
-| Qué diseño manda: este o el A | MONTAJE GENERAL, 6.3 | 3 y 8 |
+| Pasar al diseño A, que manda desde el 22-10-2026 | MONTAJE GENERAL, 6.3 | 8 |
 | Unir el −V a tierra en un punto (W12b) o dejarlo flotante | W12b | 8 |
-| Poner resistencias de 1 kΩ en la UART y un pull-up externo en el pulsador | W19 a W21 | 3 y 6 |
+| Poner resistencias de 1 kΩ en la UART | W19 y W20 | 6 |
 | Boquilla en la posición A o en la B | W28 | 7 |
 
 ### 0.2 Material que no está en la lista de compra
@@ -45,7 +47,7 @@ Cómo montar el circuito del alcoholímetro por fases: con qué piezas y qué pr
 - Tapa aislante para los bornes 1, 2 y 3 de la fuente, con material y temperatura conocidos (MONTAJE GENERAL, apartado 4, punto 16).
 - Dos arandelas aislantes para el jack RP-SMA del techo (W26).
 - Tornillos M2 y separadores para la cámara, cuyos taladros son de 2,2 mm (fila 3 del MONTAJE GENERAL).
-- Tres resistencias de 1 kΩ y termorretráctil, si se adoptan (W19 a W21).
+- Dos resistencias de 1 kΩ y termorretráctil, si se adoptan (W19 y W20).
 - Dos punteras dobles para 2 × 0,75 mm², para los bornes 4 y 5 de la fuente (W11 a W13). Comprueba antes si el kit #28 las trae.
 - Racores y piezas en T para el tubo de soplido. Se eligen después de medir las tomas del sensor (P1.8, W28).
 - Si el C14 resulta de un solo polo o sin esquema de fabricante: una entrada C14 bipolar con esquema documentado (P1.1).
@@ -86,21 +88,20 @@ Cómo montar el circuito del alcoholímetro por fases: con qué piezas y qué pr
 
 | Prueba | Pieza | Cómo | Pasa si | Si no pasa |
 |---|---|---|---|---|
-| P1.1 | Módulo C14 (#15) | Protocolo del MONTAJE GENERAL, apartado 4, punto 1 (siete subpasos), con el fusible T2,5A puesto | El esquema que dibujas coincide con uno de fabricante y el interruptor corta los dos polos | Se compra una entrada C14 bipolar documentada. Puedes seguir con las fases 2 y 3 mientras llega, pero no con la 4 |
+| P1.1 | Toma C14 (#15) | Protocolo del MONTAJE GENERAL, apartado 4, punto 1 (seis subpasos), con el fusible T2,5A puesto | Sabes qué pestaña lleva el fusible, no tiene interruptor y no hay continuidad entre polos ni a tierra | Otra toma. Si se decide la entrada de dos polos documentada, puedes seguir con las fases 2 y 3 mientras llega, pero no con la 4 |
 | P1.2 | Fuente (#14) | Lee la etiqueta y la serigrafía de los bornes | LRS-50-5; bornes 1 AC/L, 2 AC/N, 3 FG, 4 −V, 5 +V | Devolverla |
 | P1.3 | Fusibles (#16 y kit #32) | Busca en la etiqueta de la caja los valores que se usan: T2,5A, F 1, 2, 3 y 5 A. Mide la continuidad de uno de cada | Cada uno da continuidad | El grabado del cristal se lee mal: fíate de la caja |
 | P1.4 | Bornes USB-A (#18), los dos | Continuidad del tornillo «+» al pin 1 del conector hembra y del «−» al pin 4 | Las dos dan continuidad | Otro borne |
-| P1.5 | Cable acodado (#10) | Mira los dos extremos y qué punta es la acodada. Prueba si la punta del Solo pasa por una ranura de 14 × 9 mm. Con el adaptador USB-C, mide entre CC y VBUS en la punta C (MONTAJE GENERAL, apartado 4, punto 5) | Es A → C, la punta cabe y entre CC y VBUS hay 56 kΩ ±5 % (de 53,2 a 58,8 kΩ) | Otro cable. Sin adaptador, P3.13 da solo un indicio |
+| P1.5 | Cable acodado (#10) | Mira los dos extremos y qué punta es la acodada. Prueba si la punta del Solo pasa por una ranura de 14 × 9 mm. Con el adaptador USB-C, mide entre CC y VBUS en la punta C (MONTAJE GENERAL, apartado 4, punto 5) | Es A → C, la punta cabe y entre CC y VBUS hay 56 kΩ ±5 % (de 53,2 a 58,8 kΩ) | Otro cable. Sin adaptador, P3.12 da solo un indicio |
 | P1.6 | Cable de alimentación de la pantalla (viene con #5) | Mira el extremo grande | Es USB-A | Comprar un cable A → C aparte |
 | P1.7 | Latiguillo micro-USB (#19) | Enchúfalo en la Pi **apagada**. Mide continuidad del hilo rojo al pin 2 del GPIO y del negro al pin 6. El micro-USB pasa por el polifusible F1 a los pines de 5 V (esquema RP-008339) | Rojo con el pin 2 y negro con el pin 6 | Si sale al revés, marca los hilos: manda la medida, no el color. Rasca un extremo: si debajo del cobre se ve gris, es aluminio cobreado y conviene otro |
 | P1.8 | ZE29A (#6) | Calibre en el conector J1 para el paso. Lee la serigrafía. Mide sus dos tomas de aire: qué son (racor, tubito o agujero) y su diámetro | J1 identificado, serigrafía «Rx Tx GND 5V», tomas medidas | Si el J1 no es XH, busca una clavija que sí encaje |
 | P1.9 | Clavija JST (#7) | Encájala en el J1 sin forzar y apunta qué color cae en cada pin: 1 (5V), 2 (GND), 3 (TX), 4 (RX) | Encaja sin forzar y tienes los colores apuntados | No la fuerces: otra clavija |
 | P1.10 | Cable FFC (#4) | Pon el cable plano sobre la mesa | El metal de una punta se ve por arriba y el de la otra por abajo («caras opuestas») | Prueba otro cable del pack |
-| P1.11 | Pulsador (#11) | Busca con el polímetro el par de faston que cierra al pulsar | Dos faston identificados y marcados | — |
-| P1.12 | Tubo de silicona (#8) | Diámetro interior y exterior con calibre | Medidas apuntadas | — |
-| P1.13 | WAGO (#20) | Aparta las piezas que se van a usar | 2 × 221-415, 1 × 221-413 y 5 × 221-412 | — |
+| P1.11 | Tubo de silicona (#8) | Diámetro interior y exterior con calibre | Medidas apuntadas | — |
+| P1.12 | WAGO (#20) | Aparta las piezas que se van a usar | 2 × 221-415, 1 × 221-413 y 5 × 221-412 | — |
 
-**Para pasar a la fase 2:** P1.2 a P1.13 pasan y P1.1 está decidida, aunque la entrada nueva aún no haya llegado.
+**Para pasar a la fase 2:** P1.2 a P1.12 pasan y P1.1 está decidida, aunque la entrada nueva aún no haya llegado.
 
 ## Fase 2. La Pi sola, con su fuente oficial
 
@@ -121,7 +122,7 @@ Cómo montar el circuito del alcoholímetro por fases: con qué piezas y qué pr
 5. En `sudo raspi-config`:
    - Interface Options → Serial Port: consola **No**, hardware **Sí**.
    - Localisation → WLAN Country → **ES**.
-6. Ejecuta `sudo apt install python3-picamera2 python3-serial python3-gpiozero --no-install-recommends`.
+6. Ejecuta `sudo apt install python3-picamera2 python3-serial --no-install-recommends`.
 
 **Pruebas:**
 
@@ -164,66 +165,45 @@ Conecta el HDMI de la pantalla a la Pi (W23). Alimenta la pantalla por su USB-C 
 | P3.5 | Roza el conector USB-C de la pantalla | La imagen no parpadea. Si parpadea, en la fase 8 hay que sujetar el cable |
 | P3.6 | Pantalla encendida y la Pi **sin** su fuente: mide entre los pines 2 y 6 de la Pi | Menos de 0,5 V, es decir, la pantalla no alimenta a la Pi por el HDMI **(mío; auditoría 6.1-S F07)** |
 
-### 3.3 Pulsador (#11, #27 y #29)
-
-1. Pon un faston hembra de 2,8 mm en cada uno de los dos terminales del interruptor (los de P1.11).
-2. Faston A → Dupont → pin 11. Faston B → Dupont → pin 9 (W21 y W22).
-3. Si lo has decidido en 0.1, pon una resistencia de 1 kΩ entre el pin 11 y el pin 1 (3,3 V).
-
-| Prueba | Cómo | Pasa si |
-|---|---|---|
-| P3.7 | Ejecuta el contador de abajo, pulsa 100 veces y luego deja el botón quieto 10 minutos | 100 cuentas exactas y ninguna más en esos 10 minutos (auditoría P, H12) |
-
-```python
-from gpiozero import Button
-from signal import pause
-n = 0
-def contar():
-    global n; n += 1; print(n)
-boton = Button(17, bounce_time=0.05)   # guardado en una variable: si no, gpiozero lo cierra
-boton.when_pressed = contar
-pause()
-```
-
-### 3.4 Adaptador Wi-Fi AR9271 (#12) y la Wi-Fi de salida
+### 3.3 Adaptador Wi-Fi AR9271 (#12) y la Wi-Fi de salida
 
 Conecta el adaptador a un USB de la Pi (W25) y enrosca su antena.
 
 | Prueba | Cómo | Pasa si | Si no pasa |
 |---|---|---|---|
-| P3.8 | `lsusb` e `iw dev` | Aparece `0cf3:9271` (Atheros AR9271) y hay dos interfaces, `wlan0` y `wlan1` | Instala `firmware-atheros`. Si el chip es otro, devuelve el adaptador |
-| P3.9 | `nmcli device wifi connect <tu-red> password <clave> ifname wlan1` y luego `ping -I wlan1 1.1.1.1` | Responde | — |
+| P3.7 | `lsusb` e `iw dev` | Aparece `0cf3:9271` (Atheros AR9271) y hay dos interfaces, `wlan0` y `wlan1` | Instala `firmware-atheros`. Si el chip es otro, devuelve el adaptador |
+| P3.8 | `nmcli device wifi connect <tu-red> password <clave> ifname wlan1` y luego `ping -I wlan1 1.1.1.1` | Responde | — |
 
 **Ata cada conexión a su radio por la dirección MAC**, para que no se intercambien al arrancar (W30). Mira las MAC con `ip link` y ejecuta `sudo nmcli connection modify <conexión del bar> 802-11-wireless.mac-address <MAC del AR9271>`. Renombrar las interfaces a `wlan0` y `wlan1` con un archivo `.link` no sirve: son nombres del kernel y systemd avisa de que el resultado es impredecible.
 
-### 3.5 Punto de acceso para el Solo (wlan0)
+### 3.4 Punto de acceso para el Solo (wlan0)
 
 1. Ejecuta `sudo nmcli device wifi hotspot ifname wlan0 band bg channel <1, 6 u 11> ssid <red-maquina> password <clave>`. Elige el canal más lejos posible del de tu router (W29).
 2. **Ese comando crea la conexión sin arranque automático.** Mira su nombre con `nmcli connection show` (suele ser `Hotspot`) y ejecuta `sudo nmcli connection modify Hotspot connection.autoconnect yes connection.autoconnect-priority 100 802-11-wireless.mac-address <MAC del Wi-Fi interno>` (tutorial de Raspberry Pi).
 
 | Prueba | Cómo | Pasa si |
 |---|---|---|
-| P3.10 | Conecta un móvil a la red de la máquina. Luego reinicia la Pi con `sudo reboot` y vuelve a probar sin tocar nada | Navega por Internet a través de la Pi, también después del reinicio |
+| P3.9 | Conecta un móvil a la red de la máquina. Luego reinicia la Pi con `sudo reboot` y vuelve a probar sin tocar nada | Navega por Internet a través de la Pi, también después del reinicio |
 
-### 3.6 SumUp Solo (#9), primero con su propio cargador
+### 3.5 SumUp Solo (#9), primero con su propio cargador
 
 Las cuatro auditorías piden validar la carga del Solo con su cargador antes de pasarlo a la rama de la máquina.
 
 | Prueba | Cómo | Pasa si | Si no pasa |
 |---|---|---|---|
-| P3.11 | Cárgalo con su cable C–C y el cargador USB-C, con el medidor USB en medio | Marca corriente y la batería sube | Contacta con SumUp |
-| P3.12 | Conecta el Solo a la red de la máquina (2,4 GHz) desde su pantalla. Configura la Cloud API: sandbox, Solo virtual, emparejar el real y `GET /readers/{id}/status`. Haz un cobro de 1 € con tu tarjeta | `ONLINE`, firmware 3.3.39.0 o superior y el cobro sale | Firmware antiguo: actualizar el Solo |
-| P3.13 | Cárgalo ahora con el cable acodado (#10) desde el cargador de la pantalla | Carga igual. Si no carga, cambian a la vez el cable y el cargador: prueba ese cargador con otro cable A → C antes de culpar al cable. Es un indicio; la medida buena es la de P1.5 | Otro cable |
-| P3.14 | Apaga el Solo, desenchúfalo, espera un minuto y vuelve a enchufarlo | **Apunta si se enciende solo.** Si no se enciende, la máquina no cobrará después de un corte de luz: hay que resolverlo con SumUp antes de instalarla (MONTAJE GENERAL, apartado 4, punto 15) | No bloquea el montaje, pero sí la instalación en un bar |
+| P3.10 | Cárgalo con su cable C–C y el cargador USB-C, con el medidor USB en medio | Marca corriente y la batería sube | Contacta con SumUp |
+| P3.11 | Conecta el Solo a la red de la máquina (2,4 GHz) desde su pantalla. Configura la Cloud API: sandbox, Solo virtual, emparejar el real y `GET /readers/{id}/status`. Haz un cobro de 1 € con tu tarjeta | `ONLINE`, firmware 3.3.39.0 o superior y el cobro sale | Firmware antiguo: actualizar el Solo |
+| P3.12 | Cárgalo ahora con el cable acodado (#10) desde el cargador de la pantalla | Carga igual. Si no carga, cambian a la vez el cable y el cargador: prueba ese cargador con otro cable A → C antes de culpar al cable. Es un indicio; la medida buena es la de P1.5 | Otro cable |
+| P3.13 | Apaga el Solo, desenchúfalo, espera un minuto y vuelve a enchufarlo | **Apunta si se enciende solo.** Si no se enciende, la máquina no cobrará después de un corte de luz: hay que resolverlo con SumUp antes de instalarla (MONTAJE GENERAL, apartado 4, punto 15) | No bloquea el montaje, pero sí la instalación en un bar |
 
-**Para pasar a la fase 4:** P2.1 a P3.13 pasan y P3.14 está apuntada.
+**Para pasar a la fase 4:** P2.1 a P3.12 pasan y P3.13 está apuntada.
 
 ## Fase 4. La parte de 230 V y la fuente, en banco (con electricista)
 
 **Piezas:**
 
 - Fuente (#14).
-- Módulo C14 (#15) o la entrada bipolar que lo sustituya.
+- Toma C14 (#15), o la entrada con portafusibles de dos polos que la sustituya.
 - Fusible T2,5A (#16) y cordón Schuko-C13 (#17).
 - Hilos marrón, azul y verde-amarillo de la manguera (#22).
 - Faston (#27), punteras (#28) y la tapa de bornes.
@@ -233,14 +213,14 @@ Las cuatro auditorías piden validar la carga del Solo con su cargador antes de 
 - El C14 va montado en una caja de pruebas aislante o en una chapa con su recorte, **nunca suelto**. **Si es una chapa, se une también al PE** con un ojal (#23) y su arandela dentada (#24): es metal accesible a dos centímetros de los faston de 230 V.
 - La fuente va con la tapa de bornes puesta, sobre una base aislante.
 - **Tierra provisional:** un hilo verde-amarillo directo del PE del C14 al borne 3 (FG) de la fuente. En la fase 8 lo sustituyen W6 y W7.
-- Cablea W2 a W5 según el esquema que salió en P1.1. Los faston se crimpan con la crimpadora de terminales preaislados.
+- Cablea W2 y W3: la pestaña con fusible (P1.1) va al borne 1. Los faston se crimpan con la crimpadora de terminales preaislados.
 
 | Prueba | Cómo | Pasa si | Si no pasa |
 |---|---|---|---|
-| P4.1 | **Sin enchufar.** Mide entre L y N del enchufe del C14, con el interruptor en O y en I. Mide también del PE del C14 a la carcasa de la fuente | Entre L y N, nunca 0 Ω (con la fuente conectada el polímetro puede marcar un valor que sube: es su condensador de entrada). Del PE a la carcasa de la fuente y a la chapa del C14, si la hay, 0,1 Ω o menos | Revisar el cableado |
+| P4.1 | **Sin enchufar.** Mide entre L y N del enchufe del C14. Mide también del PE del C14 a la carcasa de la fuente | Entre L y N, nunca 0 Ω (con la fuente conectada el polímetro puede marcar un valor que sube: es su condensador de entrada). Del PE a la carcasa de la fuente y a la chapa del C14, si la hay, 0,1 Ω o menos | Revisar el cableado |
 | P4.2 | Haz cinco crimpados de prueba con la misma herramienta y tira de ellos con fuerza | Ninguno se suelta. La ficha da al menos 133 N para 16 AWG (#23 y #27) | Otra herramienta u otro terminal |
-| P4.3 | **Primer enchufado**, con el interruptor en O y sin tocar nada. Pasa a I y vuelve a O | En I: LED verde de la fuente encendido, y la lámpara del interruptor si la tiene. En O: los dos apagados | Desenchufar y revisar W2 a W5 |
-| P4.4 | Cinco arranques: interruptor en I, luego en O, desenchufa y espera un minuto antes del siguiente | El T2,5A no se funde y la fuente arranca cada vez | Revisar el fusible y la coordinación (ficha #16) |
+| P4.3 | **Primer enchufado**, sin tocar nada. Después desenchufa | Enchufada: LED verde de la fuente encendido. Desenchufada: apagado | Desenchufar y revisar W2 y W3 |
+| P4.4 | Cinco arranques: enchufa, espera a que arranque, desenchufa y espera un minuto antes del siguiente | El T2,5A no se funde y la fuente arranca cada vez | Revisar el fusible y la coordinación (ficha #16) |
 | P4.5 | Sin carga, mide entre los bornes 4 y 5 y ajusta el trimmer con un destornillador aislado y la tapa de bornes puesta (regla 1) | 5,10 V | — |
 | P4.6 | Rizado sin carga con el osciloscopio | Apunta los mVp-p. Sin carga la fuente trabaja en ráfaga (nota 7 de su hoja): sirve de referencia | — |
 | P4.7 | Déjala 15 minutos encendida sin carga | Nada huele y la fuente está, como mucho, tibia | Desenchufar y revisar |
@@ -357,7 +337,7 @@ Conecta el cable de la pantalla al borne nº 2 (W17) y el HDMI a la Pi (W23).
 
 ### 6.5 SumUp Solo
 
-Solo si pasaron P3.11 a P3.13. Conecta el Solo al borne nº 1 con el cable acodado (W14 y W15), con el medidor USB en medio.
+Solo si pasaron P3.10 a P3.12. Conecta el Solo al borne nº 1 con el cable acodado (W14 y W15), con el medidor USB en medio.
 
 | Prueba | Cómo | Pasa si | Si no pasa |
 |---|---|---|---|
@@ -372,6 +352,7 @@ Solo si pasaron P3.11 a P3.13. Conecta el Solo al borne nº 1 con el cable acoda
 | P6.11 | Corriente de cada rama con la pinza, en reposo y en el pico: arranque de la Pi, foto, Solo cargando desde batería baja y retroiluminación al encender. El pico del sensor se mide en la fase 7 | Cada fusible queda por encima del pico con margen (MONTAJE GENERAL, apartado 4, punto 8) | Sube ese fusible un escalón, no más |
 | P6.12 | Rizado con el osciloscopio en cada carga real | Pico de 5,25 V o menos | Como en P5.5 |
 | P6.13 | **Prueba de apagado parcial, supervisada. Solo con las resistencias de 1 kΩ de la UART puestas** (W19 y W20): limitan la corriente a unos 3 mA y la prueba no usa la Pi ni el sensor de carga de sacrificio (auditorías 6.1-S §9.2 y 6-A A6A-07). Sin ellas, **no se hace**. Con todo funcionando, desenrosca el portafusibles del sensor (es 5 V) | La Pi sigue funcionando y `orden(0x85)` da «sin respuesta», no datos raros. El pin 1 del sensor se queda por debajo de 1 V **(mío)** | Si pasa de 1 V, el TX de la Pi está alimentando el sensor por la UART: hace falta un búfer con Ioff (W19). Vuelve a poner el fusible **con todo apagado** |
+| P6.14 | **Cobro continuo, sin botón.** Rellena `~/.config/alcoholimetro/sumup.json` y arranca `main.py` sin `--gratis`. Mira el Solo 10 minutos sin tocarlo y después paga una prueba con tu tarjeta | El Solo enseña el precio y espera tarjeta **todo el rato**: cuando un cobro caduca, sale otro solo en pocos segundos. Al pagar arranca la prueba, y en `registro.csv` queda la referencia del cobro | Mira el registro (`journalctl -u alcoholimetro`): sin internet o con los datos de SumUp mal, la pantalla dice «Pago no disponible» |
 
 ## Fase 7. El tubo de soplido y la prueba de medida
 
@@ -436,7 +417,7 @@ Durante P7.2 mide con la pinza el pico de corriente del sensor al tomar la muest
 | P9.4 | Veinte ciclos completos: cobro de prueba, soplido, foto y resultado | Los veinte sin error | — |
 | P9.5 | Una hora cerrada con unos 30 °C de ambiente (guía) | Dentro, menos de 40 °C (el Solo admite hasta 40 °C y el sensor trabaja entre 10 y 40 °C). Apunta las temperaturas de la fuente, los portafusibles y los empalmes | Ventilador de 40 mm a 5 V (guía) |
 | P9.6 | Rizado en cada carga con la tapa cerrada y caliente | Pico de 5,25 V o menos | Como en P5.5 |
-| P9.7 | Cinco cortes de luz en momentos distintos: en reposo, durante el cobro, durante el soplido, durante la foto y al guardar | La Pi arranca sola, el programa se lanza y el sensor responde. **El Solo vuelve a `ONLINE` sin que nadie lo toque.** No hay cobros dobles y la tarjeta SD está intacta | Si el Solo no vuelve solo, ver P3.14 |
+| P9.7 | Cinco cortes de luz en momentos distintos: en reposo, durante el cobro, durante el soplido, durante la foto y al guardar | La Pi arranca sola, el programa se lanza y el sensor responde. **El Solo vuelve a `ONLINE` sin que nadie lo toque.** No hay cobros dobles y la tarjeta SD está intacta | Si el Solo no vuelve solo, ver P3.13 |
 
 **Al pasar la fase 9, la máquina está lista para pruebas largas en tu taller, no para un bar.**
 
@@ -454,7 +435,7 @@ Copia esta tabla y añade una fila por prueba. Una prueba sin apuntar cuenta com
 
 | Prueba | Fecha | Pieza o número de serie | Valor medido | Pasa (sí/no) | Nota |
 |---|---|---|---|---|---|
-| P1.1 | | Módulo C14 | Esquema: … | | Foto del esquema |
+| P1.1 | | Toma C14 | Pestaña con fusible: … | | Foto de las pestañas |
 | P4.5 | | LRS-50-5 | … V | | |
 | P5.4 | | Reparto de 5 V | R_troncal … Ω · R_Pi … Ω · prevista en la Pi … V | | |
 | P6.10 | | Máquina en banco | Pi … V · `get_throttled` … | | |

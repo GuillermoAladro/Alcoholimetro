@@ -13,37 +13,30 @@
 <path d="M170,254 L170,290" fill="none" stroke="#222222" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
 <polygon points="170,290 163.7,276.5 176.3,276.5" fill="#222222"/>
 <rect x="40" y="290" width="260" height="325" rx="10" fill="#fff6e8" stroke="#a3772a" stroke-width="1.6"/>
-<text x="52" y="315" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="start" fill="#1b2228" >Módulo C14 (#15)</text>
-<text x="52" y="330" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#3a454f" >trasera de la caja de arriba</text>
+<text x="52" y="315" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="start" fill="#1b2228" >Toma C14 (#15)</text>
+<text x="52" y="330" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#3a454f" >con portafusibles, sin interruptor</text>
 <text x="52" y="366" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b2228" >L</text>
 <path d="M70,361 L92,361" fill="none" stroke="#8b5a2b" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
 <rect x="92" y="345" width="70" height="32" rx="4" fill="#ffffff" stroke="#a3772a" stroke-width="1.4"/>
 <text x="127" y="366" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#1b2228" >T2,5A</text>
-<path d="M162,361 L186,361" fill="none" stroke="#8b5a2b" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
 <text x="52" y="436" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b2228" >N</text>
-<path d="M70,431 L186,431" fill="none" stroke="#2f6fd6" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
-<rect x="186" y="342" width="66" height="108" rx="4" fill="#ffffff" stroke="#a3772a" stroke-width="1.4"/>
-<text x="219" y="382" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="middle" fill="#1b2228" >inter-</text>
-<text x="219" y="398" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="middle" fill="#1b2228" >ruptor</text>
-<text x="219" y="414" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#b3261e" >⚠</text>
-<path d="M252,361 L300,361" fill="none" stroke="#8b5a2b" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M252,431 L300,431" fill="none" stroke="#2f6fd6" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
 <circle cx="300" cy="361" r="5" fill="#ffffff" stroke="#222" stroke-width="1.8"/>
 <circle cx="300" cy="431" r="5" fill="#ffffff" stroke="#222" stroke-width="1.8"/>
 <text x="285" y="352" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="end" fill="#1b2228" >L'</text>
 <text x="285" y="422" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="end" fill="#1b2228" >N'</text>
+<path d="M162,361 L300,361" fill="none" stroke="#8b5a2b" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M70,431 L300,431" fill="none" stroke="#2f6fd6" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="112" y="488" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >Sin interruptor: la máquina se</text>
+<text x="112" y="504.33" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >enciende al enchufarla y se</text>
+<text x="112" y="520.66" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >apaga desenchufándola.</text>
+<text x="112" y="545" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ qué patilla lleva el</text>
+<text x="112" y="561.33" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >fusible: medir (apartado 4).</text>
+<text x="112" y="577.66" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >Con Schuko puede quedar</text>
+<text x="112" y="593.99" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >en el neutro.</text>
 <text x="52" y="506" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b2228" >PE</text>
 <path d="M78,501 L96,501 L96,615" fill="none" stroke="#2e8b2e" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="butt"/>
 <path d="M78,501 L96,501 L96,615" fill="none" stroke="#f2d600" stroke-width="3.6" stroke-dasharray="9,9" stroke-linejoin="round"/>
 <circle cx="96" cy="615" r="5" fill="#ffffff" stroke="#222" stroke-width="1.8"/>
-<path d="M150,431 L150,470 L268,470 L268,431" fill="none" stroke="#2f6fd6" stroke-width="2.2" stroke-dasharray="6,4" stroke-linejoin="round" stroke-linecap="round"/>
-<text x="112" y="488" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#3a454f" >trazos: caso 2 (N directo</text>
-<text x="112" y="503" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#3a454f" >si el interruptor es de un polo)</text>
-<text x="112" y="530.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ esquema interno sin</text>
-<text x="112" y="546.33" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >confirmar: los dos dibujos</text>
-<text x="112" y="562.66" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >del vendedor no coinciden;</text>
-<text x="112" y="578.99" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >una reseña dice que están</text>
-<text x="112" y="595.3199999999999" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >mal. Medir (apartado 4)</text>
 <rect x="420" y="290" width="260" height="325" rx="10" fill="#fdecea" stroke="#b04a44" stroke-width="1.6"/>
 <text x="432" y="315" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#1b2228" >Fuente Mean Well LRS-50-5 (#14)</text>
 <text x="432" y="478.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >5 V · 10 A · 50 W · rizado 80 mVp-p, no</text>
@@ -250,7 +243,7 @@
 <text x="806" y="1078" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="10.8" font-weight="normal" text-anchor="start" fill="#2e8b2e" >techo para que no sea un segundo punto.</text>
 <rect x="1090" y="878" width="1045" height="192" rx="10" fill="#fff8f6" stroke="#b3261e" stroke-width="1.6"/>
 <text x="1102" y="903" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#b3261e" >⚠ Abiertos que afectan a esta figura (detalle en componentes/pendientes.md)</text>
-<text x="1102" y="926.75" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="normal" text-anchor="start" fill="#1b2228" >1. Esquema interno del C14: cuántos polos corta el interruptor y qué polo lleva el fusible. Los dos dibujos del vendedor no coinciden (ficha #15, §4–5).</text>
+<text x="1102" y="926.75" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="normal" text-anchor="start" fill="#1b2228" >1. Toma C14 sin interruptor: medir qué patilla lleva el fusible. Con un solo fusible y Schuko, puede quedar en el neutro (ficha #15).</text>
 <text x="1102" y="944.5" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="normal" text-anchor="start" fill="#1b2228" >2. Sección del cable de tierra: 1,5 mm² (guía) o 2,5 mm² (ITC-BT-19 §2.3 para instalación fija). Los ojales M4 de la hoja son de 0,5 a 1,5 mm².</text>
 <text x="1102" y="962.25" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="normal" text-anchor="start" fill="#1b2228" >3. Un solo espárrago con cinco ojales es punto único de fallo; la única fuente encontrada recomienda 2–3 ojales por espárrago (fichas #23, #25).</text>
 <text x="1102" y="980.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="normal" text-anchor="start" fill="#1b2228" >4. Borne USB-A: clasificación habitual 1–1,5 A; puente D+/D− no probado con el Solo. Los fusibles se confirman midiendo cada rama (#9, #18, #32).</text>

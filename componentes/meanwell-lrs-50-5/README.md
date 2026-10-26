@@ -299,7 +299,7 @@ Ver [apartado 4.4](#44-calor-y-derating). No hay curva legible. Dato de familia 
 ### 5.7 Arranque, reencendidos y pico de 45 A
 
 - **Nota 6 de la hoja:** el tiempo de arranque se mide en el primer arranque en frío y encender y apagar muy rápido puede aumentarlo. Hay que dejar pasar unos segundos entre ciclos.
-- **45 A es el valor típico en frío.** La hoja no da el pico en caliente. En una fuente con termistor NTC en la entrada (la hoja no dice si lo lleva), si se vuelve a enchufar antes de que se enfríe, el pico puede ser mayor que el de frío; esto es conocimiento general mío y no viene de Mean Well. El interruptor del C14 (6 A, 250 V según el anuncio) soporta ese pico durante milisegundos o no: no he visto datos del interruptor; es asunto de la ficha del C14.
+- **45 A es el valor típico en frío.** La hoja no da el pico en caliente. En una fuente con termistor NTC en la entrada (la hoja no dice si lo lleva), si se vuelve a enchufar antes de que se enfríe, el pico puede ser mayor que el de frío; esto es conocimiento general mío y no viene de Mean Well. La toma C14 ya no lleva interruptor (25-10-2026), así que ese pico solo lo ven la toma, el fusible T2,5A y el cable.
 - Los datos de arranque para el fusible están en el [apartado 6](#6-fusible-de-entrada-datos-de-la-fuente-y-cálculo).
 
 ### 5.8 Ambiente del bar
@@ -377,7 +377,7 @@ Son conclusiones mías, no afirmaciones de las fuentes.
 5. **Ajuste:** no dar por hecho 5,20 V. Medir en los bornes de cada carga, con la máquina en caliente y a plena carga, y valorar 5,10-5,15 V si los máximos de la pantalla o el ZE29A se acercan al límite.
 6. **Cubrir los bornes de 230 V** con una protección propia, dejar la tierra más larga y atornillar con el par del manual. Evitar rejillas directamente encima de la fuente (líquidos) y dejar 10-15 cm de los focos de calor si el espacio lo permite, o medir.
 7. **Medir en una máquina cerrada:** temperatura de la carcasa de la fuente y del aire de la caja, rizado en las cargas (nota 7), corriente de red con un vatímetro.
-8. **Plan para el OVP y los cortes:** explicar al dueño del bar que, si la máquina no arranca, debe apagar con el interruptor, esperar unos segundos y encender. Llevar una fuente de repuesto por lote.
+8. **Plan para el OVP y los cortes:** explicar al dueño del bar que, si la máquina no arranca, debe desenchufarla, esperar unos segundos y volver a enchufarla (la toma ya no tiene interruptor). Llevar una fuente de repuesto por lote.
 9. **Segunda fuente:** si el volumen crece, valorar una alternativa de clase II como la IRM-60-5 (exige diseñar una placa de montaje) y tener una segunda fuente cualificada, dado el riesgo de suministro de Mean Well descrito arriba.
 10. **Cumplimiento:** la máquina completa necesita su propia evaluación de seguridad y de EMC; esta fuente solo es un componente (nota 9). Confirmar con un laboratorio o asesor de marcado CE qué norma aplica (-2-82, -2-75 u otra) y qué edición.
 

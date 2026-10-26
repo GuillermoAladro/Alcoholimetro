@@ -173,7 +173,7 @@ Fuentes: guía de montaje (§2.6, §3, §4, §5.1 y §6), fichas ya hechas y tu 
 | Uso | Tamaño | Cantidad por máquina | Estado |
 |---|---|---|---|
 | Fuente LRS-50-5, fijada al separador | M3, longitud = soporte + 3 mm o + 5 mm ([4.2](#42-longitud-de-los-tornillos-de-la-lrs-50-5)) | 2 a 4. El dibujo trae 2 + 2 agujeros; no sé cuántos se usan | Asignación lateral/inferior **sin confirmar** (ficha #14) |
-| Módulo C14, si es de tornillos | M3 | 2 | La [ficha #15](../modulo-c14-fusible-interruptor/README.md) cita Schurter: tornillos M3, hasta 8 mm de chapa, par máximo 0,5 N·m. Si el módulo del anuncio es de clip, no hace falta |
+| Toma C14 (de tornillos, a 36 mm) | M3 | 2 | La [ficha #15](../modulo-c14-fusible-interruptor/README.md) cita Schurter: tornillos M3, hasta 8 mm de chapa, par máximo 0,5 N·m. Si el módulo del anuncio es de clip, no hace falta |
 | Pantalla GeeekPi | M2.5 o M3 | 2 | La [ficha de la pantalla](../pantalla-geeekpi-7-hdmi/README.md) cita dos listas de la wiki contradictorias (M2.5 y M3) y no publica los agujeros. Mide la placa |
 | Espárrago de tierra M4 × 20 (#25) | Tuercas M4 | 2 tuercas + 2 arandelas dentadas (#24) | Guía §6. Origen de las tuercas: **sin verificar** (no sé si el espárrago las trae) |
 | Otros extremos de tierra (panel, caja interior, cajón) | M4 | Hasta 3 uniones de tornillo + tuerca + arandelas | Deducción mía a partir de la guía §5.1 (ojal M4 en ambos extremos). Las piezas soldadas ya tienen tierra |

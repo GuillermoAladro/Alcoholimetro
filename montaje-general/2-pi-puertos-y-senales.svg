@@ -21,10 +21,6 @@
 <text x="1136" y="387" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="end" fill="#1b2228" >pin 10 · GPIO15 (RXD)</text>
 <circle cx="1150" cy="407" r="5" fill="#e9f6ee" stroke="#4f8a63" stroke-width="1.8"/>
 <text x="1136" y="411" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="end" fill="#1b2228" >pin 8 · GPIO14 (TXD)</text>
-<circle cx="1150" cy="500" r="5" fill="#e9f6ee" stroke="#4f8a63" stroke-width="1.8"/>
-<text x="1136" y="504" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="end" fill="#1b2228" >pin 11 · GPIO17</text>
-<circle cx="1150" cy="524" r="5" fill="#e9f6ee" stroke="#4f8a63" stroke-width="1.8"/>
-<text x="1136" y="528" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="end" fill="#1b2228" >pin 9 · GND</text>
 <text x="814" y="660.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >config.txt (Raspberry Pi OS Trixie Lite):</text>
 <text x="814" y="676.33" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >· enable_uart=1 · consola serie desactivada</text>
 <text x="814" y="692.66" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >  (sin console=serial0 en cmdline.txt)</text>
@@ -120,23 +116,14 @@
 <text x="1162" y="478.86" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b2228" >hembra en la Pi (#29)</text>
 <text x="1380" y="524" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#3a454f" >Boquilla del panel → tubo de silicona 6 mm (#8) → toma del ZE29A</text>
 <text x="1380" y="542" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ opción A/B de la boquilla y barrera interior del tubo: pendientes (guía §4)</text>
-<rect x="1380" y="590" width="400" height="200" rx="10" fill="#e5f4f4" stroke="#0f8b8d" stroke-width="1.6"/>
-<text x="1392" y="615" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#1b2228" >Pulsador arcade 30 mm (#11)</text>
-<circle cx="1380" cy="630" r="5" fill="#e5f4f4" stroke="#0f8b8d" stroke-width="1.8"/>
-<text x="1394" y="634" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="start" fill="#1b2228" >faston A</text>
-<circle cx="1380" cy="664" r="5" fill="#e5f4f4" stroke="#0f8b8d" stroke-width="1.8"/>
-<text x="1394" y="668" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="start" fill="#1b2228" >faston B</text>
-<circle cx="1380" cy="698" r="5" fill="#e5f4f4" stroke="#0f8b8d" stroke-width="1.8"/>
-<text x="1394" y="702" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="bold" text-anchor="start" fill="#1b2228" >2 faston LED</text>
-<text x="1470" y="634" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >→ pin 11 (GPIO17)</text>
-<text x="1470" y="668" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >→ pin 9 (GND), A y B intercambiables</text>
-<text x="1490" y="702" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#3a454f" >sin conectar (con polaridad)</text>
-<text x="1394" y="726.0" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >faston hembra 2,8 mm en el pulsador (#27),</text>
-<text x="1394" y="742.33" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >Dupont hembra en la Pi (#29)</text>
-<text x="1394" y="758.66" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >pull-up interno de la Pi, sin resistencia externa</text>
-<text x="1394" y="774.99" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >A y B = los dos faston del microinterruptor (anuncio)</text>
-<path d="M1150,500 L1290,500 L1290,630 L1380,630" fill="none" stroke="#0f8b8d" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
-<path d="M1150,524 L1250,524 L1250,664 L1380,664" fill="none" stroke="#222222" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="1380" y="590" width="400" height="160" rx="10" fill="#fff6e8" stroke="#a3772a" stroke-width="1.6"/>
+<text x="1392" y="615" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#1b2228" >Inicio de la prueba: sin botón</text>
+<text x="1394" y="640" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >El SumUp Solo (#9) está siempre esperando tarjeta:</text>
+<text x="1394" y="657" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >la Pi le deja un cobro abierto por la Cloud API y lo</text>
+<text x="1394" y="674" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >renueva cuando caduca (unos 60 s). Al pagar, empieza</text>
+<text x="1394" y="691" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >la prueba. Antes de abrir cada cobro, la Pi comprueba</text>
+<text x="1394" y="708" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >que el sensor responde: si no, no cobra.</text>
+<text x="1394" y="731" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#1b2228" >Del GPIO solo se usan los pines 8 y 10 (UART).</text>
 <text x="40" y="940" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="start" fill="#1b2228" >Pago: no hay ningún cable entre la Pi y el SumUp Solo. El Solo se conecta a una Wi-Fi que crea la propia Pi</text>
 <text x="40" y="962" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#3a454f" >El Wi-Fi interno de la Pi (wlan0) es un punto de acceso para el Solo; la Pi sale al router del bar por el AR9271 (wlan1) con la antena fuera. Así el Solo no depende de que la Wi-Fi del bar llegue dentro de la chapa (auditoría 1.0, H16).</text>
 <rect x="40" y="990" width="330" height="128" rx="10" fill="#fff6e8" stroke="#a3772a" stroke-width="1.6"/>
@@ -188,5 +175,5 @@
 <rect x="1688.4" y="1031.5" width="63.2" height="17.5" fill="#ffffff" opacity="0.92" rx="3"/>
 <text x="1720" y="1044" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#3a454f" >Internet</text>
 <text x="40" y="1170" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="normal" text-anchor="start" fill="#3a454f" >config.txt: quitar dtoverlay=disable-wifi; dtoverlay=disable-bt se queda (la UART PL011 la usa el ZE29A). raspi-config: WLAN country ES. Atar cada conexión de NetworkManager a la MAC de su radio; el punto de acceso, con autoconnect yes.</text>
-<text x="40" y="1192" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="normal" text-anchor="start" fill="#3a454f" >Secuencia de la prueba: comprobar sensor y disco → cobro → soplido con el ZE29A → foto → resultado (guía de montaje §7; cobro antes de comprobar: auditoría 1.0 §3.2).</text>
+<text x="40" y="1192" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="normal" text-anchor="start" fill="#3a454f" >Secuencia de la prueba: comprobar sensor y disco → el Solo espera tarjeta (sin botón; el cobro se renueva solo) → pago → soplido con el ZE29A → foto → resultado (guía de montaje §7; cobro antes de comprobar: auditoría 1.0 §3.2).</text>
 </svg>
