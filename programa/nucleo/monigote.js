@@ -78,7 +78,7 @@
     senala_d: (t) => ({ d: brazo(190 + Math.sin(t / 180) * 8, -250 + Math.sin(t / 180) * 8, "abierta", 0, "abajo"), i: CADERA, cara: "sonrisa", cabeza: 8 }),
     senala_i: (t) => ({ i: brazo(190 + Math.sin(t / 180) * 8, -250 + Math.sin(t / 180) * 8, "abierta", 0, "abajo"), d: CADERA, cara: "sonrisa", cabeza: -8 }),
     saluda: (t) => ({ d: brazo(140 + Math.sin(t / 150) * 34, -300, "abierta", 0, "abajo"), i: REPOSO, cara: "sonrisa", cabeza: 6 }),
-    encoge: (t) => ({ d: brazo(128, 296, "abierta", 0, "abajo"), i: brazo(128, 296, "abierta", 0, "abajo"), cara: "meh", cabeza: -7 + Math.sin(t / 600) * 2 }),
+    encoge: (t) => ({ d: brazo(168, 128, "abierta", 0, "abajo"), i: brazo(168, 128, "abierta", 0, "abajo"), cara: "meh", cabeza: -7 + Math.sin(t / 600) * 2 }),
     celebra: (t) => {
       const b = Math.abs(Math.sin(t / 230));
       return { d: brazo(150, -400 - b * 16, "puno", 1, "fuera"), i: brazo(150, -400 - b * 16, "puno", 1, "fuera"), cara: "grito", cabeza: Math.sin(t / 230) * 4, bote: -b * 22 };
