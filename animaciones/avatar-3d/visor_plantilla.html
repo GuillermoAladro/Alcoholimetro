@@ -1,0 +1,180 @@
+<title>Avatar 3D</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+:root { --bg: #15091f; --bg2: #2a1540; --fg: #fff4e6; --tenue: #b9a9cc; --acento: #ffb02e; --panel: rgba(20, 10, 32, 0.78); --borde: rgba(255, 255, 255, 0.12); color-scheme: dark; }
+@media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) { --bg: #1b0f2a; --bg2: #2f1a48; } }
+:root[data-theme="light"] { --bg: #1b0f2a; --bg2: #2f1a48; }
+html, body { height: 100%; }
+body { margin: 0; background: radial-gradient(ellipse at 50% 40%, var(--bg2), var(--bg) 70%); color: var(--fg); font: 15px/1.4 "Archivo", "Helvetica Neue", Arial, sans-serif; overflow: hidden; }
+#cv { position: fixed; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; }
+.panel { position: fixed; left: max(16px, env(safe-area-inset-left, 0px)); right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(14px + env(safe-area-inset-bottom, 0px)); display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; padding: 10px 12px; background: var(--panel); border: 1px solid var(--borde); border-radius: 16px; backdrop-filter: blur(8px); }
+.panel button { font: inherit; font-size: 13px; font-weight: 600; color: var(--fg); background: rgba(255, 255, 255, 0.06); border: 1px solid var(--borde); border-radius: 999px; padding: 6px 12px; cursor: pointer; }
+.panel button.on { background: var(--acento); color: #1b0d02; border-color: var(--acento); }
+.titulo { position: fixed; top: calc(14px + env(safe-area-inset-top, 0px)); left: max(16px, env(safe-area-inset-left, 0px)); right: max(16px, env(safe-area-inset-right, 0px)); display: flex; justify-content: space-between; align-items: baseline; gap: 12px; pointer-events: none; }
+.titulo h1 { margin: 0; font-size: 18px; font-weight: 800; letter-spacing: 0.02em; }
+.titulo span { color: var(--tenue); font-size: 13px; }
+#cargando { position: fixed; inset: 0; display: grid; place-items: center; color: var(--tenue); font-size: 14px; }
+</style>
+<canvas id="cv"></canvas>
+<div class="titulo"><h1>Avatar 3D · Guillermo</h1><span>arrastra para girar · rueda para acercar</span></div>
+<div id="cargando">Cargando el avatar…</div>
+<div class="panel" id="panel"></div>
+/*LIBS*/
+<script>
+(function () {
+  "use strict";
+  const GLB = "/*GLB*/";
+  const CARAS = "/*CARAS*/";
+  const D = "/*DATOS*/";
+  const KB = D.KB;
+  const lerp = (a, b, t) => a + (b - a) * t;
+  const clamp = (x, a, b) => Math.min(b, Math.max(a, x));
+  const suave = (t) => { t = clamp(t, 0, 1); return t * t * (3 - 2 * t); };
+
+  // ---- posturas (las mismas que en la pantalla de la máquina; x > 0 aleja la mano del cuerpo, y > 0 la baja)
+  const brazo = (x, y, mano, flex, codo, z) => ({ x: x * KB, y: y * KB, mano: mano || "abierta", codo: codo || "fuera", z: z || 0 });
+  const REPOSO = brazo(34, 462, "abierta", 0, "fuera");
+  const CADERA = brazo(22, 330, "abierta", 0, "fuera");
+  const POSES = {
+    reposo: (t) => ({ d: brazo(34, 462 + Math.sin(t / 1100) * 3), i: brazo(34, 462 + Math.sin(t / 1100 + 1) * 3), cara: "normal", cabeza: Math.sin(t / 2300) * 3 }),
+    jarras: (t) => ({ d: CADERA, i: CADERA, cara: "sonrisa", cabeza: -4 + Math.sin(t / 1900) * 2 }),
+    biceps: (t) => { const a = Math.sin(t / 260) * 6; return { d: brazo(150, -205 + a, "puno", 1, "abajo", 25), i: brazo(150, -205 + a, "puno", 1, "abajo", 25), cara: "esfuerzo", cabeza: Math.sin(t / 700) * 2 }; },
+    pulgar: (t) => ({ d: brazo(-96, 150 + Math.sin(t / 300) * 5, "pulgar", 0, "abajo", 55), i: CADERA, cara: "sonrisa", cabeza: 5 }),
+    senala: (t) => ({ d: brazo(190 + Math.sin(t / 180) * 8, -250 + Math.sin(t / 180) * 8, "abierta", 0, "abajo", 20), i: CADERA, cara: "sonrisa", cabeza: 8 }),
+    saluda: (t) => ({ d: brazo(140 + Math.sin(t / 150) * 34, -300, "abierta", 0, "abajo", 15), i: REPOSO, cara: "sonrisa", cabeza: 6 }),
+    encoge: (t) => ({ d: brazo(168, 128, "abierta", 0, "abajo", 30), i: brazo(168, 128, "abierta", 0, "abajo", 30), cara: "meh", cabeza: -7 + Math.sin(t / 600) * 2 }),
+    celebra: (t) => { const b = Math.abs(Math.sin(t / 230)); return { d: brazo(150, -400 - b * 16, "puno", 1, "fuera", 10), i: brazo(150, -400 - b * 16, "puno", 1, "fuera", 10), cara: "grito", cabeza: Math.sin(t / 230) * 4, bote: -b * 22 }; },
+    anima: (t) => { const k = (Math.sin(t / 170) + 1) / 2; return { d: brazo(70, lerp(-150, -390, k), "puno", 1, "fuera", 30), i: CADERA, cara: "grito", cabeza: lerp(-3, 4, k), bote: -k * 10 }; },
+    selfie: (t) => ({ i: brazo(70, -150 + Math.sin(t / 900) * 4, "movil", 0, "abajo", 70), d: CADERA, cara: t % 4000 < 2600 ? "normal" : "guino", cabeza: 7 }),
+    sopla: () => ({ d: CADERA, i: CADERA, cara: "soplo", cabeza: 0 }),
+    estira: (t) => { const k = Math.sin(t / 900); return { i: brazo(-30, -440, "abierta", 0, "fuera"), d: CADERA, cara: "normal", cabeza: 6 + k * 3, inclina: 6 + k * 2 }; },
+    duerme: (t) => ({ d: brazo(-60, 330, "abierta", 0, "fuera"), i: brazo(-40, 350, "abierta", 0, "fuera"), cara: "dormido", cabeza: 10 + Math.sin(t / 1600) * 2, bote: Math.sin(t / 1600) * 3 }),
+    piensa: (t) => ({ d: brazo(-118, -40, "puno", 0, "abajo", 60), i: CADERA, cara: "meh", cabeza: -8 + Math.sin(t / 1300) * 2 }),
+  };
+  const COREO = [["saluda", 3200], ["senala", 3400], ["biceps", 3600], ["pulgar", 3200], ["reposo", 2200], ["selfie", 3800], ["jarras", 2600], ["celebra", 3000], ["encoge", 2800], ["piensa", 3000], ["sopla", 2500], ["estira", 3000], ["duerme", 3500]];
+
+  function mezclar(a, b, k) {
+    const mb = (x, y) => ({ x: lerp(x.x, y.x, k), y: lerp(x.y, y.y, k), mano: k < 0.5 ? x.mano : y.mano, codo: k < 0.5 ? x.codo : y.codo, z: lerp(x.z, y.z, k) });
+    return { d: mb(a.d || REPOSO, b.d || REPOSO), i: mb(a.i || REPOSO, b.i || REPOSO), cara: k < 0.5 ? a.cara : b.cara, cabeza: lerp(a.cabeza || 0, b.cabeza || 0, k), bote: lerp(a.bote || 0, b.bote || 0, k), inclina: lerp(a.inclina || 0, b.inclina || 0, k) };
+  }
+  function secuencia(lista, t, fundido = 450) {
+    let total = 0; for (const [, ms] of lista) total += ms;
+    let r = ((t % total) + total) % total; let i = 0;
+    while (r >= lista[i][1]) { r -= lista[i][1]; i++; }
+    const actual = POSES[lista[i][0]](t);
+    if (r >= fundido || lista.length < 2) return actual;
+    return mezclar(POSES[lista[(i - 1 + lista.length) % lista.length][0]](t), actual, suave(r / fundido));
+  }
+
+  // ---- cinemática: ángulos del hombro y del codo para que la muñeca caiga donde dice la postura
+  const TH0 = D.ANG_F - D.ANG_U; // codo tal como está dibujado
+  function resolver(b) {
+    // marco del brazo izquierdo de la pantalla, coordenadas de imagen (x derecha, y abajo); "fuera" es -x
+    const tx = -b.x, ty = b.y;
+    const d = clamp(Math.hypot(tx, ty), Math.abs(D.L1 - D.L2) + 1, D.L1 + D.L2 - 1);
+    const aT = Math.atan2(ty, tx);
+    const cosIn = clamp((D.L1 * D.L1 + D.L2 * D.L2 - d * d) / (2 * D.L1 * D.L2), -1, 1);
+    const th = Math.PI - Math.acos(cosIn); // cuánto se desvía el antebrazo del brazo
+    let mejor = null;
+    for (const s of [1, -1]) {
+      const tt = th * s;
+      const v = [D.L1 + D.L2 * Math.cos(tt), D.L2 * Math.sin(tt)];
+      const alfa = aT - Math.atan2(v[1], v[0]);
+      const ex = Math.cos(alfa) * D.L1, ey = Math.sin(alfa) * D.L1;
+      const pref = b.codo === "abajo" ? -ey : ex; // menor es mejor
+      if (!mejor || pref < mejor.pref) mejor = { pref, alfa, tt };
+    }
+    return { hombro: mejor.alfa - D.ANG_U, codo: mejor.tt - TH0 };
+  }
+
+  // ---- escena
+  const cv = document.getElementById("cv");
+  const renderer = new THREE.WebGLRenderer({ canvas: cv, antialias: true, alpha: true });
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+  renderer.outputEncoding = THREE.sRGBEncoding;
+  const scene = new THREE.Scene();
+  const cam = new THREE.PerspectiveCamera(32, 1, 10, 20000);
+  cam.position.set(0, -60, 3000);
+  const ctrl = new THREE.OrbitControls(cam, cv);
+  ctrl.target.set(0, -60, 0); ctrl.enableDamping = true; ctrl.minDistance = 700; ctrl.maxDistance = 6000;
+  ctrl.minPolarAngle = 0.9; ctrl.maxPolarAngle = 2.1;
+  scene.add(new THREE.HemisphereLight(0xfff2e0, 0x3a2250, 0.95));
+  const luz = new THREE.DirectionalLight(0xffffff, 0.75); luz.position.set(-600, 900, 1400); scene.add(luz);
+  const rim = new THREE.DirectionalLight(0xff8fd0, 0.35); rim.position.set(900, 300, -800); scene.add(rim);
+  // suelo con una sombra suave
+  const sombra = new THREE.Mesh(new THREE.CircleGeometry(330, 48), new THREE.MeshBasicMaterial({ color: 0x000000, transparent: true, opacity: 0.35 }));
+  sombra.rotation.x = -Math.PI / 2; sombra.position.y = -755; scene.add(sombra);
+
+  const nodos = {};
+  let raiz = null;
+  const manos = { L: {}, R: {} };
+  let matCabeza = [];
+  const texCaras = {};
+  const cargaTex = new THREE.TextureLoader();
+  for (const n in CARAS) { texCaras[n] = cargaTex.load(CARAS[n]); texCaras[n].encoding = THREE.sRGBEncoding; texCaras[n].flipY = false; }
+
+  function tamano() {
+    const w = innerWidth, h = innerHeight;
+    renderer.setSize(w, h, false); cam.aspect = w / h; cam.updateProjectionMatrix();
+  }
+  addEventListener("resize", tamano); tamano();
+
+  new THREE.GLTFLoader().load(GLB, (g) => {
+    raiz = g.scene; scene.add(raiz);
+    raiz.traverse((o) => {
+      if (o.name) nodos[o.name] = o;
+      if (o.isMesh) {
+        o.material.side = THREE.FrontSide;
+        const m = /^mano_(\w+)_([LR])_/.exec(o.name);
+        if (m) { (manos[m[2]][m[1]] = manos[m[2]][m[1]] || []).push(o); }
+        if (/^cabeza_\d+_0$/.test(o.name)) matCabeza.push(o.material); // solo la cara (por detrás va el pelo)
+      }
+    });
+    // ángulos de reposo de cada nodo (para sumarles la animación)
+    for (const k of ["hombro_L", "hombro_R", "codo_L", "codo_R", "cuello", "torso"]) if (nodos[k]) nodos[k].userData.rot0 = nodos[k].rotation.clone();
+    document.getElementById("cargando").remove();
+  }, undefined, (e) => { document.getElementById("cargando").textContent = "No se pudo cargar el avatar"; console.error(e); });
+
+  // ---- interfaz
+  const panel = document.getElementById("panel");
+  let modo = "coreo"; let t0 = performance.now(); let girar = true; let poseFija = "reposo";
+  const botones = [];
+  const boton = (txt, fn) => { const b = document.createElement("button"); b.textContent = txt; b.onclick = () => { fn(); refrescar(); }; panel.appendChild(b); botones.push(b); return b; };
+  boton("Todo seguido", () => { modo = "coreo"; t0 = performance.now(); }).dataset.k = "coreo";
+  for (const n of Object.keys(POSES)) boton(n, () => { modo = "pose"; poseFija = n; t0 = performance.now(); }).dataset.k = n;
+  boton("Girar solo", () => { girar = !girar; }).dataset.k = "girar";
+  function refrescar() { for (const b of botones) b.classList.toggle("on", b.dataset.k === (modo === "coreo" ? "coreo" : poseFija) || (b.dataset.k === "girar" && girar)); }
+  refrescar();
+
+  function aplicar(p, t) {
+    const cara = (p.cara === "normal" || p.cara === "sonrisa") && t % 3700 < 130 ? "parpadeo" : (p.cara || "normal");
+    for (const m of matCabeza) if (m.map !== texCaras[cara] && texCaras[cara]) { m.map = texCaras[cara]; m.needsUpdate = true; }
+    const resp = Math.sin(t / 900) * 0.006;
+    if (nodos.torso) { nodos.torso.position.y = -(p.bote || 0); nodos.torso.rotation.z = -((p.inclina || 0) * Math.PI) / 180; nodos.torso.scale.set(1 + resp, 1 + resp * 0.5, 1 + resp); }
+    if (nodos.cuello) { nodos.cuello.rotation.z = -((p.cabeza || 0) * Math.PI) / 180; nodos.cuello.rotation.y = Math.sin(t / 2600) * 0.08; }
+    for (const [lado, b] of [["L", p.i || REPOSO], ["R", p.d || REPOSO]]) {
+      const s = resolver(b);
+      const sg = lado === "L" ? -1 : 1; // en la imagen, girar en sentido horario es girar en negativo sobre z
+      const H = nodos["hombro_" + lado], C = nodos["codo_" + lado];
+      if (H) { H.rotation.set(0, 0, 0); H.rotation.z = sg * s.hombro; H.rotation.y = (lado === "L" ? -1 : 1) * (b.z * Math.PI) / 180; }
+      if (C) C.rotation.z = sg * s.codo;
+      for (const n in manos[lado]) for (const o of manos[lado][n]) o.visible = n === b.mano;
+    }
+  }
+
+  function cuadro() {
+    requestAnimationFrame(cuadro);
+    const t = performance.now() - t0;
+    if (raiz) {
+      const p = modo === "coreo" ? secuencia(COREO, t) : POSES[poseFija](t);
+      aplicar(p, t);
+      if (window.__giro != null) { raiz.rotation.y = window.__giro; if (window.__zoom) { cam.position.set(0, window.__ty || 0, window.__zoom); ctrl.target.set(0, window.__ty || 0, 0); } }
+      else if (girar) raiz.rotation.y = Math.sin(t / 5200) * 0.55;
+      else raiz.rotation.y = 0;
+    }
+    ctrl.update();
+    renderer.render(scene, cam);
+  }
+  cuadro();
+})();
+</script>
