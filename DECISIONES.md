@@ -2,6 +2,19 @@
 
 Decisiones que afectan a todo el proyecto. Lo más nuevo va arriba. Si un documento del repositorio dice otra cosa, manda lo que pone aquí.
 
+## 27-10-2026
+
+### Carcasa más plana: 100 mm de fondo en vez de 103
+
+Guillermo pide bajar el fondo a 100 mm. Queda en **220 × 100 × 443 mm**, más los 5 mm del policarbonato de delante.
+- Los 3 mm salen del **hueco de detrás del cajón de componentes**, que pasa de 14 a 11 mm. El cajón, su interior y todo lo que lleva dentro no se mueven.
+- **Espárrago de tierra de la carcasa: de 10 a 8 mm** (del mismo kit M4×20, cortado). Con 10 mm quedaba a 1 mm de la trasera del cajón; con 8 mm queda a 3 mm.
+- El **puente de tierra W10** se recoloca detrás del cajón.
+- **Cajón de pajitas:** 3 mm menos de fondo, porque mantiene los 8 mm libres para las cabezas de los tirafondos.
+- Holguras con la trasera del cajón: pasamuros de la antena a 2,3 mm, espárrago de tierra a 3 mm, cabezas de los tirafondos a 5 mm (antes 8).
+- El modelo sigue dando 0 choques y los barridos de tapa, tapa interior y cajones salen limpios. Los cables tienen los mismos 5 avisos que con 103 mm, todos de los tubos del soplido.
+- Para aplanar más, lo siguiente sería una fuente más fina que la LRS-50-5 (31,5 mm), que es lo que marca el fondo del cajón.
+
 ## 26-10-2026
 
 ### Programa v2 para la Raspberry Pi (`programa/`)

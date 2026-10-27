@@ -122,7 +122,7 @@ def cables_de(m, Lf, g, lista):
 
 def pe_carcasa_local(g):
     pe = g["pe_h"]
-    return (pe[0] - g["OX"], pe[1] - 10 - g["OY"], pe[2] - g["OZ"])
+    return (pe[0] - g["OX"], pe[1] - 8 - g["OY"], pe[2] - g["OZ"])      # punta del espárrago de 8 mm
 
 
 def k_top(g):
@@ -177,7 +177,8 @@ def layout_A(k):
         px, pz = L["pi"]
         py = Yin - C.PI["pcb"] - C.PI["sep"]
         zx, zy, zz = L["ze29a"]
-        stud = (Xin1 - 4.0, L["pe_cajon"][0], L["pe_cajon"][1])            # ojales en el espárrago de tierra del cajón
+        stud = (Xin1 - 4.0, L["pe_cajon"][0], L["pe_cajon"][1])
+        yw = g["D"] - T - g["OY"]                                           # cara interior de la trasera de la carcasa (local)            # ojales en el espárrago de tierra del cajón
 
         # ---------------- clavijas, empalmes y racores que se dibujan (y se comprueban contra choques)
         def tfw(at, ex=(1, 0, 0), ey=(0, 1, 0), ez=(0, 0, 1)):
@@ -322,7 +323,7 @@ def layout_A(k):
              X(estilo="trenzado", w="W15", de="Borne USB del Solo · USB-A", a="SumUp Solo · USB-C")),
             ("W24 · Cinta de la cámara (FFC 15 vías, 200 mm)", [P["cam"], mas(P["cam"], DN, 7), (-55, 18, 168), (-55.5, 30, 140), (-56, 42, 116)] + entra(P["csi_pi"], FW, 6), 8.0, FFC, "cinta",
              X(estilo="ffc", w="W24", de="Camera Module 3 · J1", a="Raspberry Pi · CSI (CAMERA)", n0=[0, 1, 0], n1=[1, 0, 0])),
-            ("W10 · Puente de tierra cajón → carcasa (faston)", [punta["W10"], (88, 62, 125), (75, 68.5, 155), (60, 69, 165), (60, 69, 215), (60, 69, kt - 2), (60, 69.3, kt + 1.2), (60, 70.5, kt + 2.1), (60, 72, kt + 2.1), (60, 77, kt + 2.1), (56, 80, kt + 2.1), (51, 84, kt - 3.5), (pcl[0], pcl[1], pcl[2] + 3), pcl], 1.5, VERDE_AM, "puente",
+            ("W10 · Puente de tierra cajón → carcasa (faston)", [punta["W10"], (88, 62, 125), (75, 68.5, 155), (60, 69, 165), (60, 69, 215), (60, 69, kt - 2), (60, 69.3, kt + 1.2), (60, 70.5, kt + 2.1), (60, 72, kt + 2.1), (60, yw - 9.5, kt + 2.1), (56, yw - 6.5, kt + 2.1), (51, yw - 2.5, kt - 3.5), (pcl[0], pcl[1], pcl[2] + 3), pcl], 1.5, VERDE_AM, "puente",
              X(estilo="verdeamarillo", w="W10", de="Espárrago M4 del cajón", a="Espárrago M4 de la carcasa")),
             ("W26 · Coaxial de la antena (RP-SMA, se desenrosca)", [mas(P["rpsma"], XP, 12), (84, 60, 136), (70, 61, 165), (66, 69, 185), (66, 69, kt - 6), (66, 69.3, kt + 1.2), (66, 70.5, kt + 2.1), (66, 72, kt + 2.1), (66, 76, kt + 2.1), (80, 78, kt + 2.1), (90, 79, kt - 4.5), (ant[0], ant[1], ant[2] + 25), ant], 1.3, COAX, "puente",
              X(estilo="coax", w="W26", de="AR9271 · RP-SMA", a="Antena por el pasamuros")),
@@ -351,5 +352,5 @@ def layout_A(k):
     return L
 
 
-SPEC_A = dict(letra="A", nombre="Compacta", W=220.0, D=103.0, Hk=228.0, tapa="lateral", bisagra="izq", asa="x", layout=layout_A,
+SPEC_A = dict(letra="A", nombre="Compacta", W=220.0, D=100.0, gb=11.0, Hk=228.0, tapa="lateral", bisagra="izq", asa="x", layout=layout_A,
               descripcion="Cámara y Solo arriba, pantalla debajo. Policarbonato delante y detrás del panel. Tapa abatible con cerradura y faldón derecho; tapa interior plana que entra deslizando por una ranura del lateral derecho; cajón de pajitas con dos candados. Sin botón.")
