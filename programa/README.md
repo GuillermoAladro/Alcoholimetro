@@ -14,7 +14,7 @@ Programa de la máquina: cobra con el SumUp Solo, mide con el ZE29A, hace la fot
 6. **Resultado** (20 s): la foto tipo polaroid, el valor contando hacia arriba, el titular según el puesto, «Puesto 120 de 360 · Top 34 %» con una barra del ranking, y fuegos, confeti o burbujas según el puesto (récord, top 10, alto, medio, bajo o cero).
 7. **Vuelta a la espera.**
 
-**El monigote** (`nucleo/monigote.js`): un chico cachas sin camiseta basado en Guillermo. Lleva el tupé castaño, las cejas gruesas, la barba de tres días, el lunar, la cadena y el anillo. Acompaña cada fase:
+**El monigote** (`nucleo/monigote.js`): el avatar de Guillermo (`animaciones/Avatar GuillermoAladro.jpg`: camisa negra remangada y pantalón gris), troceado y animado. Acompaña cada fase:
 - **Espera:** saluda, señala el lector, saca bíceps, levanta el pulgar y se hace un selfie, con bocadillos: «¡Hola! ¿Te atreves?», «Paga con tarjeta o con el móvil»…
 - **Pago:** celebra y levanta el pulgar.
 - **Preparando:** estira, calentando.
@@ -25,7 +25,13 @@ Programa de la máquina: cobra con el SumUp Solo, mide con el ZE29A, hace la fot
 - **Resultado:** espera pensando y luego reacciona: salta con un récord o un top 10, saca bíceps con un resultado alto, levanta el pulgar o guiña.
 - **Avisos:** se encoge de hombros. **Fuera de servicio:** echa una siesta.
 
-Está dibujado con el lienzo, sin imágenes. El torso y la cabeza se pintan una vez por tamaño, y el resto a 15 cuadros por segundo; a 10 si la Pi va justa.
+Cómo está hecho (`nucleo/monigote_fotos.js`, unos 680 KB de imágenes WebP generadas a partir de la ilustración):
+- El torso (camisa y pantalón) es una pieza; lo que tapaban los brazos cruzados se rellenó con camisa. El cuello de la camisa va aparte, por delante del cuello.
+- Cada brazo es la manga entera, que gira rígida en el hombro (como una camisa de verdad), con el antebrazo ya doblado en el codo de 10 en 10 grados; el puño remangado tapa la articulación.
+- Cada cara (normal, sonrisa, guiño, esfuerzo, grito, meh, soplo, dormido y parpadeo) es la misma ilustración con la boca y los ojos retocados.
+- Manos: abierta, puño, pulgar arriba y con el móvil.
+
+Cada imagen se reduce una sola vez al tamaño al que se pinta, y el monigote se compone a 15 cuadros por segundo (a 10 si la Pi va justa); cuesta unos 4 ms por cuadro en la prueba de rendimiento. Si alguna imagen no cargara, el monigote simplemente no sale: nunca rompe la pantalla.
 
 **Fotos y ranking:**
 - Todas las pruebas quedan para siempre en el ranking (solo el valor y la fecha).
@@ -52,7 +58,8 @@ nucleo/      el programa: igual en la Pi y en la simulación
   almacen.js        ranking, partidas, fotos (24 h / top 10) y diario de cobros, a prueba de apagones
   ranking.js        puesto y top 10 con memoria constante (histograma)
   pantalla.js       todo lo que se ve (lienzo de 1024 × 600, animaciones)
-  monigote.js       el monigote presentador: posturas, caras y bocadillos
+  monigote.js       el monigote presentador: posturas y montaje de las piezas
+  monigote_fotos.js las imágenes del monigote (generadas a partir de la ilustración)
   textos.js         todos los textos de la pantalla
   reloj.js, util.js
 pi/          solo en la Pi

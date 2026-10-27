@@ -36,7 +36,7 @@ def visor(datos, salida, offline):
 _REPO = os.path.normpath(os.path.join(R, "../../../../programa")) + "/"  # carcasa/diseno-A/modelo/realista → programa/
 PROG = os.environ.get("PROGRAMA", _REPO if os.path.isdir(_REPO) else "/home/claude/programa/")
 PROG_JS = ["nucleo/util.js", "nucleo/reloj.js", "nucleo/protocolo_ze29a.js", "nucleo/sensor_ze29a.js", "nucleo/ranking.js",
-           "nucleo/almacen.js", "nucleo/sumup.js", "nucleo/cobro.js", "nucleo/textos.js", "nucleo/maquina.js", "nucleo/monigote.js", "nucleo/pantalla.js",
+           "nucleo/almacen.js", "nucleo/sumup.js", "nucleo/cobro.js", "nucleo/textos.js", "nucleo/maquina.js", "nucleo/monigote_fotos.js", "nucleo/monigote.js", "nucleo/pantalla.js",
            "sim/fs_memoria.js", "sim/ze29a_sim.js", "sim/sumup_sim.js", "sim/camara_sim.js", "sim/pantalla_solo.js", "sim/simulador.js"]
 FUENTES = [("Big Shoulders Display", 700, "big-shoulders-display-latin-700-normal.woff2"), ("Big Shoulders Display", 800, "big-shoulders-display-latin-800-normal.woff2"),
            ("Big Shoulders Display", 900, "big-shoulders-display-latin-900-normal.woff2"), ("Archivo", 400, "archivo-latin-400-normal.woff2"),

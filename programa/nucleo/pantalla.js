@@ -1078,7 +1078,7 @@
       }
 
       // --- el monigote, entre la foto y la lista: saluda, señala el lector, saca bíceps, se hace un selfie…
-      this._monoCoreo(ctx, 486, 506, 312, this._coreoEspera(v, puedePagar, n), ahora, 492, 150);
+      this._monoCoreo(ctx, 488, 506, 296, this._coreoEspera(v, puedePagar, n), ahora, 492, 150);
 
       // --- lista del top 10 (derecha): se compone en una capa y solo se rehace al cambiar algo
       const x0 = 600;
