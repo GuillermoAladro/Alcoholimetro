@@ -11,9 +11,9 @@ bibliotecas (nada de vídeos ni imágenes externas).
 
 ## Dónde está todo (en esta carpeta)
 - `motor/base.js` — todo lo común (léelo si dudas de algo; está comentado)
-- `motor/avatar-guillermo.js`, `motor/avatar-rodrigo.js` y `motor/avatar-marcos.js` — piezas de los avatares (no los abras: es base64)
+- `motor/avatar-guillermo.js`, `motor/avatar-rodrigo.js`, `motor/avatar-marcos.js` y `motor/avatar-marcos-bombero.js` — piezas de los avatares (no los abras: es base64)
 - `motor/pantallas-fijas.js` — BEBE, TOP 10, Puesto (ejemplos de escenas sin avatar); tiene `corona(g, w)`
-- `00000 … .js` – `00156 … .js` — las animaciones que ya hay (buenas referencias de estilo y ritmo:
+- `00000 … .js` – `00206 … .js` — las animaciones que ya hay (buenas referencias de estilo y ritmo:
   `00102 La tienda 24H.js`, `00101 Modo leyenda.js`)
 - Prueba: `python3 herramientas/probar.py "<archivo.js>" [más archivos] [--en 2.5,4]`
   - comprueba sintaxis, ámbito, registro, errores, negro al principio y al final, duración
@@ -131,6 +131,17 @@ Unidades de avatar (las del recorte de frente): 78 de ancho × 232 de alto, pies
   `manoI` [6, 152], caderas [26, 142] / [49, 142]. Pies en y = 232, pelo ≈ y 6. Para beber: `boca(rc, "marcos")`.
 - Sus brazos son más cortos: la mano llega como mucho a ~59 unidades del hombro (Guillermo ~74). En choques de
   manos, brindis o cuando cogen algo entre los dos, acércalos más.
+
+## Marcos de bombero (variante de Marcos)
+- `quien: "bombero"`: Marcos con uniforme (chaquetón y pantalón azul marino con bandas reflectantes amarillas y
+  plateadas, mangas hasta la muñeca, botas negras) y casco rojo de bombero. Mismas caras y esqueleto que Marcos:
+  `avatar("bombero").rig`, `boca(rc, "bombero")`, alcance de brazo ~59.
+- `casco: false` en la pose le quita el casco (se ve su pelo rizado); `cascoColor: "#f2c21b"` lo cambia de color.
+  `casco: true` también le queda bien a Guillermo (para cuando se disfraza o se prueba el de Marcos).
+- Manguera, extintor, escalera, camión, sirena, boca de riego… no están en el motor: dibújalos tú, genéricos (como
+  mucho la palabra «BOMBEROS»; nada de escudos, nombres ni números de cuerpos reales).
+- Reglas de esta serie: Marcos de uniforme no bebe alcohol (agua o refresco); nadie conduce después de beber (el
+  camión solo lo lleva Marcos de servicio); el fuego es de dibujos y pequeño, nadie se quema.
 
 ## Trucos que han salido en las tandas anteriores
 - No hay vista de espaldas ni de perfil: «se gira» → se despista (cierra los ojos, bosteza, mira arriba con `rc`).

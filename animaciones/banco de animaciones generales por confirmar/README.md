@@ -1,14 +1,15 @@
 # Banco de animaciones generales (por confirmar)
 
-Animaciones de la pantalla del alcoholímetro (1024 × 600, la de 7") para la espera (Stand By). Salen al azar entre los puestos del top 10. Todo está dibujado en directo con JavaScript, sin vídeos, para que pueda llevar las fotos y las tasas reales del ranking. Protagonista: el avatar de Guillermo Aladro; en 50 sale con el de Rodrigo y en otras 50 con el de Marcos.
+Animaciones de la pantalla del alcoholímetro (1024 × 600, la de 7") para la espera (Stand By). Salen al azar entre los puestos del top 10. Todo está dibujado en directo con JavaScript, sin vídeos, para que pueda llevar las fotos y las tasas reales del ranking. Protagonista: el avatar de Guillermo Aladro; en 50 sale con el de Rodrigo, en 50 con el de Marcos y en otras 50 con Marcos de bombero.
 
-Hay **207 animaciones**, cada una con su ID de 5 cifras:
+Hay **257 animaciones**, cada una con su ID de 5 cifras:
 - 00000–00099: las 100 de Guillermo.
 - 00100–00106: las 7 primeras.
 - 00107–00156: las 50 de Guillermo y Rodrigo juntos.
 - 00157–00206: las 50 de Guillermo y Marcos juntos.
+- 00207–00256: las 50 de Guillermo con Marcos de bombero.
 
-Entre todas suman unos 34 minutos.
+Entre todas suman unos 43 minutos.
 
 **Para verlas:** abre `ver.html` en Chrome o Edge.
 - El desplegable pone la animación que elijas.
@@ -237,12 +238,62 @@ Todas empiezan y acaban en negro, así que cualquiera encaja detrás de cualquie
 | 00204 | La cometa | 10,6 s | Una ráfaga sube la cometa y levanta a Guillermo; Marcos lo agarra y salen volando los dos. |
 | 00205 | Salto con pértiga | 10,6 s | Marcos salta por encima de una barra de bar altísima; a Guillermo se le dobla la pértiga y pasa por debajo. |
 | 00206 | Castillo de arena | 10,8 s | La ola se lleva el castillo de Guillermo; el de Marcos aguanta y es un bar de arena. |
+| 00207 | Rescate del gato | 9,7 s | Marcos sube por la escalera a por un gato en lo alto de la estantería… y el gato salta a la cabeza de Guillermo. |
+| 00208 | La manguera loca | 9,5 s | La manguera se vuelve loca y levanta a Marcos; Guillermo lo agarra de las botas y acaban bajo un arcoíris. |
+| 00209 | La barra de bajada | 9,3 s | Suena la alarma: Marcos baja por la barra en un visto y no visto; Guillermo se queda atascado a medio camino. |
+| 00210 | Vestirse en 30 segundos | 10,2 s | Marcos se viste de bombero en un remolino; Guillermo acaba con el casco del revés y «Y PICO». |
+| 00211 | La lona de salto | 10,3 s | Guillermo salta del tejado a la lona que sujetan Marcos y un compañero; rebota tres veces y cae en una silla. |
+| 00212 | Falsa alarma | 9,5 s | Salta el detector de humo, Marcos entra con el extintor… y era la tostada quemada de Guillermo. |
+| 00213 | Escalera telescópica | 10,3 s | La escalera se alarga hasta las nubes para recuperar el globo-jarra de Guillermo; Marcos vuelve con un pájaro en el casco. |
+| 00214 | Simulacro | 10,4 s | Simulacro de evacuación con calma y flechas verdes; Guillermo sale con la jarra, la tapa y el taburete en la cabeza. |
+| 00215 | La olla exprés | 10,4 s | Marcos abre la válvula de la olla con un cucharón a cámara lenta y sale un géiser de lentejas. |
+| 00216 | Inundación en el bar | 10,4 s | Achican agua con jarras, Guillermo flota en una bandeja y Marcos cierra la llave de paso. |
+| 00217 | Lavar el camión | 10,0 s | Lavan el camión aparcado; la espuma tapa a Guillermo y Marcos lo aclara todo con la manguera. |
+| 00218 | La sirena | 9,8 s | Guillermo enciende la sirena del camión y no sabe apagarla; Marcos la apaga con un dedo. |
+| 00219 | Entrenamiento | 9,8 s | Guillermo se derrumba a la tercera flexión; Marcos sigue haciéndolas con Guillermo en la espalda. |
+| 00220 | El perro del parque | 9,7 s | El perro del parque le roba el casco a Marcos, lo persiguen en círculos y se lo devuelve a Guillermo. |
+| 00221 | Foto del calendario | 11,0 s | Marcos posa para cada mes del calendario y en diciembre se cuela Guillermo. |
+| 00222 | Riego extremo | 9,4 s | Marcos «ayuda» a regar la maceta de Guillermo con la manguera y la planta crece hasta ser un árbol. |
+| 00223 | Nudos | 10,0 s | Marcos hace nudos perfectos; Guillermo acaba atado como un paquete con lazo y etiqueta de FRÁGIL. |
+| 00224 | El casco grande | 10,4 s | Guillermo se prueba el casco de Marcos, le tapa los ojos y va chocando con todo. |
+| 00225 | Medalla al valor | 10,6 s | Ceremonia con medalla gigante para Marcos… que es una chapa dorada; Guillermo llora de emoción. |
+| 00226 | La boca de riego | 10,0 s | Día de calor: Marcos abre la boca de riego y juegan bajo el chorro con arcoíris. |
+| 00227 | Flambeado | 10,0 s | La llamarada del flambeado de Guillermo llega al techo; Marcos la apaga y Guillermo queda tiznado. |
+| 00228 | De servicio | 9,6 s | Marcos rechaza la caña porque está de servicio: agua con sombrillita y brindis caña con agua. |
+| 00229 | La jarra salvada | 9,6 s | La jarra de Guillermo cae de la barra y Marcos se lanza en plancha y la salva sin derramar gota. |
+| 00230 | Atrapado en el baño | 10,2 s | Guillermo se queda encerrado en el baño; Marcos llega con todo el equipo y abre con la llave de al lado. |
+| 00231 | Rescate del barril | 9,9 s | Un barril atascado en la trampilla de la bodega sale disparado con una polea. |
+| 00232 | La chimenea | 9,8 s | Marcos deshollina la chimenea y Guillermo queda negro de hollín de pies a cabeza. |
+| 00233 | TOP 10 en llamas | 10,4 s | Marcos intenta apagar el cartel del TOP 10 en llamas… pero son llamas de neón. |
+| 00234 | Soplido de bombero | 11,0 s | Marcos sopla 0,00 (está de servicio); Guillermo entra en el top 10 y Marcos le da un vaso de agua. |
+| 00235 | Taburete giratorio | 10,2 s | Guillermo hace girar a Marcos en un taburete y Marcos sale propulsado con la manguera. |
+| 00236 | Brindis por los bomberos | 10,2 s | Todo el bar brinda por Marcos, que levanta colorado su vaso de agua. |
+| 00237 | El dragón | 9,9 s | Un dragoncito estornuda fuego en el bar; Marcos lo apaga y acaban usándolo para la barbacoa. |
+| 00238 | Volcán de espuma | 8,8 s | Erupción de un volcán de espuma; Marcos lo enfría y Guillermo baja surfeando la colada. |
+| 00239 | Bomberos espaciales | 9,5 s | En el espacio apagan una llamarada de una estrella y el agua se congela en cristales. |
+| 00240 | Mochila de agua | 10,1 s | Marcos vuela con una mochila de chorros de agua, con Guillermo colgado de las botas, hasta la terraza del bar. |
+| 00241 | Robot bombero | 9,8 s | El robot de Guillermo lo moja todo menos la vela, hasta que se moja él y echa chispas. |
+| 00242 | Cadena de cubos | 9,5 s | Cadena de cubos en el oeste cada vez más rápida; el último le cae entero a Guillermo. |
+| 00243 | Bombero gigante | 8,8 s | Marcos gigante apaga una chimenea con una regadera, con Guillermo diminuto en el hombro. |
+| 00244 | La nube de lluvia | 8,8 s | Una nubecilla persigue a Guillermo lloviéndole solo a él, hasta que abre el paraguas y sale el sol. |
+| 00245 | Salir del humo | 9,9 s | Entre humo de dibujos, Marcos guía a Guillermo agachados con la linterna hasta la salida. |
+| 00246 | Bomberos del futuro | 9,9 s | Los drones-manguera se vuelven locos y los mojan, hasta que Marcos los apaga con el mando. |
+| 00247 | El desfile | 10,0 s | Desfile del camión con Marcos saludando y Guillermo delante tocando el bombo entre confeti. |
+| 00248 | Puertas abiertas | 10,4 s | Guillermo se sienta en el camión aparcado con casco, toca la bocina y Marcos le hace la foto. |
+| 00249 | Tiro con manguera | 10,6 s | Marcos tumba todas las latas con la manguera; la de Guillermo se le escapa y lo moja a él. |
+| 00250 | La coreografía | 10,7 s | Marcos le enseña a Guillermo una coreografía de bomberos y acaban bailándola sincronizados. |
+| 00251 | Muñeco de espuma | 10,5 s | Hacen un muñeco de espuma con casco de bombero… y les guiña un ojo. |
+| 00252 | El arcoíris | 10,9 s | Marcos hace un arcoíris con la manguera y bajan por él como por un tobogán. |
+| 00253 | Cumpleaños de Marcos | 10,0 s | Fiesta sorpresa: Marcos apaga las velas de la tarta con la manguera. |
+| 00254 | Tirolina | 9,6 s | Guillermo baja chillando por la tirolina de prácticas y Marcos lo coge al vuelo. |
+| 00255 | Fin del turno | 10,3 s | Marcos ficha, se quita el casco y brinda con su refresco con la caña de Guillermo. |
+| 00256 | Héroe del barrio | 10,4 s | Los vecinos aplauden desde los balcones y Guillermo le pone a Marcos una corona de laurel. |
 
 ## Cómo añadir una animación
 
 Los criterios y todo lo que se puede usar del motor están en `GUIA.md`.
 
-1. Crea un archivo `IIIII Nombre.js` en esta carpeta, con el siguiente ID libre (ahora el 00207).
+1. Crea un archivo `IIIII Nombre.js` en esta carpeta, con el siguiente ID libre (ahora el 00257).
 2. Todo el código va dentro de `(() => { ... })();`. Al final, la animación se apunta sola con `registrar({ id, nombre, crear })`.
 3. Tiene que empezar y acabar en negro, durar entre 6 y 12 s y tener su propio texto en pantalla.
 4. Añade el nombre del archivo en `lista.js`.
@@ -252,14 +303,15 @@ Los criterios y todo lo que se puede usar del motor están en `GUIA.md`.
 
 | Archivo | Qué es |
 |---|---|
-| `00000 … .js` – `00206 … .js` | Una animación por archivo |
+| `00000 … .js` – `00256 … .js` | Una animación por archivo |
 | `banco.js` | Registro de animaciones, la baraja y el orden de cada vuelta |
 | `lista.js` | Lista de archivos que carga `ver.html` |
-| `motor/base.js` | Todo lo común: textos, temblor, partículas, los avatares (esqueleto, caras, pelo dorado, gafas; Guillermo por defecto y los demás con `registrarAvatar`), objetos (lata, jarra, bolsa, billetes, trofeo), aura, rayos, rocas, bocadillos, focos y datos de ejemplo del ranking |
+| `motor/base.js` | Todo lo común: textos, temblor, partículas, los avatares (esqueleto, caras, pelo dorado, gafas, casco de bombero; Guillermo por defecto, los demás con `registrarAvatar` y las variantes con `registrarVariante`), objetos (lata, jarra, bolsa, billetes, trofeo), aura, rayos, rocas, bocadillos, focos y datos de ejemplo del ranking |
 | `motor/pantallas-fijas.js` | BEBE, TOP 10 en llamas y Puesto (del 10 al 1). Al final van las pantallas provisionales del pago: Processing, Analyzing y Ranking |
 | `motor/avatar-guillermo.js` | El avatar de Guillermo troceado: piezas del cuerpo, 6 caras y su pelo dorado, en PNG base64 |
 | `motor/avatar-rodrigo.js` | El avatar de Rodrigo troceado igual: piezas del cuerpo, 6 caras y su pelo dorado. Se pinta con `quien: "rodrigo"` |
 | `motor/avatar-marcos.js` | El avatar de Marcos, igual: piezas del cuerpo, 6 caras y su pelo dorado. Lleva manga corta, así que el codo se tapa con un círculo color piel. Se pinta con `quien: "marcos"` |
+| `motor/avatar-marcos-bombero.js` | Marcos de bombero: variante de Marcos con chaquetón y pantalón azul marino con bandas reflectantes, botas y casco rojo (el casco lo pinta el motor). Se pinta con `quien: "bombero"`; `casco: false` se lo quita |
 | `ver.html` | Página de prueba: Stand By en bucle, selector de animaciones y pago simulado |
 | `GUIA.md` | Criterios para hacer animaciones y referencia del motor |
 | `herramientas/probar.py` | Prueba automática de una o varias animaciones |

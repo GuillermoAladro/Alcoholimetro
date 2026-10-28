@@ -66,13 +66,13 @@ def leer(p):
 
 pagina = ['<!doctype html><meta charset="utf-8"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=x">',
           '<style>body{margin:0;background:#000}</style><canvas id="pantalla" width="1024" height="600"></canvas>']
-for p in ['motor/avatar-guillermo.js', 'motor/base.js', 'motor/avatar-rodrigo.js', 'motor/avatar-marcos.js', 'motor/pantallas-fijas.js', 'banco.js']:
+for p in ['motor/avatar-guillermo.js', 'motor/base.js', 'motor/avatar-rodrigo.js', 'motor/avatar-marcos.js', 'motor/avatar-marcos-bombero.js', 'motor/pantallas-fijas.js', 'banco.js']:
     pagina.append('<script>\n' + leer(os.path.join(BANCO, p)) + '\n</script>')
 pagina.append('<script>window.__antes = new Set(Object.getOwnPropertyNames(window));</script>')
 for nombre, s in codigos:
-    pagina.append(f'<script>window.__archivo = {json.dumps(nombre)}; window.__nAntes = BANCO.length;</script>')
+    pagina.append(f'<script>window.__archivo = {json.dumps(nombre)}; window.__idsAntes = new Set(BANCO.map(a => a.id));</script>')
     pagina.append('<script>\n' + s + '\n</script>')
-    pagina.append('<script>(window.__regs = window.__regs || []).push([window.__archivo, BANCO.slice(window.__nAntes).map(a => a.id)]);</script>')
+    pagina.append('<script>(window.__regs = window.__regs || []).push([window.__archivo, BANCO.map(a => a.id).filter(i => !window.__idsAntes.has(i))]);</script>')
 pagina.append('''<script>
 window.__nuevos = Object.getOwnPropertyNames(window).filter(k => !window.__antes.has(k) && !k.startsWith("__"));
 window.correr = (id, objetivos) => {

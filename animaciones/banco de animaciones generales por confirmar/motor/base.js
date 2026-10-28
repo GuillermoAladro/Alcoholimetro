@@ -217,6 +217,17 @@ function registrarAvatar(nombre, piezas, rig, borde, ojosCara) {
   for (const [k, v] of Object.entries(piezas)) { const im = new Image(); im.src = v.src; IMG[pre + k] = Object.assign({ im }, v); }
   AVATARES[nombre] = { nombre, pre, rig: completarRig(rig), borde: () => borde, ojosCara };
 }
+/**
+ * Variante de un avatar ya apuntado (p. ej. Marcos de bombero): usa sus caras y piezas, cambia las que se pasen y
+ * los datos del esqueleto de `rigCambios`. `extra` se copia en el avatar (p. ej. { casco: true }).
+ */
+function registrarVariante(nombre, base, piezas, rigCambios, extra = {}) {
+  const B = AVATARES[base], pre = nombre + "_";
+  if (B.pre) for (const k of Object.keys(IMG)) if (k.startsWith(B.pre)) IMG[pre + k.slice(B.pre.length)] = IMG[k];
+  for (const [k, v] of Object.entries(piezas)) { const im = new Image(); im.src = v.src; IMG[pre + k] = Object.assign({ im }, v); }
+  const rig = completarRig(Object.assign({}, B.rig, rigCambios));
+  AVATARES[nombre] = Object.assign({ nombre, pre, rig, borde: B.borde, ojosCara: B.ojosCara }, extra);
+}
 // la jarra: el asa en la mano (0, 0), el cuerpo a la derecha
 const JARRA = { x0: 3, x1: 31, y0: -18, y1: 18, borde: [17, -18] };
 
@@ -285,6 +296,8 @@ function dibujarCara(g, cara, rc, x = {}, t = 0) {
     g.drawImage(IMG[ko].im, 0, 0);
     g.restore();
   }
+  const casco = x.casco != null ? x.casco : A.casco;
+  if (casco) cascoBombero(g, p.w, x.cascoColor || A.cascoColor);
   if (x.gafas && !A.ojosCara) gafasSol(g, 0, 0, 1);
   else if (x.gafas) {
     // las gafas se dibujan para ojos en (27, 68) y (63, 68): se escalan y mueven a los ojos de esta cara
@@ -292,6 +305,66 @@ function dibujarCara(g, cara, rc, x = {}, t = 0) {
     g.save(); g.translate(ax + (oc[0][0] + oc[1][0]) / 2 - 45 * s, p.h + oc[0][1] - 68 * s); gafasSol(g, 0, 0, s); g.restore();
   }
   g.restore();
+}
+
+/**
+ * Casco de bombero (genérico, sin escudos reales) en coordenadas de la imagen de la cara: hecho para la de Marcos
+ * (88 px de ancho, cejas en y ≈ 47); para otras caras se escala con el ancho `w`.
+ */
+const cacheCasco = new Map();
+function cascoBombero(g, w, color) {
+  const col = color || "#d8261c", clave = col;
+  if (!cacheCasco.has(clave)) {
+    const S = 3, c = lienzoNuevo(120 * S, 90 * S), k = c.getContext("2d");
+    k.scale(S, S); k.translate(14, 30);            // (0, 0) del lienzo = (-14, -30) de la cara
+    const contorno = () => {
+      k.beginPath();
+      k.moveTo(-3, 49);
+      k.bezierCurveTo(-5, 6, 16, -12, 44, -12);
+      k.bezierCurveTo(72, -12, 93, 6, 91, 49);
+      k.quadraticCurveTo(70, 36, 44, 35);
+      k.quadraticCurveTo(18, 36, -3, 49);
+      k.closePath();
+    };
+    // el ala asoma solo por los lados (por encima de las orejas)
+    k.fillStyle = "#7a0c08";
+    k.beginPath(); k.ellipse(-1, 48, 7, 4, 0.3, 0, 6.283); k.fill();
+    k.beginPath(); k.ellipse(89, 48, 7, 4, -0.3, 0, 6.283); k.fill();
+    contorno();
+    const gr = k.createLinearGradient(0, -12, 0, 50);
+    gr.addColorStop(0, "#ff6a5a"); gr.addColorStop(0.35, col); gr.addColorStop(1, "#8e100b");
+    k.fillStyle = gr; k.fill();
+    k.lineWidth = 2; k.strokeStyle = "#5e0805"; k.stroke();
+    // cresta central
+    k.save(); contorno(); k.clip();
+    const gc = k.createLinearGradient(37, 0, 51, 0);
+    gc.addColorStop(0, "rgba(0,0,0,.18)"); gc.addColorStop(0.5, "rgba(255,255,255,.28)"); gc.addColorStop(1, "rgba(0,0,0,.22)");
+    k.fillStyle = gc; k.beginPath(); k.ellipse(44, 10, 6, 28, 0, 0, 6.283); k.fill();
+    // banda reflectante
+    k.lineWidth = 4; k.strokeStyle = "#dfe6ea";
+    k.beginPath(); k.moveTo(-4, 41); k.quadraticCurveTo(18, 27.5, 44, 26.5); k.quadraticCurveTo(70, 27.5, 92, 41); k.stroke();
+    k.lineWidth = 1.1; k.strokeStyle = "#e9f227";
+    k.beginPath(); k.moveTo(-4, 38.7); k.quadraticCurveTo(18, 25.2, 44, 24.3); k.quadraticCurveTo(70, 25.2, 92, 38.7); k.stroke();
+    k.beginPath(); k.moveTo(-4, 43.3); k.quadraticCurveTo(18, 29.8, 44, 28.7); k.quadraticCurveTo(70, 29.8, 92, 43.3); k.stroke();
+    // brillo
+    k.fillStyle = "rgba(255,255,255,.35)";
+    k.beginPath(); k.ellipse(22, 2, 11, 5, -0.6, 0, 6.283); k.fill();
+    k.restore();
+    // borde delantero
+    k.lineWidth = 3; k.strokeStyle = "#3b0503";
+    k.beginPath(); k.moveTo(-2, 48); k.quadraticCurveTo(18, 36, 44, 35.5); k.quadraticCurveTo(70, 36, 90, 48); k.stroke();
+    // placa delantera con una llama (diseño propio)
+    k.save(); k.translate(44, 10); k.scale(0.85, 0.85);
+    k.beginPath(); k.moveTo(0, -11); k.lineTo(9, -6); k.lineTo(8, 5); k.quadraticCurveTo(4, 11, 0, 13); k.quadraticCurveTo(-4, 11, -8, 5); k.lineTo(-9, -6); k.closePath();
+    const gp = k.createLinearGradient(0, -11, 0, 13); gp.addColorStop(0, "#fff3b0"); gp.addColorStop(1, "#d99a16");
+    k.fillStyle = gp; k.fill(); k.lineWidth = 1.2; k.strokeStyle = "#7a4a00"; k.stroke();
+    k.beginPath(); k.moveTo(0, 9); k.quadraticCurveTo(-6, 4, -2, -3); k.quadraticCurveTo(-1, 1, 1, 1); k.quadraticCurveTo(0, -4, 3, -7);
+    k.quadraticCurveTo(7, 0, 4, 6); k.quadraticCurveTo(3, 9, 0, 9); k.fillStyle = "#e5420e"; k.fill();
+    k.restore();
+    cacheCasco.set(clave, c);
+  }
+  const c = cacheCasco.get(clave), e = w / 88;
+  g.drawImage(c, -14 * e, -30 * e, 120 * e, 90 * e);
 }
 
 /** Mechones dorados que se levantan (detrás de la cara). Coordenadas de la imagen de la cara. */
