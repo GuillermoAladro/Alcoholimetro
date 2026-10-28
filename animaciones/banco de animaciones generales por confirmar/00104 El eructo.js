@@ -1,6 +1,6 @@
 "use strict";
 /*
- * EL ERUCTO
+ * 00104 · EL ERUCTO
  *
  * Animación del banco. Empieza y acaba en negro.
  * La cámara sale de su camisa: es un gigante entre monumentos de latas. Se hincha, suelta un ¡BUUUUURP! que tumba
@@ -8,7 +8,7 @@
  * Atrapa al vuelo una lata que rebota y la escena se cierra en un círculo sobre su cara.
  * Si sale justo después de Monumentos de latas, encaja como una sola historia.
  */
-
+(() => {
 class EscenaEructo extends Escena {
   constructor() {
     super(7.4);
@@ -146,3 +146,6 @@ class EscenaEructo extends Escena {
     }
   }
 }
+
+registrar({ id: "00104", nombre: "El eructo", crear: () => new EscenaEructo() });
+})();

@@ -1,13 +1,13 @@
 "use strict";
 /*
- * EL RETO
+ * 00106 · EL RETO
  *
  * Animación del banco. Empieza y acaba en negro.
  * Se encienden dos focos y sube un podio con él en el 1, con un trofeo lleno de cerveza y confeti. Sale el récord
  * del bar (el puesto 1 del ranking), ¿TE ATREVES A SUPERARLO? y PAGA AQUÍ con una flecha al lector de tarjetas.
  * Grita ¡BEBE!, el escenario se apaga y el grito se desvanece.
  */
-
+(() => {
 class EscenaReto extends Escena {
   constructor() {
     super(7.55);
@@ -117,3 +117,6 @@ class EscenaReto extends Escena {
     }
   }
 }
+
+registrar({ id: "00106", nombre: "El reto", crear: () => new EscenaReto() });
+})();

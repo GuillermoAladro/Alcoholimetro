@@ -1,12 +1,12 @@
 "use strict";
 /*
- * EL BORRACHO
+ * 00100 · EL BORRACHO
  *
  * Animación del banco. Empieza y acaba en negro.
  * El avatar entra por la izquierda dando tumbos con una jarra, se la bebe de un trago (GLUG), le da hipo (¡HIC!),
  * tropieza y se va por la derecha.
  */
-
+(() => {
 class EscenaBorracho {
   constructor() {
     this.t = 0; this.dur = 9.5;
@@ -107,3 +107,6 @@ class EscenaBorracho {
     }
   }
 }
+
+registrar({ id: "00100", nombre: "El borracho", crear: () => new EscenaBorracho() });
+})();

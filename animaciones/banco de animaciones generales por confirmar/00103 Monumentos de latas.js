@@ -1,6 +1,6 @@
 "use strict";
 /*
- * MONUMENTOS DE LATAS
+ * 00103 · MONUMENTOS DE LATAS
  *
  * Animación del banco. Empieza y acaba en negro.
  * Entra con la bolsa de litronas y gafas de sol y bebe lata tras lata, cada vez más rápido. Las latas que tira por
@@ -8,7 +8,7 @@
  * Él crece con cada lata hasta que la cámara se mete en su camisa y se funde a negro.
  * Dónde va cada lata: monumentos(), en motor/base.js (lo comparte con El eructo).
  */
-
+(() => {
 class EscenaMonumentos extends Escena {
   constructor() {
     super(12.5);
@@ -158,3 +158,6 @@ class EscenaMonumentos extends Escena {
     if (kN > 0) { g.fillStyle = `rgba(0,0,0,${kN})`; g.fillRect(-60, -60, W + 120, H + 120); }
   }
 }
+
+registrar({ id: "00103", nombre: "Monumentos de latas", crear: () => new EscenaMonumentos() });
+})();

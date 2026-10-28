@@ -54,10 +54,14 @@
   .escena { font-size: 14px; color: var(--suave); font-variant-numeric: tabular-nums; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .botones { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; min-width: 0; max-width: 100%; }
   .saltos { display: flex; flex-wrap: wrap; border: 1px solid var(--linea); border-radius: 8px; overflow: hidden; background: var(--linea); gap: 1px; max-width: 100%; }
+  .saltos select {
+    font: 700 14px/1.2 var(--texto); font-variant-numeric: tabular-nums; color: var(--tinta); background: var(--panel);
+    border: 0; padding: 9px 10px; min-width: 0; max-width: 100%; flex: 1 1 240px; cursor: pointer;
+  }
   .saltos button {
     font: 700 14px/1 var(--texto); font-variant-numeric: tabular-nums;
     color: var(--suave); background: var(--panel); border: 0;
-    padding: 10px 12px; cursor: pointer; flex: 1 0 auto; white-space: nowrap;
+    padding: 10px 14px; cursor: pointer; flex: 0 0 auto; white-space: nowrap;
   }
   .saltos button[aria-current="true"] { color: #04140a; background: var(--verde); }
   .pagar {
@@ -82,25 +86,24 @@
       <span class="escena" id="escena">BEBE</span>
     </div>
     <div class="botones">
-      <div class="saltos" id="saltos" role="group" aria-label="Ir a una escena de Stand By"></div>
+      <div class="saltos" id="saltos" role="group" aria-label="Probar animaciones del banco">
+        <button id="vuelta" title="Empezar una vuelta nueva (BEBE)" aria-label="Empezar una vuelta nueva">↺</button>
+        <button id="anterior" title="Animación anterior del banco" aria-label="Animación anterior">◀</button>
+        <select id="elegir" aria-label="Elegir una animación del banco"></select>
+        <button id="posterior" title="Animación siguiente del banco" aria-label="Animación siguiente">▶</button>
+      </div>
       <button id="pagar" class="pagar">Simular pago con tarjeta</button>
     </div>
   </div>
   <p class="sigue" id="sigue"></p>
-  <p class="nota">Cada vuelta: BEBE → TOP 10 → del puesto 10 al 1, con una animación al azar del banco después de cada puesto (no se repite ninguna hasta que han salido todas). Todas empiezan y acaban en negro. Los botones ponen ya esa animación; ↺ empieza otra vuelta. Toca la pantalla o pulsa <kbd>P</kbd> para pagar, <kbd>N</kbd> para pasar a la siguiente. Processing, Analyzing y Ranking siguen provisionales. En el móvil, gíralo para verla en grande.</p>
+  <p class="nota">Cada vuelta: BEBE → TOP 10 → del puesto 10 al 1, con una animación al azar del banco después de cada puesto (no se repite ninguna hasta que han salido todas). Todas empiezan y acaban en negro. El desplegable pone la animación que elijas y ◀ ▶ recorren el banco por ID; ↺ empieza otra vuelta. Toca la pantalla o pulsa <kbd>P</kbd> para pagar, <kbd>N</kbd> para pasar a la siguiente. Processing, Analyzing y Ranking siguen provisionales. En el móvil, gíralo para verla en grande.</p>
 </main>
 
 <script src="motor/avatar-guillermo.js"></script>
 <script src="motor/base.js"></script>
 <script src="motor/pantallas-fijas.js"></script>
-<script src="El%20borracho.js"></script>
-<script src="Modo%20leyenda.js"></script>
-<script src="La%20tienda%2024H.js"></script>
-<script src="Monumentos%20de%20latas.js"></script>
-<script src="El%20eructo.js"></script>
-<script src="Cohete%20de%20espuma.js"></script>
-<script src="El%20reto.js"></script>
 <script src="banco.js"></script>
+<script src="lista.js"></script>
 <script>
 "use strict";
 /*
@@ -163,30 +166,32 @@ const dir = {
 };
 // ==================================================================================================== mandos de prueba
 const $fase = document.getElementById("fase"), $escena = document.getElementById("escena"), $pagar = document.getElementById("pagar");
-const $sigue = document.getElementById("sigue"), $cajaSaltos = document.getElementById("saltos");
-{
-  const b = document.createElement("button");
-  b.id = "vuelta"; b.textContent = "↺"; b.title = "Empezar una vuelta nueva (BEBE)"; b.setAttribute("aria-label", "Empezar una vuelta nueva");
-  b.addEventListener("click", () => { if (dir.fase === "STAND BY") dir.arrancarEspera(); });
-  $cajaSaltos.appendChild(b);
+const $sigue = document.getElementById("sigue"), $elegir = document.getElementById("elegir");
+const nombreDe = (a) => (a.id ? `${a.id} · ${a.nombre}` : a.nombre);
+function montarMandos() {
+  for (const a of BANCO) { const o = document.createElement("option"); o.value = a.id; o.textContent = nombreDe(a); $elegir.appendChild(o); }
+  $elegir.addEventListener("change", () => { const a = BANCO.find((b) => b.id === $elegir.value); if (a) dir.probar(a); });
+  const mover = (paso) => {
+    if (!BANCO.length) return;
+    const act = dir.actual && dir.actual.id ? dir.actual.id : $elegir.value;
+    let i = BANCO.findIndex((b) => b.id === act);
+    i = i < 0 ? 0 : (i + paso + BANCO.length) % BANCO.length;
+    dir.probar(BANCO[i]);
+  };
+  document.getElementById("anterior").addEventListener("click", () => mover(-1));
+  document.getElementById("posterior").addEventListener("click", () => mover(1));
+  document.getElementById("vuelta").addEventListener("click", () => { if (dir.fase === "STAND BY") dir.arrancarEspera(); });
 }
-BANCO.forEach((e, i) => {
-  const b = document.createElement("button");
-  b.id = "ir" + i; b.dataset.ir = i; b.textContent = e.nombre; b.title = e.nombre;
-  b.addEventListener("click", () => dir.probar(e));
-  $cajaSaltos.appendChild(b);
-});
-const $saltos = [...document.querySelectorAll("[data-ir]")];
 function hud() {
   $fase.textContent = dir.fase;
   const enEspera = dir.fase === "STAND BY";
   const a = enEspera ? dir.actual : null;
-  $escena.textContent = enEspera ? a.nombre : FLUJO[dir.fase].nombre;
+  $escena.textContent = enEspera ? nombreDe(a) : FLUJO[dir.fase].nombre;
   const sig = enEspera ? dir.vuelta[dir.i + 1] : null;
   $sigue.textContent = enEspera
-    ? `Paso ${dir.i + 1} de ${dir.vuelta.length}${dir.suelta ? " (animación puesta a mano)" : ""} · Después: ${sig ? sig.nombre : "vuelta nueva (BEBE)"}`
+    ? `Paso ${dir.i + 1} de ${dir.vuelta.length}${dir.suelta ? " (animación puesta a mano)" : ""} · Después: ${sig ? nombreDe(sig) : "vuelta nueva (BEBE)"} · ${BANCO.length} animaciones en el banco`
     : "Prueba en curso: al acabar vuelve a Stand By";
-  $saltos.forEach((b) => b.setAttribute("aria-current", enEspera && a.tipo === "animacion" && BANCO[+b.dataset.ir].nombre === a.nombre ? "true" : "false"));
+  if (enEspera && a.id) $elegir.value = a.id;
   $pagar.disabled = !enEspera;
   $pagar.textContent = enEspera ? "Simular pago con tarjeta" : "Prueba en curso…";
 }
@@ -231,7 +236,8 @@ window.ALC_PRUEBAS = {
     e.dibujar(ctx);
   },
   BANCO, vueltaNueva,
-  escenas: { EscenaBebe, EscenaBorracho, EscenaTop10, EscenaPuesto, EscenaLeyenda, EscenaTienda, EscenaMonumentos, EscenaEructo, EscenaCohete, EscenaReto, EscenaPagado, EscenaAnaliza, EscenaRanking },
+  porId: (id) => BANCO.find((b) => b.id === id),
+  escenas: { EscenaBebe, EscenaTop10, EscenaPuesto, EscenaPagado, EscenaAnaliza, EscenaRanking },
 };
 
 // las fuentes llegan de Google Fonts; en la Pi irán en local (como ya hace el kiosco)
@@ -240,8 +246,20 @@ if (document.fonts) document.fonts.addEventListener("loadingdone", limpiarCaches
 const fuentes = document.fonts
   ? Promise.all([document.fonts.load(`900 100px "Big Shoulders Display"`), document.fonts.load(`800 20px "Archivo"`), document.fonts.load(`600 20px "Archivo"`), document.fonts.load(`100px "Bangers"`), document.fonts.load(`100px "Lilita One"`)]).catch(() => {})
   : Promise.resolve();
-Promise.race([fuentes, new Promise((r) => setTimeout(r, 2500))]).then(() => {
+/** Carga los archivos del banco que hay en lista.js (cada uno se apunta solo con registrar). */
+function cargarBanco() {
+  const lista = typeof ARCHIVOS_BANCO !== "undefined" ? ARCHIVOS_BANCO : [];
+  return Promise.all(lista.map((f) => new Promise((ok) => {
+    const s = document.createElement("script");
+    s.src = encodeURI(f); s.async = false;
+    s.onload = ok;
+    s.onerror = () => { console.error("[banco] no se pudo cargar", f); ok(); };
+    document.body.appendChild(s);
+  })));
+}
+Promise.all([cargarBanco(), Promise.race([fuentes, new Promise((r) => setTimeout(r, 2500))])]).then(() => {
   limpiarCaches();
+  montarMandos();
   dir.arrancarEspera();
   requestAnimationFrame(bucle);
 });

@@ -1,13 +1,13 @@
 "use strict";
 /*
- * LA TIENDA 24H
+ * 00102 · LA TIENDA 24H
  *
  * Animación del banco. Empieza y acaba en negro.
  * Cae del cielo con el pelo dorado y aterriza como un superhéroe; con el golpe se enciende el mostrador de la tienda
  * (neón ABIERTO 24H). Se le apaga el pelo echando vapor, se pone las gafas de sol, tira un fajo de billetes al
  * mostrador (¡QUÉDATE EL CAMBIO!, ¡KA-CHING!), coge la bolsa de litronas y se va. El mostrador se funde a negro.
  */
-
+(() => {
 class EscenaTienda extends Escena {
   constructor() {
     super(9.3);
@@ -197,3 +197,6 @@ class EscenaTienda extends Escena {
     }
   }
 }
+
+registrar({ id: "00102", nombre: "La tienda 24H", crear: () => new EscenaTienda() });
+})();

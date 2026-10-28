@@ -1,13 +1,13 @@
 "use strict";
 /*
- * COHETE DE ESPUMA
+ * 00105 · COHETE DE ESPUMA
  *
  * Animación del banco. Empieza y acaba en negro.
  * Agita una lata como loco, la apunta al suelo y la abre: sale propulsado por la espuma, hace loopings y escribe
  * ¡SALUD! con la espuma. Vuela hacia la pantalla y se estampa contra el cristal (¡PLAF!); resbala y la espuma cae
  * hasta dejar la pantalla en negro.
  */
-
+(() => {
 /** Manchas de espuma en el cristal tras el golpe . */
 let _manchas = null;
 function manchasEspuma() {
@@ -174,3 +174,6 @@ class EscenaCohete extends Escena {
     if (aIn > 0) { g.fillStyle = `rgba(0,0,0,${aIn})`; g.fillRect(-60, -60, W + 120, H + 120); }
   }
 }
+
+registrar({ id: "00105", nombre: "Cohete de espuma", crear: () => new EscenaCohete() });
+})();

@@ -1,13 +1,13 @@
 "use strict";
 /*
- * MODO LEYENDA
+ * 00101 · MODO LEYENDA
  *
  * Animación del banco. Empieza y acaba en negro.
  * Se enciende un foco. Se bebe una lata de un trago y la aplasta en el puño (¡CRUNCH!). Se transforma con un grito
  * (¡¡HAAAA!!): aura de ki, pelo dorado en punta, rayos, rocas que flotan y el cartel ¡MODO LEYENDA! Sale disparado
  * hacia arriba dejando una columna de luz.
  */
-
+(() => {
 class EscenaLeyenda extends Escena {
   constructor() {
     super(10.2);
@@ -214,3 +214,6 @@ class EscenaLeyenda extends Escena {
     if (t < 0.75 && parpadeo < 1) { g.fillStyle = `rgba(0,0,0,${0.97 * (1 - parpadeo)})`; g.fillRect(-60, -60, W + 120, H + 120); }
   }
 }
+
+registrar({ id: "00101", nombre: "Modo leyenda", crear: () => new EscenaLeyenda() });
+})();

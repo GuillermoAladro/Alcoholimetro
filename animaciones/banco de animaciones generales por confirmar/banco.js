@@ -7,19 +7,22 @@
  * Las animaciones salen del banco al azar, como una baraja: no se repite ninguna hasta que han salido todas, y las 3
  * últimas que han salido no vuelven al principio de la baraja siguiente.
  *
- * Para añadir una animación: un archivo nuevo en esta carpeta con una clase que tenga actualizar(dt), dibujar(g) y
- * terminada (que empiece y acabe en negro), una línea más en BANCO y su <script> en ver.html.
+ * Para añadir una animación: un archivo "IIIII Nombre.js" en esta carpeta (IIIII = ID de 5 cifras) que se apunte con
+ * registrar(), y su nombre de archivo en lista.js.
  */
 
-const BANCO = [
-  { nombre: "El borracho", crear: () => new EscenaBorracho() },
-  { nombre: "Modo leyenda", crear: () => new EscenaLeyenda() },
-  { nombre: "La tienda 24H", crear: () => new EscenaTienda() },
-  { nombre: "Monumentos de latas", crear: () => new EscenaMonumentos() },
-  { nombre: "El eructo", crear: () => new EscenaEructo() },
-  { nombre: "Cohete de espuma", crear: () => new EscenaCohete() },
-  { nombre: "El reto", crear: () => new EscenaReto() },
-];
+const BANCO = [];
+/**
+ * Cada archivo de animación se apunta solo al cargarse:
+ *   registrar({ id: "00012", nombre: "Dardos de bar", crear: () => new MiEscena() });
+ * El ID tiene 5 cifras y no se puede repetir. El banco queda ordenado por ID.
+ */
+function registrar(a) {
+  if (!a || !/^\d{5}$/.test(a.id) || !a.nombre || typeof a.crear !== "function") { console.error("[banco] animación mal registrada", a); return; }
+  if (BANCO.some((b) => b.id === a.id)) { console.error("[banco] ID repetido:", a.id, a.nombre); return; }
+  BANCO.push(a);
+  BANCO.sort((x, y) => (x.id < y.id ? -1 : 1));
+}
 const baraja = {
   mazo: [], recientes: [],
   sacar() {
