@@ -403,8 +403,8 @@ function dibujarAvatar(g, pose, t) {
     if (!bI) { pieza(g, P + "brazoI", R.hombroI, pose.brazoI || 0); return; }
     if (pose.objI) pose.objI(g, manoI, bI.a2, t);
     pieza(g, P + "brazoSupI", R.hombroI2, bI.a1 - R.a1I);
-    g.fillStyle = R.camisa || CAMISA;
-    g.beginPath(); g.arc(bI.E[0], bI.E[1], 6.2, 0, 6.283); g.fill();
+    g.fillStyle = R.colorCodo || R.camisa || CAMISA;
+    g.beginPath(); g.arc(bI.E[0], bI.E[1], R.radioCodo || 6.2, 0, 6.283); g.fill();
     pieza(g, P + "antebrazoI", R.codoI, bI.a2 - R.a2I, bI.E[0] - R.codoI[0], bI.E[1] - R.codoI[1]);
     if (pose.objI2) pose.objI2(g, manoI, bI.a2, t);
   };
@@ -425,8 +425,8 @@ function dibujarAvatar(g, pose, t) {
   if (pose.jarra) dibujarJarra(g, mano, pose.jarra.inc, pose.jarra.nivel, "asa", t);
   if (pose.objD) pose.objD(g, mano, b.a2, t);
   pieza(g, P + "brazoSup", R.hombroD, b.a1 - R.a1);
-  g.fillStyle = R.camisa || CAMISA;
-  g.beginPath(); g.arc(b.E[0], b.E[1], 6.2, 0, 6.283); g.fill();
+  g.fillStyle = R.colorCodo || R.camisa || CAMISA;
+  g.beginPath(); g.arc(b.E[0], b.E[1], R.radioCodo || 6.2, 0, 6.283); g.fill();
   pieza(g, P + "antebrazo", R.codoD, b.a2 - R.a2, b.E[0] - R.codoD[0], b.E[1] - R.codoD[1]);
   if (pose.jarra) dibujarJarra(g, mano, pose.jarra.inc, pose.jarra.nivel, "cuerpo", t);
   if (pose.objD2) pose.objD2(g, mano, b.a2, t);

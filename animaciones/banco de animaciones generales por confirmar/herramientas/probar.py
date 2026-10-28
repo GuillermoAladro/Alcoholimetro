@@ -66,7 +66,7 @@ def leer(p):
 
 pagina = ['<!doctype html><meta charset="utf-8"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=x">',
           '<style>body{margin:0;background:#000}</style><canvas id="pantalla" width="1024" height="600"></canvas>']
-for p in ['motor/avatar-guillermo.js', 'motor/base.js', 'motor/avatar-rodrigo.js', 'motor/pantallas-fijas.js', 'banco.js']:
+for p in ['motor/avatar-guillermo.js', 'motor/base.js', 'motor/avatar-rodrigo.js', 'motor/avatar-marcos.js', 'motor/pantallas-fijas.js', 'banco.js']:
     pagina.append('<script>\n' + leer(os.path.join(BANCO, p)) + '\n</script>')
 pagina.append('<script>window.__antes = new Set(Object.getOwnPropertyNames(window));</script>')
 for nombre, s in codigos:

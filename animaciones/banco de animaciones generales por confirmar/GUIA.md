@@ -11,9 +11,9 @@ bibliotecas (nada de vídeos ni imágenes externas).
 
 ## Dónde está todo (en esta carpeta)
 - `motor/base.js` — todo lo común (léelo si dudas de algo; está comentado)
-- `motor/avatar-guillermo.js` y `motor/avatar-rodrigo.js` — piezas de los avatares (no los abras: es base64)
+- `motor/avatar-guillermo.js`, `motor/avatar-rodrigo.js` y `motor/avatar-marcos.js` — piezas de los avatares (no los abras: es base64)
 - `motor/pantallas-fijas.js` — BEBE, TOP 10, Puesto (ejemplos de escenas sin avatar); tiene `corona(g, w)`
-- `00000 … .js` – `00106 … .js` — las animaciones que ya hay (buenas referencias de estilo y ritmo:
+- `00000 … .js` – `00156 … .js` — las animaciones que ya hay (buenas referencias de estilo y ritmo:
   `00102 La tienda 24H.js`, `00101 Modo leyenda.js`)
 - Prueba: `python3 herramientas/probar.py "<archivo.js>" [más archivos] [--en 2.5,4]`
   - comprueba sintaxis, ámbito, registro, errores, negro al principio y al final, duración
@@ -29,7 +29,7 @@ bibliotecas (nada de vídeos ni imágenes externas).
    ser negros. Entradas/salidas típicas: entra/sale andando por un lado, se enciende/apaga un foco, iris, telón,
    fundido corto (0,3–0,6 s). Mejor una entrada/salida con gracia que un fundido sin más.
 4. Duración 6–12 s (la herramienta acepta 5–14). Ritmo: algo pasa cada segundo; un remate claro al final.
-5. Protagonista: el avatar de Guillermo (y en las de dúo, Guillermo y Rodrigo). Otros personajes: solo clones del avatar (con otra cara, gafas, pelo dorado…)
+5. Protagonista: el avatar de Guillermo (y en las de dúo, Guillermo con Rodrigo o con Marcos). Otros personajes: solo clones del avatar (con otra cara, gafas, pelo dorado…)
    u objetos/animales dibujados sencillos. Nada de personas reales, marcas, logotipos, personajes o escenas
    famosas (películas, series, videojuegos, canciones con letra real). Nada de conducir bebido como chiste, violencia
    contra personas, contenido sexual, apuestas ni menores.
@@ -120,6 +120,26 @@ Unidades de avatar (las del recorte de frente): 78 de ancho × 232 de alto, pies
   Para Guillermo, `avatar().rig` (o `RIG`). Para beber: `boca(rc, "rodrigo")`.
 - Dúo: lo normal es ponerlos a los lados (x ≈ 330 y 690, escala 1,4–1,6) para que la acción ocurra entre los dos.
   Que los dos tengan papel y caras que reaccionen a lo que hace el otro; el remate puede ser para cualquiera de los dos.
+
+## Marcos (tercer avatar)
+- Igual que Rodrigo, con `quien: "marcos"` en la pose. Mismas 6 caras, `oro`, `puntas`, `gafas`, objetos, `andar`…
+- Aspecto: pelo rizado oscuro, camiseta negra de manga corta (brazos al aire), pantalón cargo beige y zapatillas
+  blancas. Se distingue bien de Guillermo (camisa negra de manga larga, vaqueros); si un cartel pone nombres:
+  «GUILLERMO» y «MARCOS».
+- Sus puntos en `avatar("marcos").rig`: `ojos` [[27, 47], [47, 47]], `bocaPos` [37, 62], `frente` [37, 26],
+  `cuello` [37, 74], hombros `hombroD` [63, 93] / `hombroI2` [11, 93], manos en reposo `manoD` [67, 152] /
+  `manoI` [6, 152], caderas [26, 142] / [49, 142]. Pies en y = 232, pelo ≈ y 6. Para beber: `boca(rc, "marcos")`.
+- Sus brazos son más cortos: la mano llega como mucho a ~59 unidades del hombro (Guillermo ~74). En choques de
+  manos, brindis o cuando cogen algo entre los dos, acércalos más.
+
+## Trucos que han salido en las tandas anteriores
+- No hay vista de espaldas ni de perfil: «se gira» → se despista (cierra los ojos, bosteza, mira arriba con `rc`).
+- `fotoDe()` solo hace fotos de Guillermo. Para una foto o polaroid de Marcos (o de los dos), píntala tú en un
+  lienzo una vez (`lienzoNuevo` + `dibujarAvatar` con `quien`) y luego cópiala.
+- Para pintar algo sobre la cara (espuma, un bigote) que quede por detrás de la mano derecha, usa `pose.objD`
+  (se pinta justo antes del brazo derecho) en coordenadas de avatar.
+- A escala muy grande (> 2,4) se notan los círculos que tapan hombros y codos; mejor quedarse en 1,4–2,2.
+- Textos con brillo, marcadores y fondos complicados: pintarlos una vez (en el primer cuadro, que es negro) y copiarlos.
 
 ## Utilidades (motor/base.js)
 - Matemáticas: `clamp, lerp, mezcla(a,b,k)` (puntos), `tramo(t, a, b)` (0→1 entre a y b), `eIn, eOut, eInOut,

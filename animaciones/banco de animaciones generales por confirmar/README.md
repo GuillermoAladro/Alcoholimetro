@@ -1,13 +1,14 @@
 # Banco de animaciones generales (por confirmar)
 
-Animaciones de la pantalla del alcoholímetro (1024 × 600, la de 7") para la espera (Stand By). Salen al azar entre los puestos del top 10. Todo está dibujado en directo con JavaScript, sin vídeos, para que pueda llevar las fotos y las tasas reales del ranking. Protagonista: el avatar de Guillermo Aladro; en 50 de ellas sale con el avatar de Rodrigo.
+Animaciones de la pantalla del alcoholímetro (1024 × 600, la de 7") para la espera (Stand By). Salen al azar entre los puestos del top 10. Todo está dibujado en directo con JavaScript, sin vídeos, para que pueda llevar las fotos y las tasas reales del ranking. Protagonista: el avatar de Guillermo Aladro; en 50 sale con el de Rodrigo y en otras 50 con el de Marcos.
 
-Hay **157 animaciones**, cada una con su ID de 5 cifras:
+Hay **207 animaciones**, cada una con su ID de 5 cifras:
 - 00000–00099: las 100 de Guillermo.
 - 00100–00106: las 7 primeras.
 - 00107–00156: las 50 de Guillermo y Rodrigo juntos.
+- 00157–00206: las 50 de Guillermo y Marcos juntos.
 
-Entre todas suman unos 26 minutos.
+Entre todas suman unos 34 minutos.
 
 **Para verlas:** abre `ver.html` en Chrome o Edge.
 - El desplegable pone la animación que elijas.
@@ -186,12 +187,62 @@ Todas empiezan y acaban en negro, así que cualquiera encaja detrás de cualquie
 | 00154 | Globo aerostático | 10,2 s | Sueltan el barril de lastre para subir… y lloran viendo cómo revienta en el prado. |
 | 00155 | Submarinistas | 9,8 s | Con escafandras encuentran un barril hundido; salta el tapón y sale espuma. |
 | 00156 | Voleibol de playa | 9,4 s | Rodrigo remata, Guillermo se tira en plancha sin llegar y el balón le cae en la cabeza. |
+| 00157 | Guerra de pulgares | 9,8 s | Plano de las manos sobre la barra: los pulgares se esquivan hasta que Marcos atrapa el de Guillermo (1, 2, 3). |
+| 00158 | Cacahuetes al vuelo | 10,8 s | Se lanzan cacahuetes a la boca: Marcos caza tres de golpe y a Guillermo le rebotan en la nariz y la frente. |
+| 00159 | Equilibrio de jarras | 10,2 s | Torres de jarras en la cabeza: la de Guillermo se viene abajo y Marcos gana con cinco y corona. |
+| 00160 | Carrera de chapas | 10,4 s | Circuito de tiza en la barra: la chapa de Marcos se sale y Guillermo gana por un pelo en la foto de llegada. |
+| 00161 | Petanca de aceitunas | 9,8 s | Guillermo deja su aceituna pegadita; Marcos la saca de un bochazo y acaba dentro de la jarra de Guillermo. |
+| 00162 | Curling de jarras | 10,2 s | Guillermo lanza una jarra por la barra helada y Marcos barre como loco hasta que se para en la diana. |
+| 00163 | Concurso de preguntas | 10,3 s | Concurso con pulsadores: Marcos pulsa primero y falla tres veces; Guillermo acierta la última y llueve confeti. |
+| 00164 | Carrera de caracoles | 10,6 s | Animan a gritos a dos caracoles con dorsal; gana el de Marcos, con caparazón de chapa, por 1 mm. |
+| 00165 | Pimientos de Padrón | 11,0 s | Unos pican y otros no: a Marcos le toca el que pica, echa fuego y se bebe una jarra de agua. |
+| 00166 | Salto a la comba | 10,6 s | La comba gira cada vez más rápido; Guillermo se enreda y Marcos sigue saltando a doble velocidad. |
+| 00167 | Saludo secreto | 10,4 s | Un saludo secreto larguísimo (puño, codo, cadera, giro, pesca…) que acaban sincronizados con confeti. |
+| 00168 | El chiste malo | 10,5 s | Marcos cuenta un chiste malo, Guillermo remata con la batería, grillos… y se parten de risa. |
+| 00169 | Sombras chinescas | 10,3 s | Sombras con las manos: el perro de Marcos se come el pato de Guillermo y al final forman una jarra gigante. |
+| 00170 | Pajarita de papel | 10,6 s | A Guillermo la servilleta le sale pajarita voladora; a Marcos, una bola arrugada que también vuela. |
+| 00171 | Barbas de espuma | 10,6 s | Cada trago les deja más espuma hasta que a Marcos la barba le llega al suelo. |
+| 00172 | El ascensor | 10,6 s | Silencio incómodo en el ascensor hasta la planta 10; se abren las puertas y hay fiesta del TOP 10. |
+| 00173 | Pompas gigantes | 10,5 s | Marcos sopla una pompa gigante que se lleva flotando a Guillermo; explota y cae en sus brazos. |
+| 00174 | Hacer el pino | 10,6 s | Reto de hacer el pino: Marcos aguanta a una mano y Guillermo acaba por los suelos. |
+| 00175 | El paraguas | 10,6 s | Un solo paraguas para los dos en pleno chaparrón; el viento le da la vuelta y acaban corriendo bajo la lluvia. |
+| 00176 | Cine en el bar | 10,6 s | Peli en 3D en la tele del bar: sale una ola de espuma de la pantalla y vuelan las palomitas. |
+| 00177 | Cocteleros | 9,9 s | Agitan cocteleras sincronizados, se las lanzan por encima de la cabeza y sirven dos cócteles desde lo alto. |
+| 00178 | Grifo rebelde | 10,2 s | El grifo escupe chorros sin parar; Guillermo pone jarras debajo hasta que Marcos consigue cerrarlo. |
+| 00179 | La pizarra | 11,3 s | Los dibujos de la pizarra de tapas cobran vida: una croqueta con patas se escapa y la persiguen. |
+| 00180 | Montar la terraza | 10,3 s | Una silla plegable atrapa a Guillermo y la sombrilla se abre de golpe y los levanta. |
+| 00181 | Fregar vasos | 9,3 s | Cadena de fregar y secar cada vez más rápida hasta montar una pirámide de vasos reluciente. |
+| 00182 | Escultura de hielo | 11,0 s | Marcos esculpe un bloque de hielo y sale una estatua de Guillermo, que se pone al lado imitando la pose. |
+| 00183 | La persiana | 9,3 s | La persiana del bar está atascada; tiran los dos, sale disparada y Guillermo se queda colgado. |
+| 00184 | Catadores | 9,7 s | Cata muy seria (al trasluz, olor, sorbo, monóculo) y los dos sacan un 10. |
+| 00185 | El cartel luminoso | 9,9 s | Arreglando el neón se caen las letras; las recolocan (primero al revés) y se enciende ¡TOP 10!. |
+| 00186 | Patinaje con fregona | 10,8 s | Al fregar se resbalan y acaban patinando en pareja por el suelo mojado, con giros y ¡OLÉ!. |
+| 00187 | Astronautas | 9,8 s | Alunizan en una luna de espuma, dan saltos lentos y clavan una bandera con una jarra. |
+| 00188 | El dinosaurio | 10,6 s | Un dinosaurio los persigue rugiendo… solo quería una caña. Brindan los tres. |
+| 00189 | Vikingos | 9,8 s | Con cascos de cuernos reman por un mar de cerveza y brindan al llegar: ¡SKÅL! |
+| 00190 | Arqueólogos | 9,8 s | Desentierran el fósil de una jarra gigante; se les rompe el asa y Marcos la tapa con arena silbando. |
+| 00191 | Fantasmas | 10,0 s | Marcos asusta a Guillermo con una sábana… y detrás aparece un fantasma de verdad. Salen corriendo. |
+| 00192 | Saltando nubes | 10,2 s | Saltan de nube en nube y caen en una nube sofá, donde una nubecilla les sirve dos jarras. |
+| 00193 | Agentes secretos | 10,2 s | Cruzan un pasillo de láseres hasta la caja fuerte de la caña; misión cumplida… y salta la alarma. |
+| 00194 | Cavernícolas | 10,0 s | Guillermo inventa la rueda, que es un barril; Marcos se sube y se va rodando. |
+| 00195 | Hipnosis | 10,4 s | Marcos hipnotiza a Guillermo con una chapa y lo convierte en gallina; luego se cambian las tornas. |
+| 00196 | Fiesta de disfraces | 10,4 s | Salen del probador con disfraces que nunca coinciden, hasta que salen los dos de jarra de cerveza. |
+| 00197 | Barbacoa | 10,2 s | Marcos voltea hamburguesas, Guillermo le manda el humo y una salchicha aterriza en su pan. |
+| 00198 | Acampada | 10,6 s | Hoguera y nubes de azúcar; Marcos cuenta una historia de miedo y la tienda se desploma sobre Guillermo. |
+| 00199 | Esquí | 10,2 s | Marcos baja haciendo saltos en tabla y Guillermo se cae y baja rodando dentro de una bola de nieve. |
+| 00200 | Rafting | 10,6 s | Rápidos, olas y una cascada: salen empapados y a Guillermo le cae un pez en la cabeza. |
+| 00201 | Rocódromo | 10,6 s | Marcos sube como una araña y le tira una cuerda a Guillermo, que se ha quedado colgado. |
+| 00202 | Yoga | 10,6 s | Yoga al atardecer: en la postura del árbol Guillermo cae como un árbol talado. |
+| 00203 | Trampolín | 11,0 s | Marcos hace un salto de 10 y Guillermo se tira en bomba y empapa al jurado. |
+| 00204 | La cometa | 10,6 s | Una ráfaga sube la cometa y levanta a Guillermo; Marcos lo agarra y salen volando los dos. |
+| 00205 | Salto con pértiga | 10,6 s | Marcos salta por encima de una barra de bar altísima; a Guillermo se le dobla la pértiga y pasa por debajo. |
+| 00206 | Castillo de arena | 10,8 s | La ola se lleva el castillo de Guillermo; el de Marcos aguanta y es un bar de arena. |
 
 ## Cómo añadir una animación
 
 Los criterios y todo lo que se puede usar del motor están en `GUIA.md`.
 
-1. Crea un archivo `IIIII Nombre.js` en esta carpeta, con el siguiente ID libre (ahora el 00157).
+1. Crea un archivo `IIIII Nombre.js` en esta carpeta, con el siguiente ID libre (ahora el 00207).
 2. Todo el código va dentro de `(() => { ... })();`. Al final, la animación se apunta sola con `registrar({ id, nombre, crear })`.
 3. Tiene que empezar y acabar en negro, durar entre 6 y 12 s y tener su propio texto en pantalla.
 4. Añade el nombre del archivo en `lista.js`.
@@ -201,13 +252,14 @@ Los criterios y todo lo que se puede usar del motor están en `GUIA.md`.
 
 | Archivo | Qué es |
 |---|---|
-| `00000 … .js` – `00156 … .js` | Una animación por archivo |
+| `00000 … .js` – `00206 … .js` | Una animación por archivo |
 | `banco.js` | Registro de animaciones, la baraja y el orden de cada vuelta |
 | `lista.js` | Lista de archivos que carga `ver.html` |
 | `motor/base.js` | Todo lo común: textos, temblor, partículas, los avatares (esqueleto, caras, pelo dorado, gafas; Guillermo por defecto y los demás con `registrarAvatar`), objetos (lata, jarra, bolsa, billetes, trofeo), aura, rayos, rocas, bocadillos, focos y datos de ejemplo del ranking |
 | `motor/pantallas-fijas.js` | BEBE, TOP 10 en llamas y Puesto (del 10 al 1). Al final van las pantallas provisionales del pago: Processing, Analyzing y Ranking |
 | `motor/avatar-guillermo.js` | El avatar de Guillermo troceado: piezas del cuerpo, 6 caras y su pelo dorado, en PNG base64 |
 | `motor/avatar-rodrigo.js` | El avatar de Rodrigo troceado igual: piezas del cuerpo, 6 caras y su pelo dorado. Se pinta con `quien: "rodrigo"` |
+| `motor/avatar-marcos.js` | El avatar de Marcos, igual: piezas del cuerpo, 6 caras y su pelo dorado. Lleva manga corta, así que el codo se tapa con un círculo color piel. Se pinta con `quien: "marcos"` |
 | `ver.html` | Página de prueba: Stand By en bucle, selector de animaciones y pago simulado |
 | `GUIA.md` | Criterios para hacer animaciones y referencia del motor |
 | `herramientas/probar.py` | Prueba automática de una o varias animaciones |
