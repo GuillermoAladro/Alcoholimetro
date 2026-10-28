@@ -184,26 +184,48 @@ const RIG = {
   hombroI2: [9, 86], codoI: [8, 121], manoI: [9, 160], // brazo izquierdo en dos piezas
   caderaI: [27, 146], caderaD: [51, 146], cuello: [39, 72], barbilla: 74, escCara: 0.66,
 };
-RIG.L1 = Math.hypot(RIG.codoD[0] - RIG.hombroD[0], RIG.codoD[1] - RIG.hombroD[1]);
-RIG.L2 = Math.hypot(RIG.manoD[0] - RIG.codoD[0], RIG.manoD[1] - RIG.codoD[1]);
-RIG.a1 = Math.atan2(RIG.codoD[1] - RIG.hombroD[1], RIG.codoD[0] - RIG.hombroD[0]);
-RIG.a2 = Math.atan2(RIG.manoD[1] - RIG.codoD[1], RIG.manoD[0] - RIG.codoD[0]);
-RIG.L1I = Math.hypot(RIG.codoI[0] - RIG.hombroI2[0], RIG.codoI[1] - RIG.hombroI2[1]);
-RIG.L2I = Math.hypot(RIG.manoI[0] - RIG.codoI[0], RIG.manoI[1] - RIG.codoI[1]);
-RIG.a1I = Math.atan2(RIG.codoI[1] - RIG.hombroI2[1], RIG.codoI[0] - RIG.hombroI2[0]);
-RIG.a2I = Math.atan2(RIG.manoI[1] - RIG.codoI[1], RIG.manoI[0] - RIG.codoI[0]);
+/** Calcula las longitudes y ángulos de reposo de los brazos de un esqueleto. */
+function completarRig(R) {
+  R.L1 = Math.hypot(R.codoD[0] - R.hombroD[0], R.codoD[1] - R.hombroD[1]);
+  R.L2 = Math.hypot(R.manoD[0] - R.codoD[0], R.manoD[1] - R.codoD[1]);
+  R.a1 = Math.atan2(R.codoD[1] - R.hombroD[1], R.codoD[0] - R.hombroD[0]);
+  R.a2 = Math.atan2(R.manoD[1] - R.codoD[1], R.manoD[0] - R.codoD[0]);
+  R.L1I = Math.hypot(R.codoI[0] - R.hombroI2[0], R.codoI[1] - R.hombroI2[1]);
+  R.L2I = Math.hypot(R.manoI[0] - R.codoI[0], R.manoI[1] - R.codoI[1]);
+  R.a1I = Math.atan2(R.codoI[1] - R.hombroI2[1], R.codoI[0] - R.hombroI2[0]);
+  R.a2I = Math.atan2(R.manoI[1] - R.codoI[1], R.manoI[0] - R.codoI[0]);
+  return R;
+}
+completarRig(RIG);
 // puntos de la cara en unidades de avatar
 RIG.ojos = [[27.2, 39.7], [50.4, 39.7]];
 RIG.frente = [39, 22];
+RIG.bocaPos = [39, 55];
 const CAMISA = "#2b2b2c";
+RIG.camisa = CAMISA;
+
+/*
+ * Avatares: cada uno con sus piezas (en IMG, con un prefijo), su esqueleto y el borde del pelo de cada cara.
+ * En la pose, `quien: "rodrigo"` elige el avatar (sin `quien`, Guillermo). Sus puntos: avatar("rodrigo").rig.
+ * ojosCara: ojos en la imagen de la cara, respecto al centro de abajo de la imagen (para poner las gafas).
+ */
+const AVATARES = { guillermo: { nombre: "guillermo", pre: "", rig: RIG, borde: () => BORDE_PELO, ojosCara: null } };
+function avatar(q) { return AVATARES[q || "guillermo"] || AVATARES.guillermo; }
+/** Apunta un avatar nuevo: piezas (mismo formato que AV), esqueleto, borde del pelo y ojos en la cara. */
+function registrarAvatar(nombre, piezas, rig, borde, ojosCara) {
+  const pre = nombre + "_";
+  for (const [k, v] of Object.entries(piezas)) { const im = new Image(); im.src = v.src; IMG[pre + k] = Object.assign({ im }, v); }
+  AVATARES[nombre] = { nombre, pre, rig: completarRig(rig), borde: () => borde, ojosCara };
+}
 // la jarra: el asa en la mano (0, 0), el cuerpo a la derecha
 const JARRA = { x0: 3, x1: 31, y0: -18, y1: 18, borde: [17, -18] };
 
-/** Boca en unidades de avatar, con la cabeza girada `rc` alrededor del cuello. */
-function boca(rc) {
-  const b = [39 - RIG.cuello[0], 55 - RIG.cuello[1]];
+/** Boca en unidades de avatar, con la cabeza girada `rc` alrededor del cuello (q: avatar, por defecto Guillermo). */
+function boca(rc, q) {
+  const R = avatar(q).rig;
+  const b = [R.bocaPos[0] - R.cuello[0], R.bocaPos[1] - R.cuello[1]];
   const r = rot2(b, rc);
-  return [RIG.cuello[0] + r[0], RIG.cuello[1] + r[1]];
+  return [R.cuello[0] + r[0], R.cuello[1] + r[1]];
 }
 
 /** Cinemática inversa de dos huesos: el codo va hacia abajo y hacia fuera (lado 1 = brazo derecho, -1 = izquierdo). */
@@ -238,13 +260,14 @@ function pieza(g, k, piv, ang, dx = 0, dy = 0) {
  * gafas (true: gafas de sol puestas). Todo se dibuja en píxeles de la imagen de la cara.
  */
 function dibujarCara(g, cara, rc, x = {}, t = 0) {
-  const k = "cara_" + cara;
+  const A = avatar(x.quien), R = A.rig;
+  const k = A.pre + "cara_" + cara;
   if (!listo(k)) return;
-  const p = IMG[k], e = RIG.escCara, w = p.w * e, h = p.h * e;
+  const p = IMG[k], e = R.escCara, h = p.h * e, ax = p.ax != null ? p.ax : p.w / 2;
   g.save();
-  g.translate(RIG.cuello[0], RIG.cuello[1]);
+  g.translate(R.cuello[0], R.cuello[1]);
   g.rotate(rc);
-  g.translate(-w / 2, RIG.barbilla - RIG.cuello[1] - h);
+  g.translate(-ax * e, R.barbilla - R.cuello[1] - h);
   g.scale(e, e);
   const oro = x.oro || 0, puntas = x.puntas || 0;
   if (oro > 0.02) {
@@ -253,30 +276,36 @@ function dibujarCara(g, cara, rc, x = {}, t = 0) {
     g.drawImage(BLOB.amarillo, -40, -60, p.w + 80, p.h + 40);
     g.restore();
   }
-  if (puntas > 0.02) puntasPelo(g, cara, puntas, oro, t);
+  if (puntas > 0.02) puntasPelo(g, cara, puntas, oro, t, A, p);
   g.drawImage(p.im, 0, 0);
-  const ko = "oro_" + cara;
+  const ko = A.pre + "oro_" + cara;
   if (oro > 0.02 && listo(ko)) {
     g.save(); g.globalAlpha = oro; g.drawImage(IMG[ko].im, 0, 0);
     g.globalCompositeOperation = "lighter"; g.globalAlpha = 0.35 * oro * (0.8 + 0.2 * Math.sin(t * 30));
     g.drawImage(IMG[ko].im, 0, 0);
     g.restore();
   }
-  if (x.gafas) gafasSol(g, 0, 0, 1);
+  if (x.gafas && !A.ojosCara) gafasSol(g, 0, 0, 1);
+  else if (x.gafas) {
+    // las gafas se dibujan para ojos en (27, 68) y (63, 68): se escalan y mueven a los ojos de esta cara
+    const oc = A.ojosCara, s = (oc[1][0] - oc[0][0]) / 36;
+    g.save(); g.translate(ax + (oc[0][0] + oc[1][0]) / 2 - 45 * s, p.h + oc[0][1] - 68 * s); gafasSol(g, 0, 0, s); g.restore();
+  }
   g.restore();
 }
 
-/** Mechones dorados que se levantan (detrás de la cara). Coordenadas de la imagen de la cara (91 × 120). */
-function puntasPelo(g, cara, k, oro, t) {
-  const borde = BORDE_PELO[cara] || BORDE_PELO.sonrisa;
-  const n = 13;
+/** Mechones dorados que se levantan (detrás de la cara). Coordenadas de la imagen de la cara. */
+function puntasPelo(g, cara, k, oro, t, A = AVATARES.guillermo, p = { w: 91, h: 120 }) {
+  const bs = A.borde(), borde = bs[cara] || bs.sonrisa;
+  const n = 13, fw = p.w / 91, fh = p.h / 120;
   for (let i = 0; i < n; i++) {
-    const x = 5 + (i * 81) / (n - 1);
-    const y = Math.max(0, borde[Math.round(x)] >= 0 ? borde[Math.round(x)] : 20) + 9;
-    let dx = (x - 45) * 1.1, dy = y - 78 - 26;
+    const x = (5 + (i * 81) / (n - 1)) * fw;
+    const bx = borde[Math.round(x)];
+    const y = Math.max(0, bx >= 0 ? bx : 20 * fh) + 9 * fh;
+    let dx = (x - 45 * fw) * 1.1, dy = y - (78 + 26) * fh;
     const L0 = Math.hypot(dx, dy); dx /= L0; dy /= L0;
-    const largo = k * (30 + 22 * ((i * 7) % 5) / 4 + (i === 6 ? 18 : 0)) * (1 + 0.1 * Math.sin(t * 24 + i * 1.7));
-    const px = -dy, py = dx, a = 9;
+    const largo = k * fw * (30 + 22 * ((i * 7) % 5) / 4 + (i === 6 ? 18 : 0)) * (1 + 0.1 * Math.sin(t * 24 + i * 1.7));
+    const px = -dy, py = dx, a = 9 * fw;
     const gr = g.createLinearGradient(x, y, x + dx * largo, y + dy * largo);
     gr.addColorStop(0, oro > 0.5 ? "#f2a100" : "#6b4128");
     gr.addColorStop(1, oro > 0.5 ? "#fff3a0" : "#8a5a3a");
@@ -362,42 +391,43 @@ function dibujarJarra(g, mano, inclinacion, nivel, parte, t) {
  * pose: { cara, rc (giro cabeza), brazoI, piernaI:[dy,ang], piernaD:[dy,ang], mano:[x,y] | null, jarra:{inc, nivel} | null }
  */
 function dibujarAvatar(g, pose, t) {
+  const A = avatar(pose.quien), R = A.rig, P = A.pre;
   const pI = pose.piernaI || [0, 0], pD = pose.piernaD || [0, 0];
   // brazo izquierdo: rígido (brazoI = ángulo) o con codo (manoI = punto al que llega la mano)
   let bI = null, manoI = null;
   if (pose.manoI) {
-    bI = ik(RIG.hombroI2, pose.manoI, RIG.L1I, RIG.L2I, -1);
-    manoI = [bI.E[0] + Math.cos(bI.a2) * RIG.L2I, bI.E[1] + Math.sin(bI.a2) * RIG.L2I];
+    bI = ik(R.hombroI2, pose.manoI, R.L1I, R.L2I, -1);
+    manoI = [bI.E[0] + Math.cos(bI.a2) * R.L2I, bI.E[1] + Math.sin(bI.a2) * R.L2I];
   }
   const brazoIzq = () => {
-    if (!bI) { pieza(g, "brazoI", RIG.hombroI, pose.brazoI || 0); return; }
+    if (!bI) { pieza(g, P + "brazoI", R.hombroI, pose.brazoI || 0); return; }
     if (pose.objI) pose.objI(g, manoI, bI.a2, t);
-    pieza(g, "brazoSupI", RIG.hombroI2, bI.a1 - RIG.a1I);
-    g.fillStyle = CAMISA;
+    pieza(g, P + "brazoSupI", R.hombroI2, bI.a1 - R.a1I);
+    g.fillStyle = R.camisa || CAMISA;
     g.beginPath(); g.arc(bI.E[0], bI.E[1], 6.2, 0, 6.283); g.fill();
-    pieza(g, "antebrazoI", RIG.codoI, bI.a2 - RIG.a2I, bI.E[0] - RIG.codoI[0], bI.E[1] - RIG.codoI[1]);
+    pieza(g, P + "antebrazoI", R.codoI, bI.a2 - R.a2I, bI.E[0] - R.codoI[0], bI.E[1] - R.codoI[1]);
     if (pose.objI2) pose.objI2(g, manoI, bI.a2, t);
   };
   if (!pose.brazoIDelante) brazoIzq();
-  pieza(g, "piernaI", RIG.caderaI, pI[1], 0, pI[0]);
-  pieza(g, "piernaD", RIG.caderaD, pD[1], 0, pD[0]);
+  pieza(g, P + "piernaI", R.caderaI, pI[1], 0, pI[0]);
+  pieza(g, P + "piernaD", R.caderaD, pD[1], 0, pD[0]);
   // hombros redondeados, por detrás del torso: tapan el hueco cuando el brazo sube
-  g.fillStyle = CAMISA;
-  g.beginPath(); g.arc(RIG.hombroD[0] - 3, RIG.hombroD[1] + 1, 7, 0, 6.283); g.fill();
-  if (bI) { g.beginPath(); g.arc(RIG.hombroI2[0] + 3, RIG.hombroI2[1] + 1, 7, 0, 6.283); g.fill(); }
-  pieza(g, "torso", [0, 0], 0);
+  g.fillStyle = R.camisa || CAMISA;
+  g.beginPath(); g.arc(R.hombroD[0] - 3, R.hombroD[1] + 1, 7, 0, 6.283); g.fill();
+  if (bI) { g.beginPath(); g.arc(R.hombroI2[0] + 3, R.hombroI2[1] + 1, 7, 0, 6.283); g.fill(); }
+  pieza(g, P + "torso", [0, 0], 0);
   dibujarCara(g, pose.cara, pose.rc || 0, pose, t);
   if (pose.brazoIDelante) brazoIzq();
   // brazo derecho (por delante: cruza la cara al beber)
-  const T = pose.manoD || pose.mano || RIG.manoD;
-  const b = ik(RIG.hombroD, T, RIG.L1, RIG.L2);
-  const mano = [b.E[0] + Math.cos(b.a2) * RIG.L2, b.E[1] + Math.sin(b.a2) * RIG.L2];
+  const T = pose.manoD || pose.mano || R.manoD;
+  const b = ik(R.hombroD, T, R.L1, R.L2);
+  const mano = [b.E[0] + Math.cos(b.a2) * R.L2, b.E[1] + Math.sin(b.a2) * R.L2];
   if (pose.jarra) dibujarJarra(g, mano, pose.jarra.inc, pose.jarra.nivel, "asa", t);
   if (pose.objD) pose.objD(g, mano, b.a2, t);
-  pieza(g, "brazoSup", RIG.hombroD, b.a1 - RIG.a1);
-  g.fillStyle = CAMISA;
+  pieza(g, P + "brazoSup", R.hombroD, b.a1 - R.a1);
+  g.fillStyle = R.camisa || CAMISA;
   g.beginPath(); g.arc(b.E[0], b.E[1], 6.2, 0, 6.283); g.fill();
-  pieza(g, "antebrazo", RIG.codoD, b.a2 - RIG.a2, b.E[0] - RIG.codoD[0], b.E[1] - RIG.codoD[1]);
+  pieza(g, P + "antebrazo", R.codoD, b.a2 - R.a2, b.E[0] - R.codoD[0], b.E[1] - R.codoD[1]);
   if (pose.jarra) dibujarJarra(g, mano, pose.jarra.inc, pose.jarra.nivel, "cuerpo", t);
   if (pose.objD2) pose.objD2(g, mano, b.a2, t);
   pose._manoD = mano; pose._manoI = manoI;

@@ -1,8 +1,13 @@
 # Banco de animaciones generales (por confirmar)
 
-Animaciones de la pantalla del alcoholímetro (1024 × 600, la de 7") para la espera (Stand By). Salen al azar entre los puestos del top 10. Todo está dibujado en directo con JavaScript, sin vídeos, para que pueda llevar las fotos y las tasas reales del ranking. Protagonista: el avatar de Guillermo Aladro.
+Animaciones de la pantalla del alcoholímetro (1024 × 600, la de 7") para la espera (Stand By). Salen al azar entre los puestos del top 10. Todo está dibujado en directo con JavaScript, sin vídeos, para que pueda llevar las fotos y las tasas reales del ranking. Protagonista: el avatar de Guillermo Aladro; en 50 de ellas sale con el avatar de Rodrigo.
 
-Hay **107 animaciones**, cada una con su ID de 5 cifras: 00000–00099 son las 100 nuevas, y 00100–00106 las 7 primeras. Entre todas suman unos 17 minutos.
+Hay **157 animaciones**, cada una con su ID de 5 cifras:
+- 00000–00099: las 100 de Guillermo.
+- 00100–00106: las 7 primeras.
+- 00107–00156: las 50 de Guillermo y Rodrigo juntos.
+
+Entre todas suman unos 26 minutos.
 
 **Para verlas:** abre `ver.html` en Chrome o Edge.
 - El desplegable pone la animación que elijas.
@@ -131,12 +136,62 @@ Todas empiezan y acaban en negro, así que cualquiera encaja detrás de cualquie
 | 00104 | El eructo | 7,4 s | Gigante entre los monumentos: un eructo los tumba, se deshincha y atrapa una lata. |
 | 00105 | Cohete de espuma | 10,0 s | Agita una lata, sale volando con la espuma, escribe ¡SALUD! y se estampa contra la pantalla. |
 | 00106 | El reto | 7,6 s | Podio con trofeo, el récord del bar y ¡PAGA AQUÍ! con una flecha al lector. Grita ¡BEBE! |
+| 00107 | Duelo de soplidos | 10,0 s | Soplan a la vez en dos medidores; las agujas suben a la par hasta que revientan y los dejan despeinados. |
+| 00108 | Tira y afloja | 9,8 s | Rodrigo gana a la cuerda; Guillermo le lanza una caña, Rodrigo suelta para cogerla y Guillermo sale despedido. |
+| 00109 | Sin parpadear | 10,0 s | Cara a cara sin parpadear entre moscas y viento. Pierde Guillermo con un guiño. |
+| 00110 | Carrera de camareros | 10,5 s | Carrera con bandeja saltando sillas y cubos. Gana Rodrigo… con la jarra vacía. |
+| 00111 | Ping-pong de chapas | 10,2 s | Peloteo con una chapa cada vez más rápido hasta que se incrusta en la pala de Guillermo. |
+| 00112 | Batalla de baile | 11,4 s | Se retan bailando por turnos con un aplausómetro; bailan juntos y el aplausómetro revienta. |
+| 00113 | Carrera de sacos | 10,6 s | Carrera en sacos de lúpulo; llegan a la vez y la foto finish sale en blanco y negro con los cuellos estirados. |
+| 00114 | Concurso de muecas | 10,5 s | Caras cada vez más raras con marcador de puntos. Gana Rodrigo con la cara de borracho. |
+| 00115 | Bumerán de posavasos | 10,0 s | El posavasos de Guillermo se pierde; el de Rodrigo vuelve como un bumerán y le da en la frente (¡TOC!). |
+| 00116 | Sumo cervecero | 10,8 s | Con barriga y cinturón se empujan en el círculo; Guillermo saca a Rodrigo, que sale rodando. |
+| 00117 | El brindis imposible | 10,0 s | Fallan el brindis a cámara lenta (hasta chocan las frentes) y al final ¡CHIN CHIN! con chispas y espuma. |
+| 00118 | Selfie con colado | 11,0 s | Guillermo se cuela en cada selfie de Rodrigo; al final se hacen uno juntos en una polaroid. |
+| 00119 | Choca esos cinco | 9,4 s | Fallan el choque de manos, arriba y abajo, hasta acertar con una explosión de luz. |
+| 00120 | Mudanza de barril | 9,7 s | Cargan un barril, se les escapa rodando, corren detrás… y vuelven huyendo con el barril persiguiéndolos. |
+| 00121 | Balancín catapulta | 9,9 s | Guillermo salta en el balancín y lanza a Rodrigo al cielo; vuelve a caer con una jarra. |
+| 00122 | Torre humana | 9,9 s | Rodrigo se sube a hombros de Guillermo para alcanzar una caña de la balda y se la bebe arriba. |
+| 00123 | Tándem | 8,3 s | Tándem por el paseo: Guillermo pedalea sudando y Rodrigo va de pasajero con un refresco y los pies en alto. |
+| 00124 | Paseo en barca | 10,3 s | Barca en un lago de cerveza al atardecer: uno rema, el otro pesca… y pica una lata. |
+| 00125 | Dúo de karaoke | 9,6 s | Cantan a dúo, las notas forman un corazón y a los dos se les rompe la voz a la vez. |
+| 00126 | El grupo | 9,8 s | Concierto: Guillermo a la batería de jarras y Rodrigo a la guitarra, con luces, humo y salto final. |
+| 00127 | Bigote dibujado | 10,4 s | Rodrigo se duerme en la barra y Guillermo le pinta un bigote; se ve en la cuchara y lo persigue. |
+| 00128 | Lata agitada | 9,9 s | Guillermo agita una lata a escondidas; a Rodrigo le explota la espuma en la cara y se ríen. |
+| 00129 | Hielo por la espalda | 9,6 s | Un cubito por la espalda de Rodrigo, que baila a saltos hasta que el hielo sale por abajo. |
+| 00130 | Apagón | 9,8 s | Se va la luz y solo se ven sus ojos; al volver, están abrazados del susto y disimulan. |
+| 00131 | Ladrón de tapas | 9,9 s | Guillermo le roba la aceituna y la croqueta a Rodrigo cuando se despista; Rodrigo le quita la caña. |
+| 00132 | El espejo | 10,3 s | Rodrigo hace de reflejo de Guillermo, que intenta pillarlo; al final Rodrigo bebe y él no. |
+| 00133 | Escondite | 9,9 s | Guillermo se esconde fatal (maceta, barril, columna) y Rodrigo lo pilla. |
+| 00134 | Guerra de espuma | 10,3 s | Bolas de espuma entre barriles hasta que acaban los dos blancos. |
+| 00135 | La última caña | 10,3 s | Se lanzan a cámara lenta a por la última caña y acaban compartiéndola con dos pajitas. |
+| 00136 | La cuenta | 9,8 s | Un tique larguísimo que se pasan de mano en mano; pagan juntos con dos tarjetas (¡PIIP!). |
+| 00137 | Hora feliz | 9,6 s | Suena la campana de la hora feliz, corren a la barra y llueven cañas. |
+| 00138 | El partido | 10,0 s | Nervios ante la tele del bar; gol, abrazo y la cerveza sale volando. |
+| 00139 | Otra ronda | 10,3 s | Las rondas se amontonan en la barra hasta que se dobla bajo el peso. |
+| 00140 | La última croqueta | 9,9 s | Esgrima de tenedores por la última croqueta, que salta a la boca de Rodrigo. |
+| 00141 | Camareros acróbatas | 9,9 s | Se deslizan jarras por la barra cada vez más rápido; la última pasa de largo. |
+| 00142 | Mímica | 10,5 s | Rodrigo hace mímica y Guillermo falla (¿TROMPETA? ¿PELUCA?) hasta acertar: ¡CERVEZA! |
+| 00143 | Relevo en la boquilla | 10,9 s | Soplan por turnos en la máquina y salen sus dos polaroids en el top 10. |
+| 00144 | Foto doble | 10,0 s | Rodrigo se cuela en el último segundo de la foto de Guillermo: la polaroid sale con los dos. |
+| 00145 | Fotomatón | 10,2 s | Cuatro fotos con caras distintas en el fotomatón; la tira sale por la ranura. |
+| 00146 | Marcador del bar | 10,4 s | Marcador GUILLERMO / RODRIGO de cañas; se adelantan por turnos y acaban empatados brindando. |
+| 00147 | Superhéroes | 9,9 s | Con capas verde y dorada salen volando; a Rodrigo se le engancha la capa en una farola. |
+| 00148 | Piratas | 10,3 s | En un barco pirata pescan un cofre del tesoro, y dentro hay latas. |
+| 00149 | Duelo del oeste | 10,2 s | Duelo con bola de paja rodando; desenfundan… jarras, y brindan. |
+| 00150 | Justa medieval | 9,6 s | Justa sobre barriles con barras de pan por lanzas, que se parten en migas. |
+| 00151 | Abracadabra | 10,3 s | Rodrigo hace desaparecer a Guillermo, que reaparece detrás de la barra tirando cañas. |
+| 00152 | Tango | 9,9 s | Tango con rosa en la boca, giro y pose final; Rodrigo se cae. |
+| 00153 | Montaña rusa | 10,2 s | Subida, caída y looping con las jarras llenas sin derramar una gota. |
+| 00154 | Globo aerostático | 10,2 s | Sueltan el barril de lastre para subir… y lloran viendo cómo revienta en el prado. |
+| 00155 | Submarinistas | 9,8 s | Con escafandras encuentran un barril hundido; salta el tapón y sale espuma. |
+| 00156 | Voleibol de playa | 9,4 s | Rodrigo remata, Guillermo se tira en plancha sin llegar y el balón le cae en la cabeza. |
 
 ## Cómo añadir una animación
 
 Los criterios y todo lo que se puede usar del motor están en `GUIA.md`.
 
-1. Crea un archivo `IIIII Nombre.js` en esta carpeta, con el siguiente ID libre (ahora el 00107).
+1. Crea un archivo `IIIII Nombre.js` en esta carpeta, con el siguiente ID libre (ahora el 00157).
 2. Todo el código va dentro de `(() => { ... })();`. Al final, la animación se apunta sola con `registrar({ id, nombre, crear })`.
 3. Tiene que empezar y acabar en negro, durar entre 6 y 12 s y tener su propio texto en pantalla.
 4. Añade el nombre del archivo en `lista.js`.
@@ -146,19 +201,20 @@ Los criterios y todo lo que se puede usar del motor están en `GUIA.md`.
 
 | Archivo | Qué es |
 |---|---|
-| `00000 … .js` – `00106 … .js` | Una animación por archivo |
+| `00000 … .js` – `00156 … .js` | Una animación por archivo |
 | `banco.js` | Registro de animaciones, la baraja y el orden de cada vuelta |
 | `lista.js` | Lista de archivos que carga `ver.html` |
-| `motor/base.js` | Todo lo común: textos, temblor, partículas, el avatar (esqueleto, caras, pelo dorado, gafas), objetos (lata, jarra, bolsa, billetes, trofeo), aura, rayos, rocas, bocadillos, focos y datos de ejemplo del ranking |
+| `motor/base.js` | Todo lo común: textos, temblor, partículas, los avatares (esqueleto, caras, pelo dorado, gafas; Guillermo por defecto y los demás con `registrarAvatar`), objetos (lata, jarra, bolsa, billetes, trofeo), aura, rayos, rocas, bocadillos, focos y datos de ejemplo del ranking |
 | `motor/pantallas-fijas.js` | BEBE, TOP 10 en llamas y Puesto (del 10 al 1). Al final van las pantallas provisionales del pago: Processing, Analyzing y Ranking |
 | `motor/avatar-guillermo.js` | El avatar de Guillermo troceado: piezas del cuerpo, 6 caras y su pelo dorado, en PNG base64 |
+| `motor/avatar-rodrigo.js` | El avatar de Rodrigo troceado igual: piezas del cuerpo, 6 caras y su pelo dorado. Se pinta con `quien: "rodrigo"` |
 | `ver.html` | Página de prueba: Stand By en bucle, selector de animaciones y pago simulado |
 | `GUIA.md` | Criterios para hacer animaciones y referencia del motor |
 | `herramientas/probar.py` | Prueba automática de una o varias animaciones |
 
 ## Pendiente
 
-- **Raspberry Pi 3B+:** no está probado en la Pi; en un ordenador va a 60 cuadros por segundo. Las más cargadas (muchos clones, luces o partículas) son las que habrá que vigilar.
+- **Raspberry Pi 3B+:** no está probado en la Pi; en un ordenador va a 60 cuadros por segundo. Las más cargadas (muchos clones, luces o partículas, y varias de las de dúo, que llevan escenarios completos) son las que habrá que vigilar. Muchas preparan textos y fondos en el primer cuadro, que es negro: en la Pi ese cuadro tardará algo más, pero no se nota.
 - **Programa de la Pi:** todavía no está metido en el programa (rama `programa-raspberry`), que tiene su propia pantalla en `programa/nucleo/pantalla.js`.
 - **Datos del ranking:** las fotos del top 10 son de ejemplo (el avatar) y los datos están en `datos`, dentro de `motor/base.js`. En la máquina los pondrá el programa; hay animaciones que ya usan el récord real del bar.
 - **Precio:** en El reto y en Piip el precio va escrito en la escena. En la máquina tendría que salir de la configuración.

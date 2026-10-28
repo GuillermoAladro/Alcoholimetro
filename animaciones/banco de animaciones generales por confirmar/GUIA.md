@@ -11,7 +11,7 @@ bibliotecas (nada de vídeos ni imágenes externas).
 
 ## Dónde está todo (en esta carpeta)
 - `motor/base.js` — todo lo común (léelo si dudas de algo; está comentado)
-- `motor/avatar-guillermo.js` — piezas del avatar (no lo abras: es base64)
+- `motor/avatar-guillermo.js` y `motor/avatar-rodrigo.js` — piezas de los avatares (no los abras: es base64)
 - `motor/pantallas-fijas.js` — BEBE, TOP 10, Puesto (ejemplos de escenas sin avatar); tiene `corona(g, w)`
 - `00000 … .js` – `00106 … .js` — las animaciones que ya hay (buenas referencias de estilo y ritmo:
   `00102 La tienda 24H.js`, `00101 Modo leyenda.js`)
@@ -29,7 +29,7 @@ bibliotecas (nada de vídeos ni imágenes externas).
    ser negros. Entradas/salidas típicas: entra/sale andando por un lado, se enciende/apaga un foco, iris, telón,
    fundido corto (0,3–0,6 s). Mejor una entrada/salida con gracia que un fundido sin más.
 4. Duración 6–12 s (la herramienta acepta 5–14). Ritmo: algo pasa cada segundo; un remate claro al final.
-5. Protagonista: el avatar de Guillermo. Otros personajes: solo clones del avatar (con otra cara, gafas, pelo dorado…)
+5. Protagonista: el avatar de Guillermo (y en las de dúo, Guillermo y Rodrigo). Otros personajes: solo clones del avatar (con otra cara, gafas, pelo dorado…)
    u objetos/animales dibujados sencillos. Nada de personas reales, marcas, logotipos, personajes o escenas
    famosas (películas, series, videojuegos, canciones con letra real). Nada de conducir bebido como chiste, violencia
    contra personas, contenido sexual, apuestas ni menores.
@@ -107,6 +107,19 @@ Unidades de avatar (las del recorte de frente): 78 de ancho × 232 de alto, pies
   con `rc` ≈ −0,35 (cabeza atrás) y `angLata` ≈ −1,6…−1,9.
 - Clones: llama a `pintarAvatar` varias veces con otras matrices y otras poses (otra cara, gafas, oro…).
 - Agacharse/aplastarse: `sy` < 1 en matAv; tumbado: `giro` ±π/2; de espaldas o de perfil NO hay.
+
+## Rodrigo (segundo avatar)
+- Se pinta igual que Guillermo con `quien: "rodrigo"` en la pose: `pintarAvatar(g, matAv(x, PIES, esc), { quien: "rodrigo", cara: "risa", ... }, t)`.
+  Mismas 6 caras, `oro`, `puntas`, `gafas`, objetos en las manos, `andar`, etc.
+- Aspecto: pelo castaño claro ondulado y más largo, barba corta, cazadora negra con camiseta blanca, vaqueros.
+  Guillermo: pelo corto oscuro, camisa negra. Se distinguen bien; no hace falta rotularlos (si un marcador o un cartel
+  pone sus nombres, «GUILLERMO» y «RODRIGO»).
+- Sus puntos (unidades de avatar) están en `avatar("rodrigo").rig`: `ojos` [[28, 47], [48, 47]], `bocaPos` [37, 64.5],
+  `frente` [38, 32], `cuello` [38, 80], hombros `hombroD` [66, 94] / `hombroI2` [10, 94], manos en reposo
+  `manoD` [68, 157] / `manoI` [9, 157], caderas [27, 152] / [50, 152]. Mide casi lo mismo (pies en y = 232, pelo ≈ y 6).
+  Para Guillermo, `avatar().rig` (o `RIG`). Para beber: `boca(rc, "rodrigo")`.
+- Dúo: lo normal es ponerlos a los lados (x ≈ 330 y 690, escala 1,4–1,6) para que la acción ocurra entre los dos.
+  Que los dos tengan papel y caras que reaccionen a lo que hace el otro; el remate puede ser para cualquiera de los dos.
 
 ## Utilidades (motor/base.js)
 - Matemáticas: `clamp, lerp, mezcla(a,b,k)` (puntos), `tramo(t, a, b)` (0→1 entre a y b), `eIn, eOut, eInOut,
