@@ -1,0 +1,94 @@
+name: Temporary avatar image import
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/import-avatars-20261028.yml]
+permissions:
+  contents: write
+jobs:
+  import:
+    if: github.repository == 'GuillermoAladro/Alcoholimetro'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Import verified avatar images
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import base64, gzip, hashlib, io, json, os, pathlib, subprocess, tempfile, time, urllib.request, urllib.error, zipfile
+          repo = os.environ['REPOSITORY']
+          api = 'https://api.github.com/repos/' + repo
+          key_path = '.avatar-transfer-20261028/public.pem'
+          payload_path = '.avatar-transfer-20261028/payload.json'
+          def request(method, path, data=None):
+              body = None if data is None else json.dumps(data).encode()
+              req = urllib.request.Request(api + path, data=body, method=method, headers={'Authorization': 'Bearer ' + os.environ['GH_TOKEN'], 'Accept': 'application/vnd.github+json', 'Content-Type': 'application/json', 'User-Agent': 'avatar-image-import'})
+              with urllib.request.urlopen(req, timeout=45) as response:
+                  raw = response.read()
+                  return json.loads(raw) if raw else None
+          def content(path):
+              try:
+                  return request('GET', '/contents/' + path + '?ref=main')
+              except urllib.error.HTTPError as exc:
+                  if exc.code == 404:
+                      return None
+                  raise
+          with tempfile.TemporaryDirectory() as tmp:
+              private = pathlib.Path(tmp) / 'private.pem'
+              subprocess.run(['openssl', 'genpkey', '-algorithm', 'RSA', '-pkeyopt', 'rsa_keygen_bits:4096', '-out', str(private)], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+              public = subprocess.check_output(['openssl', 'pkey', '-in', str(private), '-pubout'])
+              if content(key_path) or content(payload_path):
+                  raise RuntimeError('Temporary transfer paths already exist; refusing to overwrite.')
+              request('PUT', '/contents/' + key_path, {'message':'Publish temporary avatar transfer public key', 'branch':'main', 'content':base64.b64encode(public).decode()})
+              print('Public transfer key ready.', flush=True)
+              deadline = time.monotonic() + 540
+              payload = None
+              while time.monotonic() < deadline:
+                  payload = content(payload_path)
+                  if payload:
+                      break
+                  time.sleep(4)
+              if not payload:
+                  raise RuntimeError('No transfer payload received.')
+              envelope = json.loads(base64.b64decode(payload['content']))
+              encrypted = base64.b64decode(envelope['ciphertext'], validate=True)
+              packed_url = subprocess.run(['openssl','pkeyutl','-decrypt','-inkey',str(private),'-pkeyopt','rsa_padding_mode:oaep','-pkeyopt','rsa_oaep_md:sha256','-pkeyopt','rsa_mgf1_md:sha256'], input=encrypted, capture_output=True, check=True).stdout
+              url = gzip.decompress(packed_url).decode()
+              if not url.startswith('https://'):
+                  raise RuntimeError('HTTPS source required.')
+              try:
+                  with urllib.request.urlopen(url, timeout=90) as response:
+                      archive_bytes = response.read(5000000)
+              except Exception:
+                  raise RuntimeError('Temporary source download failed.') from None
+              if hashlib.sha256(archive_bytes).hexdigest() != 'b190e980b7cd8532ac51ab78e0e9efb6766e277f481c64661d875ef20a1cf297':
+                  raise RuntimeError('Archive checksum mismatch.')
+              expected = {'Avatar Rodrigo.png':'14fe217ee1f8772e9e0b1886103bc196c9fd02ad7e48fc62b36bcfcaae396200', 'Avatar Marcos.png':'99088c7c82ee6985ea0f37f095ddc6b4bc8dd65ccbf68ef9eb7e130d34c88678'}
+              entries = []
+              with zipfile.ZipFile(io.BytesIO(archive_bytes)) as archive:
+                  if set(archive.namelist()) != set(expected):
+                      raise RuntimeError('Unexpected archive entries.')
+                  for name, digest in expected.items():
+                      data = archive.read(name)
+                      if hashlib.sha256(data).hexdigest() != digest or not data.startswith(b'\x89PNG\r\n\x1a\n'):
+                          raise RuntimeError('Image verification failed.')
+                      blob = request('POST', '/git/blobs', {'content':base64.b64encode(data).decode(), 'encoding':'base64'})
+                      entries.append({'path':'animaciones/' + name, 'mode':'100644', 'type':'blob', 'sha':blob['sha']})
+              entries.extend([{'path':key_path,'mode':'100644','type':'blob','sha':None}, {'path':payload_path,'mode':'100644','type':'blob','sha':None}])
+              for attempt in range(3):
+                  head = request('GET', '/git/ref/heads/main')['object']['sha']
+                  base_tree = request('GET', '/git/commits/' + head)['tree']['sha']
+                  tree = request('POST', '/git/trees', {'base_tree':base_tree,'tree':entries})
+                  commit = request('POST', '/git/commits', {'message':'Add Avatar Rodrigo and Avatar Marcos character sheets', 'tree':tree['sha'], 'parents':[head]})
+                  try:
+                      request('PATCH', '/git/refs/heads/main', {'sha':commit['sha'],'force':False})
+                      print('Avatar image commit: ' + commit['sha'], flush=True)
+                      break
+                  except urllib.error.HTTPError as exc:
+                      if attempt == 2 or exc.code not in (409,422):
+                          raise
+                      time.sleep(2)
+          PY
