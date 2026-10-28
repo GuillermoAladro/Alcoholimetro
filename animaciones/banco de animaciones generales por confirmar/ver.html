@@ -1,0 +1,249 @@
+<title>Banco de animaciones</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&family=Lilita+One&display=swap">
+<style>
+  /* Maqueta: la pantalla de 7" (1024 × 600) metida en un marco, con los mandos de prueba debajo. Un solo aspecto, oscuro. */
+  :root {
+    --fondo: #0d0b10;
+    --panel: #18151c;
+    --linea: #2b2631;
+    --tinta: #f2eee6;
+    --suave: #9a91a5;
+    --verde: #2bff5b;
+    --verde-osc: #0a3a1a;
+    --display: "Big Shoulders Display", "Arial Narrow", Impact, sans-serif;
+    --texto: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    color-scheme: dark;
+  }
+  html, body { height: 100%; }
+  body {
+    background: var(--fondo);
+    color: var(--tinta);
+    font-family: var(--texto);
+    box-sizing: border-box;
+    min-height: 100%;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: 14px;
+  }
+  .app { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+  .marco {
+    width: min(100%, calc((100dvh - 150px) * 1024 / 600));
+    min-width: min(100%, 320px);
+    aspect-ratio: 1024 / 600;
+    max-width: 100%;
+    padding: 10px;
+    box-sizing: content-box;
+    background: #050506;
+    border: 1px solid var(--linea);
+    border-radius: 10px;
+    box-shadow: 0 0 0 4px #121014, 0 18px 50px rgba(0, 0, 0, .55);
+  }
+  @media (max-width: 520px) { .marco { padding: 5px; width: calc(100% - 10px); } }
+  canvas { width: 100%; height: 100%; display: block; background: #000; cursor: pointer; touch-action: manipulation; }
+  .mandos {
+    width: min(100%, 1044px);
+    display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px;
+    justify-content: space-between;
+  }
+  .estado { display: flex; align-items: center; gap: 10px; min-width: 0; }
+  .luz { width: 10px; height: 10px; border-radius: 50%; background: var(--verde); box-shadow: 0 0 10px var(--verde); flex: none; }
+  .fase { font-family: var(--display); font-weight: 900; font-size: 22px; letter-spacing: 1.5px; }
+  .escena { font-size: 14px; color: var(--suave); font-variant-numeric: tabular-nums; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .botones { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; min-width: 0; max-width: 100%; }
+  .saltos { display: flex; flex-wrap: wrap; border: 1px solid var(--linea); border-radius: 8px; overflow: hidden; background: var(--linea); gap: 1px; max-width: 100%; }
+  .saltos button {
+    font: 700 14px/1 var(--texto); font-variant-numeric: tabular-nums;
+    color: var(--suave); background: var(--panel); border: 0;
+    padding: 10px 12px; cursor: pointer; flex: 1 0 auto; white-space: nowrap;
+  }
+  .saltos button[aria-current="true"] { color: #04140a; background: var(--verde); }
+  .pagar {
+    font: 800 15px/1 var(--texto); color: #04140a; background: var(--verde);
+    border: 0; border-radius: 8px; padding: 11px 16px; cursor: pointer;
+  }
+  .pagar:disabled { background: var(--linea); color: var(--suave); cursor: default; }
+  button:focus-visible { outline: 2px solid var(--tinta); outline-offset: 2px; }
+  .sigue { margin: 0; font-size: 14px; color: var(--tinta); text-align: center; font-variant-numeric: tabular-nums; }
+  .nota { margin: 0; font-size: 13px; color: var(--suave); text-align: center; max-width: 70ch; line-height: 1.5; }
+  kbd { font: 700 12px/1 var(--texto); border: 1px solid var(--linea); border-radius: 4px; padding: 2px 5px; color: var(--tinta); }
+</style>
+
+<main class="app">
+  <div class="marco">
+    <canvas id="pantalla" width="1024" height="600" aria-label="Pantalla del alcoholímetro (toca para simular un pago)"></canvas>
+  </div>
+  <div class="mandos">
+    <div class="estado">
+      <span class="luz" id="luz"></span>
+      <span class="fase" id="fase">STAND BY</span>
+      <span class="escena" id="escena">BEBE</span>
+    </div>
+    <div class="botones">
+      <div class="saltos" id="saltos" role="group" aria-label="Ir a una escena de Stand By"></div>
+      <button id="pagar" class="pagar">Simular pago con tarjeta</button>
+    </div>
+  </div>
+  <p class="sigue" id="sigue"></p>
+  <p class="nota">Cada vuelta: BEBE → TOP 10 → del puesto 10 al 1, con una animación al azar del banco después de cada puesto (no se repite ninguna hasta que han salido todas). Todas empiezan y acaban en negro. Los botones ponen ya esa animación; ↺ empieza otra vuelta. Toca la pantalla o pulsa <kbd>P</kbd> para pagar, <kbd>N</kbd> para pasar a la siguiente. Processing, Analyzing y Ranking siguen provisionales. En el móvil, gíralo para verla en grande.</p>
+</main>
+
+<script src="motor/avatar-guillermo.js"></script>
+<script src="motor/base.js"></script>
+<script src="motor/pantallas-fijas.js"></script>
+<script src="El%20borracho.js"></script>
+<script src="Modo%20leyenda.js"></script>
+<script src="La%20tienda%2024H.js"></script>
+<script src="Monumentos%20de%20latas.js"></script>
+<script src="El%20eructo.js"></script>
+<script src="Cohete%20de%20espuma.js"></script>
+<script src="El%20reto.js"></script>
+<script src="banco.js"></script>
+<script>
+"use strict";
+/*
+ * Página de prueba del banco de animaciones: la pantalla de 1024 × 600 con Stand By en bucle y el pago simulado.
+ * En la máquina, quien cambia de fase es el programa de la Pi; aquí lo hace este "director" de prueba.
+ */
+const lienzo = document.getElementById("pantalla");
+const ctx = lienzo.getContext("2d", { alpha: false });
+
+const FLUJO = {
+  PROCESSING: { crear: () => new EscenaPagado(), luego: "ANALYZING", nombre: "Pago aceptado" },
+  ANALYZING: { crear: () => new EscenaAnaliza(), luego: "RANKING", nombre: "Sopla y foto" },
+  RANKING: { crear: () => new EscenaRanking(), luego: "STAND BY", nombre: "Resultado y ranking" },
+};
+
+const dir = {
+  fase: "STAND BY", vuelta: [], i: 0, escena: null, suelta: null, flash: 0,
+  get actual() { return this.suelta || this.vuelta[this.i]; },
+  /** Empieza una vuelta nueva de Stand By (tras arrancar y tras cada prueba). */
+  arrancarEspera() {
+    this.fase = "STAND BY"; this.vuelta = vueltaNueva(); this.i = 0; this.suelta = null;
+    this.escena = this.vuelta[0].crear();
+    hud();
+  },
+  /** Mandos de prueba: pone ya una animación del banco; al acabar, la vuelta sigue por donde iba. */
+  probar(item) {
+    if (this.fase !== "STAND BY") return;
+    this.suelta = Object.assign({ tipo: "animacion" }, item); this.escena = item.crear();
+    hud();
+  },
+  avanzarEspera() {
+    this.suelta = null; this.i++;
+    if (this.i >= this.vuelta.length) { this.vuelta = vueltaNueva(); this.i = 0; }
+    this.escena = this.vuelta[this.i].crear();
+    hud();
+  },
+  irA(fase) {
+    this.fase = fase; this.escena = FLUJO[fase].crear(); this.suelta = null;
+    hud();
+  },
+  pago() {
+    if (this.fase !== "STAND BY") return; // el lector solo cobra en Stand By
+    this.flash = 0.18;
+    this.irA("PROCESSING");
+  },
+  siguiente() {
+    if (this.fase === "STAND BY") this.avanzarEspera();
+    else this.avanzarFlujo();
+  },
+  avanzarFlujo() {
+    const sig = FLUJO[this.fase].luego;
+    if (sig === "STAND BY") this.arrancarEspera();
+    else this.irA(sig);
+  },
+  cuadro(g, dt) {
+    this.escena.actualizar(dt);
+    this.escena.dibujar(g);
+    if (this.escena.terminada) this.siguiente();
+  },
+};
+// ==================================================================================================== mandos de prueba
+const $fase = document.getElementById("fase"), $escena = document.getElementById("escena"), $pagar = document.getElementById("pagar");
+const $sigue = document.getElementById("sigue"), $cajaSaltos = document.getElementById("saltos");
+{
+  const b = document.createElement("button");
+  b.id = "vuelta"; b.textContent = "↺"; b.title = "Empezar una vuelta nueva (BEBE)"; b.setAttribute("aria-label", "Empezar una vuelta nueva");
+  b.addEventListener("click", () => { if (dir.fase === "STAND BY") dir.arrancarEspera(); });
+  $cajaSaltos.appendChild(b);
+}
+BANCO.forEach((e, i) => {
+  const b = document.createElement("button");
+  b.id = "ir" + i; b.dataset.ir = i; b.textContent = e.nombre; b.title = e.nombre;
+  b.addEventListener("click", () => dir.probar(e));
+  $cajaSaltos.appendChild(b);
+});
+const $saltos = [...document.querySelectorAll("[data-ir]")];
+function hud() {
+  $fase.textContent = dir.fase;
+  const enEspera = dir.fase === "STAND BY";
+  const a = enEspera ? dir.actual : null;
+  $escena.textContent = enEspera ? a.nombre : FLUJO[dir.fase].nombre;
+  const sig = enEspera ? dir.vuelta[dir.i + 1] : null;
+  $sigue.textContent = enEspera
+    ? `Paso ${dir.i + 1} de ${dir.vuelta.length}${dir.suelta ? " (animación puesta a mano)" : ""} · Después: ${sig ? sig.nombre : "vuelta nueva (BEBE)"}`
+    : "Prueba en curso: al acabar vuelve a Stand By";
+  $saltos.forEach((b) => b.setAttribute("aria-current", enEspera && a.tipo === "animacion" && BANCO[+b.dataset.ir].nombre === a.nombre ? "true" : "false"));
+  $pagar.disabled = !enEspera;
+  $pagar.textContent = enEspera ? "Simular pago con tarjeta" : "Prueba en curso…";
+}
+$pagar.addEventListener("click", () => dir.pago());
+lienzo.addEventListener("click", () => dir.pago());
+addEventListener("keydown", (ev) => {
+  if (ev.target.closest && ev.target.closest("button") && (ev.key === " " || ev.key === "Enter")) return;
+  if (ev.key === "p" || ev.key === "P" || ev.key === " ") { ev.preventDefault(); dir.pago(); }
+  else if (ev.key === "n" || ev.key === "N" || ev.key === "ArrowRight") dir.siguiente();
+});
+
+// ==================================================================================================== bucle
+let ultimo = 0;
+function bucle(ts) {
+  requestAnimationFrame(bucle);
+  if (window.ALC_PRUEBAS && window.ALC_PRUEBAS.congelado) return;
+  const dt = Math.min(0.05, (ts - ultimo) / 1000 || 0.016);
+  ultimo = ts;
+  const [ox, oy, rr] = desplazamientoCamara(dt);
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
+  ctx.globalAlpha = 1; ctx.globalCompositeOperation = "source-over";
+  ctx.fillStyle = "#000"; ctx.fillRect(0, 0, W, H);
+  ctx.setTransform(1, 0, 0, 1, ox, oy);
+  if (rr) { ctx.translate(W / 2, H / 2); ctx.rotate(rr); ctx.translate(-W / 2, -H / 2); }
+  dir.cuadro(ctx, dt);
+  if (dir.flash > 0) {
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.fillStyle = `rgba(255,255,255,${dir.flash / 0.18})`; ctx.fillRect(0, 0, W, H);
+    dir.flash -= dt;
+  }
+}
+
+// para las pruebas automáticas: pinta una escena en un instante concreto
+window.ALC_PRUEBAS = {
+  congelado: false, dir, datos,
+  pintar(crear, t) {
+    this.congelado = true;
+    const e = crear();
+    for (let s = 0; s < t; s += 1 / 60) e.actualizar(1 / 60);
+    camara.t = camara.dur;
+    ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.fillStyle = "#000"; ctx.fillRect(0, 0, W, H);
+    e.dibujar(ctx);
+  },
+  BANCO, vueltaNueva,
+  escenas: { EscenaBebe, EscenaBorracho, EscenaTop10, EscenaPuesto, EscenaLeyenda, EscenaTienda, EscenaMonumentos, EscenaEructo, EscenaCohete, EscenaReto, EscenaPagado, EscenaAnaliza, EscenaRanking },
+};
+
+// las fuentes llegan de Google Fonts; en la Pi irán en local (como ya hace el kiosco)
+function limpiarCaches() { cachesTexto.forEach((m) => m.clear()); }
+if (document.fonts) document.fonts.addEventListener("loadingdone", limpiarCaches);
+const fuentes = document.fonts
+  ? Promise.all([document.fonts.load(`900 100px "Big Shoulders Display"`), document.fonts.load(`800 20px "Archivo"`), document.fonts.load(`600 20px "Archivo"`), document.fonts.load(`100px "Bangers"`), document.fonts.load(`100px "Lilita One"`)]).catch(() => {})
+  : Promise.resolve();
+Promise.race([fuentes, new Promise((r) => setTimeout(r, 2500))]).then(() => {
+  limpiarCaches();
+  dir.arrancarEspera();
+  requestAnimationFrame(bucle);
+});
+</script>
+
