@@ -1,6 +1,6 @@
 "use strict";
 /*
- * Avatar de Marcos troceado para animarlo (hoja «animaciones/Avatar Marcos.png»)
+ * Avatar de Marcos troceado para animarlo (hoja «animaciones/Avatar Marcos.png», ya retirada del repo: sigue en el historial de git)
  *
  * Mismas piezas que el de Guillermo (torso, brazos en dos piezas, piernas, 6 caras con su pelo dorado), a la misma
  * escala: 77 × 232 unidades con los pies en y = 232. Pelo rizado oscuro, camiseta negra de manga corta (brazos

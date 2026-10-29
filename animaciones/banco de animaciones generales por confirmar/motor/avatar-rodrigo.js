@@ -1,6 +1,6 @@
 "use strict";
 /*
- * Avatar de Rodrigo troceado para animarlo (hoja «animaciones/Avatar Rodrigo.png»)
+ * Avatar de Rodrigo troceado para animarlo (hoja «animaciones/Avatar Rodrigo.png», ya retirada del repo: sigue en el historial de git)
  *
  * Mismas piezas que el de Guillermo (torso, brazos en dos piezas, piernas, 6 caras con su pelo dorado), a la misma
  * escala: 77 × 232 unidades con los pies en y = 232. Lleva cazadora negra con camiseta blanca, vaqueros y barba.
