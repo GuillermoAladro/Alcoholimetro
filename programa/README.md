@@ -14,7 +14,7 @@ Programa de la máquina: cobra con el SumUp Solo, mide con el ZE29A, hace la fot
 6. **Resultado** (20 s): la foto tipo polaroid, el valor contando hacia arriba, el titular según el puesto, «Puesto 120 de 360 · Top 34 %» con una barra del ranking, y fuegos, confeti o burbujas según el puesto (récord, top 10, alto, medio, bajo o cero).
 7. **Vuelta a la espera.**
 
-**El monigote** (`nucleo/monigote.js`): la ilustración anterior del avatar de Guillermo (camisa negra remangada y pantalón gris; retirada del repo el 27-10, está en el historial de git), troceada y animada. El avatar nuevo es `animaciones/Avatar GuillermoAladro.jpg`. Acompaña cada fase:
+**El monigote** (`nucleo/monigote.js`): la ilustración anterior del avatar de Guillermo (camisa negra remangada y pantalón gris; retirada del repo el 27-10, está en el historial de git), troceada y animada. El avatar actual es `animaciones/Avatar Guillermo Aladro.png` (29-10; el anterior, `Avatar GuillermoAladro.jpg`, sigue en el historial de git). Acompaña cada fase:
 - **Espera:** saluda, señala el lector, saca bíceps, levanta el pulgar y se hace un selfie, con bocadillos: «¡Hola! ¿Te atreves?», «Paga con tarjeta o con el móvil»…
 - **Pago:** celebra y levanta el pulgar.
 - **Preparando:** estira, calentando.
