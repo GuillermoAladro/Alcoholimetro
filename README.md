@@ -26,6 +26,7 @@ Proyecto personal de ingeniería para diseñar y construir un alcoholímetro com
 - `MONTAJE-PASO-A-PASO.md` – cómo montar el circuito por fases, con las piezas de cada fase y las pruebas (con criterio) que hay que pasar antes de seguir
 - `MONTAJE-GENERAL.md` – esquema de conexión de todos los componentes: puerto, borne o pin exacto de cada cable (figuras en `montaje-general/`)
 - `componentes/` – ficha de cada uno de los 31 componentes de la hoja de compra: datasheets, problemas conocidos y notas de uso ([índice](componentes/README.md))
+- `avatares SVG/` – avatares vectoriales con fondo transparente para la pantalla: hoja completa y una pieza por vista y expresión ([índice](avatares%20SVG/README.md))
 - `carcasa/` – diseño y planos de la carcasa
 - `hardware/` – esquemas electrónicos
 - `firmware/` – código del controlador y la interfaz
