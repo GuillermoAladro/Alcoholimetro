@@ -1,0 +1,48 @@
+{
+  "source": "../01-frontal.svg",
+  "source_sha256": "d89071c687d7edfb18d0aa0915db5c4b8bfeab9b37a8a76c5223cd69312755c1",
+  "duration_seconds": 12,
+  "dimensions": [
+    1280,
+    900
+  ],
+  "camera": "frontal",
+  "glass_projection": "depth foreshortening; rim pinned to mouth",
+  "vector_only": true,
+  "original_detail_paths": 26237,
+  "fragment_paths": {
+    "cuerpo": 11759,
+    "brazo": 1359,
+    "antebrazo": 1269
+  },
+  "animation": "SMIL; two-bone inverse kinematics; 361 sampled keys; seamless pose loop",
+  "new_artwork": [
+    "bar interior",
+    "shirt occlusion repair",
+    "hand grip",
+    "glass, foam and beer"
+  ],
+  "files": [
+    "Guillermo-Aladro-cerveza-frontal.svg",
+    "Guillermo-Aladro-cerveza-frontal.mp4",
+    "Guillermo-Aladro-cerveza-frontal-preview.png"
+  ],
+  "validation": {
+    "browser": "153.0.8010.0",
+    "console_errors": [],
+    "video_frames": 288,
+    "video_fps": 24,
+    "rendered_from": "Guillermo-Aladro-cerveza-frontal.svg; SMIL timeline sampled directly",
+    "source_vector_paths_copied_verbatim": true,
+    "svg_xml_valid": true,
+    "unique_ids": 8234,
+    "unresolved_internal_references": 0,
+    "embedded_raster_images": 0,
+    "source_scripts": 0,
+    "video_codec": "H.264 / yuv420p",
+    "duration_seconds": 12,
+    "pose_loop_equal_at_0_and_12_seconds": true,
+    "camera": "frontal",
+    "projected_limb_motion": true
+  }
+}
