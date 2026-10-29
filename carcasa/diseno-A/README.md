@@ -9,7 +9,8 @@
 | Archivo | Qué es |
 |---|---|
 | `Visor_3D.html` | Visor 3D sin conexión (se abre con doble clic). Cada pieza se puede seleccionar y ocultar. Se mueven el cajón de pajitas, la tapa, la tapa interior y el cajón de componentes, y hay un botón para ocultar o ver la electrónica |
-| `Conexiones_3D.html` | Todos los componentes sobre una mesa con las 38 conexiones: cada cable con su terminal (faston, puntera, Dupont, XH…), su número W y la verificación de tensiones, corrientes, fusibles y masas |
+| `Conexiones_3D.html` | Dos pestañas. **Programa:** la Raspberry Pi simulada corre el programa real (`programa/`) y su pantalla se ve en la mesa; se paga con un botón, se sopla, se hace la foto y se ven el resultado y el ranking, con averías y cortes de luz. **Conexiones:** todos los componentes sobre una mesa con las 38 conexiones, cada cable con su terminal (faston, puntera, Dupont, XH…), su número W y la verificación de tensiones, corrientes, fusibles y masas. Se abre sin internet |
+| `FreeCAD/Alcoholimetro_A_completo.step` | **La máquina entera para FreeCAD** (o cualquier CAD): 286 piezas con nombre y color en 9 grupos, cables y tubos incluidos. Ver su [LEEME](FreeCAD/LEEME.md) |
 | `CAD_A_Compacta/Conjunto_A.step` | La máquina entera montada (piezas fabricadas y compradas) para cualquier CAD: Fusion 360, SolidWorks, FreeCAD, Onshape… |
 | `CAD_A_Compacta/STEP_piezas/` | Un STEP por pieza a fabricar |
 | `CAD_A_Compacta/DXF_corte/` | Un DXF por chapa, listo para el láser (capa CORTE y una etiqueta con el número) |
@@ -26,7 +27,7 @@ Todas las chapas son **planas**: acero DC01 de 1,5 mm cortado por láser y unido
 
 | | |
 |---|---|
-| Medidas (ancho × fondo × alto) | **220 × 103 × 443 mm** (más 5 mm del policarbonato de delante) |
+| Medidas (ancho × fondo × alto) | **220 × 100 × 443 mm** (más 5 mm del policarbonato de delante) |
 | Frente, de arriba abajo | Cámara y Solo · boquilla · pantalla · 3 ranuras de pajitas |
 | Alturas desde la base | Cámara 375 · Solo 353 · boquilla 325 · pantalla 237 mm |
 | Tapa | Abatible hacia la izquierda, 1 cerradura, con faldón delantero y derecho; debajo, una tapa interior plana que entra deslizando por una ranura del lateral derecho |
@@ -74,7 +75,7 @@ Todas las chapas son **planas**: acero DC01 de 1,5 mm cortado por láser y unido
   - delante, 12 mm (policarbonato interior 5 + tuercas 3,2 + aire);
   - izquierda, 3,5 mm;
   - derecha, 7 mm (brida de la C14);
-  - detrás, 14 mm.
+  - detrás, 11 mm.
 
 **230 V.**
 - La toma C14 va en el lateral derecho **del cajón** y se enchufa por una ventana de la carcasa (38 × 46).
@@ -88,7 +89,7 @@ Todas las chapas son **planas**: acero DC01 de 1,5 mm cortado por láser y unido
 
 **Tierra.**
 - C14 → espárrago del cajón → borne FG de la fuente.
-- Puente con faston al espárrago de la carcasa, detrás del cajón. El faston queda arriba, a mano.
+- Puente con faston al espárrago de la carcasa (M4 cortado a 8 mm), detrás del cajón. El faston queda arriba, a mano.
 
 ## 3. La tapa
 
@@ -187,7 +188,7 @@ Todas las chapas son **planas**: acero DC01 de 1,5 mm cortado por láser y unido
   5. Pon los 18 tirafondos desde dentro, cada uno con su arandela, y apriétalos con una llave de vaso de 10.
 - **Quitarla:** solo se puede desde dentro. Por fuera no queda ninguna cabeza a la vista.
 - En el 3D solo están los agujeros. Los tirafondos, tacos y arandelas están en la lista de compra.
-- Las cabezas sobresalen 6 mm por dentro. Por eso el cajón de pajitas tiene 8 mm menos de fondo y el cajón de componentes pasa a 8 mm de ellas.
+- Las cabezas sobresalen 6 mm por dentro. Por eso el cajón de pajitas tiene 8 mm menos de fondo y el cajón de componentes pasa a 5 mm de ellas.
 
 ## 5. Agujeros y pasos de cable
 

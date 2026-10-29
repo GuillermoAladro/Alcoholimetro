@@ -2,7 +2,50 @@
 
 Decisiones que afectan a todo el proyecto. Lo más nuevo va arriba. Si un documento del repositorio dice otra cosa, manda lo que pone aquí.
 
+## 27-10-2026
+
+### Carcasa más plana: 100 mm de fondo en vez de 103
+
+Guillermo pide bajar el fondo a 100 mm. Queda en **220 × 100 × 443 mm**, más los 5 mm del policarbonato de delante.
+- Los 3 mm salen del **hueco de detrás del cajón de componentes**, que pasa de 14 a 11 mm. El cajón, su interior y todo lo que lleva dentro no se mueven.
+- **Espárrago de tierra de la carcasa: de 10 a 8 mm** (del mismo kit M4×20, cortado). Con 10 mm quedaba a 1 mm de la trasera del cajón; con 8 mm queda a 3 mm.
+- El **puente de tierra W10** se recoloca detrás del cajón.
+- **Cajón de pajitas:** 3 mm menos de fondo, porque mantiene los 8 mm libres para las cabezas de los tirafondos.
+- Holguras con la trasera del cajón: pasamuros de la antena a 2,3 mm, espárrago de tierra a 3 mm, cabezas de los tirafondos a 5 mm (antes 8).
+- El modelo sigue dando 0 choques y los barridos de tapa, tapa interior y cajones salen limpios. Los cables tienen los mismos 5 avisos que con 103 mm, todos de los tubos del soplido.
+- Para aplanar más, lo siguiente sería una fuente más fina que la LRS-50-5 (31,5 mm), que es lo que marca el fondo del cajón.
+
 ## 26-10-2026
+
+### Programa v2 para la Raspberry Pi (`programa/`)
+
+- **Sustituye a `main.py`, `ze29a.py` y `prueba_sensor.py`** del Project. Está en JavaScript (Node 20 en la Pi) y la pantalla es Chromium a pantalla completa. El mismo código corre en la Pi y en el banco 3D (`carcasa/diseno-A/Conexiones_3D.html`, pestaña **Programa**), con el hardware simulado.
+- **Qué hace:**
+  - En espera pasa el top 10 con sus fotos y su valor, y anima a jugar.
+  - El Solo pide tarjeta todo el rato. Al pagar: precalentar, «sopla» con una barra, cuenta atrás de 5 s con la cámara en directo, foto, resultado con el puesto («puesto 120 de 360 · top 34 %») y celebración.
+  - Las fotos del top 10 se guardan siempre. Las demás se borran a las 24 h. El valor se queda en el ranking para siempre.
+- **Avatar de Guillermo** (27-10): `animaciones/Avatar GuillermoAladro.jpg`, hoja de personaje en 3D estilo Bitmoji (camisa negra, vaqueros, zapatillas): cuerpo entero de frente, 3/4, perfil y espalda, y seis caras (sonrisa, risa, sorpresa, borracho, dormido y guiño). Es la referencia para generar con IA de vídeo las ~100 animaciones de la pantalla. Sustituye a la ilustración anterior (camisa remangada, brazos cruzados) y a su versión 3D "hinchada" (`animaciones/avatar-3d/`), retiradas del repo; siguen en el historial de git.
+- **Avatares nuevos** (29-10): hojas de personaje en `animaciones/` (en `main` están las 9: Carla, Rodri, Laura, Marta, Paradigma, Sara Saez, Gabacho, Guillermo Aladro y Yorgi). La de Guillermo pasa a ser `animaciones/Avatar Guillermo Aladro.png` (camiseta negra, vaqueros, zapatillas y seis caras) y sustituye a `Avatar GuillermoAladro.jpg`, retirada del repo; sigue en el historial de git.
+- **Monigote presentador** (pedido el 26-10): hoy el programa (`nucleo/monigote.js` + `nucleo/monigote_fotos.js`) aún anima la ilustración anterior troceada en piezas (cabeza con nueve caras, torso, mangas, manos), a la espera de los clips del avatar nuevo. Antes hubo una versión dibujada en código (caricatura, descartada) y otra sacada de su vídeo sin camiseta (descartada).
+- **Unidad: g/L** (el valor del sensor ÷ 100). El encargo decía «g/cl», que no es una unidad de alcoholemia. Sin conversión a mg/L (H01, 6.1-S F14) y sin frases sobre conducir (H02).
+- **Foto opcional sin botón:** se tapa la cámara durante la cuenta atrás. Enseñar las caras del top 10 en un bar puede necesitar consentimiento expreso (H17 y H18): consultarlo antes de instalar. Con `"fotos": false` funciona sin fotos.
+- **Robustez (máquina sola en un bar):**
+  - systemd la reinicia siempre. Hay un perro guardián interno y otro de hardware, y se reinicia si una fase no avanza. Reinicio diario a las 05:00.
+  - Diario de cobros con fsync: tras un apagón, el pago sin prueba se convierte en prueba pendiente, como mucho 2 veces y dentro de 5 min. Si no, se reembolsa (más tarde, quien pagó seguramente se ha ido).
+  - Un pago lento (PIN) nunca se da por caducado. Una respuesta perdida se busca por `foreign_transaction_id` antes de anular el cobro.
+- **Dos revisiones independientes (26-10):**
+  - La primera encontró 12 fallos: pago lento (PIN) cerrado como caducado, pruebas gratis sin fin en un bucle de reinicios, reembolso tras ver el resultado, la revisión de fondo cancelando el cobro de la persona que está delante, entre otros.
+  - La segunda, sobre el cobro ya corregido, encontró 11 más: un pago descubierto tarde que se daba como prueba a otro, un pago que se quedaba en la cola, reembolsos que se daban por imposibles a los 40 min, un portal cautivo que llenaba el diario, entre otros.
+  - Todos corregidos, cada uno con su prueba (`pruebas/revision.test.js` y `revision2.test.js`), y un fuzz de horas de máquina al azar (`pruebas/fuzz.js`).
+- **Pruebas:**
+  - 76 pruebas automáticas con reloj virtual (300 partidas seguidas, apagones a mitad, tarjeta llena, UART con ruido…).
+  - Prueba de extremo a extremo con Chromium y prueba del banco 3D.
+- **Sin probar con hardware real** (`programa/README.md`, apartado 9):
+  - Las rutas de SumUp y la duración de un cobro.
+  - El ZE29A real.
+  - Los metadatos de `rpicam-vid`.
+  - Los milisegundos por cuadro en la Pi 3B+.
+- **La Affiliate Key de SumUp pasa a ser obligatoria:** sin ella el programa no cobra.
 
 ### Componentes a tamaño real en el CAD y conexiones comprobadas una a una
 

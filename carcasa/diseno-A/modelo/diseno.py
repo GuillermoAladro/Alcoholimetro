@@ -341,7 +341,8 @@ def construir(spec):
         m.compra("H02", "Tope de goma 10×3", place_parts(C.tope_goma((0, -1, 0)), at=(x, Ky1 + 0.5 + TOPE, Kz0 + Hk / 2)))
     # espárrago de tierra de la carcasa: en la trasera, detrás del cajón
     pe_h = (W / 2 - 60, D - T, Ktop - 25)
-    m.compra("H07", "Espárrago de tierra M4×10 (carcasa)", place_parts(C.esparrago_m4(10, (0, -1, 0)), at=pe_h), electrico=True)
+    m.compra("H07", "Espárrago de tierra M4 cortado a 8 mm (carcasa)", place_parts(C.esparrago_m4(8, (0, -1, 0)), at=pe_h), electrico=True,
+             notas="Del kit M4×20, cortado a 8 mm: con 11 mm detrás del cajón, uno de 10 quedaría a 1 mm de su trasera")
     m.cotas["pe_carcasa"] = pe_h
     # silentblocks
     for x, y in sb_pos:
@@ -415,7 +416,7 @@ def construir(spec):
           notas=f"Recorte de la toma C14 ({chh + 0.4:.2f} × {cw + 0.4:.2f}, ancho × alto) y 2 taladros M3 a 36 mm, uno encima de otro")
     # sin asa: dos asideros (chapa de 3 mm con agujero para dos dedos) a ras del borde de arriba, por dentro de los laterales
     for nom, x0, x1, y0, y1, yh, yt in (("Asidero izquierdo", Kx0 + T, Kx0 + T + 30, 8 + OY, 48 + OY, 20 + OY, 38 + OY),
-                                        ("Asidero derecho", Kx1 - T - 30, Kx1 - T, 28 + OY, 68 + OY, 40 + OY, 58 + OY)):
+                                        ("Asidero derecho", Kx1 - T - 30, Kx1 - T, Yin - 43 + OY, Yin - 3 + OY, Yin - 31 + OY, Yin - 13 + OY)):
         xh = (x0 + x1) / 2
         asd = cut_all(box(x0, x1, y0, y1, Ktop - 3.0, Ktop), [hole_z(xh, yh, 22.0)])
         m.fab("K", nom, asd, COL_CART, material="Acero DC01 3 mm", movil=mv, espesor=3.0,

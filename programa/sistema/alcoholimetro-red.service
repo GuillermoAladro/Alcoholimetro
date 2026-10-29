@@ -1,0 +1,6 @@
+[Unit]
+Description=Alcoholimetro - vigia del Wi-Fi del bar (AR9271)
+
+[Service]
+Type=oneshot
+ExecStart=__DIR__/sistema/vigia-red.sh wlan1

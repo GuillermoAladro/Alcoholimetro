@@ -327,6 +327,8 @@ def orden(cmd, d=(0, 0, 0, 0, 0)):
     return r
 ```
 
+Con el programa ya instalado (`programa/README.md`), lo mismo se hace con su propio controlador del sensor: `sudo systemctl stop alcoholimetro` y después `node programa/pi/prueba_sensor.js --estado` (P6.5), `node programa/pi/prueba_sensor.js` (P6.6 y una prueba completa) o `--vigilar` (P6.13). Con `--detalle` enseña las tramas.
+
 ### 6.4 Pantalla
 
 Conecta el cable de la pantalla al borne nº 2 (W17) y el HDMI a la Pi (W23).
@@ -352,7 +354,7 @@ Solo si pasaron P3.10 a P3.12. Conecta el Solo al borne nº 1 con el cable acoda
 | P6.11 | Corriente de cada rama con la pinza, en reposo y en el pico: arranque de la Pi, foto, Solo cargando desde batería baja y retroiluminación al encender. El pico del sensor se mide en la fase 7 | Cada fusible queda por encima del pico con margen (MONTAJE GENERAL, apartado 4, punto 8) | Sube ese fusible un escalón, no más |
 | P6.12 | Rizado con el osciloscopio en cada carga real | Pico de 5,25 V o menos | Como en P5.5 |
 | P6.13 | **Prueba de apagado parcial, supervisada. Solo con las resistencias de 1 kΩ de la UART puestas** (W19 y W20): limitan la corriente a unos 3 mA y la prueba no usa la Pi ni el sensor de carga de sacrificio (auditorías 6.1-S §9.2 y 6-A A6A-07). Sin ellas, **no se hace**. Con todo funcionando, desenrosca el portafusibles del sensor (es 5 V) | La Pi sigue funcionando y `orden(0x85)` da «sin respuesta», no datos raros. El pin 1 del sensor se queda por debajo de 1 V **(mío)** | Si pasa de 1 V, el TX de la Pi está alimentando el sensor por la UART: hace falta un búfer con Ioff (W19). Vuelve a poner el fusible **con todo apagado** |
-| P6.14 | **Cobro continuo, sin botón.** Rellena `~/.config/alcoholimetro/sumup.json` y arranca `main.py` sin `--gratis`. Mira el Solo 10 minutos sin tocarlo y después paga una prueba con tu tarjeta | El Solo enseña el precio y espera tarjeta **todo el rato**: cuando un cobro caduca, sale otro solo en pocos segundos. Al pagar arranca la prueba, y en `registro.csv` queda la referencia del cobro | Mira el registro (`journalctl -u alcoholimetro`): sin internet o con los datos de SumUp mal, la pantalla dice «Pago no disponible» |
+| P6.14 | **Cobro continuo, sin botón.** Rellena `~/.config/alcoholimetro/sumup.json` (con la Affiliate Key) y arranca el programa: `sudo systemctl start alcoholimetro` (`programa/README.md`). Mira el Solo 10 minutos sin tocarlo y después paga una prueba con tu tarjeta. Haz también las comprobaciones de SumUp del apartado 9 de ese README: caducidad, pago con PIN, reembolso | El Solo enseña el precio y espera tarjeta **todo el rato**: cuando un cobro caduca, sale otro solo en pocos segundos. Al pagar arranca la prueba. En `/var/lib/alcoholimetro/cobros.jsonl` y en `partidas/` queda la referencia del cobro | Mira el registro (`journalctl -u alcoholimetro`) y `curl -s 127.0.0.1:8080/estado`: sin internet o con los datos de SumUp mal, la pantalla dice que no se puede pagar |
 
 ## Fase 7. El tubo de soplido y la prueba de medida
 
@@ -424,7 +426,7 @@ Durante P7.2 mide con la pinza el pico de corriente del sensor al tomar la muest
 ## Fase 10. Lo que falta para ponerla en un bar (no es del circuito)
 
 - Autorización de SumUp por escrito: uso sin personal y ranura de chip tapada.
-- El programa v2: lector de la UART robusto, máquina de estados completa y cobro sin duplicados (auditorías).
+- El programa v2 (`programa/`, 26-10): ya escrito y probado con el hardware simulado (lector de la UART que se resincroniza, máquina de estados completa, cobro sin duplicados). Falta probarlo con el hardware real (P6.14, fases 7 y 9).
 - Norma de producto y marcado CE (auditoría 5.6, C-09; guía §9).
 - La foto: para qué sirve, cuánto tiempo se guarda y el cartel informativo (auditoría 1.0, H17 y H18).
 - Qué diseño manda.

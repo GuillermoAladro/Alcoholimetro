@@ -1,0 +1,48 @@
+{
+  "_LEEME": "Copia en /etc/alcoholimetro/config.json (lo hace instalar.sh). Todo es opcional: lo que no pongas toma el valor por defecto. Explicación de cada campo en README.md, apartado 6.",
+  "datos": "/var/lib/alcoholimetro",
+  "puerto_web": 8080,
+  "uart": "/dev/serial0",
+  "pago": "sumup",
+  "sumup_json": "~/.config/alcoholimetro/sumup.json",
+  "precio_centimos": 200,
+  "unidad": "g/L",
+  "maquina": {
+    "cuenta_atras_ms": 5000,
+    "resultado_ms": 20000,
+    "max_cortes": 3,
+    "max_esperas_soplido": 2,
+    "umbral_pausa": 150,
+    "pausa_tras_alto_ms": 30000,
+    "fotos": true,
+    "detectar_camara_tapada": true,
+    "posiciones": { "lector": "arriba-derecha", "boquilla": "arriba-izquierda", "camara": "arriba-izquierda" }
+  },
+  "cobro": {
+    "consulta_ms": 3000,
+    "vida_max_ms": 90000,
+    "reembolso_automatico": true,
+    "credito_max_ms": 300000
+  },
+  "camara": {
+    "ancho": 1280,
+    "alto": 720,
+    "fps": 12,
+    "calidad": 80,
+    "espejo": true,
+    "rotacion": 0,
+    "enfoque": "continuo",
+    "lente": 2.0,
+    "umbral_lux": 3,
+    "umbral_bytes": 20000
+  },
+  "sistema": {
+    "latido_max_s": 90,
+    "memoria_max_mb": 220,
+    "reinicio_diario": "05:00"
+  },
+  "almacen": {
+    "retencion_fotos_h": 24,
+    "min_libre_mb": 200
+  }
+}

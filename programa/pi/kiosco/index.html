@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alcoholímetro</title>
+<style>
+  /* Tipografías locales: la pantalla no depende de internet */
+  @font-face { font-family: "Big Shoulders Display"; font-weight: 700; src: url(/fuentes/big-shoulders-display-latin-700-normal.woff2) format("woff2"); }
+  @font-face { font-family: "Big Shoulders Display"; font-weight: 800; src: url(/fuentes/big-shoulders-display-latin-800-normal.woff2) format("woff2"); }
+  @font-face { font-family: "Big Shoulders Display"; font-weight: 900; src: url(/fuentes/big-shoulders-display-latin-900-normal.woff2) format("woff2"); }
+  @font-face { font-family: "Archivo"; font-weight: 400; src: url(/fuentes/archivo-latin-400-normal.woff2) format("woff2"); }
+  @font-face { font-family: "Archivo"; font-weight: 600; src: url(/fuentes/archivo-latin-600-normal.woff2) format("woff2"); }
+  @font-face { font-family: "Archivo"; font-weight: 800; src: url(/fuentes/archivo-latin-800-normal.woff2) format("woff2"); }
+  html, body { margin: 0; height: 100%; background: #000; overflow: hidden; cursor: none; user-select: none; }
+  /* el lienzo es de 1024 × 600 (la pantalla de 7"); si la resolución fuera otra, se escala sin deformar */
+  #pantalla { position: absolute; inset: 0; margin: auto; width: 100vw; height: 100vh; object-fit: contain; display: block; }
+</style>
+</head>
+<body>
+<canvas id="pantalla" width="1024" height="600"></canvas>
+<script src="/js/util.js"></script>
+<script src="/js/textos.js"></script>
+<script src="/js/monigote_fotos.js"></script>
+<script src="/js/monigote.js"></script>
+<script src="/js/pantalla.js"></script>
+<script src="/js/kiosco.js"></script>
+</body>
+</html>
