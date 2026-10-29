@@ -1,6 +1,6 @@
-# Revisión de la primera tanda
+# Revisión del banco Astra
 
-**8 escenas, IDs 00000–00007. 2525 fotogramas renderizados con Canvas Skia.**
+**16 escenas, IDs 00000–00015. 5113 fotogramas renderizados con Canvas Skia.**
 
 Controles por escena: registro e ID únicos, sintaxis y ejecución JavaScript, negro exacto al inicio (incluido 1/60 s) y al final, Guillermo dentro del cuadro durante la acción, contenido visible y render determinista al volver a un instante.
 
@@ -18,6 +18,14 @@ La referencia de Guillermo se conserva byte a byte. Los valores RGB opacos del r
 | 00005 | Golpes con retorno a la base; respuesta de la campana pequeña desde su cajón. | [00005.jpg](00005.jpg) |
 | 00006 | Guillermo se desplaza sobre un carrito visible; tramos de la pajita conectados. | [00006.jpg](00006.jpg) |
 | 00007 | Gota continua desde el borde hasta la mancha; llegada del posavasos antes del impacto. | [00007.jpg](00007.jpg) |
+| 00008 | Tres platos con puestos y trayectos separados; el mantel se enrolla y vuelve a extenderse. | [00008.jpg](00008.jpg) |
+| 00009 | Secuencia rojo-ámbar-verde; tres gotas conservadas como tres manchas. | [00009.jpg](00009.jpg) |
+| 00010 | Vaso oculto por el servilletero; salida continua por su carril y foco propio. | [00010.jpg](00010.jpg) |
+| 00011 | Vasos y líquidos verticales durante el ajuste de las patas. | [00011.jpg](00011.jpg) |
+| 00012 | Pivote de cucharilla fijo; cortina descubre la taza ya situada detrás. | [00012.jpg](00012.jpg) |
+| 00013 | Azucarillo sigue el canal y entra por encima de la taza. | [00013.jpg](00013.jpg) |
+| 00014 | Ocho gajos conservan centro, orden y color durante apertura y cierre. | [00014.jpg](00014.jpg) |
+| 00015 | Contacto, compresión y rebote enlazados; entrada de la gota por encima del vaso. | [00015.jpg](00015.jpg) |
 
 ## Límites
 
