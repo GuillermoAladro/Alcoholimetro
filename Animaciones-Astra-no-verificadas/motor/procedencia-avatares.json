@@ -1,0 +1,102 @@
+{
+  "guillermo": {
+    "archivo_fuente": "../animaciones/Avatar Guillermo Aladro.png",
+    "sha256_fuente": "46dd8354fbaf138a0a4a82ea0f1e9a4cd34b19a484e936a991d945a0aaaec3d8",
+    "sha256_sprite": "abb5a6a97e02b99500c8d3d4e2832450d653021e4ee01bc9bd60eba43e3cd505",
+    "region": [
+      88,
+      76,
+      438,
+      1000
+    ],
+    "poligono_fuente": [
+      [
+        275,
+        76
+      ],
+      [
+        415,
+        76
+      ],
+      [
+        403,
+        193
+      ],
+      [
+        375,
+        231
+      ],
+      [
+        391,
+        251
+      ],
+      [
+        414,
+        278
+      ],
+      [
+        431,
+        324
+      ],
+      [
+        438,
+        351
+      ],
+      [
+        434,
+        371
+      ],
+      [
+        426,
+        376
+      ],
+      [
+        430,
+        470
+      ],
+      [
+        408,
+        520
+      ],
+      [
+        420,
+        1000
+      ],
+      [
+        88,
+        1000
+      ],
+      [
+        88,
+        890
+      ],
+      [
+        145,
+        500
+      ],
+      [
+        130,
+        365
+      ],
+      [
+        151,
+        282
+      ],
+      [
+        240,
+        242
+      ],
+      [
+        264,
+        204
+      ]
+    ],
+    "dimensiones": [
+      350,
+      924
+    ],
+    "transformacion": "Máscara alfa y recorte; RGB opaco idéntico; sin síntesis, retoque facial, cambio de ropa ni deformación.",
+    "fuente_local": "motor/referencia-guillermo.png",
+    "sprite_en_memoria": "motor/avatar-guillermo.js + motor/base.js"
+  }
+}
