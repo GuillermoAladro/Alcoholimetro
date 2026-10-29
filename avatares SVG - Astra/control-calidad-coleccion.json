@@ -1,0 +1,519 @@
+{
+  "method": "Direct high-density vector tracing with local color-gradient fitting",
+  "note": "SSIM measures image structure, not identity or artistic perfection. Backgrounds and contact shadows were cleaned.",
+  "visual_review": [
+    "All current reference sheets and SVG previews compared",
+    "Four full-body views and six expressions preserved for each character",
+    "Laura: all white fabric and its shading retained after manual clipping correction",
+    "Marcos Bombero: refreshed to the current helmet-and-hose reference",
+    "Guillermo: individually reviewed views, expressions and details; second renderer check recorded separately"
+  ],
+  "structural_checks": {
+    "Ander.svg": {
+      "xml_valid": true,
+      "vector_only": true,
+      "internal_references_valid": true,
+      "paths": 119009,
+      "gradients": 80836,
+      "bytes": 32997506,
+      "sha256": "ca3ea8649c9e78d641e9c9ec15de61a2fedf555a42cbb8cdb5dd22ebd6f70ba1"
+    },
+    "Carla.svg": {
+      "xml_valid": true,
+      "vector_only": true,
+      "internal_references_valid": true,
+      "paths": 110636,
+      "gradients": 79172,
+      "bytes": 31165433,
+      "sha256": "02ab690d7188c7cda47d9e5a4749cc6ad41c12bdbc2fac18c66420090f06b0c9"
+    },
+    "Dari.svg": {
+      "xml_valid": true,
+      "vector_only": true,
+      "internal_references_valid": true,
+      "paths": 123667,
+      "gradients": 87931,
+      "bytes": 34691961,
+      "sha256": "ce58afe10d80a199b015a274a1ca1f33f50fd024d947dc03d497a778a95a4262"
+    },
+    "Deivi.svg": {
+      "xml_valid": true,
+      "vector_only": true,
+      "internal_references_valid": true,
+      "paths": 151490,
+      "gradients": 95851,
+      "bytes": 40008348,
+      "sha256": "4ad9301adbb831c5a2cba0c8c68a55940414f99d1dfd7f90b9dc3448fe69720d"
+    },
+    "Gabacho.svg": {
+      "xml_valid": true,
+      "vector_only": true,
+      "internal_references_valid": true,
+      "paths": 126938,
+      "gradients": 88085,
+      "bytes": 35233977,
+      "sha256": "9fced1b0a4fd321b2848fcd6ae1bdf84ed8835bc95eb79eb31794ceff26ff293"
+    },
+    "Guillermo-Aladro/01-frontal.svg": {
+      "xml_valid": true,
+      "vector_only": true,
+      "internal_references_valid": true,
+      "paths": 26238,
+      "gradients": 17930,
+      "bytes": 7561104,
+      "sha256": "d89071c687d7edfb18d0aa0915db5c4b8bfeab9b37a8a76c5223cd69312755c1"
+    },
+    "Guillermo-Aladro/02-tres-cuartos.svg": {
+      "xml_valid": true,
+      "vector_only": true,
+      "internal_references_valid": true,
+      "paths": 21126,
+      "gradients": 14559,
+      "bytes": 6249807,
+      "sha256": "2874e21d48df7c55b39c6aac4a3d626a1a78b101c04b049b75515a712c1d815a"
+    },
+    "Guillermo-Aladro/03-perfil.svg": {
+      "xml_valid": true,
+      "vector_only": true,
+      "internal_references_valid": true,
+      "paths": 16298,
+      "gradients": 11174,
+      "bytes": 4661592,
+      "sha256": "be4c96ae75d5cff49f4d296f3c2336c7d7a4eccfec9e099833f1474a472b30d3"
+    },
+    "Guillermo-Aladro/04-espalda.svg": {
+      "xml_valid": true,
+      "vector_only": true,
+      "internal_references_valid": true,
+      "paths": 21163,
+      "gradients": 14029,
+      "bytes": 6015128,
+      "sha256": "20a44fe5006f3a23ed163b177bb91a0dfc4aa1f6ec816d3f35c39b7b6661b773"
+    },
+    "Guillermo-Aladro/05-serio.svg": {
+      "xml_valid": true,
+      "vector_only": true,
+      "internal_references_valid": true,
+      "paths": 5911,
+      "gradients": 4319,
+      "bytes": 1731879,
+      "sha256": "f53794bf8c7d6e19111c6b5ece9904a0ee2b0adc3ca939fe2e35545a73038529"
+    },
+    "Guillermo-Aladro/06-sonrisa.svg": {
+      "xml_valid": true,
+      "vector_only": true,
+      "internal_references_valid": true,
+      "paths": 6163,
+      "gradients": 4614,
+      "bytes": 1852202,
+      "sha256": "73c256b1f23f587d0d5f714808eb634723fcb4d20e50a7bb0c486d71d676f16a"
+    },
+    "Guillermo-Aladro/07-sorpresa.svg": {
+      "xml_valid": true,
+      "vector_only": true,
+      "internal_references_valid": true,
+      "paths": 5932,
+      "gradients": 4389,
+      "bytes": 1782559,
+      "sha256": "a3a5d10dbf1c5493fc72520702a713679ca88a3919ce743647f0dcc438c222a7"
+    },
+    "Guillermo-Aladro/08-cansancio.svg": {
+      "xml_valid": true,
+      "vector_only": true,
+      "internal_references_valid": true,
+      "paths": 6864,
+      "gradients": 5092,
+      "bytes": 2079558,
+      "sha256": "532b6a58a8531b8144dde76f173a2649bc216bae5127b9b05bc85132c6a069f2"
+    },
+    "Guillermo-Aladro/09-ojos-cerrados.svg": {
+      "xml_valid": true,
+      "vector_only": true,
+      "internal_references_valid": true,
+      "paths": 6158,
+      "gradients": 4580,
+      "bytes": 1910798,
+      "sha256": "a1f355e5d78f292e046605cdfa62a37fa46e646cb8f10e580a11b2eab99a648b"
+    },
+    "Guillermo-Aladro/10-ceno-fruncido.svg": {
+      "xml_valid": true,
+      "vector_only": true,
+      "internal_references_valid": true,
+      "paths": 6486,
+      "gradients": 4665,
+      "bytes": 1970274,
+      "sha256": "f9cf1fb8cf27f948a5ee48dec93b714880fbd02b7034a1ef1f45d683d5304b53"
+    },
+    "Guillermo-Aladro.svg": {
+      "xml_valid": true,
+      "vector_only": true,
+      "internal_references_valid": true,
+      "paths": 125838,
+      "gradients": 87823,
+      "bytes": 36816186,
+      "sha256": "d4d938d0a65616b3e333778b40067d372f6d805ac38522ec6cc94e6a6fb70d34"
+    },
+    "Kiriku.svg": {
+      "xml_valid": true,
+      "vector_only": true,
+      "internal_references_valid": true,
+      "paths": 110616,
+      "gradients": 74301,
+      "bytes": 30240854,
+      "sha256": "c0d9f588492928102b18a24ce66397ef328ad92484f9b5744169b26a62cb8f96"
+    },
+    "Laura.svg": {
+      "xml_valid": true,
+      "vector_only": true,
+      "internal_references_valid": true,
+      "paths": 145849,
+      "gradients": 93519,
+      "bytes": 39094592,
+      "sha256": "a4e8dc55778655414694d72bd34787c57a8a8cefe240c6873f00aaaed58c59fd"
+    },
+    "Marcos-Bombero.svg": {
+      "xml_valid": true,
+      "vector_only": true,
+      "internal_references_valid": true,
+      "paths": 114882,
+      "gradients": 82971,
+      "bytes": 32283609,
+      "sha256": "f8a0d339c05be2a0f247ef1f0acc5f4387efda60ecfd8ffd7ed1f516a3d13994"
+    },
+    "Marta.svg": {
+      "xml_valid": true,
+      "vector_only": true,
+      "internal_references_valid": true,
+      "paths": 146399,
+      "gradients": 104212,
+      "bytes": 41188582,
+      "sha256": "7fd37f072eeb64c66d387d042a5068d52c2f4b433ed9105fd78c2cc954250b71"
+    },
+    "Paradigma.svg": {
+      "xml_valid": true,
+      "vector_only": true,
+      "internal_references_valid": true,
+      "paths": 117301,
+      "gradients": 82007,
+      "bytes": 32672133,
+      "sha256": "337110ed2315c75ffe28907941b6cfbba6588974fefd6f4191354b1a743a63da"
+    },
+    "Rodri.svg": {
+      "xml_valid": true,
+      "vector_only": true,
+      "internal_references_valid": true,
+      "paths": 123254,
+      "gradients": 87855,
+      "bytes": 34699982,
+      "sha256": "8d8351ab40802df7667cb7dc30627a7c08c020e963ae5aa4bc550af3055d8514"
+    },
+    "Sara-Saez.svg": {
+      "xml_valid": true,
+      "vector_only": true,
+      "internal_references_valid": true,
+      "paths": 97647,
+      "gradients": 60314,
+      "bytes": 25685159,
+      "sha256": "a80a3fd36ffeca7426a090e32d717e7b88c828f20b184bea2e2a2ee485c83dc1"
+    },
+    "Yorgi.svg": {
+      "xml_valid": true,
+      "vector_only": true,
+      "internal_references_valid": true,
+      "paths": 106693,
+      "gradients": 72713,
+      "bytes": 29539220,
+      "sha256": "431cdfbe75204032be5aa0c5eb44ed6bd3f1b7200df08f7e68761d401fbbda94"
+    }
+  },
+  "characters": [
+    {
+      "character": "Ander",
+      "source_path": "animaciones/Avatar Ander.png",
+      "source_git_blob": "caacb9d594361b745ab4557eead8746f99997463",
+      "source_sha256": "5a22dfb1ac98b02bf31b254eb67121cba557017baf12431ca09ab9938f5b4e94",
+      "source_size": [
+        1122,
+        1402
+      ],
+      "format": "SVG 1.1",
+      "vector_only": true,
+      "paths": 119008,
+      "gradients": 80835,
+      "layout_revision": 1,
+      "file": "Ander.svg",
+      "preview": "Ander-preview.png",
+      "bytes": 32997506,
+      "svg_sha256": "ca3ea8649c9e78d641e9c9ec15de61a2fedf555a42cbb8cdb5dd22ebd6f70ba1",
+      "ssim": 0.97655,
+      "expression_strip_ssim": 0.98055,
+      "mean_absolute_channel_error_0_255": 2.4736,
+      "body_bottom": 874
+    },
+    {
+      "character": "Carla",
+      "source_path": "animaciones/Avatar Carla.png",
+      "source_git_blob": "747d48c6c7f9d521166dbe45e2d2301bea4f7c84",
+      "source_sha256": "9a6b9844df61e18dcd9b1d8b6c2d1221461bb26a6d35e04921da39b2b73ccbdd",
+      "source_size": [
+        1122,
+        1402
+      ],
+      "format": "SVG 1.1",
+      "vector_only": true,
+      "paths": 110635,
+      "gradients": 79171,
+      "file": "Carla.svg",
+      "preview": "Carla-preview.png",
+      "bytes": 31165433,
+      "svg_sha256": "02ab690d7188c7cda47d9e5a4749cc6ad41c12bdbc2fac18c66420090f06b0c9",
+      "ssim": 0.97546,
+      "expression_strip_ssim": 0.9764,
+      "mean_absolute_channel_error_0_255": 2.36902,
+      "body_bottom": 855
+    },
+    {
+      "character": "Dari",
+      "source_path": "animaciones/Avatar Dari.png",
+      "source_git_blob": "47752f6f38bf762d0758db5beb3801e98597c982",
+      "source_sha256": "ebce7b24749128b009d200e213aabab90d7a65fad77ecf87131f0d78209d6897",
+      "source_size": [
+        1122,
+        1402
+      ],
+      "format": "SVG 1.1",
+      "vector_only": true,
+      "paths": 123666,
+      "gradients": 87930,
+      "file": "Dari.svg",
+      "preview": "Dari-preview.png",
+      "bytes": 34691961,
+      "svg_sha256": "ce58afe10d80a199b015a274a1ca1f33f50fd024d947dc03d497a778a95a4262",
+      "ssim": 0.97451,
+      "expression_strip_ssim": 0.97771,
+      "mean_absolute_channel_error_0_255": 2.42693,
+      "body_bottom": 888
+    },
+    {
+      "character": "Deivi",
+      "source_path": "animaciones/Avatar Deivi.png",
+      "source_git_blob": "5c03916efe55787dbfd8485d3eca973e868ab7d8",
+      "source_sha256": "b02473fb8c1662e0fdffee839f938aee4d088e25bad98c8da5355624134a1df3",
+      "source_size": [
+        1122,
+        1402
+      ],
+      "format": "SVG 1.1",
+      "vector_only": true,
+      "paths": 151489,
+      "gradients": 95850,
+      "file": "Deivi.svg",
+      "preview": "Deivi-preview.png",
+      "bytes": 40008348,
+      "svg_sha256": "4ad9301adbb831c5a2cba0c8c68a55940414f99d1dfd7f90b9dc3448fe69720d",
+      "ssim": 0.97282,
+      "expression_strip_ssim": 0.96999,
+      "mean_absolute_channel_error_0_255": 2.31048,
+      "body_bottom": 954
+    },
+    {
+      "character": "Gabacho",
+      "source_path": "animaciones/Avatar Gabacho.png",
+      "source_git_blob": "a4895ab7d84adcc7573c5d62380d8dd33fc54a1e",
+      "source_sha256": "a4bcc2f076b0545dabf5712640d84f5ae086bf5f3359b4bf65416d45aa7b29a2",
+      "source_size": [
+        1122,
+        1402
+      ],
+      "format": "SVG 1.1",
+      "vector_only": true,
+      "paths": 126937,
+      "gradients": 88084,
+      "file": "Gabacho.svg",
+      "preview": "Gabacho-preview.png",
+      "bytes": 35233977,
+      "svg_sha256": "9fced1b0a4fd321b2848fcd6ae1bdf84ed8835bc95eb79eb31794ceff26ff293",
+      "ssim": 0.97307,
+      "expression_strip_ssim": 0.97402,
+      "mean_absolute_channel_error_0_255": 2.56769,
+      "body_bottom": 928
+    },
+    {
+      "character": "Kiriku",
+      "source_path": "animaciones/Avatar Kiriku.png",
+      "source_git_blob": "c86031ed8362d559255f94f2dd67f880b5be84ac",
+      "source_sha256": "ab78e09f5b9aa64f7c41da30e96d286c798c880eb21a2a364a679953da0ce6a9",
+      "source_size": [
+        1122,
+        1402
+      ],
+      "format": "SVG 1.1",
+      "vector_only": true,
+      "paths": 110615,
+      "gradients": 74300,
+      "file": "Kiriku.svg",
+      "preview": "Kiriku-preview.png",
+      "bytes": 30240854,
+      "svg_sha256": "c0d9f588492928102b18a24ce66397ef328ad92484f9b5744169b26a62cb8f96",
+      "ssim": 0.97273,
+      "expression_strip_ssim": 0.97327,
+      "mean_absolute_channel_error_0_255": 2.38792,
+      "body_bottom": 899
+    },
+    {
+      "character": "Laura",
+      "source_path": "animaciones/Avatar Laura.png",
+      "source_git_blob": "e93984f3f990e36a6936fe308b272871ed0d59b6",
+      "source_sha256": "80b1e78d3a2ff644e46642eaab5698965941e22fe391c1fbc9781b6330e3df9a",
+      "source_size": [
+        1122,
+        1402
+      ],
+      "format": "SVG 1.1",
+      "vector_only": true,
+      "paths": 145848,
+      "gradients": 93518,
+      "layout_revision": 2,
+      "file": "Laura.svg",
+      "preview": "Laura-preview.png",
+      "bytes": 39094592,
+      "svg_sha256": "a4e8dc55778655414694d72bd34787c57a8a8cefe240c6873f00aaaed58c59fd",
+      "ssim": 0.97269,
+      "expression_strip_ssim": 0.97464,
+      "mean_absolute_channel_error_0_255": 2.3697,
+      "body_bottom": 911
+    },
+    {
+      "character": "Marcos Bombero",
+      "source_path": "animaciones/Avatar Marcos Bombero.png",
+      "source_git_blob": "e6b027ede4cf1e03835d914ced413fefcda186bb",
+      "source_sha256": "b6e397ee3e02637f22f5ab6d82cc95e9f88859a73471a3b63986a53cb232251b",
+      "source_size": [
+        1071,
+        1469
+      ],
+      "format": "SVG 1.1",
+      "vector_only": true,
+      "paths": 114881,
+      "gradients": 82970,
+      "file": "Marcos-Bombero.svg",
+      "preview": "Marcos-Bombero-preview.png",
+      "bytes": 32283609,
+      "svg_sha256": "f8a0d339c05be2a0f247ef1f0acc5f4387efda60ecfd8ffd7ed1f516a3d13994",
+      "ssim": 0.96438,
+      "expression_strip_ssim": 0.96425,
+      "mean_absolute_channel_error_0_255": 3.38371,
+      "body_bottom": 989
+    },
+    {
+      "character": "Marta",
+      "source_path": "animaciones/Avatar Marta.png",
+      "source_git_blob": "b3cb1acb010f580cfc91e0efba7e120e6b871892",
+      "source_sha256": "3d796fa02298f430a566452aa1e6da36e530947adf903c708e283af601c5a9bf",
+      "source_size": [
+        1122,
+        1402
+      ],
+      "format": "SVG 1.1",
+      "vector_only": true,
+      "paths": 146398,
+      "gradients": 104211,
+      "file": "Marta.svg",
+      "preview": "Marta-preview.png",
+      "bytes": 41188582,
+      "svg_sha256": "7fd37f072eeb64c66d387d042a5068d52c2f4b433ed9105fd78c2cc954250b71",
+      "ssim": 0.96853,
+      "expression_strip_ssim": 0.97246,
+      "mean_absolute_channel_error_0_255": 2.58617,
+      "body_bottom": 874
+    },
+    {
+      "character": "Paradigma",
+      "source_path": "animaciones/Avatar Paradigma.png",
+      "source_git_blob": "fffffd168482fa7cba13ecd2b866b8b63f62f916",
+      "source_sha256": "15a13c4acb45f9018e1a55e6e10f11c4ff6eb1e14958c7b6de99d3efcac618f9",
+      "source_size": [
+        1122,
+        1402
+      ],
+      "format": "SVG 1.1",
+      "vector_only": true,
+      "paths": 117300,
+      "gradients": 82006,
+      "file": "Paradigma.svg",
+      "preview": "Paradigma-preview.png",
+      "bytes": 32672133,
+      "svg_sha256": "337110ed2315c75ffe28907941b6cfbba6588974fefd6f4191354b1a743a63da",
+      "ssim": 0.97046,
+      "expression_strip_ssim": 0.97221,
+      "mean_absolute_channel_error_0_255": 2.51102,
+      "body_bottom": 890
+    },
+    {
+      "character": "Rodri",
+      "source_path": "animaciones/Avatar Rodri.png",
+      "source_git_blob": "4df73213c9e4b9cd9574b767dbb87da2185863e6",
+      "source_sha256": "90896c01593318baffeda2f4484673e8fe96184f78246d0b2d1aa323c6a5c300",
+      "source_size": [
+        1122,
+        1402
+      ],
+      "format": "SVG 1.1",
+      "vector_only": true,
+      "paths": 123253,
+      "gradients": 87854,
+      "file": "Rodri.svg",
+      "preview": "Rodri-preview.png",
+      "bytes": 34699982,
+      "svg_sha256": "8d8351ab40802df7667cb7dc30627a7c08c020e963ae5aa4bc550af3055d8514",
+      "ssim": 0.97182,
+      "expression_strip_ssim": 0.97585,
+      "mean_absolute_channel_error_0_255": 2.7246,
+      "body_bottom": 893
+    },
+    {
+      "character": "Sara Saez",
+      "source_path": "animaciones/Avatar Sara Saez.png",
+      "source_git_blob": "d1edf39e3ee14b31f9622f2b441b16462793e5ca",
+      "source_sha256": "17c9f87e5978d396796dde81ed67e2ea4b187cb522214107106b5043f1f1d959",
+      "source_size": [
+        1122,
+        1402
+      ],
+      "format": "SVG 1.1",
+      "vector_only": true,
+      "paths": 97646,
+      "gradients": 60313,
+      "file": "Sara-Saez.svg",
+      "preview": "Sara-Saez-preview.png",
+      "bytes": 25685159,
+      "svg_sha256": "a80a3fd36ffeca7426a090e32d717e7b88c828f20b184bea2e2a2ee485c83dc1",
+      "ssim": 0.96976,
+      "expression_strip_ssim": 0.97491,
+      "mean_absolute_channel_error_0_255": 2.66643,
+      "body_bottom": 857
+    },
+    {
+      "character": "Yorgi",
+      "source_path": "animaciones/Avatar Yorgi.png",
+      "source_git_blob": "cffa0f131c3216fc728996591e7dd6fe489c407e",
+      "source_sha256": "4876c88a7a60363178121b7bfe2359dc9e08c83ac0387fb4ef202076d25507f5",
+      "source_size": [
+        1122,
+        1402
+      ],
+      "format": "SVG 1.1",
+      "vector_only": true,
+      "paths": 106692,
+      "gradients": 72712,
+      "file": "Yorgi.svg",
+      "preview": "Yorgi-preview.png",
+      "bytes": 29539220,
+      "svg_sha256": "431cdfbe75204032be5aa0c5eb44ed6bd3f1b7200df08f7e68761d401fbbda94",
+      "ssim": 0.97495,
+      "expression_strip_ssim": 0.97509,
+      "mean_absolute_channel_error_0_255": 2.30453,
+      "body_bottom": 852
+    }
+  ]
+}

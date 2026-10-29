@@ -1,0 +1,132 @@
+{
+  "character": "Guillermo Aladro",
+  "reference_git_blob": "92ff45ef7481f430f566b3fa383be7f8ea242685",
+  "reference_path": "animaciones/Avatar Guillermo Aladro.png",
+  "structural_checks": {
+    "xml_valid": true,
+    "ids_unique": true,
+    "references_resolved": true,
+    "vector_only": true,
+    "no_external_dependencies": true
+  },
+  "comparison": {
+    "whole_sheet": {
+      "ssim": 0.97237,
+      "mean_absolute_channel_error_0_255": 2.6469
+    },
+    "expressions": {
+      "ssim": 0.96708,
+      "mean_absolute_channel_error_0_255": 2.9187
+    },
+    "frontal_face": {
+      "ssim": 0.97029,
+      "mean_absolute_channel_error_0_255": 3.3248
+    },
+    "smile": {
+      "ssim": 0.97234,
+      "mean_absolute_channel_error_0_255": 3.1336
+    },
+    "surprise": {
+      "ssim": 0.96164,
+      "mean_absolute_channel_error_0_255": 3.5143
+    }
+  },
+  "comparison_note": "SSIM is an image-comparison metric, not a facial-identity or artistic-quality score. Background shadows were deliberately cleaned and reconstructed as radial gradients.",
+  "files": [
+    {
+      "file": "Guillermo-Aladro/01-frontal.svg",
+      "bytes": 7561104,
+      "paths": 26238,
+      "gradients": 17929,
+      "sha256": "d89071c687d7edfb18d0aa0915db5c4b8bfeab9b37a8a76c5223cd69312755c1"
+    },
+    {
+      "file": "Guillermo-Aladro/02-tres-cuartos.svg",
+      "bytes": 6249807,
+      "paths": 21126,
+      "gradients": 14558,
+      "sha256": "2874e21d48df7c55b39c6aac4a3d626a1a78b101c04b049b75515a712c1d815a"
+    },
+    {
+      "file": "Guillermo-Aladro/03-perfil.svg",
+      "bytes": 4661592,
+      "paths": 16298,
+      "gradients": 11173,
+      "sha256": "be4c96ae75d5cff49f4d296f3c2336c7d7a4eccfec9e099833f1474a472b30d3"
+    },
+    {
+      "file": "Guillermo-Aladro/04-espalda.svg",
+      "bytes": 6015128,
+      "paths": 21163,
+      "gradients": 14028,
+      "sha256": "20a44fe5006f3a23ed163b177bb91a0dfc4aa1f6ec816d3f35c39b7b6661b773"
+    },
+    {
+      "file": "Guillermo-Aladro/05-serio.svg",
+      "bytes": 1731879,
+      "paths": 5911,
+      "gradients": 4318,
+      "sha256": "f53794bf8c7d6e19111c6b5ece9904a0ee2b0adc3ca939fe2e35545a73038529"
+    },
+    {
+      "file": "Guillermo-Aladro/06-sonrisa.svg",
+      "bytes": 1852202,
+      "paths": 6163,
+      "gradients": 4613,
+      "sha256": "73c256b1f23f587d0d5f714808eb634723fcb4d20e50a7bb0c486d71d676f16a"
+    },
+    {
+      "file": "Guillermo-Aladro/07-sorpresa.svg",
+      "bytes": 1782559,
+      "paths": 5932,
+      "gradients": 4388,
+      "sha256": "a3a5d10dbf1c5493fc72520702a713679ca88a3919ce743647f0dcc438c222a7"
+    },
+    {
+      "file": "Guillermo-Aladro/08-cansancio.svg",
+      "bytes": 2079558,
+      "paths": 6864,
+      "gradients": 5091,
+      "sha256": "532b6a58a8531b8144dde76f173a2649bc216bae5127b9b05bc85132c6a069f2"
+    },
+    {
+      "file": "Guillermo-Aladro/09-ojos-cerrados.svg",
+      "bytes": 1910798,
+      "paths": 6158,
+      "gradients": 4579,
+      "sha256": "a1f355e5d78f292e046605cdfa62a37fa46e646cb8f10e580a11b2eab99a648b"
+    },
+    {
+      "file": "Guillermo-Aladro/10-ceno-fruncido.svg",
+      "bytes": 1970274,
+      "paths": 6486,
+      "gradients": 4664,
+      "sha256": "f9cf1fb8cf27f948a5ee48dec93b714880fbd02b7034a1ef1f45d683d5304b53"
+    },
+    {
+      "file": "Guillermo-Aladro.svg",
+      "bytes": 36816186,
+      "paths": 125838,
+      "gradients": 87822,
+      "sha256": "d4d938d0a65616b3e333778b40067d372f6d805ac38522ec6cc94e6a6fb70d34"
+    }
+  ],
+  "cross_renderer": {
+    "renderers": [
+      "CairoSVG 2.9.1",
+      "librsvg via Sharp"
+    ],
+    "dimensions": [
+      1122,
+      1402
+    ],
+    "mean_absolute_channel_error_0_255": 0.0002
+  },
+  "visual_review": [
+    "Full sheet compared with source",
+    "Four full-body views reviewed",
+    "Six expressions reviewed",
+    "Adjacent fragments removed from individual exports",
+    "Background seams removed; shadows rebuilt as radial gradients"
+  ]
+}
