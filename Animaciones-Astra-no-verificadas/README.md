@@ -16,7 +16,7 @@ Descarga el repositorio y abre **[ver.html](ver.html)** en Chrome, Edge o Firefo
 
 ## Avatares
 
-Se usa la hoja **actual** de Guillermo Aladro del repositorio. `motor/referencia-guillermo.png` es una copia binaria idéntica de la referencia; su SHA-256 y la región utilizada figuran en [procedencia-avatares.json](motor/procedencia-avatares.json).
+Se usan las hojas **actuales** de Guillermo Aladro y, en las escenas compartidas, Laura. Los archivos `motor/referencia-guillermo.png` y `motor/referencia-laura.png` son copias binarias idénticas de las referencias del repositorio; sus SHA-256 y regiones utilizadas figuran en [procedencia-avatares.json](motor/procedencia-avatares.json).
 
 La máscara elimina el fondo de la región frontal al dibujar. Los píxeles opacos del personaje mantienen sus valores RGB originales. No hay imágenes generadas de sustitución, retoques de cara, cambios de ropa, deformaciones del cuerpo ni cambios de proporciones. El personaje se coloca mediante traslación, rotación rígida y escala uniforme. Las plataformas y mecanismos explican los desplazamientos del personaje.
 

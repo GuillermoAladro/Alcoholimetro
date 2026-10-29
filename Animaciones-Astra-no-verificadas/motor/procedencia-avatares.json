@@ -2,6 +2,8 @@
   "guillermo": {
     "archivo_fuente": "../animaciones/Avatar Guillermo Aladro.png",
     "sha256_fuente": "46dd8354fbaf138a0a4a82ea0f1e9a4cd34b19a484e936a991d945a0aaaec3d8",
+    "fuente_local": "motor/referencia-guillermo.png",
+    "sprite_en_memoria": "motor/avatar-guillermo.js + motor/base.js",
     "sha256_sprite": "abb5a6a97e02b99500c8d3d4e2832450d653021e4ee01bc9bd60eba43e3cd505",
     "region": [
       88,
@@ -95,8 +97,90 @@
       350,
       924
     ],
-    "transformacion": "Máscara alfa y recorte; RGB opaco idéntico; sin síntesis, retoque facial, cambio de ropa ni deformación.",
-    "fuente_local": "motor/referencia-guillermo.png",
-    "sprite_en_memoria": "motor/avatar-guillermo.js + motor/base.js"
+    "transformacion": "Máscara alfa y recorte; RGB opaco idéntico; sin síntesis, retoque facial, cambio de ropa ni deformación."
+  },
+  "laura": {
+    "archivo_fuente": "../animaciones/Avatar Laura.png",
+    "sha256_fuente": "80b1e78d3a2ff644e46642eaab5698965941e22fe391c1fbc9781b6330e3df9a",
+    "fuente_local": "motor/referencia-laura.png",
+    "sprite_en_memoria": "motor/avatar-guillermo.js + motor/base.js",
+    "sha256_sprite": "a4914e891829ecd7367180ed2a8b2901bcf2035f8b518cfa06a2a630305a5009",
+    "region": [
+      135,
+      30,
+      435,
+      920
+    ],
+    "poligono_fuente": [
+      [
+        214,
+        30
+      ],
+      [
+        350,
+        30
+      ],
+      [
+        359,
+        180
+      ],
+      [
+        397,
+        208
+      ],
+      [
+        407,
+        398
+      ],
+      [
+        377,
+        453
+      ],
+      [
+        398,
+        780
+      ],
+      [
+        434,
+        918
+      ],
+      [
+        160,
+        918
+      ],
+      [
+        164,
+        799
+      ],
+      [
+        168,
+        665
+      ],
+      [
+        169,
+        460
+      ],
+      [
+        135,
+        391
+      ],
+      [
+        145,
+        250
+      ],
+      [
+        163,
+        208
+      ],
+      [
+        202,
+        191
+      ]
+    ],
+    "dimensiones": [
+      300,
+      890
+    ],
+    "transformacion": "Máscara alfa y recorte; RGB opaco idéntico; sin síntesis, retoque facial, cambio de ropa ni deformación."
   }
 }

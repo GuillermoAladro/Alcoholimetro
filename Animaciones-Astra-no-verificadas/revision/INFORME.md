@@ -1,6 +1,6 @@
 # Revisión del banco Astra
 
-**16 escenas, IDs 00000–00015. 5113 fotogramas renderizados con Canvas Skia.**
+**25 escenas, IDs 00000–00024. 8074 fotogramas renderizados con Canvas Skia.**
 
 Controles por escena: registro e ID únicos, sintaxis y ejecución JavaScript, negro exacto al inicio (incluido 1/60 s) y al final, Guillermo dentro del cuadro durante la acción, contenido visible y render determinista al volver a un instante.
 
@@ -26,6 +26,15 @@ La referencia de Guillermo se conserva byte a byte. Los valores RGB opacos del r
 | 00013 | Azucarillo sigue el canal y entra por encima de la taza. | [00013.jpg](00013.jpg) |
 | 00014 | Ocho gajos conservan centro, orden y color durante apertura y cierre. | [00014.jpg](00014.jpg) |
 | 00015 | Contacto, compresión y rebote enlazados; entrada de la gota por encima del vaso. | [00015.jpg](00015.jpg) |
+| 00016 | Botella articulada sobre pivote fijo; oscilación amortiguada y remate de cucharilla. | [00016.jpg](00016.jpg) |
+| 00017 | Cuatro aceitunas conservan orden al girar; la quinta desciende sobre la plaza libre. | [00017.jpg](00017.jpg) |
+| 00018 | Cinco burbujas cambian de contorno al cruzar el aro y salen por el mismo lado. | [00018.jpg](00018.jpg) |
+| 00019 | Corregido el recorrido: saltos con contactos en los peldaños, arco sobre el borde y cubito parcialmente sumergido. | [00019.jpg](00019.jpg) |
+| 00020 | Carta desplegable, puerta ascendente y plato que sale en un recorrido continuo sobre la mesa. | [00020.jpg](00020.jpg) |
+| 00021 | Corregidos el solapamiento inicial de carros y el apoyo del carril; frenado separado. | [00021.jpg](00021.jpg) |
+| 00022 | Tapa articulada y servilleta conservan sus posiciones; cierre con la tela colgando delante. | [00022.jpg](00022.jpg) |
+| 00023 | La lámpara explica el cambio de longitud de la sombra; vaso y mesa fijos. | [00023.jpg](00023.jpg) |
+| 00024 | Guillermo y Laura reconocibles y completos; vasos se acercan hasta tocar bordes y regresan. Máscara de Laura revisada sobre fondo oscuro. | [00024.jpg](00024.jpg) |
 
 ## Límites
 

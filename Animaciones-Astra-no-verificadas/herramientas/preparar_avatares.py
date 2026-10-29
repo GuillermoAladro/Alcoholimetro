@@ -12,6 +12,10 @@ OUT=ROOT/'motor'
 SPECS={
  'guillermo':{'file':'Avatar Guillermo Aladro.png','box':[88,76,438,1000],
  'polygon':[[275,76],[415,76],[403,193],[375,231],[391,251],[414,278],[431,324],[438,351],[434,371],[426,376],[430,470],[408,520],[420,1000],[88,1000],[88,890],[145,500],[130,365],[151,282],[240,242],[264,204]]},
+ 'laura':{'file':'Avatar Laura.png','box':[135,30,435,920],
+ 'polygon':[[214,30],[350,30],[359,180],[397,208],[407,398],[377,453],[398,780],[434,918],[160,918],[164,799],[168,665],[169,460],[135,391],[145,250],[163,208],[202,191]],
+ 'protect':[[235,201],[270,229],[314,202],[341,277],[354,393],[194,393],[199,306],[215,247]],
+ 'protect_extra':[[[355,845],[402,844],[424,879],[429,900],[422,907],[377,907],[366,897],[345,883],[345,862]]]},
 }
 manifest={};browser_assets={}
 for key,s in SPECS.items():
@@ -20,6 +24,12 @@ for key,s in SPECS.items():
  inside=np.asarray(polygon)>0
  rgb=arr[:,:,:3].astype(float)
  bright=rgb.min(2)>218
+ if 'protect' in s:
+  protect=Image.new('L',im.size);ImageDraw.Draw(protect).polygon([tuple(p) for p in s['protect']],fill=255)
+  bright[np.asarray(protect)>0]=False
+ for region in s.get('protect_extra',[]):
+  protect=Image.new('L',im.size);ImageDraw.Draw(protect).polygon([tuple(p) for p in region],fill=255)
+  bright[np.asarray(protect)>0]=False
  allowed=bright|~inside
  seed=np.zeros(inside.shape,bool);seed[0,:]=seed[-1,:]=True;seed[:,0]=seed[:,-1]=True;seed|=~inside
  background=binary_propagation(seed,mask=allowed)

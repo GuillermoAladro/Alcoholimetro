@@ -15,7 +15,16 @@ const ARCHIVOS_BANCO=[
   "00012 La cucharilla brújula.js",
   "00013 El azucarillo escapista.js",
   "00014 El limón con cremallera.js",
-  "00015 El posavasos trampolín.js"
+  "00015 El posavasos trampolín.js",
+  "00016 La botella metrónomo.js",
+  "00017 El platillo aparcacoches.js",
+  "00018 La máquina de burbujas.js",
+  "00019 El hielo con escalera.js",
+  "00020 El menú desplegable.js",
+  "00021 La taza sobre raíles.js",
+  "00022 El soporte perezoso.js",
+  "00023 La sombra del vaso.js",
+  "00024 El brindis de cristal.js"
 ];
 const IDEAS_ASTRA={
   "00000": "Guillermo observa un posavasos que orbita a su alrededor; aterriza bajo un vaso justo antes de que toque la mesa.",
@@ -33,5 +42,14 @@ const IDEAS_ASTRA={
   "00012": "Una cucharilla gira frente a Guillermo como una brújula; apunta a una taza que aparece detrás de una cortina.",
   "00013": "Un azucarillo recorre un laberinto sobre la mesa de Guillermo; la salida desemboca directamente en una taza.",
   "00014": "Un limón mecánico se abre en gajos ante Guillermo; una cremallera dibujada lo cierra cuando rueda fuera del plato.",
-  "00015": "Una gota rebota en un posavasos elástico junto a Guillermo; cae dentro del vaso sin salpicar."
+  "00015": "Una gota rebota en un posavasos elástico junto a Guillermo; cae dentro del vaso sin salpicar.",
+  "00016": "Una botella vacía oscila sobre su base redonda frente a Guillermo; una cucharilla acompasa el último golpe.",
+  "00017": "Un plato gira para recibir varias tapas junto a Guillermo; deja una plaza exacta para la última aceituna.",
+  "00018": "Un grifo de refresco produce burbujas cuadradas ante Guillermo; pasan por un aro y salen redondas.",
+  "00019": "Un cubito sube escalones hacia el vaso de Guillermo; el último escalón se convierte en un tobogán.",
+  "00020": "El menú se abre por capas frente a Guillermo; la última página es una puerta por la que sale una tapa real.",
+  "00021": "Una taza llega hasta Guillermo por un raíl de barra; un desvío devuelve la cucharilla olvidada.",
+  "00022": "Un soporte de servilletas bosteza abriendo su tapa junto a Guillermo; una servilleta lo arropa y la tapa baja.",
+  "00023": "La sombra de un vaso crece mientras Guillermo mira; se revela una luz acercándose, sin cambiar el tamaño del vaso.",
+  "00024": "Dos vasos se acercan entre Guillermo y Laura; tintinean sin derramar nada y sus reflejos repiten el gesto con retraso."
 };
