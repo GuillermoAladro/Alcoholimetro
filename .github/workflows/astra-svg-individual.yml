@@ -1,0 +1,55 @@
+name: Publicar un avatar SVG Astra
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'avatares SVG - Astra/.individual-upload/manifest.json'
+permissions:
+  contents: write
+concurrency:
+  group: astra-individual-svg
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: startsWith(github.event.head_commit.message, 'Publicar avatar individual Astra:')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Restaurar unicamente el avatar revisado
+        shell: python
+        run: |
+          from pathlib import Path
+          import gzip, hashlib, io, json, os, shutil, tarfile
+          root = Path.cwd()
+          folder = root / 'avatares SVG - Astra'
+          staging = folder / '.individual-upload'
+          manifest = json.loads((staging / 'manifest.json').read_text())
+          payload = b''.join((staging / p).read_bytes() for p in manifest['parts'])
+          slug = manifest['slug']
+          allowed = {folder / (slug + '.svg'), folder / (slug + '-preview.png')}
+          with tarfile.open(fileobj=io.BytesIO(payload), mode='r:gz') as tar:
+              assert set(tar.getnames()) == {x['path'] for x in manifest['files']}
+              for item in manifest['files']:
+                  target = (root / item['path']).resolve()
+                  if target not in allowed and not target.is_relative_to((folder / slug).resolve()):
+                      raise ValueError('Ruta ajena al avatar individual')
+                  data = tar.extractfile(item['path']).read()
+                  if len(data) != item['bytes'] or hashlib.sha256(data).hexdigest() != item['sha256']:
+                      raise ValueError('El contenido no coincide con el archivo revisado')
+                  target.parent.mkdir(parents=True, exist_ok=True)
+                  target.write_bytes(data)
+          with open(os.environ['GITHUB_ENV'], 'a') as env:
+              env.write('ASTRA_AVATAR=' + manifest['character'] + '\n')
+          shutil.rmtree(staging)
+      - name: Publicar y cerrar este avatar
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- 'avatares SVG - Astra'
+          git commit -m "Completar SVG individual: $ASTRA_AVATAR"
+          git pull --rebase origin main
+          git push origin HEAD:main
