@@ -1,0 +1,97 @@
+name: Temporary final Sara avatar import
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/import-sara-final-20261029.yml']
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - name: Import verified PNG through encrypted one-time handoff
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import base64, hashlib, io, json, os, subprocess, tempfile, time, urllib.error, urllib.parse, urllib.request, zipfile
+          root = 'https://api.github.com/repos/' + os.environ['REPO']
+          prefix = '.avatar-sara-final-20261029/'
+          target = 'animaciones/Avatar Sara.png'
+          old_sha = '4e26be9def3020c46e4fa644508916017f6b8f47'
+          new_sha = '12b07e18825bf8b28cadb1b91806daf6d722cdbf'
+          expected = '3f7eeac14ec8f45e44cc9c398daea5b79aacedbab26efe2228cbcd10354dc772'
+          def api(path, method='GET', body=None):
+              headers = {'Authorization': 'Bearer ' + os.environ['GH_TOKEN'], 'Accept': 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28'}
+              data = None if body is None else json.dumps(body).encode()
+              req = urllib.request.Request(root + path, data=data, headers=headers, method=method)
+              with urllib.request.urlopen(req, timeout=40) as response:
+                  return json.load(response)
+          def endpoint(path):
+              return '/contents/' + urllib.parse.quote(path, safe='/')
+          def read(path):
+              return api(endpoint(path) + '?ref=main')
+          def remove(path):
+              try:
+                  item = read(path)
+              except urllib.error.HTTPError as exc:
+                  if exc.code == 404:
+                      return
+                  raise
+              api(endpoint(path), 'DELETE', {'message': 'Remove temporary Sara avatar transfer material', 'sha': item['sha'], 'branch': 'main'})
+          try:
+              with tempfile.TemporaryDirectory() as temp:
+                  private = temp + '/private.pem'
+                  subprocess.run(['openssl', 'genpkey', '-algorithm', 'RSA', '-pkeyopt', 'rsa_keygen_bits:4096', '-out', private], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                  public = subprocess.check_output(['openssl', 'pkey', '-in', private, '-pubout'])
+                  api(endpoint(prefix + 'public.pem'), 'PUT', {'message': 'Publish one-time public transfer key for Sara avatar', 'content': base64.b64encode(public).decode(), 'branch': 'main'})
+                  envelope = None
+                  for attempt in range(90):
+                      try:
+                          item = read(prefix + 'payload.json')
+                          envelope = json.loads(base64.b64decode(item['content']))
+                          break
+                      except urllib.error.HTTPError as exc:
+                          if exc.code != 404:
+                              raise
+                          time.sleep(3)
+                  if envelope is None:
+                      raise RuntimeError('Encrypted transfer handoff was not received')
+                  pieces = []
+                  for chunk in envelope['chunks']:
+                      plain = subprocess.check_output(['openssl', 'pkeyutl', '-decrypt', '-inkey', private, '-pkeyopt', 'rsa_padding_mode:oaep', '-pkeyopt', 'rsa_oaep_md:sha256', '-pkeyopt', 'rsa_mgf1_md:sha256'], input=base64.b64decode(chunk), stderr=subprocess.DEVNULL)
+                      pieces.append(plain)
+                  source = json.loads(b''.join(pieces))['url']
+                  parsed = urllib.parse.urlsplit(source)
+                  if parsed.scheme != 'https' or parsed.hostname != 'content.invideo.io':
+                      raise RuntimeError('Unexpected transfer source')
+                  with urllib.request.urlopen(source, timeout=60) as response:
+                      archive = response.read(15000001)
+                  if len(archive) > 15000000:
+                      raise RuntimeError('Transfer archive exceeds size limit')
+                  matches = []
+                  with zipfile.ZipFile(io.BytesIO(archive)) as package:
+                      for member in package.infolist():
+                          if not member.is_dir() and member.file_size == 2065885:
+                              data = package.read(member)
+                              if hashlib.sha256(data).hexdigest() == expected:
+                                  matches.append(data)
+                  if len(matches) != 1 or not matches[0].startswith(b'\x89PNG\r\n\x1a\n'):
+                      raise RuntimeError('The archive does not contain the exact approved PNG')
+                  current = read(target)
+                  if current['sha'] == new_sha:
+                      print('The final avatar is already present and verified.')
+                  elif current['sha'] != old_sha:
+                      raise RuntimeError('Sara avatar changed since inspection; refusing to overwrite')
+                  else:
+                      result = api(endpoint(target), 'PUT', {'message': 'Update Avatar Sara to final straight black hair version', 'content': base64.b64encode(matches[0]).decode(), 'sha': current['sha'], 'branch': 'main'})
+                      if result['content']['sha'] != new_sha:
+                          raise RuntimeError('Uploaded blob did not match the original PNG')
+                      print('Verified final Sara avatar uploaded: ' + new_sha)
+          finally:
+              for path in ('payload.json', 'public.pem'):
+                  remove(prefix + path)
+          PY
