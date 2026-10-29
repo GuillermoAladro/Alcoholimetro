@@ -24,7 +24,15 @@ const ARCHIVOS_BANCO=[
   "00021 La taza sobre raíles.js",
   "00022 El soporte perezoso.js",
   "00023 La sombra del vaso.js",
-  "00024 El brindis de cristal.js"
+  "00024 El brindis de cristal.js",
+  "00025 La croqueta funambulista.js",
+  "00026 El pincho telescópico.js",
+  "00027 La patata lunar.js",
+  "00028 El queso dominó.js",
+  "00029 La aceituna submarina.js",
+  "00030 La tortilla brújula.js",
+  "00031 El pan acordeón.js",
+  "00032 La tapa con paraguas.js"
 ];
 const IDEAS_ASTRA={
   "00000": "Guillermo observa un posavasos que orbita a su alrededor; aterriza bajo un vaso justo antes de que toque la mesa.",
@@ -51,5 +59,13 @@ const IDEAS_ASTRA={
   "00021": "Una taza llega hasta Guillermo por un raíl de barra; un desvío devuelve la cucharilla olvidada.",
   "00022": "Un soporte de servilletas bosteza abriendo su tapa junto a Guillermo; una servilleta lo arropa y la tapa baja.",
   "00023": "La sombra de un vaso crece mientras Guillermo mira; se revela una luz acercándose, sin cambiar el tamaño del vaso.",
-  "00024": "Dos vasos se acercan entre Guillermo y Laura; tintinean sin derramar nada y sus reflejos repiten el gesto con retraso."
+  "00024": "Dos vasos se acercan entre Guillermo y Laura; tintinean sin derramar nada y sus reflejos repiten el gesto con retraso.",
+  "00025": "Una croqueta cruza una cuerda entre platos frente a Guillermo; aterriza sobre una servilleta que se abre como colchoneta.",
+  "00026": "Un pincho se alarga encima de la mesa de Guillermo; recoge tres ingredientes y se contrae formando una tapa.",
+  "00027": "Una patata salta lentamente entre cráteres de un plato ante Guillermo; una gota de salsa marca su aterrizaje.",
+  "00028": "Fichas de queso caen en cadena junto a Guillermo; la última sostiene una galleta antes de que llegue al suelo.",
+  "00029": "Una aceituna se sumerge en un vaso transparente ante Guillermo; reaparece en un pequeño ascensor de burbujas.",
+  "00030": "Una porción de tortilla gira sobre el plato de Guillermo; se alinea con el hueco exacto de la tortilla completa.",
+  "00031": "Un panecillo se estira en rebanadas frente a Guillermo; las rebanadas vuelven a juntarse alrededor de un relleno.",
+  "00032": "Una tapa abre un paraguas ante una lluvia de salsa junto a Guillermo; lo cierra para recibir una sola gota."
 };

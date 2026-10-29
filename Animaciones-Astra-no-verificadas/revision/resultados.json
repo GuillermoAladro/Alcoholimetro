@@ -376,5 +376,141 @@
     "render_max_ms": 8.18,
     "revision_visual": "Revisión de 8 fotogramas por escena, con correcciones",
     "nota_visual": "Guillermo y Laura reconocibles y completos; vasos se acercan hasta tocar bordes y regresan. Máscara de Laura revisada sobre fondo oscuro."
+  },
+  {
+    "id": "00025",
+    "duracion_s": 11.2,
+    "cuadros": 337,
+    "negro_inicio": true,
+    "negro_fin": true,
+    "avatar_en_cuadro": true,
+    "avatares_comprobados": [
+      "guillermo"
+    ],
+    "render_determinista": true,
+    "error_js": false,
+    "pixeles_visibles_min": 412340,
+    "render_max_ms": 7.77,
+    "revision_visual": "Revisión de 8 fotogramas por escena, con correcciones",
+    "nota_visual": "Croqueta apoyada en la curva de cuerda; servilleta abierta antes del descenso y contacto final ajustado."
+  },
+  {
+    "id": "00026",
+    "duracion_s": 11.4,
+    "cuadros": 343,
+    "negro_inicio": true,
+    "negro_fin": true,
+    "avatar_en_cuadro": true,
+    "avatares_comprobados": [
+      "guillermo"
+    ],
+    "render_determinista": true,
+    "error_js": false,
+    "pixeles_visibles_min": 410474,
+    "render_max_ms": 3.72,
+    "revision_visual": "Revisión de 8 fotogramas por escena, con correcciones",
+    "nota_visual": "Soportes se retiran tras la recogida; tres ingredientes conservan orden y bajan sobre el pan."
+  },
+  {
+    "id": "00027",
+    "duracion_s": 10.9,
+    "cuadros": 328,
+    "negro_inicio": true,
+    "negro_fin": true,
+    "avatar_en_cuadro": true,
+    "avatares_comprobados": [
+      "guillermo"
+    ],
+    "render_determinista": true,
+    "error_js": false,
+    "pixeles_visibles_min": 407969,
+    "render_max_ms": 2.9,
+    "revision_visual": "Revisión de 8 fotogramas por escena, con correcciones",
+    "nota_visual": "Dos arcos de salto, contacto con los cráteres y salsa posterior al aterrizaje."
+  },
+  {
+    "id": "00028",
+    "duracion_s": 11.1,
+    "cuadros": 334,
+    "negro_inicio": true,
+    "negro_fin": true,
+    "avatar_en_cuadro": true,
+    "avatares_comprobados": [
+      "guillermo"
+    ],
+    "render_determinista": true,
+    "error_js": false,
+    "pixeles_visibles_min": 408855,
+    "render_max_ms": 5.94,
+    "revision_visual": "Revisión de 8 fotogramas por escena, con correcciones",
+    "nota_visual": "Siete fichas articuladas caen en secuencia; la galleta aterriza en la última cuando ya está horizontal."
+  },
+  {
+    "id": "00029",
+    "duracion_s": 11.2,
+    "cuadros": 337,
+    "negro_inicio": true,
+    "negro_fin": true,
+    "avatar_en_cuadro": true,
+    "avatares_comprobados": [
+      "guillermo"
+    ],
+    "render_determinista": true,
+    "error_js": false,
+    "pixeles_visibles_min": 410646,
+    "render_max_ms": 2.5,
+    "revision_visual": "Revisión de 8 fotogramas por escena, con correcciones",
+    "nota_visual": "Aceituna visible bajo el líquido y apoyada en su superficie al regresar; alfa de burbujas aislado por partícula."
+  },
+  {
+    "id": "00030",
+    "duracion_s": 11.3,
+    "cuadros": 340,
+    "negro_inicio": true,
+    "negro_fin": true,
+    "avatar_en_cuadro": true,
+    "avatares_comprobados": [
+      "guillermo"
+    ],
+    "render_determinista": true,
+    "error_js": false,
+    "pixeles_visibles_min": 409222,
+    "render_max_ms": 1.19,
+    "revision_visual": "Revisión de 8 fotogramas por escena, con correcciones",
+    "nota_visual": "Sector conserva el ángulo del hueco; giro y traslado consecutivos, con apoyo del brazo mecánico."
+  },
+  {
+    "id": "00031",
+    "duracion_s": 11.4,
+    "cuadros": 343,
+    "negro_inicio": true,
+    "negro_fin": true,
+    "avatar_en_cuadro": true,
+    "avatares_comprobados": [
+      "guillermo"
+    ],
+    "render_determinista": true,
+    "error_js": false,
+    "pixeles_visibles_min": 408204,
+    "render_max_ms": 4.4,
+    "revision_visual": "Revisión de 8 fotogramas por escena, con correcciones",
+    "nota_visual": "Siete rebanadas y tres rellenos conservados; huecos finales ajustados al grosor de cada relleno."
+  },
+  {
+    "id": "00032",
+    "duracion_s": 11.3,
+    "cuadros": 340,
+    "negro_inicio": true,
+    "negro_fin": true,
+    "avatar_en_cuadro": true,
+    "avatares_comprobados": [
+      "guillermo"
+    ],
+    "render_determinista": true,
+    "error_js": false,
+    "pixeles_visibles_min": 409625,
+    "render_max_ms": 3.61,
+    "revision_visual": "Revisión de 8 fotogramas por escena, con correcciones",
+    "nota_visual": "Tres gotas desviadas a platos laterales; cubierta se recoge hacia el mástil y libera la trayectoria de la cuarta."
   }
 ]

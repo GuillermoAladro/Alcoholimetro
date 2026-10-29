@@ -11,7 +11,7 @@ for r in rows:
 (rev/'resultados.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2)+'\n')
 lines=['# Revisión del banco Astra','',f"**{len(rows)} escenas, IDs {rows[0]['id']}–{rows[-1]['id']}. {sum(r['cuadros'] for r in rows)} fotogramas renderizados con Canvas Skia.**",'',
 'Controles por escena: registro e ID únicos, sintaxis y ejecución JavaScript, negro exacto al inicio (incluido 1/60 s) y al final, Guillermo dentro del cuadro durante la acción, contenido visible y render determinista al volver a un instante.','',
-'La referencia de Guillermo se conserva byte a byte. Los valores RGB opacos del recorte coinciden con los de la región original; el motor solo aplica transformaciones rígidas y escala uniforme.','',
+'Las referencias de los avatares se conservan byte a byte. Los valores RGB opacos del recorte coinciden con los de la región original; el motor solo aplica transformaciones rígidas y escala uniforme.','',
 '## Revisión visual por muestras','', '| ID | Continuidad revisada | Capturas |','|---|---|---|']
 for r in rows:lines.append(f"| {r['id']} | {notes.get(r['id'],'Pendiente de revisión visual')} | [{r['id']}.jpg]({r['id']}.jpg) |")
 lines+=['','## Límites','',

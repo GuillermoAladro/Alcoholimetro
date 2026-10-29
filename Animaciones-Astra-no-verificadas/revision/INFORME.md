@@ -1,10 +1,10 @@
 # Revisión del banco Astra
 
-**25 escenas, IDs 00000–00024. 8074 fotogramas renderizados con Canvas Skia.**
+**33 escenas, IDs 00000–00032. 10776 fotogramas renderizados con Canvas Skia.**
 
 Controles por escena: registro e ID únicos, sintaxis y ejecución JavaScript, negro exacto al inicio (incluido 1/60 s) y al final, Guillermo dentro del cuadro durante la acción, contenido visible y render determinista al volver a un instante.
 
-La referencia de Guillermo se conserva byte a byte. Los valores RGB opacos del recorte coinciden con los de la región original; el motor solo aplica transformaciones rígidas y escala uniforme.
+Las referencias de los avatares se conservan byte a byte. Los valores RGB opacos del recorte coinciden con los de la región original; el motor solo aplica transformaciones rígidas y escala uniforme.
 
 ## Revisión visual por muestras
 
@@ -35,6 +35,14 @@ La referencia de Guillermo se conserva byte a byte. Los valores RGB opacos del r
 | 00022 | Tapa articulada y servilleta conservan sus posiciones; cierre con la tela colgando delante. | [00022.jpg](00022.jpg) |
 | 00023 | La lámpara explica el cambio de longitud de la sombra; vaso y mesa fijos. | [00023.jpg](00023.jpg) |
 | 00024 | Guillermo y Laura reconocibles y completos; vasos se acercan hasta tocar bordes y regresan. Máscara de Laura revisada sobre fondo oscuro. | [00024.jpg](00024.jpg) |
+| 00025 | Croqueta apoyada en la curva de cuerda; servilleta abierta antes del descenso y contacto final ajustado. | [00025.jpg](00025.jpg) |
+| 00026 | Soportes se retiran tras la recogida; tres ingredientes conservan orden y bajan sobre el pan. | [00026.jpg](00026.jpg) |
+| 00027 | Dos arcos de salto, contacto con los cráteres y salsa posterior al aterrizaje. | [00027.jpg](00027.jpg) |
+| 00028 | Siete fichas articuladas caen en secuencia; la galleta aterriza en la última cuando ya está horizontal. | [00028.jpg](00028.jpg) |
+| 00029 | Aceituna visible bajo el líquido y apoyada en su superficie al regresar; alfa de burbujas aislado por partícula. | [00029.jpg](00029.jpg) |
+| 00030 | Sector conserva el ángulo del hueco; giro y traslado consecutivos, con apoyo del brazo mecánico. | [00030.jpg](00030.jpg) |
+| 00031 | Siete rebanadas y tres rellenos conservados; huecos finales ajustados al grosor de cada relleno. | [00031.jpg](00031.jpg) |
+| 00032 | Tres gotas desviadas a platos laterales; cubierta se recoge hacia el mástil y libera la trayectoria de la cuarta. | [00032.jpg](00032.jpg) |
 
 ## Límites
 
