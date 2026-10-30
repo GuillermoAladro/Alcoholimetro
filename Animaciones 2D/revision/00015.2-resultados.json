@@ -1,0 +1,265 @@
+{
+  "scene": "00015.2",
+  "durationSeconds": 14.25,
+  "renderedFrames": 856,
+  "results": [
+    {
+      "name": "Original y revisión registradas",
+      "passed": true
+    },
+    {
+      "name": "Negro absoluto inicial y final",
+      "passed": true,
+      "details": [
+        {
+          "t": 0,
+          "max": 0
+        },
+        {
+          "t": 0.016666666666666666,
+          "max": 0
+        },
+        {
+          "t": 0.03333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.05,
+          "max": 0
+        },
+        {
+          "t": 0.06666666666666667,
+          "max": 0
+        },
+        {
+          "t": 0.08333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.1,
+          "max": 0
+        },
+        {
+          "t": 0.11666666666666667,
+          "max": 0
+        },
+        {
+          "t": 14.133333333333333,
+          "max": 0
+        },
+        {
+          "t": 14.15,
+          "max": 0
+        },
+        {
+          "t": 14.166666666666666,
+          "max": 0
+        },
+        {
+          "t": 14.183333333333334,
+          "max": 0
+        },
+        {
+          "t": 14.2,
+          "max": 0
+        },
+        {
+          "t": 14.216666666666667,
+          "max": 0
+        },
+        {
+          "t": 14.233333333333333,
+          "max": 0
+        },
+        {
+          "t": 14.25,
+          "max": 0
+        }
+      ]
+    },
+    {
+      "name": "Sin cortes visuales inesperados",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Geometría finita de ambos personajes a 120 Hz",
+      "passed": true,
+      "details": {
+        "samples": 1711,
+        "nonfinite": 0
+      }
+    },
+    {
+      "name": "Cuatro muñecas unidas durante toda la escena",
+      "passed": true,
+      "details": {
+        "maxGapPx": 1.8096298903711607e-7
+      }
+    },
+    {
+      "name": "Laura camina sin deslizamiento de los pies apoyados",
+      "passed": true,
+      "details": {
+        "maxDriftPx": 0
+      }
+    },
+    {
+      "name": "Guillermo se pone de puntillas sobre un punto de apoyo fijo",
+      "passed": true,
+      "details": {
+        "maxDriftPx": 0
+      }
+    },
+    {
+      "name": "Ambas manos sostienen el plato hasta depositarlo en la mesa",
+      "passed": true,
+      "details": {
+        "maxHandGapPx": 0.003317464873643371
+      }
+    },
+    {
+      "name": "Índice de Laura sigue la mejilla al retirar la nata",
+      "passed": true,
+      "details": {
+        "maxGapPx": 0.001640420797235859
+      }
+    },
+    {
+      "name": "Índice con nata alcanza los labios al probarla",
+      "passed": true,
+      "details": {
+        "maxGapPx": 0.7488492571318184
+      }
+    },
+    {
+      "name": "El golpe de la cara coincide con el volumen de la tarta",
+      "passed": true,
+      "details": {
+        "nose": {
+          "x": 507.2660301893999,
+          "y": 291.6909799064552
+        },
+        "cake": {
+          "x": 512,
+          "y": 298
+        }
+      }
+    },
+    {
+      "name": "Cinco velas se apagan y reencienden dos veces antes del golpe",
+      "passed": true,
+      "details": [
+        {
+          "i": 0,
+          "firstOut": 0,
+          "firstRelit": 1,
+          "secondOut": 0,
+          "secondRelit": 1,
+          "afterImpact": 0
+        },
+        {
+          "i": 1,
+          "firstOut": 0,
+          "firstRelit": 1,
+          "secondOut": 0,
+          "secondRelit": 1,
+          "afterImpact": 0
+        },
+        {
+          "i": 2,
+          "firstOut": 0,
+          "firstRelit": 1,
+          "secondOut": 0,
+          "secondRelit": 1,
+          "afterImpact": 0
+        },
+        {
+          "i": 3,
+          "firstOut": 0,
+          "firstRelit": 1,
+          "secondOut": 0,
+          "secondRelit": 1,
+          "afterImpact": 0
+        },
+        {
+          "i": 4,
+          "firstOut": 0,
+          "firstRelit": 1,
+          "secondOut": 0,
+          "secondRelit": 1,
+          "afterImpact": 0
+        }
+      ]
+    },
+    {
+      "name": "La vela de la nariz se apaga y vuelve a encenderse",
+      "passed": true
+    },
+    {
+      "name": "Siluetas completas dentro del encuadre tras la entrada de Laura",
+      "passed": true,
+      "details": {
+        "samples": 119,
+        "cut": []
+      }
+    },
+    {
+      "name": "Laura cierra un solo ojo en el guiño final",
+      "passed": true
+    },
+    {
+      "name": "Trayectorias idénticas al buscar directamente",
+      "passed": true
+    },
+    {
+      "name": "Rebobinado y reproducción idénticos a 30/60/120 fps",
+      "passed": true,
+      "details": {
+        "reverse": true,
+        "fpsChecks": [
+          {
+            "fps": 30,
+            "matches": true
+          },
+          {
+            "fps": 60,
+            "matches": true
+          },
+          {
+            "fps": 120,
+            "matches": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Atlas cargados",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Selector, reinicio, avance, retroceso, búsqueda y reproducción",
+      "passed": true
+    },
+    {
+      "name": "Modo kiosco",
+      "passed": true
+    },
+    {
+      "name": "Sin errores JavaScript ni recursos fallidos",
+      "passed": true,
+      "details": {
+        "errors": [],
+        "failures": []
+      }
+    }
+  ],
+  "paintMs": {
+    "median": 2.7999999970197678,
+    "p95": 4.699999995529652,
+    "max": 16
+  },
+  "browser": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.0 Safari/537.36",
+  "passed": true
+}
