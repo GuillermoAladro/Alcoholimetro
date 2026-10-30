@@ -32,6 +32,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00008 | Guillermo y los cacahuetes | 13,45 s | [MP4 60 fps](vista%20previa/00008%20Guillermo%20y%20los%20cacahuetes.mp4) · [fotogramas](vista%20previa/00008%20Guillermo%20y%20los%20cacahuetes%20-%20fotogramas.png) |
 | 00008.2 | Guillermo y los cacahuetes · revisada | 13,45 s | [MP4 60 fps](vista%20previa/00008.2%20Guillermo%20y%20los%20cacahuetes.mp4) · [fotogramas](vista%20previa/00008.2%20Guillermo%20y%20los%20cacahuetes%20-%20fotogramas.png) · [revisión](revision/00008.2.md) |
 | 00009 | Guillermo y la línea recta | 14,00 s | [MP4 60 fps](vista%20previa/00009%20Guillermo%20y%20la%20linea%20recta.mp4) · [fotogramas](vista%20previa/00009%20Guillermo%20y%20la%20linea%20recta%20-%20fotogramas.png) |
+| 00009.2 | Guillermo y la línea recta · revisada | 14 s | [MP4 60 fps](vista%20previa/00009.2%20Guillermo%20y%20la%20linea%20recta.mp4) · [fotogramas](vista%20previa/00009.2%20Guillermo%20y%20la%20linea%20recta%20-%20fotogramas.png) · [revisión](revision/00009.2.md) |
 | 00010 | Guillermo en la discoteca | 13,60 s | [MP4 60 fps](vista%20previa/00010%20Guillermo%20en%20la%20discoteca.mp4) · [fotogramas](vista%20previa/00010%20Guillermo%20en%20la%20discoteca%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
@@ -231,6 +232,12 @@ Corrige los brazos al lanzar y celebrar, el apoyo de los cacahuetes y sus sombra
 11. Negro.
 
 ![Fotogramas de 00009](vista%20previa/00009%20Guillermo%20y%20la%20linea%20recta%20-%20fotogramas.png)
+
+
+### 00009.2 · Revisión de continuidad
+
+Corrige la continuidad del brazo al retirar la mano de la cara y ajusta el contacto del índice con el ojo. Conserva el recorrido talón con punta, la prueba de equilibrio, la reverencia, el resbalón y la zapatilla que regresa. Se conserva la original. [Informe y pruebas](revision/00009.2.md).
+
 
 ### 00010 · Guillermo en la discoteca
 
