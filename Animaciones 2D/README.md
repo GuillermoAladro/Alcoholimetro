@@ -46,6 +46,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00015 | Guillermo y Laura · La tarta | 14,25 s | [MP4 60 fps](vista%20previa/00015%20Guillermo%20y%20Laura%20-%20la%20tarta.mp4) · [fotogramas](vista%20previa/00015%20Guillermo%20y%20Laura%20-%20la%20tarta%20-%20fotogramas.png) |
 | 00015.2 | Guillermo y Laura · La tarta · revisada | 14,25 s | [MP4 60 fps](vista%20previa/00015.2%20Guillermo%20y%20Laura%20-%20la%20tarta.mp4) · [fotogramas](vista%20previa/00015.2%20Guillermo%20y%20Laura%20-%20la%20tarta%20-%20fotogramas.png) · [revisión](revision/00015.2.md) |
 | 00016 | Guillermo y Laura · El truco de magia | 14,60 s | [MP4 60 fps](vista%20previa/00016%20Guillermo%20y%20Laura%20-%20el%20truco%20de%20magia.mp4) · [fotogramas](vista%20previa/00016%20Guillermo%20y%20Laura%20-%20el%20truco%20de%20magia%20-%20fotogramas.png) |
+| 00016.2 | Guillermo y Laura · El truco de magia · revisada | 14,6 s | [MP4 60 fps](vista%20previa/00016.2%20Guillermo%20y%20Laura%20-%20el%20truco%20de%20magia.mp4) · [fotogramas](vista%20previa/00016.2%20Guillermo%20y%20Laura%20-%20el%20truco%20de%20magia%20-%20fotogramas.png) · [revisión](revision/00016.2.md) |
 | 00017 | Guillermo y Laura · Los dardos | 14,45 s | [MP4 60 fps](vista%20previa/00017%20Guillermo%20y%20Laura%20-%20los%20dardos.mp4) · [fotogramas](vista%20previa/00017%20Guillermo%20y%20Laura%20-%20los%20dardos%20-%20fotogramas.png) |
 | 00018 | Guillermo y Laura · El selfie | 13,30 s | [MP4 60 fps](vista%20previa/00018%20Guillermo%20y%20Laura%20-%20el%20selfie.mp4) · [fotogramas](vista%20previa/00018%20Guillermo%20y%20Laura%20-%20el%20selfie%20-%20fotogramas.png) |
 | 00019 | Guillermo y Laura · El paraguas | 13,60 s | [MP4 60 fps](vista%20previa/00019%20Guillermo%20y%20Laura%20-%20el%20paraguas.mp4) · [fotogramas](vista%20previa/00019%20Guillermo%20y%20Laura%20-%20el%20paraguas%20-%20fotogramas.png) |
@@ -417,6 +418,12 @@ Corrige las muñecas y los recorridos de los brazos, el apoyo de los pies al pon
 9. Negro.
 
 ![Fotogramas de 00016](vista%20previa/00016%20Guillermo%20y%20Laura%20-%20el%20truco%20de%20magia%20-%20fotogramas.png)
+
+
+### 00016.2 · Revisión de continuidad
+
+Corrige la continuidad de brazos y hombros, las puntillas de Laura, los agarres de los pañuelos y el lanzamiento de la moneda. La aparición de la paloma ya funciona al buscar directamente cualquier instante. Se conserva la original. [Informe y pruebas](revision/00016.2.md).
+
 
 ### 00017 · Guillermo y Laura · Los dardos
 
