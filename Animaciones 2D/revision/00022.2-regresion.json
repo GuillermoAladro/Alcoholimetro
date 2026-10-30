@@ -1,0 +1,143 @@
+{
+  "scene": "00022",
+  "baselineCommit": "dfb5a3b6062ff4cea8b99b4641c200c9453c4c62",
+  "frames": [
+    {
+      "t": 0.05,
+      "unchanged": true
+    },
+    {
+      "t": 0.8,
+      "unchanged": true
+    },
+    {
+      "t": 1.45,
+      "unchanged": true
+    },
+    {
+      "t": 1.85,
+      "unchanged": true
+    },
+    {
+      "t": 2.3,
+      "unchanged": true
+    },
+    {
+      "t": 2.42,
+      "unchanged": true
+    },
+    {
+      "t": 3,
+      "unchanged": true
+    },
+    {
+      "t": 3.8,
+      "unchanged": true
+    },
+    {
+      "t": 4.6,
+      "unchanged": true
+    },
+    {
+      "t": 5.05,
+      "unchanged": true
+    },
+    {
+      "t": 5.42,
+      "unchanged": true
+    },
+    {
+      "t": 5.6,
+      "unchanged": true
+    },
+    {
+      "t": 5.82,
+      "unchanged": true
+    },
+    {
+      "t": 6.3,
+      "unchanged": true
+    },
+    {
+      "t": 7,
+      "unchanged": true
+    },
+    {
+      "t": 7.6,
+      "unchanged": true
+    },
+    {
+      "t": 8.1,
+      "unchanged": true
+    },
+    {
+      "t": 8.6,
+      "unchanged": true
+    },
+    {
+      "t": 9,
+      "unchanged": true
+    },
+    {
+      "t": 9.5,
+      "unchanged": true
+    },
+    {
+      "t": 9.86,
+      "unchanged": true
+    },
+    {
+      "t": 10.12,
+      "unchanged": true
+    },
+    {
+      "t": 10.5,
+      "unchanged": true
+    },
+    {
+      "t": 10.86,
+      "unchanged": true
+    },
+    {
+      "t": 11.2,
+      "unchanged": true
+    },
+    {
+      "t": 11.42,
+      "unchanged": true
+    },
+    {
+      "t": 11.55,
+      "unchanged": true
+    },
+    {
+      "t": 11.9,
+      "unchanged": true
+    },
+    {
+      "t": 12.14,
+      "unchanged": true
+    },
+    {
+      "t": 12.6,
+      "unchanged": true
+    },
+    {
+      "t": 12.85,
+      "unchanged": true
+    },
+    {
+      "t": 13.08,
+      "unchanged": true
+    },
+    {
+      "t": 13.5,
+      "unchanged": true
+    },
+    {
+      "t": 14.45,
+      "unchanged": true
+    }
+  ],
+  "unchanged": true
+}

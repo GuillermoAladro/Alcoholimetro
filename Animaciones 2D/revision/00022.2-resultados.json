@@ -1,0 +1,284 @@
+{
+  "scene": "00022.2",
+  "durationSeconds": 14.5,
+  "renderedFrames": 871,
+  "results": [
+    {
+      "name": "Original y revisión registradas",
+      "passed": true
+    },
+    {
+      "name": "Negro absoluto inicial y final",
+      "passed": true,
+      "details": [
+        {
+          "t": 0,
+          "max": 0
+        },
+        {
+          "t": 0.016666666666666666,
+          "max": 0
+        },
+        {
+          "t": 0.03333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.05,
+          "max": 0
+        },
+        {
+          "t": 0.06666666666666667,
+          "max": 0
+        },
+        {
+          "t": 0.08333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.1,
+          "max": 0
+        },
+        {
+          "t": 0.11666666666666667,
+          "max": 0
+        },
+        {
+          "t": 14.383333333333333,
+          "max": 0
+        },
+        {
+          "t": 14.4,
+          "max": 0
+        },
+        {
+          "t": 14.416666666666666,
+          "max": 0
+        },
+        {
+          "t": 14.433333333333334,
+          "max": 0
+        },
+        {
+          "t": 14.45,
+          "max": 0
+        },
+        {
+          "t": 14.466666666666667,
+          "max": 0
+        },
+        {
+          "t": 14.483333333333333,
+          "max": 0
+        },
+        {
+          "t": 14.5,
+          "max": 0
+        }
+      ]
+    },
+    {
+      "name": "Sin cortes visuales inesperados",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Geometría finita a 120 Hz",
+      "passed": true,
+      "details": {
+        "samples": 1741,
+        "nonfinite": 0
+      }
+    },
+    {
+      "name": "Cuatro muñecas unidas durante toda la escena",
+      "passed": true,
+      "details": {
+        "maxGapPx": 2.2537598135026343e-7
+      }
+    },
+    {
+      "name": "La escalera conserva su longitud",
+      "passed": true,
+      "details": {
+        "maxErrorPx": 2.2737367544323206e-13
+      }
+    },
+    {
+      "name": "Las manos acompañan la escalera al plantarla, recogerla y llevarla",
+      "passed": true,
+      "details": {
+        "maxGapPx": 5.684341886080802e-14
+      }
+    },
+    {
+      "name": "Sin saltos en los extremos al cambiar de fase",
+      "passed": true,
+      "details": [
+        {
+          "t": 7.95,
+          "gap": 1.59397906573066e-11
+        },
+        {
+          "t": 8.6,
+          "gap": 1.809907310521923e-11
+        },
+        {
+          "t": 11.66,
+          "gap": 3.670607380222879e-11
+        },
+        {
+          "t": 12.14,
+          "gap": 0.00004792503178881803
+        }
+      ]
+    },
+    {
+      "name": "Escalera inmóvil durante el rescate",
+      "passed": true,
+      "details": {
+        "maxDriftPx": 2.842170943040401e-14
+      }
+    },
+    {
+      "name": "Las suelas alcanzan los peldaños al terminar cada paso",
+      "passed": true,
+      "details": {
+        "maxSoleGapPx": 1.035000000000025
+      }
+    },
+    {
+      "name": "Guillermo trepa alternando manos, cuerpo y pies",
+      "passed": true
+    },
+    {
+      "name": "Saltos del gato continuos al despegar y aterrizar",
+      "passed": true,
+      "details": [
+        {
+          "t": 5.42,
+          "position": 0.004595707425949058,
+          "rotation": 3.1415926623994774e-7,
+          "direction": 0
+        },
+        {
+          "t": 5.82,
+          "position": 0.0000013199702383831417,
+          "rotation": 4.79159237057547e-7,
+          "direction": 0
+        },
+        {
+          "t": 9.86,
+          "position": 1.157491241073497e-9,
+          "rotation": 3.833365611844255e-8,
+          "direction": 0
+        },
+        {
+          "t": 10.12,
+          "position": 0.000004448581457570486,
+          "rotation": 3.8408731403705154e-8,
+          "direction": 0
+        },
+        {
+          "t": 10.48,
+          "position": 0.000002234593281057273,
+          "rotation": 4.8421052334379766e-8,
+          "direction": 0
+        },
+        {
+          "t": 10.86,
+          "position": 0.000006649373376957279,
+          "rotation": 9.473684159377882e-8,
+          "direction": 0
+        }
+      ]
+    },
+    {
+      "name": "El gato sigue el casco al bajar, girar y salir",
+      "passed": true,
+      "details": {
+        "maxGapPx": 0
+      }
+    },
+    {
+      "name": "Los tacos de la escalera descansan sobre el suelo",
+      "passed": true,
+      "details": {
+        "t": 10,
+        "left": 613,
+        "right": 789,
+        "top": 132,
+        "bottom": 564
+      }
+    },
+    {
+      "name": "La caída sentada no atraviesa el suelo",
+      "passed": true,
+      "details": {
+        "samples": 16,
+        "maxBottom": 565
+      }
+    },
+    {
+      "name": "Rescate y saltos completos dentro del encuadre",
+      "passed": true,
+      "details": {
+        "samples": 181,
+        "cut": []
+      }
+    },
+    {
+      "name": "Trayectorias idénticas al buscar directamente",
+      "passed": true
+    },
+    {
+      "name": "Rebobinado y reproducción idénticos a 30/60/120 fps",
+      "passed": true,
+      "details": {
+        "reverse": true,
+        "fpsChecks": [
+          {
+            "fps": 30,
+            "matches": true
+          },
+          {
+            "fps": 60,
+            "matches": true
+          },
+          {
+            "fps": 120,
+            "matches": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Atlas cargados",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Selector, reinicio, avance, retroceso, búsqueda y reproducción",
+      "passed": true
+    },
+    {
+      "name": "Modo kiosco",
+      "passed": true
+    },
+    {
+      "name": "Sin errores JavaScript ni recursos fallidos",
+      "passed": true,
+      "details": {
+        "errors": [],
+        "failures": []
+      }
+    }
+  ],
+  "paintMs": {
+    "median": 2.3999999910593033,
+    "p95": 4,
+    "max": 10.400000005960464
+  },
+  "browser": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.0 Safari/537.36",
+  "passed": true
+}
