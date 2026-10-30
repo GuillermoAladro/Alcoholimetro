@@ -1,272 +1,202 @@
 {
-  "character": "Dari",
-  "source_git_blob": "47752f6f38bf762d0758db5beb3801e98597c982",
-  "master_git_blob": "3d5a3c85101dd6689c694597ed1ef6bef2d8ddae",
-  "master_sha256": "ce58afe10d80a199b015a274a1ca1f33f50fd024d947dc03d497a778a95a4262",
-  "master_checks": {
-    "xml_valid": true,
-    "vector_only": true,
-    "unique_ids": true,
-    "internal_references_valid": true,
-    "paths": 123667,
-    "gradients": 87930
+ "avatar": "Dari",
+ "fecha": "2026-10-30",
+ "referencia": "animaciones/Avatar Dari.png",
+ "referencia_sha256": "ebce7b24749128b009d200e213aabab90d7a65fad77ecf87131f0d78209d6897",
+ "fondo": "transparente",
+ "metodo": "Trazados y degradados de la hoja maestra Astra conservados; silueta nueva desde herramientas/mascaras (segmentación isnet + limpieza de contorno); ver ../REVISION-TRANSPARENTE-2026-10-30.md",
+ "comprobado_con": [
+  "resvg 0.5 (render y métricas)",
+  "Chromium 1243 (decodificación de las 10 piezas)"
+ ],
+ "cambios_frente_a_version_anterior": {
+  "fondo_blanco_quitado_px": 10288,
+  "personaje_recuperado_px": 4295
+ },
+ "archivos": [
+  {
+   "archivo": "Dari.svg",
+   "bytes": 34779040,
+   "sha256": "4587752ec6f1560e4c16b5f71e792c9aaae1fbe1ff2e70188629fe0b93e51246",
+   "viewBox": "0 0 1122 1402",
+   "trazados": 123686,
+   "degradados": 87930,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0
   },
-  "method": "Exact extraction from original detailed vector master; individual contour selection and definition pruning",
-  "static_illustrations": true,
-  "selection": [
-    {
-      "contour": 18
-    },
-    {
-      "contour": 17
-    },
-    {
-      "contour": 16
-    },
-    {
-      "contour": 15
-    },
-    {
-      "contour": 8
-    },
-    {
-      "contour": 5
-    },
-    {
-      "contour": 4
-    },
-    {
-      "contour": 0
-    },
-    {
-      "contour": 6
-    },
-    {
-      "contour": 7
-    }
-  ],
-  "files": [
-    {
-      "file": "01-frontal.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 21344,
-      "gradients": 14738,
-      "bytes": 5853354,
-      "sha256": "c0f8f14525970ba9c8dcc697a604178cf85261dc38cc69cf769ed56daf8cb089",
-      "viewBox": [
-        123,
-        29,
-        309,
-        864
-      ],
-      "contour_index": 18,
-      "figure_mae_vs_master": 0.000549,
-      "figure_mae_vs_reference": 2.2787
-    },
-    {
-      "file": "02-tres-cuartos.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 19083,
-      "gradients": 13295,
-      "bytes": 5255824,
-      "sha256": "746448de5a917f276e964901e7001bf54ba2acf52e594fd6ef26b26bdb76f3ee",
-      "viewBox": [
-        414,
-        37,
-        250,
-        859
-      ],
-      "contour_index": 17,
-      "figure_mae_vs_master": 0.002034,
-      "figure_mae_vs_reference": 2.5309
-    },
-    {
-      "file": "03-perfil.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 14685,
-      "gradients": 10243,
-      "bytes": 4049208,
-      "sha256": "0eb8f6ba06bd5b69540293424b44bb7b3079dd19f102dd539b9fa0decabe8fd9",
-      "viewBox": [
-        657,
-        40,
-        194,
-        855
-      ],
-      "contour_index": 16,
-      "figure_mae_vs_master": 0.002321,
-      "figure_mae_vs_reference": 2.3067
-    },
-    {
-      "file": "04-espalda.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 19715,
-      "gradients": 13219,
-      "bytes": 5353504,
-      "sha256": "eb31ae1ab0814935a8f19d3e7b9cbf1faf844f3c5b35bef8bc39847af836aea1",
-      "viewBox": [
-        844,
-        46,
-        278,
-        843
-      ],
-      "contour_index": 15,
-      "figure_mae_vs_master": 0.002463,
-      "figure_mae_vs_reference": 1.9662
-    },
-    {
-      "file": "05-neutral.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 8718,
-      "gradients": 6539,
-      "bytes": 2494576,
-      "sha256": "2efe50eb6d7af9698ca97652a44cbedf4b820ee9ece52a1340aca546a629abe3",
-      "viewBox": [
-        0,
-        943,
-        202,
-        353
-      ],
-      "contour_index": 8,
-      "figure_mae_vs_master": 0.0,
-      "figure_mae_vs_reference": 2.7078
-    },
-    {
-      "file": "06-risa.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 7783,
-      "gradients": 5905,
-      "bytes": 2230290,
-      "sha256": "d4742beb5ffdbc5178fe34ccb81bfdeaf7ca1453bb6a2d8e7b50d82e17bdf5dc",
-      "viewBox": [
-        190,
-        951,
-        195,
-        345
-      ],
-      "contour_index": 5,
-      "figure_mae_vs_master": 0.001308,
-      "figure_mae_vs_reference": 2.673
-    },
-    {
-      "file": "07-sorpresa.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 7724,
-      "gradients": 5820,
-      "bytes": 2213285,
-      "sha256": "b0203e78c230d74a882427211c5399ddd8f4f173a65d4aff4ae26850ab31b333",
-      "viewBox": [
-        373,
-        951,
-        193,
-        345
-      ],
-      "contour_index": 4,
-      "figure_mae_vs_master": 0.001501,
-      "figure_mae_vs_reference": 2.6859
-    },
-    {
-      "file": "08-cansancio.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 7525,
-      "gradients": 5421,
-      "bytes": 2108618,
-      "sha256": "6f38b2b63bca8d7a0757757930c02b54a702ef4d287db84cf160cb5d960f2701",
-      "viewBox": [
-        554,
-        972,
-        195,
-        324
-      ],
-      "contour_index": 0,
-      "figure_mae_vs_master": 0.001852,
-      "figure_mae_vs_reference": 2.4826
-    },
-    {
-      "file": "09-ojos-cerrados.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 7754,
-      "gradients": 5841,
-      "bytes": 2224828,
-      "sha256": "5cc44b962c573f6e344bd5ab54f3ff1308ded2f668ea3ba960e49e09b5b7240f",
-      "viewBox": [
-        737,
-        950,
-        195,
-        346
-      ],
-      "contour_index": 6,
-      "figure_mae_vs_master": 0.001651,
-      "figure_mae_vs_reference": 2.6437
-    },
-    {
-      "file": "10-guino.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 8589,
-      "gradients": 6383,
-      "bytes": 2453953,
-      "sha256": "3ae285723564a97294c2d81119693c2d8e9155e2840b31507ee681a6a51cb772",
-      "viewBox": [
-        920,
-        946,
-        202,
-        350
-      ],
-      "contour_index": 7,
-      "figure_mae_vs_master": 0.002439,
-      "figure_mae_vs_reference": 2.6674
-    }
-  ],
-  "independent_renderer": [
-    {
-      "file": "01-frontal.svg",
-      "renderer": "Inkscape",
-      "mae_vs_cairosvg": 0.1
-    },
-    {
-      "file": "06-risa.svg",
-      "renderer": "Inkscape",
-      "mae_vs_cairosvg": 0.0755
-    }
-  ],
-  "visual_review": {
-    "status": "reviewed",
-    "notes": [
-      "Cuatro vistas y seis expresiones comparadas individualmente con la referencia.",
-      "Gafas, patillas, rizos, bigote, perilla y rasgos faciales preservados.",
-      "Chaqueta beige, capucha, botones, puños, vaqueros y zapatillas coherentes entre las vistas.",
-      "Recortes limpios sin letras ni fragmentos de personajes vecinos."
-    ]
+  {
+   "archivo": "Dari/01-frontal.svg",
+   "bytes": 5955372,
+   "sha256": "bb2f43ba89d28f9644b68231ae96492585f0880477ae8ffccd23e419c38a4e33",
+   "viewBox": "125 31 305 859",
+   "trazados": 21498,
+   "degradados": 14856,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9968,
+   "error_color_medio": 2.41,
+   "piezas_sueltas": 0
   },
-  "created_utc": "2026-10-30T00:18:32.544714+00:00"
+  {
+   "archivo": "Dari/02-tres-cuartos.svg",
+   "bytes": 5375431,
+   "sha256": "f6974d2f3989665c70ee05d879214141163e30eb6634332eb5ff7e575db9f3ab",
+   "viewBox": "415 40 248 853",
+   "trazados": 19226,
+   "degradados": 13419,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9968,
+   "error_color_medio": 2.65,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Dari/03-perfil.svg",
+   "bytes": 4094319,
+   "sha256": "f6d1094612689b9ea2c9322fb7b129def409f4b41a81ac7c9e7be718a2a40a9d",
+   "viewBox": "658 47 192 846",
+   "trazados": 14697,
+   "degradados": 10252,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9965,
+   "error_color_medio": 2.47,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Dari/04-espalda.svg",
+   "bytes": 5403207,
+   "sha256": "cbf68b296f95b8d80c18e7663c2939e9aae386580cb37aa98af7acce973886dd",
+   "viewBox": "846 47 276 839",
+   "trazados": 19722,
+   "degradados": 13222,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9969,
+   "error_color_medio": 2.13,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Dari/05-neutral.svg",
+   "bytes": 2628852,
+   "sha256": "fa63e489238bfea9b0003a0683c6440b08f930ad0b59c172f5fa9cf097e94168",
+   "viewBox": "0 952 201 342",
+   "trazados": 8991,
+   "degradados": 6756,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9965,
+   "error_color_medio": 2.72,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Dari/06-risa.svg",
+   "bytes": 2484684,
+   "sha256": "daf3be3b92914665dfa3cb2f8cd2ee202a01f04367b67e608e5cece5db103c1b",
+   "viewBox": "191 955 193 339",
+   "trazados": 8284,
+   "degradados": 6312,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9975,
+   "error_color_medio": 2.78,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Dari/07-sorpresa.svg",
+   "bytes": 2486707,
+   "sha256": "792b3ace12eed674d8d1dea8313803dcaa9133e7f0e39b18f7d697578d515f23",
+   "viewBox": "374 955 198 339",
+   "trazados": 8394,
+   "degradados": 6355,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9969,
+   "error_color_medio": 2.76,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Dari/08-cansancio.svg",
+   "bytes": 2333770,
+   "sha256": "59f761dfaca68e606d10513526e703d312a854c127584d7e125f93ef6f690661",
+   "viewBox": "555 974 193 320",
+   "trazados": 8005,
+   "degradados": 5817,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.997,
+   "error_color_medio": 2.61,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Dari/09-ojos-cerrados.svg",
+   "bytes": 2394387,
+   "sha256": "829a26c8640d4c9d1a2b83c348c7311d0e96e9c8d40e4c1d6f8f78f9c68693f1",
+   "viewBox": "738 953 193 341",
+   "trazados": 8094,
+   "degradados": 6112,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.997,
+   "error_color_medio": 2.7,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Dari/10-guino.svg",
+   "bytes": 2569708,
+   "sha256": "762eed90c16785f3b3e5b838755fd0318664f6d82268cab0dea45ef9c5ebca0a",
+   "viewBox": "921 947 201 348",
+   "trazados": 8779,
+   "degradados": 6533,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9975,
+   "error_color_medio": 2.8,
+   "piezas_sueltas": 0
+  }
+ ]
 }
