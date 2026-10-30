@@ -99,6 +99,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00060 | Guillermo y Dari · El yoyó | 14,90 s | [MP4 60 fps](vista%20previa/00060%20Guillermo%20y%20Dari%20-%20el%20yoyo.mp4) · [fotogramas](vista%20previa/00060%20Guillermo%20y%20Dari%20-%20el%20yoyo%20-%20fotogramas.png) |
 | 00061 | Guillermo y Deivi · El monopatín | 14,15 s | [MP4 60 fps](vista%20previa/00061%20Guillermo%20y%20Deivi%20-%20el%20monopatin.mp4) · [fotogramas](vista%20previa/00061%20Guillermo%20y%20Deivi%20-%20el%20monopatin%20-%20fotogramas.png) |
 | 00062 | Guillermo y Deivi · El robot | 15,0 s | [MP4 60 fps](vista%20previa/00062%20Guillermo%20y%20Deivi%20-%20el%20robot.mp4) · [fotogramas](vista%20previa/00062%20Guillermo%20y%20Deivi%20-%20el%20robot%20-%20fotogramas.png) |
+| 00063 | Guillermo y Deivi · El balón | 14,3 s | [MP4 60 fps](vista%20previa/00063%20Guillermo%20y%20Deivi%20-%20el%20balon.mp4) · [fotogramas](vista%20previa/00063%20Guillermo%20y%20Deivi%20-%20el%20balon%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1217,6 +1218,22 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 12. Negro.
 
 ![Fotogramas de 00062](vista%20previa/00062%20Guillermo%20y%20Deivi%20-%20el%20robot%20-%20fotogramas.png)
+
+### 00063 · Guillermo y Deivi · El balón
+
+1. Negro.
+2. A la puerta del bar, al atardecer (fachada ocre, zócalo de azulejos, ventana con toldo, farol de hierro, esquina de piedra). Un balón en la acera; Deivi mete la puntera debajo y lo levanta.
+3. Con las manos en los bolsillos hace toques: empeine, empeine, rodilla, cabeza, hombro… y lo caza en la nuca, doblado, mirando de reojo a Guillermo, que se queda boquiabierto.
+4. Guillermo pone cara de «bah», se recoloca los hombros y le pide el balón con la mano.
+5. Deivi, con un golpe de riñones, hace saltar el balón de la nuca, se endereza y se lo pasa de cabeza.
+6. Guillermo, con la lengua fuera, lo recibe con el empeine… y le sale disparado a la cara: ¡pum!, se le queda la marca roja.
+7. Aturdido, levanta la rodilla: el balón sube al farol (se balancea y se le raja el cristal), le pasa rozando el pelo, rebota en la esquina de piedra (deja la marca y caen migas) y vuelve para darle un coscorrón.
+8. Tres botecitos sobre el pelo de punta… y el balón se queda allí, en equilibrio. Guillermo se congela con los ojos arriba y los brazos abiertos, sudando; la cámara se acerca.
+9. Deivi alucina, saca las manos de los bolsillos y aplaude despacio.
+10. Guillermo mira a cámara orgulloso, el balón se le va un pelo, lo recupera con la cabeza y vuelve a mirar a cámara con un guiño; Deivi también mira a cámara.
+11. Negro.
+
+![Fotogramas de 00063](vista%20previa/00063%20Guillermo%20y%20Deivi%20-%20el%20balon%20-%20fotogramas.png)
 
 ## Ver y grabar
 
