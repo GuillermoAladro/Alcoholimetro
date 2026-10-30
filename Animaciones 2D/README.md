@@ -86,6 +86,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00047 | Guillermo y Carla · Las flores | 15,00 s | [MP4 60 fps](vista%20previa/00047%20Guillermo%20y%20Carla%20-%20las%20flores.mp4) · [fotogramas](vista%20previa/00047%20Guillermo%20y%20Carla%20-%20las%20flores%20-%20fotogramas.png) |
 | 00048 | Guillermo y Carla · El limón | 13,50 s | [MP4 60 fps](vista%20previa/00048%20Guillermo%20y%20Carla%20-%20el%20limon.mp4) · [fotogramas](vista%20previa/00048%20Guillermo%20y%20Carla%20-%20el%20limon%20-%20fotogramas.png) |
 | 00049 | Guillermo y Carla · El helado | 14,40 s | [MP4 60 fps](vista%20previa/00049%20Guillermo%20y%20Carla%20-%20el%20helado.mp4) · [fotogramas](vista%20previa/00049%20Guillermo%20y%20Carla%20-%20el%20helado%20-%20fotogramas.png) |
+| 00050 | Guillermo y Carla · Las gafas de sol | 14,50 s | [MP4 60 fps](vista%20previa/00050%20Guillermo%20y%20Carla%20-%20las%20gafas%20de%20sol.mp4) · [fotogramas](vista%20previa/00050%20Guillermo%20y%20Carla%20-%20las%20gafas%20de%20sol%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -991,6 +992,23 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 12. Negro.
 
 ![Fotogramas de 00049](vista%20previa/00049%20Guillermo%20y%20Carla%20-%20el%20helado%20-%20fotogramas.png)
+
+### 00050 · Guillermo y Carla · Las gafas de sol
+
+1. Negro.
+2. Mediodía de verano a la puerta del bar, en un pueblo blanco junto al mar. Guillermo se hace visera con la mano, deslumbrado; Carla lleva las gafas de sol subidas en el pelo.
+3. Carla coge las gafas por la patilla, se las baja, se echa la melena atrás (destello en el cristal) y mira a cámara.
+4. Carla se va calle abajo muy chula.
+5. Guillermo saca sus gafas del bolsillo, las abre de un golpe de muñeca, mira a cámara y se las pone.
+6. **Todo se queda casi negro** a su alrededor: sus gafas son demasiado oscuras.
+7. Sale detrás de ella andando a lo guay, con las manos en los bolsillos, se desvía hacia el bordillo y **se da de morros con la farola**: ¡boing!, la farola vibra, gafas torcidas, chichón y estrellitas.
+8. Retrocede dando tumbos con los brazos como aspas, choca de culo con la papelera y la tapa sale volando y le cae en la cabeza.
+9. Carla vuelve, se sube sus gafas, le sube a él las suyas a la frente y se ríe.
+10. Guillermo parpadea, la ve, se rasca la nuca y se pone colorado.
+11. Carla da media vuelta, le tiende la mano y se lo lleva calle abajo, esta vez por delante de la farola, guiñando un ojo a cámara.
+12. Negro.
+
+![Fotogramas de 00050](vista%20previa/00050%20Guillermo%20y%20Carla%20-%20las%20gafas%20de%20sol%20-%20fotogramas.png)
 
 ## Ver y grabar
 
