@@ -53,6 +53,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00023 | Guillermo y Marcos · La barra de bomberos | 14,45 s | [MP4 60 fps](vista%20previa/00023%20Guillermo%20y%20Marcos%20-%20la%20barra%20de%20bomberos.mp4) · [fotogramas](vista%20previa/00023%20Guillermo%20y%20Marcos%20-%20la%20barra%20de%20bomberos%20-%20fotogramas.png) |
 | 00024 | Guillermo y Marcos · La manguera loca | 13,90 s | [MP4 60 fps](vista%20previa/00024%20Guillermo%20y%20Marcos%20-%20la%20manguera%20loca.mp4) · [fotogramas](vista%20previa/00024%20Guillermo%20y%20Marcos%20-%20la%20manguera%20loca%20-%20fotogramas.png) |
 | 00025 | Guillermo y Marcos · Las pesas | 14,70 s | [MP4 60 fps](vista%20previa/00025%20Guillermo%20y%20Marcos%20-%20las%20pesas.mp4) · [fotogramas](vista%20previa/00025%20Guillermo%20y%20Marcos%20-%20las%20pesas%20-%20fotogramas.png) |
+| 00026 | Guillermo y Marcos · El extintor | 13,20 s | [MP4 60 fps](vista%20previa/00026%20Guillermo%20y%20Marcos%20-%20el%20extintor.mp4) · [fotogramas](vista%20previa/00026%20Guillermo%20y%20Marcos%20-%20el%20extintor%20-%20fotogramas.png) |
 | 00028 | Guillermo y Marcos · Vestirse en tres segundos | 14,20 s | [MP4 60 fps](vista%20previa/00028%20Guillermo%20y%20Marcos%20-%20vestirse%20en%20tres%20segundos.mp4) · [fotogramas](vista%20previa/00028%20Guillermo%20y%20Marcos%20-%20vestirse%20en%20tres%20segundos%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
@@ -538,6 +539,21 @@ Corrige el alcance de los brazos al pedir, coger y soltar la guinda; fija los pi
 11. Negro.
 
 ![Fotogramas de 00025](vista%20previa/00025%20Guillermo%20y%20Marcos%20-%20las%20pesas%20-%20fotogramas.png)
+
+### 00026 · Guillermo y Marcos · El extintor
+
+1. Negro.
+2. Cafetería-pastelería de paredes coral, con tartas bajo campana, lámpara verde y un extintor colgado en la pared. Entre Guillermo y Marcos, una mesita con una magdalena de cumpleaños y una bengala encendida.
+3. Marcos se la ofrece con la mano abierta; Guillermo se emociona y se lleva la mano al pecho.
+4. La bengala chisporrotea fuerte y a Guillermo le entra el pánico: se lleva las manos a la cara, mira el extintor, lo descuelga, tira de la anilla, saca la boquilla y apunta. Marcos levanta la mano: «¡quieto!».
+5. **¡Fuuush!** El chorro de polvo lo llena todo hasta dejar la pantalla en blanco.
+6. Al posarse el polvo, los dos se han quedado **blancos como estatuas de yeso**: solo se les mueven los ojos, que parpadean, se miran y miran la bengala… que sigue chisporroteando.
+7. Marcos se inclina despacio y la apaga con un soplidito de polvo.
+8. A Guillermo le pica la nariz: «aah… aah…» **¡achís!** El estornudo le sacude todo el polvo y vuelve a tener color.
+9. Marcos, todavía de yeso, mira a cámara con cara de póquer; Guillermo sonríe culpable.
+10. Negro.
+
+![Fotogramas de 00026](vista%20previa/00026%20Guillermo%20y%20Marcos%20-%20el%20extintor%20-%20fotogramas.png)
 
 ### 00028 · Guillermo y Marcos · Vestirse en tres segundos
 
