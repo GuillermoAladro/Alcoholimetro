@@ -62,6 +62,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00030 | Guillermo y Marcos · La lona de salto | 14,40 s | [MP4 60 fps](vista%20previa/00030%20Guillermo%20y%20Marcos%20-%20la%20lona%20de%20salto.mp4) · [fotogramas](vista%20previa/00030%20Guillermo%20y%20Marcos%20-%20la%20lona%20de%20salto%20-%20fotogramas.png) |
 | 00031 | Guillermo y Ander · El futbolín | 13,50 s | [MP4 60 fps](vista%20previa/00031%20Guillermo%20y%20Ander%20-%20el%20futbolin.mp4) · [fotogramas](vista%20previa/00031%20Guillermo%20y%20Ander%20-%20el%20futbolin%20-%20fotogramas.png) |
 | 00032 | Guillermo y Ander · La guindilla | 14,60 s | [MP4 60 fps](vista%20previa/00032%20Guillermo%20y%20Ander%20-%20la%20guindilla.mp4) · [fotogramas](vista%20previa/00032%20Guillermo%20y%20Ander%20-%20la%20guindilla%20-%20fotogramas.png) |
+| 00033 | Guillermo y Ander · El duelo de miradas | 13,95 s | [MP4 60 fps](vista%20previa/00033%20Guillermo%20y%20Ander%20-%20el%20duelo%20de%20miradas.mp4) · [fotogramas](vista%20previa/00033%20Guillermo%20y%20Ander%20-%20el%20duelo%20de%20miradas%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -664,6 +665,20 @@ Corrige las muñecas y los recorridos de los brazos, el apoyo de los pies al pon
 10. Negro.
 
 ![Fotogramas de 00032](vista%20previa/00032%20Guillermo%20y%20Ander%20-%20la%20guindilla%20-%20fotogramas.png)
+
+### 00033 · Guillermo y Ander · El duelo de miradas
+
+1. Negro.
+2. Cantina al atardecer: pared de adobe, herradura y lazo colgados, y un ventanal en arco con el sol poniéndose sobre el desierto. Guillermo, en una mesa alta, entorna los ojos y señala a Ander retándole; Ander, con un palillo en la boca, se encoge de hombros.
+3. Los dos apoyan los puños en la mesa y se inclinan cara a cara: **empieza el duelo de miradas**. Bandas negras de cine, un rayo entre los ojos y primeros planos de las miradas de uno y otro, mientras una bola de paja cruza el desierto por la ventana.
+4. A Guillermo se le secan los ojos: se le ponen rojos, le salen venitas, le tiemblan los párpados, suda y se le saltan las lágrimas. Ander, impasible, mueve el palillo.
+5. Una mosca revolotea y **se le posa a Guillermo en la nariz**: se pone bizco mirándola, hincha los mofletes, tiembla… y **parpadea**.
+6. La mosca se va volando a la nariz de Ander, que ni se inmuta y **levanta una ceja muy despacio**.
+7. Guillermo, horrorizado, mira a cámara y **se da un cabezazo contra la mesa**: estrellitas. Desde ahí levanta una mano sin fuerzas para rendirse.
+8. Ander por fin parpadea, satisfecho, mira a cámara y guiña un ojo.
+9. Negro.
+
+![Fotogramas de 00033](vista%20previa/00033%20Guillermo%20y%20Ander%20-%20el%20duelo%20de%20miradas%20-%20fotogramas.png)
 
 ## Ver y grabar
 
