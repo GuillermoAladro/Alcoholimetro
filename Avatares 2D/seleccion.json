@@ -1,26 +1,45 @@
 {
-  "style_reference": {
-    "character": "Guillermo Aladro",
-    "variant": "03",
-    "title": "Dragon Ball clásico",
-    "file": "Guillermo-Aladro/Disenos/03-cel-clasico-90.png",
-    "chosen_by": "user",
-    "date": "2026-10-30"
-  },
+  "date": "2026-10-30",
+  "policy": "Un solo archivo PNG por persona; sin alternativas ni comparativas de opciones.",
+  "style_references": [
+    {
+      "character": "Guillermo Aladro",
+      "selected_from_variant": "03",
+      "file": "Guillermo-Aladro/Guillermo-Aladro-2D.png"
+    },
+    {
+      "character": "Ander",
+      "selected_from_variant": "04",
+      "file": "Ander/Ander-2D.png"
+    }
+  ],
   "characters": {
     "Guillermo-Aladro": {
-      "status": "selected",
-      "variant": "03"
+      "status": "selected_by_user",
+      "file": "Guillermo-Aladro/Guillermo-Aladro-2D.png",
+      "selected_from_variant": "03"
     },
     "Ander": {
-      "status": "awaiting_user_selection",
-      "variants": [
-        "01",
-        "02",
-        "03",
-        "04",
-        "05"
-      ]
+      "status": "selected_by_user",
+      "file": "Ander/Ander-2D.png",
+      "selected_from_variant": "04"
+    },
+    "Carla": {
+      "status": "single_design_created",
+      "file": "Carla/Carla-2D.png"
     }
-  }
+  },
+  "pending": [
+    "Dari",
+    "Deivi",
+    "Gabacho",
+    "Kiriku",
+    "Laura",
+    "Marcos-Bombero",
+    "Marta",
+    "Paradigma",
+    "Rodri",
+    "Sara-Saez",
+    "Yorgi"
+  ]
 }

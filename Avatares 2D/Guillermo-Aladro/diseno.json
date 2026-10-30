@@ -1,0 +1,25 @@
+{
+  "character": "Guillermo Aladro",
+  "date": "2026-10-30",
+  "status": "selected_by_user",
+  "selected_from_variant": "03",
+  "style": "Dragon Ball clásico",
+  "file": "Guillermo-Aladro-2D.png",
+  "width": 1122,
+  "height": 1402,
+  "sha256": "02392ad86859a1a159a11a66f501494f5c674aacae1e1fb7f0ddb2b4cabfe59e",
+  "generation_method": "Built-in image_gen tool, one generation per final design",
+  "source_commit": "0aa384a7bf191f70d3942186b768d85993de7f0d",
+  "source_svg_blobs": [
+    {
+      "path": "avatares SVG - Astra/Guillermo-Aladro.svg",
+      "sha": "65eb3b778abeb279014d8da0e1839ef5743e5369"
+    },
+    {
+      "path": "avatares SVG - Astra/Guillermo-Aladro/05-serio.svg",
+      "sha": "1866d90a95008cd313afb143396f3acde8ed366c"
+    }
+  ],
+  "prompt": "Use case: stylized-concept.\nCreate a NEW hand-drawn 2D character design of Guillermo Aladro inspired specifically by the visual language of Dragon Ball. This is a character-design exploration, not a tracing or illustration filter of the source photo.\nImage 1 is a render of the approved SVG model sheet, for identity, outfit and physique only. Image 2 is the close-up from that SVG, for Guillermo's distinctive facial proportions only. Deliberately REDESIGN the drawing language according to the specific design direction below.\nIdentity anchors: young adult with warm light olive skin, brown eyes, strong dark eyebrows, a fairly long straight nose, distinctive full lips, slim angular lower face, brown swept-up textured haircut with short sides. Preserve those anchors so it is recognizably Guillermo, not Goku, Vegeta or another existing character. The degree of cartoon simplification follows the option's art direction.\nOutfit unchanged: plain black short-sleeve T-shirt, loose light blue jeans, grey-and-white low-top sneakers, silver watch on his LEFT wrist. Natural athletic adult body. Keep brown hair, brown eyes. No gi, armor, powers or additional characters.\nFormat: portrait sheet, plain warm-white background. Full body standing at left with relaxed hands in pockets and watch visible; entirely visible hair and both shoes, with margin. One large head-and-shoulders portrait at right, same face and style as the standing body, calm expression. The portrait is an illustration inset, not another person.\nCreate visibly drawn 2D animation art. The identity comes from facial proportions and features, not from photographic texture. Avoid photorealistic skin, photographic denim, 3D shading and excessively individual hair strands. Keep the sheet elegant, unambiguous and anatomically coherent.\nOnly text: the small top-left label specified for this option.\n\nDESIGN 03 — Dragon Ball clásico\nCLASSIC DRAGON BALL Z 1990s TV CEL LOOK, unmistakable anime facial geometry. Large angular Dragon Ball eye whites with small brown irises, bold slanted eyebrows, long simple wedge-shaped nose, small angular mouth based on Guillermo's lip shape, 6 to 8 broad pointed brown hair masses. No detailed individual hair strands, no realistic stubble, no glossy lips. Strong black cel outlines, broad flat warm skin color plus ONE flat ochre shadow, muted denim blue, vintage painted-cel character model. Athletic adult proportions and Guillermo's identity anchors remain. Prioritize the actual 2D Dragon Ball animation drawing style over realistic rendering.\nText (verbatim): \"03 · GUILLERMO ALADRO\".",
+  "visual_review": "Inspeccionado: lenguaje anime clásico claro, ojos angulares y pelo en masas, anatomía adulta coherente, ropa y reloj conservados."
+}

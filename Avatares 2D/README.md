@@ -1,17 +1,25 @@
 # Avatares 2D
 
-Adaptaciones ilustradas a partir de los SVG aprobados de `avatares SVG - Astra`. Se mantienen los rasgos, el peinado, la ropa y los accesorios de cada persona.
+**Un único diseño por persona.** Estilo basado en las elecciones del usuario: **Guillermo Aladro 03** y **Ander 04**. Las alternativas y sus comparativas se han retirado de esta carpeta.
 
-**Estilo elegido: Guillermo Aladro 03, Dragon Ball clásico.** Elección indicada por el usuario el 30 de octubre de 2026.
+Cada PNG contiene el cuerpo completo y un retrato ampliado del mismo diseño. Se conservan los rasgos, peinado, ropa y accesorios de cada persona a partir de sus SVG.
 
-| Persona | Propuestas | Estado | Comparativa |
-|---|---:|---|---|
-| [Guillermo Aladro](Guillermo-Aladro/) | 10 | **03 elegido** | [PDF](Guillermo-Aladro/Comparativa-Guillermo-Aladro-2D.pdf) |
-| [Ander](Ander/) | 5 | Pendiente de elegir versión | [PDF](Ander/Comparativa-Ander-2D.pdf) |
+Colección en curso: 3 de 14 avatares disponibles.
 
-[Ver el diseño elegido de Guillermo](Guillermo-Aladro/Disenos/03-cel-clasico-90.png) · [Comparar las cinco versiones de Ander](Ander/)
+| Persona | Archivo único | Estado |
+|---|---|---|
+| [Guillermo Aladro](Guillermo-Aladro/) | [PNG](Guillermo-Aladro/Guillermo-Aladro-2D.png) | Elegido por el usuario |
+| [Ander](Ander/) | [PNG](Ander/Ander-2D.png) | Elegido por el usuario |
+| [Carla](Carla/) | [PNG](Carla/Carla-2D.png) | Versión única |
 
-Los archivos finales son **PNG de 1122 × 1402 píxeles** con cuerpo completo y retrato ampliado. Son propuestas de diseño 2D; no son SVG vectoriales ni animaciones terminadas. Las comparativas PDF reúnen los diseños sin alterar los PNG originales.
+## Galería
 
-Cada carpeta incluye `propuestas.json` con las referencias SVG, los prompts completos, la revisión visual y las huellas de los PNG. Las ilustraciones se generaron con la herramienta integrada `image_gen`, mediante una solicitud individual por diseño. El archivo [seleccion.json](seleccion.json) registra las elecciones.
+| Guillermo Aladro | Ander |
+|---|---|
+| [![Guillermo Aladro](Guillermo-Aladro/Guillermo-Aladro-2D.png)](Guillermo-Aladro/Guillermo-Aladro-2D.png) | [![Ander](Ander/Ander-2D.png)](Ander/Ander-2D.png) |
 
+| Carla |  |
+|---|---|
+| [![Carla](Carla/Carla-2D.png)](Carla/Carla-2D.png) |  |
+
+Los diseños son ilustraciones **PNG**, no SVG vectoriales ni animaciones terminadas. Cada carpeta conserva un `diseno.json` con el prompt de generación, las referencias y la revisión visual. Las imágenes se generaron con la herramienta integrada `image_gen`; los SVG originales permanecen en su carpeta.

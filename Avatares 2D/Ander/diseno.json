@@ -1,0 +1,26 @@
+{
+  "character": "Ander",
+  "date": "2026-10-30",
+  "status": "selected_by_user",
+  "selected_from_variant": "04",
+  "style": "Tinta marcada",
+  "file": "Ander-2D.png",
+  "width": 1122,
+  "height": 1402,
+  "sha256": "1003c2b4c79b016c40c5372b1aac17371e898982f24dac82c72c02bdfd333a79",
+  "generation_method": "Built-in image_gen tool, one generation per final design",
+  "source_commit": "0aa384a7bf191f70d3942186b768d85993de7f0d",
+  "source_svg_blobs": [
+    {
+      "path": "avatares SVG - Astra/Ander.svg",
+      "sha": "02d23ecc032bee90c36e1515a57055f7142bdca2"
+    },
+    {
+      "path": "avatares SVG - Astra/Ander/05-neutral.svg",
+      "sha": "b8c4f53a4c36b478e93a33e908d21314ed9b0b3a"
+    }
+  ],
+  "prompt": "Use case: stylized-concept.\nCreate one polished 2D animated character-design sheet of ANDER for the same avatar collection as the approved Guillermo Aladro design 03.\nINPUT ROLES: Image 1 is Ander's approved SVG model sheet rendered to PNG: use ONLY this person's identity, body and clothes. Image 2 is Ander's face close-up from his SVG: primary facial-likeness reference. Image 3 is the selected Guillermo Aladro 03 design: use ONLY its classic Dragon Ball Z 1990s cel-animation drawing language, line weight, flat color/shadow treatment, page layout and adult proportions. Do NOT copy Guillermo's face, long spiky hairstyle, T-shirt, watch or accessories into Ander.\nIdentity anchors for ANDER: short close-cropped textured dark brown hair, small irregular upward fringe with short sides and low hair volume; very thick dark eyebrows; dark brown eyes; fairly broad straight nose; defined lips; a broad rounded-square jaw with a short neatly trimmed dark beard and moustache. Maintain Ander's recognizable facial proportions from images 1 and 2. Hair must remain SHORT, not large tall anime spikes. Natural adult athletic body.\nOutfit and accessories from ANDER: muted dusty-blue pullover hoodie with hood resting behind neck, two light-blue drawstrings, kangaroo pouch, long sleeves and ribbed cuffs; relaxed light-blue jeans; grey-and-white low-top sneakers. Both hands relaxed in jeans pockets. No watch, no jewelry, no armor or gi. Skin stays warm light olive, hair and beard dark brown.\nArt direction baseline: classic Dragon Ball-inspired drawn 2D animation, bold expressive black ink contours, stylized angular anime eyes with brown irises, simplified clear nose and mouth preserving likeness, flat warm skin and one or two crisp cel shadows. Blue hoodie rendered as solid cel colors with structural folds. Bearded jaw is a tidy flat brown-grey shape with a few short ink strokes, no photographic stubble texture. No photorealism, no 3D, no photographic denim, no gradients-heavy digital portrait.\nComposition: portrait sheet on warm white, ONE full-body standing frontal three-quarter figure on left with all hair and both shoes inside frame, and ONE large head-and-shoulders portrait on right of the exact same design and neutral/confident demeanor. Clear margin around all art. Keep beard, hair, facial proportions and hoodie consistent between full body and portrait. No other characters. Only the exact small top-left label requested.\nThis is option-specific character-design exploration within the chosen visual style; apply the following variation without changing Ander's identity or outfit.\n\nOPTION 04 — Tinta marcada\nA bold manga-to-classic-animation design: thicker brush-weight outer silhouettes with sparse fine inner lines, strong dark eyebrow shapes and clear dark beard shape, short chunky hair masses, powerful large flat shadows. Angular expressive face but preserve the true width of Ander's nose and jaw. Restricted dusty-blue/navy, warm skin and dark-brown palette, no textures or lighting effects.\nText (verbatim): \"04 · ANDER\".",
+  "visual_review": "Inspeccionado: contornos más gruesos y sombras amplias; barba, pelo corto y ojos marrones coherentes; ropa y silueta completas.",
+  "style_reference": "../Guillermo-Aladro/Guillermo-Aladro-2D.png"
+}
