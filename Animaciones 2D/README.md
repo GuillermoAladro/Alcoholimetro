@@ -100,6 +100,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00061 | Guillermo y Deivi · El monopatín | 14,15 s | [MP4 60 fps](vista%20previa/00061%20Guillermo%20y%20Deivi%20-%20el%20monopatin.mp4) · [fotogramas](vista%20previa/00061%20Guillermo%20y%20Deivi%20-%20el%20monopatin%20-%20fotogramas.png) |
 | 00062 | Guillermo y Deivi · El robot | 15,0 s | [MP4 60 fps](vista%20previa/00062%20Guillermo%20y%20Deivi%20-%20el%20robot.mp4) · [fotogramas](vista%20previa/00062%20Guillermo%20y%20Deivi%20-%20el%20robot%20-%20fotogramas.png) |
 | 00063 | Guillermo y Deivi · El balón | 14,3 s | [MP4 60 fps](vista%20previa/00063%20Guillermo%20y%20Deivi%20-%20el%20balon.mp4) · [fotogramas](vista%20previa/00063%20Guillermo%20y%20Deivi%20-%20el%20balon%20-%20fotogramas.png) |
+| 00064 | Guillermo y Deivi · El castillo de naipes | 13,8 s | [MP4 60 fps](vista%20previa/00064%20Guillermo%20y%20Deivi%20-%20el%20castillo%20de%20naipes.mp4) · [fotogramas](vista%20previa/00064%20Guillermo%20y%20Deivi%20-%20el%20castillo%20de%20naipes%20-%20fotogramas.png) |
 | 00065 | Guillermo y Deivi · Las sillas con ruedas | 14,4 s | [MP4 60 fps](vista%20previa/00065%20Guillermo%20y%20Deivi%20-%20las%20sillas%20con%20ruedas.mp4) · [fotogramas](vista%20previa/00065%20Guillermo%20y%20Deivi%20-%20las%20sillas%20con%20ruedas%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
@@ -1235,6 +1236,23 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00063](vista%20previa/00063%20Guillermo%20y%20Deivi%20-%20el%20balon%20-%20fotogramas.png)
+
+### 00064 · Guillermo y Deivi · El castillo de naipes
+
+1. Negro.
+2. Un rincón de bar de juegos con una mesa alta de tapete verde bajo una lámpara; el primer piso del castillo de naipes ya está hecho.
+3. Deivi, delicadísimo y con el meñique en alto, coge cartas del mazo; cada una se pliega en su mano y se posa justo en su hueco: segundo piso y luego el tercero.
+4. Guillermo, con el as de picas colgando de la mano, se encoge cada vez que una carta se posa.
+5. Deivi suelta el aire y le cede el honor con la palma abierta.
+6. Guillermo, con la lengua fuera y un ojo guiñado, gira la carta, la baja temblando y la deja plana en lo alto.
+7. El castillo se bambolea… y aguanta; los dos tienen los mofletes hinchados.
+8. ¡Sí! Se chocan los cinco justo encima: las palmas se encuentran y el golpe de aire baja en ondas.
+9. El castillo se desmorona en cascada: las cartas revolotean y se quedan en la mesa y en el suelo; la del tejado aterriza en la cabeza de Guillermo.
+10. Se miran, aún con las manos juntas, y las bajan.
+11. Deivi se saca un mazo nuevo del bolsillo y levanta una ceja; a Guillermo se le ilumina la cara y Deivi guiña a cámara.
+12. Negro.
+
+![Fotogramas de 00064](vista%20previa/00064%20Guillermo%20y%20Deivi%20-%20el%20castillo%20de%20naipes%20-%20fotogramas.png)
 
 ### 00065 · Guillermo y Deivi · Las sillas con ruedas
 
