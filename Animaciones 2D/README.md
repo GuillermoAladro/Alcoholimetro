@@ -92,6 +92,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00053 | Guillermo y Dari · El cubo de Rubik | 14,65 s | [MP4 60 fps](vista%20previa/00053%20Guillermo%20y%20Dari%20-%20el%20cubo%20de%20rubik.mp4) · [fotogramas](vista%20previa/00053%20Guillermo%20y%20Dari%20-%20el%20cubo%20de%20rubik%20-%20fotogramas.png) |
 | 00054 | Guillermo y Dari · El pelo rizado | 14,75 s | [MP4 60 fps](vista%20previa/00054%20Guillermo%20y%20Dari%20-%20el%20pelo%20rizado.mp4) · [fotogramas](vista%20previa/00054%20Guillermo%20y%20Dari%20-%20el%20pelo%20rizado%20-%20fotogramas.png) |
 | 00055 | Guillermo y Dari · La máquina recreativa | 14,60 s | [MP4 60 fps](vista%20previa/00055%20Guillermo%20y%20Dari%20-%20la%20maquina%20recreativa.mp4) · [fotogramas](vista%20previa/00055%20Guillermo%20y%20Dari%20-%20la%20maquina%20recreativa%20-%20fotogramas.png) |
+| 00056 | Guillermo y Dari · La pizza | 14,20 s | [MP4 60 fps](vista%20previa/00056%20Guillermo%20y%20Dari%20-%20la%20pizza.mp4) · [fotogramas](vista%20previa/00056%20Guillermo%20y%20Dari%20-%20la%20pizza%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1095,6 +1096,23 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 12. Negro.
 
 ![Fotogramas de 00055](vista%20previa/00055%20Guillermo%20y%20Dari%20-%20la%20maquina%20recreativa%20-%20fotogramas.png)
+
+### 00056 · Guillermo y Dari · La pizza
+
+1. Negro.
+2. Pizzería de noche: horno de leña encendido, baldas con aceite y tomates, guirnalda de bombillas, pizarra con dibujos, ventana con luna, una columna de mármol y la barra al fondo. En la mesita alta, una pizza recién hecha entre los dos.
+3. Se relamen y se miran de reojo.
+4. Cogen una porción a la vez, tiran, y entre las dos puntas sale **un hilo de queso**.
+5. Se miran; nadie suelta. Echan a andar hacia atrás cada uno por su lado y el hilo se estira por toda la pizzería (la cámara se abre).
+6. Dari se da con la espalda en la columna, la rodea por delante y el hilo se queda enganchado.
+7. Desde las dos puntas del local intentan cortarlo a mordiscos; el queso aguanta.
+8. El hilo se suelta de la columna (deja su mancha) y, **como una goma, los arrastra** por la boca hasta juntarlos cara a cara. Las porciones caen al suelo.
+9. El hilo les da tres vueltas y les deja los brazos pegados. Pausa: se miran.
+10. Sorben el hilo desde cada punta, a tirones, hasta que se tocan las narices.
+11. A Dari se le empañan las gafas y los dos se ponen colorados.
+12. Negro.
+
+![Fotogramas de 00056](vista%20previa/00056%20Guillermo%20y%20Dari%20-%20la%20pizza%20-%20fotogramas.png)
 
 ## Ver y grabar
 
