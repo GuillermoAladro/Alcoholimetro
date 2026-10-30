@@ -27,12 +27,21 @@
     "Carla": {
       "status": "single_design_created",
       "file": "Carla/Carla-2D.png"
+    },
+    "Dari": {
+      "status": "single_design_created",
+      "file": "Dari/Dari-2D.png"
+    },
+    "Deivi": {
+      "status": "single_design_created",
+      "file": "Deivi/Deivi-2D.png"
+    },
+    "Gabacho": {
+      "status": "single_design_created",
+      "file": "Gabacho/Gabacho-2D.png"
     }
   },
   "pending": [
-    "Dari",
-    "Deivi",
-    "Gabacho",
     "Kiriku",
     "Laura",
     "Marcos-Bombero",

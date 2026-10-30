@@ -1,0 +1,25 @@
+{
+  "character": "Gabacho",
+  "date": "2026-10-30",
+  "status": "single_design_created",
+  "file": "Gabacho-2D.png",
+  "width": 1122,
+  "height": 1402,
+  "sha256": "e1bd644cc19f89f5a10a48af289c1468826f1f5f1b2e4a217b257305a5319f4f",
+  "generation_method": "Built-in image_gen; one final design",
+  "source_commit": "ba984b3dfbb10e382b87d1f87adf7880fd54dd97",
+  "source_svg": {
+    "path": "avatares SVG - Astra/Gabacho.svg",
+    "git_blob": "d2b30c4e3690eccc1db102a58192b0c468b0e236"
+  },
+  "input_svg_preview": {
+    "path": "avatares SVG - Astra/Gabacho-preview.png",
+    "git_blob": "e9edc656bbb7c1d07d69b34fb67ccd289b3f0e62"
+  },
+  "style_references": [
+    "../Guillermo-Aladro/Guillermo-Aladro-2D.png",
+    "../Ander/Ander-2D.png"
+  ],
+  "prompt": "Use case: stylized-concept.\nCreate ONE final 2D character-design sheet for the named person in this request, part of a coherent avatar collection. Render the person's own recognisable identity in the user's selected classic Dragon Ball-inspired cel-animation style.\nINPUT ROLES:\nImage 1 is the CURRENT approved SVG model-sheet preview of THIS PERSON, exported from the repository. It is the only reference for identity, facial proportions, hair, body, clothing and personal accessories. It contains multiple views and facial expressions; redraw one consistent design. Ignore its black preview background.\nImage 2 is the chosen Guillermo Aladro 03 design: STYLE ONLY, especially classic anime facial construction and cel shading.\nImage 3 is the chosen Ander 04 design: STYLE ONLY, especially confident thick outer ink, thinner interior lines and broad clear shadow shapes.\nNever transfer either style-reference man's face, hairstyle, beard, body, clothes or accessories to this person. Preserve the person in Image 1, including their adult age appearance and feminine or masculine features as shown.\nStyle: unmistakable hand-drawn 2D anime, classic Dragon Ball cel-animation language with semirealistic likeness. Expressive stylized eyes, individual eyebrow/nose/mouth/jaw construction; hair grouped into readable illustrated shapes while preserving the actual length, curl pattern and silhouette; confident dark contours with controlled line weight; flat local colors with 1-2 crisp cel shadows per material. No photorealistic skin, no 3D, no painterly effects or dramatic colored lights. No generic Goku or Vegeta face.\nComposition: portrait 4:5 sheet, plain warm-white background. At left show ONE complete full-body standing frontal three-quarter figure, natural relaxed pose from the source, with complete hair, both feet and all outfit accessories fully inside the canvas with a clear margin. At right show ONE enlarged head-and-shoulders portrait of precisely the same person and design, face unobstructed. Keep the head shape, hairstyle, clothing, jewelry and color palette internally consistent between figure and portrait. The second depiction is a portrait inset, not a second character. Natural adult body proportions, coherent anatomy, no extra limbs.\nOnly the small clean top-left name specified below; no other text, no watermark. No alternate outfits, extra characters, costumes, auras or powers. One final design, no variants.\nSpecific person and invariant details:\nGABACHO: adult man with a softly rounded face, full cheeks and chin, warm light skin, dark-brown eyes, slightly thick brows, a short softly rounded nose and friendly small closed-mouth smile. Clean shaven, no beard or moustache. Dense dark-brown rounded mop of tight natural curls, extending around the ears and forehead; preserve the round curly silhouette, never spiky or straight. Medium slightly stocky adult build, not muscular. Navy-blue France football jersey with subtle dark pattern, red-white-blue narrow neck and sleeve trim, small golden swoosh on his RIGHT chest, golden rooster crest with exactly TWO small gold stars above it on his LEFT chest. Same placement and two stars in both figure and portrait. Light-wash straight blue jeans and gray-and-white low-top sneakers. Relaxed pose with both hands tucked naturally in front jeans pockets. Individual soft friendly features must remain different from Deivi or the male style references.\nText (verbatim): \"GABACHO\".",
+  "visual_review": "Revisado: rizos cerrados, cara redondeada y sonrisa propios; camiseta azul de Francia con cuello y mangas tricolores, escudo en el pecho izquierdo con dos estrellas y símbolo dorado derecho coherentes en ambas vistas. Manos en bolsillos, vaqueros y zapatillas completos."
+}
