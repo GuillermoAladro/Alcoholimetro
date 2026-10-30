@@ -1,0 +1,279 @@
+{
+  "scene": "00010.2",
+  "durationSeconds": 13.6,
+  "renderedFrames": 817,
+  "results": [
+    {
+      "name": "Original y revisión registradas",
+      "passed": true
+    },
+    {
+      "name": "Negro absoluto inicial y final",
+      "passed": true,
+      "details": [
+        {
+          "t": 0,
+          "max": 0
+        },
+        {
+          "t": 0.016666666666666666,
+          "max": 0
+        },
+        {
+          "t": 0.03333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.05,
+          "max": 0
+        },
+        {
+          "t": 0.06666666666666667,
+          "max": 0
+        },
+        {
+          "t": 0.08333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.1,
+          "max": 0
+        },
+        {
+          "t": 0.11666666666666667,
+          "max": 0
+        },
+        {
+          "t": 13.483333333333333,
+          "max": 0
+        },
+        {
+          "t": 13.5,
+          "max": 0
+        },
+        {
+          "t": 13.516666666666667,
+          "max": 0
+        },
+        {
+          "t": 13.533333333333333,
+          "max": 0
+        },
+        {
+          "t": 13.55,
+          "max": 0
+        },
+        {
+          "t": 13.566666666666666,
+          "max": 0
+        },
+        {
+          "t": 13.583333333333334,
+          "max": 0
+        },
+        {
+          "t": 13.6,
+          "max": 0
+        }
+      ]
+    },
+    {
+      "name": "Sin cortes visuales inesperados",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Geometría finita a 120 Hz",
+      "passed": true,
+      "details": {
+        "samples": 1633,
+        "nonfinite": 0
+      }
+    },
+    {
+      "name": "Muñecas unidas durante toda la coreografía",
+      "passed": true,
+      "details": {
+        "maxGapPx": 2.0809520448716124e-7
+      }
+    },
+    {
+      "name": "Giro de manos sin plegar la muñeca sobre el hombro",
+      "passed": true,
+      "details": {
+        "minWristShoulderDistance": 113.40549654293997
+      }
+    },
+    {
+      "name": "Talón y punta conservan su apoyo mientras gira el pie",
+      "passed": true,
+      "details": {
+        "samples": 3170,
+        "maxGapPx": 5.684341886080802e-14
+      }
+    },
+    {
+      "name": "Moonwalk con punta fija y alternancia sin saltos de posición",
+      "passed": true,
+      "details": {
+        "phase": [
+          {
+            "k": 0,
+            "side": "cerca",
+            "drift": 0
+          },
+          {
+            "k": 1,
+            "side": "lejos",
+            "drift": 0
+          },
+          {
+            "k": 2,
+            "side": "cerca",
+            "drift": 0
+          },
+          {
+            "k": 3,
+            "side": "lejos",
+            "drift": 0
+          },
+          {
+            "k": 4,
+            "side": "cerca",
+            "drift": 0
+          },
+          {
+            "k": 5,
+            "side": "lejos",
+            "drift": 0
+          },
+          {
+            "k": 6,
+            "side": "cerca",
+            "drift": 0
+          },
+          {
+            "k": 7,
+            "side": "lejos",
+            "drift": 0
+          }
+        ],
+        "maxBoundaryGapPx": 0.005823727995311706
+      }
+    },
+    {
+      "name": "Pulso visual sincronizado a 120 por minuto",
+      "passed": true,
+      "details": {
+        "periodSeconds": 0.5,
+        "samples": 19
+      }
+    },
+    {
+      "name": "Bola y giro continuos al bajar, asentarse y arrancar",
+      "passed": true,
+      "details": [
+        {
+          "t": 0.45,
+          "positionGap": 0.004606413153055655,
+          "rotationGap": 0
+        },
+        {
+          "t": 2,
+          "positionGap": 0.0003657983532910509,
+          "rotationGap": 0
+        },
+        {
+          "t": 2.25,
+          "positionGap": 0.00014934278889659498,
+          "rotationGap": 8.33333333344252e-11
+        },
+        {
+          "t": 3.15,
+          "positionGap": 0.00010296714145894016,
+          "rotationGap": 0.000029999916666745285
+        }
+      ]
+    },
+    {
+      "name": "Foco después de bajar la bola y reflejos antes del baile",
+      "passed": true
+    },
+    {
+      "name": "Guiño y sonrisa al finalizar el giro de manos",
+      "passed": true
+    },
+    {
+      "name": "Coreografía dentro de plano hasta la salida deliberada",
+      "passed": true,
+      "details": {
+        "samples": 90,
+        "cut": []
+      }
+    },
+    {
+      "name": "Sale por la izquierda antes del apagado final",
+      "passed": true,
+      "details": {
+        "t": 13,
+        "left": -256,
+        "right": -134,
+        "top": 100,
+        "bottom": 547
+      }
+    },
+    {
+      "name": "Trayectorias idénticas al buscar directamente",
+      "passed": true
+    },
+    {
+      "name": "Rebobinado y reproducción idénticos a 30/60/120 fps",
+      "passed": true,
+      "details": {
+        "reverse": true,
+        "fpsChecks": [
+          {
+            "fps": 30,
+            "matches": true
+          },
+          {
+            "fps": 60,
+            "matches": true
+          },
+          {
+            "fps": 120,
+            "matches": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Atlas cargados",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Selector, reinicio, avance, retroceso, búsqueda y reproducción",
+      "passed": true
+    },
+    {
+      "name": "Modo kiosco",
+      "passed": true
+    },
+    {
+      "name": "Sin errores JavaScript ni recursos fallidos",
+      "passed": true,
+      "details": {
+        "errors": [],
+        "failures": []
+      }
+    }
+  ],
+  "paintMs": {
+    "median": 1.8000000044703484,
+    "p95": 3.1999999955296516,
+    "max": 16.100000001490116
+  },
+  "browser": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.0 Safari/537.36",
+  "passed": true
+}
