@@ -40,6 +40,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00013 | Guillermo y Laura · La pajita | 13,40 s | [MP4 60 fps](vista%20previa/00013%20Guillermo%20y%20Laura%20-%20la%20pajita.mp4) · [fotogramas](vista%20previa/00013%20Guillermo%20y%20Laura%20-%20la%20pajita%20-%20fotogramas.png) |
 | 00014 | Guillermo y Laura · El baile lento | 14,20 s | [MP4 60 fps](vista%20previa/00014%20Guillermo%20y%20Laura%20-%20el%20baile%20lento.mp4) · [fotogramas](vista%20previa/00014%20Guillermo%20y%20Laura%20-%20el%20baile%20lento%20-%20fotogramas.png) |
 | 00015 | Guillermo y Laura · La tarta | 14,25 s | [MP4 60 fps](vista%20previa/00015%20Guillermo%20y%20Laura%20-%20la%20tarta.mp4) · [fotogramas](vista%20previa/00015%20Guillermo%20y%20Laura%20-%20la%20tarta%20-%20fotogramas.png) |
+| 00017 | Guillermo y Laura · Los dardos | 14,45 s | [MP4 60 fps](vista%20previa/00017%20Guillermo%20y%20Laura%20-%20los%20dardos.mp4) · [fotogramas](vista%20previa/00017%20Guillermo%20y%20Laura%20-%20los%20dardos%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -350,6 +351,26 @@ Corrige la continuidad de los brazos y coloca el giro de manos delante del pecho
 11. Negro.
 
 ![Fotogramas de 00015](vista%20previa/00015%20Guillermo%20y%20Laura%20-%20la%20tarta%20-%20fotogramas.png)
+
+### 00017 · Guillermo y Laura · Los dardos
+
+1. Negro.
+2. Rincón de dardos de un pub inglés: pared verde botella con zócalo de caoba, la diana en su armario con una pizarra de rayitas y una lámpara de latón colgando del techo. Laura, en la línea de tiro, con tres dardos; Guillermo detrás, con las manos en los bolsillos y cara de chulo.
+3. **Laura lanza tres dardos: diana, diana y diana.** La diana tiembla a cada golpe y el último lo tira mirando a cámara. Guillermo pasa de la chulería a quedarse con la boca abierta.
+4. Laura sacude la melena, se pone en jarras y le invita a tirar.
+5. **Guillermo se hace el sobrado:**
+   - sacude las manos;
+   - se chupa el dedo y lo levanta para ver el viento;
+   - mide con el pulgar guiñando un ojo;
+   - saca un dardo del bolsillo y le echa el aliento;
+   - apunta con la lengua fuera, a la pata coja, y hace tres amagos.
+6. Laura, que espera dando golpecitos con el pie, se da cuenta de que está en medio y se agacha tapándose la cabeza.
+7. Él lanza con todas sus fuerzas: el dardo pasa por encima de Laura, **da en la lámpara**, rebota y vuelve dando vueltas a **clavársele en el pelo**, temblando.
+8. Guillermo mira arriba sin moverse; Laura se asoma, lo ve y se tapa la boca muerta de risa.
+9. Él sonríe a cámara avergonzado y levanta el pulgar.
+10. Negro.
+
+![Fotogramas de 00017](vista%20previa/00017%20Guillermo%20y%20Laura%20-%20los%20dardos%20-%20fotogramas.png)
 
 ## Ver y grabar
 
