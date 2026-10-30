@@ -59,6 +59,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00027 | Guillermo y Marcos · El casco | 13,50 s | [MP4 60 fps](vista%20previa/00027%20Guillermo%20y%20Marcos%20-%20el%20casco.mp4) · [fotogramas](vista%20previa/00027%20Guillermo%20y%20Marcos%20-%20el%20casco%20-%20fotogramas.png) |
 | 00028 | Guillermo y Marcos · Vestirse en tres segundos | 14,20 s | [MP4 60 fps](vista%20previa/00028%20Guillermo%20y%20Marcos%20-%20vestirse%20en%20tres%20segundos.mp4) · [fotogramas](vista%20previa/00028%20Guillermo%20y%20Marcos%20-%20vestirse%20en%20tres%20segundos%20-%20fotogramas.png) |
 | 00029 | Guillermo y Marcos · La sirena | 13,50 s | [MP4 60 fps](vista%20previa/00029%20Guillermo%20y%20Marcos%20-%20la%20sirena.mp4) · [fotogramas](vista%20previa/00029%20Guillermo%20y%20Marcos%20-%20la%20sirena%20-%20fotogramas.png) |
+| 00031 | Guillermo y Ander · El futbolín | 13,50 s | [MP4 60 fps](vista%20previa/00031%20Guillermo%20y%20Ander%20-%20el%20futbolin.mp4) · [fotogramas](vista%20previa/00031%20Guillermo%20y%20Ander%20-%20el%20futbolin%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -618,6 +619,20 @@ Corrige las muñecas y los recorridos de los brazos, el apoyo de los pies al pon
 11. Negro.
 
 ![Fotogramas de 00029](vista%20previa/00029%20Guillermo%20y%20Marcos%20-%20la%20sirena%20-%20fotogramas.png)
+
+### 00031 · Guillermo y Ander · El futbolín
+
+1. Negro.
+2. Sala de juegos retro: pared con rayas setenteras, banderines de colores, un póster con un balón, una bufanda colgada y una lámpara alargada de billar sobre el futbolín. Guillermo (rojos) y Ander (azules), cada uno a un lado. Guillermo, agachado en sus barras, mira a cámara muy chulo; Ander levanta una ceja y da un sorbo a su vaso.
+3. **Primer saque:** Guillermo hace girar sus barras como un loco (los muñequitos dan vueltas y la mesa tiembla). Ander, con un golpecito de muñeca, pisa la bola con su delantero, carga… y **¡gol!** Guillermo se queda pasmado y Ander corre una bolita del marcador con un dedo.
+4. **Segundo saque:** Guillermo, rojo y sudando, gira todavía más rápido mientras Ander bebe tan tranquilo y mira a cámara… **otro gol.** Segunda bolita.
+5. Furioso y con la vena hinchada, Guillermo coge aire y gira con todo el cuerpo: los mangos echan humo… y uno de sus muñecos le da a la bola tan fuerte que sale disparada por los aires.
+6. Los dos la siguen con la mirada… y cae, **¡plof!**, justo en la jarra de cerveza de Guillermo, que le salpica toda la cara.
+7. Guillermo se queda helado, chorreando espuma. Ander, sin inmutarse, corre la tercera bolita con un dedo.
+8. Guillermo se limpia los ojos y hace pucheros a cámara; Ander da un sorbo y mira a cámara con media sonrisa.
+9. Negro.
+
+![Fotogramas de 00031](vista%20previa/00031%20Guillermo%20y%20Ander%20-%20el%20futbolin%20-%20fotogramas.png)
 
 ## Ver y grabar
 
