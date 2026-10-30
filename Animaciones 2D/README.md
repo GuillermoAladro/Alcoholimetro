@@ -315,6 +315,7 @@ Animaciones 2D/
 │  └─ guillermo.js               montaje del personaje: cuerpo, cara, manos, jarra, copa y transformación
 ├─ personajes/comun/            recortador común, visor de hoja con rejilla y Personaje2D.crear
 ├─ personajes/laura/            coordenadas de Laura, su atlas y laura.js
+├─ personajes/marcos-bombero/   coordenadas de Marcos Bombero, su atlas, la manguera y el chorro
 ├─ escenas/                     una escena por archivo (00001 … 00010 y sus revisiones)
 ├─ herramientas/                 comprobar.py y grabar.py
 └─ vista previa/                 vídeos y fotogramas de cada animación
@@ -363,6 +364,14 @@ Opciones del montaje que usan las escenas nuevas (las anteriores no las activan 
   - melena con viento e inercia (`p.pelo`) y aros que se mecen.
 - **Altura:** con el mismo `p.s` mide un 93 % de Guillermo.
 - **Otra persona:** `personajes/comun/ver_hoja.py` pinta su hoja con rejilla y sus coordenadas encima; se copia `laura/preparar_piezas.py`, se ajustan los números y se crea su `<id>.js` con `Personaje2D.crear`.
+
+**Marcos Bombero** (`personajes/marcos-bombero/`) sale de `Avatares 2D/Marcos-Bombero/Marcos-Bombero-2D.png` con el mismo recortador común.
+
+- **Limpieza previa:** antes de trocear, su `preparar_piezas.py` quita la manguera, la lanza y la mano que la agarraba, y repinta el muslo, el puño de la manga y el bajo de la chaqueta que tapaban.
+- **Piezas:** la cabeza del retrato con el casco y la cogotera (cuencas vacías y cara roja solo en la piel, no en el casco), cejas, boca, el torso sin brazos con las bandas reflectantes que siguen bajo las mangas, los dos brazos enderezados, las piernas del pantalón de intervención y la bota de perfil con la suela nivelada.
+- **En pantalla** lleva siempre los brazos sueltos: la mano cercana cuelga relajada y la lejana va al bolsillo.
+- **Accesorios aparte:** la lanza, la manguera, el rollo y el chorro de agua (`MarcosBombero.lanza`, `manguera`, `rollo`, `chorro`), para que cada escena decida si los lleva, los suelta o los usa.
+- **Altura:** con el mismo `p.s` mide lo mismo que Guillermo, casco incluido.
 
 ## Añadir una animación
 

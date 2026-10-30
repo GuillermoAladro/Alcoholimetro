@@ -62,11 +62,55 @@ def parpado(mask, n=10):
     return arr, aba
 
 
+def limpiar(src, pasos):
+    """Retoca la hoja antes de trocearla (opcional, CFG["limpiar"]): quita accesorios que el muñeco
+    dibuja aparte (la manguera de Marcos) y repinta lo que tapaban. Cada paso es un dict:
+      {"fondo": polígono, "mascara": "rojo"|"claro"|"motas"|None, "dilata": n, "proteger": "marino", "area": n}
+          → lo de la máscara dentro del polígono (todo, si no hay máscara) pasa a ser fondo blanco;
+            con "proteger" no se toca lo que esté a ≤ 2 px de la tela azul marino (contornos del cuerpo)
+      {"pintar": polígono, "color": [r, g, b]}         → relleno liso
+      {"rellenar": polígono}                           → inpainting desde lo de alrededor
+      {"linea": [[x, y], …], "color": [r, g, b], "ancho": n}   → contorno o costura que quedó tapado
+    """
+    out = src.copy()
+    H, W = out.shape[:2]
+    for paso in pasos:
+        A = out.astype(np.int16); R, G, B = A[..., 0], A[..., 1], A[..., 2]
+        mx, mn = A.max(-1), A.min(-1)
+        if "fondo" in paso:
+            z = poly_mask(paso["fondo"], (H, W))
+            masc = paso.get("mascara")
+            if masc == "rojo": m = ((R > 90) & (R - G > 50) & (R - B > 45)) | ((R > 150) & (R - G > 30) & (R - B > 20) & (G < 205))
+            elif masc == "claro": m = (mn > 150) & ((mx - mn) < 40)
+            elif masc == "motas":                                  # restos sueltos (contornos que quedaron aislados)
+                lab_, n_ = ndi.label(z & (mn < 235))
+                tam = np.bincount(lab_.ravel()); peq = np.where(tam < paso.get("area", 300))[0]
+                m = np.isin(lab_, peq[peq > 0])
+            else: m = np.ones((H, W), bool)
+            m &= z
+            if paso.get("dilata"): m = ndi.binary_dilation(m, iterations=paso["dilata"]) & z
+            if paso.get("proteger") == "marino":
+                marino = (mx < 75) & (B - R >= 6) & (mn > 12)
+                m &= ~ndi.binary_dilation(marino, iterations=2)
+            out[m] = 255
+        elif "pintar" in paso:
+            out[poly_mask(paso["pintar"], (H, W))] = paso["color"]
+        elif "rellenar" in paso:
+            z = poly_mask(paso["rellenar"], (H, W))
+            out = cv2.inpaint(out, z.astype(np.uint8) * 255, paso.get("radio", 9), cv2.INPAINT_TELEA)
+        elif "linea" in paso:
+            im = Image.fromarray(out); ImageDraw.Draw(im).line([tuple(q) for q in paso["linea"]], fill=tuple(paso.get("color", (12, 10, 12))),
+                                                             width=paso.get("ancho", 4), joint="curve")
+            out = np.array(im)
+    return out
+
+
 class Hoja:
     """La hoja del avatar con el fondo separado, el alfa del contorno y las clases de color."""
 
     def __init__(self, ruta, cfg):
         self.src = np.array(Image.open(ruta).convert("RGB"))
+        if cfg.get("limpiar"): self.src = limpiar(self.src, cfg["limpiar"])
         self.H, self.W = self.src.shape[:2]
         assert (self.W, self.H) == (1122, 1402), f"tamaño inesperado {self.W}×{self.H}"
         A = self.A = self.src.astype(np.int16)
@@ -100,6 +144,7 @@ class Hoja:
         self.pelo = self.figura & ~self.piel & (R < 200) & (R >= G) & (G >= B - 6) & ((R - B > 18) | (mx < 70))
         self.blanco = self.figura & (self.mn > 175) & ((self.mx - self.mn) < 30)
         self.vaquero = self.figura & (B > R + 12) & (B > 85)
+        if cfg.get("sin_vaquero"): self.vaquero = np.zeros_like(self.figura)
         self.tinta = mx < 85
         self.piel_ref = np.array(cfg.get("piel_ref", [254, 186, 130]), np.int16)
         self.dif_piel = np.abs(A - self.piel_ref).sum(-1)
@@ -194,6 +239,7 @@ def retrato(h, c, dep):
     m_cab = h.figura & zona & (YY < corte) & ~(cuello & h.piel)
     for zona_ex in c.get("excluir_piel", []): m_cab &= ~(h.poli(zona_ex) & h.piel)
     for zona_ex in c.get("excluir", []): m_cab &= ~h.poli(zona_ex)
+    if c.get("cortar_bajo_mandibula"): m_cab &= ~cuello            # cuello de chaqueta, correas… (opcional)
     m_cab = ndi.binary_fill_holes(mayor_parte(m_cab)) & ~h.fondo
     # ojos: lo que no es piel dentro de cada zona (blanco, iris y pupila) → cuenca transparente
     ojos = {}
@@ -260,6 +306,7 @@ def retrato(h, c, dep):
     piezas["cabeza"] = (h.pieza(m_cab, cab_rgb, cab_alfa), piv, {"ojos": {"derecho": contorno(ojos["d"]), "izquierdo": contorno(ojos["i"])}})
     c8 = np.clip(cab_rgb, 0, 255).astype(np.int16)
     piel_cab = m_cab & (c8[..., 0] >= 150) & (c8[..., 0] - c8[..., 2] > 60) & (c8[..., 1] > 90)
+    if c.get("roja_zona"): piel_cab &= h.poli(c["roja_zona"])     # p. ej. sin teñir un casco amarillo
     roja = cab_rgb.copy()
     roja[piel_cab] = roja[piel_cab] * np.array([1.0, 0.7, 0.72], np.float32) + np.array([0, 4, 6], np.float32)
     piezas["cabeza_roja"] = (h.pieza(m_cab, roja, cab_alfa), piv, None)
@@ -368,7 +415,9 @@ def figura(h, c, dep):
     piezas["tronco"] = (h.pieza(m_tr, tr_rgb, tr_alfa), c["pelvis"], None)
     # ---- piernas
     p = c["piernas"]
-    def bajo_vaquero(x0, x1):
+    def bajo_vaquero(x0, x1, dob=None):
+        if dob:                                                  # dobladillo dado a mano: [(x, y), …]
+            dx, dy = zip(*dob); return {x: int(round(float(np.interp(x, dx, dy)))) for x in range(x0, x1)}
         y0, y1 = p.get("bajo_y", (1150, 1300)); hh = {}
         for x in range(x0, x1):
             ys_ = np.where(h.vaquero[y0:y1, x])[0]
@@ -384,7 +433,7 @@ def figura(h, c, dep):
     hems = {}
     for lado in ("cerca", "lejos"):
         x0, x1 = p[lado]["x"]
-        hh = bajo_vaquero(x0, x1); hems[lado] = hh
+        hh = bajo_vaquero(x0, x1, p[lado].get("dobladillo")); hems[lado] = hh
         m = np.zeros_like(cuerpo)
         for x in range(x0, x1): m[y_ini:hh[x], x] = True
         m &= (XX < sep) if lado == "cerca" else (XX >= sep)

@@ -11,7 +11,7 @@ Uso:
 Si el personaje aún no tiene preparar_piezas.py, se puede pasar la ruta del PNG en lugar del id
 para ver solo la rejilla.
 Colores: rojo = polígonos de recorte · verde = ojos, cejas, boca · naranja = brazos (hombro, codo y
-muñeca en puntos) · azul = torso, rellenos y líneas · morado = melena · amarillo = piernas y zapato.
+muñeca en puntos) · azul = torso, rellenos y líneas · morado = melena · amarillo = piernas y zapato · cian = retoques de la hoja («limpiar»).
 """
 import importlib.util, pathlib, sys
 from PIL import Image, ImageDraw, ImageFont
@@ -39,6 +39,11 @@ def capa(cfg):
     punto = lambda p, col, et="": out.append(("punto", [p], col, et))
     linea = lambda pts, col, et="": out.append(("linea", pts, col, et))
     ROJO, VERDE, NAR, AZUL, MOR, AMA = (230, 0, 0), (0, 170, 0), (255, 120, 0), (0, 90, 255), (190, 0, 190), (220, 170, 0)
+    CIAN = (0, 170, 190)
+    for paso in cfg.get("limpiar", []):                    # retoques de la hoja (accesorios quitados) en cian
+        for k in ("fondo", "pintar", "rellenar"):
+            if k in paso: poli(paso[k], CIAN, "limpiar: " + k)
+        if "linea" in paso: linea(paso["linea"], CIAN)
     if r:
         linea(r.get("mandibula", []), ROJO, "mandíbula")
         linea([(r["x_min"], r["corte_y"]), (1122, r["corte_y"])], ROJO, "corte")
@@ -47,7 +52,7 @@ def capa(cfg):
         for lado, pts in r.get("cejas", {}).items(): poli(pts, VERDE, "ceja " + lado)
         if "boca" in r: poli(r["boca"], VERDE, "boca")
         for k, p in r.get("pivotes", {}).items(): punto(p, VERDE, k)
-        for z in r.get("borrar", []): poli(z, ROJO, "borrar")
+        for z in r.get("borrar", []): poli(z["zona"] if isinstance(z, dict) else z, ROJO, "borrar")
         for z in r.get("excluir_piel", []) + r.get("excluir", []): poli(z, ROJO, "excluir")
         m = r.get("melena")
         if m: poli(m["zona"], MOR, "melena"); linea([m["raiz"], m["fin"]], MOR, "eje melena")

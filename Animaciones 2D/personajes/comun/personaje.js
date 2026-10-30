@@ -23,6 +23,9 @@
  *                   sin `dedos` se dibuja el puño de siempre (con `pulgar` para el pulgar arriba)
  *   mano.detras     true → ese brazo se dibuja por detrás del cuerpo y de la cabeza
  *   Sin manoCerca ni manoLejos se dibuja el torso del avatar con las dos manos en los bolsillos.
+ *   CFG.siempreLibres (opcional): el torso siempre es el de sin brazos y cada mano que la escena no
+ *   da va a su reposo: CFG.reposo[lado] = { en: [x, y] (hoja), mano: {…} } o, si no hay, al bolsillo.
+ *   `manoReposo(p, lado)` devuelve esa mano (para mezclarla con la de la escena sin saltos).
  *   Si la escena mueve alguna mano, conviene darlas siempre las dos (la quieta en BOLSILLO_C/L
  *   con puno 0; codo hacia fuera: dobla −1 la cercana y +1 la lejana) para no cambiar de torso.
  */
@@ -404,7 +407,10 @@ const Personaje2D = (() => {
       g.restore();
     }
     // mano sin definir: se queda en su bolsillo (codo hacia fuera en los dos brazos)
-    const bolsillo = (p, lado) => { const T = tronco(p), b = T(lado === "cerca" ? BOLSILLO_C : BOLSILLO_L);
+    const REPOSO = CFG.reposo || {};
+    const bolsillo = (p, lado) => { const T = tronco(p), r = REPOSO[lado];
+      if (r) { const b = T(pt(r.en)); return Object.assign({ ang: 0, mu: -1.75, puno: 1, dobla: lado === "cerca" ? -1 : 1 }, r.mano, { x: b.x, y: b.y }); }
+      const b = T(lado === "cerca" ? BOLSILLO_C : BOLSILLO_L);
       return { x: b.x, y: b.y, ang: 0, mu: -1.75, puno: 0, dobla: lado === "cerca" ? -1 : 1 }; };
     function brazoLibre(g, p, t, lado) {
       const T = tronco(p), cerca = lado === "cerca";
@@ -437,7 +443,7 @@ const Personaje2D = (() => {
         const cp = pierna(p, lado); if (p.tirasLimpias) { cp.cuna = true; cp.cunaAjustada = true; }
         R.tira(g, A, lado === "lejos" ? "pierna_lejos" : "pierna_cerca", cp, 18);
       }
-      const libres = !!(p.manoCerca || p.manoLejos);
+      const libres = !!(CFG.siempreLibres || p.manoCerca || p.manoLejos);
       // mano.detras: ese brazo va por detrás del cuerpo y de la cabeza (p. ej. el lejano levantado)
       const detras = l => libres && ((l === "cerca" ? p.manoCerca : p.manoLejos) || {}).detras;
       for (const l of ["lejos", "cerca"]) if (detras(l)) brazoLibre(g, p, t, l);
@@ -458,7 +464,7 @@ const Personaje2D = (() => {
 
     return { id, A, C, K, dibujar, cabeza, boca, centroCabeza, tronco, aPantalla, aHoja, rotP, JK, MUNECA_R, BRAZO_L, BRAZO_C_L,
       SUELO, PELVIS, CADERA, TOBILLO_ALTO, PUNTA, TALON, CUELLO, HOMBRO, HOMBRO_C, BOLSILLO_C, BOLSILLO_L, OJOS,
-      listo: () => A.listo };
+      manoReposo: bolsillo, listo: () => A.listo };
   }
 
   return { crear, mano, puno };
