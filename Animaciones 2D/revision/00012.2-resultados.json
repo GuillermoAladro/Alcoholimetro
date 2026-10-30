@@ -1,0 +1,236 @@
+{
+  "scene": "00012.2",
+  "durationSeconds": 14,
+  "renderedFrames": 841,
+  "results": [
+    {
+      "name": "Original y revisión registradas",
+      "passed": true
+    },
+    {
+      "name": "Negro absoluto inicial y final",
+      "passed": true,
+      "details": [
+        {
+          "t": 0,
+          "max": 0
+        },
+        {
+          "t": 0.016666666666666666,
+          "max": 0
+        },
+        {
+          "t": 0.03333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.05,
+          "max": 0
+        },
+        {
+          "t": 0.06666666666666667,
+          "max": 0
+        },
+        {
+          "t": 0.08333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.1,
+          "max": 0
+        },
+        {
+          "t": 0.11666666666666667,
+          "max": 0
+        },
+        {
+          "t": 13.883333333333333,
+          "max": 0
+        },
+        {
+          "t": 13.9,
+          "max": 0
+        },
+        {
+          "t": 13.916666666666666,
+          "max": 0
+        },
+        {
+          "t": 13.933333333333334,
+          "max": 0
+        },
+        {
+          "t": 13.95,
+          "max": 0
+        },
+        {
+          "t": 13.966666666666667,
+          "max": 0
+        },
+        {
+          "t": 13.983333333333333,
+          "max": 0
+        },
+        {
+          "t": 14,
+          "max": 0
+        }
+      ]
+    },
+    {
+      "name": "Sin cortes visuales inesperados",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Geometría finita de ambos personajes a 120 Hz",
+      "passed": true,
+      "details": {
+        "samples": 1681,
+        "nonfinite": 0
+      }
+    },
+    {
+      "name": "Cuatro muñecas unidas durante toda la escena",
+      "passed": true,
+      "details": {
+        "maxGapPx": 2.5124836400035223e-7
+      }
+    },
+    {
+      "name": "Pies apoyados sin deslizamiento",
+      "passed": true,
+      "details": {
+        "samples": 6007,
+        "maxDriftPx": 1.1368683772161603e-13
+      }
+    },
+    {
+      "name": "Boquilla en la boca durante ambos soplidos",
+      "passed": true,
+      "details": {
+        "maxGapPx": 5.684341886080802e-14
+      }
+    },
+    {
+      "name": "Una única boquilla sin saltos al cogerla, devolverla y soltarla",
+      "passed": true,
+      "details": [
+        {
+          "t": 2.72,
+          "gap": 5.684341886080802e-14,
+          "angle": 0
+        },
+        {
+          "t": 4.82,
+          "gap": 0.000016850900635748732,
+          "angle": 1.9673151996357774e-13
+        },
+        {
+          "t": 7.36,
+          "gap": 0,
+          "angle": 0
+        },
+        {
+          "t": 9.3,
+          "gap": 0.0001353417694871576,
+          "angle": 8.814827205938514e-7
+        },
+        {
+          "t": 9.62,
+          "gap": 0.000012351018883955525,
+          "angle": 0
+        }
+      ]
+    },
+    {
+      "name": "Moneda lanzada desde el punto, giro y tamaño de agarre hasta la ranura",
+      "passed": true,
+      "details": {
+        "releaseGap": 0,
+        "angle": 0.2,
+        "width": 1,
+        "slotGap": 0.00009824917332150346,
+        "presentAtRelease": true,
+        "absentAfter": true
+      }
+    },
+    {
+      "name": "Llaves pasan de Guillermo a Laura sin salto",
+      "passed": true,
+      "details": {
+        "gapPx": 5.825159474955375e-9,
+        "angleGap": 1.7654479358975017e-7
+      }
+    },
+    {
+      "name": "Resultado de Laura cero y verde; sobrecarga posterior de Guillermo",
+      "passed": true
+    },
+    {
+      "name": "Siluetas completas con margen para el temblor de cámara, salvo la salida de Laura",
+      "passed": true,
+      "details": {
+        "samples": 119,
+        "cut": []
+      }
+    },
+    {
+      "name": "Laura guiña un solo ojo y sale con las llaves; Guillermo acaba haciendo pucheros",
+      "passed": true
+    },
+    {
+      "name": "Trayectorias idénticas al buscar directamente",
+      "passed": true
+    },
+    {
+      "name": "Rebobinado y reproducción idénticos a 30/60/120 fps",
+      "passed": true,
+      "details": {
+        "reverse": true,
+        "fpsChecks": [
+          {
+            "fps": 30,
+            "matches": true
+          },
+          {
+            "fps": 60,
+            "matches": true
+          },
+          {
+            "fps": 120,
+            "matches": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Atlas cargados",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Selector, reinicio, avance, retroceso, búsqueda y reproducción",
+      "passed": true
+    },
+    {
+      "name": "Modo kiosco",
+      "passed": true
+    },
+    {
+      "name": "Sin errores JavaScript ni recursos fallidos",
+      "passed": true,
+      "details": {
+        "errors": [],
+        "failures": []
+      }
+    }
+  ],
+  "paintMs": {
+    "median": 2.899999998509884,
+    "p95": 5,
+    "max": 12.100000001490116
+  },
+  "browser": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.0 Safari/537.36",
+  "passed": true
+}
