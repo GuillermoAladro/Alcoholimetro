@@ -44,6 +44,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00017 | Guillermo y Laura · Los dardos | 14,45 s | [MP4 60 fps](vista%20previa/00017%20Guillermo%20y%20Laura%20-%20los%20dardos.mp4) · [fotogramas](vista%20previa/00017%20Guillermo%20y%20Laura%20-%20los%20dardos%20-%20fotogramas.png) |
 | 00018 | Guillermo y Laura · El selfie | 13,30 s | [MP4 60 fps](vista%20previa/00018%20Guillermo%20y%20Laura%20-%20el%20selfie.mp4) · [fotogramas](vista%20previa/00018%20Guillermo%20y%20Laura%20-%20el%20selfie%20-%20fotogramas.png) |
 | 00019 | Guillermo y Laura · El paraguas | 13,60 s | [MP4 60 fps](vista%20previa/00019%20Guillermo%20y%20Laura%20-%20el%20paraguas.mp4) · [fotogramas](vista%20previa/00019%20Guillermo%20y%20Laura%20-%20el%20paraguas%20-%20fotogramas.png) |
+| 00020 | Guillermo y Laura · Piedra, papel o tijera | 14,95 s | [MP4 60 fps](vista%20previa/00020%20Guillermo%20y%20Laura%20-%20piedra%20papel%20o%20tijera.mp4) · [fotogramas](vista%20previa/00020%20Guillermo%20y%20Laura%20-%20piedra%20papel%20o%20tijera%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -418,6 +419,21 @@ Corrige la continuidad de los brazos y coloca el giro de manos delante del pecho
 11. Negro.
 
 ![Fotogramas de 00019](vista%20previa/00019%20Guillermo%20y%20Laura%20-%20el%20paraguas%20-%20fotogramas.png)
+
+### 00020 · Guillermo y Laura · Piedra, papel o tijera
+
+1. Negro.
+2. Taberna verde esmeralda: barra de caoba con barandilla de latón, espejo con botellas, caja registradora y farolillos verdes. Entre Guillermo y Laura, la cuenta en una bandejita.
+3. Miran la cuenta, se miran… y Guillermo la reta con el puño: ¿quién paga? Laura levanta una ceja y acepta.
+4. **Primera ronda:** los puños botan tres veces y la cámara se acerca a las manos. Él saca tijera, ella piedra… y le aplasta los dedos. Él sacude la mano y se la sopla; ella se sopla los nudillos.
+5. **Segunda ronda:** él saca papel, muy chulo; ella tijera: «tris, tras», le corta las puntas. Él se mira la mano y se cuenta los dedos.
+6. **Tercera ronda:** rojo, sudando y con la vena, él saca piedra; ella papel y le envuelve el puño con la palma.
+7. Guillermo cae de rodillas y se saca los bolsillos del revés: vacíos. Sale volando una polilla y él la sigue con la mirada.
+8. Laura se parte de risa, saca su tarjeta, la lanza con un giro de muñeca y aterriza justo en la bandeja.
+9. Va hasta él y le da unas palmaditas en la cabeza; él la mira desde abajo con ojitos y se sonroja. Ella guiña un ojo a cámara.
+10. Negro.
+
+![Fotogramas de 00020](vista%20previa/00020%20Guillermo%20y%20Laura%20-%20piedra%20papel%20o%20tijera%20-%20fotogramas.png)
 
 ## Ver y grabar
 
