@@ -95,6 +95,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00056 | Guillermo y Dari · La pizza | 14,20 s | [MP4 60 fps](vista%20previa/00056%20Guillermo%20y%20Dari%20-%20la%20pizza.mp4) · [fotogramas](vista%20previa/00056%20Guillermo%20y%20Dari%20-%20la%20pizza%20-%20fotogramas.png) |
 | 00058 | Guillermo y Dari · Las palomitas | 14,25 s | [MP4 60 fps](vista%20previa/00058%20Guillermo%20y%20Dari%20-%20las%20palomitas.mp4) · [fotogramas](vista%20previa/00058%20Guillermo%20y%20Dari%20-%20las%20palomitas%20-%20fotogramas.png) |
 | 00059 | Guillermo y Dari · El abrigo | 14,60 s | [MP4 60 fps](vista%20previa/00059%20Guillermo%20y%20Dari%20-%20el%20abrigo.mp4) · [fotogramas](vista%20previa/00059%20Guillermo%20y%20Dari%20-%20el%20abrigo%20-%20fotogramas.png) |
+| 00060 | Guillermo y Dari · El yoyó | 14,90 s | [MP4 60 fps](vista%20previa/00060%20Guillermo%20y%20Dari%20-%20el%20yoyo.mp4) · [fotogramas](vista%20previa/00060%20Guillermo%20y%20Dari%20-%20el%20yoyo%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1146,6 +1147,26 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 12. Negro.
 
 ![Fotogramas de 00059](vista%20previa/00059%20Guillermo%20y%20Dari%20-%20el%20abrigo%20-%20fotogramas.png)
+
+### 00060 · Guillermo y Dari · El yoyó
+
+1. Negro.
+2. Azotea al atardecer: sol enorme tras los edificios, depósito de agua, guirnalda de bombillas, murete de ladrillo y suelo de barro.
+3. Dari lanza su yoyó rojo y lo pasea por el suelo («pasear al perro») hasta el zapato de Guillermo, que levanta la punta del pie.
+4. Vuelta al mundo: dos círculos enormes sin mirar el yoyó; Guillermo se echa atrás.
+5. Cuna de cuerda entre las dos manos, el yoyó se mece dentro; a Dari le brillan las gafas.
+6. Guillermo pide probar; Dari se lo lanza y él lo caza.
+7. Mira chulo a cámara y lo deja dormido abajo, zumbando, orgulloso.
+8. Vuelta al mundo con demasiada fuerza: cada vez más rápido.
+9. La cuerda se le engancha y **el yoyó le ata el cuello, los brazos y las piernas**; se le queda en la barriga como el lazo de un paquete.
+10. Mira a cámara resignado, da dos saltitos atado hacia Dari, se tambalea y cae de espaldas tieso como un tablón.
+11. Dari se agacha y le quita la punta suelta de la cuerda del zapato.
+12. Tira: **Guillermo se levanta girando como una peonza** mientras la cuerda se desenrolla.
+13. El yoyó sale disparado y vuelve a la mano de Dari, que lo caza sin mirar.
+14. Guillermo, mareado, con ojos en espiral y estrellitas; a Dari le brillan las gafas.
+15. Negro.
+
+![Fotogramas de 00060](vista%20previa/00060%20Guillermo%20y%20Dari%20-%20el%20yoyo%20-%20fotogramas.png)
 
 ## Ver y grabar
 
