@@ -139,7 +139,9 @@ const Recortes = (() => {
       // Con c.cuna cada rodaja se recorta por las bisectrices de sus juntas: al doblar mucho la
       // rodilla o el codo no asoman las esquinas de las rodajas (dientes de sierra en el pliegue).
       if (c.cuna) {
-        const B = 4000, EPS = 1.2;
+        // c.cunaAjustada: semiplano del ancho justo de la pieza; recortar con polígonos enormes es caro
+        // (≈3 veces más lento en los brazos). Sin ella, el de siempre (00005–00010 quedan idénticas).
+        const B = c.cunaAjustada ? p.tam_hoja[0] * 1.5 + 60 : 4000, EPS = 1.2;
         const corta = (q, a, signo) => {     // semiplano por q, normal = eje medio en la junta
           const nx = -Math.sin(a) * signo, ny = Math.cos(a) * signo, ux = -ny, uy = nx;
           const x0 = q.x - nx * EPS, y0 = q.y - ny * EPS;

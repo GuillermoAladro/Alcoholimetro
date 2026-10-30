@@ -645,7 +645,8 @@ const Guillermo = (() => {
     g.save(); g.translate(mano.x, mano.y); g.rotate(mano.ang || 0); g.scale(JK * (mano.espejo ? -1 : 1), JK);
     if (mano.objeto) mano.objeto(g, t);
     const k = mano.puno ?? 1;
-    if (k > 0.01) { if (k < 0.999) g.scale(k, k); puno(g, mano.pulgar); }
+    // mano.dedos (opcional): mano con dedos de Personaje2D (personajes/comun/personaje.js); sin ella, el puño de siempre
+    if (k > 0.01) { if (k < 0.999) g.scale(k, k); if (mano.dedos && typeof Personaje2D !== "undefined") Personaje2D.mano(g, mano, { piel: C.piel, sombra: C.pielSombra, tinta: C.tinta }); else puno(g, mano.pulgar); }
     g.restore();
   }
 
@@ -660,7 +661,8 @@ const Guillermo = (() => {
   function dibujar(g, p, t) {
     if (!A.listo) return false;
     g.save();
-    g.translate(p.x, p.suelo); g.scale(p.s, p.s); g.translate(-PELVIS.x, -SUELO);
+    // p.espejo (opcional): mira a la izquierda, reflejado alrededor de p.x
+    g.translate(p.x, p.suelo); g.scale(p.espejo ? -p.s : p.s, p.s); g.translate(-PELVIS.x, -SUELO);
     g.imageSmoothingEnabled = true; g.imageSmoothingQuality = "high";
     // pierna lejana (más oscura) y luego la cercana
     for (const lado of ["lejos", "cerca"]) {
@@ -717,9 +719,11 @@ const Guillermo = (() => {
   }
 
   // posición en pantalla de un punto del cuerpo (hoja)
-  const aPantalla = (p, q) => ({ x: p.x + (q.x - PELVIS.x) * p.s, y: p.suelo + (q.y - SUELO) * p.s });
+  const aPantalla = (p, q) => ({ x: p.x + (q.x - PELVIS.x) * p.s * (p.espejo ? -1 : 1), y: p.suelo + (q.y - SUELO) * p.s });
+  // y al revés: de pantalla a hoja (lo mismo que hace Personaje2D)
+  const aHoja = (p, q) => ({ x: PELVIS.x + (q.x - p.x) / p.s * (p.espejo ? -1 : 1), y: SUELO + (q.y - p.suelo) / p.s });
 
-  return { A, C, dibujar, cabeza, boca, centroCabeza, tronco, aPantalla, inclinacionParaBeber, BORDE, JK, rotP,
+  return { A, C, K: 1, dibujar, cabeza, boca, centroCabeza, tronco, aPantalla, aHoja, inclinacionParaBeber, BORDE, JK, rotP,
     copa, inclinacionCopa, COPA_BORDE, MUNECA_R, BRAZO_L, BRAZO_C_L,
     SUELO, PELVIS, CADERA, TOBILLO_ALTO, PUNTA, TALON, CUELLO, HOMBRO, HOMBRO_C, listo: () => A.listo };
 })();
