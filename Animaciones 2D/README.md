@@ -1167,6 +1167,7 @@ Animaciones 2D/
 ├─ personajes/paradigma/        coordenadas de Paradigma y su atlas
 ├─ personajes/rodri/            coordenadas de Rodri y su atlas
 ├─ personajes/sara-saez/        coordenadas de Sara Sáez, su atlas y el collar
+├─ personajes/yorgi/            coordenadas de Yorgi y su atlas
 ├─ escenas/                     una escena por archivo (00001 … 00010 y sus revisiones)
 ├─ herramientas/                 comprobar.py y grabar.py
 └─ vista previa/                 vídeos y fotogramas de cada animación
@@ -1292,6 +1293,13 @@ Opciones del montaje que usan las escenas nuevas (las anteriores no las activan 
 - **Piezas:** la cabeza del retrato con los pendientes de perla y el aro de la nariz (sin el cuello ni el collar), la cara roja, las cejas, la boca, la melena larga en dos tiras (delante y, reflejada y más oscura, detrás), el torso con el top negro de manga larga y escote, los brazos, las piernas del cargo negro y la zapatilla blanca y gris con la suela nivelada.
 - **Limpieza:** se quita la melena que caía por delante de los hombros y se rehacen el escote, el top, las mangas, el hueco entre el brazo y la cintura y los contornos. Se quitan las manos de los bolsillos y el collar, que lo dibuja `sara-saez.js` y se mece con el torso.
 - **Altura:** con el mismo `p.s` mide un 93 % de Guillermo, como Laura, Carla y Marta.
+
+**Yorgi** (`personajes/yorgi/`) sale de `Avatares 2D/Yorgi/Yorgi-2D.png` con el recortador común.
+
+- **Piezas:** la cabeza del retrato cortada por debajo de la barba, con los aros de las orejas (el cuello lo pone el cuerpo), las cejas, la boca, el torso de la camiseta marino hasta la cintura del vaquero, los dos brazos (manga corta y brazo; el lejano con el reloj) y la zapatilla con la suela nivelada.
+- **Limpieza:** se blanquean las sombras grises del suelo junto a las zapatillas y se repinta lo que tapaban los antebrazos (camiseta, bajo, cintura del vaquero y sus contornos).
+- **En pantalla:** los hombros son marino, los labios se dibujan sobre la barba y la mano se dibuja aparte al sacarla del bolsillo.
+- **Altura:** con el mismo `p.s` mide un 2 % más que Guillermo.
 
 ## Añadir una animación
 
