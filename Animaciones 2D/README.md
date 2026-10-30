@@ -88,6 +88,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00049 | Guillermo y Carla · El helado | 14,40 s | [MP4 60 fps](vista%20previa/00049%20Guillermo%20y%20Carla%20-%20el%20helado.mp4) · [fotogramas](vista%20previa/00049%20Guillermo%20y%20Carla%20-%20el%20helado%20-%20fotogramas.png) |
 | 00050 | Guillermo y Carla · Las gafas de sol | 14,50 s | [MP4 60 fps](vista%20previa/00050%20Guillermo%20y%20Carla%20-%20las%20gafas%20de%20sol.mp4) · [fotogramas](vista%20previa/00050%20Guillermo%20y%20Carla%20-%20las%20gafas%20de%20sol%20-%20fotogramas.png) |
 | 00051 | Guillermo y Dari · El ajedrez | 13,80 s | [MP4 60 fps](vista%20previa/00051%20Guillermo%20y%20Dari%20-%20el%20ajedrez.mp4) · [fotogramas](vista%20previa/00051%20Guillermo%20y%20Dari%20-%20el%20ajedrez%20-%20fotogramas.png) |
+| 00052 | Guillermo y Dari · Las gafas empañadas | 14,70 s | [MP4 60 fps](vista%20previa/00052%20Guillermo%20y%20Dari%20-%20las%20gafas%20empanadas.mp4) · [fotogramas](vista%20previa/00052%20Guillermo%20y%20Dari%20-%20las%20gafas%20empanadas%20-%20fotogramas.png) |
 | 00053 | Guillermo y Dari · El cubo de Rubik | 14,65 s | [MP4 60 fps](vista%20previa/00053%20Guillermo%20y%20Dari%20-%20el%20cubo%20de%20rubik.mp4) · [fotogramas](vista%20previa/00053%20Guillermo%20y%20Dari%20-%20el%20cubo%20de%20rubik%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
@@ -1028,6 +1029,22 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 12. Negro.
 
 ![Fotogramas de 00051](vista%20previa/00051%20Guillermo%20y%20Dari%20-%20el%20ajedrez%20-%20fotogramas.png)
+
+### 00052 · Guillermo y Dari · Las gafas empañadas
+
+1. Negro.
+2. Noche de nieve: Guillermo y Dari acaban de entrar en un bar calentito; la puerta se cierra de golpe con una ráfaga de copos. Llevan nieve en los hombros y en el pelo, y tiritan.
+3. Con el calor, **las gafas de Dari se empañan** de abajo arriba hasta quedarse blancas del todo. Dari se queda quieto, sin ver nada.
+4. Se las quita, las frota en la parka y se las vuelve a poner: le brillan, limpias. Guillermo se parte de risa con la mano en la barriga.
+5. Guillermo coge una taza de café humeante de la mesita y se la da. Dari la huele a gusto… y el vapor se las vuelve a empañar. Guillermo le señala, muerto de risa.
+6. Dari se las quita otra vez y las mira de lejos, entornando los ojos. Guillermo se las birla, les da la vuelta y se las pone.
+7. **Todo se ve borroso:** el bar ondula, Guillermo se ve doble y con los ojos en espiral. Da una vuelta sobre sí mismo y ve el perchero, con su abrigo beis y su gorro de pelo rizado: «¡Dari!».
+8. Abre los brazos, va dando tumbos y **abraza el perchero**. Se tambalea y el gorro le cae en la cabeza, y ahí se queda. Dari, sin gafas, se toma el café tan tranquilo y levanta una ceja.
+9. Dari deja la taza, va hasta Guillermo, le quita las gafas y se las pone: todo vuelve a verse nítido.
+10. Guillermo ve lo que estaba abrazando, lo suelta, se pone rojo como un tomate y le sale vapor de la cabeza… que vuelve a empañar las gafas de Dari, que mira a cámara.
+11. Negro.
+
+![Fotogramas de 00052](vista%20previa/00052%20Guillermo%20y%20Dari%20-%20las%20gafas%20empanadas%20-%20fotogramas.png)
 
 ### 00053 · Guillermo y Dari · El cubo de Rubik
 
