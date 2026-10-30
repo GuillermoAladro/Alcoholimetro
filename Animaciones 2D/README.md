@@ -1115,6 +1115,7 @@ Animaciones 2D/
 ├─ personajes/marta/            coordenadas de Marta y su atlas
 ├─ personajes/paradigma/        coordenadas de Paradigma y su atlas
 ├─ personajes/rodri/            coordenadas de Rodri y su atlas
+├─ personajes/sara-saez/        coordenadas de Sara Sáez, su atlas y el collar
 ├─ escenas/                     una escena por archivo (00001 … 00010 y sus revisiones)
 ├─ herramientas/                 comprobar.py y grabar.py
 └─ vista previa/                 vídeos y fotogramas de cada animación
@@ -1234,6 +1235,12 @@ Opciones del montaje que usan las escenas nuevas (las anteriores no las activan 
 - **Limpieza:** se quitan las manos que asomaban de los bolsillos (solo la piel y su contorno) y se repintan la camiseta, la cintura del vaquero, la abertura del bolsillo y el borde del puño.
 - **En pantalla:** los hombros son negros y la mano se dibuja aparte al sacarla del bolsillo.
 - **Altura:** con el mismo `p.s` mide prácticamente lo mismo que Guillermo.
+
+**Sara Sáez** (`personajes/sara-saez/`) sale de `Avatares 2D/Sara-Saez/Sara-Saez-2D.png` con el recortador común.
+
+- **Piezas:** la cabeza del retrato con los pendientes de perla y el aro de la nariz (sin el cuello ni el collar), la cara roja, las cejas, la boca, la melena larga en dos tiras (delante y, reflejada y más oscura, detrás), el torso con el top negro de manga larga y escote, los brazos, las piernas del cargo negro y la zapatilla blanca y gris con la suela nivelada.
+- **Limpieza:** se quita la melena que caía por delante de los hombros y se rehacen el escote, el top, las mangas, el hueco entre el brazo y la cintura y los contornos. Se quitan las manos de los bolsillos y el collar, que lo dibuja `sara-saez.js` y se mece con el torso.
+- **Altura:** con el mismo `p.s` mide un 93 % de Guillermo, como Laura, Carla y Marta.
 
 ## Añadir una animación
 
