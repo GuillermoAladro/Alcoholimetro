@@ -49,6 +49,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00021 | Guillermo y Marcos · El chupito en llamas | 14,10 s | [MP4 60 fps](vista%20previa/00021%20Guillermo%20y%20Marcos%20-%20el%20chupito%20en%20llamas.mp4) · [fotogramas](vista%20previa/00021%20Guillermo%20y%20Marcos%20-%20el%20chupito%20en%20llamas%20-%20fotogramas.png) |
 | 00022 | Guillermo y Marcos · El gato en la farola | 14,50 s | [MP4 60 fps](vista%20previa/00022%20Guillermo%20y%20Marcos%20-%20el%20gato%20en%20la%20farola.mp4) · [fotogramas](vista%20previa/00022%20Guillermo%20y%20Marcos%20-%20el%20gato%20en%20la%20farola%20-%20fotogramas.png) |
 | 00023 | Guillermo y Marcos · La barra de bomberos | 14,45 s | [MP4 60 fps](vista%20previa/00023%20Guillermo%20y%20Marcos%20-%20la%20barra%20de%20bomberos.mp4) · [fotogramas](vista%20previa/00023%20Guillermo%20y%20Marcos%20-%20la%20barra%20de%20bomberos%20-%20fotogramas.png) |
+| 00024 | Guillermo y Marcos · La manguera loca | 13,90 s | [MP4 60 fps](vista%20previa/00024%20Guillermo%20y%20Marcos%20-%20la%20manguera%20loca.mp4) · [fotogramas](vista%20previa/00024%20Guillermo%20y%20Marcos%20-%20la%20manguera%20loca%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -490,6 +491,21 @@ Corrige los cuatro brazos, el apoyo de los codos en la mesa, el giro y la libera
 10. Negro.
 
 ![Fotogramas de 00023](vista%20previa/00023%20Guillermo%20y%20Marcos%20-%20la%20barra%20de%20bomberos%20-%20fotogramas.png)
+
+### 00024 · Guillermo y Marcos · La manguera loca
+
+1. Negro.
+2. Patio de maniobras del parque de bomberos a pleno sol: fachada de ladrillo con portones rojos y escudo de llama, torre de prácticas, conos y una columna roja con la rueda de la válvula. Marcos sujeta la lanza; Guillermo le suplica con las palmas juntas dando saltitos.
+3. Marcos levanta una ceja, suspira y se la da. Guillermo la coge con las dos manos, recula y apunta mirando a cámara muy chulo.
+4. Marcos, sin mirar, abre la válvula: un **bulto de agua** recorre la manguera hasta la lanza… y ¡chorro!
+5. El retroceso empuja a Guillermo y **la manguera se vuelve loca**: lo zarandea arriba y abajo mientras Marcos salta la manguera como a la comba.
+6. La manguera le barre los pies, cae sentado encima y el chorro lo **arrastra de culo** por el patio hasta llevarse los conos por delante.
+7. La manguera se encabrita y lo levanta por los aires: **la monta como un toro mecánico** y, a la tercera sacudida, agita la mano encantado.
+8. Marcos, aburrido, mira a cámara y cierra la válvula: la manguera se desinfla y Guillermo cae de culo en el charco.
+9. Mareado, se asoma a la boca de la lanza… y le cae el último chorrito en la cara. Marcos se encoge de hombros a cámara.
+10. Negro.
+
+![Fotogramas de 00024](vista%20previa/00024%20Guillermo%20y%20Marcos%20-%20la%20manguera%20loca%20-%20fotogramas.png)
 
 ## Ver y grabar
 
