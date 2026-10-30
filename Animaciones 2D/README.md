@@ -72,6 +72,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00036 | Guillermo y Ander · La máquina del gancho | 15,00 s | [MP4 60 fps](vista%20previa/00036%20Guillermo%20y%20Ander%20-%20la%20maquina%20del%20gancho.mp4) · [fotogramas](vista%20previa/00036%20Guillermo%20y%20Ander%20-%20la%20maquina%20del%20gancho%20-%20fotogramas.png) |
 | 00037 | Guillermo y Ander · El abrazo de oso | 13,80 s | [MP4 60 fps](vista%20previa/00037%20Guillermo%20y%20Ander%20-%20el%20abrazo%20de%20oso.mp4) · [fotogramas](vista%20previa/00037%20Guillermo%20y%20Ander%20-%20el%20abrazo%20de%20oso%20-%20fotogramas.png) |
 | 00038 | Guillermo y Ander · El beer pong | 14,20 s | [MP4 60 fps](vista%20previa/00038%20Guillermo%20y%20Ander%20-%20el%20beer%20pong.mp4) · [fotogramas](vista%20previa/00038%20Guillermo%20y%20Ander%20-%20el%20beer%20pong%20-%20fotogramas.png) |
+| 00040 | Guillermo y Ander · La guitarra | 13,60 s | [MP4 60 fps](vista%20previa/00040%20Guillermo%20y%20Ander%20-%20la%20guitarra.mp4) · [fotogramas](vista%20previa/00040%20Guillermo%20y%20Ander%20-%20la%20guitarra%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -784,6 +785,21 @@ Corrige los brazos, los apoyos y los contactos con los paraguas. Mantiene comple
 11. Negro.
 
 ![Fotogramas de 00038](vista%20previa/00038%20Guillermo%20y%20Ander%20-%20el%20beer%20pong%20-%20fotogramas.png)
+
+### 00040 · Guillermo y Ander · La guitarra
+
+1. Negro.
+2. Rincón acogedor del bar con guirnalda de bombillas, un vinilo y un cuadro de una guitarra. Ander, sentado en un taburete, toca la guitarra tranquilo; salen notas redondas y suaves.
+3. Guillermo coge aire y se pone a **cantar fatal**: le salen notas con pinchos; Ander guiña un ojo y tuerce la boca.
+4. Las copas de la balda empiezan a agrietarse y un perro asoma por la ventana y se pone a aullar.
+5. Ander, harto, toca más rápido y más fuerte para taparlo; Guillermo da un paso y canta todavía más alto. El perro se tapa las orejas y se esconde.
+6. Los dos a tope: Guillermo grita y se agrieta la última copa.
+7. **Una cuerda se rompe**, sale disparada y le da a Guillermo en la nariz.
+8. Silencio. Guillermo, aturdido y con la nariz roja, se la frota mientras el perro vuelve a asomarse.
+9. Ander se calma, toca un último acorde suave y le guiña un ojo; Guillermo hace pucheros.
+10. Negro.
+
+![Fotogramas de 00040](vista%20previa/00040%20Guillermo%20y%20Ander%20-%20la%20guitarra%20-%20fotogramas.png)
 
 ## Ver y grabar
 
