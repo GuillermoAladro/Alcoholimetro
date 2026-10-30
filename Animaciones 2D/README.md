@@ -53,6 +53,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00023 | Guillermo y Marcos · La barra de bomberos | 14,45 s | [MP4 60 fps](vista%20previa/00023%20Guillermo%20y%20Marcos%20-%20la%20barra%20de%20bomberos.mp4) · [fotogramas](vista%20previa/00023%20Guillermo%20y%20Marcos%20-%20la%20barra%20de%20bomberos%20-%20fotogramas.png) |
 | 00024 | Guillermo y Marcos · La manguera loca | 13,90 s | [MP4 60 fps](vista%20previa/00024%20Guillermo%20y%20Marcos%20-%20la%20manguera%20loca.mp4) · [fotogramas](vista%20previa/00024%20Guillermo%20y%20Marcos%20-%20la%20manguera%20loca%20-%20fotogramas.png) |
 | 00025 | Guillermo y Marcos · Las pesas | 14,70 s | [MP4 60 fps](vista%20previa/00025%20Guillermo%20y%20Marcos%20-%20las%20pesas.mp4) · [fotogramas](vista%20previa/00025%20Guillermo%20y%20Marcos%20-%20las%20pesas%20-%20fotogramas.png) |
+| 00028 | Guillermo y Marcos · Vestirse en tres segundos | 14,20 s | [MP4 60 fps](vista%20previa/00028%20Guillermo%20y%20Marcos%20-%20vestirse%20en%20tres%20segundos.mp4) · [fotogramas](vista%20previa/00028%20Guillermo%20y%20Marcos%20-%20vestirse%20en%20tres%20segundos%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -537,6 +538,22 @@ Corrige el alcance de los brazos al pedir, coger y soltar la guinda; fija los pi
 11. Negro.
 
 ![Fotogramas de 00025](vista%20previa/00025%20Guillermo%20y%20Marcos%20-%20las%20pesas%20-%20fotogramas.png)
+
+### 00028 · Guillermo y Marcos · Vestirse en tres segundos
+
+1. Negro.
+2. Vestuario del parque de bomberos: taquillas rojas, un cronómetro gigante en la pared, el timbre de alarma y una percha con un equipo de repuesto (dos botas y un pantalón de intervención con tirantes). Marcos se toma un café junto a Guillermo.
+3. **Suena la alarma:** los dos dan un respingo, el café salpica y el cronómetro arranca.
+4. Marcos mira a cámara y se convierte en un **torbellino**: sale equipado con la botella de aire a la espalda, las correas, la máscara y el hacha al hombro, en pose de héroe. El cronómetro apenas se ha movido.
+5. Mira el reloj, orgulloso, y le cede el turno a Guillermo con la mano.
+6. Guillermo, picado, se frota las manos y va a la percha: **mete la mano en una bota** y se le queda puesta. La mira, la sacude… nada.
+7. Engancha el pantalón con la bota y **salta a la pata coja** intentando meter el pie, cada vez más rojo; Marcos se tapa la boca para no reírse.
+8. Tira con tanta fuerza que el pantalón sale volando y **le cae en la cabeza**, con las perneras tiesas como orejas.
+9. A ciegas, **los tirantes se le enrollan** y le atan los brazos: se cae de culo y la otra bota se suelta de la percha y le da en la cabeza.
+10. Marcos mira el cronómetro, mira a Guillermo y niega con la cabeza; Guillermo, sonrojado, menea la bota de la mano con una sonrisa de circunstancias.
+11. Negro.
+
+![Fotogramas de 00028](vista%20previa/00028%20Guillermo%20y%20Marcos%20-%20vestirse%20en%20tres%20segundos%20-%20fotogramas.png)
 
 ## Ver y grabar
 
