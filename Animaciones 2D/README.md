@@ -103,6 +103,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00064 | Guillermo y Deivi · El castillo de naipes | 13,8 s | [MP4 60 fps](vista%20previa/00064%20Guillermo%20y%20Deivi%20-%20el%20castillo%20de%20naipes.mp4) · [fotogramas](vista%20previa/00064%20Guillermo%20y%20Deivi%20-%20el%20castillo%20de%20naipes%20-%20fotogramas.png) |
 | 00065 | Guillermo y Deivi · Las sillas con ruedas | 14,4 s | [MP4 60 fps](vista%20previa/00065%20Guillermo%20y%20Deivi%20-%20las%20sillas%20con%20ruedas.mp4) · [fotogramas](vista%20previa/00065%20Guillermo%20y%20Deivi%20-%20las%20sillas%20con%20ruedas%20-%20fotogramas.png) |
 | 00066 | Guillermo y Deivi · El globo de helio | 14,9 s | [MP4 60 fps](vista%20previa/00066%20Guillermo%20y%20Deivi%20-%20el%20globo%20de%20helio.mp4) · [fotogramas](vista%20previa/00066%20Guillermo%20y%20Deivi%20-%20el%20globo%20de%20helio%20-%20fotogramas.png) |
+| 00067 | Guillermo y Deivi · La guerra de almohadas | 14,0 s | [MP4 60 fps](vista%20previa/00067%20Guillermo%20y%20Deivi%20-%20la%20guerra%20de%20almohadas.mp4) · [fotogramas](vista%20previa/00067%20Guillermo%20y%20Deivi%20-%20la%20guerra%20de%20almohadas%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1286,6 +1287,22 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 12. Negro.
 
 ![Fotogramas de 00066](vista%20previa/00066%20Guillermo%20y%20Deivi%20-%20el%20globo%20de%20helio%20-%20fotogramas.png)
+
+### 00067 · Guillermo y Deivi · La guerra de almohadas
+
+1. Negro.
+2. Salón de noche con ambiente de fiesta de pijamas (papel pintado mostaza, ventana con luna, lámpara de pie, guirnalda de bombillitas, sofá de terciopelo, palomitas, cojines y alfombra granate): Guillermo, con su almohada azul de lunares, y Deivi, con la suya verde de rayas al hombro y la otra mano en el bolsillo, se miden dando saltitos; Deivi le reta con la barbilla.
+3. Deivi da un paso y le atiza en la cabeza: ¡puf!, se escapan cuatro plumas. Guillermo sacude la cabeza y se enfada (vena).
+4. Guillermo prepara un golpe enorme: almohada en alto por detrás, rodilla arriba, temblando de rabia. Deivi pone cara de susto.
+5. La suelta con todas sus fuerzas… Deivi se agacha sin sacar la mano del bolsillo y la almohada pasa silbando por encima.
+6. La inercia hace **girar a Guillermo sobre sí mismo** y, al frenar, la almohada sigue de largo, da la vuelta y **le cae en la cabeza**: ¡zas!
+7. **Revienta**: explosión de plumas que bajan despacio, balanceándose; Guillermo queda cubierto como una gallina (cresta de plumas en el pelo y plumas en los hombros) con la funda rota y vacía en la mano.
+8. Deivi lanza su almohada al sofá, le señala y se dobla de risa; Guillermo mira a cámara muy serio y cabecea como una gallina.
+9. Una última pluma baja haciendo eses y se le posa en la nariz: bizquea, le pica… ah… ah… ah… ¡**achís**!: estornuda una nube de plumas que va directa a la cara de Deivi, que se había acercado a mirar.
+10. Deivi, emplumado, hincha los mofletes y sopla la pluma del labio; Guillermo se limpia la nariz con la muñeca, sonríe a cámara y guiña.
+11. Negro.
+
+![Fotogramas de 00067](vista%20previa/00067%20Guillermo%20y%20Deivi%20-%20la%20guerra%20de%20almohadas%20-%20fotogramas.png)
 
 ## Ver y grabar
 
