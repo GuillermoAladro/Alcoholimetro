@@ -23,6 +23,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00003.2 | Guillermo y el globo · revisada | 12,45 s | [MP4 60 fps](vista%20previa/00003.2%20Guillermo%20y%20el%20globo.mp4) · [fotogramas](vista%20previa/00003.2%20Guillermo%20y%20el%20globo%20-%20fotogramas.png) · [revisión](revision/00003.2.md) |
 | 00004 | Guillermo contra la máquina | 13,25 s | [MP4 60 fps](vista%20previa/00004%20Guillermo%20contra%20la%20maquina.mp4) · [fotogramas](vista%20previa/00004%20Guillermo%20contra%20la%20maquina%20-%20fotogramas.png) |
 | 00006 | Guillermo y el hipo | 13,15 s | [MP4 60 fps](vista%20previa/00006%20Guillermo%20y%20el%20hipo.mp4) · [fotogramas](vista%20previa/00006%20Guillermo%20y%20el%20hipo%20-%20fotogramas.png) |
+| 00007 | Guillermo y el champán | 13,00 s | [MP4 60 fps](vista%20previa/00007%20Guillermo%20y%20el%20champan.mp4) · [fotogramas](vista%20previa/00007%20Guillermo%20y%20el%20champan%20-%20fotogramas.png) |
 | 00010 | Guillermo en la discoteca | 13,60 s | [MP4 60 fps](vista%20previa/00010%20Guillermo%20en%20la%20discoteca.mp4) · [fotogramas](vista%20previa/00010%20Guillermo%20en%20la%20discoteca%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
@@ -134,6 +135,22 @@ Conserva los cuatro soplidos, el estallido y el enfado. Corrige la unión brazo�
 9. Negro.
 
 ![Fotogramas de 00006](vista%20previa/00006%20Guillermo%20y%20el%20hipo%20-%20fotogramas.png)
+
+### 00007 · Guillermo y el champán
+
+1. Negro.
+2. Fiesta: banderines, guirnalda de bombillas, globos y una torre de copas. Guillermo mira a cámara, levanta la botella y guiña un ojo.
+3. **La agita con todas sus fuerzas:** le tiembla todo el cuerpo y la espuma sube dentro de la botella.
+4. Apunta a un lado y empuja el corcho con el pulgar, dos veces:
+   - aguanta la respiración y aprieta los dientes;
+   - se pone rojo y suda;
+   - la botella se abomba y el corcho tiembla, pero no sale.
+5. Extrañado, mira por el cuello de la botella con un ojo cerrado… la vuelve a apuntar y mira a cámara muy chulo.
+6. Un toquecito y **¡pum!:** el corcho sale disparado, estalla el confeti y un chorro enorme de espuma lo propulsa como un cohete hasta sacarlo de la escena por arriba, con las piernas colgando y agitando la mano como en un rodeo.
+7. Cae la espuma. Al rato el corcho vuelve a caer en plano, bota tres veces y se queda balanceándose en el suelo.
+8. Negro.
+
+![Fotogramas de 00007](vista%20previa/00007%20Guillermo%20y%20el%20champan%20-%20fotogramas.png)
 
 ### 00010 · Guillermo en la discoteca
 
