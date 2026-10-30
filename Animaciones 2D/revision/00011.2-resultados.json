@@ -1,0 +1,263 @@
+{
+  "scene": "00011.2",
+  "durationSeconds": 13.75,
+  "renderedFrames": 826,
+  "results": [
+    {
+      "name": "Original y revisión registradas",
+      "passed": true
+    },
+    {
+      "name": "Negro absoluto inicial y final",
+      "passed": true,
+      "details": [
+        {
+          "t": 0,
+          "max": 0
+        },
+        {
+          "t": 0.016666666666666666,
+          "max": 0
+        },
+        {
+          "t": 0.03333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.05,
+          "max": 0
+        },
+        {
+          "t": 0.06666666666666667,
+          "max": 0
+        },
+        {
+          "t": 0.08333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.1,
+          "max": 0
+        },
+        {
+          "t": 0.11666666666666667,
+          "max": 0
+        },
+        {
+          "t": 13.633333333333333,
+          "max": 0
+        },
+        {
+          "t": 13.65,
+          "max": 0
+        },
+        {
+          "t": 13.666666666666666,
+          "max": 0
+        },
+        {
+          "t": 13.683333333333334,
+          "max": 0
+        },
+        {
+          "t": 13.7,
+          "max": 0
+        },
+        {
+          "t": 13.716666666666667,
+          "max": 0
+        },
+        {
+          "t": 13.733333333333333,
+          "max": 0
+        },
+        {
+          "t": 13.75,
+          "max": 0
+        }
+      ]
+    },
+    {
+      "name": "Sin cortes visuales inesperados",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Geometría finita de ambos personajes a 120 Hz",
+      "passed": true,
+      "details": {
+        "samples": 1651,
+        "nonfinite": 0
+      }
+    },
+    {
+      "name": "Cuatro muñecas unidas durante toda la escena",
+      "passed": true,
+      "details": {
+        "maxGapPx": 2.1037061941915652e-7
+      }
+    },
+    {
+      "name": "Muñecas siguen la posición y el giro del agarre compartido",
+      "passed": true,
+      "details": {
+        "maxGapPx": 0.001559550639597962
+      }
+    },
+    {
+      "name": "Codos mantienen su apoyo durante el pulso y el golpe",
+      "passed": true,
+      "details": {
+        "minCenterlineY": 304.0260364683106,
+        "maxCenterlineY": 306.05862181066084,
+        "tableY": 308
+      }
+    },
+    {
+      "name": "Pajita en contacto con la boca durante ambos sorbos",
+      "passed": true,
+      "details": {
+        "maxGapPx": 1.1368683772161603e-13
+      }
+    },
+    {
+      "name": "Bebida disminuye sin rellenarse ni salir del vaso",
+      "passed": true,
+      "details": {
+        "finalLevel": 0.45999999999999996
+      }
+    },
+    {
+      "name": "Copa pasa entre mesa y mano sin salto ni duplicación",
+      "passed": true,
+      "details": [
+        {
+          "t": 3.951,
+          "gap": 5.684341886080802e-14,
+          "held": true,
+          "object": true
+        },
+        {
+          "t": 5.348999999999999,
+          "gap": 5.684341886080802e-14,
+          "held": true,
+          "object": true
+        },
+        {
+          "t": 10.350999999999999,
+          "gap": 5.684341886080802e-14,
+          "held": true,
+          "object": true
+        }
+      ]
+    },
+    {
+      "name": "Cuenta atrás visible de tres, dos y un dedo",
+      "passed": true,
+      "details": [
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "name": "Liberación del agarre sin teletransportar las manos",
+      "passed": true,
+      "details": [
+        {
+          "key": "g",
+          "side": "Cerca",
+          "gap": 0.04509807232422092
+        },
+        {
+          "key": "g",
+          "side": "Lejos",
+          "gap": 0.019124629170309247
+        },
+        {
+          "key": "l",
+          "side": "Cerca",
+          "gap": 0.00002133834677321547
+        },
+        {
+          "key": "l",
+          "side": "Lejos",
+          "gap": 0.000029871506618412514
+        }
+      ]
+    },
+    {
+      "name": "Ambos personajes dentro de plano salvo el vuelo deliberado",
+      "passed": true,
+      "details": {
+        "samples": 151,
+        "cut": []
+      }
+    },
+    {
+      "name": "Cuerpo y brazos de Guillermo no atraviesan el suelo tras caer",
+      "passed": true,
+      "details": {
+        "maxBottom": 559,
+        "floor": 560
+      }
+    },
+    {
+      "name": "Rendición de Guillermo y guiño real de Laura",
+      "passed": true
+    },
+    {
+      "name": "Trayectorias idénticas al buscar directamente",
+      "passed": true
+    },
+    {
+      "name": "Rebobinado y reproducción idénticos a 30/60/120 fps",
+      "passed": true,
+      "details": {
+        "reverse": true,
+        "fpsChecks": [
+          {
+            "fps": 30,
+            "matches": true
+          },
+          {
+            "fps": 60,
+            "matches": true
+          },
+          {
+            "fps": 120,
+            "matches": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Atlas cargados",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Selector, reinicio, avance, retroceso, búsqueda y reproducción",
+      "passed": true
+    },
+    {
+      "name": "Modo kiosco",
+      "passed": true
+    },
+    {
+      "name": "Sin errores JavaScript ni recursos fallidos",
+      "passed": true,
+      "details": {
+        "errors": [],
+        "failures": []
+      }
+    }
+  ],
+  "paintMs": {
+    "median": 2.8000000044703484,
+    "p95": 5.299999997019768,
+    "max": 11.899999998509884
+  },
+  "browser": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.0 Safari/537.36",
+  "passed": true
+}

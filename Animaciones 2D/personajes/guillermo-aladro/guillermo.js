@@ -626,7 +626,7 @@ const Guillermo = (() => {
       if(p.hombrosContinuos){
         const union=tronco(p)({x:lado<0?132:342,y:lado<0?340:360});
         g.beginPath();g.moveTo(union.x,union.y);g.lineTo(h.x,h.y);g.lineWidth=60;g.lineCap="round";g.strokeStyle=rgb(PAL.camiseta);g.stroke();
-        c.capFija=false;
+        c.capFija=!!p.hombrosRecortados;
       } else hombro(g,{x:h.x+(lado<0?8:-6),y:h.y+(lado<0?22:14)},lado);
       if(p.ikContinuo)R.tiraContinua(g,A,nombre,c);else{if(p.tirasLimpias){c.cuna=true;c.cunaAjustada=true;}R.tira(g,A,nombre,c,16);}
       g.restore();

@@ -1,0 +1,131 @@
+{
+  "scene": "00011",
+  "baselineCommit": "708f5904f747be03b8f8a900458bc1b790392b86",
+  "frames": [
+    {
+      "t": 0.05,
+      "unchanged": true
+    },
+    {
+      "t": 0.8,
+      "unchanged": true
+    },
+    {
+      "t": 1,
+      "unchanged": true
+    },
+    {
+      "t": 1.75,
+      "unchanged": true
+    },
+    {
+      "t": 2.15,
+      "unchanged": true
+    },
+    {
+      "t": 2.35,
+      "unchanged": true
+    },
+    {
+      "t": 2.6,
+      "unchanged": true
+    },
+    {
+      "t": 2.9,
+      "unchanged": true
+    },
+    {
+      "t": 3.2,
+      "unchanged": true
+    },
+    {
+      "t": 3.45,
+      "unchanged": true
+    },
+    {
+      "t": 3.95,
+      "unchanged": true
+    },
+    {
+      "t": 4.25,
+      "unchanged": true
+    },
+    {
+      "t": 4.7,
+      "unchanged": true
+    },
+    {
+      "t": 5.35,
+      "unchanged": true
+    },
+    {
+      "t": 6,
+      "unchanged": true
+    },
+    {
+      "t": 7,
+      "unchanged": true
+    },
+    {
+      "t": 7.8,
+      "unchanged": true
+    },
+    {
+      "t": 8.2,
+      "unchanged": true
+    },
+    {
+      "t": 8.26,
+      "unchanged": true
+    },
+    {
+      "t": 8.4,
+      "unchanged": true
+    },
+    {
+      "t": 8.62,
+      "unchanged": true
+    },
+    {
+      "t": 9,
+      "unchanged": true
+    },
+    {
+      "t": 9.2,
+      "unchanged": true
+    },
+    {
+      "t": 9.3,
+      "unchanged": true
+    },
+    {
+      "t": 9.6,
+      "unchanged": true
+    },
+    {
+      "t": 10,
+      "unchanged": true
+    },
+    {
+      "t": 10.75,
+      "unchanged": true
+    },
+    {
+      "t": 11.25,
+      "unchanged": true
+    },
+    {
+      "t": 11.6,
+      "unchanged": true
+    },
+    {
+      "t": 12.1,
+      "unchanged": true
+    },
+    {
+      "t": 13.7,
+      "unchanged": true
+    }
+  ],
+  "unchanged": true
+}

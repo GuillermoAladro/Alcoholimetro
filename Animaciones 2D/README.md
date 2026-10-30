@@ -36,6 +36,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00010 | Guillermo en la discoteca | 13,60 s | [MP4 60 fps](vista%20previa/00010%20Guillermo%20en%20la%20discoteca.mp4) · [fotogramas](vista%20previa/00010%20Guillermo%20en%20la%20discoteca%20-%20fotogramas.png) |
 | 00010.2 | Guillermo en la discoteca · revisada | 13,6 s | [MP4 60 fps](vista%20previa/00010.2%20Guillermo%20en%20la%20discoteca.mp4) · [fotogramas](vista%20previa/00010.2%20Guillermo%20en%20la%20discoteca%20-%20fotogramas.png) · [revisión](revision/00010.2.md) |
 | 00011 | Guillermo y Laura · El pulso | 13,75 s | [MP4 60 fps](vista%20previa/00011%20Guillermo%20y%20Laura%20-%20el%20pulso.mp4) · [fotogramas](vista%20previa/00011%20Guillermo%20y%20Laura%20-%20el%20pulso%20-%20fotogramas.png) |
+| 00011.2 | Guillermo y Laura · El pulso · revisada | 13,75 s | [MP4 60 fps](vista%20previa/00011.2%20Guillermo%20y%20Laura%20-%20el%20pulso.mp4) · [fotogramas](vista%20previa/00011.2%20Guillermo%20y%20Laura%20-%20el%20pulso%20-%20fotogramas.png) · [revisión](revision/00011.2.md) |
 | 00012 | Guillermo y Laura · El alcoholímetro | 14,00 s | [MP4 60 fps](vista%20previa/00012%20Guillermo%20y%20Laura%20-%20el%20alcoholimetro.mp4) · [fotogramas](vista%20previa/00012%20Guillermo%20y%20Laura%20-%20el%20alcoholimetro%20-%20fotogramas.png) |
 | 00013 | Guillermo y Laura · La pajita | 13,40 s | [MP4 60 fps](vista%20previa/00013%20Guillermo%20y%20Laura%20-%20la%20pajita.mp4) · [fotogramas](vista%20previa/00013%20Guillermo%20y%20Laura%20-%20la%20pajita%20-%20fotogramas.png) |
 | 00014 | Guillermo y Laura · El baile lento | 14,20 s | [MP4 60 fps](vista%20previa/00014%20Guillermo%20y%20Laura%20-%20el%20baile%20lento.mp4) · [fotogramas](vista%20previa/00014%20Guillermo%20y%20Laura%20-%20el%20baile%20lento%20-%20fotogramas.png) |
@@ -287,6 +288,12 @@ Corrige la continuidad de los brazos y coloca el giro de manos delante del pecho
 10. Negro.
 
 ![Fotogramas de 00011](vista%20previa/00011%20Guillermo%20y%20Laura%20-%20el%20pulso%20-%20fotogramas.png)
+
+
+### 00011.2 · Revisión de continuidad
+
+Corrige los cuatro brazos, el apoyo de los codos en la mesa, el giro y la liberación del agarre compartido, el alcance de la copa y el contacto con el suelo tras la caída. Añade el guiño final de Laura anunciado en el guion. Se conserva la original. [Informe y pruebas](revision/00011.2.md).
+
 
 ### 00012 · Guillermo y Laura · El alcoholímetro
 
