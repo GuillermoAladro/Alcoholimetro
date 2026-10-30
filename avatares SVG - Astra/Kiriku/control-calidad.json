@@ -1,0 +1,744 @@
+{
+  "character": "Kiriku",
+  "source_git_blob": "c86031ed8362d559255f94f2dd67f880b5be84ac",
+  "master_git_blob": "13c262555cf6e79af50b95d8689beb4786575244",
+  "master_sha256": "c0d9f588492928102b18a24ce66397ef328ad92484f9b5744169b26a62cb8f96",
+  "master_checks": {
+    "xml_valid": true,
+    "vector_only": true,
+    "unique_ids": true,
+    "internal_references_valid": true,
+    "paths": 110616,
+    "gradients": 74300
+  },
+  "method": "Exact extraction from original detailed vector master; individual contour selection and definition pruning",
+  "static_illustrations": true,
+  "selection": [
+    {
+      "contour": 13,
+      "box": [
+        125,
+        45,
+        430,
+        910
+      ],
+      "polygon": [
+        [
+          125,
+          45
+        ],
+        [
+          415,
+          45
+        ],
+        [
+          415,
+          240
+        ],
+        [
+          410.5,
+          280
+        ],
+        [
+          415,
+          300
+        ],
+        [
+          420,
+          330
+        ],
+        [
+          425,
+          355
+        ],
+        [
+          425,
+          910
+        ],
+        [
+          125,
+          910
+        ]
+      ]
+    },
+    {
+      "contour": 13,
+      "box": [
+        405,
+        45,
+        665,
+        910
+      ],
+      "polygon": [
+        [
+          415,
+          45
+        ],
+        [
+          415,
+          240
+        ],
+        [
+          410.5,
+          280
+        ],
+        [
+          415,
+          300
+        ],
+        [
+          420,
+          330
+        ],
+        [
+          425,
+          355
+        ],
+        [
+          425,
+          910
+        ],
+        [
+          665,
+          910
+        ],
+        [
+          665,
+          45
+        ]
+      ]
+    },
+    {
+      "contour": 11
+    },
+    {
+      "contour": 12
+    },
+    {
+      "contour": 2,
+      "box": [
+        0,
+        940,
+        192,
+        1345
+      ],
+      "polygon": [
+        [
+          0,
+          940
+        ],
+        [
+          0,
+          1000
+        ],
+        [
+          0,
+          1060
+        ],
+        [
+          0,
+          1120
+        ],
+        [
+          0,
+          1160
+        ],
+        [
+          0,
+          1200
+        ],
+        [
+          0,
+          1345
+        ],
+        [
+          166,
+          1345
+        ],
+        [
+          166,
+          1200
+        ],
+        [
+          166,
+          1160
+        ],
+        [
+          169,
+          1120
+        ],
+        [
+          183,
+          1060
+        ],
+        [
+          190,
+          1000
+        ],
+        [
+          192,
+          940
+        ]
+      ]
+    },
+    {
+      "contour": 2,
+      "box": [
+        166,
+        940,
+        378,
+        1345
+      ],
+      "polygon": [
+        [
+          192,
+          940
+        ],
+        [
+          190,
+          1000
+        ],
+        [
+          183,
+          1060
+        ],
+        [
+          169,
+          1120
+        ],
+        [
+          166,
+          1160
+        ],
+        [
+          166,
+          1200
+        ],
+        [
+          166,
+          1345
+        ],
+        [
+          357,
+          1345
+        ],
+        [
+          357,
+          1200
+        ],
+        [
+          357,
+          1160
+        ],
+        [
+          358,
+          1120
+        ],
+        [
+          367,
+          1060
+        ],
+        [
+          376,
+          1000
+        ],
+        [
+          378,
+          940
+        ]
+      ]
+    },
+    {
+      "contour": 2,
+      "box": [
+        357,
+        940,
+        560,
+        1345
+      ],
+      "polygon": [
+        [
+          378,
+          940
+        ],
+        [
+          376,
+          1000
+        ],
+        [
+          367,
+          1060
+        ],
+        [
+          358,
+          1120
+        ],
+        [
+          357,
+          1160
+        ],
+        [
+          357,
+          1200
+        ],
+        [
+          357,
+          1345
+        ],
+        [
+          540,
+          1345
+        ],
+        [
+          540,
+          1200
+        ],
+        [
+          540,
+          1160
+        ],
+        [
+          542,
+          1120
+        ],
+        [
+          550,
+          1060
+        ],
+        [
+          557,
+          1000
+        ],
+        [
+          560,
+          940
+        ]
+      ]
+    },
+    {
+      "contour": 1,
+      "box": [
+        540,
+        940,
+        748,
+        1345
+      ],
+      "polygon": [
+        [
+          560,
+          940
+        ],
+        [
+          557,
+          1000
+        ],
+        [
+          550,
+          1060
+        ],
+        [
+          542,
+          1120
+        ],
+        [
+          540,
+          1160
+        ],
+        [
+          540,
+          1200
+        ],
+        [
+          540,
+          1345
+        ],
+        [
+          739,
+          1345
+        ],
+        [
+          739,
+          1200
+        ],
+        [
+          739,
+          1160
+        ],
+        [
+          739,
+          1120
+        ],
+        [
+          742,
+          1060
+        ],
+        [
+          748,
+          1000
+        ],
+        [
+          748,
+          940
+        ]
+      ]
+    },
+    {
+      "contour": 1,
+      "box": [
+        739,
+        940,
+        932,
+        1345
+      ],
+      "polygon": [
+        [
+          748,
+          940
+        ],
+        [
+          748,
+          1000
+        ],
+        [
+          742,
+          1060
+        ],
+        [
+          739,
+          1120
+        ],
+        [
+          739,
+          1160
+        ],
+        [
+          739,
+          1200
+        ],
+        [
+          739,
+          1345
+        ],
+        [
+          932,
+          1345
+        ],
+        [
+          932,
+          1200
+        ],
+        [
+          932,
+          1160
+        ],
+        [
+          932,
+          1120
+        ],
+        [
+          928,
+          1060
+        ],
+        [
+          923,
+          1000
+        ],
+        [
+          923,
+          940
+        ]
+      ]
+    },
+    {
+      "contour": 1,
+      "box": [
+        923,
+        940,
+        1122,
+        1345
+      ],
+      "polygon": [
+        [
+          923,
+          940
+        ],
+        [
+          923,
+          1000
+        ],
+        [
+          928,
+          1060
+        ],
+        [
+          932,
+          1120
+        ],
+        [
+          932,
+          1160
+        ],
+        [
+          932,
+          1200
+        ],
+        [
+          932,
+          1345
+        ],
+        [
+          1122,
+          1345
+        ],
+        [
+          1122,
+          1200
+        ],
+        [
+          1122,
+          1160
+        ],
+        [
+          1122,
+          1120
+        ],
+        [
+          1122,
+          1060
+        ],
+        [
+          1122,
+          1000
+        ],
+        [
+          1122,
+          940
+        ]
+      ]
+    }
+  ],
+  "files": [
+    {
+      "file": "01-frontal.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 19380,
+      "gradients": 12963,
+      "bytes": 5250807,
+      "sha256": "6d4b93b1f4a98751f11494c80d74f147223955550d7e5b4909255fa6d275a0ea",
+      "viewBox": [
+        117,
+        37,
+        322,
+        882
+      ],
+      "contour_index": 13,
+      "figure_mae_vs_master": 0.000599,
+      "figure_mae_vs_reference": 2.0362
+    },
+    {
+      "file": "02-tres-cuartos.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 17505,
+      "gradients": 11604,
+      "bytes": 4747462,
+      "sha256": "8458643fe788989b8461f16e0b6317f07ec2a6ffc5f012fda4875e86a83145a1",
+      "viewBox": [
+        397,
+        37,
+        277,
+        882
+      ],
+      "contour_index": 13,
+      "figure_mae_vs_master": 0.001383,
+      "figure_mae_vs_reference": 2.2975
+    },
+    {
+      "file": "03-perfil.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 14268,
+      "gradients": 9380,
+      "bytes": 3834151,
+      "sha256": "179394ac4ccab9b5176f4b4201a81ec8f9853b72df56fbdfdda067df15384e2b",
+      "viewBox": [
+        650,
+        58,
+        196,
+        848
+      ],
+      "contour_index": 11,
+      "figure_mae_vs_master": 0.002562,
+      "figure_mae_vs_reference": 2.1351
+    },
+    {
+      "file": "04-espalda.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 17311,
+      "gradients": 10907,
+      "bytes": 4540433,
+      "sha256": "70aa4a4c9b061959e2c5c7e4ac26faa15934155b3e64e4cd7705063d13f0a547",
+      "viewBox": [
+        849,
+        49,
+        273,
+        850
+      ],
+      "contour_index": 12,
+      "figure_mae_vs_master": 0.002091,
+      "figure_mae_vs_reference": 1.9237
+    },
+    {
+      "file": "05-neutral.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 7244,
+      "gradients": 4943,
+      "bytes": 2005728,
+      "sha256": "b8312825028bb553624e1c3ebda6e4532703c3bb908cc47d2c526cd589477588",
+      "viewBox": [
+        0,
+        932,
+        201,
+        422
+      ],
+      "contour_index": 2,
+      "figure_mae_vs_master": 0.0,
+      "figure_mae_vs_reference": 2.1936
+    },
+    {
+      "file": "06-risa.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 7653,
+      "gradients": 5431,
+      "bytes": 2168665,
+      "sha256": "e50cc9a8f57420dd38acc3ffbc73b59e626685a00dc88232667429dcd45a2cf2",
+      "viewBox": [
+        158,
+        932,
+        229,
+        422
+      ],
+      "contour_index": 2,
+      "figure_mae_vs_master": 0.000493,
+      "figure_mae_vs_reference": 2.0713
+    },
+    {
+      "file": "07-sorpresa.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 7223,
+      "gradients": 5081,
+      "bytes": 2045047,
+      "sha256": "65edff0f9f2cf2e1f2f77fd5426465cc57dee79ac6858d9667e7c1b6c4757599",
+      "viewBox": [
+        349,
+        932,
+        220,
+        422
+      ],
+      "contour_index": 2,
+      "figure_mae_vs_master": 0.00054,
+      "figure_mae_vs_reference": 1.9047
+    },
+    {
+      "file": "08-cansancio.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 7591,
+      "gradients": 5297,
+      "bytes": 2153229,
+      "sha256": "474c7bf3f54443a1cce5ed09dae416ca38a8a8bec7076b2d85086795bb544006",
+      "viewBox": [
+        532,
+        932,
+        225,
+        422
+      ],
+      "contour_index": 1,
+      "figure_mae_vs_master": 0.000941,
+      "figure_mae_vs_reference": 1.9578
+    },
+    {
+      "file": "09-ojos-cerrados.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 6703,
+      "gradients": 4699,
+      "bytes": 1907771,
+      "sha256": "f5b88c66b416fe339939e75656c4e60ed385f69c277b87c5409eb36f2b7579e6",
+      "viewBox": [
+        731,
+        932,
+        210,
+        422
+      ],
+      "contour_index": 1,
+      "figure_mae_vs_master": 0.000841,
+      "figure_mae_vs_reference": 1.8178
+    },
+    {
+      "file": "10-guino.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 6963,
+      "gradients": 4902,
+      "bytes": 1963878,
+      "sha256": "13338ed8cfc6fd2505f139b906fc27059aa1a6e2b83f94e4009ba7e48167cc17",
+      "viewBox": [
+        915,
+        932,
+        207,
+        422
+      ],
+      "contour_index": 1,
+      "figure_mae_vs_master": 0.000888,
+      "figure_mae_vs_reference": 2.0537
+    }
+  ],
+  "independent_renderer": [
+    {
+      "file": "01-frontal.svg",
+      "renderer": "Inkscape",
+      "mae_vs_cairosvg": 0.0997
+    },
+    {
+      "file": "06-risa.svg",
+      "renderer": "Inkscape",
+      "mae_vs_cairosvg": 0.0559
+    }
+  ],
+  "visual_review": {
+    "status": "reviewed",
+    "notes": [
+      "Cuatro vistas y seis expresiones revisadas individualmente, con ampliación de los seis retratos.",
+      "Polo negro, jersey sobre los hombros, gafas colgadas, peinado y rasgos conservados.",
+      "Separación manual de las dos primeras vistas, cuyos bordes se unían en la máscara maestra.",
+      "Límites poligonales específicos para los retratos; eliminados fragmentos de pelo de las caras vecinas sin recortar el propio."
+    ]
+  },
+  "created_utc": "2026-10-30T00:36:59.097965+00:00"
+}
