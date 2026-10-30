@@ -21,7 +21,8 @@ function registrar(a) {
 const M2 = (() => {
   const clamp = (v, a = 0, b = 1) => Math.min(b, Math.max(a, v));
   const lerp = (a, b, k) => a + (b - a) * k;
-  const fase = (t, a, b) => clamp((t - a) / (b - a));
+  // tramo de longitud cero: escalón en a (antes daba NaN justo en t = a)
+  const fase = (t, a, b) => b === a ? (t >= a ? 1 : 0) : clamp((t - a) / (b - a));
   const suave = k => { k = clamp(k); return k * k * (3 - 2 * k); };
   const suave5 = k => { k = clamp(k); return k * k * k * (k * (k * 6 - 15) + 10); };
   const entrada = k => { k = clamp(k); return k * k * k; };
