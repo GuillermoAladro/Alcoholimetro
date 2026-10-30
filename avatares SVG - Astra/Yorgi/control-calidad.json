@@ -1,475 +1,202 @@
 {
-  "character": "Yorgi",
-  "source_git_blob": "cffa0f131c3216fc728996591e7dd6fe489c407e",
-  "master_git_blob": "6ad88b250f8d500575bb310864c6af75476217e7",
-  "master_sha256": "431cdfbe75204032be5aa0c5eb44ed6bd3f1b7200df08f7e68761d401fbbda94",
-  "master_checks": {
-    "xml_valid": true,
-    "vector_only": true,
-    "unique_ids": true,
-    "internal_references_valid": true,
-    "paths": 106693,
-    "gradients": 72712
+ "avatar": "Yorgi",
+ "fecha": "2026-10-30",
+ "referencia": "animaciones/Avatar Yorgi.png",
+ "referencia_sha256": "4876c88a7a60363178121b7bfe2359dc9e08c83ac0387fb4ef202076d25507f5",
+ "fondo": "transparente",
+ "metodo": "Trazados y degradados de la hoja maestra Astra conservados; silueta nueva desde herramientas/mascaras (segmentación isnet + limpieza de contorno); ver ../REVISION-TRANSPARENTE-2026-10-30.md",
+ "comprobado_con": [
+  "resvg 0.5 (render y métricas)",
+  "Chromium 1243 (decodificación de las 10 piezas)"
+ ],
+ "cambios_frente_a_version_anterior": {
+  "fondo_blanco_quitado_px": 7566,
+  "personaje_recuperado_px": 2009
+ },
+ "archivos": [
+  {
+   "archivo": "Yorgi.svg",
+   "bytes": 29600544,
+   "sha256": "0be8827a3d78d17d2ad9856648c9a2470af1e0eb6608ee92974ee95f5774122d",
+   "viewBox": "0 0 1122 1402",
+   "trazados": 106711,
+   "degradados": 72712,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0
   },
-  "method": "Exact extraction from original detailed vector master; individual contour selection and definition pruning",
-  "static_illustrations": true,
-  "selection": [
-    {
-      "contour": 13,
-      "box": [
-        125,
-        25,
-        440,
-        865
-      ],
-      "polygon": [
-        [
-          235,
-          25
-        ],
-        [
-          235,
-          170
-        ],
-        [
-          234,
-          180
-        ],
-        [
-          230,
-          185
-        ],
-        [
-          226,
-          190
-        ],
-        [
-          220,
-          195
-        ],
-        [
-          205,
-          200
-        ],
-        [
-          200,
-          205
-        ],
-        [
-          194,
-          210
-        ],
-        [
-          189,
-          215
-        ],
-        [
-          186.5,
-          220
-        ],
-        [
-          183.5,
-          225
-        ],
-        [
-          181,
-          230
-        ],
-        [
-          178,
-          235
-        ],
-        [
-          175,
-          240
-        ],
-        [
-          171,
-          245
-        ],
-        [
-          155,
-          250
-        ],
-        [
-          140,
-          260
-        ],
-        [
-          130,
-          300
-        ],
-        [
-          125,
-          350
-        ],
-        [
-          125,
-          865
-        ],
-        [
-          440,
-          865
-        ],
-        [
-          440,
-          25
-        ]
-      ]
-    },
-    {
-      "contour": 12
-    },
-    {
-      "contour": 10
-    },
-    {
-      "contour": 11
-    },
-    {
-      "contour": 4
-    },
-    {
-      "contour": 3
-    },
-    {
-      "contour": 2
-    },
-    {
-      "contour": 0
-    },
-    {
-      "contour": 1,
-      "box": [
-        725,
-        900,
-        930,
-        1280
-      ],
-      "polygon": [
-        [
-          725,
-          900
-        ],
-        [
-          915,
-          900
-        ],
-        [
-          915,
-          960
-        ],
-        [
-          914,
-          980
-        ],
-        [
-          914,
-          1010
-        ],
-        [
-          916,
-          1030
-        ],
-        [
-          922,
-          1060
-        ],
-        [
-          922,
-          1100
-        ],
-        [
-          921,
-          1160
-        ],
-        [
-          921,
-          1280
-        ],
-        [
-          725,
-          1280
-        ]
-      ]
-    },
-    {
-      "contour": 1,
-      "box": [
-        905,
-        900,
-        1122,
-        1280
-      ],
-      "polygon": [
-        [
-          915,
-          900
-        ],
-        [
-          915,
-          960
-        ],
-        [
-          914,
-          980
-        ],
-        [
-          914,
-          1010
-        ],
-        [
-          916,
-          1030
-        ],
-        [
-          922,
-          1060
-        ],
-        [
-          922,
-          1100
-        ],
-        [
-          921,
-          1160
-        ],
-        [
-          921,
-          1280
-        ],
-        [
-          1122,
-          1280
-        ],
-        [
-          1122,
-          900
-        ]
-      ]
-    }
-  ],
-  "files": [
-    {
-      "file": "01-frontal.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 18946,
-      "gradients": 12335,
-      "bytes": 5088832,
-      "sha256": "999feb9fc4229679fb4df88504a7a1727f0fa769cea2707b9529af12ce46d0ec",
-      "viewBox": [
-        117,
-        17,
-        332,
-        857
-      ],
-      "contour_index": 13,
-      "figure_mae_vs_master": 0.000486,
-      "figure_mae_vs_reference": 2.0462
-    },
-    {
-      "file": "02-tres-cuartos.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 17242,
-      "gradients": 11207,
-      "bytes": 4619643,
-      "sha256": "bca53b5f074a182518dea5f8385b5d3ead5dca316258d75fb440b093487c429a",
-      "viewBox": [
-        419,
-        32,
-        249,
-        826
-      ],
-      "contour_index": 12,
-      "figure_mae_vs_master": 0.002004,
-      "figure_mae_vs_reference": 2.2414
-    },
-    {
-      "file": "03-perfil.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 13700,
-      "gradients": 9170,
-      "bytes": 3701078,
-      "sha256": "71a2133b0f7a187d514996b46183fbb5b0583f9a5f291890a07ddd7d6d1d8a94",
-      "viewBox": [
-        666,
-        37,
-        181,
-        821
-      ],
-      "contour_index": 10,
-      "figure_mae_vs_master": 0.002312,
-      "figure_mae_vs_reference": 2.2608
-    },
-    {
-      "file": "04-espalda.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 17091,
-      "gradients": 10654,
-      "bytes": 4491969,
-      "sha256": "4c9c64977156a279e7f81ddc1e24536afe2a3aff1312e9a25d87da25191f94be",
-      "viewBox": [
-        850,
-        35,
-        272,
-        815
-      ],
-      "contour_index": 11,
-      "figure_mae_vs_master": 0.001987,
-      "figure_mae_vs_reference": 1.843
-    },
-    {
-      "file": "05-neutral.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 6959,
-      "gradients": 5004,
-      "bytes": 1996619,
-      "sha256": "5c194f3845db938d5c11af8c156cca8854fb03187eb8ef5b9878c864957b9454",
-      "viewBox": [
-        0,
-        905,
-        204,
-        371
-      ],
-      "contour_index": 4,
-      "figure_mae_vs_master": 0.0,
-      "figure_mae_vs_reference": 2.5655
-    },
-    {
-      "file": "06-risa.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 8015,
-      "gradients": 5982,
-      "bytes": 2373284,
-      "sha256": "71f87e8c661f0918296e803e503e6473faade30484736177ba5476fa3baaff7d",
-      "viewBox": [
-        165,
-        908,
-        227,
-        368
-      ],
-      "contour_index": 3,
-      "figure_mae_vs_master": 0.001114,
-      "figure_mae_vs_reference": 2.6624
-    },
-    {
-      "file": "07-sorpresa.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 7565,
-      "gradients": 5650,
-      "bytes": 2232214,
-      "sha256": "67e62bfa8f69b2cf2c05e926b765395dd03b8acf28a28d97cf8df8a1ac02b35a",
-      "viewBox": [
-        343,
-        908,
-        216,
-        368
-      ],
-      "contour_index": 2,
-      "figure_mae_vs_master": 0.001741,
-      "figure_mae_vs_reference": 2.7857
-    },
-    {
-      "file": "08-cansancio.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 7591,
-      "gradients": 5729,
-      "bytes": 2254199,
-      "sha256": "7f45d4ec67f2524cc3ae7339649a8f037b4c2be3552358439da817b2a87c1190",
-      "viewBox": [
-        521,
-        937,
-        227,
-        339
-      ],
-      "contour_index": 0,
-      "figure_mae_vs_master": 0.001877,
-      "figure_mae_vs_reference": 2.257
-    },
-    {
-      "file": "09-ojos-cerrados.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 7220,
-      "gradients": 5429,
-      "bytes": 2169745,
-      "sha256": "d30b5ea7e9b3d83c624021b66d7d267cb9284d2650f6e184669f621c1035527d",
-      "viewBox": [
-        717,
-        892,
-        222,
-        397
-      ],
-      "contour_index": 1,
-      "figure_mae_vs_master": 0.001685,
-      "figure_mae_vs_reference": 2.25
-    },
-    {
-      "file": "10-guino.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 7586,
-      "gradients": 5506,
-      "bytes": 2207158,
-      "sha256": "8a131aa1a33c9c1d59ae017f3f135ef6e3718fea1bff7fc31f0c3aba0511830a",
-      "viewBox": [
-        897,
-        892,
-        225,
-        397
-      ],
-      "contour_index": 1,
-      "figure_mae_vs_master": 0.001408,
-      "figure_mae_vs_reference": 2.2495
-    }
-  ],
-  "independent_renderer": [
-    {
-      "file": "01-frontal.svg",
-      "renderer": "Inkscape",
-      "mae_vs_cairosvg": 0.0766
-    },
-    {
-      "file": "06-risa.svg",
-      "renderer": "Inkscape",
-      "mae_vs_cairosvg": 0.0629
-    }
-  ],
-  "visual_review": {
-    "status": "reviewed",
-    "notes": [
-      "Revisadas las cuatro vistas y las seis expresiones ampliadas; preservados el degradado del pelo, la barba, los pendientes, el reloj y el vestuario.",
-      "Ajustado y revisado el recorte frontal para separar el nombre del hombro sin eliminar el contorno de la camiseta.",
-      "Separadas las dos últimas expresiones con un límite adaptado al espacio blanco entre cabellos y hombros; comprobadas sin fragmentos vecinos."
-    ]
+  {
+   "archivo": "Yorgi/01-frontal.svg",
+   "bytes": 5026314,
+   "sha256": "17a78ed1130ad42a89be3b4cfb33f58b65833d366e43942919696acd088e2bee",
+   "viewBox": "137 30 296 827",
+   "trazados": 18621,
+   "degradados": 12108,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9973,
+   "error_color_medio": 2.24,
+   "piezas_sueltas": 0
   },
-  "created_utc": "2026-10-30T01:26:00.280215+00:00"
+  {
+   "archivo": "Yorgi/02-tres-cuartos.svg",
+   "bytes": 4663555,
+   "sha256": "7024c9e2de791ae08e797728241e34ae8927192065bef9e6a607b4b563d13a7b",
+   "viewBox": "420 35 248 820",
+   "trazados": 17246,
+   "degradados": 11209,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9964,
+   "error_color_medio": 2.47,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Yorgi/03-perfil.svg",
+   "bytes": 3735751,
+   "sha256": "493024ebbf9aedb74849282f8a6ca71ead1cd8134e19d229efd880d9481bdefb",
+   "viewBox": "668 39 178 817",
+   "trazados": 13700,
+   "degradados": 9170,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9969,
+   "error_color_medio": 2.51,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Yorgi/04-espalda.svg",
+   "bytes": 4534777,
+   "sha256": "3f8088861b7f7bf3927aefe5feb774fa14c744e94c1c7283556d44fef2511f80",
+   "viewBox": "852 37 270 811",
+   "trazados": 17092,
+   "degradados": 10654,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.997,
+   "error_color_medio": 2.03,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Yorgi/05-neutral.svg",
+   "bytes": 2018712,
+   "sha256": "f465465d70a07dda30736f79359193598113073882c99438d20313534d8f4e4d",
+   "viewBox": "0 907 202 368",
+   "trazados": 6959,
+   "degradados": 5004,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9982,
+   "error_color_medio": 2.69,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Yorgi/06-risa.svg",
+   "bytes": 2396363,
+   "sha256": "d67f226e1be4d26325e24fec334582037812d3d856a7bc4b4c3ff37ba048df02",
+   "viewBox": "167 910 223 365",
+   "trazados": 8015,
+   "degradados": 5982,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9971,
+   "error_color_medio": 2.85,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Yorgi/07-sorpresa.svg",
+   "bytes": 2267222,
+   "sha256": "9b57df847d08e2b409d12dbbea11f8821b303e8a7ef01783ed779da51d9d827f",
+   "viewBox": "344 910 213 364",
+   "trazados": 7602,
+   "degradados": 5674,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9984,
+   "error_color_medio": 3.05,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Yorgi/08-cansancio.svg",
+   "bytes": 2282832,
+   "sha256": "949e44f03e85bc7ae5ff69aa781ad366d5f85ddb743901dc26c29b826ae3a62d",
+   "viewBox": "522 939 223 335",
+   "trazados": 7614,
+   "degradados": 5745,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9986,
+   "error_color_medio": 2.44,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Yorgi/09-ojos-cerrados.svg",
+   "bytes": 2061411,
+   "sha256": "553ad7e6bdbbb4a33624f3b062590467aadb32c6361a2b6d608ecffe99ae71de",
+   "viewBox": "722 911 204 364",
+   "trazados": 6803,
+   "degradados": 5131,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9969,
+   "error_color_medio": 2.42,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Yorgi/10-guino.svg",
+   "bytes": 2113228,
+   "sha256": "0875a8c7c27a7569c1553764394692fe2ded2849654366b19a679b5ee15bcc7d",
+   "viewBox": "910 912 212 363",
+   "trazados": 7188,
+   "degradados": 5234,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9982,
+   "error_color_medio": 2.36,
+   "piezas_sueltas": 0
+  }
+ ]
 }
