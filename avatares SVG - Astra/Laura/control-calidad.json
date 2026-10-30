@@ -1,0 +1,350 @@
+{
+  "character": "Laura",
+  "source_git_blob": "e93984f3f990e36a6936fe308b272871ed0d59b6",
+  "master_git_blob": "e4dc7f4166b143d3612fc9172de6916724c374d4",
+  "master_sha256": "a4e8dc55778655414694d72bd34787c57a8a8cefe240c6873f00aaaed58c59fd",
+  "master_checks": {
+    "xml_valid": true,
+    "vector_only": true,
+    "unique_ids": true,
+    "internal_references_valid": true,
+    "paths": 145849,
+    "gradients": 93518
+  },
+  "method": "Exact extraction from original detailed vector master; individual contour selection and definition pruning",
+  "static_illustrations": true,
+  "selection": [
+    {
+      "contour": 7,
+      "box": [
+        135,
+        30,
+        440,
+        930
+      ],
+      "polygon": [
+        [
+          205,
+          30
+        ],
+        [
+          440,
+          30
+        ],
+        [
+          440,
+          930
+        ],
+        [
+          135,
+          930
+        ],
+        [
+          135,
+          300
+        ],
+        [
+          145,
+          250
+        ],
+        [
+          160,
+          211
+        ],
+        [
+          185,
+          193
+        ],
+        [
+          203,
+          180
+        ],
+        [
+          205,
+          150
+        ]
+      ]
+    },
+    {
+      "contour": 6
+    },
+    {
+      "contour": 5
+    },
+    {
+      "contour": 4
+    },
+    {
+      "box": [
+        0.0,
+        935.0,
+        189.0,
+        1402.0
+      ]
+    },
+    {
+      "box": [
+        189.0,
+        935.0,
+        374.0,
+        1402.0
+      ]
+    },
+    {
+      "box": [
+        374.0,
+        935.0,
+        561.0,
+        1402.0
+      ]
+    },
+    {
+      "box": [
+        561.0,
+        935.0,
+        747.0,
+        1402.0
+      ]
+    },
+    {
+      "box": [
+        747.0,
+        935.0,
+        932.0,
+        1402.0
+      ]
+    },
+    {
+      "box": [
+        932.0,
+        935.0,
+        1122.0,
+        1402.0
+      ]
+    }
+  ],
+  "files": [
+    {
+      "file": "01-frontal.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 23026,
+      "gradients": 15441,
+      "bytes": 6250707,
+      "sha256": "a7a61a5b2edac1c201e1c2dd80eef6a8f666aff7b6464c2391996550b2391a6c",
+      "viewBox": [
+        127,
+        22,
+        322,
+        917
+      ],
+      "contour_index": 7,
+      "figure_mae_vs_master": 0.00054,
+      "figure_mae_vs_reference": 2.2334
+    },
+    {
+      "file": "02-tres-cuartos.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 19074,
+      "gradients": 13095,
+      "bytes": 5271667,
+      "sha256": "0678ad563e11fb09fd8ba601c993c07348d5e4a8a48a8afda964a88396864850",
+      "viewBox": [
+        417,
+        35,
+        230,
+        878
+      ],
+      "contour_index": 6,
+      "figure_mae_vs_master": 0.002247,
+      "figure_mae_vs_reference": 2.5925
+    },
+    {
+      "file": "03-perfil.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 16402,
+      "gradients": 10878,
+      "bytes": 4434253,
+      "sha256": "6c2042f669f065dc4589f4485a47c0dc2135d87d8471f8ee63e8af1cc18a6286",
+      "viewBox": [
+        647,
+        38,
+        208,
+        875
+      ],
+      "contour_index": 5,
+      "figure_mae_vs_master": 0.002221,
+      "figure_mae_vs_reference": 2.2463
+    },
+    {
+      "file": "04-espalda.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 22461,
+      "gradients": 15258,
+      "bytes": 6156682,
+      "sha256": "3800378977f2ace6de654b9408c1c7fd3105974b328d7f094c9ff7958236ed82",
+      "viewBox": [
+        866,
+        38,
+        256,
+        874
+      ],
+      "contour_index": 4,
+      "figure_mae_vs_master": 0.002964,
+      "figure_mae_vs_reference": 2.3454
+    },
+    {
+      "file": "05-neutral.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 11421,
+      "gradients": 6854,
+      "bytes": 3014605,
+      "sha256": "ba002ac6d8fa45d8b497c923a27a89d7d950cf99d8010b3a3572c3334b63c18a",
+      "viewBox": [
+        0,
+        927,
+        198,
+        475
+      ],
+      "contour_index": null,
+      "figure_mae_vs_master": 0.0,
+      "figure_mae_vs_reference": 1.7815
+    },
+    {
+      "file": "06-risa.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 10905,
+      "gradients": 6707,
+      "bytes": 2891344,
+      "sha256": "8ac156a4cde6539a1c4922df9f61b1c47bde1b8e8346c06004317e387fbc8630",
+      "viewBox": [
+        181,
+        927,
+        202,
+        475
+      ],
+      "contour_index": null,
+      "figure_mae_vs_master": 0.0,
+      "figure_mae_vs_reference": 1.8028
+    },
+    {
+      "file": "07-sorpresa.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 10630,
+      "gradients": 6469,
+      "bytes": 2833094,
+      "sha256": "a7e9286e43e96f7b0bbf2f1ce2adac0db3c302b99a75bfeec695765bc9916602",
+      "viewBox": [
+        366,
+        927,
+        204,
+        475
+      ],
+      "contour_index": null,
+      "figure_mae_vs_master": 0.0,
+      "figure_mae_vs_reference": 1.9559
+    },
+    {
+      "file": "08-cansancio.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 10701,
+      "gradients": 6244,
+      "bytes": 2837782,
+      "sha256": "4ddb2d3e5400209943abdf8407df74afd9d164941d9cd5494db5e4c1c22b5d53",
+      "viewBox": [
+        553,
+        927,
+        203,
+        475
+      ],
+      "contour_index": null,
+      "figure_mae_vs_master": 0.0,
+      "figure_mae_vs_reference": 1.5434
+    },
+    {
+      "file": "09-ojos-cerrados.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 9783,
+      "gradients": 5849,
+      "bytes": 2605387,
+      "sha256": "afc3ec026587220b7ddddb954657bb8ed4b1e30a331d2aa648f52195baf1b0d2",
+      "viewBox": [
+        739,
+        927,
+        202,
+        475
+      ],
+      "contour_index": null,
+      "figure_mae_vs_master": 0.0,
+      "figure_mae_vs_reference": 1.7436
+    },
+    {
+      "file": "10-guino.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 10964,
+      "gradients": 6385,
+      "bytes": 2877943,
+      "sha256": "1a7ed3d84474f2822964eb910eebe3b52199584eec925c3c50acf770a8d36af0",
+      "viewBox": [
+        924,
+        927,
+        198,
+        475
+      ],
+      "contour_index": null,
+      "figure_mae_vs_master": 0.0,
+      "figure_mae_vs_reference": 1.6991
+    }
+  ],
+  "independent_renderer": [
+    {
+      "file": "01-frontal.svg",
+      "renderer": "Inkscape",
+      "mae_vs_cairosvg": 0.0692
+    },
+    {
+      "file": "06-risa.svg",
+      "renderer": "Inkscape",
+      "mae_vs_cairosvg": 0.0603
+    }
+  ],
+  "visual_review": {
+    "status": "reviewed",
+    "notes": [
+      "Cuatro vistas y seis expresiones comparadas una a una con la referencia; revisados también los retratos ampliados.",
+      "Top blanco íntegro con sus sombras y pliegues, pelo largo, pendientes, vaqueros y zapatillas preservados.",
+      "Nombre separado manualmente de la vista frontal sin cortar hombro o cabello.",
+      "Límites de cada expresión ajustados al espacio blanco real entre columnas, eliminando líneas de las imágenes vecinas."
+    ]
+  },
+  "created_utc": "2026-10-30T00:45:03.787702+00:00"
+}
