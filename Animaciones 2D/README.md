@@ -61,6 +61,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00029 | Guillermo y Marcos · La sirena | 13,50 s | [MP4 60 fps](vista%20previa/00029%20Guillermo%20y%20Marcos%20-%20la%20sirena.mp4) · [fotogramas](vista%20previa/00029%20Guillermo%20y%20Marcos%20-%20la%20sirena%20-%20fotogramas.png) |
 | 00030 | Guillermo y Marcos · La lona de salto | 14,40 s | [MP4 60 fps](vista%20previa/00030%20Guillermo%20y%20Marcos%20-%20la%20lona%20de%20salto.mp4) · [fotogramas](vista%20previa/00030%20Guillermo%20y%20Marcos%20-%20la%20lona%20de%20salto%20-%20fotogramas.png) |
 | 00031 | Guillermo y Ander · El futbolín | 13,50 s | [MP4 60 fps](vista%20previa/00031%20Guillermo%20y%20Ander%20-%20el%20futbolin.mp4) · [fotogramas](vista%20previa/00031%20Guillermo%20y%20Ander%20-%20el%20futbolin%20-%20fotogramas.png) |
+| 00032 | Guillermo y Ander · La guindilla | 14,60 s | [MP4 60 fps](vista%20previa/00032%20Guillermo%20y%20Ander%20-%20la%20guindilla.mp4) · [fotogramas](vista%20previa/00032%20Guillermo%20y%20Ander%20-%20la%20guindilla%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -648,6 +649,21 @@ Corrige las muñecas y los recorridos de los brazos, el apoyo de los pies al pon
 9. Negro.
 
 ![Fotogramas de 00031](vista%20previa/00031%20Guillermo%20y%20Ander%20-%20el%20futbolin%20-%20fotogramas.png)
+
+### 00032 · Guillermo y Ander · La guindilla
+
+1. Negro.
+2. Cantina mexicana al atardecer: pared de barro con papel picado, ventana con contraventanas azules y un cactus al sol, ristras de guindillas, un sombrero colgado y zócalo de talavera. Entre Guillermo y Ander, una mesa alta con un plato de dos guindillas rojas, una jarra de agua y un vaso de leche.
+3. Ander levanta una ceja: reto aceptado. Coge su guindilla, le da dos mordiscos, mastica tan tranquilo mirando a cámara, deja el rabito en el plato y se encoge de hombros.
+4. Guillermo, muy chulo, coge la suya, la enseña a cámara con un guiño y **se la mete entera**. Mastica sobrado con la mano en la cadera… y se hace el silencio.
+5. Le tiembla un ojo y **se pone rojo desde el cuello hasta la frente**, como el mercurio de un termómetro: se agarra el cuello, suda, le silba vapor por la oreja y le humea el pelo.
+6. **Echa una llamarada por la boca**; Ander se echa hacia atrás.
+7. Agarra la jarra de agua y se la bebe entera a tragos, con los carrillos hinchados y lagrimones. La deja de golpe y jadea con la lengua fuera.
+8. Ander, sin inmutarse, le desliza el vaso de leche por la mesa. Guillermo se la bebe de un trago: el rojo baja, le queda bigote blanco y suspira una nubecilla de humo.
+9. Ander se saca otra guindilla del bolsillo y le da un mordisco crujiente, como quien se come una zanahoria; a Guillermo le vuelve a temblar el ojo.
+10. Negro.
+
+![Fotogramas de 00032](vista%20previa/00032%20Guillermo%20y%20Ander%20-%20la%20guindilla%20-%20fotogramas.png)
 
 ## Ver y grabar
 
