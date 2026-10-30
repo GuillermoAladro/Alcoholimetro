@@ -45,6 +45,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00018 | Guillermo y Laura · El selfie | 13,30 s | [MP4 60 fps](vista%20previa/00018%20Guillermo%20y%20Laura%20-%20el%20selfie.mp4) · [fotogramas](vista%20previa/00018%20Guillermo%20y%20Laura%20-%20el%20selfie%20-%20fotogramas.png) |
 | 00019 | Guillermo y Laura · El paraguas | 13,60 s | [MP4 60 fps](vista%20previa/00019%20Guillermo%20y%20Laura%20-%20el%20paraguas.mp4) · [fotogramas](vista%20previa/00019%20Guillermo%20y%20Laura%20-%20el%20paraguas%20-%20fotogramas.png) |
 | 00020 | Guillermo y Laura · Piedra, papel o tijera | 14,95 s | [MP4 60 fps](vista%20previa/00020%20Guillermo%20y%20Laura%20-%20piedra%20papel%20o%20tijera.mp4) · [fotogramas](vista%20previa/00020%20Guillermo%20y%20Laura%20-%20piedra%20papel%20o%20tijera%20-%20fotogramas.png) |
+| 00021 | Guillermo y Marcos · El chupito en llamas | 14,10 s | [MP4 60 fps](vista%20previa/00021%20Guillermo%20y%20Marcos%20-%20el%20chupito%20en%20llamas.mp4) · [fotogramas](vista%20previa/00021%20Guillermo%20y%20Marcos%20-%20el%20chupito%20en%20llamas%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -434,6 +435,21 @@ Corrige la continuidad de los brazos y coloca el giro de manos delante del pecho
 10. Negro.
 
 ![Fotogramas de 00020](vista%20previa/00020%20Guillermo%20y%20Laura%20-%20piedra%20papel%20o%20tijera%20-%20fotogramas.png)
+
+### 00021 · Guillermo y Marcos · El chupito en llamas
+
+1. Negro.
+2. Saloon del oeste: puertas batientes, espejo con botellas, quinqués y un cactus. Guillermo y Marcos, cada uno en una punta de la barra; encima, cinco chupitos en fila, una servilleta y un cóctel con sombrillita. Marcos, con la lanza de la manguera colgando de la mano, se toma tranquilamente un vaso de leche.
+3. Guillermo, muy chulo, saca el mechero, prende el primer chupito y el segundo, y guiña a cámara…
+4. …y la llama salta sola de chupito en chupito hasta el último, a la servilleta y a la sombrilla: **fuego en la barra** y humo.
+5. Guillermo, en pánico, se lleva las manos a la cara, sopla y abanica: las llamas crecen todavía más.
+6. Marcos, sin inmutarse, se acaba la leche de un trago (le queda bigote blanco), deja el vaso en la barra y levanta la lanza.
+7. **Apaga el fuego con un chorro preciso**, llama a llama y de derecha a izquierda, con una nubecita de vapor en cada una…
+8. …y sigue hasta Guillermo, que acaba **empapado**: el pelo aplastado, chorreando y con un charco a sus pies.
+9. Marcos sopla la boca de la lanza como un pistolero y levanta el pulgar guiñando un ojo; a Guillermo le sale agua por la oreja y escupe un chorrito.
+10. Negro.
+
+![Fotogramas de 00021](vista%20previa/00021%20Guillermo%20y%20Marcos%20-%20el%20chupito%20en%20llamas%20-%20fotogramas.png)
 
 ## Ver y grabar
 
