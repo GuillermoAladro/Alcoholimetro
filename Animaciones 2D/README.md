@@ -5,7 +5,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 ## Reglas de la carpeta
 
 - **Empiezan y acaban en negro.** Los primeros y los últimos 0,12 s son negro absoluto (todos los píxeles a 0). `herramientas/comprobar.py` lo verifica fotograma a fotograma.
-- **Sin títulos ni textos** dentro de la animación. La única excepción es el texto impreso en un objeto cuando el guion lo pide (el globo de la 00003).
+- **Sin títulos ni textos** dentro de la animación. La única excepción es lo impreso en un objeto cuando el guion lo pide: el globo de la 00003 y los números del marcador de la 00004.
 - **Personajes sacados del avatar 2D.** No se dibujan muñecos aparte. Solo se añade, con el mismo trazo, lo que el avatar no trae (por ejemplo, la mano que agarra algo) y los gestos de la cara.
 - **Fluidez.** Cada escena se calcula a partir del tiempo absoluto `t`. Se ve igual a 30, 60 o 120 fps, y se puede rebobinar o grabar sin saltos. `comprobar.py` busca cortes bruscos entre fotogramas; solo se admiten los golpes a propósito, como un estallido o un globo que revienta.
 - **Formato.** Lienzo de 1024 × 600 (la pantalla de 7"). IDs de cinco cifras (`00001`, `00002`…), con sufijo para revisiones (`00001.2`). Un archivo por escena en `escenas/`.
@@ -18,6 +18,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00001.2 | Guillermo y la jarra · revisada | 15,45 s | [MP4 60 fps](vista%20previa/00001.2%20Guillermo%20y%20la%20jarra.mp4) · [fotogramas](vista%20previa/00001.2%20Guillermo%20y%20la%20jarra%20-%20fotogramas.png) · [revisión](revision/00001.2.md) |
 | 00002 | Guillermo se transforma | 12,45 s | [MP4 60 fps](vista%20previa/00002%20Guillermo%20se%20transforma.mp4) · [fotogramas](vista%20previa/00002%20Guillermo%20se%20transforma%20-%20fotogramas.png) |
 | 00003 | Guillermo y el globo | 12,45 s | [MP4 60 fps](vista%20previa/00003%20Guillermo%20y%20el%20globo.mp4) · [fotogramas](vista%20previa/00003%20Guillermo%20y%20el%20globo%20-%20fotogramas.png) |
+| 00004 | Guillermo contra la máquina | 13,25 s | [MP4 60 fps](vista%20previa/00004%20Guillermo%20contra%20la%20maquina.mp4) · [fotogramas](vista%20previa/00004%20Guillermo%20contra%20la%20maquina%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -70,6 +71,29 @@ Para verla, elige **00001.2** en `ver.html` o abre `ver.html?id=00001.2`. [Infor
 
 ![Fotogramas de 00003](vista%20previa/00003%20Guillermo%20y%20el%20globo%20-%20fotogramas.png)
 
+### 00004 · Guillermo contra la máquina
+
+1. Negro.
+2. Junto a Guillermo hay una máquina de puñetazos apagada. Él, con las manos en los bolsillos, la mira de reojo.
+3. Lanza una moneda con el pulgar a la ranura: la máquina se enciende y baja el saco.
+4. **Calentamiento:**
+   - se cruje el cuello;
+   - se pone en guardia dando saltitos;
+   - tira dos directos al aire;
+   - amaga y mira a cámara con chulería.
+5. Echa el brazo atrás y suelta el **puñetazo**.
+6. La máquina se vuelve loca:
+   - el marcador sube hasta 999 y parpadea;
+   - las luces se descontrolan;
+   - salen chispas y humo.
+7. Se acerca a leer el marcador. El saco, que seguía girando, le da un **coscorrón**: se parte el brazo y la bola sale botando por el suelo.
+8. Se tambalea con estrellitas y le sale un chichón.
+9. Cae sentado con los ojos en espiral y levanta el pulgar a cámara.
+10. La máquina se apaga echando humo.
+11. Negro.
+
+![Fotogramas de 00004](vista%20previa/00004%20Guillermo%20contra%20la%20maquina%20-%20fotogramas.png)
+
 ## Ver y grabar
 
 - **Ver.** Abre `ver.html` en Chromium.
@@ -95,7 +119,7 @@ Animaciones 2D/
 │  ├─ piezas.png · piezas.js     atlas generado (piezas originales) y posiciones de cada pieza
 │  ├─ piezas_extra.png           piezas añadidas: brazo libre, torso sin brazos, pelo dorado y cara roja
 │  └─ guillermo.js               montaje del personaje: cuerpo, cara, manos, jarra, copa y transformación
-├─ escenas/                     una escena por archivo (00001, 00001.2, 00002, 00003)
+├─ escenas/                     una escena por archivo (00001, 00001.2, 00002, 00003, 00004)
 ├─ herramientas/                 comprobar.py y grabar.py
 └─ vista previa/                 vídeos y fotogramas de cada animación
 ```
@@ -119,9 +143,10 @@ Animaciones 2D/
 `piezas.png` no cambia al añadir piezas nuevas, así que 00001 y 00001.2 se siguen viendo idénticas píxel a píxel.
 
 Lo que el avatar no tiene se dibuja en el mismo estilo:
-- puños, copa, jarra y globo;
+- puños, copa, jarra, globo y máquina de puñetazos;
 - el torso musculado bajo la camiseta rota;
-- las púas extra del pelo dorado, los ojos azules, el sudor y la vena de enfado.
+- las púas extra del pelo dorado, los ojos azules, el sudor y la vena de enfado;
+- los ojos en espiral, el chichón y el pulgar arriba.
 
 El script también rellena lo que el brazo tapaba en el torso y el bolsillo donde estaba la mano. Si el avatar cambia, se vuelve a ejecutar y sale el mismo atlas.
 

@@ -88,7 +88,7 @@ const Guillermo = (() => {
   const hexRgb = h => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16));
   const mezclaColor = (a, b, k) => { const x = hexRgb(a), y = hexRgb(b); return `rgb(${x.map((v, i) => Math.round(lerp(v, y[i], k))).join(",")})`; };
   const IRIS_AZUL = "#0b5f8f", IRIS_AZUL_LUZ = "#5fe0ff";
-  function globo(g, o, mirada, escIris = 1, azul = 0) {
+  function globo(g, o, mirada, escIris = 1, azul = 0, espiral = 0, giro = 0) {
     g.save();
     g.beginPath(); rutaPoli(g, o.poli); g.fillStyle = C.blanco; g.fill();
     g.lineWidth = 3; g.strokeStyle = C.blanco; g.stroke();            // tapa la junta con la cabeza
@@ -101,6 +101,13 @@ const Guillermo = (() => {
     g.beginPath(); g.arc(ix + r * 0.38, iy + r * 0.36, r * 0.12, 0, Math.PI * 2); g.fill();
     // sombra del párpado superior
     g.strokeStyle = C.ojoSombra; g.lineWidth = 9; g.beginPath(); ruta(g, o.U); g.stroke();
+    if (espiral > 0.01) {            // ojos en espiral: mareado
+      g.globalAlpha = clamp(espiral * 1.5); g.fillStyle = C.blanco; g.beginPath(); rutaPoli(g, o.poli); g.fill();
+      g.globalAlpha = clamp(espiral); g.strokeStyle = "#141018"; g.lineWidth = 4.2; g.lineCap = "round"; g.beginPath();
+      for (let k = 0; k <= 60; k++) { const a = giro + k / 60 * Math.PI * 5, r = 1.5 + k / 60 * o.r * 1.25;
+        const x = o.c.x + Math.cos(a) * r * (o.rx / 22), y = o.c.y + Math.sin(a) * r * 0.85; if (k) g.lineTo(x, y); else g.moveTo(x, y); }
+      g.stroke();
+    }
     g.restore();
   }
   // Párpados encima de la cabeza. c: cierre; h: «feliz» (cierre en arco ∩); z: apretado (>_<).
@@ -246,6 +253,17 @@ const Guillermo = (() => {
     });
     g.restore();
   }
+  // Chichón que sale en la frente tras un golpe.
+  function chichon(g, k, en) {
+    g.save(); g.translate(en ? en.x : 742, en ? en.y : 468); g.scale(k, k);
+    g.beginPath(); g.moveTo(-40, 14); g.bezierCurveTo(-40, -44, 40, -44, 40, 14); g.closePath();
+    g.fillStyle = C.piel; g.fill();
+    g.save(); g.clip(); g.fillStyle = "rgba(230,70,60,0.55)"; g.beginPath(); g.ellipse(0, -6, 26, 18, 0, 0, Math.PI * 2); g.fill();
+    g.fillStyle = C.pielSombra; g.beginPath(); g.ellipse(14, 10, 26, 10, 0, 0, Math.PI * 2); g.fill(); g.restore();
+    g.beginPath(); g.moveTo(-40, 14); g.bezierCurveTo(-40, -44, 40, -44, 40, 14); g.lineWidth = 6; g.strokeStyle = C.tinta; g.stroke();
+    g.fillStyle = "rgba(255,255,255,0.75)"; g.beginPath(); g.ellipse(-12, -16, 9, 5, -0.5, 0, Math.PI * 2); g.fill();
+    g.restore();
+  }
   // Vena de enfado (la cruz de los cómics) en la frente, latiendo.
   function vena(g, k, t) {
     const lat = 1 + 0.12 * Math.max(0, Math.sin(t * 9)) * k;
@@ -274,7 +292,8 @@ const Guillermo = (() => {
     g.save(); g.translate(H.cx, H.cy); g.rotate(H.ang); g.scale(H.kx, H.ky); g.translate(-CAB_PIV.x, -CAB_PIV.y);
     const oro = p.oro || 0;
     if ((p.puas || 0) > 0.002) puas(g, p.puas, t);
-    globo(g, OJOS.d, f.mirada, f.iris ?? 1, p.ojosAzules || 0); globo(g, OJOS.i, f.mirada, f.iris ?? 1, p.ojosAzules || 0);
+    const esp = f.espiral || 0, gEsp = t * 7;
+    globo(g, OJOS.d, f.mirada, f.iris ?? 1, p.ojosAzules || 0, esp, gEsp); globo(g, OJOS.i, f.mirada, f.iris ?? 1, p.ojosAzules || 0, esp, -gEsp);
     if (oro < 0.999) R.pieza(g, A, "cabeza");
     if (oro > 0.001) { g.save(); g.globalAlpha = oro; R.pieza(g, A, "cabeza_oro"); g.restore(); }
     const rojo = p.rojo || 0;
@@ -295,13 +314,14 @@ const Guillermo = (() => {
     parpados(g, OJOS.d, f.ojos.d, fe, ap, "d");
     parpados(g, OJOS.i, f.ojos.i, fe, ap, "i");
     if ((p.sudor || 0) > 0.01) sudor(g, p.sudor, t);
+    if ((p.chichon || 0) > 0.01) chichon(g, p.chichon, p.chichonEn);
     if ((p.enfado || 0) > 0.01) vena(g, p.enfado, t);
     if (p.pegotes) pegotes(g, p.pegotes);
     g.restore();
   }
 
   /* ---------- puño y jarra ---------- */
-  function puno(g, lado) {           // en unidades de jarra, centrado en lo que agarra
+  function puno(g, pulgar) {         // en unidades de jarra, centrado en lo que agarra
     g.save(); g.lineJoin = "round"; g.lineCap = "round";
     const forma = () => { g.beginPath(); g.moveTo(-14, -6); g.quadraticCurveTo(-14, -12, -7, -12); g.lineTo(7, -12);
       g.quadraticCurveTo(14, -12, 14, -5); g.lineTo(14, 6); g.quadraticCurveTo(14, 13, 6, 13); g.lineTo(-8, 13);
@@ -309,10 +329,18 @@ const Guillermo = (() => {
     forma(); g.fillStyle = C.piel; g.fill();
     g.save(); forma(); g.clip(); g.fillStyle = C.pielSombra; g.beginPath(); g.ellipse(-2, 13, 18, 7, 0, 0, Math.PI * 2); g.fill(); g.restore();
     forma(); g.lineWidth = 2.2; g.strokeStyle = C.tinta; g.stroke();
-    // dedos doblados y pulgar por encima
+    // dedos doblados y pulgar por encima (o levantado: «pulgar arriba»)
     g.lineWidth = 1.4; g.beginPath(); for (let i = -1; i <= 1; i++) { g.moveTo(14, i * 5.6 + 1); g.lineTo(7, i * 5.6 + 1.6); } g.stroke();
-    g.beginPath(); g.moveTo(-9, -11); g.quadraticCurveTo(2, -16, 10, -9); g.quadraticCurveTo(4, -5, -6, -6); g.closePath();
-    g.fillStyle = C.piel; g.fill(); g.lineWidth = 1.8; g.stroke();
+    const pu = clamp(pulgar || 0);
+    if (pu < 0.5) {
+      g.beginPath(); g.moveTo(-9, -11); g.quadraticCurveTo(2, -16, 10, -9); g.quadraticCurveTo(4, -5, -6, -6); g.closePath();
+      g.fillStyle = C.piel; g.fill(); g.lineWidth = 1.8; g.stroke();
+    } else {
+      const L = 22 * (pu - 0.5) * 2;
+      g.beginPath(); g.moveTo(-9, -8); g.lineTo(-9, -12 - L); g.quadraticCurveTo(-9, -19 - L, -3, -19 - L); g.quadraticCurveTo(3, -19 - L, 3, -12 - L); g.lineTo(3, -9); g.closePath();
+      g.fillStyle = C.piel; g.fill(); g.lineWidth = 1.8; g.stroke();
+      g.lineWidth = 1.1; g.beginPath(); g.moveTo(-6, -15 - L); g.quadraticCurveTo(-3, -17 - L, 0, -15 - L); g.stroke();
+    }
     g.restore();
   }
   // Puño de las escenas de la jarra (00001 y 00001.2): se conserva tal cual para no cambiar sus fotogramas.
@@ -576,7 +604,7 @@ const Guillermo = (() => {
     g.save(); g.translate(mano.x, mano.y); g.rotate(mano.ang || 0); g.scale(JK * (mano.espejo ? -1 : 1), JK);
     if (mano.objeto) mano.objeto(g, t);
     const k = mano.puno ?? 1;
-    if (k > 0.01) { if (k < 0.999) g.scale(k, k); puno(g); }
+    if (k > 0.01) { if (k < 0.999) g.scale(k, k); puno(g, mano.pulgar); }
     g.restore();
   }
 
