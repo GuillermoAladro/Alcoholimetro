@@ -128,8 +128,12 @@ const Recortes = (() => {
       const s0 = L * i / n, s1 = L * (i + 1) / n;
       // filas de la hoja que cubre la rodaja (la primera incluye el remate de arriba, la última el de abajo)
       // con c.cuna las rodajas se alargan por los dos lados y el recorte en cuña las deja justas
-      const EXT = c.cuna ? 40 : 0;
-      let r0 = ay + s0 - (i > 0 ? EXT : 0), r1 = ay + s1 + (i < n - 1 ? SOLAPE + EXT : 0);
+      // Solo se recorta (y se alarga) por las juntas que de verdad se doblan: en los tramos rectos
+      // las rodajas ya encajan y cada recorte cuesta mucho en la Raspberry.
+      const dobla = (a, b) => Math.abs(Math.atan2(Math.sin(b - a), Math.cos(b - a))) > 0.003;
+      const cortaIni = c.cuna && i > 0 && dobla(pts[i].a, pts[i + 1].a);
+      const cortaFin = c.cuna && i < n - 1 && dobla(pts[i + 1].a, pts[i + 2].a);
+      let r0 = ay + s0 - (cortaIni ? 40 : 0), r1 = ay + s1 + (i < n - 1 ? SOLAPE + (cortaFin ? 40 : 0) : 0);
       if (i === 0 && !c.capFija) r0 = Math.min(r0, yTop);
       if (i === n - 1) r1 = Math.max(r1, yBot);
       r0 = Math.max(r0, yTop); r1 = Math.min(r1, yBot);
@@ -149,8 +153,8 @@ const Recortes = (() => {
           g.lineTo(x0 - ux * B + nx * B, y0 - uy * B + ny * B); g.lineTo(x0 + ux * B + nx * B, y0 + uy * B + ny * B); g.closePath(); g.clip();
         };
         const medio = (a, b) => a + Math.atan2(Math.sin(b - a), Math.cos(b - a)) / 2;
-        if (i > 0) corta(P, medio(pts[i].a, am), 1);
-        if (i < n - 1) corta(pts[i + 1], medio(am, pts[i + 2].a), -1);
+        if (cortaIni) corta(P, medio(pts[i].a, am), 1);
+        if (cortaFin) corta(pts[i + 1], medio(am, pts[i + 2].a), -1);
       }
       g.translate(P.x, P.y); g.rotate(am); g.scale(c.grosor || 1, sig);
       g.drawImage(imagen(A, p), mx, my + (r0 - oy) * tau, mw, (r1 - r0) * tau, ox - ax, r0 - (ay + s0), p.tam_hoja[0], r1 - r0);
