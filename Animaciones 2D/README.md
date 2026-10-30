@@ -58,6 +58,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00021 | Guillermo y Marcos · El chupito en llamas | 14,10 s | [MP4 60 fps](vista%20previa/00021%20Guillermo%20y%20Marcos%20-%20el%20chupito%20en%20llamas.mp4) · [fotogramas](vista%20previa/00021%20Guillermo%20y%20Marcos%20-%20el%20chupito%20en%20llamas%20-%20fotogramas.png) |
 | 00021.2 | Guillermo y Marcos · El chupito en llamas · revisada | 14,1 s | [MP4 60 fps](vista%20previa/00021.2%20Guillermo%20y%20Marcos%20-%20el%20chupito%20en%20llamas.mp4) · [fotogramas](vista%20previa/00021.2%20Guillermo%20y%20Marcos%20-%20el%20chupito%20en%20llamas%20-%20fotogramas.png) · [revisión](revision/00021.2.md) |
 | 00022 | Guillermo y Marcos · El gato en la farola | 14,50 s | [MP4 60 fps](vista%20previa/00022%20Guillermo%20y%20Marcos%20-%20el%20gato%20en%20la%20farola.mp4) · [fotogramas](vista%20previa/00022%20Guillermo%20y%20Marcos%20-%20el%20gato%20en%20la%20farola%20-%20fotogramas.png) |
+| 00022.2 | Guillermo y Marcos · El gato en la farola · revisada | 14,5 s | [MP4 60 fps](vista%20previa/00022.2%20Guillermo%20y%20Marcos%20-%20el%20gato%20en%20la%20farola.mp4) · [fotogramas](vista%20previa/00022.2%20Guillermo%20y%20Marcos%20-%20el%20gato%20en%20la%20farola%20-%20fotogramas.png) · [revisión](revision/00022.2.md) |
 | 00023 | Guillermo y Marcos · La barra de bomberos | 14,45 s | [MP4 60 fps](vista%20previa/00023%20Guillermo%20y%20Marcos%20-%20la%20barra%20de%20bomberos.mp4) · [fotogramas](vista%20previa/00023%20Guillermo%20y%20Marcos%20-%20la%20barra%20de%20bomberos%20-%20fotogramas.png) |
 | 00024 | Guillermo y Marcos · La manguera loca | 13,90 s | [MP4 60 fps](vista%20previa/00024%20Guillermo%20y%20Marcos%20-%20la%20manguera%20loca.mp4) · [fotogramas](vista%20previa/00024%20Guillermo%20y%20Marcos%20-%20la%20manguera%20loca%20-%20fotogramas.png) |
 | 00025 | Guillermo y Marcos · Las pesas | 14,70 s | [MP4 60 fps](vista%20previa/00025%20Guillermo%20y%20Marcos%20-%20las%20pesas.mp4) · [fotogramas](vista%20previa/00025%20Guillermo%20y%20Marcos%20-%20las%20pesas%20-%20fotogramas.png) |
@@ -565,6 +566,12 @@ Corrige la continuidad de brazos, vaso y boquilla, el barrido del agua y el encu
 11. Negro.
 
 ![Fotogramas de 00022](vista%20previa/00022%20Guillermo%20y%20Marcos%20-%20el%20gato%20en%20la%20farola%20-%20fotogramas.png)
+
+
+### 00022.2 · Revisión de continuidad
+
+Corrige los brazos y los contactos durante el rescate. La escalera permanece sujeta al moverla y el gato enlaza sus saltos y cambios de postura sin giros repentinos. Se conserva la original. [Informe y pruebas](revision/00022.2.md).
+
 
 ### 00023 · Guillermo y Marcos · La barra de bomberos
 
