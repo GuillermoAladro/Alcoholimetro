@@ -41,6 +41,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00014 | Guillermo y Laura · El baile lento | 14,20 s | [MP4 60 fps](vista%20previa/00014%20Guillermo%20y%20Laura%20-%20el%20baile%20lento.mp4) · [fotogramas](vista%20previa/00014%20Guillermo%20y%20Laura%20-%20el%20baile%20lento%20-%20fotogramas.png) |
 | 00015 | Guillermo y Laura · La tarta | 14,25 s | [MP4 60 fps](vista%20previa/00015%20Guillermo%20y%20Laura%20-%20la%20tarta.mp4) · [fotogramas](vista%20previa/00015%20Guillermo%20y%20Laura%20-%20la%20tarta%20-%20fotogramas.png) |
 | 00017 | Guillermo y Laura · Los dardos | 14,45 s | [MP4 60 fps](vista%20previa/00017%20Guillermo%20y%20Laura%20-%20los%20dardos.mp4) · [fotogramas](vista%20previa/00017%20Guillermo%20y%20Laura%20-%20los%20dardos%20-%20fotogramas.png) |
+| 00018 | Guillermo y Laura · El selfie | 13,30 s | [MP4 60 fps](vista%20previa/00018%20Guillermo%20y%20Laura%20-%20el%20selfie.mp4) · [fotogramas](vista%20previa/00018%20Guillermo%20y%20Laura%20-%20el%20selfie%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -371,6 +372,20 @@ Corrige la continuidad de los brazos y coloca el giro de manos delante del pecho
 10. Negro.
 
 ![Fotogramas de 00017](vista%20previa/00017%20Guillermo%20y%20Laura%20-%20los%20dardos%20-%20fotogramas.png)
+
+### 00018 · Guillermo y Laura · El selfie
+
+1. Negro.
+2. Azotea de un bar a la hora azul: ciudad con las ventanas encendidas, guirnalda de bombillas, barandilla de cristal y una mesita con una vela. Laura saca el móvil del bolsillo, mira a Guillermo y él se arrima.
+3. Ella levanta el móvil para hacerse un selfie y sonríen los dos.
+4. **Flash 1:** Guillermo parpadea justo en el fogonazo. La foto sale en una esquina, con él con los ojos cerrados. Laura le mira de reojo y él se rasca la cabeza.
+5. **Flash 2:** a Guillermo le pica la nariz… y estornuda en pleno flash. La foto sale movida y salpicada; a Laura se le vuela la melena y se limpia la mejilla con asco, y él se frota la nariz.
+6. **Flash 3:** Laura pone morritos y Guillermo, a escondidas, le hace orejas de conejo detrás de la cabeza. La foto le pilla.
+7. Laura mira el móvil, abre mucho los ojos y se gira hacia él. Guillermo esconde la mano y silba disimulando. Ella niega con la cabeza y sonríe.
+8. **Foto final:** él guiña un ojo y ella sonríe con los ojos cerrados, los dos con la uve bajo la barbilla. Con el flash la imagen se congela y se convierte en una foto con marco blanco, un poco torcida.
+9. Negro.
+
+![Fotogramas de 00018](vista%20previa/00018%20Guillermo%20y%20Laura%20-%20el%20selfie%20-%20fotogramas.png)
 
 ## Ver y grabar
 
