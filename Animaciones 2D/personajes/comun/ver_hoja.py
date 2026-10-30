@@ -42,7 +42,9 @@ def capa(cfg):
     CIAN = (0, 170, 190)
     for paso in cfg.get("limpiar", []):                    # retoques de la hoja (accesorios quitados) en cian
         for k in ("fondo", "pintar", "rellenar"):
-            if k in paso: poli(paso[k], CIAN, "limpiar: " + k)
+            if k not in paso: continue
+            v = paso[k]                                    # un polígono o una lista de polígonos
+            for q in (v if len(v) and isinstance(v[0][0], (list, tuple)) else [v]): poli(q, CIAN, "limpiar: " + k)
         if "linea" in paso: linea(paso["linea"], CIAN)
     if r:
         linea(r.get("mandibula", []), ROJO, "mandíbula")

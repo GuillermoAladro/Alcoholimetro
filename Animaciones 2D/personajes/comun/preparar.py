@@ -62,6 +62,23 @@ def parpado(mask, n=10):
     return arr, aba
 
 
+def zona_paso(paso, clave, R, G, B, shape):
+    """Máscara de un paso de «limpiar»: su polígono o lista de polígonos y, si las trae, las opciones
+    "mascara": "no_piel", "dilata" y "proteger_zonas" (ver limpiar)."""
+    v = paso[clave]
+    polis = v if len(v) and isinstance(v[0][0], (list, tuple)) else [v]
+    z = np.zeros(shape, bool)
+    for q in polis: z |= poly_mask(q, shape)
+    if paso.get("mascara") == "no_piel":
+        piel = (R > 200) & (G > 110) & (R - B > 60) & (G - B > 25)
+        m = z & ~piel
+        n = paso.get("dilata", 0)
+        if n: m = ndi.binary_dilation(m, iterations=n) & ndi.binary_dilation(z, iterations=n)
+        z = m
+    for q in paso.get("proteger_zonas", []): z &= ~poly_mask(q, shape)
+    return z
+
+
 def limpiar(src, pasos):
     """Retoca la hoja antes de trocearla (opcional, CFG["limpiar"]): quita accesorios que el muñeco
     dibuja aparte (la manguera de Marcos) y repinta lo que tapaban. Cada paso es un dict:
@@ -71,6 +88,11 @@ def limpiar(src, pasos):
       {"pintar": polígono, "color": [r, g, b]}         → relleno liso
       {"rellenar": polígono}                           → inpainting desde lo de alrededor
       {"linea": [[x, y], …], "color": [r, g, b], "ancho": n}   → contorno o costura que quedó tapado
+    En "pintar" y "rellenar" (opcional): el valor puede ser una lista de polígonos (se rellenan todos de
+    una vez, así lo que se quita en uno no hace de fuente en el de al lado), "mascara": "no_piel" limita
+    el paso a lo que no es piel dentro de los polígonos (la montura de unas gafas), "dilata": n la ensancha
+    sin salir de los polígonos ensanchados y "proteger_zonas": [polígono, …] deja intacto lo de dentro
+    (ojos, cejas). Sin esas claves el paso hace lo de siempre.
     """
     out = src.copy()
     H, W = out.shape[:2]
@@ -94,9 +116,9 @@ def limpiar(src, pasos):
                 m &= ~ndi.binary_dilation(marino, iterations=2)
             out[m] = 255
         elif "pintar" in paso:
-            out[poly_mask(paso["pintar"], (H, W))] = paso["color"]
+            out[zona_paso(paso, "pintar", R, G, B, (H, W))] = paso["color"]
         elif "rellenar" in paso:
-            z = poly_mask(paso["rellenar"], (H, W))
+            z = zona_paso(paso, "rellenar", R, G, B, (H, W))
             out = cv2.inpaint(out, z.astype(np.uint8) * 255, paso.get("radio", 9), cv2.INPAINT_TELEA)
         elif "linea" in paso:
             im = Image.fromarray(out); ImageDraw.Draw(im).line([tuple(q) for q in paso["linea"]], fill=tuple(paso.get("color", (12, 10, 12))),

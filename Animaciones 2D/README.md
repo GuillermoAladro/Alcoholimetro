@@ -561,6 +561,7 @@ Animaciones 2D/
 ├─ personajes/marcos-bombero/   coordenadas de Marcos Bombero, su atlas, la manguera y el chorro
 ├─ personajes/ander/            coordenadas de Ander y su atlas
 ├─ personajes/carla/            coordenadas de Carla, su atlas, aros y collar
+├─ personajes/dari/             coordenadas de Dari, su atlas y las gafas
 ├─ escenas/                     una escena por archivo (00001 … 00010 y sus revisiones)
 ├─ herramientas/                 comprobar.py y grabar.py
 └─ vista previa/                 vídeos y fotogramas de cada animación
@@ -631,6 +632,13 @@ Opciones del montaje que usan las escenas nuevas (las anteriores no las activan 
 - **Piezas:** la cabeza del retrato (cuencas vacías y sin aros), la cara roja, las cejas, la boca, la melena ondulada que cuelga por detrás (dos tiras con puntas que se balancean con viento e inercia), el torso con y sin brazos, los dos brazos enderezados, las piernas del vaquero y el botín negro de tacón con la suela nivelada.
 - **Accesorios:** los aros y el collar se dibujan aparte y se mecen con la cabeza y el torso.
 - **Altura:** con el mismo `p.s` mide un 93 % de Guillermo.
+
+**Dari** (`personajes/dari/`) sale de `Avatares 2D/Dari/Dari-2D.png` con el recortador común.
+
+- **Limpieza previa:** antes de trocear, su `preparar_piezas.py` borra las gafas del retrato (la montura y los brillos se rellenan con la piel y el pelo de alrededor, sin tocar ojos ni cejas). También quita las manos que asomaban de los bolsillos y repinta el bajo de la parka y la cadera del vaquero.
+- **Piezas:** la cabeza del retrato con el pelo rizado, el bigote y la perilla (cuencas vacías), la cara roja, las cejas, la boca, el torso con la capucha detrás del cuello, las dos mangas de la parka enderezadas, las piernas del vaquero y la zapatilla con la suela nivelada.
+- **Gafas:** se dibujan aparte encima de los ojos, así párpados, iris y cejas se mueven por debajo; cada escena puede moverlas o quitárselas (`p.gafas`).
+- **Altura:** con el mismo `p.s` mide como Guillermo (el pelo le saca un poco).
 
 ## Añadir una animación
 
