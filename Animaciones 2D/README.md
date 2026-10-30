@@ -88,6 +88,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00049 | Guillermo y Carla · El helado | 14,40 s | [MP4 60 fps](vista%20previa/00049%20Guillermo%20y%20Carla%20-%20el%20helado.mp4) · [fotogramas](vista%20previa/00049%20Guillermo%20y%20Carla%20-%20el%20helado%20-%20fotogramas.png) |
 | 00050 | Guillermo y Carla · Las gafas de sol | 14,50 s | [MP4 60 fps](vista%20previa/00050%20Guillermo%20y%20Carla%20-%20las%20gafas%20de%20sol.mp4) · [fotogramas](vista%20previa/00050%20Guillermo%20y%20Carla%20-%20las%20gafas%20de%20sol%20-%20fotogramas.png) |
 | 00051 | Guillermo y Dari · El ajedrez | 13,80 s | [MP4 60 fps](vista%20previa/00051%20Guillermo%20y%20Dari%20-%20el%20ajedrez.mp4) · [fotogramas](vista%20previa/00051%20Guillermo%20y%20Dari%20-%20el%20ajedrez%20-%20fotogramas.png) |
+| 00053 | Guillermo y Dari · El cubo de Rubik | 14,65 s | [MP4 60 fps](vista%20previa/00053%20Guillermo%20y%20Dari%20-%20el%20cubo%20de%20rubik.mp4) · [fotogramas](vista%20previa/00053%20Guillermo%20y%20Dari%20-%20el%20cubo%20de%20rubik%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1027,6 +1028,20 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 12. Negro.
 
 ![Fotogramas de 00051](vista%20previa/00051%20Guillermo%20y%20Dari%20-%20el%20ajedrez%20-%20fotogramas.png)
+
+### 00053 · Guillermo y Dari · El cubo de Rubik
+
+1. Negro.
+2. Un bar de juegos de mesa: estantería llena de cajas, neón con forma de cubo, marciano de píxeles, pizarra con el desarrollo de un cubo y una lámpara sobre una mesa alta. Dari mira su cubo desordenado y le brillan las gafas.
+3. **Lo resuelve en dos segundos** con los dedos hechos un borrón y lo deja en la mesa: ¡clic! Guillermo se queda con la boca abierta.
+4. Guillermo coge su cubo, se lo enseña chulo a cámara y empieza a girar caras: primero despacio y con la lengua fuera, luego cada vez más rápido. Le da la vuelta, suda, se pone rojo y se le ponen los ojos en espiral.
+5. Despega una pegatina; se le queda pegada al dedo, sacude la mano y la pegatina acaba en su moflete.
+6. Rabia: levanta el cubo y **lo estampa contra la mesa**. Revienta en cubitos que saltan por toda la mesa y el cubo de Dari da un brinco.
+7. Dari suspira y, con una mano en el bolsillo, hace saltar los cubitos a su sitio uno a uno hasta montar el cubo resuelto (sin la pegatina).
+8. Se lo devuelve; Guillermo lo abraza con los ojos cerrados y le salen corazones. A Dari le brillan las gafas.
+9. Negro.
+
+![Fotogramas de 00053](vista%20previa/00053%20Guillermo%20y%20Dari%20-%20el%20cubo%20de%20rubik%20-%20fotogramas.png)
 
 ## Ver y grabar
 
