@@ -81,6 +81,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00042 | Guillermo y Carla · El ligue | 14,75 s | [MP4 60 fps](vista%20previa/00042%20Guillermo%20y%20Carla%20-%20el%20ligue.mp4) · [fotogramas](vista%20previa/00042%20Guillermo%20y%20Carla%20-%20el%20ligue%20-%20fotogramas.png) |
 | 00043 | Guillermo y Carla · El limbo | 14,40 s | [MP4 60 fps](vista%20previa/00043%20Guillermo%20y%20Carla%20-%20el%20limbo.mp4) · [fotogramas](vista%20previa/00043%20Guillermo%20y%20Carla%20-%20el%20limbo%20-%20fotogramas.png) |
 | 00044 | Guillermo y Carla · La melena | 13,60 s | [MP4 60 fps](vista%20previa/00044%20Guillermo%20y%20Carla%20-%20la%20melena.mp4) · [fotogramas](vista%20previa/00044%20Guillermo%20y%20Carla%20-%20la%20melena%20-%20fotogramas.png) |
+| 00045 | Guillermo y Carla · El retrato | 14,00 s | [MP4 60 fps](vista%20previa/00045%20Guillermo%20y%20Carla%20-%20el%20retrato.mp4) · [fotogramas](vista%20previa/00045%20Guillermo%20y%20Carla%20-%20el%20retrato%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -905,6 +906,22 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 9. Negro.
 
 ![Fotogramas de 00044](vista%20previa/00044%20Guillermo%20y%20Carla%20-%20la%20melena%20-%20fotogramas.png)
+
+### 00045 · Guillermo y Carla · El retrato
+
+1. Negro.
+2. Estudio de pintor en una buhardilla: Guillermo posa de héroe subido a un taburete (pecho fuera, barbilla arriba, puño en la cadera y el otro brazo señalando al horizonte). Carla, en el caballete, le mide con el pincel guiñando un ojo y él le guiña a cámara.
+3. Carla moja el pincel en la paleta y pinta con la lengua fuera. Las salpicaduras asoman por detrás del lienzo.
+4. Guillermo aguanta la pose cada vez peor: le tiembla el brazo, suda y se pone rojo.
+5. Una mosca le ronda la cabeza y se le posa en la nariz. Él ni se mueve: tic en el ojo, mofletes hinchados y un soplido de lado que no la espanta.
+6. Carla se aparta a admirar su obra con la cabeza ladeada, vuelve a pintar a lo loco y remata con una floritura que deja un destello.
+7. Guillermo se relaja (la mosca se va) y se frota las manos, ansioso. Carla gira el lienzo: **un muñequito de palotes** con el pelo de pinchos y una sonrisa enorme, subido a un taburete y con un sol en la esquina.
+8. A Guillermo se le cae la mandíbula y mira a cámara, serio.
+9. Carla, orgullosísima, añade al cuadro un corazoncito rojo y guiña un ojo.
+10. Guillermo señala el cuadro, se pone la mano en el pecho («¿yo?»), Carla asiente encantada y él se encoge de hombros con una sonrisa resignada.
+11. Negro.
+
+![Fotogramas de 00045](vista%20previa/00045%20Guillermo%20y%20Carla%20-%20el%20retrato%20-%20fotogramas.png)
 
 ## Ver y grabar
 
