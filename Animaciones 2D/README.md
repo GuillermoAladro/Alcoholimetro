@@ -93,6 +93,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00054 | Guillermo y Dari · El pelo rizado | 14,75 s | [MP4 60 fps](vista%20previa/00054%20Guillermo%20y%20Dari%20-%20el%20pelo%20rizado.mp4) · [fotogramas](vista%20previa/00054%20Guillermo%20y%20Dari%20-%20el%20pelo%20rizado%20-%20fotogramas.png) |
 | 00055 | Guillermo y Dari · La máquina recreativa | 14,60 s | [MP4 60 fps](vista%20previa/00055%20Guillermo%20y%20Dari%20-%20la%20maquina%20recreativa.mp4) · [fotogramas](vista%20previa/00055%20Guillermo%20y%20Dari%20-%20la%20maquina%20recreativa%20-%20fotogramas.png) |
 | 00056 | Guillermo y Dari · La pizza | 14,20 s | [MP4 60 fps](vista%20previa/00056%20Guillermo%20y%20Dari%20-%20la%20pizza.mp4) · [fotogramas](vista%20previa/00056%20Guillermo%20y%20Dari%20-%20la%20pizza%20-%20fotogramas.png) |
+| 00058 | Guillermo y Dari · Las palomitas | 14,25 s | [MP4 60 fps](vista%20previa/00058%20Guillermo%20y%20Dari%20-%20las%20palomitas.mp4) · [fotogramas](vista%20previa/00058%20Guillermo%20y%20Dari%20-%20las%20palomitas%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1113,6 +1114,20 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 12. Negro.
 
 ![Fotogramas de 00056](vista%20previa/00056%20Guillermo%20y%20Dari%20-%20la%20pizza%20-%20fotogramas.png)
+
+### 00058 · Guillermo y Dari · Las palomitas
+
+1. Negro.
+2. Sala de cine a oscuras, con la luz azulada de la pantalla parpadeando en las caras. Dari come palomitas de una en una; Guillermo se embute un puñado.
+3. La peli se pone oscura y roja. Guillermo mete la mano en el cubo muy despacio, sudando.
+4. **Susto:** fogonazo. Guillermo pega un bote, el cubo brinca y las palomitas salen disparadas por el aire.
+5. Lluvia de palomitas: se le quedan en el pelo a los dos y caen en las butacas de delante. Dari ni pestañea y atrapa una con la boca.
+6. Guillermo, agarrado a los reposabrazos, tiembla. Dari le ofrece una palomita, él dice que no con la cabeza y Dari se la come.
+7. **Segundo susto:** Guillermo se tira de cabeza **a la capucha de Dari**, que se hincha; solo le asoman las piernas, pataleando.
+8. Dari sigue comiendo con la pantalla reflejada en las gafas. Llega otro destello y las piernas se agitan; Dari mira a cámara y levanta una ceja.
+9. Negro.
+
+![Fotogramas de 00058](vista%20previa/00058%20Guillermo%20y%20Dari%20-%20las%20palomitas%20-%20fotogramas.png)
 
 ## Ver y grabar
 
