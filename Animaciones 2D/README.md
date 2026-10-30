@@ -94,6 +94,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00055 | Guillermo y Dari · La máquina recreativa | 14,60 s | [MP4 60 fps](vista%20previa/00055%20Guillermo%20y%20Dari%20-%20la%20maquina%20recreativa.mp4) · [fotogramas](vista%20previa/00055%20Guillermo%20y%20Dari%20-%20la%20maquina%20recreativa%20-%20fotogramas.png) |
 | 00056 | Guillermo y Dari · La pizza | 14,20 s | [MP4 60 fps](vista%20previa/00056%20Guillermo%20y%20Dari%20-%20la%20pizza.mp4) · [fotogramas](vista%20previa/00056%20Guillermo%20y%20Dari%20-%20la%20pizza%20-%20fotogramas.png) |
 | 00058 | Guillermo y Dari · Las palomitas | 14,25 s | [MP4 60 fps](vista%20previa/00058%20Guillermo%20y%20Dari%20-%20las%20palomitas.mp4) · [fotogramas](vista%20previa/00058%20Guillermo%20y%20Dari%20-%20las%20palomitas%20-%20fotogramas.png) |
+| 00059 | Guillermo y Dari · El abrigo | 14,60 s | [MP4 60 fps](vista%20previa/00059%20Guillermo%20y%20Dari%20-%20el%20abrigo.mp4) · [fotogramas](vista%20previa/00059%20Guillermo%20y%20Dari%20-%20el%20abrigo%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1128,6 +1129,23 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 9. Negro.
 
 ![Fotogramas de 00058](vista%20previa/00058%20Guillermo%20y%20Dari%20-%20las%20palomitas%20-%20fotogramas.png)
+
+### 00059 · Guillermo y Dari · El abrigo
+
+1. Negro.
+2. Noche helada a la puerta del bar y nevando. Guillermo, en camiseta, tirita abrazado a sí mismo. Dari, tan tranquilo, se sube la cremallera de la parka hasta la barbilla.
+3. Dari se pone la capucha, que le pasa por encima de los rizos, y tira del cordón: un tirón, dos, tres… hasta que **solo le asoman las gafas y el bigote**, con los cordones colgando.
+4. Guillermo, azulado y castañeteando, se hace el valiente con los brazos en jarras y una sonrisa forzada.
+5. Una ráfaga de viento lo deja tieso: más azul, con un montón de nieve en el pelo y **un carámbano en la nariz** («tink»).
+6. Le pone ojitos de pena a Dari con las manos juntas. Dari le mira de reojo… y suspira con una nube de vaho.
+7. Dari se baja la cremallera y abre la parka de par en par como una tienda de campaña: forro rojo acolchado y calorcito.
+8. A Guillermo se le iluminan los ojos, coge impulso y **se tira dentro**.
+9. La parka se cierra a su alrededor, Guillermo se da la vuelta y la cremallera sube de golpe: **dos cabezas asoman de un solo abrigo** estirado a reventar.
+10. Guillermo se descongela: pasa de azul a mofletes rosas y le sale vapor del pelo. El carámbano se suelta y se clava en la nieve. Dari sonríe bajo el bigote.
+11. Se van juntos hacia la izquierda como un bicho de cuatro patas, con las mangas vacías bailando. En la acera quedan las huellas y el carámbano.
+12. Negro.
+
+![Fotogramas de 00059](vista%20previa/00059%20Guillermo%20y%20Dari%20-%20el%20abrigo%20-%20fotogramas.png)
 
 ## Ver y grabar
 
