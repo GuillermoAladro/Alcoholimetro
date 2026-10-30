@@ -37,6 +37,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00011 | Guillermo y Laura · El pulso | 13,75 s | [MP4 60 fps](vista%20previa/00011%20Guillermo%20y%20Laura%20-%20el%20pulso.mp4) · [fotogramas](vista%20previa/00011%20Guillermo%20y%20Laura%20-%20el%20pulso%20-%20fotogramas.png) |
 | 00013 | Guillermo y Laura · La pajita | 13,40 s | [MP4 60 fps](vista%20previa/00013%20Guillermo%20y%20Laura%20-%20la%20pajita.mp4) · [fotogramas](vista%20previa/00013%20Guillermo%20y%20Laura%20-%20la%20pajita%20-%20fotogramas.png) |
 | 00014 | Guillermo y Laura · El baile lento | 14,20 s | [MP4 60 fps](vista%20previa/00014%20Guillermo%20y%20Laura%20-%20el%20baile%20lento.mp4) · [fotogramas](vista%20previa/00014%20Guillermo%20y%20Laura%20-%20el%20baile%20lento%20-%20fotogramas.png) |
+| 00015 | Guillermo y Laura · La tarta | 14,25 s | [MP4 60 fps](vista%20previa/00015%20Guillermo%20y%20Laura%20-%20la%20tarta.mp4) · [fotogramas](vista%20previa/00015%20Guillermo%20y%20Laura%20-%20la%20tarta%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -307,6 +308,22 @@ Corrige la continuidad del brazo al retirar la mano de la cara y ajusta el conta
 11. Negro.
 
 ![Fotogramas de 00014](vista%20previa/00014%20Guillermo%20y%20Laura%20-%20el%20baile%20lento%20-%20fotogramas.png)
+
+### 00015 · Guillermo y Laura · La tarta
+
+1. Negro.
+2. Fiesta de cumpleaños con la luz apagada. Guillermo, con gorro de fiesta, espera con las manos en los bolsillos.
+3. Laura entra por la derecha con una tarta con las velas encendidas: su luz cálida los ilumina a los dos. Guillermo se frota las manos y ella deja la tarta en la mesa alta.
+4. **Primer soplido:** se apagan las velas, sale humo y la sala se queda a oscuras. Guillermo mira a cámara muy chulo…
+5. …y las velas se vuelven a encender solas con chispitas (son trucadas). Laura se tapa la boca para no reírse.
+6. **Segundo soplido**, más fuerte, con los brazos hacia atrás, rojo y sudando: se apagan… y se vuelven a encender. Guillermo se enfada.
+7. Coge muchísimo aire de puntillas, se inclina demasiado, mueve los brazos como aspas y **planta la cara en la tarta**: la nata salpica la mesa y el suelo, y en la tarta queda la huella de su cara.
+8. Saca la cara cubierta de nata, con los brazos colgando y una vela clavada en la nariz que se vuelve a encender. Parpadea entre la nata.
+9. Laura se parte de risa. Luego se acerca, le quita un poco de nata de la mejilla con el dedo y la prueba. Él se relame.
+10. Guillermo sopla hacia arriba la vela de la nariz: se apaga… y se vuelve a encender. Se rinde y Laura guiña un ojo a cámara.
+11. Negro.
+
+![Fotogramas de 00015](vista%20previa/00015%20Guillermo%20y%20Laura%20-%20la%20tarta%20-%20fotogramas.png)
 
 ## Ver y grabar
 
