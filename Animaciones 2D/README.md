@@ -105,6 +105,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00066 | Guillermo y Deivi · El globo de helio | 14,9 s | [MP4 60 fps](vista%20previa/00066%20Guillermo%20y%20Deivi%20-%20el%20globo%20de%20helio.mp4) · [fotogramas](vista%20previa/00066%20Guillermo%20y%20Deivi%20-%20el%20globo%20de%20helio%20-%20fotogramas.png) |
 | 00067 | Guillermo y Deivi · La guerra de almohadas | 14,0 s | [MP4 60 fps](vista%20previa/00067%20Guillermo%20y%20Deivi%20-%20la%20guerra%20de%20almohadas.mp4) · [fotogramas](vista%20previa/00067%20Guillermo%20y%20Deivi%20-%20la%20guerra%20de%20almohadas%20-%20fotogramas.png) |
 | 00068 | Guillermo y Deivi · Las cosquillas | 14,9 s | [MP4 60 fps](vista%20previa/00068%20Guillermo%20y%20Deivi%20-%20las%20cosquillas.mp4) · [fotogramas](vista%20previa/00068%20Guillermo%20y%20Deivi%20-%20las%20cosquillas%20-%20fotogramas.png) |
+| 00069 | Guillermo y Deivi · La momia | 15,0 s | [MP4 60 fps](vista%20previa/00069%20Guillermo%20y%20Deivi%20-%20la%20momia.mp4) · [fotogramas](vista%20previa/00069%20Guillermo%20y%20Deivi%20-%20la%20momia%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1319,6 +1320,24 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 10. Negro.
 
 ![Fotogramas de 00068](vista%20previa/00068%20Guillermo%20y%20Deivi%20-%20las%20cosquillas%20-%20fotogramas.png)
+
+### 00069 · Guillermo y Deivi · La momia
+
+1. Negro.
+2. Noche de Halloween a la puerta del bar: luna llena, cielo morado, murciélagos a lo lejos, un árbol pelado, telarañas, una araña que sube y baja de su hilo, una guirnalda de bombillas naranjas y moradas, calabazas con la vela temblando y niebla baja.
+3. Deivi lanza al aire un rollo de papel higiénico, lo caza y se lo enseña a Guillermo moviendo las cejas; Guillermo lo pilla al vuelo y abre los brazos de un saltito, encantado.
+4. Deivi se acerca, se agacha y lanza la punta del papel, que se enrosca en el tobillo de Guillermo; con el dedo le hace «¡gira!».
+5. Guillermo gira como una peonza (feliz, con los ojos cerrados) y Deivi, levantándose poco a poco, le envuelve de los zapatos a la cabeza; el rollo adelgaza hasta quedarse en el cartón.
+6. Deivi rasga el papel y tira el cartón hacia atrás. Guillermo para: es una momia con tupé de papel y solo se le ven los ojos por una rendija; la punta suelta se queda en el suelo, saliendo del tobillo.
+7. Se mira, levanta los brazos rectos y, muy orgulloso, avanza hacia la cámara a pasos tiesos para asustar (la cámara se acerca); Deivi se hace el asustado.
+8. Con un paso pisa su propia punta suelta (cruje el papel); con el siguiente la tira se tensa y le deja la pierna clavada en el aire.
+9. Mira abajo… y empieza a girar sobre el pie que la pisa: el papel se desenrolla de los pies a la cabeza y se amontona a sus pies en bucles; Deivi se muere de risa tapándose la boca.
+10. Salen volando los últimos trocitos de la cabeza: Guillermo, otra vez con su ropa, se tambalea mareado, con los ojos en espiral y estrellitas.
+11. Deivi se agacha sobre el montón y lo recoge en una polvareda de papel; se levanta con un rollo gigante y lo sube por encima de la cabeza, moviendo las cejas.
+12. Guillermo se despeja, ve el rollo gigante y mira a cámara aterrado, con las manos en la cara; Deivi le guiña un ojo a la cámara.
+13. Negro.
+
+![Fotogramas de 00069](vista%20previa/00069%20Guillermo%20y%20Deivi%20-%20la%20momia%20-%20fotogramas.png)
 
 ## Ver y grabar
 
