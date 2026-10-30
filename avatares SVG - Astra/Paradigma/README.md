@@ -18,3 +18,5 @@ Diez ilustraciones estáticas extraídas de la hoja maestra detallada, sin simpl
 Cada SVG es autónomo y contiene geometría vectorial real. No es un esqueleto articulado para animación. El fondo blanco coincide con la presentación de Guillermo. Las sombras del suelo de la hoja completa no se añaden a los recortes.
 
 [Control de calidad y procedencia](control-calidad.json) · [Hoja maestra](../Paradigma.svg)
+
+La revisión final recuperó los tonos claros y las costuras de la camiseta blanca en las seis expresiones. Se corrigió únicamente el recorte; los trazados, gradientes y sombras de la ilustración se conservaron. [Comprobación de la corrección](correccion-camiseta.json).

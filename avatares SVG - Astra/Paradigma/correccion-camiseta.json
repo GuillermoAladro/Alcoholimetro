@@ -1,0 +1,12 @@
+{
+  "ssim": 0.97226,
+  "expression_strip_ssim": 0.97728,
+  "mean_absolute_channel_error_0_255": 2.41327,
+  "protected_region_mae_before": 4.05449,
+  "protected_region_mae_after": 2.1043,
+  "illustration_paths_unchanged": true,
+  "gradients_unchanged": true,
+  "shadows_unchanged": true,
+  "changed_mask_pixels_outside_protected_regions": 0,
+  "reason": "El recorte de fondo eliminaba tonos claros de la camiseta. Se unieron las áreas protegidas a la silueta existente; no se retrazó la ilustración."
+}

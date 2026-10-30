@@ -1,8 +1,8 @@
 {
   "character": "Paradigma",
   "source_git_blob": "fffffd168482fa7cba13ecd2b866b8b63f62f916",
-  "master_git_blob": "2c27f0f1897f9b81a278c2035a344de3fb60009d",
-  "master_sha256": "337110ed2315c75ffe28907941b6cfbba6588974fefd6f4191354b1a743a63da",
+  "master_git_blob": "f17a2ecc410ec5a93bb0e832083ae551fdcb1357",
+  "master_sha256": "1633aeb17226bcc9ba7a061d64be240e84f1e9b504a1f8d88853dad17ddd3e1d",
   "master_checks": {
     "xml_valid": true,
     "vector_only": true,
@@ -15,34 +15,34 @@
   "static_illustrations": true,
   "selection": [
     {
-      "contour": 21
+      "contour": 17
     },
     {
-      "contour": 20
+      "contour": 16
     },
     {
-      "contour": 18
+      "contour": 12
     },
     {
-      "contour": 19
+      "contour": 15
     },
     {
-      "contour": 11
-    },
-    {
-      "contour": 8
-    },
-    {
-      "contour": 9
+      "contour": 7
     },
     {
       "contour": 4
     },
     {
-      "contour": 6
+      "contour": 5
     },
     {
-      "contour": 5
+      "contour": 0
+    },
+    {
+      "contour": 2
+    },
+    {
+      "contour": 1
     }
   ],
   "files": [
@@ -54,15 +54,15 @@
       "internal_references_valid": true,
       "paths": 20558,
       "gradients": 14112,
-      "bytes": 5617600,
-      "sha256": "37a522ce9500eea3b04e6620f392a6518d3253e856fd3e6c33d199203757647f",
+      "bytes": 5651928,
+      "sha256": "8ebf318f9b327bf9d2fe9678ebb3f9e2e10b343e2f52d33b776d6e8a36c5ef45",
       "viewBox": [
         130,
         22,
         311,
         873
       ],
-      "contour_index": 21,
+      "contour_index": 17,
       "figure_mae_vs_master": 0.000416,
       "figure_mae_vs_reference": 2.1367
     },
@@ -74,15 +74,15 @@
       "internal_references_valid": true,
       "paths": 15642,
       "gradients": 10925,
-      "bytes": 4298250,
-      "sha256": "da3cc788784f0ffbc25aa8d514b27672ed1d0918f893a6bb5410d377434b8276",
+      "bytes": 4323338,
+      "sha256": "39de4423b14574793dcb85c47c00f860c6615cfefd678b28ae70505e5c995259",
       "viewBox": [
         421,
         22,
         231,
         875
       ],
-      "contour_index": 20,
+      "contour_index": 16,
       "figure_mae_vs_master": 0.002082,
       "figure_mae_vs_reference": 2.5794
     },
@@ -94,16 +94,16 @@
       "internal_references_valid": true,
       "paths": 14099,
       "gradients": 9750,
-      "bytes": 3847167,
-      "sha256": "21812de774a43069f92e74a6a68b87d5c878e0e501b789d120fec998a6acf06d",
+      "bytes": 3874201,
+      "sha256": "c96f7863464fb7c6ec2847ffed5f628314ed5d0b8e28459249510cc304f129da",
       "viewBox": [
         653,
         27,
         195,
         871
       ],
-      "contour_index": 18,
-      "figure_mae_vs_master": 0.002199,
+      "contour_index": 12,
+      "figure_mae_vs_master": 0.002203,
       "figure_mae_vs_reference": 2.429
     },
     {
@@ -114,16 +114,16 @@
       "internal_references_valid": true,
       "paths": 17973,
       "gradients": 11473,
-      "bytes": 4735294,
-      "sha256": "eb99ec3a370e14a08cbe4bc4c6118fec0eb6077c4680a7e483da2c032f7a2a60",
+      "bytes": 4766360,
+      "sha256": "c681aa4893698ee87fa05241b5e1cc1b254d4481573f6944bfce3221d8a44e93",
       "viewBox": [
         845,
         25,
         277,
         865
       ],
-      "contour_index": 19,
-      "figure_mae_vs_master": 0.00195,
+      "contour_index": 15,
+      "figure_mae_vs_master": 0.001955,
       "figure_mae_vs_reference": 2.1812
     },
     {
@@ -134,17 +134,17 @@
       "internal_references_valid": true,
       "paths": 9170,
       "gradients": 6658,
-      "bytes": 2623612,
-      "sha256": "a3bd475974bd9c5a00b0513e25b43e86da2a649295fd236d7d6379d4e9f98ec5",
+      "bytes": 2633516,
+      "sha256": "356027f86111a780f4f0e0eeb33a68c4dacee4b5dcec1c29501977b3836ad723",
       "viewBox": [
         0,
         920,
         208,
         378
       ],
-      "contour_index": 11,
+      "contour_index": 7,
       "figure_mae_vs_master": 0.0,
-      "figure_mae_vs_reference": 2.1555
+      "figure_mae_vs_reference": 2.1506
     },
     {
       "file": "06-risa.svg",
@@ -154,17 +154,17 @@
       "internal_references_valid": true,
       "paths": 9189,
       "gradients": 6870,
-      "bytes": 2680671,
-      "sha256": "d06a56a19d556d195921b5ca3e2eeb3beff78744327ad55ab7437c2135fdca46",
+      "bytes": 2689232,
+      "sha256": "1b260f28845ad0b99a306ab10a38412b59681692ddc6023556ac09f26b6976ba",
       "viewBox": [
         186,
         930,
         212,
         368
       ],
-      "contour_index": 8,
-      "figure_mae_vs_master": 0.0015,
-      "figure_mae_vs_reference": 2.224
+      "contour_index": 4,
+      "figure_mae_vs_master": 0.001392,
+      "figure_mae_vs_reference": 2.2301
     },
     {
       "file": "07-sorpresa.svg",
@@ -174,17 +174,17 @@
       "internal_references_valid": true,
       "paths": 8603,
       "gradients": 6315,
-      "bytes": 2486842,
-      "sha256": "21d61f13cb8b681a5d21a9694f58bf89c0028c18d1141ce0401ae5d02bcd5b4d",
+      "bytes": 2494746,
+      "sha256": "a01bf926d7f45e0721d1fce7e19a4e3c89bff4a10c260ad2ad5366eb34d9326f",
       "viewBox": [
         369,
         927,
         200,
         371
       ],
-      "contour_index": 9,
-      "figure_mae_vs_master": 0.001702,
-      "figure_mae_vs_reference": 2.1754
+      "contour_index": 5,
+      "figure_mae_vs_master": 0.001574,
+      "figure_mae_vs_reference": 2.1618
     },
     {
       "file": "08-cansancio.svg",
@@ -194,17 +194,17 @@
       "internal_references_valid": true,
       "paths": 8240,
       "gradients": 5998,
-      "bytes": 2396781,
-      "sha256": "2fcbaa5dbd41c1605fae7c41e595c481a6bb2cb3f8ec5ed0d16f4ff8dd704615",
+      "bytes": 2404595,
+      "sha256": "d5b5f1a474abf767217f743501f1510f345b92e6ca8c2aab7bb868c3ec10cd44",
       "viewBox": [
         552,
         955,
         207,
         343
       ],
-      "contour_index": 4,
-      "figure_mae_vs_master": 0.001922,
-      "figure_mae_vs_reference": 2.1155
+      "contour_index": 0,
+      "figure_mae_vs_master": 0.001813,
+      "figure_mae_vs_reference": 2.1124
     },
     {
       "file": "09-ojos-cerrados.svg",
@@ -214,17 +214,17 @@
       "internal_references_valid": true,
       "paths": 8013,
       "gradients": 5906,
-      "bytes": 2353238,
-      "sha256": "0ab196eb549aa0f2c30d3e943cbd642c3eb2a00a67c128922a781d56220c6f92",
+      "bytes": 2361568,
+      "sha256": "7c172f2f666faad250d6a6eba8ebb0d4bc8585698930b9ee33a9c09ba572f585",
       "viewBox": [
         746,
         932,
         190,
         366
       ],
-      "contour_index": 6,
-      "figure_mae_vs_master": 0.002486,
-      "figure_mae_vs_reference": 2.078
+      "contour_index": 2,
+      "figure_mae_vs_master": 0.002378,
+      "figure_mae_vs_reference": 2.0789
     },
     {
       "file": "10-guino.svg",
@@ -234,17 +234,17 @@
       "internal_references_valid": true,
       "paths": 8321,
       "gradients": 6083,
-      "bytes": 2409357,
-      "sha256": "e17ef183a5b6c998a50abca88dd851c895b43a0a1adaa21d04788025dd901e72",
+      "bytes": 2417607,
+      "sha256": "9f747c8d5d77a5b31e727c6059f011d7903b70e37530bf009c8b0e55e36433b5",
       "viewBox": [
         923,
         935,
         199,
         363
       ],
-      "contour_index": 5,
-      "figure_mae_vs_master": 0.00282,
-      "figure_mae_vs_reference": 2.2925
+      "contour_index": 1,
+      "figure_mae_vs_master": 0.002634,
+      "figure_mae_vs_reference": 2.2649
     }
   ],
   "independent_renderer": [
@@ -256,15 +256,16 @@
     {
       "file": "06-risa.svg",
       "renderer": "Inkscape",
-      "mae_vs_cairosvg": 0.0933
+      "mae_vs_cairosvg": 0.074
     }
   ],
   "visual_review": {
     "status": "reviewed",
     "notes": [
-      "Comprobadas individualmente las cuatro vistas y ampliadas las seis expresiones; conservados el pelo ondulado, la barba corta y la mano de la pose de cansancio.",
-      "Revisadas las cremalleras, los pliegues de la chaqueta, la camiseta blanca, las costuras del vaquero y el calzado; sin fragmentos de otras figuras."
+      "Revisadas de nuevo las cuatro vistas y las seis expresiones tras recuperar la camiseta blanca; desaparecieron las manchas causadas por el recorte.",
+      "Comprobación exacta de que todos los trazados, gradientes y sombras de la ilustración siguen idénticos; la máscara fuera de las zonas protegidas no cambia ningún píxel.",
+      "Verificados pelo, barba, cremalleras, chaqueta, manos, vaqueros y calzado; comparación con la referencia y renderizado independiente."
     ]
   },
-  "created_utc": "2026-10-30T01:13:03.352193+00:00"
+  "created_utc": "2026-10-30T02:05:10.793812+00:00"
 }
