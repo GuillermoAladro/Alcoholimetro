@@ -1046,6 +1046,7 @@ Animaciones 2D/
 ├─ personajes/kiriku/           coordenadas de Kiriku y su atlas
 ├─ personajes/marta/            coordenadas de Marta y su atlas
 ├─ personajes/paradigma/        coordenadas de Paradigma y su atlas
+├─ personajes/rodri/            coordenadas de Rodri y su atlas
 ├─ escenas/                     una escena por archivo (00001 … 00010 y sus revisiones)
 ├─ herramientas/                 comprobar.py y grabar.py
 └─ vista previa/                 vídeos y fotogramas de cada animación
@@ -1156,6 +1157,13 @@ Opciones del montaje que usan las escenas nuevas (las anteriores no las activan 
 
 - **Piezas:** la cabeza del retrato con el pelo ondulado, bigote, perilla y barba de tres días (sin el cuello ni la cazadora del retrato, y con los huecos entre mechones sueltos como fondo), la cara roja, las cejas, la boca, el torso de la cazadora negra abierta con la camiseta blanca hasta la cintura del vaquero, las dos mangas enderezadas, las piernas del vaquero y la zapatilla con la suela nivelada.
 - **Limpieza:** se quitan las manos que asomaban de los bolsillos (solo la piel y su contorno) y se repintan el bajo de la cazadora, el borde del puño y la abertura del bolsillo.
+- **En pantalla:** los hombros son negros y la mano se dibuja aparte al sacarla del bolsillo.
+- **Altura:** con el mismo `p.s` mide prácticamente lo mismo que Guillermo.
+
+**Rodri** (`personajes/rodri/`) sale de `Avatares 2D/Rodri/Rodri-2D.png` con el recortador común.
+
+- **Piezas:** la cabeza del retrato con el pelo alborotado, el flequillo y la barba poblada (cuencas vacías y sin el cuello ni el plumífero del retrato), la cara roja, las cejas, la boca, el torso del plumífero negro abierto con la camiseta negra hasta la cintura del vaquero, las dos mangas acolchadas enderezadas, las piernas del vaquero y la zapatilla con la suela nivelada.
+- **Limpieza:** se quitan las manos que asomaban de los bolsillos (solo la piel y su contorno) y se repintan la camiseta, la cintura del vaquero, la abertura del bolsillo y el borde del puño.
 - **En pantalla:** los hombros son negros y la mano se dibuja aparte al sacarla del bolsillo.
 - **Altura:** con el mismo `p.s` mide prácticamente lo mismo que Guillermo.
 
