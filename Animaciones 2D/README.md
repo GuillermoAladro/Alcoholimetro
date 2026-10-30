@@ -82,6 +82,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00043 | Guillermo y Carla · El limbo | 14,40 s | [MP4 60 fps](vista%20previa/00043%20Guillermo%20y%20Carla%20-%20el%20limbo.mp4) · [fotogramas](vista%20previa/00043%20Guillermo%20y%20Carla%20-%20el%20limbo%20-%20fotogramas.png) |
 | 00044 | Guillermo y Carla · La melena | 13,60 s | [MP4 60 fps](vista%20previa/00044%20Guillermo%20y%20Carla%20-%20la%20melena.mp4) · [fotogramas](vista%20previa/00044%20Guillermo%20y%20Carla%20-%20la%20melena%20-%20fotogramas.png) |
 | 00045 | Guillermo y Carla · El retrato | 14,00 s | [MP4 60 fps](vista%20previa/00045%20Guillermo%20y%20Carla%20-%20el%20retrato.mp4) · [fotogramas](vista%20previa/00045%20Guillermo%20y%20Carla%20-%20el%20retrato%20-%20fotogramas.png) |
+| 00046 | Guillermo y Carla · La araña | 13,90 s | [MP4 60 fps](vista%20previa/00046%20Guillermo%20y%20Carla%20-%20la%20arana.mp4) · [fotogramas](vista%20previa/00046%20Guillermo%20y%20Carla%20-%20la%20arana%20-%20fotogramas.png) |
 | 00048 | Guillermo y Carla · El limón | 13,50 s | [MP4 60 fps](vista%20previa/00048%20Guillermo%20y%20Carla%20-%20el%20limon.mp4) · [fotogramas](vista%20previa/00048%20Guillermo%20y%20Carla%20-%20el%20limon%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
@@ -923,6 +924,23 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00045](vista%20previa/00045%20Guillermo%20y%20Carla%20-%20el%20retrato%20-%20fotogramas.png)
+
+### 00046 · Guillermo y Carla · La araña
+
+1. Negro.
+2. Rincón de cafetería con plantas: pared verde salvia, viga de madera, ventana de arco con luz de mañana y una monstera en su maceta de barro. Guillermo saca bíceps con los ojos cerrados delante de Carla, que le mira con las manos en los bolsillos y una ceja levantada.
+3. Una **arañita diminuta y monísima** baja a saltitos por su hilo desde la viga hasta quedarse delante de la nariz de Guillermo y le saluda con una patita.
+4. Guillermo abre los ojos, se queda bizco y congelado, suda… y **grita** con la boca enorme y el pelo de punta; la araña sube del susto como un yoyó y se esconde en la viga.
+5. **Salta a los brazos de Carla**, que le coge como a una princesa sin inmutarse: dobla las rodillas, le sujeta bajo los muslos y por la espalda, mira a cámara y suspira mientras él tiembla con los puños bajo la barbilla.
+6. Le deja en el suelo y Guillermo sale corriendo a esconderse detrás de ella; se asoma agachado por su hombro.
+7. Carla saca el índice y llama a la araña, que se columpia en su hilo y aterriza en la punta del dedo; el hilo se suelta y sube.
+8. Se la acerca a la cara, le lanza un besito con la mano (un corazón vuela hasta la araña, que se pone colorada) y Guillermo pone cara de asco.
+9. Carla baja el dedo hasta una hoja de la monstera y la araña se va andando a la hoja.
+10. Guillermo sale de su escondite, se estira la camiseta, se rasca la nuca para aplastar el pelo de punta y se pone a silbar como si nada.
+11. La araña le saluda desde la hoja: respingo, pelo de punta otra vez y a silbar más rápido. Carla guiña un ojo a cámara.
+12. Negro.
+
+![Fotogramas de 00046](vista%20previa/00046%20Guillermo%20y%20Carla%20-%20la%20arana%20-%20fotogramas.png)
 
 ### 00048 · Guillermo y Carla · El limón
 
