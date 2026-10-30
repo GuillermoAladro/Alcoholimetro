@@ -1,0 +1,422 @@
+{
+  "character": "Gabacho",
+  "source_git_blob": "a4895ab7d84adcc7573c5d62380d8dd33fc54a1e",
+  "master_git_blob": "dbe5b7184b29cb42f1aafbf4b2dda059d03a6d42",
+  "master_sha256": "9fced1b0a4fd321b2848fcd6ae1bdf84ed8835bc95eb79eb31794ceff26ff293",
+  "master_checks": {
+    "xml_valid": true,
+    "vector_only": true,
+    "unique_ids": true,
+    "internal_references_valid": true,
+    "paths": 126938,
+    "gradients": 88084
+  },
+  "method": "Exact extraction from original detailed vector master; individual contour selection and definition pruning",
+  "static_illustrations": true,
+  "selection": [
+    {
+      "contour": 15,
+      "box": [
+        120,
+        25,
+        445,
+        940
+      ],
+      "polygon": [
+        [
+          120,
+          25
+        ],
+        [
+          425,
+          25
+        ],
+        [
+          425,
+          250
+        ],
+        [
+          427,
+          278
+        ],
+        [
+          431,
+          306
+        ],
+        [
+          433,
+          329
+        ],
+        [
+          437,
+          346
+        ],
+        [
+          442,
+          370
+        ],
+        [
+          440,
+          410
+        ],
+        [
+          430,
+          470
+        ],
+        [
+          420,
+          510
+        ],
+        [
+          420,
+          940
+        ],
+        [
+          120,
+          940
+        ]
+      ]
+    },
+    {
+      "contour": 15,
+      "box": [
+        420,
+        25,
+        670,
+        940
+      ],
+      "polygon": [
+        [
+          425,
+          25
+        ],
+        [
+          425,
+          250
+        ],
+        [
+          427,
+          278
+        ],
+        [
+          431,
+          306
+        ],
+        [
+          433,
+          329
+        ],
+        [
+          437,
+          346
+        ],
+        [
+          442,
+          370
+        ],
+        [
+          440,
+          410
+        ],
+        [
+          430,
+          470
+        ],
+        [
+          420,
+          510
+        ],
+        [
+          420,
+          940
+        ],
+        [
+          670,
+          940
+        ],
+        [
+          670,
+          25
+        ]
+      ]
+    },
+    {
+      "contour": 14
+    },
+    {
+      "contour": 13
+    },
+    {
+      "box": [
+        0.0,
+        960.0,
+        192.0,
+        1300.0
+      ]
+    },
+    {
+      "box": [
+        192.0,
+        960.0,
+        380.0,
+        1300.0
+      ]
+    },
+    {
+      "box": [
+        380.0,
+        960.0,
+        560.0,
+        1300.0
+      ]
+    },
+    {
+      "box": [
+        560.0,
+        960.0,
+        733.0,
+        1300.0
+      ]
+    },
+    {
+      "box": [
+        733.0,
+        960.0,
+        923.0,
+        1300.0
+      ]
+    },
+    {
+      "box": [
+        923.0,
+        960.0,
+        1122.0,
+        1300.0
+      ]
+    }
+  ],
+  "files": [
+    {
+      "file": "01-frontal.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 25455,
+      "gradients": 17028,
+      "bytes": 6949688,
+      "sha256": "becbb285de48848c3dcd5e99c699e7b78fedbbf405aaba63e21788321773cb31",
+      "viewBox": [
+        112,
+        17,
+        342,
+        932
+      ],
+      "contour_index": 15,
+      "figure_mae_vs_master": 0.000646,
+      "figure_mae_vs_reference": 2.2497
+    },
+    {
+      "file": "02-tres-cuartos.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 21152,
+      "gradients": 14384,
+      "bytes": 5819024,
+      "sha256": "a2a0d3b12a0ae822c1db6b0a44cd1d04620ca340a73f697bbc3bf30e98adfaa1",
+      "viewBox": [
+        412,
+        17,
+        267,
+        932
+      ],
+      "contour_index": 15,
+      "figure_mae_vs_master": 0.001581,
+      "figure_mae_vs_reference": 2.4369
+    },
+    {
+      "file": "03-perfil.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 16512,
+      "gradients": 11088,
+      "bytes": 4448837,
+      "sha256": "de3da7485efdc928b74af05e6ed2794945ec4e41013da3dffd59ac73be1c198f",
+      "viewBox": [
+        666,
+        32,
+        188,
+        904
+      ],
+      "contour_index": 14,
+      "figure_mae_vs_master": 0.002812,
+      "figure_mae_vs_reference": 2.3767
+    },
+    {
+      "file": "04-espalda.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 21939,
+      "gradients": 14185,
+      "bytes": 5868100,
+      "sha256": "7b4e800e5769c68968e7913c8c1673f12727bc53c7bd75bd179a98716ec5e062",
+      "viewBox": [
+        844,
+        35,
+        278,
+        894
+      ],
+      "contour_index": 13,
+      "figure_mae_vs_master": 0.002352,
+      "figure_mae_vs_reference": 2.031
+    },
+    {
+      "file": "05-neutral.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 7247,
+      "gradients": 5422,
+      "bytes": 2193052,
+      "sha256": "379a88c4beda05b3d2b30630e1807a5843d8a331d9a7627d8132819dac5032a7",
+      "viewBox": [
+        0,
+        952,
+        201,
+        357
+      ],
+      "contour_index": null,
+      "figure_mae_vs_master": 0.0,
+      "figure_mae_vs_reference": 3.0889
+    },
+    {
+      "file": "06-risa.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 6985,
+      "gradients": 5299,
+      "bytes": 2135927,
+      "sha256": "c12df86478cf459c85902347a8a18be6a60d1401dc1ccc50d8e617985a0a3d55",
+      "viewBox": [
+        184,
+        952,
+        205,
+        357
+      ],
+      "contour_index": null,
+      "figure_mae_vs_master": 0.0,
+      "figure_mae_vs_reference": 3.0936
+    },
+    {
+      "file": "07-sorpresa.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 6866,
+      "gradients": 5028,
+      "bytes": 2059315,
+      "sha256": "46866834efeed8051a4256a37e6bcf5288909208bb775799911e78ea5a17682c",
+      "viewBox": [
+        372,
+        952,
+        197,
+        357
+      ],
+      "contour_index": null,
+      "figure_mae_vs_master": 0.0,
+      "figure_mae_vs_reference": 3.1904
+    },
+    {
+      "file": "08-cansancio.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 6446,
+      "gradients": 4861,
+      "bytes": 1989103,
+      "sha256": "e00d1b2460b0bd5e709db89d10825d231865f85ff95a609c9fde73904bb9421a",
+      "viewBox": [
+        552,
+        952,
+        190,
+        357
+      ],
+      "contour_index": null,
+      "figure_mae_vs_master": 0.0,
+      "figure_mae_vs_reference": 2.6407
+    },
+    {
+      "file": "09-ojos-cerrados.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 6984,
+      "gradients": 5258,
+      "bytes": 2128722,
+      "sha256": "97bb5ca6606f6ac39615800558a0ebf6c069d71fd92b2218fb52a0b1383876e7",
+      "viewBox": [
+        725,
+        952,
+        207,
+        357
+      ],
+      "contour_index": null,
+      "figure_mae_vs_master": 0.0,
+      "figure_mae_vs_reference": 2.9771
+    },
+    {
+      "file": "10-guino.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 7310,
+      "gradients": 5487,
+      "bytes": 2230082,
+      "sha256": "372f905334fb7049676ed5afba808eb4e02fa8d823980d1bae7523a13407a5d9",
+      "viewBox": [
+        915,
+        952,
+        207,
+        357
+      ],
+      "contour_index": null,
+      "figure_mae_vs_master": 0.0,
+      "figure_mae_vs_reference": 2.952
+    }
+  ],
+  "independent_renderer": [
+    {
+      "file": "01-frontal.svg",
+      "renderer": "Inkscape",
+      "mae_vs_cairosvg": 0.1009
+    },
+    {
+      "file": "06-risa.svg",
+      "renderer": "Inkscape",
+      "mae_vs_cairosvg": 0.0901
+    }
+  ],
+  "visual_review": {
+    "status": "reviewed",
+    "notes": [
+      "Cuatro vistas y seis expresiones comparadas individualmente con la referencia.",
+      "Rizos, cara, camiseta de Francia, escudo, estrellas, cuello tricolor y mangas preservados.",
+      "Separación manual de las mangas en contacto entre frontal y tres cuartos, siguiendo la oclusión visible original.",
+      "Seis retratos separados con límites propios; sin caras o fragmentos vecinos en los SVG finales."
+    ]
+  },
+  "created_utc": "2026-10-30T00:28:34.155263+00:00"
+}
