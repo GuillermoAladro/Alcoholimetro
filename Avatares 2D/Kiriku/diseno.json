@@ -1,0 +1,25 @@
+{
+  "character": "Kiriku",
+  "date": "2026-10-30",
+  "status": "single_design_created",
+  "file": "Kiriku-2D.png",
+  "width": 1122,
+  "height": 1402,
+  "sha256": "853711dd6722db449feca8a016493207a0fcffa308e05e64e5e8e433b159a9c7",
+  "generation_method": "Built-in image_gen; one final design",
+  "source_commit": "ba984b3dfbb10e382b87d1f87adf7880fd54dd97",
+  "source_svg": {
+    "path": "avatares SVG - Astra/Kiriku.svg",
+    "git_blob": "9cf69249cc48399f5981cc1ae50835cfcee13dd0"
+  },
+  "input_svg_preview": {
+    "path": "avatares SVG - Astra/Kiriku-preview.png",
+    "git_blob": "14146f58ccfe540407e0c847a087c29780316295"
+  },
+  "style_references": [
+    "../Guillermo-Aladro/Guillermo-Aladro-2D.png",
+    "../Ander/Ander-2D.png"
+  ],
+  "prompt": "Use case: stylized-concept.\nCreate ONE final 2D character-design sheet for the named person in this request, part of a coherent avatar collection. Render the person's own recognisable identity in the user's selected classic Dragon Ball-inspired cel-animation style.\nINPUT ROLES:\nImage 1 is the CURRENT approved SVG model-sheet preview of THIS PERSON, exported from the repository. It is the only reference for identity, facial proportions, hair, body, clothing and personal accessories. It contains multiple views and facial expressions; redraw one consistent design. Ignore its black preview background.\nImage 2 is the chosen Guillermo Aladro 03 design: STYLE ONLY, especially classic anime facial construction and cel shading.\nImage 3 is the chosen Ander 04 design: STYLE ONLY, especially confident thick outer ink, thinner interior lines and broad clear shadow shapes.\nNever transfer either style-reference man's face, hairstyle, beard, body, clothes or accessories to this person. Preserve the person in Image 1, including their adult age appearance and feminine or masculine features as shown.\nStyle: unmistakable hand-drawn 2D anime, classic Dragon Ball cel-animation language with semirealistic likeness. Expressive stylized eyes, individual eyebrow/nose/mouth/jaw construction; hair grouped into readable illustrated shapes while preserving the actual length, curl pattern and silhouette; confident dark contours with controlled line weight; flat local colors with 1-2 crisp cel shadows per material. No photorealistic skin, no 3D, no painterly effects or dramatic colored lights. No generic Goku or Vegeta face.\nComposition: portrait 4:5 sheet, plain warm-white background. At left show ONE complete full-body standing frontal three-quarter figure, natural relaxed pose from the source, with complete hair, both feet and all outfit accessories fully inside the canvas with a clear margin. At right show ONE enlarged head-and-shoulders portrait of precisely the same person and design, face unobstructed. Keep the head shape, hairstyle, clothing, jewelry and color palette internally consistent between figure and portrait. The second depiction is a portrait inset, not a second character. Natural adult body proportions, coherent anatomy, no extra limbs.\nOnly the small clean top-left name specified below; no other text, no watermark. No alternate outfits, extra characters, costumes, auras or powers. One final design, no variants.\nSpecific person and invariant details:\nKIRIKU: adult man with an athletic but natural build, warm light skin, long defined oval face, straight narrow nose, full lips, dark eyes and strong separate eyebrows. Very light sparse stubble along jaw and upper lip, no full beard. Short dark-brown hair with neat tapered sides and a soft side-swept top, no long curls or exaggerated spikes. His distinguishing outfit is a dark navy-black short-sleeve collared polo, with a separate black sweater draped over BOTH shoulders and its sleeves loosely tied at the upper chest. Small dark sunglasses hang vertically from the polo neckline in front below the sweater tie, not worn on his face. Keep these garments clearly separated and physically plausible, with the sweater's cuffs and hanging sleeves visible. Light blue straight jeans, gray-white low-top sneakers; both hands resting naturally in front jeans pockets, slightly tilted chin and calm confident expression. Same sweater, collar, sunglasses and light stubble in both full figure and enlarged portrait.\nText (verbatim): \"KIRIKU\".",
+  "visual_review": "Revisado: cabello corto ladeado, barba incipiente y rasgos propios consistentes. Polo negro, jersey sobre ambos hombros con mangas anudadas y gafas colgadas coherentes en figura y retrato; vaqueros y pies completos."
+}

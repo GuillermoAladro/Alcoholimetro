@@ -39,12 +39,21 @@
     "Gabacho": {
       "status": "single_design_created",
       "file": "Gabacho/Gabacho-2D.png"
+    },
+    "Kiriku": {
+      "status": "single_design_created",
+      "file": "Kiriku/Kiriku-2D.png"
+    },
+    "Laura": {
+      "status": "single_design_created",
+      "file": "Laura/Laura-2D.png"
+    },
+    "Marcos-Bombero": {
+      "status": "single_design_created",
+      "file": "Marcos-Bombero/Marcos-Bombero-2D.png"
     }
   },
   "pending": [
-    "Kiriku",
-    "Laura",
-    "Marcos-Bombero",
     "Marta",
     "Paradigma",
     "Rodri",

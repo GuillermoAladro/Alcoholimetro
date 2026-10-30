@@ -4,7 +4,7 @@
 
 Cada PNG contiene el cuerpo completo y un retrato ampliado del mismo diseño. Se conservan los rasgos, peinado, ropa y accesorios de cada persona a partir de sus SVG.
 
-Colección en curso: 6 de 14 avatares disponibles.
+Colección en curso: 9 de 14 avatares disponibles.
 
 | Persona | Archivo único | Estado |
 |---|---|---|
@@ -14,6 +14,9 @@ Colección en curso: 6 de 14 avatares disponibles.
 | [Dari](Dari/) | [PNG](Dari/Dari-2D.png) | Versión única |
 | [Deivi](Deivi/) | [PNG](Deivi/Deivi-2D.png) | Versión única |
 | [Gabacho](Gabacho/) | [PNG](Gabacho/Gabacho-2D.png) | Versión única |
+| [Kiriku](Kiriku/) | [PNG](Kiriku/Kiriku-2D.png) | Versión única |
+| [Laura](Laura/) | [PNG](Laura/Laura-2D.png) | Versión única |
+| [Marcos Bombero](Marcos-Bombero/) | [PNG](Marcos-Bombero/Marcos-Bombero-2D.png) | Versión única |
 
 ## Galería
 
@@ -28,5 +31,13 @@ Colección en curso: 6 de 14 avatares disponibles.
 | Deivi | Gabacho |
 |---|---|
 | [![Deivi](Deivi/Deivi-2D.png)](Deivi/Deivi-2D.png) | [![Gabacho](Gabacho/Gabacho-2D.png)](Gabacho/Gabacho-2D.png) |
+
+| Kiriku | Laura |
+|---|---|
+| [![Kiriku](Kiriku/Kiriku-2D.png)](Kiriku/Kiriku-2D.png) | [![Laura](Laura/Laura-2D.png)](Laura/Laura-2D.png) |
+
+| Marcos Bombero |  |
+|---|---|
+| [![Marcos Bombero](Marcos-Bombero/Marcos-Bombero-2D.png)](Marcos-Bombero/Marcos-Bombero-2D.png) |  |
 
 Los diseños son ilustraciones **PNG**, no SVG vectoriales ni animaciones terminadas. Cada carpeta conserva un `diseno.json` con el prompt de generación, las referencias y la revisión visual. Las imágenes se generaron con la herramienta integrada `image_gen`; los SVG originales permanecen en su carpeta.
