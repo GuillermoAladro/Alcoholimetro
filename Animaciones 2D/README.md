@@ -73,6 +73,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00037 | Guillermo y Ander · El abrazo de oso | 13,80 s | [MP4 60 fps](vista%20previa/00037%20Guillermo%20y%20Ander%20-%20el%20abrazo%20de%20oso.mp4) · [fotogramas](vista%20previa/00037%20Guillermo%20y%20Ander%20-%20el%20abrazo%20de%20oso%20-%20fotogramas.png) |
 | 00038 | Guillermo y Ander · El beer pong | 14,20 s | [MP4 60 fps](vista%20previa/00038%20Guillermo%20y%20Ander%20-%20el%20beer%20pong.mp4) · [fotogramas](vista%20previa/00038%20Guillermo%20y%20Ander%20-%20el%20beer%20pong%20-%20fotogramas.png) |
 | 00040 | Guillermo y Ander · La guitarra | 13,60 s | [MP4 60 fps](vista%20previa/00040%20Guillermo%20y%20Ander%20-%20la%20guitarra.mp4) · [fotogramas](vista%20previa/00040%20Guillermo%20y%20Ander%20-%20la%20guitarra%20-%20fotogramas.png) |
+| 00041 | Guillermo y Carla · La pasarela | 14,00 s | [MP4 60 fps](vista%20previa/00041%20Guillermo%20y%20Carla%20-%20la%20pasarela.mp4) · [fotogramas](vista%20previa/00041%20Guillermo%20y%20Carla%20-%20la%20pasarela%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -800,6 +801,24 @@ Corrige los brazos, los apoyos y los contactos con los paraguas. Mantiene comple
 10. Negro.
 
 ![Fotogramas de 00040](vista%20previa/00040%20Guillermo%20y%20Ander%20-%20la%20guitarra%20-%20fotogramas.png)
+
+### 00041 · Guillermo y Carla · La pasarela
+
+1. Negro.
+2. Bar convertido en pasarela: pared morada, cortina de espumillón, marco de bombillas, espejo dorado y una franja de luz en el suelo con siluetas de público y sus cámaras. En medio, un charco y una señal amarilla de suelo mojado. Guillermo espera a la izquierda.
+3. Carla entra desfilando desde la derecha como una modelo: cadera de lado a lado, melena botando y flashes de los fotógrafos. Guillermo se queda con la boca abierta y le salen corazones.
+4. Carla se planta con un taconazo, manos en las caderas, mira a cámara y da una vuelta sobre sí misma.
+5. Pose final: una mano en el pelo y un guiño a cámara. Guillermo se abanica la cara con la mano.
+6. Carla mira a Guillermo y, con la palma hacia arriba, le cede la pasarela. Él sonríe a cámara con chulería y se sacude como un atleta.
+7. Guillermo desfila exagerando las caderas, con morritos de pato y una mano en la cadera. Carla se tapa la boca para no reírse.
+8. **Pisa el charco:** resbala, abre las piernas en un espagat completo (un flash lo pilla en pleno vuelo) y la señal se tambalea.
+9. Sale deslizándose por el suelo mojado haciendo «¡tachán!» con los brazos y se para justo con el talón en la bota de Carla.
+10. Recostado sobre una mano, la pose: guiño, morritos y pistola con los dedos apuntando a Carla.
+11. Carla se ríe a carcajadas, hace un marco de foto con las manos y **¡clic!**: flash y esquinas de visor alrededor de Guillermo.
+12. Guillermo sonríe forzado y sudando; Carla le guiña un ojo a cámara.
+13. Negro.
+
+![Fotogramas de 00041](vista%20previa/00041%20Guillermo%20y%20Carla%20-%20la%20pasarela%20-%20fotogramas.png)
 
 ## Ver y grabar
 
