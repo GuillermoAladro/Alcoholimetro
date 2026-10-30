@@ -1,0 +1,262 @@
+{
+  "scene": "00020.2",
+  "durationSeconds": 14.95,
+  "renderedFrames": 898,
+  "results": [
+    {
+      "name": "Original y revisión registradas",
+      "passed": true
+    },
+    {
+      "name": "Negro absoluto inicial y final",
+      "passed": true,
+      "details": [
+        {
+          "t": 0,
+          "max": 0
+        },
+        {
+          "t": 0.016666666666666666,
+          "max": 0
+        },
+        {
+          "t": 0.03333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.05,
+          "max": 0
+        },
+        {
+          "t": 0.06666666666666667,
+          "max": 0
+        },
+        {
+          "t": 0.08333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.1,
+          "max": 0
+        },
+        {
+          "t": 0.11666666666666667,
+          "max": 0
+        },
+        {
+          "t": 14.833333333333334,
+          "max": 0
+        },
+        {
+          "t": 14.85,
+          "max": 0
+        },
+        {
+          "t": 14.866666666666667,
+          "max": 0
+        },
+        {
+          "t": 14.883333333333333,
+          "max": 0
+        },
+        {
+          "t": 14.9,
+          "max": 0
+        },
+        {
+          "t": 14.916666666666666,
+          "max": 0
+        },
+        {
+          "t": 14.933333333333334,
+          "max": 0
+        },
+        {
+          "t": 14.95,
+          "max": 0
+        }
+      ]
+    },
+    {
+      "name": "Sin cortes visuales inesperados",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Geometría finita a 120 Hz",
+      "passed": true,
+      "details": {
+        "samples": 1795,
+        "nonfinite": 0
+      }
+    },
+    {
+      "name": "Cuatro muñecas unidas durante toda la escena",
+      "passed": true,
+      "details": {
+        "maxGapPx": 2.400843675146939e-7
+      }
+    },
+    {
+      "name": "Pies inmóviles hasta arrodillarse o empezar a caminar",
+      "passed": true,
+      "details": {
+        "maxDriftPx": 0
+      }
+    },
+    {
+      "name": "Tres rondas legibles: tijera/piedra, papel/tijera y piedra/papel",
+      "passed": true,
+      "details": [
+        {
+          "g": "tijera",
+          "l": "piedra",
+          "correct": true
+        },
+        {
+          "g": "papel",
+          "l": "tijera",
+          "correct": true
+        },
+        {
+          "g": "piedra",
+          "l": "papel",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "name": "La tercera ronda acelera sin alterar los tres golpes",
+      "passed": true
+    },
+    {
+      "name": "Los dos forros salen después de meter las manos en los bolsillos",
+      "passed": true
+    },
+    {
+      "name": "La polilla aparece junto al forro y abandona la escena",
+      "passed": true,
+      "details": {
+        "origin": {
+          "x": 288.9386776263099,
+          "y": 465.08330027928866
+        },
+        "moth": {
+          "x": 292.04877912928316,
+          "y": 471.37504132097087,
+          "u": 0,
+          "aleteo": 0.5348137153481068
+        }
+      }
+    },
+    {
+      "name": "La tarjeta conserva sus cuatro esquinas al soltarla",
+      "passed": true,
+      "details": {
+        "maxCornerJumpPx": 0.000037551834498865734
+      }
+    },
+    {
+      "name": "La tarjeta aterriza con la misma posición, orientación y escala",
+      "passed": true,
+      "details": {
+        "maxCornerJumpPx": 0.00008821108580764587
+      }
+    },
+    {
+      "name": "Rodillas y zapatos respetan el suelo durante la caída y los pasos",
+      "passed": true,
+      "details": {
+        "samples": 92,
+        "worstBottom": 566,
+        "floor": 566
+      }
+    },
+    {
+      "name": "Cabezas y manos completas; cuerpos enteros en los planos generales",
+      "passed": true,
+      "details": {
+        "samples": 180,
+        "cut": []
+      }
+    },
+    {
+      "name": "Las tres palmaditas alcanzan el pelo",
+      "passed": true,
+      "details": [
+        {
+          "t": 12.99,
+          "pixels": 886,
+          "minGap": 0
+        },
+        {
+          "t": 13.24,
+          "pixels": 886,
+          "minGap": 0
+        },
+        {
+          "t": 13.47,
+          "pixels": 886,
+          "minGap": 0
+        }
+      ]
+    },
+    {
+      "name": "Guiño final con un solo ojo cerrado",
+      "passed": true
+    },
+    {
+      "name": "Trayectorias idénticas al buscar directamente",
+      "passed": true
+    },
+    {
+      "name": "Rebobinado y reproducción idénticos a 30/60/120 fps",
+      "passed": true,
+      "details": {
+        "reverse": true,
+        "fpsChecks": [
+          {
+            "fps": 30,
+            "matches": true
+          },
+          {
+            "fps": 60,
+            "matches": true
+          },
+          {
+            "fps": 120,
+            "matches": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Atlas cargados",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Selector, reinicio, avance, retroceso, búsqueda y reproducción",
+      "passed": true
+    },
+    {
+      "name": "Modo kiosco",
+      "passed": true
+    },
+    {
+      "name": "Sin errores JavaScript ni recursos fallidos",
+      "passed": true,
+      "details": {
+        "errors": [],
+        "failures": []
+      }
+    }
+  ],
+  "paintMs": {
+    "median": 2.6999999955296516,
+    "p95": 4.4000000059604645,
+    "max": 52.29999999701977
+  },
+  "browser": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.0 Safari/537.36",
+  "passed": true
+}
