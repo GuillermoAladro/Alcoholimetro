@@ -1,0 +1,198 @@
+{
+  "scene": "00009.2",
+  "durationSeconds": 14,
+  "renderedFrames": 841,
+  "results": [
+    {
+      "name": "Original y revisión registradas",
+      "passed": true
+    },
+    {
+      "name": "Negro absoluto inicial y final",
+      "passed": true,
+      "details": [
+        {
+          "t": 0,
+          "max": 0
+        },
+        {
+          "t": 0.016666666666666666,
+          "max": 0
+        },
+        {
+          "t": 0.03333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.05,
+          "max": 0
+        },
+        {
+          "t": 0.06666666666666667,
+          "max": 0
+        },
+        {
+          "t": 0.08333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.1,
+          "max": 0
+        },
+        {
+          "t": 0.11666666666666667,
+          "max": 0
+        },
+        {
+          "t": 13.883333333333333,
+          "max": 0
+        },
+        {
+          "t": 13.9,
+          "max": 0
+        },
+        {
+          "t": 13.916666666666666,
+          "max": 0
+        },
+        {
+          "t": 13.933333333333334,
+          "max": 0
+        },
+        {
+          "t": 13.95,
+          "max": 0
+        },
+        {
+          "t": 13.966666666666667,
+          "max": 0
+        },
+        {
+          "t": 13.983333333333333,
+          "max": 0
+        },
+        {
+          "t": 14,
+          "max": 0
+        }
+      ]
+    },
+    {
+      "name": "Sin cortes visuales inesperados",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Geometría finita a 120 Hz",
+      "passed": true,
+      "details": {
+        "samples": 1681,
+        "nonfinite": 0
+      }
+    },
+    {
+      "name": "Muñecas unidas al equilibrarse y retirar la mano",
+      "passed": true,
+      "details": {
+        "maxGapPx": 2.1465743211529145e-7
+      }
+    },
+    {
+      "name": "Pies de apoyo sin deslizamiento en la llegada y en la línea",
+      "passed": true,
+      "details": {
+        "samples": 1126,
+        "maxGapPx": 5.684341886080802e-14
+      }
+    },
+    {
+      "name": "Índice toca el ojo con la inercia de cabeza aplicada",
+      "passed": true,
+      "details": {
+        "gapPx": 1.970139104017036e-14
+      }
+    },
+    {
+      "name": "Pie elevado y pie de apoyo durante la prueba de equilibrio",
+      "passed": true
+    },
+    {
+      "name": "Deslizamiento continuo al caer de culo",
+      "passed": true,
+      "details": {
+        "speedBefore": 699.9999995571214,
+        "speedAfter": 699.9995999734664
+      }
+    },
+    {
+      "name": "Zapatilla de regreso sin atravesar el asfalto",
+      "passed": true,
+      "details": {
+        "maxBottom": 547.6635845858387,
+        "floor": 548
+      }
+    },
+    {
+      "name": "Personaje completo durante las pruebas de equilibrio",
+      "passed": true,
+      "details": {
+        "samples": 80,
+        "cut": [],
+        "minTop": 28
+      }
+    },
+    {
+      "name": "Trayectorias idénticas al buscar directamente",
+      "passed": true
+    },
+    {
+      "name": "Rebobinado y reproducción idénticos a 30/60/120 fps",
+      "passed": true,
+      "details": {
+        "reverse": true,
+        "fpsChecks": [
+          {
+            "fps": 30,
+            "matches": true
+          },
+          {
+            "fps": 60,
+            "matches": true
+          },
+          {
+            "fps": 120,
+            "matches": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Atlas cargados",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Selector, reinicio, avance, retroceso, búsqueda y reproducción",
+      "passed": true
+    },
+    {
+      "name": "Modo kiosco",
+      "passed": true
+    },
+    {
+      "name": "Sin errores JavaScript ni recursos fallidos",
+      "passed": true,
+      "details": {
+        "errors": [],
+        "failures": []
+      }
+    }
+  ],
+  "paintMs": {
+    "median": 1.8000000044703484,
+    "p95": 3.4000000059604645,
+    "max": 14.299999997019768
+  },
+  "browser": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.0 Safari/537.36",
+  "passed": true
+}
