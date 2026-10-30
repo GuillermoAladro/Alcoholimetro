@@ -1,0 +1,143 @@
+{
+  "scene": "00020",
+  "baselineCommit": "484eb78a0512f671cad97debc2674ed79a1025af",
+  "frames": [
+    {
+      "t": 0.05,
+      "unchanged": true
+    },
+    {
+      "t": 0.8,
+      "unchanged": true
+    },
+    {
+      "t": 1.4,
+      "unchanged": true
+    },
+    {
+      "t": 2.1,
+      "unchanged": true
+    },
+    {
+      "t": 2.4,
+      "unchanged": true
+    },
+    {
+      "t": 2.7,
+      "unchanged": true
+    },
+    {
+      "t": 3,
+      "unchanged": true
+    },
+    {
+      "t": 3.28,
+      "unchanged": true
+    },
+    {
+      "t": 3.6,
+      "unchanged": true
+    },
+    {
+      "t": 4.1,
+      "unchanged": true
+    },
+    {
+      "t": 4.9,
+      "unchanged": true
+    },
+    {
+      "t": 5.2,
+      "unchanged": true
+    },
+    {
+      "t": 5.8,
+      "unchanged": true
+    },
+    {
+      "t": 6.1,
+      "unchanged": true
+    },
+    {
+      "t": 6.5,
+      "unchanged": true
+    },
+    {
+      "t": 7,
+      "unchanged": true
+    },
+    {
+      "t": 7.42,
+      "unchanged": true
+    },
+    {
+      "t": 7.92,
+      "unchanged": true
+    },
+    {
+      "t": 8.17,
+      "unchanged": true
+    },
+    {
+      "t": 8.5,
+      "unchanged": true
+    },
+    {
+      "t": 8.9,
+      "unchanged": true
+    },
+    {
+      "t": 9.22,
+      "unchanged": true
+    },
+    {
+      "t": 9.7,
+      "unchanged": true
+    },
+    {
+      "t": 10.12,
+      "unchanged": true
+    },
+    {
+      "t": 10.6,
+      "unchanged": true
+    },
+    {
+      "t": 11.2,
+      "unchanged": true
+    },
+    {
+      "t": 11.72,
+      "unchanged": true
+    },
+    {
+      "t": 11.9,
+      "unchanged": true
+    },
+    {
+      "t": 12.07,
+      "unchanged": true
+    },
+    {
+      "t": 12.5,
+      "unchanged": true
+    },
+    {
+      "t": 12.9,
+      "unchanged": true
+    },
+    {
+      "t": 13.2,
+      "unchanged": true
+    },
+    {
+      "t": 13.7,
+      "unchanged": true
+    },
+    {
+      "t": 14.9,
+      "unchanged": true
+    }
+  ],
+  "unchanged": true
+}
