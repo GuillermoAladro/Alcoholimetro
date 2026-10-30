@@ -8,19 +8,28 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 - **Sin títulos ni textos** dentro de la animación.
 - **Personajes sacados del avatar 2D.** No se dibujan muñecos aparte. Solo se añade, con el mismo trazo, lo que el avatar no trae (por ejemplo, la mano que agarra algo) y los gestos de la cara.
 - **Fluidez.** Cada escena se calcula a partir del tiempo absoluto `t`. Se ve igual a 30, 60 o 120 fps, y se puede rebobinar o grabar sin saltos. `comprobar.py` busca cortes bruscos entre fotogramas.
-- **Formato.** Lienzo de 1024 × 600 (la pantalla de 7"). IDs de cinco cifras (`00001`, `00002`…). Un archivo por escena en `escenas/`.
+- **Formato.** Lienzo de 1024 × 600 (la pantalla de 7"). IDs de cinco cifras (`00001`, `00002`…), con sufijo para revisiones (`00001.2`). Un archivo por escena en `escenas/`.
 
 ## Animaciones
 
 | ID | Nombre | Duración | Vista previa |
 |---|---|---|---|
 | 00001 | Guillermo y la jarra | 15,45 s | [MP4 60 fps](vista%20previa/00001%20Guillermo%20y%20la%20jarra.mp4) · [fotogramas](vista%20previa/00001%20Guillermo%20y%20la%20jarra%20-%20fotogramas.png) |
+| 00001.2 | Guillermo y la jarra · revisada | 15,45 s | [MP4 60 fps](vista%20previa/00001.2%20Guillermo%20y%20la%20jarra.mp4) · [fotogramas](vista%20previa/00001.2%20Guillermo%20y%20la%20jarra%20-%20fotogramas.png) · [revisión](revision/00001.2.md) |
 
 ### 00001 · Guillermo y la jarra
 
 Negro → Guillermo Aladro entra andando desde la izquierda con una jarra llena → se para en el centro → se la bebe entera en cuatro tragos (la cerveza queda horizontal y llega justo al borde) → «aaah» con bigote de espuma → aguanta el eructo con los mofletes hinchados → eructo con onda expansiva → mira a cámara, brinda y guiña un ojo → sale andando por la derecha → negro.
 
 ![Fotogramas de 00001](vista%20previa/00001%20Guillermo%20y%20la%20jarra%20-%20fotogramas.png)
+
+### 00001.2 · Revisión de continuidad
+
+Conserva el guion y el avatar de 00001. Corrige la unión del brazo con la mano, el codo al doblarse, el contacto jarra–boca y el volumen de cerveza durante los tragos. El zoom mantiene completos el pelo y los zapatos; el temblor del eructo entra y sale suavemente. La 00001 original se conserva.
+
+![Fotogramas de 00001.2](vista%20previa/00001.2%20Guillermo%20y%20la%20jarra%20-%20fotogramas.png)
+
+Para verla, elige **00001.2** en `ver.html` o abre `ver.html?id=00001.2`. [Informe y comprobaciones reproducibles](revision/00001.2.md).
 
 ## Ver y grabar
 
@@ -31,6 +40,8 @@ Negro → Guillermo Aladro entra andando desde la izquierda con una jarra llena 
 - **Grabar.** `python3 herramientas/grabar.py 00001` saca un MP4 a 60 fps en `vista previa/`.
 
 Las herramientas usan Playwright (Chromium) y ffmpeg.
+
+La revisión 00001.2 incluye además `node herramientas/validar-00001.2.cjs [ruta-a-chromium]` (Playwright para Node). Comprueba el líquido, los contactos, el encuadre completo, los controles y el determinismo a 30/60/120 fps. Guarda el resultado en `revision/00001.2-resultados.json`.
 
 ## Estructura
 

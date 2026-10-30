@@ -1,0 +1,195 @@
+{
+  "scene": "00001.2",
+  "durationSeconds": 15.45,
+  "renderedFrames": 928,
+  "results": [
+    {
+      "name": "ID solicitado y registro de ambas versiones",
+      "passed": true
+    },
+    {
+      "name": "Negro absoluto inicial y final",
+      "passed": true,
+      "details": [
+        {
+          "t": 0,
+          "max": 0
+        },
+        {
+          "t": 0.016666666666666666,
+          "max": 0
+        },
+        {
+          "t": 0.03333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.05,
+          "max": 0
+        },
+        {
+          "t": 0.06666666666666667,
+          "max": 0
+        },
+        {
+          "t": 0.08333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.1,
+          "max": 0
+        },
+        {
+          "t": 0.11666666666666667,
+          "max": 0
+        },
+        {
+          "t": 15.333333333333334,
+          "max": 0
+        },
+        {
+          "t": 15.35,
+          "max": 0
+        },
+        {
+          "t": 15.366666666666667,
+          "max": 0
+        },
+        {
+          "t": 15.383333333333333,
+          "max": 0
+        },
+        {
+          "t": 15.4,
+          "max": 0
+        },
+        {
+          "t": 15.416666666666666,
+          "max": 0
+        },
+        {
+          "t": 15.433333333333334,
+          "max": 0
+        },
+        {
+          "t": 15.45,
+          "max": 0
+        }
+      ]
+    },
+    {
+      "name": "Sin cortes bruscos a 60 fps",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Geometría finita a 120 Hz",
+      "passed": true,
+      "details": {
+        "samples": 1855,
+        "nonfinite": 0
+      }
+    },
+    {
+      "name": "Muñeca unida al brazo",
+      "passed": true,
+      "details": {
+        "maxGapPx": 2.445589615116925e-7,
+        "tolerancePx": 0.1
+      }
+    },
+    {
+      "name": "Borde en contacto con la boca durante los cuatro tragos",
+      "passed": true,
+      "details": {
+        "samples": 313,
+        "maxGapPx": 1.970139104017036e-14,
+        "tolerancePx": 0.1
+      }
+    },
+    {
+      "name": "Cerveza sin volumen imposible sobre el borde",
+      "passed": true,
+      "details": {
+        "maxExcessFraction": 5.0178801669353845e-9
+      }
+    },
+    {
+      "name": "La jarra se vacía sin rellenarse",
+      "passed": true,
+      "details": {
+        "maxIncrease": 0
+      }
+    },
+    {
+      "name": "Pies apoyados sin deslizar",
+      "passed": true,
+      "details": {
+        "maxSlidePx": 1.4210854715202004e-14
+      }
+    },
+    {
+      "name": "Cabeza, jarra y pies completos durante la acción central",
+      "passed": true,
+      "details": {
+        "samples": 79,
+        "cut": [],
+        "minTop": 40,
+        "maxBottom": 560
+      }
+    },
+    {
+      "name": "Mismo resultado a 30, 60 y 120 fps y al rebobinar",
+      "passed": true,
+      "details": {
+        "fpsChecks": [
+          {
+            "fps": 30,
+            "matches": true
+          },
+          {
+            "fps": 60,
+            "matches": true
+          },
+          {
+            "fps": 120,
+            "matches": true
+          }
+        ],
+        "reverse": true
+      }
+    },
+    {
+      "name": "Atlas cargado sin errores",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Selector, reinicio, avance, retroceso, búsqueda y reproducción",
+      "passed": true
+    },
+    {
+      "name": "Reproducción desde el final reinicia la escena",
+      "passed": true
+    },
+    {
+      "name": "Modo kiosco oculta los controles",
+      "passed": true
+    },
+    {
+      "name": "Sin errores JavaScript ni fallos de recursos",
+      "passed": true,
+      "details": {
+        "errors": [],
+        "failures": []
+      }
+    }
+  ],
+  "paintMs": {
+    "median": 0.8000000044703484,
+    "p95": 1.7000000029802322,
+    "max": 18.399999998509884
+  },
+  "browser": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.0 Safari/537.36",
+  "passed": true
+}

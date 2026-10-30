@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1024,
+        "height": 600,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "60/1",
+        "duration": "15.466667",
+        "nb_frames": "928"
+      }
+    ]
+  },
+  "black_frames_checked": 16,
+  "max_rgb_by_frame": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "all_black": true,
+  "bytes": 1918767
+}

@@ -292,7 +292,9 @@ const Guillermo = (() => {
         for (let i = 0; i < 4; i++) { const x = JX0 + 8 + (JX1 - JX0 - 16) * i / 3; g.arc(x, JY0 - 2 - (i % 2) * 2, 9 * corona + 2, Math.PI, 0); }
         g.lineTo(JX1 - 1, JY0 + 2); g.closePath(); g.fillStyle = C.espuma; g.fill(); g.lineWidth = LW; g.strokeStyle = C.tinta; g.stroke(); }
     } else if (j.restos) {
-      g.save(); cuerpo(); g.clip(); g.fillStyle = "rgba(255,248,230,0.75)";
+      g.save(); cuerpo(); g.clip();
+      g.globalAlpha *= typeof j.restos === "number" ? clamp(j.restos) : 1;
+      g.fillStyle = "rgba(255,248,230,0.75)";
       for (let i = 0; i < 7; i++) { g.beginPath(); g.ellipse(JX0 + 9 + M2.hash(i) * 42, JY0 + 12 + M2.hash(i + 7) * 62, 5, 2.5, 0.3, 0, Math.PI * 2); g.fill(); }
       g.restore();
     }
@@ -310,9 +312,11 @@ const Guillermo = (() => {
   const MUNECA_R = 13;                       // de la muñeca al centro del puño (unidades de jarra)
   function brazo(p) {
     const T = tronco(p), h = T(HOMBRO), j = p.jarra, mu = j.mu ?? -1.75;
-    const m = rotP({ x: Math.cos(mu) * MUNECA_R * JK, y: Math.sin(mu) * MUNECA_R * JK }, j.ang);
+    const jk = j.escala || JK;
+    const m = rotP({ x: Math.cos(mu) * MUNECA_R * jk, y: Math.sin(mu) * MUNECA_R * jk }, j.ang);
     const obj = { x: j.x + m.x, y: j.y + m.y };
-    const c = R.ik(h, obj, BRAZO_L, BRAZO_L * 0.5, 42, p.brazo.dobla, 1.06);
+    const solver = p.ikContinuo ? R.ikContinuo : R.ik;
+    const c = solver(h, obj, BRAZO_L, BRAZO_L * 0.5, 42, p.brazo.dobla, 1.06);
     return { h, c };
   }
 
@@ -345,8 +349,10 @@ const Guillermo = (() => {
     // brazo + jarra + puño
     const B = brazo(p);
     g.save(); g.fillStyle = rgb(PAL.camiseta); g.beginPath(); g.arc(B.h.x - 8, B.h.y + 12, 20, 0, Math.PI * 2); g.fill(); g.restore();
-    R.tira(g, A, "brazo", B.c, 16);
-    g.save(); g.translate(p.jarra.x, p.jarra.y); g.rotate(p.jarra.ang); g.scale(JK, JK);
+    if (p.ikContinuo) R.tiraContinua(g, A, "brazo", B.c);
+    else R.tira(g, A, "brazo", B.c, 16);
+    const jk = p.jarra.escala || JK;
+    g.save(); g.translate(p.jarra.x, p.jarra.y); g.rotate(p.jarra.ang); g.scale(jk, jk);
     jarra(g, p.jarra, t); puno(g); g.restore();
     g.restore();
     return true;
