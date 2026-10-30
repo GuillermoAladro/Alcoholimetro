@@ -40,6 +40,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00012 | Guillermo y Laura · El alcoholímetro | 14,00 s | [MP4 60 fps](vista%20previa/00012%20Guillermo%20y%20Laura%20-%20el%20alcoholimetro.mp4) · [fotogramas](vista%20previa/00012%20Guillermo%20y%20Laura%20-%20el%20alcoholimetro%20-%20fotogramas.png) |
 | 00012.2 | Guillermo y Laura · El alcoholímetro · revisada | 14 s | [MP4 60 fps](vista%20previa/00012.2%20Guillermo%20y%20Laura%20-%20el%20alcoholimetro.mp4) · [fotogramas](vista%20previa/00012.2%20Guillermo%20y%20Laura%20-%20el%20alcoholimetro%20-%20fotogramas.png) · [revisión](revision/00012.2.md) |
 | 00013 | Guillermo y Laura · La pajita | 13,40 s | [MP4 60 fps](vista%20previa/00013%20Guillermo%20y%20Laura%20-%20la%20pajita.mp4) · [fotogramas](vista%20previa/00013%20Guillermo%20y%20Laura%20-%20la%20pajita%20-%20fotogramas.png) |
+| 00013.2 | Guillermo y Laura · La pajita · revisada | 13,4 s | [MP4 60 fps](vista%20previa/00013.2%20Guillermo%20y%20Laura%20-%20la%20pajita.mp4) · [fotogramas](vista%20previa/00013.2%20Guillermo%20y%20Laura%20-%20la%20pajita%20-%20fotogramas.png) · [revisión](revision/00013.2.md) |
 | 00014 | Guillermo y Laura · El baile lento | 14,20 s | [MP4 60 fps](vista%20previa/00014%20Guillermo%20y%20Laura%20-%20el%20baile%20lento.mp4) · [fotogramas](vista%20previa/00014%20Guillermo%20y%20Laura%20-%20el%20baile%20lento%20-%20fotogramas.png) |
 | 00015 | Guillermo y Laura · La tarta | 14,25 s | [MP4 60 fps](vista%20previa/00015%20Guillermo%20y%20Laura%20-%20la%20tarta.mp4) · [fotogramas](vista%20previa/00015%20Guillermo%20y%20Laura%20-%20la%20tarta%20-%20fotogramas.png) |
 | 00016 | Guillermo y Laura · El truco de magia | 14,60 s | [MP4 60 fps](vista%20previa/00016%20Guillermo%20y%20Laura%20-%20el%20truco%20de%20magia.mp4) · [fotogramas](vista%20previa/00016%20Guillermo%20y%20Laura%20-%20el%20truco%20de%20magia%20-%20fotogramas.png) |
@@ -339,6 +340,12 @@ Corrige la continuidad de los brazos, la trayectoria de la boquilla, el lanzamie
 11. Negro.
 
 ![Fotogramas de 00013](vista%20previa/00013%20Guillermo%20y%20Laura%20-%20la%20pajita%20-%20fotogramas.png)
+
+
+### 00013.2 · Revisión de continuidad
+
+Corrige el alcance de los brazos al pedir, coger y soltar la guinda; fija los pies al inclinarse y mantiene el rabito dentro del fondo de la copa. Se conserva la original. [Informe y pruebas](revision/00013.2.md).
+
 
 ### 00014 · Guillermo y Laura · El baile lento
 
