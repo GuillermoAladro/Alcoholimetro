@@ -82,6 +82,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00043 | Guillermo y Carla · El limbo | 14,40 s | [MP4 60 fps](vista%20previa/00043%20Guillermo%20y%20Carla%20-%20el%20limbo.mp4) · [fotogramas](vista%20previa/00043%20Guillermo%20y%20Carla%20-%20el%20limbo%20-%20fotogramas.png) |
 | 00044 | Guillermo y Carla · La melena | 13,60 s | [MP4 60 fps](vista%20previa/00044%20Guillermo%20y%20Carla%20-%20la%20melena.mp4) · [fotogramas](vista%20previa/00044%20Guillermo%20y%20Carla%20-%20la%20melena%20-%20fotogramas.png) |
 | 00045 | Guillermo y Carla · El retrato | 14,00 s | [MP4 60 fps](vista%20previa/00045%20Guillermo%20y%20Carla%20-%20el%20retrato.mp4) · [fotogramas](vista%20previa/00045%20Guillermo%20y%20Carla%20-%20el%20retrato%20-%20fotogramas.png) |
+| 00048 | Guillermo y Carla · El limón | 13,50 s | [MP4 60 fps](vista%20previa/00048%20Guillermo%20y%20Carla%20-%20el%20limon.mp4) · [fotogramas](vista%20previa/00048%20Guillermo%20y%20Carla%20-%20el%20limon%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -922,6 +923,20 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00045](vista%20previa/00045%20Guillermo%20y%20Carla%20-%20el%20retrato%20-%20fotogramas.png)
+
+### 00048 · Guillermo y Carla · El limón
+
+1. Negro.
+2. Terraza encalada junto al mar: limonero en maceta, contraventana azul con geranios y guirnalda de bombillas. En una mesita, un plato con dos gajos de limón y un azucarero. Guillermo mira el plato y luego a cámara, muy chulo; Carla levanta una ceja.
+3. Carla coge su gajo, le pega un mordisco sin pestañear y lo mastica con elegancia sin quitarle ojo; Guillermo se queda pasmado.
+4. Carla deja la cáscara en el plato. Guillermo resopla, coge su gajo, lo enseña a cámara con un guiño y le pega un buen bocado; mastica sobrado…
+5. …¡el ácido!: **se le arruga toda la cara** (ojos apretados, morritos, mofletes chupados, cabeza estrujada y tinte verdoso), se le pone el pelo de punta, se le cae la cáscara, que bota en la mesa, y tiembla de la cabeza a los pies con los puños apretados.
+6. Carla se parte de risa, coge un terrón de azúcar y se lo ofrece con una sonrisa.
+7. Guillermo abre un ojo, alarga la mano temblando, coge el terrón y se lo mete en la boca: crac, con migas.
+8. Se le desarruga la cara, se le baja el pelo y suspira aliviado; un último escalofrío, Carla se ríe y guiña un ojo, y él sonríe con el pulgar arriba.
+9. Negro.
+
+![Fotogramas de 00048](vista%20previa/00048%20Guillermo%20y%20Carla%20-%20el%20limon%20-%20fotogramas.png)
 
 ## Ver y grabar
 
