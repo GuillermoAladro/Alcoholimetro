@@ -90,6 +90,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00051 | Guillermo y Dari · El ajedrez | 13,80 s | [MP4 60 fps](vista%20previa/00051%20Guillermo%20y%20Dari%20-%20el%20ajedrez.mp4) · [fotogramas](vista%20previa/00051%20Guillermo%20y%20Dari%20-%20el%20ajedrez%20-%20fotogramas.png) |
 | 00052 | Guillermo y Dari · Las gafas empañadas | 14,70 s | [MP4 60 fps](vista%20previa/00052%20Guillermo%20y%20Dari%20-%20las%20gafas%20empanadas.mp4) · [fotogramas](vista%20previa/00052%20Guillermo%20y%20Dari%20-%20las%20gafas%20empanadas%20-%20fotogramas.png) |
 | 00053 | Guillermo y Dari · El cubo de Rubik | 14,65 s | [MP4 60 fps](vista%20previa/00053%20Guillermo%20y%20Dari%20-%20el%20cubo%20de%20rubik.mp4) · [fotogramas](vista%20previa/00053%20Guillermo%20y%20Dari%20-%20el%20cubo%20de%20rubik%20-%20fotogramas.png) |
+| 00054 | Guillermo y Dari · El pelo rizado | 14,75 s | [MP4 60 fps](vista%20previa/00054%20Guillermo%20y%20Dari%20-%20el%20pelo%20rizado.mp4) · [fotogramas](vista%20previa/00054%20Guillermo%20y%20Dari%20-%20el%20pelo%20rizado%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1059,6 +1060,23 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 9. Negro.
 
 ![Fotogramas de 00053](vista%20previa/00053%20Guillermo%20y%20Dari%20-%20el%20cubo%20de%20rubik%20-%20fotogramas.png)
+
+### 00054 · Guillermo y Dari · El pelo rizado
+
+1. Negro.
+2. Salita de un café en una tarde de lluvia: Dari, repantingado en un puf, hace un crucigrama y pasa una página; entra Guillermo con las manos en los bolsillos.
+3. Guillermo se queda embobado con los rizos de Dari y mira a cámara con cara de pillo.
+4. Los toca con un dedo: se le hunde (¡boing!) y le da la risita, tapándose la boca.
+5. **Mete la mano hasta la muñeca** y hurga… y se le queda atascada: tira y la cabeza de Dari se va con él, que ni levanta la vista.
+6. Apoya el pie en el puf, tira con todo y ¡plop!: sale con un lápiz y la parte de atrás de los rizos queda despeinada.
+7. Dari, sin mirar, tiende la mano, se queda el lápiz y rellena una casilla.
+8. Guillermo vuelve a meter la mano y saca **un tenedor, un calcetín de rayas y un patito de goma** que pita, y los va tirando por encima del hombro al suelo.
+9. Se oye un pío: asoma **un pajarito**, salta a su mano, pía y se va volando.
+10. Dari se guarda el lápiz en los rizos (asoma la goma) y se los ahueca con dos palmaditas; a Guillermo le cae una pluma en la nariz.
+11. Dari sonríe a cámara.
+12. Negro.
+
+![Fotogramas de 00054](vista%20previa/00054%20Guillermo%20y%20Dari%20-%20el%20pelo%20rizado%20-%20fotogramas.png)
 
 ## Ver y grabar
 
