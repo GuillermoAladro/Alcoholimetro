@@ -72,6 +72,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00036 | Guillermo y Ander · La máquina del gancho | 15,00 s | [MP4 60 fps](vista%20previa/00036%20Guillermo%20y%20Ander%20-%20la%20maquina%20del%20gancho.mp4) · [fotogramas](vista%20previa/00036%20Guillermo%20y%20Ander%20-%20la%20maquina%20del%20gancho%20-%20fotogramas.png) |
 | 00037 | Guillermo y Ander · El abrazo de oso | 13,80 s | [MP4 60 fps](vista%20previa/00037%20Guillermo%20y%20Ander%20-%20el%20abrazo%20de%20oso.mp4) · [fotogramas](vista%20previa/00037%20Guillermo%20y%20Ander%20-%20el%20abrazo%20de%20oso%20-%20fotogramas.png) |
 | 00038 | Guillermo y Ander · El beer pong | 14,20 s | [MP4 60 fps](vista%20previa/00038%20Guillermo%20y%20Ander%20-%20el%20beer%20pong.mp4) · [fotogramas](vista%20previa/00038%20Guillermo%20y%20Ander%20-%20el%20beer%20pong%20-%20fotogramas.png) |
+| 00039 | Guillermo y Ander · El gol | 14,00 s | [MP4 60 fps](vista%20previa/00039%20Guillermo%20y%20Ander%20-%20el%20gol.mp4) · [fotogramas](vista%20previa/00039%20Guillermo%20y%20Ander%20-%20el%20gol%20-%20fotogramas.png) |
 | 00040 | Guillermo y Ander · La guitarra | 13,60 s | [MP4 60 fps](vista%20previa/00040%20Guillermo%20y%20Ander%20-%20la%20guitarra.mp4) · [fotogramas](vista%20previa/00040%20Guillermo%20y%20Ander%20-%20la%20guitarra%20-%20fotogramas.png) |
 | 00041 | Guillermo y Carla · La pasarela | 14,00 s | [MP4 60 fps](vista%20previa/00041%20Guillermo%20y%20Carla%20-%20la%20pasarela.mp4) · [fotogramas](vista%20previa/00041%20Guillermo%20y%20Carla%20-%20la%20pasarela%20-%20fotogramas.png) |
 
@@ -786,6 +787,21 @@ Corrige los brazos, los apoyos y los contactos con los paraguas. Mantiene comple
 11. Negro.
 
 ![Fotogramas de 00038](vista%20previa/00038%20Guillermo%20y%20Ander%20-%20el%20beer%20pong%20-%20fotogramas.png)
+
+### 00039 · Guillermo y Ander · El gol
+
+1. Negro.
+2. Bar deportivo de noche: pared granate con molduras, neón de balón, camiseta enmarcada, trofeos, bufanda y pizarra de táctica; una tele colgada en lo alto echa un partido de muñequitos (solo el marcador con números). Guillermo y Ander, cara a cara bajo la tele, inclinados hacia delante: Guillermo se muerde las uñas y Ander se queda con la caña a medio camino de la boca.
+3. El delantero rojo se queda solo ante el portero: Guillermo se lleva las manos a las mejillas, sudando.
+4. **¡GOL!** Fogonazo en la tele y el marcador pasa a 1-0. Guillermo salta tan alto que **se da con la cabeza en la lámpara** (estrella de golpe, estrellitas girando y la lámpara balanceándose). Ander levanta los brazos y **la espuma de su caña sale volando** por encima de la tele… y le aterriza a Guillermo en el pelo, que ni se entera.
+5. Corren el uno hacia el otro, se cogen de la mano y **saltan en corro** dando vueltas, Guillermo con el puño en alto y Ander con la caña, mientras cae **confeti de la nada**, que se va quedando en el suelo.
+6. En la tele, la repetición: rebobina en azul, cámara lenta y pausa. Aparece la línea de fuera de juego, un círculo marca al delantero, sale el **banderín de fuera de juego** y el marcador vuelve al **0-0**.
+7. Lo ven y se quedan **congelados en el aire** en lo alto del salto… y caen al suelo de golpe, con polvareda.
+8. Bajan los brazos muy despacio, se sueltan y se miran chafados; se meten las manos en los bolsillos.
+9. Una gota de espuma se estira, cae y se queda en la nariz de Guillermo, que la mira bizco. Ander da un sorbo resignado a su caña; Guillermo pone pucheros a cámara y el último confeti se le posa en la espuma de la cabeza.
+10. Negro.
+
+![Fotogramas de 00039](vista%20previa/00039%20Guillermo%20y%20Ander%20-%20el%20gol%20-%20fotogramas.png)
 
 ### 00040 · Guillermo y Ander · La guitarra
 
