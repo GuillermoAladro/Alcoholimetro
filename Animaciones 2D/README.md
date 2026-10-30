@@ -32,6 +32,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00008 | Guillermo y los cacahuetes | 13,45 s | [MP4 60 fps](vista%20previa/00008%20Guillermo%20y%20los%20cacahuetes.mp4) · [fotogramas](vista%20previa/00008%20Guillermo%20y%20los%20cacahuetes%20-%20fotogramas.png) |
 | 00009 | Guillermo y la línea recta | 14,00 s | [MP4 60 fps](vista%20previa/00009%20Guillermo%20y%20la%20linea%20recta.mp4) · [fotogramas](vista%20previa/00009%20Guillermo%20y%20la%20linea%20recta%20-%20fotogramas.png) |
 | 00010 | Guillermo en la discoteca | 13,60 s | [MP4 60 fps](vista%20previa/00010%20Guillermo%20en%20la%20discoteca.mp4) · [fotogramas](vista%20previa/00010%20Guillermo%20en%20la%20discoteca%20-%20fotogramas.png) |
+| 00011 | Guillermo y Laura · El pulso | 13,75 s | [MP4 60 fps](vista%20previa/00011%20Guillermo%20y%20Laura%20-%20el%20pulso.mp4) · [fotogramas](vista%20previa/00011%20Guillermo%20y%20Laura%20-%20el%20pulso%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -240,6 +241,21 @@ Corrige la separación del brazo durante el retroceso y el apoyo del corcho al c
 8. La bola sigue girando, se apagan las luces → negro.
 
 ![Fotogramas de 00010](vista%20previa/00010%20Guillermo%20en%20la%20discoteca%20-%20fotogramas.png)
+
+### 00011 · Guillermo y Laura · El pulso
+
+1. Negro.
+2. En una mesa alta de un bar azul noche, con un neón de un bíceps y estantería de trofeos, Guillermo saca bíceps y mira a cámara chulito. Laura, al otro lado, levanta una ceja.
+3. Él planta el codo y la invita con los dedos; ella se encoge de hombros y le agarra la mano.
+4. Cuenta atrás con los dedos: 3, 2, 1… ¡ya!
+5. **Guillermo aprieta con todo:** se pone rojo, suda, le sale la vena, tiembla entero y se agarra al borde de la mesa.
+6. **Laura, como si nada:** coge su vaso y sorbe por la pajita, lo deja, se mira las uñas y bosteza… y las manos ni se mueven.
+7. Le mira con lástima, sonríe y, con un giro de muñeca, **le estampa la mano contra la mesa**.
+8. Guillermo sale disparado hacia arriba hasta salir de plano… y cae del techo de espaldas, con las piernas en alto, estrellitas y los ojos en espiral.
+9. Laura se sopla las yemas de los dedos, sorbe de su vaso mirando a cámara y guiña un ojo; él levanta una mano temblorosa: se rinde.
+10. Negro.
+
+![Fotogramas de 00011](vista%20previa/00011%20Guillermo%20y%20Laura%20-%20el%20pulso%20-%20fotogramas.png)
 
 ## Ver y grabar
 
