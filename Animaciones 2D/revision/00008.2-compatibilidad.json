@@ -1,0 +1,111 @@
+{
+  "scene": "00008.2",
+  "reason": "Compatibilidad con las opciones nuevas de manos y espejo y el montaje de Laura",
+  "frames": [
+    {
+      "t": 0.05,
+      "unchanged": true
+    },
+    {
+      "t": 0.8,
+      "unchanged": true
+    },
+    {
+      "t": 1.2,
+      "unchanged": true
+    },
+    {
+      "t": 1.65,
+      "unchanged": true
+    },
+    {
+      "t": 1.92,
+      "unchanged": true
+    },
+    {
+      "t": 10.3,
+      "unchanged": true
+    },
+    {
+      "t": 10.85,
+      "unchanged": true
+    },
+    {
+      "t": 10.9,
+      "unchanged": true
+    },
+    {
+      "t": 11.2,
+      "unchanged": true
+    },
+    {
+      "t": 11.56,
+      "unchanged": true
+    },
+    {
+      "t": 11.75,
+      "unchanged": true
+    },
+    {
+      "t": 11.92,
+      "unchanged": true
+    },
+    {
+      "t": 12.5,
+      "unchanged": true
+    },
+    {
+      "t": 13.4,
+      "unchanged": true
+    },
+    {
+      "t": 2.3,
+      "unchanged": true
+    },
+    {
+      "t": 2.72,
+      "unchanged": true
+    },
+    {
+      "t": 3.1,
+      "unchanged": true
+    },
+    {
+      "t": 4.12,
+      "unchanged": true
+    },
+    {
+      "t": 4.94,
+      "unchanged": true
+    },
+    {
+      "t": 5.4,
+      "unchanged": true
+    },
+    {
+      "t": 6.24,
+      "unchanged": true
+    },
+    {
+      "t": 7.1,
+      "unchanged": true
+    },
+    {
+      "t": 8.12,
+      "unchanged": true
+    },
+    {
+      "t": 8.5,
+      "unchanged": true
+    },
+    {
+      "t": 9.05,
+      "unchanged": true
+    },
+    {
+      "t": 9.5,
+      "unchanged": true
+    }
+  ],
+  "passed": true
+}
