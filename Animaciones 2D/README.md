@@ -22,6 +22,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00003 | Guillermo y el globo | 12,45 s | [MP4 60 fps](vista%20previa/00003%20Guillermo%20y%20el%20globo.mp4) · [fotogramas](vista%20previa/00003%20Guillermo%20y%20el%20globo%20-%20fotogramas.png) |
 | 00003.2 | Guillermo y el globo · revisada | 12,45 s | [MP4 60 fps](vista%20previa/00003.2%20Guillermo%20y%20el%20globo.mp4) · [fotogramas](vista%20previa/00003.2%20Guillermo%20y%20el%20globo%20-%20fotogramas.png) · [revisión](revision/00003.2.md) |
 | 00004 | Guillermo contra la máquina | 13,25 s | [MP4 60 fps](vista%20previa/00004%20Guillermo%20contra%20la%20maquina.mp4) · [fotogramas](vista%20previa/00004%20Guillermo%20contra%20la%20maquina%20-%20fotogramas.png) |
+| 00006 | Guillermo y el hipo | 13,15 s | [MP4 60 fps](vista%20previa/00006%20Guillermo%20y%20el%20hipo.mp4) · [fotogramas](vista%20previa/00006%20Guillermo%20y%20el%20hipo%20-%20fotogramas.png) |
 | 00010 | Guillermo en la discoteca | 13,60 s | [MP4 60 fps](vista%20previa/00010%20Guillermo%20en%20la%20discoteca.mp4) · [fotogramas](vista%20previa/00010%20Guillermo%20en%20la%20discoteca%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
@@ -115,6 +116,24 @@ Conserva los cuatro soplidos, el estallido y el enfado. Corrige la unión brazo�
 11. Negro.
 
 ![Fotogramas de 00004](vista%20previa/00004%20Guillermo%20contra%20la%20maquina%20-%20fotogramas.png)
+
+### 00006 · Guillermo y el hipo
+
+1. Negro.
+2. Taberna con papel pintado granate, azulejos, diana y una mesa alta con una pinta vacía. Guillermo, satisfecho, con las manos en los bolsillos.
+3. **Hipo:** cada hipido le pega un bote, abre mucho los ojos, hincha los mofletes y le sale una pompa que sube y explota. Cada vez son más fuertes y se va mosqueando.
+4. Harto, mira a cámara, aprieta los puños y coge muchísimo aire (se le hincha el pecho).
+5. **Aguanta la respiración:**
+   - con los mofletes hinchados y los ojos apretados;
+   - se pone rojo y luego morado, cuello incluido;
+   - suda y tiembla cada vez más;
+   - se le escapan dos hipidos por dentro y le sale vapor por la oreja.
+6. **Hipido gigante:** sale volando con los brazos al aire, suelta una pompa enorme y aterriza aplastado. La pinta da un saltito en la mesa.
+7. Alivio: mira cómo se va la pompa, se da dos palmaditas en el pecho y vuelve a meterse las manos en los bolsillos.
+8. Un último hipido pequeñito… y mira a cámara resignado.
+9. Negro.
+
+![Fotogramas de 00006](vista%20previa/00006%20Guillermo%20y%20el%20hipo%20-%20fotogramas.png)
 
 ### 00010 · Guillermo en la discoteca
 
