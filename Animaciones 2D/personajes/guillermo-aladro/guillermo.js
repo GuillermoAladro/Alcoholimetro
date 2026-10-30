@@ -317,6 +317,8 @@ const Guillermo = (() => {
     if ((p.chichon || 0) > 0.01) chichon(g, p.chichon, p.chichonEn);
     if ((p.enfado || 0) > 0.01) vena(g, p.enfado, t);
     if (p.pegotes) pegotes(g, p.pegotes);
+    // Capa propia de la escena encima de la cara, en coordenadas del retrato (hollín, cacahuete…).
+    if (p.capaCabeza) p.capaCabeza(g, t);
     g.restore();
   }
 
@@ -639,6 +641,8 @@ const Guillermo = (() => {
       g.beginPath(); rutaPoli(g, hueco); g.lineJoin = "miter"; g.lineWidth = 7; g.strokeStyle = "#08080a"; g.stroke();
       g.lineWidth = 2.2; g.strokeStyle = "#4a4a56"; g.stroke(); g.restore();
     } else R.pieza(g, A, nomTronco);
+    // Capa propia de la escena encima del torso, en coordenadas de la hoja (manchas, chorros…).
+    if (p.capaTronco) p.capaTronco(g, t);
     g.restore();
     // cabeza
     dibCabeza(g, p, t);
