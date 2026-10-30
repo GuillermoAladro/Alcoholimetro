@@ -47,6 +47,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00019 | Guillermo y Laura · El paraguas | 13,60 s | [MP4 60 fps](vista%20previa/00019%20Guillermo%20y%20Laura%20-%20el%20paraguas.mp4) · [fotogramas](vista%20previa/00019%20Guillermo%20y%20Laura%20-%20el%20paraguas%20-%20fotogramas.png) |
 | 00020 | Guillermo y Laura · Piedra, papel o tijera | 14,95 s | [MP4 60 fps](vista%20previa/00020%20Guillermo%20y%20Laura%20-%20piedra%20papel%20o%20tijera.mp4) · [fotogramas](vista%20previa/00020%20Guillermo%20y%20Laura%20-%20piedra%20papel%20o%20tijera%20-%20fotogramas.png) |
 | 00021 | Guillermo y Marcos · El chupito en llamas | 14,10 s | [MP4 60 fps](vista%20previa/00021%20Guillermo%20y%20Marcos%20-%20el%20chupito%20en%20llamas.mp4) · [fotogramas](vista%20previa/00021%20Guillermo%20y%20Marcos%20-%20el%20chupito%20en%20llamas%20-%20fotogramas.png) |
+| 00022 | Guillermo y Marcos · El gato en la farola | 14,50 s | [MP4 60 fps](vista%20previa/00022%20Guillermo%20y%20Marcos%20-%20el%20gato%20en%20la%20farola.mp4) · [fotogramas](vista%20previa/00022%20Guillermo%20y%20Marcos%20-%20el%20gato%20en%20la%20farola%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -457,6 +458,22 @@ Corrige los cuatro brazos, el apoyo de los codos en la mesa, el giro y la libera
 10. Negro.
 
 ![Fotogramas de 00021](vista%20previa/00021%20Guillermo%20y%20Marcos%20-%20el%20chupito%20en%20llamas%20-%20fotogramas.png)
+
+### 00022 · Guillermo y Marcos · El gato en la farola
+
+1. Negro.
+2. De noche, en una plazuela delante del bar (toldo de rayas, ventana encendida, tejados con chimeneas y luna llena): un gato naranja, erizado de miedo, maúlla subido en lo alto de una farola.
+3. Guillermo llega andando, lo oye, se pone en jarras de héroe mirando a cámara y se lanza a la farola.
+4. **Trepa** abrazado a ella a tirones, con la lengua fuera y sudando.
+5. Arriba le pone morritos al gato y le llama con el dedo… el gato le **bufa** y salta por encima de su cabeza hasta el farol, que se balancea.
+6. Guillermo mira abajo, ve la altura y se queda **agarrado a la farola**, temblando, con los ojos apretados y castañeteando los dientes; de vez en cuando abre un ojo.
+7. Llega **Marcos** con una escalera al hombro. Guillermo, esperanzado, le saluda pidiendo ayuda, pero Marcos apoya la escalera en el farol y sube tranquilo, peldaño a peldaño.
+8. El gato le salta a los brazos; Marcos lo achucha y el gato se le sube al casco, ronroneando. Guillermo pone cara de celos.
+9. Marcos baja deslizándose por la escalera, se da la vuelta, recoge la escalera y se va con el gato moviendo la cola desde el casco. Guillermo estira la mano hacia la escalera que se aleja.
+10. Guillermo **resbala poco a poco** por la farola, entre chirridos, y acaba hecho un ovillo al pie, mirando a cámara con pucheros.
+11. Negro.
+
+![Fotogramas de 00022](vista%20previa/00022%20Guillermo%20y%20Marcos%20-%20el%20gato%20en%20la%20farola%20-%20fotogramas.png)
 
 ## Ver y grabar
 
