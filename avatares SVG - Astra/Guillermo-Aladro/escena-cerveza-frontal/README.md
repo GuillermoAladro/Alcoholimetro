@@ -15,6 +15,12 @@ El fondo, la mano adaptada al agarre y el vaso son elementos vectoriales añadid
 
 No contiene imágenes incrustadas, recursos remotos ni JavaScript. Utiliza animaciones SVG SMIL. La versión de perfil se conserva en la carpeta hermana `escena-cerveza`.
 
+## Revisión de coherencia y compatibilidad · 2026-10-30
+
+Se ha cerrado el pequeño hueco entre la manga articulada y el torso, y eliminado tres restos blancos del fondo original junto a la ropa. Las piezas del personaje incluyen referencias compatibles con SVG 1.1 y SVG 2; el recorte del torso conserva el hueco del brazo en Chromium, Inkscape y CairoSVG.
+
+El vídeo y la vista previa se han regenerado desde el SVG corregido. Se ha comprobado el ciclo y el contacto del vaso con los labios durante el sorbo. [Detalle de la revisión](../../REVISION-INDIVIDUAL-2026-10-30.md).
+
 ## Reproducir
 
 Python utiliza las dependencias de `../../herramientas/requirements.txt`. El vídeo requiere Node.js, Playwright, Chromium y FFmpeg.

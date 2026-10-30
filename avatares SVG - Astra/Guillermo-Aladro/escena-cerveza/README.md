@@ -17,6 +17,12 @@ El hombro, el codo y la muñeca comparten una articulación calculada para que e
 
 El SVG conserva los trazados visibles de la referencia sin simplificarlos. Se eliminan de cada pieza los trazados situados fuera de su zona de movimiento y los gradientes que no se usan. No contiene imágenes incrustadas, recursos remotos ni JavaScript. La animación utiliza SMIL.
 
+## Revisión de compatibilidad · 2026-10-30
+
+Las piezas del personaje incluyen referencias compatibles con SVG 1.1 y SVG 2. El recorte del torso utiliza contornos de sentido opuesto para conservar el hueco del brazo en Chromium, Inkscape y CairoSVG. Esto evita que el personaje desaparezca o que se vea el brazo original duplicado en algunos motores. El aspecto y el movimiento en el navegador se conservan.
+
+Se ha comprobado el ciclo, el contacto del vaso con los labios y la salida en los tres motores. [Detalle de la revisión](../../REVISION-INDIVIDUAL-2026-10-30.md).
+
 ## Reproducir la exportación
 
 Python utiliza las dependencias de `../../herramientas/requirements.txt`. El vídeo requiere Node.js, Playwright, Chromium y FFmpeg.

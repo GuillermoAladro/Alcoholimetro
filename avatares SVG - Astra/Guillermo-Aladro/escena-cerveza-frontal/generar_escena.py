@@ -13,12 +13,17 @@ HERE=Path(__file__).resolve().parent
 SOURCE=HERE.parent/'01-frontal.svg'
 NS='http://www.w3.org/2000/svg'
 E.register_namespace('',NS)
+XLINK='http://www.w3.org/1999/xlink'
+E.register_namespace('xlink',XLINK)
 def el(tag,attrs=None,parent=None,**kw):
     n=E.Element('{'+NS+'}'+tag,{**(attrs or {}),**{k.replace('_','-'):str(v) for k,v in kw.items()}})
     if parent is not None:parent.append(n)
     return n
 def frag(parent,s):
     w=E.fromstring('<g xmlns="'+NS+'">'+s+'</g>')
+    # SVG 1.1 fallback for renderers that do not resolve SVG 2 href.
+    for n in w.iter():
+        if n.get('href') is not None:n.set('{'+XLINK+'}href',n.get('href'))
     for n in w:parent.append(n)
 def smooth(x):return x*x*(3-2*x)
 def mix(a,b,t):return a+(b-a)*t
@@ -130,7 +135,8 @@ frag(defs,'''
 <linearGradient id="foam" x2="0" y2="1"><stop stop-color="#fff9df"/><stop offset="1" stop-color="#decda6"/></linearGradient>
 <radialGradient id="vignette"><stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".46"/></radialGradient>
 <radialGradient id="table-shadow"><stop stop-color="#150f0c" stop-opacity=".5"/><stop offset="1" stop-color="#150f0c" stop-opacity="0"/></radialGradient>
-<clipPath id="torso-cut"><path clip-rule="evenodd" d="M85 75H442V1010H85Z M162 290 Q189 270 209 283 Q224 313 207 367 L199 405 195 470 213 530 182 540 151 482 144 430 145 367 Q148 320 162 290Z"/></clipPath>
+<!-- Opposite winding preserves the hole even in renderers without evenodd clip support. -->
+<clipPath id="torso-cut"><path clip-rule="nonzero" d="M85 75H442V1010H85Z M162 290Q148 320 145 367L144 430 151 482 182 540 213 530 195 470 199 405 207 367Q224 313 209 283Q189 270 162 290Z M418.3 308V314H422V308Z M370.2 387V395H374V387Z M201.4 395V400H204.2V395Z"/></clipPath>
 <clipPath id="upper-cut"><path d="M162 290 Q189 270 209 283 Q224 313 207 367 L199 405 Q192 432 176 448 Q151 452 149 433 L146 401 146 366 Q148 320 162 290Z"/></clipPath>
 <clipPath id="forearm-cut"><path d="M149 427Q169 410 189 428L195 471 206 512Q210 524 193 531Q178 535 171 522L153 480Q143 447 149 427Z"/></clipPath>
 <clipPath id="glass-inside"><path d="M-3-68H43L36 7Q20 14 4 7Z"/></clipPath>
@@ -161,6 +167,8 @@ frag(root,'''
 ''')
 character=el('g',id='personaje',transform='translate(100 -70) scale(1.7)',parent=root)
 # Restore the part of the black shirt exposed by the moving right arm.
+# Bridge the shoulder behind the rotating sleeve throughout its full range.
+frag(character,'<path id="union-hombro" d="M174 289Q184 276 201 280Q218 286 220 307L211 333 177 324Z" fill="url(#shirt-repair)"/>')
 frag(character,'''
 <path d="M203 280Q229 298 220 337L201 392 204 451 193 512 224 538H280V270Z" fill="url(#shirt-repair)"/>
 <path d="M209 340Q198 408 212 467M205 492Q237 509 264 509" fill="none" stroke="#111116" stroke-opacity=".45" stroke-width="4"/>

@@ -1,5 +1,7 @@
 # Revisión final de los SVG publicados
 
+Este documento registra la revisión anterior. La [revisión individual del 30 de octubre de 2026](REVISION-INDIVIDUAL-2026-10-30.md) comprueba de nuevo los 156 SVG y corrige las incompatibilidades de las escenas con Inkscape y CairoSVG descritas más abajo.
+
 Se han revisado **los 14 avatares, uno por uno**, después de completar su publicación: **14 hojas maestras y 140 vistas individuales, 154 SVG estáticos en total**. Cada personaje dispone de cuatro vistas de cuerpo y seis expresiones. También se han comprobado la estructura y el fotograma estático de las dos escenas SVG de Guillermo que ya existían en esta carpeta.
 
 Versión de los archivos comprobados: [`1cc10ab5dfff`](https://github.com/GuillermoAladro/Alcoholimetro/commit/1cc10ab5dfffa7f09ed42ce6bbc6a4e18aa5f1bb). Fecha: 2026-10-30 (UTC).

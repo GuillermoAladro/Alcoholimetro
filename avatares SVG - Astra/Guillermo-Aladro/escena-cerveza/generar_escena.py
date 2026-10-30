@@ -13,12 +13,17 @@ HERE=Path(__file__).resolve().parent
 SOURCE=HERE.parent/'03-perfil.svg'
 NS='http://www.w3.org/2000/svg'
 E.register_namespace('',NS)
+XLINK='http://www.w3.org/1999/xlink'
+E.register_namespace('xlink',XLINK)
 def el(tag,attrs=None,parent=None,**kw):
     n=E.Element('{'+NS+'}'+tag,{**(attrs or {}),**{k.replace('_','-'):str(v) for k,v in kw.items()}})
     if parent is not None:parent.append(n)
     return n
 def frag(parent,s):
     w=E.fromstring('<g xmlns="'+NS+'">'+s+'</g>')
+    # SVG 1.1 fallback for renderers that do not resolve SVG 2 href.
+    for n in w.iter():
+        if n.get('href') is not None:n.set('{'+XLINK+'}href',n.get('href'))
     for n in w:parent.append(n)
 def smooth(x):return x*x*(3-2*x)
 def mix(a,b,t):return a+(b-a)*t
@@ -118,7 +123,8 @@ frag(defs,'''
 <linearGradient id="foam" x2="0" y2="1"><stop stop-color="#fff9df"/><stop offset="1" stop-color="#decda6"/></linearGradient>
 <radialGradient id="vignette"><stop offset=".48" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".46"/></radialGradient>
 <radialGradient id="table-shadow"><stop stop-color="#150f0c" stop-opacity=".5"/><stop offset="1" stop-color="#150f0c" stop-opacity="0"/></radialGradient>
-<clipPath id="torso-cut"><path clip-rule="evenodd" d="M640 75H845V1010H640Z M688 290 Q718 274 748 300 L763 340 764 395 787 467 819 529 787 546 746 518 703 470 682 412 677 360Z"/></clipPath>
+<!-- Opposite winding preserves the hole even in renderers without evenodd clip support. -->
+<clipPath id="torso-cut"><path clip-rule="nonzero" d="M640 75H845V1010H640Z M688 290L677 360 682 412 703 470 746 518 787 546 819 529 787 467 764 395 763 340 748 300Q718 274 688 290Z"/></clipPath>
 <clipPath id="upper-cut"><path d="M686 291 Q714 279 740 297 Q763 320 759 365 L754 406 Q754 428 742 447 Q717 451 704 435 L688 394 Q675 350 686 291Z"/></clipPath>
 <clipPath id="forearm-cut"><path d="M715 451Q704 440 714 423Q729 409 745 420Q759 435 779 467L806 510Q811 522 799 529Q788 537 777 525L743 489Q724 466 715 451Z"/></clipPath>
 <clipPath id="glass-inside"><path d="M-3-68H43L36 7Q20 14 4 7Z"/></clipPath>

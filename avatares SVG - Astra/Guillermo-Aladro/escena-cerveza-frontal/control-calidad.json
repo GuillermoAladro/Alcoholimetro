@@ -35,7 +35,7 @@
     "rendered_from": "Guillermo-Aladro-cerveza-frontal.svg; SMIL timeline sampled directly",
     "source_vector_paths_copied_verbatim": true,
     "svg_xml_valid": true,
-    "unique_ids": 8234,
+    "unique_ids": 8235,
     "unresolved_internal_references": 0,
     "embedded_raster_images": 0,
     "source_scripts": 0,
@@ -44,5 +44,73 @@
     "pose_loop_equal_at_0_and_12_seconds": true,
     "camera": "frontal",
     "projected_limb_motion": true
+  },
+  "review_2026_10_30": {
+    "base_commit": "842c9af8c436e415b2085c7d09aee58572c41911",
+    "svg_sha256": "7ccee55a291751704144be8ac16f5e7fc9c75dbe7c77a00f9049c7b5e36c7286",
+    "svg_git_blob": "d574b7d1a631327e362c81621c1cc46bd1e43d77",
+    "browser": "153.0.8010.0",
+    "console_errors": [],
+    "native_smil_sample_times_seconds": [
+      0,
+      1.1,
+      2,
+      2.8,
+      3.3,
+      4,
+      5,
+      6.2,
+      6.8,
+      7,
+      8,
+      9.2,
+      11.999,
+      12
+    ],
+    "rim_to_mouth_samples": 106,
+    "rim_to_mouth_interval_seconds": [
+      3.3,
+      6.8
+    ],
+    "max_rim_to_mouth_error_px": 0.0008550369705884949,
+    "cross_renderer_checks": [
+      {
+        "time": 0,
+        "cairo_inkscape_mae": 0.22560590277777778,
+        "inkscape_chromium_mae": 0.48791811342592595,
+        "cairo_chromium_mae": 0.5577994791666666,
+        "cairo_png_sha256": "41b883dc7e8d2ff14d3c8933acc3e9e252d3ce0f8b3b1e40d42f63f967f67a35",
+        "inkscape_png_sha256": "29ac453b139dd794b5574459e02dec05490a7492d840a658865e6865b2f8786b"
+      },
+      {
+        "time": 5,
+        "cairo_inkscape_mae": 0.23220833333333332,
+        "inkscape_chromium_mae": 0.490810474537037,
+        "cairo_chromium_mae": 0.5517398726851852,
+        "cairo_png_sha256": "d5352473a5dcae0723da399ce4162dbe2e29fa4b9dd9213061ee40ab97f68cbd",
+        "inkscape_png_sha256": "e914934180f72b55c46ec24a278ca50f9462f2e5703951a41bad90ee44e7dda8"
+      }
+    ],
+    "cross_renderer_method": "Chromium native SMIL; equivalent frozen geometry at 0 and 5 seconds rendered by Inkscape and CairoSVG. MAE uses RGB channels on scale 0..255.",
+    "video_regenerated": true,
+    "fixes": [
+      "SVG 1.1 xlink:href fallback alongside SVG 2 href",
+      "Opposite-winding nonzero torso clip",
+      "Shoulder seam bridge",
+      "Remove three tiny background remnants"
+    ],
+    "video_decoded_without_errors": true,
+    "updated_media_sha256": {
+      "Guillermo-Aladro-cerveza-frontal.mp4": "e6020f41402e4477b26be26e67e76fbe577ba8e76ebfb5a4d90740550f72fad3",
+      "Guillermo-Aladro-cerveza-frontal-preview.png": "4096f8b3044f076b4c812e36e0741c3c9ef6047d4e21520731f4dfe33220da07"
+    },
+    "loop_pose_check": {
+      "mode": "front",
+      "compared_nodes": 13,
+      "max_ctm_component_difference": 0,
+      "pose_equal_within_1e_6": true
+    },
+    "loop_raster_mae_0_255": 0.0008148148148148148,
+    "loop_note": "All animated group CTMs match exactly at 0 and 12 seconds. Raster snapshots can differ slightly from browser antialiasing."
   }
 }

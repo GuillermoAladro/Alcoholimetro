@@ -40,5 +40,66 @@
     "video_codec": "H.264 / yuv420p",
     "duration_seconds": 12,
     "pose_loop_equal_at_0_and_12_seconds": true
+  },
+  "review_2026_10_30": {
+    "base_commit": "842c9af8c436e415b2085c7d09aee58572c41911",
+    "svg_sha256": "635667b817e77ecf33aff8b0946768696a77c9c6ce8a3bcb5150288269cd9817",
+    "svg_git_blob": "29c27f89ae1d8843b15340b2871bdfa74d7ea615",
+    "browser": "153.0.8010.0",
+    "console_errors": [],
+    "native_smil_sample_times_seconds": [
+      0,
+      1.1,
+      2,
+      2.8,
+      3.3,
+      4,
+      5,
+      6.2,
+      6.8,
+      7,
+      8,
+      9.2,
+      11.999,
+      12
+    ],
+    "rim_to_mouth_samples": 106,
+    "rim_to_mouth_interval_seconds": [
+      3.3,
+      6.8
+    ],
+    "max_rim_to_mouth_error_px": 0.0004443426446094067,
+    "cross_renderer_checks": [
+      {
+        "time": 0,
+        "cairo_inkscape_mae": 0.20513975694444445,
+        "inkscape_chromium_mae": 0.4854236111111111,
+        "cairo_chromium_mae": 0.5473353587962962,
+        "cairo_png_sha256": "dfd9fd1fb5d84355401f94f69e2280630ddb5edeaf4cb594a6a50212847f8484",
+        "inkscape_png_sha256": "9c56a699023889a489408e2586ccf0dd329e96c2695f22b5626a9e5ebcccf03b"
+      },
+      {
+        "time": 5,
+        "cairo_inkscape_mae": 0.21007957175925926,
+        "inkscape_chromium_mae": 0.48660590277777777,
+        "cairo_chromium_mae": 0.5437242476851852,
+        "cairo_png_sha256": "533646d1695f20841784df799b1516e7f26c17a28d06ef964b42f162ae76acd2",
+        "inkscape_png_sha256": "3f94db564d9e4530eaf46ca70db593230b85a2a8ab57d05203912b640b78e34b"
+      }
+    ],
+    "cross_renderer_method": "Chromium native SMIL; equivalent frozen geometry at 0 and 5 seconds rendered by Inkscape and CairoSVG. MAE uses RGB channels on scale 0..255.",
+    "video_regenerated": false,
+    "fixes": [
+      "SVG 1.1 xlink:href fallback alongside SVG 2 href",
+      "Opposite-winding nonzero torso clip"
+    ],
+    "loop_pose_check": {
+      "mode": "profile",
+      "compared_nodes": 10,
+      "max_ctm_component_difference": 0,
+      "pose_equal_within_1e_6": true
+    },
+    "loop_raster_mae_0_255": 0.001943287037037037,
+    "loop_note": "All animated group CTMs match exactly at 0 and 12 seconds. Raster snapshots can differ slightly from browser antialiasing."
   }
 }

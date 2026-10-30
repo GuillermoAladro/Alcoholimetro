@@ -2,7 +2,9 @@
 
 Colección de **14 avatares**, comenzada por Guillermo Aladro, vectorizada a partir de las referencias actuales de `animaciones/`. Cada hoja conserva sus cuatro vistas de cuerpo completo, sus seis expresiones y sus rasgos, ropa y accesorios originales. Los 14 personajes cuentan también con diez SVG individuales: **154 SVG estáticos en total**. Se han procesado y publicado de uno en uno, y después se ha realizado una segunda revisión de los archivos publicados.
 
-[Revisión final y correcciones](REVISION-FINAL.md) · [Informe por archivo](revision-final-publicada.json)
+[Revisión individual del 30 de octubre de 2026](REVISION-INDIVIDUAL-2026-10-30.md) · [Informe por archivo](revision-individual-2026-10-30.json) · [Revisión anterior](REVISION-FINAL.md)
+
+La revisión más reciente cubre **los 156 SVG**, uno a uno: las 14 hojas, sus 140 vistas individuales y las dos escenas animadas. Los 154 SVG estáticos se conservan tras comprobar sus referencias, recortes y consistencia visual. En las dos escenas se corrige la compatibilidad del personaje y sus recortes entre motores SVG; en la frontal se cierra la unión del hombro y se eliminan tres pequeños restos blancos. Su vídeo y vista previa se han regenerado.
 
 ![Colección SVG Astra](Coleccion-preview.jpg)
 
