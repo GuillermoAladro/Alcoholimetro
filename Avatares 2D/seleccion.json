@@ -51,12 +51,21 @@
     "Marcos-Bombero": {
       "status": "single_design_created",
       "file": "Marcos-Bombero/Marcos-Bombero-2D.png"
+    },
+    "Marta": {
+      "status": "single_design_created",
+      "file": "Marta/Marta-2D.png"
+    },
+    "Paradigma": {
+      "status": "single_design_created",
+      "file": "Paradigma/Paradigma-2D.png"
+    },
+    "Rodri": {
+      "status": "single_design_created",
+      "file": "Rodri/Rodri-2D.png"
     }
   },
   "pending": [
-    "Marta",
-    "Paradigma",
-    "Rodri",
     "Sara-Saez",
     "Yorgi"
   ]
