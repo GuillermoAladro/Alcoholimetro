@@ -106,6 +106,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00067 | Guillermo y Deivi · La guerra de almohadas | 14,0 s | [MP4 60 fps](vista%20previa/00067%20Guillermo%20y%20Deivi%20-%20la%20guerra%20de%20almohadas.mp4) · [fotogramas](vista%20previa/00067%20Guillermo%20y%20Deivi%20-%20la%20guerra%20de%20almohadas%20-%20fotogramas.png) |
 | 00068 | Guillermo y Deivi · Las cosquillas | 14,9 s | [MP4 60 fps](vista%20previa/00068%20Guillermo%20y%20Deivi%20-%20las%20cosquillas.mp4) · [fotogramas](vista%20previa/00068%20Guillermo%20y%20Deivi%20-%20las%20cosquillas%20-%20fotogramas.png) |
 | 00069 | Guillermo y Deivi · La momia | 15,0 s | [MP4 60 fps](vista%20previa/00069%20Guillermo%20y%20Deivi%20-%20la%20momia.mp4) · [fotogramas](vista%20previa/00069%20Guillermo%20y%20Deivi%20-%20la%20momia%20-%20fotogramas.png) |
+| 00071 | Guillermo y Gabacho · El penalti | 14,4 s | [MP4 60 fps](vista%20previa/00071%20Guillermo%20y%20Gabacho%20-%20el%20penalti.mp4) · [fotogramas](vista%20previa/00071%20Guillermo%20y%20Gabacho%20-%20el%20penalti%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1338,6 +1339,23 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 13. Negro.
 
 ![Fotogramas de 00069](vista%20previa/00069%20Guillermo%20y%20Deivi%20-%20la%20momia%20-%20fotogramas.png)
+
+### 00071 · Guillermo y Gabacho · El penalti
+
+1. Negro.
+2. Patio trasero del bar a la hora azul: tapia de ladrillo, la puerta de atrás con su aplique, cajas de cerveza, un barril, una guirnalda de bombillas y, sobre un trozo de césped artificial, una portería pequeñita (más baja que el portero) con la red abombada.
+3. Gabacho, de portero, calienta muy teatral: círculos con los brazos en cruz, zancadas con las manos en la rodilla, sacude brazos y piernas, dos palmadas… y se pone en guardia.
+4. Guillermo suelta el balón con mimo, lo para con la suela y lo coloca en el punto rodándolo a un lado y a otro; levanta el pie despacito («quieto, quieto…») y asiente.
+5. Retrocede contando los pasos con los dedos (uno, dos, tres), mide la portería, decide que no es bastante y recula hasta salir de plano por la izquierda.
+6. Gabacho se queda solo: se asoma con los brazos en jarras, mira a cámara y se encoge de hombros («bof»). De pronto, una polvareda: se pone en guardia de un brinco.
+7. Guillermo vuelve a toda carrera, frena derrapando y hace unos pasitos de bailarín con amagos que Gabacho sigue con el cuerpo.
+8. Arma la pierna… y la puntera se clava en el césped: ¡crac!, terrones, polvo y una marca que se queda. El balón, apenas rozado, rueda despacito, despacito, y se para justo delante de la bota de Gabacho.
+9. Guillermo se queda congelado, se pone rojo, se agarra la pierna y salta a la pata coja llorando a chorros mientras a la bota le late la puntera. Gabacho, con los brazos en jarras, mira a cámara aburrido.
+10. Gabacho, sin agacharse, se sube el balón con la puntera a las manos, se lo pone en la cadera y bosteza tapándose la boca.
+11. Lo lanza hacia arriba y lo recoge en la punta del índice, donde lo hace girar; guiña un ojo a cámara. Guillermo, a la pata coja, mira a cámara haciendo pucheros.
+12. Negro.
+
+![Fotogramas de 00071](vista%20previa/00071%20Guillermo%20y%20Gabacho%20-%20el%20penalti%20-%20fotogramas.png)
 
 ## Ver y grabar
 
