@@ -480,6 +480,7 @@ Animaciones 2D/
 ├─ personajes/laura/            coordenadas de Laura, su atlas y laura.js
 ├─ personajes/marcos-bombero/   coordenadas de Marcos Bombero, su atlas, la manguera y el chorro
 ├─ personajes/ander/            coordenadas de Ander y su atlas
+├─ personajes/carla/            coordenadas de Carla, su atlas, aros y collar
 ├─ escenas/                     una escena por archivo (00001 … 00010 y sus revisiones)
 ├─ herramientas/                 comprobar.py y grabar.py
 └─ vista previa/                 vídeos y fotogramas de cada animación
@@ -543,6 +544,13 @@ Opciones del montaje que usan las escenas nuevas (las anteriores no las activan 
 - **Piezas:** la cabeza del retrato con el pelo corto y la barba, cejas, boca, el torso con la capucha detrás del cuello, las dos mangas de la sudadera enderezadas, las piernas del vaquero y la zapatilla con la suela nivelada. La mandíbula se busca con una ventana estrecha para que los pelos de la barba no la desvíen.
 - **En pantalla:** los hombros son azules y la mano se dibuja aparte al sacarla del bolsillo.
 - **Altura:** con el mismo `p.s` mide prácticamente lo mismo que Guillermo.
+
+**Carla** (`personajes/carla/`) sale de `Avatares 2D/Carla/Carla-2D.png` con el recortador común.
+
+- **Limpieza previa:** antes de trocear, su `preparar_piezas.py` quita la melena que le caía por delante del cuerpo y el collar. Repinta lo que tapaban: la piel del pecho y del hombro, los tirantes y el top negro, la cara de dentro de los brazos y los huecos entre brazos y torso.
+- **Piezas:** la cabeza del retrato (cuencas vacías y sin aros), la cara roja, las cejas, la boca, la melena ondulada que cuelga por detrás (dos tiras con puntas que se balancean con viento e inercia), el torso con y sin brazos, los dos brazos enderezados, las piernas del vaquero y el botín negro de tacón con la suela nivelada.
+- **Accesorios:** los aros y el collar se dibujan aparte y se mecen con la cabeza y el torso.
+- **Altura:** con el mismo `p.s` mide un 93 % de Guillermo.
 
 ## Añadir una animación
 
