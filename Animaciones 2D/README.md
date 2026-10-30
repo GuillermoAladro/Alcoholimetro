@@ -97,6 +97,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00058 | Guillermo y Dari · Las palomitas | 14,25 s | [MP4 60 fps](vista%20previa/00058%20Guillermo%20y%20Dari%20-%20las%20palomitas.mp4) · [fotogramas](vista%20previa/00058%20Guillermo%20y%20Dari%20-%20las%20palomitas%20-%20fotogramas.png) |
 | 00059 | Guillermo y Dari · El abrigo | 14,60 s | [MP4 60 fps](vista%20previa/00059%20Guillermo%20y%20Dari%20-%20el%20abrigo.mp4) · [fotogramas](vista%20previa/00059%20Guillermo%20y%20Dari%20-%20el%20abrigo%20-%20fotogramas.png) |
 | 00060 | Guillermo y Dari · El yoyó | 14,90 s | [MP4 60 fps](vista%20previa/00060%20Guillermo%20y%20Dari%20-%20el%20yoyo.mp4) · [fotogramas](vista%20previa/00060%20Guillermo%20y%20Dari%20-%20el%20yoyo%20-%20fotogramas.png) |
+| 00061 | Guillermo y Deivi · El monopatín | 14,15 s | [MP4 60 fps](vista%20previa/00061%20Guillermo%20y%20Deivi%20-%20el%20monopatin.mp4) · [fotogramas](vista%20previa/00061%20Guillermo%20y%20Deivi%20-%20el%20monopatin%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1184,6 +1185,20 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 15. Negro.
 
 ![Fotogramas de 00060](vista%20previa/00060%20Guillermo%20y%20Dari%20-%20el%20yoyo%20-%20fotogramas.png)
+
+### 00061 · Guillermo y Deivi · El monopatín
+
+1. Negro.
+2. Rincón de skate a la puerta del bar, al atardecer (fachada con neón de jarra, muro liso sin pintadas, farola, conos y una rampa): Guillermo espera con las manos en los bolsillos; Deivi aparece rodando por la plataforma y se deja caer por la rampa.
+3. Deivi hace un ollie limpio y un **kickflip** (la tabla gira sobre su eje: lija, canto, dibujo) y aterriza; frena pisando la cola, la tabla salta sola hasta su mano y guiña a cámara. Guillermo, boquiabierto, aplaude.
+4. Guillermo junta las manos y le suplica con ojos de cachorro; Deivi asiente, se aparta un paso y le lanza la tabla, que cae a sus pies (¡clac!); luego le invita con la mano.
+5. Guillermo se frota las manos, mira a cámara muy chulo y pone un pie encima… **la tabla sale disparada** (Deivi la salta sin sacar las manos de los bolsillos) y Guillermo se queda **tumbado en el aire**, en horizontal, mirando a cámara.
+6. Cae de espaldas (¡pum!) y suspira aliviado… pero la tabla ha subido la rampa, se tambalea en el borde y vuelve: Deivi la vuelve a saltar, Guillermo levanta la cabeza y la ve llegar.
+7. La tabla choca con sus zapatillas, sale volando dando una vuelta y **le cae en la barriga**: ¡boing!, ojos en espiral y estrellitas. Deivi hace una mueca y se ríe tapándose la boca.
+8. Deivi se acerca; Guillermo se incorpora con la tabla en el regazo, Deivi le tiende la mano, se la agarra y tira de él; guiño a cámara.
+9. Negro.
+
+![Fotogramas de 00061](vista%20previa/00061%20Guillermo%20y%20Deivi%20-%20el%20monopatin%20-%20fotogramas.png)
 
 ## Ver y grabar
 
