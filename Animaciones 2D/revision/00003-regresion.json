@@ -1,0 +1,75 @@
+{
+  "scene": "00003",
+  "baselineCommit": "1ef0d6f32114e632437add8af1285134b19c9370",
+  "frames": [
+    {
+      "t": 0.05,
+      "unchanged": true
+    },
+    {
+      "t": 0.8,
+      "unchanged": true
+    },
+    {
+      "t": 1.5,
+      "unchanged": true
+    },
+    {
+      "t": 2.2,
+      "unchanged": true
+    },
+    {
+      "t": 3,
+      "unchanged": true
+    },
+    {
+      "t": 4,
+      "unchanged": true
+    },
+    {
+      "t": 5,
+      "unchanged": true
+    },
+    {
+      "t": 6,
+      "unchanged": true
+    },
+    {
+      "t": 7,
+      "unchanged": true
+    },
+    {
+      "t": 7.8,
+      "unchanged": true
+    },
+    {
+      "t": 8.2,
+      "unchanged": true
+    },
+    {
+      "t": 8.6,
+      "unchanged": true
+    },
+    {
+      "t": 9,
+      "unchanged": true
+    },
+    {
+      "t": 9.5,
+      "unchanged": true
+    },
+    {
+      "t": 10,
+      "unchanged": true
+    },
+    {
+      "t": 11,
+      "unchanged": true
+    },
+    {
+      "t": 12.4,
+      "unchanged": true
+    }
+  ],
+  "unchanged": true
+}

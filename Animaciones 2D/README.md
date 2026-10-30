@@ -19,6 +19,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00002 | Guillermo se transforma | 12,45 s | [MP4 60 fps](vista%20previa/00002%20Guillermo%20se%20transforma.mp4) · [fotogramas](vista%20previa/00002%20Guillermo%20se%20transforma%20-%20fotogramas.png) |
 | 00002.2 | Guillermo se transforma · revisada | 12,45 s | [MP4 60 fps](vista%20previa/00002.2%20Guillermo%20se%20transforma.mp4) · [fotogramas](vista%20previa/00002.2%20Guillermo%20se%20transforma%20-%20fotogramas.png) · [revisión](revision/00002.2.md) |
 | 00003 | Guillermo y el globo | 12,45 s | [MP4 60 fps](vista%20previa/00003%20Guillermo%20y%20el%20globo.mp4) · [fotogramas](vista%20previa/00003%20Guillermo%20y%20el%20globo%20-%20fotogramas.png) |
+| 00003.2 | Guillermo y el globo · revisada | 12,45 s | [MP4 60 fps](vista%20previa/00003.2%20Guillermo%20y%20el%20globo.mp4) · [fotogramas](vista%20previa/00003.2%20Guillermo%20y%20el%20globo%20-%20fotogramas.png) · [revisión](revision/00003.2.md) |
 | 00004 | Guillermo contra la máquina | 13,25 s | [MP4 60 fps](vista%20previa/00004%20Guillermo%20contra%20la%20maquina.mp4) · [fotogramas](vista%20previa/00004%20Guillermo%20contra%20la%20maquina%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
@@ -77,6 +78,12 @@ Mantiene el guion, el avatar y los 12,45 s de la original. Corrige las muñecas 
 8. Negro.
 
 ![Fotogramas de 00003](vista%20previa/00003%20Guillermo%20y%20el%20globo%20-%20fotogramas.png)
+
+### 00003.2 · Revisión de continuidad
+
+Conserva los cuatro soplidos, el estallido y el enfado. Corrige la unión brazo–mano, el contacto de la boquilla y la separación al coger aire, el encuadre del globo completo y la unidad impresa (g/L). La explosión ya no depende de lo que se haya reproducido antes.
+
+[Informe y pruebas](revision/00003.2.md). Selecciona **00003.2** en `ver.html` o abre `ver.html?id=00003.2`.
 
 ### 00004 · Guillermo contra la máquina
 
@@ -168,4 +175,3 @@ La cabeza va algo más grande que en el avatar, como en una caricatura. Brazos y
 2. Añade su `<script>` en `ver.html`.
 3. Si sale un personaje nuevo, crea su carpeta en `personajes/` con su propio `preparar_piezas.py`.
 4. Pasa `comprobar.py` y graba la vista previa con `grabar.py`.
-
