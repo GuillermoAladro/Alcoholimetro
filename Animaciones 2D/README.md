@@ -372,6 +372,7 @@ Animaciones 2D/
 ├─ personajes/comun/            recortador común, visor de hoja con rejilla y Personaje2D.crear
 ├─ personajes/laura/            coordenadas de Laura, su atlas y laura.js
 ├─ personajes/marcos-bombero/   coordenadas de Marcos Bombero, su atlas, la manguera y el chorro
+├─ personajes/ander/            coordenadas de Ander y su atlas
 ├─ escenas/                     una escena por archivo (00001 … 00010 y sus revisiones)
 ├─ herramientas/                 comprobar.py y grabar.py
 └─ vista previa/                 vídeos y fotogramas de cada animación
@@ -428,6 +429,13 @@ Opciones del montaje que usan las escenas nuevas (las anteriores no las activan 
 - **En pantalla** lleva siempre los brazos sueltos: la mano cercana cuelga relajada y la lejana va al bolsillo.
 - **Accesorios aparte:** la lanza, la manguera, el rollo y el chorro de agua (`MarcosBombero.lanza`, `manguera`, `rollo`, `chorro`), para que cada escena decida si los lleva, los suelta o los usa.
 - **Altura:** con el mismo `p.s` mide lo mismo que Guillermo, casco incluido.
+
+**Ander** (`personajes/ander/`) sale de `Avatares 2D/Ander/Ander-2D.png` con el recortador común.
+
+- **Limpieza previa:** antes de trocear, su `preparar_piezas.py` quita de la hoja las manos que asomaban de los bolsillos y repinta el bajo de la sudadera y los bolsillos del vaquero.
+- **Piezas:** la cabeza del retrato con el pelo corto y la barba, cejas, boca, el torso con la capucha detrás del cuello, las dos mangas de la sudadera enderezadas, las piernas del vaquero y la zapatilla con la suela nivelada. La mandíbula se busca con una ventana estrecha para que los pelos de la barba no la desvíen.
+- **En pantalla:** los hombros son azules y la mano se dibuja aparte al sacarla del bolsillo.
+- **Altura:** con el mismo `p.s` mide prácticamente lo mismo que Guillermo.
 
 ## Añadir una animación
 

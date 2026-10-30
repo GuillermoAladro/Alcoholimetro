@@ -231,7 +231,9 @@ def retrato(h, c, dep):
     piezas, refs = {}, {}
     XX, YY = h.XX, h.YY
     zona = XX >= c["x_min"]
-    mand = linea_mandibula(h, c["mandibula"])
+    # mandibula_ventana (opcional): ventana de búsqueda más estrecha alrededor de los puntos guía, para
+    # barbas cuyos pelos sueltos tocan la línea de la mandíbula (Ander); sin ella, ±24 px como siempre
+    mand = linea_mandibula(h, c["mandibula"], c.get("mandibula_ventana", 24))
     refs["mandibula"] = [[round(x, 1), round(y, 1)] for x, y in mand[::6]]
     g0, g1 = c["mandibula"][0], c["mandibula"][-1]
     cuello = h.poli([(g0[0] - 40, g0[1])] + mand + [(g1[0] + 10, g1[1]), (g1[0] + 10, 1402), (g0[0] - 40, 1402)])
