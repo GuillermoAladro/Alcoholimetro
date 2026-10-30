@@ -212,6 +212,7 @@
     c.x += 16 * sw * mw; l.x -= 16 * sw * mw; c.y -= 8 * gp * mw; l.y -= 8 * gp * mw;
     p.manoCerca = { x: c.x, y: c.y, ang: c0.ca, mu: c0.cmu, dobla: -1, puno: c0.cp };
     p.manoLejos = { x: l.x, y: l.y, ang: la, mu: c0.lmu, dobla: -1, puno: c0.lp, objeto: c0.dedo > 0.01 ? dedo(c0.dedo) : null };
+    p.tirasLimpias = true;               // rodillas y codos sin dientes de sierra
     return p;
   }
 

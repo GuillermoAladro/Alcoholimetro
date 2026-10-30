@@ -22,8 +22,11 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00003 | Guillermo y el globo | 12,45 s | [MP4 60 fps](vista%20previa/00003%20Guillermo%20y%20el%20globo.mp4) · [fotogramas](vista%20previa/00003%20Guillermo%20y%20el%20globo%20-%20fotogramas.png) |
 | 00003.2 | Guillermo y el globo · revisada | 12,45 s | [MP4 60 fps](vista%20previa/00003.2%20Guillermo%20y%20el%20globo.mp4) · [fotogramas](vista%20previa/00003.2%20Guillermo%20y%20el%20globo%20-%20fotogramas.png) · [revisión](revision/00003.2.md) |
 | 00004 | Guillermo contra la máquina | 13,25 s | [MP4 60 fps](vista%20previa/00004%20Guillermo%20contra%20la%20maquina.mp4) · [fotogramas](vista%20previa/00004%20Guillermo%20contra%20la%20maquina%20-%20fotogramas.png) |
+| 00005 | Guillermo y el chupito de fuego | 13,45 s | [MP4 60 fps](vista%20previa/00005%20Guillermo%20y%20el%20chupito%20de%20fuego.mp4) · [fotogramas](vista%20previa/00005%20Guillermo%20y%20el%20chupito%20de%20fuego%20-%20fotogramas.png) |
 | 00006 | Guillermo y el hipo | 13,15 s | [MP4 60 fps](vista%20previa/00006%20Guillermo%20y%20el%20hipo.mp4) · [fotogramas](vista%20previa/00006%20Guillermo%20y%20el%20hipo%20-%20fotogramas.png) |
 | 00007 | Guillermo y el champán | 13,00 s | [MP4 60 fps](vista%20previa/00007%20Guillermo%20y%20el%20champan.mp4) · [fotogramas](vista%20previa/00007%20Guillermo%20y%20el%20champan%20-%20fotogramas.png) |
+| 00008 | Guillermo y los cacahuetes | 13,45 s | [MP4 60 fps](vista%20previa/00008%20Guillermo%20y%20los%20cacahuetes.mp4) · [fotogramas](vista%20previa/00008%20Guillermo%20y%20los%20cacahuetes%20-%20fotogramas.png) |
+| 00009 | Guillermo y la línea recta | 14,00 s | [MP4 60 fps](vista%20previa/00009%20Guillermo%20y%20la%20linea%20recta.mp4) · [fotogramas](vista%20previa/00009%20Guillermo%20y%20la%20linea%20recta%20-%20fotogramas.png) |
 | 00010 | Guillermo en la discoteca | 13,60 s | [MP4 60 fps](vista%20previa/00010%20Guillermo%20en%20la%20discoteca.mp4) · [fotogramas](vista%20previa/00010%20Guillermo%20en%20la%20discoteca%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
@@ -118,6 +121,21 @@ Conserva los cuatro soplidos, el estallido y el enfado. Corrige la unión brazo�
 
 ![Fotogramas de 00004](vista%20previa/00004%20Guillermo%20contra%20la%20maquina%20-%20fotogramas.png)
 
+### 00005 · Guillermo y el chupito de fuego
+
+1. Negro.
+2. Chupitería de ladrillo con un neón en forma de llama, botellero, barra con taburetes y suelo de ajedrez. Guillermo mira el chupito de reojo y lo coge.
+3. Saca un mechero del bolsillo: la primera chispa falla y a la segunda prende el chupito (llama azul y naranja).
+4. Lo levanta y mira a cámara con chulería.
+5. Coge aire y **sopla**… la llama se tumba y le vuelve a la cara: **bola de fuego**, destello y temblor.
+6. Se disipa el humo: tiene la cara **tiznada de hollín**, con los ojos muy blancos, y el pelo humeando con ascuas.
+7. Parpadea dos veces y tose un **anillo de humo**.
+8. Se encoge de hombros, se bebe el chupito de un trago y lo deja en la barra.
+9. Pulgar arriba y sonrisa con los dientes blancos y un destello.
+10. Negro.
+
+![Fotogramas de 00005](vista%20previa/00005%20Guillermo%20y%20el%20chupito%20de%20fuego%20-%20fotogramas.png)
+
 ### 00006 · Guillermo y el hipo
 
 1. Negro.
@@ -151,6 +169,35 @@ Conserva los cuatro soplidos, el estallido y el enfado. Corrige la unión brazo�
 8. Negro.
 
 ![Fotogramas de 00007](vista%20previa/00007%20Guillermo%20y%20el%20champan%20-%20fotogramas.png)
+
+### 00008 · Guillermo y los cacahuetes
+
+1. Negro.
+2. Taberna granate con estantería de botellas, lámpara verde, un neón con forma de cacahuete y una mesa alta con un cuenco de cacahuetes y una caña. Guillermo mira el cuenco con antojo y coge uno.
+3. **Primer intento:** lo lanza y lo sigue con los ojos y la boca abierta… le rebota en la nariz. Se queda bizco, con la nariz roja, parpadea dos veces y sacude la cabeza.
+4. Mira a cámara con chulería.
+5. **Segundo intento:** un tiro muy alto. Recula con la boca abierta, pero el cacahuete le pasa por detrás y cae al suelo. Lo busca a un lado y a otro, lo encuentra y se mosquea.
+6. **Tercer intento:** apunta con un ojo cerrado y la lengua fuera y lo lanza tan alto que sale de la escena. Espera echado hacia atrás como en el limbo, con una mirada impaciente a cámara…
+7. …y le cae justo en la boca. Mastica con el carrillo hinchado, pega un salto con los brazos arriba y guiña un ojo a cámara con el pulgar arriba.
+8. Negro.
+
+![Fotogramas de 00008](vista%20previa/00008%20Guillermo%20y%20los%20cacahuetes%20-%20fotogramas.png)
+
+### 00009 · Guillermo y la línea recta
+
+1. Negro.
+2. De noche, en la calle, delante del bar: fachada de ladrillo, escaparate con botellas, neón de una jarra y una farola con polillas. Hay una línea blanca pintada en el suelo.
+3. Guillermo entra andando por la izquierda y mira la línea.
+4. Se prepara: sacude las manos, coge aire con los mofletes hinchados y echa el vaho.
+5. **La prueba de la línea:** con los brazos en cruz y la puntita de la lengua fuera, da seis pasos punta-talón. Se tambalea cada vez más y una vez se queda con el pie en el aire.
+6. **A la pata coja:** casi se cae de espaldas, mueve los brazos como un molino, suda… y se recupera resoplando.
+7. **El dedo a la nariz:** con los ojos cerrados acerca el dedo índice… y se lo mete en el ojo. Ojo rojo, lagrimita y se lo frota.
+8. Hace una reverencia muy orgulloso y mira a cámara satisfecho.
+9. Da un paso, **resbala en la línea**, sale volando con las piernas por delante, cae de culo y sale deslizándose por la derecha.
+10. Se oye el golpe fuera de plano (estrellitas y polvo) y una de sus zapatillas vuelve rebotando y se queda en la línea.
+11. Negro.
+
+![Fotogramas de 00009](vista%20previa/00009%20Guillermo%20y%20la%20linea%20recta%20-%20fotogramas.png)
 
 ### 00010 · Guillermo en la discoteca
 
@@ -193,7 +240,7 @@ Animaciones 2D/
 │  ├─ piezas.png · piezas.js     atlas generado (piezas originales) y posiciones de cada pieza
 │  ├─ piezas_extra.png           piezas añadidas: brazo libre, torso sin brazos, pelo dorado y cara roja
 │  └─ guillermo.js               montaje del personaje: cuerpo, cara, manos, jarra, copa y transformación
-├─ escenas/                     una escena por archivo (00001, 00001.2, 00002, 00003, 00004)
+├─ escenas/                     una escena por archivo (00001 … 00010 y sus revisiones)
 ├─ herramientas/                 comprobar.py y grabar.py
 └─ vista previa/                 vídeos y fotogramas de cada animación
 ```
@@ -225,6 +272,10 @@ Lo que el avatar no tiene se dibuja en el mismo estilo:
 El script también rellena lo que el brazo tapaba en el torso y el bolsillo donde estaba la mano. Si el avatar cambia, se vuelve a ejecutar y sale el mismo atlas.
 
 La cabeza va algo más grande que en el avatar, como en una caricatura. Brazos y piernas se doblan como una manguera: la pieza se corta en rodajas que siguen una curva calculada con cinemática inversa. Así los pies quedan clavados al suelo y la mano llega justo al asa.
+
+Opciones del montaje que usan las escenas nuevas (las anteriores no las activan y se ven igual):
+- `p.tirasLimpias`: cada rodaja de brazo o pierna se recorta en cuña por sus juntas, así las rodillas y los codos muy doblados no dejan dientes de sierra;
+- `p.capaCabeza(g, t)` y `p.capaTronco(g, t)`: la escena dibuja encima de la cara o del torso con las coordenadas del retrato o de la hoja (hollín, cara morada, lengua, lágrima…).
 
 ## Añadir una animación
 

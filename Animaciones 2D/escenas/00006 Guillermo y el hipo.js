@@ -307,6 +307,7 @@
     p.manoCerca = { x: c.x, y: c.y, ang: b.ca, mu: b.cmu, dobla: -1, puno: b.cp };
     p.manoLejos = { x: l.x, y: l.y, ang: b.la, mu: b.lmu, dobla: -1, puno: b.lp };
     p.__b = h;
+    p.tirasLimpias = true;               // rodillas y codos sin dientes de sierra
     return p;
   }
 

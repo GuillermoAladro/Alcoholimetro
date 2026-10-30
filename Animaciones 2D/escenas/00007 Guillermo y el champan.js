@@ -301,6 +301,7 @@
     p.botella = { x: o.x, y: o.y, ang: ba };
     p.ikContinuo = true;
     p.vuelo = vuelo(t);
+    p.tirasLimpias = true;               // rodillas y codos sin dientes de sierra
     return p;
   }
   const pose = t => poseBase(t);
