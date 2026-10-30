@@ -3,7 +3,7 @@
 
 Guillermo uses the separate, manually partitioned master. Other characters are
 traced from their own current reference sheet without substituting identities,
-clothes, poses or expressions. CPU workers process independent files only.
+clothes, poses or expressions. Characters are processed strictly one at a time.
 """
 from pathlib import Path
 import copy
@@ -13,7 +13,6 @@ import sys
 import time
 import io
 import xml.etree.ElementTree as ET
-from concurrent.futures import ProcessPoolExecutor, as_completed
 
 from PIL import Image
 import cv2
@@ -119,10 +118,10 @@ if __name__=='__main__':
     sources=[p for p in sorted((REPO/'animaciones').glob('Avatar *.png')) if p.stem!='Avatar Guillermo Aladro']
     if len(sys.argv)>2:sources=[p for p in sources if p.stem.removeprefix('Avatar ') in sys.argv[2:]]
     records=[]
-    with ProcessPoolExecutor(max_workers=2) as pool:
-        futures={pool.submit(build_one,str(p)):p for p in sources}
-        for future in as_completed(futures):
-            result=future.result();records.append(result);print(json.dumps(result,ensure_ascii=False),flush=True)
+    for source in sources:
+        result=build_one(str(source))
+        records.append(result)
+        print(json.dumps(result,ensure_ascii=False),flush=True)
     report=BASE/'control-calidad-coleccion.json'
     all_records={r['character']:r for r in json.loads(report.read_text())['characters']} if report.exists() else {}
     all_records.update({r['character']:r for r in records})
