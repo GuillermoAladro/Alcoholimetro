@@ -50,6 +50,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00017 | Guillermo y Laura · Los dardos | 14,45 s | [MP4 60 fps](vista%20previa/00017%20Guillermo%20y%20Laura%20-%20los%20dardos.mp4) · [fotogramas](vista%20previa/00017%20Guillermo%20y%20Laura%20-%20los%20dardos%20-%20fotogramas.png) |
 | 00017.2 | Guillermo y Laura · Los dardos · revisada | 14,45 s | [MP4 60 fps](vista%20previa/00017.2%20Guillermo%20y%20Laura%20-%20los%20dardos.mp4) · [fotogramas](vista%20previa/00017.2%20Guillermo%20y%20Laura%20-%20los%20dardos%20-%20fotogramas.png) · [revisión](revision/00017.2.md) |
 | 00018 | Guillermo y Laura · El selfie | 13,30 s | [MP4 60 fps](vista%20previa/00018%20Guillermo%20y%20Laura%20-%20el%20selfie.mp4) · [fotogramas](vista%20previa/00018%20Guillermo%20y%20Laura%20-%20el%20selfie%20-%20fotogramas.png) |
+| 00018.2 | Guillermo y Laura · El selfie · revisada | 13,3 s | [MP4 60 fps](vista%20previa/00018.2%20Guillermo%20y%20Laura%20-%20el%20selfie.mp4) · [fotogramas](vista%20previa/00018.2%20Guillermo%20y%20Laura%20-%20el%20selfie%20-%20fotogramas.png) · [revisión](revision/00018.2.md) |
 | 00019 | Guillermo y Laura · El paraguas | 13,60 s | [MP4 60 fps](vista%20previa/00019%20Guillermo%20y%20Laura%20-%20el%20paraguas.mp4) · [fotogramas](vista%20previa/00019%20Guillermo%20y%20Laura%20-%20el%20paraguas%20-%20fotogramas.png) |
 | 00020 | Guillermo y Laura · Piedra, papel o tijera | 14,95 s | [MP4 60 fps](vista%20previa/00020%20Guillermo%20y%20Laura%20-%20piedra%20papel%20o%20tijera.mp4) · [fotogramas](vista%20previa/00020%20Guillermo%20y%20Laura%20-%20piedra%20papel%20o%20tijera%20-%20fotogramas.png) |
 | 00021 | Guillermo y Marcos · El chupito en llamas | 14,10 s | [MP4 60 fps](vista%20previa/00021%20Guillermo%20y%20Marcos%20-%20el%20chupito%20en%20llamas.mp4) · [fotogramas](vista%20previa/00021%20Guillermo%20y%20Marcos%20-%20el%20chupito%20en%20llamas%20-%20fotogramas.png) |
@@ -467,6 +468,12 @@ Corrige los brazos de Laura al protegerse, el apoyo de los pies, la recogida de 
 9. Negro.
 
 ![Fotogramas de 00018](vista%20previa/00018%20Guillermo%20y%20Laura%20-%20el%20selfie%20-%20fotogramas.png)
+
+
+### 00018.2 · Revisión de continuidad
+
+Corrige el brazo del gesto de las orejas de conejo, los apoyos y los hombros de Guillermo. Amplía el encuadre de las miniaturas y ajusta el seguimiento del móvil. Se conserva la original. [Informe y pruebas](revision/00018.2.md).
+
 
 ### 00019 · Guillermo y Laura · El paraguas
 
