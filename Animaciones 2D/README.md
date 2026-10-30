@@ -643,6 +643,7 @@ Animaciones 2D/
 ├─ personajes/ander/            coordenadas de Ander y su atlas
 ├─ personajes/carla/            coordenadas de Carla, su atlas, aros y collar
 ├─ personajes/dari/             coordenadas de Dari, su atlas y las gafas
+├─ personajes/deivi/            coordenadas de Deivi y su atlas
 ├─ escenas/                     una escena por archivo (00001 … 00010 y sus revisiones)
 ├─ herramientas/                 comprobar.py y grabar.py
 └─ vista previa/                 vídeos y fotogramas de cada animación
@@ -720,6 +721,13 @@ Opciones del montaje que usan las escenas nuevas (las anteriores no las activan 
 - **Piezas:** la cabeza del retrato con el pelo rizado, el bigote y la perilla (cuencas vacías), la cara roja, las cejas, la boca, el torso con la capucha detrás del cuello, las dos mangas de la parka enderezadas, las piernas del vaquero y la zapatilla con la suela nivelada.
 - **Gafas:** se dibujan aparte encima de los ojos, así párpados, iris y cejas se mueven por debajo; cada escena puede moverlas o quitárselas (`p.gafas`).
 - **Altura:** con el mismo `p.s` mide como Guillermo (el pelo le saca un poco).
+
+**Deivi** (`personajes/deivi/`) sale de `Avatares 2D/Deivi/Deivi-2D.png` con el recortador común.
+
+- **Piezas:** la cabeza del retrato con el pelo ondulado (cuencas vacías y sin el cuello del retrato), la cara roja, las cejas, la boca, el torso de la camiseta lila hasta la cintura del vaquero, los dos brazos (manga corta y brazo) enderezados, las piernas del vaquero y la zapatilla con la suela nivelada.
+- **Limpieza:** las muñecas metidas en los bolsillos se quitan del torso y se repinta lo que tapaban: el costado y el bajo de la camiseta y la cintura del vaquero, con sus costuras.
+- **En pantalla:** los hombros son lilas y la mano se dibuja aparte al sacarla del bolsillo.
+- **Altura:** con el mismo `p.s` mide prácticamente lo mismo que Guillermo.
 
 ## Añadir una animación
 
