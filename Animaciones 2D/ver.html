@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Animaciones 2D</title>
+<style>
+  :root { --fondo: #111214; --panel: #1c1d21; --texto: #e9e6df; --suave: #9c988f; --acento: #f5aa1d; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--fondo); color: var(--texto); font: 14px/1.4 system-ui, sans-serif; }
+  body { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 16px; }
+  #marco { width: min(100%, calc((100vh - 120px) * 1024 / 600)); aspect-ratio: 1024 / 600; background: #000; }
+  canvas { display: block; width: 100%; height: 100%; background: #000; }
+  #mandos { width: min(100%, calc((100vh - 120px) * 1024 / 600)); display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; background: var(--panel); padding: 10px 12px; border-radius: 10px; }
+  button, select { background: #2a2b31; color: var(--texto); border: 1px solid #3a3b42; border-radius: 6px; padding: 6px 10px; font: inherit; cursor: pointer; }
+  button:hover, select:hover { border-color: var(--acento); }
+  input[type=range] { flex: 1 1 200px; accent-color: var(--acento); }
+  #tiempo { font-variant-numeric: tabular-nums; color: var(--suave); min-width: 104px; text-align: right; }
+  label { color: var(--suave); display: flex; align-items: center; gap: 4px; }
+  body.kiosco { padding: 0; background: #000; }
+  body.kiosco #mandos { display: none; }
+  body.kiosco #marco { width: 100vw; height: 100vh; aspect-ratio: auto; }
+  body.kiosco canvas { object-fit: contain; }
+</style>
+</head>
+<body>
+<div id="marco"><canvas id="lienzo" width="1024" height="600"></canvas></div>
+<div id="mandos">
+  <select id="escena" aria-label="Animación"></select>
+  <button id="play" title="Espacio">Pausa</button>
+  <button id="reinicio" title="R">⟲</button>
+  <input id="barra" type="range" min="0" max="1000" value="0" aria-label="Tiempo">
+  <span id="tiempo">0.00 / 0.00 s</span>
+  <label><input id="bucle" type="checkbox" checked> bucle</label>
+  <select id="velocidad" aria-label="Velocidad"><option value="0.25">×0.25</option><option value="0.5">×0.5</option><option value="1" selected>×1</option></select>
+  <button id="pantalla" title="F">⛶</button>
+</div>
+
+<!-- motor -->
+<script src="motor/base2d.js"></script>
+<script src="motor/recortes.js"></script>
+<!-- personajes (piezas sacadas de Avatares 2D) -->
+<script src="personajes/guillermo-aladro/piezas.js"></script>
+<script src="personajes/guillermo-aladro/guillermo.js"></script>
+<!-- escenas: añadir aquí cada animación nueva -->
+<script src="escenas/00001%20Guillermo%20y%20la%20jarra.js"></script>
+
+<script>
+"use strict";
+(() => {
+  const q = new URLSearchParams(location.search);
+  const lienzo = document.getElementById("lienzo"), g = lienzo.getContext("2d");
+  const $ = id => document.getElementById(id);
+  if (q.has("kiosco")) document.body.classList.add("kiosco");
+  for (const b of BANCO) { const o = document.createElement("option"); o.value = b.id; o.textContent = b.id + " · " + b.nombre; $("escena").appendChild(o); }
+  let reg = BANCO.find(b => b.id === q.get("id")) || BANCO[0], esc = reg.crear();
+  $("escena").value = reg.id;
+  let reproduce = !q.has("pausa"), ultimo = null, velocidad = 1;
+  const listo = () => !window.Recortes || Recortes.listos();
+
+  function dibuja() {
+    esc.dibujar(g);
+    $("tiempo").textContent = esc.t.toFixed(2) + " / " + esc.dur.toFixed(2) + " s";
+    if (document.activeElement !== $("barra")) $("barra").value = Math.round(esc.t / esc.dur * 1000);
+  }
+  function cuadro(ts) {
+    if (ultimo === null) ultimo = ts;
+    const dt = Math.min(0.1, (ts - ultimo) / 1000); ultimo = ts;
+    if (reproduce && listo()) {
+      esc.t = Math.min(esc.dur, esc.t + dt * velocidad);
+      if (esc.terminada && $("bucle").checked) esc.t = 0;
+      else if (esc.terminada) { reproduce = false; $("play").textContent = "Play"; }
+    }
+    dibuja();
+    requestAnimationFrame(cuadro);
+  }
+  function cambia(id) { reg = BANCO.find(b => b.id === id); esc = reg.crear(); esc.t = 0; }
+  $("escena").onchange = e => cambia(e.target.value);
+  $("play").onclick = () => { if (esc.terminada) esc.t = 0; reproduce = !reproduce; $("play").textContent = reproduce ? "Pausa" : "Play"; };
+  $("reinicio").onclick = () => { esc.t = 0; };
+  $("barra").oninput = e => { esc.t = e.target.value / 1000 * esc.dur; };
+  $("velocidad").onchange = e => { velocidad = +e.target.value; };
+  $("pantalla").onclick = () => (document.fullscreenElement ? document.exitFullscreen() : $("marco").requestFullscreen());
+  addEventListener("keydown", e => {
+    if (e.target.tagName === "SELECT") return;
+    if (e.code === "Space") { e.preventDefault(); $("play").click(); }
+    else if (e.key === "r" || e.key === "R") $("reinicio").click();
+    else if (e.key === "f" || e.key === "F") $("pantalla").click();
+    else if (e.key === "ArrowRight") { reproduce = false; $("play").textContent = "Play"; esc.t = Math.min(esc.dur, esc.t + 1 / 60); }
+    else if (e.key === "ArrowLeft") { reproduce = false; $("play").textContent = "Play"; esc.t = Math.max(0, esc.t - 1 / 60); }
+  });
+  $("play").textContent = reproduce ? "Pausa" : "Play";
+  // Para las herramientas de grabación y revisión
+  window.A2D = { listo, dur: () => esc.dur, cuadro: t => { reproduce = false; esc.t = t; esc.dibujar(g); } };
+  requestAnimationFrame(cuadro);
+})();
+</script>
+</body>
+</html>
