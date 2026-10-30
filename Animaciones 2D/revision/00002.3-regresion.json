@@ -1,0 +1,923 @@
+{
+  "referenceCommit": "b48386497200e1fe238103151cc8e8d0de838ce9",
+  "results": [
+    {
+      "id": "00001",
+      "frames": [
+        {
+          "t": 0,
+          "hash": 1621859781,
+          "unchanged": true
+        },
+        {
+          "t": 0.6437499999999999,
+          "hash": 2351331082,
+          "unchanged": true
+        },
+        {
+          "t": 1.2874999999999999,
+          "hash": 244329247,
+          "unchanged": true
+        },
+        {
+          "t": 1.9312499999999997,
+          "hash": 2379721557,
+          "unchanged": true
+        },
+        {
+          "t": 2.5749999999999997,
+          "hash": 2086732204,
+          "unchanged": true
+        },
+        {
+          "t": 3.21875,
+          "hash": 2719928126,
+          "unchanged": true
+        },
+        {
+          "t": 3.8624999999999994,
+          "hash": 364933829,
+          "unchanged": true
+        },
+        {
+          "t": 4.50625,
+          "hash": 2616772138,
+          "unchanged": true
+        },
+        {
+          "t": 5.1499999999999995,
+          "hash": 1085277255,
+          "unchanged": true
+        },
+        {
+          "t": 5.793749999999999,
+          "hash": 2881859618,
+          "unchanged": true
+        },
+        {
+          "t": 6.4375,
+          "hash": 68378002,
+          "unchanged": true
+        },
+        {
+          "t": 7.08125,
+          "hash": 1322881441,
+          "unchanged": true
+        },
+        {
+          "t": 7.724999999999999,
+          "hash": 617014473,
+          "unchanged": true
+        },
+        {
+          "t": 8.36875,
+          "hash": 2893854817,
+          "unchanged": true
+        },
+        {
+          "t": 9.0125,
+          "hash": 315169121,
+          "unchanged": true
+        },
+        {
+          "t": 9.65625,
+          "hash": 426491823,
+          "unchanged": true
+        },
+        {
+          "t": 10.299999999999999,
+          "hash": 1740039772,
+          "unchanged": true
+        },
+        {
+          "t": 10.94375,
+          "hash": 820952339,
+          "unchanged": true
+        },
+        {
+          "t": 11.587499999999999,
+          "hash": 1736540922,
+          "unchanged": true
+        },
+        {
+          "t": 12.231250000000001,
+          "hash": 1089329290,
+          "unchanged": true
+        },
+        {
+          "t": 12.875,
+          "hash": 2004344354,
+          "unchanged": true
+        },
+        {
+          "t": 13.518749999999999,
+          "hash": 1311416348,
+          "unchanged": true
+        },
+        {
+          "t": 14.1625,
+          "hash": 263641995,
+          "unchanged": true
+        },
+        {
+          "t": 14.806249999999999,
+          "hash": 2972870539,
+          "unchanged": true
+        },
+        {
+          "t": 15.449999999999998,
+          "hash": 1621859781,
+          "unchanged": true
+        }
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "00001.2",
+      "frames": [
+        {
+          "t": 0,
+          "hash": 1621859781,
+          "unchanged": true
+        },
+        {
+          "t": 0.6437499999999999,
+          "hash": 911328569,
+          "unchanged": true
+        },
+        {
+          "t": 1.2874999999999999,
+          "hash": 4021524199,
+          "unchanged": true
+        },
+        {
+          "t": 1.9312499999999997,
+          "hash": 2011375935,
+          "unchanged": true
+        },
+        {
+          "t": 2.5749999999999997,
+          "hash": 1163059222,
+          "unchanged": true
+        },
+        {
+          "t": 3.21875,
+          "hash": 1130666579,
+          "unchanged": true
+        },
+        {
+          "t": 3.8624999999999994,
+          "hash": 1068544544,
+          "unchanged": true
+        },
+        {
+          "t": 4.50625,
+          "hash": 3374583817,
+          "unchanged": true
+        },
+        {
+          "t": 5.1499999999999995,
+          "hash": 4013056135,
+          "unchanged": true
+        },
+        {
+          "t": 5.793749999999999,
+          "hash": 1865426747,
+          "unchanged": true
+        },
+        {
+          "t": 6.4375,
+          "hash": 3166566560,
+          "unchanged": true
+        },
+        {
+          "t": 7.08125,
+          "hash": 2737538063,
+          "unchanged": true
+        },
+        {
+          "t": 7.724999999999999,
+          "hash": 4008931896,
+          "unchanged": true
+        },
+        {
+          "t": 8.36875,
+          "hash": 1877485600,
+          "unchanged": true
+        },
+        {
+          "t": 9.0125,
+          "hash": 2898156907,
+          "unchanged": true
+        },
+        {
+          "t": 9.65625,
+          "hash": 4100435794,
+          "unchanged": true
+        },
+        {
+          "t": 10.299999999999999,
+          "hash": 3780208309,
+          "unchanged": true
+        },
+        {
+          "t": 10.94375,
+          "hash": 4258130903,
+          "unchanged": true
+        },
+        {
+          "t": 11.587499999999999,
+          "hash": 2309822483,
+          "unchanged": true
+        },
+        {
+          "t": 12.231250000000001,
+          "hash": 1539206316,
+          "unchanged": true
+        },
+        {
+          "t": 12.875,
+          "hash": 3317545925,
+          "unchanged": true
+        },
+        {
+          "t": 13.518749999999999,
+          "hash": 3356151980,
+          "unchanged": true
+        },
+        {
+          "t": 14.1625,
+          "hash": 3326742947,
+          "unchanged": true
+        },
+        {
+          "t": 14.806249999999999,
+          "hash": 2972870539,
+          "unchanged": true
+        },
+        {
+          "t": 15.449999999999998,
+          "hash": 1621859781,
+          "unchanged": true
+        }
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "00002",
+      "frames": [
+        {
+          "t": 0,
+          "hash": 1621859781,
+          "unchanged": true
+        },
+        {
+          "t": 0.5187499999999999,
+          "hash": 426820974,
+          "unchanged": true
+        },
+        {
+          "t": 1.0374999999999999,
+          "hash": 3999567813,
+          "unchanged": true
+        },
+        {
+          "t": 1.5562499999999997,
+          "hash": 2584504205,
+          "unchanged": true
+        },
+        {
+          "t": 2.0749999999999997,
+          "hash": 3019256072,
+          "unchanged": true
+        },
+        {
+          "t": 2.59375,
+          "hash": 3906562338,
+          "unchanged": true
+        },
+        {
+          "t": 3.1124999999999994,
+          "hash": 481884,
+          "unchanged": true
+        },
+        {
+          "t": 3.6312499999999996,
+          "hash": 1560601980,
+          "unchanged": true
+        },
+        {
+          "t": 4.1499999999999995,
+          "hash": 2978905681,
+          "unchanged": true
+        },
+        {
+          "t": 4.66875,
+          "hash": 3499781414,
+          "unchanged": true
+        },
+        {
+          "t": 5.1875,
+          "hash": 3409980195,
+          "unchanged": true
+        },
+        {
+          "t": 5.70625,
+          "hash": 3062310072,
+          "unchanged": true
+        },
+        {
+          "t": 6.224999999999999,
+          "hash": 1023021994,
+          "unchanged": true
+        },
+        {
+          "t": 6.7437499999999995,
+          "hash": 2738555682,
+          "unchanged": true
+        },
+        {
+          "t": 7.262499999999999,
+          "hash": 1918302265,
+          "unchanged": true
+        },
+        {
+          "t": 7.78125,
+          "hash": 3450616711,
+          "unchanged": true
+        },
+        {
+          "t": 8.299999999999999,
+          "hash": 3860173579,
+          "unchanged": true
+        },
+        {
+          "t": 8.81875,
+          "hash": 2908383085,
+          "unchanged": true
+        },
+        {
+          "t": 9.3375,
+          "hash": 3948255617,
+          "unchanged": true
+        },
+        {
+          "t": 9.85625,
+          "hash": 1958408703,
+          "unchanged": true
+        },
+        {
+          "t": 10.375,
+          "hash": 703449114,
+          "unchanged": true
+        },
+        {
+          "t": 10.893749999999999,
+          "hash": 3780682929,
+          "unchanged": true
+        },
+        {
+          "t": 11.4125,
+          "hash": 1066118516,
+          "unchanged": true
+        },
+        {
+          "t": 11.931249999999999,
+          "hash": 2693734377,
+          "unchanged": true
+        },
+        {
+          "t": 12.449999999999998,
+          "hash": 1621859781,
+          "unchanged": true
+        }
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "00002.2",
+      "frames": [
+        {
+          "t": 0,
+          "hash": 1621859781,
+          "unchanged": true
+        },
+        {
+          "t": 0.5187499999999999,
+          "hash": 3498373042,
+          "unchanged": true
+        },
+        {
+          "t": 1.0374999999999999,
+          "hash": 4142601473,
+          "unchanged": true
+        },
+        {
+          "t": 1.5562499999999997,
+          "hash": 1937809655,
+          "unchanged": true
+        },
+        {
+          "t": 2.0749999999999997,
+          "hash": 1554735710,
+          "unchanged": true
+        },
+        {
+          "t": 2.59375,
+          "hash": 471878915,
+          "unchanged": true
+        },
+        {
+          "t": 3.1124999999999994,
+          "hash": 2790434508,
+          "unchanged": true
+        },
+        {
+          "t": 3.6312499999999996,
+          "hash": 1141210208,
+          "unchanged": true
+        },
+        {
+          "t": 4.1499999999999995,
+          "hash": 2114981181,
+          "unchanged": true
+        },
+        {
+          "t": 4.66875,
+          "hash": 4041042100,
+          "unchanged": true
+        },
+        {
+          "t": 5.1875,
+          "hash": 1506097515,
+          "unchanged": true
+        },
+        {
+          "t": 5.70625,
+          "hash": 1455100670,
+          "unchanged": true
+        },
+        {
+          "t": 6.224999999999999,
+          "hash": 2893313656,
+          "unchanged": true
+        },
+        {
+          "t": 6.7437499999999995,
+          "hash": 4158862646,
+          "unchanged": true
+        },
+        {
+          "t": 7.262499999999999,
+          "hash": 1157711752,
+          "unchanged": true
+        },
+        {
+          "t": 7.78125,
+          "hash": 520187531,
+          "unchanged": true
+        },
+        {
+          "t": 8.299999999999999,
+          "hash": 1997498460,
+          "unchanged": true
+        },
+        {
+          "t": 8.81875,
+          "hash": 312675696,
+          "unchanged": true
+        },
+        {
+          "t": 9.3375,
+          "hash": 3125671296,
+          "unchanged": true
+        },
+        {
+          "t": 9.85625,
+          "hash": 2849827936,
+          "unchanged": true
+        },
+        {
+          "t": 10.375,
+          "hash": 778437485,
+          "unchanged": true
+        },
+        {
+          "t": 10.893749999999999,
+          "hash": 1106377495,
+          "unchanged": true
+        },
+        {
+          "t": 11.4125,
+          "hash": 4182363195,
+          "unchanged": true
+        },
+        {
+          "t": 11.931249999999999,
+          "hash": 1907391553,
+          "unchanged": true
+        },
+        {
+          "t": 12.449999999999998,
+          "hash": 1621859781,
+          "unchanged": true
+        }
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "00003",
+      "frames": [
+        {
+          "t": 0,
+          "hash": 1621859781,
+          "unchanged": true
+        },
+        {
+          "t": 0.5187499999999999,
+          "hash": 3722726230,
+          "unchanged": true
+        },
+        {
+          "t": 1.0374999999999999,
+          "hash": 3290352802,
+          "unchanged": true
+        },
+        {
+          "t": 1.5562499999999997,
+          "hash": 3842938427,
+          "unchanged": true
+        },
+        {
+          "t": 2.0749999999999997,
+          "hash": 688189697,
+          "unchanged": true
+        },
+        {
+          "t": 2.59375,
+          "hash": 3925828443,
+          "unchanged": true
+        },
+        {
+          "t": 3.1124999999999994,
+          "hash": 2940764611,
+          "unchanged": true
+        },
+        {
+          "t": 3.6312499999999996,
+          "hash": 3157762837,
+          "unchanged": true
+        },
+        {
+          "t": 4.1499999999999995,
+          "hash": 1849086349,
+          "unchanged": true
+        },
+        {
+          "t": 4.66875,
+          "hash": 4115287440,
+          "unchanged": true
+        },
+        {
+          "t": 5.1875,
+          "hash": 1211929032,
+          "unchanged": true
+        },
+        {
+          "t": 5.70625,
+          "hash": 1613228498,
+          "unchanged": true
+        },
+        {
+          "t": 6.224999999999999,
+          "hash": 3749206971,
+          "unchanged": true
+        },
+        {
+          "t": 6.7437499999999995,
+          "hash": 2759040582,
+          "unchanged": true
+        },
+        {
+          "t": 7.262499999999999,
+          "hash": 3511529561,
+          "unchanged": true
+        },
+        {
+          "t": 7.78125,
+          "hash": 2341319099,
+          "unchanged": true
+        },
+        {
+          "t": 8.299999999999999,
+          "hash": 3043626464,
+          "unchanged": true
+        },
+        {
+          "t": 8.81875,
+          "hash": 3583485791,
+          "unchanged": true
+        },
+        {
+          "t": 9.3375,
+          "hash": 1521695287,
+          "unchanged": true
+        },
+        {
+          "t": 9.85625,
+          "hash": 3317703790,
+          "unchanged": true
+        },
+        {
+          "t": 10.375,
+          "hash": 1164063238,
+          "unchanged": true
+        },
+        {
+          "t": 10.893749999999999,
+          "hash": 1268031190,
+          "unchanged": true
+        },
+        {
+          "t": 11.4125,
+          "hash": 3905368071,
+          "unchanged": true
+        },
+        {
+          "t": 11.931249999999999,
+          "hash": 1302631260,
+          "unchanged": true
+        },
+        {
+          "t": 12.449999999999998,
+          "hash": 1621859781,
+          "unchanged": true
+        }
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "00003.2",
+      "frames": [
+        {
+          "t": 0,
+          "hash": 1621859781,
+          "unchanged": true
+        },
+        {
+          "t": 0.5187499999999999,
+          "hash": 2259805018,
+          "unchanged": true
+        },
+        {
+          "t": 1.0374999999999999,
+          "hash": 2886665990,
+          "unchanged": true
+        },
+        {
+          "t": 1.5562499999999997,
+          "hash": 742851320,
+          "unchanged": true
+        },
+        {
+          "t": 2.0749999999999997,
+          "hash": 2331912523,
+          "unchanged": true
+        },
+        {
+          "t": 2.59375,
+          "hash": 1780825082,
+          "unchanged": true
+        },
+        {
+          "t": 3.1124999999999994,
+          "hash": 1767400379,
+          "unchanged": true
+        },
+        {
+          "t": 3.6312499999999996,
+          "hash": 1929412877,
+          "unchanged": true
+        },
+        {
+          "t": 4.1499999999999995,
+          "hash": 1514409076,
+          "unchanged": true
+        },
+        {
+          "t": 4.66875,
+          "hash": 2765196135,
+          "unchanged": true
+        },
+        {
+          "t": 5.1875,
+          "hash": 2461195587,
+          "unchanged": true
+        },
+        {
+          "t": 5.70625,
+          "hash": 3963088873,
+          "unchanged": true
+        },
+        {
+          "t": 6.224999999999999,
+          "hash": 3947652626,
+          "unchanged": true
+        },
+        {
+          "t": 6.7437499999999995,
+          "hash": 1170856819,
+          "unchanged": true
+        },
+        {
+          "t": 7.262499999999999,
+          "hash": 3774827844,
+          "unchanged": true
+        },
+        {
+          "t": 7.78125,
+          "hash": 3432138484,
+          "unchanged": true
+        },
+        {
+          "t": 8.299999999999999,
+          "hash": 2368355261,
+          "unchanged": true
+        },
+        {
+          "t": 8.81875,
+          "hash": 3165741346,
+          "unchanged": true
+        },
+        {
+          "t": 9.3375,
+          "hash": 3776467932,
+          "unchanged": true
+        },
+        {
+          "t": 9.85625,
+          "hash": 1503154153,
+          "unchanged": true
+        },
+        {
+          "t": 10.375,
+          "hash": 1049911486,
+          "unchanged": true
+        },
+        {
+          "t": 10.893749999999999,
+          "hash": 2790116834,
+          "unchanged": true
+        },
+        {
+          "t": 11.4125,
+          "hash": 3195764183,
+          "unchanged": true
+        },
+        {
+          "t": 11.931249999999999,
+          "hash": 95680782,
+          "unchanged": true
+        },
+        {
+          "t": 12.449999999999998,
+          "hash": 1621859781,
+          "unchanged": true
+        }
+      ],
+      "unchanged": true
+    },
+    {
+      "id": "00004",
+      "frames": [
+        {
+          "t": 0,
+          "hash": 1621859781,
+          "unchanged": true
+        },
+        {
+          "t": 0.5520833333333334,
+          "hash": 2940269992,
+          "unchanged": true
+        },
+        {
+          "t": 1.1041666666666667,
+          "hash": 3083090604,
+          "unchanged": true
+        },
+        {
+          "t": 1.65625,
+          "hash": 4050767668,
+          "unchanged": true
+        },
+        {
+          "t": 2.2083333333333335,
+          "hash": 4290357606,
+          "unchanged": true
+        },
+        {
+          "t": 2.7604166666666665,
+          "hash": 1758585289,
+          "unchanged": true
+        },
+        {
+          "t": 3.3125,
+          "hash": 1393928822,
+          "unchanged": true
+        },
+        {
+          "t": 3.8645833333333335,
+          "hash": 1930819544,
+          "unchanged": true
+        },
+        {
+          "t": 4.416666666666667,
+          "hash": 3309838938,
+          "unchanged": true
+        },
+        {
+          "t": 4.96875,
+          "hash": 4132255829,
+          "unchanged": true
+        },
+        {
+          "t": 5.520833333333333,
+          "hash": 3853161060,
+          "unchanged": true
+        },
+        {
+          "t": 6.072916666666667,
+          "hash": 974097054,
+          "unchanged": true
+        },
+        {
+          "t": 6.625,
+          "hash": 2156778477,
+          "unchanged": true
+        },
+        {
+          "t": 7.177083333333333,
+          "hash": 1147869745,
+          "unchanged": true
+        },
+        {
+          "t": 7.729166666666667,
+          "hash": 1172174333,
+          "unchanged": true
+        },
+        {
+          "t": 8.28125,
+          "hash": 370360537,
+          "unchanged": true
+        },
+        {
+          "t": 8.833333333333334,
+          "hash": 1512253017,
+          "unchanged": true
+        },
+        {
+          "t": 9.385416666666666,
+          "hash": 2005803628,
+          "unchanged": true
+        },
+        {
+          "t": 9.9375,
+          "hash": 1316427328,
+          "unchanged": true
+        },
+        {
+          "t": 10.489583333333334,
+          "hash": 462210530,
+          "unchanged": true
+        },
+        {
+          "t": 11.041666666666666,
+          "hash": 895496996,
+          "unchanged": true
+        },
+        {
+          "t": 11.59375,
+          "hash": 3292839289,
+          "unchanged": true
+        },
+        {
+          "t": 12.145833333333334,
+          "hash": 471643616,
+          "unchanged": true
+        },
+        {
+          "t": 12.697916666666666,
+          "hash": 739454388,
+          "unchanged": true
+        },
+        {
+          "t": 13.25,
+          "hash": 1621859781,
+          "unchanged": true
+        }
+      ],
+      "unchanged": true
+    }
+  ],
+  "passed": true
+}

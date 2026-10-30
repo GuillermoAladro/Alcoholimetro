@@ -518,8 +518,12 @@ const Guillermo = (() => {
   const SIL_TORSO = [[128, 292], [180, 284], [243, 298], [306, 286], [353, 318], [346, 360], [343, 420], [341, 470], [338, 515], [336, 560],
                      [339, 610], [345, 645], [243, 652], [147, 638], [140, 615], [136, 590], [138, 570], [136, 550], [138, 530], [132, 510],
                      [123, 490], [121, 445], [124, 360]];
-  function torsoDesnudo(g, m) {
-    const sil = () => { g.beginPath(); rutaPoli(g, SIL_TORSO); };
+  const SIL_DESNUDO = [[213,248],[272,248],[278,282],[330,303],[366,333],[391,371],
+    [355,405],[344,460],[338,516],[336,560],[339,610],[345,650],[292,675],[243,684],
+    [184,675],[147,660],[128,641],[136,590],[138,550],[124,490],[121,412],[96,387],
+    [73,345],[98,318],[130,302],[202,280]];
+  function torsoDesnudo(g, m, completo = false) {
+    const sil = () => { g.beginPath(); rutaPoli(g, completo ? SIL_DESNUDO : SIL_TORSO); };
     g.save(); g.lineCap = "round"; g.lineJoin = "round";
     sil(); g.fillStyle = C.piel; g.fill();
     g.save(); sil(); g.clip();
@@ -594,6 +598,41 @@ const Guillermo = (() => {
     c.capFija = true; c.caminoCorto = true;
     return c;
   }
+  // Brazos descubiertos: misma curva, muñeca y paleta que el recortable.
+  // El contorno queda abierto en la raíz para unirlo al deltoides sin una costura negra.
+  function brazoDesnudo(g, c) {
+    const ps=R.muestras(c,c.muestras||32), n=ps.length-1, gro=c.grosor||1;
+    const ancho=u=> (u<.45 ? lerp(38,29,u/.45)+11*Math.sin(Math.PI*u/.45) : lerp(29,21,(u-.45)/.55)+6*Math.sin(Math.PI*(u-.45)/.55))*gro;
+    const lado=sg=>ps.map((q,i)=>({x:q.x+Math.cos(q.a)*ancho(i/n)*sg,y:q.y+Math.sin(q.a)*ancho(i/n)*sg}));
+    const izq=lado(-1),der=lado(1),ruta=[...izq,...der.slice().reverse()];
+    g.save();g.lineJoin="round";g.lineCap="round";
+    g.beginPath();M2.curva(g,ruta,true,.4);g.fillStyle=C.piel;g.fill();
+    g.save();g.clip();
+    const banda=ps.map((q,i)=>({x:q.x+Math.cos(q.a)*ancho(i/n)*.55,y:q.y+Math.sin(q.a)*ancho(i/n)*.55}));
+    g.beginPath();M2.curva(g,[...banda,...der.slice().reverse()],true,.4);g.fillStyle=C.pielSombra;g.fill();
+    const luz=ps.slice(2,Math.round(n*.4)).map((q,i)=>({x:q.x-Math.cos(q.a)*ancho((i+2)/n)*.3,y:q.y-Math.sin(q.a)*ancho((i+2)/n)*.3}));
+    g.beginPath();M2.curva(g,luz,false,.4);g.lineWidth=6;g.strokeStyle="rgba(255,226,180,.65)";g.stroke();
+    g.restore();
+    g.beginPath();M2.curva(g,ruta,false,.4);g.lineWidth=5;g.strokeStyle=C.tinta;g.stroke();
+    // Pliegue del codo, sin tapar la unión del puño.
+    const q=ps[Math.round(n*.52)],aa=q.a;
+    g.beginPath();g.moveTo(q.x-Math.cos(aa)*12,q.y-Math.sin(aa)*12);g.quadraticCurveTo(q.x,q.y+4,q.x+Math.cos(aa)*10,q.y+Math.sin(aa)*10);
+    g.lineWidth=2.5;g.strokeStyle="#8b4326";g.stroke();g.restore();
+  }
+  function brazoLibre(g,p,h,c,nombre,lado,t) {
+    const desnudo=clamp(p.sinCamiseta||0);
+    if(desnudo<1){
+      g.save();g.globalAlpha*=1-desnudo;
+      if(p.hombrosContinuos){
+        const union=tronco(p)({x:lado<0?132:342,y:lado<0?340:360});
+        g.beginPath();g.moveTo(union.x,union.y);g.lineTo(h.x,h.y);g.lineWidth=60;g.lineCap="round";g.strokeStyle=rgb(PAL.camiseta);g.stroke();
+        c.capFija=false;
+      } else hombro(g,{x:h.x+(lado<0?8:-6),y:h.y+(lado<0?22:14)},lado);
+      if(p.ikContinuo)R.tiraContinua(g,A,nombre,c);else R.tira(g,A,nombre,c,16);
+      g.restore();
+    }
+    if(desnudo>0){g.save();g.globalAlpha*=desnudo;brazoDesnudo(g,c);g.restore();}
+  }
   // Hombro redondo (camiseta) donde nace el brazo libre: tapa la junta al girar el brazo.
   function hombro(g, h, lado) {
     g.save(); g.lineCap = "round";
@@ -632,7 +671,9 @@ const Guillermo = (() => {
     // torso (con la mano en el bolsillo o con los dos brazos libres; camiseta entera o rota)
     const T = tronco(p), nomTronco = p.manoCerca ? "tronco_libre" : "tronco";
     g.save(); g.translate(p.pelvis.x, p.pelvis.y); g.rotate(p.torso); g.scale(p.torsoEsc.x, p.torsoEsc.y); g.translate(-PELVIS.x, -PELVIS.y);
-    const rasg = p.rasgado || 0;
+    const rasg = p.rasgado || 0, desnudo = clamp(p.sinCamiseta || 0);
+    if (desnudo < 1) {
+    g.save(); g.globalAlpha *= 1 - desnudo;
     if (rasg > 0.002) {
       const hueco = agujero(rasg, p.semillaRoto || 0);
       g.save(); g.beginPath(); rutaPoli(g, hueco); g.clip(); torsoDesnudo(g, p.musculo ?? 1); g.restore();
@@ -641,6 +682,9 @@ const Guillermo = (() => {
       g.beginPath(); rutaPoli(g, hueco); g.lineJoin = "miter"; g.lineWidth = 7; g.strokeStyle = "#08080a"; g.stroke();
       g.lineWidth = 2.2; g.strokeStyle = "#4a4a56"; g.stroke(); g.restore();
     } else R.pieza(g, A, nomTronco);
+    g.restore();
+    }
+    if (desnudo > 0) { g.save(); g.globalAlpha *= desnudo; torsoDesnudo(g, p.musculo ?? 1, true); g.restore(); }
     // Capa propia de la escena encima del torso, en coordenadas de la hoja (manchas, chorros…).
     if (p.capaTronco) p.capaTronco(g, t);
     g.restore();
@@ -657,15 +701,13 @@ const Guillermo = (() => {
       jarra(g, p.jarra, t); punoJarra(g); g.restore();
     } else if (p.manoLejos) {
       const h = T(HOMBRO), c = brazoMano(h, p.manoLejos, BRAZO_L, BRAZO_L * 0.5, p.ikContinuo); c.capAng = p.torso;
-      hombro(g, { x: h.x - 6, y: h.y + 14 }, 1);
-      if (p.ikContinuo) R.tiraContinua(g, A, "brazo", c); else R.tira(g, A, "brazo", c, 16);
+      brazoLibre(g, p, h, c, "brazo", 1, t);
       dibManoYObjeto(g, p.manoLejos, t);
     }
     // brazo cercano fuera del bolsillo
     if (p.manoCerca) {
       const h = T(HOMBRO_C), c = brazoMano(h, p.manoCerca, BRAZO_C_L, BRAZO_C_CODO, p.ikContinuo); c.capAng = p.torso;
-      hombro(g, { x: h.x + 8, y: h.y + 22 }, -1);
-      if (p.ikContinuo) R.tiraContinua(g, A, "brazo_cerca", c); else R.tira(g, A, "brazo_cerca", c, 16);
+      brazoLibre(g, p, h, c, "brazo_cerca", -1, t);
       dibManoYObjeto(g, p.manoCerca, t);
     }
     g.restore();
@@ -679,4 +721,3 @@ const Guillermo = (() => {
     copa, inclinacionCopa, COPA_BORDE, MUNECA_R, BRAZO_L, BRAZO_C_L,
     SUELO, PELVIS, CADERA, TOBILLO_ALTO, PUNTA, TALON, CUELLO, HOMBRO, HOMBRO_C, listo: () => A.listo };
 })();
-
