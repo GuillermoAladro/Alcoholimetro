@@ -100,6 +100,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00061 | Guillermo y Deivi · El monopatín | 14,15 s | [MP4 60 fps](vista%20previa/00061%20Guillermo%20y%20Deivi%20-%20el%20monopatin.mp4) · [fotogramas](vista%20previa/00061%20Guillermo%20y%20Deivi%20-%20el%20monopatin%20-%20fotogramas.png) |
 | 00062 | Guillermo y Deivi · El robot | 15,0 s | [MP4 60 fps](vista%20previa/00062%20Guillermo%20y%20Deivi%20-%20el%20robot.mp4) · [fotogramas](vista%20previa/00062%20Guillermo%20y%20Deivi%20-%20el%20robot%20-%20fotogramas.png) |
 | 00063 | Guillermo y Deivi · El balón | 14,3 s | [MP4 60 fps](vista%20previa/00063%20Guillermo%20y%20Deivi%20-%20el%20balon.mp4) · [fotogramas](vista%20previa/00063%20Guillermo%20y%20Deivi%20-%20el%20balon%20-%20fotogramas.png) |
+| 00065 | Guillermo y Deivi · Las sillas con ruedas | 14,4 s | [MP4 60 fps](vista%20previa/00065%20Guillermo%20y%20Deivi%20-%20las%20sillas%20con%20ruedas.mp4) · [fotogramas](vista%20previa/00065%20Guillermo%20y%20Deivi%20-%20las%20sillas%20con%20ruedas%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1234,6 +1235,21 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00063](vista%20previa/00063%20Guillermo%20y%20Deivi%20-%20el%20balon%20-%20fotogramas.png)
+
+### 00065 · Guillermo y Deivi · Las sillas con ruedas
+
+1. Negro.
+2. Trastienda del bar: pared mostaza con azulejos verdes, suelo de cemento, una cinta a cuadros pegada en el suelo como meta y una torre de cajas de cartón altísima. Guillermo y Deivi, cada uno en una silla de oficina con ruedas, se miden: Guillermo pica con las cejas y Deivi brinda con su refresco y da un sorbo.
+3. Se inclinan y ¡salen! Deivi se impulsa con los talones, sin prisa, y se desliza recto hasta la meta, sorbiendo sin derramar ni una gota.
+4. Guillermo patalea como loco, la silla se le pone a girar y da vueltas como una peonza por media sala, con los brazos en cruz.
+5. Deivi frena con un giro elegante de la silla y se queda mirando. Guillermo, mareado, con los ojos en espiral y estrellitas, sacude la cabeza.
+6. Muy decidido, se agarra al asiento, recoge los pies y empuja con todas sus fuerzas… y sale disparado hacia atrás, con cara de horror.
+7. Se estampa de espaldas contra la torre: la silla se vuelca y las cajas le caen encima una tras otra entre una nube de polvo.
+8. Solo le asoman las piernas, que patalean de vez en cuando, y una rueda de la silla que sigue girando en el aire.
+9. Deivi pasa rodando despacito a su lado, sorbe hasta el fondo del vaso vacío y guiña un ojo a cámara.
+10. Negro.
+
+![Fotogramas de 00065](vista%20previa/00065%20Guillermo%20y%20Deivi%20-%20las%20sillas%20con%20ruedas%20-%20fotogramas.png)
 
 ## Ver y grabar
 
