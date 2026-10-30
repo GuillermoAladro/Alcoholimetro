@@ -102,6 +102,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00063 | Guillermo y Deivi · El balón | 14,3 s | [MP4 60 fps](vista%20previa/00063%20Guillermo%20y%20Deivi%20-%20el%20balon.mp4) · [fotogramas](vista%20previa/00063%20Guillermo%20y%20Deivi%20-%20el%20balon%20-%20fotogramas.png) |
 | 00064 | Guillermo y Deivi · El castillo de naipes | 13,8 s | [MP4 60 fps](vista%20previa/00064%20Guillermo%20y%20Deivi%20-%20el%20castillo%20de%20naipes.mp4) · [fotogramas](vista%20previa/00064%20Guillermo%20y%20Deivi%20-%20el%20castillo%20de%20naipes%20-%20fotogramas.png) |
 | 00065 | Guillermo y Deivi · Las sillas con ruedas | 14,4 s | [MP4 60 fps](vista%20previa/00065%20Guillermo%20y%20Deivi%20-%20las%20sillas%20con%20ruedas.mp4) · [fotogramas](vista%20previa/00065%20Guillermo%20y%20Deivi%20-%20las%20sillas%20con%20ruedas%20-%20fotogramas.png) |
+| 00066 | Guillermo y Deivi · El globo de helio | 14,9 s | [MP4 60 fps](vista%20previa/00066%20Guillermo%20y%20Deivi%20-%20el%20globo%20de%20helio.mp4) · [fotogramas](vista%20previa/00066%20Guillermo%20y%20Deivi%20-%20el%20globo%20de%20helio%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1268,6 +1269,23 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 10. Negro.
 
 ![Fotogramas de 00065](vista%20previa/00065%20Guillermo%20y%20Deivi%20-%20las%20sillas%20con%20ruedas%20-%20fotogramas.png)
+
+### 00066 · Guillermo y Deivi · El globo de helio
+
+1. Negro.
+2. Salón de fiestas: pared verde azulado con lunares, banderines, serpentinas, una mesa con tarta, regalos y, entre los dos, una bombona de helio con un ramo de globos. Guillermo y Deivi, con las manos en los bolsillos; Deivi le mira con picardía.
+3. Deivi da un paso, coge el globo amarillo del ramo, se lleva el cuello del globo a los labios y aspira: el globo se encoge y a él se le hincha el pecho.
+4. Lo suelta (vuelve al ramo) y «habla»: de su boca salen notitas agudas que suben bailando. Guillermo se parte de risa, señalándole, con la mano en la barriga y lágrimas.
+5. Guillermo levanta el dedo («¡me toca!»), coge el globo rojo, lo arranca de la válvula y, con el globo junto a la cara, mira a cámara muy chulo.
+6. Se lo lleva a la boca y se lo traga entero: el globo se vacía mientras a él se le hinchan los carrillos, el pecho y la barriga hasta quedar redondo. Deivi pone cara de «oh, oh».
+7. Intenta decir algo y le sale un «pip». Se pone de puntillas, despega, suelta el pellejo del globo (que cae revoloteando al suelo) y sube despacio, pataleando y braceando.
+8. Se da con la cabeza en el techo, entre los globos que ya estaban allí, y se queda flotando, cabeceando contra él. Deivi se ríe tapándose la boca.
+9. Deivi tiene una idea: se pone de puntillas bajo él, le agarra el tobillo de un brinco y tira hacia abajo como de un globo; Guillermo se queda tumbado de lado en el aire.
+10. Deivi saca del bolsillo una cinta rizada, se la ata al tobillo con un lazo y vuelve a meter esa mano en el bolsillo.
+11. Suelta el tobillo: Guillermo sube hasta que la cinta se tensa y se queda flotando, meciéndose, atado a la mano de Deivi. Deivi guiña un ojo a cámara y a Guillermo se le escapa otro «pip».
+12. Negro.
+
+![Fotogramas de 00066](vista%20previa/00066%20Guillermo%20y%20Deivi%20-%20el%20globo%20de%20helio%20-%20fotogramas.png)
 
 ## Ver y grabar
 
