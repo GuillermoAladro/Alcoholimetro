@@ -55,6 +55,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00025 | Guillermo y Marcos · Las pesas | 14,70 s | [MP4 60 fps](vista%20previa/00025%20Guillermo%20y%20Marcos%20-%20las%20pesas.mp4) · [fotogramas](vista%20previa/00025%20Guillermo%20y%20Marcos%20-%20las%20pesas%20-%20fotogramas.png) |
 | 00026 | Guillermo y Marcos · El extintor | 13,20 s | [MP4 60 fps](vista%20previa/00026%20Guillermo%20y%20Marcos%20-%20el%20extintor.mp4) · [fotogramas](vista%20previa/00026%20Guillermo%20y%20Marcos%20-%20el%20extintor%20-%20fotogramas.png) |
 | 00028 | Guillermo y Marcos · Vestirse en tres segundos | 14,20 s | [MP4 60 fps](vista%20previa/00028%20Guillermo%20y%20Marcos%20-%20vestirse%20en%20tres%20segundos.mp4) · [fotogramas](vista%20previa/00028%20Guillermo%20y%20Marcos%20-%20vestirse%20en%20tres%20segundos%20-%20fotogramas.png) |
+| 00029 | Guillermo y Marcos · La sirena | 13,50 s | [MP4 60 fps](vista%20previa/00029%20Guillermo%20y%20Marcos%20-%20la%20sirena.mp4) · [fotogramas](vista%20previa/00029%20Guillermo%20y%20Marcos%20-%20la%20sirena%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -570,6 +571,22 @@ Corrige el alcance de los brazos al pedir, coger y soltar la guinda; fija los pi
 11. Negro.
 
 ![Fotogramas de 00028](vista%20previa/00028%20Guillermo%20y%20Marcos%20-%20vestirse%20en%20tres%20segundos%20-%20fotogramas.png)
+
+### 00029 · Guillermo y Marcos · La sirena
+
+1. Negro.
+2. Cochera del parque de bomberos al atardecer: azulejos verdes, ventanales con el cielo naranja, cascos colgados y el frontal de un camión de bomberos con una bocina de sirena cromada, un botón rojo y los rotativos en el techo. Guillermo, con las manos en los bolsillos, mira embobado la bocina.
+3. Señala el botón y mira a Marcos; Marcos le invita con la mano abierta.
+4. Mientras Guillermo se acerca frotándose las manos, Marcos se pone tranquilamente un tapón en el oído.
+5. Guillermo pulsa el botón: los rotativos empiezan a girar y la bocina tiembla… y él se asoma a mirar dentro.
+6. **¡La sirena le revienta en la cara!** El pelo se le va de golpe hacia atrás, los mofletes le flamean como en un túnel de viento, le saltan las lágrimas y el chorro de sonido lo arrastra de espaldas por el suelo.
+7. Pelea contra el viento, rojo y dando pasitos en el sitio… y lo vuelve a empujar. Marcos, aburrido, se mira las uñas y mira a cámara.
+8. Marcos se acerca y apaga la sirena: silencio. Guillermo se queda congelado, inclinado, con el pelo tieso hacia atrás y los oídos pitando.
+9. Se tambalea. Marcos se quita el tapón y le pregunta si está bien; Guillermo se pone la mano en la oreja: «¿qué?».
+10. Marcos, mirando a cámara, le ofrece el tapón.
+11. Negro.
+
+![Fotogramas de 00029](vista%20previa/00029%20Guillermo%20y%20Marcos%20-%20la%20sirena%20-%20fotogramas.png)
 
 ## Ver y grabar
 
