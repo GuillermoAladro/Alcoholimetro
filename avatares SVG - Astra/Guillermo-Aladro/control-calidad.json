@@ -1,0 +1,224 @@
+{
+  "character": "Guillermo Aladro",
+  "source_git_blob": "92ff45ef7481f430f566b3fa383be7f8ea242685",
+  "master_git_blob": "65eb3b778abeb279014d8da0e1839ef5743e5369",
+  "master_sha256": "d4d938d0a65616b3e333778b40067d372f6d805ac38522ec6cc94e6a6fb70d34",
+  "files": [
+    {
+      "file": "01-frontal.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 26238,
+      "gradients": 17929,
+      "bytes": 7561104,
+      "sha256": "d89071c687d7edfb18d0aa0915db5c4b8bfeab9b37a8a76c5223cd69312755c1",
+      "viewBox": [
+        85.0,
+        70.0,
+        360.0,
+        940.0
+      ],
+      "rendered": true,
+      "renderer": "Inkscape",
+      "retained_original_body": true
+    },
+    {
+      "file": "02-tres-cuartos.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 21126,
+      "gradients": 14558,
+      "bytes": 6249807,
+      "sha256": "2874e21d48df7c55b39c6aac4a3d626a1a78b101c04b049b75515a712c1d815a",
+      "viewBox": [
+        420.0,
+        70.0,
+        245.0,
+        940.0
+      ],
+      "rendered": true,
+      "renderer": "Inkscape",
+      "retained_original_body": true
+    },
+    {
+      "file": "03-perfil.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 16298,
+      "gradients": 11173,
+      "bytes": 4661592,
+      "sha256": "be4c96ae75d5cff49f4d296f3c2336c7d7a4eccfec9e099833f1474a472b30d3",
+      "viewBox": [
+        658.0,
+        70.0,
+        190.0,
+        940.0
+      ],
+      "rendered": true,
+      "renderer": "Inkscape",
+      "retained_original_body": true
+    },
+    {
+      "file": "04-espalda.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 21163,
+      "gradients": 14028,
+      "bytes": 6015128,
+      "sha256": "20a44fe5006f3a23ed163b177bb91a0dfc4aa1f6ec816d3f35c39b7b6661b773",
+      "viewBox": [
+        832.0,
+        70.0,
+        290.0,
+        940.0
+      ],
+      "rendered": true,
+      "renderer": "Inkscape",
+      "retained_original_body": true
+    },
+    {
+      "file": "05-serio.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 6938,
+      "gradients": 5077,
+      "bytes": 2043119,
+      "sha256": "197611f1e28e38fb99ecad0fb2b2749561dcf633fd8d9f0ad5a6ba5eff85fe00",
+      "viewBox": [
+        0.0,
+        1000.0,
+        211.0,
+        336.0
+      ],
+      "rendered": true,
+      "renderer": "Inkscape",
+      "retained_original_body": false,
+      "independent_renderer_mae": 0.1292
+    },
+    {
+      "file": "06-sonrisa.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 7449,
+      "gradients": 5588,
+      "bytes": 2266887,
+      "sha256": "2445a8db9ae54667469ed7ed8cb71d96145551ca6210fca664063fc689fc0ac1",
+      "viewBox": [
+        163.0,
+        1000.0,
+        234.0,
+        336.0
+      ],
+      "rendered": true,
+      "renderer": "Inkscape",
+      "retained_original_body": false,
+      "independent_renderer_mae": 0.1009
+    },
+    {
+      "file": "07-sorpresa.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 7313,
+      "gradients": 5395,
+      "bytes": 2232323,
+      "sha256": "c6e401e1cf67a694c9908958f05898c2299dd59a278d47699260909b66070568",
+      "viewBox": [
+        350.0,
+        1000.0,
+        220.0,
+        336.0
+      ],
+      "rendered": true,
+      "renderer": "Inkscape",
+      "retained_original_body": false,
+      "independent_renderer_mae": 0.2113
+    },
+    {
+      "file": "08-cansancio.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 7788,
+      "gradients": 5819,
+      "bytes": 2409985,
+      "sha256": "f85485cfb9e55266c9818561ecb0975cbcb1f86648ee8bd5b21d1c9d6046e53c",
+      "viewBox": [
+        524.0,
+        1000.0,
+        225.0,
+        336.0
+      ],
+      "rendered": true,
+      "renderer": "Inkscape",
+      "retained_original_body": false,
+      "independent_renderer_mae": 0.146
+    },
+    {
+      "file": "09-ojos-cerrados.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 6833,
+      "gradients": 5115,
+      "bytes": 2159706,
+      "sha256": "9dd60487d4b5ee79fd16a24bfe925cd615774ce1f4514c7f615384ef31ddebbc",
+      "viewBox": [
+        718.0,
+        1000.0,
+        216.0,
+        336.0
+      ],
+      "rendered": true,
+      "renderer": "Inkscape",
+      "retained_original_body": false,
+      "independent_renderer_mae": 0.1546
+    },
+    {
+      "file": "10-ceno-fruncido.svg",
+      "xml_valid": true,
+      "vector_only": true,
+      "unique_ids": true,
+      "internal_references_valid": true,
+      "paths": 7051,
+      "gradients": 5081,
+      "bytes": 2158626,
+      "sha256": "bdaa7e480db72a4b807edc1eba29144e053fd01026a690d5bec26d5c6ef23a21",
+      "viewBox": [
+        898.0,
+        1000.0,
+        224.0,
+        336.0
+      ],
+      "rendered": true,
+      "renderer": "Inkscape",
+      "retained_original_body": false,
+      "independent_renderer_mae": 0.3116
+    }
+  ],
+  "method": "Four original bodies retained; six portraits extracted across existing vector layers with reviewed boundaries",
+  "visual_review": {
+    "status": "reviewed",
+    "notes": [
+      "Segunda revisión detectó pelo del retrato vecino en ojos cerrados y cabello cortado por particiones verticales en los retratos anteriores.",
+      "Rehechos y revisados los seis encuadres usando las capas originales completas y límites adaptados al espacio blanco, sin simplificar ni volver a trazar la ilustración.",
+      "Las cuatro vistas de cuerpo se conservan byte a byte; las seis expresiones se comprobaron ampliadas y con Inkscape y CairoSVG."
+    ]
+  },
+  "created_utc": "2026-10-30T01:35:27.158705+00:00"
+}
