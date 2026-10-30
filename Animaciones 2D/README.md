@@ -106,6 +106,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00067 | Guillermo y Deivi · La guerra de almohadas | 14,0 s | [MP4 60 fps](vista%20previa/00067%20Guillermo%20y%20Deivi%20-%20la%20guerra%20de%20almohadas.mp4) · [fotogramas](vista%20previa/00067%20Guillermo%20y%20Deivi%20-%20la%20guerra%20de%20almohadas%20-%20fotogramas.png) |
 | 00068 | Guillermo y Deivi · Las cosquillas | 14,9 s | [MP4 60 fps](vista%20previa/00068%20Guillermo%20y%20Deivi%20-%20las%20cosquillas.mp4) · [fotogramas](vista%20previa/00068%20Guillermo%20y%20Deivi%20-%20las%20cosquillas%20-%20fotogramas.png) |
 | 00069 | Guillermo y Deivi · La momia | 15,0 s | [MP4 60 fps](vista%20previa/00069%20Guillermo%20y%20Deivi%20-%20la%20momia.mp4) · [fotogramas](vista%20previa/00069%20Guillermo%20y%20Deivi%20-%20la%20momia%20-%20fotogramas.png) |
+| 00070 | Guillermo y Deivi · La realidad virtual | 14,8 s | [MP4 60 fps](vista%20previa/00070%20Guillermo%20y%20Deivi%20-%20la%20realidad%20virtual.mp4) · [fotogramas](vista%20previa/00070%20Guillermo%20y%20Deivi%20-%20la%20realidad%20virtual%20-%20fotogramas.png) |
 | 00071 | Guillermo y Gabacho · El penalti | 14,4 s | [MP4 60 fps](vista%20previa/00071%20Guillermo%20y%20Gabacho%20-%20el%20penalti.mp4) · [fotogramas](vista%20previa/00071%20Guillermo%20y%20Gabacho%20-%20el%20penalti%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
@@ -1339,6 +1340,21 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 13. Negro.
 
 ![Fotogramas de 00069](vista%20previa/00069%20Guillermo%20y%20Deivi%20-%20la%20momia%20-%20fotogramas.png)
+
+### 00070 · Guillermo y Deivi · La realidad virtual
+
+1. Negro.
+2. Salón de noche con luz de neón: pared morada con una tira de LED, una tele en la pared con un videojuego retro, ventana con la ciudad, alfombra redonda y una lámpara colgante de pantalla metálica. Deivi, repantingado en su sillón mostaza, agita dos mandos de realidad virtual con lucecitas.
+3. Guillermo saca las manos de los bolsillos, da un paso y se los coge, encantado; Deivi recoge del regazo unas gafas de realidad virtual enormes y se las enseña.
+4. Guillermo se da la vuelta y se agacha delante del sillón; Deivi le baja las gafas por encima de la cabeza y se las encaja desde atrás (¡clic!), con dos toquecitos en la cabeza. Las gafas se encienden con una banda de colores y Guillermo se levanta de un salto.
+5. Juega: esquiva un cubo, lanza puñetazos a unas dianas que estallan en la tele, se agacha, retrocede y suelta un revés que le pasa a Deivi rozando el pelo; Deivi se echa atrás con las manos en alto.
+6. Da un paso, carga y suelta un gancho de abajo arriba al jefe del juego… y le da de lleno a la lámpara, que sale disparada.
+7. Celebra con el puño en alto mientras la lámpara se va… y vuelve: ¡bonk! en toda la frente (estrellas, chichón y gafas torcidas). Deivi se parte de risa.
+8. Guillermo sacude la cabeza, se recoloca las gafas, se agazapa y salta hacia atrás para esquivar un láser… y aterriza sentado en el regazo de Deivi, con las piernas en alto; el cojín se hunde y la tele se va a ruido y se queda en pausa.
+9. Deivi, sin aire, le tira de la correa por detrás y le sube las gafas a la frente: Guillermo parpadea deslumbrado, con las marcas rojas de las gafas alrededor de los ojos, mira a todos lados, se gira hacia Deivi y mira a cámara sin entender nada; Deivi, sin soltar la correa, guiña un ojo.
+10. Negro.
+
+![Fotogramas de 00070](vista%20previa/00070%20Guillermo%20y%20Deivi%20-%20la%20realidad%20virtual%20-%20fotogramas.png)
 
 ### 00071 · Guillermo y Gabacho · El penalti
 
