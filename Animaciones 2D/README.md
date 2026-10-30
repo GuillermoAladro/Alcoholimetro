@@ -991,6 +991,7 @@ Animaciones 2D/
 ├─ personajes/gabacho/          coordenadas de Gabacho y su atlas
 ├─ personajes/kiriku/           coordenadas de Kiriku y su atlas
 ├─ personajes/marta/            coordenadas de Marta y su atlas
+├─ personajes/paradigma/        coordenadas de Paradigma y su atlas
 ├─ escenas/                     una escena por archivo (00001 … 00010 y sus revisiones)
 ├─ herramientas/                 comprobar.py y grabar.py
 └─ vista previa/                 vídeos y fotogramas de cada animación
@@ -1096,6 +1097,13 @@ Opciones del montaje que usan las escenas nuevas (las anteriores no las activan 
 - **Limpieza:** la melena que caía por delante se quita y lo que tapaba se rehace con el punto de la chaqueta (mosaico) y la piel del escote. Las manos de los bolsillos se quitan y se copia el vaquero de debajo, con la abertura del bolsillo. El cuello lo pone el cuerpo, con pelo en sombra detrás.
 - **En pantalla:** los hombros los trae el torso con su punto y la mano se dibuja aparte al sacarla del bolsillo.
 - **Altura:** con el mismo `p.s` mide ≈ 93 % de Guillermo, como Laura y Carla.
+
+**Paradigma** (`personajes/paradigma/`) sale de `Avatares 2D/Paradigma/Paradigma-2D.png` con el recortador común.
+
+- **Piezas:** la cabeza del retrato con el pelo ondulado, bigote, perilla y barba de tres días (sin el cuello ni la cazadora del retrato, y con los huecos entre mechones sueltos como fondo), la cara roja, las cejas, la boca, el torso de la cazadora negra abierta con la camiseta blanca hasta la cintura del vaquero, las dos mangas enderezadas, las piernas del vaquero y la zapatilla con la suela nivelada.
+- **Limpieza:** se quitan las manos que asomaban de los bolsillos (solo la piel y su contorno) y se repintan el bajo de la cazadora, el borde del puño y la abertura del bolsillo.
+- **En pantalla:** los hombros son negros y la mano se dibuja aparte al sacarla del bolsillo.
+- **Altura:** con el mismo `p.s` mide prácticamente lo mismo que Guillermo.
 
 ## Añadir una animación
 
