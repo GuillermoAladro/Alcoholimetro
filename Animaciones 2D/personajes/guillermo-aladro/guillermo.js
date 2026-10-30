@@ -628,7 +628,7 @@ const Guillermo = (() => {
         g.beginPath();g.moveTo(union.x,union.y);g.lineTo(h.x,h.y);g.lineWidth=60;g.lineCap="round";g.strokeStyle=rgb(PAL.camiseta);g.stroke();
         c.capFija=false;
       } else hombro(g,{x:h.x+(lado<0?8:-6),y:h.y+(lado<0?22:14)},lado);
-      if(p.ikContinuo)R.tiraContinua(g,A,nombre,c);else{if(p.tirasLimpias)c.cuna=true;R.tira(g,A,nombre,c,16);}
+      if(p.ikContinuo)R.tiraContinua(g,A,nombre,c);else{if(p.tirasLimpias){c.cuna=true;c.cunaAjustada=true;}R.tira(g,A,nombre,c,16);}
       g.restore();
     }
     if(desnudo>0){g.save();g.globalAlpha*=desnudo;brazoDesnudo(g,c);g.restore();}
@@ -669,7 +669,7 @@ const Guillermo = (() => {
       const q = p.piernas[lado];
       g.save(); g.translate(q.tob.x, q.tob.y); g.rotate(q.ang); R.pieza(g, A, lado === "lejos" ? "zapato_lejos" : "zapato", PZ.zapato.pivote); g.restore();
       // p.tirasLimpias: rodajas recortadas en cuña (rodillas y codos muy doblados sin dientes de sierra)
-      const cp = pierna(p, lado); if (p.tirasLimpias) cp.cuna = true;
+      const cp = pierna(p, lado); if (p.tirasLimpias) { cp.cuna = true; cp.cunaAjustada = true; }
       R.tira(g, A, lado === "lejos" ? "pierna_lejos" : "pierna_cerca", cp, 18);
     }
     // torso (con la mano en el bolsillo o con los dos brazos libres; camiseta entera o rota)
