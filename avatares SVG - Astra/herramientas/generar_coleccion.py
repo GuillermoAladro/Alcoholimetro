@@ -54,7 +54,7 @@ def build_one(source_path):
     start=time.time();source=Path(source_path);name=source.stem.removeprefix('Avatar ');slug=name.replace(' ','-')
     work=WORK/slug;work.mkdir(parents=True,exist_ok=True)
     original=Image.open(source).convert('RGB');w,h=original.size
-    layout_revision=2 if name=='Laura' else 1
+    layout_revision=2 if name in ('Laura','Paradigma') else 1
     checkpoint=work/'quality.json'
     if checkpoint.exists():
         previous=json.loads(checkpoint.read_text())
@@ -81,6 +81,10 @@ def build_one(source_path):
         # White clothing touches the white sheet background in this reference.
         # These reviewed regions retain the complete garment and its shading.
         for x0,y0,x1,y1 in [(180,185,370,420),(480,190,620,420),(725,190,825,430),(880,280,1080,420),(0,1160,1122,1402)]:
+            fg[y0*2:y1*2,x0*2:x1*2]=255
+    if name=='Paradigma':
+        # Pale shirt tones connect to the background at the portrait bottoms.
+        for x0,y0,x1,y1 in [(10,1200,185,1289),(200,1200,370,1289),(390,1200,550,1289),(570,1200,665,1289),(765,1200,916,1289),(942,1200,1110,1289)]:
             fg[y0*2:y1*2,x0*2:x1*2]=255
     clip=ET.SubElement(defs,f'{{{SVG}}}clipPath',id='siluetas',clipPathUnits='userSpaceOnUse')
     ET.SubElement(clip,f'{{{SVG}}}path',d=silhouette_clip([(0,0),(w,0),(w,h),(0,h)],fg),attrib={'clip-rule':'evenodd'})

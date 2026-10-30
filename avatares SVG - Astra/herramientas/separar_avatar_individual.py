@@ -2,7 +2,7 @@
 """Export and verify ONE avatar's poses from its existing detailed SVG.
 
 No re-tracing or simplification: paths, local gradients and silhouette contours
-are copied exactly. A person reviews the contact sheets before publication.
+are copied exactly. Contact sheets require visual review before publication.
 """
 from pathlib import Path
 import argparse, copy, hashlib, io, json, re, subprocess
@@ -59,7 +59,7 @@ def validate(root):
                 paths=len(root.findall('.//s:path',NS)),gradients=len(root.findall('.//s:linearGradient',NS)))
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('name');ap.add_argument('work');ap.add_argument('--expressions',default='neutral,risa,sorpresa,cansancio,ojos-cerrados,guino');ap.add_argument('--contours',help='Explicit contour indices sorted by front, 3/4, profile, back, six expressions');args=ap.parse_args()
+    ap=argparse.ArgumentParser();ap.add_argument('name');ap.add_argument('work');ap.add_argument('--expressions',default='neutral,risa,sorpresa,cansancio,ojos-cerrados,guino');ap.add_argument('--contours',help='Explicit contour indices sorted by front, 3/4, profile, back, six expressions');ap.add_argument('--regions',help='Reviewed JSON list of ten contour indices or crop boxes');ap.add_argument('--only',help='Rebuild one pose while reusing unchanged verified files');args=ap.parse_args()
     slug=args.name.replace(' ','-');work=Path(args.work);master=work/'avatares SVG - Astra'/(slug+'.svg');source=work/'animaciones'/('Avatar '+args.name+'.png')
     raw=master.read_bytes();root=E.fromstring(raw);meta=json.loads(root.find('s:metadata',NS).text)
     assert meta['source_git_blob']==gitsha(source.read_bytes()),'Source changed; review first'
@@ -80,17 +80,41 @@ def main():
         order=[int(i) for i in args.contours.split(',')];assert len(order)==10
         selected=[contours[i] for i in order]
     else:selected=bodies+faces
+    if args.regions:
+        selected=[]
+        for spec in json.loads(Path(args.regions).read_text()):
+            if 'contour' in spec:
+                item=copy.copy(contours[spec['contour']])
+                if 'polygon' in spec:
+                    item['polygon']=spec['polygon'];item['box']=np.array(spec['box'],dtype=float);item['spec']=spec
+                selected.append(item)
+            else:
+                box=np.array(spec['box'],dtype=float)
+                selected.append(dict(index=None,d=clip.get('d'),box=box,area=0,rectangular=True))
     assert len(selected)==10
-    # Candidate indices and boxes are recorded for the human visual review.
+    assert all(c['box'][1]>float(root.get('height'))*.55 for c in selected[4:]),'Expressions joined in master; supply reviewed --regions'
+    # Candidate indices and boxes are recorded for the visual review.
     keys=['01-frontal','02-tres-cuartos','03-perfil','04-espalda']+[f'{i+5:02d}-{s}' for i,s in enumerate(args.expressions.split(','))]
     assert len(keys)==10
     paths=list(art);bounds=np.array([bbox(p) for p in paths])
     out=BASE/slug;out.mkdir(exist_ok=True);qa=work/'revision'/slug;qa.mkdir(parents=True,exist_ok=True)
     original=Image.open(source).convert('RGB');original_arr=np.array(original);w,h=original.size
-    master_png=cairosvg.svg2png(bytestring=raw,output_width=w,output_height=h)
+    cache=qa/'maestra.png';cachehash=qa/'maestra.sha256'
+    if cache.exists() and cachehash.exists() and cachehash.read_text()==sha(raw):master_png=cache.read_bytes()
+    else:
+        master_png=cairosvg.svg2png(bytestring=raw,output_width=w,output_height=h)
+        atomic(cache,master_png);cachehash.write_text(sha(raw))
     fresh=Image.open(io.BytesIO(master_png)).convert('RGB');fresh_arr=np.array(fresh)
     records=[];renders=[]
+    previous={}
+    if args.only:
+        old=json.loads((out/'control-calidad.json').read_text())
+        assert old['master_git_blob']==gitsha(raw) and old['source_git_blob']==meta['source_git_blob']
+        previous={r['file']:r for r in old['files']}
     for key,c in zip(keys,selected):
+        if args.only and key!=args.only:
+            record=previous[key+'.svg'];assert sha((out/(key+'.svg')).read_bytes())==record['sha256']
+            records.append(record);renders.append(Image.open(qa/(key+'.png')).convert('RGB'));continue
         x0,y0,x1,y1=c['box'];box=[max(0,int(np.floor(x0))-8),max(0,int(np.floor(y0))-8),min(w,int(np.ceil(x1))+9),min(h,int(np.ceil(y1))+9)]
         bx,by,ex,ey=box;bw,bh=ex-bx,ey-by
         s=E.Element(tag('svg'),nsmap={None:SVG},width=str(bw),height=str(bh),viewBox=f'{bx} {by} {bw} {bh}',version='1.1',role='img',attrib={'aria-labelledby':'title desc','shape-rendering':'geometricPrecision'})
@@ -100,14 +124,20 @@ def main():
         cp=E.SubElement(sd,tag('clipPath'),id='silueta-individual',clipPathUnits='userSpaceOnUse')
         # Include holes wholly inside the selected outer contour's box.
         loops=[c['d']]
-        for small in contours:
+        for small in ([] if c.get('rectangular') else contours):
             if small is c or small['area']>=c['area']:continue
             sb=small['box']
             if sb[0]>=x0 and sb[1]>=y0 and sb[2]<=x1 and sb[3]<=y1 and inside(small['points'][0],c['points']):loops.append(small['d'])
         E.SubElement(cp,tag('path'),d=''.join(loops),attrib={'clip-rule':'evenodd'})
         E.SubElement(s,tag('rect'),x=str(bx),y=str(by),width=str(bw),height=str(bh),fill='#fff')
-        g=E.SubElement(s,tag('g'),id=key,transform='scale(0.5)',attrib={'clip-path':'url(#silueta-individual)'})
-        keep=(bounds[:,0]<=x1)&(bounds[:,1]<=y1)&(bounds[:,2]>=x0)&(bounds[:,3]>=y0)
+        parent=s
+        if c.get('rectangular') or c.get('polygon'):
+            rc=E.SubElement(sd,tag('clipPath'),id='limite-expresion',clipPathUnits='userSpaceOnUse')
+            if c.get('polygon'):E.SubElement(rc,tag('polygon'),points=' '.join(f'{x},{y}' for x,y in c['polygon']))
+            else:E.SubElement(rc,tag('rect'),x=str(x0),y=str(y0),width=str(x1-x0),height=str(y1-y0))
+            parent=E.SubElement(s,tag('g'),attrib={'clip-path':'url(#limite-expresion)'})
+        g=E.SubElement(parent,tag('g'),id=key,transform='scale(0.5)',attrib={'clip-path':'url(#silueta-individual)'})
+        keep=(bounds[:,0]<=ex)&(bounds[:,1]<=ey)&(bounds[:,2]>=bx)&(bounds[:,3]>=by)
         needed=set()
         for index in np.flatnonzero(keep):
             p=copy.deepcopy(paths[index]);g.append(p)
@@ -127,14 +157,17 @@ def main():
         atomic(qa/(key+'.png'),rendered)
         # Render the exact vector silhouette to compare only the figure's interior.
         m=E.Element(tag('svg'),nsmap={None:SVG},width=str(bw),height=str(bh),viewBox=f'{bx} {by} {bw} {bh}')
-        mg=E.SubElement(m,tag('g'),transform='scale(0.5)');E.SubElement(mg,tag('path'),d=''.join(loops),fill='#fff',attrib={'fill-rule':'evenodd'})
+        mp=m
+        if c.get('rectangular') or c.get('polygon'):
+            md=E.SubElement(m,tag('defs'));md.append(copy.deepcopy(rc));mp=E.SubElement(m,tag('g'),attrib={'clip-path':'url(#limite-expresion)'})
+        mg=E.SubElement(mp,tag('g'),transform='scale(0.5)');E.SubElement(mg,tag('path'),d=''.join(loops),fill='#fff',attrib={'fill-rule':'evenodd'})
         mask=np.array(Image.open(io.BytesIO(cairosvg.svg2png(bytestring=E.tostring(m)))).convert('RGBA'))[:,:,3]>250
         interior=binary_erosion(mask,iterations=2)
         a=np.array(im).astype(float);b=fresh_arr[by:ey,bx:ex].astype(float);ref=original_arr[by:ey,bx:ex].astype(float)
         err=np.abs(a-b)[interior];source_err=np.abs(a-ref)[interior]
         assert err.mean()<.15, (key,float(err.mean()))
         row=dict(file=key+'.svg',**structural,bytes=len(data),sha256=sha(data),viewBox=[bx,by,bw,bh],contour_index=c['index'],figure_mae_vs_master=round(float(err.mean()),6),figure_mae_vs_reference=round(float(source_err.mean()),4))
-        records.append(row);print(json.dumps(row),flush=True)
+        records.append(row);print(json.dumps({'file':row['file'],'paths':row['paths'],'mae_vs_master':row['figure_mae_vs_master']}),flush=True)
     # A second independent renderer checks a full body and a face.
     independent=[]
     for key in [keys[0],keys[5]]:
@@ -154,12 +187,20 @@ def main():
             tile=tile.copy();tile.thumbnail((bw,bh));canvas.paste(tile,(x+j*cellw//2+(bw-tile.width)//2,y))
         draw.text((x+8,y-20),row['file'],fill='#222')
     canvas.save(qa/'comparacion.jpg',quality=94)
+    detail=Image.new('RGB',(1500,1800),'#ecebe7');dd=ImageDraw.Draw(detail)
+    for i,im in enumerate(renders[4:]):
+        tile=im.resize((im.width*2,im.height*2),Image.Resampling.LANCZOS);tile.thumbnail((480,850))
+        x=(i%3)*500;y=(i//3)*900
+        detail.paste(tile,(x+(500-tile.width)//2,y+30));dd.text((x+12,y+8),keys[i+4],fill='#222')
+    detail.save(qa/'expresiones-detalle.jpg',quality=96)
     preview=Image.new('RGB',(1500,1250),'#fff')
     for i,im in enumerate(renders):
         tw,th=(375,760) if i<4 else (250,420);x=i*375 if i<4 else (i-4)*250;y=20 if i<4 else 810
         tile=im.copy();tile.thumbnail((tw-12,th));preview.paste(tile,(x+(tw-tile.width)//2,y))
     preview.save(out/'vistas-preview.jpg',quality=94)
-    report=dict(character=args.name,source_git_blob=meta['source_git_blob'],master_git_blob=gitsha(raw),master_sha256=sha(raw),master_checks=checks,method='Exact extraction from original detailed vector master; individual contour selection and definition pruning',static_illustrations=True,files=records,independent_renderer=independent,visual_review={'status':'pending'},created_utc=datetime.now(timezone.utc).isoformat())
+    selection=[c['spec'] if c.get('spec') else ({'box':c['box'].tolist()} if c.get('rectangular') else {'contour':c['index']}) for c in selected]
+    atomic(out/'regiones.json',json.dumps(selection,indent=2).encode())
+    report=dict(character=args.name,source_git_blob=meta['source_git_blob'],master_git_blob=gitsha(raw),master_sha256=sha(raw),master_checks=checks,method='Exact extraction from original detailed vector master; individual contour selection and definition pruning',static_illustrations=True,selection=selection,files=records,independent_renderer=independent,visual_review={'status':'pending'},created_utc=datetime.now(timezone.utc).isoformat())
     atomic(out/'control-calidad.json',json.dumps(report,ensure_ascii=False,indent=2).encode())
     readme='# '+args.name+' · vistas SVG individuales\n\nDiez ilustraciones estáticas extraídas de la hoja maestra detallada, sin simplificar los trazados ni los gradientes. Conservan la referencia, las proporciones, el vestuario y las expresiones.\n\n![Vistas individuales](vistas-preview.jpg)\n\n'+''.join('- ['+r['file']+']('+r['file']+')\n' for r in records)+'\nCada SVG es autónomo y contiene geometría vectorial real. No es un esqueleto articulado para animación. El fondo blanco coincide con la presentación de Guillermo. Las sombras del suelo de la hoja completa no se añaden a los recortes.\n\n[Control de calidad y procedencia](control-calidad.json) · [Hoja maestra](../'+slug+'.svg)\n'
     atomic(out/'README.md',readme.encode())

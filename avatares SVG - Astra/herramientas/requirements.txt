@@ -6,3 +6,4 @@ opencv-python-headless==5.0.0.93
 scipy==1.17.0
 scikit-image==0.26.0
 lxml==6.1.1
+shapely==2.1.2

@@ -34,6 +34,13 @@
   "comparison_note": "SSIM is an image-comparison metric, not a facial-identity or artistic-quality score. Background shadows were deliberately cleaned and reconstructed as radial gradients.",
   "files": [
     {
+      "file": "Guillermo-Aladro.svg",
+      "bytes": 36816186,
+      "paths": 125838,
+      "gradients": 87822,
+      "sha256": "d4d938d0a65616b3e333778b40067d372f6d805ac38522ec6cc94e6a6fb70d34"
+    },
+    {
       "file": "Guillermo-Aladro/01-frontal.svg",
       "bytes": 7561104,
       "paths": 26238,
@@ -63,52 +70,45 @@
     },
     {
       "file": "Guillermo-Aladro/05-serio.svg",
-      "bytes": 1731879,
-      "paths": 5911,
-      "gradients": 4318,
-      "sha256": "f53794bf8c7d6e19111c6b5ece9904a0ee2b0adc3ca939fe2e35545a73038529"
+      "bytes": 2043119,
+      "paths": 6938,
+      "gradients": 5077,
+      "sha256": "197611f1e28e38fb99ecad0fb2b2749561dcf633fd8d9f0ad5a6ba5eff85fe00"
     },
     {
       "file": "Guillermo-Aladro/06-sonrisa.svg",
-      "bytes": 1852202,
-      "paths": 6163,
-      "gradients": 4613,
-      "sha256": "73c256b1f23f587d0d5f714808eb634723fcb4d20e50a7bb0c486d71d676f16a"
+      "bytes": 2266887,
+      "paths": 7449,
+      "gradients": 5588,
+      "sha256": "2445a8db9ae54667469ed7ed8cb71d96145551ca6210fca664063fc689fc0ac1"
     },
     {
       "file": "Guillermo-Aladro/07-sorpresa.svg",
-      "bytes": 1782559,
-      "paths": 5932,
-      "gradients": 4388,
-      "sha256": "a3a5d10dbf1c5493fc72520702a713679ca88a3919ce743647f0dcc438c222a7"
+      "bytes": 2232323,
+      "paths": 7313,
+      "gradients": 5395,
+      "sha256": "c6e401e1cf67a694c9908958f05898c2299dd59a278d47699260909b66070568"
     },
     {
       "file": "Guillermo-Aladro/08-cansancio.svg",
-      "bytes": 2079558,
-      "paths": 6864,
-      "gradients": 5091,
-      "sha256": "532b6a58a8531b8144dde76f173a2649bc216bae5127b9b05bc85132c6a069f2"
+      "bytes": 2409985,
+      "paths": 7788,
+      "gradients": 5819,
+      "sha256": "f85485cfb9e55266c9818561ecb0975cbcb1f86648ee8bd5b21d1c9d6046e53c"
     },
     {
       "file": "Guillermo-Aladro/09-ojos-cerrados.svg",
-      "bytes": 1910798,
-      "paths": 6158,
-      "gradients": 4579,
-      "sha256": "a1f355e5d78f292e046605cdfa62a37fa46e646cb8f10e580a11b2eab99a648b"
+      "bytes": 2159706,
+      "paths": 6833,
+      "gradients": 5115,
+      "sha256": "9dd60487d4b5ee79fd16a24bfe925cd615774ce1f4514c7f615384ef31ddebbc"
     },
     {
       "file": "Guillermo-Aladro/10-ceno-fruncido.svg",
-      "bytes": 1970274,
-      "paths": 6486,
-      "gradients": 4664,
-      "sha256": "f9cf1fb8cf27f948a5ee48dec93b714880fbd02b7034a1ef1f45d683d5304b53"
-    },
-    {
-      "file": "Guillermo-Aladro.svg",
-      "bytes": 36816186,
-      "paths": 125838,
-      "gradients": 87822,
-      "sha256": "d4d938d0a65616b3e333778b40067d372f6d805ac38522ec6cc94e6a6fb70d34"
+      "bytes": 2158626,
+      "paths": 7051,
+      "gradients": 5081,
+      "sha256": "bdaa7e480db72a4b807edc1eba29144e053fd01026a690d5bec26d5c6ef23a21"
     }
   ],
   "cross_renderer": {
@@ -123,10 +123,12 @@
     "mean_absolute_channel_error_0_255": 0.0002
   },
   "visual_review": [
-    "Full sheet compared with source",
-    "Four full-body views reviewed",
-    "Six expressions reviewed",
-    "Adjacent fragments removed from individual exports",
-    "Background seams removed; shadows rebuilt as radial gradients"
-  ]
+    "Revisada la hoja maestra y sus diez vistas desde los bytes publicados: rostro, peinado, reloj, camiseta negra, vaqueros y calzado coherentes con la referencia.",
+    "Las cuatro vistas originales de cuerpo se mantienen; los seis retratos corregidos conservan el cabello disponible en la hoja y se separan sin restos vecinos.",
+    "Fragmento del cabello de cansancio en el retrato de ojos cerrados.",
+    "Cabello cortado por encuadres verticales de varios retratos originales."
+  ],
+  "comparison_scope": "Original unchanged master sheet; individual portrait crop hashes updated after final review.",
+  "final_review_report": "revision-final-publicada.json",
+  "verified_asset_commit": "1cc10ab5dfffa7f09ed42ce6bbc6a4e18aa5f1bb"
 }

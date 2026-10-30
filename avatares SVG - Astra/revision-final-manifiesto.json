@@ -1,0 +1,855 @@
+{
+  "commit": "1cc10ab5dfffa7f09ed42ce6bbc6a4e18aa5f1bb",
+  "files": [
+    {
+      "path": "animaciones/Avatar Ander.png",
+      "sha": "caacb9d594361b745ab4557eead8746f99997463",
+      "size": 2193408
+    },
+    {
+      "path": "animaciones/Avatar Carla.png",
+      "sha": "747d48c6c7f9d521166dbe45e2d2301bea4f7c84",
+      "size": 2086032
+    },
+    {
+      "path": "animaciones/Avatar Dari.png",
+      "sha": "47752f6f38bf762d0758db5beb3801e98597c982",
+      "size": 2174912
+    },
+    {
+      "path": "animaciones/Avatar Deivi.png",
+      "sha": "5c03916efe55787dbfd8485d3eca973e868ab7d8",
+      "size": 2781951
+    },
+    {
+      "path": "animaciones/Avatar Gabacho.png",
+      "sha": "a4895ab7d84adcc7573c5d62380d8dd33fc54a1e",
+      "size": 2140929
+    },
+    {
+      "path": "animaciones/Avatar Guillermo Aladro.png",
+      "sha": "92ff45ef7481f430f566b3fa383be7f8ea242685",
+      "size": 2255268
+    },
+    {
+      "path": "animaciones/Avatar Kiriku.png",
+      "sha": "c86031ed8362d559255f94f2dd67f880b5be84ac",
+      "size": 2106706
+    },
+    {
+      "path": "animaciones/Avatar Laura.png",
+      "sha": "e93984f3f990e36a6936fe308b272871ed0d59b6",
+      "size": 2269417
+    },
+    {
+      "path": "animaciones/Avatar Marcos Bombero.png",
+      "sha": "e6b027ede4cf1e03835d914ced413fefcda186bb",
+      "size": 2256392
+    },
+    {
+      "path": "animaciones/Avatar Marta.png",
+      "sha": "b3cb1acb010f580cfc91e0efba7e120e6b871892",
+      "size": 2376457
+    },
+    {
+      "path": "animaciones/Avatar Paradigma.png",
+      "sha": "fffffd168482fa7cba13ecd2b866b8b63f62f916",
+      "size": 2110976
+    },
+    {
+      "path": "animaciones/Avatar Rodri.png",
+      "sha": "4df73213c9e4b9cd9574b767dbb87da2185863e6",
+      "size": 2294084
+    },
+    {
+      "path": "animaciones/Avatar Sara Saez.png",
+      "sha": "d1edf39e3ee14b31f9622f2b441b16462793e5ca",
+      "size": 2635911
+    },
+    {
+      "path": "animaciones/Avatar Yorgi.png",
+      "sha": "cffa0f131c3216fc728996591e7dd6fe489c407e",
+      "size": 2053617
+    },
+    {
+      "path": "avatares SVG - Astra/Ander.svg",
+      "sha": "02d23ecc032bee90c36e1515a57055f7142bdca2",
+      "size": 32997506
+    },
+    {
+      "path": "avatares SVG - Astra/Ander/01-frontal.svg",
+      "sha": "ab1e61b0de7a47949b00667d69674c6f60cf892c",
+      "size": 5610414
+    },
+    {
+      "path": "avatares SVG - Astra/Ander/02-tres-cuartos.svg",
+      "sha": "3fe4761c07e28cbf068a7750e4bbbf644c441fb1",
+      "size": 4943459
+    },
+    {
+      "path": "avatares SVG - Astra/Ander/03-perfil.svg",
+      "sha": "cd93474d61030386620e2eadc60c184b6c8ecd03",
+      "size": 4100044
+    },
+    {
+      "path": "avatares SVG - Astra/Ander/04-espalda.svg",
+      "sha": "7af58409e5aae018aeb62a5a30e337b5f762ebcd",
+      "size": 5513344
+    },
+    {
+      "path": "avatares SVG - Astra/Ander/05-neutral.svg",
+      "sha": "b8c4f53a4c36b478e93a33e908d21314ed9b0b3a",
+      "size": 2034879
+    },
+    {
+      "path": "avatares SVG - Astra/Ander/06-risa.svg",
+      "sha": "3077943468f873058084b684d4ab23e2b685cd22",
+      "size": 2087814
+    },
+    {
+      "path": "avatares SVG - Astra/Ander/07-sorpresa.svg",
+      "sha": "67a3aa844ba3211e11d732ad0d70006e041b66da",
+      "size": 2109513
+    },
+    {
+      "path": "avatares SVG - Astra/Ander/08-cansancio.svg",
+      "sha": "125d2d87e243d71a8864c6ee47806ed93641221e",
+      "size": 2007847
+    },
+    {
+      "path": "avatares SVG - Astra/Ander/09-ojos-cerrados.svg",
+      "sha": "f8c36db43833297a8bac53f3164a99c0106c2c5a",
+      "size": 1961003
+    },
+    {
+      "path": "avatares SVG - Astra/Ander/10-guino.svg",
+      "sha": "e0d75f3f119cc2ee634796a7b6fe00aa080a59ac",
+      "size": 2160119
+    },
+    {
+      "path": "avatares SVG - Astra/Carla.svg",
+      "sha": "2c4aab4de3daf4a9e805d81ae406c1ca4522efed",
+      "size": 31165433
+    },
+    {
+      "path": "avatares SVG - Astra/Carla/01-frontal.svg",
+      "sha": "015334f4ea0e13c5bc72c884b444d2ce98949577",
+      "size": 4576683
+    },
+    {
+      "path": "avatares SVG - Astra/Carla/02-tres-cuartos.svg",
+      "sha": "75f070eebe0571a023bd06ab8102be4a38952384",
+      "size": 4181518
+    },
+    {
+      "path": "avatares SVG - Astra/Carla/03-perfil.svg",
+      "sha": "f13f56621c1203d38c5d332f187c6cf61bf857cf",
+      "size": 3535116
+    },
+    {
+      "path": "avatares SVG - Astra/Carla/04-espalda.svg",
+      "sha": "fca059d67aec689055ff0e226ce01f6c77bacd97",
+      "size": 4821613
+    },
+    {
+      "path": "avatares SVG - Astra/Carla/05-neutral.svg",
+      "sha": "4c8b53fb1818cfd11ecbe43042d5b99cdf38de17",
+      "size": 2424662
+    },
+    {
+      "path": "avatares SVG - Astra/Carla/06-sonrisa.svg",
+      "sha": "df8f1cb470ccd56c7c54056523f54e5934698716",
+      "size": 2472935
+    },
+    {
+      "path": "avatares SVG - Astra/Carla/07-sorpresa.svg",
+      "sha": "140e84eb6a53fb181d4877fcb86ae2bd26fa50eb",
+      "size": 2431684
+    },
+    {
+      "path": "avatares SVG - Astra/Carla/08-cansancio.svg",
+      "sha": "d245c6447624e9aafb25c5789de5c246ee59ba9b",
+      "size": 2245515
+    },
+    {
+      "path": "avatares SVG - Astra/Carla/09-ojos-cerrados.svg",
+      "sha": "55446bc2be9f0db55028ce82dea2aa4b8e3bf92b",
+      "size": 2349704
+    },
+    {
+      "path": "avatares SVG - Astra/Carla/10-guino.svg",
+      "sha": "c8fbff3768a915cfa7fa6ea6e8c9a5af7aba805e",
+      "size": 2161568
+    },
+    {
+      "path": "avatares SVG - Astra/Dari.svg",
+      "sha": "3d5a3c85101dd6689c694597ed1ef6bef2d8ddae",
+      "size": 34691961
+    },
+    {
+      "path": "avatares SVG - Astra/Dari/01-frontal.svg",
+      "sha": "2b8dc25a25391284ac5ff04afb83bb7d442cec33",
+      "size": 5853354
+    },
+    {
+      "path": "avatares SVG - Astra/Dari/02-tres-cuartos.svg",
+      "sha": "d0e3b18cf4089b6a6a2bf84b87e4f11f10bbfbcb",
+      "size": 5255824
+    },
+    {
+      "path": "avatares SVG - Astra/Dari/03-perfil.svg",
+      "sha": "754075aed1071a822b23d72739e64bb5560cbda3",
+      "size": 4049208
+    },
+    {
+      "path": "avatares SVG - Astra/Dari/04-espalda.svg",
+      "sha": "2a0add8e39559bad6d58206ba0d9449ad3aca70d",
+      "size": 5353504
+    },
+    {
+      "path": "avatares SVG - Astra/Dari/05-neutral.svg",
+      "sha": "f1670a32b8d18c553b60fc3e1caba410e1830351",
+      "size": 2494576
+    },
+    {
+      "path": "avatares SVG - Astra/Dari/06-risa.svg",
+      "sha": "d808e7914c08a177ca72d2297c0ef6e8a29f76d5",
+      "size": 2230290
+    },
+    {
+      "path": "avatares SVG - Astra/Dari/07-sorpresa.svg",
+      "sha": "a5f6d3cff87cb608363c6c49d5f1f568fbc33909",
+      "size": 2213285
+    },
+    {
+      "path": "avatares SVG - Astra/Dari/08-cansancio.svg",
+      "sha": "bdb92e29537628c56ab8d23b8759eea380a1fbe4",
+      "size": 2108618
+    },
+    {
+      "path": "avatares SVG - Astra/Dari/09-ojos-cerrados.svg",
+      "sha": "3fb6df2b443db86afa9d1e946b6f36202eb27d6e",
+      "size": 2224828
+    },
+    {
+      "path": "avatares SVG - Astra/Dari/10-guino.svg",
+      "sha": "a8efc58103274d0d1bfcf216c823905e319b39c8",
+      "size": 2453953
+    },
+    {
+      "path": "avatares SVG - Astra/Deivi.svg",
+      "sha": "9cc30bb69aa6d41cc2dab107fd9898ec5475c853",
+      "size": 40008348
+    },
+    {
+      "path": "avatares SVG - Astra/Deivi/01-frontal.svg",
+      "sha": "e362878503b5e82215936bec5ad96a22e4fbc1b9",
+      "size": 6009465
+    },
+    {
+      "path": "avatares SVG - Astra/Deivi/02-tres-cuartos.svg",
+      "sha": "c8a20cfb452558c56e5a67920c626f87e4db52d6",
+      "size": 6145954
+    },
+    {
+      "path": "avatares SVG - Astra/Deivi/03-perfil.svg",
+      "sha": "b8eb701b5b94617e7583bd4e1007b3e7aba131b2",
+      "size": 4326169
+    },
+    {
+      "path": "avatares SVG - Astra/Deivi/04-espalda.svg",
+      "sha": "4b23931008e97c8a31dc936e31228408b2e45572",
+      "size": 6013583
+    },
+    {
+      "path": "avatares SVG - Astra/Deivi/05-neutral.svg",
+      "sha": "3205ad4070b32670c7e92c7a29f8fc3b09c4827f",
+      "size": 2852302
+    },
+    {
+      "path": "avatares SVG - Astra/Deivi/06-risa.svg",
+      "sha": "b255dcdd996527d190c281651b575675bb76e7b0",
+      "size": 2733505
+    },
+    {
+      "path": "avatares SVG - Astra/Deivi/07-sorpresa.svg",
+      "sha": "917f690c1dbced40dabaaaeb67f4a77fb1df9f37",
+      "size": 2717089
+    },
+    {
+      "path": "avatares SVG - Astra/Deivi/08-cansancio.svg",
+      "sha": "53d132744af84490b54c2cebb8571d95f53dffd4",
+      "size": 3089764
+    },
+    {
+      "path": "avatares SVG - Astra/Deivi/09-ojos-cerrados.svg",
+      "sha": "f6de300ab2ac5439352fc27d7286e40255964a1d",
+      "size": 2658071
+    },
+    {
+      "path": "avatares SVG - Astra/Deivi/10-guino.svg",
+      "sha": "2077096563ce173bc7f8099e75e04f9f0f205510",
+      "size": 2840977
+    },
+    {
+      "path": "avatares SVG - Astra/Gabacho.svg",
+      "sha": "dbe5b7184b29cb42f1aafbf4b2dda059d03a6d42",
+      "size": 35233977
+    },
+    {
+      "path": "avatares SVG - Astra/Gabacho/01-frontal.svg",
+      "sha": "88cd7f41bb3ca2ba914d1687af7d3025588161cb",
+      "size": 6949688
+    },
+    {
+      "path": "avatares SVG - Astra/Gabacho/02-tres-cuartos.svg",
+      "sha": "7c406ee2202d81f6b40f2732671bdeadef41cfce",
+      "size": 5819024
+    },
+    {
+      "path": "avatares SVG - Astra/Gabacho/03-perfil.svg",
+      "sha": "52d561184d6387903b6c4ae0f33869e2a1334c7e",
+      "size": 4448837
+    },
+    {
+      "path": "avatares SVG - Astra/Gabacho/04-espalda.svg",
+      "sha": "339ad48431b6abd3fdc6796242666c7cc926e5b4",
+      "size": 5868100
+    },
+    {
+      "path": "avatares SVG - Astra/Gabacho/05-neutral.svg",
+      "sha": "0b3c5a08e4d321f2dce6ced228e7aac3e63c654c",
+      "size": 2193052
+    },
+    {
+      "path": "avatares SVG - Astra/Gabacho/06-risa.svg",
+      "sha": "91264d501ce416d29de9f02d6784a57c0bfb43bd",
+      "size": 2135927
+    },
+    {
+      "path": "avatares SVG - Astra/Gabacho/07-sorpresa.svg",
+      "sha": "c03dfe9c844f2f0742137dcaa562f7de0753b8dc",
+      "size": 2059315
+    },
+    {
+      "path": "avatares SVG - Astra/Gabacho/08-cansancio.svg",
+      "sha": "f121592b1ed622866fb59f4c54df21549510e8f2",
+      "size": 1989103
+    },
+    {
+      "path": "avatares SVG - Astra/Gabacho/09-ojos-cerrados.svg",
+      "sha": "57728b50e150921e002a0d2e001ac60f403ca2b7",
+      "size": 2128722
+    },
+    {
+      "path": "avatares SVG - Astra/Gabacho/10-guino.svg",
+      "sha": "254b391971d30751ddda8af64a842f800f469663",
+      "size": 2230082
+    },
+    {
+      "path": "avatares SVG - Astra/Guillermo-Aladro.svg",
+      "sha": "65eb3b778abeb279014d8da0e1839ef5743e5369",
+      "size": 36816186
+    },
+    {
+      "path": "avatares SVG - Astra/Guillermo-Aladro/01-frontal.svg",
+      "sha": "baed108e35e449f7384301a18de589a5e50a5feb",
+      "size": 7561104
+    },
+    {
+      "path": "avatares SVG - Astra/Guillermo-Aladro/02-tres-cuartos.svg",
+      "sha": "e9c71d27ae76a183cfd3951ac1c314a6187b9f22",
+      "size": 6249807
+    },
+    {
+      "path": "avatares SVG - Astra/Guillermo-Aladro/03-perfil.svg",
+      "sha": "b84b508027713c9bf436c971dcf623970a98af6b",
+      "size": 4661592
+    },
+    {
+      "path": "avatares SVG - Astra/Guillermo-Aladro/04-espalda.svg",
+      "sha": "475df8dee7e236fd9b76d0ea24ba45dfeb9faac7",
+      "size": 6015128
+    },
+    {
+      "path": "avatares SVG - Astra/Guillermo-Aladro/05-serio.svg",
+      "sha": "1866d90a95008cd313afb143396f3acde8ed366c",
+      "size": 2043119
+    },
+    {
+      "path": "avatares SVG - Astra/Guillermo-Aladro/06-sonrisa.svg",
+      "sha": "9960d60f186cffd428af3f2c2e4228de741a3c9e",
+      "size": 2266887
+    },
+    {
+      "path": "avatares SVG - Astra/Guillermo-Aladro/07-sorpresa.svg",
+      "sha": "6e30fefd885978b3d2c805c5c01496502fadac03",
+      "size": 2232323
+    },
+    {
+      "path": "avatares SVG - Astra/Guillermo-Aladro/08-cansancio.svg",
+      "sha": "22fec49c0de803d6755fcb218b7f394bea531513",
+      "size": 2409985
+    },
+    {
+      "path": "avatares SVG - Astra/Guillermo-Aladro/09-ojos-cerrados.svg",
+      "sha": "a16460193bf86fd585b677541714ae34c30573a9",
+      "size": 2159706
+    },
+    {
+      "path": "avatares SVG - Astra/Guillermo-Aladro/10-ceno-fruncido.svg",
+      "sha": "993e2bae2c12e0ddd5528e4fa1360a891a773120",
+      "size": 2158626
+    },
+    {
+      "path": "avatares SVG - Astra/Guillermo-Aladro/escena-cerveza-frontal/Guillermo-Aladro-cerveza-frontal.svg",
+      "sha": "ae1e162f5ae8a029eb2b336ac1057169e735b83b",
+      "size": 4020924
+    },
+    {
+      "path": "avatares SVG - Astra/Guillermo-Aladro/escena-cerveza/Guillermo-Aladro-cerveza.svg",
+      "sha": "401745d45a110c98d0084c27e83664ddf419f026",
+      "size": 2850390
+    },
+    {
+      "path": "avatares SVG - Astra/Kiriku.svg",
+      "sha": "13c262555cf6e79af50b95d8689beb4786575244",
+      "size": 30240854
+    },
+    {
+      "path": "avatares SVG - Astra/Kiriku/01-frontal.svg",
+      "sha": "bf5bbcd694989fdf053d1cc712be51733d65cdfb",
+      "size": 5250807
+    },
+    {
+      "path": "avatares SVG - Astra/Kiriku/02-tres-cuartos.svg",
+      "sha": "ff5667aa4677f9d4f276a46bcb5d4fca96dffb88",
+      "size": 4747462
+    },
+    {
+      "path": "avatares SVG - Astra/Kiriku/03-perfil.svg",
+      "sha": "c66f8a247ea653106d3f7ef4a8ef8d7839a0d093",
+      "size": 3834151
+    },
+    {
+      "path": "avatares SVG - Astra/Kiriku/04-espalda.svg",
+      "sha": "fa19e6e20964f4b55a37a39646c835f001c667c1",
+      "size": 4540433
+    },
+    {
+      "path": "avatares SVG - Astra/Kiriku/05-neutral.svg",
+      "sha": "97c7972103b1a63d5db3ce58133db866f4aa8f8d",
+      "size": 2005728
+    },
+    {
+      "path": "avatares SVG - Astra/Kiriku/06-risa.svg",
+      "sha": "129e14d5e299e92d54b0bff4e8f304fc65f2ad81",
+      "size": 2168665
+    },
+    {
+      "path": "avatares SVG - Astra/Kiriku/07-sorpresa.svg",
+      "sha": "c384b06b5847bd17df0e608694e012e907b29711",
+      "size": 2045047
+    },
+    {
+      "path": "avatares SVG - Astra/Kiriku/08-cansancio.svg",
+      "sha": "a2f05294233e47397ddb6b24b7ec877f836dea6f",
+      "size": 2153229
+    },
+    {
+      "path": "avatares SVG - Astra/Kiriku/09-ojos-cerrados.svg",
+      "sha": "1cefd14ea11e3e86d58c1fc5ba138e1bf9969aef",
+      "size": 1907771
+    },
+    {
+      "path": "avatares SVG - Astra/Kiriku/10-guino.svg",
+      "sha": "1068a02913fdb893abbf89499d9f3274ffd0ef45",
+      "size": 1963878
+    },
+    {
+      "path": "avatares SVG - Astra/Laura.svg",
+      "sha": "e4dc7f4166b143d3612fc9172de6916724c374d4",
+      "size": 39094592
+    },
+    {
+      "path": "avatares SVG - Astra/Laura/01-frontal.svg",
+      "sha": "db174ee32c34343b4424a56daf1241aa35b594f5",
+      "size": 6250707
+    },
+    {
+      "path": "avatares SVG - Astra/Laura/02-tres-cuartos.svg",
+      "sha": "e0baf912e3f13ccfa8696f606272f7d71b65607d",
+      "size": 5271667
+    },
+    {
+      "path": "avatares SVG - Astra/Laura/03-perfil.svg",
+      "sha": "f6caadfcd22875e779ccb88c6df8b485a5ab8df3",
+      "size": 4434253
+    },
+    {
+      "path": "avatares SVG - Astra/Laura/04-espalda.svg",
+      "sha": "8bf6c7f6147edd80f3896d7f116719f278584071",
+      "size": 6156682
+    },
+    {
+      "path": "avatares SVG - Astra/Laura/05-neutral.svg",
+      "sha": "6435784fba8cfb68e44c852cffa5058538e88732",
+      "size": 3014605
+    },
+    {
+      "path": "avatares SVG - Astra/Laura/06-risa.svg",
+      "sha": "39cf4212ef002cccb555efa0883ea1c5c8b189d4",
+      "size": 2891344
+    },
+    {
+      "path": "avatares SVG - Astra/Laura/07-sorpresa.svg",
+      "sha": "2f522e50991c23d0e7806d6f6bfa5f5d709343be",
+      "size": 2833094
+    },
+    {
+      "path": "avatares SVG - Astra/Laura/08-cansancio.svg",
+      "sha": "2d5c53d26001634941ef0d595561aaef9cbe87d5",
+      "size": 2837782
+    },
+    {
+      "path": "avatares SVG - Astra/Laura/09-ojos-cerrados.svg",
+      "sha": "6bbb73c98d5d57990260f1f199b69c090ae31619",
+      "size": 2605387
+    },
+    {
+      "path": "avatares SVG - Astra/Laura/10-guino.svg",
+      "sha": "99888e764235f4ffc2952751843f38b3b68ae855",
+      "size": 2877943
+    },
+    {
+      "path": "avatares SVG - Astra/Marcos-Bombero.svg",
+      "sha": "990c200fb92f2fe5d774c856472209b7688296b2",
+      "size": 32283609
+    },
+    {
+      "path": "avatares SVG - Astra/Marcos-Bombero/01-frontal.svg",
+      "sha": "697a5e22415db103b34d2a633a6479936a17fe48",
+      "size": 5457488
+    },
+    {
+      "path": "avatares SVG - Astra/Marcos-Bombero/02-tres-cuartos.svg",
+      "sha": "3acca560157e65492a5db33ceb39649407da1a86",
+      "size": 4636893
+    },
+    {
+      "path": "avatares SVG - Astra/Marcos-Bombero/03-perfil.svg",
+      "sha": "bc1b581da5a6794f8b09af217c7a7eeb9fc205e9",
+      "size": 3640180
+    },
+    {
+      "path": "avatares SVG - Astra/Marcos-Bombero/04-espalda.svg",
+      "sha": "d9dc1a211636ff2281e45bdc5b0d1f6d312339f4",
+      "size": 3745256
+    },
+    {
+      "path": "avatares SVG - Astra/Marcos-Bombero/05-neutral.svg",
+      "sha": "1107a12b13a41c0eb26cc59699853c7b288a50cc",
+      "size": 2523300
+    },
+    {
+      "path": "avatares SVG - Astra/Marcos-Bombero/06-risa.svg",
+      "sha": "d656783e1f92fea749015da4cd485eccaebf8ff7",
+      "size": 2644223
+    },
+    {
+      "path": "avatares SVG - Astra/Marcos-Bombero/07-sorpresa.svg",
+      "sha": "ef56accd38ea7b11fdc2c11422dd9ac14929b131",
+      "size": 2502051
+    },
+    {
+      "path": "avatares SVG - Astra/Marcos-Bombero/08-cansancio.svg",
+      "sha": "95bfb3ae91e5e8e797ea4b316f427d1463dd9358",
+      "size": 2692909
+    },
+    {
+      "path": "avatares SVG - Astra/Marcos-Bombero/09-ojos-cerrados.svg",
+      "sha": "42c3019b27be427a1d22fc4958f06de78da62462",
+      "size": 2586976
+    },
+    {
+      "path": "avatares SVG - Astra/Marcos-Bombero/10-guino.svg",
+      "sha": "637d8c591d7b526713522c5d73f0a5203bb22e85",
+      "size": 2513365
+    },
+    {
+      "path": "avatares SVG - Astra/Marta.svg",
+      "sha": "cebf08bb1bf7d329714512480b612bf608026550",
+      "size": 41188582
+    },
+    {
+      "path": "avatares SVG - Astra/Marta/01-frontal.svg",
+      "sha": "05204603c787a9fcf29655f58731f95d823ee3f3",
+      "size": 7231517
+    },
+    {
+      "path": "avatares SVG - Astra/Marta/02-tres-cuartos.svg",
+      "sha": "62561342b0fb9de9ea51997f62fa5cc6922c3658",
+      "size": 6306126
+    },
+    {
+      "path": "avatares SVG - Astra/Marta/03-perfil.svg",
+      "sha": "383c080ec07772fd480c12d12af5027df9662028",
+      "size": 4979063
+    },
+    {
+      "path": "avatares SVG - Astra/Marta/04-espalda.svg",
+      "sha": "eb85288f956fdacc0be8f7ad9cebd442ff1befe4",
+      "size": 6873704
+    },
+    {
+      "path": "avatares SVG - Astra/Marta/05-neutral.svg",
+      "sha": "602480aa803657d4bce08b53ec2595002f6c6f8a",
+      "size": 2791322
+    },
+    {
+      "path": "avatares SVG - Astra/Marta/06-risa.svg",
+      "sha": "62095ea27d3caf2dcfa6aedcf745c72a894330fc",
+      "size": 2628751
+    },
+    {
+      "path": "avatares SVG - Astra/Marta/07-sorpresa.svg",
+      "sha": "20ca980ef5cfe30ef8c2ad5992af143ed5f5e20f",
+      "size": 2661986
+    },
+    {
+      "path": "avatares SVG - Astra/Marta/08-cansancio.svg",
+      "sha": "94ae51288e9131d98df021a92ad8747ed9376bc8",
+      "size": 2757787
+    },
+    {
+      "path": "avatares SVG - Astra/Marta/09-ojos-cerrados.svg",
+      "sha": "038374d37de55f85894fd71da4c1d8244cf1624e",
+      "size": 2525158
+    },
+    {
+      "path": "avatares SVG - Astra/Marta/10-guino.svg",
+      "sha": "04be71e16a157b179996dbfb404ac9679e642c04",
+      "size": 2855606
+    },
+    {
+      "path": "avatares SVG - Astra/Paradigma.svg",
+      "sha": "f17a2ecc410ec5a93bb0e832083ae551fdcb1357",
+      "size": 32581633
+    },
+    {
+      "path": "avatares SVG - Astra/Paradigma/01-frontal.svg",
+      "sha": "162fe11882753c7c9331a0768d62192956a2680e",
+      "size": 5651928
+    },
+    {
+      "path": "avatares SVG - Astra/Paradigma/02-tres-cuartos.svg",
+      "sha": "e88cb9f9011103dcd05d759b6e9989fb967f5227",
+      "size": 4323338
+    },
+    {
+      "path": "avatares SVG - Astra/Paradigma/03-perfil.svg",
+      "sha": "b0ed72b31752fbf056afe811520970c86410ed07",
+      "size": 3874201
+    },
+    {
+      "path": "avatares SVG - Astra/Paradigma/04-espalda.svg",
+      "sha": "8aac6268a914635c155f5e2fedd9de84d20c9cd8",
+      "size": 4766360
+    },
+    {
+      "path": "avatares SVG - Astra/Paradigma/05-neutral.svg",
+      "sha": "01fb605d5e619efaa60b1f6d29e268253b8f3ffd",
+      "size": 2633516
+    },
+    {
+      "path": "avatares SVG - Astra/Paradigma/06-risa.svg",
+      "sha": "196ca87fc344370acf46816ab99920f5931c9fa0",
+      "size": 2689232
+    },
+    {
+      "path": "avatares SVG - Astra/Paradigma/07-sorpresa.svg",
+      "sha": "04186d0f9b8851e79531d99c0308e71547dcf3b2",
+      "size": 2494746
+    },
+    {
+      "path": "avatares SVG - Astra/Paradigma/08-cansancio.svg",
+      "sha": "a6a7d2fa91ce4e6540c12b2625f8090049666ddd",
+      "size": 2404595
+    },
+    {
+      "path": "avatares SVG - Astra/Paradigma/09-ojos-cerrados.svg",
+      "sha": "45f759f2a67272d440cd1e202b170cda76ba5c17",
+      "size": 2361568
+    },
+    {
+      "path": "avatares SVG - Astra/Paradigma/10-guino.svg",
+      "sha": "a894c0574ce17a5fe29a7c25c87069f80d68d9ac",
+      "size": 2417607
+    },
+    {
+      "path": "avatares SVG - Astra/Rodri.svg",
+      "sha": "961c97523a03978c02275d766530eb7e2c568417",
+      "size": 34699982
+    },
+    {
+      "path": "avatares SVG - Astra/Rodri/01-frontal.svg",
+      "sha": "4a52090345f3eb1413623e6de2d7c71404e3a88b",
+      "size": 6190415
+    },
+    {
+      "path": "avatares SVG - Astra/Rodri/02-tres-cuartos.svg",
+      "sha": "63eb587de27afa3a3a0438238d8d4da0a8004699",
+      "size": 5460661
+    },
+    {
+      "path": "avatares SVG - Astra/Rodri/03-perfil.svg",
+      "sha": "58c706ca48e716985c1245bcfcd4f8d14777c558",
+      "size": 4262937
+    },
+    {
+      "path": "avatares SVG - Astra/Rodri/04-espalda.svg",
+      "sha": "a0f8e4997b743fadd373cd9a5f3e689078aa3daf",
+      "size": 5289788
+    },
+    {
+      "path": "avatares SVG - Astra/Rodri/05-neutral.svg",
+      "sha": "406a55d339d49910b4d4126e837d3d3b88de5f58",
+      "size": 2475392
+    },
+    {
+      "path": "avatares SVG - Astra/Rodri/06-risa.svg",
+      "sha": "a1b3e2f3d18a70bbd410f568eea92e8e36fe4609",
+      "size": 2557520
+    },
+    {
+      "path": "avatares SVG - Astra/Rodri/07-sorpresa.svg",
+      "sha": "40c675170e22e6ece1d7013610e84a06886b2188",
+      "size": 2355978
+    },
+    {
+      "path": "avatares SVG - Astra/Rodri/08-cansancio.svg",
+      "sha": "8ab618f5b7d1aff3517c2a500fe39a59f9edfe1d",
+      "size": 2318974
+    },
+    {
+      "path": "avatares SVG - Astra/Rodri/09-ojos-cerrados.svg",
+      "sha": "55b6667ca343363e0dcb11f639b3214681aa5ca0",
+      "size": 2323073
+    },
+    {
+      "path": "avatares SVG - Astra/Rodri/10-guino.svg",
+      "sha": "53deadb11382e088944af6abf1d8c583c687bebd",
+      "size": 2316528
+    },
+    {
+      "path": "avatares SVG - Astra/Sara-Saez.svg",
+      "sha": "e5d8bf929a5ba1bafe18e9b0df7e36aa8e397038",
+      "size": 25685159
+    },
+    {
+      "path": "avatares SVG - Astra/Sara-Saez/01-frontal.svg",
+      "sha": "5edbb47d9cdcc1aeaa55685f9cbea64cc5286ddf",
+      "size": 3191559
+    },
+    {
+      "path": "avatares SVG - Astra/Sara-Saez/02-tres-cuartos.svg",
+      "sha": "206dcbc69476df723eaa7060fda291df13a67357",
+      "size": 2971173
+    },
+    {
+      "path": "avatares SVG - Astra/Sara-Saez/03-perfil.svg",
+      "sha": "59e098cd9793f63bcaa066646b72a087563081f2",
+      "size": 2215091
+    },
+    {
+      "path": "avatares SVG - Astra/Sara-Saez/04-espalda.svg",
+      "sha": "52d8050adfaef5cf331a7d46559d577a991ae5e9",
+      "size": 2638483
+    },
+    {
+      "path": "avatares SVG - Astra/Sara-Saez/05-neutral.svg",
+      "sha": "aa27155ea97e2cc9d02dd022936a0c35bda37265",
+      "size": 2639648
+    },
+    {
+      "path": "avatares SVG - Astra/Sara-Saez/06-risa.svg",
+      "sha": "9f48fbd57747711d903b8caddb3bd084e251052e",
+      "size": 2818642
+    },
+    {
+      "path": "avatares SVG - Astra/Sara-Saez/07-sorpresa.svg",
+      "sha": "0a73246f42a2707e688cff957b79d8ddc3786fd6",
+      "size": 2693323
+    },
+    {
+      "path": "avatares SVG - Astra/Sara-Saez/08-cansancio.svg",
+      "sha": "59710fd010ccea7c978f56ea69f3fad898df933d",
+      "size": 2449679
+    },
+    {
+      "path": "avatares SVG - Astra/Sara-Saez/09-ojos-cerrados.svg",
+      "sha": "5e19df6e400ce2152dcb62ba26909dbca339f492",
+      "size": 2699125
+    },
+    {
+      "path": "avatares SVG - Astra/Sara-Saez/10-guino.svg",
+      "sha": "f76f24747d971b94216e22231ee7d3ab4412698a",
+      "size": 2615205
+    },
+    {
+      "path": "avatares SVG - Astra/Yorgi.svg",
+      "sha": "6ad88b250f8d500575bb310864c6af75476217e7",
+      "size": 29539220
+    },
+    {
+      "path": "avatares SVG - Astra/Yorgi/01-frontal.svg",
+      "sha": "eff465e047d76717a970f55ad24571121c89748e",
+      "size": 5088832
+    },
+    {
+      "path": "avatares SVG - Astra/Yorgi/02-tres-cuartos.svg",
+      "sha": "a163222af1be252f52f59dd60294660c4cdfe215",
+      "size": 4619643
+    },
+    {
+      "path": "avatares SVG - Astra/Yorgi/03-perfil.svg",
+      "sha": "20f6c10a5c9ac6b33e439f314e2ef91ccee9cb7b",
+      "size": 3701078
+    },
+    {
+      "path": "avatares SVG - Astra/Yorgi/04-espalda.svg",
+      "sha": "b57239113f72d35f3645bf00a97b28cefabfc764",
+      "size": 4491969
+    },
+    {
+      "path": "avatares SVG - Astra/Yorgi/05-neutral.svg",
+      "sha": "be6a9b5b4cd981616ae60f2e5bf9fd706e6d7c11",
+      "size": 1996619
+    },
+    {
+      "path": "avatares SVG - Astra/Yorgi/06-risa.svg",
+      "sha": "c826bcccc08d00e8263cd31a8b3a6c9d0fc2cb18",
+      "size": 2373284
+    },
+    {
+      "path": "avatares SVG - Astra/Yorgi/07-sorpresa.svg",
+      "sha": "671b55e58896b733053698a84e03c95dc0d9eb34",
+      "size": 2232214
+    },
+    {
+      "path": "avatares SVG - Astra/Yorgi/08-cansancio.svg",
+      "sha": "3fd508a4798068d61ab9bf5b4ddece7e1db6e3fb",
+      "size": 2254199
+    },
+    {
+      "path": "avatares SVG - Astra/Yorgi/09-ojos-cerrados.svg",
+      "sha": "8a5bace4ecaaaca93f9dd27f82781765915bc716",
+      "size": 2169745
+    },
+    {
+      "path": "avatares SVG - Astra/Yorgi/10-guino.svg",
+      "sha": "025b1f1300cebb9775dac56cbeda263792e15513",
+      "size": 2207158
+    }
+  ]
+}

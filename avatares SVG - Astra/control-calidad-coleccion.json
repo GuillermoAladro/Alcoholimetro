@@ -442,12 +442,52 @@
       "gradients": 82006,
       "file": "Paradigma.svg",
       "preview": "Paradigma-preview.png",
-      "bytes": 32672133,
-      "svg_sha256": "337110ed2315c75ffe28907941b6cfbba6588974fefd6f4191354b1a743a63da",
-      "ssim": 0.97046,
-      "expression_strip_ssim": 0.97221,
-      "mean_absolute_channel_error_0_255": 2.51102,
-      "body_bottom": 890
+      "bytes": 32581633,
+      "svg_sha256": "1633aeb17226bcc9ba7a061d64be240e84f1e9b504a1f8d88853dad17ddd3e1d",
+      "ssim": 0.97226,
+      "expression_strip_ssim": 0.97728,
+      "mean_absolute_channel_error_0_255": 2.41327,
+      "body_bottom": 890,
+      "layout_revision": 2,
+      "white_fabric_regions": [
+        [
+          10,
+          1200,
+          185,
+          1289
+        ],
+        [
+          200,
+          1200,
+          370,
+          1289
+        ],
+        [
+          390,
+          1200,
+          550,
+          1289
+        ],
+        [
+          570,
+          1200,
+          665,
+          1289
+        ],
+        [
+          765,
+          1200,
+          916,
+          1289
+        ],
+        [
+          942,
+          1200,
+          1110,
+          1289
+        ]
+      ],
+      "correction_report": "Paradigma/correccion-camiseta.json"
     },
     {
       "character": "Rodri",
@@ -515,5 +555,7 @@
       "mean_absolute_channel_error_0_255": 2.30453,
       "body_bottom": 852
     }
-  ]
+  ],
+  "final_review_report": "revision-final-publicada.json",
+  "verified_asset_commit": "1cc10ab5dfffa7f09ed42ce6bbc6a4e18aa5f1bb"
 }
