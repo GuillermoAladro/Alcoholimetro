@@ -48,6 +48,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00020 | Guillermo y Laura · Piedra, papel o tijera | 14,95 s | [MP4 60 fps](vista%20previa/00020%20Guillermo%20y%20Laura%20-%20piedra%20papel%20o%20tijera.mp4) · [fotogramas](vista%20previa/00020%20Guillermo%20y%20Laura%20-%20piedra%20papel%20o%20tijera%20-%20fotogramas.png) |
 | 00021 | Guillermo y Marcos · El chupito en llamas | 14,10 s | [MP4 60 fps](vista%20previa/00021%20Guillermo%20y%20Marcos%20-%20el%20chupito%20en%20llamas.mp4) · [fotogramas](vista%20previa/00021%20Guillermo%20y%20Marcos%20-%20el%20chupito%20en%20llamas%20-%20fotogramas.png) |
 | 00022 | Guillermo y Marcos · El gato en la farola | 14,50 s | [MP4 60 fps](vista%20previa/00022%20Guillermo%20y%20Marcos%20-%20el%20gato%20en%20la%20farola.mp4) · [fotogramas](vista%20previa/00022%20Guillermo%20y%20Marcos%20-%20el%20gato%20en%20la%20farola%20-%20fotogramas.png) |
+| 00023 | Guillermo y Marcos · La barra de bomberos | 14,45 s | [MP4 60 fps](vista%20previa/00023%20Guillermo%20y%20Marcos%20-%20la%20barra%20de%20bomberos.mp4) · [fotogramas](vista%20previa/00023%20Guillermo%20y%20Marcos%20-%20la%20barra%20de%20bomberos%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -474,6 +475,21 @@ Corrige los cuatro brazos, el apoyo de los codos en la mesa, el giro y la libera
 11. Negro.
 
 ![Fotogramas de 00022](vista%20previa/00022%20Guillermo%20y%20Marcos%20-%20el%20gato%20en%20la%20farola%20-%20fotogramas.png)
+
+### 00023 · Guillermo y Marcos · La barra de bomberos
+
+1. Negro.
+2. Parque de bomberos: pared de ladrillo rojo, taquillas, campana de latón y una barra que sube hasta el agujero del techo. Guillermo, con las manos en los bolsillos, mira arriba.
+3. **Marcos baja deslizándose por la barra** con una sola mano y una pierna enroscada, frena y aterriza con una flexión perfecta. Da dos pasos atrás y posa con los puños en la cintura y un guiño.
+4. Guillermo, boquiabierto, mira a cámara decidido, se sacude las manos y va a la barra.
+5. **Trepa mano sobre mano**, rojo y sudando; la cámara sube con él hasta que se mete por el agujero del techo.
+6. Abajo, cae polvo del agujero, la barra tiembla y Marcos levanta una ceja a cámara.
+7. **Guillermo baja girando alrededor de la barra como una broca**, demasiado rápido y con las piernas al aire… y se estampa de culo: polvo, estrellitas y ojos en espiral.
+8. Del agujero cae un casco que se le encaja hasta los ojos; Marcos se tapa la boca para no reírse y Guillermo tantea a ciegas.
+9. Marcos se acerca, le levanta el casco con un dedo y guiña a cámara; Guillermo sonríe avergonzado y saluda.
+10. Negro.
+
+![Fotogramas de 00023](vista%20previa/00023%20Guillermo%20y%20Marcos%20-%20la%20barra%20de%20bomberos%20-%20fotogramas.png)
 
 ## Ver y grabar
 
