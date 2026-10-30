@@ -41,7 +41,7 @@ def capa(cfg):
     ROJO, VERDE, NAR, AZUL, MOR, AMA = (230, 0, 0), (0, 170, 0), (255, 120, 0), (0, 90, 255), (190, 0, 190), (220, 170, 0)
     CIAN = (0, 170, 190)
     for paso in cfg.get("limpiar", []):                    # retoques de la hoja (accesorios quitados) en cian
-        for k in ("fondo", "pintar", "rellenar"):
+        for k in ("fondo", "pintar", "rellenar", "copiar", "teja"):
             if k not in paso: continue
             v = paso[k]                                    # un polígono o una lista de polígonos
             for q in (v if len(v) and isinstance(v[0][0], (list, tuple)) else [v]): poli(q, CIAN, "limpiar: " + k)
@@ -85,8 +85,12 @@ def capa(cfg):
     return out
 
 
-def pinta(src, out, x0, y0, x1, y1, esc, paso, elementos):
-    im = Image.open(src).convert("RGB").crop((x0, y0, x1, y1))
+def pinta(src, out, x0, y0, x1, y1, esc, paso, elementos, espejar=None):
+    im = Image.open(src).convert("RGB")
+    if espejar:                                            # avatar que mira a la izquierda: se ve ya reflejado (Marta)
+        import numpy as np, preparar
+        im = Image.fromarray(preparar.espejar(np.array(im), espejar))
+    im = im.crop((x0, y0, x1, y1))
     im = im.resize((int(im.width * esc), int(im.height * esc)), Image.LANCZOS)
     d = ImageDraw.Draw(im)
     T = lambda p: ((p[0] - x0) * esc, (p[1] - y0) * esc)
@@ -119,12 +123,14 @@ def main():
     if ident.endswith(".png"): src, cfg, ident = pathlib.Path(ident), None, pathlib.Path(ident).stem
     else: cfg = cargar_cfg(ident); src = RAIZ / cfg["fuente"]
     el = capa(cfg)
+    esp = (cfg or {}).get("espejar")
+    if esp: sys.path.insert(0, str(AQUI))
     if zona:
         x0, y0, x1, y1 = map(int, zona.split(","))
-        pinta(src, salida / f"{ident}-zona.png", x0, y0, x1, y1, esc or 3, paso or 10, el)
+        pinta(src, salida / f"{ident}-zona.png", x0, y0, x1, y1, esc or 3, paso or 10, el, esp)
     else:
-        pinta(src, salida / f"{ident}-figura.png", 0, 0, 470, 1402, esc or 1.4, paso or 20, el)
-        pinta(src, salida / f"{ident}-retrato.png", 400, 120, 1122, 1320, esc or 1.1, paso or 20, el)
+        pinta(src, salida / f"{ident}-figura.png", 0, 0, 470, 1402, esc or 1.4, paso or 20, el, esp)
+        pinta(src, salida / f"{ident}-retrato.png", 400, 120, 1122, 1320, esc or 1.1, paso or 20, el, esp)
 
 
 if __name__ == "__main__":

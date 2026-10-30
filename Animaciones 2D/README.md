@@ -957,6 +957,7 @@ Animaciones 2D/
 ├─ personajes/deivi/            coordenadas de Deivi y su atlas
 ├─ personajes/gabacho/          coordenadas de Gabacho y su atlas
 ├─ personajes/kiriku/           coordenadas de Kiriku y su atlas
+├─ personajes/marta/            coordenadas de Marta y su atlas
 ├─ escenas/                     una escena por archivo (00001 … 00010 y sus revisiones)
 ├─ herramientas/                 comprobar.py y grabar.py
 └─ vista previa/                 vídeos y fotogramas de cada animación
@@ -1055,6 +1056,13 @@ Opciones del montaje que usan las escenas nuevas (las anteriores no las activan 
 - **Limpieza:** las muñecas metidas en los bolsillos se quitan del torso y se repinta lo que tapaban: el costado y el bajo del polo y la cintura del vaquero, con sus costuras. Jersey y gafas son los del avatar, tal cual.
 - **En pantalla:** los hombros son negros y la mano se dibuja aparte al sacarla del bolsillo.
 - **Altura:** con el mismo `p.s` mide lo mismo que Guillermo.
+
+**Marta** (`personajes/marta/`) sale de `Avatares 2D/Marta/Marta-2D.png` con el recortador común. Su avatar mira a la izquierda, así que la hoja se refleja antes de trocearla («espejar»).
+
+- **Piezas:** la cabeza del retrato con su pinza de carey (cuencas vacías y sin el cuello del retrato), la cara roja, las cejas, la boca con labios, el torso de la chaqueta de punto gris hasta la cintura del vaquero, las dos mangas enderezadas, las piernas del vaquero, la zapatilla con la suela nivelada y la melena larga en dos tiras que se balancean (una detrás, reflejada).
+- **Limpieza:** la melena que caía por delante se quita y lo que tapaba se rehace con el punto de la chaqueta (mosaico) y la piel del escote. Las manos de los bolsillos se quitan y se copia el vaquero de debajo, con la abertura del bolsillo. El cuello lo pone el cuerpo, con pelo en sombra detrás.
+- **En pantalla:** los hombros los trae el torso con su punto y la mano se dibuja aparte al sacarla del bolsillo.
+- **Altura:** con el mismo `p.s` mide ≈ 93 % de Guillermo, como Laura y Carla.
 
 ## Añadir una animación
 

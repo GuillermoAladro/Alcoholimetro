@@ -69,14 +69,34 @@ def zona_paso(paso, clave, R, G, B, shape):
     polis = v if len(v) and isinstance(v[0][0], (list, tuple)) else [v]
     z = np.zeros(shape, bool)
     for q in polis: z |= poly_mask(q, shape)
-    if paso.get("mascara") == "no_piel":
+    if paso.get("mascara") in ("no_piel", "piel"):              # "piel": solo la piel (una mano que se quita)
         piel = (R > 200) & (G > 110) & (R - B > 60) & (G - B > 25)
-        m = z & ~piel
+        m = z & (piel if paso["mascara"] == "piel" else ~piel)
         n = paso.get("dilata", 0)
         if n: m = ndi.binary_dilation(m, iterations=n) & ndi.binary_dilation(z, iterations=n)
         z = m
     for q in paso.get("proteger_zonas", []): z &= ~poly_mask(q, shape)
     return z
+
+
+def espejar(src, pasos):
+    """Refleja partes de la hoja en su sitio (opcional, CFG["espejar"]): para un avatar que mira a la
+    izquierda (Marta), la figura y el retrato se reflejan cada uno alrededor de su propio eje vertical,
+    así quedan donde estaban pero mirando a la derecha, como todos los demás. Cada paso es un dict
+      {"zona": polígono (coordenadas de la hoja original), "eje": x}  → lo que no es fondo blanco dentro
+      de la zona pasa a x' = 2·eje − x. Lo que no está en ninguna zona (el nombre) se queda en blanco.
+    Se aplica antes de «limpiar»: todas las demás coordenadas del CFG son ya de la hoja reflejada."""
+    H, W = src.shape[:2]
+    out = np.full_like(src, 255)
+    A = src.astype(np.int16)
+    tinta = ~((A.min(-1) > 245) & ((A.max(-1) - A.min(-1)) < 12))         # lo que no es blanco puro
+    for paso in pasos:
+        z = poly_mask(paso["zona"], (H, W)) & tinta
+        ys, xs = np.where(z)
+        xd = np.round(2 * paso["eje"] - xs).astype(int)
+        ok = (xd >= 0) & (xd < W)
+        out[ys[ok], xd[ok]] = src[ys[ok], xs[ok]]
+    return out
 
 
 def limpiar(src, pasos):
@@ -88,9 +108,17 @@ def limpiar(src, pasos):
       {"pintar": polígono, "color": [r, g, b]}         → relleno liso
       {"rellenar": polígono}                           → inpainting desde lo de alrededor
       {"linea": [[x, y], …], "color": [r, g, b], "ancho": n}   → contorno o costura que quedó tapado
-    En "pintar" y "rellenar" (opcional): el valor puede ser una lista de polígonos (se rellenan todos de
+      {"copiar": polígono, "desde": [dx, dy], "repetir": True}  → copia lo que hay en (x + dx, y + dy): la
+                                                         textura de una tela (el punto de una chaqueta) sin
+                                                         emborronarla; con "repetir", por franjas de |dy| desde
+                                                         el lado de donde copia (para zonas más altas que dy)
+      {"teja": polígono, "origen": [x0, y0, w, h]}     → rellena con un trozo limpio de tela repetido en mosaico
+                                                         (con w múltiplo del paso del canalé, los canales siguen
+                                                         alineados con la tela de alrededor)
+    En "pintar", "rellenar", "copiar" y "teja" (opcional): el valor puede ser una lista de polígonos (se rellenan todos de
     una vez, así lo que se quita en uno no hace de fuente en el de al lado), "mascara": "no_piel" limita
-    el paso a lo que no es piel dentro de los polígonos (la montura de unas gafas), "dilata": n la ensancha
+    el paso a lo que no es piel dentro de los polígonos (la montura de unas gafas) y "piel" a la piel
+    (una mano metida en el bolsillo), "dilata": n la ensancha
     sin salir de los polígonos ensanchados y "proteger_zonas": [polígono, …] deja intacto lo de dentro
     (ojos, cejas). Sin esas claves el paso hace lo de siempre.
     """
@@ -120,6 +148,25 @@ def limpiar(src, pasos):
         elif "rellenar" in paso:
             z = zona_paso(paso, "rellenar", R, G, B, (H, W))
             out = cv2.inpaint(out, z.astype(np.uint8) * 255, paso.get("radio", 9), cv2.INPAINT_TELEA)
+        elif "copiar" in paso:
+            z = zona_paso(paso, "copiar", R, G, B, (H, W))
+            dx, dy = paso["desde"]
+            filas = [z]
+            if paso.get("repetir") and dy:
+                # zona más alta que el salto: se copia por franjas de |dy| empezando por el lado de donde se
+                # copia, así cada franja toma la tela de la anterior ya limpia (el punto vertical sigue)
+                ys = np.where(z.any(1))[0]; n = abs(dy); filas = []
+                orden = range(ys.max(), ys.min() - 1, -n) if dy > 0 else range(ys.min(), ys.max() + 1, n)
+                for yb in orden:
+                    zb = np.zeros_like(z); fs = slice(max(0, yb - n + 1), yb + 1) if dy > 0 else slice(yb, min(H, yb + n))
+                    zb[fs] = z[fs]; filas.append(zb)
+            for zb in filas:
+                ys_, xs_ = np.where(zb)
+                out[ys_, xs_] = out[np.clip(ys_ + dy, 0, H - 1), np.clip(xs_ + dx, 0, W - 1)]
+        elif "teja" in paso:
+            z = zona_paso(paso, "teja", R, G, B, (H, W))
+            x0, y0, w, h = paso["origen"]; ys_, xs_ = np.where(z)
+            out[ys_, xs_] = out[y0 + (ys_ - y0) % h, x0 + (xs_ - x0) % w]
         elif "linea" in paso:
             im = Image.fromarray(out); ImageDraw.Draw(im).line([tuple(q) for q in paso["linea"]], fill=tuple(paso.get("color", (12, 10, 12))),
                                                              width=paso.get("ancho", 4), joint="curve")
@@ -132,6 +179,7 @@ class Hoja:
 
     def __init__(self, ruta, cfg):
         self.src = np.array(Image.open(ruta).convert("RGB"))
+        if cfg.get("espejar"): self.src = espejar(self.src, cfg["espejar"])      # avatar que mira a la izquierda
         if cfg.get("limpiar"): self.src = limpiar(self.src, cfg["limpiar"])
         self.H, self.W = self.src.shape[:2]
         assert (self.W, self.H) == (1122, 1402), f"tamaño inesperado {self.W}×{self.H}"
@@ -422,6 +470,11 @@ def figura(h, c, dep):
     for poli_, color in t.get("rellenos", []):                  # zonas de color liso (top, piel, vaquero)
         z = h.poli(poli_) & rec
         t_rgb[z] = color
+    # (opcional) zonas con textura: mosaico de un trozo limpio [x0, y0, ancho, alto] de la hoja (el punto de
+    # una chaqueta bajo las mangas, Marta); como "teja" en «limpiar»
+    for poli_, (x0, y0, w, hh_) in t.get("rellenos_teja", []):
+        ys_, xs_ = np.where(h.poli(poli_) & rec)
+        t_rgb[ys_, xs_] = h.src[y0 + (ys_ - y0) % hh_, x0 + (xs_ - x0) % w]
     forz = np.zeros_like(cuerpo)
     for poli_, color in t.get("forzar", []):                   # zonas que se pintan aunque no estuvieran tapadas
         z = h.poli(poli_); t_rgb[z] = color; forz |= z
