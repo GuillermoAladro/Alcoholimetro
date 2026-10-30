@@ -127,13 +127,29 @@ const Recortes = (() => {
     for (let i = 0; i < n; i++) {
       const s0 = L * i / n, s1 = L * (i + 1) / n;
       // filas de la hoja que cubre la rodaja (la primera incluye el remate de arriba, la última el de abajo)
-      let r0 = ay + s0, r1 = ay + s1 + (i < n - 1 ? SOLAPE : 0);
+      // con c.cuna las rodajas se alargan por los dos lados y el recorte en cuña las deja justas
+      const EXT = c.cuna ? 40 : 0;
+      let r0 = ay + s0 - (i > 0 ? EXT : 0), r1 = ay + s1 + (i < n - 1 ? SOLAPE + EXT : 0);
       if (i === 0 && !c.capFija) r0 = Math.min(r0, yTop);
       if (i === n - 1) r1 = Math.max(r1, yBot);
       r0 = Math.max(r0, yTop); r1 = Math.min(r1, yBot);
       if (r1 <= r0) continue;
       const P = pts[i], am = pts[i + 1].a;
       g.save();
+      // Con c.cuna cada rodaja se recorta por las bisectrices de sus juntas: al doblar mucho la
+      // rodilla o el codo no asoman las esquinas de las rodajas (dientes de sierra en el pliegue).
+      if (c.cuna) {
+        const B = 4000, EPS = 1.2;
+        const corta = (q, a, signo) => {     // semiplano por q, normal = eje medio en la junta
+          const nx = -Math.sin(a) * signo, ny = Math.cos(a) * signo, ux = -ny, uy = nx;
+          const x0 = q.x - nx * EPS, y0 = q.y - ny * EPS;
+          g.beginPath(); g.moveTo(x0 + ux * B, y0 + uy * B); g.lineTo(x0 - ux * B, y0 - uy * B);
+          g.lineTo(x0 - ux * B + nx * B, y0 - uy * B + ny * B); g.lineTo(x0 + ux * B + nx * B, y0 + uy * B + ny * B); g.closePath(); g.clip();
+        };
+        const medio = (a, b) => a + Math.atan2(Math.sin(b - a), Math.cos(b - a)) / 2;
+        if (i > 0) corta(P, medio(pts[i].a, am), 1);
+        if (i < n - 1) corta(pts[i + 1], medio(am, pts[i + 2].a), -1);
+      }
       g.translate(P.x, P.y); g.rotate(am); g.scale(c.grosor || 1, sig);
       g.drawImage(imagen(A, p), mx, my + (r0 - oy) * tau, mw, (r1 - r0) * tau, ox - ax, r0 - (ay + s0), p.tam_hoja[0], r1 - r0);
       g.restore();
