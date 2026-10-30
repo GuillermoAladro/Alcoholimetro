@@ -91,6 +91,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00052 | Guillermo y Dari · Las gafas empañadas | 14,70 s | [MP4 60 fps](vista%20previa/00052%20Guillermo%20y%20Dari%20-%20las%20gafas%20empanadas.mp4) · [fotogramas](vista%20previa/00052%20Guillermo%20y%20Dari%20-%20las%20gafas%20empanadas%20-%20fotogramas.png) |
 | 00053 | Guillermo y Dari · El cubo de Rubik | 14,65 s | [MP4 60 fps](vista%20previa/00053%20Guillermo%20y%20Dari%20-%20el%20cubo%20de%20rubik.mp4) · [fotogramas](vista%20previa/00053%20Guillermo%20y%20Dari%20-%20el%20cubo%20de%20rubik%20-%20fotogramas.png) |
 | 00054 | Guillermo y Dari · El pelo rizado | 14,75 s | [MP4 60 fps](vista%20previa/00054%20Guillermo%20y%20Dari%20-%20el%20pelo%20rizado.mp4) · [fotogramas](vista%20previa/00054%20Guillermo%20y%20Dari%20-%20el%20pelo%20rizado%20-%20fotogramas.png) |
+| 00055 | Guillermo y Dari · La máquina recreativa | 14,60 s | [MP4 60 fps](vista%20previa/00055%20Guillermo%20y%20Dari%20-%20la%20maquina%20recreativa.mp4) · [fotogramas](vista%20previa/00055%20Guillermo%20y%20Dari%20-%20la%20maquina%20recreativa%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1077,6 +1078,23 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 12. Negro.
 
 ![Fotogramas de 00054](vista%20previa/00054%20Guillermo%20y%20Dari%20-%20el%20pelo%20rizado%20-%20fotogramas.png)
+
+### 00055 · Guillermo y Dari · La máquina recreativa
+
+1. Negro.
+2. Rincón de recreativas al fondo de un bar (pared verde, zócalo de madera, suelo en damero, póster de un cohete, diana y guirnalda de bombillas). Dari juega al matamarcianos con una sola mano y la otra en el bolsillo: toquecitos mínimos a la palanca y cada disparo es un marciano menos; el marcador sube. Guillermo, al lado, pasa del aburrimiento a la boca abierta.
+3. Último marciano: fanfarria (bombillas en cadena, rayos, confeti, arcoíris y una copa de píxeles; la bonificación lleva el marcador a 09990). Dari se sube las gafas con un dedo: destello.
+4. Guillermo, picado, mira a Dari, se frota las manos y sonríe chulo a cámara; Dari da un paso atrás y le cede la máquina con la mano abierta.
+5. Moneda del bolsillo a la ranura: clin, y aparece una oleada nueva.
+6. Guillermo juega con todo el cuerpo: palanca a tirones, botón aporreado, saltos, lengua fuera, rojo y sudando. Acierta de chiripa cinco marcianos (00050) y las bombas le quitan las tres vidas; Dari hace muecas y sube la ceja.
+7. Fin de partida: **una calavera de píxeles** parpadea en rojo; Guillermo se queda congelado de horror.
+8. Rabia: vena en la frente, zarandea la palanca y la máquina se balancea… **¡crac!** La palanca se le queda en la mano; chispazo, tornillos por el suelo y en la consola queda el muñón con el muelle botando. A Dari se le tuercen las gafas.
+9. Guillermo mira la palanca, mira a cámara con cara de culpa y mira a Dari, que le mira sin pestañear.
+10. Se la pasa a la otra mano, la esconde despacito detrás de la espalda (la bola roja asoma junto al culo), mete la otra mano en el bolsillo y silba mirando al techo.
+11. Dari mira el muñón (el muelle da otro boing), le mira a él, sube una ceja y se recoloca las gafas: destello a cámara.
+12. Negro.
+
+![Fotogramas de 00055](vista%20previa/00055%20Guillermo%20y%20Dari%20-%20la%20maquina%20recreativa%20-%20fotogramas.png)
 
 ## Ver y grabar
 
