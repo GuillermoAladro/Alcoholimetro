@@ -22,6 +22,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00003 | Guillermo y el globo | 12,45 s | [MP4 60 fps](vista%20previa/00003%20Guillermo%20y%20el%20globo.mp4) · [fotogramas](vista%20previa/00003%20Guillermo%20y%20el%20globo%20-%20fotogramas.png) |
 | 00003.2 | Guillermo y el globo · revisada | 12,45 s | [MP4 60 fps](vista%20previa/00003.2%20Guillermo%20y%20el%20globo.mp4) · [fotogramas](vista%20previa/00003.2%20Guillermo%20y%20el%20globo%20-%20fotogramas.png) · [revisión](revision/00003.2.md) |
 | 00004 | Guillermo contra la máquina | 13,25 s | [MP4 60 fps](vista%20previa/00004%20Guillermo%20contra%20la%20maquina.mp4) · [fotogramas](vista%20previa/00004%20Guillermo%20contra%20la%20maquina%20-%20fotogramas.png) |
+| 00004.2 | Guillermo contra la máquina · revisada | 13,25 s | [MP4 60 fps](vista%20previa/00004.2%20Guillermo%20contra%20la%20maquina.mp4) · [fotogramas](vista%20previa/00004.2%20Guillermo%20contra%20la%20maquina%20-%20fotogramas.png) · [revisión](revision/00004.2.md) |
 | 00005 | Guillermo y el chupito de fuego | 13,45 s | [MP4 60 fps](vista%20previa/00005%20Guillermo%20y%20el%20chupito%20de%20fuego.mp4) · [fotogramas](vista%20previa/00005%20Guillermo%20y%20el%20chupito%20de%20fuego%20-%20fotogramas.png) |
 | 00006 | Guillermo y el hipo | 13,15 s | [MP4 60 fps](vista%20previa/00006%20Guillermo%20y%20el%20hipo.mp4) · [fotogramas](vista%20previa/00006%20Guillermo%20y%20el%20hipo%20-%20fotogramas.png) |
 | 00007 | Guillermo y el champán | 13,00 s | [MP4 60 fps](vista%20previa/00007%20Guillermo%20y%20el%20champan.mp4) · [fotogramas](vista%20previa/00007%20Guillermo%20y%20el%20champan%20-%20fotogramas.png) |
@@ -120,6 +121,10 @@ Conserva los cuatro soplidos, el estallido y el enfado. Corrige la unión brazo�
 11. Negro.
 
 ![Fotogramas de 00004](vista%20previa/00004%20Guillermo%20contra%20la%20maquina%20-%20fotogramas.png)
+
+### 00004.2 · Revisión de continuidad
+
+Corrige la moneda duplicada y su salida de la mano, las uniones de brazos, el contacto del puñetazo, el encuadre del saco al desplegarse y girar, y la continuidad de la bola y la varilla al romperse. El marcador mantiene 999 mientras Guillermo lo lee. Se conserva la original. [Informe y pruebas](revision/00004.2.md).
 
 ### 00005 · Guillermo y el chupito de fuego
 

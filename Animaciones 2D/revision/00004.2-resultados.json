@@ -1,0 +1,284 @@
+{
+  "scene": "00004.2",
+  "durationSeconds": 13.25,
+  "renderedFrames": 796,
+  "results": [
+    {
+      "name": "Original y revisión registradas",
+      "passed": true
+    },
+    {
+      "name": "Negro absoluto inicial y final",
+      "passed": true,
+      "details": [
+        {
+          "t": 0,
+          "max": 0
+        },
+        {
+          "t": 0.016666666666666666,
+          "max": 0
+        },
+        {
+          "t": 0.03333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.05,
+          "max": 0
+        },
+        {
+          "t": 0.06666666666666667,
+          "max": 0
+        },
+        {
+          "t": 0.08333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.1,
+          "max": 0
+        },
+        {
+          "t": 0.11666666666666667,
+          "max": 0
+        },
+        {
+          "t": 13.133333333333333,
+          "max": 0
+        },
+        {
+          "t": 13.15,
+          "max": 0
+        },
+        {
+          "t": 13.166666666666666,
+          "max": 0
+        },
+        {
+          "t": 13.183333333333334,
+          "max": 0
+        },
+        {
+          "t": 13.2,
+          "max": 0
+        },
+        {
+          "t": 13.216666666666667,
+          "max": 0
+        },
+        {
+          "t": 13.233333333333333,
+          "max": 0
+        },
+        {
+          "t": 13.25,
+          "max": 0
+        }
+      ]
+    },
+    {
+      "name": "Sin cortes visuales inesperados",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Geometría finita a 120 Hz",
+      "passed": true,
+      "details": {
+        "samples": 1591,
+        "nonfinite": 0
+      }
+    },
+    {
+      "name": "Muñecas unidas a ambos brazos",
+      "passed": true,
+      "details": {
+        "maxGapPx": 2.3087502523335183e-7
+      }
+    },
+    {
+      "name": "Moneda sale de la mano y entra en la ranura",
+      "passed": true,
+      "details": {
+        "start": {
+          "x": 396.72243159682307,
+          "y": 267.44945714903616
+        },
+        "release": {
+          "x": 396.72243159682307,
+          "y": 267.44945714903616
+        },
+        "end": {
+          "x": 676.4071023092848,
+          "y": 362.3863212967262
+        }
+      }
+    },
+    {
+      "name": "Moneda sostenida solo antes de lanzarla",
+      "passed": true
+    },
+    {
+      "name": "Puño en contacto con el saco al impactar",
+      "passed": true,
+      "details": {
+        "ellipseRadius": 1.0070454255256354,
+        "knuckle": {
+          "x": 520.009764209833,
+          "y": 224.00356766718284
+        },
+        "bag": {
+          "x": 542.725764209833,
+          "y": 222.00356766718278,
+          "b": 1.95
+        }
+      }
+    },
+    {
+      "name": "Coscorrón alineado con la cabeza",
+      "passed": true,
+      "details": {
+        "hair": {
+          "x": 468.4071023092848,
+          "y": 139.38632129672618
+        },
+        "hit": {
+          "x": 468.4071023092848,
+          "y": 112.38632129672614,
+          "b": -9.42477796076938
+        }
+      }
+    },
+    {
+      "name": "Bola liberada desde su posición y orientación exactas",
+      "passed": true,
+      "details": {
+        "hit": {
+          "x": 468.4071023092848,
+          "y": 112.38632129672614,
+          "b": -9.42477796076938
+        },
+        "free": {
+          "x": 468.4071023092848,
+          "y": 112.38632129672614,
+          "rot": -7.853981633974483
+        }
+      }
+    },
+    {
+      "name": "Bola rebota y rueda sin atravesar el suelo",
+      "passed": true,
+      "details": {
+        "maxBallBottom": 560
+      }
+    },
+    {
+      "name": "Giro de rodadura proporcional al recorrido",
+      "passed": true,
+      "details": {
+        "rotationError": 2.4980018054066022e-15
+      }
+    },
+    {
+      "name": "999 estable durante la lectura del resultado",
+      "passed": true
+    },
+    {
+      "name": "Personaje, máquina y saco completos",
+      "passed": true,
+      "details": {
+        "samples": 77,
+        "cut": [],
+        "minTop": 12,
+        "maxBottom": 563
+      }
+    },
+    {
+      "name": "El fondo cubre el encuadre ampliado",
+      "passed": true,
+      "details": [
+        {
+          "t": 6.9,
+          "lit": [
+            40,
+            42,
+            36,
+            38
+          ]
+        },
+        {
+          "t": 7.7,
+          "lit": [
+            40,
+            40,
+            38,
+            38
+          ]
+        },
+        {
+          "t": 8.18,
+          "lit": [
+            40,
+            40,
+            38,
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Caída idéntica al buscar directamente",
+      "passed": true
+    },
+    {
+      "name": "Rebobinado y reproducción idénticos a 30/60/120 fps",
+      "passed": true,
+      "details": {
+        "reverse": true,
+        "fpsChecks": [
+          {
+            "fps": 30,
+            "matches": true
+          },
+          {
+            "fps": 60,
+            "matches": true
+          },
+          {
+            "fps": 120,
+            "matches": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Atlas cargados",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Selector, reinicio, avance, retroceso, búsqueda y reproducción",
+      "passed": true
+    },
+    {
+      "name": "Modo kiosco",
+      "passed": true
+    },
+    {
+      "name": "Sin errores JavaScript ni recursos fallidos",
+      "passed": true,
+      "details": {
+        "errors": [],
+        "failures": []
+      }
+    }
+  ],
+  "paintMs": {
+    "median": 1.5,
+    "p95": 2.899999998509884,
+    "max": 10.100000001490116
+  },
+  "browser": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.0 Safari/537.36",
+  "passed": true
+}
