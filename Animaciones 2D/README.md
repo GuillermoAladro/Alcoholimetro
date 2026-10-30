@@ -35,6 +35,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00009.2 | Guillermo y la línea recta · revisada | 14 s | [MP4 60 fps](vista%20previa/00009.2%20Guillermo%20y%20la%20linea%20recta.mp4) · [fotogramas](vista%20previa/00009.2%20Guillermo%20y%20la%20linea%20recta%20-%20fotogramas.png) · [revisión](revision/00009.2.md) |
 | 00010 | Guillermo en la discoteca | 13,60 s | [MP4 60 fps](vista%20previa/00010%20Guillermo%20en%20la%20discoteca.mp4) · [fotogramas](vista%20previa/00010%20Guillermo%20en%20la%20discoteca%20-%20fotogramas.png) |
 | 00011 | Guillermo y Laura · El pulso | 13,75 s | [MP4 60 fps](vista%20previa/00011%20Guillermo%20y%20Laura%20-%20el%20pulso.mp4) · [fotogramas](vista%20previa/00011%20Guillermo%20y%20Laura%20-%20el%20pulso%20-%20fotogramas.png) |
+| 00012 | Guillermo y Laura · El alcoholímetro | 14,00 s | [MP4 60 fps](vista%20previa/00012%20Guillermo%20y%20Laura%20-%20el%20alcoholimetro.mp4) · [fotogramas](vista%20previa/00012%20Guillermo%20y%20Laura%20-%20el%20alcoholimetro%20-%20fotogramas.png) |
 | 00013 | Guillermo y Laura · La pajita | 13,40 s | [MP4 60 fps](vista%20previa/00013%20Guillermo%20y%20Laura%20-%20la%20pajita.mp4) · [fotogramas](vista%20previa/00013%20Guillermo%20y%20Laura%20-%20la%20pajita%20-%20fotogramas.png) |
 | 00014 | Guillermo y Laura · El baile lento | 14,20 s | [MP4 60 fps](vista%20previa/00014%20Guillermo%20y%20Laura%20-%20el%20baile%20lento.mp4) · [fotogramas](vista%20previa/00014%20Guillermo%20y%20Laura%20-%20el%20baile%20lento%20-%20fotogramas.png) |
 | 00015 | Guillermo y Laura · La tarta | 14,25 s | [MP4 60 fps](vista%20previa/00015%20Guillermo%20y%20Laura%20-%20la%20tarta.mp4) · [fotogramas](vista%20previa/00015%20Guillermo%20y%20Laura%20-%20la%20tarta%20-%20fotogramas.png) |
@@ -273,6 +274,24 @@ Corrige la continuidad del brazo al retirar la mano de la cara y ajusta el conta
 10. Negro.
 
 ![Fotogramas de 00011](vista%20previa/00011%20Guillermo%20y%20Laura%20-%20el%20pulso%20-%20fotogramas.png)
+
+### 00012 · Guillermo y Laura · El alcoholímetro
+
+1. Negro.
+2. Rincón del bar: entre Guillermo y Laura, cara a cara, hay un alcoholímetro de monedas con su esfera de aguja, la pantalla de números y la boquilla con cable en espiral. A Guillermo le asoman las llaves del coche del bolsillo.
+3. Laura se acerca, le enseña una moneda con un guiño y la mete: la máquina se enciende y se prueba.
+4. Coge la boquilla y sopla tranquila con los ojos cerrados: la aguja ni se mueve, **0.00**, luz verde y lucecitas de alegría.
+5. Deja la boquilla, da un paso atrás y le cede el turno con la mano abierta.
+6. Guillermo se acerca muy chulo, lanza su moneda con el pulgar directa a la ranura, coge aire hasta hincharse y **sopla con todas sus fuerzas**, rojo y sudando:
+   - la aguja se clava al final y los números se disparan;
+   - sale la sirena roja girando;
+   - la máquina tiembla, parpadea y echa humo.
+7. Suelta la boquilla (vuelve sola a su sitio con el cable) y levanta el pulgar a cámara, orgulloso.
+8. Laura arquea una ceja con la mano en la cadera. Él saca las llaves del coche y las hace tintinear… y ella se las quita de la mano.
+9. Laura las hace girar en el dedo, guiña a cámara y se va. Guillermo se queda haciendo pucheros y da una patadita al suelo.
+10. Negro.
+
+![Fotogramas de 00012](vista%20previa/00012%20Guillermo%20y%20Laura%20-%20el%20alcoholimetro%20-%20fotogramas.png)
 
 ### 00013 · Guillermo y Laura · La pajita
 
