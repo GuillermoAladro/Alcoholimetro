@@ -36,6 +36,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00010 | Guillermo en la discoteca | 13,60 s | [MP4 60 fps](vista%20previa/00010%20Guillermo%20en%20la%20discoteca.mp4) · [fotogramas](vista%20previa/00010%20Guillermo%20en%20la%20discoteca%20-%20fotogramas.png) |
 | 00011 | Guillermo y Laura · El pulso | 13,75 s | [MP4 60 fps](vista%20previa/00011%20Guillermo%20y%20Laura%20-%20el%20pulso.mp4) · [fotogramas](vista%20previa/00011%20Guillermo%20y%20Laura%20-%20el%20pulso%20-%20fotogramas.png) |
 | 00013 | Guillermo y Laura · La pajita | 13,40 s | [MP4 60 fps](vista%20previa/00013%20Guillermo%20y%20Laura%20-%20la%20pajita.mp4) · [fotogramas](vista%20previa/00013%20Guillermo%20y%20Laura%20-%20la%20pajita%20-%20fotogramas.png) |
+| 00014 | Guillermo y Laura · El baile lento | 14,20 s | [MP4 60 fps](vista%20previa/00014%20Guillermo%20y%20Laura%20-%20el%20baile%20lento.mp4) · [fotogramas](vista%20previa/00014%20Guillermo%20y%20Laura%20-%20el%20baile%20lento%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -287,6 +288,25 @@ Corrige la continuidad del brazo al retirar la mano de la cara y ajusta el conta
 11. Negro.
 
 ![Fotogramas de 00013](vista%20previa/00013%20Guillermo%20y%20Laura%20-%20la%20pajita%20-%20fotogramas.png)
+
+### 00014 · Guillermo y Laura · El baile lento
+
+1. Negro.
+2. Salón de baile de noche: ventanal con luna, cortinas de terciopelo granate y un foco cálido sobre la pareja.
+3. Bailan agarrados y se balancean: él con la mano en la cintura de ella, la otra en el corazón y una rosa roja entre los dientes; ella con la mano en su hombro. Suben corazones.
+4. **Primer pisotón:** él le pisa el pie sin enterarse (estrellitas); ella hace una mueca de dolor y sigue con una sonrisa forzada.
+5. **Segundo pisotón,** más fuerte: un corazón se parte en dos.
+6. Laura mira a cámara harta, levanta el dedo («no, no») y **toma el mando**: la luz se vuelve roja de tango.
+7. Lo lleva como a un muñeco:
+   - lo empuja hacia atrás;
+   - lo lanza a la distancia de los brazos, con la otra mano en la cadera;
+   - lo recoge.
+8. **Paso de tango** al revés: Laura, en zancada, lo sujeta por la cintura con un brazo y levanta el otro; él queda inclinado hacia atrás en diagonal, desmayado con la mano en la frente. Se le cae la rosa al suelo.
+9. Se pone colorado, se le ponen los ojos de corazón y estallan los corazones.
+10. Ella guiña un ojo a cámara.
+11. Negro.
+
+![Fotogramas de 00014](vista%20previa/00014%20Guillermo%20y%20Laura%20-%20el%20baile%20lento%20-%20fotogramas.png)
 
 ## Ver y grabar
 
