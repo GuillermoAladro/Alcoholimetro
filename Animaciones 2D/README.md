@@ -266,6 +266,8 @@ Animaciones 2D/
 │  ├─ piezas.png · piezas.js     atlas generado (piezas originales) y posiciones de cada pieza
 │  ├─ piezas_extra.png           piezas añadidas: brazo libre, torso sin brazos, pelo dorado y cara roja
 │  └─ guillermo.js               montaje del personaje: cuerpo, cara, manos, jarra, copa y transformación
+├─ personajes/comun/            recortador común, visor de hoja con rejilla y Personaje2D.crear
+├─ personajes/laura/            coordenadas de Laura, su atlas y laura.js
 ├─ escenas/                     una escena por archivo (00001 … 00010 y sus revisiones)
 ├─ herramientas/                 comprobar.py y grabar.py
 └─ vista previa/                 vídeos y fotogramas de cada animación
@@ -302,6 +304,18 @@ La cabeza va algo más grande que en el avatar, como en una caricatura. Brazos y
 Opciones del montaje que usan las escenas nuevas (las anteriores no las activan y se ven igual):
 - `p.tirasLimpias`: cada rodaja de brazo o pierna se recorta en cuña por sus juntas, así las rodillas y los codos muy doblados no dejan dientes de sierra;
 - `p.capaCabeza(g, t)` y `p.capaTronco(g, t)`: la escena dibuja encima de la cara o del torso con las coordenadas del retrato o de la hoja (hollín, cara morada, lengua, lágrima…).
+
+### Laura y el montaje común
+
+**Laura** (`personajes/laura/`) sale de `Avatares 2D/Laura/Laura-2D.png` con el recortador común `personajes/comun/preparar.py`; su `preparar_piezas.py` solo trae coordenadas.
+
+- **Piezas:** la cabeza del retrato (cuencas vacías, sin cejas, boca ni aros), la cara roja, las cejas, la boca, la melena que cuelga por detrás (dos tiras que se balancean), el torso con y sin brazos, los dos brazos enderezados, las piernas y la zapatilla con la suela nivelada. Se rellena el pelo que le tapaba un hombro, los bolsillos y los costados.
+- **En pantalla** la monta `personajes/comun/personaje.js` (`Personaje2D.crear`), con la misma postura que Guillermo y además:
+  - mirar a la izquierda (`p.espejo`, también disponible para Guillermo);
+  - manos con dedos (`mano.dedos`, de puño a mano abierta, señalar, uve o pulgar; también para Guillermo);
+  - melena con viento e inercia (`p.pelo`) y aros que se mecen.
+- **Altura:** con el mismo `p.s` mide un 93 % de Guillermo.
+- **Otra persona:** `personajes/comun/ver_hoja.py` pinta su hoja con rejilla y sus coordenadas encima; se copia `laura/preparar_piezas.py`, se ajustan los números y se crea su `<id>.js` con `Personaje2D.crear`.
 
 ## Añadir una animación
 
