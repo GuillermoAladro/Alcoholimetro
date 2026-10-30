@@ -1,0 +1,231 @@
+{
+  "scene": "00007.2",
+  "durationSeconds": 13,
+  "renderedFrames": 781,
+  "results": [
+    {
+      "name": "Original y revisión registradas",
+      "passed": true
+    },
+    {
+      "name": "Negro absoluto inicial y final",
+      "passed": true,
+      "details": [
+        {
+          "t": 0,
+          "max": 0
+        },
+        {
+          "t": 0.016666666666666666,
+          "max": 0
+        },
+        {
+          "t": 0.03333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.05,
+          "max": 0
+        },
+        {
+          "t": 0.06666666666666667,
+          "max": 0
+        },
+        {
+          "t": 0.08333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.1,
+          "max": 0
+        },
+        {
+          "t": 0.11666666666666667,
+          "max": 0
+        },
+        {
+          "t": 12.883333333333333,
+          "max": 0
+        },
+        {
+          "t": 12.9,
+          "max": 0
+        },
+        {
+          "t": 12.916666666666666,
+          "max": 0
+        },
+        {
+          "t": 12.933333333333334,
+          "max": 0
+        },
+        {
+          "t": 12.95,
+          "max": 0
+        },
+        {
+          "t": 12.966666666666667,
+          "max": 0
+        },
+        {
+          "t": 12.983333333333333,
+          "max": 0
+        },
+        {
+          "t": 13,
+          "max": 0
+        }
+      ]
+    },
+    {
+      "name": "Sin cortes visuales inesperados",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Geometría finita a 120 Hz",
+      "passed": true,
+      "details": {
+        "samples": 1561,
+        "nonfinite": 0
+      }
+    },
+    {
+      "name": "Muñecas unidas durante el retroceso",
+      "passed": true,
+      "details": {
+        "maxGapPx": 2.1234829257967255e-7
+      }
+    },
+    {
+      "name": "Chorro unido a la boca de la botella durante el vuelo",
+      "passed": true,
+      "details": {
+        "maxGapPx": 0.026887323139407296
+      }
+    },
+    {
+      "name": "Corcho sin atravesar el suelo al botar y rodar",
+      "passed": true,
+      "details": {
+        "maxBottom": 548
+      }
+    },
+    {
+      "name": "Corcho apoyado al final",
+      "passed": true,
+      "details": {
+        "x": 470.2766758973488,
+        "y": 537.1054850402171,
+        "ang": 20.458162053357015
+      }
+    },
+    {
+      "name": "Retroceso continuo desde la salida del corcho",
+      "passed": true
+    },
+    {
+      "name": "Temblor del estallido comienza desde cero",
+      "passed": true
+    },
+    {
+      "name": "Avatar y botella completos hasta el despegue",
+      "passed": true,
+      "details": {
+        "samples": 51,
+        "cut": [],
+        "minTop": 62,
+        "maxBottom": 550
+      }
+    },
+    {
+      "name": "Corcho completo en el plano final",
+      "passed": true,
+      "details": [
+        {
+          "t": 11.1,
+          "x": 575.0990951575347,
+          "y": 467.32377144642504
+        },
+        {
+          "t": 11.3,
+          "x": 585.1584129095625,
+          "y": 318.8791384683896
+        },
+        {
+          "t": 11.5,
+          "x": 589.4446518247761,
+          "y": 286.31972907599936
+        },
+        {
+          "t": 11.7,
+          "x": 579.4904699619736,
+          "y": 362.52306350408577
+        },
+        {
+          "t": 11.9,
+          "x": 558.3621375008535,
+          "y": 378.2951199355404
+        },
+        {
+          "t": 12,
+          "x": 550.1489615405545,
+          "y": 380.01834483649293
+        }
+      ]
+    },
+    {
+      "name": "Corcho y espuma idénticos al buscar directamente",
+      "passed": true
+    },
+    {
+      "name": "Rebobinado y reproducción idénticos a 30/60/120 fps",
+      "passed": true,
+      "details": {
+        "reverse": true,
+        "fpsChecks": [
+          {
+            "fps": 30,
+            "matches": true
+          },
+          {
+            "fps": 60,
+            "matches": true
+          },
+          {
+            "fps": 120,
+            "matches": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Atlas cargados",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Selector, reinicio, avance, retroceso, búsqueda y reproducción",
+      "passed": true
+    },
+    {
+      "name": "Modo kiosco",
+      "passed": true
+    },
+    {
+      "name": "Sin errores JavaScript ni recursos fallidos",
+      "passed": true,
+      "details": {
+        "errors": [],
+        "failures": []
+      }
+    }
+  ],
+  "paintMs": {
+    "median": 1.6000000014901161,
+    "p95": 2.899999998509884,
+    "max": 12.700000002980232
+  },
+  "browser": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.0 Safari/537.36",
+  "passed": true
+}

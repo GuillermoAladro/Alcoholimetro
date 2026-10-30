@@ -28,6 +28,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00006 | Guillermo y el hipo | 13,15 s | [MP4 60 fps](vista%20previa/00006%20Guillermo%20y%20el%20hipo.mp4) · [fotogramas](vista%20previa/00006%20Guillermo%20y%20el%20hipo%20-%20fotogramas.png) |
 | 00006.2 | Guillermo y el hipo · revisada | 13,15 s | [MP4 60 fps](vista%20previa/00006.2%20Guillermo%20y%20el%20hipo.mp4) · [fotogramas](vista%20previa/00006.2%20Guillermo%20y%20el%20hipo%20-%20fotogramas.png) · [revisión](revision/00006.2.md) |
 | 00007 | Guillermo y el champán | 13,00 s | [MP4 60 fps](vista%20previa/00007%20Guillermo%20y%20el%20champan.mp4) · [fotogramas](vista%20previa/00007%20Guillermo%20y%20el%20champan%20-%20fotogramas.png) |
+| 00007.2 | Guillermo y el champán · revisada | 13 s | [MP4 60 fps](vista%20previa/00007.2%20Guillermo%20y%20el%20champan.mp4) · [fotogramas](vista%20previa/00007.2%20Guillermo%20y%20el%20champan%20-%20fotogramas.png) · [revisión](revision/00007.2.md) |
 | 00008 | Guillermo y los cacahuetes | 13,45 s | [MP4 60 fps](vista%20previa/00008%20Guillermo%20y%20los%20cacahuetes.mp4) · [fotogramas](vista%20previa/00008%20Guillermo%20y%20los%20cacahuetes%20-%20fotogramas.png) |
 | 00009 | Guillermo y la línea recta | 14,00 s | [MP4 60 fps](vista%20previa/00009%20Guillermo%20y%20la%20linea%20recta.mp4) · [fotogramas](vista%20previa/00009%20Guillermo%20y%20la%20linea%20recta%20-%20fotogramas.png) |
 | 00010 | Guillermo en la discoteca | 13,60 s | [MP4 60 fps](vista%20previa/00010%20Guillermo%20en%20la%20discoteca.mp4) · [fotogramas](vista%20previa/00010%20Guillermo%20en%20la%20discoteca%20-%20fotogramas.png) |
@@ -188,6 +189,12 @@ Corrige la muñeca durante la inhalación, las uniones de los hombros, el cálcu
 8. Negro.
 
 ![Fotogramas de 00007](vista%20previa/00007%20Guillermo%20y%20el%20champan%20-%20fotogramas.png)
+
+
+### 00007.2 · Revisión de continuidad
+
+Corrige la separación del brazo durante el retroceso y el apoyo del corcho al caer. Conserva los intentos de abrir la botella, el chorro, el vuelo y el acercamiento final. Se conserva la original. [Informe y pruebas](revision/00007.2.md).
+
 
 ### 00008 · Guillermo y los cacahuetes
 
