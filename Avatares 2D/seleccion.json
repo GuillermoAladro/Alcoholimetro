@@ -1,0 +1,26 @@
+{
+  "style_reference": {
+    "character": "Guillermo Aladro",
+    "variant": "03",
+    "title": "Dragon Ball clásico",
+    "file": "Guillermo-Aladro/Disenos/03-cel-clasico-90.png",
+    "chosen_by": "user",
+    "date": "2026-10-30"
+  },
+  "characters": {
+    "Guillermo-Aladro": {
+      "status": "selected",
+      "variant": "03"
+    },
+    "Ander": {
+      "status": "awaiting_user_selection",
+      "variants": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05"
+      ]
+    }
+  }
+}
