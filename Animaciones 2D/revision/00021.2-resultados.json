@@ -1,0 +1,260 @@
+{
+  "scene": "00021.2",
+  "durationSeconds": 14.1,
+  "renderedFrames": 847,
+  "results": [
+    {
+      "name": "Original y revisión registradas",
+      "passed": true
+    },
+    {
+      "name": "Negro absoluto inicial y final",
+      "passed": true,
+      "details": [
+        {
+          "t": 0,
+          "max": 0
+        },
+        {
+          "t": 0.016666666666666666,
+          "max": 0
+        },
+        {
+          "t": 0.03333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.05,
+          "max": 0
+        },
+        {
+          "t": 0.06666666666666667,
+          "max": 0
+        },
+        {
+          "t": 0.08333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.1,
+          "max": 0
+        },
+        {
+          "t": 0.11666666666666667,
+          "max": 0
+        },
+        {
+          "t": 13.983333333333333,
+          "max": 0
+        },
+        {
+          "t": 14,
+          "max": 0
+        },
+        {
+          "t": 14.016666666666667,
+          "max": 0
+        },
+        {
+          "t": 14.033333333333333,
+          "max": 0
+        },
+        {
+          "t": 14.05,
+          "max": 0
+        },
+        {
+          "t": 14.066666666666666,
+          "max": 0
+        },
+        {
+          "t": 14.083333333333334,
+          "max": 0
+        },
+        {
+          "t": 14.1,
+          "max": 0
+        }
+      ]
+    },
+    {
+      "name": "Sin cortes visuales inesperados",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Geometría finita a 120 Hz",
+      "passed": true,
+      "details": {
+        "samples": 1693,
+        "nonfinite": 0
+      }
+    },
+    {
+      "name": "Cuatro muñecas unidas durante toda la escena",
+      "passed": true,
+      "details": {
+        "maxGapPx": 2.946759178552072e-7
+      }
+    },
+    {
+      "name": "Marcos conserva los apoyos y Guillermo sigue sus pasos y resbalón",
+      "passed": true,
+      "details": {
+        "maxDriftPx": 0
+      }
+    },
+    {
+      "name": "Ambas manos agarran la misma lanza durante el barrido",
+      "passed": true,
+      "details": {
+        "maxGapPx": 0
+      }
+    },
+    {
+      "name": "El agua sale alineada con la boquilla y alcanza el objetivo",
+      "passed": true,
+      "details": {
+        "maxTargetErrorPx": 2.2914314707516465e-13,
+        "maxNozzleErrorRadians": 2.3937617221747587e-8
+      }
+    },
+    {
+      "name": "Los cinco chupitos prenden en orden y se apagan al recibir agua",
+      "passed": true,
+      "details": [
+        {
+          "i": 0,
+          "before": 0,
+          "lit": 1.0739790891824819,
+          "off": 0
+        },
+        {
+          "i": 1,
+          "before": 0,
+          "lit": 1.0739790891824819,
+          "off": 0
+        },
+        {
+          "i": 2,
+          "before": 0,
+          "lit": 1.0739790891824819,
+          "off": 0
+        },
+        {
+          "i": 3,
+          "before": 0,
+          "lit": 1.0739790891824819,
+          "off": 0
+        },
+        {
+          "i": 4,
+          "before": 0,
+          "lit": 1.073979089182482,
+          "off": 0
+        }
+      ]
+    },
+    {
+      "name": "Servilleta, sombrilla y charcos se apagan durante el barrido",
+      "passed": true
+    },
+    {
+      "name": "El mechero alcanza el borde de los dos primeros chupitos",
+      "passed": true,
+      "details": {
+        "distancesPx": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "El borde del vaso toca la boca durante los dos sorbos",
+      "passed": true,
+      "details": {
+        "maxRimGapPx": 2.66881063101122
+      }
+    },
+    {
+      "name": "Vaso continuo al apoyarlo: misma forma, posición e inclinación",
+      "passed": true,
+      "details": {
+        "maxOriginJumpPx": 0
+      }
+    },
+    {
+      "name": "La leche disminuye en los sorbos y el vaso termina vacío",
+      "passed": true
+    },
+    {
+      "name": "El pelo se moja después del impacto y permanece mojado",
+      "passed": true
+    },
+    {
+      "name": "Ambos personajes, la boquilla y el rollo de manguera caben completos",
+      "passed": true,
+      "details": {
+        "samples": 82,
+        "cut": []
+      }
+    },
+    {
+      "name": "Marcos levanta el pulgar con un solo ojo cerrado",
+      "passed": true
+    },
+    {
+      "name": "Trayectorias idénticas al buscar directamente",
+      "passed": true
+    },
+    {
+      "name": "Rebobinado y reproducción idénticos a 30/60/120 fps",
+      "passed": true,
+      "details": {
+        "reverse": true,
+        "fpsChecks": [
+          {
+            "fps": 30,
+            "matches": true
+          },
+          {
+            "fps": 60,
+            "matches": true
+          },
+          {
+            "fps": 120,
+            "matches": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Atlas cargados",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Selector, reinicio, avance, retroceso, búsqueda y reproducción",
+      "passed": true
+    },
+    {
+      "name": "Modo kiosco",
+      "passed": true
+    },
+    {
+      "name": "Sin errores JavaScript ni recursos fallidos",
+      "passed": true,
+      "details": {
+        "errors": [],
+        "failures": []
+      }
+    }
+  ],
+  "paintMs": {
+    "median": 2.7999999970197678,
+    "p95": 4.5999999940395355,
+    "max": 18.5
+  },
+  "browser": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.0 Safari/537.36",
+  "passed": true
+}
