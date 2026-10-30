@@ -63,6 +63,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00031 | Guillermo y Ander · El futbolín | 13,50 s | [MP4 60 fps](vista%20previa/00031%20Guillermo%20y%20Ander%20-%20el%20futbolin.mp4) · [fotogramas](vista%20previa/00031%20Guillermo%20y%20Ander%20-%20el%20futbolin%20-%20fotogramas.png) |
 | 00032 | Guillermo y Ander · La guindilla | 14,60 s | [MP4 60 fps](vista%20previa/00032%20Guillermo%20y%20Ander%20-%20la%20guindilla.mp4) · [fotogramas](vista%20previa/00032%20Guillermo%20y%20Ander%20-%20la%20guindilla%20-%20fotogramas.png) |
 | 00033 | Guillermo y Ander · El duelo de miradas | 13,95 s | [MP4 60 fps](vista%20previa/00033%20Guillermo%20y%20Ander%20-%20el%20duelo%20de%20miradas.mp4) · [fotogramas](vista%20previa/00033%20Guillermo%20y%20Ander%20-%20el%20duelo%20de%20miradas%20-%20fotogramas.png) |
+| 00034 | Guillermo y Ander · El bigote | 14,10 s | [MP4 60 fps](vista%20previa/00034%20Guillermo%20y%20Ander%20-%20el%20bigote.mp4) · [fotogramas](vista%20previa/00034%20Guillermo%20y%20Ander%20-%20el%20bigote%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -679,6 +680,21 @@ Corrige las muñecas y los recorridos de los brazos, el apoyo de los pies al pon
 9. Negro.
 
 ![Fotogramas de 00033](vista%20previa/00033%20Guillermo%20y%20Ander%20-%20el%20duelo%20de%20miradas%20-%20fotogramas.png)
+
+### 00034 · Guillermo y Ander · El bigote
+
+1. Negro.
+2. Bar de madrugada: Ander duerme en un taburete con la cabeza sobre el brazo estirado en la mesa, y una pompa crece y se deshincha con cada ronquido.
+3. Guillermo entra de puntillas con gafas de sol de espía y un rotulador negro en alto, aguantándose la risa.
+4. Se planta junto a la mesa, quita el capuchón con los dientes y empieza a dibujarle a Ander un **bigote retorcido**, trazo a trazo.
+5. Ander se remueve, la pompa revienta y Guillermo se queda helado con el rotulador en el aire; Ander vuelve a roncar.
+6. Guillermo acaba el bigote con un lunar, se aparta muerto de risa, tapa el rotulador y se lo guarda.
+7. Se da media vuelta y se sube las gafas muy orgulloso: **tiene un monóculo y una ceja única pintados** (Ander se le había adelantado).
+8. Ander levanta la cabeza, abre un ojo, sonríe y le enseña su propio rotulador.
+9. Guillermo se ve en el espejo de la pared y se queda de piedra; mira a Ander, que cierra el ojo y vuelve a «roncar».
+10. Negro.
+
+![Fotogramas de 00034](vista%20previa/00034%20Guillermo%20y%20Ander%20-%20el%20bigote%20-%20fotogramas.png)
 
 ## Ver y grabar
 
