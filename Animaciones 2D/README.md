@@ -87,6 +87,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00048 | Guillermo y Carla · El limón | 13,50 s | [MP4 60 fps](vista%20previa/00048%20Guillermo%20y%20Carla%20-%20el%20limon.mp4) · [fotogramas](vista%20previa/00048%20Guillermo%20y%20Carla%20-%20el%20limon%20-%20fotogramas.png) |
 | 00049 | Guillermo y Carla · El helado | 14,40 s | [MP4 60 fps](vista%20previa/00049%20Guillermo%20y%20Carla%20-%20el%20helado.mp4) · [fotogramas](vista%20previa/00049%20Guillermo%20y%20Carla%20-%20el%20helado%20-%20fotogramas.png) |
 | 00050 | Guillermo y Carla · Las gafas de sol | 14,50 s | [MP4 60 fps](vista%20previa/00050%20Guillermo%20y%20Carla%20-%20las%20gafas%20de%20sol.mp4) · [fotogramas](vista%20previa/00050%20Guillermo%20y%20Carla%20-%20las%20gafas%20de%20sol%20-%20fotogramas.png) |
+| 00051 | Guillermo y Dari · El ajedrez | 13,80 s | [MP4 60 fps](vista%20previa/00051%20Guillermo%20y%20Dari%20-%20el%20ajedrez.mp4) · [fotogramas](vista%20previa/00051%20Guillermo%20y%20Dari%20-%20el%20ajedrez%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1009,6 +1010,23 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 12. Negro.
 
 ![Fotogramas de 00050](vista%20previa/00050%20Guillermo%20y%20Carla%20-%20las%20gafas%20de%20sol%20-%20fotogramas.png)
+
+### 00051 · Guillermo y Dari · El ajedrez
+
+1. Negro.
+2. Rincón de un club de ajedrez de noche: papel pintado verde, zócalo de madera, ventana con luna, estantería con un trofeo y una mesita alta con el tablero entre los dos.
+3. Dari piensa muchísimo, con el puño en la barbilla, y las gafas le dan un destello; Guillermo tamborilea en la mesa y bosteza.
+4. Dari, por fin, adelanta un peón una sola casilla.
+5. Guillermo, sin pensar, agarra su dama, cruza el tablero y la planta de golpe (todo salta); se echa atrás y mira a cámara, chulísimo, moviendo las cejas.
+6. Dari se sube las gafas (destello) y mueve el caballo con un saltito.
+7. El rey de Guillermo se tambalea y cae despacio: **jaque mate**. Guillermo se queda de piedra; Dari, que lo ve venir, coge su taza de té.
+8. A Guillermo se le pone la cabeza roja, le late la vena, tiembla, agarra el tablero y **lo lanza por los aires** con los puños en alto.
+9. El tablero sale por arriba dando vueltas y cae boca abajo detrás de él; **las piezas le llueven una a una en la cabeza** (estrellitas en cada golpe) y el caballo, el último, se le queda encima del pelo; el rey de Dari cae de pie en la mesa.
+10. Dari sorbe el té con los ojos cerrados, tan tranquilo.
+11. Guillermo, mareado, con ojos de espiral, estrellas girando y el caballo bamboleándose en la cabeza, mira hacia arriba; Dari mira a cámara, levanta una ceja y vuelve a sorber.
+12. Negro.
+
+![Fotogramas de 00051](vista%20previa/00051%20Guillermo%20y%20Dari%20-%20el%20ajedrez%20-%20fotogramas.png)
 
 ## Ver y grabar
 
