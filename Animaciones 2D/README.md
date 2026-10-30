@@ -66,6 +66,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00032 | Guillermo y Ander · La guindilla | 14,60 s | [MP4 60 fps](vista%20previa/00032%20Guillermo%20y%20Ander%20-%20la%20guindilla.mp4) · [fotogramas](vista%20previa/00032%20Guillermo%20y%20Ander%20-%20la%20guindilla%20-%20fotogramas.png) |
 | 00033 | Guillermo y Ander · El duelo de miradas | 13,95 s | [MP4 60 fps](vista%20previa/00033%20Guillermo%20y%20Ander%20-%20el%20duelo%20de%20miradas.mp4) · [fotogramas](vista%20previa/00033%20Guillermo%20y%20Ander%20-%20el%20duelo%20de%20miradas%20-%20fotogramas.png) |
 | 00034 | Guillermo y Ander · El bigote | 14,10 s | [MP4 60 fps](vista%20previa/00034%20Guillermo%20y%20Ander%20-%20el%20bigote.mp4) · [fotogramas](vista%20previa/00034%20Guillermo%20y%20Ander%20-%20el%20bigote%20-%20fotogramas.png) |
+| 00037 | Guillermo y Ander · El abrazo de oso | 13,80 s | [MP4 60 fps](vista%20previa/00037%20Guillermo%20y%20Ander%20-%20el%20abrazo%20de%20oso.mp4) · [fotogramas](vista%20previa/00037%20Guillermo%20y%20Ander%20-%20el%20abrazo%20de%20oso%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -709,6 +710,21 @@ Corrige los brazos de Laura al protegerse, el apoyo de los pies, la recogida de 
 10. Negro.
 
 ![Fotogramas de 00034](vista%20previa/00034%20Guillermo%20y%20Ander%20-%20el%20bigote%20-%20fotogramas.png)
+
+### 00037 · Guillermo y Ander · El abrazo de oso
+
+1. Negro.
+2. Sidrería de piedra con dos barricas gigantes, vigas de madera, faroles de hierro y un estante de botellas de sidra. Guillermo espera aburrido dando golpecitos con el pie.
+3. Ander entra por la puerta con las manos en los bolsillos. Se ven, se reconocen y se señalan con el dedo: ¡chispa!
+4. Abren los brazos de par en par y corren el uno hacia el otro.
+5. **Abrazo de oso:** Ander se agacha, lo rodea por la cintura y **lo levanta del suelo**.
+6. Lo mece feliz, con los ojos cerrados y corazoncitos, mientras Guillermo, con **los ojos fuera de las órbitas**, los mofletes hinchados y cada vez más rojo, patalea en el aire. A cada apretón le crujen las costillas: rayitas y estrellas en la espalda. Guillermo mira a cámara desesperado.
+7. Ander lo deja en el suelo y se aparta tan contento. Guillermo se queda **estrujado**, estrecho y estirado como un tubo de pasta de dientes, con los brazos pegados al cuerpo y parpadeando; Ander lo mira extrañado.
+8. **¡Boing!** Recupera la forma de golpe con un rebote, se tambalea con estrellitas y levanta el pulgar, tembloroso, con una sonrisa forzada. Ander se parte de risa.
+9. Ander vuelve a abrir los brazos para otro abrazo… y Guillermo se echa atrás con las palmas en alto, aterrado.
+10. Negro.
+
+![Fotogramas de 00037](vista%20previa/00037%20Guillermo%20y%20Ander%20-%20el%20abrazo%20de%20oso%20-%20fotogramas.png)
 
 ## Ver y grabar
 
