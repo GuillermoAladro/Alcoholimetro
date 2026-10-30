@@ -1,0 +1,317 @@
+{
+  "scene": "00017.2",
+  "durationSeconds": 14.45,
+  "renderedFrames": 868,
+  "results": [
+    {
+      "name": "Original y revisión registradas",
+      "passed": true
+    },
+    {
+      "name": "Negro absoluto inicial y final",
+      "passed": true,
+      "details": [
+        {
+          "t": 0,
+          "max": 0
+        },
+        {
+          "t": 0.016666666666666666,
+          "max": 0
+        },
+        {
+          "t": 0.03333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.05,
+          "max": 0
+        },
+        {
+          "t": 0.06666666666666667,
+          "max": 0
+        },
+        {
+          "t": 0.08333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.1,
+          "max": 0
+        },
+        {
+          "t": 0.11666666666666667,
+          "max": 0
+        },
+        {
+          "t": 14.333333333333334,
+          "max": 0
+        },
+        {
+          "t": 14.35,
+          "max": 0
+        },
+        {
+          "t": 14.366666666666667,
+          "max": 0
+        },
+        {
+          "t": 14.383333333333333,
+          "max": 0
+        },
+        {
+          "t": 14.4,
+          "max": 0
+        },
+        {
+          "t": 14.416666666666666,
+          "max": 0
+        },
+        {
+          "t": 14.433333333333334,
+          "max": 0
+        },
+        {
+          "t": 14.45,
+          "max": 0
+        }
+      ]
+    },
+    {
+      "name": "Sin cortes visuales inesperados",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Geometría finita de ambos personajes a 120 Hz",
+      "passed": true,
+      "details": {
+        "samples": 1735,
+        "nonfinite": 0
+      }
+    },
+    {
+      "name": "Cuatro muñecas unidas durante toda la escena",
+      "passed": true,
+      "details": {
+        "maxGapPx": 2.3204925341884843e-7
+      }
+    },
+    {
+      "name": "Pies apoyados y talón de los golpecitos sin deslizamiento",
+      "passed": true,
+      "details": {
+        "maxDriftPx": 1.1368683772161603e-13
+      }
+    },
+    {
+      "name": "La punta del índice llega a la boca al humedecerlo",
+      "passed": true,
+      "details": {
+        "maxGapPx": 0
+      }
+    },
+    {
+      "name": "Laura recoge los tres dardos de la otra mano",
+      "passed": true,
+      "details": {
+        "maxGapPx": 0.0019649734983580446
+      }
+    },
+    {
+      "name": "Los dardos clavados siguen a la diana y al pelo",
+      "passed": true,
+      "details": {
+        "maxGapPx": 0
+      }
+    },
+    {
+      "name": "Recogidas, sueltas, rebote y clavados continuos",
+      "passed": true,
+      "details": [
+        {
+          "actor": "l",
+          "i": 0,
+          "t": 0.56,
+          "position": 0.0000025340784858463534,
+          "angle": 1.3930481068680223e-7
+        },
+        {
+          "actor": "l",
+          "i": 0,
+          "t": 0.7,
+          "position": 2.937868217842149e-7,
+          "angle": 1.1461720461625191e-10
+        },
+        {
+          "actor": "l",
+          "i": 0,
+          "t": 1.56,
+          "position": 0.000931674432768674,
+          "angle": 1.4214440735571543e-10
+        },
+        {
+          "actor": "l",
+          "i": 0,
+          "t": 1.8,
+          "position": 0.0008128136052958629,
+          "angle": 0.000010371575443091086
+        },
+        {
+          "actor": "l",
+          "i": 1,
+          "t": 1.8,
+          "position": 0.00007948686235367598,
+          "angle": 2.870904372009875e-7
+        },
+        {
+          "actor": "l",
+          "i": 1,
+          "t": 1.9400000000000002,
+          "position": 9.945114595358026e-8,
+          "angle": 1.2492062939628568e-10
+        },
+        {
+          "actor": "l",
+          "i": 1,
+          "t": 2.71,
+          "position": 0.0007429358624783301,
+          "angle": 1.4481439658542428e-10
+        },
+        {
+          "actor": "l",
+          "i": 1,
+          "t": 2.95,
+          "position": 0.0008443346694790823,
+          "angle": 0.000010285778553636991
+        },
+        {
+          "actor": "l",
+          "i": 2,
+          "t": 2.92,
+          "position": 0.00008794929277596758,
+          "angle": 2.889263808203424e-7
+        },
+        {
+          "actor": "l",
+          "i": 2,
+          "t": 3.06,
+          "position": 2.213076160331838e-7,
+          "angle": 1.6178514083975415e-10
+        },
+        {
+          "actor": "l",
+          "i": 2,
+          "t": 3.82,
+          "position": 0.0009366168337110832,
+          "angle": 1.3443633706256009e-10
+        },
+        {
+          "actor": "l",
+          "i": 2,
+          "t": 4.06,
+          "position": 0.0008251978191909341,
+          "angle": 0.000010325233919805667
+        },
+        {
+          "actor": "g",
+          "t": 9.7,
+          "position": 0.0014989645957230351,
+          "angle": 5.631070609801725e-11
+        },
+        {
+          "actor": "g",
+          "t": 10.08,
+          "position": 0.0006325283332118139,
+          "angle": 0.00008768812813986226
+        },
+        {
+          "actor": "g",
+          "t": 10.6,
+          "position": 0.0007946117311839993,
+          "angle": 0.000014990136473037847
+        }
+      ]
+    },
+    {
+      "name": "Tres aciertos junto al centro de la diana",
+      "passed": true
+    },
+    {
+      "name": "El rebote coincide con el borde de la lámpara",
+      "passed": true
+    },
+    {
+      "name": "El dardo completo pasa por encima de Laura sin tocarla",
+      "passed": true,
+      "details": {
+        "overlappingPixels": 0
+      }
+    },
+    {
+      "name": "Siluetas de ambos personajes completas dentro del encuadre",
+      "passed": true,
+      "details": {
+        "samples": 126,
+        "cut": []
+      }
+    },
+    {
+      "name": "El gesto final mantiene el pulgar arriba y la risa de Laura",
+      "passed": true
+    },
+    {
+      "name": "Trayectorias idénticas al buscar directamente",
+      "passed": true
+    },
+    {
+      "name": "Rebobinado y reproducción idénticos a 30/60/120 fps",
+      "passed": true,
+      "details": {
+        "reverse": true,
+        "fpsChecks": [
+          {
+            "fps": 30,
+            "matches": true
+          },
+          {
+            "fps": 60,
+            "matches": true
+          },
+          {
+            "fps": 120,
+            "matches": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Atlas cargados",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Selector, reinicio, avance, retroceso, búsqueda y reproducción",
+      "passed": true
+    },
+    {
+      "name": "Modo kiosco",
+      "passed": true
+    },
+    {
+      "name": "Sin errores JavaScript ni recursos fallidos",
+      "passed": true,
+      "details": {
+        "errors": [],
+        "failures": []
+      }
+    }
+  ],
+  "paintMs": {
+    "median": 3,
+    "p95": 5.300000004470348,
+    "max": 13.899999998509884
+  },
+  "browser": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.0 Safari/537.36",
+  "passed": true
+}
