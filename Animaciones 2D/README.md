@@ -93,6 +93,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00054 | Guillermo y Dari · El pelo rizado | 14,75 s | [MP4 60 fps](vista%20previa/00054%20Guillermo%20y%20Dari%20-%20el%20pelo%20rizado.mp4) · [fotogramas](vista%20previa/00054%20Guillermo%20y%20Dari%20-%20el%20pelo%20rizado%20-%20fotogramas.png) |
 | 00055 | Guillermo y Dari · La máquina recreativa | 14,60 s | [MP4 60 fps](vista%20previa/00055%20Guillermo%20y%20Dari%20-%20la%20maquina%20recreativa.mp4) · [fotogramas](vista%20previa/00055%20Guillermo%20y%20Dari%20-%20la%20maquina%20recreativa%20-%20fotogramas.png) |
 | 00056 | Guillermo y Dari · La pizza | 14,20 s | [MP4 60 fps](vista%20previa/00056%20Guillermo%20y%20Dari%20-%20la%20pizza.mp4) · [fotogramas](vista%20previa/00056%20Guillermo%20y%20Dari%20-%20la%20pizza%20-%20fotogramas.png) |
+| 00057 | Guillermo y Dari · El dominó | 14,10 s | [MP4 60 fps](vista%20previa/00057%20Guillermo%20y%20Dari%20-%20el%20domino.mp4) · [fotogramas](vista%20previa/00057%20Guillermo%20y%20Dari%20-%20el%20domino%20-%20fotogramas.png) |
 | 00058 | Guillermo y Dari · Las palomitas | 14,25 s | [MP4 60 fps](vista%20previa/00058%20Guillermo%20y%20Dari%20-%20las%20palomitas.mp4) · [fotogramas](vista%20previa/00058%20Guillermo%20y%20Dari%20-%20las%20palomitas%20-%20fotogramas.png) |
 | 00059 | Guillermo y Dari · El abrigo | 14,60 s | [MP4 60 fps](vista%20previa/00059%20Guillermo%20y%20Dari%20-%20el%20abrigo.mp4) · [fotogramas](vista%20previa/00059%20Guillermo%20y%20Dari%20-%20el%20abrigo%20-%20fotogramas.png) |
 | 00060 | Guillermo y Dari · El yoyó | 14,90 s | [MP4 60 fps](vista%20previa/00060%20Guillermo%20y%20Dari%20-%20el%20yoyo.mp4) · [fotogramas](vista%20previa/00060%20Guillermo%20y%20Dari%20-%20el%20yoyo%20-%20fotogramas.png) |
@@ -1116,6 +1117,22 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 12. Negro.
 
 ![Fotogramas de 00056](vista%20previa/00056%20Guillermo%20y%20Dari%20-%20la%20pizza%20-%20fotogramas.png)
+
+### 00057 · Guillermo y Dari · El dominó
+
+1. Negro.
+2. Bar de barrio de noche (azulejos, jamones, botellero, caña de Dari): Guillermo y Dari admiran su fila de 36 fichas que serpentea por la barra, sube una rampita y acaba en un balancín con una campanita; Guillermo levanta el pulgar y a Dari le brillan las gafas.
+3. A Guillermo le pica la nariz: «ah… ah…», la cabeza hacia atrás.
+4. Dari lo ve y, sin decir nada, agita las dos manos: «¡no, no, no!».
+5. Guillermo se aguanta con el dedo bajo la nariz; alivio de los dos.
+6. Vuelve el picor, más fuerte… **¡achís!** La ráfaga tumba la primera ficha; Dari se queda helado con las manos arriba y Guillermo se tapa la boca.
+7. **La cadena funciona:** la cámara sigue a la ficha que cae, que da la vuelta delante de Dari (se agacha a mirarla) y vuelve hacia Guillermo, que se muerde el puño.
+8. Sube la rampa cada vez más despacio; la última ficha, negra, se tambalea, se queda en el filo… y cae sobre el balancín.
+9. La campanita sale volando, sonando y dando vueltas, y cae boca abajo sobre la cabeza de Guillermo: ¡dong!, estrellitas; se le queda puesta como un sombrero.
+10. Guillermo, mareado (ojos en espiral), acaba sonriendo y levanta el pulgar (la campanita vuelve a sonar); Dari aplaude.
+11. Negro.
+
+![Fotogramas de 00057](vista%20previa/00057%20Guillermo%20y%20Dari%20-%20el%20domino%20-%20fotogramas.png)
 
 ### 00058 · Guillermo y Dari · Las palomitas
 
