@@ -40,6 +40,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00013 | Guillermo y Laura · La pajita | 13,40 s | [MP4 60 fps](vista%20previa/00013%20Guillermo%20y%20Laura%20-%20la%20pajita.mp4) · [fotogramas](vista%20previa/00013%20Guillermo%20y%20Laura%20-%20la%20pajita%20-%20fotogramas.png) |
 | 00014 | Guillermo y Laura · El baile lento | 14,20 s | [MP4 60 fps](vista%20previa/00014%20Guillermo%20y%20Laura%20-%20el%20baile%20lento.mp4) · [fotogramas](vista%20previa/00014%20Guillermo%20y%20Laura%20-%20el%20baile%20lento%20-%20fotogramas.png) |
 | 00015 | Guillermo y Laura · La tarta | 14,25 s | [MP4 60 fps](vista%20previa/00015%20Guillermo%20y%20Laura%20-%20la%20tarta.mp4) · [fotogramas](vista%20previa/00015%20Guillermo%20y%20Laura%20-%20la%20tarta%20-%20fotogramas.png) |
+| 00016 | Guillermo y Laura · El truco de magia | 14,60 s | [MP4 60 fps](vista%20previa/00016%20Guillermo%20y%20Laura%20-%20el%20truco%20de%20magia.mp4) · [fotogramas](vista%20previa/00016%20Guillermo%20y%20Laura%20-%20el%20truco%20de%20magia%20-%20fotogramas.png) |
 | 00017 | Guillermo y Laura · Los dardos | 14,45 s | [MP4 60 fps](vista%20previa/00017%20Guillermo%20y%20Laura%20-%20los%20dardos.mp4) · [fotogramas](vista%20previa/00017%20Guillermo%20y%20Laura%20-%20los%20dardos%20-%20fotogramas.png) |
 | 00018 | Guillermo y Laura · El selfie | 13,30 s | [MP4 60 fps](vista%20previa/00018%20Guillermo%20y%20Laura%20-%20el%20selfie.mp4) · [fotogramas](vista%20previa/00018%20Guillermo%20y%20Laura%20-%20el%20selfie%20-%20fotogramas.png) |
 
@@ -352,6 +353,20 @@ Corrige la continuidad de los brazos y coloca el giro de manos delante del pecho
 11. Negro.
 
 ![Fotogramas de 00015](vista%20previa/00015%20Guillermo%20y%20Laura%20-%20la%20tarta%20-%20fotogramas.png)
+
+### 00016 · Guillermo y Laura · El truco de magia
+
+1. Negro.
+2. Rincón de magia de un bar: papel pintado verde con estrellitas doradas, carteles de una chistera con conejo y de un abanico de cartas, y una mesita con chistera y varita. Guillermo, muy chulo, hace de mago para Laura.
+3. Mueve los dedos, saca una moneda de la nada, la tapa con la otra mano, sacude los puños… y al abrirlos ha desaparecido entre una nubecilla de magia. Laura levanta el pulgar y él le guiña un ojo a cámara.
+4. Se acerca y le hurga junto a la oreja para sacársela de ahí… pero abre la mano y no hay nada. Mira a cámara muerto de vergüenza mientras Laura se tapa la boca para no reírse.
+5. Se mira la manga: asoma la punta de un pañuelo. Tira… y sale otro, y otro: una **ristra infinita de pañuelos de colores** anudados que se amontona a sus pies. Cada tirón es más rápido y él se pone rojo; Laura ya no puede más y se parte de risa.
+6. Por fin sale la cola, un pañuelo de lunares; la sostiene en alto, mira el montón y se rinde.
+7. Laura se le acerca de puntillas y le saca la moneda de detrás de la oreja… y, ¡pop!, **una paloma blanca le sale del pelo** y se va volando.
+8. Guillermo se queda boquiabierto mirando a cámara; Laura lanza la moneda al aire con el pulgar, la caza y guiña un ojo.
+9. Negro.
+
+![Fotogramas de 00016](vista%20previa/00016%20Guillermo%20y%20Laura%20-%20el%20truco%20de%20magia%20-%20fotogramas.png)
 
 ### 00017 · Guillermo y Laura · Los dardos
 
