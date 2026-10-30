@@ -1,633 +1,202 @@
 {
-  "character": "Marcos Bombero",
-  "source_git_blob": "e6b027ede4cf1e03835d914ced413fefcda186bb",
-  "master_git_blob": "990c200fb92f2fe5d774c856472209b7688296b2",
-  "master_sha256": "f8a0d339c05be2a0f247ef1f0acc5f4387efda60ecfd8ffd7ed1f516a3d13994",
-  "master_checks": {
-    "xml_valid": true,
-    "vector_only": true,
-    "unique_ids": true,
-    "internal_references_valid": true,
-    "paths": 114882,
-    "gradients": 82970
+ "avatar": "Marcos Bombero",
+ "fecha": "2026-10-30",
+ "referencia": "animaciones/Avatar Marcos Bombero.png",
+ "referencia_sha256": "b6e397ee3e02637f22f5ab6d82cc95e9f88859a73471a3b63986a53cb232251b",
+ "fondo": "transparente",
+ "metodo": "Trazados y degradados de la hoja maestra Astra conservados; silueta nueva desde herramientas/mascaras (segmentación isnet + limpieza de contorno); ver ../REVISION-TRANSPARENTE-2026-10-30.md",
+ "comprobado_con": [
+  "resvg 0.5 (render y métricas)",
+  "Chromium 1243 (decodificación de las 10 piezas)"
+ ],
+ "cambios_frente_a_version_anterior": {
+  "fondo_blanco_quitado_px": 14571,
+  "personaje_recuperado_px": 851
+ },
+ "archivos": [
+  {
+   "archivo": "Marcos-Bombero.svg",
+   "bytes": 32398485,
+   "sha256": "5510b9d43f0c65e72a2a789ada5bd4cffab95044c8ea2cb0073bd2735da58c0c",
+   "viewBox": "0 0 1071 1469",
+   "trazados": 114899,
+   "degradados": 82970,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0
   },
-  "method": "Exact extraction from original detailed vector master; individual contour selection and definition pruning",
-  "static_illustrations": true,
-  "selection": [
-    {
-      "contour": 7,
-      "box": [
-        0,
-        125,
-        305,
-        995
-      ],
-      "polygon": [
-        [
-          146,
-          132
-        ],
-        [
-          220,
-          132
-        ],
-        [
-          220,
-          270
-        ],
-        [
-          305,
-          270
-        ],
-        [
-          305,
-          860
-        ],
-        [
-          280,
-          890
-        ],
-        [
-          275,
-          905
-        ],
-        [
-          273,
-          910
-        ],
-        [
-          261.5,
-          915
-        ],
-        [
-          258.5,
-          920
-        ],
-        [
-          261.5,
-          925
-        ],
-        [
-          263.5,
-          930
-        ],
-        [
-          275,
-          935
-        ],
-        [
-          290,
-          950
-        ],
-        [
-          300,
-          995
-        ],
-        [
-          0,
-          995
-        ],
-        [
-          0,
-          280
-        ],
-        [
-          86,
-          280
-        ],
-        [
-          86,
-          175
-        ],
-        [
-          100,
-          154
-        ],
-        [
-          130,
-          139
-        ]
-      ]
-    },
-    {
-      "contour": 7,
-      "box": [
-        293,
-        125,
-        550,
-        995
-      ],
-      "polygon": [
-        [
-          305,
-          125
-        ],
-        [
-          305,
-          860
-        ],
-        [
-          280,
-          890
-        ],
-        [
-          275,
-          905
-        ],
-        [
-          273,
-          910
-        ],
-        [
-          261.5,
-          915
-        ],
-        [
-          258.5,
-          920
-        ],
-        [
-          261.5,
-          925
-        ],
-        [
-          263.5,
-          930
-        ],
-        [
-          275,
-          935
-        ],
-        [
-          290,
-          950
-        ],
-        [
-          300,
-          995
-        ],
-        [
-          550,
-          995
-        ],
-        [
-          540,
-          952
-        ],
-        [
-          527,
-          948
-        ],
-        [
-          528,
-          945
-        ],
-        [
-          531.5,
-          941
-        ],
-        [
-          533.5,
-          938
-        ],
-        [
-          532.5,
-          934
-        ],
-        [
-          531,
-          930
-        ],
-        [
-          530,
-          927
-        ],
-        [
-          529.5,
-          924
-        ],
-        [
-          529.5,
-          922
-        ],
-        [
-          528.5,
-          920
-        ],
-        [
-          526.5,
-          918
-        ],
-        [
-          520,
-          917
-        ],
-        [
-          509,
-          916
-        ],
-        [
-          504,
-          915
-        ],
-        [
-          503,
-          914
-        ],
-        [
-          502,
-          913
-        ],
-        [
-          500,
-          912
-        ],
-        [
-          508,
-          910
-        ],
-        [
-          515,
-          908
-        ],
-        [
-          520,
-          906
-        ],
-        [
-          525,
-          904
-        ],
-        [
-          530,
-          900
-        ],
-        [
-          545,
-          870
-        ],
-        [
-          545,
-          125
-        ]
-      ]
-    },
-    {
-      "contour": 7,
-      "box": [
-        548,
-        125,
-        765,
-        995
-      ],
-      "polygon": [
-        [
-          545,
-          125
-        ],
-        [
-          545,
-          870
-        ],
-        [
-          540,
-          900
-        ],
-        [
-          535,
-          904
-        ],
-        [
-          531.5,
-          906
-        ],
-        [
-          525.5,
-          908
-        ],
-        [
-          520.5,
-          910
-        ],
-        [
-          514.5,
-          912
-        ],
-        [
-          507.5,
-          914
-        ],
-        [
-          521.5,
-          916
-        ],
-        [
-          526.5,
-          918
-        ],
-        [
-          528.5,
-          920
-        ],
-        [
-          529.5,
-          922
-        ],
-        [
-          529.5,
-          924
-        ],
-        [
-          530,
-          927
-        ],
-        [
-          531,
-          930
-        ],
-        [
-          532.5,
-          934
-        ],
-        [
-          533.5,
-          938
-        ],
-        [
-          531.5,
-          941
-        ],
-        [
-          528,
-          945
-        ],
-        [
-          527,
-          948
-        ],
-        [
-          540,
-          952
-        ],
-        [
-          550,
-          995
-        ],
-        [
-          765,
-          995
-        ],
-        [
-          765,
-          125
-        ]
-      ]
-    },
-    {
-      "contour": 6
-    },
-    {
-      "contour": 5
-    },
-    {
-      "contour": 4
-    },
-    {
-      "contour": 3
-    },
-    {
-      "contour": 0
-    },
-    {
-      "contour": 2
-    },
-    {
-      "contour": 1
-    }
-  ],
-  "files": [
-    {
-      "file": "01-frontal.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 19355,
-      "gradients": 14010,
-      "bytes": 5457488,
-      "sha256": "264b51c25d16474af1a14055393d5ba1c63b5db70a6cedd2f69dfb30150f38df",
-      "viewBox": [
-        0,
-        117,
-        314,
-        887
-      ],
-      "contour_index": 7,
-      "figure_mae_vs_master": 0.000214,
-      "figure_mae_vs_reference": 2.6501
-    },
-    {
-      "file": "02-tres-cuartos.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 16427,
-      "gradients": 11765,
-      "bytes": 4636893,
-      "sha256": "83914dcba7510d153136c04b6c99cdcf4c076502b1380ec0810b521f88badfea",
-      "viewBox": [
-        285,
-        117,
-        274,
-        887
-      ],
-      "contour_index": 7,
-      "figure_mae_vs_master": 0.000946,
-      "figure_mae_vs_reference": 2.736
-    },
-    {
-      "file": "03-perfil.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 12871,
-      "gradients": 9301,
-      "bytes": 3640180,
-      "sha256": "2511efd8a0197a64370b66710aae125789852a0ca72b3550a408d5d1fa62223d",
-      "viewBox": [
-        540,
-        117,
-        234,
-        887
-      ],
-      "contour_index": 7,
-      "figure_mae_vs_master": 0.001046,
-      "figure_mae_vs_reference": 2.6969
-    },
-    {
-      "file": "04-espalda.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 13589,
-      "gradients": 9731,
-      "bytes": 3745256,
-      "sha256": "ac4290f40e757a5ce1f15d544aa74ce9c0325e5f21c7c83038d9ab1f047c4df4",
-      "viewBox": [
-        758,
-        121,
-        313,
-        865
-      ],
-      "contour_index": 6,
-      "figure_mae_vs_master": 0.00176,
-      "figure_mae_vs_reference": 2.6971
-    },
-    {
-      "file": "05-neutral.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 8983,
-      "gradients": 6479,
-      "bytes": 2523300,
-      "sha256": "13d67ec574821712f5646a4fb7d41c268a07383a6081563723fd99dc51de55ee",
-      "viewBox": [
-        0,
-        1000,
-        183,
-        469
-      ],
-      "contour_index": 5,
-      "figure_mae_vs_master": 0.0,
-      "figure_mae_vs_reference": 2.6213
-    },
-    {
-      "file": "06-risa.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 9245,
-      "gradients": 6815,
-      "bytes": 2644223,
-      "sha256": "056e198b0e59e01e30ff9090abd8e1d278fb1e8329581b1068734e98c50eeece",
-      "viewBox": [
-        171,
-        1000,
-        193,
-        469
-      ],
-      "contour_index": 4,
-      "figure_mae_vs_master": 0.0009,
-      "figure_mae_vs_reference": 2.7916
-    },
-    {
-      "file": "07-sorpresa.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 8634,
-      "gradients": 6388,
-      "bytes": 2502051,
-      "sha256": "e1b9a41251d5093483c17644e878f97cf2de59b2d2cb6b4e8d59836c69921ba5",
-      "viewBox": [
-        353,
-        1000,
-        187,
-        469
-      ],
-      "contour_index": 3,
-      "figure_mae_vs_master": 0.001003,
-      "figure_mae_vs_reference": 2.7763
-    },
-    {
-      "file": "08-cansancio.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 9370,
-      "gradients": 6780,
-      "bytes": 2692909,
-      "sha256": "4f502575ae2a761ea31319a7d7d791c5ea7aecdfb45b7f0eba90d4bba8d13a0b",
-      "viewBox": [
-        527,
-        1011,
-        193,
-        458
-      ],
-      "contour_index": 0,
-      "figure_mae_vs_master": 0.000512,
-      "figure_mae_vs_reference": 2.6285
-    },
-    {
-      "file": "09-ojos-cerrados.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 8918,
-      "gradients": 6495,
-      "bytes": 2586976,
-      "sha256": "b5d096d4eb9446e08313457b87a8dafe3935bf17c53277deba43bcb0785997de",
-      "viewBox": [
-        709,
-        1000,
-        190,
-        469
-      ],
-      "contour_index": 2,
-      "figure_mae_vs_master": 0.001108,
-      "figure_mae_vs_reference": 2.692
-    },
-    {
-      "file": "10-guino.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 8835,
-      "gradients": 6419,
-      "bytes": 2513365,
-      "sha256": "1b65496a741a5fe5149df81061f56f85148554dbc22e17def6be3250dd452536",
-      "viewBox": [
-        887,
-        1001,
-        184,
-        468
-      ],
-      "contour_index": 1,
-      "figure_mae_vs_master": 0.000556,
-      "figure_mae_vs_reference": 2.6823
-    }
-  ],
-  "independent_renderer": [
-    {
-      "file": "01-frontal.svg",
-      "renderer": "Inkscape",
-      "mae_vs_cairosvg": 0.0979
-    },
-    {
-      "file": "06-risa.svg",
-      "renderer": "Inkscape",
-      "mae_vs_cairosvg": 0.0737
-    }
-  ],
-  "visual_review": {
-    "status": "reviewed",
-    "notes": [
-      "Cuatro vistas y seis expresiones revisadas individualmente, incluidos retratos ampliados.",
-      "Casco amarillo, visera, pelo rizado, barboquejo, bandas reflectantes, cremalleras, botas, manos y boquillas conservados.",
-      "Separación manual de las mangueras junto a las botas de otras vistas; eliminado un resto rojo vecino sobre una bota.",
-      "Las mangueras salen del encuadre y conservan sus tramos visibles; no se reconstruyen partes ocultas de la referencia.",
-      "Nombre eliminado del recorte frontal sin cortar el casco."
-    ]
+  {
+   "archivo": "Marcos-Bombero/01-frontal.svg",
+   "bytes": 5413373,
+   "sha256": "3553673417e4c9318d7ff1808cfaf5779b4d1fc0f6b25820d0768d46e9b51550",
+   "viewBox": "0 127 309 856",
+   "trazados": 19110,
+   "degradados": 13822,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9979,
+   "error_color_medio": 2.88,
+   "piezas_sueltas": 0
   },
-  "created_utc": "2026-10-30T00:59:46.080960+00:00"
+  {
+   "archivo": "Marcos-Bombero/02-tres-cuartos.svg",
+   "bytes": 4956919,
+   "sha256": "1dee832bf741279cc0e6040e82d397b9b7829183a16235e64c35034098ef2061",
+   "viewBox": "265 123 277 871",
+   "trazados": 17402,
+   "degradados": 12531,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.997,
+   "error_color_medio": 2.94,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Marcos-Bombero/03-perfil.svg",
+   "bytes": 3756509,
+   "sha256": "b7e1cd87ff0bfd402568fc024dea623506ba83f4bcbefc2d4d74f983844f8309",
+   "viewBox": "520 124 251 867",
+   "trazados": 13191,
+   "degradados": 9545,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9969,
+   "error_color_medio": 3.08,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Marcos-Bombero/04-espalda.svg",
+   "bytes": 3788925,
+   "sha256": "bf386ab4de1afe9bcca016b54958e945e2e849d9757df57cba6715c720e47146",
+   "viewBox": "759 123 312 860",
+   "trazados": 13594,
+   "degradados": 9733,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9971,
+   "error_color_medio": 3.01,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Marcos-Bombero/05-neutral.svg",
+   "bytes": 2571197,
+   "sha256": "98c98a2a44c112226955d7ee33267aa3b23b69cc96fbdeacb3b915e9d64bbca4",
+   "viewBox": "0 1001 182 467",
+   "trazados": 9035,
+   "degradados": 6519,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9986,
+   "error_color_medio": 2.73,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Marcos-Bombero/06-risa.svg",
+   "bytes": 2715888,
+   "sha256": "1ed1ff746d1519d46898d259123031983135b80c6fe6221e392a08d58cda87d0",
+   "viewBox": "172 1001 191 467",
+   "trazados": 9384,
+   "degradados": 6924,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9974,
+   "error_color_medio": 2.95,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Marcos-Bombero/07-sorpresa.svg",
+   "bytes": 2529910,
+   "sha256": "fc3373658d5d8283e44d1b094e09cd141cc3a68a00b00471b8d2bba3961b6953",
+   "viewBox": "355 1001 183 467",
+   "trazados": 8634,
+   "degradados": 6388,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9988,
+   "error_color_medio": 2.91,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Marcos-Bombero/08-cansancio.svg",
+   "bytes": 2894006,
+   "sha256": "ca11e7ee173311465234b6d68c006cfff48f97d772f4b2737fbdc45bf7ab7466",
+   "viewBox": "516 1013 203 455",
+   "trazados": 9965,
+   "degradados": 7230,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9988,
+   "error_color_medio": 2.78,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Marcos-Bombero/09-ojos-cerrados.svg",
+   "bytes": 2655292,
+   "sha256": "eecce0065173644b0fcc3f5748e104809323da1f4dc576b428f00888b9036efe",
+   "viewBox": "710 1002 188 466",
+   "trazados": 9051,
+   "degradados": 6601,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9986,
+   "error_color_medio": 2.88,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Marcos-Bombero/10-guino.svg",
+   "bytes": 2542007,
+   "sha256": "f1fdbdaa444560ec76064da2f78c15d70b59b6f2bb2daf5af74018bfcc7c1a6f",
+   "viewBox": "889 1003 182 464",
+   "trazados": 8835,
+   "degradados": 6419,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9984,
+   "error_color_medio": 2.83,
+   "piezas_sueltas": 0
+  }
+ ]
 }
