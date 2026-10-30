@@ -68,6 +68,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00033 | Guillermo y Ander · El duelo de miradas | 13,95 s | [MP4 60 fps](vista%20previa/00033%20Guillermo%20y%20Ander%20-%20el%20duelo%20de%20miradas.mp4) · [fotogramas](vista%20previa/00033%20Guillermo%20y%20Ander%20-%20el%20duelo%20de%20miradas%20-%20fotogramas.png) |
 | 00034 | Guillermo y Ander · El bigote | 14,10 s | [MP4 60 fps](vista%20previa/00034%20Guillermo%20y%20Ander%20-%20el%20bigote.mp4) · [fotogramas](vista%20previa/00034%20Guillermo%20y%20Ander%20-%20el%20bigote%20-%20fotogramas.png) |
 | 00035 | Guillermo y Ander · El billar | 14,30 s | [MP4 60 fps](vista%20previa/00035%20Guillermo%20y%20Ander%20-%20el%20billar.mp4) · [fotogramas](vista%20previa/00035%20Guillermo%20y%20Ander%20-%20el%20billar%20-%20fotogramas.png) |
+| 00036 | Guillermo y Ander · La máquina del gancho | 15,00 s | [MP4 60 fps](vista%20previa/00036%20Guillermo%20y%20Ander%20-%20la%20maquina%20del%20gancho.mp4) · [fotogramas](vista%20previa/00036%20Guillermo%20y%20Ander%20-%20la%20maquina%20del%20gancho%20-%20fotogramas.png) |
 | 00037 | Guillermo y Ander · El abrazo de oso | 13,80 s | [MP4 60 fps](vista%20previa/00037%20Guillermo%20y%20Ander%20-%20el%20abrazo%20de%20oso.mp4) · [fotogramas](vista%20previa/00037%20Guillermo%20y%20Ander%20-%20el%20abrazo%20de%20oso%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
@@ -731,6 +732,19 @@ Corrige el brazo del gesto de las orejas de conejo, los apoyos y los hombros de 
 8. Negro.
 
 ![Fotogramas de 00035](vista%20previa/00035%20Guillermo%20y%20Ander%20-%20el%20billar%20-%20fotogramas.png)
+
+### 00036 · Guillermo y Ander · La máquina del gancho
+
+1. Negro.
+2. Recreativos de noche: neones, máquinas al fondo y, en el centro, una máquina del gancho turquesa y rosa llena de peluches redondos. Guillermo está en la consola y Ander, a la derecha, con las manos en los bolsillos.
+3. Guillermo besa una moneda, la mete y maneja la palanca con la lengua fuera. Aporrea el botón y el gancho coge un gatito rosa… que **se escurre** justo encima de la rampa, rebota en el borde y vuelve al montón. Guillermo se lleva las manos a la cabeza.
+4. Segunda moneda, rojo de rabia: el pollito se le escapa nada más subir. Zarandea la palanca y Ander se tapa la boca para no reírse.
+5. Tercera moneda, con un solo dedo: el gancho se cierra en el aire y abre y cierra las pinzas como burlándose. Guillermo apoya la frente en el cristal.
+6. Ander, sin mirar, lanza una moneda con el pulgar por encima de Guillermo directa a la ranura y da un golpe de cadera a la máquina. El gancho baja y saca **un gatito gigante**.
+7. El gigante entra a presión por la rampa y sale disparado por la trampilla. Ander lo caza con una mano y se lo lanza a Guillermo, que lo abraza haciendo pucheros.
+8. Negro.
+
+![Fotogramas de 00036](vista%20previa/00036%20Guillermo%20y%20Ander%20-%20la%20maquina%20del%20gancho%20-%20fotogramas.png)
 
 ### 00037 · Guillermo y Ander · El abrazo de oso
 
