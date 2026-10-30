@@ -67,6 +67,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00032 | Guillermo y Ander · La guindilla | 14,60 s | [MP4 60 fps](vista%20previa/00032%20Guillermo%20y%20Ander%20-%20la%20guindilla.mp4) · [fotogramas](vista%20previa/00032%20Guillermo%20y%20Ander%20-%20la%20guindilla%20-%20fotogramas.png) |
 | 00033 | Guillermo y Ander · El duelo de miradas | 13,95 s | [MP4 60 fps](vista%20previa/00033%20Guillermo%20y%20Ander%20-%20el%20duelo%20de%20miradas.mp4) · [fotogramas](vista%20previa/00033%20Guillermo%20y%20Ander%20-%20el%20duelo%20de%20miradas%20-%20fotogramas.png) |
 | 00034 | Guillermo y Ander · El bigote | 14,10 s | [MP4 60 fps](vista%20previa/00034%20Guillermo%20y%20Ander%20-%20el%20bigote.mp4) · [fotogramas](vista%20previa/00034%20Guillermo%20y%20Ander%20-%20el%20bigote%20-%20fotogramas.png) |
+| 00035 | Guillermo y Ander · El billar | 14,30 s | [MP4 60 fps](vista%20previa/00035%20Guillermo%20y%20Ander%20-%20el%20billar.mp4) · [fotogramas](vista%20previa/00035%20Guillermo%20y%20Ander%20-%20el%20billar%20-%20fotogramas.png) |
 | 00037 | Guillermo y Ander · El abrazo de oso | 13,80 s | [MP4 60 fps](vista%20previa/00037%20Guillermo%20y%20Ander%20-%20el%20abrazo%20de%20oso.mp4) · [fotogramas](vista%20previa/00037%20Guillermo%20y%20Ander%20-%20el%20abrazo%20de%20oso%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
@@ -717,6 +718,19 @@ Corrige el brazo del gesto de las orejas de conejo, los apoyos y los hombros de 
 10. Negro.
 
 ![Fotogramas de 00034](vista%20previa/00034%20Guillermo%20y%20Ander%20-%20el%20bigote%20-%20fotogramas.png)
+
+### 00035 · Guillermo y Ander · El billar
+
+1. Negro.
+2. Billar antiguo: pared granate, lámpara verde sobre la mesa. Ander da tiza a su taco y sopla el polvillo; Guillermo espera apoyado en el suyo, escéptico.
+3. Ander se inclina, hace dos tiros de ensayo y tira: la blanca hace una **curva imposible** alrededor de la roja, toca la amarilla, que entra en la tronera del fondo, y se para delante de Guillermo, que mira a cámara boquiabierto.
+4. Ander le cede el turno con la palma abierta. Guillermo da tiza a lo bestia (nube azul y tos), se coloca meneando la cadera, apunta con la lengua fuera y un ojo cerrado, ensaya mil veces y guiña a cámara.
+5. Echa el taco muy atrás y le da demasiado fuerte: la blanca salta, ¡clonc! contra la lámpara (se balancea y se abolla), ¡pum! contra el techo (grieta y polvillo)… y **le cae en la coronilla**. Rebota y entra limpiamente en la tronera del centro.
+6. Chichón, estrellitas y ojos en espiral; Guillermo se soba la cabeza.
+7. Ander rodea la mesa con el taco de bastón, le da dos palmaditas en el hombro y guiña a cámara; Guillermo sonríe avergonzado.
+8. Negro.
+
+![Fotogramas de 00035](vista%20previa/00035%20Guillermo%20y%20Ander%20-%20el%20billar%20-%20fotogramas.png)
 
 ### 00037 · Guillermo y Ander · El abrazo de oso
 
