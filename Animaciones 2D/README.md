@@ -76,6 +76,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00039 | Guillermo y Ander · El gol | 14,00 s | [MP4 60 fps](vista%20previa/00039%20Guillermo%20y%20Ander%20-%20el%20gol.mp4) · [fotogramas](vista%20previa/00039%20Guillermo%20y%20Ander%20-%20el%20gol%20-%20fotogramas.png) |
 | 00040 | Guillermo y Ander · La guitarra | 13,60 s | [MP4 60 fps](vista%20previa/00040%20Guillermo%20y%20Ander%20-%20la%20guitarra.mp4) · [fotogramas](vista%20previa/00040%20Guillermo%20y%20Ander%20-%20la%20guitarra%20-%20fotogramas.png) |
 | 00041 | Guillermo y Carla · La pasarela | 14,00 s | [MP4 60 fps](vista%20previa/00041%20Guillermo%20y%20Carla%20-%20la%20pasarela.mp4) · [fotogramas](vista%20previa/00041%20Guillermo%20y%20Carla%20-%20la%20pasarela%20-%20fotogramas.png) |
+| 00044 | Guillermo y Carla · La melena | 13,60 s | [MP4 60 fps](vista%20previa/00044%20Guillermo%20y%20Carla%20-%20la%20melena.mp4) · [fotogramas](vista%20previa/00044%20Guillermo%20y%20Carla%20-%20la%20melena%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -842,6 +843,20 @@ Corrige las uniones de brazos, el apoyo al arrodillarse, las palmaditas y la con
 13. Negro.
 
 ![Fotogramas de 00041](vista%20previa/00041%20Guillermo%20y%20Carla%20-%20la%20pasarela%20-%20fotogramas.png)
+
+### 00044 · Guillermo y Carla · La melena
+
+1. Negro.
+2. Plató de anuncio de champú: fondo pastel, aro de luz, burbujas, softbox, botes y un ventilador gigante con cintas. Carla posa en el centro; Guillermo, detrás, sujeta un mando.
+3. Carla le señala y chasca los dedos («¡acción!»); Guillermo pulsa el mando y el ventilador arranca.
+4. Cámara lenta de anuncio: la melena de Carla ondea con destellos mientras ella se pasa la mano por el pelo con los ojos cerrados. Guillermo se guarda el mando, le salen corazones y se acerca de puntillas a olerle el pelo.
+5. Carla sonríe a cámara, agacha la cabeza y la echa atrás de golpe: **una ola enorme de melena** barre el plató y le da a Guillermo en toda la cara.
+6. Guillermo gira como una peonza y cae sentado, mareado, con estrellitas y pelos de Carla pegados en la cara.
+7. Carla, sin enterarse, posa con la mano en la nuca y una sonrisa deslumbrante (destello en los dientes).
+8. Guillermo descubre un pelo en el labio, hincha los carrillos y lo sopla; el viento se lo lleva. Mira a cámara resignado; Carla guiña un ojo.
+9. Negro.
+
+![Fotogramas de 00044](vista%20previa/00044%20Guillermo%20y%20Carla%20-%20la%20melena%20-%20fotogramas.png)
 
 ## Ver y grabar
 
