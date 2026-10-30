@@ -85,6 +85,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00046 | Guillermo y Carla · La araña | 13,90 s | [MP4 60 fps](vista%20previa/00046%20Guillermo%20y%20Carla%20-%20la%20arana.mp4) · [fotogramas](vista%20previa/00046%20Guillermo%20y%20Carla%20-%20la%20arana%20-%20fotogramas.png) |
 | 00047 | Guillermo y Carla · Las flores | 15,00 s | [MP4 60 fps](vista%20previa/00047%20Guillermo%20y%20Carla%20-%20las%20flores.mp4) · [fotogramas](vista%20previa/00047%20Guillermo%20y%20Carla%20-%20las%20flores%20-%20fotogramas.png) |
 | 00048 | Guillermo y Carla · El limón | 13,50 s | [MP4 60 fps](vista%20previa/00048%20Guillermo%20y%20Carla%20-%20el%20limon.mp4) · [fotogramas](vista%20previa/00048%20Guillermo%20y%20Carla%20-%20el%20limon%20-%20fotogramas.png) |
+| 00049 | Guillermo y Carla · El helado | 14,40 s | [MP4 60 fps](vista%20previa/00049%20Guillermo%20y%20Carla%20-%20el%20helado.mp4) · [fotogramas](vista%20previa/00049%20Guillermo%20y%20Carla%20-%20el%20helado%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -973,6 +974,23 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 9. Negro.
 
 ![Fotogramas de 00048](vista%20previa/00048%20Guillermo%20y%20Carla%20-%20el%20limon%20-%20fotogramas.png)
+
+### 00049 · Guillermo y Carla · El helado
+
+1. Negro.
+2. Terraza del paseo marítimo en pleno verano: sol que aprieta, el mar tras la barandilla blanca, un quiosco de helados con toldo de rayas rosas y una sombrilla con su mesita. Carla lame tan tranquila su bola de vainilla con fideos.
+3. Guillermo le presume su torre de tres bolas (pistacho, chocolate y fresa con guinda) con cejas de chulito y un meneo; Carla pone los ojos en blanco.
+4. Él le da tres lametones cada vez más exagerados con los ojos cerrados y la torre se bambolea. Con el tercero, la bola de fresa resbala, da una vuelta de campana y **se estampa en el suelo**: ¡plaf! Él, sin enterarse, sigue lamiendo el aire y Carla se tapa la boca.
+5. Guillermo abre los ojos, mira el cucurucho, se inclina para ver la plasta… y al inclinarse se le caen también la de chocolate y la de pistacho, una encima de otra.
+6. Hundido, con el cucurucho vacío y lagrimones. Carla, con pena, mira su helado, sonríe, se lo cambia de mano y se acerca.
+7. Se lo ofrece y a él se le iluminan los ojos: el cucurucho pasa de una mano a otra con los dos puños agarrándolo a la vez.
+8. Guillermo lo abraza feliz entre corazoncitos mientras Carla da un pasito atrás.
+9. Le hace una reverencia de agradecimiento… el cucurucho se vuelca y **la bola de vainilla cae y se chafa encima de su zapato**, con la guinda arriba.
+10. Él se queda helado mirándose el zapato y suda. Carla se aguanta la risa con los mofletes hinchados, estalla a carcajadas, le señala el zapato y se seca una lágrima.
+11. Guillermo se endereza, mira a cámara muy serio y lame con pena su cucurucho vacío, dos veces.
+12. Negro.
+
+![Fotogramas de 00049](vista%20previa/00049%20Guillermo%20y%20Carla%20-%20el%20helado%20-%20fotogramas.png)
 
 ## Ver y grabar
 
