@@ -42,6 +42,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00013 | Guillermo y Laura · La pajita | 13,40 s | [MP4 60 fps](vista%20previa/00013%20Guillermo%20y%20Laura%20-%20la%20pajita.mp4) · [fotogramas](vista%20previa/00013%20Guillermo%20y%20Laura%20-%20la%20pajita%20-%20fotogramas.png) |
 | 00013.2 | Guillermo y Laura · La pajita · revisada | 13,4 s | [MP4 60 fps](vista%20previa/00013.2%20Guillermo%20y%20Laura%20-%20la%20pajita.mp4) · [fotogramas](vista%20previa/00013.2%20Guillermo%20y%20Laura%20-%20la%20pajita%20-%20fotogramas.png) · [revisión](revision/00013.2.md) |
 | 00014 | Guillermo y Laura · El baile lento | 14,20 s | [MP4 60 fps](vista%20previa/00014%20Guillermo%20y%20Laura%20-%20el%20baile%20lento.mp4) · [fotogramas](vista%20previa/00014%20Guillermo%20y%20Laura%20-%20el%20baile%20lento%20-%20fotogramas.png) |
+| 00014.2 | Guillermo y Laura · El baile lento · revisada | 14,2 s | [MP4 60 fps](vista%20previa/00014.2%20Guillermo%20y%20Laura%20-%20el%20baile%20lento.mp4) · [fotogramas](vista%20previa/00014.2%20Guillermo%20y%20Laura%20-%20el%20baile%20lento%20-%20fotogramas.png) · [revisión](revision/00014.2.md) |
 | 00015 | Guillermo y Laura · La tarta | 14,25 s | [MP4 60 fps](vista%20previa/00015%20Guillermo%20y%20Laura%20-%20la%20tarta.mp4) · [fotogramas](vista%20previa/00015%20Guillermo%20y%20Laura%20-%20la%20tarta%20-%20fotogramas.png) |
 | 00016 | Guillermo y Laura · El truco de magia | 14,60 s | [MP4 60 fps](vista%20previa/00016%20Guillermo%20y%20Laura%20-%20el%20truco%20de%20magia.mp4) · [fotogramas](vista%20previa/00016%20Guillermo%20y%20Laura%20-%20el%20truco%20de%20magia%20-%20fotogramas.png) |
 | 00017 | Guillermo y Laura · Los dardos | 14,45 s | [MP4 60 fps](vista%20previa/00017%20Guillermo%20y%20Laura%20-%20los%20dardos.mp4) · [fotogramas](vista%20previa/00017%20Guillermo%20y%20Laura%20-%20los%20dardos%20-%20fotogramas.png) |
@@ -368,6 +369,12 @@ Corrige el alcance de los brazos al pedir, coger y soltar la guinda; fija los pi
 11. Negro.
 
 ![Fotogramas de 00014](vista%20previa/00014%20Guillermo%20y%20Laura%20-%20el%20baile%20lento%20-%20fotogramas.png)
+
+
+### 00014.2 · Revisión de continuidad
+
+Coordina los agarres del tango y el apoyo de Laura con las posturas de ambos. Corrige las muñecas, la retirada del pie tras los pisotones y el contacto de la rosa con el suelo. Se conserva la original. [Informe y pruebas](revision/00014.2.md).
+
 
 ### 00015 · Guillermo y Laura · La tarta
 
