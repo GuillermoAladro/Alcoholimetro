@@ -1,0 +1,3237 @@
+{
+ "fecha": "2026-10-30",
+ "commit_de_partida": "0aa384a",
+ "alcance": "14 hojas maestras y 140 piezas individuales (154 SVG estáticos)",
+ "cambio": "Fondo blanco y sombras de suelo eliminados; siluetas nuevas; nombres y estructura unificados",
+ "comprobaciones": {
+  "xml_ids_referencias": "154/154 correctos, sin imágenes, scripts ni recursos externos",
+  "iou_silueta_min": 0.9928,
+  "error_color_medio_max": 3.27,
+  "chromium": "140/140 piezas decodificadas, con transparencia",
+  "idempotencia": "rehacer_transparentes.py sobre su propia salida produce los mismos bytes"
+ },
+ "comparacion_con_version_anterior": {
+  "Ander": {
+   "fondo_blanco_quitado_px": 9293,
+   "personaje_recuperado_px": 2195,
+   "por_pieza": {
+    "01-frontal": [
+     1050,
+     405
+    ],
+    "02-tres-cuartos": [
+     4071,
+     965
+    ],
+    "03-perfil": [
+     760,
+     724
+    ],
+    "04-espalda": [
+     1189,
+     101
+    ],
+    "05-neutral": [
+     413,
+     0
+    ],
+    "06-risa": [
+     405,
+     0
+    ],
+    "07-sorpresa": [
+     395,
+     0
+    ],
+    "08-cansancio": [
+     310,
+     0
+    ],
+    "09-ojos-cerrados": [
+     339,
+     0
+    ],
+    "10-guino": [
+     361,
+     0
+    ]
+   }
+  },
+  "Carla": {
+   "fondo_blanco_quitado_px": 10538,
+   "personaje_recuperado_px": 303,
+   "por_pieza": {
+    "01-frontal": [
+     2388,
+     15
+    ],
+    "02-tres-cuartos": [
+     1138,
+     86
+    ],
+    "03-perfil": [
+     863,
+     189
+    ],
+    "04-espalda": [
+     3217,
+     13
+    ],
+    "05-neutral": [
+     455,
+     0
+    ],
+    "06-sonrisa": [
+     440,
+     0
+    ],
+    "07-sorpresa": [
+     430,
+     0
+    ],
+    "08-cansancio": [
+     422,
+     0
+    ],
+    "09-ojos-cerrados": [
+     512,
+     0
+    ],
+    "10-guino": [
+     673,
+     0
+    ]
+   }
+  },
+  "Dari": {
+   "fondo_blanco_quitado_px": 10288,
+   "personaje_recuperado_px": 4295,
+   "por_pieza": {
+    "01-frontal": [
+     1205,
+     685
+    ],
+    "02-tres-cuartos": [
+     2935,
+     887
+    ],
+    "03-perfil": [
+     995,
+     986
+    ],
+    "04-espalda": [
+     1220,
+     1053
+    ],
+    "05-neutral": [
+     806,
+     0
+    ],
+    "06-risa": [
+     545,
+     5
+    ],
+    "07-sorpresa": [
+     689,
+     679
+    ],
+    "08-cansancio": [
+     490,
+     0
+    ],
+    "09-ojos-cerrados": [
+     809,
+     0
+    ],
+    "10-guino": [
+     594,
+     0
+    ]
+   }
+  },
+  "Deivi": {
+   "fondo_blanco_quitado_px": 9159,
+   "personaje_recuperado_px": 4947,
+   "por_pieza": {
+    "01-frontal": [
+     1939,
+     1614
+    ],
+    "02-tres-cuartos": [
+     985,
+     1644
+    ],
+    "03-perfil": [
+     880,
+     623
+    ],
+    "04-espalda": [
+     1960,
+     1066
+    ],
+    "05-neutral": [
+     373,
+     0
+    ],
+    "06-risa": [
+     632,
+     0
+    ],
+    "07-sorpresa": [
+     602,
+     0
+    ],
+    "08-cansancio": [
+     516,
+     0
+    ],
+    "09-ojos-cerrados": [
+     621,
+     0
+    ],
+    "10-guino": [
+     651,
+     0
+    ]
+   }
+  },
+  "Gabacho": {
+   "fondo_blanco_quitado_px": 14494,
+   "personaje_recuperado_px": 5669,
+   "por_pieza": {
+    "01-frontal": [
+     2269,
+     1181
+    ],
+    "02-tres-cuartos": [
+     1298,
+     1838
+    ],
+    "03-perfil": [
+     1252,
+     1246
+    ],
+    "04-espalda": [
+     1921,
+     1384
+    ],
+    "05-neutral": [
+     703,
+     0
+    ],
+    "06-risa": [
+     623,
+     0
+    ],
+    "07-sorpresa": [
+     3634,
+     0
+    ],
+    "08-cansancio": [
+     1118,
+     0
+    ],
+    "09-ojos-cerrados": [
+     935,
+     20
+    ],
+    "10-guino": [
+     741,
+     0
+    ]
+   }
+  },
+  "Guillermo-Aladro": {
+   "fondo_blanco_quitado_px": 17574,
+   "personaje_recuperado_px": 1962,
+   "por_pieza": {
+    "01-frontal": [
+     2130,
+     570
+    ],
+    "02-tres-cuartos": [
+     4184,
+     299
+    ],
+    "03-perfil": [
+     946,
+     679
+    ],
+    "04-espalda": [
+     2109,
+     406
+    ],
+    "05-serio": [
+     631,
+     0
+    ],
+    "06-sonrisa": [
+     758,
+     0
+    ],
+    "07-sorpresa": [
+     865,
+     0
+    ],
+    "08-cansancio": [
+     2666,
+     8
+    ],
+    "09-ojos-cerrados": [
+     2552,
+     0
+    ],
+    "10-ceno-fruncido": [
+     733,
+     0
+    ]
+   }
+  },
+  "Kiriku": {
+   "fondo_blanco_quitado_px": 11398,
+   "personaje_recuperado_px": 3927,
+   "por_pieza": {
+    "01-frontal": [
+     1592,
+     627
+    ],
+    "02-tres-cuartos": [
+     3348,
+     373
+    ],
+    "03-perfil": [
+     815,
+     1791
+    ],
+    "04-espalda": [
+     1478,
+     1136
+    ],
+    "05-neutral": [
+     781,
+     0
+    ],
+    "06-risa": [
+     597,
+     0
+    ],
+    "07-sorpresa": [
+     289,
+     0
+    ],
+    "08-cansancio": [
+     884,
+     0
+    ],
+    "09-ojos-cerrados": [
+     862,
+     0
+    ],
+    "10-guino": [
+     752,
+     0
+    ]
+   }
+  },
+  "Laura": {
+   "fondo_blanco_quitado_px": 26279,
+   "personaje_recuperado_px": 1741,
+   "por_pieza": {
+    "01-frontal": [
+     3882,
+     56
+    ],
+    "02-tres-cuartos": [
+     5642,
+     350
+    ],
+    "03-perfil": [
+     7336,
+     291
+    ],
+    "04-espalda": [
+     4079,
+     600
+    ],
+    "05-neutral": [
+     436,
+     0
+    ],
+    "06-risa": [
+     824,
+     18
+    ],
+    "07-sorpresa": [
+     1154,
+     10
+    ],
+    "08-cansancio": [
+     1238,
+     0
+    ],
+    "09-ojos-cerrados": [
+     837,
+     416
+    ],
+    "10-guino": [
+     851,
+     0
+    ]
+   }
+  },
+  "Marcos-Bombero": {
+   "fondo_blanco_quitado_px": 14571,
+   "personaje_recuperado_px": 851,
+   "por_pieza": {
+    "01-frontal": [
+     6097,
+     5
+    ],
+    "02-tres-cuartos": [
+     2285,
+     261
+    ],
+    "03-perfil": [
+     1392,
+     232
+    ],
+    "04-espalda": [
+     1816,
+     4
+    ],
+    "05-neutral": [
+     193,
+     0
+    ],
+    "06-risa": [
+     661,
+     0
+    ],
+    "07-sorpresa": [
+     380,
+     6
+    ],
+    "08-cansancio": [
+     525,
+     342
+    ],
+    "09-ojos-cerrados": [
+     499,
+     0
+    ],
+    "10-guino": [
+     723,
+     1
+    ]
+   }
+  },
+  "Marta": {
+   "fondo_blanco_quitado_px": 6081,
+   "personaje_recuperado_px": 4694,
+   "por_pieza": {
+    "01-frontal": [
+     968,
+     721
+    ],
+    "02-tres-cuartos": [
+     1122,
+     1903
+    ],
+    "03-perfil": [
+     770,
+     991
+    ],
+    "04-espalda": [
+     986,
+     1075
+    ],
+    "05-neutral": [
+     273,
+     0
+    ],
+    "06-risa": [
+     350,
+     2
+    ],
+    "07-sorpresa": [
+     353,
+     0
+    ],
+    "08-cansancio": [
+     432,
+     0
+    ],
+    "09-ojos-cerrados": [
+     368,
+     0
+    ],
+    "10-guino": [
+     459,
+     2
+    ]
+   }
+  },
+  "Paradigma": {
+   "fondo_blanco_quitado_px": 8431,
+   "personaje_recuperado_px": 5862,
+   "por_pieza": {
+    "01-frontal": [
+     1185,
+     1343
+    ],
+    "02-tres-cuartos": [
+     962,
+     1309
+    ],
+    "03-perfil": [
+     1018,
+     1947
+    ],
+    "04-espalda": [
+     1249,
+     1190
+    ],
+    "05-neutral": [
+     787,
+     73
+    ],
+    "06-risa": [
+     658,
+     0
+    ],
+    "07-sorpresa": [
+     661,
+     0
+    ],
+    "08-cansancio": [
+     503,
+     0
+    ],
+    "09-ojos-cerrados": [
+     739,
+     0
+    ],
+    "10-guino": [
+     669,
+     0
+    ]
+   }
+  },
+  "Rodri": {
+   "fondo_blanco_quitado_px": 7691,
+   "personaje_recuperado_px": 4026,
+   "por_pieza": {
+    "01-frontal": [
+     1066,
+     857
+    ],
+    "02-tres-cuartos": [
+     2307,
+     1229
+    ],
+    "03-perfil": [
+     873,
+     805
+    ],
+    "04-espalda": [
+     1071,
+     1125
+    ],
+    "05-neutral": [
+     466,
+     8
+    ],
+    "06-risa": [
+     420,
+     2
+    ],
+    "07-sorpresa": [
+     349,
+     0
+    ],
+    "08-cansancio": [
+     389,
+     0
+    ],
+    "09-ojos-cerrados": [
+     390,
+     0
+    ],
+    "10-guino": [
+     360,
+     0
+    ]
+   }
+  },
+  "Sara-Saez": {
+   "fondo_blanco_quitado_px": 15765,
+   "personaje_recuperado_px": 5091,
+   "por_pieza": {
+    "01-frontal": [
+     1074,
+     28
+    ],
+    "02-tres-cuartos": [
+     4380,
+     1492
+    ],
+    "03-perfil": [
+     797,
+     2644
+    ],
+    "04-espalda": [
+     2528,
+     920
+    ],
+    "05-neutral": [
+     1084,
+     0
+    ],
+    "06-risa": [
+     1361,
+     7
+    ],
+    "07-sorpresa": [
+     1157,
+     0
+    ],
+    "08-cansancio": [
+     1146,
+     0
+    ],
+    "09-ojos-cerrados": [
+     1106,
+     0
+    ],
+    "10-guino": [
+     1132,
+     0
+    ]
+   }
+  },
+  "Yorgi": {
+   "fondo_blanco_quitado_px": 7566,
+   "personaje_recuperado_px": 2009,
+   "por_pieza": {
+    "01-frontal": [
+     1618,
+     408
+    ],
+    "02-tres-cuartos": [
+     959,
+     789
+    ],
+    "03-perfil": [
+     798,
+     697
+    ],
+    "04-espalda": [
+     1606,
+     109
+    ],
+    "05-neutral": [
+     472,
+     0
+    ],
+    "06-risa": [
+     384,
+     0
+    ],
+    "07-sorpresa": [
+     422,
+     6
+    ],
+    "08-cansancio": [
+     406,
+     0
+    ],
+    "09-ojos-cerrados": [
+     439,
+     0
+    ],
+    "10-guino": [
+     462,
+     0
+    ]
+   }
+  }
+ },
+ "archivos": [
+  {
+   "archivo": "Ander.svg",
+   "bytes": 33059837,
+   "sha256": "a2e48f10a6da3d36886b679dc191478def4054e6b51654f16703e4dd39e135fe",
+   "viewBox": "0 0 1122 1402",
+   "trazados": 119025,
+   "degradados": 80835,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0
+  },
+  {
+   "archivo": "Ander/01-frontal.svg",
+   "bytes": 5728212,
+   "sha256": "ec86538eca1642c32ffcd7fa89489dfc1de047634145280dac9738e94c3f4b46",
+   "viewBox": "110 37 311 840",
+   "trazados": 21206,
+   "degradados": 13740,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9972,
+   "error_color_medio": 2.18,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Ander/02-tres-cuartos.svg",
+   "bytes": 5102477,
+   "sha256": "57250a5b3d3c22fc1d6aca36fa9080d353ca309f0f6da8b6456f4c18883c24b9",
+   "viewBox": "406 38 257 839",
+   "trazados": 18506,
+   "degradados": 12361,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9968,
+   "error_color_medio": 2.48,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Ander/03-perfil.svg",
+   "bytes": 4154812,
+   "sha256": "139c908d3f15ebb7a15f167976b1f6929f178dfa570b54dfb25c077b83375744",
+   "viewBox": "650 41 193 839",
+   "trazados": 15117,
+   "degradados": 10112,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9969,
+   "error_color_medio": 2.35,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Ander/04-espalda.svg",
+   "bytes": 5565760,
+   "sha256": "62523d80900c2ce1a423edc5b7e7a28d53b480217052cd852d8b580bd55bf665",
+   "viewBox": "841 39 281 832",
+   "trazados": 20634,
+   "degradados": 12967,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.997,
+   "error_color_medio": 2.0,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Ander/05-neutral.svg",
+   "bytes": 2114927,
+   "sha256": "ed5a69f5445936836a210a8b0066bc3e636acff1b3bc16389a139a81d284ec22",
+   "viewBox": "0 913 187 360",
+   "trazados": 7380,
+   "degradados": 5334,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9985,
+   "error_color_medio": 2.08,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Ander/06-risa.svg",
+   "bytes": 2227772,
+   "sha256": "b75f741bb7dbfef414306025c8736dcfb981e9d372949eede8c3f77dbfd99ddd",
+   "viewBox": "177 917 202 356",
+   "trazados": 7575,
+   "degradados": 5549,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.998,
+   "error_color_medio": 2.14,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Ander/07-sorpresa.svg",
+   "bytes": 2275323,
+   "sha256": "eb5c1aa50474d6f32a4f5128b2e0a2044b7b2f8506e04a2a139abb3dfeb47866",
+   "viewBox": "369 912 190 361",
+   "trazados": 7727,
+   "degradados": 5666,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9979,
+   "error_color_medio": 2.2,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Ander/08-cansancio.svg",
+   "bytes": 2136546,
+   "sha256": "4f849d7d2d14952a22eb8819f8a3398fc02549ac5a820d445a0d64196bd2ffad",
+   "viewBox": "549 941 195 332",
+   "trazados": 7244,
+   "degradados": 5298,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9986,
+   "error_color_medio": 2.03,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Ander/09-ojos-cerrados.svg",
+   "bytes": 2083683,
+   "sha256": "3a5850f0b143d6fd3f45fde80d898ed78a10e7ba92177bfbe3f3c5632a544c10",
+   "viewBox": "735 918 194 355",
+   "trazados": 7023,
+   "degradados": 5195,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9965,
+   "error_color_medio": 2.09,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Ander/10-guino.svg",
+   "bytes": 2234047,
+   "sha256": "69ee62805742ac2909a4898102d163951b83ffd4278b8453090a31406914944f",
+   "viewBox": "919 916 203 357",
+   "trazados": 7757,
+   "degradados": 5536,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9978,
+   "error_color_medio": 2.05,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Carla.svg",
+   "bytes": 31256804,
+   "sha256": "97dc3fad4f606f40a0f13b6cc139c62d3cbaba316e3c9d02b5f7b535542ace50",
+   "viewBox": "0 0 1122 1402",
+   "trazados": 110650,
+   "degradados": 79171,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0
+  },
+  {
+   "archivo": "Carla/01-frontal.svg",
+   "bytes": 4644431,
+   "sha256": "f0de5791debb8979cfdcadb22dbcebe09693d75c73e1f02c61ea163ff21e8785",
+   "viewBox": "148 41 249 819",
+   "trazados": 16520,
+   "degradados": 11689,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9962,
+   "error_color_medio": 2.31,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Carla/02-tres-cuartos.svg",
+   "bytes": 4259084,
+   "sha256": "1ec6e020c4f9f5eb333dbe182b03c976adcef29cda6e5712bc0fe9d6e74ebae6",
+   "viewBox": "407 43 241 814",
+   "trazados": 15265,
+   "degradados": 10619,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9965,
+   "error_color_medio": 2.46,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Carla/03-perfil.svg",
+   "bytes": 3595297,
+   "sha256": "8e66eb52532aa17a1160086d7ce484a09e3aaec57e8257b513f7a9b782251dd8",
+   "viewBox": "638 41 199 818",
+   "trazados": 12954,
+   "degradados": 8921,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9968,
+   "error_color_medio": 2.49,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Carla/04-espalda.svg",
+   "bytes": 4880793,
+   "sha256": "01b5b8eed078e74de104b8f90ff132344afa3e73475c4210098900d48a613b60",
+   "viewBox": "863 39 242 820",
+   "trazados": 17783,
+   "degradados": 12061,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9966,
+   "error_color_medio": 2.24,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Carla/05-neutral.svg",
+   "bytes": 2470283,
+   "sha256": "81680a98b1c3f0c5563e35a404a1dc9080e94590f8d14a4d0bcef41790a9aefa",
+   "viewBox": "0 910 191 404",
+   "trazados": 8546,
+   "degradados": 6320,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9974,
+   "error_color_medio": 2.07,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Carla/06-risa.svg",
+   "bytes": 2633164,
+   "sha256": "0d6c48a55ce58c5aa1a7fc03e85fc321a433cbeb69d9691ac5480e4f6a023274",
+   "viewBox": "180 911 199 403",
+   "trazados": 8891,
+   "degradados": 6730,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9981,
+   "error_color_medio": 2.29,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Carla/07-sorpresa.svg",
+   "bytes": 2588858,
+   "sha256": "d7efa45334cd5eec29f51b398267dd4e2a37ce9377a242efb456939739080491",
+   "viewBox": "369 911 193 403",
+   "trazados": 8755,
+   "degradados": 6626,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9989,
+   "error_color_medio": 2.11,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Carla/08-cansancio.svg",
+   "bytes": 2368124,
+   "sha256": "c69cf2d032c1e88378002962f120bf31cf536ce85681d3bf43ac9ee0fee74cdd",
+   "viewBox": "552 932 193 382",
+   "trazados": 8015,
+   "degradados": 5972,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9975,
+   "error_color_medio": 2.05,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Carla/09-ojos-cerrados.svg",
+   "bytes": 2483190,
+   "sha256": "182277c1e4107909e5e065dd46f68cb8cb9596cef65fe2196bd0f8f12a971eee",
+   "viewBox": "735 908 200 406",
+   "trazados": 8349,
+   "degradados": 6343,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9954,
+   "error_color_medio": 2.03,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Carla/10-guino.svg",
+   "bytes": 2201695,
+   "sha256": "1db690a118fb12e0ffa049fdd4c2d4f932dbfde573eb75d19fad166662a3aee6",
+   "viewBox": "924 911 198 402",
+   "trazados": 7535,
+   "degradados": 5626,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9978,
+   "error_color_medio": 2.2,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Dari.svg",
+   "bytes": 34779040,
+   "sha256": "4587752ec6f1560e4c16b5f71e792c9aaae1fbe1ff2e70188629fe0b93e51246",
+   "viewBox": "0 0 1122 1402",
+   "trazados": 123686,
+   "degradados": 87930,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0
+  },
+  {
+   "archivo": "Dari/01-frontal.svg",
+   "bytes": 5955372,
+   "sha256": "bb2f43ba89d28f9644b68231ae96492585f0880477ae8ffccd23e419c38a4e33",
+   "viewBox": "125 31 305 859",
+   "trazados": 21498,
+   "degradados": 14856,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9968,
+   "error_color_medio": 2.41,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Dari/02-tres-cuartos.svg",
+   "bytes": 5375431,
+   "sha256": "f6974d2f3989665c70ee05d879214141163e30eb6634332eb5ff7e575db9f3ab",
+   "viewBox": "415 40 248 853",
+   "trazados": 19226,
+   "degradados": 13419,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9968,
+   "error_color_medio": 2.65,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Dari/03-perfil.svg",
+   "bytes": 4094319,
+   "sha256": "f6d1094612689b9ea2c9322fb7b129def409f4b41a81ac7c9e7be718a2a40a9d",
+   "viewBox": "658 47 192 846",
+   "trazados": 14697,
+   "degradados": 10252,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9965,
+   "error_color_medio": 2.47,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Dari/04-espalda.svg",
+   "bytes": 5403207,
+   "sha256": "cbf68b296f95b8d80c18e7663c2939e9aae386580cb37aa98af7acce973886dd",
+   "viewBox": "846 47 276 839",
+   "trazados": 19722,
+   "degradados": 13222,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9969,
+   "error_color_medio": 2.13,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Dari/05-neutral.svg",
+   "bytes": 2628852,
+   "sha256": "fa63e489238bfea9b0003a0683c6440b08f930ad0b59c172f5fa9cf097e94168",
+   "viewBox": "0 952 201 342",
+   "trazados": 8991,
+   "degradados": 6756,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9965,
+   "error_color_medio": 2.72,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Dari/06-risa.svg",
+   "bytes": 2484684,
+   "sha256": "daf3be3b92914665dfa3cb2f8cd2ee202a01f04367b67e608e5cece5db103c1b",
+   "viewBox": "191 955 193 339",
+   "trazados": 8284,
+   "degradados": 6312,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9975,
+   "error_color_medio": 2.78,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Dari/07-sorpresa.svg",
+   "bytes": 2486707,
+   "sha256": "792b3ace12eed674d8d1dea8313803dcaa9133e7f0e39b18f7d697578d515f23",
+   "viewBox": "374 955 198 339",
+   "trazados": 8394,
+   "degradados": 6355,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9969,
+   "error_color_medio": 2.76,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Dari/08-cansancio.svg",
+   "bytes": 2333770,
+   "sha256": "59f761dfaca68e606d10513526e703d312a854c127584d7e125f93ef6f690661",
+   "viewBox": "555 974 193 320",
+   "trazados": 8005,
+   "degradados": 5817,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.997,
+   "error_color_medio": 2.61,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Dari/09-ojos-cerrados.svg",
+   "bytes": 2394387,
+   "sha256": "829a26c8640d4c9d1a2b83c348c7311d0e96e9c8d40e4c1d6f8f78f9c68693f1",
+   "viewBox": "738 953 193 341",
+   "trazados": 8094,
+   "degradados": 6112,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.997,
+   "error_color_medio": 2.7,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Dari/10-guino.svg",
+   "bytes": 2569708,
+   "sha256": "762eed90c16785f3b3e5b838755fd0318664f6d82268cab0dea45ef9c5ebca0a",
+   "viewBox": "921 947 201 348",
+   "trazados": 8779,
+   "degradados": 6533,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9975,
+   "error_color_medio": 2.8,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Deivi.svg",
+   "bytes": 40094698,
+   "sha256": "4ec2d1e35388ce1b225bb8b09ae4784338df3e5ce2ee8b6c43452e5f78cd076a",
+   "viewBox": "0 0 1122 1402",
+   "trazados": 151511,
+   "degradados": 95850,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 255
+  },
+  {
+   "archivo": "Deivi/01-frontal.svg",
+   "bytes": 6095950,
+   "sha256": "6aeaf6c6a747d1ed709c7eb86a14bc09ddd5704ed188c7e1ce7e23b13cd9c930",
+   "viewBox": "11 104 291 843",
+   "trazados": 23041,
+   "degradados": 14649,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9971,
+   "error_color_medio": 2.34,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Deivi/02-tres-cuartos.svg",
+   "bytes": 6205134,
+   "sha256": "d961277fa4d3041e8d62419616fa846998a46b2bcb06aba9ce7578d04c8d79c1",
+   "viewBox": "309 103 263 856",
+   "trazados": 23054,
+   "degradados": 15053,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9969,
+   "error_color_medio": 2.4,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Deivi/03-perfil.svg",
+   "bytes": 4367440,
+   "sha256": "4bf2ed6e8ada95499bfca47169100f6c17b29ea360076b7f958e3977f6db5a0d",
+   "viewBox": "604 102 180 849",
+   "trazados": 15977,
+   "degradados": 10812,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9963,
+   "error_color_medio": 2.63,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Deivi/04-espalda.svg",
+   "bytes": 6074331,
+   "sha256": "ca686db26890a936a5e9a293a1898e6e9a7fdf9bea0885cf6bd6c653e83ca3ca",
+   "viewBox": "814 103 297 844",
+   "trazados": 22852,
+   "degradados": 14379,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9968,
+   "error_color_medio": 2.11,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Deivi/05-neutral.svg",
+   "bytes": 2977384,
+   "sha256": "bf423334e3ee17d45db0aee08535b132951ab0d51e1b81358a7a801ae22b3c49",
+   "viewBox": "0 972 194 430",
+   "trazados": 11569,
+   "degradados": 6920,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 255,
+   "iou_silueta": 0.9977,
+   "error_color_medio": 1.97,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Deivi/06-risa.svg",
+   "bytes": 2954260,
+   "sha256": "1580d44d111da774a27c90b8ff96b033f36a311127e837a1d67577d51a74f9fc",
+   "viewBox": "184 971 196 431",
+   "trazados": 11161,
+   "degradados": 6856,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.998,
+   "error_color_medio": 2.04,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Deivi/07-sorpresa.svg",
+   "bytes": 2986892,
+   "sha256": "54f59bf66b1291cd94871daaaf854c75a165266fe3af315644067c0fe38af4e8",
+   "viewBox": "370 970 196 432",
+   "trazados": 11374,
+   "degradados": 6818,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9983,
+   "error_color_medio": 1.95,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Deivi/08-cansancio.svg",
+   "bytes": 3344694,
+   "sha256": "c859e06279f38101873375ecad28911368cea5b1cacd4e89e68c4ed380e1b80b",
+   "viewBox": "556 978 197 424",
+   "trazados": 11862,
+   "degradados": 8080,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9982,
+   "error_color_medio": 2.21,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Deivi/09-ojos-cerrados.svg",
+   "bytes": 2881972,
+   "sha256": "24ea5712ac94902738ba2ce15deb766c5b35ca959fedb9596b6d159a3e99211c",
+   "viewBox": "743 972 196 430",
+   "trazados": 10840,
+   "degradados": 6610,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9977,
+   "error_color_medio": 1.95,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Deivi/10-guino.svg",
+   "bytes": 2959474,
+   "sha256": "58b94057889d6eb0ce43102a4e98360d422a608b4c9a548d29c3600c0f7d7e9e",
+   "viewBox": "929 976 193 426",
+   "trazados": 11402,
+   "degradados": 6803,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 64,
+   "iou_silueta": 0.9976,
+   "error_color_medio": 1.99,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Gabacho.svg",
+   "bytes": 35348189,
+   "sha256": "ef5fa8469960f464a33d095a9fc18f988ff959e71c3ad941f9b32622de1fd24a",
+   "viewBox": "0 0 1122 1402",
+   "trazados": 126961,
+   "degradados": 88084,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0
+  },
+  {
+   "archivo": "Gabacho/01-frontal.svg",
+   "bytes": 7031502,
+   "sha256": "a7d2d509460027e5972236a918c72bd56603282583b42a4e0f5d1107e70a0902",
+   "viewBox": "122 25 323 905",
+   "trazados": 25547,
+   "degradados": 17098,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9968,
+   "error_color_medio": 2.38,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Gabacho/02-tres-cuartos.svg",
+   "bytes": 5890070,
+   "sha256": "828d381d303481b0926fb7f4aac7150b4bbf19bfa0477e7665d4674daa64d44e",
+   "viewBox": "418 28 253 904",
+   "trazados": 21271,
+   "degradados": 14462,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9972,
+   "error_color_medio": 2.64,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Gabacho/03-perfil.svg",
+   "bytes": 4525033,
+   "sha256": "d09eb3962a9e32ce638a6778e6dae21748bf5c540a8c661c18f0aa2bbc01976b",
+   "viewBox": "667 34 185 899",
+   "trazados": 16557,
+   "degradados": 11124,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9966,
+   "error_color_medio": 2.56,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Gabacho/04-espalda.svg",
+   "bytes": 5965414,
+   "sha256": "f6ce10cba58d5fa3a11cb8702c3b5e95b90d1886be36e54aae85d879a20bec08",
+   "viewBox": "845 37 277 889",
+   "trazados": 21981,
+   "degradados": 14219,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9971,
+   "error_color_medio": 2.19,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Gabacho/05-neutral.svg",
+   "bytes": 2189598,
+   "sha256": "514e99d9c668342897155249aeea0589361074f65c96315385a2a126399d8b42",
+   "viewBox": "0 970 198 328",
+   "trazados": 7480,
+   "degradados": 5605,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9939,
+   "error_color_medio": 3.14,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Gabacho/06-risa.svg",
+   "bytes": 2205228,
+   "sha256": "6b239e54bc6a04167c4acadb1e17a1ecc56d19ceb1ec1fe24265845be64cb0f1",
+   "viewBox": "187 973 198 325",
+   "trazados": 7396,
+   "degradados": 5635,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9929,
+   "error_color_medio": 3.19,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Gabacho/07-sorpresa.svg",
+   "bytes": 2129076,
+   "sha256": "5464adc14ff745f6772e8270a031c525ec8f9b22066684b8cce9516100356a7e",
+   "viewBox": "374 976 193 322",
+   "trazados": 7275,
+   "degradados": 5363,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9951,
+   "error_color_medio": 3.27,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Gabacho/08-cansancio.svg",
+   "bytes": 2073108,
+   "sha256": "624fe22e999572b428b424a7dfbf48d3f1dcb61a794efcbf99aac0953e7ef8eb",
+   "viewBox": "555 994 183 304",
+   "trazados": 6903,
+   "degradados": 5224,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9959,
+   "error_color_medio": 2.59,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Gabacho/09-ojos-cerrados.svg",
+   "bytes": 2191191,
+   "sha256": "e46b31b522bcd368317f186d48f996b22cdd8842e2f496a8d09b845b09bf1ca9",
+   "viewBox": "727 975 201 323",
+   "trazados": 7391,
+   "degradados": 5584,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9945,
+   "error_color_medio": 3.09,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Gabacho/10-guino.svg",
+   "bytes": 2200523,
+   "sha256": "f93b03f99e5f6d06a76785401b0b2606fc4bb1755f88ded60ba1e42a6497614a",
+   "viewBox": "918 972 204 326",
+   "trazados": 7475,
+   "degradados": 5621,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9928,
+   "error_color_medio": 2.96,
+   "piezas_sueltas": 1
+  },
+  {
+   "archivo": "Guillermo-Aladro.svg",
+   "bytes": 36968496,
+   "sha256": "7f9aa50c54e63bd8076d0c9c779e1d84d24e84e98866d604dd2025e032aeb176",
+   "viewBox": "0 0 1122 1402",
+   "trazados": 125859,
+   "degradados": 87822,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0
+  },
+  {
+   "archivo": "Guillermo-Aladro/01-frontal.svg",
+   "bytes": 7252620,
+   "sha256": "0c8aef42ec9a77f14a75071564fd6c3f5a4371104b8ed12bb63a2cafed36463a",
+   "viewBox": "92 82 351 919",
+   "trazados": 25163,
+   "degradados": 17159,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9949,
+   "error_color_medio": 2.43,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Guillermo-Aladro/02-tres-cuartos.svg",
+   "bytes": 6245038,
+   "sha256": "c1d679c0ff9a8587b5e2c715643a4f726f01750687b1f8f947f7980288e0f3d9",
+   "viewBox": "413 83 256 914",
+   "trazados": 21126,
+   "degradados": 14558,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9947,
+   "error_color_medio": 2.9,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Guillermo-Aladro/03-perfil.svg",
+   "bytes": 4654321,
+   "sha256": "d18c2a9c4dd6c7c05340bbdaec80a280fa756e2f7e7765d0d5c1fd8981a84f56",
+   "viewBox": "654 94 195 904",
+   "trazados": 16298,
+   "degradados": 11173,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9943,
+   "error_color_medio": 2.86,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Guillermo-Aladro/04-espalda.svg",
+   "bytes": 6006997,
+   "sha256": "72509a5a01713867a46220ef248ff8bfa8fdeb98a144d67dc4ee59a9b832660c",
+   "viewBox": "827 85 295 911",
+   "trazados": 21163,
+   "degradados": 14028,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9948,
+   "error_color_medio": 2.41,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Guillermo-Aladro/05-neutral.svg",
+   "bytes": 2067851,
+   "sha256": "cfd59f180af66ab7f5312837ef2988dde32ca97705b252bbbf6c6c2b75341e9d",
+   "viewBox": "0 1014 208 318",
+   "trazados": 6926,
+   "degradados": 5069,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9945,
+   "error_color_medio": 2.69,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Guillermo-Aladro/06-risa.svg",
+   "bytes": 2288228,
+   "sha256": "bebe47d6e5d0b2a3c8a49860309b034bd8d7f08b909241d65f909d6d741bbc5a",
+   "viewBox": "164 1022 230 310",
+   "trazados": 7428,
+   "degradados": 5568,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.997,
+   "error_color_medio": 2.85,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Guillermo-Aladro/07-sorpresa.svg",
+   "bytes": 2235640,
+   "sha256": "d1039faf1b64e7de59d59d1a04f97e6e23aeabd11cf88c7cdaef037c34c790c2",
+   "viewBox": "352 1020 214 312",
+   "trazados": 7240,
+   "degradados": 5340,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9977,
+   "error_color_medio": 2.85,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Guillermo-Aladro/08-cansancio.svg",
+   "bytes": 2453526,
+   "sha256": "374148ef8cd2d65ede915d2a3238fb4ab29cf789cf9e61bde539bf35c1d11f42",
+   "viewBox": "525 1032 222 301",
+   "trazados": 7832,
+   "degradados": 5853,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9963,
+   "error_color_medio": 2.82,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Guillermo-Aladro/09-ojos-cerrados.svg",
+   "bytes": 2192091,
+   "sha256": "3791bd37f1fc63edbab260c3498ad5404532a1022ce238f4d9289a9c13fec03e",
+   "viewBox": "720 1022 213 310",
+   "trazados": 6857,
+   "degradados": 5131,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9976,
+   "error_color_medio": 2.58,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Guillermo-Aladro/10-ceno-fruncido.svg",
+   "bytes": 2177868,
+   "sha256": "5f0e547a6742295224f426ff99769a607fc8888c3c22a3725fbbac53938c2d56",
+   "viewBox": "901 1017 221 315",
+   "trazados": 7031,
+   "degradados": 5063,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9972,
+   "error_color_medio": 2.73,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Kiriku.svg",
+   "bytes": 30306893,
+   "sha256": "4ae1bcd9222c448d91f251a964ade0bca6dbb62d699e8f71ce02f7b551d51a30",
+   "viewBox": "0 0 1122 1402",
+   "trazados": 110634,
+   "degradados": 74300,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0
+  },
+  {
+   "archivo": "Kiriku/01-frontal.svg",
+   "bytes": 5283798,
+   "sha256": "ac2c5ed8a0c9ae67820ef8229a71880f48ff9c657194c523e5142bb3e6eff5c8",
+   "viewBox": "130 47 297 857",
+   "trazados": 19353,
+   "degradados": 12945,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9973,
+   "error_color_medio": 2.22,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Kiriku/02-tres-cuartos.svg",
+   "bytes": 4811719,
+   "sha256": "044fa190ef987937188925651c4c560a4b9b7716317df544db50162288cfc005",
+   "viewBox": "404 53 260 850",
+   "trazados": 17581,
+   "degradados": 11663,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9963,
+   "error_color_medio": 2.46,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Kiriku/03-perfil.svg",
+   "bytes": 3900098,
+   "sha256": "96a6e82d54e4cdf77cb78f2468e2ffe11e3b59db320d524f90a6092aa91cfc68",
+   "viewBox": "652 60 194 844",
+   "trazados": 14327,
+   "degradados": 9429,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9968,
+   "error_color_medio": 2.47,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Kiriku/04-espalda.svg",
+   "bytes": 4587660,
+   "sha256": "a9fa897507dd711e75773b5eed4267bbcb870a25280e7c9a23d5d4ae9b0dc853",
+   "viewBox": "851 51 271 846",
+   "trazados": 17320,
+   "degradados": 10911,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9971,
+   "error_color_medio": 2.12,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Kiriku/05-neutral.svg",
+   "bytes": 2035848,
+   "sha256": "f5e373ace512edf71db17b5e6a9db1b8a556a76e47a454b8b1600bc18a4d9955",
+   "viewBox": "0 948 192 398",
+   "trazados": 7308,
+   "degradados": 4995,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9971,
+   "error_color_medio": 2.21,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Kiriku/06-risa.svg",
+   "bytes": 2257160,
+   "sha256": "81e7a9e79c7f998edd4e758dd15217ef7132b56e31af24e7f4bdf00269dc5075",
+   "viewBox": "160 948 213 398",
+   "trazados": 7894,
+   "degradados": 5617,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9976,
+   "error_color_medio": 2.16,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Kiriku/07-sorpresa.svg",
+   "bytes": 2076895,
+   "sha256": "f05b79737bfb45b6b8b4372c6d32d4d59fd92d63adddd93e00c965c5a4ef20f8",
+   "viewBox": "352 948 198 398",
+   "trazados": 7259,
+   "degradados": 5099,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9987,
+   "error_color_medio": 2.09,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Kiriku/08-cansancio.svg",
+   "bytes": 2247593,
+   "sha256": "652ac581ada2f0671e1f83046fe2a22f487df95f6ca253c6c0753d50b8bb1000",
+   "viewBox": "533 970 216 377",
+   "trazados": 7824,
+   "degradados": 5470,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9968,
+   "error_color_medio": 2.09,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Kiriku/09-ojos-cerrados.svg",
+   "bytes": 2047247,
+   "sha256": "ca8ccb2582b7bd9718dec7d194eab788852472fa72366351a16a30f0ae7bf1d2",
+   "viewBox": "732 948 204 399",
+   "trazados": 7103,
+   "degradados": 4984,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9991,
+   "error_color_medio": 1.95,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Kiriku/10-guino.svg",
+   "bytes": 1984137,
+   "sha256": "8293e598ed452c6eeb0bb5d8815136f2463d79e52db2bf7869529c06f67dcbd3",
+   "viewBox": "920 954 202 392",
+   "trazados": 7006,
+   "degradados": 4929,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9987,
+   "error_color_medio": 2.18,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Laura.svg",
+   "bytes": 39172078,
+   "sha256": "b2d17726a317be83a3255d2891a50e71db57cc648b8e309ca8df67b1dcbd983b",
+   "viewBox": "0 0 1122 1402",
+   "trazados": 145861,
+   "degradados": 93518,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 255
+  },
+  {
+   "archivo": "Laura/01-frontal.svg",
+   "bytes": 6307978,
+   "sha256": "1d5f8c43ac71525ba7d0c7eb671b925619335bda5119091a72ff0a08c3706331",
+   "viewBox": "138 32 300 883",
+   "trazados": 23020,
+   "degradados": 15438,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9973,
+   "error_color_medio": 2.38,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Laura/02-tres-cuartos.svg",
+   "bytes": 5342099,
+   "sha256": "0c6547fd342e1956e472e3733d08946bb4a5f98824f3cbe769e0354138027b78",
+   "viewBox": "418 37 229 874",
+   "trazados": 19144,
+   "degradados": 13146,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9973,
+   "error_color_medio": 2.75,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Laura/03-perfil.svg",
+   "bytes": 4480862,
+   "sha256": "83b15f82b5238b5e9e668f9b9d38528cddd4baeb4679a47a99b4792d421e500e",
+   "viewBox": "650 40 204 871",
+   "trazados": 16417,
+   "degradados": 10885,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9968,
+   "error_color_medio": 2.47,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Laura/04-espalda.svg",
+   "bytes": 6223575,
+   "sha256": "01f594c831f2afb5c1184bcf16caf83e45ad0242673c50bb4e9f23668f237b26",
+   "viewBox": "867 40 255 870",
+   "trazados": 22461,
+   "degradados": 15258,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9961,
+   "error_color_medio": 2.5,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Laura/05-neutral.svg",
+   "bytes": 3092827,
+   "sha256": "466bdd586efbc86a38db7c7faf768e23bf33e8e141fc7ee9f9ad64dd85634102",
+   "viewBox": "0 941 197 461",
+   "trazados": 11805,
+   "degradados": 7110,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 255,
+   "iou_silueta": 0.9988,
+   "error_color_medio": 1.79,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Laura/06-risa.svg",
+   "bytes": 3161794,
+   "sha256": "7f73487c521d8e2d882d4e6119e4e57e0577b5fe1fa9e71326b0aed72395187b",
+   "viewBox": "179 944 202 458",
+   "trazados": 11905,
+   "degradados": 7389,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9974,
+   "error_color_medio": 1.86,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Laura/07-sorpresa.svg",
+   "bytes": 3146136,
+   "sha256": "0d61403049c5b09c67166d4c9699b974592d709f08168169b1e3f2d3aa07fb57",
+   "viewBox": "365 942 202 460",
+   "trazados": 11711,
+   "degradados": 7243,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9984,
+   "error_color_medio": 1.92,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Laura/08-cansancio.svg",
+   "bytes": 3058831,
+   "sha256": "b54808ab1a91992c78a87932f400e86558f0ba45635cc6027a8a53f702c710e4",
+   "viewBox": "553 964 200 438",
+   "trazados": 11514,
+   "degradados": 6839,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9985,
+   "error_color_medio": 1.54,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Laura/09-ojos-cerrados.svg",
+   "bytes": 2957688,
+   "sha256": "1805bb1ee003377b54f591ada9385fca1b717171c37a1fe13bce4aa4a0c9bfb4",
+   "viewBox": "737 947 206 455",
+   "trazados": 10984,
+   "degradados": 6708,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9992,
+   "error_color_medio": 1.75,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Laura/10-guino.svg",
+   "bytes": 2951072,
+   "sha256": "a28b6657a847535456ba4b22f784406cefb7c8d5a5b58e0e0afa86ad6725044a",
+   "viewBox": "926 945 196 457",
+   "trazados": 11356,
+   "degradados": 6675,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 80,
+   "iou_silueta": 0.9992,
+   "error_color_medio": 1.69,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Marcos-Bombero.svg",
+   "bytes": 32398485,
+   "sha256": "5510b9d43f0c65e72a2a789ada5bd4cffab95044c8ea2cb0073bd2735da58c0c",
+   "viewBox": "0 0 1071 1469",
+   "trazados": 114899,
+   "degradados": 82970,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0
+  },
+  {
+   "archivo": "Marcos-Bombero/01-frontal.svg",
+   "bytes": 5413373,
+   "sha256": "3553673417e4c9318d7ff1808cfaf5779b4d1fc0f6b25820d0768d46e9b51550",
+   "viewBox": "0 127 309 856",
+   "trazados": 19110,
+   "degradados": 13822,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9979,
+   "error_color_medio": 2.88,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Marcos-Bombero/02-tres-cuartos.svg",
+   "bytes": 4956919,
+   "sha256": "1dee832bf741279cc0e6040e82d397b9b7829183a16235e64c35034098ef2061",
+   "viewBox": "265 123 277 871",
+   "trazados": 17402,
+   "degradados": 12531,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.997,
+   "error_color_medio": 2.94,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Marcos-Bombero/03-perfil.svg",
+   "bytes": 3756509,
+   "sha256": "b7e1cd87ff0bfd402568fc024dea623506ba83f4bcbefc2d4d74f983844f8309",
+   "viewBox": "520 124 251 867",
+   "trazados": 13191,
+   "degradados": 9545,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9969,
+   "error_color_medio": 3.08,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Marcos-Bombero/04-espalda.svg",
+   "bytes": 3788925,
+   "sha256": "bf386ab4de1afe9bcca016b54958e945e2e849d9757df57cba6715c720e47146",
+   "viewBox": "759 123 312 860",
+   "trazados": 13594,
+   "degradados": 9733,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9971,
+   "error_color_medio": 3.01,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Marcos-Bombero/05-neutral.svg",
+   "bytes": 2571197,
+   "sha256": "98c98a2a44c112226955d7ee33267aa3b23b69cc96fbdeacb3b915e9d64bbca4",
+   "viewBox": "0 1001 182 467",
+   "trazados": 9035,
+   "degradados": 6519,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9986,
+   "error_color_medio": 2.73,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Marcos-Bombero/06-risa.svg",
+   "bytes": 2715888,
+   "sha256": "1ed1ff746d1519d46898d259123031983135b80c6fe6221e392a08d58cda87d0",
+   "viewBox": "172 1001 191 467",
+   "trazados": 9384,
+   "degradados": 6924,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9974,
+   "error_color_medio": 2.95,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Marcos-Bombero/07-sorpresa.svg",
+   "bytes": 2529910,
+   "sha256": "fc3373658d5d8283e44d1b094e09cd141cc3a68a00b00471b8d2bba3961b6953",
+   "viewBox": "355 1001 183 467",
+   "trazados": 8634,
+   "degradados": 6388,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9988,
+   "error_color_medio": 2.91,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Marcos-Bombero/08-cansancio.svg",
+   "bytes": 2894006,
+   "sha256": "ca11e7ee173311465234b6d68c006cfff48f97d772f4b2737fbdc45bf7ab7466",
+   "viewBox": "516 1013 203 455",
+   "trazados": 9965,
+   "degradados": 7230,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9988,
+   "error_color_medio": 2.78,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Marcos-Bombero/09-ojos-cerrados.svg",
+   "bytes": 2655292,
+   "sha256": "eecce0065173644b0fcc3f5748e104809323da1f4dc576b428f00888b9036efe",
+   "viewBox": "710 1002 188 466",
+   "trazados": 9051,
+   "degradados": 6601,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9986,
+   "error_color_medio": 2.88,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Marcos-Bombero/10-guino.svg",
+   "bytes": 2542007,
+   "sha256": "f1fdbdaa444560ec76064da2f78c15d70b59b6f2bb2daf5af74018bfcc7c1a6f",
+   "viewBox": "889 1003 182 464",
+   "trazados": 8835,
+   "degradados": 6419,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9984,
+   "error_color_medio": 2.83,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Marta.svg",
+   "bytes": 41248282,
+   "sha256": "f6b6c81bb2a61c857899c4047f7386ae1d605ecf190377beb0aae55cadc04a06",
+   "viewBox": "0 0 1122 1402",
+   "trazados": 146415,
+   "degradados": 104211,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0
+  },
+  {
+   "archivo": "Marta/01-frontal.svg",
+   "bytes": 7299715,
+   "sha256": "0908e3266ab4e74d49ce5c27ab8044b2a0a75f6c76fac91f161e8114213e1242",
+   "viewBox": "109 26 322 853",
+   "trazados": 26122,
+   "degradados": 18357,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9972,
+   "error_color_medio": 2.85,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Marta/02-tres-cuartos.svg",
+   "bytes": 6366541,
+   "sha256": "f66cfe0967e5cdbfbb60e75a1cce07e1c5e880cb18dd816de281aa012c2e9c20",
+   "viewBox": "408 29 234 847",
+   "trazados": 22481,
+   "degradados": 15879,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9971,
+   "error_color_medio": 3.06,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Marta/03-perfil.svg",
+   "bytes": 5025308,
+   "sha256": "20530605ee58a5e748a3d674dfdd9cb915f29fa1f8d23fdaced3745269570cce",
+   "viewBox": "648 30 199 850",
+   "trazados": 17959,
+   "degradados": 12767,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9967,
+   "error_color_medio": 3.11,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Marta/04-espalda.svg",
+   "bytes": 6937950,
+   "sha256": "25696b27279091594f4b96295635a2704f01ffbe29c553f1b8f1d03b8fa39ded",
+   "viewBox": "846 30 271 845",
+   "trazados": 24527,
+   "degradados": 17516,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.997,
+   "error_color_medio": 2.95,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Marta/05-neutral.svg",
+   "bytes": 2818939,
+   "sha256": "133d1c4a94c5512cf0b0c1fccf6e6faff567e2c8c8e6ede04de78a5b7d1b6917",
+   "viewBox": "0 925 200 417",
+   "trazados": 9988,
+   "degradados": 7103,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9986,
+   "error_color_medio": 2.01,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Marta/06-risa.svg",
+   "bytes": 2677660,
+   "sha256": "8542c6f03db7e08b9616f0adace945893107dc4f76ca8c6bf7e898dd6f3e9115",
+   "viewBox": "191 927 196 415",
+   "trazados": 9166,
+   "degradados": 6730,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9977,
+   "error_color_medio": 1.93,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Marta/07-sorpresa.svg",
+   "bytes": 2708326,
+   "sha256": "05079d0cf7c022466dd42d04d908e330d3280f76709f38b6637e73fa24cda52f",
+   "viewBox": "378 930 190 412",
+   "trazados": 9320,
+   "degradados": 6780,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9983,
+   "error_color_medio": 2.02,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Marta/08-cansancio.svg",
+   "bytes": 2802337,
+   "sha256": "29c89a7e78118c2f5a5f181df2c84f87f3290d3c7b28195094511096d842995f",
+   "viewBox": "559 943 190 399",
+   "trazados": 9604,
+   "degradados": 7042,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9982,
+   "error_color_medio": 2.25,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Marta/09-ojos-cerrados.svg",
+   "bytes": 2575959,
+   "sha256": "2e3f682559fba68c47f71378d6ac0392154d6360c4dbc77397eff43d8568fe53",
+   "viewBox": "741 934 190 408",
+   "trazados": 8687,
+   "degradados": 6337,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9988,
+   "error_color_medio": 1.89,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Marta/10-guino.svg",
+   "bytes": 2901168,
+   "sha256": "780a2975f4c1d7f3f7b09047254c7f842e7e6093913b24f40f077f614402785b",
+   "viewBox": "922 926 200 416",
+   "trazados": 10350,
+   "degradados": 7216,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9989,
+   "error_color_medio": 1.95,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Paradigma.svg",
+   "bytes": 32460978,
+   "sha256": "6d6a2212524121c88d27a0c3a9e13ae9c58f95b24f6c6ce53f0c422e349683be",
+   "viewBox": "0 0 1122 1402",
+   "trazados": 117322,
+   "degradados": 82006,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0
+  },
+  {
+   "archivo": "Paradigma/01-frontal.svg",
+   "bytes": 5626256,
+   "sha256": "fc0e864142a21c354f230971f03f0226b27c3192dbd1fed88fd6b759ecc50c3a",
+   "viewBox": "132 27 308 864",
+   "trazados": 20572,
+   "degradados": 14122,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9967,
+   "error_color_medio": 2.46,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Paradigma/02-tres-cuartos.svg",
+   "bytes": 4309303,
+   "sha256": "cf1d267424534c46b7b8bb62f5cbbac01bb6059b92e6ea2e299cdc0fec52650c",
+   "viewBox": "422 26 229 868",
+   "trazados": 15661,
+   "degradados": 10941,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9971,
+   "error_color_medio": 2.9,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Paradigma/03-perfil.svg",
+   "bytes": 3849764,
+   "sha256": "e9e0b77f78e52d360935eaaf94750f1d901055ebb38a4876cb52b4c55111ada7",
+   "viewBox": "654 30 193 866",
+   "trazados": 14102,
+   "degradados": 9750,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9961,
+   "error_color_medio": 2.75,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Paradigma/04-espalda.svg",
+   "bytes": 4739366,
+   "sha256": "02f4ef39496626df05f1b7570748cc806c2568ff0104745523d25ab890d3aa03",
+   "viewBox": "847 30 275 859",
+   "trazados": 17973,
+   "degradados": 11473,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9975,
+   "error_color_medio": 2.45,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Paradigma/05-neutral.svg",
+   "bytes": 2640378,
+   "sha256": "3a24d9fc17a72259fc44fd2a04c0c540157424c5af2593fe3306be22d820c66e",
+   "viewBox": "0 926 207 370",
+   "trazados": 9205,
+   "degradados": 6687,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.998,
+   "error_color_medio": 2.25,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Paradigma/06-risa.svg",
+   "bytes": 2698707,
+   "sha256": "e4f93d1a521c7317004c9d3dbba4f3ddb022185045d163d2ae68d325181e3d40",
+   "viewBox": "187 932 209 364",
+   "trazados": 9238,
+   "degradados": 6903,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9979,
+   "error_color_medio": 2.35,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Paradigma/07-sorpresa.svg",
+   "bytes": 2510773,
+   "sha256": "b5bf4fa6cd301eeb0d3149f6934cdd37a8ec336244c5187e6cb2cac895c169a7",
+   "viewBox": "370 936 197 360",
+   "trazados": 8662,
+   "degradados": 6362,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9979,
+   "error_color_medio": 2.32,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Paradigma/08-cansancio.svg",
+   "bytes": 2419499,
+   "sha256": "d34f337cc22d9802bcf8082f2d9cdacddc753ace272f180e3049d720d1ffe4f2",
+   "viewBox": "553 963 205 333",
+   "trazados": 8304,
+   "degradados": 6049,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.998,
+   "error_color_medio": 2.26,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Paradigma/09-ojos-cerrados.svg",
+   "bytes": 2377523,
+   "sha256": "b1fdfe1d58508e1732fc647e80bdc8a30e95043f0f6d89177b2382562642335b",
+   "viewBox": "747 938 188 358",
+   "trazados": 8068,
+   "degradados": 5952,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9982,
+   "error_color_medio": 2.24,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Paradigma/10-guino.svg",
+   "bytes": 2421665,
+   "sha256": "2338cd38b792155b3de93fc2426b53be6d73ee08298aeaa3e344b2216a1126b6",
+   "viewBox": "924 937 198 359",
+   "trazados": 8345,
+   "degradados": 6102,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9976,
+   "error_color_medio": 2.42,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Rodri.svg",
+   "bytes": 34766266,
+   "sha256": "e93c879ab9415f1b1f4dd1d2b5f5db47629afc56c7b0c7422375c7496f74f046",
+   "viewBox": "0 0 1122 1402",
+   "trazados": 123273,
+   "degradados": 87854,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0
+  },
+  {
+   "archivo": "Rodri/01-frontal.svg",
+   "bytes": 6254296,
+   "sha256": "5a170f3f023b8b8f38e9ef046d02f4f442d3c18fc15000cd72652b0548c77c10",
+   "viewBox": "117 46 307 850",
+   "trazados": 22436,
+   "degradados": 15651,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9978,
+   "error_color_medio": 2.46,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Rodri/02-tres-cuartos.svg",
+   "bytes": 5532172,
+   "sha256": "2c128444b9ecd3dc3210717eb2ee1c26e9d903850a116e4f7e04f3245bce8501",
+   "viewBox": "410 45 256 853",
+   "trazados": 19525,
+   "degradados": 13952,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9973,
+   "error_color_medio": 2.8,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Rodri/03-perfil.svg",
+   "bytes": 4307757,
+   "sha256": "9c73ac37aac17076a596df77d9979143a90aa58fca8836e9564d295e014e53b8",
+   "viewBox": "656 54 197 841",
+   "trazados": 15323,
+   "degradados": 10754,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9966,
+   "error_color_medio": 2.67,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Rodri/04-espalda.svg",
+   "bytes": 5338467,
+   "sha256": "cc12b6c45d40039d576b7bc6e20fb28383db2fb73e7ca6300ef0367c7b239859",
+   "viewBox": "843 54 279 833",
+   "trazados": 19271,
+   "degradados": 13116,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9974,
+   "error_color_medio": 2.35,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Rodri/05-neutral.svg",
+   "bytes": 2379331,
+   "sha256": "34ef9acf9b9ca5cc4e19e4fbcf33b3e5f483d7221de8d07056a3194b88a09d74",
+   "viewBox": "0 963 197 338",
+   "trazados": 8174,
+   "degradados": 6030,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9975,
+   "error_color_medio": 2.77,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Rodri/06-risa.svg",
+   "bytes": 2463815,
+   "sha256": "b992cc3a25b9c9bece9b965648e6a0cbb7055b38ea4f631325c267d38531255f",
+   "viewBox": "185 960 198 341",
+   "trazados": 8388,
+   "degradados": 6236,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9965,
+   "error_color_medio": 2.66,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Rodri/07-sorpresa.svg",
+   "bytes": 2390886,
+   "sha256": "76dc2e7bc53eeda29b5f39c0fe105800e492128d1ac942752d4f2c4575067a0f",
+   "viewBox": "372 961 194 340",
+   "trazados": 8109,
+   "degradados": 5997,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9984,
+   "error_color_medio": 2.6,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Rodri/08-cansancio.svg",
+   "bytes": 2365937,
+   "sha256": "bc2c131ac113b5204e2b567dfa2172dd727323f0ad668d89419ddbf25e5714f3",
+   "viewBox": "556 977 196 324",
+   "trazados": 7951,
+   "degradados": 5983,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9983,
+   "error_color_medio": 2.71,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Rodri/09-ojos-cerrados.svg",
+   "bytes": 2356443,
+   "sha256": "6f6b134f63c03a35f1846f223d4296261138b8518e6ec82148114ef67c0818d5",
+   "viewBox": "741 968 195 333",
+   "trazados": 8068,
+   "degradados": 5926,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9977,
+   "error_color_medio": 2.56,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Rodri/10-guino.svg",
+   "bytes": 2346347,
+   "sha256": "d3dcee9994b0d43c78bbfb91100055ff33baf5da0fd97e31c11f92bdd61d6319",
+   "viewBox": "926 965 196 336",
+   "trazados": 8034,
+   "degradados": 5921,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9983,
+   "error_color_medio": 2.55,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Sara-Saez.svg",
+   "bytes": 25752411,
+   "sha256": "b6bd3c3c276bb1a68df789e7da539de2129c79ab669a165684b2fef4f9022656",
+   "viewBox": "0 0 1122 1402",
+   "trazados": 97665,
+   "degradados": 60313,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0
+  },
+  {
+   "archivo": "Sara-Saez/01-frontal.svg",
+   "bytes": 3227825,
+   "sha256": "99f5f9b91e98a812c5c8bde0f018af83fdd24da20586a98091638c55c7ed8264",
+   "viewBox": "118 51 273 806",
+   "trazados": 12124,
+   "degradados": 7844,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9973,
+   "error_color_medio": 2.47,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Sara-Saez/02-tres-cuartos.svg",
+   "bytes": 3006702,
+   "sha256": "e9e56edae3befa853c7cf74758dfaf7df12e948b2776c25df9655a7bec6419eb",
+   "viewBox": "398 46 253 815",
+   "trazados": 11441,
+   "degradados": 7061,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9959,
+   "error_color_medio": 2.48,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Sara-Saez/03-perfil.svg",
+   "bytes": 2231535,
+   "sha256": "1b1dec73bdea15845f0625ac95eb7d2744995487fb8e85f8dc51480451525552",
+   "viewBox": "645 48 187 815",
+   "trazados": 8617,
+   "degradados": 5147,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9966,
+   "error_color_medio": 2.26,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Sara-Saez/04-espalda.svg",
+   "bytes": 2670610,
+   "sha256": "7156ac51e8dce8a26f697091c81bf9ea7d5f9c3635284d1325e0fe443ad9d19e",
+   "viewBox": "859 48 256 803",
+   "trazados": 10428,
+   "degradados": 6079,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9968,
+   "error_color_medio": 2.32,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Sara-Saez/05-neutral.svg",
+   "bytes": 2547062,
+   "sha256": "29da9d3f4c2a135324632eb764affb2adc088921c5f0b5f557d41af93dc90d4c",
+   "viewBox": "0 902 192 445",
+   "trazados": 9515,
+   "degradados": 5816,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.999,
+   "error_color_medio": 1.87,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Sara-Saez/06-risa.svg",
+   "bytes": 2731751,
+   "sha256": "4b2a15e703b5e382188262971030282fa257927b3fa87513ab6f171b5458ffb9",
+   "viewBox": "180 903 200 444",
+   "trazados": 10030,
+   "degradados": 6306,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9989,
+   "error_color_medio": 1.87,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Sara-Saez/07-sorpresa.svg",
+   "bytes": 2602182,
+   "sha256": "0fa1ddd4450c7347d567261b9a1fb810ada09699ba8df6a9f120918daab4bc0d",
+   "viewBox": "368 900 198 447",
+   "trazados": 9550,
+   "degradados": 6015,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9993,
+   "error_color_medio": 1.9,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Sara-Saez/08-cansancio.svg",
+   "bytes": 2343414,
+   "sha256": "d74654b7d972e124fbd33ad0926d0ee222112874575503a46c5bee23e4073a5d",
+   "viewBox": "555 921 193 425",
+   "trazados": 8608,
+   "degradados": 5399,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9998,
+   "error_color_medio": 1.89,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Sara-Saez/09-ojos-cerrados.svg",
+   "bytes": 2603891,
+   "sha256": "647ec9cfb87e34011afa143d25b87d99e309a6ae59f90849b0e4557bf8e093c5",
+   "viewBox": "736 902 199 444",
+   "trazados": 9515,
+   "degradados": 6000,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9992,
+   "error_color_medio": 1.96,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Sara-Saez/10-guino.svg",
+   "bytes": 2535785,
+   "sha256": "ff67ac582958efde47fb66b56e29f767befc4201d3c9041d51835db9042d3896",
+   "viewBox": "923 901 199 445",
+   "trazados": 9663,
+   "degradados": 5808,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9989,
+   "error_color_medio": 1.83,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Yorgi.svg",
+   "bytes": 29600544,
+   "sha256": "0be8827a3d78d17d2ad9856648c9a2470af1e0eb6608ee92974ee95f5774122d",
+   "viewBox": "0 0 1122 1402",
+   "trazados": 106711,
+   "degradados": 72712,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0
+  },
+  {
+   "archivo": "Yorgi/01-frontal.svg",
+   "bytes": 5026314,
+   "sha256": "17a78ed1130ad42a89be3b4cfb33f58b65833d366e43942919696acd088e2bee",
+   "viewBox": "137 30 296 827",
+   "trazados": 18621,
+   "degradados": 12108,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9973,
+   "error_color_medio": 2.24,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Yorgi/02-tres-cuartos.svg",
+   "bytes": 4663555,
+   "sha256": "7024c9e2de791ae08e797728241e34ae8927192065bef9e6a607b4b563d13a7b",
+   "viewBox": "420 35 248 820",
+   "trazados": 17246,
+   "degradados": 11209,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9964,
+   "error_color_medio": 2.47,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Yorgi/03-perfil.svg",
+   "bytes": 3735751,
+   "sha256": "493024ebbf9aedb74849282f8a6ca71ead1cd8134e19d229efd880d9481bdefb",
+   "viewBox": "668 39 178 817",
+   "trazados": 13700,
+   "degradados": 9170,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9969,
+   "error_color_medio": 2.51,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Yorgi/04-espalda.svg",
+   "bytes": 4534777,
+   "sha256": "3f8088861b7f7bf3927aefe5feb774fa14c744e94c1c7283556d44fef2511f80",
+   "viewBox": "852 37 270 811",
+   "trazados": 17092,
+   "degradados": 10654,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.997,
+   "error_color_medio": 2.03,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Yorgi/05-neutral.svg",
+   "bytes": 2018712,
+   "sha256": "f465465d70a07dda30736f79359193598113073882c99438d20313534d8f4e4d",
+   "viewBox": "0 907 202 368",
+   "trazados": 6959,
+   "degradados": 5004,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9982,
+   "error_color_medio": 2.69,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Yorgi/06-risa.svg",
+   "bytes": 2396363,
+   "sha256": "d67f226e1be4d26325e24fec334582037812d3d856a7bc4b4c3ff37ba048df02",
+   "viewBox": "167 910 223 365",
+   "trazados": 8015,
+   "degradados": 5982,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9971,
+   "error_color_medio": 2.85,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Yorgi/07-sorpresa.svg",
+   "bytes": 2267222,
+   "sha256": "9b57df847d08e2b409d12dbbea11f8821b303e8a7ef01783ed779da51d9d827f",
+   "viewBox": "344 910 213 364",
+   "trazados": 7602,
+   "degradados": 5674,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9984,
+   "error_color_medio": 3.05,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Yorgi/08-cansancio.svg",
+   "bytes": 2282832,
+   "sha256": "949e44f03e85bc7ae5ff69aa781ad366d5f85ddb743901dc26c29b826ae3a62d",
+   "viewBox": "522 939 223 335",
+   "trazados": 7614,
+   "degradados": 5745,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9986,
+   "error_color_medio": 2.44,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Yorgi/09-ojos-cerrados.svg",
+   "bytes": 2061411,
+   "sha256": "553ad7e6bdbbb4a33624f3b062590467aadb32c6361a2b6d608ecffe99ae71de",
+   "viewBox": "722 911 204 364",
+   "trazados": 6803,
+   "degradados": 5131,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9969,
+   "error_color_medio": 2.42,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Yorgi/10-guino.svg",
+   "bytes": 2113228,
+   "sha256": "0875a8c7c27a7569c1553764394692fe2ded2849654366b19a679b5ee15bcc7d",
+   "viewBox": "910 912 212 363",
+   "trazados": 7188,
+   "degradados": 5234,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9982,
+   "error_color_medio": 2.36,
+   "piezas_sueltas": 0
+  }
+ ]
+}
