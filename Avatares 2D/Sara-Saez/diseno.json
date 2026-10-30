@@ -1,0 +1,25 @@
+{
+  "character": "Sara Sáez",
+  "date": "2026-10-30",
+  "status": "single_design_created",
+  "file": "Sara-Saez-2D.png",
+  "width": 1122,
+  "height": 1402,
+  "sha256": "956cd3ebaf6dc43efc8926ff0fc452989b82c225d280d426382508f751d661f3",
+  "generation_method": "Built-in image_gen; one final design",
+  "source_commit": "ba984b3dfbb10e382b87d1f87adf7880fd54dd97",
+  "source_svg": {
+    "path": "avatares SVG - Astra/Sara-Saez.svg",
+    "git_blob": "7862f1eb1b04392c0c8c3e1f6eb5a2f6190e35c9"
+  },
+  "input_svg_preview": {
+    "path": "avatares SVG - Astra/Sara-Saez-preview.png",
+    "git_blob": "171b510a537e061d6ad6fc58c2cb7d17e8721e8d"
+  },
+  "style_references": [
+    "../Guillermo-Aladro/Guillermo-Aladro-2D.png",
+    "../Ander/Ander-2D.png"
+  ],
+  "prompt": "Use case: stylized-concept.\nCreate ONE final 2D character-design sheet for the named person in this request, part of a coherent avatar collection. Render the person's own recognisable identity in the user's selected classic Dragon Ball-inspired cel-animation style.\nINPUT ROLES:\nImage 1 is the CURRENT approved SVG model-sheet preview of THIS PERSON, exported from the repository. It is the only reference for identity, facial proportions, hair, body, clothing and personal accessories. It contains multiple views and facial expressions; redraw one consistent design. Ignore its black preview background.\nImage 2 is the chosen Guillermo Aladro 03 design: STYLE ONLY, especially classic anime facial construction and cel shading.\nImage 3 is the chosen Ander 04 design: STYLE ONLY, especially confident thick outer ink, thinner interior lines and broad clear shadow shapes.\nNever transfer either style-reference man's face, hairstyle, beard, body, clothes or accessories to this person. Preserve the person in Image 1, including their adult age appearance and feminine or masculine features as shown.\nStyle: unmistakable hand-drawn 2D anime, classic Dragon Ball cel-animation language with semirealistic likeness. Expressive stylized eyes, individual eyebrow/nose/mouth/jaw construction; hair grouped into readable illustrated shapes while preserving the actual length, curl pattern and silhouette; confident dark contours with controlled line weight; flat local colors with 1-2 crisp cel shadows per material. No photorealistic skin, no 3D, no painterly effects or dramatic colored lights. No generic Goku or Vegeta face.\nComposition: portrait 4:5 sheet, plain warm-white background. At left show ONE complete full-body standing frontal three-quarter figure, natural relaxed pose from the source, with complete hair, both feet and all outfit accessories fully inside the canvas with a clear margin. At right show ONE enlarged head-and-shoulders portrait of precisely the same person and design, face unobstructed. Keep the head shape, hairstyle, clothing, jewelry and color palette internally consistent between figure and portrait. The second depiction is a portrait inset, not a second character. Natural adult body proportions, coherent anatomy, no extra limbs.\nOnly the small clean top-left name specified below; no other text, no watermark. No alternate outfits, extra characters, costumes, auras or powers. One final design, no variants.\nSpecific person and invariant details:\nSARA SÁEZ: adult woman with light warm skin and natural medium feminine proportions. Long straight near-black hair parted slightly off center, reaching to her waist, dark arched eyebrows, large brown eyes with defined black eyeliner and lashes, short straight nose, full rose-toned lips, poised neutral closed-mouth expression. Preserve her own rounded oval face and full lips, not Laura's or the male references' face. Small silver/pearl STUD earrings, a tiny subtle silver ring piercing on her LEFT nostril, and a thin dark necklace cord with one small dark CROSS pendant centered on upper chest, all placed consistently in figure and portrait. Black fitted long-sleeved top with a broad square/scoop neckline exactly as reference, almost meeting high-waisted loose black CARGO trousers. The trousers have large side thigh pockets, dark stitching and relaxed straight legs. Gray-white low-top sneakers. Both hands naturally in front trouser pockets, shoulders relaxed. No invented tattoos, large hoops, bracelets or belts. Keep adult natural anatomy without exaggerated bust/hips or sexualized pose. Hair is straight and long, outfit black with clear charcoal cel shadows and readable contours.\nText (verbatim): \"SARA SÁEZ\".",
+  "visual_review": "Revisado: pelo negro largo liso, labios y ojos propios, pendientes pequeños, piercing nasal izquierdo y cruz coherentes. Top negro de manga larga y pantalones cargo con bolsillos laterales; figura, manos en bolsillos y zapatillas completas. Retrato y cuerpo mantienen rasgos y accesorios."
+}

@@ -63,10 +63,15 @@
     "Rodri": {
       "status": "single_design_created",
       "file": "Rodri/Rodri-2D.png"
+    },
+    "Sara-Saez": {
+      "status": "single_design_created",
+      "file": "Sara-Saez/Sara-Saez-2D.png"
+    },
+    "Yorgi": {
+      "status": "single_design_created",
+      "file": "Yorgi/Yorgi-2D.png"
     }
   },
-  "pending": [
-    "Sara-Saez",
-    "Yorgi"
-  ]
+  "pending": []
 }

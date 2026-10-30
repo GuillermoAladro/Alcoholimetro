@@ -4,7 +4,7 @@
 
 Cada PNG contiene el cuerpo completo y un retrato ampliado del mismo diseño. Se conservan los rasgos, peinado, ropa y accesorios de cada persona a partir de sus SVG.
 
-Colección en curso: 12 de 14 avatares disponibles.
+Colección completa: **14 personas, 14 PNG**.
 
 | Persona | Archivo único | Estado |
 |---|---|---|
@@ -20,6 +20,8 @@ Colección en curso: 12 de 14 avatares disponibles.
 | [Marta](Marta/) | [PNG](Marta/Marta-2D.png) | Versión única |
 | [Paradigma](Paradigma/) | [PNG](Paradigma/Paradigma-2D.png) | Versión única |
 | [Rodri](Rodri/) | [PNG](Rodri/Rodri-2D.png) | Versión única |
+| [Sara Sáez](Sara-Saez/) | [PNG](Sara-Saez/Sara-Saez-2D.png) | Versión única |
+| [Yorgi](Yorgi/) | [PNG](Yorgi/Yorgi-2D.png) | Versión única |
 
 ## Galería
 
@@ -46,5 +48,9 @@ Colección en curso: 12 de 14 avatares disponibles.
 | Paradigma | Rodri |
 |---|---|
 | [![Paradigma](Paradigma/Paradigma-2D.png)](Paradigma/Paradigma-2D.png) | [![Rodri](Rodri/Rodri-2D.png)](Rodri/Rodri-2D.png) |
+
+| Sara Sáez | Yorgi |
+|---|---|
+| [![Sara Sáez](Sara-Saez/Sara-Saez-2D.png)](Sara-Saez/Sara-Saez-2D.png) | [![Yorgi](Yorgi/Yorgi-2D.png)](Yorgi/Yorgi-2D.png) |
 
 Los diseños son ilustraciones **PNG**, no SVG vectoriales ni animaciones terminadas. Cada carpeta conserva un `diseno.json` con el prompt de generación, las referencias y la revisión visual. Las imágenes se generaron con la herramienta integrada `image_gen`; los SVG originales permanecen en su carpeta.
