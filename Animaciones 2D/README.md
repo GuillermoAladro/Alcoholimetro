@@ -43,6 +43,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00016 | Guillermo y Laura · El truco de magia | 14,60 s | [MP4 60 fps](vista%20previa/00016%20Guillermo%20y%20Laura%20-%20el%20truco%20de%20magia.mp4) · [fotogramas](vista%20previa/00016%20Guillermo%20y%20Laura%20-%20el%20truco%20de%20magia%20-%20fotogramas.png) |
 | 00017 | Guillermo y Laura · Los dardos | 14,45 s | [MP4 60 fps](vista%20previa/00017%20Guillermo%20y%20Laura%20-%20los%20dardos.mp4) · [fotogramas](vista%20previa/00017%20Guillermo%20y%20Laura%20-%20los%20dardos%20-%20fotogramas.png) |
 | 00018 | Guillermo y Laura · El selfie | 13,30 s | [MP4 60 fps](vista%20previa/00018%20Guillermo%20y%20Laura%20-%20el%20selfie.mp4) · [fotogramas](vista%20previa/00018%20Guillermo%20y%20Laura%20-%20el%20selfie%20-%20fotogramas.png) |
+| 00019 | Guillermo y Laura · El paraguas | 13,60 s | [MP4 60 fps](vista%20previa/00019%20Guillermo%20y%20Laura%20-%20el%20paraguas.mp4) · [fotogramas](vista%20previa/00019%20Guillermo%20y%20Laura%20-%20el%20paraguas%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -401,6 +402,22 @@ Corrige la continuidad de los brazos y coloca el giro de manos delante del pecho
 9. Negro.
 
 ![Fotogramas de 00018](vista%20previa/00018%20Guillermo%20y%20Laura%20-%20el%20selfie%20-%20fotogramas.png)
+
+### 00019 · Guillermo y Laura · El paraguas
+
+1. Negro.
+2. Noche de lluvia a la salida del bar: portal con luz cálida, toldo que gotea, acera mojada con charcos, farola y luna. Laura se tapa la cabeza con la mano; Guillermo lleva un paraguas grande cerrado como si fuera un bastón.
+3. Guillermo mira a cámara muy galán, lanza el paraguas al aire dando vueltas y lo coge por el mango.
+4. Lo abre de golpe y **la cubre**: ella baja la mano, sonríe encantada y le sale un corazón; él saca pecho mirando a cámara.
+5. Se levanta viento: la lluvia se inclina, vuelan hojas, a Laura se le alborota la melena y el paraguas cabecea. Guillermo mira arriba preocupado.
+6. **Una racha le da la vuelta al paraguas**: tirón, se queda de puntillas y sale volando agarrado a él, pataleando, como Mary Poppins.
+7. Desde arriba mira a Laura con cara de apuro, le dice adiós con la mano y desaparece por arriba. Ella se tapa la boca.
+8. Laura, otra vez bajo la lluvia, se encoge de hombros, saca un paraguas plegable de lunares y lo abre.
+9. Dice adiós al cielo: Guillermo, chiquitito, cruza por delante de la luna colgado del paraguas.
+10. Laura guiña un ojo a cámara.
+11. Negro.
+
+![Fotogramas de 00019](vista%20previa/00019%20Guillermo%20y%20Laura%20-%20el%20paraguas%20-%20fotogramas.png)
 
 ## Ver y grabar
 
