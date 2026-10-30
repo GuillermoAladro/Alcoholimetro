@@ -50,6 +50,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00022 | Guillermo y Marcos · El gato en la farola | 14,50 s | [MP4 60 fps](vista%20previa/00022%20Guillermo%20y%20Marcos%20-%20el%20gato%20en%20la%20farola.mp4) · [fotogramas](vista%20previa/00022%20Guillermo%20y%20Marcos%20-%20el%20gato%20en%20la%20farola%20-%20fotogramas.png) |
 | 00023 | Guillermo y Marcos · La barra de bomberos | 14,45 s | [MP4 60 fps](vista%20previa/00023%20Guillermo%20y%20Marcos%20-%20la%20barra%20de%20bomberos.mp4) · [fotogramas](vista%20previa/00023%20Guillermo%20y%20Marcos%20-%20la%20barra%20de%20bomberos%20-%20fotogramas.png) |
 | 00024 | Guillermo y Marcos · La manguera loca | 13,90 s | [MP4 60 fps](vista%20previa/00024%20Guillermo%20y%20Marcos%20-%20la%20manguera%20loca.mp4) · [fotogramas](vista%20previa/00024%20Guillermo%20y%20Marcos%20-%20la%20manguera%20loca%20-%20fotogramas.png) |
+| 00025 | Guillermo y Marcos · Las pesas | 14,70 s | [MP4 60 fps](vista%20previa/00025%20Guillermo%20y%20Marcos%20-%20las%20pesas.mp4) · [fotogramas](vista%20previa/00025%20Guillermo%20y%20Marcos%20-%20las%20pesas%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -506,6 +507,22 @@ Corrige los cuatro brazos, el apoyo de los codos en la mesa, el giro y la libera
 10. Negro.
 
 ![Fotogramas de 00024](vista%20previa/00024%20Guillermo%20y%20Marcos%20-%20la%20manguera%20loca%20-%20fotogramas.png)
+
+### 00025 · Guillermo y Marcos · Las pesas
+
+1. Negro.
+2. Gimnasio del parque de bomberos: pared de bloques con una franja roja y cinta de peligro, ventanas con rayos de luz, reloj, escudo con una llama, mancuernas y pesas rusas. Guillermo, en la jaula de sentadillas, mira a cámara muy chulo y se frota las manos (sale una nubecita de magnesio). Marcos, al fondo, bebe de su botella.
+3. **Guillermo tira de la barra con todo:** se pone rojo, suda, le sale la vena… la barra se dobla por el medio, pero los discos ni se mueven de los ganchos.
+4. La suelta (la barra vibra y saltan chispas de los ganchos) y retrocede jadeando con las manos en las rodillas.
+5. Marcos se acerca, le coge por la cinturilla del vaquero con una mano y **lo levanta del suelo**.
+6. **Hace curl de bíceps con Guillermo** como si fuera una mancuerna, mientras bebe tan tranquilo. Guillermo, subiendo y bajando, se cruza de brazos muy digno… y acaba mareado, con los ojos en espiral y estrellitas.
+7. Marcos lo deja en el suelo y lo suelta. Guillermo se tambalea, sacude la cabeza, se enfada y se da la vuelta de un salto.
+8. Agachado como en un peso muerto, agarra a Marcos por el chaquetón y tira… Marcos ni se inmuta: bebe, le mira aburrido y mira a cámara.
+9. Le apoya la mano en la cabeza, se deja caer encima con desgana y **Guillermo se queda aplastado como una tortita**, con estrellitas.
+10. Marcos guiña un ojo a cámara.
+11. Negro.
+
+![Fotogramas de 00025](vista%20previa/00025%20Guillermo%20y%20Marcos%20-%20las%20pesas%20-%20fotogramas.png)
 
 ## Ver y grabar
 
