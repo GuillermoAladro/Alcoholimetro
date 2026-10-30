@@ -1,744 +1,202 @@
 {
-  "character": "Kiriku",
-  "source_git_blob": "c86031ed8362d559255f94f2dd67f880b5be84ac",
-  "master_git_blob": "13c262555cf6e79af50b95d8689beb4786575244",
-  "master_sha256": "c0d9f588492928102b18a24ce66397ef328ad92484f9b5744169b26a62cb8f96",
-  "master_checks": {
-    "xml_valid": true,
-    "vector_only": true,
-    "unique_ids": true,
-    "internal_references_valid": true,
-    "paths": 110616,
-    "gradients": 74300
+ "avatar": "Kiriku",
+ "fecha": "2026-10-30",
+ "referencia": "animaciones/Avatar Kiriku.png",
+ "referencia_sha256": "ab78e09f5b9aa64f7c41da30e96d286c798c880eb21a2a364a679953da0ce6a9",
+ "fondo": "transparente",
+ "metodo": "Trazados y degradados de la hoja maestra Astra conservados; silueta nueva desde herramientas/mascaras (segmentación isnet + limpieza de contorno); ver ../REVISION-TRANSPARENTE-2026-10-30.md",
+ "comprobado_con": [
+  "resvg 0.5 (render y métricas)",
+  "Chromium 1243 (decodificación de las 10 piezas)"
+ ],
+ "cambios_frente_a_version_anterior": {
+  "fondo_blanco_quitado_px": 11398,
+  "personaje_recuperado_px": 3927
+ },
+ "archivos": [
+  {
+   "archivo": "Kiriku.svg",
+   "bytes": 30306893,
+   "sha256": "4ae1bcd9222c448d91f251a964ade0bca6dbb62d699e8f71ce02f7b551d51a30",
+   "viewBox": "0 0 1122 1402",
+   "trazados": 110634,
+   "degradados": 74300,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0
   },
-  "method": "Exact extraction from original detailed vector master; individual contour selection and definition pruning",
-  "static_illustrations": true,
-  "selection": [
-    {
-      "contour": 13,
-      "box": [
-        125,
-        45,
-        430,
-        910
-      ],
-      "polygon": [
-        [
-          125,
-          45
-        ],
-        [
-          415,
-          45
-        ],
-        [
-          415,
-          240
-        ],
-        [
-          410.5,
-          280
-        ],
-        [
-          415,
-          300
-        ],
-        [
-          420,
-          330
-        ],
-        [
-          425,
-          355
-        ],
-        [
-          425,
-          910
-        ],
-        [
-          125,
-          910
-        ]
-      ]
-    },
-    {
-      "contour": 13,
-      "box": [
-        405,
-        45,
-        665,
-        910
-      ],
-      "polygon": [
-        [
-          415,
-          45
-        ],
-        [
-          415,
-          240
-        ],
-        [
-          410.5,
-          280
-        ],
-        [
-          415,
-          300
-        ],
-        [
-          420,
-          330
-        ],
-        [
-          425,
-          355
-        ],
-        [
-          425,
-          910
-        ],
-        [
-          665,
-          910
-        ],
-        [
-          665,
-          45
-        ]
-      ]
-    },
-    {
-      "contour": 11
-    },
-    {
-      "contour": 12
-    },
-    {
-      "contour": 2,
-      "box": [
-        0,
-        940,
-        192,
-        1345
-      ],
-      "polygon": [
-        [
-          0,
-          940
-        ],
-        [
-          0,
-          1000
-        ],
-        [
-          0,
-          1060
-        ],
-        [
-          0,
-          1120
-        ],
-        [
-          0,
-          1160
-        ],
-        [
-          0,
-          1200
-        ],
-        [
-          0,
-          1345
-        ],
-        [
-          166,
-          1345
-        ],
-        [
-          166,
-          1200
-        ],
-        [
-          166,
-          1160
-        ],
-        [
-          169,
-          1120
-        ],
-        [
-          183,
-          1060
-        ],
-        [
-          190,
-          1000
-        ],
-        [
-          192,
-          940
-        ]
-      ]
-    },
-    {
-      "contour": 2,
-      "box": [
-        166,
-        940,
-        378,
-        1345
-      ],
-      "polygon": [
-        [
-          192,
-          940
-        ],
-        [
-          190,
-          1000
-        ],
-        [
-          183,
-          1060
-        ],
-        [
-          169,
-          1120
-        ],
-        [
-          166,
-          1160
-        ],
-        [
-          166,
-          1200
-        ],
-        [
-          166,
-          1345
-        ],
-        [
-          357,
-          1345
-        ],
-        [
-          357,
-          1200
-        ],
-        [
-          357,
-          1160
-        ],
-        [
-          358,
-          1120
-        ],
-        [
-          367,
-          1060
-        ],
-        [
-          376,
-          1000
-        ],
-        [
-          378,
-          940
-        ]
-      ]
-    },
-    {
-      "contour": 2,
-      "box": [
-        357,
-        940,
-        560,
-        1345
-      ],
-      "polygon": [
-        [
-          378,
-          940
-        ],
-        [
-          376,
-          1000
-        ],
-        [
-          367,
-          1060
-        ],
-        [
-          358,
-          1120
-        ],
-        [
-          357,
-          1160
-        ],
-        [
-          357,
-          1200
-        ],
-        [
-          357,
-          1345
-        ],
-        [
-          540,
-          1345
-        ],
-        [
-          540,
-          1200
-        ],
-        [
-          540,
-          1160
-        ],
-        [
-          542,
-          1120
-        ],
-        [
-          550,
-          1060
-        ],
-        [
-          557,
-          1000
-        ],
-        [
-          560,
-          940
-        ]
-      ]
-    },
-    {
-      "contour": 1,
-      "box": [
-        540,
-        940,
-        748,
-        1345
-      ],
-      "polygon": [
-        [
-          560,
-          940
-        ],
-        [
-          557,
-          1000
-        ],
-        [
-          550,
-          1060
-        ],
-        [
-          542,
-          1120
-        ],
-        [
-          540,
-          1160
-        ],
-        [
-          540,
-          1200
-        ],
-        [
-          540,
-          1345
-        ],
-        [
-          739,
-          1345
-        ],
-        [
-          739,
-          1200
-        ],
-        [
-          739,
-          1160
-        ],
-        [
-          739,
-          1120
-        ],
-        [
-          742,
-          1060
-        ],
-        [
-          748,
-          1000
-        ],
-        [
-          748,
-          940
-        ]
-      ]
-    },
-    {
-      "contour": 1,
-      "box": [
-        739,
-        940,
-        932,
-        1345
-      ],
-      "polygon": [
-        [
-          748,
-          940
-        ],
-        [
-          748,
-          1000
-        ],
-        [
-          742,
-          1060
-        ],
-        [
-          739,
-          1120
-        ],
-        [
-          739,
-          1160
-        ],
-        [
-          739,
-          1200
-        ],
-        [
-          739,
-          1345
-        ],
-        [
-          932,
-          1345
-        ],
-        [
-          932,
-          1200
-        ],
-        [
-          932,
-          1160
-        ],
-        [
-          932,
-          1120
-        ],
-        [
-          928,
-          1060
-        ],
-        [
-          923,
-          1000
-        ],
-        [
-          923,
-          940
-        ]
-      ]
-    },
-    {
-      "contour": 1,
-      "box": [
-        923,
-        940,
-        1122,
-        1345
-      ],
-      "polygon": [
-        [
-          923,
-          940
-        ],
-        [
-          923,
-          1000
-        ],
-        [
-          928,
-          1060
-        ],
-        [
-          932,
-          1120
-        ],
-        [
-          932,
-          1160
-        ],
-        [
-          932,
-          1200
-        ],
-        [
-          932,
-          1345
-        ],
-        [
-          1122,
-          1345
-        ],
-        [
-          1122,
-          1200
-        ],
-        [
-          1122,
-          1160
-        ],
-        [
-          1122,
-          1120
-        ],
-        [
-          1122,
-          1060
-        ],
-        [
-          1122,
-          1000
-        ],
-        [
-          1122,
-          940
-        ]
-      ]
-    }
-  ],
-  "files": [
-    {
-      "file": "01-frontal.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 19380,
-      "gradients": 12963,
-      "bytes": 5250807,
-      "sha256": "6d4b93b1f4a98751f11494c80d74f147223955550d7e5b4909255fa6d275a0ea",
-      "viewBox": [
-        117,
-        37,
-        322,
-        882
-      ],
-      "contour_index": 13,
-      "figure_mae_vs_master": 0.000599,
-      "figure_mae_vs_reference": 2.0362
-    },
-    {
-      "file": "02-tres-cuartos.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 17505,
-      "gradients": 11604,
-      "bytes": 4747462,
-      "sha256": "8458643fe788989b8461f16e0b6317f07ec2a6ffc5f012fda4875e86a83145a1",
-      "viewBox": [
-        397,
-        37,
-        277,
-        882
-      ],
-      "contour_index": 13,
-      "figure_mae_vs_master": 0.001383,
-      "figure_mae_vs_reference": 2.2975
-    },
-    {
-      "file": "03-perfil.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 14268,
-      "gradients": 9380,
-      "bytes": 3834151,
-      "sha256": "179394ac4ccab9b5176f4b4201a81ec8f9853b72df56fbdfdda067df15384e2b",
-      "viewBox": [
-        650,
-        58,
-        196,
-        848
-      ],
-      "contour_index": 11,
-      "figure_mae_vs_master": 0.002562,
-      "figure_mae_vs_reference": 2.1351
-    },
-    {
-      "file": "04-espalda.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 17311,
-      "gradients": 10907,
-      "bytes": 4540433,
-      "sha256": "70aa4a4c9b061959e2c5c7e4ac26faa15934155b3e64e4cd7705063d13f0a547",
-      "viewBox": [
-        849,
-        49,
-        273,
-        850
-      ],
-      "contour_index": 12,
-      "figure_mae_vs_master": 0.002091,
-      "figure_mae_vs_reference": 1.9237
-    },
-    {
-      "file": "05-neutral.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 7244,
-      "gradients": 4943,
-      "bytes": 2005728,
-      "sha256": "b8312825028bb553624e1c3ebda6e4532703c3bb908cc47d2c526cd589477588",
-      "viewBox": [
-        0,
-        932,
-        201,
-        422
-      ],
-      "contour_index": 2,
-      "figure_mae_vs_master": 0.0,
-      "figure_mae_vs_reference": 2.1936
-    },
-    {
-      "file": "06-risa.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 7653,
-      "gradients": 5431,
-      "bytes": 2168665,
-      "sha256": "e50cc9a8f57420dd38acc3ffbc73b59e626685a00dc88232667429dcd45a2cf2",
-      "viewBox": [
-        158,
-        932,
-        229,
-        422
-      ],
-      "contour_index": 2,
-      "figure_mae_vs_master": 0.000493,
-      "figure_mae_vs_reference": 2.0713
-    },
-    {
-      "file": "07-sorpresa.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 7223,
-      "gradients": 5081,
-      "bytes": 2045047,
-      "sha256": "65edff0f9f2cf2e1f2f77fd5426465cc57dee79ac6858d9667e7c1b6c4757599",
-      "viewBox": [
-        349,
-        932,
-        220,
-        422
-      ],
-      "contour_index": 2,
-      "figure_mae_vs_master": 0.00054,
-      "figure_mae_vs_reference": 1.9047
-    },
-    {
-      "file": "08-cansancio.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 7591,
-      "gradients": 5297,
-      "bytes": 2153229,
-      "sha256": "474c7bf3f54443a1cce5ed09dae416ca38a8a8bec7076b2d85086795bb544006",
-      "viewBox": [
-        532,
-        932,
-        225,
-        422
-      ],
-      "contour_index": 1,
-      "figure_mae_vs_master": 0.000941,
-      "figure_mae_vs_reference": 1.9578
-    },
-    {
-      "file": "09-ojos-cerrados.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 6703,
-      "gradients": 4699,
-      "bytes": 1907771,
-      "sha256": "f5b88c66b416fe339939e75656c4e60ed385f69c277b87c5409eb36f2b7579e6",
-      "viewBox": [
-        731,
-        932,
-        210,
-        422
-      ],
-      "contour_index": 1,
-      "figure_mae_vs_master": 0.000841,
-      "figure_mae_vs_reference": 1.8178
-    },
-    {
-      "file": "10-guino.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 6963,
-      "gradients": 4902,
-      "bytes": 1963878,
-      "sha256": "13338ed8cfc6fd2505f139b906fc27059aa1a6e2b83f94e4009ba7e48167cc17",
-      "viewBox": [
-        915,
-        932,
-        207,
-        422
-      ],
-      "contour_index": 1,
-      "figure_mae_vs_master": 0.000888,
-      "figure_mae_vs_reference": 2.0537
-    }
-  ],
-  "independent_renderer": [
-    {
-      "file": "01-frontal.svg",
-      "renderer": "Inkscape",
-      "mae_vs_cairosvg": 0.0997
-    },
-    {
-      "file": "06-risa.svg",
-      "renderer": "Inkscape",
-      "mae_vs_cairosvg": 0.0559
-    }
-  ],
-  "visual_review": {
-    "status": "reviewed",
-    "notes": [
-      "Cuatro vistas y seis expresiones revisadas individualmente, con ampliación de los seis retratos.",
-      "Polo negro, jersey sobre los hombros, gafas colgadas, peinado y rasgos conservados.",
-      "Separación manual de las dos primeras vistas, cuyos bordes se unían en la máscara maestra.",
-      "Límites poligonales específicos para los retratos; eliminados fragmentos de pelo de las caras vecinas sin recortar el propio."
-    ]
+  {
+   "archivo": "Kiriku/01-frontal.svg",
+   "bytes": 5283798,
+   "sha256": "ac2c5ed8a0c9ae67820ef8229a71880f48ff9c657194c523e5142bb3e6eff5c8",
+   "viewBox": "130 47 297 857",
+   "trazados": 19353,
+   "degradados": 12945,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9973,
+   "error_color_medio": 2.22,
+   "piezas_sueltas": 0
   },
-  "created_utc": "2026-10-30T00:36:59.097965+00:00"
+  {
+   "archivo": "Kiriku/02-tres-cuartos.svg",
+   "bytes": 4811719,
+   "sha256": "044fa190ef987937188925651c4c560a4b9b7716317df544db50162288cfc005",
+   "viewBox": "404 53 260 850",
+   "trazados": 17581,
+   "degradados": 11663,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9963,
+   "error_color_medio": 2.46,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Kiriku/03-perfil.svg",
+   "bytes": 3900098,
+   "sha256": "96a6e82d54e4cdf77cb78f2468e2ffe11e3b59db320d524f90a6092aa91cfc68",
+   "viewBox": "652 60 194 844",
+   "trazados": 14327,
+   "degradados": 9429,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9968,
+   "error_color_medio": 2.47,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Kiriku/04-espalda.svg",
+   "bytes": 4587660,
+   "sha256": "a9fa897507dd711e75773b5eed4267bbcb870a25280e7c9a23d5d4ae9b0dc853",
+   "viewBox": "851 51 271 846",
+   "trazados": 17320,
+   "degradados": 10911,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9971,
+   "error_color_medio": 2.12,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Kiriku/05-neutral.svg",
+   "bytes": 2035848,
+   "sha256": "f5e373ace512edf71db17b5e6a9db1b8a556a76e47a454b8b1600bc18a4d9955",
+   "viewBox": "0 948 192 398",
+   "trazados": 7308,
+   "degradados": 4995,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9971,
+   "error_color_medio": 2.21,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Kiriku/06-risa.svg",
+   "bytes": 2257160,
+   "sha256": "81e7a9e79c7f998edd4e758dd15217ef7132b56e31af24e7f4bdf00269dc5075",
+   "viewBox": "160 948 213 398",
+   "trazados": 7894,
+   "degradados": 5617,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9976,
+   "error_color_medio": 2.16,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Kiriku/07-sorpresa.svg",
+   "bytes": 2076895,
+   "sha256": "f05b79737bfb45b6b8b4372c6d32d4d59fd92d63adddd93e00c965c5a4ef20f8",
+   "viewBox": "352 948 198 398",
+   "trazados": 7259,
+   "degradados": 5099,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9987,
+   "error_color_medio": 2.09,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Kiriku/08-cansancio.svg",
+   "bytes": 2247593,
+   "sha256": "652ac581ada2f0671e1f83046fe2a22f487df95f6ca253c6c0753d50b8bb1000",
+   "viewBox": "533 970 216 377",
+   "trazados": 7824,
+   "degradados": 5470,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9968,
+   "error_color_medio": 2.09,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Kiriku/09-ojos-cerrados.svg",
+   "bytes": 2047247,
+   "sha256": "ca8ccb2582b7bd9718dec7d194eab788852472fa72366351a16a30f0ae7bf1d2",
+   "viewBox": "732 948 204 399",
+   "trazados": 7103,
+   "degradados": 4984,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9991,
+   "error_color_medio": 1.95,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Kiriku/10-guino.svg",
+   "bytes": 1984137,
+   "sha256": "8293e598ed452c6eeb0bb5d8815136f2463d79e52db2bf7869529c06f67dcbd3",
+   "viewBox": "920 954 202 392",
+   "trazados": 7006,
+   "degradados": 4929,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9987,
+   "error_color_medio": 2.18,
+   "piezas_sueltas": 0
+  }
+ ]
 }
