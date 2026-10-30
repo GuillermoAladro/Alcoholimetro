@@ -59,6 +59,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00027 | Guillermo y Marcos · El casco | 13,50 s | [MP4 60 fps](vista%20previa/00027%20Guillermo%20y%20Marcos%20-%20el%20casco.mp4) · [fotogramas](vista%20previa/00027%20Guillermo%20y%20Marcos%20-%20el%20casco%20-%20fotogramas.png) |
 | 00028 | Guillermo y Marcos · Vestirse en tres segundos | 14,20 s | [MP4 60 fps](vista%20previa/00028%20Guillermo%20y%20Marcos%20-%20vestirse%20en%20tres%20segundos.mp4) · [fotogramas](vista%20previa/00028%20Guillermo%20y%20Marcos%20-%20vestirse%20en%20tres%20segundos%20-%20fotogramas.png) |
 | 00029 | Guillermo y Marcos · La sirena | 13,50 s | [MP4 60 fps](vista%20previa/00029%20Guillermo%20y%20Marcos%20-%20la%20sirena.mp4) · [fotogramas](vista%20previa/00029%20Guillermo%20y%20Marcos%20-%20la%20sirena%20-%20fotogramas.png) |
+| 00030 | Guillermo y Marcos · La lona de salto | 14,40 s | [MP4 60 fps](vista%20previa/00030%20Guillermo%20y%20Marcos%20-%20la%20lona%20de%20salto.mp4) · [fotogramas](vista%20previa/00030%20Guillermo%20y%20Marcos%20-%20la%20lona%20de%20salto%20-%20fotogramas.png) |
 | 00031 | Guillermo y Ander · El futbolín | 13,50 s | [MP4 60 fps](vista%20previa/00031%20Guillermo%20y%20Ander%20-%20el%20futbolin.mp4) · [fotogramas](vista%20previa/00031%20Guillermo%20y%20Ander%20-%20el%20futbolin%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
@@ -619,6 +620,20 @@ Corrige las muñecas y los recorridos de los brazos, el apoyo de los pies al pon
 11. Negro.
 
 ![Fotogramas de 00029](vista%20previa/00029%20Guillermo%20y%20Marcos%20-%20la%20sirena%20-%20fotogramas.png)
+
+### 00030 · Guillermo y Marcos · La lona de salto
+
+1. Negro.
+2. Calle soleada delante del bar: fachada ocre con contraventanas verdes, escaparate con toldo de rayas y edificios de colores al fondo. Guillermo, asomado a la ventana del primer piso, saluda; abajo, Marcos sujeta una lona de salto redonda y le llama con la mano.
+3. Guillermo mira abajo, se asusta y niega con la cabeza; Marcos sacude la lona para enseñarle lo blandita que está.
+4. Se sube al alféizar, se agacha temblando y sudando, se tapa la nariz como si se tirara a una piscina… y **salta**.
+5. Cae en la lona, que se hunde… y **lo lanza muchísimo más alto**: sale por arriba de la escena. Marcos lo sigue con la mirada, se hace visera con la mano y levanta una ceja a cámara.
+6. Vuelve a caer y **rebota todavía más alto**; esta vez lo disfruta, con los brazos en alto. Marcos se encoge de hombros.
+7. El tercer bote lo lanza de lado: Marcos suelta la lona, corre debajo y **lo coge en brazos como a una princesa**.
+8. Guillermo, en brazos, se pone colorado y le salen corazones; Marcos guiña un ojo a cámara.
+9. Negro.
+
+![Fotogramas de 00030](vista%20previa/00030%20Guillermo%20y%20Marcos%20-%20la%20lona%20de%20salto%20-%20fotogramas.png)
 
 ### 00031 · Guillermo y Ander · El futbolín
 
