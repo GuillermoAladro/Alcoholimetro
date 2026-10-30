@@ -21,6 +21,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00003 | Guillermo y el globo | 12,45 s | [MP4 60 fps](vista%20previa/00003%20Guillermo%20y%20el%20globo.mp4) · [fotogramas](vista%20previa/00003%20Guillermo%20y%20el%20globo%20-%20fotogramas.png) |
 | 00003.2 | Guillermo y el globo · revisada | 12,45 s | [MP4 60 fps](vista%20previa/00003.2%20Guillermo%20y%20el%20globo.mp4) · [fotogramas](vista%20previa/00003.2%20Guillermo%20y%20el%20globo%20-%20fotogramas.png) · [revisión](revision/00003.2.md) |
 | 00004 | Guillermo contra la máquina | 13,25 s | [MP4 60 fps](vista%20previa/00004%20Guillermo%20contra%20la%20maquina.mp4) · [fotogramas](vista%20previa/00004%20Guillermo%20contra%20la%20maquina%20-%20fotogramas.png) |
+| 00010 | Guillermo en la discoteca | 13,60 s | [MP4 60 fps](vista%20previa/00010%20Guillermo%20en%20la%20discoteca.mp4) · [fotogramas](vista%20previa/00010%20Guillermo%20en%20la%20discoteca%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -107,6 +108,22 @@ Conserva los cuatro soplidos, el estallido y el enfado. Corrige la unión brazo�
 11. Negro.
 
 ![Fotogramas de 00004](vista%20previa/00004%20Guillermo%20contra%20la%20maquina%20-%20fotogramas.png)
+
+### 00010 · Guillermo en la discoteca
+
+1. Negro.
+2. Sala a oscuras. Baja una bola de espejos y Guillermo, con las manos en los bolsillos, la sigue con la mirada.
+3. Un foco la ilumina, la bola empieza a girar y suelta puntitos de luz que le pasan también por encima.
+4. Arranca la música (120 golpes por minuto: todo va a ese ritmo):
+   - se encienden la pista de baldosas, los haces de colores y los altavoces, y salen notas musicales;
+   - marca el ritmo con el pie y cabecea;
+   - flexiona las rodillas a cada golpe alternando los puños.
+5. **Paso de «Fiebre del sábado noche»:** mano en la cadera y el dedo índice al cielo y al suelo en cada golpe.
+6. Cadera de lado a lado haciendo rodar las manos, guiño a cámara y brillo en la sonrisa.
+7. Sale de plano haciendo el **moonwalk** hacia la izquierda.
+8. La bola sigue girando, se apagan las luces → negro.
+
+![Fotogramas de 00010](vista%20previa/00010%20Guillermo%20en%20la%20discoteca%20-%20fotogramas.png)
 
 ## Ver y grabar
 
