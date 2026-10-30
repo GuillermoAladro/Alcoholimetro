@@ -54,6 +54,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00024 | Guillermo y Marcos · La manguera loca | 13,90 s | [MP4 60 fps](vista%20previa/00024%20Guillermo%20y%20Marcos%20-%20la%20manguera%20loca.mp4) · [fotogramas](vista%20previa/00024%20Guillermo%20y%20Marcos%20-%20la%20manguera%20loca%20-%20fotogramas.png) |
 | 00025 | Guillermo y Marcos · Las pesas | 14,70 s | [MP4 60 fps](vista%20previa/00025%20Guillermo%20y%20Marcos%20-%20las%20pesas.mp4) · [fotogramas](vista%20previa/00025%20Guillermo%20y%20Marcos%20-%20las%20pesas%20-%20fotogramas.png) |
 | 00026 | Guillermo y Marcos · El extintor | 13,20 s | [MP4 60 fps](vista%20previa/00026%20Guillermo%20y%20Marcos%20-%20el%20extintor.mp4) · [fotogramas](vista%20previa/00026%20Guillermo%20y%20Marcos%20-%20el%20extintor%20-%20fotogramas.png) |
+| 00027 | Guillermo y Marcos · El casco | 13,50 s | [MP4 60 fps](vista%20previa/00027%20Guillermo%20y%20Marcos%20-%20el%20casco.mp4) · [fotogramas](vista%20previa/00027%20Guillermo%20y%20Marcos%20-%20el%20casco%20-%20fotogramas.png) |
 | 00028 | Guillermo y Marcos · Vestirse en tres segundos | 14,20 s | [MP4 60 fps](vista%20previa/00028%20Guillermo%20y%20Marcos%20-%20vestirse%20en%20tres%20segundos.mp4) · [fotogramas](vista%20previa/00028%20Guillermo%20y%20Marcos%20-%20vestirse%20en%20tres%20segundos%20-%20fotogramas.png) |
 | 00029 | Guillermo y Marcos · La sirena | 13,50 s | [MP4 60 fps](vista%20previa/00029%20Guillermo%20y%20Marcos%20-%20la%20sirena.mp4) · [fotogramas](vista%20previa/00029%20Guillermo%20y%20Marcos%20-%20la%20sirena%20-%20fotogramas.png) |
 
@@ -555,6 +556,22 @@ Corrige el alcance de los brazos al pedir, coger y soltar la guinda; fija los pi
 10. Negro.
 
 ![Fotogramas de 00026](vista%20previa/00026%20Guillermo%20y%20Marcos%20-%20el%20extintor%20-%20fotogramas.png)
+
+### 00027 · Guillermo y Marcos · El casco
+
+1. Negro.
+2. Vestuario del parque de bomberos: taquillas rojas, azulejos con la franja roja, un perchero con una chaqueta de intervención y un casco de repuesto colgado, un banco y el reloj.
+3. Guillermo mira el casco de Marcos embobado, lo señala y le pide uno dando saltitos y poniendo ojitos. Marcos arquea una ceja.
+4. Marcos descuelga el casco de repuesto y se lo lanza. Guillermo lo caza al vuelo… y pesa tanto que se le doblan las rodillas.
+5. Lo admira, mira a cámara muy chulo y se lo echa a la cabeza: **el casco se lo traga hasta la barbilla**.
+6. A ciegas, lo zarandea, se da la vuelta y anda a tientas con los brazos por delante hasta **darse de morros con las taquillas**: clonc, abolladura y estrellitas. Marcos se tapa la boca aguantando la risa.
+7. Guillermo se tambalea, se gira y llega dando traspiés hasta Marcos, que agarra el casco por arriba y tira: plop.
+8. Guillermo sale con el **pelo aplastado de casco**, con el surco del borde y un pelillo rebelde. Marcos suelta el casco, que cae al suelo. Guillermo se toca el pelo preocupado…
+9. …y, ¡boing!, las púas vuelven a saltar de golpe.
+10. Marcos se parte de risa señalándole; Guillermo se mete las manos en los bolsillos y guiña un ojo a cámara.
+11. Negro.
+
+![Fotogramas de 00027](vista%20previa/00027%20Guillermo%20y%20Marcos%20-%20el%20casco%20-%20fotogramas.png)
 
 ### 00028 · Guillermo y Marcos · Vestirse en tres segundos
 
