@@ -98,6 +98,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00059 | Guillermo y Dari · El abrigo | 14,60 s | [MP4 60 fps](vista%20previa/00059%20Guillermo%20y%20Dari%20-%20el%20abrigo.mp4) · [fotogramas](vista%20previa/00059%20Guillermo%20y%20Dari%20-%20el%20abrigo%20-%20fotogramas.png) |
 | 00060 | Guillermo y Dari · El yoyó | 14,90 s | [MP4 60 fps](vista%20previa/00060%20Guillermo%20y%20Dari%20-%20el%20yoyo.mp4) · [fotogramas](vista%20previa/00060%20Guillermo%20y%20Dari%20-%20el%20yoyo%20-%20fotogramas.png) |
 | 00061 | Guillermo y Deivi · El monopatín | 14,15 s | [MP4 60 fps](vista%20previa/00061%20Guillermo%20y%20Deivi%20-%20el%20monopatin.mp4) · [fotogramas](vista%20previa/00061%20Guillermo%20y%20Deivi%20-%20el%20monopatin%20-%20fotogramas.png) |
+| 00062 | Guillermo y Deivi · El robot | 15,0 s | [MP4 60 fps](vista%20previa/00062%20Guillermo%20y%20Deivi%20-%20el%20robot.mp4) · [fotogramas](vista%20previa/00062%20Guillermo%20y%20Deivi%20-%20el%20robot%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1199,6 +1200,23 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 9. Negro.
 
 ![Fotogramas de 00061](vista%20previa/00061%20Guillermo%20y%20Deivi%20-%20el%20monopatin%20-%20fotogramas.png)
+
+### 00062 · Guillermo y Deivi · El robot
+
+1. Negro.
+2. Pista retro: sol de neón con franjas, rejilla en el suelo y ecualizadores que saltan a 115 pulsaciones por minuto.
+3. Deivi «se enciende» (abre los ojos con un destello) y baila el robot perfecto: marioneta, caja, señala, zigzag, con tics de cabeza en cada golpe.
+4. Dos ondas le recorren los brazos del hombro al codo y a la muñeca; luego señala a Guillermo: te toca.
+5. Guillermo saca las manos de los bolsillos y le copia: la primera le sale, pero cada postura va más a tirones y le crujen los codos y el cuello (rayitas, zigzag y chispas).
+6. Al intentar la onda se le atasca en el codo y se queda bloqueado en una postura rarísima, con las rodillas dobladas, temblando y crujiendo.
+7. Deivi piensa, se le enciende una bombilla, saca una aceitera roja del bolsillo y se acerca.
+8. Le engrasa a chorritos los codos y las rodillas; de cada junta caen gotas al suelo (gota, gota).
+9. Guillermo parpadea y se desbloquea con una onda líquida que le recorre todo el cuerpo; se mira las manos, sorprendido.
+10. Sigue bailando suavísimo; Deivi guarda la aceitera y se une al baile.
+11. En el último golpe los dos se señalan a la vez, ya como dos robots perfectos.
+12. Negro.
+
+![Fotogramas de 00062](vista%20previa/00062%20Guillermo%20y%20Deivi%20-%20el%20robot%20-%20fotogramas.png)
 
 ## Ver y grabar
 
