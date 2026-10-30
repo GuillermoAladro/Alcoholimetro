@@ -104,6 +104,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00065 | Guillermo y Deivi · Las sillas con ruedas | 14,4 s | [MP4 60 fps](vista%20previa/00065%20Guillermo%20y%20Deivi%20-%20las%20sillas%20con%20ruedas.mp4) · [fotogramas](vista%20previa/00065%20Guillermo%20y%20Deivi%20-%20las%20sillas%20con%20ruedas%20-%20fotogramas.png) |
 | 00066 | Guillermo y Deivi · El globo de helio | 14,9 s | [MP4 60 fps](vista%20previa/00066%20Guillermo%20y%20Deivi%20-%20el%20globo%20de%20helio.mp4) · [fotogramas](vista%20previa/00066%20Guillermo%20y%20Deivi%20-%20el%20globo%20de%20helio%20-%20fotogramas.png) |
 | 00067 | Guillermo y Deivi · La guerra de almohadas | 14,0 s | [MP4 60 fps](vista%20previa/00067%20Guillermo%20y%20Deivi%20-%20la%20guerra%20de%20almohadas.mp4) · [fotogramas](vista%20previa/00067%20Guillermo%20y%20Deivi%20-%20la%20guerra%20de%20almohadas%20-%20fotogramas.png) |
+| 00068 | Guillermo y Deivi · Las cosquillas | 14,9 s | [MP4 60 fps](vista%20previa/00068%20Guillermo%20y%20Deivi%20-%20las%20cosquillas.mp4) · [fotogramas](vista%20previa/00068%20Guillermo%20y%20Deivi%20-%20las%20cosquillas%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1303,6 +1304,21 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00067](vista%20previa/00067%20Guillermo%20y%20Deivi%20-%20la%20guerra%20de%20almohadas%20-%20fotogramas.png)
+
+### 00068 · Guillermo y Deivi · Las cosquillas
+
+1. Negro.
+2. Salón de casa por la noche (papel pintado verde azulado, sofá de terciopelo teja con cojines, lámpara de pie encendida, ventana con luna, mesita con planta y alfombra de flecos); la tele, fuera de cuadro, les ilumina de azul. Guillermo zapea repantigado; Deivi, sin apartar la vista de la pantalla, busca el mando a tientas… y le clava el dedo en el costado.
+3. Guillermo pega un bote (rayitas de susto) y el mando sale volando hasta la alfombra. Deivi le mira, estira el dedo, se lo mira con una ceja levantada y, muy despacio, vuelve a tocarle: otro respingo y una risita.
+4. Guillermo se tapa el costado y le suplica que no con la cabeza; Deivi mira a cámara con sonrisa de pillo, sube y baja las cejas y menea los dedos. Guillermo, asustado, levanta las palmas.
+5. Deivi se lanza de rodillas sobre el sofá y le ataca: Guillermo se parte de risa (ojos apretados, lágrimas que saltan, boca abierta), se retuerce, patalea y aporrea el cojín.
+6. Se escurre hasta el borde y cae de espaldas a la alfombra (Deivi se lleva las manos a la boca); allí sigue revolcándose y pataleando mientras Deivi, inclinado desde el sofá, le hace cosquillas al aire.
+7. Deivi para, levanta las manos y se deja caer en su sitio. Guillermo se calma, jadea, se seca una lágrima, se incorpora y se queda de pie con las manos en las rodillas, sudando.
+8. Deivi levanta un dedo y lo menea… Guillermo se queda helado, se da media vuelta y sale disparado de cuadro (rayas de velocidad y una nube de polvo).
+9. Deivi se ríe solo, tapándose la boca, y guiña un ojo a cámara.
+10. Negro.
+
+![Fotogramas de 00068](vista%20previa/00068%20Guillermo%20y%20Deivi%20-%20las%20cosquillas%20-%20fotogramas.png)
 
 ## Ver y grabar
 
