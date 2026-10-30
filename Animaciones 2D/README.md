@@ -78,6 +78,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00039 | Guillermo y Ander · El gol | 14,00 s | [MP4 60 fps](vista%20previa/00039%20Guillermo%20y%20Ander%20-%20el%20gol.mp4) · [fotogramas](vista%20previa/00039%20Guillermo%20y%20Ander%20-%20el%20gol%20-%20fotogramas.png) |
 | 00040 | Guillermo y Ander · La guitarra | 13,60 s | [MP4 60 fps](vista%20previa/00040%20Guillermo%20y%20Ander%20-%20la%20guitarra.mp4) · [fotogramas](vista%20previa/00040%20Guillermo%20y%20Ander%20-%20la%20guitarra%20-%20fotogramas.png) |
 | 00041 | Guillermo y Carla · La pasarela | 14,00 s | [MP4 60 fps](vista%20previa/00041%20Guillermo%20y%20Carla%20-%20la%20pasarela.mp4) · [fotogramas](vista%20previa/00041%20Guillermo%20y%20Carla%20-%20la%20pasarela%20-%20fotogramas.png) |
+| 00042 | Guillermo y Carla · El ligue | 14,75 s | [MP4 60 fps](vista%20previa/00042%20Guillermo%20y%20Carla%20-%20el%20ligue.mp4) · [fotogramas](vista%20previa/00042%20Guillermo%20y%20Carla%20-%20el%20ligue%20-%20fotogramas.png) |
 | 00043 | Guillermo y Carla · El limbo | 14,40 s | [MP4 60 fps](vista%20previa/00043%20Guillermo%20y%20Carla%20-%20el%20limbo.mp4) · [fotogramas](vista%20previa/00043%20Guillermo%20y%20Carla%20-%20el%20limbo%20-%20fotogramas.png) |
 | 00044 | Guillermo y Carla · La melena | 13,60 s | [MP4 60 fps](vista%20previa/00044%20Guillermo%20y%20Carla%20-%20la%20melena.mp4) · [fotogramas](vista%20previa/00044%20Guillermo%20y%20Carla%20-%20la%20melena%20-%20fotogramas.png) |
 
@@ -858,6 +859,24 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 13. Negro.
 
 ![Fotogramas de 00041](vista%20previa/00041%20Guillermo%20y%20Carla%20-%20la%20pasarela%20-%20fotogramas.png)
+
+### 00042 · Guillermo y Carla · El ligue
+
+1. Negro.
+2. Coctelería art déco vista desde detrás de la barra: Carla toma un cóctel rosa al otro lado; Guillermo, a la izquierda, la mira embobado y luego mira a cámara como si fuera un espejo.
+3. Saca un peine de bolsillo, se repeina el lado con tres pasadas y el pelo le hace un destello; Carla le echa una ojeada y da un sorbo.
+4. Se echa el aliento en la mano, lo huele y casi se desmaya (líneas verdes, rodillas que ceden, cabeza que da vueltas); Carla se ríe.
+5. Saca bíceps con los dos brazos y le brillan; Carla pone los ojos en blanco.
+6. Manos a los bolsillos y paseo a cámara lenta, en plan chulo, con foco y purpurina; la cámara se acerca a la barra.
+7. Se planta junto a Carla y le guiña un ojo; ella pestañea, colorada.
+8. Apoya el antebrazo en la barra… y el codo sigue bajando: **la barra está más lejos de lo que creía**.
+9. Se queda un instante con los brazos en alto mirando a cámara y **se hunde detrás del mostrador**: golpe, polvo y botellas que tiemblan; Carla da un respingo.
+10. Carla mira por encima de la barra con la copa en alto; por encima del borde sube la mano de Guillermo con una margarita y la deja tumbada, con el tallo hacia ella.
+11. Carla deja la copa, coge la flor, la huele con los ojos cerrados y le salen corazones.
+12. Guillermo asoma los ojos por el borde, colorado, agarrado al canto; Carla le mira y le guiña un ojo.
+13. Negro.
+
+![Fotogramas de 00042](vista%20previa/00042%20Guillermo%20y%20Carla%20-%20el%20ligue%20-%20fotogramas.png)
 
 ### 00043 · Guillermo y Carla · El limbo
 
