@@ -77,6 +77,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00039 | Guillermo y Ander · El gol | 14,00 s | [MP4 60 fps](vista%20previa/00039%20Guillermo%20y%20Ander%20-%20el%20gol.mp4) · [fotogramas](vista%20previa/00039%20Guillermo%20y%20Ander%20-%20el%20gol%20-%20fotogramas.png) |
 | 00040 | Guillermo y Ander · La guitarra | 13,60 s | [MP4 60 fps](vista%20previa/00040%20Guillermo%20y%20Ander%20-%20la%20guitarra.mp4) · [fotogramas](vista%20previa/00040%20Guillermo%20y%20Ander%20-%20la%20guitarra%20-%20fotogramas.png) |
 | 00041 | Guillermo y Carla · La pasarela | 14,00 s | [MP4 60 fps](vista%20previa/00041%20Guillermo%20y%20Carla%20-%20la%20pasarela.mp4) · [fotogramas](vista%20previa/00041%20Guillermo%20y%20Carla%20-%20la%20pasarela%20-%20fotogramas.png) |
+| 00043 | Guillermo y Carla · El limbo | 14,40 s | [MP4 60 fps](vista%20previa/00043%20Guillermo%20y%20Carla%20-%20el%20limbo.mp4) · [fotogramas](vista%20previa/00043%20Guillermo%20y%20Carla%20-%20el%20limbo%20-%20fotogramas.png) |
 | 00044 | Guillermo y Carla · La melena | 13,60 s | [MP4 60 fps](vista%20previa/00044%20Guillermo%20y%20Carla%20-%20la%20melena.mp4) · [fotogramas](vista%20previa/00044%20Guillermo%20y%20Carla%20-%20la%20melena%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
@@ -850,6 +851,20 @@ Corrige la continuidad de brazos, vaso y boquilla, el barrido del agua y el encu
 13. Negro.
 
 ![Fotogramas de 00041](vista%20previa/00041%20Guillermo%20y%20Carla%20-%20la%20pasarela%20-%20fotogramas.png)
+
+### 00043 · Guillermo y Carla · El limbo
+
+1. Negro.
+2. Fiesta hawaiana de noche (farolillos, palmera, limbo de bambú): Carla baila con una flor en el pelo; Guillermo, con collar de flores y las manos en los bolsillos, asiente al ritmo. Carla mira a cámara y se echa la melena atrás.
+3. Carla se dobla hacia atrás **imposiblemente baja**, rodillas por delante y melena barriendo el suelo, y pasa bajo el listón a pasitos; Guillermo se queda boquiabierto.
+4. Se levanta al otro lado, posa con los brazos en alto y guiña un ojo.
+5. Se da la vuelta, baja el listón una muesca con un dedo (¡clac!) y le invita con la palma; Guillermo se cruje los dedos y pone cara de chulo.
+6. Guillermo se echa atrás, se tambalea moviendo los brazos como aspas, **le cruje la espalda** y se queda congelado a medio camino, temblando, rojo y sudando.
+7. Se desploma de espaldas (¡pum!) y suspira aliviado… los postes tiemblan y **el listón le cae en la barriga**: ¡boing!, ojos en espiral y estrellitas.
+8. Carla se ríe tapándose la boca, se acerca bailando y planta la bota en el listón como un trofeo; a él se le hinchan los mofletes y levanta una mano rendido; ella guiña a cámara.
+9. Negro.
+
+![Fotogramas de 00043](vista%20previa/00043%20Guillermo%20y%20Carla%20-%20el%20limbo%20-%20fotogramas.png)
 
 ### 00044 · Guillermo y Carla · La melena
 
