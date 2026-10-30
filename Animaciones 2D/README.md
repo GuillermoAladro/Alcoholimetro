@@ -71,6 +71,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00035 | Guillermo y Ander · El billar | 14,30 s | [MP4 60 fps](vista%20previa/00035%20Guillermo%20y%20Ander%20-%20el%20billar.mp4) · [fotogramas](vista%20previa/00035%20Guillermo%20y%20Ander%20-%20el%20billar%20-%20fotogramas.png) |
 | 00036 | Guillermo y Ander · La máquina del gancho | 15,00 s | [MP4 60 fps](vista%20previa/00036%20Guillermo%20y%20Ander%20-%20la%20maquina%20del%20gancho.mp4) · [fotogramas](vista%20previa/00036%20Guillermo%20y%20Ander%20-%20la%20maquina%20del%20gancho%20-%20fotogramas.png) |
 | 00037 | Guillermo y Ander · El abrazo de oso | 13,80 s | [MP4 60 fps](vista%20previa/00037%20Guillermo%20y%20Ander%20-%20el%20abrazo%20de%20oso.mp4) · [fotogramas](vista%20previa/00037%20Guillermo%20y%20Ander%20-%20el%20abrazo%20de%20oso%20-%20fotogramas.png) |
+| 00038 | Guillermo y Ander · El beer pong | 14,20 s | [MP4 60 fps](vista%20previa/00038%20Guillermo%20y%20Ander%20-%20el%20beer%20pong.mp4) · [fotogramas](vista%20previa/00038%20Guillermo%20y%20Ander%20-%20el%20beer%20pong%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -767,6 +768,22 @@ Corrige los brazos, los apoyos y los contactos con los paraguas. Mantiene comple
 10. Negro.
 
 ![Fotogramas de 00037](vista%20previa/00037%20Guillermo%20y%20Ander%20-%20el%20abrazo%20de%20oso%20-%20fotogramas.png)
+
+### 00038 · Guillermo y Ander · El beer pong
+
+1. Negro.
+2. Sótano de fiesta: pared índigo con franjas de colores pintadas, guirnalda de bombillas, un neón con un vaso y una bola, un cuadro con un trofeo y una lámpara colgada sobre la mesa de beer pong, con un triángulo de vasos rojos en cada punta y una botella en medio. Guillermo y Ander, cada uno en un extremo.
+3. **Ander, sin despeinarse:** con un golpecito de muñeca mete la bola en un vaso de Guillermo (¡plop!), saca otra del bolsillo y la vuelve a meter sin mirar, mirando a cámara. Guillermo se queda pasmado y se le hincha la vena.
+4. Ander le cede el turno con la mano abierta y se pone a hacer malabares con otra bola, aburrido.
+5. **Guillermo se prepara a lo grande:** pesca la bola del vaso, la sacude, le sopla, mira a cámara muy chulo, apunta guiñando un ojo con la lengua fuera, hace dos amagos, se agacha… y lanza con todas sus fuerzas.
+6. La bola da en la lámpara (que se balancea), en la botella (que se cae y derrama la cerveza), en la cabeza de Ander (que ni se inmuta y sigue con sus malabares) y en el cuadro de la pared, que se queda torcido.
+7. Guillermo, desesperado, abre los brazos y grita al cielo… y **la bola le cae justo en la boca**.
+8. Se queda congelado con la bola en la boca. Ander se guarda su bola y **aplaude muy despacio**.
+9. Guillermo hincha los carrillos y **escupe la bola**, que cruza la mesa y cae en un vaso de Ander: ¡plop!
+10. Guillermo lo celebra con los puños en alto y guiña un ojo a cámara; Ander se queda con las manos a medio aplauso y levanta una ceja.
+11. Negro.
+
+![Fotogramas de 00038](vista%20previa/00038%20Guillermo%20y%20Ander%20-%20el%20beer%20pong%20-%20fotogramas.png)
 
 ## Ver y grabar
 
