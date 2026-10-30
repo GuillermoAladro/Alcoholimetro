@@ -35,6 +35,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00009.2 | Guillermo y la línea recta · revisada | 14 s | [MP4 60 fps](vista%20previa/00009.2%20Guillermo%20y%20la%20linea%20recta.mp4) · [fotogramas](vista%20previa/00009.2%20Guillermo%20y%20la%20linea%20recta%20-%20fotogramas.png) · [revisión](revision/00009.2.md) |
 | 00010 | Guillermo en la discoteca | 13,60 s | [MP4 60 fps](vista%20previa/00010%20Guillermo%20en%20la%20discoteca.mp4) · [fotogramas](vista%20previa/00010%20Guillermo%20en%20la%20discoteca%20-%20fotogramas.png) |
 | 00011 | Guillermo y Laura · El pulso | 13,75 s | [MP4 60 fps](vista%20previa/00011%20Guillermo%20y%20Laura%20-%20el%20pulso.mp4) · [fotogramas](vista%20previa/00011%20Guillermo%20y%20Laura%20-%20el%20pulso%20-%20fotogramas.png) |
+| 00013 | Guillermo y Laura · La pajita | 13,40 s | [MP4 60 fps](vista%20previa/00013%20Guillermo%20y%20Laura%20-%20la%20pajita.mp4) · [fotogramas](vista%20previa/00013%20Guillermo%20y%20Laura%20-%20la%20pajita%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -270,6 +271,22 @@ Corrige la continuidad del brazo al retirar la mano de la cara y ajusta el conta
 10. Negro.
 
 ![Fotogramas de 00011](vista%20previa/00011%20Guillermo%20y%20Laura%20-%20el%20pulso%20-%20fotogramas.png)
+
+### 00013 · Guillermo y Laura · La pajita
+
+1. Negro.
+2. Bar tiki al atardecer: tejadillo de paja, farolillos, antorchas y el sol sobre el mar. Guillermo y Laura, cada uno a un lado de una mesita alta con un cóctel gigante en pecera, con sombrilla, rodaja de naranja, guinda y dos pajitas.
+3. Se miran con ojitos: ella le hace caídas de pestañas, a él se le suben los colores y salen corazones.
+4. Se acercan a la vez a las pajitas con los ojos cerrados y sorben despacito.
+5. Guillermo abre un ojo, la mira de reojo… y **sorbe con todas sus fuerzas**: el cóctel baja de golpe en remolino, la sombrilla gira y a él se le hinchan los mofletes.
+6. A Laura solo le llega el **borboteo del fondo**: burbujas, hielos que tintinean. Abre los ojos, mira la pecera vacía y luego a él, muy seria.
+7. Él traga con los carrillos llenos, le sube un eructo, se tapa la boca… y se le escapa: a Laura se le vuela la melena.
+8. Él se rasca la nuca con cara de culpa.
+9. Laura coge la **guinda** por el rabito y se la enseña balanceándola; Guillermo estira la mano para pedírsela… y ella se la come con mucha chulería.
+10. Guillermo hace pucheros y mira a cámara; Laura tira el rabito a la pecera y guiña un ojo.
+11. Negro.
+
+![Fotogramas de 00013](vista%20previa/00013%20Guillermo%20y%20Laura%20-%20la%20pajita%20-%20fotogramas.png)
 
 ## Ver y grabar
 
