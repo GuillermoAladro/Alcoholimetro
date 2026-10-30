@@ -156,7 +156,7 @@ const Recortes = (() => {
       else if (u >= n) { const d = dir(c.a2); q = { x: pts[n].x + d.x * (s - c.L) * sig, y: pts[n].y + d.y * (s - c.L) * sig }; }
       else { const i = Math.floor(u), k = u - i; q = { x: pts[i].x + (pts[i + 1].x - pts[i].x) * k, y: pts[i].y + (pts[i + 1].y - pts[i].y) * k }; }
       const a = c.a1 + (c.a2 - c.a1) * suave((s - (c.sj - c.r)) / (2 * c.r));
-      return { x: q.x + (x - ax) * Math.cos(a), y: q.y + (x - ax) * Math.sin(a), u: x, v: y };
+      return { x: q.x + (x - ax) * (c.grosor || 1) * Math.cos(a), y: q.y + (x - ax) * (c.grosor || 1) * Math.sin(a), u: x, v: y };
     }
     function triangulo(a, b, d) {
       const du1 = b.u - a.u, dv1 = b.v - a.v, du2 = d.u - a.u, dv2 = d.v - a.v;
@@ -186,10 +186,11 @@ const Recortes = (() => {
       g.restore();
     }
     // Más filas en el pliegue, sin cambiar la curva usada por la IK.
-    const filas = [oy, oy + alto];
+    const yInicio = c.capFija ? Math.max(oy, ay) : oy;
+    const filas = [yInicio, oy + alto];
     for (let i = 0; i <= n; i++) filas.push(ay + c.L * i / n);
     for (let i = 0; i <= 12; i++) filas.push(ay + c.sj - c.r + 2 * c.r * i / 12);
-    const ys = [...new Set(filas.filter(y => y >= oy && y <= oy + alto))].sort((a, b) => a - b);
+    const ys = [...new Set(filas.filter(y => y >= yInicio && y <= oy + alto))].sort((a, b) => a - b);
     for (let i = 0; i < ys.length - 1; i++) {
       const a = vertice(ox, ys[i]), b = vertice(ox + ancho, ys[i]);
       const d = vertice(ox + ancho, ys[i + 1]), e = vertice(ox, ys[i + 1]);

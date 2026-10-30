@@ -584,10 +584,10 @@ const Guillermo = (() => {
 
   const HOMBRO_C = { x: 88, y: 345 };
   const BRAZO_C_L = PZ.brazo_cerca.fin[1] - PZ.brazo_cerca.raiz[1], BRAZO_C_CODO = PZ.brazo_cerca.codo;
-  function brazoMano(raiz, mano, L, sj) {
+  function brazoMano(raiz, mano, L, sj, continuo = false) {
     const mu = mano.mu ?? -1.75;
     const m = rotP({ x: Math.cos(mu) * MUNECA_R * JK, y: Math.sin(mu) * MUNECA_R * JK }, mano.ang || 0);
-    const c = R.ik(raiz, { x: mano.x + m.x, y: mano.y + m.y }, L, sj, 42, mano.dobla ?? -1, 1.08);
+    const c = (continuo ? R.ikContinuo : R.ik)(raiz, { x: mano.x + m.x, y: mano.y + m.y }, L, sj, 42, mano.dobla ?? -1, 1.08);
     c.grosor = mano.grosor || 1;
     c.capFija = true; c.caminoCorto = true;
     return c;
@@ -652,16 +652,16 @@ const Guillermo = (() => {
       g.save(); g.translate(p.jarra.x, p.jarra.y); g.rotate(p.jarra.ang); g.scale(jk, jk);
       jarra(g, p.jarra, t); punoJarra(g); g.restore();
     } else if (p.manoLejos) {
-      const h = T(HOMBRO), c = brazoMano(h, p.manoLejos, BRAZO_L, BRAZO_L * 0.5); c.capAng = p.torso;
+      const h = T(HOMBRO), c = brazoMano(h, p.manoLejos, BRAZO_L, BRAZO_L * 0.5, p.ikContinuo); c.capAng = p.torso;
       hombro(g, { x: h.x - 6, y: h.y + 14 }, 1);
-      R.tira(g, A, "brazo", c, 16);
+      if (p.ikContinuo) R.tiraContinua(g, A, "brazo", c); else R.tira(g, A, "brazo", c, 16);
       dibManoYObjeto(g, p.manoLejos, t);
     }
     // brazo cercano fuera del bolsillo
     if (p.manoCerca) {
-      const h = T(HOMBRO_C), c = brazoMano(h, p.manoCerca, BRAZO_C_L, BRAZO_C_CODO); c.capAng = p.torso;
+      const h = T(HOMBRO_C), c = brazoMano(h, p.manoCerca, BRAZO_C_L, BRAZO_C_CODO, p.ikContinuo); c.capAng = p.torso;
       hombro(g, { x: h.x + 8, y: h.y + 22 }, -1);
-      R.tira(g, A, "brazo_cerca", c, 16);
+      if (p.ikContinuo) R.tiraContinua(g, A, "brazo_cerca", c); else R.tira(g, A, "brazo_cerca", c, 16);
       dibManoYObjeto(g, p.manoCerca, t);
     }
     g.restore();
@@ -675,3 +675,4 @@ const Guillermo = (() => {
     copa, inclinacionCopa, COPA_BORDE, MUNECA_R, BRAZO_L, BRAZO_C_L,
     SUELO, PELVIS, CADERA, TOBILLO_ALTO, PUNTA, TALON, CUELLO, HOMBRO, HOMBRO_C, listo: () => A.listo };
 })();
+

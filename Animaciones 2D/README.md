@@ -17,6 +17,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00001 | Guillermo y la jarra | 15,45 s | [MP4 60 fps](vista%20previa/00001%20Guillermo%20y%20la%20jarra.mp4) · [fotogramas](vista%20previa/00001%20Guillermo%20y%20la%20jarra%20-%20fotogramas.png) |
 | 00001.2 | Guillermo y la jarra · revisada | 15,45 s | [MP4 60 fps](vista%20previa/00001.2%20Guillermo%20y%20la%20jarra.mp4) · [fotogramas](vista%20previa/00001.2%20Guillermo%20y%20la%20jarra%20-%20fotogramas.png) · [revisión](revision/00001.2.md) |
 | 00002 | Guillermo se transforma | 12,45 s | [MP4 60 fps](vista%20previa/00002%20Guillermo%20se%20transforma.mp4) · [fotogramas](vista%20previa/00002%20Guillermo%20se%20transforma%20-%20fotogramas.png) |
+| 00002.2 | Guillermo se transforma · revisada | 12,45 s | [MP4 60 fps](vista%20previa/00002.2%20Guillermo%20se%20transforma.mp4) · [fotogramas](vista%20previa/00002.2%20Guillermo%20se%20transforma%20-%20fotogramas.png) · [revisión](revision/00002.2.md) |
 | 00003 | Guillermo y el globo | 12,45 s | [MP4 60 fps](vista%20previa/00003%20Guillermo%20y%20el%20globo.mp4) · [fotogramas](vista%20previa/00003%20Guillermo%20y%20el%20globo%20-%20fotogramas.png) |
 | 00004 | Guillermo contra la máquina | 13,25 s | [MP4 60 fps](vista%20previa/00004%20Guillermo%20contra%20la%20maquina.mp4) · [fotogramas](vista%20previa/00004%20Guillermo%20contra%20la%20maquina%20-%20fotogramas.png) |
 
@@ -54,6 +55,12 @@ Para verla, elige **00001.2** en `ver.html` o abre `ver.html?id=00001.2`. [Infor
 7. Negro.
 
 ![Fotogramas de 00002](vista%20previa/00002%20Guillermo%20se%20transforma%20-%20fotogramas.png)
+
+### 00002.2 · Revisión de continuidad
+
+Mantiene el guion, el avatar y los 12,45 s de la original. Corrige las muñecas y el giro del codo, el contacto y volumen de la copa, el encuadre durante la carga y el origen de los cristales. La explosión y los efectos se calculan con el tiempo absoluto: reproducir, buscar y rebobinar dan el mismo fotograma.
+
+[Informe y pruebas](revision/00002.2.md). Selecciona **00002.2** en `ver.html` o abre `ver.html?id=00002.2`.
 
 ### 00003 · Guillermo y el globo
 
@@ -161,3 +168,4 @@ La cabeza va algo más grande que en el avatar, como en una caricatura. Brazos y
 2. Añade su `<script>` en `ver.html`.
 3. Si sale un personaje nuevo, crea su carpeta en `personajes/` con su propio `preparar_piezas.py`.
 4. Pasa `comprobar.py` y graba la vista previa con `grabar.py`.
+
