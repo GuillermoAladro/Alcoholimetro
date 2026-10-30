@@ -83,6 +83,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00044 | Guillermo y Carla · La melena | 13,60 s | [MP4 60 fps](vista%20previa/00044%20Guillermo%20y%20Carla%20-%20la%20melena.mp4) · [fotogramas](vista%20previa/00044%20Guillermo%20y%20Carla%20-%20la%20melena%20-%20fotogramas.png) |
 | 00045 | Guillermo y Carla · El retrato | 14,00 s | [MP4 60 fps](vista%20previa/00045%20Guillermo%20y%20Carla%20-%20el%20retrato.mp4) · [fotogramas](vista%20previa/00045%20Guillermo%20y%20Carla%20-%20el%20retrato%20-%20fotogramas.png) |
 | 00046 | Guillermo y Carla · La araña | 13,90 s | [MP4 60 fps](vista%20previa/00046%20Guillermo%20y%20Carla%20-%20la%20arana.mp4) · [fotogramas](vista%20previa/00046%20Guillermo%20y%20Carla%20-%20la%20arana%20-%20fotogramas.png) |
+| 00047 | Guillermo y Carla · Las flores | 15,00 s | [MP4 60 fps](vista%20previa/00047%20Guillermo%20y%20Carla%20-%20las%20flores.mp4) · [fotogramas](vista%20previa/00047%20Guillermo%20y%20Carla%20-%20las%20flores%20-%20fotogramas.png) |
 | 00048 | Guillermo y Carla · El limón | 13,50 s | [MP4 60 fps](vista%20previa/00048%20Guillermo%20y%20Carla%20-%20el%20limon.mp4) · [fotogramas](vista%20previa/00048%20Guillermo%20y%20Carla%20-%20el%20limon%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
@@ -941,6 +942,23 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 12. Negro.
 
 ![Fotogramas de 00046](vista%20previa/00046%20Guillermo%20y%20Carla%20-%20la%20arana%20-%20fotogramas.png)
+
+### 00047 · Guillermo y Carla · Las flores
+
+1. Negro.
+2. Terraza con pérgola al atardecer: Carla espera, mira el reloj y suspira.
+3. Guillermo entra muy chulo con un ramo enorme escondido a la espalda; una abeja le ronda y él guiña a cámara.
+4. La abeja le da vueltas a la cabeza y se mete en el ramo; le pica la nariz: «ah… ah…», se aguanta con el dedo bajo la nariz… y se le pasa.
+5. Da dos pasos y, con una reverencia, le ofrece el ramo; Carla se lleva la mano a la boca y le salen corazones.
+6. La abeja sale del ramo con una nube de polen justo bajo su nariz: «ah… ah…» y **¡ACHÍS!** Todos los pétalos salen volando en una tormenta de colores, la abeja sale despedida y a Carla se le vuela la melena.
+7. Una florecilla le cae a él en el pelo y el último pétalo se descuelga y cae al suelo.
+8. Carla abre los ojos y coge el ramillete de **tallos pelados**, lo mira y pone cara de póquer a cámara.
+9. Se parte de risa mientras él, colorado, se rasca la nuca; ella tira los tallos por encima de la cabeza y acaban plantados en la maceta.
+10. Él agacha la cabeza; ella le quita la florecilla del pelo, se la pone detrás de la oreja y guiña a cámara; él se derrite.
+11. La abeja vuelve mareada y se le posa en la nariz; Guillermo se queda bizco y Carla se ríe tapándose la boca.
+12. Negro.
+
+![Fotogramas de 00047](vista%20previa/00047%20Guillermo%20y%20Carla%20-%20las%20flores%20-%20fotogramas.png)
 
 ### 00048 · Guillermo y Carla · El limón
 
