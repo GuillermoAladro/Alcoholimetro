@@ -1,301 +1,202 @@
 {
-  "character": "Sara Saez",
-  "source_git_blob": "d1edf39e3ee14b31f9622f2b441b16462793e5ca",
-  "master_git_blob": "e5d8bf929a5ba1bafe18e9b0df7e36aa8e397038",
-  "master_sha256": "a80a3fd36ffeca7426a090e32d717e7b88c828f20b184bea2e2a2ee485c83dc1",
-  "master_checks": {
-    "xml_valid": true,
-    "vector_only": true,
-    "unique_ids": true,
-    "internal_references_valid": true,
-    "paths": 97647,
-    "gradients": 60313
+ "avatar": "Sara Saez",
+ "fecha": "2026-10-30",
+ "referencia": "animaciones/Avatar Sara Saez.png",
+ "referencia_sha256": "17c9f87e5978d396796dde81ed67e2ea4b187cb522214107106b5043f1f1d959",
+ "fondo": "transparente",
+ "metodo": "Trazados y degradados de la hoja maestra Astra conservados; silueta nueva desde herramientas/mascaras (segmentación isnet + limpieza de contorno); ver ../REVISION-TRANSPARENTE-2026-10-30.md",
+ "comprobado_con": [
+  "resvg 0.5 (render y métricas)",
+  "Chromium 1243 (decodificación de las 10 piezas)"
+ ],
+ "cambios_frente_a_version_anterior": {
+  "fondo_blanco_quitado_px": 15765,
+  "personaje_recuperado_px": 5091
+ },
+ "archivos": [
+  {
+   "archivo": "Sara-Saez.svg",
+   "bytes": 25752411,
+   "sha256": "b6bd3c3c276bb1a68df789e7da539de2129c79ab669a165684b2fef4f9022656",
+   "viewBox": "0 0 1122 1402",
+   "trazados": 97665,
+   "degradados": 60313,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0
   },
-  "method": "Exact extraction from original detailed vector master; individual contour selection and definition pruning",
-  "static_illustrations": true,
-  "selection": [
-    {
-      "contour": 12
-    },
-    {
-      "contour": 15
-    },
-    {
-      "contour": 14
-    },
-    {
-      "contour": 13
-    },
-    {
-      "box": [
-        0.0,
-        895.0,
-        186.0,
-        1348.0
-      ]
-    },
-    {
-      "box": [
-        186.0,
-        895.0,
-        374.0,
-        1348.0
-      ]
-    },
-    {
-      "box": [
-        374.0,
-        895.0,
-        560.0,
-        1348.0
-      ]
-    },
-    {
-      "box": [
-        560.0,
-        895.0,
-        742.0,
-        1348.0
-      ]
-    },
-    {
-      "box": [
-        742.0,
-        895.0,
-        929.0,
-        1348.0
-      ]
-    },
-    {
-      "box": [
-        929.0,
-        895.0,
-        1122.0,
-        1348.0
-      ]
-    }
-  ],
-  "files": [
-    {
-      "file": "01-frontal.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 12116,
-      "gradients": 7839,
-      "bytes": 3191559,
-      "sha256": "93d1fd229c3b63eeaff96d0bd95dfa189549a8ad8fbc56109d59cee364213e76",
-      "viewBox": [
-        117,
-        48,
-        275,
-        814
-      ],
-      "contour_index": 12,
-      "figure_mae_vs_master": 0.000383,
-      "figure_mae_vs_reference": 2.1649
-    },
-    {
-      "file": "02-tres-cuartos.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 11425,
-      "gradients": 7050,
-      "bytes": 2971173,
-      "sha256": "32c619a55711a05051575e2e5d0f6096c8a314d3e1ea9395339aa18bd46c340f",
-      "viewBox": [
-        395,
-        44,
-        257,
-        820
-      ],
-      "contour_index": 15,
-      "figure_mae_vs_master": 0.001559,
-      "figure_mae_vs_reference": 2.2454
-    },
-    {
-      "file": "03-perfil.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 8625,
-      "gradients": 5154,
-      "bytes": 2215091,
-      "sha256": "4c73e491564a8c4a2587e6b31904accbea3350e2dfb335b13a6daaac2f1c74a9",
-      "viewBox": [
-        642,
-        46,
-        191,
-        819
-      ],
-      "contour_index": 14,
-      "figure_mae_vs_master": 0.001452,
-      "figure_mae_vs_reference": 1.8648
-    },
-    {
-      "file": "04-espalda.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 10427,
-      "gradients": 6079,
-      "bytes": 2638483,
-      "sha256": "884dc89a3bc34d42e5ba993982e49b066232161b3eed6d2a7a44e8145fec7e74",
-      "viewBox": [
-        857,
-        46,
-        259,
-        807
-      ],
-      "contour_index": 13,
-      "figure_mae_vs_master": 0.001407,
-      "figure_mae_vs_reference": 1.9786
-    },
-    {
-      "file": "05-neutral.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 9567,
-      "gradients": 5846,
-      "bytes": 2639648,
-      "sha256": "287461b4e2c2d193a2e9826e9ffc87353dffdec7e656e6e9bb8fd8ff4542964b",
-      "viewBox": [
-        0,
-        887,
-        195,
-        470
-      ],
-      "contour_index": null,
-      "figure_mae_vs_master": 0.0,
-      "figure_mae_vs_reference": 1.8797
-    },
-    {
-      "file": "06-risa.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 10065,
-      "gradients": 6325,
-      "bytes": 2818642,
-      "sha256": "78339847afd113b3d252fc6f011a64973d1738dbee01bbd181c325b87e3c76d1",
-      "viewBox": [
-        178,
-        887,
-        205,
-        470
-      ],
-      "contour_index": null,
-      "figure_mae_vs_master": 0.0,
-      "figure_mae_vs_reference": 1.8548
-    },
-    {
-      "file": "07-sorpresa.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 9599,
-      "gradients": 6041,
-      "bytes": 2693323,
-      "sha256": "a58931dfcca76d5fdb1131e927d6e057f6982b90ea9c27ac3ed0b0265932e011",
-      "viewBox": [
-        366,
-        887,
-        203,
-        470
-      ],
-      "contour_index": null,
-      "figure_mae_vs_master": 0.0,
-      "figure_mae_vs_reference": 1.8337
-    },
-    {
-      "file": "08-cansancio.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 8701,
-      "gradients": 5451,
-      "bytes": 2449679,
-      "sha256": "fa676ec602601fc541ecbd9bcf9c2063c624ced9a497c62c45e2c626325658a8",
-      "viewBox": [
-        552,
-        887,
-        199,
-        470
-      ],
-      "contour_index": null,
-      "figure_mae_vs_master": 0.0,
-      "figure_mae_vs_reference": 1.9941
-    },
-    {
-      "file": "09-ojos-cerrados.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 9582,
-      "gradients": 6029,
-      "bytes": 2699125,
-      "sha256": "7e4dc1a3062e822ea26e23d5bfd2b83937092b9dec8c8cfd6d2aca508aa405bd",
-      "viewBox": [
-        734,
-        887,
-        204,
-        470
-      ],
-      "contour_index": null,
-      "figure_mae_vs_master": 5e-06,
-      "figure_mae_vs_reference": 1.9628
-    },
-    {
-      "file": "10-guino.svg",
-      "xml_valid": true,
-      "vector_only": true,
-      "unique_ids": true,
-      "internal_references_valid": true,
-      "paths": 9663,
-      "gradients": 5808,
-      "bytes": 2615205,
-      "sha256": "6910af873dfdee2ef9089dd9e2424e55552b5cb68ed4ae717ee3e35f3cb6d7cb",
-      "viewBox": [
-        921,
-        887,
-        201,
-        470
-      ],
-      "contour_index": null,
-      "figure_mae_vs_master": 9e-06,
-      "figure_mae_vs_reference": 1.6964
-    }
-  ],
-  "independent_renderer": [
-    {
-      "file": "01-frontal.svg",
-      "renderer": "Inkscape",
-      "mae_vs_cairosvg": 0.1302
-    },
-    {
-      "file": "06-risa.svg",
-      "renderer": "Inkscape",
-      "mae_vs_cairosvg": 0.0293
-    }
-  ],
-  "visual_review": {
-    "status": "reviewed",
-    "notes": [
-      "Revisadas las cuatro vistas completas y las seis expresiones ampliadas; conservados pelo largo, piercing, pendientes y colgante con cruz.",
-      "Los seis retratos se separaron por sus espacios blancos reales y se comprobaron individualmente, sin restos del vecino ni recortes del rostro.",
-      "Revisados top negro, bolsillos del pantalón cargo, costuras y calzado en coherencia con la referencia actual."
-    ]
+  {
+   "archivo": "Sara-Saez/01-frontal.svg",
+   "bytes": 3227825,
+   "sha256": "99f5f9b91e98a812c5c8bde0f018af83fdd24da20586a98091638c55c7ed8264",
+   "viewBox": "118 51 273 806",
+   "trazados": 12124,
+   "degradados": 7844,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9973,
+   "error_color_medio": 2.47,
+   "piezas_sueltas": 0
   },
-  "created_utc": "2026-10-30T01:20:32.272810+00:00"
+  {
+   "archivo": "Sara-Saez/02-tres-cuartos.svg",
+   "bytes": 3006702,
+   "sha256": "e9e56edae3befa853c7cf74758dfaf7df12e948b2776c25df9655a7bec6419eb",
+   "viewBox": "398 46 253 815",
+   "trazados": 11441,
+   "degradados": 7061,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9959,
+   "error_color_medio": 2.48,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Sara-Saez/03-perfil.svg",
+   "bytes": 2231535,
+   "sha256": "1b1dec73bdea15845f0625ac95eb7d2744995487fb8e85f8dc51480451525552",
+   "viewBox": "645 48 187 815",
+   "trazados": 8617,
+   "degradados": 5147,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9966,
+   "error_color_medio": 2.26,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Sara-Saez/04-espalda.svg",
+   "bytes": 2670610,
+   "sha256": "7156ac51e8dce8a26f697091c81bf9ea7d5f9c3635284d1325e0fe443ad9d19e",
+   "viewBox": "859 48 256 803",
+   "trazados": 10428,
+   "degradados": 6079,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9968,
+   "error_color_medio": 2.32,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Sara-Saez/05-neutral.svg",
+   "bytes": 2547062,
+   "sha256": "29da9d3f4c2a135324632eb764affb2adc088921c5f0b5f557d41af93dc90d4c",
+   "viewBox": "0 902 192 445",
+   "trazados": 9515,
+   "degradados": 5816,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.999,
+   "error_color_medio": 1.87,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Sara-Saez/06-risa.svg",
+   "bytes": 2731751,
+   "sha256": "4b2a15e703b5e382188262971030282fa257927b3fa87513ab6f171b5458ffb9",
+   "viewBox": "180 903 200 444",
+   "trazados": 10030,
+   "degradados": 6306,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9989,
+   "error_color_medio": 1.87,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Sara-Saez/07-sorpresa.svg",
+   "bytes": 2602182,
+   "sha256": "0fa1ddd4450c7347d567261b9a1fb810ada09699ba8df6a9f120918daab4bc0d",
+   "viewBox": "368 900 198 447",
+   "trazados": 9550,
+   "degradados": 6015,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9993,
+   "error_color_medio": 1.9,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Sara-Saez/08-cansancio.svg",
+   "bytes": 2343414,
+   "sha256": "d74654b7d972e124fbd33ad0926d0ee222112874575503a46c5bee23e4073a5d",
+   "viewBox": "555 921 193 425",
+   "trazados": 8608,
+   "degradados": 5399,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9998,
+   "error_color_medio": 1.89,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Sara-Saez/09-ojos-cerrados.svg",
+   "bytes": 2603891,
+   "sha256": "647ec9cfb87e34011afa143d25b87d99e309a6ae59f90849b0e4557bf8e093c5",
+   "viewBox": "736 902 199 444",
+   "trazados": 9515,
+   "degradados": 6000,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9992,
+   "error_color_medio": 1.96,
+   "piezas_sueltas": 0
+  },
+  {
+   "archivo": "Sara-Saez/10-guino.svg",
+   "bytes": 2535785,
+   "sha256": "ff67ac582958efde47fb66b56e29f767befc4201d3c9041d51835db9042d3896",
+   "viewBox": "923 901 199 445",
+   "trazados": 9663,
+   "degradados": 5808,
+   "ids_unicos": true,
+   "referencias_rotas": [],
+   "externos": [],
+   "imagenes": 0,
+   "scripts": 0,
+   "alfa_esquinas": 0,
+   "iou_silueta": 0.9989,
+   "error_color_medio": 1.83,
+   "piezas_sueltas": 0
+  }
+ ]
 }
