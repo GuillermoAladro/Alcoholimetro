@@ -1,0 +1,208 @@
+{
+  "scene": "00019.2",
+  "durationSeconds": 13.6,
+  "renderedFrames": 817,
+  "results": [
+    {
+      "name": "Original y revisión registradas",
+      "passed": true
+    },
+    {
+      "name": "Negro absoluto inicial y final",
+      "passed": true,
+      "details": [
+        {
+          "t": 0,
+          "max": 0
+        },
+        {
+          "t": 0.016666666666666666,
+          "max": 0
+        },
+        {
+          "t": 0.03333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.05,
+          "max": 0
+        },
+        {
+          "t": 0.06666666666666667,
+          "max": 0
+        },
+        {
+          "t": 0.08333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.1,
+          "max": 0
+        },
+        {
+          "t": 0.11666666666666667,
+          "max": 0
+        },
+        {
+          "t": 13.483333333333333,
+          "max": 0
+        },
+        {
+          "t": 13.5,
+          "max": 0
+        },
+        {
+          "t": 13.516666666666667,
+          "max": 0
+        },
+        {
+          "t": 13.533333333333333,
+          "max": 0
+        },
+        {
+          "t": 13.55,
+          "max": 0
+        },
+        {
+          "t": 13.566666666666666,
+          "max": 0
+        },
+        {
+          "t": 13.583333333333334,
+          "max": 0
+        },
+        {
+          "t": 13.6,
+          "max": 0
+        }
+      ]
+    },
+    {
+      "name": "Sin cortes visuales inesperados",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Geometría finita de ambos personajes a 120 Hz",
+      "passed": true,
+      "details": {
+        "samples": 1633,
+        "nonfinite": 0
+      }
+    },
+    {
+      "name": "Cuatro muñecas unidas durante toda la escena",
+      "passed": true,
+      "details": {
+        "maxGapPx": 1.7580138386117733e-7
+      }
+    },
+    {
+      "name": "Pies plantados y punteras fijas hasta el despegue",
+      "passed": true,
+      "details": {
+        "maxDriftPx": 1.2710574864626038e-13
+      }
+    },
+    {
+      "name": "Los dos paraguas permanecen en la mano que los sostiene",
+      "passed": true,
+      "details": {
+        "maxGapPx": 1.1718571004216928e-13
+      }
+    },
+    {
+      "name": "El molinete enlaza exactamente la suelta y la recogida",
+      "passed": true,
+      "details": [
+        {
+          "t": 1.84,
+          "position": 0.00010831122706329975,
+          "angle": 1.7135959939906797e-7
+        },
+        {
+          "t": 2.48,
+          "position": 0.00003588280951782925,
+          "angle": 2.399997884414412e-7
+        }
+      ]
+    },
+    {
+      "name": "El paraguas grande se abre antes de invertirse con la racha",
+      "passed": true
+    },
+    {
+      "name": "El paraguas plegable se abre al terminar de levantarlo",
+      "passed": true
+    },
+    {
+      "name": "Los paraguas abiertos protegen las cabezas y el invertido deja pasar la lluvia",
+      "passed": true
+    },
+    {
+      "name": "Molinete, inversión y cruce lunar completos dentro del encuadre",
+      "passed": true,
+      "details": {
+        "samples": 173,
+        "cut": []
+      }
+    },
+    {
+      "name": "Laura cierra un solo ojo en el guiño final",
+      "passed": true
+    },
+    {
+      "name": "Trayectorias idénticas al buscar directamente",
+      "passed": true
+    },
+    {
+      "name": "Rebobinado y reproducción idénticos a 30/60/120 fps",
+      "passed": true,
+      "details": {
+        "reverse": true,
+        "fpsChecks": [
+          {
+            "fps": 30,
+            "matches": true
+          },
+          {
+            "fps": 60,
+            "matches": true
+          },
+          {
+            "fps": 120,
+            "matches": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Atlas cargados",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Selector, reinicio, avance, retroceso, búsqueda y reproducción",
+      "passed": true
+    },
+    {
+      "name": "Modo kiosco",
+      "passed": true
+    },
+    {
+      "name": "Sin errores JavaScript ni recursos fallidos",
+      "passed": true,
+      "details": {
+        "errors": [],
+        "failures": []
+      }
+    }
+  ],
+  "paintMs": {
+    "median": 3,
+    "p95": 5.5,
+    "max": 22
+  },
+  "browser": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.0 Safari/537.36",
+  "passed": true
+}

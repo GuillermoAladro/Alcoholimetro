@@ -52,6 +52,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00018 | Guillermo y Laura · El selfie | 13,30 s | [MP4 60 fps](vista%20previa/00018%20Guillermo%20y%20Laura%20-%20el%20selfie.mp4) · [fotogramas](vista%20previa/00018%20Guillermo%20y%20Laura%20-%20el%20selfie%20-%20fotogramas.png) |
 | 00018.2 | Guillermo y Laura · El selfie · revisada | 13,3 s | [MP4 60 fps](vista%20previa/00018.2%20Guillermo%20y%20Laura%20-%20el%20selfie.mp4) · [fotogramas](vista%20previa/00018.2%20Guillermo%20y%20Laura%20-%20el%20selfie%20-%20fotogramas.png) · [revisión](revision/00018.2.md) |
 | 00019 | Guillermo y Laura · El paraguas | 13,60 s | [MP4 60 fps](vista%20previa/00019%20Guillermo%20y%20Laura%20-%20el%20paraguas.mp4) · [fotogramas](vista%20previa/00019%20Guillermo%20y%20Laura%20-%20el%20paraguas%20-%20fotogramas.png) |
+| 00019.2 | Guillermo y Laura · El paraguas · revisada | 13,6 s | [MP4 60 fps](vista%20previa/00019.2%20Guillermo%20y%20Laura%20-%20el%20paraguas.mp4) · [fotogramas](vista%20previa/00019.2%20Guillermo%20y%20Laura%20-%20el%20paraguas%20-%20fotogramas.png) · [revisión](revision/00019.2.md) |
 | 00020 | Guillermo y Laura · Piedra, papel o tijera | 14,95 s | [MP4 60 fps](vista%20previa/00020%20Guillermo%20y%20Laura%20-%20piedra%20papel%20o%20tijera.mp4) · [fotogramas](vista%20previa/00020%20Guillermo%20y%20Laura%20-%20piedra%20papel%20o%20tijera%20-%20fotogramas.png) |
 | 00021 | Guillermo y Marcos · El chupito en llamas | 14,10 s | [MP4 60 fps](vista%20previa/00021%20Guillermo%20y%20Marcos%20-%20el%20chupito%20en%20llamas.mp4) · [fotogramas](vista%20previa/00021%20Guillermo%20y%20Marcos%20-%20el%20chupito%20en%20llamas%20-%20fotogramas.png) |
 | 00022 | Guillermo y Marcos · El gato en la farola | 14,50 s | [MP4 60 fps](vista%20previa/00022%20Guillermo%20y%20Marcos%20-%20el%20gato%20en%20la%20farola.mp4) · [fotogramas](vista%20previa/00022%20Guillermo%20y%20Marcos%20-%20el%20gato%20en%20la%20farola%20-%20fotogramas.png) |
@@ -492,6 +493,12 @@ Corrige el brazo del gesto de las orejas de conejo, los apoyos y los hombros de 
 11. Negro.
 
 ![Fotogramas de 00019](vista%20previa/00019%20Guillermo%20y%20Laura%20-%20el%20paraguas%20-%20fotogramas.png)
+
+
+### 00019.2 · Revisión de continuidad
+
+Corrige los brazos, los apoyos y los contactos con los paraguas. Mantiene completos en el encuadre el molinete, la inversión con el viento y el cruce delante de la luna. Se conserva la original. [Informe y pruebas](revision/00019.2.md).
+
 
 ### 00020 · Guillermo y Laura · Piedra, papel o tijera
 
