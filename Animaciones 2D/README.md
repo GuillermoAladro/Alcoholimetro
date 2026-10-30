@@ -38,6 +38,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00011 | Guillermo y Laura · El pulso | 13,75 s | [MP4 60 fps](vista%20previa/00011%20Guillermo%20y%20Laura%20-%20el%20pulso.mp4) · [fotogramas](vista%20previa/00011%20Guillermo%20y%20Laura%20-%20el%20pulso%20-%20fotogramas.png) |
 | 00011.2 | Guillermo y Laura · El pulso · revisada | 13,75 s | [MP4 60 fps](vista%20previa/00011.2%20Guillermo%20y%20Laura%20-%20el%20pulso.mp4) · [fotogramas](vista%20previa/00011.2%20Guillermo%20y%20Laura%20-%20el%20pulso%20-%20fotogramas.png) · [revisión](revision/00011.2.md) |
 | 00012 | Guillermo y Laura · El alcoholímetro | 14,00 s | [MP4 60 fps](vista%20previa/00012%20Guillermo%20y%20Laura%20-%20el%20alcoholimetro.mp4) · [fotogramas](vista%20previa/00012%20Guillermo%20y%20Laura%20-%20el%20alcoholimetro%20-%20fotogramas.png) |
+| 00012.2 | Guillermo y Laura · El alcoholímetro · revisada | 14 s | [MP4 60 fps](vista%20previa/00012.2%20Guillermo%20y%20Laura%20-%20el%20alcoholimetro.mp4) · [fotogramas](vista%20previa/00012.2%20Guillermo%20y%20Laura%20-%20el%20alcoholimetro%20-%20fotogramas.png) · [revisión](revision/00012.2.md) |
 | 00013 | Guillermo y Laura · La pajita | 13,40 s | [MP4 60 fps](vista%20previa/00013%20Guillermo%20y%20Laura%20-%20la%20pajita.mp4) · [fotogramas](vista%20previa/00013%20Guillermo%20y%20Laura%20-%20la%20pajita%20-%20fotogramas.png) |
 | 00014 | Guillermo y Laura · El baile lento | 14,20 s | [MP4 60 fps](vista%20previa/00014%20Guillermo%20y%20Laura%20-%20el%20baile%20lento.mp4) · [fotogramas](vista%20previa/00014%20Guillermo%20y%20Laura%20-%20el%20baile%20lento%20-%20fotogramas.png) |
 | 00015 | Guillermo y Laura · La tarta | 14,25 s | [MP4 60 fps](vista%20previa/00015%20Guillermo%20y%20Laura%20-%20la%20tarta.mp4) · [fotogramas](vista%20previa/00015%20Guillermo%20y%20Laura%20-%20la%20tarta%20-%20fotogramas.png) |
@@ -316,6 +317,12 @@ Corrige los cuatro brazos, el apoyo de los codos en la mesa, el giro y la libera
 10. Negro.
 
 ![Fotogramas de 00012](vista%20previa/00012%20Guillermo%20y%20Laura%20-%20el%20alcoholimetro%20-%20fotogramas.png)
+
+
+### 00012.2 · Revisión de continuidad
+
+Corrige la continuidad de los brazos, la trayectoria de la boquilla, el lanzamiento de la moneda y el traspaso de las llaves. Mantiene la lectura cero de Laura y la sobrecarga de Guillermo. Se conserva la original. [Informe y pruebas](revision/00012.2.md).
+
 
 ### 00013 · Guillermo y Laura · La pajita
 
