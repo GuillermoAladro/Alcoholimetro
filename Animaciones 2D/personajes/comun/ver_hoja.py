@@ -46,6 +46,7 @@ def capa(cfg):
             v = paso[k]                                    # un polígono o una lista de polígonos
             for q in (v if len(v) and isinstance(v[0][0], (list, tuple)) else [v]): poli(q, CIAN, "limpiar: " + k)
         if "linea" in paso: linea(paso["linea"], CIAN)
+    for z in cfg.get("fondo_blanco_en", []): poli(z, CIAN, "fondo blanco")
     if r:
         linea(r.get("mandibula", []), ROJO, "mandíbula")
         linea([(r["x_min"], r["corte_y"]), (1122, r["corte_y"])], ROJO, "corte")

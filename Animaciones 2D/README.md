@@ -742,6 +742,7 @@ Animaciones 2D/
 ├─ personajes/carla/            coordenadas de Carla, su atlas, aros y collar
 ├─ personajes/dari/             coordenadas de Dari, su atlas y las gafas
 ├─ personajes/deivi/            coordenadas de Deivi y su atlas
+├─ personajes/gabacho/          coordenadas de Gabacho y su atlas
 ├─ escenas/                     una escena por archivo (00001 … 00010 y sus revisiones)
 ├─ herramientas/                 comprobar.py y grabar.py
 └─ vista previa/                 vídeos y fotogramas de cada animación
@@ -826,6 +827,13 @@ Opciones del montaje que usan las escenas nuevas (las anteriores no las activan 
 - **Limpieza:** las muñecas metidas en los bolsillos se quitan del torso y se repinta lo que tapaban: el costado y el bajo de la camiseta y la cintura del vaquero, con sus costuras.
 - **En pantalla:** los hombros son lilas y la mano se dibuja aparte al sacarla del bolsillo.
 - **Altura:** con el mismo `p.s` mide prácticamente lo mismo que Guillermo.
+
+**Gabacho** (`personajes/gabacho/`) sale de `Avatares 2D/Gabacho/Gabacho-2D.png` con el recortador común.
+
+- **Piezas:** la cabeza del retrato con el pelo muy rizado (los huecos blancos entre rizos se quitan como fondo, con cuencas vacías y sin el cuello del retrato), la cara roja, las cejas, la boca, el torso de la camiseta de fútbol azul marino hasta la cintura del vaquero, los dos brazos (manga corta con su puño de rayas y brazo) enderezados, las piernas del vaquero y la zapatilla con la suela nivelada.
+- **Limpieza:** las muñecas metidas en los bolsillos se quitan del torso y se repinta lo que tapaban: el costado y el bajo de la camiseta y la cintura del vaquero, con sus costuras. Lo estampado en la camiseta es el del avatar, tal cual.
+- **En pantalla:** los hombros son azul marino y la mano se dibuja aparte al sacarla del bolsillo.
+- **Altura:** con el mismo `p.s` mide lo mismo que Guillermo.
 
 ## Añadir una animación
 

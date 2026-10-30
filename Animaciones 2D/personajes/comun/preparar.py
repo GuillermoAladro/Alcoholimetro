@@ -148,6 +148,9 @@ class Hoja:
             ids = [i for i in np.unique(ventana[ventana > 0]) if i not in borde]
             assert ids, f"no hay hueco blanco cerca de {sx},{sy}"
             for i in ids: fondo |= lab == i
+        # fondo_blanco_en (opcional): zonas donde todo lo blanco es fondo, p. ej. los huecos entre los rizos de un
+        # pelo muy rizado (Gabacho), que son demasiados para darlos uno a uno en huecos_fondo
+        for zona in cfg.get("fondo_blanco_en", []): fondo |= blanco & poly_mask(zona, (self.H, self.W))
         x0, y0, x1, y1 = cfg.get("rotulo", (0, 0, 150, 70))  # el nombre de arriba a la izquierda
         fondo[y0:y1, x0:x1] = True
         self.fondo, self.figura = fondo, ~fondo
