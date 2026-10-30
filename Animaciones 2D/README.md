@@ -5,9 +5,9 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 ## Reglas de la carpeta
 
 - **Empiezan y acaban en negro.** Los primeros y los últimos 0,12 s son negro absoluto (todos los píxeles a 0). `herramientas/comprobar.py` lo verifica fotograma a fotograma.
-- **Sin títulos ni textos** dentro de la animación.
+- **Sin títulos ni textos** dentro de la animación. La única excepción es el texto impreso en un objeto cuando el guion lo pide (el globo de la 00003).
 - **Personajes sacados del avatar 2D.** No se dibujan muñecos aparte. Solo se añade, con el mismo trazo, lo que el avatar no trae (por ejemplo, la mano que agarra algo) y los gestos de la cara.
-- **Fluidez.** Cada escena se calcula a partir del tiempo absoluto `t`. Se ve igual a 30, 60 o 120 fps, y se puede rebobinar o grabar sin saltos. `comprobar.py` busca cortes bruscos entre fotogramas.
+- **Fluidez.** Cada escena se calcula a partir del tiempo absoluto `t`. Se ve igual a 30, 60 o 120 fps, y se puede rebobinar o grabar sin saltos. `comprobar.py` busca cortes bruscos entre fotogramas; solo se admiten los golpes a propósito, como un estallido o un globo que revienta.
 - **Formato.** Lienzo de 1024 × 600 (la pantalla de 7"). IDs de cinco cifras (`00001`, `00002`…), con sufijo para revisiones (`00001.2`). Un archivo por escena en `escenas/`.
 
 ## Animaciones
@@ -16,6 +16,8 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 |---|---|---|---|
 | 00001 | Guillermo y la jarra | 15,45 s | [MP4 60 fps](vista%20previa/00001%20Guillermo%20y%20la%20jarra.mp4) · [fotogramas](vista%20previa/00001%20Guillermo%20y%20la%20jarra%20-%20fotogramas.png) |
 | 00001.2 | Guillermo y la jarra · revisada | 15,45 s | [MP4 60 fps](vista%20previa/00001.2%20Guillermo%20y%20la%20jarra.mp4) · [fotogramas](vista%20previa/00001.2%20Guillermo%20y%20la%20jarra%20-%20fotogramas.png) · [revisión](revision/00001.2.md) |
+| 00002 | Guillermo se transforma | 12,45 s | [MP4 60 fps](vista%20previa/00002%20Guillermo%20se%20transforma.mp4) · [fotogramas](vista%20previa/00002%20Guillermo%20se%20transforma%20-%20fotogramas.png) |
+| 00003 | Guillermo y el globo | 12,45 s | [MP4 60 fps](vista%20previa/00003%20Guillermo%20y%20el%20globo.mp4) · [fotogramas](vista%20previa/00003%20Guillermo%20y%20el%20globo%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -30,6 +32,43 @@ Conserva el guion y el avatar de 00001. Corrige la unión del brazo con la mano,
 ![Fotogramas de 00001.2](vista%20previa/00001.2%20Guillermo%20y%20la%20jarra%20-%20fotogramas.png)
 
 Para verla, elige **00001.2** en `ver.html` o abre `ver.html?id=00001.2`. [Informe y comprobaciones reproducibles](revision/00001.2.md).
+
+### 00002 · Guillermo se transforma
+
+1. Negro.
+2. Con la mano en el bolsillo, se bebe una copa de balón de un trago.
+3. Le da una sacudida, saca el puño y se lo mira.
+4. **Carga gradual:**
+   - abre las piernas, se agacha y aprieta los puños;
+   - la copa vacía se agrieta en la mano;
+   - chispas, piedrecitas que suben y grietas en el suelo;
+   - destellos dorados en el pelo cada vez más seguidos.
+5. Grita y **estalla:**
+   - destello y onda expansiva;
+   - la copa revienta;
+   - la camiseta se rasga y deja ver un torso muy musculado;
+   - pelo rubio de punta y ojos azules;
+   - aura dorada con rayos.
+6. Mira arriba, se agacha y sale volando hasta salir por arriba.
+7. Negro.
+
+![Fotogramas de 00002](vista%20previa/00002%20Guillermo%20se%20transforma%20-%20fotogramas.png)
+
+### 00003 · Guillermo y el globo
+
+1. Negro.
+2. Con las manos en los bolsillos, saca un globo rojo desinflado y lo mira.
+3. Lo hincha en **cuatro soplidos**, cogiendo aire entre medias.
+4. Lo que pone en el globo:
+   - «Alcohol Tester» en blanco con sombra negra;
+   - una lectura en g/cl3 que sube con cada soplido (0,0 → 2,5) y pasa de verde a rojo, con una barra de nivel debajo;
+   - el texto crece con el globo y se curva con su forma.
+5. Mientras sopla se le pone la cara roja del esfuerzo (mofletes hinchados y sudor).
+6. El globo le **explota en la cara** y se queda pasmado, con trozos de goma pegados.
+7. Mira a cámara enfadado: vena en la frente, humo, dientes apretados y puño amenazante.
+8. Negro.
+
+![Fotogramas de 00003](vista%20previa/00003%20Guillermo%20y%20el%20globo%20-%20fotogramas.png)
 
 ## Ver y grabar
 
@@ -53,23 +92,36 @@ Animaciones 2D/
 │  └─ recortes.js                piezas rígidas y extremidades que se doblan (rodajas sobre una curva + IK)
 ├─ personajes/guillermo-aladro/
 │  ├─ preparar_piezas.py         trocea Avatares 2D/Guillermo-Aladro/Guillermo-Aladro-2D.png
-│  ├─ piezas.png · piezas.js     atlas generado y posiciones de cada pieza
-│  └─ guillermo.js               montaje del personaje: cuerpo, cara, puño y jarra
-├─ escenas/00001 Guillermo y la jarra.js
+│  ├─ piezas.png · piezas.js     atlas generado (piezas originales) y posiciones de cada pieza
+│  ├─ piezas_extra.png           piezas añadidas: brazo libre, torso sin brazos, pelo dorado y cara roja
+│  └─ guillermo.js               montaje del personaje: cuerpo, cara, manos, jarra, copa y transformación
+├─ escenas/                     una escena por archivo (00001, 00001.2, 00002, 00003)
 ├─ herramientas/                 comprobar.py y grabar.py
 └─ vista previa/                 vídeos y fotogramas de cada animación
 ```
 
 ## Cómo están hechos los personajes
 
-`preparar_piezas.py` recorta el PNG del avatar en 10 piezas:
+`preparar_piezas.py` recorta el PNG del avatar en piezas:
 
 - la cabeza del retrato, con los huecos de los ojos;
 - las dos cejas y la boca, para mover los gestos;
 - el torso con la mano en el bolsillo;
 - el brazo de la jarra;
 - las dos piernas del vaquero;
-- la zapatilla (en dos tonos, para el pie de delante y el de detrás).
+- la zapatilla (en dos tonos, para el pie de delante y el de detrás);
+- en `piezas_extra.png`:
+  - el otro brazo, enderezado para poder sacarlo del bolsillo;
+  - el torso sin las dos manos;
+  - la cabeza y las cejas con el pelo dorado;
+  - la cabeza con la cara roja.
+
+`piezas.png` no cambia al añadir piezas nuevas, así que 00001 y 00001.2 se siguen viendo idénticas píxel a píxel.
+
+Lo que el avatar no tiene se dibuja en el mismo estilo:
+- puños, copa, jarra y globo;
+- el torso musculado bajo la camiseta rota;
+- las púas extra del pelo dorado, los ojos azules, el sudor y la vena de enfado.
 
 El script también rellena lo que el brazo tapaba en el torso y el bolsillo donde estaba la mano. Si el avatar cambia, se vuelve a ejecutar y sale el mismo atlas.
 

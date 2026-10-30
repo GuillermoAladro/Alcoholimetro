@@ -16,21 +16,30 @@ const Recortes = (() => {
   function cargar(id, ruta) {
     const datos = window.PIEZAS_2D && window.PIEZAS_2D[id];
     if (!datos) throw Error("Faltan las piezas de " + id + " (¿se cargó piezas.js?)");
-    const img = new Image();
-    const A = { id, datos, img, listo: false, error: null };
-    img.onload = () => { A.listo = true; };
-    img.onerror = () => { A.error = "No se pudo cargar " + img.src; };
-    img.src = BASE + ruta + datos.atlas;
-    if (img.complete && img.naturalWidth) A.listo = true;
+    // Uno o varios atlas por personaje: cada pieza dice en «img» de cuál sale (0 por defecto).
+    const fuentes = Array.isArray(datos.atlas) ? datos.atlas : [datos.atlas];
+    const A = { id, datos, imgs: [], img: null, listo: false, error: null };
+    let cargadas = 0;
+    for (const f of fuentes) {
+      const im = new Image();
+      im.onload = () => { if (++cargadas === fuentes.length) A.listo = true; };
+      im.onerror = () => { A.error = "No se pudo cargar " + im.src; };
+      im.src = BASE + ruta + f;
+      A.imgs.push(im);
+    }
+    A.img = A.imgs[0];
+    if (A.imgs.every(im => im.complete && im.naturalWidth)) A.listo = true;
     ATLAS.push(A);
     return A;
   }
+
+  const imagen = (A, p) => (A.imgs ? A.imgs[p.img || 0] : A.img);
 
   /* Pieza rígida en coordenadas de la hoja; con `ancla`, ese punto de la hoja queda en el origen actual. */
   function pieza(g, A, nombre, ancla) {
     const p = A.datos.piezas[nombre];
     const [mx, my, mw, mh] = p.marco, q = ancla || [0, 0];
-    g.drawImage(A.img, mx, my, mw, mh, p.origen[0] - q[0], p.origen[1] - q[1], p.tam_hoja[0], p.tam_hoja[1]);
+    g.drawImage(imagen(A, p), mx, my, mw, mh, p.origen[0] - q[0], p.origen[1] - q[1], p.tam_hoja[0], p.tam_hoja[1]);
   }
 
   /* Ángulo θ: 0 = hacia abajo; la dirección es (−sen θ, cos θ) (igual que rotate(θ) aplicado a (0,1)). */
@@ -43,7 +52,9 @@ const Recortes = (() => {
     const { raiz, a1, a2, L, sj, r } = c, sig = c.estira || 1;
     const pts = [{ x: raiz.x, y: raiz.y, a: a1 }];
     let x = raiz.x, y = raiz.y;
-    const ang = s => a1 + (a2 - a1) * suave((s - (sj - r)) / (2 * r));
+    let da = a2 - a1;
+    if (c.caminoCorto) da -= Math.round(da / (2 * Math.PI)) * 2 * Math.PI;      // codo por el camino corto (brazos libres)
+    const ang = s => a1 + da * suave((s - (sj - r)) / (2 * r));
     for (let i = 0; i < n; i++) {
       const s0 = L * i / n, s1 = L * (i + 1) / n;
       const am = ang((s0 + s1) / 2), h = (s1 - s0) * sig;
@@ -112,18 +123,19 @@ const Recortes = (() => {
     const pts = muestras(Object.assign({}, c, { L }), n);
     const yTop = oy, yBot = oy + p.tam_hoja[1];
     const SOLAPE = 5;
+    // Con c.capFija no se dibuja el remate por encima de la raíz: el hombro lo dibuja el muñeco.
     for (let i = 0; i < n; i++) {
       const s0 = L * i / n, s1 = L * (i + 1) / n;
       // filas de la hoja que cubre la rodaja (la primera incluye el remate de arriba, la última el de abajo)
       let r0 = ay + s0, r1 = ay + s1 + (i < n - 1 ? SOLAPE : 0);
-      if (i === 0) r0 = Math.min(r0, yTop);
+      if (i === 0 && !c.capFija) r0 = Math.min(r0, yTop);
       if (i === n - 1) r1 = Math.max(r1, yBot);
       r0 = Math.max(r0, yTop); r1 = Math.min(r1, yBot);
       if (r1 <= r0) continue;
       const P = pts[i], am = pts[i + 1].a;
       g.save();
-      g.translate(P.x, P.y); g.rotate(am); g.scale(1, sig);
-      g.drawImage(A.img, mx, my + (r0 - oy) * tau, mw, (r1 - r0) * tau, ox - ax, r0 - (ay + s0), p.tam_hoja[0], r1 - r0);
+      g.translate(P.x, P.y); g.rotate(am); g.scale(c.grosor || 1, sig);
+      g.drawImage(imagen(A, p), mx, my + (r0 - oy) * tau, mw, (r1 - r0) * tau, ox - ax, r0 - (ay + s0), p.tam_hoja[0], r1 - r0);
       g.restore();
     }
     return pts;
@@ -170,7 +182,7 @@ const Recortes = (() => {
       }
       g.closePath(); g.clip();
       g.transform(xx, yx, xy, yy, a.x - xx * a.u - xy * a.v, a.y - yx * a.u - yy * a.v);
-      g.drawImage(A.img, mx, my, mw, mh, ox, oy, ancho, alto);
+      g.drawImage(imagen(A, p), mx, my, mw, mh, ox, oy, ancho, alto);
       g.restore();
     }
     // Más filas en el pliegue, sin cambiar la curva usada por la IK.

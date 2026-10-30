@@ -180,6 +180,9 @@ d.line([(330, 664), (346, 668), (362, 676), (377, 688), (388, 703)], fill=(60, 7
 d.line([(333, 670), (352, 676), (368, 686), (380, 700)], fill=(118, 142, 182), width=2)
 tronco_rgb = np.array(t_img)
 alfa_tronco = alfa.copy(); alfa_tronco[interior & ~m_der] = 1.0
+def mayor_parte(m):
+    lab_m, _ = ndi.label(m)
+    return lab_m == (np.bincount(lab_m.ravel())[1:].argmax() + 1)
 TRONCO = pieza(m_tronco, tronco_rgb.astype(np.float32), alfa_tronco)
 
 # ----- piernas y zapatillas
@@ -255,6 +258,103 @@ zap_alfa = np.where(zl & ~m_zap, 1.0, zap_alfa)
 ZAPATO = pieza(m_zap | zl, zap_rgb, zap_alfa)
 ZAPATO_L = ZAPATO.copy(); ZAPATO_L[..., :3] *= 0.78
 
+# ---------------------------------------------------------------- dos manos libres
+# ----- brazo cercano (el derecho de él, a la izquierda en pantalla), que estaba en el bolsillo
+BORDE_IZQ = [(128, 292), (124, 360), (121, 445), (123, 490), (132, 510), (140, 530), (136, 550), (138, 570), (136, 590),
+             (140, 615), (147, 638), (140, 653), (126, 668), (113, 688), (100, 704)]
+m_izq = poly_mask([(0, 292)] + BORDE_IZQ + [(0, 704)])
+m_brazo_c = cuerpo & m_izq & ~m_sobre_cuello
+m_brazo_c[662:] = False; m_brazo_c[:286] = False
+m_brazo_c &= ~(jeans_px & (np.arange(Hh)[:, None] > 600))
+lab_bc, _ = ndi.label(m_brazo_c)
+m_brazo_c = ndi.binary_fill_holes(lab_bc == (np.bincount(lab_bc.ravel())[1:].argmax() + 1))
+BRAZO_C_HOJA = pieza(m_brazo_c)
+
+def enderezar(P, puntos, eje_x, radio, ancho, sobre, bajo):
+    """Endereza una extremidad doblada: la polilínea hombro→codo→muñeca pasa a ser vertical."""
+    (x0, y0), (x1, y1), (x2, y2) = puntos
+    L1, L2 = math.hypot(x1 - x0, y1 - y0), math.hypot(x2 - x1, y2 - y1)
+    a1, a2 = math.atan2(-(x1 - x0), y1 - y0), math.atan2(-(x2 - x1), y2 - y1)
+    s = np.arange(-sobre, L1 + L2 + bajo + 1, 0.5)
+    k = np.clip((s - (L1 - radio)) / (2 * radio), 0, 1); k = k * k * (3 - 2 * k)
+    ang = a1 + (a2 - a1) * k
+    ds = np.diff(s, prepend=s[0])
+    qx = x0 + np.cumsum(-np.sin(ang) * ds) - (-np.sin(a1) * 0)
+    qy = y0 + np.cumsum(np.cos(ang) * ds)
+    i0 = np.searchsorted(s, 0); qx += x0 - qx[i0]; qy += y0 - qy[i0]
+    filas = np.arange(y0 - sobre, y0 + L1 + L2 + bajo).astype(np.float32)
+    cols = np.arange(eje_x - ancho, eje_x + ancho + 1).astype(np.float32)
+    S = filas - y0
+    QX, QY, AN = np.interp(S, s, qx), np.interp(S, s, qy), np.interp(S, s, ang)
+    U = cols - eje_x
+    mapx = (QX[:, None] + U[None, :] * np.cos(AN)[:, None]).astype(np.float32)
+    mapy = (QY[:, None] + U[None, :] * np.sin(AN)[:, None]).astype(np.float32)
+    pre = P.copy(); pre[..., :3] *= pre[..., 3:4]
+    out = cv2.remap(pre, mapx, mapy, cv2.INTER_LINEAR, borderValue=0)
+    al = np.clip(out[..., 3:4], 0, 1)
+    out[..., :3] = np.where(al > 1e-4, out[..., :3] / np.maximum(al, 1e-4), 0); out[..., 3] = al[..., 0]
+    R = np.zeros_like(P); fy, fx = int(filas[0]), int(cols[0])
+    R[fy:fy + out.shape[0], fx:fx + out.shape[1]] = out
+    return R, {"raiz": [eje_x, y0], "fin": [eje_x, y0 + L1 + L2], "codo": L1}
+
+HOMBRO_C, CODO_C, MUNECA_C = (88, 345), (66, 548), (131, 652)
+BRAZO_C, info_bc = enderezar(BRAZO_C_HOJA, [HOMBRO_C, CODO_C, MUNECA_C], 90, 32, 82, 58, 2)
+
+# ----- torso con las dos manos fuera: se rellena el lado izquierdo y el bolsillo
+interior_izq = poly_mask([(250, 300)] + BORDE_IZQ + [(100, 724), (250, 724)]) & ~m_bajo_pelvis & ~m_sobre_cuello
+rellenar_izq = interior_izq & (fondo | m_brazo_c | ~cuerpo)
+sub2 = (slice(280, 730), slice(0, 270))
+mask2 = (rellenar_izq[sub2] | (m_izq[sub2] & ~interior_izq[sub2]) | fondo[sub2]).astype(np.uint8) * 255
+mask2[:, 0] = 255
+inp2 = cv2.inpaint(tronco_rgb[sub2].copy(), mask2, 9, cv2.INPAINT_TELEA)
+libre_rgb = tronco_rgb.copy(); libre_rgb[sub2] = np.where(rellenar_izq[sub2][..., None], inp2, tronco_rgb[sub2])
+cam2 = rellenar_izq & (np.arange(Hh)[:, None] < 638)
+libre_rgb[cam2] = np.array([30, 30, 36], np.uint8)
+l_img = Image.fromarray(libre_rgb); d2 = ImageDraw.Draw(l_img)
+d2.line(BORDE_IZQ[:11], fill=(8, 8, 10), width=6, joint="curve")
+d2.line(BORDE_IZQ[10:], fill=(8, 8, 10), width=6, joint="curve")
+d2.line([(168, 662), (152, 667), (136, 676), (122, 689), (110, 704)], fill=(60, 78, 112), width=4, joint="curve")
+d2.line([(165, 669), (147, 676), (131, 686), (119, 700)], fill=(118, 142, 182), width=2)
+libre_rgb = np.array(l_img)
+m_libre = mayor_parte((m_tronco & ~m_izq) | interior_izq)
+alfa_libre = alfa_tronco.copy(); alfa_libre[interior_izq] = 1.0
+TRONCO_LIBRE = pieza(m_libre, libre_rgb.astype(np.float32), alfa_libre)
+
+# ---------------------------------------------------------------- pelo dorado (transformación)
+cab8 = np.clip(cab_rgbf, 0, 255).astype(np.int16)
+R_, G_, B_ = cab8[..., 0], cab8[..., 1], cab8[..., 2]
+piel_ok = (R_ >= 165) & (R_ - B_ > 60)
+cara = np.zeros((Hh, Ww), bool)
+lab_p, _ = ndi.label(piel_ok & m_cab)
+for sx, sy in [(680, 620), (565, 625), (760, 470)]:
+    if lab_p[sy, sx]: cara |= lab_p == lab_p[sy, sx]
+cara = ndi.binary_fill_holes(cara)
+pelo = m_cab & ~cara & (R_ >= 38) & (R_ <= 172) & (R_ > 1.45 * G_) & (R_ - B_ > 20)
+lum = (0.299 * R_ + 0.587 * G_ + 0.114 * B_) / 255.0
+tt = np.clip((lum - 0.07) / 0.30, 0, 1)
+rampa_t = [0.0, 0.35, 0.75, 1.0]
+rampa_c = np.array([[118, 76, 8], [214, 156, 18], [250, 206, 44], [255, 238, 130]], np.float32)
+oro = np.stack([np.interp(tt, rampa_t, rampa_c[:, i]) for i in range(3)], -1)
+cab_oro = cab_rgbf.copy(); cab_oro[pelo] = oro[pelo]
+# las líneas de tinta dentro del pelo se calientan un poco
+tinta_pelo = m_cab & ~cara & (R_ < 38) & poly_mask([(440, 0), (1122, 0), (1122, 640), (440, 640)])
+cab_oro[tinta_pelo] = cab_oro[tinta_pelo] * 0.6 + np.array([60, 36, 4], np.float32) * 0.4
+CABEZA_ORO = pieza(m_cab, cab_oro, cab_alfa)
+
+# cara roja (esfuerzo / enfado): solo la piel de la cara y las orejas
+cab_roja = cab_rgbf.copy()
+piel_cara = cara & m_cab & (R_ >= 120)
+cab_roja[piel_cara] = cab_roja[piel_cara] * np.array([1.0, 0.68, 0.7], np.float32) + np.array([0, 4, 6], np.float32)
+CABEZA_ROJA = pieza(m_cab, cab_roja, cab_alfa)
+
+def ceja_dorada(m):
+    nucleo = ndi.binary_erosion(m, iterations=5)
+    rgbc = np.zeros((Hh, Ww, 3), np.float32); rgbc[:] = (105, 64, 6)
+    yy = np.arange(Hh)[:, None].astype(np.float32)
+    rgbc[nucleo] = (246, 198, 40)
+    return pieza(m, rgbc, np.ones((Hh, Ww), np.float32))
+CEJA_D_ORO, CEJA_I_ORO = ceja_dorada(ceja_d), ceja_dorada(ceja_i)
+
 # ---------------------------------------------------------------- empaquetado
 def recorta_y_escala(P, tau, nombre, pivote, extra=None):
     a = P[..., 3]
@@ -284,20 +384,36 @@ piezas = [
     recorta_y_escala(PIERNA_L, TAU_CUERPO, "pierna_lejos", CAD_L, info_pl),
     recorta_y_escala(ZAPATO, TAU_CUERPO, "zapato", TOB_L),
     recorta_y_escala(ZAPATO_L, TAU_CUERPO, "zapato_lejos", TOB_L),
+    # dos manos libres y transformación
+    recorta_y_escala(BRAZO_C, TAU_CUERPO, "brazo_cerca", HOMBRO_C, info_bc),
+    recorta_y_escala(TRONCO_LIBRE, TAU_CUERPO, "tronco_libre", (250, 712), {"borde_izq": BORDE_IZQ}),
+    recorta_y_escala(CABEZA_ORO, TAU_CABEZA, "cabeza_oro", (700, 800)),
+    recorta_y_escala(CABEZA_ROJA, TAU_CABEZA, "cabeza_roja", (700, 800)),
+    recorta_y_escala(CEJA_D_ORO, TAU_CABEZA, "ceja_derecha_oro", (790, 532)),
+    recorta_y_escala(CEJA_I_ORO, TAU_CABEZA, "ceja_izquierda_oro", (910, 590)),
 ]
 
-# atlas por filas (estantería simple)
-ANCHO = 1024; pad = 4
-x = y = pad; fila = 0; marcos = {}
-for nombre, img, info in sorted(piezas, key=lambda p: -p[1].height):
-    if x + img.width + pad > ANCHO: x = pad; y += fila + pad; fila = 0
-    marcos[nombre] = (x, y, img, info); x += img.width + pad; fila = max(fila, img.height)
-alto = y + fila + pad
-atlas = Image.new("RGBA", (ANCHO, alto), (0, 0, 0, 0))
-meta = {}
-for nombre, (x, y, img, info) in marcos.items():
-    atlas.paste(img, (x, y))
-    meta[nombre] = dict(info, marco=[x, y, img.width, img.height])
+# Dos atlas: «piezas.png» con las piezas originales (no cambia, así las escenas ya hechas se ven
+# idénticas) y «piezas_extra.png» con las añadidas después (brazo libre, torso sin brazos, pelo
+# dorado, cara roja…). Cada pieza indica en «img» de qué atlas sale.
+EXTRA = {"brazo_cerca", "tronco_libre", "cabeza_oro", "cabeza_roja", "ceja_derecha_oro", "ceja_izquierda_oro"}
+def empaqueta(lista):
+    ANCHO = 1024; pad = 4
+    x = y = pad; fila = 0; marcos = {}
+    for nombre, img, info in sorted(lista, key=lambda p: -p[1].height):
+        if x + img.width + pad > ANCHO: x = pad; y += fila + pad; fila = 0
+        marcos[nombre] = (x, y, img, info); x += img.width + pad; fila = max(fila, img.height)
+    alto = y + fila + pad
+    atlas = Image.new("RGBA", (ANCHO, alto), (0, 0, 0, 0))
+    meta = {}
+    for nombre, (x, y, img, info) in marcos.items():
+        atlas.paste(img, (x, y))
+        meta[nombre] = dict(info, marco=[x, y, img.width, img.height])
+    return atlas, meta
+atlas, meta = empaqueta([q for q in piezas if q[0] not in EXTRA])
+atlas_extra, meta_extra = empaqueta([q for q in piezas if q[0] in EXTRA])
+for v in meta_extra.values(): v["img"] = 1
+meta.update(meta_extra)
 
 paleta = {
     "piel": color_medio(poly_mask([(640, 600), (700, 600), (700, 640), (640, 640)])),
@@ -309,11 +425,12 @@ paleta = {
 }
 SALIDA.mkdir(parents=True, exist_ok=True)
 atlas.save(SALIDA / "piezas.png", optimize=True)
-datos = {"fuente": "Avatares 2D/Guillermo-Aladro/Guillermo-Aladro-2D.png", "hoja": [Ww, Hh], "atlas": "piezas.png",
+atlas_extra.save(SALIDA / "piezas_extra.png", optimize=True)
+datos = {"fuente": "Avatares 2D/Guillermo-Aladro/Guillermo-Aladro-2D.png", "hoja": [Ww, Hh], "atlas": ["piezas.png", "piezas_extra.png"],
          "piezas": meta, "paleta": paleta}
 (SALIDA / "piezas.js").write_text(
     "/* Generado por preparar_piezas.py a partir del avatar 2D. No editar a mano. */\n"
     "window.PIEZAS_2D = window.PIEZAS_2D || {};\n"
     f"window.PIEZAS_2D[\"guillermo-aladro\"] = {json.dumps(datos, ensure_ascii=False, separators=(',', ':'))};\n",
     encoding="utf-8")
-print("atlas", atlas.size, "piezas:", ", ".join(f"{k} {v['marco'][2]}×{v['marco'][3]}" for k, v in meta.items()))
+print("atlas", atlas.size, atlas_extra.size, "piezas:", ", ".join(f"{k} {v['marco'][2]}×{v['marco'][3]}" for k, v in meta.items()))
