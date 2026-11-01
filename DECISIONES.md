@@ -2,6 +2,28 @@
 
 Decisiones que afectan a todo el proyecto. Lo más nuevo va arriba. Si un documento del repositorio dice otra cosa, manda lo que pone aquí.
 
+## 01-11-2026
+
+### Antena 4G por dentro: ya no sobresale nada (los candados se quedan)
+
+Guillermo no quiere nada que sobresalga de la carcasa, porque se rompería, y la Pi va a salir a internet con una SIM. Se cambia el Wi-Fi del bar (AR9271 con la antena por fuera) por un módem 4G con la antena plana por dentro. **Los candados del cajón de pajitas se mantienen.**
+- **Fuera:** el AR9271 (E05), el alargo RP-SMA con su pasamuros (E12) y el agujero Ø6,5 del lateral derecho.
+- **Módem (E05):** pincho 4G Huawei E3372h-320, versión HiLink, con una SIM de datos. Va en el USB de abajo de la Pi, donde iba el AR9271, y la Pi lo ve como una red USB (`eth1`) sin instalar nada.
+- **Antena (E12):** antena plana adhesiva (FPC, 698–2700 MHz, unos 100 × 15 mm) con cable y SMA macho. Va **dentro del cajón**, pegada en su lateral izquierdo sobre una placa de policarbonato de 2 mm (A-S05). Se une al módem con un latiguillo CRC9 → SMA hembra de 15 cm (E23).
+- **Ventanas en el lateral izquierdo**, alineadas, entre las rejillas de abajo y las de arriba:
+  - Carcasa (C03): 36 × 112 mm. La tapa por dentro una placa de policarbonato de 2 mm (A-V03, 52 × 128) pegada con cinta VHB. Por fuera queda a ras.
+  - Cajón (K04): 32 × 108 mm, tapada por el soporte de la antena.
+  - La placa de 2 mm (H19) y la cinta VHB (H20) entran en la lista.
+- **Topes:** los dos topes de goma de abajo a la izquierda pasan del cajón a la carcasa. En el cajón, al subirlo, rozarían la placa de la ventana.
+- **Más sencillo de mantener:** todo el coaxial va dentro del cajón, así que para sacarlo ya no hay que desenroscar la antena. Tampoco hay malla de coaxial que toque la carcasa: el −V queda flotante y W12b sigue pendiente.
+- **Por qué el lateral izquierdo:** delante no queda sitio (pantalla, Solo, cámara y boquilla), a la derecha la C14 y las rejillas no dejan los ~110 mm que mide la antena, y la trasera va contra la pared.
+- **Avisos:**
+  - La ventana es estrecha (la limita la Pi, que va pegada a ese lateral): **probar la cobertura con todo cerrado en un bar** antes de cortar chapa. Si va justa, se agrandan las ventanas.
+  - Con el módem, el pico de la rama de la Pi sube a unos 2,8 A (93 % del fusible de 3 A; estimado, a medir). Colgada del troncal, la Pi baja a unos 4,58 V en el pico, por debajo del aviso de subtensión: cobra más sentido llevarla directa a la fuente (MONTAJE W13).
+  - Módem, antena, latiguillo, placa y cinta están **sin anuncio elegido** y con precio orientativo. El pedido sube a unos 937 €.
+- **Programa:** `vigia-red.sh` vigila ahora la red del módem (`eth1`). Si no responde en 5 minutos, desconecta y vuelve a conectar el módem por software, como mucho una vez cada 10 minutos.
+- El modelo da 0 choques entre 146 piezas y los barridos de tapa, tapa interior y cajones salen limpios en pasos de 2 mm. Los cables tienen los mismos 5 avisos de siempre, todos de los tubos del soplido.
+
 ## 27-10-2026
 
 ### Carcasa más plana: 100 mm de fondo en vez de 103

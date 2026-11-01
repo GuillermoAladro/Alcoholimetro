@@ -1,5 +1,7 @@
 # Enlaces guardados: alargo de antena RP-SMA de 30 cm
 
+> **Retirado el 01-11-2026.** La máquina sale a internet por 4G con la antena por dentro: ver [módem 4G](../../modem-4g-huawei-e3372h/README.md) y [antena plana](../../antena-4g-plana-fpc/README.md). Esta ficha se guarda como referencia.
+
 Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-2026. Amazon bloquea el acceso de mis herramientas y no intenté abrir el anuncio (B0FJRPC7MN). El presupuesto de búsquedas web se agotó al final de la sesión.
 
 ## Definición de RP-SMA y géneros de conector

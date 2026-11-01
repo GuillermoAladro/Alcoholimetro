@@ -1,5 +1,7 @@
 # Alargo de antena RP-SMA macho-hembra, 30 cm (2 unidades)
 
+> **Retirado el 01-11-2026.** La máquina sale a internet por 4G con la antena por dentro: ver [módem 4G](../../modem-4g-huawei-e3372h/README.md) y [antena plana](../../antena-4g-plana-fpc/README.md). Esta ficha se guarda como referencia.
+
 Cable coaxial corto con un conector RP-SMA "macho" en un extremo y un RP-SMA "hembra" de panel en el otro. Saca la antena Wi-Fi del adaptador USB AR9271 (#12), que va dentro de la caja de chapa, hasta el techo de la carcasa: el extremo macho se enrosca en el adaptador y la antena de 2 dBi se enrosca en el extremo hembra, que va atornillado al techo en un taladro de Ø6,5 mm (guía §4).
 
 - **Compra:** ASIN B0FJRPC7MN, 9,99 € por 2 unidades (precio de la hoja de componentes del 19-20-10-2026; unos 5 € por unidad, cálculo mío).

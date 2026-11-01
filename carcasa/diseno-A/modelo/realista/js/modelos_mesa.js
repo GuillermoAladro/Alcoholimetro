@@ -30,16 +30,18 @@ const MESA = (() => {
     const anclas = { tubo: { p: [0, 4, 25], d: [0, 1, 0] } };
     return { g, anclas, aCAD: ident(), nombre: "Boquilla del panel" };
   }
-  // trozo de lateral con el pasamuros RP-SMA y la antena (de pie)
-  function chapaAntena() {
+  // trozo del lateral izquierdo (de pie) con la ventana de la antena 4G: chapa con su hueco, policarbonato de 2 mm detrás
+  // y la antena plana pegada encima; el cable sale por arriba
+  function ventanaAntena() {
     const g = new THREE.Group(), acero = L3.phys("chapaMesa", { color: L3.C("#8f959b"), metalness: 0.82, roughness: 0.45 });
-    const ch = extruir(rectR(-22, 0, 22, 60, 2), 1.5, acero, { agujeros: [{ x: 0, y: 30, r: 3.25 }] });
-    ch.rotation.x = Math.PI / 2; ch.position.y = 1.5; g.add(ch);
-    const pa = HERR.REG.pasamuros_antena(); const pg = pa.g; pg.position.set(0, 0, 30);
-    // la antena cuelga hacia −Z en el modelo; aquí se gira hacia arriba (+Z)
-    pg.rotation.y = Math.PI; g.add(pg);
-    const c = pa.anclas.coax; const p = V(...c.p).applyEuler(pg.rotation).add(pg.position), d = V(...c.d).applyEuler(pg.rotation);
-    return { g, anclas: { coax: { p: [p.x, p.y, p.z], d: [d.x, d.y, d.z] } }, aCAD: ident(), nombre: "Pasamuros RP-SMA y antena" };
+    const W = 64, H = 140, vx = 18, vz0 = 14, vz1 = 126;                     // trozo de chapa y ventana (36 × 112)
+    g.add(caja(-W / 2, -vx, 0, 1.5, 0, H, acero), caja(vx, W / 2, 0, 1.5, 0, H, acero));
+    g.add(caja(-vx, vx, 0, 1.5, 0, vz0, acero), caja(-vx, vx, 0, 1.5, vz1, H, acero));
+    g.add(caja(-vx - 8, vx + 8, 1.5, 3.5, vz0 - 8, vz1 + 8, M.policarbonato()));          // policarbonato de 2 mm
+    const fpc = L3.phys("fpc", { color: L3.C("#1b1c1e"), roughness: 0.55, clearcoat: 0.3 });
+    g.add(caja(-7, 7, 3.5, 3.9, 20.5, 119.5, fpc));                                      // antena plana 14 × 99
+    g.add(caja(-2.5, 2.5, 3.5, 5.1, 113.5, 121.0, M.oro()));                              // salida del cable
+    return { g, anclas: { coax: { p: [0, 4.3, 121.0], d: [0, 0, 1] } }, aCAD: ident(), nombre: "Ventana de la antena 4G" };
   }
   // salida del escape (trozo de lateral con la rejilla)
   function escape() {
@@ -49,6 +51,6 @@ const MESA = (() => {
     const pa = HERR.REG.arandela_pasacables(4.5, 7.5, [0, 1, 0]).g; pa.position.set(0, 0, 20); g.add(pa);
     return { g, anclas: { tubo: { p: [0, 4, 20], d: [0, 1, 0] } }, aCAD: ident(), nombre: "Escape del soplido" };
   }
-  const REG = { chapa_tierra: chapaTierra, boquilla_panel: boquilla, chapa_antena: chapaAntena, escape_panel: escape };
+  const REG = { chapa_tierra: chapaTierra, boquilla_panel: boquilla, ventana_antena: ventanaAntena, escape_panel: escape };
   return { REG };
 })();

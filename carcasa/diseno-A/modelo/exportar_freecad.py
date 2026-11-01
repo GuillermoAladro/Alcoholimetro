@@ -13,7 +13,7 @@ import specs, diseno
 
 GRUPOS = [  # (nombre del grupo, condición sobre la pieza)
     ("01 Carcasa", lambda p: p["tipo"] == "fabricada" and p["grupo"] == "C"),
-    ("02 Frente (policarbonatos)", lambda p: p["tipo"] == "fabricada" and p["grupo"] == "V"),
+    ("02 Policarbonatos (frente y ventana de la antena)", lambda p: p["tipo"] == "fabricada" and p["grupo"] == "V"),
     ("03 Tapa abatible", lambda p: p.get("movil") == "tapa"),
     ("04 Tapa interior", lambda p: p.get("movil") == "tapa_interior"),
     ("05 Cajon de pajitas", lambda p: p.get("movil") in ("cajon_pajitas", "candado")),

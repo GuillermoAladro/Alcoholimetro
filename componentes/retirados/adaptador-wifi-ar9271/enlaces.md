@@ -1,5 +1,7 @@
 # Enlaces guardados: adaptador Wi-Fi USB AR9271
 
+> **Retirado el 01-11-2026.** La máquina sale a internet por 4G con la antena por dentro: ver [módem 4G](../../modem-4g-huawei-e3372h/README.md) y [antena plana](../../antena-4g-plana-fpc/README.md). Esta ficha se guarda como referencia.
+
 Todas las páginas y archivos consultados para la [ficha](README.md), reunidos el 21-10-2026. "Abierto" = mi herramienta devolvió contenido. Mi herramienta no puede descargar archivos: los PDF se descargan desde estos enlaces.
 
 ## Chip y módulos con el chip: documentos del fabricante

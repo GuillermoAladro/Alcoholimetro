@@ -24,10 +24,12 @@ Los 31 componentes del alcoholímetro con su enlace de compra (30 de la guía, s
 | 8 | Tubo de soplido | Manguera de silicona de 6 mm, 1 m | [B0D9FJY1SG](https://www.amazon.es/dp/B0D9FJY1SG) | 6,99 € | [ficha](componentes/tubo-silicona-6mm/README.md) | Une la boquilla con el sensor |
 | 9 | Lector de tarjetas | SumUp Solo con base de carga | [B0C9V3LXTF](https://www.amazon.es/dp/B0C9V3LXTF) | 72,18 € | [ficha](componentes/sumup-solo/README.md) | Quedaba 1 en stock. La base de carga no se usa en este diseño |
 | 10 | Cable del Solo | USB-A → USB-C acodado 90°, 30 cm | [B0C8FS5FV2](https://www.amazon.es/dp/B0C8FS5FV2) | 4,99 € | [ficha](componentes/cable-usb-a-usb-c-90-30cm/README.md) | El USB-C está en el canto de abajo del Solo; el conector baja por una ranura de 14 × 9 mm del separador |
-| 12 | Wi-Fi | Adaptador USB **AR9271** con antena desmontable | [B0CBW6THN1](https://www.amazon.es/dp/B0CBW6THN1) | 16,24 € | [ficha](componentes/adaptador-wifi-ar9271/README.md) |  |
-| 13 | Alargo de antena | RP-SMA macho-hembra, 30 cm (2 uds.) | [B0FJRPC7MN](https://www.amazon.es/dp/B0FJRPC7MN) | 9,99 € | [ficha](componentes/alargo-antena-rp-sma-30cm/README.md) | Saca la antena por el techo |
+| 12 | Internet 4G | Módem USB Huawei **E3372h-320** (versión HiLink), con una SIM de datos | sin elegir | ~39,90 € | [ficha](componentes/modem-4g-huawei-e3372h/README.md) | Va en el USB de abajo de la Pi. La SIM no se compra en Amazon (01-11-2026) |
+| 13 | Antena 4G | Antena plana FPC 698–2700 MHz con cable y SMA macho + latiguillo CRC9 → SMA hembra de 15 cm | sin elegir | ~17,98 € | [ficha](componentes/antena-4g-plana-fpc/README.md) | Va pegada dentro del cajón, en el lateral izquierdo: no sobresale nada (01-11-2026) |
 
-Subtotal: **405,25 €**.
+Subtotal: **436,90 €**.
+
+Las ventanas de la antena llevan además una placa de policarbonato de 2 mm y cinta VHB (H19 y H20 en `carcasa/diseno-A/Lista_de_piezas.xlsx`). Los precios de #12 y #13 son orientativos hasta elegir anuncio.
 
 ## Alimentación, protección y material de montaje (14 a 32)
 
@@ -57,16 +59,11 @@ Subtotal: **230,77 €**.
 
 ## Total
 
-**Primer pedido: 636,02 €** (una unidad de cada línea, con los precios de arriba). Unos 160 € son herramientas y kits que sobran en pedidos siguientes: crimpadora, WAGO, rollos de cable y similares. La guía calcula unos 470 € de electrónica por cada máquina siguiente, sin contar la chapa.
+**Primer pedido: 667,67 €** (una unidad de cada línea, con los precios de arriba). Unos 160 € son herramientas y kits que sobran en pedidos siguientes: crimpadora, WAGO, rollos de cable y similares. La guía calcula unos 470 € de electrónica por cada máquina siguiente, sin contar la chapa.
 
-## Plan B de conexión (si el Wi-Fi del bar no vale)
+## Plan B de conexión (ya no hace falta)
 
-No está en las 31 fichas. Lo propone la guía por si el Wi-Fi del bar no sirve:
-
-| Pieza | Enlace | Precio | Nota |
-|---|---|---|---|
-| Router 4G USB ZTE MF79N | [B08WPXRTRL](https://www.amazon.es/dp/B08WPXRTRL) | 35,99 € | Crea un Wi-Fi propio dentro de la máquina, al que se conecta el Solo. La Pi se conecta por USB. Necesita una SIM de datos |
-| Antenas TS9 | [B07YBW534D](https://www.amazon.es/dp/B07YBW534D) | 7,99 € | Comprobar que el MF79N trae conectores TS9: el anuncio no lo dice |
+Desde el 01-11-2026 la máquina sale a internet por 4G de serie (#12 y #13), con la antena por dentro. El router 4G ZTE MF79N que proponía la guía como plan B ya no se usa.
 
 ## Lo que cambian los anuncios leídos el 21-10-2026
 
@@ -74,4 +71,4 @@ No está en las 31 fichas. Lo propone la guía por si el Wi-Fi del bar no sirve:
 - **#7 Clavija XH:** la guía la compra «por si el ZE29A no trae su cable»; el anuncio del ZE29A no dice si lo trae.
 - **#9 SumUp Solo:** el USB-C está en el canto de abajo (foto del anuncio).
 - **#32 (nuevo):** la auditoría 1.0 (H04) y las cuatro auditorías del repositorio piden fusible en el troncal y en cada rama de 5 V. El kit B07KQ46H6K trae 5 portafusibles y fusibles de 1, 2, 3 y 5 A; detalle en [MONTAJE GENERAL](MONTAJE-GENERAL.md), W11 a W18.
-- **Piezas que las auditorías del 21-10-2026 piden y que no están en esta lista** (ver MONTAJE GENERAL, 5.2): tapa aislante para los bornes de 230 V de la fuente; arandelas aislantes para el jack RP-SMA del techo; dos punteras dobles de 2 × 0,75 mm² para los bornes 4 y 5 de la fuente, si el kit #28 no las trae; tornillería M2 para la cámara (sus taladros son de 2,2 mm); resistencias de 1 kΩ para la UART si se adoptan; y, si se decide, una entrada C14 con portafusibles de dos polos documentada que sustituya a la #15.
+- **Piezas que las auditorías del 21-10-2026 piden y que no están en esta lista** (ver MONTAJE GENERAL, 5.2): tapa aislante para los bornes de 230 V de la fuente; dos punteras dobles de 2 × 0,75 mm² para los bornes 4 y 5 de la fuente, si el kit #28 no las trae; tornillería M2 para la cámara (sus taladros son de 2,2 mm); resistencias de 1 kΩ para la UART si se adoptan; y, si se decide, una entrada C14 con portafusibles de dos polos documentada que sustituya a la #15.

@@ -30,6 +30,14 @@ AIRE_TI = 6.0      # aire entre el borde del cajón de componentes y la tapa int
 X_CER = 15.0       # eje de cada cerradura a 15 mm del lateral; la leva (recortada a 20,5 mm) entra en una ranura del lateral
 LEVA = 20.5
 HOLG_TI = 0.3      # holgura de la tapa interior en su ranura del lateral derecho (arriba y abajo)
+PC_A = 2.0         # policarbonato de 2 mm de las ventanas de la antena 4G
+# Antena 4G (01-11-2026): dos ventanas alineadas en el lateral IZQUIERDO, una en la carcasa y otra en el cajón de componentes,
+# entre las rejillas de abajo y las de arriba. Cotas de mundo: (y desde el frente, z desde el suelo)
+VA_Y, VA_Z = (21.0, 57.0), (229.0, 341.0)      # ventana de la carcasa
+VA_PC = 8.0                                    # la placa de 2 mm pisa la chapa 8 mm por cada lado (cinta VHB)
+VK_Y, VK_Z = (23.0, 55.0), (231.0, 339.0)      # ventana del cajón: 2 mm más pequeña por cada lado
+VK_PC = 6.0                                    # el soporte de 2 mm pisa la chapa del cajón 6 mm (detrás está la Pi)
+ANT_C = (39.0, 285.0)                          # centro de la antena plana (y, z)
 
 COL_CHAPA = (0.62, 0.66, 0.70)
 COL_CHAPA_OSC = (0.30, 0.34, 0.38)
@@ -89,14 +97,14 @@ COMPRAS = {
     "E02": ("SumUp Solo", "B0C9V3LXTF", 72.18),
     "E03": ("Raspberry Pi Camera Module 3 (estándar)", "B0BRY6MVXL", 48.04),
     "E04": ("Raspberry Pi 3B+", "B0BNJPL4MW", 54.90),
-    "E05": ("Adaptador Wi-Fi AR9271 con antena", "B0CBW6THN1", 16.24),
+    "E05": ("Módem 4G USB Huawei E3372h-320 (HiLink), para tarjeta SIM de datos", "", 39.90),
     "E06": ("Fuente Mean Well LRS-50-5", "B06XWRCWZ9", 18.52),
     "E07": ("Toma C14 con portafusibles, sin interruptor (Cablepelado)", "B07CQ54BY4", 8.03),
     "E08": ("WAGO 221-415 (kit 221)", "B09XB58ZXJ", 27.08),
     "E09": ("Borne USB-A hembra a tornillo", "B07V86XPL4", 10.99),
     "E10": ("Portafusibles en línea mini + fusibles", "B07Q495GQG", 9.49),
     "E11": ("Sensor de alcohol Winsen ZE29A", "B0H8NVXVG5", 108.46),
-    "E12": ("Alargo RP-SMA 30 cm (pasamuros)", "B0FJRPC7MN", 9.99),
+    "E12": ("Antena 4G plana (FPC) 698–2700 MHz, ~100 × 15 mm, cable de 20 cm con SMA macho", "", 9.99),
     "E13": ("Tubo de silicona 6 mm", "B0D9FJY1SG", 6.99),
     "E14": ("Conector en T para tubo 6 mm", "B0GT5XPRWK", 4.74),
     "E15": ("Reductor de latón 6→4 mm (restricción)", "B0H38RDVZR", 8.20),
@@ -107,6 +115,7 @@ COMPRAS = {
     "E20": ("Fusibles mini 2 A / 3 A (kit)", "B0BMGBBPTT", 15.99),
     "E21": ("microSD SanDisk High Endurance 32 GB", "B07P14QHB7", 20.49),
     "E22": ("Cable Schuko → C13", "B00AOAJAUC", 7.00),
+    "E23": ("Latiguillo CRC9 macho → SMA hembra, 15 cm (antena del E3372)", "", 7.99),
     # herrajes
     "H01": ("Silentblock M4 10×10 (4 uds.)", "B07QK5M755", 9.33),
     "H02": ("Topes de goma adhesivos 10×3 mm", "B0CHNRVG2Z", 6.29),
@@ -126,6 +135,8 @@ COMPRAS = {
     "H16": ("Taco de nylon fischer SX Plus 8 × 40 (100 uds.)", "B0C43ZLBNM", 7.29),
     "H17": ("Tornillo de seguridad Torx con pin M4 × 16, cabeza plana, inox (20 uds.)", "B0GGSDJMYV", 9.19),
     "H18": ("Candado ABUS 65/30 de latón, pack de 2 con la misma llave", "B01H9Z6HB4", 20.59),
+    "H19": ("Placa de policarbonato compacto 2 mm (300 × 200 mm o más)", "", 9.99),
+    "H20": ("Cinta 3M VHB transparente de doble cara, 19 mm", "", 12.99),
 }
 
 
@@ -135,7 +146,7 @@ BOCALLAVE = (19.0, 6.5, 20.0)        # Ø de paso (cabeza + arandela ancha), anc
 def fijaciones_pared(W, z_arriba):
     """18 agujeros redondos Ø6,5 para la pared: 3 columnas (x = -85, 0, 85) × 6 filas.
     3 filas detrás del cajón de pajitas (z = 25, 75, 125) y 3 detrás del cajón de componentes (z = 205, 295 y la de arriba,
-    10 mm por debajo del borde del cajón); se evitan la bandeja, el pasamuros de la antena y el saliente de la tapa interior."""
+    10 mm por debajo del borde del cajón); se evitan la bandeja y el saliente de la tapa interior."""
     xs = (-(W / 2 - 25), 0.0, W / 2 - 25)
     zs = (25.0, 75.0, 125.0, 205.0, 295.0, z_arriba)
     return [(x, z, False) for z in zs for x in xs]
@@ -200,8 +211,6 @@ def construir(spec):
         cer = [(-(W / 2 - X_CER), -1), (W / 2 - X_CER, 1)]
     else:
         cer = [((W / 2 - X_CER), 1)] if bis == "izq" else [(-(W / 2 - X_CER), -1)]
-    lado_ant = 1 if (tapa == "extraible" or bis == "izq") else -1
-    y_ant, z_ant = D - T - gb / 2, Hw - 98.5
     m.cotas.update(W=W, D=D, H=Hw + T, Hp=Hp, Hw=Hw, Hr=Hr, Ktop=Ktop, Kz0=Kz0, Kx0=Kx0, Kx1=Kx1, Ky0=Ky0, Ky1=Ky1)
     # sistema local del cajón de componentes: x igual, y=0 cara trasera de la chapa frontal, z=0 cara de la base
     OX, OY, OZ = 0.0, Ky0 + T, Kz0 + T
@@ -296,11 +305,16 @@ def construir(spec):
     for z0, z1 in lay["rejillas_izq"]:
         cuts += vent_slots_x(Ky0 + 12, Ky1 - 12, zc(z0), zc(z1))
     cuts += [box(-W / 2 - 5, -W / 2 + 5, 15.0, 19.0, zl - 7, zl + 7) for x, sg in cer if sg < 0]
-    if lado_ant < 0:
-        cuts.append(hole_x(y_ant, z_ant, 6.5))
+    cuts.append(box(-W / 2 - 1, -W / 2 + T + 1, VA_Y[0], VA_Y[1], VA_Z[0], VA_Z[1]))           # ventana de la antena 4G
     li = cut_all(li, cuts)
-    m.fab("C", "Lateral izquierdo", li, COL_CHAPA, notas="Hueco del cajón de pajitas, rejilla de escape del soplido y rejillas de ventilación"
-          + ("; ranura 4×14 de la leva" if any(sg < 0 for _, sg in cer) else "") + ("; agujero Ø6,5 de la antena" if lado_ant < 0 else ""))
+    m.fab("C", "Lateral izquierdo", li, COL_CHAPA, notas="Hueco del cajón de pajitas, rejilla de escape del soplido, rejillas de ventilación"
+          f" y ventana de la antena 4G ({VA_Y[1] - VA_Y[0]:.0f} × {VA_Z[1] - VA_Z[0]:.0f})"
+          + ("; ranura 4×14 de la leva" if any(sg < 0 for _, sg in cer) else ""))
+    va = box(-W / 2 + T, -W / 2 + T + PC_A, VA_Y[0] - VA_PC, VA_Y[1] + VA_PC, VA_Z[0] - VA_PC, VA_Z[1] + VA_PC)
+    m.fab("V", "Ventana de la antena 4G (policarbonato 2 mm, por dentro del lateral izquierdo)", va, COL_PC,
+          material="Policarbonato compacto 2 mm", proceso="Corte con sierra o cúter", espesor=PC_A,
+          notas=f"Pegada con cinta VHB por dentro del lateral, pisando {VA_PC:.0f} mm la chapa alrededor de la ventana. Por fuera queda a ras: "
+                "no sobresale nada. Deja 1,5 mm hasta el cajón de componentes")
     ld = box(W / 2 - T, W / 2, T, D - T, T, Hr)
     c14 = lay["c14"]                                                              # (y, z) local del centro de la toma
     VENT_C14 = (38.0, 46.0)                                                       # ventana del enchufe (y × z)
@@ -311,8 +325,6 @@ def construir(spec):
     if not esc_izq:
         cuts += rej_esc
     cuts += [box(W / 2 - 5, W / 2 + 5, 15.0, 19.0, zl - 7, zl + 7) for x, sg in cer if sg > 0]
-    if lado_ant > 0:
-        cuts.append(hole_x(y_ant, z_ant, 6.5))
     # ranura por la que entra la tapa interior y, encima, una muesca R8 para empujarla con el dedo
     zr0, zr1 = zi0 - HOLG_TI, zi0 + T + HOLG_TI
     ym = (ys0 + ys1) / 2
@@ -322,7 +334,7 @@ def construir(spec):
     m.cotas["ranura_tapa_interior"] = dict(y=(ys0, ys1), z=(zr0, zr1), largo=ys1 - ys0, alto=zr1 - zr0)
     m.fab("C", "Lateral derecho", ld, COL_CHAPA, notas=f"Ventana del enchufe de la toma C14 ({VENT_C14[0]:.0f} × {VENT_C14[1]:.0f}), rejillas, "
           f"ranura {zr1 - zr0:.1f} × {ys1 - ys0:.0f} de la tapa interior con muesca R8 encima"
-          + ("; ranura 4×14 de la leva" if any(sg > 0 for _, sg in cer) else "") + ("; agujero Ø6,5 de la antena" if lado_ant > 0 else ""))
+          + ("; ranura 4×14 de la leva" if any(sg > 0 for _, sg in cer) else ""))
     # suelo y bandeja
     m.fab("C", "Suelo", box(-W / 2, W / 2, T, D - T, 0, T), COL_CHAPA)
     sb_pos = [(Kx0 + 16, Ky0 + 14), (Kx1 - 16, Ky0 + 14), (Kx0 + 16, Ky1 - 14), (Kx1 - 16, Ky1 - 14)]
@@ -400,8 +412,12 @@ def construir(spec):
     lzc = [hole_x(ex[0] + OY, zc(ex[1]), 12.0)] if esc_izq else []
     for z0, z1 in lay["rejillas_izq"]:
         lzc += vent_slots_x(Ky0 + 12, Ky1 - 12, zc(z0), zc(z1))
+    lzc.append(box(Kx0 - 1, Kx0 + T + 1, VK_Y[0], VK_Y[1], VK_Z[0], VK_Z[1]))                 # ventana de la antena 4G
     lz = cut_all(lz, lzc)
-    m.fab("K", "Lateral izquierdo del cajón", lz, COL_CART, movil=mv, notas=("Paso del tubo de escape Ø12 con pasacables y rejillas" if esc_izq else "Rejillas"))
+    m.fab("K", "Lateral izquierdo del cajón", lz, COL_CART, movil=mv,
+          notas=("Paso del tubo de escape Ø12 con pasacables y rejillas" if esc_izq else "Rejillas")
+          + f"; ventana de la antena 4G ({VK_Y[1] - VK_Y[0]:.0f} × {VK_Z[1] - VK_Z[0]:.0f}), enfrente de la de la carcasa")
+    m.cotas["ventana_antena"] = dict(carcasa=(VA_Y[1] - VA_Y[0], VA_Z[1] - VA_Z[0]), cajon=(VK_Y[1] - VK_Y[0], VK_Z[1] - VK_Z[0]))
     rz = box(Kx1 - T, Kx1, Ky0 + T, Ky1 - T, Kz0 + T, Ktop)
     cw, chh = C.C14["cuerpo"][0], C.C14["cuerpo"][1]
     rzc = [box(Kx1 - 5, Kx1 + 5, c14[0] + OY - chh / 2 - 0.2, c14[0] + OY + chh / 2 + 0.2, zc(c14[1]) - cw / 2 - 0.2, zc(c14[1]) + cw / 2 + 0.2)]
@@ -430,7 +446,11 @@ def construir(spec):
         return abs(yy - c14w[0]) > bx_c14 + 5 + 1 or abs(zz - c14w[1]) > bz_c14 + 5 + 1
     for zz in (Kz0 + 25, Ktop - 25):
         for yy in (Ky0 + 12, Ky1 - 12):
-            m.compra("H02", "Tope de goma 10×3", place_parts(C.tope_goma((-1, 0, 0)), at=(Kx0, yy, zz)), movil=mv)
+            if zz == Kz0 + 25:     # los de abajo a la izquierda van pegados a la carcasa: si fueran en el cajón, al subirlo rozarían la ventana de la antena
+                m.compra("H02", "Tope de goma 10×3 (en la carcasa)", place_parts(C.tope_goma((1, 0, 0)), at=(-W / 2 + T, yy, zz)),
+                         notas="Pegado por dentro del lateral izquierdo, debajo de la ventana de la antena: centra el cajón por abajo")
+            else:
+                m.compra("H02", "Tope de goma 10×3", place_parts(C.tope_goma((-1, 0, 0)), at=(Kx0, yy, zz)), movil=mv)
             z2 = zz if libre_c14(yy, zz) else (c14w[1] + bz_c14 + 8)
             m.compra("H02", "Tope de goma 10×3 (dos, uno encima de otro)", place_parts(C.tope_goma((1, 0, 0), 6.0), at=(Kx1, yy, z2)), movil=mv, uds=2)
         for xx in lay["topes_frente"]:
@@ -466,8 +486,7 @@ def construir(spec):
 
     # ------------------------------------------------------------------ COMPONENTES Y SOPORTES
     colocar_componentes(m, spec, lay, L, dict(OX=OX, OY=OY, OZ=OZ, Yin=Yin, Xin0=Xin0, Xin1=Xin1, Kx0=Kx0, Kx1=Kx1,
-                                               Ky0=Ky0, Ky1=Ky1, Kz0=Kz0, Ktop=Ktop, Hw=Hw, W=W, D=D, pe_h=pe_h, tapa=tapa,
-                                               lado_ant=lado_ant, y_ant=y_ant, z_ant=z_ant))
+                                               Ky0=Ky0, Ky1=Ky1, Kz0=Kz0, Ktop=Ktop, Hw=Hw, W=W, D=D, pe_h=pe_h, tapa=tapa))
     # zona que barre la leva de cada cerradura al abrir (de horizontal a vertical hacia abajo): debe quedar libre
     for x, sg in cer:
         for ang in (0, 30, 60, 90):
@@ -644,11 +663,12 @@ def colocar_componentes(m, spec, lay, L, g):
     # ---- cámara
     cx, cz = lay["camara"]
     m.compra("E03", "Camera Module 3", place_parts(C.camara(), at=L(cx, C.CAM["sep"], cz)), movil=mv, electrico=True)
-    # ---- Raspberry Pi + Wi-Fi
+    # ---- Raspberry Pi + módem 4G (en el USB de abajo, donde iba el AR9271)
     px, pz = lay["pi"]
     py = Yin - C.PI["pcb"] - C.PI["sep"]
     m.compra("E04", "Raspberry Pi 3B+", place_parts(C.raspberry(), at=L(px, py, pz)), movil=mv, electrico=True)
-    m.compra("E05", "Adaptador Wi-Fi AR9271", place_parts(C.wifi_ar9271(), at=L(px + 87.1 - 12, py - 4.3, pz + 29)), movil=mv, electrico=True)
+    m.compra("E05", "Módem 4G USB Huawei E3372h-320", place_parts(C.modem_4g(), at=L(*lay["modem"])), movil=mv, electrico=True,
+             notas="Enchufado en el USB de abajo de la Pi, con la SIM de datos dentro. La antena plana va a su toma CRC9 principal")
     # ---- fuente (bornes hacia +X, base contra la trasera)
     fx, fz = lay["fuente"]                       # x del extremo de bornes, z de abajo
     m.compra("E06", "Fuente LRS-50-5", place_parts(C.fuente(), ex=(-1, 0, 0), ey=(0, 1, 0), ez=(0, 0, -1),
@@ -687,18 +707,17 @@ def colocar_componentes(m, spec, lay, L, g):
         m.compra("H10", "Pasacables caja de red", place_parts(C.arandela_pasacables(4.5, 7.5, (0, 0, 1)), at=L(gx, gy, rb["alto"] + T / 2)), movil=mv)
     for gx, gz in rb.get("pasacables_frente", []):
         m.compra("H10", "Pasacables caja de red", place_parts(C.arandela_pasacables(4.5, 7.5, (0, 1, 0)), at=L(gx, Yin - rb["fondo"] - T / 2, gz)), movil=mv)
-    # ---- antena: pasamuros en un lateral, detrás del cajón; la antena va por fuera, vertical
-    sa, W = g["lado_ant"], g["W"]
-    ant = (sa * W / 2, g["y_ant"], g["z_ant"])
-    g["antena_l"] = (ant[0] - sa * 16.5 - g["OX"], ant[1] - OY, ant[2] - OZ)       # extremo interior del pasamuros (local)
-    x_r = sa * (W / 2 + 2.5)
-    ext = [("rotula", cyl(4.5, 14, (x_r, ant[1], ant[2]), (sa, 0, 0)), C.NEGRO),
-           ("codo", cq.Solid.makeSphere(4.6, cq.Vector(x_r + sa * 11.5, ant[1], ant[2])), C.NEGRO),
-           ("antena", cyl(5.0, 95, (x_r + sa * 11.5, ant[1], ant[2] - 4.5), (0, 0, -1)), C.NEGRO)]
-    m.compra("E12", "Pasamuros RP-SMA + antena",
-             place_parts(C.pasamuros_rpsma(), ex=(0, sa, 0), ey=(-sa, 0, 0), ez=(0, 0, 1), at=ant) + ext, electrico=True,
-             modelo=dict(n="pasamuros_antena", a=[], tf=dict(ex=[0, sa, 0], ey=[-sa, 0, 0], ez=[0, 0, 1], at=[round(v, 3) for v in ant])),
-             notas="La antena del AR9271 se enrosca por fuera y se gira vertical HACIA ABAJO: hacia arriba cortaría el paso de la tapa interior")
-    m.cotas["antena"] = ant
+    # ---- antena 4G plana, pegada en el soporte de policarbonato del lateral izquierdo del cajón (dentro, nada por fuera)
+    Kx0 = g["Kx0"]
+    sa_ = box(Kx0 + T, Kx0 + T + PC_A, VK_Y[0] - VK_PC, VK_Y[1] + VK_PC, VK_Z[0] - VK_PC, VK_Z[1] + VK_PC)
+    m.fab("S", "Soporte de la antena 4G (policarbonato 2 mm)", sa_, COL_PC, material="Policarbonato compacto 2 mm",
+          proceso="Corte con sierra o cúter", movil=mv, espesor=PC_A,
+          notas=f"Pegado con cinta VHB por dentro del lateral izquierdo del cajón, pisando {VK_PC:.0f} mm la chapa alrededor de su ventana. "
+                "La antena plana va pegada encima. Viaja con el cajón: al sacarlo no hay que soltar ningún cable de la antena")
+    xa = Kx0 + T + PC_A
+    m.compra("E12", "Antena 4G plana (FPC)", place_parts(C.antena_fpc(), at=(xa, ANT_C[0], ANT_C[1])), movil=mv, electrico=True,
+             notas="Pegada sobre el soporte de 2 mm, enfrente de las dos ventanas; el cable sale por arriba hacia el módem")
+    g["antena_l"] = (xa + 0.8 - g["OX"], ANT_C[0] - OY, ANT_C[1] + C.FPC["largo"] / 2 + 1.5 - OZ)   # salida del cable (local)
+    m.cotas["antena"] = (xa, ANT_C[0], ANT_C[1])
     # ---- cables y tubos
     lay["cables"](m, L, g)

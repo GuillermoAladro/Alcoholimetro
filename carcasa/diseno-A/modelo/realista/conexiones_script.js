@@ -51,7 +51,7 @@ for (const [id, c] of Object.entries(D.componentes)) {
   if (!c.pose) continue;
   colocar(id, c, matDe(c.pose)); apoyar(id);
 }
-// AR9271 enchufado en el USB de abajo de la Pi (mismo marco que la Pi, clavija 12 mm dentro)
+// módem 4G enchufado en el USB de abajo de la Pi (mismo marco que la Pi, clavija 12 mm dentro)
 function ancla(id, nom) {
   const p = P[id]; if (!p) return null;
   if (p.nodo) return { p: p.nodo.clone(), d: V(0, 0, 1) };
@@ -62,7 +62,7 @@ function ancla(id, nom) {
   const a = ancla("pi", "usb_bajo"), pi = P.pi;
   const M = pi.M.clone(); M.setPosition(0, 0, 0);
   const at = a.p.clone().addScaledVector(a.d, -12.2);
-  M.setPosition(at); colocar("wifi", D.componentes.wifi, M);
+  M.setPosition(at); colocar("modem", D.componentes.modem, M);
 }
 // ojo: en «ESC.modelo» del marco natural no se aplica aCAD
 

@@ -11,8 +11,8 @@ if [ "$USUARIO" = "root" ]; then echo "Ejecútalo con tu usuario normal, no con 
 
 echo "== 1. Paquetes"
 sudo apt-get update
-sudo apt-get install -y --no-install-recommends nodejs chromium cage rpicam-apps curl fake-hwclock firmware-ath9k-htc || \
-sudo apt-get install -y --no-install-recommends nodejs chromium-browser cage libcamera-apps curl fake-hwclock firmware-ath9k-htc
+sudo apt-get install -y --no-install-recommends nodejs chromium cage rpicam-apps curl fake-hwclock || \
+sudo apt-get install -y --no-install-recommends nodejs chromium-browser cage libcamera-apps curl fake-hwclock
 NODE="$(command -v node)"
 V="$("$NODE" -p 'process.versions.node.split(".")[0]')"
 if [ "$V" -lt 18 ]; then echo "Hace falta Node 18 o más nuevo (hay $V)"; exit 1; fi

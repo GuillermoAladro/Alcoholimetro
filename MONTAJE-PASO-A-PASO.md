@@ -45,7 +45,6 @@ Cómo montar el circuito del alcoholímetro por fases: con qué piezas y qué pr
 **Se monta en la máquina:**
 
 - Tapa aislante para los bornes 1, 2 y 3 de la fuente, con material y temperatura conocidos (MONTAJE GENERAL, apartado 4, punto 16).
-- Dos arandelas aislantes para el jack RP-SMA del techo (W26).
 - Tornillos M2 y separadores para la cámara, cuyos taladros son de 2,2 mm (fila 3 del MONTAJE GENERAL).
 - Dos resistencias de 1 kΩ y termorretráctil, si se adoptan (W19 y W20).
 - Dos punteras dobles para 2 × 0,75 mm², para los bornes 4 y 5 de la fuente (W11 a W13). Comprueba antes si el kit #28 las trae.
@@ -165,16 +164,14 @@ Conecta el HDMI de la pantalla a la Pi (W23). Alimenta la pantalla por su USB-C 
 | P3.5 | Roza el conector USB-C de la pantalla | La imagen no parpadea. Si parpadea, en la fase 8 hay que sujetar el cable |
 | P3.6 | Pantalla encendida y la Pi **sin** su fuente: mide entre los pines 2 y 6 de la Pi | Menos de 0,5 V, es decir, la pantalla no alimenta a la Pi por el HDMI **(mío; auditoría 6.1-S F07)** |
 
-### 3.3 Adaptador Wi-Fi AR9271 (#12) y la Wi-Fi de salida
+### 3.3 Módem 4G (#12) y la salida a internet
 
-Conecta el adaptador a un USB de la Pi (W25) y enrosca su antena.
+Desde el 01-11-2026 la Pi sale a internet por 4G ([DECISIONES](DECISIONES.md)). Mete la SIM de datos en el módem, conéctalo a un USB de la Pi (W25) y enchufa la antena plana con su latiguillo (W26).
 
 | Prueba | Cómo | Pasa si | Si no pasa |
 |---|---|---|---|
-| P3.7 | `lsusb` e `iw dev` | Aparece `0cf3:9271` (Atheros AR9271) y hay dos interfaces, `wlan0` y `wlan1` | Instala `firmware-atheros`. Si el chip es otro, devuelve el adaptador |
-| P3.8 | `nmcli device wifi connect <tu-red> password <clave> ifname wlan1` y luego `ping -I wlan1 1.1.1.1` | Responde | — |
-
-**Ata cada conexión a su radio por la dirección MAC**, para que no se intercambien al arrancar (W30). Mira las MAC con `ip link` y ejecuta `sudo nmcli connection modify <conexión del bar> 802-11-wireless.mac-address <MAC del AR9271>`. Renombrar las interfaces a `wlan0` y `wlan1` con un archivo `.link` no sirve: son nombres del kernel y systemd avisa de que el resultado es impredecible.
+| P3.7 | `ip -br addr show eth1` | `eth1` aparece con una dirección 192.168.8.x | Si aparece como `ttyUSB`, el módem está en modo «stick»: pásalo a HiLink |
+| P3.8 | Abre http://192.168.8.1 en el navegador de la Pi y luego `ping -I eth1 1.1.1.1` | La SIM está registrada y el ping responde | Mete el PIN de la SIM en la página del módem |
 
 ### 3.4 Punto de acceso para el Solo (wlan0)
 
@@ -380,7 +377,7 @@ Durante P7.2 mide con la pinza el pico de corriente del sensor al tomar la muest
 - Espárrago (#25), ojales (#23) y arandelas dentadas (#24).
 - Hilo verde-amarillo (#22) y tornillería (#26).
 - Separadores de nailon (#30) y pasacables (#31).
-- Jack RP-SMA (#13) con sus arandelas aislantes, tapa de bornes, tornillos M2 de la cámara y bridas.
+- Placas de policarbonato de 2 mm y cinta VHB de la ventana de la antena, tapa de bornes, tornillos M2 de la cámara y bridas.
 
 **Pasos, en este orden:**
 
@@ -393,7 +390,7 @@ Durante P7.2 mide con la pinza el pico de corriente del sensor al tomar la muest
    - Si lo decidiste en 0.1, monta W12b: del polo 3 de la 221-413 a la 2ª tuerca.
 5. **Tapa de los bornes de la fuente.** El troncal de 5 V sale por el lado contrario a L y N.
 6. **Caja interior:** Pi y sensor sobre separadores de nailon; la cámara con tornillos M2.
-7. **Jack RP-SMA:** en el techo, con una arandela aislante a cada lado de la chapa (W26).
+7. **Ventana de la antena 4G:** pega con VHB las dos placas de 2 mm (por dentro del lateral izquierdo de la carcasa y del cajón) y la antena plana sobre la del cajón, con el cable hacia arriba (W26).
 8. **Cables:**
    - Un pasacables en cada agujero de chapa.
    - Cada cable que va a la caja suspendida (FFC, HDMI, latiguillo, UART, tubo y la tierra W9) lleva un bucle de holgura y una brida en cada extremo (auditoría 1.0, H25).
@@ -403,8 +400,8 @@ Durante P7.2 mide con la pinza el pico de corriente del sensor al tomar la muest
 | Prueba | Cómo | Pasa si | Si no pasa |
 |---|---|---|---|
 | P8.1 | Continuidad de tierra desde el pin PE del C14 hasta cada pieza metálica: cuerpo, panel, techo, separador, bandeja, caja interior, cajón y carcasa de la fuente. La mide el electricista con el comprobador de 10 a 25 A | 0,1 Ω o menos en cada una | Rehacer esa unión |
-| P8.2 | Con el alargo desconectado del AR9271: jack RP-SMA frente al techo | Abierto | Revisa las arandelas aislantes |
-| P8.3 | Mapa de masas (MONTAJE GENERAL, apartado 4, punto 17) | Con W12b: continuidad del pin 6 de la Pi a la chapa. Sin W12b: abierto | Busca la unión que sobra: el jack o un tornillo |
+| P8.2 | Malla del coaxial de la antena (cuerpo del SMA) frente a la carcasa | Abierto: el coaxial va todo dentro del cajón y no toca la chapa | Busca dónde toca y aíslalo |
+| P8.3 | Mapa de masas (MONTAJE GENERAL, apartado 4, punto 17) | Con W12b: continuidad del pin 6 de la Pi a la chapa. Sin W12b: abierto | Busca la unión que sobra: un tornillo o el coaxial |
 | P8.4 | Todo desenchufado: continuidad de cada conexión, de W11 a W24, contra la tabla del MONTAJE GENERAL | Todas coinciden y ningún +5 V da continuidad a la chapa | — |
 | P8.5 | Ensayo de aislamiento y de corriente de fuga | Lo define y lo hace el electricista con su procedimiento. **Nunca 500 V con la electrónica conectada** (auditorías) | — |
 | P8.6 | Con todo funcionando, mueve la caja suspendida a mano en todas direcciones | Nada se desconecta, `get_throttled` sigue en `0x0` y la imagen no parpadea | Más holgura o mejor sujeción |
@@ -413,8 +410,8 @@ Durante P7.2 mide con la pinza el pico de corriente del sensor al tomar la muest
 
 | Prueba | Cómo | Pasa si | Si no pasa |
 |---|---|---|---|
-| P9.1 | Tapa cerrada. Wi-Fi del Solo con `iw dev wlan0 station dump` durante una hora | Mejor que −70 dBm y ninguna desconexión | Plan B de W29: un segundo AR9271 como punto de acceso |
-| P9.2 | Wi-Fi del bar por wlan1, con la antena fuera, durante una hora | Conexión estable | Mover la antena o usar el plan B de conexión (router 4G) |
+| P9.1 | Tapa cerrada. Wi-Fi del Solo con `iw dev wlan0 station dump` durante una hora | Mejor que −70 dBm y ninguna desconexión | Plan B de W29: un adaptador Wi-Fi USB como punto de acceso |
+| P9.2 | Tapa cerrada, en el bar. Señal del módem en http://192.168.8.1 y `ping -I eth1 1.1.1.1` durante una hora | Conexión estable y sin cortes | Agrandar las dos ventanas de la antena |
 | P9.3 | Media hora con foto, Wi-Fi y cobro de prueba a la vez | `get_throttled` en `0x0` (MONTAJE GENERAL, apartado 4, punto 18) | Fase 5, P5.4 |
 | P9.4 | Veinte ciclos completos: cobro de prueba, soplido, foto y resultado | Los veinte sin error | — |
 | P9.5 | Una hora cerrada con unos 30 °C de ambiente (guía) | Dentro, menos de 40 °C (el Solo admite hasta 40 °C y el sensor trabaja entre 10 y 40 °C). Apunta las temperaturas de la fuente, los portafusibles y los empalmes | Ventilador de 40 mm a 5 V (guía) |

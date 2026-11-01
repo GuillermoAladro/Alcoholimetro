@@ -21,6 +21,9 @@ FIJAS = {
     "E19": (1, "UART y 5 V del sensor"),
     "E20": (1, "Fusibles de los 4 ramales: 3 A (Pi, Solo, pantalla) y 2 A (sensor)"),
     "E21": (1, ""), "E22": (1, "Cable de red del bar a la máquina"),
+    "E23": (1, "Une la toma CRC9 principal del módem con el SMA macho del cable de la antena (no dibujado). Precio orientativo: elegir anuncio"),
+    "H19": (1, "Se cortan las dos placas de la antena 4G: A-V03 (carcasa) y A-S05 (cajón). Precio orientativo: elegir anuncio"),
+    "H20": (1, "Pega las dos placas de 2 mm (A-V03 y A-S05) y la antena plana si no trae adhesivo. Precio orientativo: elegir anuncio"),
     "H08": (4, "Separadores de la cámara (dibujados con la cámara)"),
     "H11": (1, "Se cortan los frontales de policarbonato (pieza V01)"),
     "H13": (1, "Perfil de goma en los cantos del hueco del cajón de pajitas"),
@@ -40,7 +43,7 @@ MONTAJE = [
     ("M08", "Cables Dupont (120 uds.)", "B01NGTXASZ", 9.99, 1, 120, "Pines de la Pi"),
     ("M09", "Crimpadora + punteras (herramienta)", "B0FQP6KDL4", 15.98, 1, None, "Herramienta: solo la primera vez"),
 ]
-PACK = {"E15": 4, "H17": 20, "H14": 30, "H15": 25, "H16": 100, "E17": 1, "H01": 4, "H06": 20, "H07": 20, "H09": 350, "H10": 260, "E12": 2, "E09": 2, "E18": 6, "E08": 25}
+PACK = {"E15": 4, "H17": 20, "H14": 30, "H15": 25, "H16": 100, "E17": 1, "H01": 4, "H06": 20, "H07": 20, "H09": 350, "H10": 260, "E09": 2, "E18": 6, "E08": 25}
 
 AR = "Arial"
 F = Font(name=AR, size=10)
@@ -128,6 +131,10 @@ for L in sorted(R):
             nota = "La leva recta se corta a 20,5 mm (ver documento)"
         if ref == "E16":
             nota = "Si el cable que trae la pantalla ya es acodado, este sobra"
+        if ref == "E05":
+            nota = "Versión HiLink (la Pi lo ve como red USB). Precio orientativo: elegir anuncio. Hace falta una SIM de datos, que no se compra en Amazon"
+        if ref == "E12":
+            nota = "Que cubra 698–2700 MHz (bandas 20, 3, 7 y 8), de unos 100 × 15 mm y con SMA macho. Precio orientativo: elegir anuncio"
         filas.append([ref, n, asin, f"https://www.amazon.es/dp/{asin}" if asin else "", uds, PACK.get(ref), None, precio, None, ids, nota])
     for m_ in MONTAJE:
         ref, n, asin, precio, uds, pack, nota = m_

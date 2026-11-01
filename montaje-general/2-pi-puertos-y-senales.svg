@@ -69,16 +69,16 @@
 <text x="52" y="734.8399999999999" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >al final: overlay del sistema de archivos de solo lectura</text>
 <path d="M560,710 L680,710 L680,570 L800,570" fill="none" stroke="#4a6fa5" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
 <rect x="1250" y="130" width="270" height="130" rx="10" fill="#e8eef8" stroke="#4a6fa5" stroke-width="1.6"/>
-<text x="1262" y="155" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b2228" >Adaptador Wi-Fi AR9271 (#12)</text>
+<text x="1262" y="155" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b2228" >Módem 4G E3372h-320 (#12)</text>
 <text x="1262" y="177.8" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >USB-A directo a la Pi</text>
 <text x="1262" y="194.84" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >driver ath9k_htc del kernel</text>
-<text x="1262" y="211.88" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >antena RP-SMA desmontable</text>
+<text x="1262" y="211.88" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >con SIM; toma CRC9 de antena</text>
 <text x="1262" y="228.92000000000002" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ comprobar con lsusb al recibirlo</text>
 <path d="M1150,210 L1250,210" fill="none" stroke="#4a6fa5" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
 <rect x="1185.2" y="187.0" width="29.6" height="18" fill="#ffffff" opacity="0.92" rx="3"/>
 <text x="1200" y="200" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#4a6fa5" >USB</text>
 <rect x="1590" y="130" width="260" height="130" rx="10" fill="#f2f2f2" stroke="#777777" stroke-width="1.6"/>
-<text x="1602" y="155" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b2228" >Alargo RP-SMA 30 cm (#13)</text>
+<text x="1602" y="155" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b2228" >Latiguillo CRC9 → SMA (#13)</text>
 <text x="1602" y="177.8" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >macho (rosca interior) en el</text>
 <text x="1602" y="194.84" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >lado del adaptador;</text>
 <text x="1602" y="211.88" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >hembra de panel en el techo</text>
@@ -87,7 +87,7 @@
 <rect x="1920" y="130" width="210" height="130" rx="10" fill="#f2f2f2" stroke="#777777" stroke-width="1.6"/>
 <text x="1932" y="155" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b2228" >Techo de la caja</text>
 <text x="1932" y="176.85" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >taladro Ø6,5 mm: jack de</text>
-<text x="1932" y="193.18" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >panel + antena 2 dBi fuera</text>
+<text x="1932" y="193.18" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >antena plana dentro del cajón</text>
 <text x="1932" y="209.51" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ el jack toca el techo</text>
 <text x="1932" y="225.83999999999997" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >(tierra): une la malla a</text>
 <text x="1932" y="242.17" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >tierra (ficha #13, §4.5)</text>
@@ -125,7 +125,7 @@
 <text x="1394" y="708" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#1b2228" >que el sensor responde: si no, no cobra.</text>
 <text x="1394" y="731" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#1b2228" >Del GPIO solo se usan los pines 8 y 10 (UART).</text>
 <text x="40" y="940" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="start" fill="#1b2228" >Pago: no hay ningún cable entre la Pi y el SumUp Solo. El Solo se conecta a una Wi-Fi que crea la propia Pi</text>
-<text x="40" y="962" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#3a454f" >El Wi-Fi interno de la Pi (wlan0) es un punto de acceso para el Solo; la Pi sale al router del bar por el AR9271 (wlan1) con la antena fuera. Así el Solo no depende de que la Wi-Fi del bar llegue dentro de la chapa (auditoría 1.0, H16).</text>
+<text x="40" y="962" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#3a454f" >El Wi-Fi interno de la Pi (wlan0) es un punto de acceso para el Solo; desde el 01-11-2026 la Pi sale a internet por el módem 4G (eth1), con la antena plana dentro del cajón.</text>
 <rect x="40" y="990" width="330" height="128" rx="10" fill="#fff6e8" stroke="#a3772a" stroke-width="1.6"/>
 <text x="52" y="1015" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b2228" >SumUp Solo (#9)</text>
 <text x="52" y="1036.85" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >alimentado por el borne nº 1 (fig. 1)</text>
@@ -137,13 +137,13 @@
 <text x="532" y="1015" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="bold" text-anchor="start" fill="#1b2228" >Pi · wlan0 (Wi-Fi interno) = punto de acceso</text>
 <text x="532" y="1036.85" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >nmcli device wifi hotspot ifname wlan0 band bg</text>
 <text x="532" y="1053.1799999999998" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >  channel &lt;lejos del canal del bar&gt; ssid … password …</text>
-<text x="532" y="1069.51" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >NAT hacia wlan1 (ipv4.method shared)</text>
+<text x="532" y="1069.51" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >NAT hacia eth1 (ipv4.method shared)</text>
 <text x="532" y="1085.84" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ la Pi está dentro de la caja interior de chapa:</text>
 <text x="532" y="1102.1699999999998" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >medir la señal del Solo (iw dev wlan0 station dump)</text>
 <rect x="880" y="990" width="340" height="128" rx="10" fill="#e9f6ee" stroke="#4f8a63" stroke-width="1.6"/>
-<text x="892" y="1015" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="bold" text-anchor="start" fill="#1b2228" >Pi · wlan1 (AR9271 #12) = cliente del bar</text>
-<text x="892" y="1036.85" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >en un USB de la Pi; antena en el techo (#13)</text>
-<text x="892" y="1053.1799999999998" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >nmcli device wifi connect &lt;red-bar&gt; ifname wlan1</text>
+<text x="892" y="1015" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="bold" text-anchor="start" fill="#1b2228" >Pi · eth1 (módem 4G #12) = salida a internet</text>
+<text x="892" y="1036.85" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >en un USB de la Pi; antena dentro del cajón (#13)</text>
+<text x="892" y="1053.1799999999998" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >SIM de datos · página del módem: 192.168.8.1</text>
 <text x="892" y="1069.51" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >Cloud API: POST …/readers/{id}/checkout</text>
 <text x="892" y="1085.84" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >  GET …/readers/{id}/checkout/{id} cada 2–3 s</text>
 <text x="892" y="1102.1699999999998" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >API key y Affiliate Key guardadas en la Pi</text>
@@ -158,8 +158,8 @@
 <text x="1772" y="1036.85" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >la orden de cobro llega al Solo por su propia</text>
 <text x="1772" y="1053.1799999999998" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >conexión (a través de la Pi), no por la Pi</text>
 <text x="1772" y="1069.51" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >«keep the Solo plugged in» (SumUp)</text>
-<text x="1772" y="1085.84" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ plan B si la Pi no da señal al Solo: 2º AR9271</text>
-<text x="1772" y="1102.1699999999998" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >como punto de acceso, antena en la caja de arriba</text>
+<text x="1772" y="1085.84" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#b3261e" >⚠ plan B si la Pi no da señal al Solo: otro</text>
+<text x="1772" y="1102.1699999999998" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="start" fill="#1b2228" >adaptador Wi-Fi USB como punto de acceso</text>
 <path d="M370,1054 L520,1054" fill="none" stroke="#888888" stroke-width="3" stroke-dasharray="3,7" stroke-linejoin="round" stroke-linecap="round"/>
 <rect x="396.1" y="1031.5" width="97.7" height="17.5" fill="#ffffff" opacity="0.92" rx="3"/>
 <text x="445" y="1044" font-family="'DejaVu Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#3a454f" >Wi-Fi 2,4 GHz</text>

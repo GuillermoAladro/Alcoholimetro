@@ -1,5 +1,7 @@
 # Adaptador Wi-Fi USB con chip Atheros AR9271 (antena RP-SMA desmontable)
 
+> **Retirado el 01-11-2026.** La máquina sale a internet por 4G con la antena por dentro: ver [módem 4G](../../modem-4g-huawei-e3372h/README.md) y [antena plana](../../antena-4g-plana-fpc/README.md). Esta ficha se guarda como referencia.
+
 Da Wi-Fi a la Raspberry Pi 3B+ cuando su Wi-Fi interno queda anulado dentro de la caja de chapa (se apaga con `dtoverlay=disable-wifi`). El adaptador va en un puerto USB de la Pi y su antena sale por el techo con el alargo RP-SMA (#13). La Pi lo necesita para llamar a la Cloud API de SumUp; el SumUp Solo usa su propio Wi-Fi (solo 2,4 GHz), en el mismo local.
 
 - **Compra:** ASIN B0CBW6THN1, 16,24 € (precio de la hoja de componentes del 19-20-10-2026). Anuncio: "adaptador USB AR9271 con antena desmontable" (guía §1 fila 12; antena de 2 dBi según guía §2.9).

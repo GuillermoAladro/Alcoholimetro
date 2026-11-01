@@ -83,7 +83,8 @@ def puntos(L):
         # Pi: bocas (HDMI y micro-USB miran hacia −Z; CSI hacia −Y; pines hacia −Y)
         hdmi_pi=(px + 32, py - 3.1, pz - 1.0), musb_pi=(px + 10.6, py - 1.5, pz - 1.0),
         csi_pi=(px + 45, py - 5.6, pz + 12), gpio8=(px + 15.99, py - 8.5, pz + 53.81), gpio10=(px + 18.53, py - 8.5, pz + 53.81),
-        rpsma=(px + 75.1 + 93.2, py - 4.3, pz + 29),
+        # módem 4G: boca de la toma CRC9 principal (mira hacia −Y)
+        crc9=(L["modem"][0] + C.MODEM["crc9"][0], L["modem"][1] - C.MODEM["grueso"] / 2 - 4.0, L["modem"][2] + C.MODEM["crc9"][1]),
         # cámara: boca del conector FPC (mira hacia −Z, por detrás de la placa)
         cam=(cx + 12.5, C.CAM["sep"] + 2.4, cz - 0.2),
         # ZE29A: salida de los hilos de la clavija XH (+X), boquilla de presión (−Y) y boquilla de muestra (−X)
@@ -168,6 +169,8 @@ def layout_A(k):
              te_presion=(45.0, 40.0, 205.0), te_alcohol=(-75.0, 40.0, 205.0), reductor_a=28.0, reductor_b=-58.0,
              )
     L["agujeros_trasera"] = agujeros_comunes(L)
+    # módem 4G en el USB de abajo de la Pi (punta de la clavija dentro del puerto, como iba el AR9271)
+    L["modem"] = (L["pi"][0] + 87.1 - 12, Yin - C.PI["pcb"] - C.PI["sep"] - 4.3, L["pi"][1] + 29)
 
     def cables(m, Lf, g):
         P = puntos(L)
@@ -206,7 +209,7 @@ def layout_A(k):
                  notas="Con el reductor 4 → 6 y un tramo de tubo de 4 mm forma la barrera que crea la presión del soplido")
         m.compra("E15", "Reductor 4 → 6 (barrera, salida)", place_parts(C.reductor_6_4(), **tfw((L["reductor_b"], 40.0, 205.0))), movil=mv)
 
-        # ---------------- accesorios pequeños que solo dibuja el visor (faston, punteras, ojales, tuercas, Dupont, RP-SMA macho)
+        # ---------------- accesorios pequeños que solo dibuja el visor (faston, punteras, ojales, tuercas, Dupont)
         acc = m.cotas.setdefault("accesorios", [])
         def cruz(a, b):
             return (a[1] * b[2] - a[2] * b[1], a[2] * b[0] - a[0] * b[2], a[0] * b[1] - a[1] * b[0])
@@ -234,7 +237,6 @@ def layout_A(k):
         for pin, col in (("gpio8", "#e8c21c"), ("gpio10", "#ecebe6")):
             q = P[pin]
             ac("dupont", (q[0], py - 16.5, q[2]), (0, -1, 0), (1, 0, 0), a=[col])
-        ac("rpsma_macho", P["rpsma"], (1, 0, 0), (0, 1, 0))
         ac("faston_par", (60.0, 69.0, 214.0), (0, 0, 1), (1, 0, 0), a=["#2257b8"])
 
         # ---------------- cables: (nombre, puntos, radio, color, tipo, {estilo, w, de, a})
@@ -325,8 +327,8 @@ def layout_A(k):
              X(estilo="ffc", w="W24", de="Camera Module 3 · J1", a="Raspberry Pi · CSI (CAMERA)", n0=[0, 1, 0], n1=[1, 0, 0])),
             ("W10 · Puente de tierra cajón → carcasa (faston)", [punta["W10"], (88, 62, 125), (75, 68.5, 155), (60, 69, 165), (60, 69, 215), (60, 69, kt - 2), (60, 69.3, kt + 1.2), (60, 70.5, kt + 2.1), (60, 72, kt + 2.1), (60, yw - 9.5, kt + 2.1), (56, yw - 6.5, kt + 2.1), (51, yw - 2.5, kt - 3.5), (pcl[0], pcl[1], pcl[2] + 3), pcl], 1.5, VERDE_AM, "puente",
              X(estilo="verdeamarillo", w="W10", de="Espárrago M4 del cajón", a="Espárrago M4 de la carcasa")),
-            ("W26 · Coaxial de la antena (RP-SMA, se desenrosca)", [mas(P["rpsma"], XP, 12), (84, 60, 136), (70, 61, 165), (66, 69, 185), (66, 69, kt - 6), (66, 69.3, kt + 1.2), (66, 70.5, kt + 2.1), (66, 72, kt + 2.1), (66, 76, kt + 2.1), (80, 78, kt + 2.1), (90, 79, kt - 4.5), (ant[0], ant[1], ant[2] + 25), ant], 1.3, COAX, "puente",
-             X(estilo="coax", w="W26", de="AR9271 · RP-SMA", a="Antena por el pasamuros")),
+            ("W26 · Coaxial de la antena 4G (todo dentro del cajón)", [ant, mas(ant, UP, 4), (-96, 30, 163), (-85, 35, 158), (-55, 36.5, 153), (-20, 37, 150), (10, 38, 145), (35, 40, 134), (46, 42, 125)] + entra(P["crc9"], FW, 5), 0.8, COAX, "cable",
+             X(estilo="coax", w="W26", de="Antena 4G plana · cable con SMA macho", a="Módem 4G · toma CRC9 (con el latiguillo CRC9 → SMA)")),
         ]
         # ---- aire del soplido (W28): boquilla → T presión → reductor → tubo 4 mm → reductor → T alcohol → escape
         ra, rb = L["reductor_a"], L["reductor_b"]

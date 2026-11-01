@@ -73,7 +73,7 @@ pi/          solo en la Pi
   kiosco/           la página que abre Chromium
   fuentes/          tipografías (Big Shoulders Display y Archivo, licencia OFL), sin internet
 sim/         hardware simulado: ZE29A byte a byte, SumUp y Solo, cámara, tarjeta SD
-sistema/     servicios de systemd, instalar.sh y vigía del Wi-Fi del bar
+sistema/     servicios de systemd, instalar.sh y vigía de la red 4G
 pruebas/     pruebas automáticas (node --test) y de extremo a extremo
 ```
 
@@ -95,7 +95,7 @@ sudo reboot
 ```
 
 `instalar.sh` hace lo siguiente:
-- Instala `nodejs`, `chromium`, `cage`, `rpicam-apps`, `fake-hwclock` y `firmware-ath9k-htc`.
+- Instala `nodejs`, `chromium`, `cage`, `rpicam-apps` y `fake-hwclock`.
 - Crea `/var/lib/alcoholimetro` (los datos, 0700) y `/etc/alcoholimetro/config.json`.
 - Deja la plantilla de SumUp con permisos 600.
 - Pone el registro del sistema en RAM y el perro guardián del sistema a 15 s.
@@ -148,7 +148,7 @@ sudo reboot
 | Tarjeta llena o de solo lectura | Fuera de servicio y no se cobra. Con poco espacio se borran antes las fotos fuera del top 10. Se recupera sola |
 | Sin internet o SumUp caído | La espera sigue con el ranking y avisa de que no se puede pagar. Reintentos con espera creciente y vuelta automática |
 | Cámara rota o colgada | La prueba sigue sin foto (tope de 3 s para la foto) |
-| Wi-Fi del bar (AR9271) bloqueado | `vigia-red.sh` recarga el driver si la red no responde 5 min (ficha #12) |
+| Módem 4G colgado | `vigia-red.sh` desconecta y vuelve a conectar el módem por software si internet no responde por `eth1` en 5 min (como mucho una vez cada 10 min) |
 | Pantalla marcada por imagen fija | Nada se queda quieto en la espera y todo se desplaza unos píxeles cada pocos minutos (ficha #5) |
 | Pi lenta (3B+) | Partículas en memoria fija, textos y tarjetas en caché, y calidad automática: si un cuadro tarda, se quitan efectos y se baja a 20 cuadros por segundo |
 
@@ -221,4 +221,4 @@ Para empezar de cero: parar el servicio y borrar la carpeta.
    - el enfoque a la distancia real.
 4. **Chromium en la Pi 3B+:** cuántos ms tarda cada cuadro (sale en `/estado` y cada 10 min en el registro). En un ordenador con la CPU frenada 6 veces, la espera tarda unos 25–45 ms por cuadro. La calidad automática baja efectos y cuadros si hace falta.
 5. **`cage` + Chromium en tty1 tras un corte de luz**, y que la pantalla se encienda sola (ficha #5).
-6. **Punto de acceso del Solo y Wi-Fi del bar** (W29 y W30): el programa solo necesita salida a internet.
+6. **Punto de acceso del Solo y salida a internet por el módem 4G** (W29 y W30): el programa solo necesita salida a internet. Comprobar que el módem sale como `eth1`; si sale con otro nombre, se cambia en `alcoholimetro-red.service`.
