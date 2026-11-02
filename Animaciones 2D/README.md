@@ -150,6 +150,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00111 | Guillermo y Rodri · La guerra de pulgares | 14,5 s | [MP4 60 fps](vista%20previa/00111%20Guillermo%20y%20Rodri%20-%20el%20pulso%20de%20dedos.mp4) · [fotogramas](vista%20previa/00111%20Guillermo%20y%20Rodri%20-%20el%20pulso%20de%20dedos%20-%20fotogramas.png) |
 | 00112 | Guillermo y Rodri · Las sillas de bar | 14,45 s | [MP4 60 fps](vista%20previa/00112%20Guillermo%20y%20Rodri%20-%20las%20carreras%20de%20sillas.mp4) · [fotogramas](vista%20previa/00112%20Guillermo%20y%20Rodri%20-%20las%20carreras%20de%20sillas%20-%20fotogramas.png) |
 | 00113 | Guillermo y Rodri · El concurso de eructos | 14,9 s | [MP4 60 fps](vista%20previa/00113%20Guillermo%20y%20Rodri%20-%20el%20eructo.mp4) · [fotogramas](vista%20previa/00113%20Guillermo%20y%20Rodri%20-%20el%20eructo%20-%20fotogramas.png) |
+| 00116 | Guillermo y Rodri · La aceituna | 14,6 s | [MP4 60 fps](vista%20previa/00116%20Guillermo%20y%20Rodri%20-%20la%20apuesta%20de%20la%20aceituna.mp4) · [fotogramas](vista%20previa/00116%20Guillermo%20y%20Rodri%20-%20la%20apuesta%20de%20la%20aceituna%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -2083,6 +2084,22 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00113](vista%20previa/00113%20Guillermo%20y%20Rodri%20-%20el%20eructo%20-%20fotogramas.png)
+
+### 00116 · Guillermo y Rodri · La aceituna
+
+1. Negro.
+2. Una taberna de tapas al anochecer: zócalo de azulejos, jamones, vitrina de tapas y una ventana en arco a la calle. Guillermo y Rodri, de pie a los lados de un barril. En el plato queda UNA aceituna en su aceite, junto a dos vermús, pan, palillos y un servilletero.
+3. Miran la última aceituna, se miran y se retan.
+4. Sacan un palillo cada uno y los cruzan como espadas (¡tin!). La cámara se acerca.
+5. Duelo a palillazos, cada vez más rápido, con lengua fuera y sudor. En cada pinchazo la aceituna sale disparada y rebota por el tablero (contra los vasos, por encima del pan, contra el servilletero y el vaso de palillos), dejando un reguero de aceite, y vuelve al plato.
+6. Rodri se rinde y tira su palillo por encima del hombro. Coge la aceituna con los dedos, la lanza al aire y se la zampa al vuelo, en la gloria.
+7. Guillermo, con los ojos cerrados de pura concentración, carga… y le clava el palillo en la manga del plumífero. Sale una nubecilla de plumón.
+8. Rodri levanta el brazo, mira la manga, mira a Guillermo y traga. Guillermo pide perdón con la palma, colorado.
+9. Rodri sopla muy serio: el plumón vuela a la nariz de Guillermo, que estornuda.
+10. Los dos miran a cámara y Rodri guiña.
+11. Negro.
+
+![Fotogramas de 00116](vista%20previa/00116%20Guillermo%20y%20Rodri%20-%20la%20apuesta%20de%20la%20aceituna%20-%20fotogramas.png)
 
 ## Ver y grabar
 
