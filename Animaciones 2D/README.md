@@ -148,6 +148,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00109 | Guillermo y Paradigma · Los globos de agua | 15,0 s | [MP4 60 fps](vista%20previa/00109%20Guillermo%20y%20Paradigma%20-%20el%20globo%20de%20agua.mp4) · [fotogramas](vista%20previa/00109%20Guillermo%20y%20Paradigma%20-%20el%20globo%20de%20agua%20-%20fotogramas.png) |
 | 00110 | Guillermo y Paradigma · La puesta de sol | 14,7 s | [MP4 60 fps](vista%20previa/00110%20Guillermo%20y%20Paradigma%20-%20la%20puesta%20de%20sol.mp4) · [fotogramas](vista%20previa/00110%20Guillermo%20y%20Paradigma%20-%20la%20puesta%20de%20sol%20-%20fotogramas.png) |
 | 00112 | Guillermo y Rodri · Las sillas de bar | 14,45 s | [MP4 60 fps](vista%20previa/00112%20Guillermo%20y%20Rodri%20-%20las%20carreras%20de%20sillas.mp4) · [fotogramas](vista%20previa/00112%20Guillermo%20y%20Rodri%20-%20las%20carreras%20de%20sillas%20-%20fotogramas.png) |
+| 00113 | Guillermo y Rodri · El concurso de eructos | 14,9 s | [MP4 60 fps](vista%20previa/00113%20Guillermo%20y%20Rodri%20-%20el%20eructo.mp4) · [fotogramas](vista%20previa/00113%20Guillermo%20y%20Rodri%20-%20el%20eructo%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -2048,6 +2049,22 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 12. Negro.
 
 ![Fotogramas de 00112](vista%20previa/00112%20Guillermo%20y%20Rodri%20-%20las%20carreras%20de%20sillas%20-%20fotogramas.png)
+
+### 00113 · Guillermo y Rodri · El concurso de eructos
+
+1. Negro.
+2. Un bar de noche: a la izquierda, la barra con su espejo, baldas de botellas sin etiqueta y un colgador de copas boca abajo; a la derecha, pared azul noche con rayas doradas, zócalo de caoba, un aplique, una planta y un cuadro antiguo de una gaseosa colgado de un clavo. En medio, un barril de mesa alta con una cubitera llena de botellines; en el suelo, una caja de cascos. Guillermo y Rodri brindan con sus gaseosas (¡clinc!), se las beben de un trago y plantan los cascos vacíos en el barril.
+3. Rodri, con sonrisa de reto, se da dos golpes en el pecho, se hincha… y suelta un eructo enorme: ondas que tiemblan, una nubecilla y burbujas. Le vibran los carrillos, las copas del colgador tintinean y a Guillermo le llega el aire con los ojos cerrados. Rodri, muy chulo, mira a cámara.
+4. Guillermo se palmea la tripa, se concentra, se pone colorado… y le sale un «pío»: una ondita de nada y una burbuja que sube y explota. Mira a cámara, avergonzado.
+5. Rodri se parte de risa, señalándole con el brazo estirado y con lágrimas de risa.
+6. Guillermo se pica (vena en la frente) y se lanza a la cubitera: un botellín, otro y otro, de un trago y lanzando cada casco por encima de la cabeza a la caja. Se va hinchando: tripa, carrillos, colorado, ojos llorosos. Rodri deja de reír y se preocupa.
+7. Guillermo aguanta, sujetándose la tripa, temblando y sudando; la cámara se acerca y Rodri se inclina a mirar.
+8. ¡EL ERUCTO!: una onda gigante, una nube y ráfagas de viento; la cámara se sacude. A Rodri se le va el pelo hacia atrás (frente al aire, cejas por las nubes) y se queda despeinado. Tintinean las copas, las botellas y los cascos; el cuadro se columpia, salta del clavo y cae al suelo, apoyado de lado y con el cristal rajado.
+9. Silencio. Guillermo se deshincha, en la gloria, acariciándose la tripa con un suspiro. Rodri, despeinado y pasmado, parpadea, mira el cuadro y mira a Guillermo.
+10. Rodri aplaude despacio (tres palmadas) y levanta el pulgar con el antebrazo horizontal. Guillermo mira a cámara, orgulloso, y guiña un ojo; Rodri también mira a cámara.
+11. Negro.
+
+![Fotogramas de 00113](vista%20previa/00113%20Guillermo%20y%20Rodri%20-%20el%20eructo%20-%20fotogramas.png)
 
 ## Ver y grabar
 
