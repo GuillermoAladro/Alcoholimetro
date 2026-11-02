@@ -121,6 +121,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00082 | Guillermo y Kiriku · El postureo | 14,4 s | [MP4 60 fps](vista%20previa/00082%20Guillermo%20y%20Kiriku%20-%20el%20selfie%20de%20postureo.mp4) · [fotogramas](vista%20previa/00082%20Guillermo%20y%20Kiriku%20-%20el%20selfie%20de%20postureo%20-%20fotogramas.png) |
 | 00083 | Guillermo y Kiriku · El yate | 14,8 s | [MP4 60 fps](vista%20previa/00083%20Guillermo%20y%20Kiriku%20-%20el%20yate.mp4) · [fotogramas](vista%20previa/00083%20Guillermo%20y%20Kiriku%20-%20el%20yate%20-%20fotogramas.png) |
 | 00085 | Guillermo y Kiriku · La cata de vino | 14,8 s | [MP4 60 fps](vista%20previa/00085%20Guillermo%20y%20Kiriku%20-%20la%20cata%20de%20vino.mp4) · [fotogramas](vista%20previa/00085%20Guillermo%20y%20Kiriku%20-%20la%20cata%20de%20vino%20-%20fotogramas.png) |
+| 00087 | Guillermo y Kiriku · El baile de salón | 14,75 s | [MP4 60 fps](vista%20previa/00087%20Guillermo%20y%20Kiriku%20-%20el%20baile%20de%20salon.mp4) · [fotogramas](vista%20previa/00087%20Guillermo%20y%20Kiriku%20-%20el%20baile%20de%20salon%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1596,6 +1597,22 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 12. Negro.
 
 ![Fotogramas de 00085](vista%20previa/00085%20Guillermo%20y%20Kiriku%20-%20la%20cata%20de%20vino%20-%20fotogramas.png)
+
+### 00087 · Guillermo y Kiriku · El baile de salón
+
+1. Negro.
+2. Un salón de baile de noche: paredes de marfil con molduras doradas, dos ventanales en arco con el jardín y la luna, cortinas de terciopelo granate con alzapaños y flecos, un espejo dorado sobre una consola con flores, apliques de velas, una lámpara de araña de cristal que se mece y destella, parqué encerado y, en el rincón, un gramófono del que salen notas al compás de un vals.
+3. Kiriku, muy erguido y con la barbilla alta, se pone en posición (una mano en el aire y la otra a la espalda) y baila el vals él solo: adelante, a un lado, junta, con su subida y bajada, y una vuelta entera, suavísimo. Guillermo lo mira boquiabierto.
+4. Kiriku le cede el turno con la palma hacia arriba; Guillermo se señala («¿yo?»), asiente decidido… y lo imita tieso como un soldadito de madera: brazos rígidos, patadas con la pierna recta, la lengua fuera de concentración.
+5. La vuelta le sale a golpes y acaba tambaleándose, agitando los brazos como un pájaro. Kiriku hace una mueca, suspira, se acerca y le caza la mano al vuelo.
+6. Guillermo se pone colorado y bailan juntos, Kiriku llevando: dos compases de vals por el salón, inclinándose a un lado y a otro; Guillermo, en la gloria, con el brazo de fuera en floritura.
+7. Kiriku sube las manos, le da cuerda con un floreo y lo suelta: Guillermo sale girando solo como una peonza por el parqué, entre rayas de giro y polvo, hasta salir de cuadro.
+8. ¡Crac!, fuera de plano: tiembla todo, la aguja del gramófono salta, entra una polvareda, la cortina del borde desaparece de un tirón y entran rodando un cuadro dorado y unas anillas. Kiriku se encoge y luego se asoma.
+9. Guillermo vuelve a entrar tambaleándose, con los ojos en espiral, envuelto en la cortina como en una capa de rey y con la barra de latón en la mano como un cetro.
+10. Kiriku hace una reverencia a cámara con un brazo cruzado en la cintura; Guillermo la imita tambaleándose y Kiriku mira a cámara, muy satisfecho.
+11. Negro.
+
+![Fotogramas de 00087](vista%20previa/00087%20Guillermo%20y%20Kiriku%20-%20el%20baile%20de%20salon%20-%20fotogramas.png)
 
 ## Ver y grabar
 
