@@ -116,6 +116,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00077 | Guillermo y Gabacho · El karaoke | 14,8 s | [MP4 60 fps](vista%20previa/00077%20Guillermo%20y%20Gabacho%20-%20el%20karaoke.mp4) · [fotogramas](vista%20previa/00077%20Guillermo%20y%20Gabacho%20-%20el%20karaoke%20-%20fotogramas.png) |
 | 00078 | Guillermo y Gabacho · La ola | 14,25 s | [MP4 60 fps](vista%20previa/00078%20Guillermo%20y%20Gabacho%20-%20la%20ola.mp4) · [fotogramas](vista%20previa/00078%20Guillermo%20y%20Gabacho%20-%20la%20ola%20-%20fotogramas.png) |
 | 00079 | Guillermo y Gabacho · El rizo | 14,8 s | [MP4 60 fps](vista%20previa/00079%20Guillermo%20y%20Gabacho%20-%20el%20pelo%20rizado.mp4) · [fotogramas](vista%20previa/00079%20Guillermo%20y%20Gabacho%20-%20el%20pelo%20rizado%20-%20fotogramas.png) |
+| 00080 | Guillermo y Gabacho · La celebración | 14,9 s | [MP4 60 fps](vista%20previa/00080%20Guillermo%20y%20Gabacho%20-%20la%20celebracion.mp4) · [fotogramas](vista%20previa/00080%20Guillermo%20y%20Gabacho%20-%20la%20celebracion%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1512,6 +1513,22 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00079](vista%20previa/00079%20Guillermo%20y%20Gabacho%20-%20el%20pelo%20rizado%20-%20fotogramas.png)
+
+### 00080 · Guillermo y Gabacho · La celebración
+
+1. Negro.
+2. Un salón-bar de noche con una tarima larguísima y recién encerada: pared granate con zócalo crema, banderines azules, blancos y rojos, una bufanda de rayas colgada, un cuadro con un balón, la tele sobre un mueble bajo, el sofá de terciopelo verde empujado contra la pared, una lámpara de pie y la ventana con la ciudad. Guillermo y Gabacho, de pie y en tensión, miran el partido.
+3. ¡Gol! La tele estalla en focos y confeti y el salón se ilumina: los dos saltan con los puños en alto, gritando.
+4. Gabacho coge carrerilla y se tira de rodillas: se desliza por la tarima, echado hacia atrás, con los brazos abiertos, y se para justo delante de la cámara rugiendo con los puños apretados (la cámara se acerca). Guillermo, boquiabierto, se acerca a mirar.
+5. Guillermo se frota las manos, mira a cámara muy chulo, da dos pasitos y se tira… y se para a los dos palmos. Se queda congelado y mira a cámara muerto de vergüenza (colorado y sudando) mientras Gabacho se parte de risa.
+6. Picado (vena), se levanta de un brinco, se da la vuelta y se va corriendo de cuadro para coger carrerilla.
+7. Vuelve a toda mecha y se tira: pasa deslizándose por delante de Gabacho, que da un saltito para apartarse, y sigue, y sigue… mira a cámara con cara de pánico y sale de cuadro por la izquierda.
+8. ¡Crac! Tiembla todo, entra una polvareda, el cuadro de la pared se descuelga y se queda torcido en el suelo, sale rodando un balón y la tele se queda torcida. Gabacho se encoge y luego se asoma con la mano de visera.
+9. Guillermo vuelve a entrar trotando con la camiseta subida por la cabeza, como los futbolistas, los pelos de punta asomando por el cuello y los brazos abiertos. Gabacho le señala muerto de risa, recula… y Guillermo se le da de morros (¡bonk!, estrellitas).
+10. Se abrazan y saltan juntos con el puño en alto. Guillermo se baja la camiseta, el pelo le rebota y sonríe a cámara; Gabacho le guiña un ojo a la cámara.
+11. Negro.
+
+![Fotogramas de 00080](vista%20previa/00080%20Guillermo%20y%20Gabacho%20-%20la%20celebracion%20-%20fotogramas.png)
 
 ## Ver y grabar
 
