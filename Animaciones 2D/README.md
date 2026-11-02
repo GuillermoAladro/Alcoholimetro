@@ -147,6 +147,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00108 | Guillermo y Paradigma · La partida de cartas | 14,5 s | [MP4 60 fps](vista%20previa/00108%20Guillermo%20y%20Paradigma%20-%20la%20carta.mp4) · [fotogramas](vista%20previa/00108%20Guillermo%20y%20Paradigma%20-%20la%20carta%20-%20fotogramas.png) |
 | 00109 | Guillermo y Paradigma · Los globos de agua | 15,0 s | [MP4 60 fps](vista%20previa/00109%20Guillermo%20y%20Paradigma%20-%20el%20globo%20de%20agua.mp4) · [fotogramas](vista%20previa/00109%20Guillermo%20y%20Paradigma%20-%20el%20globo%20de%20agua%20-%20fotogramas.png) |
 | 00110 | Guillermo y Paradigma · La puesta de sol | 14,7 s | [MP4 60 fps](vista%20previa/00110%20Guillermo%20y%20Paradigma%20-%20la%20puesta%20de%20sol.mp4) · [fotogramas](vista%20previa/00110%20Guillermo%20y%20Paradigma%20-%20la%20puesta%20de%20sol%20-%20fotogramas.png) |
+| 00111 | Guillermo y Rodri · La guerra de pulgares | 14,5 s | [MP4 60 fps](vista%20previa/00111%20Guillermo%20y%20Rodri%20-%20el%20pulso%20de%20dedos.mp4) · [fotogramas](vista%20previa/00111%20Guillermo%20y%20Rodri%20-%20el%20pulso%20de%20dedos%20-%20fotogramas.png) |
 | 00112 | Guillermo y Rodri · Las sillas de bar | 14,45 s | [MP4 60 fps](vista%20previa/00112%20Guillermo%20y%20Rodri%20-%20las%20carreras%20de%20sillas.mp4) · [fotogramas](vista%20previa/00112%20Guillermo%20y%20Rodri%20-%20las%20carreras%20de%20sillas%20-%20fotogramas.png) |
 | 00113 | Guillermo y Rodri · El concurso de eructos | 14,9 s | [MP4 60 fps](vista%20previa/00113%20Guillermo%20y%20Rodri%20-%20el%20eructo.mp4) · [fotogramas](vista%20previa/00113%20Guillermo%20y%20Rodri%20-%20el%20eructo%20-%20fotogramas.png) |
 
@@ -2032,6 +2033,23 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 12. Negro.
 
 ![Fotogramas de 00110](vista%20previa/00110%20Guillermo%20y%20Paradigma%20-%20la%20puesta%20de%20sol%20-%20fotogramas.png)
+
+### 00111 · Guillermo y Rodri · La guerra de pulgares
+
+1. Negro.
+2. Un rincón del bar de noche: papel pintado ocre con rombos, zócalo de azulejo verde, un espejo dorado, estantes con botellas, apliques y una lámpara de globo colgando. Una mesita redonda de madera con dos cañas sobre sus posavasos y una vela en un tarro rojo; Guillermo a la izquierda y Rodri a la derecha, sentados frente a frente en sillas de café de madera curvada.
+3. Rodri le reta: levanta el puño y menea el pulgar. Guillermo le mira, entorna los ojos, sonríe con picardía, suelta la caña y le contesta con el pulgar arriba, con el antebrazo apoyado en la mesa.
+4. Se inclinan sobre la mesa y se agarran las manos: ¡clac! Miradas de duelo… y la cámara se lanza hacia las manos hasta fundirse con el primer plano.
+5. Primer plano de las dos manos enganchadas. Los pulgares se hacen una reverencia y chocan las puntas tres veces (uno, dos, tres, con sus puntitos).
+6. ¡A pelear! Los pulgares dan vueltas, amagan y esquivan, estirándose y aplastándose; gotas de sudor en los nudillos. Guillermo se lanza y falla; Rodri aprovecha y le pisa el pulgar, que se retuerce debajo.
+7. Por la izquierda entra a escondidas la otra mano de Guillermo y le pisa a Rodri el pulgar con el índice: trampa. El pulgar de Rodri se queda helado.
+8. La cámara se aleja y vuelve al bar: Guillermo silba mirando al techo, muy inocente, con notitas. Rodri mira la mano tramposa, mira a Guillermo… y Guillermo le echa un ojo de reojo.
+9. Rodri suelta, se levanta un poco por encima de la mesa y carga el índice en el pulgar delante de la frente de Guillermo, que lo ve venir. ¡TOC! Guillermo echa la cabeza atrás con las manos al aire: marca roja y estrellitas.
+10. Rodri se vuelve a sentar y se sopla el dedo como un pistolero, con su humito. Guillermo se frota la frente haciendo pucheros.
+11. Los dos miran a cámara y Rodri guiña un ojo.
+12. Negro.
+
+![Fotogramas de 00111](vista%20previa/00111%20Guillermo%20y%20Rodri%20-%20el%20pulso%20de%20dedos%20-%20fotogramas.png)
 
 ### 00112 · Guillermo y Rodri · Las sillas de bar
 
