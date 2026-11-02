@@ -135,6 +135,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00096 | Guillermo y Marta · El microondas | 14,9 s | [MP4 60 fps](vista%20previa/00096%20Guillermo%20y%20Marta%20-%20las%20palomitas%20de%20maiz.mp4) · [fotogramas](vista%20previa/00096%20Guillermo%20y%20Marta%20-%20las%20palomitas%20de%20maiz%20-%20fotogramas.png) |
 | 00097 | Guillermo y Marta · Bajo la lluvia | 14,4 s | [MP4 60 fps](vista%20previa/00097%20Guillermo%20y%20Marta%20-%20el%20paraguas%20compartido.mp4) · [fotogramas](vista%20previa/00097%20Guillermo%20y%20Marta%20-%20el%20paraguas%20compartido%20-%20fotogramas.png) |
 | 00098 | Guillermo y Marta · El puzle | 14,6 s | [MP4 60 fps](vista%20previa/00098%20Guillermo%20y%20Marta%20-%20el%20puzle.mp4) · [fotogramas](vista%20previa/00098%20Guillermo%20y%20Marta%20-%20el%20puzle%20-%20fotogramas.png) |
+| 00099 | Guillermo y Marta · El muñeco de nieve | 15,0 s | [MP4 60 fps](vista%20previa/00099%20Guillermo%20y%20Marta%20-%20el%20muneco%20de%20nieve.mp4) · [fotogramas](vista%20previa/00099%20Guillermo%20y%20Marta%20-%20el%20muneco%20de%20nieve%20-%20fotogramas.png) |
 | 00101 | Guillermo y Paradigma · La guitarra invisible | 14,9 s | [MP4 60 fps](vista%20previa/00101%20Guillermo%20y%20Paradigma%20-%20el%20air%20guitar.mp4) · [fotogramas](vista%20previa/00101%20Guillermo%20y%20Paradigma%20-%20el%20air%20guitar%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
@@ -1828,6 +1829,23 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00098](vista%20previa/00098%20Guillermo%20y%20Marta%20-%20el%20puzle%20-%20fotogramas.png)
+
+### 00099 · Guillermo y Marta · El muñeco de nieve
+
+1. Negro.
+2. Un parque nevado a media mañana, en lo alto de una loma: cielo azul con un sol pálido, montañas nevadas al fondo, un bosquecillo de pinos, una farola, un banco con nieve y, a la derecha, el borde de la loma que cae a una vaguada, con la colina de enfrente y su cerca al otro lado; caen copos sueltos. Marta palmea la cabeza de su muñeco de nieve (los rastros de las bolas siguen en la nieve) mientras Guillermo la mira, boquiabierto.
+3. Marta le pone la cabeza, saca del bolsillo una zanahoria y se la clava de nariz, le pone dos ramitas de brazos, se quita su bufanda de rayas y se la anuda y le corona con un gorro rojo de pompón. Se aparta y lo admira: ¡ting!
+4. Guillermo se pica, se frota las manos y se pone manos a la obra: rasca la nieve con la puntera y empuja una bolita con el pie, que crece a cada empujón y deja su rastro. Se planta en jarras, orgullosísimo.
+5. Coge impulso y le da un buen puntapié… y la bola se le escapa: rueda sola hasta el borde y se va cuesta abajo. Guillermo corre detrás y se queda en el borde haciendo el molinillo con los brazos; Marta se tapa la boca.
+6. En la colina de enfrente aparece su bola, más gorda, subiendo la ladera; se para arriba. Guillermo suspira aliviado, se encoge de hombros a cámara y vuelve silbando… mientras, a su espalda, la bola rueda otra vez hacia la vaguada.
+7. El suelo retumba y cae nieve del pino: Guillermo se queda helado a media zancada, mira atrás y se da la vuelta… por el borde sube una bola de nieve GIGANTE que se le viene encima.
+8. ¡Pum!: una nube de nieve. La bola se lo traga y frena derrapando justo al lado del muñeco de Marta, que aprieta los ojos tapándose la boca.
+9. Guillermo se ha quedado metido dentro: solo le asoman la cabeza, los brazos en alto y las zapatillas, como un muñeco de nieve más. Se mira, menea los brazos y mira a cámara, resignado.
+10. Marta se parte de risa, saca otra zanahoria del bolsillo y se la lanza: se le clava en la nariz. Luego le quita el gorro a su muñeco, se lo lanza a la cabeza y aplaude.
+11. A Guillermo le pica la nariz… ah… ah… ¡achís!: el gorro sale volando y vuelve a caer en la cabeza del muñeco de Marta. Marta le guiña un ojo a la cámara.
+12. Negro.
+
+![Fotogramas de 00099](vista%20previa/00099%20Guillermo%20y%20Marta%20-%20el%20muneco%20de%20nieve%20-%20fotogramas.png)
 
 ### 00101 · Guillermo y Paradigma · La guitarra invisible
 
