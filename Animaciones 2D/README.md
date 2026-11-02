@@ -174,6 +174,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00135 | Guillermo y Yorgi · Los pendientes | 14,6 s | [MP4 60 fps](vista%20previa/00135%20Guillermo%20y%20Yorgi%20-%20el%20pendiente.mp4) · [fotogramas](vista%20previa/00135%20Guillermo%20y%20Yorgi%20-%20el%20pendiente%20-%20fotogramas.png) |
 | 00136 | Guillermo y Yorgi · La carrera | 14,6 s | [MP4 60 fps](vista%20previa/00136%20Guillermo%20y%20Yorgi%20-%20la%20carrera.mp4) · [fotogramas](vista%20previa/00136%20Guillermo%20y%20Yorgi%20-%20la%20carrera%20-%20fotogramas.png) |
 | 00137 | Guillermo y Yorgi · La sorpresa | 14,6 s | [MP4 60 fps](vista%20previa/00137%20Guillermo%20y%20Yorgi%20-%20el%20abrazo%20de%20cumpleanos.mp4) · [fotogramas](vista%20previa/00137%20Guillermo%20y%20Yorgi%20-%20el%20abrazo%20de%20cumpleanos%20-%20fotogramas.png) |
+| 00139 | Guillermo y Yorgi · La siesta | 14,6 s | [MP4 60 fps](vista%20previa/00139%20Guillermo%20y%20Yorgi%20-%20la%20siesta.mp4) · [fotogramas](vista%20previa/00139%20Guillermo%20y%20Yorgi%20-%20la%20siesta%20-%20fotogramas.png) |
 | 00140 | Guillermo y Yorgi · El selfie del gimnasio | 14,3 s | [MP4 60 fps](vista%20previa/00140%20Guillermo%20y%20Yorgi%20-%20el%20selfie%20del%20gimnasio.mp4) · [fotogramas](vista%20previa/00140%20Guillermo%20y%20Yorgi%20-%20el%20selfie%20del%20gimnasio%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
@@ -2493,6 +2494,21 @@ Un paseo peatonal de un pueblo blanco, una tarde de sol (fachadas de colores al 
 12. Negro.
 
 ![Fotogramas de 00137](vista%20previa/00137%20Guillermo%20y%20Yorgi%20-%20el%20abrazo%20de%20cumpleanos%20-%20fotogramas.png)
+
+### 00139 · Guillermo y Yorgi · La siesta
+1. Negro.
+2. La terraza de un bar en la sobremesa, con sol de media tarde. Hay una sombrilla grande de rayas sobre una mesita con los restos de la comida (la raspa del pescado, una caña, un tinto de verano) y, al fondo, un pueblo blanco entre olivos. Guillermo y Yorgi están en dos tumbonas de lona de rayas, una frente a otra. Yorgi se da palmaditas en la barriga, se estira a lo grande, bosteza… y se queda frito en el acto: la cabeza cae contra la lona, la boca abierta y un brazo colgando. Ronca con pompitas en la nariz.
+3. Guillermo alucina, se ríe y se tumba. Una mosca le ronda y se le posa en la nariz. Abre un ojo y ¡zas!: se da en la frente, y la mosca se va al plato de la raspa.
+4. La tarde avanza: el sol sale por debajo de la sombrilla y les da en la cara. Guillermo se hace visera y coge las gafas de sol que lleva colgadas de la camiseta. A Yorgi, dormido, se le frunce el ceño.
+5. Yorgi coge muchísimo aire y suelta un ronquido gordo: las ondas cruzan la terraza, la mosca sale volando, los flecos de la sombrilla se agitan y a Guillermo se le va el pelo hacia atrás. Luego el pelo vuelve a su sitio con rebote.
+6. Guillermo le mira fatal… suspira, mira las gafas, apunta con la lengua fuera y se las lanza. Vuelan dando vueltas por encima de la mesa y le caen a Yorgi en la cara, perfectas (¡clic!, destello).
+7. Yorgi sonríe en sueños y ronca bajito. Guillermo, pasmado, se viene arriba y hace «¡sí!» con el puño.
+8. Sin gafas, Guillermo coge la servilleta de cuadros del regazo, la sacude y se la echa por la cara.
+9. Roncan los dos, primero a destiempo y luego a la vez; la servilleta se infla cada vez que suelta el aire. Las pompas crecen, se sueltan, vuelan hasta el centro y se funden en una gorda que tiembla… ¡plof! Los dos dan un respingo y siguen durmiendo.
+10. La mosca vuelve y se posa en las gafas de Yorgi, frotándose las patas.
+11. Negro.
+
+![Fotogramas de 00139](vista%20previa/00139%20Guillermo%20y%20Yorgi%20-%20la%20siesta%20-%20fotogramas.png)
 
 ### 00140 · Guillermo y Yorgi · El selfie del gimnasio
 1. Negro.
