@@ -127,6 +127,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00088 | Guillermo y Kiriku · El reloj | 14,6 s | [MP4 60 fps](vista%20previa/00088%20Guillermo%20y%20Kiriku%20-%20el%20reloj%20caro.mp4) · [fotogramas](vista%20previa/00088%20Guillermo%20y%20Kiriku%20-%20el%20reloj%20caro%20-%20fotogramas.png) |
 | 00089 | Guillermo y Kiriku · El descapotable | 14,6 s | [MP4 60 fps](vista%20previa/00089%20Guillermo%20y%20Kiriku%20-%20el%20descapotable.mp4) · [fotogramas](vista%20previa/00089%20Guillermo%20y%20Kiriku%20-%20el%20descapotable%20-%20fotogramas.png) |
 | 00090 | Guillermo y Kiriku · La foto de grupo | 12,9 s | [MP4 60 fps](vista%20previa/00090%20Guillermo%20y%20Kiriku%20-%20la%20foto%20de%20grupo.mp4) · [fotogramas](vista%20previa/00090%20Guillermo%20y%20Kiriku%20-%20la%20foto%20de%20grupo%20-%20fotogramas.png) |
+| 00091 | Guillermo y Marta · El café con arte | 14,8 s | [MP4 60 fps](vista%20previa/00091%20Guillermo%20y%20Marta%20-%20el%20cafe%20con%20arte.mp4) · [fotogramas](vista%20previa/00091%20Guillermo%20y%20Marta%20-%20el%20cafe%20con%20arte%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1694,6 +1695,20 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 8. Negro.
 
 ![Fotogramas de 00090](vista%20previa/00090%20Guillermo%20y%20Kiriku%20-%20la%20foto%20de%20grupo%20-%20fotogramas.png)
+
+### 00091 · Guillermo y Marta · El café con arte
+
+1. Negro.
+2. Un café acogedor por la mañana: pared rosa teja con azulejos blancos, una pizarra con dibujos de tiza (una taza humeante, un corazón, una hoja, granos y estrellas), una balda con tarros de café, un potos colgando, lámparas de latón, rayos de sol y, al fondo, la barra de madera con la cafetera de dos brazos, el molinillo y una campana con bizcochos. En una mesa alta, dos cafés, una jarrita de leche y un tarro de palillos; Guillermo a un lado y Marta al otro.
+3. Marta le mira con picardía, coge la jarrita y vierte la leche con mimo, meneándola: en un globo se ve la taza desde arriba, la mancha blanca crece y, al cortar, se convierte en un corazón perfecto (¡ting!). Guillermo se queda boquiabierto.
+4. Marta le cede el turno con la palma hacia arriba («¿yo?») y le desliza la jarrita por la mesa; la jarrita gira por el camino y llega con el asa hacia él.
+5. Guillermo la coge, mira a cámara muy chulo y vierte a lo bruto: un chorro gordo, la espuma sube, rebosa y chorrea por la taza; en el globo, un borrón sin forma que se sale por el borde. Marta se alarma.
+6. Orgullosísimo, deja la jarrita, coge la taza, da un paso atrás y la inclina hacia Marta para enseñársela… y la espuma se le cae encima de la zapatilla: ¡plaf!, mancha que humea y saltitos a la pata coja. Marta se parte de risa. Mirada muy seria a cámara.
+7. Marta coge un palillo, se acerca, Guillermo le tiende la taza y ella le dibuja en el borrón una carita sonriente: ojo, ojo y sonrisa.
+8. Guillermo se ilumina (colorado, entre chispitas) y levanta la taza; los dos miran a cámara y Marta guiña un ojo.
+9. Negro.
+
+![Fotogramas de 00091](vista%20previa/00091%20Guillermo%20y%20Marta%20-%20el%20cafe%20con%20arte%20-%20fotogramas.png)
 
 ## Ver y grabar
 
