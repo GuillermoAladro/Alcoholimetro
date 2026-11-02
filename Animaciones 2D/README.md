@@ -173,6 +173,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00134 | Guillermo y Yorgi · La hamburguesa gigante | 14,9 s | [MP4 60 fps](vista%20previa/00134%20Guillermo%20y%20Yorgi%20-%20la%20barbacoa.mp4) · [fotogramas](vista%20previa/00134%20Guillermo%20y%20Yorgi%20-%20la%20barbacoa%20-%20fotogramas.png) |
 | 00135 | Guillermo y Yorgi · Los pendientes | 14,6 s | [MP4 60 fps](vista%20previa/00135%20Guillermo%20y%20Yorgi%20-%20el%20pendiente.mp4) · [fotogramas](vista%20previa/00135%20Guillermo%20y%20Yorgi%20-%20el%20pendiente%20-%20fotogramas.png) |
 | 00137 | Guillermo y Yorgi · La sorpresa | 14,6 s | [MP4 60 fps](vista%20previa/00137%20Guillermo%20y%20Yorgi%20-%20el%20abrazo%20de%20cumpleanos.mp4) · [fotogramas](vista%20previa/00137%20Guillermo%20y%20Yorgi%20-%20el%20abrazo%20de%20cumpleanos%20-%20fotogramas.png) |
+| 00140 | Guillermo y Yorgi · El selfie del gimnasio | 14,3 s | [MP4 60 fps](vista%20previa/00140%20Guillermo%20y%20Yorgi%20-%20el%20selfie%20del%20gimnasio.mp4) · [fotogramas](vista%20previa/00140%20Guillermo%20y%20Yorgi%20-%20el%20selfie%20del%20gimnasio%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -2472,6 +2473,21 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 12. Negro.
 
 ![Fotogramas de 00137](vista%20previa/00137%20Guillermo%20y%20Yorgi%20-%20el%20abrazo%20de%20cumpleanos%20-%20fotogramas.png)
+
+### 00140 · Guillermo y Yorgi · El selfie del gimnasio
+1. Negro.
+2. Un gimnasio muy luminoso: barras de LED colgadas, pared gris claro con una franja naranja y zócalo verde petróleo, carteles solo con iconos (rayo, brazo, mancuerna), un reloj sin números, un árbol de discos de colores, kettlebells, un banco, cajones de salto y una esterilla morada sobre el suelo de caucho. A la derecha, toda la pared es un espejo en el que se ven la sala y los dos, reflejados.
+3. Yorgi se hace un selfie en el espejo: móvil en alto, saca bíceps con el otro brazo, dos bombeos y ¡ting!. Levanta una ceja, pone morritos y se echa un pelín atrás para buscar el ángulo.
+4. Guillermo entra de un salto por la izquierda, sacando bíceps y con el otro puño en alto. Aterriza con un aplastón a su lado y se planta: bíceps y puño en la cadera. Yorgi le mira de reojo.
+5. A Guillermo le tiembla el brazo. Mira el bíceps de Yorgi, mira el suyo… y decide hinchar el pecho: coge aire, moflete hinchado, cara roja y todo le tiembla. Yorgi le mira otra vez y aguanta la risa.
+6. Yorgi dispara. Guillermo pone cara de orgullo y la costura del hombro cede: un rasgoncito, la manga aletea y… ¡FLASH! La manga sale disparada como un corcho, dando vueltas.
+7. Guillermo nota el aire y se mira el hombro: el brazo, blanquísimo, con la marca del moreno. La manga cae sobre la esterilla (¡plof!).
+8. Yorgi mira la foto en el móvil y se parte de risa, con la mano en la barriga.
+9. Guillermo se encoge de hombros y vuelve a sacar bíceps con el brazo pálido, más orgulloso que nunca (¡ting!). Yorgi, aún riéndose, mira otra vez la foto.
+10. La escena se oscurece y aparece la foto del espejo, con su borde blanco, un poco torcida y con sombra: los dos sacando bíceps, el destello del flash en el móvil y la manga volando.
+11. Negro.
+
+![Fotogramas de 00140](vista%20previa/00140%20Guillermo%20y%20Yorgi%20-%20el%20selfie%20del%20gimnasio%20-%20fotogramas.png)
 
 ## Ver y grabar
 
