@@ -113,6 +113,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00074 | Guillermo y Gabacho · El queso | 14,95 s | [MP4 60 fps](vista%20previa/00074%20Guillermo%20y%20Gabacho%20-%20el%20queso.mp4) · [fotogramas](vista%20previa/00074%20Guillermo%20y%20Gabacho%20-%20el%20queso%20-%20fotogramas.png) |
 | 00075 | Guillermo y Gabacho · El mando | 14,4 s | [MP4 60 fps](vista%20previa/00075%20Guillermo%20y%20Gabacho%20-%20el%20pique%20del%20mando.mp4) · [fotogramas](vista%20previa/00075%20Guillermo%20y%20Gabacho%20-%20el%20pique%20del%20mando%20-%20fotogramas.png) |
 | 00076 | Guillermo y Gabacho · La boina | 14,8 s | [MP4 60 fps](vista%20previa/00076%20Guillermo%20y%20Gabacho%20-%20la%20boina.mp4) · [fotogramas](vista%20previa/00076%20Guillermo%20y%20Gabacho%20-%20la%20boina%20-%20fotogramas.png) |
+| 00077 | Guillermo y Gabacho · El karaoke | 14,8 s | [MP4 60 fps](vista%20previa/00077%20Guillermo%20y%20Gabacho%20-%20el%20karaoke.mp4) · [fotogramas](vista%20previa/00077%20Guillermo%20y%20Gabacho%20-%20el%20karaoke%20-%20fotogramas.png) |
 | 00078 | Guillermo y Gabacho · La ola | 14,25 s | [MP4 60 fps](vista%20previa/00078%20Guillermo%20y%20Gabacho%20-%20la%20ola.mp4) · [fotogramas](vista%20previa/00078%20Guillermo%20y%20Gabacho%20-%20la%20ola%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
@@ -1458,6 +1459,25 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 12. Negro.
 
 ![Fotogramas de 00076](vista%20previa/00076%20Guillermo%20y%20Gabacho%20-%20la%20boina%20-%20fotogramas.png)
+
+### 00077 · Guillermo y Gabacho · El karaoke
+
+1. Negro.
+2. El escenario pequeño de un bar, de noche: telón de terciopelo granate con bambalina de flecos dorados, tarima de madera, un foco con motas de polvo, un amplificador al fondo, una banqueta con una guitarra, una pantalla de karaoke con barras de colores y, delante, las siluetas de las mesitas con sus velas.
+3. Gabacho canta una balada en el micro del pie de jirafa: ojos cerrados, mano en el corazón, se mece; de su boca salen notas redondas y suaves.
+4. Baja la jirafa y se arrodilla con el brazo abierto, muy dramático.
+5. Guillermo entra corriendo por la izquierda y aterriza de un salto («¡tachán!»); Gabacho abre un ojo y se levanta.
+6. Guillermo le roba el micro tirando de la jirafa y desafina a pleno pulmón: notas con pinchos, torcidas, que salen disparadas. Gabacho lo recupera; Guillermo se lo vuelve a quitar.
+7. Las notas redondas y las de pinchos chocan en el aire entre los dos y revientan como pompas.
+8. Se miran mal (vena en la frente), agarran los dos lo alto del pie y tiran: el pie se tambalea a un lado y a otro mientras sudan.
+9. Las manos resbalan y salen despedidos hacia atrás, braceando; el pie, suelto, se balancea y cae de lado contra el amplificador, con el micro colgando delante del altavoz.
+10. ¡Acople! Ondas de sonido en zigzag, el foco parpadea y la pantalla se llena de nieve: a los dos se les va el pelo hacia atrás y aprietan los ojos tapándose con la mano.
+11. Silencio y un hilo de humo: se quedan tiesos, despeinados para siempre.
+12. Se miran… y se parten de risa señalándose el pelo.
+13. Los dos miran a cámara y Gabacho guiña un ojo.
+14. Negro.
+
+![Fotogramas de 00077](vista%20previa/00077%20Guillermo%20y%20Gabacho%20-%20el%20karaoke%20-%20fotogramas.png)
 
 ### 00078 · Guillermo y Gabacho · La ola
 
