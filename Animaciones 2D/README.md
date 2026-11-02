@@ -163,6 +163,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00124 | Guillermo y Sara · La tormenta | 14,8 s | [MP4 60 fps](vista%20previa/00124%20Guillermo%20y%20Sara%20-%20la%20tormenta.mp4) · [fotogramas](vista%20previa/00124%20Guillermo%20y%20Sara%20-%20la%20tormenta%20-%20fotogramas.png) |
 | 00125 | Guillermo y Sara · No te rías | 14,85 s | [MP4 60 fps](vista%20previa/00125%20Guillermo%20y%20Sara%20-%20el%20pulso%20de%20miradas.mp4) · [fotogramas](vista%20previa/00125%20Guillermo%20y%20Sara%20-%20el%20pulso%20de%20miradas%20-%20fotogramas.png) |
 | 00126 | Guillermo y Sara · El collar | 14,6 s | [MP4 60 fps](vista%20previa/00126%20Guillermo%20y%20Sara%20-%20la%20cruz%20del%20collar.mp4) · [fotogramas](vista%20previa/00126%20Guillermo%20y%20Sara%20-%20la%20cruz%20del%20collar%20-%20fotogramas.png) |
+| 00127 | Guillermo y Sara · El monopatín de noche | 14,55 s | [MP4 60 fps](vista%20previa/00127%20Guillermo%20y%20Sara%20-%20el%20skate%20de%20noche.mp4) · [fotogramas](vista%20previa/00127%20Guillermo%20y%20Sara%20-%20el%20skate%20de%20noche%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -2295,6 +2296,23 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00126](vista%20previa/00126%20Guillermo%20y%20Sara%20-%20la%20cruz%20del%20collar%20-%20fotogramas.png)
+
+### 00127 · Guillermo y Sara · El monopatín de noche
+
+1. Negro.
+2. Calle de noche con la cámara viajando a su lado: farolas con conos de luz anaranjada, fachadas con ventanas encendidas, persianas con pintadas, bicis aparcadas y el asfalto liso; la luna menguante al fondo.
+3. Sara patina sin esfuerzo, con la melena negra al viento: empuja, se desliza y traza una curva (la tabla se inclina y enseña la lija y luego el dibujo de la luna, dejando dos surcos de luz). Guillermo corre detrás para no quedarse atrás, con la lengua fuera y sudando a chorros.
+4. Sara le mira de reojo, sonríe y se escapa con otro empujón.
+5. Frena de cola (saltan chispas) y se queda de pie en la tabla mirándole, impasible. Guillermo llega reventado y se apoya en las rodillas, jadeando y echando vaho.
+6. Se le ocurre algo: señala la tabla con cara de pillo (Sara levanta una ceja), retrocede, coge carrerilla y salta en bomba a la cola, detrás de ella.
+7. La tabla sale disparada con los dos: se tambalean con los brazos como aspas, él se agarra al hombro de Sara y, de otro tirón, salen de cuadro por la derecha.
+8. Un instante de calma… ¡crash! fuera de cuadro: tiembla todo, un estallido en el borde, polvo y hojas por el aire; entra rodando una tapa de cubo de basura que se tambalea hasta quedarse plana, y un gato negro sale escopetado, erizado, con un maullido.
+9. La tabla vuelve sola rodando, pilla un bache, da media vuelta en el aire y se queda boca arriba con las ruedas girando.
+10. Vuelven los dos cojeando, con polvo y hojas en el pelo: Sara, con las manos en los bolsillos, levanta la tabla con un toque del pie y la recoge al vuelo; Guillermo, frotándose la cabeza, levanta el pulgar.
+11. Miran a cámara y Sara sonríe de medio lado.
+12. Negro.
+
+![Fotogramas de 00127](vista%20previa/00127%20Guillermo%20y%20Sara%20-%20el%20skate%20de%20noche%20-%20fotogramas.png)
 
 ## Ver y grabar
 
