@@ -156,6 +156,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00118 | Guillermo y Rodri · El columpio | 14,8 s | [MP4 60 fps](vista%20previa/00118%20Guillermo%20y%20Rodri%20-%20el%20columpio.mp4) · [fotogramas](vista%20previa/00118%20Guillermo%20y%20Rodri%20-%20el%20columpio%20-%20fotogramas.png) |
 | 00119 | Guillermo y Rodri · El chicle | 14,8 s | [MP4 60 fps](vista%20previa/00119%20Guillermo%20y%20Rodri%20-%20el%20chicle.mp4) · [fotogramas](vista%20previa/00119%20Guillermo%20y%20Rodri%20-%20el%20chicle%20-%20fotogramas.png) |
 | 00120 | Guillermo y Rodri · El brindis | 14,5 s | [MP4 60 fps](vista%20previa/00120%20Guillermo%20y%20Rodri%20-%20el%20brindis.mp4) · [fotogramas](vista%20previa/00120%20Guillermo%20y%20Rodri%20-%20el%20brindis%20-%20fotogramas.png) |
+| 00121 | Guillermo y Sara · El tatuaje | 14,6 s | [MP4 60 fps](vista%20previa/00121%20Guillermo%20y%20Sara%20-%20el%20tatuaje.mp4) · [fotogramas](vista%20previa/00121%20Guillermo%20y%20Sara%20-%20el%20tatuaje%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -2182,6 +2183,21 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 9. Negro.
 
 ![Fotogramas de 00120](vista%20previa/00120%20Guillermo%20y%20Rodri%20-%20el%20brindis%20-%20fotogramas.png)
+
+### 00121 · Guillermo y Sara · El tatuaje
+
+1. Negro.
+2. De noche, en el rincón de un estudio de tatuajes: pared ciruela con hojas de flash (corazón, golondrina, ancla, estrella, rosa, calavera simpática), neón de corazón con alas, balda de tintas, planta colgante, suelo de damero, sillón de tatuar con reposacabezas, reposabrazos, carrito y lámpara colgante. Sara prueba la máquina de tatuar (bzzz). Guillermo traga saliva y se hace el valiente.
+3. Se sube la manga de dos tirones, pone el brazo en el reposabrazos y aparta la cara apretando los ojos, sudando y temblando.
+4. Sara se acerca rodando en su taburete y arranca la máquina. Al primer bzzz, antes de que le toque, Guillermo se pone tieso y se desmaya: ojos en blanco, cabeza atrás contra el reposacabezas, lengua fuera y el otro brazo colgando.
+5. Sara le mira sin inmutarse, mira a cámara, deja la máquina en el carrito, coge un rotulador y le quita el capuchón de un golpe de pulgar (¡pop!).
+6. La cámara se acerca al antebrazo. Sara le dibuja un corazoncito trazo a trazo, sopla la tinta y deja el rotulador.
+7. Espera mirándose las uñas y dando golpecitos con el pie.
+8. Guillermo se despierta de un respingo, mira a todos lados, se mira el brazo y ve el corazón entre chispitas.
+9. Se hincha de orgullo y saca bíceps con el corazón a la vista; el corazón late una vez y él mira a cámara. Sara sonríe de lado y mira a cámara.
+10. Negro.
+
+![Fotogramas de 00121](vista%20previa/00121%20Guillermo%20y%20Sara%20-%20el%20tatuaje%20-%20fotogramas.png)
 
 ## Ver y grabar
 
