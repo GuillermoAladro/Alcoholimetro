@@ -129,6 +129,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00090 | Guillermo y Kiriku · La foto de grupo | 12,9 s | [MP4 60 fps](vista%20previa/00090%20Guillermo%20y%20Kiriku%20-%20la%20foto%20de%20grupo.mp4) · [fotogramas](vista%20previa/00090%20Guillermo%20y%20Kiriku%20-%20la%20foto%20de%20grupo%20-%20fotogramas.png) |
 | 00091 | Guillermo y Marta · El café con arte | 14,8 s | [MP4 60 fps](vista%20previa/00091%20Guillermo%20y%20Marta%20-%20el%20cafe%20con%20arte.mp4) · [fotogramas](vista%20previa/00091%20Guillermo%20y%20Marta%20-%20el%20cafe%20con%20arte%20-%20fotogramas.png) |
 | 00092 | Guillermo y Marta · La bufanda | 14,8 s | [MP4 60 fps](vista%20previa/00092%20Guillermo%20y%20Marta%20-%20la%20bufanda.mp4) · [fotogramas](vista%20previa/00092%20Guillermo%20y%20Marta%20-%20la%20bufanda%20-%20fotogramas.png) |
+| 00093 | Guillermo y Marta · El libro | 14,6 s | [MP4 60 fps](vista%20previa/00093%20Guillermo%20y%20Marta%20-%20el%20libro.mp4) · [fotogramas](vista%20previa/00093%20Guillermo%20y%20Marta%20-%20el%20libro%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1726,6 +1727,22 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00092](vista%20previa/00092%20Guillermo%20y%20Marta%20-%20la%20bufanda%20-%20fotogramas.png)
+
+### 00093 · Guillermo y Marta · El libro
+
+1. Negro.
+2. El rincón de lectura del bar, de noche: pared color miel con papel de hojitas, zócalo de nogal, una estantería altísima llena de libros de colores, una lámpara de pie, una alfombra persa, una mesita con una taza que humea, una planta grande y un cuadrito. Marta, en un taburete junto a la lámpara, lee un libro gordo muy tranquila: pasa una página y sonríe con lo que lee.
+3. Guillermo, al lado de la estantería, se aburre: suspira, da golpecitos con el pie, mira a un lado y a otro… y mira arriba: en el estante de arriba brilla un tomo gigantesco.
+4. Se le ocurre algo; se pone de puntillas, lo saca tirando del lomo… y el tomo le cae en los brazos: ¡zas!, se le doblan las rodillas.
+5. Se tambalea de un lado a otro con él, rojo y sudando (Marta pasa otra página), hasta que se da de espaldas contra la estantería: ¡pum! La estantería tiembla… y aguanta. Suspira aliviado.
+6. Pero en el hueco del tomo los libros empiezan a caer unos sobre otros como fichas de dominó (¡tac, tac, tac!). Guillermo mira arriba, horrorizado.
+7. Todo se viene abajo: dos libros le dan en la cabeza, suelta el tomo, se encoge… y una lluvia de libros lo entierra en una montaña, entre una nube de polvo.
+8. Solo le asoman las zapatillas; de lo alto sale una mano que se agita sin fuerzas y se rinde. Marta pasa una página sin levantar la vista.
+9. El último libro, que se tambaleaba en el borde del estante, se vuelca, se abre y se posa en lo alto de la montaña como un tejadito. Las zapatillas se meten dentro y ¡pop!: Guillermo asoma la cabeza por arriba con el libro puesto de tejado, mareado, entre estrellitas.
+10. Marta sube su libro hasta la nariz y le mira por encima, solo con los ojos; lo baja un poco, sonríe y guiña un ojo a cámara. Guillermo la mira y sonríe a cámara.
+11. Negro.
+
+![Fotogramas de 00093](vista%20previa/00093%20Guillermo%20y%20Marta%20-%20el%20libro%20-%20fotogramas.png)
 
 ## Ver y grabar
 
