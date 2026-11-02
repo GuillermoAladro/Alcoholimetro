@@ -159,6 +159,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00120 | Guillermo y Rodri · El brindis | 14,5 s | [MP4 60 fps](vista%20previa/00120%20Guillermo%20y%20Rodri%20-%20el%20brindis.mp4) · [fotogramas](vista%20previa/00120%20Guillermo%20y%20Rodri%20-%20el%20brindis%20-%20fotogramas.png) |
 | 00121 | Guillermo y Sara · El tatuaje | 14,6 s | [MP4 60 fps](vista%20previa/00121%20Guillermo%20y%20Sara%20-%20el%20tatuaje.mp4) · [fotogramas](vista%20previa/00121%20Guillermo%20y%20Sara%20-%20el%20tatuaje%20-%20fotogramas.png) |
 | 00122 | Guillermo y Sara · El concierto | 14,6 s | [MP4 60 fps](vista%20previa/00122%20Guillermo%20y%20Sara%20-%20el%20concierto.mp4) · [fotogramas](vista%20previa/00122%20Guillermo%20y%20Sara%20-%20el%20concierto%20-%20fotogramas.png) |
+| 00123 | Guillermo y Sara · El delineado | 14,6 s | [MP4 60 fps](vista%20previa/00123%20Guillermo%20y%20Sara%20-%20el%20maquillaje.mp4) · [fotogramas](vista%20previa/00123%20Guillermo%20y%20Sara%20-%20el%20maquillaje%20-%20fotogramas.png) |
 | 00124 | Guillermo y Sara · La tormenta | 14,8 s | [MP4 60 fps](vista%20previa/00124%20Guillermo%20y%20Sara%20-%20la%20tormenta.mp4) · [fotogramas](vista%20previa/00124%20Guillermo%20y%20Sara%20-%20la%20tormenta%20-%20fotogramas.png) |
 | 00125 | Guillermo y Sara · No te rías | 14,85 s | [MP4 60 fps](vista%20previa/00125%20Guillermo%20y%20Sara%20-%20el%20pulso%20de%20miradas.mp4) · [fotogramas](vista%20previa/00125%20Guillermo%20y%20Sara%20-%20el%20pulso%20de%20miradas%20-%20fotogramas.png) |
 | 00126 | Guillermo y Sara · El collar | 14,6 s | [MP4 60 fps](vista%20previa/00126%20Guillermo%20y%20Sara%20-%20la%20cruz%20del%20collar.mp4) · [fotogramas](vista%20previa/00126%20Guillermo%20y%20Sara%20-%20la%20cruz%20del%20collar%20-%20fotogramas.png) |
@@ -2234,6 +2235,20 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00122](vista%20previa/00122%20Guillermo%20y%20Sara%20-%20el%20concierto%20-%20fotogramas.png)
+
+### 00123 · Guillermo y Sara · El delineado
+
+1. Negro.
+2. Un camerino de sala de conciertos, de noche: pared de ladrillo oscuro con carteles sin letras (un rayo, una estrella, una guitarra) y pegatinas, una guirnalda de bombillas, una guitarra eléctrica roja en su soporte, un amplificador y la puerta del camerino con su estrella dorada; en la pared de la izquierda, un espejo de camerino rodeado de bombillas y una repisa con brochas, laca, polvera, pintalabios y perfume. Sara se pinta la raya delante del espejo (también la vemos reflejada), con la boca entreabierta de concentración: el lápiz recorre el párpado y, de un solo golpe de muñeca, le sale un rabillo perfecto (¡ting!). Guillermo, detrás, con el puño en la barbilla, alucina: «ooh».
+3. Guillermo se acerca, señala el lápiz y pone ojitos de cachorro con las manos juntas. Sara se gira, se encoge de hombros, le llama con el dedo y se pasa el lápiz a la otra mano.
+4. Guillermo se agacha delante de ella, cierra un ojo y Sara empieza a pintarle la raya.
+5. Le pica la nariz: «ah…», «ah…», ¡ACHÍS! Con el latigazo, el lápiz le cruza la mejilla de una raya hasta la oreja; las gotitas acaban en la cara de Sara y le echan el pelo atrás. Silencio. Guillermo se limpia la nariz; Sara mira la raya.
+6. Sara intenta arreglarlo: garabatea alrededor de un ojo, duda, garabatea el otro para igualarlo y difumina la raya… y le deja unos ojos de mapache. Él abre los ojos sonriendo, muy contento; ella mira a cámara.
+7. Sara le señala el espejo: Guillermo se ve, se lleva un susto, se enamora de su nuevo look y posa de rockero: cuernos con las dos manos, lengua fuera y cabeceando. Su reflejo hace lo mismo.
+8. Sara mira a cámara impasible y sonríe de lado.
+9. Negro.
+
+![Fotogramas de 00123](vista%20previa/00123%20Guillermo%20y%20Sara%20-%20el%20maquillaje%20-%20fotogramas.png)
 
 ### 00124 · Guillermo y Sara · La tormenta
 
