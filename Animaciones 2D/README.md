@@ -142,6 +142,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00103 | Guillermo y Paradigma · La meditación | 14,6 s | [MP4 60 fps](vista%20previa/00103%20Guillermo%20y%20Paradigma%20-%20la%20meditacion.mp4) · [fotogramas](vista%20previa/00103%20Guillermo%20y%20Paradigma%20-%20la%20meditacion%20-%20fotogramas.png) |
 | 00105 | Guillermo y Paradigma · El vinilo | 14,6 s | [MP4 60 fps](vista%20previa/00105%20Guillermo%20y%20Paradigma%20-%20el%20vinilo.mp4) · [fotogramas](vista%20previa/00105%20Guillermo%20y%20Paradigma%20-%20el%20vinilo%20-%20fotogramas.png) |
 | 00106 | Guillermo y Paradigma · La barbacoa | 14,6 s | [MP4 60 fps](vista%20previa/00106%20Guillermo%20y%20Paradigma%20-%20la%20barbacoa.mp4) · [fotogramas](vista%20previa/00106%20Guillermo%20y%20Paradigma%20-%20la%20barbacoa%20-%20fotogramas.png) |
+| 00108 | Guillermo y Paradigma · La partida de cartas | 14,5 s | [MP4 60 fps](vista%20previa/00108%20Guillermo%20y%20Paradigma%20-%20la%20carta.mp4) · [fotogramas](vista%20previa/00108%20Guillermo%20y%20Paradigma%20-%20la%20carta%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1943,6 +1944,22 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00106](vista%20previa/00106%20Guillermo%20y%20Paradigma%20-%20la%20barbacoa%20-%20fotogramas.png)
+
+### 00108 · Guillermo y Paradigma · La partida de cartas
+
+1. Negro.
+2. Noche de póquer en el cuarto de atrás del bar: pared forrada de tablones oscuros con su zócalo, un cuadro con un velero al atardecer, un aplique, un reloj sin números, un aparador con una licorera y una puerta entornada por la que se cuela la luz del bar. En medio, una mesa redonda de tapete verde con borde acolchado, bajo una lámpara baja de pantalla verde que hace un cono de luz con motas de polvo. Guillermo y Paradigma, sentados frente a frente con sus pilas de fichas; las cartas de los dos, boca abajo, y un vaso de whisky con hielo junto a Paradigma.
+3. Guillermo coge sus dos cartas y las mira… y se le ilumina la cara: rayitas, estrellas en los ojos, colorado. Paradigma, con los párpados a media asta, da un sorbo a su whisky sin inmutarse.
+4. Guillermo intenta disimular con los labios apretados y los mofletes hinchados, sudando; no puede: mira a cámara moviendo las cejas y se marca un bailecito en la silla, tamborileando en el muslo. Paradigma parpadea despacio y levanta una ceja, nada más.
+5. Guillermo deja las cartas boca abajo, coge impulso, se levanta medio cuerpo y empuja todas sus fichas al centro con los dos brazos: las pilas se deslizan por el tapete y se desmoronan, con fichas que ruedan y tintinean. Se sienta muy chulo.
+6. Paradigma, tranquilo, empuja una pila al bote: va.
+7. Guillermo da la vuelta a sus cartas de un manotazo (¡zas!): dos cartas flojísimas, un dos y un tres. Las presenta con la palma, sonriendo a cámara.
+8. Paradigma, sin prisa, va sacando cartas de su montón y dejándolas boca arriba una a una: un as, otro as, otro as… y otro (cada una con su clic y su brillo). A Guillermo se le congela la sonrisa, le da un tic en el ojo y se le cae la mandíbula.
+9. Paradigma se inclina sobre la mesa y recoge el bote con el antebrazo. Guillermo se queda tieso… y cae de cara sobre el tapete: ¡pum!, la lámpara se balancea y una ficha salta y se le queda encima de la cabeza.
+10. Paradigma le mira, coge su vaso y mira a cámara con media sonrisa, levantándolo un poquito.
+11. Negro.
+
+![Fotogramas de 00108](vista%20previa/00108%20Guillermo%20y%20Paradigma%20-%20la%20carta%20-%20fotogramas.png)
 
 ## Ver y grabar
 
