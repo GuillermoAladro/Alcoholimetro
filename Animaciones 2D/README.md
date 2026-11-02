@@ -143,6 +143,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00104 | Guillermo y Paradigma · El pelo largo | 14,6 s | [MP4 60 fps](vista%20previa/00104%20Guillermo%20y%20Paradigma%20-%20el%20pelo%20largo.mp4) · [fotogramas](vista%20previa/00104%20Guillermo%20y%20Paradigma%20-%20el%20pelo%20largo%20-%20fotogramas.png) |
 | 00105 | Guillermo y Paradigma · El vinilo | 14,6 s | [MP4 60 fps](vista%20previa/00105%20Guillermo%20y%20Paradigma%20-%20el%20vinilo.mp4) · [fotogramas](vista%20previa/00105%20Guillermo%20y%20Paradigma%20-%20el%20vinilo%20-%20fotogramas.png) |
 | 00106 | Guillermo y Paradigma · La barbacoa | 14,6 s | [MP4 60 fps](vista%20previa/00106%20Guillermo%20y%20Paradigma%20-%20la%20barbacoa.mp4) · [fotogramas](vista%20previa/00106%20Guillermo%20y%20Paradigma%20-%20la%20barbacoa%20-%20fotogramas.png) |
+| 00107 | Guillermo y Paradigma · El espejo | 14,7 s | [MP4 60 fps](vista%20previa/00107%20Guillermo%20y%20Paradigma%20-%20el%20reflejo.mp4) · [fotogramas](vista%20previa/00107%20Guillermo%20y%20Paradigma%20-%20el%20reflejo%20-%20fotogramas.png) |
 | 00108 | Guillermo y Paradigma · La partida de cartas | 14,5 s | [MP4 60 fps](vista%20previa/00108%20Guillermo%20y%20Paradigma%20-%20la%20carta.mp4) · [fotogramas](vista%20previa/00108%20Guillermo%20y%20Paradigma%20-%20la%20carta%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
@@ -1959,6 +1960,23 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00106](vista%20previa/00106%20Guillermo%20y%20Paradigma%20-%20la%20barbacoa%20-%20fotogramas.png)
+
+### 00107 · Guillermo y Paradigma · El espejo
+
+1. Negro.
+2. El recibidor de un piso antiguo, de noche, simétrico como si fuera su propio reflejo: papel pintado de damasco verde, zócalo de nogal, suelo de tablillas, una alfombra persa, y a cada lado una lámpara de pie, una consola con un jarrón de flores y un cuadro con un velero (cada uno navega hacia un lado). En medio, un marco de espejo dorado enorme, con su concha arriba… y sin cristal.
+3. A un lado, Paradigma se arregla el cuello de la cazadora delante del «espejo»; al otro, Guillermo hace de su reflejo y le copia cada gesto en espejo, hasta las caras y los parpadeos.
+4. Paradigma sospecha: se acerca, entorna los ojos, levanta una ceja, ladea la cabeza a un lado y al otro, saluda despacio con la mano… se agacha de golpe y se asoma muy despacio. Guillermo, igual, en espejo.
+5. Paradigma pone la palma contra el «cristal», a la altura de la cara: las dos manos casi se tocan en medio del marco. Menea los dedos y Guillermo los menea igual; ya empieza a sudar.
+6. Paradigma sonríe de pillo y acelera: manos arriba, brazos en cruz, señala con la mano en la cadera, sentadilla con los mofletes hinchados, salto, brazo en diagonal, brazos cruzados… Guillermo va cada vez más tarde y en una se equivoca de brazo: lo cambia en el acto, colorado.
+7. El remate: Paradigma da una vuelta entera y cae a la pata coja con el brazo en alto (¡ting!). Guillermo lo intenta tarde, se pasa de vuelta y se queda hecho un lío: la pierna que no es enganchada detrás de la rodilla, los brazos cruzados al revés y la lengua fuera.
+8. Se tambalea, da tres saltitos a la pata coja hacia el marco, lo cruza dando vueltas y cae sentado de culo al otro lado: ¡pum!, polvareda y el marco se bambolea. Paradigma se aparta de un salto.
+9. Guillermo se queda mareado, con los ojos en espiral y estrellitas; Paradigma se tapa la boca de risa.
+10. Paradigma se acerca, le tiende la mano, Guillermo se la agarra y tira de él hasta levantarlo; se dan un buen apretón de manos.
+11. Cada uno vuelve a su lado (Guillermo cruza el marco andando hacia atrás) y, por fin perfectamente sincronizados, se ponen los dos en jarras mirando a cámara y guiñan un ojo a la vez, en espejo.
+12. Negro.
+
+![Fotogramas de 00107](vista%20previa/00107%20Guillermo%20y%20Paradigma%20-%20el%20reflejo%20-%20fotogramas.png)
 
 ### 00108 · Guillermo y Paradigma · La partida de cartas
 
