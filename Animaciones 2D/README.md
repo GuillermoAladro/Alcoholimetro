@@ -134,6 +134,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00095 | Guillermo y Marta · El gato | 14,8 s | [MP4 60 fps](vista%20previa/00095%20Guillermo%20y%20Marta%20-%20el%20gato.mp4) · [fotogramas](vista%20previa/00095%20Guillermo%20y%20Marta%20-%20el%20gato%20-%20fotogramas.png) |
 | 00096 | Guillermo y Marta · El microondas | 14,9 s | [MP4 60 fps](vista%20previa/00096%20Guillermo%20y%20Marta%20-%20las%20palomitas%20de%20maiz.mp4) · [fotogramas](vista%20previa/00096%20Guillermo%20y%20Marta%20-%20las%20palomitas%20de%20maiz%20-%20fotogramas.png) |
 | 00097 | Guillermo y Marta · Bajo la lluvia | 14,4 s | [MP4 60 fps](vista%20previa/00097%20Guillermo%20y%20Marta%20-%20el%20paraguas%20compartido.mp4) · [fotogramas](vista%20previa/00097%20Guillermo%20y%20Marta%20-%20el%20paraguas%20compartido%20-%20fotogramas.png) |
+| 00098 | Guillermo y Marta · El puzle | 14,6 s | [MP4 60 fps](vista%20previa/00098%20Guillermo%20y%20Marta%20-%20el%20puzle.mp4) · [fotogramas](vista%20previa/00098%20Guillermo%20y%20Marta%20-%20el%20puzle%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1810,6 +1811,22 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00097](vista%20previa/00097%20Guillermo%20y%20Marta%20-%20el%20paraguas%20compartido%20-%20fotogramas.png)
+
+### 00098 · Guillermo y Marta · El puzle
+
+1. Negro.
+2. El rincón de juegos de casa al anochecer: pared azul petróleo con papel de rombitos dorados, zócalo crema, una ventana con la hora azul (luna, tejados con ventanas encendidas) entre cortinas de terciopelo mostaza, una estantería con cajas de juegos, un reloj sin números, una lámpara de esmalte verde colgando y una alfombra. En la mesa, sobre un tapete verde, un puzle casi terminado de una puesta de sol (sol, mar, velero, gaviotas y palmera), la tapa de la caja apoyada detrás con el mismo dibujo y dos tazas que humean.
+3. Marta coloca piezas con calma, una y otra: ¡clic!, chispita. Coge la última y le da vueltecitas. Guillermo, con una pieza en la mano, la gira y la remira; mira lo bien que encajan las de Marta («ooh») y asiente, decidido.
+4. Planta su pieza en un hueco… y no entra: se queda montada y torcida. La aprieta con el dedo, sacando la lengua (¡boing!, rebota); vuelve a apretar; prueba con el puño, rojo y temblando. Marta levanta una ceja y niega con la cabeza.
+5. Guillermo carga el puño bien arriba y ¡PUM!: tiembla la mesa, saltan las tazas… y todo el puzle sale volando. Marta se protege su pieza contra el pecho.
+6. Las piezas suben girando y dando vueltas (algunas enseñan el cartón de detrás) y se quedan flotando bajo la lámpara mientras los dos miran arriba con la boca abierta.
+7. Empiezan a caer, una tras otra, cada una a su sitio (clic, clic, clic…), hasta que el puzle queda montado entero… salvo un hueco: el del sol. Los dos se quedan pasmados y miran a cámara.
+8. Marta, que no había soltado su pieza, la pone en el hueco: ¡clic!, el sol se enciende y un brillo recorre todo el puzle entre chispitas.
+9. Guillermo saca pecho como si hubiera sido cosa suya… nota algo en el bolsillo, rebusca y saca otra pieza: la mira, mira el puzle terminado, mira a cámara y se encoge de hombros con las palmas hacia arriba.
+10. Marta levanta una ceja, se ríe tapándose la boca y guiña un ojo a cámara.
+11. Negro.
+
+![Fotogramas de 00098](vista%20previa/00098%20Guillermo%20y%20Marta%20-%20el%20puzle%20-%20fotogramas.png)
 
 ## Ver y grabar
 
