@@ -113,6 +113,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00074 | Guillermo y Gabacho · El queso | 14,95 s | [MP4 60 fps](vista%20previa/00074%20Guillermo%20y%20Gabacho%20-%20el%20queso.mp4) · [fotogramas](vista%20previa/00074%20Guillermo%20y%20Gabacho%20-%20el%20queso%20-%20fotogramas.png) |
 | 00075 | Guillermo y Gabacho · El mando | 14,4 s | [MP4 60 fps](vista%20previa/00075%20Guillermo%20y%20Gabacho%20-%20el%20pique%20del%20mando.mp4) · [fotogramas](vista%20previa/00075%20Guillermo%20y%20Gabacho%20-%20el%20pique%20del%20mando%20-%20fotogramas.png) |
 | 00076 | Guillermo y Gabacho · La boina | 14,8 s | [MP4 60 fps](vista%20previa/00076%20Guillermo%20y%20Gabacho%20-%20la%20boina.mp4) · [fotogramas](vista%20previa/00076%20Guillermo%20y%20Gabacho%20-%20la%20boina%20-%20fotogramas.png) |
+| 00078 | Guillermo y Gabacho · La ola | 14,25 s | [MP4 60 fps](vista%20previa/00078%20Guillermo%20y%20Gabacho%20-%20la%20ola.mp4) · [fotogramas](vista%20previa/00078%20Guillermo%20y%20Gabacho%20-%20la%20ola%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1457,6 +1458,23 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 12. Negro.
 
 ![Fotogramas de 00076](vista%20previa/00076%20Guillermo%20y%20Gabacho%20-%20la%20boina%20-%20fotogramas.png)
+
+### 00078 · Guillermo y Gabacho · La ola
+
+1. Negro.
+2. Un bar de fútbol de noche: barra de madera con grifos de cerveza, estantes de botellas con espejo, bufandas a rayas, banderines, una diana, lámparas verdes y, colgada arriba a la derecha, una tele que solo enseña el verde del campo con puntitos que corren. Una fila de taburetes altos, casi todos vacíos; en dos de ellos, Guillermo (con su pinta) y Gabacho, que apura su cerveza y deja el vaso vacío en la barra.
+3. Gabacho empieza él solo una ola: se levanta con los brazos arriba y se sienta. La ola sigue por los taburetes vacíos (rayas que suben, el asiento salta y suelta polvito, como si la hiciera un público invisible), da la vuelta… y muere en Guillermo, que está bebiendo sin enterarse y se queda con bigote de espuma.
+4. Gabacho le mira con reproche y le anima con la mano: ¡arriba, arriba! Guillermo asiente con ganas.
+5. Segunda ola: da la vuelta otra vez y a Guillermo le pilla mirando la tele; se levanta tarde y sus brazos suben justo cuando bajan los de Gabacho: ¡bonk!, estrella. Se sientan sacudiéndose la mano.
+6. Se miran y cuentan con la cabeza: uno, dos, tres (a cada cabezada aparece un puntito entre los dos, y en el tres se encienden).
+7. Tercera ola, juntos: Guillermo se levanta tan deprisa que pega un brinco y la pinta le sale disparada de la mano; sube dando vueltas soltando una cinta de cerveza y baja boca abajo con la cerveza por delante…
+8. …y cae en el pelo rizado de Gabacho, que sigue con los brazos arriba y los ojos cerrados: ¡chof!, corona de cerveza. El pelo se lo bebe como una esponja: se oscurece, se aplasta, gotea y se queda con un copete de espuma; el vaso rebota por encima de su cabeza y aterriza de pie en la barra (¡clinc!). Guillermo, horrorizado, se tapa la cara.
+9. Gabacho, impasible, se sienta y mira a cámara; luego se inclina sobre su vaso vacío y se escurre el pelo con las dos manos: un chorro de cerveza llena el vaso y los rizos vuelven a su sitio de golpe (¡boing!).
+10. Brinda hacia Guillermo y se lo bebe con los ojos cerrados, en la gloria: «¡ahh!», bigote de espuma y chispitas.
+11. Guillermo, verde, con la mano en la boca, saca la lengua y mira a cámara con asco.
+12. Negro.
+
+![Fotogramas de 00078](vista%20previa/00078%20Guillermo%20y%20Gabacho%20-%20la%20ola%20-%20fotogramas.png)
 
 ## Ver y grabar
 
