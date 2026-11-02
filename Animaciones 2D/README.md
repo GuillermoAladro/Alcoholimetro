@@ -118,6 +118,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00079 | Guillermo y Gabacho · El rizo | 14,8 s | [MP4 60 fps](vista%20previa/00079%20Guillermo%20y%20Gabacho%20-%20el%20pelo%20rizado.mp4) · [fotogramas](vista%20previa/00079%20Guillermo%20y%20Gabacho%20-%20el%20pelo%20rizado%20-%20fotogramas.png) |
 | 00080 | Guillermo y Gabacho · La celebración | 14,9 s | [MP4 60 fps](vista%20previa/00080%20Guillermo%20y%20Gabacho%20-%20la%20celebracion.mp4) · [fotogramas](vista%20previa/00080%20Guillermo%20y%20Gabacho%20-%20la%20celebracion%20-%20fotogramas.png) |
 | 00081 | Guillermo y Kiriku · Las gafas de sol | 14,4 s | [MP4 60 fps](vista%20previa/00081%20Guillermo%20y%20Kiriku%20-%20las%20gafas%20de%20sol.mp4) · [fotogramas](vista%20previa/00081%20Guillermo%20y%20Kiriku%20-%20las%20gafas%20de%20sol%20-%20fotogramas.png) |
+| 00082 | Guillermo y Kiriku · El postureo | 14,4 s | [MP4 60 fps](vista%20previa/00082%20Guillermo%20y%20Kiriku%20-%20el%20selfie%20de%20postureo.mp4) · [fotogramas](vista%20previa/00082%20Guillermo%20y%20Kiriku%20-%20el%20selfie%20de%20postureo%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1545,6 +1546,21 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 10. Negro.
 
 ![Fotogramas de 00081](vista%20previa/00081%20Guillermo%20y%20Kiriku%20-%20las%20gafas%20de%20sol%20-%20fotogramas.png)
+
+### 00082 · Guillermo y Kiriku · El postureo
+
+1. Negro.
+2. Terraza de un local de brunch a media mañana: un muro de flores con unas alas de neón detrás de Kiriku, un aro de luz de influencer, un banco blanco con cojines pastel, suelo de terrazo, pérgola con guirnalda de bombillas y, a la derecha, el pretil con lavanda, la ciudad al fondo, una costilla de Adán y una mesa alta de mármol con un cóctel rosa en copa de balón y un dónut. Kiriku posa con el móvil en un palo de selfie: se recoloca, barbilla arriba… ¡flash! Guillermo, al lado, levanta una ceja… y se le ocurre algo.
+3. Kiriku pone morritos; Guillermo se asoma por detrás con la lengua fuera y los ojos apretados: ¡flash! Kiriku sospecha, baja el palo y se da la vuelta: Guillermo ya está en su sitio, mirando al cielo y silbando (notas redondas). Kiriku vuelve a posar.
+4. Kiriku se ajusta el jersey sobre los hombros; Guillermo se asoma con el moflete hinchado como un pez globo, meneando los dedos junto a la oreja, y en la foto suelta una pedorreta: ¡flash! Media vuelta de Kiriku… Guillermo silba, sudando.
+5. Tercera: Guillermo se pone unas gafas de broma con nariz y bigote: ¡flash! Esta vez Kiriku se gira como un látigo y le pilla con las gafas puestas; Guillermo sonríe, se las quita muy despacio, se las guarda y retrocede silbando.
+6. La foto definitiva: Kiriku sube el palo y pone su mejor pose; Guillermo se agacha a escondidas detrás de él… y salta como un muelle por encima de su cabeza, bizco y con la lengua fuera: ¡flash! Con la mano le da al palo (¡clac!) y el móvil sale volando dando vueltas…
+7. …y cae dentro del cóctel: ¡plof!, corona rosa, gotas por todas partes y un charquito en la mesa. Guillermo, horrorizado, se tapa la cara.
+8. Kiriku, impasible, suelta el palo (rebota en el suelo), da un paso hacia la mesa y pesca el móvil con dos dedos, chorreando; mientras, Guillermo se da la vuelta y se va de puntillas, a zancadas exageradas, hasta salir de cuadro.
+9. Kiriku mira el móvil, mira a cámara muy serio… y, por si acaso, lo levanta y vuelve a poner morritos: el móvil suelta un flash raquítico, chispas y una nubecilla de humo. Kiriku cierra los ojos.
+10. Negro.
+
+![Fotogramas de 00082](vista%20previa/00082%20Guillermo%20y%20Kiriku%20-%20el%20selfie%20de%20postureo%20-%20fotogramas.png)
 
 ## Ver y grabar
 
