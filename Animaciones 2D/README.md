@@ -109,6 +109,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00070 | Guillermo y Deivi · La realidad virtual | 14,8 s | [MP4 60 fps](vista%20previa/00070%20Guillermo%20y%20Deivi%20-%20la%20realidad%20virtual.mp4) · [fotogramas](vista%20previa/00070%20Guillermo%20y%20Deivi%20-%20la%20realidad%20virtual%20-%20fotogramas.png) |
 | 00071 | Guillermo y Gabacho · El penalti | 14,4 s | [MP4 60 fps](vista%20previa/00071%20Guillermo%20y%20Gabacho%20-%20el%20penalti.mp4) · [fotogramas](vista%20previa/00071%20Guillermo%20y%20Gabacho%20-%20el%20penalti%20-%20fotogramas.png) |
 | 00072 | Guillermo y Gabacho · El cruasán | 14,5 s | [MP4 60 fps](vista%20previa/00072%20Guillermo%20y%20Gabacho%20-%20el%20croissant.mp4) · [fotogramas](vista%20previa/00072%20Guillermo%20y%20Gabacho%20-%20el%20croissant%20-%20fotogramas.png) |
+| 00073 | Guillermo y Gabacho · La chilena | 14,3 s | [MP4 60 fps](vista%20previa/00073%20Guillermo%20y%20Gabacho%20-%20la%20chilena.mp4) · [fotogramas](vista%20previa/00073%20Guillermo%20y%20Gabacho%20-%20la%20chilena%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1387,6 +1388,22 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 9. Negro.
 
 ![Fotogramas de 00072](vista%20previa/00072%20Guillermo%20y%20Gabacho%20-%20el%20croissant%20-%20fotogramas.png)
+
+### 00073 · Guillermo y Gabacho · La chilena
+
+1. Negro.
+2. Una placita tranquila por la tarde, con aire parisino: fachadas de piedra con balcones de hierro y tejados de zinc, dos plátanos, una farola, un banco verde, una mesita de café y, al otro lado de la calle, una papelera verde con tapa basculante. Guillermo espera con un pie encima de su balón; Gabacho le levanta una ceja.
+3. Gabacho saca las manos, levanta su balón de puntera y hace toques: empeine, rodilla… y lo manda bien alto.
+4. **Cámara lenta**: se agacha, salta, se tumba hacia atrás en el aire con las piernas en tijera (rastro de fantasmas y líneas de foco) y… ¡**chilena**!
+5. El tiempo vuelve de golpe: el balón cruza la calle en un arco perfecto y entra en la papelera (la tapa bascula, sale una nubecilla y una hoja seca). Gabacho cae agachado, se levanta y abre los brazos: «voilà».
+6. Guillermo, boquiabierto, mira a cámara, se pica (vena) y Gabacho le cede el turno con la mano.
+7. Guillermo rueda su balón hacia atrás con la suela y lo levanta de cuchara… tan fuerte que se va al cielo. Mira a cámara muy chulo y salta.
+8. Se tumba solo a medias y se queda **suspendido en horizontal**, mirando a cámara y buscando el balón con la mirada… y cae de espaldas: ¡pum!
+9. Suspira aliviado… hasta que ve llegar el balón del cielo: le cae en la barriga (¡boing!), rebota y le cae en la cara, donde se queda un momento antes de rodar a los adoquines (le deja la marca roja).
+10. Ojos en espiral y estrellitas; Guillermo levanta la mano, flojito. Gabacho aplaude despacio y mira a cámara.
+11. Negro.
+
+![Fotogramas de 00073](vista%20previa/00073%20Guillermo%20y%20Gabacho%20-%20la%20chilena%20-%20fotogramas.png)
 
 ## Ver y grabar
 
