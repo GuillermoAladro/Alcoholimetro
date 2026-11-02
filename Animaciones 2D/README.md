@@ -119,6 +119,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00080 | Guillermo y Gabacho · La celebración | 14,9 s | [MP4 60 fps](vista%20previa/00080%20Guillermo%20y%20Gabacho%20-%20la%20celebracion.mp4) · [fotogramas](vista%20previa/00080%20Guillermo%20y%20Gabacho%20-%20la%20celebracion%20-%20fotogramas.png) |
 | 00081 | Guillermo y Kiriku · Las gafas de sol | 14,4 s | [MP4 60 fps](vista%20previa/00081%20Guillermo%20y%20Kiriku%20-%20las%20gafas%20de%20sol.mp4) · [fotogramas](vista%20previa/00081%20Guillermo%20y%20Kiriku%20-%20las%20gafas%20de%20sol%20-%20fotogramas.png) |
 | 00082 | Guillermo y Kiriku · El postureo | 14,4 s | [MP4 60 fps](vista%20previa/00082%20Guillermo%20y%20Kiriku%20-%20el%20selfie%20de%20postureo.mp4) · [fotogramas](vista%20previa/00082%20Guillermo%20y%20Kiriku%20-%20el%20selfie%20de%20postureo%20-%20fotogramas.png) |
+| 00083 | Guillermo y Kiriku · El yate | 14,8 s | [MP4 60 fps](vista%20previa/00083%20Guillermo%20y%20Kiriku%20-%20el%20yate.mp4) · [fotogramas](vista%20previa/00083%20Guillermo%20y%20Kiriku%20-%20el%20yate%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1561,6 +1562,22 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 10. Negro.
 
 ![Fotogramas de 00082](vista%20previa/00082%20Guillermo%20y%20Kiriku%20-%20el%20selfie%20de%20postureo%20-%20fotogramas.png)
+
+### 00083 · Guillermo y Kiriku · El yate
+
+1. Negro.
+2. Alta mar a pleno sol: cielo azul con nubes, el sol con su estela de brillos en el agua, una isla lejana, un velero en el horizonte y gaviotas que planean. En la cubierta de teca de un barquito blanco (barandilla de acero, cabina con ojo de buey, salvavidas y un mástil con banderín) que se mece con la mar de fondo, Guillermo respira hondo el aire del mar mientras Kiriku, impecable, sorbe su cóctel con pajita y sombrillita de papel.
+3. Kiriku acompaña el vaivén con el cuerpo y el vaso no se mueve ni un milímetro. Guillermo, en cambio, empieza a balancearse a destiempo: se pone verde poco a poco, abre los brazos como un surfista, se le ponen los ojos en espiral, se le hinchan los carrillos y se tapa la boca.
+4. Se tambalea hasta la barandilla y se agarra. Traga… y suspira aliviado, con los ojos cerrados.
+5. A su espalda se levanta una ola enorme. Kiriku la ve, da un pasito a un lado y pone el vaso a salvo; la cresta de espuma se viene encima…
+6. ¡Chof!: la ola le cae entera encima a Guillermo, y solo a él. El agua corre por la cubierta y frena justo antes de las zapatillas de Kiriku, que levanta la puntera.
+7. Guillermo se queda empapado, verde y tiritando: el pelo aplastado y chorreando, gotas por todas partes y un charco a sus pies. De entre los mechones se revuelve un pececillo que salta y vuelve al mar por encima de la barandilla.
+8. Una gaviota baja planeando, frena aleteando y se le posa en la cabeza; mira a un lado y a otro, muy tranquila.
+9. Kiriku, seco y sin despeinarse, cruza de puntillas lo mojado, saca la sombrillita del cóctel y se la ofrece con una reverencia.
+10. Guillermo la coge y la levanta sobre la cabeza… y a cubierto se queda la gaviota. Mira a cámara, resignado; Kiriku da un sorbo y guiña un ojo.
+11. Negro.
+
+![Fotogramas de 00083](vista%20previa/00083%20Guillermo%20y%20Kiriku%20-%20el%20yate%20-%20fotogramas.png)
 
 ## Ver y grabar
 
