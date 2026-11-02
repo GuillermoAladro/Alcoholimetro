@@ -172,6 +172,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00133 | Guillermo y Yorgi · Llegas tarde | 14,4 s | [MP4 60 fps](vista%20previa/00133%20Guillermo%20y%20Yorgi%20-%20el%20reloj.mp4) · [fotogramas](vista%20previa/00133%20Guillermo%20y%20Yorgi%20-%20el%20reloj%20-%20fotogramas.png) |
 | 00134 | Guillermo y Yorgi · La hamburguesa gigante | 14,9 s | [MP4 60 fps](vista%20previa/00134%20Guillermo%20y%20Yorgi%20-%20la%20barbacoa.mp4) · [fotogramas](vista%20previa/00134%20Guillermo%20y%20Yorgi%20-%20la%20barbacoa%20-%20fotogramas.png) |
 | 00135 | Guillermo y Yorgi · Los pendientes | 14,6 s | [MP4 60 fps](vista%20previa/00135%20Guillermo%20y%20Yorgi%20-%20el%20pendiente.mp4) · [fotogramas](vista%20previa/00135%20Guillermo%20y%20Yorgi%20-%20el%20pendiente%20-%20fotogramas.png) |
+| 00137 | Guillermo y Yorgi · La sorpresa | 14,6 s | [MP4 60 fps](vista%20previa/00137%20Guillermo%20y%20Yorgi%20-%20el%20abrazo%20de%20cumpleanos.mp4) · [fotogramas](vista%20previa/00137%20Guillermo%20y%20Yorgi%20-%20el%20abrazo%20de%20cumpleanos%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -2455,6 +2456,22 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00135](vista%20previa/00135%20Guillermo%20y%20Yorgi%20-%20el%20pendiente%20-%20fotogramas.png)
+
+### 00137 · Guillermo y Yorgi · La sorpresa
+1. Negro.
+2. El bar a oscuras: solo la raya de luz de la puerta y, por encima de la barra, dos ojitos que parpadean y se esconden.
+3. Se abre la puerta: la luz de la calle entra en abanico y la silueta de Guillermo entra a tientas, una mano en el marco y la otra palpando la pared.
+4. ¡Clic! Las luces suben en una rampa suave: banderines con estrellas, globos, bombillas y una tarta con cinco velas encendidas.
+5. Yorgi salta de detrás de la barra soplando un matasuegras entre una lluvia de confeti; Guillermo da un respingo con las manos arriba.
+6. Guillermo avanza mirándolo todo (ve la tarta); Yorgi sale de la barra y le recibe con un «¡tachán!» y otro soplido.
+7. A Guillermo le tiembla el labio… y rompe a llorar: dos chorros de lágrimas en arco. A Yorgi se le cae el matasuegras de la boca.
+8. Yorgi abre los brazos, Guillermo se le lanza y Yorgi le recoge en un abrazo de oso y le iza en el aire, con los pies colgando.
+9. Desde arriba, el chorro de lágrimas llega a la tarta y apaga las velas una a una (vapor, siseo y humito).
+10. Se miran la tarta, se miran ellos y se parten de risa; Yorgi le zarandea de la risa.
+11. Los dos miran a cámara (Guillermo aún en volandas); Yorgi guiña un ojo. Quedan las velas humeando, la tarta mojada, los charcos y el confeti.
+12. Negro.
+
+![Fotogramas de 00137](vista%20previa/00137%20Guillermo%20y%20Yorgi%20-%20el%20abrazo%20de%20cumpleanos%20-%20fotogramas.png)
 
 ## Ver y grabar
 
