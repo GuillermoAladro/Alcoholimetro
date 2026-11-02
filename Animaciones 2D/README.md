@@ -168,6 +168,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00129 | Guillermo y Sara · El baile gótico | 14,9 s | [MP4 60 fps](vista%20previa/00129%20Guillermo%20y%20Sara%20-%20el%20baile%20gotico.mp4) · [fotogramas](vista%20previa/00129%20Guillermo%20y%20Sara%20-%20el%20baile%20gotico%20-%20fotogramas.png) |
 | 00130 | Guillermo y Sara · La azotea | 14,8 s | [MP4 60 fps](vista%20previa/00130%20Guillermo%20y%20Sara%20-%20el%20atardecer%20en%20la%20azotea.mp4) · [fotogramas](vista%20previa/00130%20Guillermo%20y%20Sara%20-%20el%20atardecer%20en%20la%20azotea%20-%20fotogramas.png) |
 | 00131 | Guillermo y Yorgi · El batido de proteínas | 14,8 s | [MP4 60 fps](vista%20previa/00131%20Guillermo%20y%20Yorgi%20-%20el%20desayuno%20de%20campeones.mp4) · [fotogramas](vista%20previa/00131%20Guillermo%20y%20Yorgi%20-%20el%20desayuno%20de%20campeones%20-%20fotogramas.png) |
+| 00133 | Guillermo y Yorgi · Llegas tarde | 14,4 s | [MP4 60 fps](vista%20previa/00133%20Guillermo%20y%20Yorgi%20-%20el%20reloj.mp4) · [fotogramas](vista%20previa/00133%20Guillermo%20y%20Yorgi%20-%20el%20reloj%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -2388,6 +2389,23 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00131](vista%20previa/00131%20Guillermo%20y%20Yorgi%20-%20el%20desayuno%20de%20campeones%20-%20fotogramas.png)
+
+### 00133 · Guillermo y Yorgi · Llegas tarde
+
+1. Negro.
+2. Mediodía a la puerta de un bar de esquina (azulejo verde, toldo de rayas, banco, farola de forja, mucho cielo). Yorgi espera: toquecitos con el índice en el reloj, mira calle abajo, resopla y da golpecitos con el pie.
+3. El tiempo vuela: el sol cruza el cielo y baja hacia los tejados, las nubes pasan a toda prisa, las sombras giran alrededor de los pies y se alargan, la luz se vuelve de media tarde y la farola se enciende. Yorgi, a cámara rápida: se sienta aburrido en el banco, mira el reloj, hace sentadillas, se pone en jarras y vuelve a mirar el reloj.
+4. Guillermo llega corriendo (su sombra larga llega antes que él), derrapa y se dobla jadeando con las manos en las rodillas, sudando.
+5. Se yergue tan ancho y se da toquecitos en la muñeca («¡llego a la hora!»)… se la mira: no lleva reloj.
+6. Yorgi le acerca su reloj; Guillermo se inclina a mirarlo de muy cerca, casi con la nariz encima.
+7. ¡Pi-pi-pi!: suena la alarma (ondas en zigzag, el reloj vibra y late en rojo); Guillermo da un respingo, salta y cae sentado de culo con una polvareda.
+8. Yorgi apaga la alarma y se parte de risa sujetándose la barriga.
+9. Da un paso, le tiende la mano y le levanta de un tirón.
+10. Le da unas palmadas amistosas en el hombro y deja la mano ahí, de colegas.
+11. Los dos miran a cámara: pulgar arriba de Guillermo y guiño de Yorgi.
+12. Negro.
+
+![Fotogramas de 00133](vista%20previa/00133%20Guillermo%20y%20Yorgi%20-%20el%20reloj%20-%20fotogramas.png)
 
 ## Ver y grabar
 
