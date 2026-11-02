@@ -122,6 +122,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00083 | Guillermo y Kiriku · El yate | 14,8 s | [MP4 60 fps](vista%20previa/00083%20Guillermo%20y%20Kiriku%20-%20el%20yate.mp4) · [fotogramas](vista%20previa/00083%20Guillermo%20y%20Kiriku%20-%20el%20yate%20-%20fotogramas.png) |
 | 00084 | Guillermo y Kiriku · El jersey | 15,0 s | [MP4 60 fps](vista%20previa/00084%20Guillermo%20y%20Kiriku%20-%20el%20jersey.mp4) · [fotogramas](vista%20previa/00084%20Guillermo%20y%20Kiriku%20-%20el%20jersey%20-%20fotogramas.png) |
 | 00085 | Guillermo y Kiriku · La cata de vino | 14,8 s | [MP4 60 fps](vista%20previa/00085%20Guillermo%20y%20Kiriku%20-%20la%20cata%20de%20vino.mp4) · [fotogramas](vista%20previa/00085%20Guillermo%20y%20Kiriku%20-%20la%20cata%20de%20vino%20-%20fotogramas.png) |
+| 00086 | Guillermo y Kiriku · El peine | 14,6 s | [MP4 60 fps](vista%20previa/00086%20Guillermo%20y%20Kiriku%20-%20el%20peine.mp4) · [fotogramas](vista%20previa/00086%20Guillermo%20y%20Kiriku%20-%20el%20peine%20-%20fotogramas.png) |
 | 00087 | Guillermo y Kiriku · El baile de salón | 14,75 s | [MP4 60 fps](vista%20previa/00087%20Guillermo%20y%20Kiriku%20-%20el%20baile%20de%20salon.mp4) · [fotogramas](vista%20previa/00087%20Guillermo%20y%20Kiriku%20-%20el%20baile%20de%20salon%20-%20fotogramas.png) |
 | 00088 | Guillermo y Kiriku · El reloj | 14,6 s | [MP4 60 fps](vista%20previa/00088%20Guillermo%20y%20Kiriku%20-%20el%20reloj%20caro.mp4) · [fotogramas](vista%20previa/00088%20Guillermo%20y%20Kiriku%20-%20el%20reloj%20caro%20-%20fotogramas.png) |
 
@@ -1616,6 +1617,23 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 12. Negro.
 
 ![Fotogramas de 00085](vista%20previa/00085%20Guillermo%20y%20Kiriku%20-%20la%20cata%20de%20vino%20-%20fotogramas.png)
+
+### 00086 · Guillermo y Kiriku · El peine
+
+1. Negro.
+2. Un camerino elegante: papel pintado a rayas rosa, zócalo crema, suelo de espiga, un cuadro abstracto, una planta, un aplique redondo, un toallero con su toalla y un tocador con espejo de bombillas y encimera de mármol (bote de gomina, perfume, brochas y toallas dobladas).
+3. Kiriku, con un espejito de mano en alto, se peina con un peine negro: tres pasadas, y en cada una un pelo rebelde se coloca en su sitio con un destello. Se admira en el espejo: ¡ting!
+4. Guillermo le pide el peine con la palma tendida; Kiriku suspira y se lo lanza dando una vuelta en el aire.
+5. Guillermo se peina los pinchos hacia atrás de una pasada y mira a cámara muy chulo… y los pinchos vuelven a saltar uno a uno: ¡boing, boing, boing! Kiriku se ríe por lo bajo.
+6. Picado (vena), Guillermo clava el peine en la coronilla y va a por la gomina: coge el bote, moja dos dedos y ¡plas!, se la planta con la palma (salpican gotitas azules) y se alisa el pelo, pegado y brillante, con el peine encima. Mira a cámara orgullosísimo.
+7. Los pinchos empiezan a levantarse despacio, temblando y crujiendo; Guillermo suda… y el último sale disparado y lanza el peine por los aires, dando vueltas.
+8. El peine cruza la habitación y se clava en el pelo de Kiriku, que se alborota entero en mechones de punta.
+9. Kiriku se queda helado, se mira en el espejito y se horroriza, con la mano en el pelo.
+10. Guillermo deja el bote en la encimera, se mete las manos en los bolsillos y silba mirando al techo; mira de reojo a Kiriku y sigue silbando.
+11. Guillermo sonríe a cámara, colorado; Kiriku, horrorizado, también mira a cámara.
+12. Negro.
+
+![Fotogramas de 00086](vista%20previa/00086%20Guillermo%20y%20Kiriku%20-%20el%20peine%20-%20fotogramas.png)
 
 ### 00087 · Guillermo y Kiriku · El baile de salón
 
