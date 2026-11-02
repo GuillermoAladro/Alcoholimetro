@@ -122,6 +122,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00083 | Guillermo y Kiriku · El yate | 14,8 s | [MP4 60 fps](vista%20previa/00083%20Guillermo%20y%20Kiriku%20-%20el%20yate.mp4) · [fotogramas](vista%20previa/00083%20Guillermo%20y%20Kiriku%20-%20el%20yate%20-%20fotogramas.png) |
 | 00085 | Guillermo y Kiriku · La cata de vino | 14,8 s | [MP4 60 fps](vista%20previa/00085%20Guillermo%20y%20Kiriku%20-%20la%20cata%20de%20vino.mp4) · [fotogramas](vista%20previa/00085%20Guillermo%20y%20Kiriku%20-%20la%20cata%20de%20vino%20-%20fotogramas.png) |
 | 00087 | Guillermo y Kiriku · El baile de salón | 14,75 s | [MP4 60 fps](vista%20previa/00087%20Guillermo%20y%20Kiriku%20-%20el%20baile%20de%20salon.mp4) · [fotogramas](vista%20previa/00087%20Guillermo%20y%20Kiriku%20-%20el%20baile%20de%20salon%20-%20fotogramas.png) |
+| 00088 | Guillermo y Kiriku · El reloj | 14,6 s | [MP4 60 fps](vista%20previa/00088%20Guillermo%20y%20Kiriku%20-%20el%20reloj%20caro.mp4) · [fotogramas](vista%20previa/00088%20Guillermo%20y%20Kiriku%20-%20el%20reloj%20caro%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1613,6 +1614,21 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00087](vista%20previa/00087%20Guillermo%20y%20Kiriku%20-%20el%20baile%20de%20salon%20-%20fotogramas.png)
+
+### 00088 · Guillermo y Kiriku · El reloj
+
+1. Negro.
+2. Vestíbulo de un hotel elegante al anochecer: suelo de mármol pulido que refleja la pared, pared verde azulado con filete de latón y zócalo de nogal, dos apliques, un gran reloj de pared sin números con sus agujas, una palmera en macetero de latón y, al fondo, una puerta giratoria de cristal y latón que gira despacio, con la calle azul detrás y una alfombra granate. Guillermo y Kiriku esperan con las manos en los bolsillos.
+3. Kiriku saca la mano, da un golpe de muñeca y se mira el reloj de pulsera dorado, muy chulo: ¡ting!, un destello y un rayo de luz que deslumbra a Guillermo, que se hace visera con la mano.
+4. Guillermo se pica (vena), rebusca en el bolsillo y saca… un despertador gigante de dos campanas. Se lo planta sobre la muñeca como si fuera un reloj de pulsera, lo mira muy chulo y mira a Kiriku, que levanta una ceja.
+5. Le da cuerda a la llave de atrás con los mofletes hinchados, vuelta a vuelta… y ¡RIIING!: el martillo vibra entre las campanas, salen ondas en zigzag y el despertador le sacude los brazos y le pone los pelos de punta.
+6. Lo bate de una mano a otra sin poder pararlo hasta que se le escapa: cae al suelo y sigue dando saltitos sonando, ¡clac, clac!, hacia Kiriku.
+7. Guillermo lo persigue agachado e intenta cazarlo dos veces, pero se le escapa de entre las manos.
+8. Kiriku, sin sacar la otra mano del bolsillo, levanta el pie y lo pisa por arriba: un último «ding» y silencio.
+9. Impasible, con el pie encima del despertador, se vuelve a mirar el reloj (otro destello que deslumbra a Guillermo, agachado a sus pies). Guillermo mira a cámara colorado y sudando; Kiriku guiña un ojo.
+10. Negro.
+
+![Fotogramas de 00088](vista%20previa/00088%20Guillermo%20y%20Kiriku%20-%20el%20reloj%20caro%20-%20fotogramas.png)
 
 ## Ver y grabar
 
