@@ -167,6 +167,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00128 | Guillermo y Sara · La salsa picante | 14,6 s | [MP4 60 fps](vista%20previa/00128%20Guillermo%20y%20Sara%20-%20la%20pizza%20picante.mp4) · [fotogramas](vista%20previa/00128%20Guillermo%20y%20Sara%20-%20la%20pizza%20picante%20-%20fotogramas.png) |
 | 00129 | Guillermo y Sara · El baile gótico | 14,9 s | [MP4 60 fps](vista%20previa/00129%20Guillermo%20y%20Sara%20-%20el%20baile%20gotico.mp4) · [fotogramas](vista%20previa/00129%20Guillermo%20y%20Sara%20-%20el%20baile%20gotico%20-%20fotogramas.png) |
 | 00130 | Guillermo y Sara · La azotea | 14,8 s | [MP4 60 fps](vista%20previa/00130%20Guillermo%20y%20Sara%20-%20el%20atardecer%20en%20la%20azotea.mp4) · [fotogramas](vista%20previa/00130%20Guillermo%20y%20Sara%20-%20el%20atardecer%20en%20la%20azotea%20-%20fotogramas.png) |
+| 00131 | Guillermo y Yorgi · El batido de proteínas | 14,8 s | [MP4 60 fps](vista%20previa/00131%20Guillermo%20y%20Yorgi%20-%20el%20desayuno%20de%20campeones.mp4) · [fotogramas](vista%20previa/00131%20Guillermo%20y%20Yorgi%20-%20el%20desayuno%20de%20campeones%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -2371,6 +2372,22 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 13. Negro.
 
 ![Fotogramas de 00130](vista%20previa/00130%20Guillermo%20y%20Sara%20-%20el%20atardecer%20en%20la%20azotea%20-%20fotogramas.png)
+
+### 00131 · Guillermo y Yorgi · El batido de proteínas
+
+1. Negro.
+2. Una cocina luminosa por la mañana: pared amarilla, una ventana con el sol recién salido y rayos de luz con motas de polvo, azulejos blancos con flores azules, muebles verde salvia, una toalla de gimnasio colgada y una pesa rusa en el suelo. En la encimera, una batidora roja con jarra de cristal, un frutero, un tarro de avena, un bote de proteína con una mancuerna dibujada… y la tapa de la batidora, olvidada a un lado.
+3. Yorgi echa los ingredientes con mucho arte: coge un plátano, lo pela de un golpe de muñeca y la fruta sale volando por encima de su cabeza hasta la jarra. Repite con otro, más rápido, y tira las pieles a la encimera. Luego, una cucharada de avena.
+4. Saca un cacillo ENORME de proteína, lo enseña orgulloso y lo vuelca: ¡puf!, nube de polvo, y Guillermo tose.
+5. Aprieta el botón: giran las cuchillas y todo da vueltas. Guillermo se acerca a mirar, apoyado en la encimera.
+6. ¡No tiene tapa! El batido sube por las paredes y sale disparado: una fuente hasta el techo, que se estampa y gotea, y un chorro por el pico directo a la cara de Guillermo.
+7. Guillermo se queda quieto, cubierto de batido beige: pelo, cara y hombros, con chorretones por el pecho. Una gota del techo le cae en la cabeza. Abre los ojos (limpios) y mira a Yorgi muy serio.
+8. Yorgi, tan tranquilo, coge la jarra y se bebe lo que queda de un trago, cabeza atrás («glu, glu»). Se limpia la boca con el dorso de la mano y saca bíceps (destello).
+9. A Guillermo le cuelga una gota de la nariz: la mira, saca la lengua hacia arriba y se la lleva… «mmm»… ¡está buenísimo! Pulgar arriba.
+10. Los dos miran a cámara: Yorgi vuelve a sacar bíceps y guiña un ojo.
+11. Negro.
+
+![Fotogramas de 00131](vista%20previa/00131%20Guillermo%20y%20Yorgi%20-%20el%20desayuno%20de%20campeones%20-%20fotogramas.png)
 
 ## Ver y grabar
 
