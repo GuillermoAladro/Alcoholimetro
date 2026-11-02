@@ -126,6 +126,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00087 | Guillermo y Kiriku · El baile de salón | 14,75 s | [MP4 60 fps](vista%20previa/00087%20Guillermo%20y%20Kiriku%20-%20el%20baile%20de%20salon.mp4) · [fotogramas](vista%20previa/00087%20Guillermo%20y%20Kiriku%20-%20el%20baile%20de%20salon%20-%20fotogramas.png) |
 | 00088 | Guillermo y Kiriku · El reloj | 14,6 s | [MP4 60 fps](vista%20previa/00088%20Guillermo%20y%20Kiriku%20-%20el%20reloj%20caro.mp4) · [fotogramas](vista%20previa/00088%20Guillermo%20y%20Kiriku%20-%20el%20reloj%20caro%20-%20fotogramas.png) |
 | 00089 | Guillermo y Kiriku · El descapotable | 14,6 s | [MP4 60 fps](vista%20previa/00089%20Guillermo%20y%20Kiriku%20-%20el%20descapotable.mp4) · [fotogramas](vista%20previa/00089%20Guillermo%20y%20Kiriku%20-%20el%20descapotable%20-%20fotogramas.png) |
+| 00090 | Guillermo y Kiriku · La foto de grupo | 12,9 s | [MP4 60 fps](vista%20previa/00090%20Guillermo%20y%20Kiriku%20-%20la%20foto%20de%20grupo.mp4) · [fotogramas](vista%20previa/00090%20Guillermo%20y%20Kiriku%20-%20la%20foto%20de%20grupo%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1680,6 +1681,19 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 9. Negro.
 
 ![Fotogramas de 00089](vista%20previa/00089%20Guillermo%20y%20Kiriku%20-%20el%20descapotable%20-%20fotogramas.png)
+
+### 00090 · Guillermo y Kiriku · La foto de grupo
+
+1. Negro.
+2. Un mirador del parque a la hora dorada: el sol bajando sobre la bahía, la ciudad al otro lado con las primeras ventanas encendidas, nubes rosadas, pájaros a lo lejos, una barandilla de hierro sobre un murete de piedra, una farola recién encendida, un banco verde y un árbol enorme. En primer plano, una cámara de fotos sobre su trípode; Guillermo, detrás, encuadra subiéndola y bajándola mientras Kiriku espera con las manos en los bolsillos.
+3. Guillermo le hace señas para que se corra un poco; Kiriku da un paso a un lado y asiente. Guillermo aprieta el disparador: una lucecita roja empieza a parpadear, cada vez más deprisa.
+4. Kiriku se pone en pose: pie adelantado, mano en la cadera y barbilla arriba. Guillermo sale corriendo… se engancha con la pata del trípode (la cámara se queda mirando al suelo, temblando) y sale dando traspiés, braceando como un molino, hasta que recupera el equilibrio y suspira aliviado.
+5. Se da la vuelta, ve la cámara torcida y se lleva las manos a la cabeza. Vuelve, pasa la pata con muchísimo cuidado, endereza la cámara y le da dos palmaditas; Kiriku, mientras, pone los ojos en blanco y da golpecitos con el pie.
+6. Guillermo salta la pata con una zancada exagerada, mira a cámara muy chulo y esprinta; Kiriku le mira de reojo y adelanta el pie un pelín… y Guillermo tropieza con él.
+7. ¡Flash! La imagen se congela y se funde a blanco; del blanco sale la foto impresa, con su borde blanco, un poco torcida: Kiriku perfecto, con un destello en la sonrisa, y Guillermo en horizontal en el aire, con cara de susto.
+8. Negro.
+
+![Fotogramas de 00090](vista%20previa/00090%20Guillermo%20y%20Kiriku%20-%20la%20foto%20de%20grupo%20-%20fotogramas.png)
 
 ## Ver y grabar
 
