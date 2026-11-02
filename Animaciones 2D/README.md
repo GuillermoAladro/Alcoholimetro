@@ -161,6 +161,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00122 | Guillermo y Sara · El concierto | 14,6 s | [MP4 60 fps](vista%20previa/00122%20Guillermo%20y%20Sara%20-%20el%20concierto.mp4) · [fotogramas](vista%20previa/00122%20Guillermo%20y%20Sara%20-%20el%20concierto%20-%20fotogramas.png) |
 | 00124 | Guillermo y Sara · La tormenta | 14,8 s | [MP4 60 fps](vista%20previa/00124%20Guillermo%20y%20Sara%20-%20la%20tormenta.mp4) · [fotogramas](vista%20previa/00124%20Guillermo%20y%20Sara%20-%20la%20tormenta%20-%20fotogramas.png) |
 | 00125 | Guillermo y Sara · No te rías | 14,85 s | [MP4 60 fps](vista%20previa/00125%20Guillermo%20y%20Sara%20-%20el%20pulso%20de%20miradas.mp4) · [fotogramas](vista%20previa/00125%20Guillermo%20y%20Sara%20-%20el%20pulso%20de%20miradas%20-%20fotogramas.png) |
+| 00126 | Guillermo y Sara · El collar | 14,6 s | [MP4 60 fps](vista%20previa/00126%20Guillermo%20y%20Sara%20-%20la%20cruz%20del%20collar.mp4) · [fotogramas](vista%20previa/00126%20Guillermo%20y%20Sara%20-%20la%20cruz%20del%20collar%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -2263,6 +2264,22 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00125](vista%20previa/00125%20Guillermo%20y%20Sara%20-%20el%20pulso%20de%20miradas%20-%20fotogramas.png)
+
+### 00126 · Guillermo y Sara · El collar
+
+1. Negro.
+2. Paseo marítimo a media tarde y con mucho sol (mar con chispitas, palmera, barandilla blanca, maceta de geranios, baldosas en ondas). Guillermo le cuenta algo a Sara muy animado; ella escucha sin inmutarse.
+3. Sara cambia el peso de pie, la cruz del collar pilla el sol y ¡ting!: un destello directo a los ojos de Guillermo, que se deslumbra y da un paso atrás, mareado.
+4. Se hace visera con la mano, muy listo… Sara ladea la cabeza y el destello le entra por debajo de la mano.
+5. Se agacha del todo y sonríe a cámara: el destello le pasa por encima… y se dobla como una manguera hasta sus ojos. Guillermo salta, se frota los ojos y frunce el ceño.
+6. Saca unas gafas de sol rojas del bolsillo, las abre de un golpe de muñeca, se las pone y posa triunfal mirando a cámara.
+7. Sara pone los ojos en blanco y aparta la cabeza con un golpe de melena: el aro de la nariz lanza un destello enorme contra los cristales y Guillermo sale despedido y cae de culo, con las gafas torcidas.
+8. Hundido en el suelo, se rinde: saca un pañuelo blanco y lo ondea.
+9. Sara, que nunca se ríe, se parte de risa; luego coge la cruz, se la mete por dentro del top y da una palmadita.
+10. Guillermo suspira aliviado y los dos miran a cámara.
+11. Negro.
+
+![Fotogramas de 00126](vista%20previa/00126%20Guillermo%20y%20Sara%20-%20la%20cruz%20del%20collar%20-%20fotogramas.png)
 
 ## Ver y grabar
 
