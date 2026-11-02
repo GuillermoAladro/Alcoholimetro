@@ -151,6 +151,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00112 | Guillermo y Rodri · Las sillas de bar | 14,45 s | [MP4 60 fps](vista%20previa/00112%20Guillermo%20y%20Rodri%20-%20las%20carreras%20de%20sillas.mp4) · [fotogramas](vista%20previa/00112%20Guillermo%20y%20Rodri%20-%20las%20carreras%20de%20sillas%20-%20fotogramas.png) |
 | 00113 | Guillermo y Rodri · El concurso de eructos | 14,9 s | [MP4 60 fps](vista%20previa/00113%20Guillermo%20y%20Rodri%20-%20el%20eructo.mp4) · [fotogramas](vista%20previa/00113%20Guillermo%20y%20Rodri%20-%20el%20eructo%20-%20fotogramas.png) |
 | 00114 | Guillermo y Rodri · La broma del cubo | 14,85 s | [MP4 60 fps](vista%20previa/00114%20Guillermo%20y%20Rodri%20-%20la%20broma%20del%20cubo.mp4) · [fotogramas](vista%20previa/00114%20Guillermo%20y%20Rodri%20-%20la%20broma%20del%20cubo%20-%20fotogramas.png) |
+| 00115 | Guillermo y Rodri · El pino | 14,6 s | [MP4 60 fps](vista%20previa/00115%20Guillermo%20y%20Rodri%20-%20el%20pino.mp4) · [fotogramas](vista%20previa/00115%20Guillermo%20y%20Rodri%20-%20el%20pino%20-%20fotogramas.png) |
 | 00116 | Guillermo y Rodri · La aceituna | 14,6 s | [MP4 60 fps](vista%20previa/00116%20Guillermo%20y%20Rodri%20-%20la%20apuesta%20de%20la%20aceituna.mp4) · [fotogramas](vista%20previa/00116%20Guillermo%20y%20Rodri%20-%20la%20apuesta%20de%20la%20aceituna%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
@@ -2103,6 +2104,21 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 13. Negro.
 
 ![Fotogramas de 00114](vista%20previa/00114%20Guillermo%20y%20Rodri%20-%20la%20broma%20del%20cubo%20-%20fotogramas.png)
+
+### 00115 · Guillermo y Rodri · El pino
+
+1. Negro.
+2. Una taberna de noche: papel pintado verde botella con lunarcitos dorados, zócalo de madera oscura, una ventana con la calle y la luna, un reloj de pared sin números, un cuadro con un velero, dos lámparas colgantes, suelo de baldosas de barro y crema y, a la derecha, el extremo de la barra de caoba con su barra de latón, los grifos, una caña servida y, detrás, el espejo y las baldas de botellas. Rodri y Guillermo se miran con las manos en los bolsillos.
+3. Rodri mira a cámara con cara de pillo, estira los brazos con los dedos entrelazados, da una zancada, planta las manos y patada: un pino perfecto, con el cuerpo recto, las piernas juntas y pequeños ajustes de equilibrio.
+4. Mira a cámara, chulísimo, levanta una mano y saluda: ¡a una mano! Guillermo, boquiabierto.
+5. Guillermo se pica (rojo, vena), se frota las manos y lo intenta: patada floja, se queda a medias pataleando y cae de pie, trastabillando. Rodri, boca abajo, se parte de risa, y luego baja del pino.
+6. Segundo intento, con todas sus fuerzas: se pasa, se tambalea con las piernas en tijera, rojo y sudando, y echa a andar con las manos, cada vez más deprisa, hacia la barra. Rodri va detrás con las manos preparadas.
+7. Al llegar a la barra las piernas se le vencen por encima: ¡pum!, quedan sobre la barra, la caña se vuelca y la cerveza gotea por el frente.
+8. Guillermo se queda colgado boca abajo, doblado sobre el canto, con las manos colgando y estrellitas: patalea, bracea y se rinde.
+9. Rodri se acerca, ladea la cabeza para verle del derecho y se parte de risa señalándole. Guillermo sonríe, colorado, y saluda a cámara con la manita; Rodri guiña un ojo.
+10. Negro.
+
+![Fotogramas de 00115](vista%20previa/00115%20Guillermo%20y%20Rodri%20-%20el%20pino%20-%20fotogramas.png)
 
 ### 00116 · Guillermo y Rodri · La aceituna
 
