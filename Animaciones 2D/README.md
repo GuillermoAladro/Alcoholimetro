@@ -108,6 +108,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00069 | Guillermo y Deivi · La momia | 15,0 s | [MP4 60 fps](vista%20previa/00069%20Guillermo%20y%20Deivi%20-%20la%20momia.mp4) · [fotogramas](vista%20previa/00069%20Guillermo%20y%20Deivi%20-%20la%20momia%20-%20fotogramas.png) |
 | 00070 | Guillermo y Deivi · La realidad virtual | 14,8 s | [MP4 60 fps](vista%20previa/00070%20Guillermo%20y%20Deivi%20-%20la%20realidad%20virtual.mp4) · [fotogramas](vista%20previa/00070%20Guillermo%20y%20Deivi%20-%20la%20realidad%20virtual%20-%20fotogramas.png) |
 | 00071 | Guillermo y Gabacho · El penalti | 14,4 s | [MP4 60 fps](vista%20previa/00071%20Guillermo%20y%20Gabacho%20-%20el%20penalti.mp4) · [fotogramas](vista%20previa/00071%20Guillermo%20y%20Gabacho%20-%20el%20penalti%20-%20fotogramas.png) |
+| 00072 | Guillermo y Gabacho · El cruasán | 14,5 s | [MP4 60 fps](vista%20previa/00072%20Guillermo%20y%20Gabacho%20-%20el%20croissant.mp4) · [fotogramas](vista%20previa/00072%20Guillermo%20y%20Gabacho%20-%20el%20croissant%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1372,6 +1373,20 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 12. Negro.
 
 ![Fotogramas de 00071](vista%20previa/00071%20Guillermo%20y%20Gabacho%20-%20el%20penalti%20-%20fotogramas.png)
+
+### 00072 · Guillermo y Gabacho · El cruasán
+
+1. Negro.
+2. Terraza de un café por la mañana (fachada crema, toldo de rayas verdes, escaparate con la barra y la cafetera, geranios, farol, pizarra con dibujos de tiza y rayos de sol en diagonal): Guillermo y Gabacho, sentados en sillas de mimbre a los lados de una mesita de mármol, cada uno con su café humeante y su cruasán; en medio, una cestita con más cruasanes y un jarroncito con una margarita.
+3. Gabacho coge su cruasán con el meñique en alto, lo admira, lo moja un instante en el café (sale con la punta oscura y gotea) y le da un mordisco con los ojos cerrados, en la gloria: migas, corazoncitos y un pie que se balancea de gusto.
+4. Guillermo, impresionado, le imita: meñique en alto, mirada de «mira esto»… lo moja y lo deja dentro mientras mira a cámara muy chulo, con las cejas bailando y burbujitas en la taza. Gabacho levanta la mano: ¡para!
+5. Guillermo lo saca: está empapado, se dobla y cuelga, el cuello se estira con hilos de masa… y la punta se rompe y cae en la taza: ¡plof!, corona de café y gotas que le salpican la cara (las manchas se quedan y una gotea).
+6. Mirada muy seria a cámara. Deja el muñón en el plato, pesca el trozo con dos dedos y se quema: ¡ay!, vapor, lagrimitas y la mano temblando; se sopla los dedos con los mofletes hinchados.
+7. Gabacho coge un cruasán nuevo de la cesta y se lo ofrece con una pequeña reverencia; Guillermo lo coge por el otro cuerno.
+8. Lo mira, mira la taza con desconfianza, mira a cámara… y se lo mete en la boca tal cual, en seco: un bocado enorme, los dos mofletes llenos, masticando muy digno entre migas. Gabacho se ríe dando palmaditas en la mesa.
+9. Negro.
+
+![Fotogramas de 00072](vista%20previa/00072%20Guillermo%20y%20Gabacho%20-%20el%20croissant%20-%20fotogramas.png)
 
 ## Ver y grabar
 
