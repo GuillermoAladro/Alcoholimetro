@@ -136,6 +136,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00097 | Guillermo y Marta · Bajo la lluvia | 14,4 s | [MP4 60 fps](vista%20previa/00097%20Guillermo%20y%20Marta%20-%20el%20paraguas%20compartido.mp4) · [fotogramas](vista%20previa/00097%20Guillermo%20y%20Marta%20-%20el%20paraguas%20compartido%20-%20fotogramas.png) |
 | 00098 | Guillermo y Marta · El puzle | 14,6 s | [MP4 60 fps](vista%20previa/00098%20Guillermo%20y%20Marta%20-%20el%20puzle.mp4) · [fotogramas](vista%20previa/00098%20Guillermo%20y%20Marta%20-%20el%20puzle%20-%20fotogramas.png) |
 | 00099 | Guillermo y Marta · El muñeco de nieve | 15,0 s | [MP4 60 fps](vista%20previa/00099%20Guillermo%20y%20Marta%20-%20el%20muneco%20de%20nieve.mp4) · [fotogramas](vista%20previa/00099%20Guillermo%20y%20Marta%20-%20el%20muneco%20de%20nieve%20-%20fotogramas.png) |
+| 00100 | Guillermo y Marta · El baile en la cocina | 15,0 s | [MP4 60 fps](vista%20previa/00100%20Guillermo%20y%20Marta%20-%20el%20baile%20en%20la%20cocina.mp4) · [fotogramas](vista%20previa/00100%20Guillermo%20y%20Marta%20-%20el%20baile%20en%20la%20cocina%20-%20fotogramas.png) |
 | 00101 | Guillermo y Paradigma · La guitarra invisible | 14,9 s | [MP4 60 fps](vista%20previa/00101%20Guillermo%20y%20Paradigma%20-%20el%20air%20guitar.mp4) · [fotogramas](vista%20previa/00101%20Guillermo%20y%20Paradigma%20-%20el%20air%20guitar%20-%20fotogramas.png) |
 | 00102 | Guillermo y Paradigma · La moto | 14,6 s | [MP4 60 fps](vista%20previa/00102%20Guillermo%20y%20Paradigma%20-%20la%20moto.mp4) · [fotogramas](vista%20previa/00102%20Guillermo%20y%20Paradigma%20-%20la%20moto%20-%20fotogramas.png) |
 
@@ -1847,6 +1848,22 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 12. Negro.
 
 ![Fotogramas de 00099](vista%20previa/00099%20Guillermo%20y%20Marta%20-%20el%20muneco%20de%20nieve%20-%20fotogramas.png)
+
+### 00100 · Guillermo y Marta · El baile en la cocina
+
+1. Negro.
+2. Una cocina acogedora de noche: pared verde salvia, azulejo blanco con cenefa de colores, una encimera de madera a la izquierda con una balda alta (tarros, cuencos y un saco de harina en la punta), una ventana con la luna y la ciudad, una barra de cacharros con una sartén, una cocina de esmalte crema con una olla roja que hierve, una radio antigua de la que salen notas, una lámpara de cobre y un suelo de damero.
+3. Marta baila removiendo la olla al compás, saca la cuchara de palo, da un toque en el borde, la lanza al aire, la caza con la otra mano y canta con ella de micrófono, con los ojos cerrados.
+4. Guillermo entra deslizándose por el suelo con los brazos abiertos y frena con un «¡tachán!»; Marta le guiña un ojo sin dejar de cantar.
+5. Se lanza a un baile exageradísimo (hombros, la rueda con los puños, pose), descuelga la sartén y la toca como una guitarra eléctrica: rasgueos, cabezazos y notas a cada golpe. Marta se le acerca bailando y le canta.
+6. Molino con el brazo, salto… y sale girando como una peonza hacia atrás por todo el suelo hasta estamparse contra la encimera (¡pum!). Marta se tapa la boca y corre a ver si está bien.
+7. En la balda, el saco de harina se tambalea, se vuelca… los dos miran arriba… y le cae a Guillermo en la cabeza: ¡PUF!, una nube de harina los envuelve a los dos.
+8. Cuando se aclara, están blancos de arriba abajo; parpadean (se les quedan los ojos limpios) y se miran muy serios.
+9. Se parten de risa, soltando harina con cada sacudida, y siguen bailando: Guillermo vuelve a tocar la sartén enharinada y a cada paso sale una nubecilla de los pies.
+10. Pose final a cámara; Marta guiña un ojo.
+11. Negro.
+
+![Fotogramas de 00100](vista%20previa/00100%20Guillermo%20y%20Marta%20-%20el%20baile%20en%20la%20cocina%20-%20fotogramas.png)
 
 ### 00101 · Guillermo y Paradigma · La guitarra invisible
 
