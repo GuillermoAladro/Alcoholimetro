@@ -165,6 +165,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00126 | Guillermo y Sara · El collar | 14,6 s | [MP4 60 fps](vista%20previa/00126%20Guillermo%20y%20Sara%20-%20la%20cruz%20del%20collar.mp4) · [fotogramas](vista%20previa/00126%20Guillermo%20y%20Sara%20-%20la%20cruz%20del%20collar%20-%20fotogramas.png) |
 | 00127 | Guillermo y Sara · El monopatín de noche | 14,55 s | [MP4 60 fps](vista%20previa/00127%20Guillermo%20y%20Sara%20-%20el%20skate%20de%20noche.mp4) · [fotogramas](vista%20previa/00127%20Guillermo%20y%20Sara%20-%20el%20skate%20de%20noche%20-%20fotogramas.png) |
 | 00128 | Guillermo y Sara · La salsa picante | 14,6 s | [MP4 60 fps](vista%20previa/00128%20Guillermo%20y%20Sara%20-%20la%20pizza%20picante.mp4) · [fotogramas](vista%20previa/00128%20Guillermo%20y%20Sara%20-%20la%20pizza%20picante%20-%20fotogramas.png) |
+| 00129 | Guillermo y Sara · El baile gótico | 14,9 s | [MP4 60 fps](vista%20previa/00129%20Guillermo%20y%20Sara%20-%20el%20baile%20gotico.mp4) · [fotogramas](vista%20previa/00129%20Guillermo%20y%20Sara%20-%20el%20baile%20gotico%20-%20fotogramas.png) |
 | 00130 | Guillermo y Sara · La azotea | 14,8 s | [MP4 60 fps](vista%20previa/00130%20Guillermo%20y%20Sara%20-%20el%20atardecer%20en%20la%20azotea.mp4) · [fotogramas](vista%20previa/00130%20Guillermo%20y%20Sara%20-%20el%20atardecer%20en%20la%20azotea%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
@@ -2333,6 +2334,25 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 13. Negro.
 
 ![Fotogramas de 00128](vista%20previa/00128%20Guillermo%20y%20Sara%20-%20la%20pizza%20picante%20-%20fotogramas.png)
+
+### 00129 · Guillermo y Sara · El baile gótico
+
+1. Negro.
+2. Un club gótico de noche: pared de piedra violeta, tres ventanales ojivales de vidriera que brillan, cortinas de terciopelo, candelabros con velas que titilan, una bola de espejos que salpica destellos y niebla baja arrastrándose por el suelo de baldosas.
+3. Sara baila un baile gótico lento y dramático: brazos que ondulan como humo, muñecas que giran, pasos que flotan, la melena que fluye y los ojos entornados.
+4. Guillermo la mira, asiente al ritmo, mira a cámara muy seguro de sí mismo y la imita con unos brazos de fantasma exagerados: estirados, las manos colgando, los dedos retorciéndose y la boca en «uuuh».
+5. Prueba el giro de muñecas y se lía: un brazo sobre la barriga, la otra mano en la frente, las piernas cruzadas; se tambalea.
+6. Da un saltito atrás y le da con el talón a la máquina de humo: se enciende el piloto verde y sisea. Él mira atrás…
+7. ¡Fuuush!: un chorro de niebla sube desde el suelo, Guillermo levanta los brazos del susto y se hunde; el banco de niebla se lo traga entero.
+8. Del banco solo asoman sus pinchos: se deslizan a la izquierda y a la derecha como una aleta de tiburón, miran alrededor como un periscopio, dan una vuelta sobre sí mismos y botan.
+9. Sara abre un ojo, deja de bailar y, sin cambiar la cara, va hasta la niebla.
+10. Le pinza el tupé y tira: Guillermo sale de un tirón y la niebla estalla en bocanadas y se deshace.
+11. Guillermo se queda tosiendo nubecitas, con los ojos en espiral y estrellitas; Sara da unos pasos atrás.
+12. Sara vuelve a bailar; él prueba un solo brazo de fantasma, muy serio, y ella le da el visto bueno con un levísimo gesto de cabeza. Él se ilumina.
+13. Los dos miran a cámara.
+14. Negro.
+
+![Fotogramas de 00129](vista%20previa/00129%20Guillermo%20y%20Sara%20-%20el%20baile%20gotico%20-%20fotogramas.png)
 
 ### 00130 · Guillermo y Sara · La azotea
 
