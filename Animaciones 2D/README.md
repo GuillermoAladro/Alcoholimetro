@@ -140,6 +140,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00101 | Guillermo y Paradigma · La guitarra invisible | 14,9 s | [MP4 60 fps](vista%20previa/00101%20Guillermo%20y%20Paradigma%20-%20el%20air%20guitar.mp4) · [fotogramas](vista%20previa/00101%20Guillermo%20y%20Paradigma%20-%20el%20air%20guitar%20-%20fotogramas.png) |
 | 00102 | Guillermo y Paradigma · La moto | 14,6 s | [MP4 60 fps](vista%20previa/00102%20Guillermo%20y%20Paradigma%20-%20la%20moto.mp4) · [fotogramas](vista%20previa/00102%20Guillermo%20y%20Paradigma%20-%20la%20moto%20-%20fotogramas.png) |
 | 00103 | Guillermo y Paradigma · La meditación | 14,6 s | [MP4 60 fps](vista%20previa/00103%20Guillermo%20y%20Paradigma%20-%20la%20meditacion.mp4) · [fotogramas](vista%20previa/00103%20Guillermo%20y%20Paradigma%20-%20la%20meditacion%20-%20fotogramas.png) |
+| 00105 | Guillermo y Paradigma · El vinilo | 14,6 s | [MP4 60 fps](vista%20previa/00105%20Guillermo%20y%20Paradigma%20-%20el%20vinilo.mp4) · [fotogramas](vista%20previa/00105%20Guillermo%20y%20Paradigma%20-%20el%20vinilo%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1910,6 +1911,21 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00103](vista%20previa/00103%20Guillermo%20y%20Paradigma%20-%20la%20meditacion%20-%20fotogramas.png)
+
+### 00105 · Guillermo y Paradigma · El vinilo
+
+1. Negro.
+2. Un rincón de discos del bar, de noche: pared azul petróleo con rayas finas, una estantería llena de discos de colores, dos láminas (una puesta de sol sobre las olas y un disco con una guitarra), una ventana con la ciudad y la luna entre cortinas, una lámpara verde colgando, dos altavoces de pie, una alfombra redonda y un aparador de nogal con un tocadiscos antiguo.
+3. Paradigma saca un vinilo de su funda con la yema de los dedos, le sopla el polvo, deja la funda en el aparador y lo posa en el plato; baja la aguja y de los altavoces salen notas redondas. Se mece con los ojos cerrados mientras Guillermo cabecea.
+4. A Guillermo se le enciende la bombilla: se cruje los nudillos, se planta en el tocadiscos, se lleva la mano a unos cascos invisibles… y rasca el disco adelante y atrás como un DJ, con la lengua fuera: las notas salen rotas, en zigzag.
+5. Paradigma abre los ojos de golpe, se tapa la oreja y le hace «¡para!» con la palma.
+6. Último rascado con todas sus fuerzas… y el disco sale volando como un frisbi: le pasa por delante de la cara, da en la lámpara (que se queda columpiándose y abollada), le pasa rozando la cabeza mientras se agacha, tuerce la lámina y tumba un disco de la estantería.
+7. Sube en un arco altísimo y vuelve… y Paradigma, sin inmutarse, levanta un dedo y lo caza por el agujero: el disco gira en su dedo hasta pararse.
+8. Lo coge por el canto, lo vuelve a poner en el plato y baja la aguja: las notas vuelven a ser redondas.
+9. Guillermo, cortado, se rasca la nuca y se mece con la música; los dos miran a cámara y guiñan un ojo.
+10. Negro.
+
+![Fotogramas de 00105](vista%20previa/00105%20Guillermo%20y%20Paradigma%20-%20el%20vinilo%20-%20fotogramas.png)
 
 ## Ver y grabar
 
