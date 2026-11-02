@@ -160,6 +160,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00121 | Guillermo y Sara · El tatuaje | 14,6 s | [MP4 60 fps](vista%20previa/00121%20Guillermo%20y%20Sara%20-%20el%20tatuaje.mp4) · [fotogramas](vista%20previa/00121%20Guillermo%20y%20Sara%20-%20el%20tatuaje%20-%20fotogramas.png) |
 | 00122 | Guillermo y Sara · El concierto | 14,6 s | [MP4 60 fps](vista%20previa/00122%20Guillermo%20y%20Sara%20-%20el%20concierto.mp4) · [fotogramas](vista%20previa/00122%20Guillermo%20y%20Sara%20-%20el%20concierto%20-%20fotogramas.png) |
 | 00124 | Guillermo y Sara · La tormenta | 14,8 s | [MP4 60 fps](vista%20previa/00124%20Guillermo%20y%20Sara%20-%20la%20tormenta.mp4) · [fotogramas](vista%20previa/00124%20Guillermo%20y%20Sara%20-%20la%20tormenta%20-%20fotogramas.png) |
+| 00125 | Guillermo y Sara · No te rías | 14,85 s | [MP4 60 fps](vista%20previa/00125%20Guillermo%20y%20Sara%20-%20el%20pulso%20de%20miradas.mp4) · [fotogramas](vista%20previa/00125%20Guillermo%20y%20Sara%20-%20el%20pulso%20de%20miradas%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -2246,6 +2247,22 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 9. Negro.
 
 ![Fotogramas de 00124](vista%20previa/00124%20Guillermo%20y%20Sara%20-%20la%20tormenta%20-%20fotogramas.png)
+
+### 00125 · Guillermo y Sara · No te rías
+
+1. Negro.
+2. De noche, en un rincón tranquilo de un bar: pared azul tinta con friso de madera, ventana con la luna y la ciudad, diana con dos dardos, reloj sin números, balda con cajas de juegos de mesa y un cuadrito, guirnalda de bombillas, suelo de tablas, una mesita redonda con una vela, un refresco y una copa de vino, una lámpara de latón encima y dos sillas de madera. En la de Guillermo, bien a la vista, un cojín de broma rosa.
+3. Reto de «el primero que se ría pierde»: Guillermo, de pie, señala a Sara, se cruje el cuello y se inclina sobre la mesa. Sara, sentada con una mano en la mesa, es un muro: cara de nada y parpadeos lentos. La cámara se acerca a las caras.
+4. Primera mueca: aprieta los ojos… y saca la lengua bizco, meneando la cabeza. La cámara va despacio hasta Sara: nada.
+5. Segunda: coge aire, hincha los dos mofletes y suelta una pedorreta; una gota de saliva vuela y le cae a Sara en la mejilla. Ella parpadea, muy despacio.
+6. Tercera: arruga la nariz y abre las aletas una y otra vez, con las cejas subiendo y bajando a destiempo.
+7. Cuarta: mueve la oreja, que aletea. A Sara le da un tic en un ojo, una sola vez, y vuelve a ser de piedra.
+8. Guillermo se rinde: se endereza, se mete las manos en los bolsillos, suspira (una nubecilla) y se deja caer en su silla… encima del cojín, que se aplasta y suelta una pedorretita (ondas de sonido y una nube de aire por la boquilla).
+9. Silencio. Sara aguanta con los mofletes hinchados, temblando… y revienta de risa: cabeza atrás, lágrimas que saltan, mano en la tripa, hombros temblando y la melena botando. La silla se le va hacia atrás con los pies en el aire, casi se cae, vuelve y da palmadas en la mesa.
+10. Guillermo la mira, mira a cámara sorprendido, sonríe encantado y guiña un ojo con un destello.
+11. Negro.
+
+![Fotogramas de 00125](vista%20previa/00125%20Guillermo%20y%20Sara%20-%20el%20pulso%20de%20miradas%20-%20fotogramas.png)
 
 ## Ver y grabar
 
