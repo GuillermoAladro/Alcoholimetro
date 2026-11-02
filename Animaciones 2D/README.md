@@ -120,6 +120,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00081 | Guillermo y Kiriku · Las gafas de sol | 14,4 s | [MP4 60 fps](vista%20previa/00081%20Guillermo%20y%20Kiriku%20-%20las%20gafas%20de%20sol.mp4) · [fotogramas](vista%20previa/00081%20Guillermo%20y%20Kiriku%20-%20las%20gafas%20de%20sol%20-%20fotogramas.png) |
 | 00082 | Guillermo y Kiriku · El postureo | 14,4 s | [MP4 60 fps](vista%20previa/00082%20Guillermo%20y%20Kiriku%20-%20el%20selfie%20de%20postureo.mp4) · [fotogramas](vista%20previa/00082%20Guillermo%20y%20Kiriku%20-%20el%20selfie%20de%20postureo%20-%20fotogramas.png) |
 | 00083 | Guillermo y Kiriku · El yate | 14,8 s | [MP4 60 fps](vista%20previa/00083%20Guillermo%20y%20Kiriku%20-%20el%20yate.mp4) · [fotogramas](vista%20previa/00083%20Guillermo%20y%20Kiriku%20-%20el%20yate%20-%20fotogramas.png) |
+| 00084 | Guillermo y Kiriku · El jersey | 15,0 s | [MP4 60 fps](vista%20previa/00084%20Guillermo%20y%20Kiriku%20-%20el%20jersey.mp4) · [fotogramas](vista%20previa/00084%20Guillermo%20y%20Kiriku%20-%20el%20jersey%20-%20fotogramas.png) |
 | 00085 | Guillermo y Kiriku · La cata de vino | 14,8 s | [MP4 60 fps](vista%20previa/00085%20Guillermo%20y%20Kiriku%20-%20la%20cata%20de%20vino.mp4) · [fotogramas](vista%20previa/00085%20Guillermo%20y%20Kiriku%20-%20la%20cata%20de%20vino%20-%20fotogramas.png) |
 | 00087 | Guillermo y Kiriku · El baile de salón | 14,75 s | [MP4 60 fps](vista%20previa/00087%20Guillermo%20y%20Kiriku%20-%20el%20baile%20de%20salon.mp4) · [fotogramas](vista%20previa/00087%20Guillermo%20y%20Kiriku%20-%20el%20baile%20de%20salon%20-%20fotogramas.png) |
 | 00088 | Guillermo y Kiriku · El reloj | 14,6 s | [MP4 60 fps](vista%20previa/00088%20Guillermo%20y%20Kiriku%20-%20el%20reloj%20caro.mp4) · [fotogramas](vista%20previa/00088%20Guillermo%20y%20Kiriku%20-%20el%20reloj%20caro%20-%20fotogramas.png) |
@@ -1581,6 +1582,23 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00083](vista%20previa/00083%20Guillermo%20y%20Kiriku%20-%20el%20yate%20-%20fotogramas.png)
+
+### 00084 · Guillermo y Kiriku · El jersey
+
+1. Negro.
+2. Césped de un club náutico a media mañana: cielo limpio, el mar con veleros y un faro en el cabo, valla blanca con hortensias, un salvavidas colgado, dos tumbonas de rayas, una mesita con limonada y el mástil con un gallardete que ondea. Kiriku posa mirando al mar, con su jersey anudado sobre los hombros y otro de repuesto, rosa salmón, doblado sobre la palma como un camarero.
+3. Guillermo lo estudia con el puño en la barbilla, le rodea por detrás y se planta delante: se inclina, asiente impresionado, señala el nudo y se da en el pecho: «yo quiero».
+4. Kiriku se lo ofrece con una pequeña reverencia; Guillermo lo coge por los extremos, lo alza y se le despliega delante, con chispas de ilusión en los ojos.
+5. Lo lanza al aire y le cae sobre los hombros con las mangas colgando por delante. Cruza los puños, tira de las mangas hacia fuera con todas sus fuerzas… y el nudo se le sube al cuello: se ahoga (rojo, ojos fuera, saltitos), con las dos mangas tirantes del nudo a los puños. Kiriku se divierte.
+6. Lo afloja de un tirón y respira. Segundo intento: abre los brazos, da un latigazo con las mangas… y se queda con los brazos atados al cuerpo; forcejea mientras Kiriku se ríe con los hombros.
+7. Al girar para arreglarlo acaba envuelto como un paquete, con el jersey por la cabeza y solo los pinchos del pelo asomando por el cuello; da saltitos a ciegas hasta chocar con la palma de Kiriku.
+8. Kiriku, sin inmutarse, pellizca la manga que cuelga y de un tirón elegante desenrolla el paquete: Guillermo sale girando como una peonza y el jersey cae doblado sobre el antebrazo de Kiriku.
+9. Guillermo se tambalea mareado, con los ojos en espiral y estrellitas. Kiriku, con un golpe de muñeca, le devuelve el jersey por encima de la cabeza, le cae en los hombros y le hace un nudo perfecto con una sola mano: ¡destello!
+10. Guillermo, encantado, posa como Kiriku, con las manos en los bolsillos y la barbilla arriba… y el jersey se le desata, resbala por la espalda y cae al césped.
+11. Guillermo mira el montón y luego a cámara, muy serio; Kiriku cierra los ojos, niega despacio con la cabeza y mira a cámara con una ceja levantada.
+12. Negro.
+
+![Fotogramas de 00084](vista%20previa/00084%20Guillermo%20y%20Kiriku%20-%20el%20jersey%20-%20fotogramas.png)
 
 ### 00085 · Guillermo y Kiriku · La cata de vino
 
