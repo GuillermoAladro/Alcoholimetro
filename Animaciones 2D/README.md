@@ -133,6 +133,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00094 | Guillermo y Marta · La pinza del pelo | 14,6 s | [MP4 60 fps](vista%20previa/00094%20Guillermo%20y%20Marta%20-%20la%20pinza%20del%20pelo.mp4) · [fotogramas](vista%20previa/00094%20Guillermo%20y%20Marta%20-%20la%20pinza%20del%20pelo%20-%20fotogramas.png) |
 | 00095 | Guillermo y Marta · El gato | 14,8 s | [MP4 60 fps](vista%20previa/00095%20Guillermo%20y%20Marta%20-%20el%20gato.mp4) · [fotogramas](vista%20previa/00095%20Guillermo%20y%20Marta%20-%20el%20gato%20-%20fotogramas.png) |
 | 00096 | Guillermo y Marta · El microondas | 14,9 s | [MP4 60 fps](vista%20previa/00096%20Guillermo%20y%20Marta%20-%20las%20palomitas%20de%20maiz.mp4) · [fotogramas](vista%20previa/00096%20Guillermo%20y%20Marta%20-%20las%20palomitas%20de%20maiz%20-%20fotogramas.png) |
+| 00097 | Guillermo y Marta · Bajo la lluvia | 14,4 s | [MP4 60 fps](vista%20previa/00097%20Guillermo%20y%20Marta%20-%20el%20paraguas%20compartido.mp4) · [fotogramas](vista%20previa/00097%20Guillermo%20y%20Marta%20-%20el%20paraguas%20compartido%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1793,6 +1794,22 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00096](vista%20previa/00096%20Guillermo%20y%20Marta%20-%20las%20palomitas%20de%20maiz%20-%20fotogramas.png)
+
+### 00097 · Guillermo y Marta · Bajo la lluvia
+
+1. Negro.
+2. Una calle de la ciudad al anochecer, lloviendo: una floristería con su toldo de rayas que gotea y cubos de flores en la acera, una librería con el escaparate encendido lleno de libros, un portal con arco, ventanas encendidas, una farola con su halo, un canalón que chorrea y la acera mojada con charcos que reflejan las luces.
+3. Marta tiende la palma, mira al cielo y abre de golpe su paraguas pequeñito de gajos mostaza y crema (¡pop!, con rebote).
+4. Guillermo entra corriendo por la izquierda, empapado, con el pelo aplastado y haciéndose visera con la mano; chapotea en cada paso y frena patinando junto a ella. Mira arriba y le pone ojitos con las manos juntas.
+5. Marta sonríe, le invita con la mano y le cede medio paraguas; Guillermo se mete debajo encogido.
+6. Pero el paraguas es pequeño: a cada uno le cae la lluvia en el hombro de fuera. Se miran el hombro, se miran… y se arriman un poco… y otro poco… hasta quedarse mejilla con mejilla, apretujados y colorados, mirando a cámara (sale un corazoncito).
+7. Llega una racha de viento: la lluvia se tuerce, a Marta se le vuela la melena, el paraguas cabecea… y ¡plof!, se da la vuelta. Les cae la lluvia encima a los dos.
+8. Miran arriba, se miran muy serios, chorreando… y se parten de risa.
+9. Se dan la mano, cogen impulso y saltan juntos al charco: ¡chof!, una corona de agua, gotas por todas partes y anillos que se abren.
+10. Siguen riéndose y miran a cámara; Marta guiña un ojo.
+11. Negro.
+
+![Fotogramas de 00097](vista%20previa/00097%20Guillermo%20y%20Marta%20-%20el%20paraguas%20compartido%20-%20fotogramas.png)
 
 ## Ver y grabar
 
