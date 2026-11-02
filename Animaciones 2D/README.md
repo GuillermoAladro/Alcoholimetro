@@ -131,6 +131,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00092 | Guillermo y Marta · La bufanda | 14,8 s | [MP4 60 fps](vista%20previa/00092%20Guillermo%20y%20Marta%20-%20la%20bufanda.mp4) · [fotogramas](vista%20previa/00092%20Guillermo%20y%20Marta%20-%20la%20bufanda%20-%20fotogramas.png) |
 | 00093 | Guillermo y Marta · El libro | 14,6 s | [MP4 60 fps](vista%20previa/00093%20Guillermo%20y%20Marta%20-%20el%20libro.mp4) · [fotogramas](vista%20previa/00093%20Guillermo%20y%20Marta%20-%20el%20libro%20-%20fotogramas.png) |
 | 00094 | Guillermo y Marta · La pinza del pelo | 14,6 s | [MP4 60 fps](vista%20previa/00094%20Guillermo%20y%20Marta%20-%20la%20pinza%20del%20pelo.mp4) · [fotogramas](vista%20previa/00094%20Guillermo%20y%20Marta%20-%20la%20pinza%20del%20pelo%20-%20fotogramas.png) |
+| 00095 | Guillermo y Marta · El gato | 14,8 s | [MP4 60 fps](vista%20previa/00095%20Guillermo%20y%20Marta%20-%20el%20gato.mp4) · [fotogramas](vista%20previa/00095%20Guillermo%20y%20Marta%20-%20el%20gato%20-%20fotogramas.png) |
 | 00096 | Guillermo y Marta · El microondas | 14,9 s | [MP4 60 fps](vista%20previa/00096%20Guillermo%20y%20Marta%20-%20las%20palomitas%20de%20maiz.mp4) · [fotogramas](vista%20previa/00096%20Guillermo%20y%20Marta%20-%20las%20palomitas%20de%20maiz%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
@@ -1761,6 +1762,21 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00094](vista%20previa/00094%20Guillermo%20y%20Marta%20-%20la%20pinza%20del%20pelo%20-%20fotogramas.png)
+
+### 00095 · Guillermo y Marta · El gato
+
+1. Negro.
+2. Un salón acogedor a la hora dorada: pared verde salvia con zócalo de cuarterones, una librería llena de libros de colores, un cuadro con un sol, una alfombra redonda trenzada y, a la derecha, un mirador con el sol de la tarde sobre los tejados, cortina recogida, macetas, un banco con cojín mostaza, cojines y una manta de punto; por la ventana entran haces de luz con motas de polvo. Marta, sentada en el banco, tiene en el regazo un gato naranja atigrado hecho una bola, dormido.
+3. Marta lo acaricia de la cabeza a la cola y el gato ronronea (rayitas que vibran sobre el lomo). Guillermo se derrite al verlo: corazoncitos.
+4. Se acerca, se agacha y alarga la mano muy despacio, con la lengua fuera… el gato abre un ojo, luego los dos y ¡se eriza!: lomo arqueado, pelo de punta, cola de escobilla y bufido con colmillos. Guillermo da un brinco hacia atrás con las manos en alto y se queda temblando.
+5. Marta se ríe tapándose la boca; el gato se calma, se sienta y se lame la pata, muy digno.
+6. Marta llama a Guillermo con el dedo y le susurra algo al oído; él asiente, encantado. Marta saca del bolsillo una caña con una pluma de colores y un cascabel, y se la da.
+7. Guillermo se agacha y la menea: el gato se agazapa, menea el culete, salta al suelo y caza la pluma a zarpazos… Guillermo la levanta de un tirón y el gato se le abalanza: le trepa por la pierna, el pecho y el hombro, donde le frota la mejilla, y desde allí sigue dándole zarpazos a la pluma.
+8. Guillermo baja la caña y el gato le salta a la cabeza: da una vuelta, amasa y se enrosca encima de sus pinchos como un gorro, ronroneando.
+9. Guillermo, colorado, no se atreve ni a respirar; mira a cámara feliz mientras Marta se ríe, y el gato abre un ojo.
+10. Negro.
+
+![Fotogramas de 00095](vista%20previa/00095%20Guillermo%20y%20Marta%20-%20el%20gato%20-%20fotogramas.png)
 
 ### 00096 · Guillermo y Marta · El microondas
 
