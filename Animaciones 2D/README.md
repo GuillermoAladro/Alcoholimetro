@@ -145,6 +145,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00106 | Guillermo y Paradigma · La barbacoa | 14,6 s | [MP4 60 fps](vista%20previa/00106%20Guillermo%20y%20Paradigma%20-%20la%20barbacoa.mp4) · [fotogramas](vista%20previa/00106%20Guillermo%20y%20Paradigma%20-%20la%20barbacoa%20-%20fotogramas.png) |
 | 00107 | Guillermo y Paradigma · El espejo | 14,7 s | [MP4 60 fps](vista%20previa/00107%20Guillermo%20y%20Paradigma%20-%20el%20reflejo.mp4) · [fotogramas](vista%20previa/00107%20Guillermo%20y%20Paradigma%20-%20el%20reflejo%20-%20fotogramas.png) |
 | 00108 | Guillermo y Paradigma · La partida de cartas | 14,5 s | [MP4 60 fps](vista%20previa/00108%20Guillermo%20y%20Paradigma%20-%20la%20carta.mp4) · [fotogramas](vista%20previa/00108%20Guillermo%20y%20Paradigma%20-%20la%20carta%20-%20fotogramas.png) |
+| 00109 | Guillermo y Paradigma · Los globos de agua | 15,0 s | [MP4 60 fps](vista%20previa/00109%20Guillermo%20y%20Paradigma%20-%20el%20globo%20de%20agua.mp4) · [fotogramas](vista%20previa/00109%20Guillermo%20y%20Paradigma%20-%20el%20globo%20de%20agua%20-%20fotogramas.png) |
 | 00112 | Guillermo y Rodri · Las sillas de bar | 14,45 s | [MP4 60 fps](vista%20previa/00112%20Guillermo%20y%20Rodri%20-%20las%20carreras%20de%20sillas.mp4) · [fotogramas](vista%20previa/00112%20Guillermo%20y%20Rodri%20-%20las%20carreras%20de%20sillas%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
@@ -1994,6 +1995,24 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00108](vista%20previa/00108%20Guillermo%20y%20Paradigma%20-%20la%20carta%20-%20fotogramas.png)
+
+### 00109 · Guillermo y Paradigma · Los globos de agua
+
+1. Negro.
+2. Patio trasero en pleno verano: tapia encalada, buganvilla, tendedero, piscinita con patito, girasol y pilar de ladrillo con la manguera. Paradigma toma el sol con los ojos cerrados y da un sorbo de limonada. Guillermo rebusca en un cubo, saca un globo rosa, se da la vuelta y mira a cámara con picardía.
+3. Guillermo se acerca a Paradigma por detrás, de puntillas, con el globo bamboleándose en la mano.
+4. Carga como un lanzador, con la rodilla arriba, y lanza. Justo antes, Paradigma se ha inclinado sin mirar a oler el girasol: el globo pasa por donde estaba su cabeza y revienta contra el pilar. La mancha mojada se queda.
+5. Guillermo salta de alegría, pero ve que el agua vuelve por el aire y le cae entera encima: pelo aplastado, camiseta empapada, gotas y charco.
+6. Escupe un chorrito, mira a cámara con cara de nada y se enfada: vena y cara roja.
+7. Vuelve al cubo, saca un globo naranja enorme colgando del nudo, lo abraza con cara malvada, se agacha y lo lanza a dos manos por todo lo alto.
+8. Paradigma, sin abrir los ojos, saca la mano del bolsillo y lo caza con la palma sin que reviente. Guillermo se queda pasmado. Paradigma abre los ojos, lo gira, lo aprieta y levanta una ceja.
+9. Se da la vuelta y va hacia Guillermo con el globo en alto. Guillermo se encoge esperando el golpe. Paradigma se lo deja con cuidado encima de la cabeza.
+10. Paradigma se aparta un paso y se vuelve al sol. Guillermo abre un ojo, mira arriba, se incorpora despacio haciendo equilibrio y sonríe aliviado.
+11. ¡Plof!: el globo revienta, salen trocitos de goma y otra cortina de agua le cae encima.
+12. Guillermo, chorreando y con el charco creciendo, mira a cámara mientras Paradigma da un sorbo de limonada al sol.
+13. Negro.
+
+![Fotogramas de 00109](vista%20previa/00109%20Guillermo%20y%20Paradigma%20-%20el%20globo%20de%20agua%20-%20fotogramas.png)
 
 ### 00112 · Guillermo y Rodri · Las sillas de bar
 
