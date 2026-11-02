@@ -110,6 +110,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00071 | Guillermo y Gabacho · El penalti | 14,4 s | [MP4 60 fps](vista%20previa/00071%20Guillermo%20y%20Gabacho%20-%20el%20penalti.mp4) · [fotogramas](vista%20previa/00071%20Guillermo%20y%20Gabacho%20-%20el%20penalti%20-%20fotogramas.png) |
 | 00072 | Guillermo y Gabacho · El cruasán | 14,5 s | [MP4 60 fps](vista%20previa/00072%20Guillermo%20y%20Gabacho%20-%20el%20croissant.mp4) · [fotogramas](vista%20previa/00072%20Guillermo%20y%20Gabacho%20-%20el%20croissant%20-%20fotogramas.png) |
 | 00073 | Guillermo y Gabacho · La chilena | 14,3 s | [MP4 60 fps](vista%20previa/00073%20Guillermo%20y%20Gabacho%20-%20la%20chilena.mp4) · [fotogramas](vista%20previa/00073%20Guillermo%20y%20Gabacho%20-%20la%20chilena%20-%20fotogramas.png) |
+| 00074 | Guillermo y Gabacho · El queso | 14,95 s | [MP4 60 fps](vista%20previa/00074%20Guillermo%20y%20Gabacho%20-%20el%20queso.mp4) · [fotogramas](vista%20previa/00074%20Guillermo%20y%20Gabacho%20-%20el%20queso%20-%20fotogramas.png) |
 | 00076 | Guillermo y Gabacho · La boina | 14,8 s | [MP4 60 fps](vista%20previa/00076%20Guillermo%20y%20Gabacho%20-%20la%20boina.mp4) · [fotogramas](vista%20previa/00076%20Guillermo%20y%20Gabacho%20-%20la%20boina%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
@@ -1405,6 +1406,22 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00073](vista%20previa/00073%20Guillermo%20y%20Gabacho%20-%20la%20chilena%20-%20fotogramas.png)
+
+### 00074 · Guillermo y Gabacho · El queso
+
+1. Negro.
+2. Rincón de una quesería por la tarde: pared encalada con zócalo verde, pizarra con dibujitos de tiza (una cuña de queso, una vaca, estrellas), un cuadrito con una vaca en el prado, lámpara de esmalte, estantería de quesos con embutidos colgados sobre el mostrador y una silla de café de madera curvada. Gabacho sostiene una cajita redonda de madera como si fuera una joya y mira a cámara muy orgulloso; Guillermo espera con las manos en los bolsillos.
+3. Gabacho levanta la tapa: ¡plop!, sale un tufo verde y dos moscas se ponen a dar vueltas. Lanza la tapa hacia atrás sin mirar y cae en el mostrador.
+4. Se abanica el olor hacia la nariz, se acerca la caja y aspira con los ojos cerrados; se mece en éxtasis, con la mano en el corazón y corazoncitos.
+5. Se la ofrece a Guillermo, que se acerca curioso y olfatea (snif, snif, ¡sniiif!): el tufo le entra por la nariz.
+6. Se queda tieso: el pelo de punta se le marchita y le cae lacio, le lloran los ojos, se pone verde y se le hinchan los carrillos; se tapa la boca mientras la peste le da vueltas a la cabeza.
+7. Retrocede tambaleándose, con los ojos en espiral, y se desmaya en la silla: despatarrado, la cabeza hacia atrás, los ojos en X y la lengua fuera. Una mosca le ronda la cabeza.
+8. Gabacho se encoge de hombros («bof»), se pasa la caja a la otra mano, pellizca un trocito de queso, se acerca y se lo pasea por debajo de la nariz.
+9. Guillermo se despierta de golpe y salta de la silla: el pelo se le vuelve a poner de punta y le vuelve el color. Ve el queso, se da la vuelta y sale disparado de cuadro; la silla gira con el rebufo.
+10. Gabacho se encoge de hombros otra vez, deja caer el trocito en la boca, lo saborea con corazoncitos, hace el beso de chef y guiña un ojo a cámara.
+11. Negro.
+
+![Fotogramas de 00074](vista%20previa/00074%20Guillermo%20y%20Gabacho%20-%20el%20queso%20-%20fotogramas.png)
 
 ### 00076 · Guillermo y Gabacho · La boina
 
