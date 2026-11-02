@@ -111,6 +111,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00072 | Guillermo y Gabacho · El cruasán | 14,5 s | [MP4 60 fps](vista%20previa/00072%20Guillermo%20y%20Gabacho%20-%20el%20croissant.mp4) · [fotogramas](vista%20previa/00072%20Guillermo%20y%20Gabacho%20-%20el%20croissant%20-%20fotogramas.png) |
 | 00073 | Guillermo y Gabacho · La chilena | 14,3 s | [MP4 60 fps](vista%20previa/00073%20Guillermo%20y%20Gabacho%20-%20la%20chilena.mp4) · [fotogramas](vista%20previa/00073%20Guillermo%20y%20Gabacho%20-%20la%20chilena%20-%20fotogramas.png) |
 | 00074 | Guillermo y Gabacho · El queso | 14,95 s | [MP4 60 fps](vista%20previa/00074%20Guillermo%20y%20Gabacho%20-%20el%20queso.mp4) · [fotogramas](vista%20previa/00074%20Guillermo%20y%20Gabacho%20-%20el%20queso%20-%20fotogramas.png) |
+| 00075 | Guillermo y Gabacho · El mando | 14,4 s | [MP4 60 fps](vista%20previa/00075%20Guillermo%20y%20Gabacho%20-%20el%20pique%20del%20mando.mp4) · [fotogramas](vista%20previa/00075%20Guillermo%20y%20Gabacho%20-%20el%20pique%20del%20mando%20-%20fotogramas.png) |
 | 00076 | Guillermo y Gabacho · La boina | 14,8 s | [MP4 60 fps](vista%20previa/00076%20Guillermo%20y%20Gabacho%20-%20la%20boina.mp4) · [fotogramas](vista%20previa/00076%20Guillermo%20y%20Gabacho%20-%20la%20boina%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
@@ -1422,6 +1423,23 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00074](vista%20previa/00074%20Guillermo%20y%20Gabacho%20-%20el%20queso%20-%20fotogramas.png)
+
+### 00075 · Guillermo y Gabacho · El mando
+
+1. Negro.
+2. Salón de un piso pequeño, de noche: pared verde salvia con zócalo de madera, una lámina con un balón, una balda con una copa, lámpara de pie, mesita con un cuenco de patatas y un sofá de pana mostaza. A la derecha, una tele plana sobre un mueble bajo, vista de tres cuartos, con el partido (césped a franjas y puntitos que corren). Gabacho y Guillermo lo ven sentados; el mando está en el cojín, entre los dos.
+3. Los dos miran el mando, se miran con los ojos entornados… y se lanzan: Gabacho lo pilla primero y Guillermo palmea el cojín vacío (¡plaf!).
+4. Gabacho, con sonrisa de pillo, se lo pasa a la otra mano y lo sube bien lejos, por detrás de la cabeza. Guillermo se pone rojo, salta al cojín y se gira hacia él.
+5. Gabacho se levanta también y le sujeta por la cabeza con el brazo estirado mientras Guillermo da molinetes y brincos sin llegar; Gabacho le saca la lengua.
+6. Chulito, se lo enseña de cerca, meneándolo… y Guillermo lo agarra: tira y afloja sobre los cojines, los dos echados hacia atrás, el mando temblando, dientes apretados, caras rojas y sudor.
+7. El mando se escurre y sale disparado hacia arriba dando vueltas; los dos trastabillan, lo ven, saltan a por él de cabeza… y se dan un cabezazo: ¡bonk!, estrellas y chichones.
+8. Caen en montón: Guillermo tumbado boca arriba con la cabeza contra el brazo del sofá y Gabacho sentado encima. Siguen peleando: Gabacho le aparta la cara y Guillermo le agarra la camiseta.
+9. El mando cae en el brazo del sofá, se aprieta un botón (clic) y la tele cambia de canal: estática… y dibujos animados, con una pelota roja que bota entre colinas, un sol sonriente y notas musicales.
+10. Se quedan congelados, miran la pantalla y se sueltan despacio; embobados, ladean la cabeza a la vez al ritmo de la pelota.
+11. Miran a cámara a la vez: Gabacho guiña un ojo y levanta el pulgar, y vuelven a la tele.
+12. Negro.
+
+![Fotogramas de 00075](vista%20previa/00075%20Guillermo%20y%20Gabacho%20-%20el%20pique%20del%20mando%20-%20fotogramas.png)
 
 ### 00076 · Guillermo y Gabacho · La boina
 
