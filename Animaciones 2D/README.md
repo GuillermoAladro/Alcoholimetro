@@ -165,6 +165,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00126 | Guillermo y Sara · El collar | 14,6 s | [MP4 60 fps](vista%20previa/00126%20Guillermo%20y%20Sara%20-%20la%20cruz%20del%20collar.mp4) · [fotogramas](vista%20previa/00126%20Guillermo%20y%20Sara%20-%20la%20cruz%20del%20collar%20-%20fotogramas.png) |
 | 00127 | Guillermo y Sara · El monopatín de noche | 14,55 s | [MP4 60 fps](vista%20previa/00127%20Guillermo%20y%20Sara%20-%20el%20skate%20de%20noche.mp4) · [fotogramas](vista%20previa/00127%20Guillermo%20y%20Sara%20-%20el%20skate%20de%20noche%20-%20fotogramas.png) |
 | 00128 | Guillermo y Sara · La salsa picante | 14,6 s | [MP4 60 fps](vista%20previa/00128%20Guillermo%20y%20Sara%20-%20la%20pizza%20picante.mp4) · [fotogramas](vista%20previa/00128%20Guillermo%20y%20Sara%20-%20la%20pizza%20picante%20-%20fotogramas.png) |
+| 00130 | Guillermo y Sara · La azotea | 14,8 s | [MP4 60 fps](vista%20previa/00130%20Guillermo%20y%20Sara%20-%20el%20atardecer%20en%20la%20azotea.mp4) · [fotogramas](vista%20previa/00130%20Guillermo%20y%20Sara%20-%20el%20atardecer%20en%20la%20azotea%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -2332,6 +2333,24 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 13. Negro.
 
 ![Fotogramas de 00128](vista%20previa/00128%20Guillermo%20y%20Sara%20-%20la%20pizza%20picante%20-%20fotogramas.png)
+
+### 00130 · Guillermo y Sara · La azotea
+
+1. Negro.
+2. Noche en el pretil de una azotea: ciudad encendida, un puente lleno de luces, estrellas, luna y una guirnalda de bombillas. Sara y Guillermo, sentados con las piernas colgando, comparten auriculares de cable: el móvil en el pretil y el cable en Y hasta la oreja de cada uno. Cabecean al ritmo con los ojos cerrados.
+3. Guillermo toma aire y se arranca a cantar a pleno pulmón: ojos cerrados, bocaza, puño en alto y notas con pinchos desafinadas.
+4. Sara abre un ojo, aprieta los dos con el agudo y se quita su auricular, que queda colgando y balanceándose. Él ni se entera.
+5. Sara mira la oreja de Guillermo, levanta una ceja, se inclina y, con dos dedos, le quita su auricular y se lo pone en su otra oreja.
+6. Recoge el auricular que colgaba y se lo vuelve a poner: los dos para ella. Cabecea feliz con los ojos cerrados.
+7. Guillermo sigue cantando solo, sin música: se queda colgado con la boca abierta en los silencios, y la última nota le sale rota y se cae.
+8. Abre los ojos, se toca la oreja vacía y mira a Sara con los dos auriculares puestos.
+9. Se pone como un tomate, se rasca la nuca y le cae una gota de sudor.
+10. Sara abre los ojos, sonríe, se saca un auricular y se lo ofrece; él lo coge y se lo pone.
+11. Cabecean juntos al mismo ritmo.
+12. Cruza una estrella fugaz; la miran y luego miran a cámara.
+13. Negro.
+
+![Fotogramas de 00130](vista%20previa/00130%20Guillermo%20y%20Sara%20-%20el%20atardecer%20en%20la%20azotea%20-%20fotogramas.png)
 
 ## Ver y grabar
 
