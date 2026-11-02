@@ -146,6 +146,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00107 | Guillermo y Paradigma · El espejo | 14,7 s | [MP4 60 fps](vista%20previa/00107%20Guillermo%20y%20Paradigma%20-%20el%20reflejo.mp4) · [fotogramas](vista%20previa/00107%20Guillermo%20y%20Paradigma%20-%20el%20reflejo%20-%20fotogramas.png) |
 | 00108 | Guillermo y Paradigma · La partida de cartas | 14,5 s | [MP4 60 fps](vista%20previa/00108%20Guillermo%20y%20Paradigma%20-%20la%20carta.mp4) · [fotogramas](vista%20previa/00108%20Guillermo%20y%20Paradigma%20-%20la%20carta%20-%20fotogramas.png) |
 | 00109 | Guillermo y Paradigma · Los globos de agua | 15,0 s | [MP4 60 fps](vista%20previa/00109%20Guillermo%20y%20Paradigma%20-%20el%20globo%20de%20agua.mp4) · [fotogramas](vista%20previa/00109%20Guillermo%20y%20Paradigma%20-%20el%20globo%20de%20agua%20-%20fotogramas.png) |
+| 00110 | Guillermo y Paradigma · La puesta de sol | 14,7 s | [MP4 60 fps](vista%20previa/00110%20Guillermo%20y%20Paradigma%20-%20la%20puesta%20de%20sol.mp4) · [fotogramas](vista%20previa/00110%20Guillermo%20y%20Paradigma%20-%20la%20puesta%20de%20sol%20-%20fotogramas.png) |
 | 00112 | Guillermo y Rodri · Las sillas de bar | 14,45 s | [MP4 60 fps](vista%20previa/00112%20Guillermo%20y%20Rodri%20-%20las%20carreras%20de%20sillas.mp4) · [fotogramas](vista%20previa/00112%20Guillermo%20y%20Rodri%20-%20las%20carreras%20de%20sillas%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
@@ -2013,6 +2014,23 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 13. Negro.
 
 ![Fotogramas de 00109](vista%20previa/00109%20Guillermo%20y%20Paradigma%20-%20el%20globo%20de%20agua%20-%20fotogramas.png)
+
+### 00110 · Guillermo y Paradigma · La puesta de sol
+
+1. Negro.
+2. Una azotea al atardecer: Guillermo y Paradigma sentados en el pretil de ladrillo con las piernas colgando y, entre los dos, un sol enorme bajando sobre la ciudad. Cielo naranja, nubes rosadas y pájaros a lo lejos. Paradigma tiene un botellín y Guillermo una bolsa de patatas fritas en el regazo y su botellín al lado.
+3. Paradigma da un trago tranquilo: «ahh». Guillermo tira una patata al aire, la caza con la boca, la cruje y pone cara de chulo.
+4. Paradigma señala el sol con el gollete del botellín y filosofa con calma. Guillermo se acaricia la barbilla, entorna los ojos y asiente muy hondo, una y otra vez.
+5. Una paloma cruza por delante del sol, frena con las alas abiertas y se posa en la cabeza de Guillermo, que ni se entera. La paloma se da la vuelta y arrulla.
+6. Paradigma la ve, mira dos veces, hincha los carrillos y se tapa la boca para aguantarse la risa, con los hombros temblando.
+7. Guillermo saca otra patata, la admira a contraluz con los ojos cerrados y la lanza. La paloma estira el cuello y se la roba en el aire, y Guillermo da un mordisco al vacío: «¡ñac!».
+8. Guillermo abre los ojos, se mira la mano vacía, mira a la izquierda y a la derecha, y mira con sospecha a Paradigma, que silba mirando al cielo.
+9. Encima de su cabeza, la paloma cruje la patata y le llueven migas en la nariz. Guillermo mira hacia arriba; la paloma se asoma por su frente, se miran fijamente, ella traga y arrulla.
+10. Guillermo suspira y se encoge de hombros, y se le caen las migas. Paradigma suelta la risa.
+11. Ya en paz, los tres miran cómo el sol se hunde tras la ciudad, con la cabeza ladeada hacia el mismo lado, mientras se encienden las ventanas y salen las estrellas.
+12. Negro.
+
+![Fotogramas de 00110](vista%20previa/00110%20Guillermo%20y%20Paradigma%20-%20la%20puesta%20de%20sol%20-%20fotogramas.png)
 
 ### 00112 · Guillermo y Rodri · Las sillas de bar
 
