@@ -139,6 +139,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00100 | Guillermo y Marta · El baile en la cocina | 15,0 s | [MP4 60 fps](vista%20previa/00100%20Guillermo%20y%20Marta%20-%20el%20baile%20en%20la%20cocina.mp4) · [fotogramas](vista%20previa/00100%20Guillermo%20y%20Marta%20-%20el%20baile%20en%20la%20cocina%20-%20fotogramas.png) |
 | 00101 | Guillermo y Paradigma · La guitarra invisible | 14,9 s | [MP4 60 fps](vista%20previa/00101%20Guillermo%20y%20Paradigma%20-%20el%20air%20guitar.mp4) · [fotogramas](vista%20previa/00101%20Guillermo%20y%20Paradigma%20-%20el%20air%20guitar%20-%20fotogramas.png) |
 | 00102 | Guillermo y Paradigma · La moto | 14,6 s | [MP4 60 fps](vista%20previa/00102%20Guillermo%20y%20Paradigma%20-%20la%20moto.mp4) · [fotogramas](vista%20previa/00102%20Guillermo%20y%20Paradigma%20-%20la%20moto%20-%20fotogramas.png) |
+| 00103 | Guillermo y Paradigma · La meditación | 14,6 s | [MP4 60 fps](vista%20previa/00103%20Guillermo%20y%20Paradigma%20-%20la%20meditacion.mp4) · [fotogramas](vista%20previa/00103%20Guillermo%20y%20Paradigma%20-%20la%20meditacion%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1893,6 +1894,22 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 10. Negro.
 
 ![Fotogramas de 00102](vista%20previa/00102%20Guillermo%20y%20Paradigma%20-%20la%20moto%20-%20fotogramas.png)
+
+### 00103 · Guillermo y Paradigma · La meditación
+
+1. Negro.
+2. Una azotea tranquila al anochecer: cielo de morado a naranja con las primeras estrellas y una luna fina, la ciudad recortada con sus ventanas encendidas, un murete de estuco, bambú en macetas de barro, una guirnalda de farolillos de papel, tarima de madera, una varilla de incienso que humea y, en el rincón, una caña de bambú que se llena de agua y bascula (¡toc!). Paradigma medita con las piernas cruzadas, las manos en las rodillas y los ojos cerrados, flotando un palmo por encima de su cojín entre un halo dorado.
+3. Guillermo lo mira boquiabierto, mira a cámara, asiente muy decidido y se sienta en su cojín.
+4. Intenta cruzar las piernas… y se le va el pie detrás de la cabeza: se queda enganchado, bracea como un molino, se tambalea y se cae de lado (¡pum!, polvo y estrellitas). Mira a cámara desde el suelo, colorado, y se levanta de un rebote, ya con las piernas cruzadas.
+5. Segundo intento: manos en las rodillas, ojos cerrados… y una mosca se pone a darle vueltas a la cabeza. Le tiembla un ojo, otro tic… abre los ojos con la vena hinchada, carga el brazo y le suelta un manotazo enorme.
+6. Falla: la mosca se escapa, rebota en el halo de Paradigma y se va; Guillermo se va de espaldas y se queda meciéndose sobre el cojín con las piernas pataleando en el aire.
+7. Se incorpora, resopla con los mofletes hinchados y lo intenta otra vez: por fin se queda quieto, respira despacio y sonríe en paz…
+8. …y se duerme: cabecea, se le resbalan las manos de las rodillas y le sale un globo de moco que crece y mengua con cada ronquido.
+9. Paradigma abre un ojo, le mira, sonríe y mira a cámara.
+10. ¡Toc!: la caña de bambú bascula, el globo revienta y Guillermo se despierta de un brinco; se recoloca y mira a cámara con cara de «no estaba dormido».
+11. Negro.
+
+![Fotogramas de 00103](vista%20previa/00103%20Guillermo%20y%20Paradigma%20-%20la%20meditacion%20-%20fotogramas.png)
 
 ## Ver y grabar
 
