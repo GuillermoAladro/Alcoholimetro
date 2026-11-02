@@ -125,6 +125,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00086 | Guillermo y Kiriku · El peine | 14,6 s | [MP4 60 fps](vista%20previa/00086%20Guillermo%20y%20Kiriku%20-%20el%20peine.mp4) · [fotogramas](vista%20previa/00086%20Guillermo%20y%20Kiriku%20-%20el%20peine%20-%20fotogramas.png) |
 | 00087 | Guillermo y Kiriku · El baile de salón | 14,75 s | [MP4 60 fps](vista%20previa/00087%20Guillermo%20y%20Kiriku%20-%20el%20baile%20de%20salon.mp4) · [fotogramas](vista%20previa/00087%20Guillermo%20y%20Kiriku%20-%20el%20baile%20de%20salon%20-%20fotogramas.png) |
 | 00088 | Guillermo y Kiriku · El reloj | 14,6 s | [MP4 60 fps](vista%20previa/00088%20Guillermo%20y%20Kiriku%20-%20el%20reloj%20caro.mp4) · [fotogramas](vista%20previa/00088%20Guillermo%20y%20Kiriku%20-%20el%20reloj%20caro%20-%20fotogramas.png) |
+| 00089 | Guillermo y Kiriku · El descapotable | 14,6 s | [MP4 60 fps](vista%20previa/00089%20Guillermo%20y%20Kiriku%20-%20el%20descapotable.mp4) · [fotogramas](vista%20previa/00089%20Guillermo%20y%20Kiriku%20-%20el%20descapotable%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1665,6 +1666,20 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 10. Negro.
 
 ![Fotogramas de 00088](vista%20previa/00088%20Guillermo%20y%20Kiriku%20-%20el%20reloj%20caro%20-%20fotogramas.png)
+
+### 00089 · Guillermo y Kiriku · El descapotable
+
+1. Negro.
+2. Carretera de la costa a media tarde, vista de lado: un descapotable rojo de los de antes (capó largo, parabrisas con marco cromado, asientos de piel color tabaco, salpicadero de madera) corre hacia la derecha mientras pasan el mar con sus brillos, un cabo con un pueblo blanco, palmeras, farolas y el quitamiedos. Kiriku conduce con las gafas de sol puestas y una mano en el volante; Guillermo, de copiloto, levanta los brazos encantado.
+3. Kiriku acelera: todo pasa más deprisa y el viento le dobla a Guillermo los pinchos del pelo hacia atrás, uno a uno, hasta dejarlos ondeando. Guillermo se agarra a la puerta.
+4. El viento le hincha los carrillos y se los sacude como a un perro asomado a la ventanilla: labios al aire, ojos apretados y lagrimones que salen volando hacia atrás. Kiriku le echa una mirada, impasible; a él solo se le levanta un mechón, que vuelve a su sitio.
+5. ¡Plaf!: un bicho se le estampa en los dientes. Guillermo se queda helado, lo pesca con dos dedos, lo mira, lo suelta al viento y saca la lengua con asco, verde.
+6. Se le ocurre algo: abre la guantera y saca, cogido por la coronilla, un casco de aviador de cuero con gafas (sale arrugado y se infla). Coge impulso y lo lanza hacia arriba (Kiriku echa la cabeza atrás); el casco da una vuelta en el aire y le cae encajado en la cabeza, con los pinchos asomando por detrás.
+7. Se abrocha la orejera, se baja las gafas y posa como un héroe, señalando la carretera.
+8. Kiriku se baja las gafas de sol tirando de la patilla y mira a cámara por encima, con la ceja levantada. A Guillermo se le estampa otro bicho… en las gafas, y ni se inmuta. Kiriku se sube las gafas.
+9. Negro.
+
+![Fotogramas de 00089](vista%20previa/00089%20Guillermo%20y%20Kiriku%20-%20el%20descapotable%20-%20fotogramas.png)
 
 ## Ver y grabar
 
