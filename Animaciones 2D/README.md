@@ -150,6 +150,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00111 | Guillermo y Rodri · La guerra de pulgares | 14,5 s | [MP4 60 fps](vista%20previa/00111%20Guillermo%20y%20Rodri%20-%20el%20pulso%20de%20dedos.mp4) · [fotogramas](vista%20previa/00111%20Guillermo%20y%20Rodri%20-%20el%20pulso%20de%20dedos%20-%20fotogramas.png) |
 | 00112 | Guillermo y Rodri · Las sillas de bar | 14,45 s | [MP4 60 fps](vista%20previa/00112%20Guillermo%20y%20Rodri%20-%20las%20carreras%20de%20sillas.mp4) · [fotogramas](vista%20previa/00112%20Guillermo%20y%20Rodri%20-%20las%20carreras%20de%20sillas%20-%20fotogramas.png) |
 | 00113 | Guillermo y Rodri · El concurso de eructos | 14,9 s | [MP4 60 fps](vista%20previa/00113%20Guillermo%20y%20Rodri%20-%20el%20eructo.mp4) · [fotogramas](vista%20previa/00113%20Guillermo%20y%20Rodri%20-%20el%20eructo%20-%20fotogramas.png) |
+| 00114 | Guillermo y Rodri · La broma del cubo | 14,85 s | [MP4 60 fps](vista%20previa/00114%20Guillermo%20y%20Rodri%20-%20la%20broma%20del%20cubo.mp4) · [fotogramas](vista%20previa/00114%20Guillermo%20y%20Rodri%20-%20la%20broma%20del%20cubo%20-%20fotogramas.png) |
 | 00116 | Guillermo y Rodri · La aceituna | 14,6 s | [MP4 60 fps](vista%20previa/00116%20Guillermo%20y%20Rodri%20-%20la%20apuesta%20de%20la%20aceituna.mp4) · [fotogramas](vista%20previa/00116%20Guillermo%20y%20Rodri%20-%20la%20apuesta%20de%20la%20aceituna%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
@@ -2084,6 +2085,24 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00113](vista%20previa/00113%20Guillermo%20y%20Rodri%20-%20el%20eructo%20-%20fotogramas.png)
+
+### 00114 · Guillermo y Rodri · La broma del cubo
+
+1. Negro.
+2. El pasillo de atrás del bar, de noche: alicatado verde, tubería, bombilla, cuadro de luces, extintor y perchero con delantal. La puerta del almacén está entornada y al fondo se ve oscuro. Hay una torre de cajas de botellas, un barril y una silla con un cubo de agua encima.
+3. Guillermo mira la puerta, mira a cámara con cara de pillo y se frota las manos entre risitas.
+4. Da un paso, coge el cubo por el asa, se sube a la silla y lo deja en equilibrio sobre el canto de la puerta. El cubo se bambolea… y se queda. Guillermo guiña un ojo.
+5. Baja de la silla y se va de puntillas a esconderse detrás de las cajas. Asoma la cabeza tapándose la risa.
+6. Del almacén oscuro sale Rodri silbando, con las manos en los bolsillos, y pasa justo por debajo del cubo… pero lleva el cordón desatado.
+7. Sube el pie al barril para atárselo y, al agacharse, le da a la puerta con el trasero. La puerta cruje, el cubo se tambalea y salpica, y una gota le cae a Rodri en la cabeza. Guillermo se tapa los ojos. El cubo se queda.
+8. Rodri se hace el lazo y se va silbando hacia la derecha.
+9. Guillermo sale extrañado, rascándose la cabeza, va hasta la puerta, mira el cubo y le da un toquecito con el dedo.
+10. El cubo se vuelca y le cae en la cabeza boca abajo, ¡clonc! El agua le empapa entero y le deja un charco a los pies.
+11. Rodri da un respingo, se da la vuelta y se parte de risa señalándole.
+12. Guillermo levanta el borde del cubo y asoma un ojo a cámara, chorreando. Rodri guiña un ojo.
+13. Negro.
+
+![Fotogramas de 00114](vista%20previa/00114%20Guillermo%20y%20Rodri%20-%20la%20broma%20del%20cubo%20-%20fotogramas.png)
 
 ### 00116 · Guillermo y Rodri · La aceituna
 
