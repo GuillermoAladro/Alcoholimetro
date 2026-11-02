@@ -164,6 +164,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00125 | Guillermo y Sara · No te rías | 14,85 s | [MP4 60 fps](vista%20previa/00125%20Guillermo%20y%20Sara%20-%20el%20pulso%20de%20miradas.mp4) · [fotogramas](vista%20previa/00125%20Guillermo%20y%20Sara%20-%20el%20pulso%20de%20miradas%20-%20fotogramas.png) |
 | 00126 | Guillermo y Sara · El collar | 14,6 s | [MP4 60 fps](vista%20previa/00126%20Guillermo%20y%20Sara%20-%20la%20cruz%20del%20collar.mp4) · [fotogramas](vista%20previa/00126%20Guillermo%20y%20Sara%20-%20la%20cruz%20del%20collar%20-%20fotogramas.png) |
 | 00127 | Guillermo y Sara · El monopatín de noche | 14,55 s | [MP4 60 fps](vista%20previa/00127%20Guillermo%20y%20Sara%20-%20el%20skate%20de%20noche.mp4) · [fotogramas](vista%20previa/00127%20Guillermo%20y%20Sara%20-%20el%20skate%20de%20noche%20-%20fotogramas.png) |
+| 00128 | Guillermo y Sara · La salsa picante | 14,6 s | [MP4 60 fps](vista%20previa/00128%20Guillermo%20y%20Sara%20-%20la%20pizza%20picante.mp4) · [fotogramas](vista%20previa/00128%20Guillermo%20y%20Sara%20-%20la%20pizza%20picante%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -2313,6 +2314,24 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 12. Negro.
 
 ![Fotogramas de 00127](vista%20previa/00127%20Guillermo%20y%20Sara%20-%20el%20skate%20de%20noche%20-%20fotogramas.png)
+
+### 00128 · Guillermo y Sara · La salsa picante
+
+1. Negro.
+2. Pizzería de porciones de madrugada: azulejo blanco, ventanal a la calle de noche, horno de acero encendido con cajas encima, neones de una porción y de una guindilla (sin letras) y un reloj sin números a las dos y diez. Guillermo y Sara de pie en una mesita alta con mantel de cuadros, cada uno con su porción; en medio, un bote de salsa picante con una calavera en la etiqueta y, junto a Sara, un cartón de leche con manchas de vaca.
+3. Sara coge el bote, lo pone boca abajo y empapa su porción a sacudidas (siete gotas que salpican); Guillermo se queda con la boca abierta.
+4. Le deja el bote delante, levanta una ceja y le da un mordisco enorme (hilo de queso); mastica sin inmutarse y sin pestañear.
+5. Guillermo, chulo, coge el bote y con la lengua fuera lo inclina despacísimo: en primer plano cae UNA gota en su porción (¡plip!). Lo deja y mira a cámara orgulloso.
+6. Muerde y mastica sobrado mirando a cámara… para. Ojos como platos.
+7. El rojo le sube del cuello a la frente como un termómetro; suelta la porción, le sale vapor por la oreja, humo por los pinchos y lágrimas a chorro.
+8. Echa la cabeza atrás y lanza una llamarada hacia arriba; a Sara solo se le mueve el pelo.
+9. Se abanica la boca dando saltitos con la lengua fuera. Sara deja su porción, le desliza el cartón de leche por la mesa y vuelve a morder la suya.
+10. Guillermo se bebe el cartón entero de un trago, cabeza atrás, y lo aplasta; el rojo baja, suspira aliviado con un bigote de leche.
+11. Sara le ofrece otra vez el bote; él dice que no con la cabeza y la mano, y mira a cámara.
+12. Sara se encoge de hombros, le echa dos sacudidas más a su porción y mira a cámara con media sonrisa.
+13. Negro.
+
+![Fotogramas de 00128](vista%20previa/00128%20Guillermo%20y%20Sara%20-%20la%20pizza%20picante%20-%20fotogramas.png)
 
 ## Ver y grabar
 
