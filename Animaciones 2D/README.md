@@ -153,6 +153,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00114 | Guillermo y Rodri · La broma del cubo | 14,85 s | [MP4 60 fps](vista%20previa/00114%20Guillermo%20y%20Rodri%20-%20la%20broma%20del%20cubo.mp4) · [fotogramas](vista%20previa/00114%20Guillermo%20y%20Rodri%20-%20la%20broma%20del%20cubo%20-%20fotogramas.png) |
 | 00115 | Guillermo y Rodri · El pino | 14,6 s | [MP4 60 fps](vista%20previa/00115%20Guillermo%20y%20Rodri%20-%20el%20pino.mp4) · [fotogramas](vista%20previa/00115%20Guillermo%20y%20Rodri%20-%20el%20pino%20-%20fotogramas.png) |
 | 00116 | Guillermo y Rodri · La aceituna | 14,6 s | [MP4 60 fps](vista%20previa/00116%20Guillermo%20y%20Rodri%20-%20la%20apuesta%20de%20la%20aceituna.mp4) · [fotogramas](vista%20previa/00116%20Guillermo%20y%20Rodri%20-%20la%20apuesta%20de%20la%20aceituna%20-%20fotogramas.png) |
+| 00117 | Guillermo y Rodri · Las latas | 14,6 s | [MP4 60 fps](vista%20previa/00117%20Guillermo%20y%20Rodri%20-%20el%20muro%20de%20latas.mp4) · [fotogramas](vista%20previa/00117%20Guillermo%20y%20Rodri%20-%20el%20muro%20de%20latas%20-%20fotogramas.png) |
 | 00118 | Guillermo y Rodri · El columpio | 14,8 s | [MP4 60 fps](vista%20previa/00118%20Guillermo%20y%20Rodri%20-%20el%20columpio.mp4) · [fotogramas](vista%20previa/00118%20Guillermo%20y%20Rodri%20-%20el%20columpio%20-%20fotogramas.png) |
 | 00119 | Guillermo y Rodri · El chicle | 14,8 s | [MP4 60 fps](vista%20previa/00119%20Guillermo%20y%20Rodri%20-%20el%20chicle.mp4) · [fotogramas](vista%20previa/00119%20Guillermo%20y%20Rodri%20-%20el%20chicle%20-%20fotogramas.png) |
 | 00120 | Guillermo y Rodri · El brindis | 14,5 s | [MP4 60 fps](vista%20previa/00120%20Guillermo%20y%20Rodri%20-%20el%20brindis.mp4) · [fotogramas](vista%20previa/00120%20Guillermo%20y%20Rodri%20-%20el%20brindis%20-%20fotogramas.png) |
@@ -2139,6 +2140,21 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00116](vista%20previa/00116%20Guillermo%20y%20Rodri%20-%20la%20apuesta%20de%20la%20aceituna%20-%20fotogramas.png)
+
+### 00117 · Guillermo y Rodri · Las latas
+
+1. Negro.
+2. Feria de noche: noria encendida, luces desenfocadas y la caseta de las latas (toldo festoneado, lona a rayas, dos pirámides de latas, cesta de pelotas y un peluche gigante rosa en la repisa del poste). Rodri juega lanzando una pelota al aire; Guillermo espera en el mostrador y le mira de reojo.
+3. Rodri apunta guiñando un ojo, carga y lanza por arriba: la pelota pasa rozando a Guillermo, que se agacha de golpe… ¡crash! La pirámide grande salta por los aires y las latas caen detrás del mostrador.
+4. Rodri se sacude las manos, se las mete en los bolsillos y guiña a cámara. Guillermo, boquiabierto, se pica.
+5. Guillermo coge una pelota de la cesta, se la pasa de mano, apunta a la pirámide pequeña con la lengua fuera y lanza: demasiado alta, da en la lona, que se abomba, y vuelve recta a su frente. ¡Bonk!: marca roja, estrellitas y ojos en espiral.
+6. Rodri se dobla de risa, llorando y señalándole.
+7. Guillermo, rojo de rabia, coge otra pelota, hace un molinillo enorme con la rodilla arriba, tiembla… y se le escapa hacia arriba. Rodri se aparta.
+8. Mira las latas (nada) y luego arriba: la pelota cae sobre el peluche gigante, que se tambalea, se vuelca de la repisa y le cae en la cabeza. ¡Ploof!
+9. Guillermo, con el peluche de gorro, mira a cámara resignado; Rodri, entre carcajadas, le levanta el pulgar («¡premio!») y guiña un ojo.
+10. Negro.
+
+![Fotogramas de 00117](vista%20previa/00117%20Guillermo%20y%20Rodri%20-%20el%20muro%20de%20latas%20-%20fotogramas.png)
 
 ### 00118 · Guillermo y Rodri · El columpio
 
