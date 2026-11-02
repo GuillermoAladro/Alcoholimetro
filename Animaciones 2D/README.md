@@ -153,6 +153,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00114 | Guillermo y Rodri · La broma del cubo | 14,85 s | [MP4 60 fps](vista%20previa/00114%20Guillermo%20y%20Rodri%20-%20la%20broma%20del%20cubo.mp4) · [fotogramas](vista%20previa/00114%20Guillermo%20y%20Rodri%20-%20la%20broma%20del%20cubo%20-%20fotogramas.png) |
 | 00115 | Guillermo y Rodri · El pino | 14,6 s | [MP4 60 fps](vista%20previa/00115%20Guillermo%20y%20Rodri%20-%20el%20pino.mp4) · [fotogramas](vista%20previa/00115%20Guillermo%20y%20Rodri%20-%20el%20pino%20-%20fotogramas.png) |
 | 00116 | Guillermo y Rodri · La aceituna | 14,6 s | [MP4 60 fps](vista%20previa/00116%20Guillermo%20y%20Rodri%20-%20la%20apuesta%20de%20la%20aceituna.mp4) · [fotogramas](vista%20previa/00116%20Guillermo%20y%20Rodri%20-%20la%20apuesta%20de%20la%20aceituna%20-%20fotogramas.png) |
+| 00118 | Guillermo y Rodri · El columpio | 14,8 s | [MP4 60 fps](vista%20previa/00118%20Guillermo%20y%20Rodri%20-%20el%20columpio.mp4) · [fotogramas](vista%20previa/00118%20Guillermo%20y%20Rodri%20-%20el%20columpio%20-%20fotogramas.png) |
 | 00119 | Guillermo y Rodri · El chicle | 14,8 s | [MP4 60 fps](vista%20previa/00119%20Guillermo%20y%20Rodri%20-%20el%20chicle.mp4) · [fotogramas](vista%20previa/00119%20Guillermo%20y%20Rodri%20-%20el%20chicle%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
@@ -2136,6 +2137,21 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00116](vista%20previa/00116%20Guillermo%20y%20Rodri%20-%20la%20apuesta%20de%20la%20aceituna%20-%20fotogramas.png)
+
+### 00118 · Guillermo y Rodri · El columpio
+
+1. Negro.
+2. Parque de noche, luna y ciudad al fondo. Rodri se columpia alto y chulo, con la cabeza echada atrás; Guillermo le ve, se pica y empieza a bombear con todas sus fuerzas.
+3. Guillermo sube cada vez más alto, rojo y sudando; Rodri se da cuenta, frena arrastrando los pies y se queda con la boca abierta.
+4. Guillermo da la vuelta completa por encima de la barra: las cadenas se enrollan, el columpio se encaja contra el tubo con un golpe seco y él se queda allí arriba, torcido, con chichón y los ojos en espiral.
+5. Rodri se parte de risa en su columpio, se levanta y va andando hasta debajo de él, con las manos en los bolsillos.
+6. Guillermo, colgado con las piernas a plomo, le mira suplicando; Rodri se ríe otra vez, se estira y le da un empujón en la suela.
+7. Guillermo se desenrolla dando otra vuelta entera hacia atrás por encima de la barra y pasa volando sobre Rodri, que se agacha justo a tiempo.
+8. El columpio va frenando; Guillermo, mareado con estrellitas, acaba sentado. Rodri se levanta riéndose.
+9. Los dos miran a cámara: Guillermo con sonrisa mareada y Rodri guiña un ojo.
+10. Negro.
+
+![Fotogramas de 00118](vista%20previa/00118%20Guillermo%20y%20Rodri%20-%20el%20columpio%20-%20fotogramas.png)
 
 ### 00119 · Guillermo y Rodri · El chicle
 
