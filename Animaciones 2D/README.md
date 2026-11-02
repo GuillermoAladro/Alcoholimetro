@@ -174,6 +174,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00135 | Guillermo y Yorgi · Los pendientes | 14,6 s | [MP4 60 fps](vista%20previa/00135%20Guillermo%20y%20Yorgi%20-%20el%20pendiente.mp4) · [fotogramas](vista%20previa/00135%20Guillermo%20y%20Yorgi%20-%20el%20pendiente%20-%20fotogramas.png) |
 | 00136 | Guillermo y Yorgi · La carrera | 14,6 s | [MP4 60 fps](vista%20previa/00136%20Guillermo%20y%20Yorgi%20-%20la%20carrera.mp4) · [fotogramas](vista%20previa/00136%20Guillermo%20y%20Yorgi%20-%20la%20carrera%20-%20fotogramas.png) |
 | 00137 | Guillermo y Yorgi · La sorpresa | 14,6 s | [MP4 60 fps](vista%20previa/00137%20Guillermo%20y%20Yorgi%20-%20el%20abrazo%20de%20cumpleanos.mp4) · [fotogramas](vista%20previa/00137%20Guillermo%20y%20Yorgi%20-%20el%20abrazo%20de%20cumpleanos%20-%20fotogramas.png) |
+| 00138 | Guillermo y Yorgi · La mancuerna | 14,4 s | [MP4 60 fps](vista%20previa/00138%20Guillermo%20y%20Yorgi%20-%20la%20mancuerna.mp4) · [fotogramas](vista%20previa/00138%20Guillermo%20y%20Yorgi%20-%20la%20mancuerna%20-%20fotogramas.png) |
 | 00139 | Guillermo y Yorgi · La siesta | 14,6 s | [MP4 60 fps](vista%20previa/00139%20Guillermo%20y%20Yorgi%20-%20la%20siesta.mp4) · [fotogramas](vista%20previa/00139%20Guillermo%20y%20Yorgi%20-%20la%20siesta%20-%20fotogramas.png) |
 | 00140 | Guillermo y Yorgi · El selfie del gimnasio | 14,3 s | [MP4 60 fps](vista%20previa/00140%20Guillermo%20y%20Yorgi%20-%20el%20selfie%20del%20gimnasio.mp4) · [fotogramas](vista%20previa/00140%20Guillermo%20y%20Yorgi%20-%20el%20selfie%20del%20gimnasio%20-%20fotogramas.png) |
 
@@ -2494,6 +2495,23 @@ Un paseo peatonal de un pueblo blanco, una tarde de sol (fachadas de colores al 
 12. Negro.
 
 ![Fotogramas de 00137](vista%20previa/00137%20Guillermo%20y%20Yorgi%20-%20el%20abrazo%20de%20cumpleanos%20-%20fotogramas.png)
+
+### 00138 · Guillermo y Yorgi · La mancuerna
+
+1. Negro.
+2. El rincón de pesas de un gimnasio: pared de espejos, el mueble de mancuernas (falta una), carteles con iconos, un banco y kettlebells. Yorgi se pasa una mancuerna enorme de una mano a otra, dando una vuelta en el aire cada vez, y Guillermo la sigue con los ojos, alucinando.
+3. Yorgi le levanta una ceja («¿quieres?»). Guillermo asiente y saca las manos, y Yorgi coge impulso y se la lanza.
+4. Guillermo la caza al vuelo y pone cara de chulo… y el peso le arrastra: primero caen los brazos y luego el cuerpo, con las rodillas dobladas.
+5. Colorado y temblando, la sube hasta el pecho, se tambalea hacia atrás y cae de espaldas como un tablón. ¡Pum!, nube de polvo, y la mancuerna rebota y se queda encima de su pecho.
+6. Atrapado, solo se le mueven los brazos y la cabeza: estrellitas, empuja un disco sin conseguir nada, boquea, sacude el brazo en el aire y da tres palmadas en el suelo.
+7. Yorgi, que se ha apartado un par de pasos al verle caer, se aguanta la risa con la mano en la boca. Luego pasa por detrás de él con las manos en los bolsillos, se da la vuelta junto a su cabeza, se agacha y la levanta con un dedo debajo de la barra.
+8. La hace botar en el dedo mientras da un pasito, la caza por un disco y la aprieta: el disco se aplasta y chirría, era de gomaespuma. Otra vez: ¡ñic!
+9. Guillermo la mira inexpresivo, con un tic en el ojo… y se levanta tieso como una tabla, girando sobre los talones.
+10. Se da la vuelta, se sacude la camiseta y el hombro y saca bíceps con la barbilla alta, como si nada (brillito en el bracito). Yorgi se parte de risa.
+11. Los dos miran a cámara y Yorgi guiña un ojo y aprieta la mancuerna una última vez.
+12. Negro.
+
+![Fotogramas de 00138](vista%20previa/00138%20Guillermo%20y%20Yorgi%20-%20la%20mancuerna%20-%20fotogramas.png)
 
 ### 00139 · Guillermo y Yorgi · La siesta
 1. Negro.
