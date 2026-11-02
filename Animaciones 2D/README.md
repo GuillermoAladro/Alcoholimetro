@@ -120,6 +120,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00081 | Guillermo y Kiriku · Las gafas de sol | 14,4 s | [MP4 60 fps](vista%20previa/00081%20Guillermo%20y%20Kiriku%20-%20las%20gafas%20de%20sol.mp4) · [fotogramas](vista%20previa/00081%20Guillermo%20y%20Kiriku%20-%20las%20gafas%20de%20sol%20-%20fotogramas.png) |
 | 00082 | Guillermo y Kiriku · El postureo | 14,4 s | [MP4 60 fps](vista%20previa/00082%20Guillermo%20y%20Kiriku%20-%20el%20selfie%20de%20postureo.mp4) · [fotogramas](vista%20previa/00082%20Guillermo%20y%20Kiriku%20-%20el%20selfie%20de%20postureo%20-%20fotogramas.png) |
 | 00083 | Guillermo y Kiriku · El yate | 14,8 s | [MP4 60 fps](vista%20previa/00083%20Guillermo%20y%20Kiriku%20-%20el%20yate.mp4) · [fotogramas](vista%20previa/00083%20Guillermo%20y%20Kiriku%20-%20el%20yate%20-%20fotogramas.png) |
+| 00085 | Guillermo y Kiriku · La cata de vino | 14,8 s | [MP4 60 fps](vista%20previa/00085%20Guillermo%20y%20Kiriku%20-%20la%20cata%20de%20vino.mp4) · [fotogramas](vista%20previa/00085%20Guillermo%20y%20Kiriku%20-%20la%20cata%20de%20vino%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1578,6 +1579,23 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00083](vista%20previa/00083%20Guillermo%20y%20Kiriku%20-%20el%20yate%20-%20fotogramas.png)
+
+### 00085 · Guillermo y Kiriku · La cata de vino
+
+1. Negro.
+2. Una vinoteca elegante de noche: pared granate con damasco, zócalo de nogal, barricas apiladas, un botellero de rombos con botellas sin etiqueta y copas colgadas, un cuadro de viñedo al atardecer, apliques con velas y, bajo una lámpara de latón, una mesa alta con mantel blanco, un decantador, una vela y un platito de uvas y queso. Guillermo y Kiriku, de pie a los lados, cada uno con su copa de tinto.
+3. Kiriku coge su copa por el tallo, con el meñique fuera, y la hace girar con suavidad: el vino sube por las paredes y deja lágrimas. Guillermo no le quita ojo.
+4. La huele con los ojos cerrados (volutas de aroma), da un sorbito y pone cara de gloria: «mm».
+5. Guillermo, impresionado, coge la suya con el meñique tiesísimo, mira a cámara muy chulo y la hace girar… cada vez más rápido, más fuerte, más alto.
+6. El vino sale de la copa en un anillo que da la vuelta por el aire y se le estampa en la cara: ¡chof! Se queda con la cara llena de manchas que gotean; Kiriku levanta una ceja y aguanta la risa. Mirada muy seria a cámara.
+7. Vuelve a imitarle: ojos cerrados, la nariz bien dentro de la copa… y sorbe: ¡el vino se le mete por la nariz! Se pone rojo, le lloran los ojos…
+8. Ah… ah… ah… Kiriku se lleva su copa al pecho para protegerla… ¡achís!: una rociada de vino que deja el mantel lleno de lunares.
+9. Guillermo se limpia la nariz con la muñeca, mira la copa con decisión y se la bebe de un trago, con la cabeza hacia atrás (glu, glu), y hace gárgaras: burbujas, mofletes temblando.
+10. Kiriku deja su copa en la mesa, se pellizca el puente de la nariz con los ojos cerrados y suspira, negando despacio con la cabeza.
+11. Guillermo traga, sonríe a cámara con bigote de vino, le da hipo (sale una burbujita) y brinda con la copa vacía; Kiriku abre un ojo hacia la cámara.
+12. Negro.
+
+![Fotogramas de 00085](vista%20previa/00085%20Guillermo%20y%20Kiriku%20-%20la%20cata%20de%20vino%20-%20fotogramas.png)
 
 ## Ver y grabar
 
