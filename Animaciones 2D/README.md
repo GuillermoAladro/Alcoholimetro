@@ -170,6 +170,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00131 | Guillermo y Yorgi · El batido de proteínas | 14,8 s | [MP4 60 fps](vista%20previa/00131%20Guillermo%20y%20Yorgi%20-%20el%20desayuno%20de%20campeones.mp4) · [fotogramas](vista%20previa/00131%20Guillermo%20y%20Yorgi%20-%20el%20desayuno%20de%20campeones%20-%20fotogramas.png) |
 | 00132 | Guillermo y Yorgi · Las flexiones | 14,6 s | [MP4 60 fps](vista%20previa/00132%20Guillermo%20y%20Yorgi%20-%20las%20flexiones.mp4) · [fotogramas](vista%20previa/00132%20Guillermo%20y%20Yorgi%20-%20las%20flexiones%20-%20fotogramas.png) |
 | 00133 | Guillermo y Yorgi · Llegas tarde | 14,4 s | [MP4 60 fps](vista%20previa/00133%20Guillermo%20y%20Yorgi%20-%20el%20reloj.mp4) · [fotogramas](vista%20previa/00133%20Guillermo%20y%20Yorgi%20-%20el%20reloj%20-%20fotogramas.png) |
+| 00134 | Guillermo y Yorgi · La hamburguesa gigante | 14,9 s | [MP4 60 fps](vista%20previa/00134%20Guillermo%20y%20Yorgi%20-%20la%20barbacoa.mp4) · [fotogramas](vista%20previa/00134%20Guillermo%20y%20Yorgi%20-%20la%20barbacoa%20-%20fotogramas.png) |
 | 00135 | Guillermo y Yorgi · Los pendientes | 14,6 s | [MP4 60 fps](vista%20previa/00135%20Guillermo%20y%20Yorgi%20-%20el%20pendiente.mp4) · [fotogramas](vista%20previa/00135%20Guillermo%20y%20Yorgi%20-%20el%20pendiente%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
@@ -2423,6 +2424,21 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 12. Negro.
 
 ![Fotogramas de 00133](vista%20previa/00133%20Guillermo%20y%20Yorgi%20-%20el%20reloj%20-%20fotogramas.png)
+
+### 00134 · Guillermo y Yorgi · La hamburguesa gigante
+
+1. Negro.
+2. Una hamburguesería de las de antes: pared verde menta, neón con forma de hamburguesa, pizarras de menú solo con dibujos y suelo de cuadros. Guillermo y Yorgi, en taburetes de cromo, uno a cada lado de la barra.
+3. ¡Ding! Por la ventanilla de la cocina salen deslizándose dos torres de hamburguesa con su banderita y se paran delante de cada uno, bamboleándose como un flan. Guillermo se queda con la boca abierta.
+4. Yorgi se frota las manos, coge la suya con las dos manos y desencaja la mandíbula hasta el pecho: se la come en tres bocados (cada uno deja la marca de los dientes, el último con palillo y todo), mastica con la cara hinchada, traga y se da palmaditas en la barriga.
+5. Guillermo traga saliva mirando a cámara, se arma de valor y lo intenta: abre la boca todo lo que puede, tiembla y se pone rojo, pero no cabe.
+6. La aplasta entre las manos: la torre se comprime y el kétchup y la mostaza salen a chorro por los dos lados y le dejan la cara llena de manchas.
+7. Aparta la mano de abajo del susto y la torre, colgando del pan de arriba, se desmorona: las capas caen de una en una a su regazo, cada una con su botecito, mientras él las sigue con la mirada y Yorgi aguanta la risa.
+8. Le queda solo la tapa. Yorgi, sonriendo, le ofrece una servilleta; Guillermo deja la tapa en el plato y se la remete en el cuello como babero (tarde).
+9. Recoge la tapa, le da un mordisquito diminuto con toda la dignidad del mundo y los dos miran a cámara; Yorgi, con el pulgar arriba.
+10. Negro.
+
+![Fotogramas de 00134](vista%20previa/00134%20Guillermo%20y%20Yorgi%20-%20la%20barbacoa%20-%20fotogramas.png)
 
 ### 00135 · Guillermo y Yorgi · Los pendientes
 
