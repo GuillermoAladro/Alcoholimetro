@@ -145,6 +145,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00106 | Guillermo y Paradigma · La barbacoa | 14,6 s | [MP4 60 fps](vista%20previa/00106%20Guillermo%20y%20Paradigma%20-%20la%20barbacoa.mp4) · [fotogramas](vista%20previa/00106%20Guillermo%20y%20Paradigma%20-%20la%20barbacoa%20-%20fotogramas.png) |
 | 00107 | Guillermo y Paradigma · El espejo | 14,7 s | [MP4 60 fps](vista%20previa/00107%20Guillermo%20y%20Paradigma%20-%20el%20reflejo.mp4) · [fotogramas](vista%20previa/00107%20Guillermo%20y%20Paradigma%20-%20el%20reflejo%20-%20fotogramas.png) |
 | 00108 | Guillermo y Paradigma · La partida de cartas | 14,5 s | [MP4 60 fps](vista%20previa/00108%20Guillermo%20y%20Paradigma%20-%20la%20carta.mp4) · [fotogramas](vista%20previa/00108%20Guillermo%20y%20Paradigma%20-%20la%20carta%20-%20fotogramas.png) |
+| 00112 | Guillermo y Rodri · Las sillas de bar | 14,45 s | [MP4 60 fps](vista%20previa/00112%20Guillermo%20y%20Rodri%20-%20las%20carreras%20de%20sillas.mp4) · [fotogramas](vista%20previa/00112%20Guillermo%20y%20Rodri%20-%20las%20carreras%20de%20sillas%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1993,6 +1994,23 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00108](vista%20previa/00108%20Guillermo%20y%20Paradigma%20-%20la%20carta%20-%20fotogramas.png)
+
+### 00112 · Guillermo y Rodri · Las sillas de bar
+
+1. Negro.
+2. Bar con gramola, luces de colores, neón de cóctel y dos taburetes rojos bajo el foco. Guillermo y Rodri esperan con las manos en los bolsillos.
+3. Rodri sonríe, agarra uno de los taburetes, lo arrastra hacia atrás y lo lanza de un latigazo; sale rodando de cuadro.
+4. Rodri da una palmada y guiña; Guillermo levanta la ceja, pícaro, y sube los puños.
+5. Suena la gramola y las notas salen flotando. Los dos dan una vuelta entera alrededor del único taburete con pasitos de baile al ritmo, cruzándose por delante y por detrás.
+6. Rayajo de aguja: la música se corta y las notas caen grises. Se quedan congelados, se miran y se agachan.
+7. Se tiran a la vez y caen medio cada uno en el asiento, espalda con espalda, con un golpe y una estrella.
+8. El taburete empieza a girar como loco con los dos encima, con caras de pánico.
+9. El taburete los despide en direcciones opuestas: vuelan en arco y caen sentados en el suelo con polvo y estrellitas.
+10. El taburete sigue girando solo, frena poco a poco y se para vacío, con la estrella mirando a cámara.
+11. Sacuden la cabeza, miran el taburete, se miran entre ellos y se echan a reír. Guillermo mira a cámara y Rodri guiña.
+12. Negro.
+
+![Fotogramas de 00112](vista%20previa/00112%20Guillermo%20y%20Rodri%20-%20las%20carreras%20de%20sillas%20-%20fotogramas.png)
 
 ## Ver y grabar
 
