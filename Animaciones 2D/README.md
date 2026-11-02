@@ -141,6 +141,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00102 | Guillermo y Paradigma · La moto | 14,6 s | [MP4 60 fps](vista%20previa/00102%20Guillermo%20y%20Paradigma%20-%20la%20moto.mp4) · [fotogramas](vista%20previa/00102%20Guillermo%20y%20Paradigma%20-%20la%20moto%20-%20fotogramas.png) |
 | 00103 | Guillermo y Paradigma · La meditación | 14,6 s | [MP4 60 fps](vista%20previa/00103%20Guillermo%20y%20Paradigma%20-%20la%20meditacion.mp4) · [fotogramas](vista%20previa/00103%20Guillermo%20y%20Paradigma%20-%20la%20meditacion%20-%20fotogramas.png) |
 | 00105 | Guillermo y Paradigma · El vinilo | 14,6 s | [MP4 60 fps](vista%20previa/00105%20Guillermo%20y%20Paradigma%20-%20el%20vinilo.mp4) · [fotogramas](vista%20previa/00105%20Guillermo%20y%20Paradigma%20-%20el%20vinilo%20-%20fotogramas.png) |
+| 00106 | Guillermo y Paradigma · La barbacoa | 14,6 s | [MP4 60 fps](vista%20previa/00106%20Guillermo%20y%20Paradigma%20-%20la%20barbacoa.mp4) · [fotogramas](vista%20previa/00106%20Guillermo%20y%20Paradigma%20-%20la%20barbacoa%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1926,6 +1927,22 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 10. Negro.
 
 ![Fotogramas de 00105](vista%20previa/00105%20Guillermo%20y%20Paradigma%20-%20el%20vinilo%20-%20fotogramas.png)
+
+### 00106 · Guillermo y Paradigma · La barbacoa
+
+1. Negro.
+2. El jardín de atrás en una tarde de verano: el sol bajando tras una valla de madera, árboles, la pared de la casa con su ventana encendida y geranios, una guirnalda de bombillas, el césped, unas losas, una tumbona y, en medio, una barbacoa de bola con las brasas encendidas y cinco salchichas en la parrilla; a la izquierda, un carrito de madera con panecillos, kétchup, mostaza y un bote de líquido encendedor.
+3. Paradigma, muy tranquilo, da la vuelta a las salchichas con las pinzas, una a una (chisporroteo y marcas de la parrilla), cabeceando con calma. Guillermo huele el humo con los ojos cerrados, se relame y asiente.
+4. Guillermo se frota las manos y le pide las pinzas con la mano; Paradigma se encoge de hombros, lanza las pinzas al aire, las caza por la mitad y se las da por el mango.
+5. Guillermo hace «clac, clac» con ellas y mira a cámara muy chulo. Mira las brasas, no le convencen… se le ocurre algo y coge del carrito el bote de líquido encendedor.
+6. Paradigma levanta una ceja y se aparta un paso. Guillermo echa dos chorros a las brasas… no pasa nada. Se asoma a mirar…
+7. ¡FUUUM!: una bola de fuego enorme. Las salchichas salen volando dando vueltas.
+8. Guillermo se queda congelado, con las pinzas en alto: manchas de hollín en la frente, la mejilla y la punta de la nariz, sin cejas (solo unos ricitos chamuscados) y con las puntas de los pinchos negras y echando humo.
+9. Las salchichas caen otra vez a la parrilla, doraditas y con sus marcas; una cae justo entre los dedos de Paradigma, que la sopla, le da un bocado y asiente con los ojos cerrados: «mm».
+10. Guillermo parpadea y mira a cámara; a un pincho le sale una llamita que se apaga con un anillo de humo. Él lo mira y vuelve a mirar a cámara; Paradigma levanta la salchicha y guiña un ojo.
+11. Negro.
+
+![Fotogramas de 00106](vista%20previa/00106%20Guillermo%20y%20Paradigma%20-%20la%20barbacoa%20-%20fotogramas.png)
 
 ## Ver y grabar
 
