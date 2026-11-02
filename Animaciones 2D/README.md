@@ -110,6 +110,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00071 | Guillermo y Gabacho · El penalti | 14,4 s | [MP4 60 fps](vista%20previa/00071%20Guillermo%20y%20Gabacho%20-%20el%20penalti.mp4) · [fotogramas](vista%20previa/00071%20Guillermo%20y%20Gabacho%20-%20el%20penalti%20-%20fotogramas.png) |
 | 00072 | Guillermo y Gabacho · El cruasán | 14,5 s | [MP4 60 fps](vista%20previa/00072%20Guillermo%20y%20Gabacho%20-%20el%20croissant.mp4) · [fotogramas](vista%20previa/00072%20Guillermo%20y%20Gabacho%20-%20el%20croissant%20-%20fotogramas.png) |
 | 00073 | Guillermo y Gabacho · La chilena | 14,3 s | [MP4 60 fps](vista%20previa/00073%20Guillermo%20y%20Gabacho%20-%20la%20chilena.mp4) · [fotogramas](vista%20previa/00073%20Guillermo%20y%20Gabacho%20-%20la%20chilena%20-%20fotogramas.png) |
+| 00076 | Guillermo y Gabacho · La boina | 14,8 s | [MP4 60 fps](vista%20previa/00076%20Guillermo%20y%20Gabacho%20-%20la%20boina.mp4) · [fotogramas](vista%20previa/00076%20Guillermo%20y%20Gabacho%20-%20la%20boina%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1404,6 +1405,23 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00073](vista%20previa/00073%20Guillermo%20y%20Gabacho%20-%20la%20chilena%20-%20fotogramas.png)
+
+### 00076 · Guillermo y Gabacho · La boina
+
+1. Negro.
+2. Un rincón de Montmartre a la hora dorada: fachada de piedra con balcones de hierro y geranios, el café con su toldo de rayas, una mesita de mármol con su silla de bistró, una farola, la escalinata con su farol, un plátano dorado, adoquines, el caballete de Gabacho con un lienzo de manchas de colores y dos palomas picoteando.
+3. Gabacho lanza al aire una boina negra, que da una vuelta y le cae en los rizos; se la ladea con dos dedos, muy satisfecho.
+4. Pose de pintor: brazo estirado, pincel en vertical y pulgar arriba, un ojo cerrado, midiendo a Guillermo, que saca pecho y posa con la mano en la cadera. Después se retuerce un bigote imaginario.
+5. Guillermo señala la boina, junta las manos y le pone ojitos.
+6. Gabacho se ríe, se pone el pincel entre los dientes, se saca otra boina del bolsillo y la abre de un sacudón. Guillermo hinca una rodilla, muy solemne, como si le fueran a armar caballero.
+7. Gabacho se acerca y se la pone… pero los pinchos del pelo la atraviesan (¡pic, pic, pic!) y se queda pinchada en lo alto, como un gorrito en un erizo.
+8. Guillermo se levanta orgullosísimo y se la presenta a cámara; Gabacho aguanta la risa con los mofletes hinchados.
+9. Guillermo la nota, echa la cabeza atrás y la baja tirando del borde: los pinchos asoman todavía más… la suelta y ¡boing!, la boina sale volando y vuelve a caer pinchada. Gabacho se tapa la boca.
+10. Segundo intento, con rabia y con todas sus fuerzas: rojo, temblando, se la hunde hasta las cejas… y ¡BOING!: la boina sale disparada dando vueltas por el aire y aterriza encima de la de Gabacho.
+11. Dos boinas apiladas: Gabacho, con el pincel en los dientes, posa orgullosísimo retorciéndose el bigote; Guillermo, sin boina, hace pucheros a cámara.
+12. Negro.
+
+![Fotogramas de 00076](vista%20previa/00076%20Guillermo%20y%20Gabacho%20-%20la%20boina%20-%20fotogramas.png)
 
 ## Ver y grabar
 
