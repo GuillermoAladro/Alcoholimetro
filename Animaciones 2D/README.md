@@ -115,6 +115,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00076 | Guillermo y Gabacho · La boina | 14,8 s | [MP4 60 fps](vista%20previa/00076%20Guillermo%20y%20Gabacho%20-%20la%20boina.mp4) · [fotogramas](vista%20previa/00076%20Guillermo%20y%20Gabacho%20-%20la%20boina%20-%20fotogramas.png) |
 | 00077 | Guillermo y Gabacho · El karaoke | 14,8 s | [MP4 60 fps](vista%20previa/00077%20Guillermo%20y%20Gabacho%20-%20el%20karaoke.mp4) · [fotogramas](vista%20previa/00077%20Guillermo%20y%20Gabacho%20-%20el%20karaoke%20-%20fotogramas.png) |
 | 00078 | Guillermo y Gabacho · La ola | 14,25 s | [MP4 60 fps](vista%20previa/00078%20Guillermo%20y%20Gabacho%20-%20la%20ola.mp4) · [fotogramas](vista%20previa/00078%20Guillermo%20y%20Gabacho%20-%20la%20ola%20-%20fotogramas.png) |
+| 00079 | Guillermo y Gabacho · El rizo | 14,8 s | [MP4 60 fps](vista%20previa/00079%20Guillermo%20y%20Gabacho%20-%20el%20pelo%20rizado.mp4) · [fotogramas](vista%20previa/00079%20Guillermo%20y%20Gabacho%20-%20el%20pelo%20rizado%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1495,6 +1496,22 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 12. Negro.
 
 ![Fotogramas de 00078](vista%20previa/00078%20Guillermo%20y%20Gabacho%20-%20la%20ola%20-%20fotogramas.png)
+
+### 00079 · Guillermo y Gabacho · El rizo
+
+1. Negro.
+2. Rincón de barbería por la tarde: pared verde botella con filete dorado, zócalo de azulejos blancos, suelo de damero, un pilar alicatado con su toalla de rayas, un reloj sin números, una lámpara de pantalla y el tocador con encimera de mármol, lavabo, frascos sin etiquetas, el bote de los peines y un espejo redondo con marco de latón. Gabacho, sentado en un taburete rojo, se peina los rizos con una púa; Guillermo lo mira con las manos en los bolsillos.
+3. Mete la púa, la levanta, la vuelve a meter… y a la tercera se le queda clavada. Tira dos veces y la cabeza se le va detrás; Guillermo aguanta la risa y mira a cámara.
+4. Gabacho se encoge de hombros, la deja ahí como un adorno y, muy orgulloso, se guiña en el espejo y se señala.
+5. Guillermo va a ayudarle: agarra la púa y tira; Gabacho se agarra a la encimera y el taburete se inclina, pero la púa no sale.
+6. Guillermo se enfada (vena), le planta el pie en los riñones y tira con todas sus fuerzas: rojo, temblando, el cuello de Gabacho se estira y los rizos se tensan…
+7. ¡Pop!: la púa sale de golpe, con una lluvia de rizos sueltos, y Guillermo sale volando hacia atrás hasta estamparse contra el pilar: se raja un azulejo (cae un trozo al suelo y la grieta se queda) y resbala hasta quedarse sentado, mareado, con los ojos en espiral y estrellitas.
+8. La púa sigue en el aire, da la vuelta por todo lo alto como un bumerán (Gabacho la sigue con la mirada) y ¡zas!: se clava en los pinchos de Guillermo.
+9. Gabacho se toca el hueco del rizo, saca una púa de repuesto lila del bolsillo y se la clava un poco más arriba, muy satisfecho.
+10. Gira el taburete hacia Guillermo: cada uno con su púa clavada, se miran y asienten con aprobación (Guillermo, con el pulgar arriba) y miran a cámara.
+11. Negro.
+
+![Fotogramas de 00079](vista%20previa/00079%20Guillermo%20y%20Gabacho%20-%20el%20pelo%20rizado%20-%20fotogramas.png)
 
 ## Ver y grabar
 
