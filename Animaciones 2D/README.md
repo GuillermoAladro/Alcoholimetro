@@ -135,6 +135,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00096 | Guillermo y Marta · El microondas | 14,9 s | [MP4 60 fps](vista%20previa/00096%20Guillermo%20y%20Marta%20-%20las%20palomitas%20de%20maiz.mp4) · [fotogramas](vista%20previa/00096%20Guillermo%20y%20Marta%20-%20las%20palomitas%20de%20maiz%20-%20fotogramas.png) |
 | 00097 | Guillermo y Marta · Bajo la lluvia | 14,4 s | [MP4 60 fps](vista%20previa/00097%20Guillermo%20y%20Marta%20-%20el%20paraguas%20compartido.mp4) · [fotogramas](vista%20previa/00097%20Guillermo%20y%20Marta%20-%20el%20paraguas%20compartido%20-%20fotogramas.png) |
 | 00098 | Guillermo y Marta · El puzle | 14,6 s | [MP4 60 fps](vista%20previa/00098%20Guillermo%20y%20Marta%20-%20el%20puzle.mp4) · [fotogramas](vista%20previa/00098%20Guillermo%20y%20Marta%20-%20el%20puzle%20-%20fotogramas.png) |
+| 00101 | Guillermo y Paradigma · La guitarra invisible | 14,9 s | [MP4 60 fps](vista%20previa/00101%20Guillermo%20y%20Paradigma%20-%20el%20air%20guitar.mp4) · [fotogramas](vista%20previa/00101%20Guillermo%20y%20Paradigma%20-%20el%20air%20guitar%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1827,6 +1828,20 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00098](vista%20previa/00098%20Guillermo%20y%20Marta%20-%20el%20puzle%20-%20fotogramas.png)
+
+### 00101 · Guillermo y Paradigma · La guitarra invisible
+
+1. Negro.
+2. El escenario pequeño de un bar, de noche: pared de ladrillo oscuro con luz cálida y magenta, dos focos, guirnaldas de bombillas de colores, una tarima de madera con marcas de cinta, un cable y una fila de bombillitas en el canto, una tarima de batería vacía, un amplificador grande y otro pequeño, una lámpara roja colgando sobre el escenario y, a la izquierda, la pista de baile vacía con sus taburetes.
+3. Paradigma, con los ojos cerrados, toca una guitarra invisible: rasguea a compás, los dedos corren por un mástil que no existe y le salen notas de colores. Guillermo le mira boquiabierto.
+4. A Guillermo se le enciende la bombilla: saca dos baquetas invisibles, las hace girar, cuenta chocándolas (uno, dos, tres)… y se lanza a una batería invisible, frenético, con la lengua fuera y un destello en cada parche que no está. Paradigma cabecea y se arranca con un solo.
+5. Redoble… ¡y el platillo! Pero el «platillo» es la lámpara: ¡clang!, sale disparada, se balancea y vuelve para darle un coscorrón en toda la cabeza (estrella y chichón).
+6. Mareado, con los ojos en espiral y estrellitas, Guillermo sigue tocando a destiempo. Paradigma abre un ojo, sonríe y va a por el final: dos zancadas, se tira de rodillas, se desliza por la tarima y se para justo en el borde con el último acorde, rugiendo con el brazo en alto.
+7. Guillermo, impresionado, lo intenta: dos pasitos, se tira de rodillas… y se pasa del borde. Se queda un instante en el aire, mira a cámara con cara de pánico… y cae del escenario: ¡pum!, polvareda.
+8. Asoma por el borde, mareado y con el chichón, y levanta el pulgar; Paradigma le mira, mira a cámara y guiña un ojo.
+9. Negro.
+
+![Fotogramas de 00101](vista%20previa/00101%20Guillermo%20y%20Paradigma%20-%20el%20air%20guitar%20-%20fotogramas.png)
 
 ## Ver y grabar
 
