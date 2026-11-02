@@ -155,6 +155,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00116 | Guillermo y Rodri · La aceituna | 14,6 s | [MP4 60 fps](vista%20previa/00116%20Guillermo%20y%20Rodri%20-%20la%20apuesta%20de%20la%20aceituna.mp4) · [fotogramas](vista%20previa/00116%20Guillermo%20y%20Rodri%20-%20la%20apuesta%20de%20la%20aceituna%20-%20fotogramas.png) |
 | 00118 | Guillermo y Rodri · El columpio | 14,8 s | [MP4 60 fps](vista%20previa/00118%20Guillermo%20y%20Rodri%20-%20el%20columpio.mp4) · [fotogramas](vista%20previa/00118%20Guillermo%20y%20Rodri%20-%20el%20columpio%20-%20fotogramas.png) |
 | 00119 | Guillermo y Rodri · El chicle | 14,8 s | [MP4 60 fps](vista%20previa/00119%20Guillermo%20y%20Rodri%20-%20el%20chicle.mp4) · [fotogramas](vista%20previa/00119%20Guillermo%20y%20Rodri%20-%20el%20chicle%20-%20fotogramas.png) |
+| 00120 | Guillermo y Rodri · El brindis | 14,5 s | [MP4 60 fps](vista%20previa/00120%20Guillermo%20y%20Rodri%20-%20el%20brindis.mp4) · [fotogramas](vista%20previa/00120%20Guillermo%20y%20Rodri%20-%20el%20brindis%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -2167,6 +2168,20 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 10. Negro.
 
 ![Fotogramas de 00119](vista%20previa/00119%20Guillermo%20y%20Rodri%20-%20el%20chicle%20-%20fotogramas.png)
+
+### 00120 · Guillermo y Rodri · El brindis
+
+1. Negro.
+2. Una cervecería de noche: pared encalada con vigas, ventanas en arco con la luna, banderines azules y blancos, reloj de cuco, lámparas de hierro con velas, una mesa larga con jarras y un pretzel, y un barril con su grifo. Guillermo y Rodri, cada uno con una jarra de cristal enorme llena de cerveza y con su corona de espuma, se miran y alzan las jarras muy solemnes.
+3. Cogen carrerilla: bajan la jarra a la cadera, se echan atrás, aprietan los dientes… y brindan con todas sus fuerzas.
+4. ¡Pof! Las dos jarras revientan en una nube de espuma que los envuelve. Vuelan pegotes que se estampan en la pared, la mesa, las ventanas y el suelo, se balancean las lámparas y el cuco sale del susto.
+5. La nube se posa sobre ellos. Quedan quietos, con los ojos cerrados, cubiertos de espuma de la cabeza a los hombros: corona blanca en el pelo, la barba de Rodri blanca y goterones por el pecho. A Guillermo le cuelga una gota de la nariz que acaba cayendo.
+6. Parpadean (los ojos quedan limpios) y se miran muy serios… Se les escapa un «pff» y acaban partiéndose de risa, con lágrimas y soltando espuma a cada sacudida.
+7. Se relamen el bigote de espuma, primero Guillermo y luego Rodri: la lengua lo barre de lado a lado. «Mmm».
+8. Con el culito que les queda en las jarras, brindan otra vez, ahora con suavidad (¡tin!), miran a cámara y Rodri guiña un ojo.
+9. Negro.
+
+![Fotogramas de 00120](vista%20previa/00120%20Guillermo%20y%20Rodri%20-%20el%20brindis%20-%20fotogramas.png)
 
 ## Ver y grabar
 
