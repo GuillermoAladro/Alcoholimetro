@@ -130,6 +130,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00091 | Guillermo y Marta · El café con arte | 14,8 s | [MP4 60 fps](vista%20previa/00091%20Guillermo%20y%20Marta%20-%20el%20cafe%20con%20arte.mp4) · [fotogramas](vista%20previa/00091%20Guillermo%20y%20Marta%20-%20el%20cafe%20con%20arte%20-%20fotogramas.png) |
 | 00092 | Guillermo y Marta · La bufanda | 14,8 s | [MP4 60 fps](vista%20previa/00092%20Guillermo%20y%20Marta%20-%20la%20bufanda.mp4) · [fotogramas](vista%20previa/00092%20Guillermo%20y%20Marta%20-%20la%20bufanda%20-%20fotogramas.png) |
 | 00093 | Guillermo y Marta · El libro | 14,6 s | [MP4 60 fps](vista%20previa/00093%20Guillermo%20y%20Marta%20-%20el%20libro.mp4) · [fotogramas](vista%20previa/00093%20Guillermo%20y%20Marta%20-%20el%20libro%20-%20fotogramas.png) |
+| 00094 | Guillermo y Marta · La pinza del pelo | 14,6 s | [MP4 60 fps](vista%20previa/00094%20Guillermo%20y%20Marta%20-%20la%20pinza%20del%20pelo.mp4) · [fotogramas](vista%20previa/00094%20Guillermo%20y%20Marta%20-%20la%20pinza%20del%20pelo%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1743,6 +1744,22 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00093](vista%20previa/00093%20Guillermo%20y%20Marta%20-%20el%20libro%20-%20fotogramas.png)
+
+### 00094 · Guillermo y Marta · La pinza del pelo
+
+1. Negro.
+2. Un rincón de dormitorio a media mañana: papel pintado crema con ramitas, una ventana con visillos por la que entra el sol en rayos, una balda con libros, una planta grande, un tocador blanco con su espejo redondo y una alfombra redonda. Guillermo y Marta, con las manos en los bolsillos.
+3. Marta se lleva la mano a la nuca y se quita la pinza de carey: la melena se le suelta, cae despacio, rebota y se mece; ella la sacude con los ojos cerrados, entre destellos. Guillermo se queda embobado (corazones).
+4. Guillermo señala la pinza, junta las manos y le pone ojitos; Marta sonríe, se la pasa a la otra mano y se la da.
+5. Guillermo agacha la cabeza y se la engancha en un pincho de delante… el pincho se dobla con el peso y la pinza se le queda colgando delante de los ojos, balanceándose. Él la mira con los ojos en blanco y Marta aguanta la risa con los mofletes hinchados.
+6. La quita (¡boing!, el pincho vuelve a su sitio), se la pasa a la otra mano, echa la cabeza atrás, se pone de puntillas y la cierra en la coronilla: ¡clac!, se le recogen todos los pinchos en una palmerita de pelo tiesa que se abre y se bambolea.
+7. La mira con los ojos hacia arriba y posa orgullosísimo, con los brazos en jarras. Marta se tapa la boca de risa.
+8. Marta le hace una «foto» con los dedos (dos «L» y un ojo guiñado): ¡flash! Guillermo le guiña un ojo.
+9. Marta se recoge el pelo con un par de vueltas y se pone la goma rosa de la muñeca en el moño; Guillermo menea la cabeza y la palmera se le balancea.
+10. Los dos miran a cámara; Marta guiña un ojo y a Guillermo le bota la palmera.
+11. Negro.
+
+![Fotogramas de 00094](vista%20previa/00094%20Guillermo%20y%20Marta%20-%20la%20pinza%20del%20pelo%20-%20fotogramas.png)
 
 ## Ver y grabar
 
