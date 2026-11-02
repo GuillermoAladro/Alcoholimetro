@@ -153,6 +153,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00114 | Guillermo y Rodri · La broma del cubo | 14,85 s | [MP4 60 fps](vista%20previa/00114%20Guillermo%20y%20Rodri%20-%20la%20broma%20del%20cubo.mp4) · [fotogramas](vista%20previa/00114%20Guillermo%20y%20Rodri%20-%20la%20broma%20del%20cubo%20-%20fotogramas.png) |
 | 00115 | Guillermo y Rodri · El pino | 14,6 s | [MP4 60 fps](vista%20previa/00115%20Guillermo%20y%20Rodri%20-%20el%20pino.mp4) · [fotogramas](vista%20previa/00115%20Guillermo%20y%20Rodri%20-%20el%20pino%20-%20fotogramas.png) |
 | 00116 | Guillermo y Rodri · La aceituna | 14,6 s | [MP4 60 fps](vista%20previa/00116%20Guillermo%20y%20Rodri%20-%20la%20apuesta%20de%20la%20aceituna.mp4) · [fotogramas](vista%20previa/00116%20Guillermo%20y%20Rodri%20-%20la%20apuesta%20de%20la%20aceituna%20-%20fotogramas.png) |
+| 00119 | Guillermo y Rodri · El chicle | 14,8 s | [MP4 60 fps](vista%20previa/00119%20Guillermo%20y%20Rodri%20-%20el%20chicle.mp4) · [fotogramas](vista%20previa/00119%20Guillermo%20y%20Rodri%20-%20el%20chicle%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -2135,6 +2136,21 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00116](vista%20previa/00116%20Guillermo%20y%20Rodri%20-%20la%20apuesta%20de%20la%20aceituna%20-%20fotogramas.png)
+
+### 00119 · Guillermo y Rodri · El chicle
+
+1. Negro.
+2. La puerta de una tienda de chucherías por la tarde: fachada verde menta con molduras crema, toldo de rayas rosas y blancas con el borde festoneado, un escaparate lleno de tarros de caramelos, piruletas y bastones, la puerta rosa con su ojo de buey, una máquina de chicles de bola, un banco y una piruleta gigante de cartel. Guillermo y Rodri, con las manos en los bolsillos.
+3. Rodri saca un paquete de chicles y lo sacude: salen dos chicles volando; uno lo caza él con la boca y el otro va derecho a la boca de Guillermo (¡ñam!). Mascan los dos.
+4. Rodri coge aire y hace un globo grande y perfecto, lo aguanta… y lo sorbe de golpe (¡chas!); mira a cámara muy chulo y guiña un ojo. Guillermo, boquiabierto: «ooh».
+5. Guillermo se pica, masca a lo bruto, coge aire y sopla: el globo crece a empujones… y crece… más grande que su cabeza. Se pone de puntillas y el globo le levanta del suelo, con los pies colgando y braceando para no caerse, mientras Rodri recula alucinado.
+6. ¡PAF!: el globo revienta y le tapa la cara entera (y los pinchos) con una capa de chicle; cae al suelo y bracea a ciegas («mmf, mmf»).
+7. Rodri se parte de risa, se acerca, le pellizca la punta que le cuelga de la barbilla y se la arranca hacia arriba de un tirón, como una careta, entre hilos de chicle que se estiran.
+8. Guillermo se queda pasmado, con pegotes de chicle en los pinchos; Rodri mira la careta, con la cara de Guillermo marcada.
+9. Guillermo, muy digno, masca lo que le queda y hace un globito diminuto que le explota en la nariz; mira a cámara y Rodri guiña un ojo.
+10. Negro.
+
+![Fotogramas de 00119](vista%20previa/00119%20Guillermo%20y%20Rodri%20-%20el%20chicle%20-%20fotogramas.png)
 
 ## Ver y grabar
 
