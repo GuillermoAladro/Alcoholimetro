@@ -159,6 +159,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00120 | Guillermo y Rodri · El brindis | 14,5 s | [MP4 60 fps](vista%20previa/00120%20Guillermo%20y%20Rodri%20-%20el%20brindis.mp4) · [fotogramas](vista%20previa/00120%20Guillermo%20y%20Rodri%20-%20el%20brindis%20-%20fotogramas.png) |
 | 00121 | Guillermo y Sara · El tatuaje | 14,6 s | [MP4 60 fps](vista%20previa/00121%20Guillermo%20y%20Sara%20-%20el%20tatuaje.mp4) · [fotogramas](vista%20previa/00121%20Guillermo%20y%20Sara%20-%20el%20tatuaje%20-%20fotogramas.png) |
 | 00122 | Guillermo y Sara · El concierto | 14,6 s | [MP4 60 fps](vista%20previa/00122%20Guillermo%20y%20Sara%20-%20el%20concierto.mp4) · [fotogramas](vista%20previa/00122%20Guillermo%20y%20Sara%20-%20el%20concierto%20-%20fotogramas.png) |
+| 00124 | Guillermo y Sara · La tormenta | 14,8 s | [MP4 60 fps](vista%20previa/00124%20Guillermo%20y%20Sara%20-%20la%20tormenta.mp4) · [fotogramas](vista%20previa/00124%20Guillermo%20y%20Sara%20-%20la%20tormenta%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -2231,6 +2232,20 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00122](vista%20previa/00122%20Guillermo%20y%20Sara%20-%20el%20concierto%20-%20fotogramas.png)
+
+### 00124 · Guillermo y Sara · La tormenta
+
+1. Negro.
+2. Buhardilla de noche: ventana grande con cortinas de terciopelo mostaza, sillón orejero con una manta de cuadros, estantería y lámpara de pie. Fuera llueve sobre la ciudad.
+3. Sara quita el pestillo y abre la ventana de par en par: entra el viento con lluvia, la melena le vuela hacia atrás y ella cierra los ojos y sonríe con los brazos abiertos. Guillermo tirita con las manos en los bolsillos.
+4. Primer trueno (relámpago en rampa suave y retumbo): Guillermo da un respingo y corre a esconderse detrás de la cortina; solo asoman los ojos, los pinchos, los puños y las zapatillas, temblando. Sara le mira de reojo y levanta una ceja.
+5. Segundo trueno, más fuerte: sale de la cortina de un salto más alto, se da la vuelta, corre al sillón, coge la manta y se la echa por encima. Un fantasma con agujeros para los ojos se acerca a saltitos; Sara sonríe de lado.
+6. Tercer trueno, el más gordo: el fantasma pega un salto enorme, la manta sale disparada hacia arriba, cuelga vacía y cae arrugada al suelo, y Guillermo aterriza en brazos de Sara, que le coge sin apartar la vista de la tormenta.
+7. Sara le sostiene como a un gato y sigue mirando los relámpagos; él se agarra a su camiseta con las piernas colgando. Ella le rasca debajo de la barbilla y él ronronea, hasta que un último relámpago le hace dar un respingo.
+8. Guillermo mira a cámara colorado; Sara, impasible, también mira a cámara con media sonrisa.
+9. Negro.
+
+![Fotogramas de 00124](vista%20previa/00124%20Guillermo%20y%20Sara%20-%20la%20tormenta%20-%20fotogramas.png)
 
 ## Ver y grabar
 
