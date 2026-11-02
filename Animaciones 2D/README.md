@@ -158,6 +158,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00119 | Guillermo y Rodri · El chicle | 14,8 s | [MP4 60 fps](vista%20previa/00119%20Guillermo%20y%20Rodri%20-%20el%20chicle.mp4) · [fotogramas](vista%20previa/00119%20Guillermo%20y%20Rodri%20-%20el%20chicle%20-%20fotogramas.png) |
 | 00120 | Guillermo y Rodri · El brindis | 14,5 s | [MP4 60 fps](vista%20previa/00120%20Guillermo%20y%20Rodri%20-%20el%20brindis.mp4) · [fotogramas](vista%20previa/00120%20Guillermo%20y%20Rodri%20-%20el%20brindis%20-%20fotogramas.png) |
 | 00121 | Guillermo y Sara · El tatuaje | 14,6 s | [MP4 60 fps](vista%20previa/00121%20Guillermo%20y%20Sara%20-%20el%20tatuaje.mp4) · [fotogramas](vista%20previa/00121%20Guillermo%20y%20Sara%20-%20el%20tatuaje%20-%20fotogramas.png) |
+| 00122 | Guillermo y Sara · El concierto | 14,6 s | [MP4 60 fps](vista%20previa/00122%20Guillermo%20y%20Sara%20-%20el%20concierto.mp4) · [fotogramas](vista%20previa/00122%20Guillermo%20y%20Sara%20-%20el%20concierto%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -2214,6 +2215,22 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 10. Negro.
 
 ![Fotogramas de 00121](vista%20previa/00121%20Guillermo%20y%20Sara%20-%20el%20tatuaje%20-%20fotogramas.png)
+
+### 00122 · Guillermo y Sara · El concierto
+
+1. Negro.
+2. Concierto de rock de noche, entre el público: al fondo a la derecha, el escenario con el truss de focos, la pantalla que late, torres de amplificadores y batería en silueta; haces de colores que barren despacio por encima de las cabezas, humo y siluetas del público que botan al compás (algunas con los cuernos en alto).
+3. Sara cabecea a la perfección a 120 pulsaciones: la melena negra vuela en grandes arcos con estela y la cruz del collar se columpia. Guillermo la mira, alucina y se decide.
+4. Guillermo cabecea… y sus pinchos no se mueven ni un pelo. Se mira el pelo, se pica (vena, cara roja) y lo intenta al doble de velocidad, sudando.
+5. Se marea: ojos en espiral, estrellitas y tambaleo; y ¡crac!, le cruje el cuello: zigzags y la mano al cuello.
+6. Con la mano en el cuello da un paso para asomarse; Sara carga un cabezazo enorme, la melena cae por delante… y con el latigazo sale por encima y le cruza la cara a Guillermo: ¡zas! Sale despedido un paso atrás, con mechones pegados, estrellitas y tres verdugones rojos que se le quedan.
+7. Guillermo se frota la mejilla. Sara para, le mira de reojo, impasible, y le enseña los cuernos (índice y meñique).
+8. Guillermo, encantado, los hace… con tres dedos. Sara, sin cambiar la cara, le apoya el índice en el dedo corazón y se lo dobla.
+9. Él mira su mano corregida y se ilumina (destellos).
+10. Los dos levantan los cuernos hacia el escenario botando al compás, miran a cámara y Sara guiña un ojo.
+11. Negro.
+
+![Fotogramas de 00122](vista%20previa/00122%20Guillermo%20y%20Sara%20-%20el%20concierto%20-%20fotogramas.png)
 
 ## Ver y grabar
 
