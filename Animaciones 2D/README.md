@@ -140,6 +140,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00101 | Guillermo y Paradigma · La guitarra invisible | 14,9 s | [MP4 60 fps](vista%20previa/00101%20Guillermo%20y%20Paradigma%20-%20el%20air%20guitar.mp4) · [fotogramas](vista%20previa/00101%20Guillermo%20y%20Paradigma%20-%20el%20air%20guitar%20-%20fotogramas.png) |
 | 00102 | Guillermo y Paradigma · La moto | 14,6 s | [MP4 60 fps](vista%20previa/00102%20Guillermo%20y%20Paradigma%20-%20la%20moto.mp4) · [fotogramas](vista%20previa/00102%20Guillermo%20y%20Paradigma%20-%20la%20moto%20-%20fotogramas.png) |
 | 00103 | Guillermo y Paradigma · La meditación | 14,6 s | [MP4 60 fps](vista%20previa/00103%20Guillermo%20y%20Paradigma%20-%20la%20meditacion.mp4) · [fotogramas](vista%20previa/00103%20Guillermo%20y%20Paradigma%20-%20la%20meditacion%20-%20fotogramas.png) |
+| 00104 | Guillermo y Paradigma · El pelo largo | 14,6 s | [MP4 60 fps](vista%20previa/00104%20Guillermo%20y%20Paradigma%20-%20el%20pelo%20largo.mp4) · [fotogramas](vista%20previa/00104%20Guillermo%20y%20Paradigma%20-%20el%20pelo%20largo%20-%20fotogramas.png) |
 | 00105 | Guillermo y Paradigma · El vinilo | 14,6 s | [MP4 60 fps](vista%20previa/00105%20Guillermo%20y%20Paradigma%20-%20el%20vinilo.mp4) · [fotogramas](vista%20previa/00105%20Guillermo%20y%20Paradigma%20-%20el%20vinilo%20-%20fotogramas.png) |
 | 00106 | Guillermo y Paradigma · La barbacoa | 14,6 s | [MP4 60 fps](vista%20previa/00106%20Guillermo%20y%20Paradigma%20-%20la%20barbacoa.mp4) · [fotogramas](vista%20previa/00106%20Guillermo%20y%20Paradigma%20-%20la%20barbacoa%20-%20fotogramas.png) |
 | 00108 | Guillermo y Paradigma · La partida de cartas | 14,5 s | [MP4 60 fps](vista%20previa/00108%20Guillermo%20y%20Paradigma%20-%20la%20carta.mp4) · [fotogramas](vista%20previa/00108%20Guillermo%20y%20Paradigma%20-%20la%20carta%20-%20fotogramas.png) |
@@ -1913,6 +1914,20 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00103](vista%20previa/00103%20Guillermo%20y%20Paradigma%20-%20la%20meditacion%20-%20fotogramas.png)
+
+### 00104 · Guillermo y Paradigma · El pelo largo
+
+1. Negro.
+2. A la puerta de una tienda de discos, a la hora dorada: pared de ladrillo, el escaparate iluminado con discos de colores y una guitarra eléctrica colgada, un letrero con lunares de colores (sin letras), un cartel con una guitarra, una pila de cajas de discos con una caja de cartón encima y una puerta de cristal oscuro con marco de latón; por la acera cruzan hojas secas.
+3. Paradigma mira a cámara, baja la cabeza… y a cámara lenta se echa la melena atrás como una estrella del rock: el mechón de delante vuela por encima de la cabeza, la nuca se abre al viento, destellos y un reflejo del sol. Guillermo se queda alucinado, con brillos en los ojos.
+4. Guillermo lo intenta: cabeza abajo y latigazo… y no se le mueve ni un pincho; solo le salta de la coronilla un pelo suelto que hace «boing». Otra vez, con los puños apretados y más fuerza: otro «boing». Se enfada; Paradigma aguanta la risa.
+5. A Guillermo se le enciende la bombilla: se da la vuelta, va hasta la caja de cartón y saca, cogida por la coronilla, una peluca rubia larguísima. La sacude, la lanza al aire y la caza con la cabeza. Pose.
+6. Melenazo a cámara lenta como Paradigma… y la peluca se le despega, da media voltereta por el aire y cae, ¡plof!, encima de la melena de Paradigma: dos melenas, una sobre otra. A Guillermo le vuelve a saltar el pelo suelto.
+7. Paradigma parpadea y mira hacia arriba. Los dos se giran a la vez: Paradigma se mira en el cristal de la puerta, ladea la cabeza y da el visto bueno con el pulgar; su reflejo también.
+8. Guillermo, otra vez con sus pinchos, mira a cámara («boing»); Paradigma mira a cámara y guiña un ojo.
+9. Negro.
+
+![Fotogramas de 00104](vista%20previa/00104%20Guillermo%20y%20Paradigma%20-%20el%20pelo%20largo%20-%20fotogramas.png)
 
 ### 00105 · Guillermo y Paradigma · El vinilo
 
