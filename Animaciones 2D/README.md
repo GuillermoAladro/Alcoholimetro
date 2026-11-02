@@ -169,6 +169,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00130 | Guillermo y Sara · La azotea | 14,8 s | [MP4 60 fps](vista%20previa/00130%20Guillermo%20y%20Sara%20-%20el%20atardecer%20en%20la%20azotea.mp4) · [fotogramas](vista%20previa/00130%20Guillermo%20y%20Sara%20-%20el%20atardecer%20en%20la%20azotea%20-%20fotogramas.png) |
 | 00131 | Guillermo y Yorgi · El batido de proteínas | 14,8 s | [MP4 60 fps](vista%20previa/00131%20Guillermo%20y%20Yorgi%20-%20el%20desayuno%20de%20campeones.mp4) · [fotogramas](vista%20previa/00131%20Guillermo%20y%20Yorgi%20-%20el%20desayuno%20de%20campeones%20-%20fotogramas.png) |
 | 00133 | Guillermo y Yorgi · Llegas tarde | 14,4 s | [MP4 60 fps](vista%20previa/00133%20Guillermo%20y%20Yorgi%20-%20el%20reloj.mp4) · [fotogramas](vista%20previa/00133%20Guillermo%20y%20Yorgi%20-%20el%20reloj%20-%20fotogramas.png) |
+| 00135 | Guillermo y Yorgi · Los pendientes | 14,6 s | [MP4 60 fps](vista%20previa/00135%20Guillermo%20y%20Yorgi%20-%20el%20pendiente.mp4) · [fotogramas](vista%20previa/00135%20Guillermo%20y%20Yorgi%20-%20el%20pendiente%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -2406,6 +2407,22 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 12. Negro.
 
 ![Fotogramas de 00133](vista%20previa/00133%20Guillermo%20y%20Yorgi%20-%20el%20reloj%20-%20fotogramas.png)
+
+### 00135 · Guillermo y Yorgi · Los pendientes
+
+1. Negro.
+2. Un salón con luz de mañana: ventana con la casa de enfrente al sol, cortinilla de cuadros rojos colgada de una barra con anillas grandes de madera y un espejo de pie. Yorgi cuenta algo, se ríe y sus aritos pillan la luz (¡ting!).
+3. Guillermo se queda embobado y se toca el lóbulo vacío. Mira alrededor y se le ocurre una idea.
+4. Saca dos anillas de la barra y la esquina de la cortina se descuelga. Les da la vuelta: son enormes. Se las cuelga de las orejas. ¡Tachán!
+5. Presume moviendo la cabeza, pero el aro va y viene como un péndulo y le da en la mejilla (¡toc!). Lo vuelve a intentar: ¡toc, toc! Se pica.
+6. Gira cada vez más rápido hasta dar vueltas sobre sí mismo. Los aros salen hacia fuera y uno sale disparado… Yorgi lo caza al vuelo y le da dos vueltas en el dedo.
+7. Guillermo se queda mareado, con los ojos en espiral y el otro aro dando bandazos (¡toc!). Yorgi se acerca por detrás, sujeta el aro y se lo quita con cuidado mientras Guillermo le ofrece la oreja.
+8. Yorgi saca del bolsillo un aro de clip diminuto y se lo pone (¡tic!).
+9. Guillermo se ve en el espejo, se gira de perfil con la barbilla alta y los puños en las caderas, y el aro nuevo brilla.
+10. Guillermo mira a cámara orgulloso y Yorgi levanta el pulgar. Brillan los aros de los dos.
+11. Negro.
+
+![Fotogramas de 00135](vista%20previa/00135%20Guillermo%20y%20Yorgi%20-%20el%20pendiente%20-%20fotogramas.png)
 
 ## Ver y grabar
 
