@@ -131,6 +131,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00092 | Guillermo y Marta · La bufanda | 14,8 s | [MP4 60 fps](vista%20previa/00092%20Guillermo%20y%20Marta%20-%20la%20bufanda.mp4) · [fotogramas](vista%20previa/00092%20Guillermo%20y%20Marta%20-%20la%20bufanda%20-%20fotogramas.png) |
 | 00093 | Guillermo y Marta · El libro | 14,6 s | [MP4 60 fps](vista%20previa/00093%20Guillermo%20y%20Marta%20-%20el%20libro.mp4) · [fotogramas](vista%20previa/00093%20Guillermo%20y%20Marta%20-%20el%20libro%20-%20fotogramas.png) |
 | 00094 | Guillermo y Marta · La pinza del pelo | 14,6 s | [MP4 60 fps](vista%20previa/00094%20Guillermo%20y%20Marta%20-%20la%20pinza%20del%20pelo.mp4) · [fotogramas](vista%20previa/00094%20Guillermo%20y%20Marta%20-%20la%20pinza%20del%20pelo%20-%20fotogramas.png) |
+| 00096 | Guillermo y Marta · El microondas | 14,9 s | [MP4 60 fps](vista%20previa/00096%20Guillermo%20y%20Marta%20-%20las%20palomitas%20de%20maiz.mp4) · [fotogramas](vista%20previa/00096%20Guillermo%20y%20Marta%20-%20las%20palomitas%20de%20maiz%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1760,6 +1761,22 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00094](vista%20previa/00094%20Guillermo%20y%20Marta%20-%20la%20pinza%20del%20pelo%20-%20fotogramas.png)
+
+### 00096 · Guillermo y Marta · El microondas
+
+1. Negro.
+2. La cocinita de detrás de la barra, al anochecer: pared crema, azulejo verde agua, una ventana con la ciudad y la luna y una cortina de cuadros, una balda con tarros sin etiqueta y tazas colgadas, una lámpara colgante, la encimera de madera con el hervidor, el frutero y el bote de cucharones, una nevera con imanes y un dibujo, y suelo de barro. En la encimera, un microondas plateado con la puerta entreabierta y la hora en su pantalla.
+3. Guillermo sacude muy chulo un sobre de palomitas, mira a cámara y lo encesta de un lanzamiento dentro del microondas: ¡sí!, puño en alto.
+4. Se acerca, cierra la puerta de un empujón (¡clac!), da un paso atrás y teclea con el índice: 9… 99… 9:99… 99:99… y ¡arrancar! (pitidos). El plato gira, se enciende la luz y zumba.
+5. Se aparta, se pone chulo y golpea el suelo con el pie… ¡pop!, ¡pop, pop!: el sobre se hincha a tirones y Guillermo se ilusiona con saltitos.
+6. El sobre llena todo el microondas y aprieta el cristal; la puerta se abomba y echa vapor, el microondas tiembla y la pantalla parpadea. Guillermo, sudando, alarga el dedo hacia el botón… y lo retira.
+7. ¡BUM!: la puerta sale despedida, el sobre revienta y una ola de palomitas se le viene encima. Guillermo bracea y grita mientras la montaña sube… hasta dejarle enterrado hasta el cuello, con palomitas en el pelo. Una última sale disparada del microondas y le da en la cabeza. Mirada muy seria a cámara.
+8. Marta entra por la derecha, pasa con zancadas por encima de las palomitas del suelo, mira la montaña y a Guillermo y levanta una ceja.
+9. Coge un puñado del montón (deja un hoyo) y se las va comiendo una a una, tranquilísima, mientras Guillermo se relame.
+10. Marta le lanza una sola palomita: Guillermo la caza al vuelo con la boca y mastica feliz, colorado. Los dos miran a cámara y Marta guiña un ojo.
+11. Negro.
+
+![Fotogramas de 00096](vista%20previa/00096%20Guillermo%20y%20Marta%20-%20las%20palomitas%20de%20maiz%20-%20fotogramas.png)
 
 ## Ver y grabar
 
