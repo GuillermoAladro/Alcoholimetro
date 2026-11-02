@@ -137,6 +137,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00098 | Guillermo y Marta · El puzle | 14,6 s | [MP4 60 fps](vista%20previa/00098%20Guillermo%20y%20Marta%20-%20el%20puzle.mp4) · [fotogramas](vista%20previa/00098%20Guillermo%20y%20Marta%20-%20el%20puzle%20-%20fotogramas.png) |
 | 00099 | Guillermo y Marta · El muñeco de nieve | 15,0 s | [MP4 60 fps](vista%20previa/00099%20Guillermo%20y%20Marta%20-%20el%20muneco%20de%20nieve.mp4) · [fotogramas](vista%20previa/00099%20Guillermo%20y%20Marta%20-%20el%20muneco%20de%20nieve%20-%20fotogramas.png) |
 | 00101 | Guillermo y Paradigma · La guitarra invisible | 14,9 s | [MP4 60 fps](vista%20previa/00101%20Guillermo%20y%20Paradigma%20-%20el%20air%20guitar.mp4) · [fotogramas](vista%20previa/00101%20Guillermo%20y%20Paradigma%20-%20el%20air%20guitar%20-%20fotogramas.png) |
+| 00102 | Guillermo y Paradigma · La moto | 14,6 s | [MP4 60 fps](vista%20previa/00102%20Guillermo%20y%20Paradigma%20-%20la%20moto.mp4) · [fotogramas](vista%20previa/00102%20Guillermo%20y%20Paradigma%20-%20la%20moto%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1860,6 +1861,21 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 9. Negro.
 
 ![Fotogramas de 00101](vista%20previa/00101%20Guillermo%20y%20Paradigma%20-%20el%20air%20guitar%20-%20fotogramas.png)
+
+### 00102 · Guillermo y Paradigma · La moto
+
+1. Negro.
+2. La puerta del bar a media tarde: fachada ocre con contraventanas verdes, el escaparate del bar encendido bajo su toldo de rayas, la puerta verde con su farol, una farola, la acera de losas y, a la izquierda, un seto de boj recortado en su jardinera. Paradigma, sentado en una moto clásica (depósito granate con franja crema, cromados, faro redondo y ruedas de radios), con una mano en el puño; Guillermo, de pie detrás, admira la moto.
+3. Paradigma saca de la cazadora unas gafas de sol, las abre de un golpe de muñeca, se las pone, echa la melena hacia atrás de un cabezazo y ¡ting!, destello. Guillermo, boquiabierto.
+4. Acelera en vacío: la moto tiembla y el tubo echa humo. Guillermo se asoma a curiosear el tubo de escape… y el segundo acelerón le suelta en la cara una nube negra que le envuelve entero. Sale tiznado, tosiendo humo y abanicándose.
+5. Paradigma le dice con la cabeza que suba. Guillermo, tiznado pero encantado, levanta el puño, coge carrerilla y se sube de un salto al asiento de atrás, agarrándose a la cazadora y al asa.
+6. Con su peso, la moto se encabrita: hace un amago… y la rueda de delante sube del todo. Se quedan en equilibrio sobre la de atrás, tambaleándose: Guillermo, aterrado y sudando, mira a cámara; Paradigma, tan tranquilo, también.
+7. Paradigma se inclina hacia delante, sin prisa: la rueda de delante cae de golpe (¡pam!, polvo) y Guillermo sale catapultado hacia atrás, por el aire, braceando.
+8. Se clava de cabeza en el seto: solo le asoman las piernas, pataleando entre una lluvia de hojas.
+9. Paradigma mira hacia atrás, se baja las gafas por la patilla, mira a cámara por encima con la ceja levantada y se las vuelve a subir: ¡ting!
+10. Negro.
+
+![Fotogramas de 00102](vista%20previa/00102%20Guillermo%20y%20Paradigma%20-%20la%20moto%20-%20fotogramas.png)
 
 ## Ver y grabar
 
