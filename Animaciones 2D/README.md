@@ -168,6 +168,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00129 | Guillermo y Sara · El baile gótico | 14,9 s | [MP4 60 fps](vista%20previa/00129%20Guillermo%20y%20Sara%20-%20el%20baile%20gotico.mp4) · [fotogramas](vista%20previa/00129%20Guillermo%20y%20Sara%20-%20el%20baile%20gotico%20-%20fotogramas.png) |
 | 00130 | Guillermo y Sara · La azotea | 14,8 s | [MP4 60 fps](vista%20previa/00130%20Guillermo%20y%20Sara%20-%20el%20atardecer%20en%20la%20azotea.mp4) · [fotogramas](vista%20previa/00130%20Guillermo%20y%20Sara%20-%20el%20atardecer%20en%20la%20azotea%20-%20fotogramas.png) |
 | 00131 | Guillermo y Yorgi · El batido de proteínas | 14,8 s | [MP4 60 fps](vista%20previa/00131%20Guillermo%20y%20Yorgi%20-%20el%20desayuno%20de%20campeones.mp4) · [fotogramas](vista%20previa/00131%20Guillermo%20y%20Yorgi%20-%20el%20desayuno%20de%20campeones%20-%20fotogramas.png) |
+| 00132 | Guillermo y Yorgi · Las flexiones | 14,6 s | [MP4 60 fps](vista%20previa/00132%20Guillermo%20y%20Yorgi%20-%20las%20flexiones.mp4) · [fotogramas](vista%20previa/00132%20Guillermo%20y%20Yorgi%20-%20las%20flexiones%20-%20fotogramas.png) |
 | 00133 | Guillermo y Yorgi · Llegas tarde | 14,4 s | [MP4 60 fps](vista%20previa/00133%20Guillermo%20y%20Yorgi%20-%20el%20reloj.mp4) · [fotogramas](vista%20previa/00133%20Guillermo%20y%20Yorgi%20-%20el%20reloj%20-%20fotogramas.png) |
 | 00135 | Guillermo y Yorgi · Los pendientes | 14,6 s | [MP4 60 fps](vista%20previa/00135%20Guillermo%20y%20Yorgi%20-%20el%20pendiente.mp4) · [fotogramas](vista%20previa/00135%20Guillermo%20y%20Yorgi%20-%20el%20pendiente%20-%20fotogramas.png) |
 
@@ -2390,6 +2391,21 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00131](vista%20previa/00131%20Guillermo%20y%20Yorgi%20-%20el%20desayuno%20de%20campeones%20-%20fotogramas.png)
+
+### 00132 · Guillermo y Yorgi · Las flexiones
+
+1. Negro.
+2. El bar ya cerrado, de noche: papel pintado burdeos con rayas, zócalo de nogal, dos apliques encendidos, una lámpara colgante que deja un charco de luz en el suelo de tablas, una mesa arrimada a la pared con las sillas patas arriba, la máquina del alcoholímetro con sus cifras rojas y el extremo de la barra con las botellas. Yorgi y Guillermo, de perfil y cabeza con cabeza, en plancha. Yorgi le reta levantando una ceja.
+3. Yorgi hace dos flexiones con palmada: se impulsa, despega las manos, da la palmada bajo el pecho (con rayitas de golpe) y vuelve a apoyar, tan tranquilo. Guillermo, boquiabierto.
+4. Yorgi pasa a una mano, con la otra a la espalda, hace dos y, abajo del todo, guiña un ojo a cámara. Guillermo se pica (vena).
+5. Guillermo mira a cámara decidido, hincha los mofletes y baja temblando… se queda atascado a medio camino: brazos temblorosos, colorado, sudando, dientes apretados. Intenta subir y no puede.
+6. Se desploma: ¡plaf!, la cara aplastada contra el suelo, nube de polvo y estrellitas. Yorgi se ríe.
+7. Yorgi le señala su espalda con el pulgar: «súbete». Guillermo levanta la cabeza, encantado, se impulsa, da un saltito encogido y cae sentado en lo alto de la espalda de Yorgi, como un jinete, con las piernas colgando por el otro lado.
+8. Yorgi hace tres flexiones con él encima: Guillermo, con una mano en jarra, rebota con un poco de retraso, primero mareado y luego a gusto, y saca el pulgar delante del pecho con el antebrazo bien horizontal.
+9. La cámara se acerca y los dos miran a cámara, sonrientes.
+10. Negro.
+
+![Fotogramas de 00132](vista%20previa/00132%20Guillermo%20y%20Yorgi%20-%20las%20flexiones%20-%20fotogramas.png)
 
 ### 00133 · Guillermo y Yorgi · Llegas tarde
 
