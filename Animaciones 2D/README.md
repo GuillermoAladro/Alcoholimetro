@@ -128,6 +128,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00089 | Guillermo y Kiriku · El descapotable | 14,6 s | [MP4 60 fps](vista%20previa/00089%20Guillermo%20y%20Kiriku%20-%20el%20descapotable.mp4) · [fotogramas](vista%20previa/00089%20Guillermo%20y%20Kiriku%20-%20el%20descapotable%20-%20fotogramas.png) |
 | 00090 | Guillermo y Kiriku · La foto de grupo | 12,9 s | [MP4 60 fps](vista%20previa/00090%20Guillermo%20y%20Kiriku%20-%20la%20foto%20de%20grupo.mp4) · [fotogramas](vista%20previa/00090%20Guillermo%20y%20Kiriku%20-%20la%20foto%20de%20grupo%20-%20fotogramas.png) |
 | 00091 | Guillermo y Marta · El café con arte | 14,8 s | [MP4 60 fps](vista%20previa/00091%20Guillermo%20y%20Marta%20-%20el%20cafe%20con%20arte.mp4) · [fotogramas](vista%20previa/00091%20Guillermo%20y%20Marta%20-%20el%20cafe%20con%20arte%20-%20fotogramas.png) |
+| 00092 | Guillermo y Marta · La bufanda | 14,8 s | [MP4 60 fps](vista%20previa/00092%20Guillermo%20y%20Marta%20-%20la%20bufanda.mp4) · [fotogramas](vista%20previa/00092%20Guillermo%20y%20Marta%20-%20la%20bufanda%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1709,6 +1710,22 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 9. Negro.
 
 ![Fotogramas de 00091](vista%20previa/00091%20Guillermo%20y%20Marta%20-%20el%20cafe%20con%20arte%20-%20fotogramas.png)
+
+### 00092 · Guillermo y Marta · La bufanda
+
+1. Negro.
+2. Una noche de nieve a la puerta del bar: cielo de hora azul, casas nevadas al fondo con las ventanas encendidas, la fachada verde del bar con su ventanal dorado (toldo nevado con carámbanos y escarcha en los cristales), la puerta con su corona de abeto, un cartel con una jarra, un abetito con lucecitas, una farola con su halo, un banco nevado y huellas en la acera; nieva sin parar.
+3. Guillermo tirita abrazado a sí mismo, castañeteando los dientes y echando vaho. A su lado, Marta teje una bufanda de rayas rojas y crema a una velocidad increíble: las agujas son un borrón, saltan pelusillas, los ovillos giran en su cesta y la bufanda baja y se amontona a sus pies. Guillermo alucina.
+4. Marta guarda las agujas en el bolsillo, levanta la punta de la bufanda y le pregunta con las cejas; Guillermo asiente como loco.
+5. Se la lanza y la punta, con sus flecos, le cae sobre el hombro; con el dedo, Marta le hace «¡gira!».
+6. Guillermo gira como una peonza, en la gloria, mientras Marta le va dando bufanda: el cuello… la boca… la nariz… la frente… y luego el pecho, la tripa y las piernas.
+7. Se queda hecho un capullo de rayas del que solo asoman los ojos, los pinchos del pelo y las zapatillas (la cámara se acerca). Se mira, mira a cámara y se aleja a saltitos, «mmf, mmf»; Marta se ríe tapándose la boca sin soltar la punta.
+8. Marta agarra la punta con las dos manos, carga… y ¡tirón!: Guillermo sale girando como una peonza por la nieve mientras la bufanda se desenrolla y Marta la recoge mano sobre mano hasta el montón.
+9. Le queda solo la vuelta del cuello. Mareado, con los ojos en espiral y estrellitas, no se entera de que Marta saca unas tijeritas y ¡zis, zis!: corta la bufanda junto a su cuello.
+10. Guillermo se despeja con una bufanda corta y perfecta, hunde la barbilla en ella con los ojos cerrados, calentito y colorado (le sale un corazón), y mira a cámara; Marta, con las tijeras en la mano, guiña un ojo a la cámara.
+11. Negro.
+
+![Fotogramas de 00092](vista%20previa/00092%20Guillermo%20y%20Marta%20-%20la%20bufanda%20-%20fotogramas.png)
 
 ## Ver y grabar
 
