@@ -172,6 +172,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00133 | Guillermo y Yorgi · Llegas tarde | 14,4 s | [MP4 60 fps](vista%20previa/00133%20Guillermo%20y%20Yorgi%20-%20el%20reloj.mp4) · [fotogramas](vista%20previa/00133%20Guillermo%20y%20Yorgi%20-%20el%20reloj%20-%20fotogramas.png) |
 | 00134 | Guillermo y Yorgi · La hamburguesa gigante | 14,9 s | [MP4 60 fps](vista%20previa/00134%20Guillermo%20y%20Yorgi%20-%20la%20barbacoa.mp4) · [fotogramas](vista%20previa/00134%20Guillermo%20y%20Yorgi%20-%20la%20barbacoa%20-%20fotogramas.png) |
 | 00135 | Guillermo y Yorgi · Los pendientes | 14,6 s | [MP4 60 fps](vista%20previa/00135%20Guillermo%20y%20Yorgi%20-%20el%20pendiente.mp4) · [fotogramas](vista%20previa/00135%20Guillermo%20y%20Yorgi%20-%20el%20pendiente%20-%20fotogramas.png) |
+| 00136 | Guillermo y Yorgi · La carrera | 14,6 s | [MP4 60 fps](vista%20previa/00136%20Guillermo%20y%20Yorgi%20-%20la%20carrera.mp4) · [fotogramas](vista%20previa/00136%20Guillermo%20y%20Yorgi%20-%20la%20carrera%20-%20fotogramas.png) |
 | 00137 | Guillermo y Yorgi · La sorpresa | 14,6 s | [MP4 60 fps](vista%20previa/00137%20Guillermo%20y%20Yorgi%20-%20el%20abrazo%20de%20cumpleanos.mp4) · [fotogramas](vista%20previa/00137%20Guillermo%20y%20Yorgi%20-%20el%20abrazo%20de%20cumpleanos%20-%20fotogramas.png) |
 | 00140 | Guillermo y Yorgi · El selfie del gimnasio | 14,3 s | [MP4 60 fps](vista%20previa/00140%20Guillermo%20y%20Yorgi%20-%20el%20selfie%20del%20gimnasio.mp4) · [fotogramas](vista%20previa/00140%20Guillermo%20y%20Yorgi%20-%20el%20selfie%20del%20gimnasio%20-%20fotogramas.png) |
 
@@ -2457,6 +2458,25 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00135](vista%20previa/00135%20Guillermo%20y%20Yorgi%20-%20el%20pendiente%20-%20fotogramas.png)
+
+### 00136 · Guillermo y Yorgi · La carrera
+
+Un paseo peatonal de un pueblo blanco, una tarde de sol (fachadas de colores al otro lado de la calzada, naranjos, farolas, un banco). Al fondo del paseo, el bar: quiosco encalado con zócalo de azulejos, jamones en la ventana, cartel de la jarra, la máquina del alcoholímetro y la puerta verde con campanilla. En el suelo hay dibujos de tiza: la salida escalonada, las calles, una rayuela y la meta a cuadros. Un cordón corto une las zapatillas de Guillermo desde el principio.
+
+1. Negro.
+2. Preparados (semáforo en rojo): Yorgi calienta con botecitos y sacude las manos; Guillermo le copia con los pies juntos.
+3. Listos (ámbar): Yorgi en posición de salida de pie, de atleta; Guillermo con las manos en las rodillas. Se miran de reojo.
+4. ¡Ya! (verde con destello): Yorgi sale disparado, perfecto, con nube de polvo y rayas de velocidad.
+5. Guillermo da la zancada, el cordón se tensa (¡tuing!) y se cae de bruces, tieso como una tabla: ¡plaf!, polvo y estrellitas.
+6. Levanta la cabeza, se mira los pies, ve el cordón y pone cara de decidido. Se levanta de golpe, como un resorte.
+7. Saltitos de conejo por todo el paseo, pies juntos, puños y lengua fuera; la cámara le sigue.
+8. Yorgi sujeta la puerta del bar abierta por la barra, a la derecha del hueco y de cara a la calle, y se ríe al verle llegar. Le hace una reverencia de caballero (mano al corazón) y le indica la puerta con la palma arriba.
+9. Guillermo salta al umbral sin pasar por delante de Yorgi, le devuelve una reverencia torpe y se da media vuelta para celebrarlo de cara a la calle. Yorgi, con la floritura final, suelta la puerta: se cierra de golpe desde la derecha y le da en el trasero (¡boing!). Guillermo entra trastabillando. Tilín de la campanilla.
+10. Yorgi, tapándose la boca, se parte de risa (la cámara se acerca).
+11. Por la rendija de la puerta sale el brazo de Guillermo con el pulgar arriba. Yorgi le contesta con otro pulgar, mira a cámara y guiña un ojo.
+12. Negro.
+
+![Fotogramas de 00136](vista%20previa/00136%20Guillermo%20y%20Yorgi%20-%20la%20carrera%20-%20fotogramas.png)
 
 ### 00137 · Guillermo y Yorgi · La sorpresa
 1. Negro.
