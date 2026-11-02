@@ -117,6 +117,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00078 | Guillermo y Gabacho · La ola | 14,25 s | [MP4 60 fps](vista%20previa/00078%20Guillermo%20y%20Gabacho%20-%20la%20ola.mp4) · [fotogramas](vista%20previa/00078%20Guillermo%20y%20Gabacho%20-%20la%20ola%20-%20fotogramas.png) |
 | 00079 | Guillermo y Gabacho · El rizo | 14,8 s | [MP4 60 fps](vista%20previa/00079%20Guillermo%20y%20Gabacho%20-%20el%20pelo%20rizado.mp4) · [fotogramas](vista%20previa/00079%20Guillermo%20y%20Gabacho%20-%20el%20pelo%20rizado%20-%20fotogramas.png) |
 | 00080 | Guillermo y Gabacho · La celebración | 14,9 s | [MP4 60 fps](vista%20previa/00080%20Guillermo%20y%20Gabacho%20-%20la%20celebracion.mp4) · [fotogramas](vista%20previa/00080%20Guillermo%20y%20Gabacho%20-%20la%20celebracion%20-%20fotogramas.png) |
+| 00081 | Guillermo y Kiriku · Las gafas de sol | 14,4 s | [MP4 60 fps](vista%20previa/00081%20Guillermo%20y%20Kiriku%20-%20las%20gafas%20de%20sol.mp4) · [fotogramas](vista%20previa/00081%20Guillermo%20y%20Kiriku%20-%20las%20gafas%20de%20sol%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
 
@@ -1529,6 +1530,21 @@ Corrige los brazos y los contactos durante el rescate. La escalera permanece suj
 11. Negro.
 
 ![Fotogramas de 00080](vista%20previa/00080%20Guillermo%20y%20Gabacho%20-%20la%20celebracion%20-%20fotogramas.png)
+
+### 00081 · Guillermo y Kiriku · Las gafas de sol
+
+1. Negro.
+2. Terraza al sol de mediodía junto al mar: cielo azul con un sol que deslumbra (con sus reflejos de lente), una isla con su pueblo blanco y un velero, la balaustrada blanca, buganvilla, un limonero en su maceta, un parasol de rayas turquesa con una mesita y dos limonadas, y suelo de barro. Guillermo y Kiriku entornan los ojos al sol.
+3. Kiriku coge las gafas de aviador que lleva colgadas del cuello del polo, las abre de un golpe de muñeca con el brazo estirado y se las pone; echa la cabeza atrás y ¡ting!: un destello en el cristal deslumbra a Guillermo. Se pasa la mano por el pelo y mira a cámara, chulísimo.
+4. Guillermo, decidido, saca del bolsillo sus gafas de plástico naranja, las abre, se las pone, se pasa la mano por el pelo y echa la cabeza atrás como Kiriku… y las gafas salen volando dando vueltas.
+5. Las bate con una mano, con la otra, dando saltitos, y las caza al vuelo… del revés. Se las pone así (la barra gruesa abajo) y posa orgullosísimo con la mano en la cadera; Kiriku ladea la cabeza.
+6. Guillermo nota algo raro: se las quita, las mira con el brazo estirado, les da la vuelta y las lanza al aire para «cazarlas» con la cara… y le caen torcidas en la punta de la nariz.
+7. Kiriku se baja las suyas despacio por la patilla y le mira por encima, con la ceja levantada.
+8. Guillermo se las sube por la patilla muy seguro, sonríe a cámara… y se le vuelven a resbalar, torcidas; se pone colorado.
+9. Kiriku se ríe por lo bajo, se sube las suyas (¡ting!) y los dos miran a cámara.
+10. Negro.
+
+![Fotogramas de 00081](vista%20previa/00081%20Guillermo%20y%20Kiriku%20-%20las%20gafas%20de%20sol%20-%20fotogramas.png)
 
 ## Ver y grabar
 
