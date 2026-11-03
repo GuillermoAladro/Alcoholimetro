@@ -16,7 +16,7 @@ Los cables se dibujan con puntos de paso; sus extremos salen de la boca, borne o
 import comp as C
 from geo import place_parts
 
-T = 1.5
+T = 2.0          # chapa (igual que diseno.T)
 GRIS_CABLE = (0.15, 0.15, 0.16)
 ROJO, NEGRO_C, AZUL, MARRON, VERDE_AM = (0.85, 0.15, 0.12), (0.08, 0.08, 0.08), (0.15, 0.35, 0.85), (0.50, 0.30, 0.12), (0.55, 0.75, 0.15)
 BLANCO_C, AMARILLO = (0.92, 0.92, 0.90), (0.92, 0.78, 0.12)
@@ -149,14 +149,18 @@ def agujeros_comunes(L):
 
 
 # ============================================================================ DISEÑO A · Compacta
+# 03-11-2026 (chapa de 2 mm): Solo 2 mm a la izquierda y Pi 2 mm a la derecha, porque los radios de los pliegues del cajón crecen
+# 1 mm y el cajón es 1 mm más estrecho; fuente 1,5 mm más arriba, porque su canto trasero de abajo tocaba el radio del pliegue
+# de la pestaña de abajo de la trasera del cajón. Fuente y caja de red 2,5 mm a la derecha: si no, la clavija HDMI de la Pi
+# (que se ha corrido 2 mm a la derecha) chocaba con el lateral de la caja de red.
 def layout_A(k):
     Yin, Xin1 = k["Yin"], k["Xin1"]
     yf = Yin - 36 - T                                    # cara delantera de la caja de red
     yc = yf - 0.2                                        # plano donde se apoyan las piezas de pie del reparto de 5 V
     L = dict(Yin=Yin, Xin1=Xin1,
-             pantalla=(-82.5, 12.0), solo=(5.0, 136.0), camara=(-67.5, 185.5), boquilla=(-55.0, 150.0),
-             pi=(-101.0, 99.0), fuente=(43.0, 3.0), ze29a=(-80.0, Yin - 9.6, 162.0), c14=(Yin - 18.0, 50.0),
-             red=dict(x0=-56.5, alto=88.0, fondo=36.0, pasacables=[(86.0, Yin - 9.0)], pasacables_frente=[(-45.0, 45.0)],
+             pantalla=(-82.5, 12.0), solo=(3.0, 136.0), camara=(-67.5, 185.5), boquilla=(-55.0, 150.0),
+             pi=(-99.0, 99.0), fuente=(45.5, 4.5), ze29a=(-80.0, Yin - 9.6, 162.0), c14=(Yin - 18.0, 50.0),
+             red=dict(x0=-54.0, alto=88.0, fondo=36.0, pasacables=[(86.0, Yin - 9.0)], pasacables_frente=[(-45.0, 45.0)],
                       bridas_tapa=[], vent_x=(-30.0, 25.0), vent_z=(8.0, 22.0)),
              escape=(50.0, 212.0), escape_lado="izq", pe_cajon=(60.0, 100.0),
              wago=[wago_de_pie(-28.0, 78.6, yc), wago_de_pie(4.0, 78.6, yc)],
@@ -354,5 +358,6 @@ def layout_A(k):
     return L
 
 
-SPEC_A = dict(letra="A", nombre="Compacta", W=220.0, D=100.0, gb=11.0, Hk=228.0, tapa="lateral", bisagra="izq", asa="x", layout=layout_A,
+SPEC_A = dict(letra="A", nombre="Compacta", W=220.0, D=100.0, gb=9.5,   # 03-11-2026: era 11; con chapa de 2 mm el cajón conserva sus 71 mm de fondo útil
+              Hk=228.0, tapa="lateral", bisagra="izq", asa="x", layout=layout_A,
               descripcion="Cámara y Solo arriba, pantalla debajo. Policarbonato delante y detrás del panel. Tapa abatible con cerradura y faldón derecho; tapa interior plana que entra deslizando por una ranura del lateral derecho; cajón de pajitas con dos candados. Sin botón.")

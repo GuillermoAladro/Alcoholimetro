@@ -4,6 +4,24 @@ Decisiones que afectan a todo el proyecto. Lo más nuevo va arriba. Si un docume
 
 ## 03-11-2026
 
+### Toda la chapa de 1,5 mm pasa a 2 mm
+
+Guillermo pide chapa de 2 mm en todo, para que la máquina aguante más golpes y palancas. Las piezas que ya eran de 3 mm (anillas de los candados, asideros y pestaña de tope) siguen en 3 mm.
+- **Medidas por fuera, iguales:** 220 × 100 × 442,5 mm. La tapa sobresale 2,5 mm por la derecha en vez de 2.
+- **Pliegues:** radio interior 2 mm (igual al espesor) y K = 0,33. Todos los desarrollos, DXF, STEP y planos se han recalculado.
+- **Peso de la chapa:** 9,9 kg de acero por máquina (antes 7,5); con los policarbonatos, 10,4 kg.
+- **Cambios para que todo siga cabiendo:**
+  - El cajón de componentes conserva sus 71 mm de fondo útil: la holgura de delante baja de 12 a 11,5 mm (el aire entre las tuercas y el cajón, de 3,8 a 3,3 mm) y el hueco de detrás, de 11 a 9,5 mm. Los topes delanteros quedan a 0,5 mm del policarbonato (antes 1). El espárrago de tierra de 8 mm queda a 1,5 mm de la trasera del cajón.
+  - Las holguras de los lados no cambian (3,5 y 7 mm): el cajón es 1 mm más estrecho por fuera y 2 mm por dentro.
+  - El Solo va 2 mm a la izquierda y la Pi 2 mm a la derecha, porque los radios de los pliegues del cajón crecen.
+  - La fuente y la caja de red van 2,5 mm a la derecha (si no, la clavija HDMI de la Pi chocaba con el lateral de la caja de red) y la fuente 1,5 mm más arriba (su canto de abajo tocaba el radio del pliegue de la trasera del cajón).
+  - El faldón de la tapa es 1 mm más bajo (31 mm), para que el alto total no cambie.
+  - El lateral derecho acaba 0,8 mm por debajo del borde, en todo su grueso, para dejar sitio al pliegue del faldón derecho de la tapa.
+  - La bandeja mantiene su cara de arriba a 163,5 mm y crece hacia abajo.
+- **Comprobado:** 0 choques entre las 131 piezas; barridos limpios de la tapa, la tapa interior y los dos cajones; los cables, con los 5 avisos de siempre (tubos del soplido); conexiones con 0 errores.
+- **A confirmar con el taller:** con 2 mm, la pestaña de arriba del panel (7 mm) y las de 8 mm del frente y la trasera del cajón de componentes quedan en el límite de lo que se suele poder plegar (depende de la matriz). Las del cajón se pueden alargar; la del panel no, sin tocar el cajón, porque los topes delanteros del cajón pasan a 0,5 mm de ella al subirlo.
+- El paquete `Carcasa_alcoholimetro_plegada.zip` pasa a ser el de 2 mm.
+
 ### Tabiques del cajón de pajitas: ahora sí son 4 piezas iguales
 
 En su auditoría, Guillermo vio que los 4 tabiques P02 no eran iguales. El del extremo derecho tiene las pestañas hacia el otro lado y es el espejo de los otros tres, no uno de ellos girado, porque la pestaña delantera empezaba a 12 mm y la trasera a 6,3. Aun así, el plano mandaba hacer 4 iguales al derecho, así que 3 habrían salido plegados al revés. Ese zip todavía no se había mandado a nadie.

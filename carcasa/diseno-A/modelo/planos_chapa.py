@@ -220,7 +220,7 @@ def hoja(pdf, g, cara, lineas, W, H, ch, m_masa):
 def portada(pdf, m, gl):
     fig = plt.figure(figsize=(11.69, 8.27))
     fig.text(0.04, 0.94, "Carcasa del alcoholímetro · chapa plegada", fontsize=18, weight="bold")
-    fig.text(0.04, 0.905, "Acero DC01 cortado por láser, plegado a 90° (radio interior 1,5 mm) y soldado por puntos sobre pestañas", fontsize=10, color="#333")
+    fig.text(0.04, 0.905, f"Acero DC01 de {coma(diseno.T, 0)} mm cortado por láser, plegado a 90° (radio interior {coma(diseno.T, 0)} mm) y soldado por puntos sobre pestañas", fontsize=10, color="#333")
     ax3 = fig.add_axes([0.0, 0.05, 0.42, 0.82], projection="3d")
     for p in m.piezas:
         if p["tipo"] == "fabricada" and p.get("movil") in (None, "", "cajon_pajitas", "tapa", "tapa_interior", "cajon_componentes"):
@@ -319,7 +319,7 @@ def lista_xlsx(datos, ruta):
     F, FB, FH = Font(name="Arial", size=10), Font(name="Arial", size=10, bold=True), Font(name="Arial", size=10, bold=True, color="FFFFFF")
     thin = Side(style="thin", color="C6CFD6"); BOX = Border(top=thin, bottom=thin, left=thin, right=thin)
     ws["A1"] = "Carcasa del alcoholímetro · piezas de chapa (diseño A plegado)"; ws["A1"].font = Font(name="Arial", size=14, bold=True)
-    ws["A2"] = ("Acero DC01. Pliegues a 90° con radio interior 1,5 mm; desarrollo calculado con K = 0,33 (el taller puede rehacerlo con su K "
+    ws["A2"] = (f"Acero DC01 de {coma(diseno.T, 0)} mm. Pliegues a 90° con radio interior {coma(diseno.T, 0)} mm; desarrollo calculado con K = 0,33 (el taller puede rehacerlo con su K "
                 "desde el STEP plegado). Soldadura por puntos sobre las pestañas; las piezas de 3 mm, con MIG."); ws["A2"].font = F
     cols = [("Plano", 10), ("Pieza", 40), ("Ud. por máquina", 10), ("Material", 18), ("Proceso", 16), ("Pliegues por pieza", 10),
             ("Desarrollo largo (mm)", 12), ("Desarrollo ancho (mm)", 12), ("Masa por pieza (g)", 11), ("DXF", 46), ("STEP", 46), ("Notas", 80)]

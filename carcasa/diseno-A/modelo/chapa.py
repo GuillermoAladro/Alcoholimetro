@@ -9,7 +9,7 @@ y la madre hasta la cara exterior de la hija (esquina viva). A partir de ahí se
     pliegue" (BA = π/2 · (r + K·t)), con las líneas de pliegue y su sentido.
 
 Convenios: todos los pliegues son de 90°, las caras son paralelas a los planos XY, XZ o YZ.
-Radio interior por defecto = espesor (1,5 mm) y factor K = 0,33 (plegado al aire, acero DC01). El taller puede
+Radio interior por defecto = espesor (2 mm desde el 03-11-2026) y factor K = 0,33 (plegado al aire, acero DC01). El taller puede
 rehacer el desarrollo con sus propios valores a partir del STEP plegado.
 """
 import math
@@ -37,7 +37,7 @@ def _corta(s, cortes):
 
 
 class Chapa:
-    def __init__(self, nombre, t=1.5, r=None, k=K_DEF):
+    def __init__(self, nombre, t=2.0, r=None, k=K_DEF):
         self.nombre, self.t = nombre, t
         self.r = t if r is None else r
         self.k = k

@@ -23,7 +23,7 @@
 - C = carcasa · T = tapa · V = policarbonato · P = cajón de pajitas · K = cajón de componentes · S = soportes.
 - E y H son piezas compradas. Por ejemplo, `A-E06.1` es la fuente.
 
-**Chapa plegada** (desde el 03-11-2026): acero DC01 de 1,5 mm cortado por láser y plegado a 90° (radio interior 1,5 mm). Las piezas se unen por soldadura por puntos sobre pestañas; las de 3 mm (anillas, asideros y pestaña de tope), con MIG.
+**Chapa plegada** (desde el 03-11-2026): acero DC01 de **2 mm** (antes 1,5) cortado por láser y plegado a 90° (radio interior 2 mm). Las piezas se unen por soldadura por puntos sobre pestañas; las de 3 mm (anillas, asideros y pestaña de tope), con MIG.
 - **29 piezas de acero** (21 planos distintos), en vez de 44 chapas planas; 40 pliegues por máquina.
 - **Carcasa:** cuerpo en cruz (trasera, laterales y suelo en una chapa) · panel frontal con pestañas a los lados y arriba · bandeja con pestañas · apoyo trasero de la tapa interior y 2 guías traseras en ángulo.
 - **Tapa:** techo con el faldón delantero y el derecho en una chapa.
@@ -40,7 +40,7 @@
 | Tapa | Abatible hacia la izquierda, 1 cerradura, con faldón delantero y derecho; debajo, una tapa interior plana que entra deslizando por una ranura del lateral derecho |
 | Cajón de pajitas | Sin tirador; 2 anillas con 2 candados |
 | Piezas a fabricar | 33: 29 de acero (21 planos distintos) y 4 de policarbonato |
-| Chapa y policarbonato | 8,1 kg (7,5 kg de acero) |
+| Chapa y policarbonato | 10,4 kg (9,9 kg de acero de 2 mm) |
 | Botón | Ninguno en todo el proyecto, tampoco interruptor de red: el SumUp Solo está siempre esperando tarjeta y la prueba empieza al pagar; la máquina se apaga desenchufándola |
 | Primer pedido de compras | ~937 €, con herramientas y rollos que sobran; desglose en la lista (los 5 artículos de la antena 4G llevan precio orientativo) |
 | Anclaje a la pared | 18 tirafondos 6 × 60 con taco de 8 mm, apretados desde dentro |
@@ -79,10 +79,10 @@
   - por detrás, en dos guías.
 - Por arriba lo limita la tapa interior plana: sobre cada asidero hay un tope de goma de 3 mm que queda 3 mm por debajo de ella (así la tapa interior pasa por encima al deslizar).
 - Holguras con la carcasa:
-  - delante, 12 mm (policarbonato interior 5 + tuercas 3,2 + aire);
+  - delante, 11,5 mm (policarbonato interior 5 + tuercas 3,2 + 3,3 de aire);
   - izquierda, 3,5 mm;
   - derecha, 7 mm (brida de la C14);
-  - detrás, 11 mm.
+  - detrás, 9,5 mm.
 
 **230 V.**
 - La toma C14 va en el lateral derecho **del cajón** y se enchufa por una ventana de la carcasa (38 × 46).
@@ -287,7 +287,7 @@ Todo lo necesario está conectado. En uso normal ninguna rama pasa del 50 % de s
 ## 8. Comprobaciones hechas en el modelo
 
 - **0 choques** entre las 131 piezas, con la carcasa plegada (03-11-2026).
-- Cajón de componentes subiendo con la tapa abierta y la tapa interior quitada: sin roces, en pasos de 2 mm. Pasa a 1 mm del policarbonato, a 2,5 mm de las puntas de los tornillos, a 1,5 mm del apoyo trasero de la tapa interior y, con los topes delanteros, a 0,5 mm de la pestaña de arriba del panel. Por la izquierda pasa a 0,5 mm de los topes de la carcasa y a 1,5 mm de la ventana de la antena.
+- Cajón de componentes subiendo con la tapa abierta y la tapa interior quitada: sin roces, en pasos de 2 mm. Pasa a 0,5 mm del policarbonato, a 2,5 mm de las puntas de los tornillos, a 1,5 mm del apoyo trasero de la tapa interior y, con los topes delanteros, a 0,5 mm de la pestaña de arriba del panel. Por la izquierda pasa a 0,5 mm de los topes de la carcasa y a 1,5 mm de la ventana de la antena.
 - Tapa interior saliendo por la ranura derecha con la tapa abierta: sin roces con el faldón.
 - Con la tapa cerrada, la tapa interior no sale: a los 0,5 mm topa con el faldón derecho.
 - Puente de tierra: no toca el asidero, la trasera del cajón ni el apoyo trasero.

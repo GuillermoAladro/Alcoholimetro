@@ -1,13 +1,13 @@
 CARCASA DEL ALCOHOLIMETRO (diseño A) - CHAPA PLEGADA / FOLDED SHEET-METAL ENCLOSURE
-Guillermo Aladro Abad · 03-11-2026
+Guillermo Aladro Abad · 03-11-2026 (chapa de 2 mm)
 
 ES
 - Medidas generales: 220 x 100 x 443 mm.
 - Acero DC01. 29 piezas por máquina, en 21 planos distintos:
-    13 planos de chapa de 1,5 mm cortada por láser y plegada (40 pliegues por máquina, todos a 90°);
-    4 planos de chapa plana de 1,5 mm;
+    13 planos de chapa de 2 mm cortada por láser y plegada (40 pliegues por máquina, todos a 90°);
+    4 planos de chapa plana de 2 mm;
     4 planos de chapa plana de 3 mm.
-- Pliegues: radio interior 1,5 mm. Los desarrollos están calculados con factor K = 0,33.
+- Pliegues: radio interior 2 mm. Los desarrollos están calculados con factor K = 0,33.
   Si vuestro K es otro, rehaced el desarrollo a partir del STEP de la pieza plegada (es la referencia).
 - Unión: soldadura por puntos sobre las pestañas, en 4 conjuntos (carcasa, tapa, cajón de pajitas y cajón de componentes).
   Las piezas de 3 mm (anillas de candado, asideros y pestaña de tope) se sueldan con MIG. Algunos espárragos M4 soldados.
@@ -18,10 +18,10 @@ ES
 EN
 - Overall size: 220 x 100 x 443 mm.
 - DC01 cold-rolled steel. 29 parts per machine, 21 different drawings:
-    13 drawings of 1.5 mm laser-cut and bent parts (40 bends per machine, all 90°);
-    4 drawings of flat 1.5 mm parts;
+    13 drawings of 2 mm laser-cut and bent parts (40 bends per machine, all 90°);
+    4 drawings of flat 2 mm parts;
     4 drawings of flat 3 mm parts.
-- Bends: 1.5 mm inside radius. Flat patterns computed with K-factor 0.33.
+- Bends: 2 mm inside radius. Flat patterns computed with K-factor 0.33.
   If your K-factor differs, please unfold from the STEP of the bent part (the STEP is the reference).
 - Joining: spot welding on the flanges, in 4 sub-assemblies (body, lid, two drawers).
   The 3 mm parts (padlock eyes, handles and opening stop) are MIG welded. A few weld-on M4 studs.

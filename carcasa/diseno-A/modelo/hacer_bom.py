@@ -198,7 +198,7 @@ for i, L in enumerate(sorted(R)):
         res.cell(row=r, column=j).number_format = "0"
 res["A10"] = "Notas"; res["A10"].font = FB
 notas = [
-    "Hay dos policarbonatos de 5 mm: uno delante del panel frontal y otro detrás, entre el panel y el cajón de componentes. Todas las piezas de chapa son planas (acero DC01 1,5 mm, corte láser) y se unen por soldadura por puntos o remaches: no hay plegados.",
+    "Hay dos policarbonatos de 5 mm: uno delante del panel frontal y otro detrás, entre el panel y el cajón de componentes. Las piezas de chapa son de acero DC01 de 2 mm cortado por láser y plegado a 90° (desde el 03-11-2026), unidas por soldadura por puntos sobre pestañas; las de 3 mm (anillas, asideros y pestaña de tope), con MIG.",
     "Los números de pieza son los mismos en el visor 3D, en los STEP (STEP_piezas/<nº>.step) y en los DXF (DXF_corte/<nº>.dxf).",
     "Las compras salen del modelo 3D (cuántas veces aparece cada pieza) más lo que no se dibuja (tubo, fusibles, cables, microSD...).",
     "Paquetes a pedir: si el anuncio no dice cuántas unidades trae, se pone 1 en amarillo para revisarlo.",
