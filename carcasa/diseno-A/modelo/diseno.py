@@ -613,17 +613,20 @@ def construir_cajon_pajitas(m, W, D, d):
     yi0, yi1, z_del = yf + T, yb - T, zf1 + d["A_ran"] + 1.7
 
     def tabique(xo, sg):
+        # las pestañas delantera y trasera empiezan a la misma altura (z_del, por encima de las ventanas): así la pieza es
+        # simétrica y el tabique derecho (pestañas hacia -x) es uno de los otros girado 180°, no su espejo -> 4 piezas iguales
         fx, ax = sorted((xo, xo + sg * T)), sorted((xo, xo + sg * ALA))
         c = Chapa("Tabique del cajón de pajitas")
         c.cara("tabique", (fx[0], fx[1], yi0, yi1, zf1, zt),
                [box(fx[0] - 0.1, fx[1] + 0.1, yi0 - 0.1, yi0 + RT, zf1 - 0.1, z_del),
-                box(fx[0] - 0.1, fx[1] + 0.1, yi1 - RT, yi1 + 0.1, zf1 - 0.1, zf1 + RT)])
+                box(fx[0] - 0.1, fx[1] + 0.1, yi1 - RT, yi1 + 0.1, zf1 - 0.1, z_del)])
         c.cara("del", (ax[0], ax[1], yi0, yi0 + T, z_del, zt))
-        c.cara("tras", (ax[0], ax[1], yi1 - T, yi1, zf1 + RT, zt))
+        c.cara("tras", (ax[0], ax[1], yi1 - T, yi1, z_del, zt))
         c.cara("inf", (ax[0], ax[1], yi0 + RT, yi1 - RT, zf1, zf1 + T))
         c.pliegue("tabique", "del").pliegue("tabique", "tras").pliegue("tabique", "inf")
         return c
-    nt = "Igual que los otros 3 tabiques. Pestañas de 10 mm soldadas por puntos a la delantera, a la trasera y al fondo"
+    nt = ("Las 4 son la misma pieza: el tabique derecho es otro girado 180°. "
+          "Pestañas de 10 mm soldadas por puntos a la delantera, a la trasera y al fondo")
     m.fab("P", "Tabique: extremo derecho", None, COL_CAJON, movil=mv, chapa=tabique(x1, -1), codigo="TABIQUE", notas=nt)
     m.fab("P", "Tabique: cierre izquierdo (detrás de la tapa)", None, COL_CAJON, movil=mv, chapa=tabique(x0, 1), codigo="TABIQUE",
           notas=nt + ". La tapa se suelda por puntos a su cara")

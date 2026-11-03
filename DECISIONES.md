@@ -4,6 +4,21 @@ Decisiones que afectan a todo el proyecto. Lo más nuevo va arriba. Si un docume
 
 ## 03-11-2026
 
+### Tabiques del cajón de pajitas: ahora sí son 4 piezas iguales
+
+En su auditoría, Guillermo vio que los 4 tabiques P02 no eran iguales. El del extremo derecho tiene las pestañas hacia el otro lado y es el espejo de los otros tres, no uno de ellos girado, porque la pestaña delantera empezaba a 12 mm y la trasera a 6,3. Aun así, el plano mandaba hacer 4 iguales al derecho, así que 3 habrían salido plegados al revés. Ese zip todavía no se había mandado a nadie.
+- **Arreglo:** la pestaña trasera empieza también a 12 mm, igual que la delantera. La pieza queda simétrica y el tabique derecho es otro girado 180°. Siguen siendo 21 planos, con P02 ×4. La pestaña trasera pierde 5,7 mm por abajo; no importa, porque la inferior va soldada al fondo.
+- **Control nuevo en `modelo/planos_chapa.py`:** antes de exportar comprueba que todas las piezas que comparten código son la misma pieza girada. Si una es un espejo o tiene otras cotas, se para y dice cuál. Con el modelo anterior salta en el tabique.
+- Se quitan `planos_chapa.2.py` y `Carcasa_plegada.2/`: un solo generador y un solo paquete. Están en el historial de git.
+- **A comprobar con el taller y en el prototipo** (de las observaciones de la auditoría):
+  - El K y el radio reales, con una prueba de doblado.
+  - El pliegue a tramos del P01 (tres ventanas): los alivios y que las ranuras no se deformen.
+  - Las tolerancias generales y las cotas funcionales. El PDF da las medidas generales; los agujeros y recortes van en los DXF.
+  - Que los electrodos de soldar por puntos lleguen a las pestañas de 10–13 mm, y en qué orden se pliega y se suelda.
+  - Holguras de la tapa y las guías tras soldar, continuidad de tierra y separación de los 230 V.
+  - Que la bisagra, los tornillos y las cerraduras se puedan montar después de plegar.
+- Comprobado: 0 choques, barridos limpios, cables con los 5 avisos de siempre y conexiones con 0 errores.
+
 ### Carcasa de chapa plegada: 29 piezas de acero en vez de 44
 
 Guillermo pide que la carcasa se pueda mandar a cortar y plegar: en vez de una chapa por cada cara, piezas que se doblan en forma de cajón, más baratas y prácticas de fabricar. Medidas exteriores, cajones, componentes y holguras no cambian.

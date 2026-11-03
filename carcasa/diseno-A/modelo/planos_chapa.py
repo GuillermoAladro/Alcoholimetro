@@ -1,6 +1,9 @@
 """
 Planos de fabricación de la carcasa en chapa plegada.
 
+Las piezas con el mismo código comparten plano. Antes de exportar se comprueba que de verdad son la misma pieza
+(una girada respecto a otra). Si una es el espejo de otra, se plegaría al revés, así que el script se para.
+
   python planos_chapa.py SALIDA
     SALIDA/DXF_desarrollos/   un DXF por pieza distinta: contorno de corte (capa CORTE), líneas de pliegue (capa PLIEGUES,
                               discontinua) y textos (capa TEXTO). Las piezas planas, solo con su contorno.
@@ -14,6 +17,7 @@ sys.path.insert(0, "/home/claude/nuevo")
 import numpy as np
 import cadquery as cq
 from cadquery.occ_impl.exporters.dxf import DxfDocument
+from OCP.gp import gp_Trsf
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -41,6 +45,10 @@ def grupos(m):
     lista = []
     for g in out.values():
         p0 = g["piezas"][0]
+        for p in g["piezas"][1:]:
+            if not misma_pieza(p0["solido"], p["solido"]):
+                raise SystemExit(f"Plano {g['codigo']}: «{p['nombre']}» no es la misma pieza que «{p0['nombre']}» girada "
+                                 "(espejo o cotas distintas). Dale su propio código en diseno.py.")
         g.update(ref=p0["id"], nombre=p0["nombre"], cant=len(g["piezas"]), material=p0["material"], espesor=p0["espesor"],
                  chapa=p0.get("chapa"), solido=p0["solido"], proceso=p0["proceso"], notas=p0.get("notas", ""), color=p0["color"],
                  ids=[p["id"] for p in g["piezas"]])
@@ -48,6 +56,45 @@ def grupos(m):
             g["nombre"] = nombre_comun(g)
         lista.append(g)
     return lista
+
+
+def _rotaciones():
+    """Las 24 rotaciones que llevan ejes a ejes, solo las de determinante +1 (girar la pieza, nunca reflejarla)."""
+    import itertools
+    out = []
+    for perm in itertools.permutations(range(3)):
+        for sig in itertools.product((1, -1), repeat=3):
+            M = np.zeros((3, 3))
+            for i in range(3):
+                M[i, perm[i]] = sig[i]
+            if round(np.linalg.det(M)) == 1:
+                out.append(M)
+    return out
+
+
+ROTACIONES = _rotaciones()
+
+
+def misma_pieza(a, b, tol=1.0):
+    """True si b es a girada y movida (todas las piezas están alineadas con los ejes). Tolerancia en mm³."""
+    if abs(a.Volume() - b.Volume()) > tol:
+        return False
+    def centrada(s):
+        c = s.BoundingBox().center
+        return s.translate(cq.Vector(-c.x, -c.y, -c.z))
+    a0, b0 = centrada(a), centrada(b)
+    ba = a0.BoundingBox()
+    for M in ROTACIONES:
+        t = gp_Trsf()
+        t.SetValues(*[float(v) for fila in M for v in list(fila) + [0.0]])
+        r = b0._apply_transform(t)
+        br = r.BoundingBox()
+        if max(abs(br.xlen - ba.xlen), abs(br.ylen - ba.ylen), abs(br.zlen - ba.zlen)) > 0.01:
+            continue
+        r = centrada(r)
+        if a0.cut(r).Volume() + r.cut(a0).Volume() < tol:
+            return True
+    return False
 
 
 NOMBRES = {"TABIQUE": "Tabique del cajón de pajitas", "GUIA": "Guía trasera", "ANILLA_FIJA": "Anilla para candado (en el lateral)",
