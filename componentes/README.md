@@ -37,6 +37,13 @@ Una carpeta por componente del alcoholímetro, con su ficha técnica, documentos
 | 31 | Pasacables de goma, surtido de 7 tamaños (260 uds.) | Protegen los cables en los agujeros de la chapa | [pasacables-goma](pasacables-goma/README.md) |
 | 32 | Portafusibles en línea 5 × 20 + fusibles rápidos (kit) | Un fusible en el +5 V de cada rama: 3 A Pi, 2 A Solo, 2 A pantalla, 1 A ZE29A. Pieza añadida el 21-10-2026 por la auditoría (H04); ficha corta | [portafusibles-en-linea-5x20](portafusibles-en-linea-5x20/README.md) |
 
+
+## Carcasa: componentes propuestos (no incluidos en los 32 eléctricos)
+
+| Estado | Componente | Función | Ficha |
+|---|---|---|---|
+| **Pendiente de comprar y validar** | **Permabond TA4204**, adhesivo estructural transparente bicomponente | Fijación interior de las ventanas de policarbonato de 5 mm / metacrilato a la carcasa metálica; requiere ensayo de compatibilidad y retención mecánica | [adhesivo-permabond-ta4204](adhesivo-permabond-ta4204/README.md) |
+
 Lo que las fichas dejan abierto (decisiones, medidas por hacer y documentos que faltan) está reunido en [pendientes.md](pendientes.md).
 
 Cada ficha indica de dónde sale cada dato y marca lo que no está verificado. Los enlaces a PDF y páginas están reunidos en el `enlaces.md` de cada carpeta.
