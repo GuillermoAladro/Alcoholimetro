@@ -1,0 +1,169 @@
+{
+  "scene": "00029.2",
+  "renderer": "Node/Skia @napi-rs/canvas",
+  "durationSeconds": 13.5,
+  "results": [
+    {
+      "name": "Atlas cargados sin errores",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Geometría finita a 120 Hz",
+      "passed": true,
+      "details": {
+        "samples": 1621
+      }
+    },
+    {
+      "name": "Cuatro muñecas conectadas",
+      "passed": true,
+      "details": {
+        "maxGapPx": 2.8762677257104063e-7
+      }
+    },
+    {
+      "name": "Índice de Guillermo toca el botón durante la pulsación",
+      "passed": true,
+      "details": {
+        "maxGapPx": 0
+      }
+    },
+    {
+      "name": "Índice de Marcos toca el botón para apagar",
+      "passed": true,
+      "details": {
+        "maxGapPx": 0
+      }
+    },
+    {
+      "name": "Tapón continuo mano-oreja-mano y al ofrecerlo",
+      "passed": true,
+      "details": {
+        "maxJumpPx": 3.70112048018456e-8
+      }
+    },
+    {
+      "name": "Sin saltos de postura al cambiar de fase",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "La sirena y los rotativos paran; el pelo conserva el efecto",
+      "passed": true,
+      "details": {
+        "windAfterOff": 0,
+        "hairAtEnd": 1,
+        "rotDelta": 0
+      }
+    },
+    {
+      "name": "Búsqueda directa y rebobinado deterministas",
+      "passed": true
+    },
+    {
+      "name": "Reproducción idéntica a 30, 60 y 120 fps",
+      "passed": true,
+      "details": [
+        {
+          "fps": 30,
+          "ok": true
+        },
+        {
+          "fps": 60,
+          "ok": true
+        },
+        {
+          "fps": 120,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "name": "Secuencia completa renderizada a 60 fps",
+      "passed": true,
+      "details": {
+        "frames": 811
+      }
+    },
+    {
+      "name": "Negro inicial y final",
+      "passed": true,
+      "details": [
+        {
+          "t": 0,
+          "max": 0
+        },
+        {
+          "t": 0.016666666666666666,
+          "max": 0
+        },
+        {
+          "t": 0.03333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.05,
+          "max": 0
+        },
+        {
+          "t": 0.06666666666666667,
+          "max": 0
+        },
+        {
+          "t": 0.08333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.1,
+          "max": 0
+        },
+        {
+          "t": 0.11666666666666667,
+          "max": 0
+        },
+        {
+          "t": 13.383333333333333,
+          "max": 0
+        },
+        {
+          "t": 13.4,
+          "max": 0
+        },
+        {
+          "t": 13.416666666666666,
+          "max": 0
+        },
+        {
+          "t": 13.433333333333334,
+          "max": 0
+        },
+        {
+          "t": 13.45,
+          "max": 0
+        },
+        {
+          "t": 13.466666666666667,
+          "max": 0
+        },
+        {
+          "t": 13.483333333333333,
+          "max": 0
+        },
+        {
+          "t": 13.5,
+          "max": 0
+        }
+      ]
+    },
+    {
+      "name": "Sin cortes visuales aislados",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "passed": true,
+  "limitations": [
+    "No se han probado los controles HTML en un navegador ni la Raspberry Pi física."
+  ]
+}
