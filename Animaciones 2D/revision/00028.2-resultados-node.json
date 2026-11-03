@@ -1,0 +1,174 @@
+{
+  "scene": "00028.2",
+  "renderer": "Node/Skia @napi-rs/canvas",
+  "durationSeconds": 14.2,
+  "results": [
+    {
+      "name": "Atlas cargados sin errores",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Geometría finita a 120 Hz",
+      "passed": true,
+      "details": {
+        "samples": 1705
+      }
+    },
+    {
+      "name": "Cuatro muñecas conectadas",
+      "passed": true,
+      "details": {
+        "maxGapPx": 2.967509674846621e-7
+      }
+    },
+    {
+      "name": "Agarres en los extremos de la cintura del pantalón",
+      "passed": true,
+      "details": {
+        "maxGapPx": 4.000000000000057
+      }
+    },
+    {
+      "name": "Bota unida a la mano desde que la saca de la percha",
+      "passed": true,
+      "details": {
+        "maxGapPx": 0
+      }
+    },
+    {
+      "name": "Pantalón y botas continuos en los cambios de fase",
+      "passed": true,
+      "details": {
+        "maxJumpPx": 0.00016256284300321085
+      }
+    },
+    {
+      "name": "Segunda bota apoyada sin atravesar el suelo",
+      "passed": true,
+      "details": {
+        "maxPenetrationPx": 0
+      }
+    },
+    {
+      "name": "Pantalón cubre ambos ojos durante el tanteo a ciegas",
+      "passed": true,
+      "details": {
+        "minCoverageMarginPx": 10.75887338357037
+      }
+    },
+    {
+      "name": "Sin saltos de postura al cambiar de fase",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Búsqueda directa y rebobinado deterministas",
+      "passed": true
+    },
+    {
+      "name": "Reproducción idéntica a 30, 60 y 120 fps",
+      "passed": true,
+      "details": [
+        {
+          "fps": 30,
+          "ok": true
+        },
+        {
+          "fps": 60,
+          "ok": true
+        },
+        {
+          "fps": 120,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "name": "Secuencia completa renderizada a 60 fps",
+      "passed": true,
+      "details": {
+        "frames": 853
+      }
+    },
+    {
+      "name": "Negro inicial y final",
+      "passed": true,
+      "details": [
+        {
+          "t": 0,
+          "max": 0
+        },
+        {
+          "t": 0.016666666666666666,
+          "max": 0
+        },
+        {
+          "t": 0.03333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.05,
+          "max": 0
+        },
+        {
+          "t": 0.06666666666666667,
+          "max": 0
+        },
+        {
+          "t": 0.08333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.1,
+          "max": 0
+        },
+        {
+          "t": 0.11666666666666667,
+          "max": 0
+        },
+        {
+          "t": 14.083333333333334,
+          "max": 0
+        },
+        {
+          "t": 14.1,
+          "max": 0
+        },
+        {
+          "t": 14.116666666666667,
+          "max": 0
+        },
+        {
+          "t": 14.133333333333333,
+          "max": 0
+        },
+        {
+          "t": 14.15,
+          "max": 0
+        },
+        {
+          "t": 14.166666666666666,
+          "max": 0
+        },
+        {
+          "t": 14.183333333333334,
+          "max": 0
+        },
+        {
+          "t": 14.2,
+          "max": 0
+        }
+      ]
+    },
+    {
+      "name": "Sin cortes visuales aislados",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "passed": true,
+  "limitations": [
+    "No se han probado los controles HTML en un navegador ni la Raspberry Pi física."
+  ]
+}
