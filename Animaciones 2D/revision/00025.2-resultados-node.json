@@ -1,0 +1,182 @@
+{
+  "scene": "00025.2",
+  "renderer": "Node/Skia @napi-rs/canvas",
+  "durationSeconds": 14.7,
+  "results": [
+    {
+      "name": "Atlas cargados sin errores",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Geometría finita a 120 Hz",
+      "passed": true,
+      "details": {
+        "samples": 1765
+      }
+    },
+    {
+      "name": "Cuatro muñecas conectadas",
+      "passed": true,
+      "details": {
+        "maxGapPx": 2.4369698473255836e-7
+      }
+    },
+    {
+      "name": "Puños conectados a la barra durante el esfuerzo",
+      "passed": true,
+      "details": {
+        "maxGapPx": 5.684341886080802e-14
+      }
+    },
+    {
+      "name": "Agarre sigue la cinturilla transformada",
+      "passed": true,
+      "details": {
+        "maxGapPx": 5.684341886080802e-14
+      }
+    },
+    {
+      "name": "Puño conectado al chaquetón durante el esfuerzo",
+      "passed": true,
+      "details": {
+        "maxGapPx": 2.6752669913911973,
+        "toleranceReason": "Temblor narrativo del tejido: amplitud máxima de 3 px"
+      }
+    },
+    {
+      "name": "Boquilla en el labio durante los tres sorbos",
+      "passed": true,
+      "details": {
+        "maxGapPx": 2.25088454876906e-14
+      }
+    },
+    {
+      "name": "Mano acompaña la coronilla al aplastarse",
+      "passed": true,
+      "details": {
+        "maxGapPx": 5.684341886080802e-14
+      }
+    },
+    {
+      "name": "Discos y extremos inmóviles",
+      "passed": true,
+      "details": {
+        "maxShiftPx": 0
+      }
+    },
+    {
+      "name": "Sin saltos de postura al cambiar de fase",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Búsqueda directa y rebobinado deterministas",
+      "passed": true
+    },
+    {
+      "name": "Reproducción idéntica a 30, 60 y 120 fps",
+      "passed": true,
+      "details": [
+        {
+          "fps": 30,
+          "ok": true
+        },
+        {
+          "fps": 60,
+          "ok": true
+        },
+        {
+          "fps": 120,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "name": "Secuencia completa renderizada a 60 fps",
+      "passed": true,
+      "details": {
+        "frames": 883
+      }
+    },
+    {
+      "name": "Negro inicial y final",
+      "passed": true,
+      "details": [
+        {
+          "t": 0,
+          "max": 0
+        },
+        {
+          "t": 0.016666666666666666,
+          "max": 0
+        },
+        {
+          "t": 0.03333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.05,
+          "max": 0
+        },
+        {
+          "t": 0.06666666666666667,
+          "max": 0
+        },
+        {
+          "t": 0.08333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.1,
+          "max": 0
+        },
+        {
+          "t": 0.11666666666666667,
+          "max": 0
+        },
+        {
+          "t": 14.583333333333334,
+          "max": 0
+        },
+        {
+          "t": 14.6,
+          "max": 0
+        },
+        {
+          "t": 14.616666666666667,
+          "max": 0
+        },
+        {
+          "t": 14.633333333333333,
+          "max": 0
+        },
+        {
+          "t": 14.65,
+          "max": 0
+        },
+        {
+          "t": 14.666666666666666,
+          "max": 0
+        },
+        {
+          "t": 14.683333333333334,
+          "max": 0
+        },
+        {
+          "t": 14.7,
+          "max": 0
+        }
+      ]
+    },
+    {
+      "name": "Sin cortes visuales aislados",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "passed": true,
+  "limitations": [
+    "No se han probado los controles HTML en un navegador ni la Raspberry Pi física."
+  ]
+}
