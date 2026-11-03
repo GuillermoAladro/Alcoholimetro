@@ -1,0 +1,191 @@
+{
+  "scene": "00026.2",
+  "renderer": "Node/Skia @napi-rs/canvas",
+  "durationSeconds": 13.2,
+  "results": [
+    {
+      "name": "Atlas cargados sin errores",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Geometría finita a 120 Hz",
+      "passed": true,
+      "details": {
+        "samples": 1585
+      }
+    },
+    {
+      "name": "Cuatro muñecas conectadas",
+      "passed": true,
+      "details": {
+        "maxGapPx": 2.6135560188181687e-7
+      }
+    },
+    {
+      "name": "Extintor recogido por el asa sin desplazamiento",
+      "passed": true,
+      "details": {
+        "maxGapPx": 0
+      }
+    },
+    {
+      "name": "Boquilla en el puño después de descolgarla",
+      "passed": true,
+      "details": {
+        "maxGapPx": 0
+      }
+    },
+    {
+      "name": "Manguera conectada a válvula y boquilla",
+      "passed": true,
+      "details": {
+        "maxGapPx": 0
+      }
+    },
+    {
+      "name": "Anilla en la mano durante su extracción",
+      "passed": true,
+      "details": {
+        "maxGapPx": 0
+      }
+    },
+    {
+      "name": "Polvo emitido desde la boca de la boquilla",
+      "passed": true,
+      "details": {
+        "maxGapPx": 0
+      }
+    },
+    {
+      "name": "Continuidad del asa, anilla, boquilla y manguera",
+      "passed": true,
+      "details": {
+        "maxJumpPx": 0.00003720215041516528
+      }
+    },
+    {
+      "name": "Sin saltos de postura al cambiar de fase",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Vela apagada y Guillermo limpio al final; Marcos conserva el polvo",
+      "passed": true,
+      "details": {
+        "candleBefore": 1,
+        "candleAfter": 0,
+        "powderG": 0,
+        "powderM": 1
+      }
+    },
+    {
+      "name": "Búsqueda directa y rebobinado deterministas",
+      "passed": true
+    },
+    {
+      "name": "Reproducción idéntica a 30, 60 y 120 fps",
+      "passed": true,
+      "details": [
+        {
+          "fps": 30,
+          "ok": true
+        },
+        {
+          "fps": 60,
+          "ok": true
+        },
+        {
+          "fps": 120,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "name": "Secuencia completa renderizada a 60 fps",
+      "passed": true,
+      "details": {
+        "frames": 793
+      }
+    },
+    {
+      "name": "Negro inicial y final",
+      "passed": true,
+      "details": [
+        {
+          "t": 0,
+          "max": 0
+        },
+        {
+          "t": 0.016666666666666666,
+          "max": 0
+        },
+        {
+          "t": 0.03333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.05,
+          "max": 0
+        },
+        {
+          "t": 0.06666666666666667,
+          "max": 0
+        },
+        {
+          "t": 0.08333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.1,
+          "max": 0
+        },
+        {
+          "t": 0.11666666666666667,
+          "max": 0
+        },
+        {
+          "t": 13.083333333333334,
+          "max": 0
+        },
+        {
+          "t": 13.1,
+          "max": 0
+        },
+        {
+          "t": 13.116666666666667,
+          "max": 0
+        },
+        {
+          "t": 13.133333333333333,
+          "max": 0
+        },
+        {
+          "t": 13.15,
+          "max": 0
+        },
+        {
+          "t": 13.166666666666666,
+          "max": 0
+        },
+        {
+          "t": 13.183333333333334,
+          "max": 0
+        },
+        {
+          "t": 13.2,
+          "max": 0
+        }
+      ]
+    },
+    {
+      "name": "Sin cortes visuales aislados",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "passed": true,
+  "limitations": [
+    "No se han probado los controles HTML en un navegador ni la Raspberry Pi física."
+  ]
+}
