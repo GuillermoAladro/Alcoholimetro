@@ -75,3 +75,9 @@ No está en las 31 fichas. Lo propone la guía por si el Wi-Fi del bar no sirve:
 - **#9 SumUp Solo:** el USB-C está en el canto de abajo (foto del anuncio).
 - **#32 (nuevo):** la auditoría 1.0 (H04) y las cuatro auditorías del repositorio piden fusible en el troncal y en cada rama de 5 V. El kit B07KQ46H6K trae 5 portafusibles y fusibles de 1, 2, 3 y 5 A; detalle en [MONTAJE GENERAL](MONTAJE-GENERAL.md), W11 a W18.
 - **Piezas que las auditorías del 21-10-2026 piden y que no están en esta lista** (ver MONTAJE GENERAL, 5.2): tapa aislante para los bornes de 230 V de la fuente; arandelas aislantes para el jack RP-SMA del techo; dos punteras dobles de 2 × 0,75 mm² para los bornes 4 y 5 de la fuente, si el kit #28 no las trae; tornillería M2 para la cámara (sus taladros son de 2,2 mm); resistencias de 1 kΩ para la UART y el pulsador si se adoptan; y, si el módulo C14 resulta de un polo o sin esquema, una entrada C14 bipolar documentada que lo sustituya.
+
+## Carcasa: adhesivo transparente pendiente de compra (fuera de los 32 componentes)
+
+- **Permabond TA4204**, adhesivo estructural acrílico transparente **A+B, 1:1**, cartucho **50 ml** con boquilla. Para unir por dentro las ventanas de policarbonato compacto 5 mm / metacrilato al metal, previa prueba de compatibilidad con el acabado real de las placas y de la chapa.
+- **Tienda localizada:** [Lijmenwinkel](https://www.lijmenwinkel.nl/de/permabond-ta-4204.html), referencia **LUB00000883**. **Precio observado 03-11-2026: 34,00 € por cartucho**, sin confirmar envío/disponibilidad; pistola de aplicación compatible aparte.
+- **Ficha y procedimiento:** [componentes/adhesivo-permabond-ta4204/README.md](componentes/adhesivo-permabond-ta4204/README.md), con TDS del fabricante, preparación, curado, precauciones y prueba previa. **No comprado; no incluido en el subtotal ni en el total de 646,57 €.**
