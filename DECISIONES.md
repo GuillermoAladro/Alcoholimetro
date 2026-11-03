@@ -2,6 +2,49 @@
 
 Decisiones que afectan a todo el proyecto. Lo más nuevo va arriba. Si un documento del repositorio dice otra cosa, manda lo que pone aquí.
 
+## 03-11-2026
+
+### Carcasa de chapa plegada: 29 piezas de acero en vez de 44
+
+Guillermo pide que la carcasa se pueda mandar a cortar y plegar: en vez de una chapa por cada cara, piezas que se doblan en forma de cajón, más baratas y prácticas de fabricar. Medidas exteriores, cajones, componentes y holguras no cambian.
+- **Antes:** 44 chapas planas soldadas cara con cara. **Ahora:** 29 piezas de acero en 21 planos distintos, con 40 pliegues de 90° por máquina (radio interior 1,5 mm). Todas las uniones de 1,5 mm se sueldan por puntos sobre pestañas. Las piezas de 3 mm siguen planas y van con MIG.
+- **Carcasa:**
+  - Cuerpo C02 en cruz: trasera, laterales y suelo en una chapa (414 × 537 de desarrollo). A la izquierda, el pliegue empieza encima del hueco del cajón de pajitas.
+  - Panel frontal C01 entre los laterales. Lleva pestañas de 12 mm a los lados, soldadas por dentro de los laterales, y una de 7 mm arriba, que es el apoyo delantero de la tapa interior. Por eso el panel acaba 1,5 mm más abajo (407,5 mm) y el faldón de la tapa empieza en 408. La cerradura y la tapa interior no se mueven.
+  - Bandeja C03 con pestañas de 13 mm hacia abajo.
+  - Apoyo trasero C06 y guías traseras C04 en ángulo, para soldarlos por puntos.
+  - Fuera los salientes delantero e izquierdos de la tapa interior: la tapa apoya en todo su largo delante (pestaña del panel) y detrás (apoyo C06).
+- **Tapa T02:** techo con el faldón delantero y el derecho doblados (antes, 3 chapas).
+- **Cajón de pajitas:**
+  - Cuerpo en U P01: fondo, delantera y trasera. Las 3 ventanas de las pajitas cruzan el pliegue, así que ese pliegue se hace a tramos.
+  - 4 tabiques iguales P02: los 2 extremos y los 2 separadores.
+  - La tapa sigue plana y va soldada al tabique izquierdo.
+- **Cajón de componentes:**
+  - Cuerpo en U K03: base y laterales.
+  - Frente K01 con pestañas a los lados y abajo.
+  - Trasera K02 con pestañas a la izquierda y abajo. A la derecha no lleva, porque ahí está la C14.
+  - Caja de red K06 en una sola chapa, con sus 2 pestañas de fijación (antes, 5 piezas).
+  - Repisa del Solo S03 en ángulo.
+- **Cambios pequeños para que quepa todo:**
+  - Ventanas y soporte de la antena 4G, 5 mm más atrás, por las pestañas del frente del cajón.
+  - Solo, 1,5 mm a la izquierda: su espárrago tocaba el radio del pliegue.
+  - Pestaña izquierda de la caja de red, 6 mm más adelante.
+  - Rejilla de la base del cajón, 5 mm más corta.
+  - Muesca en una pestaña de la trasera del cajón para la microSD de la Pi.
+  - Esquinas de laterales y trasera recortadas bajo los pliegues de la tapa.
+- **Planos:** `carcasa/diseno-A/presupuesto/Carcasa_plegada/` (y el zip `Carcasa_alcoholimetro_plegada.zip`) contiene:
+  - `Planos_chapa_plegada.pdf`: una hoja por pieza, con el desarrollo acotado, las líneas de pliegue, su sentido y la pieza plegada en 3D.
+  - Los DXF de los desarrollos, con capas CORTE y PLIEGUES.
+  - Un STEP de cada pieza ya plegada, el conjunto y la lista.
+
+  El desarrollo está calculado con K = 0,33; el taller puede rehacerlo con su K a partir del STEP. Lo genera `modelo/planos_chapa.py`, con la herramienta nueva `modelo/chapa.py`.
+- **Ojo con los presupuestos ya pedidos:** a las 185 empresas del 1 y 2 de noviembre se les mandaron los planos de 44 chapas planas. Ese zip no se ha tocado. Para pedir precio de la versión plegada hay que mandarles el zip nuevo.
+- **Comprobado en el modelo:**
+  - 0 choques entre las 131 piezas.
+  - Barridos limpios de tapa, tapa interior y cajones.
+  - Los cables siguen con los 5 avisos de siempre (tubos del soplido) y las conexiones con 0 errores.
+  - Los desarrollos no se solapan y cada uno sale de una sola chapa.
+
 ## 01-11-2026
 
 ### Antena 4G por dentro: ya no sobresale nada (los candados se quedan)

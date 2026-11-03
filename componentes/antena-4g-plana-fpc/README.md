@@ -15,9 +15,9 @@ Antena del [módem 4G](../modem-4g-huawei-e3372h/README.md). Es una lámina adhe
 
 | Pieza | Qué es | Medidas |
 |---|---|---|
-| Ventana del lateral izquierdo de la carcasa (C03) | Hueco en la chapa, entre las rejillas de abajo y las de arriba | 36 × 112 mm |
+| Ventana del lateral izquierdo de la carcasa (cuerpo C02) | Hueco en la chapa, entre las rejillas de abajo y las de arriba | 36 × 112 mm |
 | A-V03 | Policarbonato de 2 mm pegado con VHB por dentro de la carcasa. Por fuera queda a ras | 52 × 128 mm |
-| Ventana del lateral izquierdo del cajón (K04) | Hueco enfrente del de la carcasa | 32 × 108 mm |
+| Ventana del lateral izquierdo del cajón (cuerpo del cajón K03) | Hueco enfrente del de la carcasa | 32 × 108 mm |
 | A-S05 | Soporte de policarbonato de 2 mm pegado por dentro del cajón. La antena va pegada encima, con el cable hacia arriba | 44 × 120 mm |
 
 - **El cable va todo dentro del cajón**, de la antena a la toma del módem (unos 17 cm de recorrido). Al sacar el cajón no hay que soltar nada.

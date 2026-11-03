@@ -6,6 +6,8 @@ Generador paramétrico (Python 3 + CadQuery 2.8).
   python exportar_freecad.py SALIDA.step -> la máquina entera en un STEP con grupos, nombres y colores (para FreeCAD)
 specs.py   : medidas y colocación de cada componente (diseño A) (aquí se cambian las cosas)
 diseno.py  : carcasa, tapas, cajones, soportes y lista de compras
+chapa.py   : chapa plegada (caras + pliegues de 90°): sólido plegado con su radio, desarrollo plano, líneas de pliegue y DXF
+  python planos_chapa.py SALIDA   -> planos de la carcasa plegada: PDF (una hoja por pieza), DXF de desarrollos, STEP y lista
 comp.py    : modelos de las piezas compradas con sus medidas reales
 cables_choques.py : comprueba que ningún cable atraviesa una pieza (muestrea cada recorrido)
 realista/  : modelos 3D de los componentes (three.js) y los dos visores

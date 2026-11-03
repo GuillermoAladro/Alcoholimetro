@@ -154,7 +154,7 @@ def layout_A(k):
     yf = Yin - 36 - T                                    # cara delantera de la caja de red
     yc = yf - 0.2                                        # plano donde se apoyan las piezas de pie del reparto de 5 V
     L = dict(Yin=Yin, Xin1=Xin1,
-             pantalla=(-82.5, 12.0), solo=(6.5, 136.0), camara=(-67.5, 185.5), boquilla=(-55.0, 150.0),
+             pantalla=(-82.5, 12.0), solo=(5.0, 136.0), camara=(-67.5, 185.5), boquilla=(-55.0, 150.0),
              pi=(-101.0, 99.0), fuente=(43.0, 3.0), ze29a=(-80.0, Yin - 9.6, 162.0), c14=(Yin - 18.0, 50.0),
              red=dict(x0=-56.5, alto=88.0, fondo=36.0, pasacables=[(86.0, Yin - 9.0)], pasacables_frente=[(-45.0, 45.0)],
                       bridas_tapa=[], vent_x=(-30.0, 25.0), vent_z=(8.0, 22.0)),

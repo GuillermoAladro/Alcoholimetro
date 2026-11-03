@@ -4,13 +4,13 @@
 
 **Cómo abrirlo:** en FreeCAD, *Archivo → Abrir* y elige el `.step`. Sirve igual en Fusion 360, SolidWorks, Onshape, etc.
 
-**Qué lleva (284 piezas, cada una con su nombre y color):**
+**Qué lleva (cada pieza con su nombre y color):**
 
 | Grupo | Piezas |
 |---|---|
-| 01 Carcasa | 14 chapas |
+| 01 Carcasa | 8 piezas de chapa plegada y plana (cuerpo, panel, bandeja, apoyos, guías y anillas) |
 | 02 Policarbonatos (frente y ventana de la antena) | 3 |
-| 03 Tapa abatible | tapa, faldones, bisagra y cerradura |
+| 03 Tapa abatible | tapa con sus faldones, pestaña de tope, bisagra y cerradura |
 | 04 Tapa interior | 1 |
 | 05 Cajón de pajitas | cajón, anillas y los 2 candados |
 | 06 Cajón de componentes | chapas del cajón y soportes |
@@ -20,7 +20,7 @@
 
 - Los nombres siguen la lista de piezas (`A-C01 Panel frontal`, `A-E06.1 Fuente LRS-50-5`…), sin tildes para que se lean bien en cualquier versión.
 - El STEP no guarda transparencias: si quieres ver a través de los policarbonatos, en FreeCAD selecciónalos y pon *Transparencia* en la vista.
-- Las chapas sueltas para fabricar siguen en `../CAD_A_Compacta/` (un STEP por pieza y los DXF de corte).
+- Las chapas sueltas para fabricar siguen en `../CAD_A_Compacta/` (un STEP por pieza y los DXF de corte con los pliegues) y en `../presupuesto/Carcasa_plegada/` (los planos en PDF).
 
 **Cómo se genera:** `python modelo/exportar_freecad.py FreeCAD/Alcoholimetro_A_completo.step` (sale del mismo modelo que el resto; si cambia `specs.py`, se vuelve a generar).
 - Las vistas `vista-exterior.png` (lado izquierdo, con la ventana de la antena) y `vista-interior.png` (carcasa y cajón transparentes) salen del visor 3D, que se genera del mismo modelo.

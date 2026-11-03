@@ -11,6 +11,7 @@ import math
 import cadquery as cq
 import comp as C
 from comp import box, cyl, fuse
+from chapa import Chapa
 from geo import (place, place_parts, hole_y, hole_x, hole_z, slot_y, slot_x, slot_z, cut_all,
                  keyhole_y, vent_slots_x, vent_slots_z, vent_slots_y)
 
@@ -33,11 +34,11 @@ HOLG_TI = 0.3      # holgura de la tapa interior en su ranura del lateral derech
 PC_A = 2.0         # policarbonato de 2 mm de las ventanas de la antena 4G
 # Antena 4G (01-11-2026): dos ventanas alineadas en el lateral IZQUIERDO, una en la carcasa y otra en el cajón de componentes,
 # entre las rejillas de abajo y las de arriba. Cotas de mundo: (y desde el frente, z desde el suelo)
-VA_Y, VA_Z = (21.0, 57.0), (229.0, 341.0)      # ventana de la carcasa
+VA_Y, VA_Z = (26.0, 62.0), (229.0, 341.0)      # ventana de la carcasa (02-11-2026: 5 mm más atrás, por las pestañas del frente del cajón)
 VA_PC = 8.0                                    # la placa de 2 mm pisa la chapa 8 mm por cada lado (cinta VHB)
-VK_Y, VK_Z = (23.0, 55.0), (231.0, 339.0)      # ventana del cajón: 2 mm más pequeña por cada lado
+VK_Y, VK_Z = (28.0, 60.0), (231.0, 339.0)      # ventana del cajón: 2 mm más pequeña por cada lado
 VK_PC = 6.0                                    # el soporte de 2 mm pisa la chapa del cajón 6 mm (detrás está la Pi)
-ANT_C = (39.0, 285.0)                          # centro de la antena plana (y, z)
+ANT_C = (44.0, 285.0)                          # centro de la antena plana (y, z)
 
 COL_CHAPA = (0.62, 0.66, 0.70)
 COL_CHAPA_OSC = (0.30, 0.34, 0.38)
@@ -65,11 +66,18 @@ class Modelo:
         return f"{self.letra}-{grupo}{self._n[grupo]:02d}"
 
     def fab(self, grupo, nombre, solido, color, material="Acero DC01 1,5 mm", proceso="Láser", movil=None,
-            notas="", espesor=T, plana=True):
+            notas="", espesor=T, plana=True, chapa=None, codigo=None):
+        """chapa: objeto Chapa si la pieza es de chapa plegada (de ahí salen el sólido y el desarrollo).
+        codigo: piezas iguales comparten código de plano (un solo plano con su cantidad)."""
         pid = self.nid(grupo)
+        if chapa is not None:
+            solido = chapa.solido()
+            plana = False
+            proceso = "Láser + plegado"
         self.piezas.append(dict(id=pid, nombre=nombre, grupo=grupo, tipo="fabricada", material=material,
                                 proceso=proceso, espesor=espesor, solido=solido, subs=[(nombre, solido, color)],
-                                color=color, movil=movil, electrico=False, notas=notas, plana=plana))
+                                color=color, movil=movil, electrico=False, notas=notas, plana=plana, chapa=chapa,
+                                codigo=codigo or pid))
         return pid
 
     def compra(self, ref, nombre, subs, movil=None, electrico=False, notas="", grupo="H", uds=1, modelo=None):
@@ -201,12 +209,12 @@ def construir(spec):
     Kx0, Kx1 = -W / 2 + T + GS_L, W / 2 - T - GS_R
     Ky0, Ky1 = T + GF, D - T - gb
     zi0 = Ktop + AIRE_TI                      # cara de abajo de la tapa interior plana
-    Hp = zi0 + T                              # alto del panel frontal: a ras de la tapa interior plana
+    Hp = zi0                                  # alto del panel frontal: su pestaña de arriba es el apoyo delantero de la tapa interior
     ys0, ys1 = T + 2.5, D - T - 7.5           # ranura de la tapa interior: deja 2,5 mm de chapa delante y 7,5 mm detrás
     y_sb = Ky1 + 1.5                          # el saliente trasero llega hasta 1,5 mm del cajón
-    Hw = Hp + BANDA                           # alto de laterales y trasera
+    Hw = zi0 + T + BANDA                      # alto de laterales y trasera
     Hr = Hw
-    zl = (Hp + 0.5 + Hw) / 2                  # eje de las cerraduras
+    zl = (zi0 + T + 0.5 + Hw) / 2             # eje de las cerraduras
     if tapa == "extraible":
         cer = [(-(W / 2 - X_CER), -1), (W / 2 - X_CER, 1)]
     else:
@@ -252,8 +260,11 @@ def construir(spec):
     for j in range(1, nz - 1):
         z = pcz0 + 8 + j * (pcz1 - pcz0 - 16) / (nz - 1)
         studs += [(pcx0 + 8, z), (pcx1 - 8, z)]
-    # panel frontal
-    p = box(-W / 2, W / 2, 0, T, 0, Hp)
+    # panel frontal plegado: va ENTRE los laterales, con una pestaña a cada lado (hacia atrás, soldada por puntos al lateral
+    # por dentro) y otra arriba, que hace de apoyo delantero de la tapa interior
+    RT = 2 * T                                # radio interior + espesor: lo que se come cada esquina plegada
+    XP = W / 2 - T
+    PEST_P, PEST_SUP = 12.0, 7.0
     cuts = [box(act_c[0] - VENT_P[0] / 2, act_c[0] + VENT_P[0] / 2, -5, 5, zc(act_c[1]) - VENT_P[1] / 2, zc(act_c[1]) + VENT_P[1] / 2),
             box(solo_c[0] - VENT_S_PANEL / 2, solo_c[0] + VENT_S_PANEL / 2, -5, 5, zc(solo_c[1]) - VENT_S_PANEL / 2, zc(solo_c[1]) + VENT_S_PANEL / 2),
             hole_y(lens[0], zc(lens[1]), D_CAM_P), hole_y(boq[0], zc(boq[1]), D_BOQ_P)]
@@ -262,9 +273,17 @@ def construir(spec):
     dr = cajon_pajitas_medidas(W, D)
     for xc in dr["centros"]:
         cuts.append(slot_y(xc, dr["z_ran"], dr["L_ran"], dr["A_ran"]))
-    p = cut_all(p, cuts)
-    m.fab("C", "Panel frontal", p, COL_CHAPA_OSC,
-          notas="Ventanas de pantalla, Solo, cámara y boquilla; 10 × Ø4,5 de los tornillos de los policarbonatos; 3 ranuras de pajitas")
+    cuts += [box(XP - RT, XP + 1, -1, T + 1, Hp - RT, Hp + 1), box(-XP - 1, -XP + RT, -1, T + 1, Hp - RT, Hp + 1)]   # alivios de esquina
+    ch = Chapa("Panel frontal")
+    ch.cara("frente", (-XP, XP, 0, T, 0, Hp), cuts)
+    ch.cara("izq", (-XP, -XP + T, 0, PEST_P, 0, Hp - RT))
+    ch.cara("der", (XP - T, XP, 0, PEST_P, 0, Hp - RT))
+    ch.cara("sup", (-XP + RT, XP - RT, 0, PEST_SUP, Hp - T, Hp))
+    ch.pliegue("frente", "izq").pliegue("frente", "der").pliegue("frente", "sup")
+    m.fab("C", "Panel frontal", None, COL_CHAPA_OSC, chapa=ch,
+          notas="Ventanas de pantalla, Solo, cámara y boquilla; 10 × Ø4,5 de los tornillos de los policarbonatos; 3 ranuras de pajitas. "
+                f"Pestañas laterales de {PEST_P:.0f} mm soldadas por puntos a los laterales por dentro; pestaña de arriba de {PEST_SUP:.0f} mm "
+                "donde apoya la tapa interior")
     avellanado = lambda x, z, r: cq.Solid.makeCone(r + 2.25, r, 2.25, cq.Vector(x, -PC_T - 0.01, z), cq.Vector(0, 1, 0))
     pe = box(pcx0, pcx1, -PC_T, 0, pcz0, pcz1)                 # policarbonato exterior, apoyado en el panel
     pe = cut_all(pe, [hole_y(x, z, 4.5) for x, z in studs] + [avellanado(x, z, 2.25) for x, z in studs]
@@ -287,15 +306,12 @@ def construir(spec):
     m.cotas["pc"] = (pcx1 - pcx0, pcz1 - pcz0)
     # trasera: 18 tornillos a la pared (3 columnas × 6 filas), agujeros redondos; se aprietan desde dentro con arandela ancha
     fij = fijaciones_pared(W, Ktop - 10.0)
-    t = box(-W / 2, W / 2, D - T, D, 0, Hw)
-    t = cut_all(t, [keyhole_y(x, z, BOCALLAVE[0], BOCALLAVE[1], BOCALLAVE[2]) if bl else hole_y(x, z, 6.5) for x, z, bl in fij])
-    m.fab("C", "Trasera", t, COL_CHAPA,
-          notas="18 agujeros Ø6,5 para la pared (3 columnas × 6 filas). Tirafondo 6 × 60 con taco de 8 mm y arandela ancha M6, apretados desde dentro")
+    cuts_t = [keyhole_y(x, z, BOCALLAVE[0], BOCALLAVE[1], BOCALLAVE[2]) if bl else hole_y(x, z, 6.5) for x, z, bl in fij]
+    # alivios: a la izquierda el pliegue empieza encima del hueco del cajón de pajitas; abajo a la derecha, esquina con el suelo
+    cuts_t += [box(-W / 2 - 1, -W / 2 + RT, D - T - 1, D + 1, -1, Z_HUECO), box(W / 2 - RT, W / 2 + 1, D - T - 1, D + 1, -1, RT)]
     m.cotas["fijaciones_pared"] = [(x, z) for x, z, bl in fij]
     # laterales
-    hz = ZS0 - 0.0
-    li = box(-W / 2, -W / 2 + T, T, D - T, T, Hw)
-    cuts = [box(-W / 2 - 1, -W / 2 + T + 1, T + 15.0, D - T + 1, 0, Z_HUECO)]      # hueco del cajón de pajitas
+    cuts = [box(-W / 2 - 1, -W / 2 + T + 1, T + 15.0, D + 1, -1, Z_HUECO)]      # hueco del cajón de pajitas
     ex = lay["escape"]                                                            # (y, z local) del escape
     esc_izq = lay.get("escape_lado", "izq") == "izq"
     rej_esc = [hole_x(ex[0] + OY + dy, zc(ex[1]) + dz, 4.0)                       # rejilla de escape: 7 agujeros Ø4
@@ -306,16 +322,12 @@ def construir(spec):
         cuts += vent_slots_x(Ky0 + 12, Ky1 - 12, zc(z0), zc(z1))
     cuts += [box(-W / 2 - 5, -W / 2 + 5, 15.0, 19.0, zl - 7, zl + 7) for x, sg in cer if sg < 0]
     cuts.append(box(-W / 2 - 1, -W / 2 + T + 1, VA_Y[0], VA_Y[1], VA_Z[0], VA_Z[1]))           # ventana de la antena 4G
-    li = cut_all(li, cuts)
-    m.fab("C", "Lateral izquierdo", li, COL_CHAPA, notas="Hueco del cajón de pajitas, rejilla de escape del soplido, rejillas de ventilación"
-          f" y ventana de la antena 4G ({VA_Y[1] - VA_Y[0]:.0f} × {VA_Z[1] - VA_Z[0]:.0f})"
-          + ("; ranura 4×14 de la leva" if any(sg < 0 for _, sg in cer) else ""))
+    cuts_li = cuts
     va = box(-W / 2 + T, -W / 2 + T + PC_A, VA_Y[0] - VA_PC, VA_Y[1] + VA_PC, VA_Z[0] - VA_PC, VA_Z[1] + VA_PC)
     m.fab("V", "Ventana de la antena 4G (policarbonato 2 mm, por dentro del lateral izquierdo)", va, COL_PC,
           material="Policarbonato compacto 2 mm", proceso="Corte con sierra o cúter", espesor=PC_A,
           notas=f"Pegada con cinta VHB por dentro del lateral, pisando {VA_PC:.0f} mm la chapa alrededor de la ventana. Por fuera queda a ras: "
                 "no sobresale nada. Deja 1,5 mm hasta el cajón de componentes")
-    ld = box(W / 2 - T, W / 2, T, D - T, T, Hr)
     c14 = lay["c14"]                                                              # (y, z) local del centro de la toma
     VENT_C14 = (38.0, 46.0)                                                       # ventana del enchufe (y × z)
     cuts = [box(W / 2 - 5, W / 2 + 5, c14[0] + OY - VENT_C14[0] / 2, c14[0] + OY + VENT_C14[0] / 2,
@@ -330,26 +342,52 @@ def construir(spec):
     ym = (ys0 + ys1) / 2
     cuts.append(box(W / 2 - 5, W / 2 + 5, ys0, ys1, zr0, zr1))
     cuts.append(hole_x(ym, zr1, 16.0).intersect(box(W / 2 - 5, W / 2 + 5, ym - 9, ym + 9, zr1, zr1 + 9)))
-    ld = cut_all(ld, cuts)
     m.cotas["ranura_tapa_interior"] = dict(y=(ys0, ys1), z=(zr0, zr1), largo=ys1 - ys0, alto=zr1 - zr0)
-    m.fab("C", "Lateral derecho", ld, COL_CHAPA, notas=f"Ventana del enchufe de la toma C14 ({VENT_C14[0]:.0f} × {VENT_C14[1]:.0f}), rejillas, "
-          f"ranura {zr1 - zr0:.1f} × {ys1 - ys0:.0f} de la tapa interior con muesca R8 encima"
-          + ("; ranura 4×14 de la leva" if any(sg > 0 for _, sg in cer) else ""))
-    # suelo y bandeja
-    m.fab("C", "Suelo", box(-W / 2, W / 2, T, D - T, 0, T), COL_CHAPA)
+    # arriba, los laterales dejan sitio al faldón delantero de la tapa (va delante, a y = 0) y al radio interior de sus pliegues
+    for cl, sg in ((cuts_li, -1), (cuts, 1)):
+        xs = sorted((sg * W / 2, sg * (W / 2 - T)))
+        cl += [box(xs[0] - 0.1, xs[1] + 0.1, -1, T, Hp, Hw + 1), box(xs[0] - 0.1, xs[1] + 0.1, -1, RT + 0.1, Hw - 1.6, Hw + 1)]
+    cuts.append(box(W / 2 - 1.0, W / 2 + 0.1, -1, D + 1, Hw - 1.1, Hw + 1))     # canto de arriba del lateral derecho, bajo el pliegue del faldón derecho
+    cuts_t.append(box(W / 2 - RT, W / 2 + 0.1, D - T - 0.1, D + 0.1, Hw - 1.1, Hw + 1))   # y la esquina de arriba de la trasera
+    ch = Chapa("Cuerpo")
+    ch.cara("trasera", (-W / 2, W / 2, D - T, D, 0, Hw), cuts_t)
+    ch.cara("izq", (-W / 2, -W / 2 + T, 0, D, 0, Hw), cuts_li)
+    ch.cara("der", (W / 2 - T, W / 2, 0, D, 0, Hr), cuts)
+    ch.cara("suelo", (-W / 2 + RT, W / 2 - RT, T, D, 0, T),
+            [box(sg * (W / 2 - T - RT) - (0 if sg > 0 else 5), sg * (W / 2 - T - RT) + (5 if sg > 0 else 0), 0, RT + 0.5, -1, T + 1) for sg in (-1, 1)])  # radio de las pestañas del panel
+    ch.pliegue("trasera", "izq", rangos=[(Z_HUECO, Hw)]).pliegue("trasera", "der", rangos=[(RT, Hr - 1.1)]).pliegue("trasera", "suelo")
+    m.fab("C", "Cuerpo (trasera, laterales y suelo)", None, COL_CHAPA, chapa=ch,
+          notas="Una sola chapa en cruz con 3 pliegues. Trasera: 18 agujeros Ø6,5 para la pared (tirafondo 6 × 60 con taco de 8 mm y arandela "
+                "ancha M6, apretados desde dentro). Lateral izquierdo: hueco del cajón de pajitas, rejilla de escape, rejillas y ventana de la "
+                f"antena 4G ({VA_Y[1] - VA_Y[0]:.0f} × {VA_Z[1] - VA_Z[0]:.0f}). Lateral derecho: ventana de la C14 ({VENT_C14[0]:.0f} × "
+                f"{VENT_C14[1]:.0f}), rejillas, ranura {zr1 - zr0:.1f} × {ys1 - ys0:.0f} de la tapa interior con muesca R8 y ranura 4 × 14 de la leva")
+    # bandeja plegada: pestañas hacia abajo a los lados y detrás, soldadas por puntos a laterales y trasera
     sb_pos = [(Kx0 + 16, Ky0 + 14), (Kx1 - 16, Ky0 + 14), (Kx0 + 16, Ky1 - 14), (Kx1 - 16, Ky1 - 14)]
-    ba = box(-W / 2 + T, W / 2 - T, T, D - T, ZS0, ZS1)
-    ba = cut_all(ba, [hole_z(x, y, 4.5) for x, y in sb_pos])
-    m.fab("C", "Bandeja (suelo de la zona de componentes)", ba, COL_CHAPA, notas="4 agujeros Ø4,5 para los silentblocks")
+    XB, ALA_B, YB0 = W / 2 - T, 13.0, PEST_P + 2.0
+    cb = [hole_z(x, y, 4.5) for x, y in sb_pos]
+    cb += [box(sg * XB - (1 if sg < 0 else RT), sg * XB + (RT if sg < 0 else 1), T - 1, YB0, ZS0 - 1, ZS1 + 1) for sg in (-1, 1)]       # muescas: pestañas del panel
+    cb += [box(sg * XB - (1 if sg < 0 else RT), sg * XB + (RT if sg < 0 else 1), D - T - RT, D, ZS0 - 1, ZS1 + 1) for sg in (-1, 1)]    # alivios de esquina
+    ch = Chapa("Bandeja")
+    ch.cara("bandeja", (-XB, XB, T, D - T, ZS0, ZS1), cb)
+    ch.cara("izq", (-XB, -XB + T, YB0, D - T - RT, ZS1 - ALA_B, ZS1))
+    ch.cara("der", (XB - T, XB, YB0, D - T - RT, ZS1 - ALA_B, ZS1))
+    ch.cara("tras", (-XB + RT, XB - RT, D - 2 * T, D - T, ZS1 - ALA_B, ZS1))
+    ch.pliegue("bandeja", "izq").pliegue("bandeja", "der").pliegue("bandeja", "tras")
+    m.fab("C", "Bandeja (suelo de la zona de componentes)", None, COL_CHAPA, chapa=ch,
+          notas="4 agujeros Ø4,5 para los silentblocks. Pestañas de 13 mm hacia abajo, soldadas por puntos a los laterales y a la trasera")
     if tapa == "extraible":
         tira = box(-W / 2, W / 2, D - TIRA, D, Hw, Hw + T)
         m.fab("C", "Tira trasera fija del techo", tira, COL_CHAPA, notas="Las lengüetas de la tapa entran por debajo")
     # guías traseras: dos pletinas verticales soldadas a la trasera topan el cajón por detrás
     for sg in (-1, 1):
         x = sg * (W / 2 - 40)
-        gu = box(x - T / 2, x + T / 2, Ky1 + 0.5 + TOPE, D - T, Kz0, Ktop - 10)
-        m.fab("C", f"Guía trasera {'izquierda' if sg < 0 else 'derecha'}", gu, COL_CHAPA,
-              notas="Pletina vertical soldada a la trasera; un tope de goma en su canto delantero")
+        ch = Chapa("Guía trasera")
+        ch.cara("guia", (x - T / 2, x + T / 2, Ky1 + 0.5 + TOPE, D - T, Kz0, Ktop - 10))
+        ala = (x - T / 2, x - T / 2 + 10.0) if sg < 0 else (x + T / 2 - 10.0, x + T / 2)
+        ch.cara("ala", (ala[0], ala[1], D - 2 * T, D - T, Kz0, Ktop - 10))
+        ch.pliegue("guia", "ala")
+        m.fab("C", f"Guía trasera {'izquierda' if sg < 0 else 'derecha'}", None, COL_CHAPA, chapa=ch, codigo="GUIA",
+              notas="Angular: el ala de 10 mm se suelda por puntos a la trasera; un tope de goma en el canto delantero. Las dos son la misma pieza")
         m.compra("H02", "Tope de goma 10×3", place_parts(C.tope_goma((0, -1, 0)), at=(x, Ky1 + 0.5 + TOPE, Kz0 + Hk / 2)))
     # espárrago de tierra de la carcasa: en la trasera, detrás del cajón
     pe_h = (W / 2 - 60, D - T, Ktop - 25)
@@ -367,15 +405,15 @@ def construir(spec):
           notas="Chapa lisa sin agujeros. Entra deslizando por la ranura del lateral derecho, apoya en los salientes "
                 "y hace tope en el lateral izquierdo; queda a ras por fuera. Con la tapa cerrada el faldón derecho tapa la ranura. "
                 "Para sacarla: abrir la tapa, empujar con el dedo desde la muesca y tirar hacia la derecha (hacen falta ~23 cm libres a ese lado)")
-    sal = [("Saliente delantero (tapa interior)", box(-W / 2 + T, W / 2 - T, T, T + 5.0, zi0 - T, zi0),
-            "Soldado a la cara interior del panel frontal; 5 mm de vuelo. Hace de guía de la tapa interior"),
-           ("Saliente trasero (tapa interior)", box(-W / 2 + T, W / 2 - T, y_sb, D - T, zi0 - T, zi0),
-            f"Soldado a la trasera; {D - T - y_sb:.1f} mm de vuelo. Hace de guía de la tapa interior")]
-    for k, (y0, y1) in enumerate(((33.0, 68.0), (83.0, y_sb))):
-        sal.append((f"Saliente izquierdo {k + 1} (tapa interior)", box(-W / 2 + T, -W / 2 + T + 2.5, y0, y1, zi0 - T, zi0),
-                    "Soldado al lateral izquierdo; 2,5 mm de vuelo (deja pasar el cajón y sus topes)"))
-    for nom, sh, nt in sal:
-        m.fab("C", nom, sh, COL_CHAPA, notas=nt)
+    # el apoyo delantero es la pestaña de arriba del panel; el de atrás, un angular soldado a la trasera (los salientes
+    # del lateral izquierdo sobran: la tapa apoya en todo su largo delante y detrás)
+    ch = Chapa("Apoyo trasero de la tapa interior")
+    xa0, xa1 = -W / 2 + RT + 0.5, W / 2 - RT - 0.5            # fuera del radio de las esquinas de la trasera
+    ch.cara("apoyo", (xa0, xa1, y_sb, D - T, zi0 - T, zi0))
+    ch.cara("ala", (xa0, xa1, D - 2 * T, D - T, zi0 - T, zi0 - T + 12.0))
+    ch.pliegue("apoyo", "ala")
+    m.fab("C", "Apoyo trasero de la tapa interior", None, COL_CHAPA, chapa=ch,
+          notas=f"Angular: {D - T - y_sb:.1f} mm de apoyo y ala de 12 mm hacia arriba, soldada por puntos a la trasera")
     m.cotas["tapa_interior_z"] = zi0
 
     # ------------------------------------------------------------------ TAPA
@@ -386,39 +424,49 @@ def construir(spec):
 
     # ------------------------------------------------------------------ CAJÓN DE COMPONENTES
     mv = "cajon_componentes"
-    base = box(Kx0, Kx1, Ky0, Ky1, Kz0, Kz0 + T)
     bc = [hole_z(x, y, 6.0) for x, y in sb_pos]
     rb = lay["red"]                                                  # caja de red: x0 local, alto
-    bc += vent_slots_z(rb["x0"] + 10, Xin1 - 40, Yin - 34 + OY, Yin - 4 + OY, L=18, pitch_y=10)
-    base = cut_all(base, bc)
-    m.fab("K", "Base del cajón", base, COL_CART, movil=mv, notas="4 agujeros Ø6 que encajan en los silentblocks; rejilla bajo la fuente")
-    fr = box(Kx0, Kx1, Ky0, Ky0 + T, Kz0 + T, Ktop)
+    bc += vent_slots_z(rb["x0"] + 10, Xin1 - 40, Yin - 34 + OY, Yin - 9 + OY, L=18, pitch_y=10)   # acaba antes de la pestaña de la trasera
+    ALA_K = 8.0                                                      # pestañas del frente y de la trasera del cajón
+    xk0, xk1 = Kx0 + T, Kx1 - T                                      # frente y trasera van entre los laterales
     cuts = [box(act_c[0] - VENT_P[0] / 2, act_c[0] + VENT_P[0] / 2, 0, 50, zc(act_c[1]) - VENT_P[1] / 2, zc(act_c[1]) + VENT_P[1] / 2),
             box(solo_c[0] - VENT_S_CAJ / 2, solo_c[0] + VENT_S_CAJ / 2, 0, 50, zc(solo_c[1]) - VENT_S_CAJ / 2, zc(solo_c[1]) + VENT_S_CAJ / 2),
             hole_y(lens[0], zc(lens[1]), D_CAM_K), hole_y(boq[0], zc(boq[1]), D_BOQ_K)]
     for ax, az in [(2, 2), (23, 2), (2, C.CAM["h"] - 9.5), (23, C.CAM["h"] - 9.5)]:
         cuts.append(hole_y(cam[0] + ax, zc(cam[1] + az), 2.4))
-    fr = cut_all(fr, cuts)
-    m.fab("K", "Frente del cajón", fr, COL_CART, movil=mv, notas="Sujeta pantalla, Solo y cámara a ras del panel; tornillos M2 avellanados de la cámara")
-    tr = box(Kx0, Kx1, Ky1 - T, Ky1, Kz0 + T, Ktop)
+    cuts += [box(xk0 - 0.1, xk0 + RT, Ky0 - 0.1, Ky0 + T + 0.1, Kz0 + T - 0.1, Kz0 + T + RT),
+             box(xk1 - RT, xk1 + 0.1, Ky0 - 0.1, Ky0 + T + 0.1, Kz0 + T - 0.1, Kz0 + T + RT)]            # alivios de esquina
+    ch = Chapa("Frente del cajón")
+    ch.cara("frente", (xk0, xk1, Ky0, Ky0 + T, Kz0 + T, Ktop), cuts)
+    ch.cara("izq", (xk0, xk0 + T, Ky0, Ky0 + ALA_K, Kz0 + T + RT, Ktop))
+    ch.cara("der", (xk1 - T, xk1, Ky0, Ky0 + ALA_K, Kz0 + T + RT, Ktop))
+    ch.cara("inf", (xk0 + RT, xk1 - RT, Ky0, Ky0 + ALA_K, Kz0 + T, Kz0 + 2 * T))
+    ch.pliegue("frente", "izq").pliegue("frente", "der").pliegue("frente", "inf")
+    m.fab("K", "Frente del cajón", None, COL_CART, movil=mv, chapa=ch,
+          notas="Sujeta pantalla, Solo y cámara a ras del panel; tornillos M2 avellanados de la cámara. Pestañas de 8 mm a los lados y abajo, "
+                "soldadas por puntos a los laterales y a la base")
     tcuts = []
     for hx, hz in lay["agujeros_trasera"]:
         tcuts.append(hole_y(hx, zc(hz), 3.4))
     for sx, sz in lay["bridas_trasera"]:
         tcuts += [slot_y(sx - 6, zc(sz), 3.2, 8.0, horizontal=False), slot_y(sx + 6, zc(sz), 3.2, 8.0, horizontal=False)]
-    tr = cut_all(tr, tcuts)
-    m.fab("K", "Trasera del cajón", tr, COL_CART, movil=mv, notas="Taladros de la fuente (M3) y de la Pi (M2,5); pares de ranuras para bridas")
-    lz = box(Kx0, Kx0 + T, Ky0 + T, Ky1 - T, Kz0 + T, Ktop)
+    tcuts.append(box(xk0 - 0.1, xk0 + RT, Ky1 - T - 0.1, Ky1 + 0.1, Kz0 + T - 0.1, Kz0 + T + RT))          # alivio de esquina
+    tcuts.append(box(xk1 - T, xk1 + 0.1, Ky1 - T - 0.1, Ky1 + 0.1, Kz0 + T - 0.1, Kz0 + T + RT + 0.5))      # radio del pliegue derecho del cuerpo + alivio
+    ch = Chapa("Trasera del cajón")
+    ch.cara("trasera", (xk0, xk1, Ky1 - T, Ky1, Kz0 + T, Ktop), tcuts)
+    pz_w = lay["pi"][1] + OZ                                       # muesca en la pestaña izquierda para la microSD de la Pi
+    ch.cara("izq", (xk0, xk0 + T, Ky1 - ALA_K, Ky1, Kz0 + T + RT, Ktop),
+            [box(xk0 - 0.1, xk0 + T + 0.1, Ky1 - ALA_K - 0.1, Ky1 - ALA_K + 3.0, pz_w + 18.0, pz_w + 38.0)])
+    ch.cara("inf", (xk0 + RT, xk1 - T, Ky1 - ALA_K, Ky1, Kz0 + T, Kz0 + 2 * T))
+    ch.pliegue("trasera", "izq").pliegue("trasera", "inf")
+    m.fab("K", "Trasera del cajón", None, COL_CART, movil=mv, chapa=ch,
+          notas="Taladros de la fuente (M3) y de la Pi (M2,5); pares de ranuras para bridas. Pestañas de 8 mm a la izquierda y abajo, soldadas "
+                "por puntos; sin pestaña a la derecha (ahí está la toma C14)")
     lzc = [hole_x(ex[0] + OY, zc(ex[1]), 12.0)] if esc_izq else []
     for z0, z1 in lay["rejillas_izq"]:
         lzc += vent_slots_x(Ky0 + 12, Ky1 - 12, zc(z0), zc(z1))
     lzc.append(box(Kx0 - 1, Kx0 + T + 1, VK_Y[0], VK_Y[1], VK_Z[0], VK_Z[1]))                 # ventana de la antena 4G
-    lz = cut_all(lz, lzc)
-    m.fab("K", "Lateral izquierdo del cajón", lz, COL_CART, movil=mv,
-          notas=("Paso del tubo de escape Ø12 con pasacables y rejillas" if esc_izq else "Rejillas")
-          + f"; ventana de la antena 4G ({VK_Y[1] - VK_Y[0]:.0f} × {VK_Z[1] - VK_Z[0]:.0f}), enfrente de la de la carcasa")
     m.cotas["ventana_antena"] = dict(carcasa=(VA_Y[1] - VA_Y[0], VA_Z[1] - VA_Z[0]), cajon=(VK_Y[1] - VK_Y[0], VK_Z[1] - VK_Z[0]))
-    rz = box(Kx1 - T, Kx1, Ky0 + T, Ky1 - T, Kz0 + T, Ktop)
     cw, chh = C.C14["cuerpo"][0], C.C14["cuerpo"][1]
     rzc = [box(Kx1 - 5, Kx1 + 5, c14[0] + OY - chh / 2 - 0.2, c14[0] + OY + chh / 2 + 0.2, zc(c14[1]) - cw / 2 - 0.2, zc(c14[1]) + cw / 2 + 0.2)]
     for ax, az in C.C14["agujeros"]:
@@ -427,15 +475,22 @@ def construir(spec):
         rzc += vent_slots_x(Ky0 + 12, Ky1 - 12, zc(z0), zc(z1))
     if not esc_izq:
         rzc.append(hole_x(ex[0] + OY, zc(ex[1]), 12.0))
-    rz = cut_all(rz, rzc)
-    m.fab("K", "Lateral derecho del cajón", rz, COL_CART, movil=mv,
-          notas=f"Recorte de la toma C14 ({chh + 0.4:.2f} × {cw + 0.4:.2f}, ancho × alto) y 2 taladros M3 a 36 mm, uno encima de otro")
+    ch = Chapa("Cuerpo del cajón de componentes")
+    ch.cara("base", (Kx0, Kx1, Ky0, Ky1, Kz0, Kz0 + T), bc)
+    ch.cara("lat_izq", (Kx0, Kx0 + T, Ky0, Ky1, Kz0, Ktop), lzc)
+    ch.cara("lat_der", (Kx1 - T, Kx1, Ky0, Ky1, Kz0, Ktop), rzc)
+    ch.pliegue("base", "lat_izq").pliegue("base", "lat_der")
+    m.fab("K", "Cuerpo del cajón (base y laterales)", None, COL_CART, movil=mv, chapa=ch,
+          notas="U con 2 pliegues. Base: 4 agujeros Ø6 que encajan en los silentblocks y rejilla bajo la fuente. Lateral izquierdo: "
+                + ("paso del tubo de escape Ø12 con pasacables, " if esc_izq else "") + f"rejillas y ventana de la antena 4G "
+                f"({VK_Y[1] - VK_Y[0]:.0f} × {VK_Z[1] - VK_Z[0]:.0f}). Lateral derecho: recorte de la toma C14 ({chh + 0.4:.2f} × "
+                f"{cw + 0.4:.2f}, ancho × alto), 2 taladros M3 a 36 mm y rejillas")
     # sin asa: dos asideros (chapa de 3 mm con agujero para dos dedos) a ras del borde de arriba, por dentro de los laterales
     for nom, x0, x1, y0, y1, yh, yt in (("Asidero izquierdo", Kx0 + T, Kx0 + T + 30, 8 + OY, 48 + OY, 20 + OY, 38 + OY),
                                         ("Asidero derecho", Kx1 - T - 30, Kx1 - T, Yin - 43 + OY, Yin - 3 + OY, Yin - 31 + OY, Yin - 13 + OY)):
         xh = (x0 + x1) / 2
         asd = cut_all(box(x0, x1, y0, y1, Ktop - 3.0, Ktop), [hole_z(xh, yh, 22.0)])
-        m.fab("K", nom, asd, COL_CART, material="Acero DC01 3 mm", movil=mv, espesor=3.0,
+        m.fab("K", nom, asd, COL_CART, material="Acero DC01 3 mm", movil=mv, espesor=3.0, codigo="ASIDERO",
               notas="Soldado por dentro del lateral, a ras del borde. Agujero Ø22 para meter dos dedos y levantar el cajón")
         m.compra("H02", "Tope de goma 10×3", place_parts(C.tope_goma((0, 0, 1)), at=(xh, yt, Ktop)), movil=mv,
                  notas="Queda 3 mm por debajo de la tapa interior (que pasa por encima al deslizar); si el cajón se levanta, topa con ella")
@@ -461,27 +516,37 @@ def construir(spec):
     yr0 = Yin - rb["fondo"]                                          # cara delantera interior de la caja de red (local)
     hr = rb["alto"]
     xr0 = rb["x0"]
-    tp = box(xr0 - T, Xin1, yr0 - T + OY, Yin + OY, zc(hr), zc(hr) + T)
+    # caja de red: una sola chapa (tapa con el frente y el lateral doblados hacia abajo y una pestaña de fijación al pie de cada uno)
+    xl, yfr, zt0 = xr0 - T, yr0 - T + OY, zc(hr)
     tpc = [hole_z(gx, gy + OY, 12.0) for gx, gy in rb["pasacables"]]
     tpc += [slot_z(xb, yr0 + 9 + OY, 3.2, 8.0, "y") for xb in rb["bridas_tapa"]]
-    tp = cut_all(tp, tpc)
-    m.fab("K", "Tapa de la caja de red (230 V)", tp, COL_RED, movil=mv,
-          notas="Cierra la fuente y la C14 por arriba; pasacables para 5 V y tierra; encima van WAGO, fusibles y bornes USB")
-    fp = box(xr0 - T, Xin1, yr0 - T + OY, yr0 + OY, zc(0), zc(hr))
+    tpc.append(box(xl - 0.1, xl + RT, yfr - 0.1, yfr + RT, zt0 - 0.1, zt0 + T + 0.1))                   # alivio de esquina
     fpc = vent_slots_y(rb["vent_x"][0], rb["vent_x"][1], zc(rb["vent_z"][0]), zc(rb["vent_z"][1]), L=20)
     fpc += [hole_y(gx, zc(gz), 12.0) for gx, gz in rb.get("pasacables_frente", [])]
-    fp = cut_all(fp, fpc)
-    m.fab("K", "Frente de la caja de red", fp, COL_RED, movil=mv, notas="Rejilla de ventilación abajo")
-    lp = box(xr0 - T, xr0, yr0 + OY, Yin + OY, zc(0), zc(hr))
-    m.fab("K", "Lateral de la caja de red", lp, COL_RED, movil=mv,
-          notas="Tapa, frente y lateral de la caja de red se sueldan entre sí: forman una tapa en U que se quita con 2 tuercas M4")
-    # fijación de la tapa en U: dos pestañas soldadas abajo, atornilladas a espárragos M4×10 soldados en la base
-    fij = [("Pestaña de fijación de la caja de red (derecha)", Xin1 - 32, Xin1 - 12, yr0, yr0 + 14),
-           ("Pestaña de fijación de la caja de red (izquierda)", xr0 - T - 14, xr0 - T) + tuple(rb.get("fij_izq_y", (Yin - 22, Yin - 2)))]
-    for nom, x0, x1, y0, y1 in fij:
-        xc, yc = (x0 + x1) / 2, (y0 + y1) / 2
-        tab = cut_all(box(x0, x1, y0 + OY, y1 + OY, zc(0), zc(0) + T), [hole_z(xc, yc + OY, 4.5)])
-        m.fab("K", nom, tab, COL_RED, movil=mv, notas="Soldada al borde inferior de la tapa en U; taladro Ø4,5 para el espárrago M4 de la base")
+    px0, px1, py0, py1 = Xin1 - 32, Xin1 - 12, yr0, yr0 + 14                                          # pestaña derecha (del frente, hacia dentro)
+    qx0, qx1 = xr0 - T - 14, xr0 - T                                                                  # pestaña izquierda (del lateral, hacia fuera)
+    hp_der, hp_izq = ((px0 + px1) / 2, (py0 + py1) / 2), ((qx0 + qx1) / 2, None)
+    qy0, qy1 = rb.get("fij_izq_y", (Yin - 28, Yin - 10))
+    hp_izq = (hp_izq[0], (qy0 + qy1) / 2)
+    fpc += [box(px0 - T, px0, yfr - 0.1, yfr + T + 0.1, zc(0) - 0.1, zc(0) + RT + 0.5),
+            box(px1, px1 + T, yfr - 0.1, yfr + T + 0.1, zc(0) - 0.1, zc(0) + RT + 0.5)]                 # alivios de la pestaña
+    lpc = [box(xl - 0.1, xl + T + 0.1, qy0 + OY - T, qy0 + OY, zc(0) - 0.1, zc(0) + RT + 0.5),
+           box(xl - 0.1, xl + T + 0.1, qy1 + OY, qy1 + OY + T, zc(0) - 0.1, zc(0) + RT + 0.5),
+           box(xl - 0.1, xl + T + 0.1, Yin + OY - ALA_K - 0.5, Yin + OY + 0.1, zc(0) - 0.1, zc(0) + RT + 0.5)]   # pestaña de abajo de la trasera
+    fpc.append(box(Xin1 - T - 0.1, Xin1 + 0.1, yfr - 0.1, yfr + T + 0.1, zc(0) - 0.1, zc(0) + T + 0.1))         # radio del pliegue derecho del cuerpo
+    ch = Chapa("Caja de red")
+    ch.cara("tapa", (xl, Xin1, yfr, Yin + OY, zt0, zt0 + T), tpc)
+    ch.cara("frente", (xl, Xin1, yfr, yfr + T, zc(0), zt0 + T), fpc)
+    ch.cara("lateral", (xl, xl + T, yfr + T, Yin + OY, zc(0), zt0 + T), lpc)
+    ch.pliegue("tapa", "frente", rangos=[(xl + RT, Xin1)]).pliegue("tapa", "lateral", rangos=[(yfr + RT, Yin + OY)])
+    ch.cara("pest_der", (px0, px1, yfr, py1 + OY, zc(0), zc(0) + T), [hole_z(hp_der[0], hp_der[1] + OY, 4.5)])
+    ch.cara("pest_izq", (qx0, xr0, qy0 + OY, qy1 + OY, zc(0), zc(0) + T), [hole_z(hp_izq[0], hp_izq[1] + OY, 4.5)])   # en esquina viva llega a la cara de dentro del lateral
+    ch.pliegue("frente", "pest_der").pliegue("lateral", "pest_izq")
+    m.fab("K", "Caja de red (230 V)", None, COL_RED, movil=mv, chapa=ch,
+          notas="Una sola chapa: tapa, frente y lateral doblados, con una pestaña de fijación al pie del frente (hacia dentro) y otra al pie "
+                "del lateral (hacia fuera). Cierra la fuente y la C14; se quita con 2 tuercas M4. Pasacables para 5 V y tierra; rejilla abajo; "
+                "encima van WAGO, fusibles y bornes USB")
+    for xc, yc in (hp_der, hp_izq):
         m.compra("H06", "Espárrago M4×10 (fija la caja de red)", place_parts(C.esparrago_m4(10, (0, 0, 1)), at=(xc, yc + OY, zc(0))), movil=mv)
 
     # ------------------------------------------------------------------ COMPONENTES Y SOPORTES
@@ -526,27 +591,57 @@ def construir_cajon_pajitas(m, W, D, d):
     mv = "cajon_pajitas"
     zf0, zf1 = d["zf0"], d["zf0"] + T
     x0, x1 = d["x_tapa1"], d["x_end"]
-    m.fab("P", "Fondo", box(x0, x1, d["y_front"], d["y_back"], zf0, zf1), COL_CAJON, movil=mv)
-    fr = box(x0, x1, d["y_front"], d["y_front"] + T, zf1, d["z_top"])
-    fr = cut_all(fr, [box(xc - d["L_ran"] / 2, xc + d["L_ran"] / 2, 0, 50, zf1, zf1 + d["A_ran"]) for xc in d["centros"]])
-    m.fab("P", "Delantera (3 ventanas)", fr, COL_CAJON, movil=mv, notas="Ventanas alineadas con las ranuras del panel")
-    m.fab("P", "Trasera", box(x0, x1, d["y_back"] - T, d["y_back"], zf1, d["z_top"]), COL_CAJON, movil=mv)
-    m.fab("P", "Extremo derecho", box(x1 - T, x1, d["y_front"] + T, d["y_back"] - T, zf1, d["z_top"]), COL_CAJON, movil=mv)
+    RT = 2 * T
+    yf, yb, zt = d["y_front"], d["y_back"], d["z_top"]
+    # cuerpo en U: fondo con la delantera y la trasera dobladas hacia arriba. Las 3 ventanas cruzan el pliegue de la delantera
+    # (las pajitas salen rodando a ras del fondo): el pliegue se hace a tramos, entre ventana y ventana
+    ven = [(xc - d["L_ran"] / 2, xc + d["L_ran"] / 2) for xc in d["centros"]]
+    tramos, a = [], x0
+    for v0, v1 in ven:
+        tramos.append((a, v0)); a = v1
+    tramos.append((a, x1))
+    ch = Chapa("Cuerpo del cajón de pajitas")
+    ch.cara("fondo", (x0, x1, yf, yb, zf0, zf1), [box(v0, v1, yf - 1, yf + RT + 1, zf0 - 1, zf1 + 1) for v0, v1 in ven])
+    ch.cara("delantera", (x0, x1, yf, yf + T, zf0, zt), [box(v0, v1, yf - 1, yf + T + 1, zf0 - 1, zf1 + d["A_ran"]) for v0, v1 in ven])
+    ch.cara("trasera", (x0, x1, yb - T, yb, zf0, zt))
+    ch.pliegue("fondo", "delantera", rangos=tramos).pliegue("fondo", "trasera")
+    m.fab("P", "Cuerpo del cajón (fondo, delantera y trasera)", None, COL_CAJON, movil=mv, chapa=ch,
+          notas="U con 2 pliegues. Las 3 ventanas (alineadas con las ranuras del panel) cruzan el pliegue de la delantera: ese pliegue va a tramos")
+    # 4 tabiques iguales (extremo derecho, cierre izquierdo y 2 separadores): chapa con pestañas delante, detrás y abajo,
+    # soldadas por puntos al cuerpo. La pestaña de delante empieza por encima de las ventanas
+    ALA = 10.0
+    yi0, yi1, z_del = yf + T, yb - T, zf1 + d["A_ran"] + 1.7
+
+    def tabique(xo, sg):
+        fx, ax = sorted((xo, xo + sg * T)), sorted((xo, xo + sg * ALA))
+        c = Chapa("Tabique del cajón de pajitas")
+        c.cara("tabique", (fx[0], fx[1], yi0, yi1, zf1, zt),
+               [box(fx[0] - 0.1, fx[1] + 0.1, yi0 - 0.1, yi0 + RT, zf1 - 0.1, z_del),
+                box(fx[0] - 0.1, fx[1] + 0.1, yi1 - RT, yi1 + 0.1, zf1 - 0.1, zf1 + RT)])
+        c.cara("del", (ax[0], ax[1], yi0, yi0 + T, z_del, zt))
+        c.cara("tras", (ax[0], ax[1], yi1 - T, yi1, zf1 + RT, zt))
+        c.cara("inf", (ax[0], ax[1], yi0 + RT, yi1 - RT, zf1, zf1 + T))
+        c.pliegue("tabique", "del").pliegue("tabique", "tras").pliegue("tabique", "inf")
+        return c
+    nt = "Igual que los otros 3 tabiques. Pestañas de 10 mm soldadas por puntos a la delantera, a la trasera y al fondo"
+    m.fab("P", "Tabique: extremo derecho", None, COL_CAJON, movil=mv, chapa=tabique(x1, -1), codigo="TABIQUE", notas=nt)
+    m.fab("P", "Tabique: cierre izquierdo (detrás de la tapa)", None, COL_CAJON, movil=mv, chapa=tabique(x0, 1), codigo="TABIQUE",
+          notas=nt + ". La tapa se suelda por puntos a su cara")
+    for k, xs in enumerate(d["sep"]):
+        m.fab("P", f"Tabique: separador {k + 1}", None, COL_CAJON, movil=mv, chapa=tabique(xs - T / 2, 1), codigo="TABIQUE", notas=nt)
     tapa = box(d["x_tapa0"], d["x_tapa1"], T + 15.0 + 0.5, D - T - 0.5, T + 0.3, Z_HUECO - 0.5)
     m.fab("P", "Tapa (cierra el hueco del lateral izquierdo)", tapa, COL_CAJON, movil=mv,
-          notas="Sin tirador: se tira de las anillas de los candados")
-    for k, xs in enumerate(d["sep"]):
-        m.fab("P", f"Separador {k + 1}", box(xs - T / 2, xs + T / 2, d["y_front"] + T, d["y_back"] - T, zf1, d["z_top"]), COL_CAJON, movil=mv)
+          notas="Chapa plana soldada por puntos al tabique del cierre izquierdo. Sin tirador: se tira de las anillas de los candados")
     # dos pares de anillas (chapa de 3 mm): una en la franja fija del lateral y otra en la tapa del cajón, una encima de la otra
     xe = -W / 2
     xh, yh = xe - 11.0, 9.0                                  # centro de los agujeros Ø9
     for k, z in enumerate(ZA_CANDADOS):
         fija = cut_all(box(xe - 18, xe, 3.0, 15.0, z, z + 3), [hole_z(xh, yh, 9.0)])
-        m.fab("C", f"Anilla para candado {k + 1} (lateral)", fija, COL_CHAPA_OSC, material="Acero DC01 3 mm", espesor=3.0,
-              notas="Soldada a la franja fija del lateral izquierdo, delante del hueco del cajón. Agujero Ø9")
+        m.fab("C", f"Anilla para candado {k + 1} (lateral)", fija, COL_CHAPA_OSC, material="Acero DC01 3 mm", espesor=3.0, codigo="ANILLA_FIJA",
+              notas="Soldada (MIG, todo alrededor) a la franja fija del lateral izquierdo, delante del hueco del cajón. Agujero Ø9")
         movil_ = cut_all(box(xe - 18, xe, 3.0, 30.0, z + 3.2, z + 6.2), [hole_z(xh, yh, 9.0)])
-        m.fab("P", f"Anilla para candado {k + 1} (tapa del cajón)", movil_, COL_CAJON, material="Acero DC01 3 mm", movil=mv, espesor=3.0,
-              notas="Soldada a la tapa del cajón; vuela por delante y queda encima de la anilla fija. También sirve de tirador")
+        m.fab("P", f"Anilla para candado {k + 1} (tapa del cajón)", movil_, COL_CAJON, material="Acero DC01 3 mm", movil=mv, espesor=3.0, codigo="ANILLA_CAJON",
+              notas="Soldada (MIG, todo alrededor) a la tapa del cajón; vuela por delante y queda encima de la anilla fija. También sirve de tirador")
         m.compra("H18", "Candado de latón 30 mm (cierre igualado)", candado_30(xh, yh, z, z + 6.2), movil="candado",
                  modelo=dict(n="candado_30", a=[xh, yh, z, z + 6.2], tf=dict(ex=[1, 0, 0], ey=[0, 1, 0], ez=[0, 0, 1], at=[0, 0, 0])),
                  notas="Se quita antes de sacar el cajón de pajitas")
@@ -578,15 +673,17 @@ def construir_tapa(m, spec, W, D, Hp, Hw, cer, zl):
         sg_b = -1 if spec.get("bisagra", "izq") == "izq" else 1      # lado de la bisagra
         assert sg_b < 0, "el faldón derecho (tapa de la ranura de la tapa interior) pide la bisagra a la izquierda"
         zi0 = m.cotas["tapa_interior_z"]
-        t = box(-W / 2, W / 2 + 2.0, 0, D, Hw, Hw + T)
-        m.fab("T", "Tapa superior", t, COL_TAPA, movil=mv,
-              notas="Abre hacia la izquierda con bisagra de piano remachada; sobresale 2 mm por la derecha para el faldón derecho")
-        f = cut_all(box(-W / 2, W / 2 + 0.5, 0, T, Hp + 0.5, Hw), [hole_y(x, zl, 18.0) for x, sg in cer])
-        m.fab("T", "Faldón delantero de la tapa", f, COL_TAPA, movil=mv, notas="Taladro Ø18 de la cerradura; soldado a la tapa y al faldón derecho")
-        fd = box(W / 2 + 0.5, W / 2 + 2.0, 0, D, zi0 - 4.0, Hw)
-        m.fab("T", "Faldón derecho de la tapa", fd, COL_TAPA, movil=mv,
-              notas="Soldado bajo el canto derecho de la tapa. Cerrada, tapa por fuera la ranura de la tapa interior y la de la leva: "
-                    "la tapa interior no se puede sacar sin abrir con llave")
+        RT = 2 * T
+        xd = W / 2 + 2.0                                       # canto derecho de la tapa (sobresale 2 mm para el faldón derecho)
+        ch = Chapa("Tapa superior")
+        ch.cara("tapa", (-W / 2, xd, 0, D, Hw, Hw + T), [box(xd - RT, xd + 1, -1, RT, Hw - 1, Hw + T + 1)])    # alivio de esquina
+        ch.cara("faldon_del", (-W / 2, W / 2 + 0.3, 0, T, Hp + 0.5, Hw + T), [hole_y(x, zl, 18.0) for x, sg in cer])
+        ch.cara("faldon_der", (W / 2 + 0.5, xd, 0, D, zi0 - 4.0, Hw + T))
+        ch.pliegue("tapa", "faldon_del", rangos=[(-W / 2, xd - RT)]).pliegue("tapa", "faldon_der", rangos=[(RT, D)])
+        m.fab("T", "Tapa superior (con faldón delantero y derecho)", None, COL_TAPA, movil=mv, chapa=ch,
+              notas="Una chapa con 2 pliegues. Abre hacia la izquierda con bisagra de piano remachada. Faldón delantero con el taladro Ø18 "
+                    "de la cerradura. Cerrada, el faldón derecho tapa por fuera la ranura de la tapa interior y la de la leva: la tapa "
+                    "interior no se puede sacar sin abrir con llave")
         xa, za = sg_b * (W / 2 + 1.25), Hw + T + 1.25
         def lado(x0, x1):            # caja en x medida desde el canto de la bisagra hacia fuera (+) o hacia dentro (-)
             u0, u1 = sg_b * (W / 2 + x0), sg_b * (W / 2 + x1)
@@ -643,7 +740,7 @@ def colocar_componentes(m, spec, lay, L, g):
         b = box(xs0, xs1, 6.0 + OY, 7.5 + OY, z0 + OZ, z1 + OZ)
         zst = (z0 + z1) / 2 + (-1.2 if z0 < sz else 1.2)
         b = cut_all(b, [hole_y(sx - 5, zst + OZ, 4.5), hole_y(sx + 170, zst + OZ, 4.5)])
-        m.fab("S", nombre, b, COL_SOP, movil=mv, notas="Aprieta el borde del vidrio contra el frente (con burlete de goma)")
+        m.fab("S", nombre, b, COL_SOP, movil=mv, codigo="PLETINA", notas="Aprieta el borde del vidrio contra el frente (con burlete de goma). Las dos son la misma pieza")
         for xx in (sx - 5, sx + 170):
             m.compra("H07", "Espárrago M4×20 (pletina)", place_parts(C.esparrago_m4(12), at=L(xx, 0, zst)), movil=mv)
             m.compra("H09", "Separador 6 mm", place_parts(C.separador(6.0), at=L(xx, 0, zst)), movil=mv)
@@ -651,9 +748,12 @@ def colocar_componentes(m, spec, lay, L, g):
     ox, oz = lay["solo"]
     m.compra("E02", "SumUp Solo", place_parts(C.solo(), at=L(ox, 0, oz)), movil=mv, electrico=True)
     w, h = C.SOLO["w"], C.SOLO["h"]
-    rep = box(ox - 3 , ox + w + 3, OY, OY + 22, oz - T + OZ, oz + OZ)
-    rep = cut_all(rep, [box(ox + w / 2 - 8, ox + w / 2 + 8, OY + 3, OY + 30, oz - 5 + OZ, oz + 5 + OZ)])
-    m.fab("S", "Repisa del Solo", rep, COL_SOP, movil=mv, notas="Soldada al frente del cajón; muesca de 16 mm para la clavija USB-C")
+    ch = Chapa("Repisa del Solo")
+    ch.cara("repisa", (ox - 3, ox + w + 3, OY, OY + 22, oz - T + OZ, oz + OZ), [box(ox + w / 2 - 8, ox + w / 2 + 8, OY + 3, OY + 30, oz - 5 + OZ, oz + 5 + OZ)])
+    ch.cara("ala", (ox - 3, ox + w + 3, OY, OY + T, oz + OZ - 13.5, oz + OZ))
+    ch.pliegue("repisa", "ala")
+    m.fab("S", "Repisa del Solo", None, COL_SOP, movil=mv, chapa=ch,
+          notas="Angular: el ala de 13,5 mm hacia abajo se suelda por puntos al frente del cajón; muesca de 16 mm para la clavija USB-C")
     cp = box(ox - 9, ox + w + 9, OY + 19.6, OY + 21.1, oz + 18 + OZ, oz + 60 + OZ)
     cp = cut_all(cp, [hole_y(ox - 5, oz + 39 + OZ, 4.5), hole_y(ox + w + 5, oz + 39 + OZ, 4.5)])
     m.fab("S", "Contraplaca del Solo", cp, COL_SOP, movil=mv, notas="Aprieta el Solo por detrás con goma de 2 mm")

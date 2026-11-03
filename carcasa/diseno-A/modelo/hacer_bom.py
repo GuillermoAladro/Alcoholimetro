@@ -76,26 +76,30 @@ for L in sorted(R):
     # ---------------- piezas a fabricar
     ws = wb.create_sheet(f"{L} Fabricar")
     ws["A1"] = f"Diseño {L} · {d['nombre']} — piezas a fabricar"; ws["A1"].font = FT
-    ws["A2"] = "Cada fila es una forma geométrica: una chapa plana (láser) o la placa de policarbonato. Archivos dentro de la carpeta CAD del diseño."
+    ws["A2"] = ("Cada fila es una pieza: chapa plegada (láser + plegado; largo × ancho = desarrollo plano), chapa plana o policarbonato. "
+                "Las piezas iguales llevan el mismo código de plano. Archivos dentro de la carpeta CAD del diseño.")
     ws["A2"].font = F
-    cols = ["Nº pieza", "Pieza", "Grupo", "Material", "Proceso", "Largo (mm)", "Ancho (mm)", "Espesor (mm)", "Masa (g)", "Archivo DXF", "Archivo STEP", "Notas"]
-    cab(ws, 4, cols, [10, 34, 20, 22, 18, 11, 11, 11, 10, 24, 26, 60])
+    cols = ["Nº pieza", "Pieza", "Grupo", "Material", "Proceso", "Pliegues", "Largo (mm)", "Ancho (mm)", "Espesor (mm)", "Masa (g)",
+            "Código de plano", "Archivo DXF", "Archivo STEP", "Notas"]
+    cab(ws, 4, cols, [10, 34, 20, 22, 18, 9, 11, 11, 11, 10, 12, 24, 26, 60])
     r0 = 5
     for i, f in enumerate(d["fabricadas"]):
         r = r0 + i
-        vals = [f["id"], f["nombre"], f["grupo"], f["material"], f["proceso"], f["largo"], f["ancho"], f["espesor"], f["masa_g"], f["dxf"], f["step"], f["notas"]]
+        vals = [f["id"], f["nombre"], f["grupo"], f["material"], f["proceso"], f.get("pliegues", 0), f["largo"], f["ancho"], f["espesor"],
+                f["masa_g"], f.get("codigo", f["id"]), f["dxf"], f["step"], f["notas"]]
         for j, v in enumerate(vals, 1):
             c = ws.cell(row=r, column=j, value=v); c.font = F; c.border = BOX; c.alignment = WRAP
-        for j in (6, 7, 8):
+        for j in (7, 8, 9):
             ws.cell(row=r, column=j).number_format = "0.0"
-        ws.cell(row=r, column=9).number_format = "#,##0"
+        ws.cell(row=r, column=10).number_format = "#,##0"
     r1 = r0 + len(d["fabricadas"]) - 1
     rt = r1 + 1
     ws.cell(row=rt, column=1, value="Total").font = FB
     ws.cell(row=rt, column=2, value=f"=COUNTA(A{r0}:A{r1})&\" piezas\"").font = FB
-    ws.cell(row=rt, column=9, value=f"=SUM(I{r0}:I{r1})").font = FB
-    ws.cell(row=rt, column=9).number_format = "#,##0"
-    for j in range(1, 13):
+    ws.cell(row=rt, column=6, value=f"=SUM(F{r0}:F{r1})").font = FB
+    ws.cell(row=rt, column=10, value=f"=SUM(J{r0}:J{r1})").font = FB
+    ws.cell(row=rt, column=10).number_format = "#,##0"
+    for j in range(1, 15):
         ws.cell(row=rt, column=j).fill = FILL_TOT
     ws.freeze_panes = "B5"
     hojas[(L, "fab")] = (ws.title, r0, r1, rt)
@@ -183,7 +187,7 @@ for i, L in enumerate(sorted(R)):
            "Abatible hacia la derecha, 1 cerradura" if d["tapa"] == "lateral" else "Se quita (lengüetas detrás), 2 cerraduras"
     chk = sum(d["barridos"].values()) + d["choques"] + d["zonas"]
     vals = [L, d["nombre"], d["cotas"]["W"], d["cotas"]["D"], d["cotas"]["H"], tapa,
-            f"=COUNTA('{tf}'!A{f0}:A{f1})", f"='{tf}'!I{ft}/1000", f"='{tc}'!I{ct}", f"='{tc}'!I{ct + 1}",
+            f"=COUNTA('{tf}'!A{f0}:A{f1})", f"='{tf}'!J{ft}/1000", f"='{tc}'!I{ct}", f"='{tc}'!I{ct + 1}",
             ("0 choques · tapa, tapa interior, cajón y pajitas sin roces" if chk == 0 else f"{chk} avisos"), d["descripcion"]]
     for j, v in enumerate(vals, 1):
         c = res.cell(row=r, column=j, value=v); c.font = F; c.border = BOX; c.alignment = WRAP
