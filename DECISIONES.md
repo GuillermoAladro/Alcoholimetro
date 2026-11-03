@@ -4,6 +4,13 @@ Decisiones que afectan a todo el proyecto. Lo más nuevo va arriba. Si un docume
 
 ## 03-11-2026
 
+### Actualización de anclaje: tacos SX Plus 8×65 y tirafondos 6×80
+
+Se sustituyen los tacos de nailon 8×40 (H16) por **fischer SX Plus 8×65 L, ref. 568108**, y los tirafondos DIN 571 6×60 (H14) por **6×80 mm**. Siguen siendo 18 anclajes, 3 columnas × 6 filas, agujeros Ø6,5 en chapa y arandela ancha M6 DIN 9021. No cambia el contorno de la carcasa ni el DXF/STEP de los agujeros.
+- **Broca de Ø8 mm**. Fischer exige taladro mínimo **75 mm** para SX Plus 8×65; se propone **85 mm en soporte macizo portante adecuado** para que un 6×80 no haga tope. Revestimientos, ladrillo perforado, bloques y pladur requieren estudiar la instalación específica y confirmar que existe profundidad útil.
+- El grupo de 18 anclajes **no** se considera homologado ni apto para cualquier pared por el mero cambio de taco. Las distancias entre anclajes siguen siendo 85 mm en horizontal y 50–96,5 mm entre filas; revisar frente a las condiciones del fabricante y soporte.
+- Se actualizan `modelo/diseno.py`, `modelo/hacer_bom.py` y `carcasa/diseno-A/README.md` y se añade `carcasa/diseno-A/ANCLAJE-PARED-8x65.md`. Los productos antiguos de compra (ASIN/precio) se invalidan para no pedir piezas equivocadas. **Las listas XLSX ya publicadas no se han regenerado** y no deben usarse para comprar H14/H16 hasta su actualización.
+
 ### Toda la chapa de 1,5 mm pasa a 2 mm
 
 Guillermo pide chapa de 2 mm en todo, para que la máquina aguante más golpes y palancas. Las piezas que ya eran de 3 mm (anillas de los candados, asideros y pestaña de tope) siguen en 3 mm.

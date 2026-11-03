@@ -42,8 +42,8 @@
 | Piezas a fabricar | 33: 29 de acero (21 planos distintos) y 4 de policarbonato |
 | Chapa y policarbonato | 10,4 kg (9,9 kg de acero de 2 mm) |
 | Botón | Ninguno en todo el proyecto, tampoco interruptor de red: el SumUp Solo está siempre esperando tarjeta y la prueba empieza al pagar; la máquina se apaga desenchufándola |
-| Primer pedido de compras | ~937 €, con herramientas y rollos que sobran; desglose en la lista (los 5 artículos de la antena 4G llevan precio orientativo) |
-| Anclaje a la pared | 18 tirafondos 6 × 60 con taco de 8 mm, apretados desde dentro |
+| Primer pedido de compras | ~937 € era la referencia anterior; **no es un presupuesto actualizado**: H14 y H16 cambian y están pendientes de cotización |
+| Anclaje a la pared | 18 tirafondos DIN 571 Ø6 × 80 mm, tacos fischer SX Plus Ø8 × 65 mm (H16) y arandelas anchas M6; verificar soporte |
 
 **Altura de montaje:** con la boquilla a 1,45 m del suelo, la base de la máquina queda a 1,12 m.
 
@@ -192,15 +192,16 @@
 - **Dónde van:** 18 agujeros redondos de Ø6,5 en la trasera, en 3 columnas (en el centro y a 85 mm a cada lado) y 6 filas (a 25, 75, 125, 205, 295 y 391,5 mm de la base).
   - 9 tornillos quedan detrás del cajón de pajitas y 9 detrás del cajón de componentes.
   - Las filas esquivan la bandeja y el apoyo trasero de la tapa interior.
-- **Material:** tirafondo hexagonal 6 × 60 (DIN 571), taco de nylon de 8 × 40 y arandela ancha M6 (DIN 9021).
+- **Material revisado:** 18 tirafondos hexagonales **Ø6 × 80 mm (DIN 571)**, 18 tacos **fischer SX Plus Ø8 × 65 mm** (ref. 568108, H16) y 18 arandelas anchas **M6 DIN 9021**. Ver [ficha de anclaje y montaje](ANCLAJE-PARED-8x65.md).
 - **Montaje:**
   1. Imprime el DXF del cuerpo (`A-C02.dxf`) a escala 1:1 y usa su parte central (la trasera) de plantilla para marcar los 18 agujeros en la pared.
-  2. Taladra con broca de 8 mm, 60 mm de hondo, y mete los tacos.
+  2. Comprueba el material y el espesor **portante** de la pared, las instalaciones ocultas y el espacio entre anclajes. Para montaje directo sobre soporte macizo apto, usa **broca Ø8 mm** y **taladro de 85 mm** de profundidad útil en material portante (fischer exige como mínimo 75 mm para SX Plus 8×65; los 85 mm dejan holgura al tirafondo de 80 mm). Limpia los taladros e introduce los tacos de 65 mm. En ladrillo hueco o con revestimiento, adaptar el método a la ficha del soporte; no usar 85 mm indiscriminadamente.
   3. Saca el cajón de componentes y el de pajitas.
   4. Apoya la máquina contra la pared, entre dos personas o sobre un listón atornillado de forma provisional debajo.
-  5. Pon los 18 tirafondos desde dentro, cada uno con su arandela, y apriétalos con una llave de vaso de 10.
+  5. Introduce desde dentro los tirafondos **Ø6 × 80 mm** con sus arandelas DIN 9021 M6; apriétalos con llave de vaso de 10 mm, sin sobreapretar ni dañar el taco. Comprueba que no topen en el fondo de los taladros.
 - **Quitarla:** solo se puede desde dentro. Por fuera no queda ninguna cabeza a la vista.
-- En el 3D solo están los agujeros. Los tirafondos, tacos y arandelas están en la lista de compra.
+- En el 3D solo están los agujeros. Los tirafondos, tacos y arandelas se especifican en el generador de la lista de compra; **el XLSX existente debe regenerarse** para actualizar H14/H16 (precio y proveedor pendientes).
+- **Seguridad:** los 18 agujeros Ø6,5 y sus posiciones no cambian; la geometría STEP/DXF de la chapa sigue siendo válida. **No** está validada la resistencia de los 18 tacos como grupo ni su adecuación a cada pared. En pladur, tabiques débiles, paredes huecas o con revestimiento se requiere definir y verificar una fijación específica.
 - Las cabezas sobresalen 6 mm por dentro. Por eso el cajón de pajitas tiene 8 mm menos de fondo y el cajón de componentes pasa a 5 mm de ellas.
 
 ## 5. Agujeros y pasos de cable

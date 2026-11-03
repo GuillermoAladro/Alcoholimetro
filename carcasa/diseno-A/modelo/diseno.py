@@ -139,9 +139,9 @@ COMPRAS = {
     "H11": ("Placa de policarbonato 5 mm 1000×1000", "B08CGMX1B6", 94.33),
     "H12": ("Tuercas M4 inox (del surtido de tornillería M06)", "", 0.0),
     "H13": ("Perfil de goma en U para cantos", "B0FPQMRG8J", 9.99),
-    "H14": ("Tirafondo hexagonal 6 × 60 DIN 571 (30 uds.)", "B0B61JZ25M", 12.35),
+    "H14": ("Tirafondo hexagonal 6 × 80 DIN 571 (proveedor y precio pendientes)", "", 0.0),
     "H15": ("Arandela ancha M6 DIN 9021 inox (25 uds.)", "B07Q5TVVMJ", 9.69),
-    "H16": ("Taco de nylon fischer SX Plus 8 × 40 (100 uds.)", "B0C43ZLBNM", 7.29),
+    "H16": ("Taco de nylon fischer SX Plus 8 × 65 L (ref. 568108; caja 50)", "", 0.0),
     "H17": ("Tornillo de seguridad Torx con pin M4 × 16, cabeza plana, inox (20 uds.)", "B0GGSDJMYV", 9.19),
     "H18": ("Candado ABUS 65/30 de latón, pack de 2 con la misma llave", "B01H9Z6HB4", 20.59),
     "H19": ("Placa de policarbonato compacto 2 mm (300 × 200 mm o más)", "", 9.99),
@@ -177,11 +177,11 @@ def candado_30(xh, yh, z0, z1):
 
 
 def tornillo_pared(p):
-    """Tirafondo hexagonal 6 × 60 (DIN 571, cabeza de 10 mm entre caras y 4 mm de alto) por dentro de la trasera,
+    """Tirafondo hexagonal 6 × 80 (DIN 571, cabeza de 10 mm entre caras y 4 mm de alto) por dentro de la trasera,
     sobre una arandela ancha; la caña entra en el taco de la pared."""
     x, y, z = p
     cab = cq.Workplane("XZ", origin=(x, y - 1.6, z)).polygon(6, 10.0 / math.cos(math.radians(30))).extrude(4.0).val()
-    return [("cabeza", cab, C.METAL), ("cana", cyl(3.0, 56.0, (x, y - 1.6, z), (0, 1, 0)), C.METAL)]
+    return [("cabeza", cab, C.METAL), ("cana", cyl(3.0, 76.0, (x, y - 1.6, z), (0, 1, 0)), C.METAL)]
 
 
 def tuerca_m4(p):
@@ -362,7 +362,7 @@ def construir(spec):
             [box(sg * (W / 2 - T - RT) - (0 if sg > 0 else 5), sg * (W / 2 - T - RT) + (5 if sg > 0 else 0), 0, RT + 0.5, -1, T + 1) for sg in (-1, 1)])  # radio de las pestañas del panel
     ch.pliegue("trasera", "izq", rangos=[(Z_HUECO, Hw)]).pliegue("trasera", "der", rangos=[(RT, Hr - BAJA_D)]).pliegue("trasera", "suelo")
     m.fab("C", "Cuerpo (trasera, laterales y suelo)", None, COL_CHAPA, chapa=ch,
-          notas="Una sola chapa en cruz con 3 pliegues. Trasera: 18 agujeros Ø6,5 para la pared (tirafondo 6 × 60 con taco de 8 mm y arandela "
+          notas="Una sola chapa en cruz con 3 pliegues. Trasera: 18 agujeros Ø6,5 para la pared (tirafondo 6 × 80 DIN 571 con taco fischer SX Plus 8 × 65 y arandela "
                 "ancha M6, apretados desde dentro). Lateral izquierdo: hueco del cajón de pajitas, rejilla de escape, rejillas y ventana de la "
                 f"antena 4G ({VA_Y[1] - VA_Y[0]:.0f} × {VA_Z[1] - VA_Z[0]:.0f}). Lateral derecho: ventana de la C14 ({VENT_C14[0]:.0f} × "
                 f"{VENT_C14[1]:.0f}), rejillas, ranura {zr1 - zr0:.1f} × {ys1 - ys0:.0f} de la tapa interior con muesca R8 y ranura 4 × 14 de la leva")

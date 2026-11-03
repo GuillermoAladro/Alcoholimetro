@@ -27,9 +27,9 @@ FIJAS = {
     "H08": (4, "Separadores de la cámara (dibujados con la cámara)"),
     "H11": (1, "Se cortan los frontales de policarbonato (pieza V01)"),
     "H13": (1, "Perfil de goma en los cantos del hueco del cajón de pajitas"),
-    "H14": (18, "18 tirafondos a la pared (no dibujados), por los agujeros Ø6,5 de la trasera; se aprietan desde dentro con llave de vaso de 10"),
+    "H14": (18, "18 tirafondos Ø6×80 DIN 571 por los agujeros Ø6,5 de la trasera; llave de vaso 10 mm. Proveedor, lote y precio POR VERIFICAR; 0 € NO significa gratuito"),
     "H15": (18, "Una por tirafondo"),
-    "H16": (18, "Uno por tirafondo; broca de 8 mm y 60 mm de profundidad"),
+    "H16": (18, "18 tacos fischer SX Plus 8×65 L ref. 568108; broca Ø8, ficha h1 mínimo 75 mm; perforación de 85 mm en soporte macizo apto para Ø6×80. Ver guía ANCLAJE-PARED-8x65.md. Precio POR VERIFICAR"),
 }
 # Material de montaje de la lista v7 (componentes-electronica.md), no dibujado
 MONTAJE = [
@@ -43,7 +43,9 @@ MONTAJE = [
     ("M08", "Cables Dupont (120 uds.)", "B01NGTXASZ", 9.99, 1, 120, "Pines de la Pi"),
     ("M09", "Crimpadora + punteras (herramienta)", "B0FQP6KDL4", 15.98, 1, None, "Herramienta: solo la primera vez"),
 ]
-PACK = {"E15": 4, "H17": 20, "H14": 30, "H15": 25, "H16": 100, "E17": 1, "H01": 4, "H06": 20, "H07": 20, "H09": 350, "H10": 260, "E09": 2, "E18": 6, "E08": 25}
+PACK = {"E15": 4, "H17": 20, "H15": 25, "H16": 50, "E17": 1, "H01": 4, "H06": 20, "H07": 20, "H09": 350, "H10": 260, "E09": 2, "E18": 6, "E08": 25}
+# H14: formato de venta pendiente; no asumir el lote anterior 6×60.
+ENLACES_FABRICANTE = {"H16": "https://shop.fischer.es/collections/accesorios-para-anclaje-de-tubos-en-hormigon/products/taco-sx-plus-8x65-largo-sin-tornillo-50-unidades"}
 
 AR = "Arial"
 F = Font(name=AR, size=10)
@@ -139,7 +141,7 @@ for L in sorted(R):
             nota = "Versión HiLink (la Pi lo ve como red USB). Precio orientativo: elegir anuncio. Hace falta una SIM de datos, que no se compra en Amazon"
         if ref == "E12":
             nota = "Que cubra 698–2700 MHz (bandas 20, 3, 7 y 8), de unos 100 × 15 mm y con SMA macho. Precio orientativo: elegir anuncio"
-        filas.append([ref, n, asin, f"https://www.amazon.es/dp/{asin}" if asin else "", uds, PACK.get(ref), None, precio, None, ids, nota])
+        filas.append([ref, n, asin, ENLACES_FABRICANTE.get(ref, f"https://www.amazon.es/dp/{asin}" if asin else ""), uds, PACK.get(ref), None, precio, None, ids, nota])
     for m_ in MONTAJE:
         ref, n, asin, precio, uds, pack, nota = m_
         filas.append([ref, n, asin, f"https://www.amazon.es/dp/{asin}", uds, pack, None, precio, None, "(material de montaje)", nota])
@@ -202,6 +204,7 @@ notas = [
     "Los números de pieza son los mismos en el visor 3D, en los STEP (STEP_piezas/<nº>.step) y en los DXF (DXF_corte/<nº>.dxf).",
     "Las compras salen del modelo 3D (cuántas veces aparece cada pieza) más lo que no se dibuja (tubo, fusibles, cables, microSD...).",
     "Paquetes a pedir: si el anuncio no dice cuántas unidades trae, se pone 1 en amarillo para revisarlo.",
+    "ATENCIÓN: H14 (tirafondo 6×80) y H16 (fischer SX Plus 8×65) carecen de precio verificado: 0 € es MARCADOR PENDIENTE, NO coste real. El total de compras será incompleto hasta actualizar estas celdas.",
 ]
 for i, t in enumerate(notas):
     c = res.cell(row=11 + i, column=1, value="• " + t); c.font = F
