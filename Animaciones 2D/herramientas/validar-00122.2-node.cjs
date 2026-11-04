@@ -34,7 +34,7 @@ const {load, C} = require('./canvas-node.cjs');
     const strandAt=t=>D.dibMelenaS(g,D.pose(t).s,t),brillo=t=>D.zas(g,t,D.pose(t).g);
     const peloPigmento=[T.hit-.12,T.hit].map(t=>alphaAt(strandAt,t,face));
     const destello=[T.hit-.003,T.hit+.07].map(t=>alphaAt(brillo,t,face));
-    const nota=t=>{g.clearRect(0,0,1024,600);D.capaG(g,t,D.pose(t).g);const pix=g.getImageData(710,590,220,160).data;
+    const nota=t=>{g.clearRect(0,0,1024,600);g.save();g.translate(0,-420);D.capaG(g,t,D.pose(t).g);g.restore();const pix=g.getImageData(710,170,220,160).data;
       let bandas=0;for(let i=0;i<pix.length;i+=4)if(pix[i+3]>65&&pix[i]>150&&pix[i]-pix[i+1]>70)bandas++;return bandas;};
     const marcas=[T.hit-.005,T.hit+.24,13.5].map(nota);
     const antes=Recortes.tira;D.dibujaSara(g,D.pose(T.hit).s,T.hit);if(Recortes.tira!==antes)throw Error("el render afecta a otros avatares");

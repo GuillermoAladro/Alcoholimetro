@@ -63,3 +63,4 @@ subprocess.run(["ffmpeg","-v","error","-xerror","-i",str(movie),"-f","null","-"]
 stream = json.loads(subprocess.check_output(["ffprobe","-v","error","-of","json","-show_entries","stream=codec_name,width,height,r_frame_rate,nb_frames",str(movie)]))["streams"][0]
 assert (stream["codec_name"],stream["width"],stream["height"],stream["r_frame_rate"],int(stream["nb_frames"])) == ("h264",1024,600,"60/1",n)
 print(json.dumps(stream))
+# Medir los tres rasguños dentro del lienzo de la prueba
