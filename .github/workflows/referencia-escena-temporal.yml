@@ -1,0 +1,27 @@
+name: Leer los fotogramas originales de 00104
+on:
+  push:
+    branches: [revision-2d-00101-paradigma]
+    paths: ['.github/workflows/referencia-escena-temporal.yml']
+permissions:
+  contents: write
+jobs:
+  referencia:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /Animaciones 2D/vista previa/00104 Guillermo y Paradigma - el pelo largo - fotogramas.png
+            /.revision-00101/
+      - name: Preparar una copia reducida del original para la inspección
+        run: |
+          set -euo pipefail
+          convert "Animaciones 2D/vista previa/00104 Guillermo y Paradigma - el pelo largo - fotogramas.png" -resize '875x950>' -strip -colors 180 ".revision-00101/base-00104.png"
+          git add --sparse -- ".revision-00101/base-00104.png"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Preparar la vista de referencia de 00104'
+          git push origin HEAD:refs/heads/revision-2d-00101-paradigma
