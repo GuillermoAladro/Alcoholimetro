@@ -1,0 +1,58 @@
+{
+  "scene": "00044.2",
+  "duration": 13.6,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "m": {
+      "zas": 5.507137925889757,
+      "contacto": [
+        false,
+        true
+      ],
+      "vueltas": 4,
+      "anchoMin": 0.3645453630176551,
+      "pies": 0,
+      "vaquero": 0.009482065794827577,
+      "caricia": [
+        0,
+        0
+      ],
+      "boton": [
+        21.9972420501121,
+        4.65,
+        21.9972420501121
+      ],
+      "viento": [
+        0.5058208872405906,
+        0,
+        1
+      ],
+      "desprende": 0,
+      "guino": [
+        [
+          0.95,
+          0.95
+        ],
+        [
+          0.2,
+          1
+        ],
+        [
+          0.4,
+          0.4
+        ]
+      ]
+    }
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    2.856,
+    6.936,
+    10.472
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
