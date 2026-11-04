@@ -1,0 +1,26 @@
+{
+  "scene": "00099.2",
+  "duration": 15,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "contacts": "4 empujones y 1 patada",
+    "toeGapPx": 1.1368683772161603e-13,
+    "chaseAndCaptureJoinPx": 0.000522841931179196,
+    "carrotAndHatTransferPx": 5.684341886080802e-14,
+    "landingAngleRad": 4.898587196589413e-16,
+    "clapGapPx": 5.115907697472721e-13,
+    "snowmanHeadPlacementPx": 1.184363699684746e-11,
+    "hatHeadroomPx": 20.035583426211588
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.15,
+    7.65,
+    11.55
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
