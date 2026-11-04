@@ -1,0 +1,52 @@
+{
+  "scene": "00114.2",
+  "duration": 14.85,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "crownPoint": {
+      "x": 756.5,
+      "y": 245.5
+    },
+    "crownEdgeAlpha": [
+      0,
+      182,
+      255
+    ],
+    "visibleWaterPixels": 29,
+    "puddleAlphaAfterContact": 151,
+    "bucketStates": [
+      "silla",
+      "mano",
+      "puerta",
+      "cae",
+      "cabeza"
+    ],
+    "ownershipJoinsPx": [
+      1.8372299494345283e-11,
+      4.870352750014118e-7,
+      0.00003732891381112654,
+      0.0002940846100390466
+    ],
+    "visibleHandleGripPx": 2.842170943040401e-14,
+    "palmUnderBucketPx": 2.842170943040401e-14,
+    "bucketBelowChairPx": 0,
+    "doorSupportPx": 1.1368683772161603e-13,
+    "fingertipOnDoorPx": 5.684341886080802e-14,
+    "fingertipOnRimPx": 0,
+    "turnRootJoinsPx": 0.00002094395085805445,
+    "waterSpawnJoinsPx": 0.000039615547849958046,
+    "puddleDelaySeconds": 0.34673132598315526,
+    "maxWristRatio": 1.025
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.1184999999999996,
+    7.5735,
+    11.4345
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
