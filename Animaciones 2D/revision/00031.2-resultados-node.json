@@ -1,0 +1,189 @@
+{
+  "scene": "00031.2",
+  "renderer": "Node/Skia @napi-rs/canvas",
+  "durationSeconds": 13.5,
+  "results": [
+    {
+      "name": "Atlas de Guillermo y Ander cargados",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Geometría finita a 120 Hz",
+      "passed": true,
+      "details": {
+        "samples": 1621
+      }
+    },
+    {
+      "name": "Cuatro muñecas conectadas",
+      "passed": true,
+      "details": {
+        "maxGapPx": 2.5353548097209016e-7
+      }
+    },
+    {
+      "name": "Tres puños dentro de sus mangos mientras los sujetan",
+      "passed": true,
+      "details": {
+        "maxDistancePx": 2.008080668573143
+      }
+    },
+    {
+      "name": "Dos controles de pelota bajo el muñeco azul",
+      "passed": true,
+      "details": {
+        "maxGapPx": 0
+      }
+    },
+    {
+      "name": "Índice en cada bolita durante los tres desplazamientos",
+      "passed": true,
+      "details": {
+        "maxGapPx": 0
+      }
+    },
+    {
+      "name": "Bolitas distinguibles en perspectiva",
+      "passed": true,
+      "details": {
+        "minClearancePx": 0.47840290927666995
+      }
+    },
+    {
+      "name": "El borde del vaso alcanza la boca durante los sorbos",
+      "passed": true,
+      "details": {
+        "maxGapPx": 8.526512829121202e-15
+      }
+    },
+    {
+      "name": "Continuidad del balón al despegar y caer en la jarra",
+      "passed": true,
+      "details": {
+        "launchGapPx": 0.000002548382582607323,
+        "landingGapPx": 0.00014649826223423824
+      }
+    },
+    {
+      "name": "El balón sale por completo del encuadre",
+      "passed": true,
+      "details": {
+        "bottomAtApexPx": -125.01898300796097
+      }
+    },
+    {
+      "name": "Postura continua en transiciones exactas y muestreo regular",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Búsqueda directa y rebobinado deterministas",
+      "passed": true
+    },
+    {
+      "name": "Reproducción idéntica a 30, 60 y 120 fps",
+      "passed": true,
+      "details": [
+        {
+          "fps": 30,
+          "ok": true
+        },
+        {
+          "fps": 60,
+          "ok": true
+        },
+        {
+          "fps": 120,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "name": "Secuencia completa renderizada a 60 fps",
+      "passed": true,
+      "details": {
+        "frames": 811
+      }
+    },
+    {
+      "name": "Negro inicial y final",
+      "passed": true,
+      "details": [
+        {
+          "t": 0,
+          "max": 0
+        },
+        {
+          "t": 0.016666666666666666,
+          "max": 0
+        },
+        {
+          "t": 0.03333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.05,
+          "max": 0
+        },
+        {
+          "t": 0.06666666666666667,
+          "max": 0
+        },
+        {
+          "t": 0.08333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.1,
+          "max": 0
+        },
+        {
+          "t": 0.11666666666666667,
+          "max": 0
+        },
+        {
+          "t": 13.383333333333333,
+          "max": 0
+        },
+        {
+          "t": 13.4,
+          "max": 0
+        },
+        {
+          "t": 13.416666666666666,
+          "max": 0
+        },
+        {
+          "t": 13.433333333333334,
+          "max": 0
+        },
+        {
+          "t": 13.45,
+          "max": 0
+        },
+        {
+          "t": 13.466666666666667,
+          "max": 0
+        },
+        {
+          "t": 13.483333333333333,
+          "max": 0
+        },
+        {
+          "t": 13.5,
+          "max": 0
+        }
+      ]
+    },
+    {
+      "name": "Sin cortes visuales aislados",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "passed": true,
+  "limitations": [
+    "No se han probado los controles HTML en un navegador ni la Raspberry Pi física."
+  ]
+}
