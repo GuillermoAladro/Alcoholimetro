@@ -4,13 +4,13 @@ from playwright.sync_api import sync_playwright
 import base64, hashlib, io, json, os, shutil, subprocess
 
 root = Path("Animaciones 2D").resolve()
-scene_id = "00129.2"
+scene_id = "00130.2"
 stem = next((root / "escenas").glob(scene_id + " *.js")).stem
 out = Path(os.environ["RUNNER_TEMP"]) / "export"
 out.mkdir()
 shutil.copyfile(Path(os.environ["RUNNER_TEMP"]) / "resultados-node.json",out / "resultados-node.json")
 movie, sheet_path = out / (stem + ".mp4"), out / (stem + " - fotogramas.png")
-times = [0,1.66,3.6,5.4,6.09,6.27,6.7,7.62,8.55,9.2,10.36,10.78,10.98,11.43,13.67,14.89]
+times = [0,1.28,2.8,3.37,4.22,4.69,5.31,5.95,6.45,7.27,8.57,9.88,10.98,11.39,12.68,14.79]
 sheet = Image.new("RGB", (960, 640), "#16181c")
 draw = ImageDraw.Draw(sheet)
 errors = []
@@ -26,7 +26,7 @@ with sync_playwright() as browser_api:
     def frame(t):
         return base64.b64decode(pg.evaluate("(t) => {A2D.cuadro(t);return document.querySelector('#lienzo').toDataURL('image/png').split(',')[1]}", t))
     dur = pg.evaluate("A2D.dur()")
-    assert abs(dur - 14.9) < 1e-8
+    assert abs(dur - 14.8) < 1e-8
     for index, t in enumerate(times):
         pic = Image.open(io.BytesIO(frame(t))).convert("RGB")
         if index in [0,len(times)-1]:
@@ -54,13 +54,26 @@ with sync_playwright() as browser_api:
         ret = ff.wait()
     assert ret == 0
     pg.locator("#barra").evaluate("(el) => {el.value='500';el.dispatchEvent(new Event('input'))}")
-    pg.wait_for_function("document.querySelector('#tiempo').textContent.includes('7.45')")
+    pg.wait_for_function("document.querySelector('#tiempo').textContent.includes('7.40')")
     pg.locator("#reinicio").click()
     pg.wait_for_function("document.querySelector('#tiempo').textContent.startsWith('0.00')")
     assert not errors, errors
+    # Reproducción HTML del MP4 que se acaba de codificar, hasta recibir el evento ended.
+    player = browser.new_page()
+    player.goto((root / "ver.html").as_uri() + "?id=" + scene_id + "&pausa")
+    video_info = player.evaluate("""async src => {
+        const v=document.createElement('video'); v.muted=true; v.playsInline=true;
+        document.body.replaceChildren(v); v.src=src;
+        const ended=new Promise((ok,bad)=>{const tm=setTimeout(()=>bad(Error('Tiempo de reproducción excedido')),45000);
+          v.onended=()=>{clearTimeout(tm);ok()};v.onerror=()=>{clearTimeout(tm);bad(Error('No se pudo leer el MP4'))}});
+        v.playbackRate=3;await v.play();await ended;
+        return [v.videoWidth,v.videoHeight,v.duration,v.getVideoPlaybackQuality().totalVideoFrames];
+    }""",movie.as_uri())
+    assert video_info[:2] == [1024,600] and abs(video_info[2]-dur) < .025 and video_info[3] > 0, video_info
+    print("MP4 reproducido hasta el final en Chromium",video_info)
+    player.close()
     browser.close()
 subprocess.run(["ffmpeg","-v","error","-xerror","-i",str(movie),"-f","null","-"],check=True)
 stream = json.loads(subprocess.check_output(["ffprobe","-v","error","-of","json","-show_entries","stream=codec_name,width,height,r_frame_rate,nb_frames",str(movie)]))["streams"][0]
 assert (stream["codec_name"],stream["width"],stream["height"],stream["r_frame_rate"],int(stream["nb_frames"])) == ("h264",1024,600,"60/1",n)
 print(json.dumps(stream))
-# Mantener los zapatos delante de la máquina durante el paseo bajo la niebla
