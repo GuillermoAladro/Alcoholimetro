@@ -1,4 +1,4 @@
-name: Verificar el visor de la escena 00116.2
+name: Verificar el visor de la escena 00117.2
 on:
   push:
     branches: [revision-2d-00101-paradigma]
@@ -27,12 +27,12 @@ jobs:
           python -m pip install --quiet playwright==1.55.0 Pillow==11.3.0
           npm install --silent --no-save --prefix "$RUNNER_TEMP/qa-node" @napi-rs/canvas@0.1.80
       - name: Comprobar los contactos de la escena
-        run: NODE_PATH="$RUNNER_TEMP/qa-node/node_modules" node "Animaciones 2D/herramientas/validar-00116.2-node.cjs" > "$RUNNER_TEMP/resultados-node.json" && cat "$RUNNER_TEMP/resultados-node.json"
+        run: NODE_PATH="$RUNNER_TEMP/qa-node/node_modules" node "Animaciones 2D/herramientas/validar-00117.2-node.cjs" > "$RUNNER_TEMP/resultados-node.json" && cat "$RUNNER_TEMP/resultados-node.json"
       - name: Reproducir y exportar los 876 fotogramas en Chromium
         run: python .revision-00101/exportar.py
       - uses: actions/upload-artifact@v4
         with:
-          name: fotogramas-00116
+          name: fotogramas-00117
           path: ${{ runner.temp }}/export/
           if-no-files-found: error
           retention-days: 1
@@ -49,25 +49,25 @@ jobs:
             .revision-00101
       - uses: actions/download-artifact@v4
         with:
-          name: fotogramas-00116
+          name: fotogramas-00117
           path: ${{ runner.temp }}/resultado
       - name: Guardar solo los archivos verificados en la rama de revisión
         run: |
           set -euo pipefail
           rama='revision-2d-00101-paradigma'
           destino='Animaciones 2D/vista previa'
-          nombre='00116.2 Guillermo y Rodri - la apuesta de la aceituna'
+          nombre='00117.2 Guillermo y Rodri - el muro de latas'
           mkdir -p "$destino"
           for final in '.mp4' ' - fotogramas.png'; do
             test -s "$RUNNER_TEMP/resultado/$nombre$final"
             cp "$RUNNER_TEMP/resultado/$nombre$final" "$destino/$nombre$final"
             git add --sparse -- "$destino/$nombre$final"
           done
-          informe='Animaciones 2D/revision/00116.2-resultados-node.json'
+          informe='Animaciones 2D/revision/00117.2-resultados-node.json'
           mkdir -p "$(dirname "$informe")"
           cp "$RUNNER_TEMP/resultado/resultados-node.json" "$informe"
           git add --sparse -- "$informe"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Guardar el vídeo y los fotogramas verificados de 00116.2"
+          git commit -m "Guardar el vídeo y los fotogramas verificados de 00117.2"
           git push origin "HEAD:refs/heads/$rama"
