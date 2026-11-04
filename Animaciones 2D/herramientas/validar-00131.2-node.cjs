@@ -36,7 +36,13 @@ const {load, C} = require('./canvas-node.cjs');
     const liquido=[beige(T.bebe1+.055),beige(T.bebe1+.4),beige(T.bebe2-.04)];
     limpiar();ctx.setTransform(3,0,0,3,84-3*fin.x,84-3*fin.y);D.batidoEncimaG(ctx,gota.t+gota.cae,D.poseG(gota.t+gota.cae));
     const p=ctx.getImageData(80,80,9,9).data;let pelo=0;for(let j=3;j<p.length;j+=4)if(p[j]>150)pelo++;
-    const m={boca,asa,area,mesa,boton,alcance,uniones,bananas,copos,gota,ini,fin,pelo,liquido,
+    const margenSuperior=[1,2].map(i=>{let min=600;const a=i===1?T.b1Sale:T.b2Sale,b=i===1?T.b1Cae:T.b2Cae;
+      for(let t=a;t<b;t+=1/240){const f=D.frutaVuela(t,i),cam=D.camara(t);
+        for(const [x,y] of [[-7,2],[-5,18],[-3,-14],[6,-22],[10,-23],[9,-19],[5,18],[0,21]]){
+          const q=G.rotP({x,y},f.a);min=Math.min(min,300+(f.y+q.y-cam.y)*cam.k-1.4);}}
+      return min;});
+    if(Math.min(...margenSuperior)<12)throw Error(JSON.stringify({margenSuperior}));
+    const m={margenSuperior,boca,asa,area,mesa,boton,alcance,uniones,bananas,copos,gota,ini,fin,pelo,liquido,
       contactoLengua:d(lengua.tip,D.puntaGota(T.lame)),retraida:d(regreso.tip,regreso.base),avenaAntes:D.avenaRecibida(T.avenaCae-.041),avenaDespues:D.avenaRecibida(T.avenaCae+.13)};
     if(Math.max(boca,asa,area,mesa,boton,...uniones,m.contactoLengua,m.retraida)>.006||alcance>1.08||bananas.some((v,i)=>Math.max(v.coge,v.sale,v.piel)>.007||v.cantidad!==2-i)||copos.some(([error,lugar],i)=>error>.002||lugar!==(i<12?'jarra':'encimera'))||pelo<6||Math.abs(fin.y-gota.hasta)>.001||fin.y-ini.y<40||m.avenaAntes!==0||m.avenaDespues!==1||liquido[0]<200||liquido[1]>=liquido[0]||liquido[2]>2||D.kBatido(T.erup+.055)>0)throw Error(JSON.stringify(m));
     return {m};

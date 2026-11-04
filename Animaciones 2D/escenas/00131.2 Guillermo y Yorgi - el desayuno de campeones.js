@@ -707,7 +707,7 @@
     const sale = n === 1 ? T.b1Sale : T.b2Sale, cae = n === 1 ? T.b1Cae : T.b2Cae;
     if (t < sale || t > cae) return null;
     const b=platanoMano(sale),r=rot(P(0,-20),b.ang),a=P(b.x+r.x,b.y+r.y);
-    const u = fase(t, sale, cae), q = arco(a, FRUTA_DESTINO, u, n === 1 ? 150 : 142);
+    const u = fase(t, sale, cae), q = arco(a, FRUTA_DESTINO, u, n === 1 ? 134 : 142);
     return { x: q.x, y: q.y, a: b.ang-u*TAU * (n === 1 ? 1.2 : 1.6), u };
   }
   function pielVuela(t, n) {
@@ -1512,5 +1512,5 @@
     }
     return out;
   }
-  window.__A2D_00131_2 = { batidoEncimaG,copo,avenaRecibida,llegadaCopo,kBatido,centroGoteron,largoTecho,arco,puntoVaso, vasoEnBase, angBebe, PERFIL_BEBE, AGARRE, contenido, recorta, INT, AREA_INT, area, puntoBoton, yema, mesaG, frutaVuela, platanoMano, pielVuela, platanoReposo, cuencoDe, cacillo, gotaPelo, trazadoLengua, puntaGota, dibVaso, dibBase, dibFruta, dibPlatano, platanosEnFrutero, pose: poses, poseG, poseY, T, DUR, diag };
+  window.__A2D_00131_2 = { camara,batidoEncimaG,copo,avenaRecibida,llegadaCopo,kBatido,centroGoteron,largoTecho,arco,puntoVaso, vasoEnBase, angBebe, PERFIL_BEBE, AGARRE, contenido, recorta, INT, AREA_INT, area, puntoBoton, yema, mesaG, frutaVuela, platanoMano, pielVuela, platanoReposo, cuencoDe, cacillo, gotaPelo, trazadoLengua, puntaGota, dibVaso, dibBase, dibFruta, dibPlatano, platanosEnFrutero, pose: poses, poseG, poseY, T, DUR, diag };
 })();
