@@ -1,0 +1,82 @@
+{
+  "scene": "00041.2",
+  "durationSeconds": 14,
+  "renderer": "Canvas 2D / Node-Skia",
+  "results": [
+    {
+      "name": "Las cuatro mangas alcanzan las muñecas",
+      "passed": true,
+      "details": {
+        "errorMax": 2.0475026306854072e-7
+      }
+    },
+    {
+      "name": "La zapatilla se detiene en el contorno de la bota",
+      "passed": true,
+      "details": {
+        "errorMax": 0
+      }
+    },
+    {
+      "name": "La suela se apoya en la pista durante el espagat",
+      "passed": true,
+      "details": {
+        "errorMax": 0
+      }
+    },
+    {
+      "name": "Las dos siluetas de calzado no se atraviesan",
+      "passed": true,
+      "details": {
+        "errorMax": 0
+      }
+    },
+    {
+      "name": "El flash alcanza su máxima luz al abrirse las piernas",
+      "passed": true,
+      "details": {
+        "errorMax": 0
+      }
+    },
+    {
+      "name": "El giro conserva una silueta legible de perfil",
+      "passed": true,
+      "details": {
+        "anchoRelativoMin": 0.5219173836071169
+      }
+    },
+    {
+      "name": "Todos los flashes parten de espectadores con cámara o móvil",
+      "passed": true
+    },
+    {
+      "name": "Las diez gotas salen del charco y vuelven a la pista",
+      "passed": true
+    },
+    {
+      "name": "La pose y los dos personajes quedan en el encuadre de la foto",
+      "passed": true
+    },
+    {
+      "name": "Rebobinado determinista",
+      "passed": true
+    },
+    {
+      "name": "Negro inicial y final",
+      "passed": true
+    },
+    {
+      "name": "Fin a 30 fps",
+      "passed": true
+    },
+    {
+      "name": "Fin a 60 fps",
+      "passed": true
+    },
+    {
+      "name": "Fin a 120 fps",
+      "passed": true
+    }
+  ],
+  "passed": true
+}
