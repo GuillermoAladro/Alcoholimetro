@@ -1,0 +1,24 @@
+{
+  "scene": "00090.2",
+  "duration": 12.9,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "posesAt120Hz": 1549,
+    "tripContactPx": 0,
+    "bodyTakeoffJumpPx": 0.00008213170962736219,
+    "shutterContactPx": 0,
+    "maximumWristExcessPx": -6.174349451100425,
+    "photoSilhouetteMarginPx": 22
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    2.709,
+    6.579000000000001,
+    9.933
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}

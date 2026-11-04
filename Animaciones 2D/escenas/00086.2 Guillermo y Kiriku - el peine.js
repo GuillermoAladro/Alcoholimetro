@@ -894,15 +894,7 @@
     for (let i = 0; i < 6; i++) { const y = lerp(ESP.y0 + 18, ESP.y1 - 14, i / 5); b.push(P2(ESP.x0 - 11, y), P2(ESP.x1 + 11, y)); }
     return b;
   })();
-  function rectanguloRedondeado(g, x, y, w, h, r) {
-    if (typeof g.roundRect === "function") { g.roundRect(x, y, w, h, r); return; }
-    g.moveTo(x + r, y);
-    g.arcTo(x + w, y, x + w, y + h, r);
-    g.arcTo(x + w, y + h, x, y + h, r);
-    g.arcTo(x, y + h, x, y, r);
-    g.arcTo(x, y, x + w, y, r);
-    g.closePath();
-  }
+  const { rectanguloRedondeado } = M2;
   function creaFondo() {
     const c = document.createElement("canvas"); c.width = W + 120; c.height = H + 120;
     const g = c.getContext("2d"); g.translate(60, 60);

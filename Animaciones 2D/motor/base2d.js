@@ -54,8 +54,17 @@ const M2 = (() => {
     }
     if (cerrada) g.closePath();
   }
+  function rectanguloRedondeado(g, x, y, w, h, r) {
+    if (typeof g.roundRect === "function") { g.roundRect(x, y, w, h, r); return; }
+    g.moveTo(x + r, y);
+    g.arcTo(x + w, y, x + w, y + h, r);
+    g.arcTo(x + w, y + h, x, y + h, r);
+    g.arcTo(x, y + h, x, y, r);
+    g.arcTo(x, y, x + w, y, r);
+    g.closePath();
+  }
   function poligono(g, pts) { g.moveTo(pts[0].x, pts[0].y); for (let i = 1; i < pts.length; i++) g.lineTo(pts[i].x, pts[i].y); g.closePath(); }
-  return { clamp, lerp, fase, suave, suave5, entrada, salida, rebote, tramo, campana, rot, suma, resta, esc, mezcla, dist, hash, ruido, curva, poligono };
+  return { clamp, lerp, fase, suave, suave5, entrada, salida, rebote, tramo, campana, rot, suma, resta, esc, mezcla, dist, hash, ruido, curva, poligono, rectanguloRedondeado };
 })();
 
 /* Escena base: negro absoluto en los extremos y llamada a pintar(g, t). */
