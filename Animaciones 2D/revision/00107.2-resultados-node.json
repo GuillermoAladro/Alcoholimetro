@@ -1,0 +1,48 @@
+{
+  "scene": "00107.2",
+  "duration": 14.7,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "earlyMirrorError": 0,
+    "finalMirrorError": 0,
+    "palmPositionPx": 0.0000053985869785598475,
+    "handshakePositionPx": 0.000004579167725834774,
+    "wristExcessPx": -0.4967999999999847,
+    "elbowJoinPx": 0.0008015819056820585,
+    "lowestSoleYAtFrame": {
+      "fall": {
+        "cerca": 468.2090148068225,
+        "lejos": 466.05233249203195
+      },
+      "back": {
+        "cerca": 480.3538883661948,
+        "lejos": 476.3329963552381
+      }
+    },
+    "threeHopHeights": [
+      34,
+      34,
+      34
+    ],
+    "landingX": 432,
+    "openingDelay": 0,
+    "fastDelay": 0.21,
+    "frameBeforeImpact": 0,
+    "frameAfterImpact": 0.03337381278983251,
+    "wink": [
+      1,
+      1
+    ]
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.0869999999999997,
+    7.497,
+    11.318999999999999
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
