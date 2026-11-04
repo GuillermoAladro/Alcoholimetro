@@ -1,0 +1,65 @@
+{
+  "scene": "00037.2",
+  "durationSeconds": 13.8,
+  "renderer": "Canvas 2D / Node-Skia",
+  "results": [
+    {
+      "name": "Extremos de las cuatro mangas",
+      "passed": true,
+      "details": {
+        "errorPx": 2.698863672404447e-7
+      }
+    },
+    {
+      "name": "Dos puntos de agarre siguen la espalda durante toda la mecida",
+      "passed": true,
+      "details": {
+        "errorPx": 1.5916157281026246e-14
+      }
+    },
+    {
+      "name": "Ambos pies de Guillermo se despegan al alzarlo",
+      "passed": true,
+      "details": {
+        "maxY": 479.6334448773853,
+        "suelo": 582
+      }
+    },
+    {
+      "name": "El rebote parte de la anchura comprimida",
+      "passed": true,
+      "details": {
+        "salto": 5.1106338050388445e-9,
+        "ancho": 0.619999999972891
+      }
+    },
+    {
+      "name": "El pulgar queda separado del cuerpo de Ander",
+      "passed": true,
+      "details": {
+        "distanciaHorizontalAPelvisPx": 90.06870678782991
+      }
+    },
+    {
+      "name": "Rebobinado determinista",
+      "passed": true
+    },
+    {
+      "name": "Negro inicial y final",
+      "passed": true
+    },
+    {
+      "name": "Fin a 30 fps",
+      "passed": true
+    },
+    {
+      "name": "Fin a 60 fps",
+      "passed": true
+    },
+    {
+      "name": "Fin a 120 fps",
+      "passed": true
+    }
+  ],
+  "passed": true
+}
