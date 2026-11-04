@@ -1,0 +1,45 @@
+{
+  "scene": "00113.2",
+  "duration": 14.9,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "visibleNecks": 3,
+    "crateFrontPixelDifferences": 0,
+    "toastContactPx": 0,
+    "fiveDrinksLipErrorPx": 1.1368683772161603e-13,
+    "bucketPickupsPx": 6.432490598706546e-16,
+    "launchJoins": 0.0001418638319209461,
+    "launchSpeedError": 0.017504672200686855,
+    "crateLandingJoins": 0.00015799740204176094,
+    "crateSideMarginPx": 3.0638511340170567,
+    "flightTopMarginPx": 38.70411268591795,
+    "pictureJoins": [
+      0.000008095238058569698,
+      0.00010746883258190515
+    ],
+    "picturePenetrationPx": 0,
+    "pictureImpactPx": 0,
+    "pictureRestPx": 5.115907697472721e-12,
+    "emissionErrorPx": 0,
+    "arrivalAtRodriSeconds": 0.00006164245086814901,
+    "rodriActing": [
+      -0.8499999999999999,
+      30.97260617930872,
+      -0.55,
+      -0.9500000000000001
+    ],
+    "maxVolumeError": 0.000010636044662781785,
+    "maxWristRatio": 1.0617039884321888
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.129,
+    7.599,
+    11.473
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
