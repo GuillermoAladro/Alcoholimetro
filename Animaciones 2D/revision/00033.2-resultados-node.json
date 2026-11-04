@@ -1,0 +1,195 @@
+{
+  "scene": "00033.2",
+  "renderer": "Node/Skia @napi-rs/canvas",
+  "durationSeconds": 13.95,
+  "results": [
+    {
+      "name": "Atlas de Guillermo y Ander cargados",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Geometría finita a 120 Hz",
+      "passed": true,
+      "details": {
+        "samples": 1675
+      }
+    },
+    {
+      "name": "Cuatro muñecas conectadas",
+      "passed": true,
+      "details": {
+        "maxGapPx": 2.185970440558076e-7
+      }
+    },
+    {
+      "name": "Cuatro apoyos fijos en el tablero durante el duelo",
+      "passed": true,
+      "details": {
+        "maxGapPx": 0
+      }
+    },
+    {
+      "name": "Contacto de la mosca en ambas narices",
+      "passed": true,
+      "details": {
+        "maxGapPx": 0
+      }
+    },
+    {
+      "name": "Raccord de aterrizajes y despegues",
+      "passed": true,
+      "details": {
+        "maxJumpPx": 0.00007039901725924751
+      }
+    },
+    {
+      "name": "La cabeza acompaña al tablero tras el golpe",
+      "passed": true,
+      "details": {
+        "maxGapPx": 1.1368683772161603e-13
+      }
+    },
+    {
+      "name": "Ojos encuadrados con aire en la dirección de la mirada",
+      "passed": true,
+      "details": {
+        "Guillermo": {
+          "x": 456.8,
+          "y": 277
+        },
+        "Ander": {
+          "x": 567.2,
+          "y": 277
+        }
+      }
+    },
+    {
+      "name": "Guillermo pierde el duelo y Ander parpadea después",
+      "passed": true
+    },
+    {
+      "name": "Guiño final de un solo ojo",
+      "passed": true,
+      "details": {
+        "d": 1,
+        "i": 0,
+        "feliz": 1,
+        "apretado": 0
+      }
+    },
+    {
+      "name": "Postura continua en transiciones exactas y muestreo regular",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Búsqueda directa y rebobinado deterministas",
+      "passed": true
+    },
+    {
+      "name": "Reproducción idéntica a 30, 60 y 120 fps",
+      "passed": true,
+      "details": [
+        {
+          "fps": 30,
+          "ok": true
+        },
+        {
+          "fps": 60,
+          "ok": true
+        },
+        {
+          "fps": 120,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "name": "Secuencia completa renderizada a 60 fps",
+      "passed": true,
+      "details": {
+        "frames": 838
+      }
+    },
+    {
+      "name": "Negro inicial y final",
+      "passed": true,
+      "details": [
+        {
+          "t": 0,
+          "max": 0
+        },
+        {
+          "t": 0.016666666666666666,
+          "max": 0
+        },
+        {
+          "t": 0.03333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.05,
+          "max": 0
+        },
+        {
+          "t": 0.06666666666666667,
+          "max": 0
+        },
+        {
+          "t": 0.08333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.1,
+          "max": 0
+        },
+        {
+          "t": 0.11666666666666667,
+          "max": 0
+        },
+        {
+          "t": 13.833333333333334,
+          "max": 0
+        },
+        {
+          "t": 13.85,
+          "max": 0
+        },
+        {
+          "t": 13.866666666666667,
+          "max": 0
+        },
+        {
+          "t": 13.883333333333333,
+          "max": 0
+        },
+        {
+          "t": 13.9,
+          "max": 0
+        },
+        {
+          "t": 13.916666666666666,
+          "max": 0
+        },
+        {
+          "t": 13.933333333333334,
+          "max": 0
+        },
+        {
+          "t": 13.95,
+          "max": 0
+        }
+      ]
+    },
+    {
+      "name": "Sin cortes visuales aislados",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "passed": true,
+  "limitations": [
+    "No se han probado los controles HTML en un navegador ni la Raspberry Pi física."
+  ]
+}
