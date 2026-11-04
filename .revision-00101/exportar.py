@@ -4,13 +4,13 @@ from playwright.sync_api import sync_playwright
 import base64, hashlib, io, json, os, shutil, subprocess
 
 root = Path("Animaciones 2D").resolve()
-scene_id = "00103.2"
+scene_id = "00104.2"
 stem = next((root / "escenas").glob(scene_id + " *.js")).stem
 out = Path(os.environ["RUNNER_TEMP"]) / "export"
 out.mkdir()
 shutil.copyfile(Path(os.environ["RUNNER_TEMP"]) / "resultados-node.json",out / "resultados-node.json")
 movie, sheet_path = out / (stem + ".mp4"), out / (stem + " - fotogramas.png")
-times = [0,1.11,2.24,2.88,3.77,4.35,5.28,6.29,7.066666666666666,7.62,8.06,10.83,12.6,12.96,13.55,14.59]
+times = [0,1.25,2.56,4.4,5.61,6.52,7.72,8.23,8.59,8.86,10.02,10.56,10.82,11.29,13.36,14.59]
 sheet = Image.new("RGB", (960, 640), "#16181c")
 draw = ImageDraw.Draw(sheet)
 errors = []
@@ -63,4 +63,3 @@ subprocess.run(["ffmpeg","-v","error","-xerror","-i",str(movie),"-f","null","-"]
 stream = json.loads(subprocess.check_output(["ffprobe","-v","error","-of","json","-show_entries","stream=codec_name,width,height,r_frame_rate,nb_frames",str(movie)]))["streams"][0]
 assert (stream["codec_name"],stream["width"],stream["height"],stream["r_frame_rate"],int(stream["nb_frames"])) == ("h264",1024,600,"60/1",n)
 print(json.dumps(stream))
-# Ajustar el encuadre de 00103.2 tras revisar la primera exportación
