@@ -37,15 +37,24 @@ const {load, C} = require('./canvas-node.cjs');
     function center(q){ctx.setTransform(1,0,0,1,0,0);ctx.clearRect(0,0,160,160);ctx.setTransform(3,0,0,3,80-3*q.x,80-3*q.y);}
     function tinta(predicate){const i=ctx.getImageData(74,74,13,13).data;let n=0;for(let j=0;j<i.length;j+=4)if(i[j+3]>85&&predicate(i[j],i[j+1],i[j+2]))n++;return n;}
     const gastado=D.carrera().tFin+.29,pg=D.pose(gastado).g;
-    const denim=['cerca','lejos'].map(l=>{center(G.aPantalla(pg,D.rodilla(G,pg,l)));const p={...pg,manoCerca:{...pg.manoCerca,puno:0},manoLejos:{...pg.manoLejos,puno:0}};
-      G.dibujar(ctx,p,gastado);return tinta((r,g,b)=>b>r+8&&b>g-12);});
+    const kneeSamples=['cerca','lejos'].map(l=>{
+      const tgt=G.aPantalla(pg,D.rodilla(G,pg,l)), probes=[];
+      for(const p of [{...pg,manoCerca:null,manoLejos:null},{...pg,manoCerca:{...pg.manoCerca,puno:0},manoLejos:{...pg.manoLejos,puno:0}}]){
+        center(tgt);G.dibujar(ctx,p,gastado);
+        probes.push({blue:tinta((r,g,b)=>b>r+8&&b>g-12),rgba:[...ctx.getImageData(80,80,1,1).data]});}
+      center(tgt);ctx.save();ctx.translate(pg.x,pg.suelo);ctx.scale(pg.s,pg.s);ctx.translate(-G.PELVIS.x,-G.SUELO);
+      const n=l==='cerca'?'pierna_cerca':'pierna_lejos',L=G.A.datos.piezas[n].largo,c=Recortes.ik(G.tronco(pg)(G.CADERA[l]),pg.piernas[l].tob,L,L*.5,80,1,1.03);
+      c.cuna=true;c.cunaAjustada=true;Recortes.tira(ctx,G.A,n,c,18);ctx.restore();
+      return {joint:tgt,leg:tinta((r,g,b)=>b>r+7&&b>g-12),center:[...ctx.getImageData(80,80,1,1).data],probes};
+    });
+    const denim=kneeSamples.map(k=>k.leg);
     const t=T.agarra+.27,ps=D.pose(t).s,target=D.hombroSara(t);center(target);S.dibujar(ctx,ps,t);
     const shoulderInk=tinta((r,g,b)=>Math.max(r,g,b)<135);
     const ts=T.coge+.18,sara=D.pose(ts).s,B=D.tablaEnMano(ts,sara);center(D.pinzaS(sara));D.dibTabla(ctx,B);
     const gripInk=tinta(()=>true);
-    if(Math.min(...denim)<12||shoulderInk<12||gripInk<12)throw Error(JSON.stringify({denim,shoulderInk,gripInk}));
+    if(Math.min(...denim)<12||shoulderInk<12||gripInk<12)throw Error(JSON.stringify({denim,kneeSamples,shoulderInk,gripInk}));
     if(Math.max(knees,sole,grip,kick,spark,ground,shoulder,...joins,...pushes,...edges)>.012||reach>1.08||minClear<3||Math.abs(flip-Math.PI)>1e-8||spin>=-.1)throw Error(JSON.stringify(m));
-    return {m,denim,shoulderInk,gripInk};
+    return {m,denim,kneeSamples,shoulderInk,gripInk};
   })()`);
   const hash = canvas => crypto.createHash('sha256').update(canvas.data()).digest('hex');
   const background = C.createCanvas(1024, 600);
