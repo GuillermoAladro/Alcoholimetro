@@ -1,0 +1,62 @@
+{
+  "scene": "00115.2",
+  "duration": 14.6,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "maxPoseJoinPx": 0.00014375146095280827,
+    "poseJoinsPx": [
+      4.5099440995265876e-11,
+      2.2569002817868767e-11,
+      0.00001991292870002247,
+      1.0898083513470432e-7,
+      6.992840330426394e-11,
+      0.00014375146095280827,
+      9.833911462919787e-12,
+      4.184664092582295e-11,
+      1.0135474881752932e-10,
+      0.000014399980443621759
+    ],
+    "handSupportErrorPx": 1.1368683772161603e-13,
+    "swingHeightErrorPx": 1.865174681370263e-13,
+    "saluteClearancePx": 165.93353832280758,
+    "dustContactErrorPx": 1.1368683772161603e-13,
+    "stepHands": [
+      "lejos",
+      "cerca",
+      "lejos",
+      "cerca",
+      "lejos",
+      "cerca",
+      "lejos",
+      "cerca",
+      "lejos",
+      "cerca"
+    ],
+    "paintedFloorOffsetsPx": [
+      -0.5,
+      -0.5,
+      -0.5
+    ],
+    "shoeGlassTime": 9.236318359374984,
+    "glassOverlapBefore": false,
+    "glassOverlapAfter": true,
+    "counterPenetrationPx": 0,
+    "fluidLevelErrorPx": 5.684341886080802e-14,
+    "levelSamples": 127,
+    "maxLiquidRegain": 0,
+    "lastVolume": 0,
+    "streamFlightSeconds": 0.08888888888889035,
+    "maxJointRatio": 1.05
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.066,
+    7.446,
+    11.241999999999999
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
