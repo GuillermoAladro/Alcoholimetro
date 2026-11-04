@@ -53,8 +53,8 @@ C = {
     "usb_pant": dict(n="Borne USB-A a tornillo · pantalla", ref="E09", modelo="borne_usb", pose=pose([-150, -125, 0]), grupo="Reparto de 5 V"),
     # ---- cargas y señales
     "pi":       dict(n="Raspberry Pi 3 Model B+ (con microSD de 32 GB)", ref="E04 + E21", modelo="raspberry", pose=pose([-320, 20, 0]), grupo="Pi y periféricos"),
-    "wifi":     dict(n="Adaptador Wi-Fi USB AR9271", ref="E05", modelo="wifi_ar9271", pose=None, grupo="Pi y periféricos"),
-    "antena":   dict(n="Alargo RP-SMA 30 cm con pasamuros y antena", ref="E12", modelo="chapa_antena", pose=pose([-115, 200, 0], RED_X), grupo="Pi y periféricos"),
+    "modem":    dict(n="Módem 4G USB Huawei E3372h-320 (con la SIM de datos)", ref="E05", modelo="modem_4g", pose=None, grupo="Pi y periféricos"),
+    "antena":   dict(n="Antena 4G plana en la ventana del lateral izquierdo del cajón", ref="E12 + H19", modelo="ventana_antena", pose=pose([-115, 200, 0], RED_X), grupo="Pi y periféricos"),
     "cam":      dict(n="Camera Module 3", ref="E03", modelo="camara", pose=pose([-365, 160, 0], CAM_PIE), grupo="Pi y periféricos"),
     "pant":     dict(n="Pantalla GeeekPi EP-0170 7\" (1024 × 600)", ref="E01", modelo="pantalla", pose=pose([-470, -150, 0], DE_PIE(72)), grupo="Pi y periféricos"),
     "solo":     dict(n="SumUp Solo", ref="E02", modelo="solo", pose=pose([-300, -200, 0]), grupo="Pi y periféricos"),
@@ -67,7 +67,7 @@ C = {
     "t_alc":    dict(n="Racor en T · toma de alcohol", ref="E14", modelo="te_6mm", pose=pose([-80, 330, 0], T_TUMBADA), grupo="Sensor y soplido"),
     "esc":      dict(n="Escape del soplido (lateral izquierdo)", ref="panel", modelo="escape_panel", pose=pose([-10, 330, 0], dict(ex=[0, 1, 0], ey=[-1, 0, 0], ez=[0, 0, 1])), grupo="Sensor y soplido"),
 }
-# el AR9271 va enchufado en el USB de abajo de la Pi: lo coloca el visor a partir del ancla usb_bajo
+# el módem 4G va enchufado en el USB de abajo de la Pi: lo coloca el visor a partir del ancla usb_bajo
 
 # ------------------------------------------------------------------ qué es cada ancla (para verificar)
 # clase: red (L/N con o sin fusible), pe, +5, 0v, tx, rx, usb_vbus…; tipo de conector y sexo
@@ -84,7 +84,7 @@ A = {
     ("ze", "j1_1"): dict(clase="+5", con="XH"), ("ze", "j1_2"): dict(clase="0v", con="XH"), ("ze", "j1_3"): dict(clase="tx", con="XH"), ("ze", "j1_4"): dict(clase="rx", con="XH"),
     ("pant", "hdmi"): dict(clase="hdmi", con="HDMI A hembra"), ("pant", "usbc"): dict(clase="usb_pwr", con="USB-C hembra"),
     ("solo", "usbc"): dict(clase="usb_pwr", con="USB-C hembra"), ("cam", "fpc"): dict(clase="csi", con="FFC 15 vías"),
-    ("wifi", "rpsma"): dict(clase="rf", con="RP-SMA hembra"), ("antena", "coax"): dict(clase="rf", con="RP-SMA (alargo)"),
+    ("modem", "crc9"): dict(clase="rf", con="CRC9 hembra (toma principal)"), ("antena", "coax"): dict(clase="rf", con="SMA macho (cable de la antena)"),
 }
 for k in range(1, 6):
     A[("wago_p", f"p{k}")] = dict(clase="+5", con="WAGO 221")
@@ -140,8 +140,8 @@ con("W15", "W15", ("usb_solo", "usb", "usbA"), ("solo", "usbc", "usbc90"), "Cabl
 con("W17", "W17", ("usb_pant", "usb", "usbA"), ("pant", "usbc", "usbc90"), "Cable USB-A → USB-C de la pantalla", "#6b7078", 1.9, "trenzado", por=[(-200, -150), (-380, -232), (-505, -175)], grupo=GDAT)
 con("W23", "W23", ("pi", "hdmi", "hdmiRecta"), ("pant", "hdmi", "hdmi90"), "Cable HDMI 30 cm, un extremo acodado 90°", "#17181a", 2.25, "hdmi", por=[(-300, -55), (-490, -105)], grupo=GDAT)
 con("W24", "W24", ("cam", "fpc", "ffc"), ("pi", "csi", "ffc"), "Cinta FFC de 15 vías, paso 1 mm, 200 mm (la que trae la cámara)", "#eceae2", 8.0, "ffc", por=[(-345, 110), (-310, 70)], grupo=GDAT, alto=34.0)
-con("W25", "W25", ("pi", "usb_bajo", "enchufado"), ("wifi", "usb", "enchufado"), "Enchufado directo en el USB de abajo", "#000000", 0, "ninguno", grupo=GDAT)
-con("W26", "W26", ("wifi", "rpsma", "rpsma"), ("antena", "coax", "directo"), "Alargo RG316 30 cm (RP-SMA macho → pasamuros)", "#9b6a43", 1.3, "coax", por=[(-128, 95)], grupo=GDAT)
+con("W25", "W25", ("pi", "usb_bajo", "enchufado"), ("modem", "usb", "enchufado"), "Enchufado directo en el USB de abajo", "#000000", 0, "ninguno", grupo=GDAT)
+con("W26", "W26", ("modem", "crc9", "directo"), ("antena", "coax", "directo"), "Latiguillo CRC9 → SMA hembra (15 cm) + cable de la antena con SMA macho", "#9b6a43", 0.8, "coax", por=[(-128, 95)], grupo=GDAT)
 # aire
 con("W28a", "W28", ("boq", "tubo", "tubo"), ("t_pre", "a", "tubo"), "Tubo de silicona de 6 mm", "#f3f5f2", 4.0, "silicona", por=[], grupo=GAIRE)
 con("W28b", "W28", ("t_pre", "b", "tubo"), ("red_a", "r6", "tubo"), "Tubo de silicona de 6 mm (tramo corto)", "#f3f5f2", 4.0, "silicona", grupo=GAIRE)
@@ -195,9 +195,9 @@ nota("W10", AV, "El puente con faston es la única unión entre la chapa del caj
 nota("W11", AV, "El troncal no lleva fusible en el diseño A. La fuente solo se protege a sí misma (hipo a 11–15 A): un corto en el troncal de 0,75 mm² no lo corta nadie. MONTAJE W11 y las auditorías piden un F 5 A pegado a la fuente.", "MONTAJE W11; auditorías")
 nota("W11", AV, "Ajuste de la fuente: el diseño A dice 5,20 V; MONTAJE corrige a 5,10 V (como mucho 5,12): con 5,20 V la envolvente de la hoja de datos llega a ~5,32 V y pasa los 5,3 V del ZE29A y los 5,25 V de USB.", "MONTAJE W11; hoja LRS-50")
 nota("W12", OK, "−V de la fuente al polo 1 de la WAGO GND.", "Ficha LRS-50: borne 4 −V")
-nota("W12", AV, "El −V queda flotante respecto a tierra salvo por la malla del coaxial si el pasamuros RP-SMA toca la chapa: o se aísla el pasamuros o se hace la unión única W12b.", "MONTAJE W12b y W26")
+nota("W12", AV, "El −V queda flotante respecto a tierra: con la antena 4G dentro del cajón ya no hay coaxial que lo una a la chapa. Decidir si se hace la unión única W12b.", "MONTAJE W12b; DECISIONES 01-11-2026")
 nota("W13a", OK, "Polo 2 de la WAGO +5 V a la entrada del portafusibles de 3 A de la Pi.")
-nota("W13d", AV, "La Pi cuelga del troncal (diseño A). Con 5,20 V en la fuente y las resistencias de MONTAJE (troncal ≈ 0,03 Ω, rama de la Pi ≈ 0,16 Ω): unos 4,85 V con el consumo normal del diseño A (3,6 A en total, 1,5 A la Pi) y 4,63 V en el pico (5,5 A y 2,5 A), justo en el aviso de subtensión de la Pi (4,63 V ±5 %). MONTAJE W13 lleva la Pi directa a los bornes de la fuente con su fusible.", "MONTAJE W13 (cálculo de caídas)")
+nota("W13d", AV, "La Pi cuelga del troncal (diseño A). Con 5,20 V en la fuente y las resistencias de MONTAJE (troncal ≈ 0,03 Ω, rama de la Pi ≈ 0,16 Ω): unos 4,81 V con el consumo normal (3,8 A en total, 1,7 A la Pi con el módem 4G) y 4,58 V en el pico (5,8 A y 2,8 A), por debajo del aviso de subtensión de la Pi (4,63 V ±5 %). El módem gasta algo más que el AR9271 (estimado, a medir). MONTAJE W13 lleva la Pi directa a los bornes de la fuente con su fusible.", "MONTAJE W13 (cálculo de caídas); DECISIONES 01-11-2026")
 nota("W13c", AV, "El anuncio del latiguillo no dice qué hilo es VBUS: se mide antes (rojo → VBUS, pin 1).", "MONTAJE W13")
 nota("W14c", OK, "GND al tornillo «−» del borne; S (malla) también a «−» y D+ con D− puenteados en el borne (cargador BC 1.2).", "MONTAJE W14")
 nota("W14b", AV, "Fusible de 3 A delante de un borne USB-A cuya corriente no consta (los USB-A de placa dan 1–1,5 A): el fusible no protege el borne. Mejor 2 A, como en MONTAJE.", "Ficha borne USB-A; MONTAJE W14")
@@ -214,9 +214,11 @@ nota("W17", AV, "El cable de la pantalla tiene que ser A → C (si viene C → C
 nota("W23", OK, "HDMI de tamaño completo en la Pi y en la pantalla; el extremo acodado va en la pantalla (su HDMI está en el canto, junto al lateral del cajón).", "Anuncio de la pantalla")
 nota("W24", OK, "15 vías en los dos lados (Pi 3B+ y Camera Module 3). Contactos: en la Pi hacia el conector HDMI; en la cámara, hacia su placa.", "MONTAJE W24")
 nota("W24", AV, "Cinta de 200 mm: en el CAD el recorrido mide unos 125 mm. Bien.", "CAD specs.py")
-nota("W25", OK, "El AR9271 va en el USB de abajo de la Pi (cualquiera de los cuatro vale).", "MONTAJE W25")
-nota("W26", AV, "El pasamuros une la malla del coaxial (GND de la Pi) a la chapa: montarlo aislado con arandelas aislantes, o asumirlo como la unión única −V/tierra.", "MONTAJE W26")
-nota("W26", AV, "Macho y hembra del alargo (RP-SMA) a comprobar al recibirlo.", "MONTAJE W26")
+nota("W25", OK, "El módem 4G va en el USB de abajo de la Pi. Con 28 mm de ancho tapa el USB de encima, que no se usa.", "DECISIONES 01-11-2026")
+nota("W25", AV, "Modo HiLink: la Pi lo ve como una tarjeta de red USB (eth1) sin instalar nada. Si viene en modo «stick» (sale como ttyUSB), hay que pasarlo a HiLink antes de montarlo.", "DECISIONES 01-11-2026")
+nota("W26", OK, "Todo el coaxial va dentro del cajón, de la antena al módem: al sacar el cajón no hay que soltar nada y la malla no toca la carcasa.", "DECISIONES 01-11-2026")
+nota("W26", AV, "La CRC9 entra a presión y se puede salir con las vibraciones: sujetar el latiguillo al módem con una brida o cinta.", "DECISIONES 01-11-2026")
+nota("W26", AV, "Recorrido de unos 17 cm (CAD) y 35 cm de cable entre latiguillo y antena: recoger lo que sobra con una brida, sin doblarlo a menos de 1 cm de radio.", "CAD specs.py")
 nota("W28a", OK, "Orden en el sentido del soplido: boquilla → toma de presión → barrera → toma de alcohol → escape, como pide el manual (notas 1, 4 y 6).", "Manual ZE29A V1.1")
 nota("W28c", AV, "La barrera necesita dos reductores (6→4 y 4→6, vienen 4 en el pack) y un tramo de tubo de 4 mm que no está en la lista: con un solo reductor, su lado de 4 mm no cierra en un tubo de 6 mm.", "Anuncio del reductor (4 uds., 40 mm)")
 nota("W28f", AV, "Las boquillas del ZE29A son de unos 2,5 mm (fotos): no entra un tubo de 6 mm. Hace falta tubo fino (2 × 4 mm) y una reducción desde la T; no están en la lista. Se miden al recibir el módulo.", "Fotos del anuncio del ZE29A")
@@ -225,21 +227,21 @@ nota("W28e", OK, "El escape sale por el paso de Ø12 del lateral izquierdo del c
 
 # ------------------------------------------------------------------ comprobaciones globales
 V_AJ, R_TR, R_PI = 5.20, 0.03, 0.16
-cargas = [("Raspberry Pi 3B+ + cámara + AR9271", 1.5, 2.5, 3, "Latiguillo 22 AWG"), ("Pantalla 7\"", 1.0, 1.0, 3, "Borne USB-A + cable"),
+cargas = [("Raspberry Pi 3B+ + cámara + módem 4G", 1.7, 2.8, 3, "Latiguillo 22 AWG"), ("Pantalla 7\"", 1.0, 1.0, 3, "Borne USB-A + cable"),
           ("SumUp Solo (cargando)", 0.8, 1.5, 3, "Borne USB-A + cable"), ("ZE29A", 0.3, 0.5, 2, "Cable XH 22 AWG")]
 tot_t, tot_p = sum(c[1] for c in cargas), sum(c[2] for c in cargas)
 g = []
 g.append(dict(estado=OK, titulo="Fuente de 10 A", texto=f"Consumo típico ≈ {tot_t:.1f} A y pico ≈ {tot_p:.1f} A: la fuente va al {tot_p / 10 * 100:.0f} % en el pico."))
 for nom, t, p, f, cab in cargas:
     g.append(dict(estado=OK if p <= 0.85 * f else AV, titulo=f"Rama {nom}", texto=f"Pico {p:.1f} A con fusible de {f} A ({p / f * 100:.0f} %). {cab}."))
-v_t = V_AJ - tot_t * R_TR - 1.5 * R_PI; v_p = V_AJ - tot_p * R_TR - 2.5 * R_PI
+v_t = V_AJ - tot_t * R_TR - cargas[0][1] * R_PI; v_p = V_AJ - tot_p * R_TR - cargas[0][2] * R_PI
 g.append(dict(estado=AV, titulo="Tensión en la Pi", texto=f"Con la fuente a {V_AJ:.2f} V y la Pi colgando del troncal: {v_t:.2f} V típico y {v_p:.2f} V en el pico (objetivo ≥ 4,90 V; la Pi avisa por debajo de 4,63 V). Directa a la fuente (MONTAJE W13) se gana unos 0,15 V."))
 g.append(dict(estado=AV, titulo="Tope de 5,3 V del ZE29A", texto="5,20 V × 1,0225 (línea, carga y temperatura de la hoja LRS-50) ≈ 5,32 V más el rizado: se pasa del máximo del sensor. MONTAJE fija 5,10 V (nunca más de 5,12 V)."))
 g.append(dict(estado=OK, titulo="WAGO 221-415", texto="Cinco polos ocupados en cada regleta (troncal + 4 ramas): ninguno con dos hilos. Hilos de 0,33 a 1,3 mm², dentro de 0,2–4 mm²."))
 g.append(dict(estado=AV, titulo="Troncal sin fusible", texto="0,75 mm² sin protección entre la fuente y las WAGO: falta el F 5 A del troncal (MONTAJE W11, cinco portafusibles; el kit MINI trae 5)."))
 g.append(dict(estado=AV, titulo="Bornes USB-A", texto="Corriente nominal sin dato (1–1,5 A en USB-A de placa) detrás de fusibles de 3 A: bajar a 2 A o cambiar el borne por uno de 2–3 A."))
 g.append(dict(estado=OK, titulo="UART", texto="Pin 8 (TXD) → RX del sensor y TX del sensor → pin 10 (RXD); GND común por la WAGO GND. 9600 8N1 a 3,3 V."))
-g.append(dict(estado=AV, titulo="Masa y tierra", texto="Tierra: C14 → espárrago del cajón → FG y → carcasa por el puente. El −V solo se une a tierra a través del coaxial si el pasamuros toca la chapa: decidir W12b o aislarlo."))
+g.append(dict(estado=AV, titulo="Masa y tierra", texto="Tierra: C14 → espárrago del cajón → FG y → carcasa por el puente. El −V queda flotante (la antena 4G va dentro del cajón, sin coaxial a la carcasa): decidir la unión única W12b."))
 g.append(dict(estado=AV, titulo="Fusible de 230 V en un solo polo", texto="T2,5A en la C14 (lento: aguanta el arranque de 45 A en frío). Con Schuko puede quedar en el neutro."))
 g.append(dict(estado=AV, titulo="Neumática", texto="Orden correcto (presión → barrera → alcohol). Faltan en la lista: tubo de 4 mm para la barrera, tubo fino de 2 × 4 mm y dos reducciones a las boquillas del ZE29A (a medir con el módulo)."))
 
@@ -248,7 +250,7 @@ DESC = {
     "psu.L": "borne 1 · AC/L", "psu.N": "borne 2 · AC/N", "psu.FG": "borne 3 · FG (tierra)", "psu.-V": "borne 4 · −V", "psu.+V": "borne 5 · +V",
     "pe_cajon.o1": "1.er ojal (bajo tuerca y contratuerca)", "pe_cajon.o2": "2.º ojal", "pe_cajon.o3": "3.er ojal", "pe_carc.o1": "ojal",
     "pi.pwr": "micro-USB (PWR IN)", "pi.hdmi": "HDMI", "pi.csi": "conector CSI «CAMERA»", "pi.gpio8": "pin 8 · GPIO14 (TXD)", "pi.gpio10": "pin 10 · GPIO15 (RXD)",
-    "pi.usb_bajo": "USB 2.0 de abajo", "wifi.usb": "clavija USB-A", "wifi.rpsma": "RP-SMA", "antena.coax": "lado de dentro del pasamuros",
+    "pi.usb_bajo": "USB 2.0 de abajo", "modem.usb": "clavija USB-A", "modem.crc9": "toma CRC9 principal", "antena.coax": "salida del cable de la antena",
     "ze.j1_1": "J1 pin 1 · 5 V", "ze.j1_2": "J1 pin 2 · GND", "ze.j1_3": "J1 pin 3 · TX", "ze.j1_4": "J1 pin 4 · RX", "ze.presion": "boquilla de presión", "ze.alcohol": "boquilla de muestra (celda)",
     "pant.hdmi": "HDMI (canto izquierdo)", "pant.usbc": "USB-C «Power IN»", "solo.usbc": "USB-C (canto de abajo)", "cam.fpc": "conector J1 (FPC)",
     "boq.tubo": "salida de la boquilla", "esc.tubo": "paso del escape", "t_pre.a": "entrada", "t_pre.b": "salida", "t_pre.c": "derivación", "t_alc.a": "entrada", "t_alc.b": "salida", "t_alc.c": "derivación",

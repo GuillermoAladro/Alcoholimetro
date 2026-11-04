@@ -32,6 +32,8 @@ def a_json(m, compras):
                     electrico=p["electrico"], notas=p.get("notas", ""), bb=bb(p["solido"]))
         if p["tipo"] == "fabricada":
             d = medidas_chapa(p["solido"])
+            if p.get("chapa") is not None:
+                info["pliegues"] = len(p["chapa"].pliegues)
             info.update(material=p["material"], proceso=p["proceso"], medidas=[round(x, 1) for x in d],
                         masa=round(p["solido"].Volume() * (7.85e-3 if "Acero" in p["material"] else 1.2e-3), 1))
         else:
@@ -95,13 +97,22 @@ def exportar_cad(m, carpeta, compras):
         if p["tipo"] == "fabricada":
             cq.exporters.export(cq.Workplane(obj=p["solido"]), os.path.join(carpeta, "STEP_piezas", f"{p['id']}.step"))
             dims = None
-            if p.get("plana", True):
+            if p.get("chapa") is not None:
+                from chapa import escribir_dxf
+                cara, lineas, Wd, Hd = p["chapa"].plano_2d()
+                escribir_dxf(cara, lineas, os.path.join(carpeta, "DXF_corte", f"{p['id']}.dxf"),
+                             [f"{p['id']} {p['nombre'].upper()} - {p['material']} - 1 ud.", f"Desarrollo {Wd:.1f} x {Hd:.1f} mm"], p["chapa"])
+                dims = (round(Wd, 1), round(Hd, 1))
+            elif p.get("plana", True):
                 dims = dxf_chapa(p["solido"], os.path.join(carpeta, "DXF_corte", f"{p['id']}.dxf"),
                                  f"{p['id']} {p['nombre'].upper()} - {p['material']} - 1 ud.")
             d = medidas_chapa(p["solido"])
             masa = p["solido"].Volume() * (7.85e-3 if "Acero" in p["material"] else 1.2e-3)
+            if p.get("chapa") is not None:                   # en las plegadas se da el desarrollo
+                d = [max(dims), min(dims), p["espesor"]]
             filas.append(dict(id=p["id"], nombre=p["nombre"], grupo=GRUPOS[p["id"].split("-")[1][0]], material=p["material"],
                               proceso=p["proceso"], largo=round(d[0], 1), ancho=round(d[1], 1), espesor=round(d[2], 1),
+                              pliegues=len(p["chapa"].pliegues) if p.get("chapa") is not None else 0, codigo=p.get("codigo", p["id"]),
                               dxf=(f"DXF_corte/{p['id']}.dxf" if dims else ""), step=f"STEP_piezas/{p['id']}.step",
                               masa_g=round(masa, 0), notas=p.get("notas", "")))
     asm.save(os.path.join(carpeta, f"Conjunto_{m.letra}.step"))

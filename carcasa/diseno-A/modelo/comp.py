@@ -155,12 +155,31 @@ def raspberry():
     return Partes(s, _m("raspberry", dict(separadores=PI["sep"])))
 
 
-# ---------------------------------------------------------------- adaptador Wi-Fi AR9271 (VBESTLIFE)
-def wifi_ar9271():
-    """Origen: punta de la clavija USB-A; el adaptador crece hacia +X. Centrado en y=0, z=0."""
-    return Partes([("clavija_usb", box(0, 12.3, -2.25, 2.25, -6, 6), METAL),
-                   ("cuerpo", box(12, 84, -5.5, 5.5, -11, 11), NEGRO),
-                   ("rpsma_hembra", cyl(4.0, 9.2, (84, 0, 0), (1, 0, 0)), DORADO)], _m("wifi_ar9271"))
+# ---------------------------------------------------------------- módem 4G USB Huawei E3372h-320 (HiLink)
+MODEM = dict(L=88.0, ancho=28.0, grueso=11.5, clavija=12.3, crc9=(74.0, -6.0))   # crc9: (x, z) de la toma principal en la cara −Y
+
+
+def modem_4g():
+    """Pincho 4G con la SIM dentro. 88 × 28 × 11,5 mm con la clavija (ficha de Huawei). Bajo la tapa lleva dos tomas CRC9
+    para antena externa; al enchufar una, el módem deja de usar su antena interna. Origen: punta de la clavija USB-A;
+    crece hacia +X; grueso en Y (centrado), ancho en Z (centrado). La toma principal mira hacia −Y (hacia el frente)."""
+    L, a, e, cl = MODEM["L"], MODEM["ancho"], MODEM["grueso"], MODEM["clavija"]
+    xc, zc = MODEM["crc9"]
+    return Partes([("clavija_usb", box(0, cl, -2.25, 2.25, -6, 6), METAL),
+                   ("cuerpo", box(cl - 0.3, L, -e / 2, e / 2, -a / 2, a / 2), BLANCO),
+                   ("crc9_principal", cyl(1.6, 4.0, (xc, -e / 2, zc), (0, -1, 0)), DORADO)], _m("modem_4g"))
+
+
+# ---------------------------------------------------------------- antena 4G plana (FPC) con cable y SMA macho
+FPC = dict(largo=99.0, ancho=14.0, grueso=0.4)
+
+
+def antena_fpc():
+    """Lámina adhesiva de 99 × 14 mm (referencia: Ebyte TX4G-FPC-9914, 698–2700 MHz). Origen en el centro de la cara
+    pegada; la lámina crece hacia +X; largo en Z, ancho en Y. El cable sale por el extremo de arriba (+Z)."""
+    L, a, e = FPC["largo"], FPC["ancho"], FPC["grueso"]
+    return Partes([("lamina", box(0, e, -a / 2, a / 2, -L / 2, L / 2), NEGRO),
+                   ("salida_cable", box(0, 1.6, -2.5, 2.5, L / 2 - 6, L / 2 + 1.5), DORADO)])
 
 
 # ---------------------------------------------------------------- Mean Well LRS-50-5 (ficha LRS-50, caso 239A)
@@ -328,19 +347,6 @@ def separador(L, d=(0, 1, 0), r=3.5):
     return Partes([("separador", cyl(r, L, (0, 0, 0), d), NEGRO)], _m("separador", L, d, r))
 
 
-def pasamuros_rpsma():
-    """Alargo RP-SMA: extremo hembra de chapa (agujero Ø6,5) con tuerca. Origen en la cara exterior; cuerpo hacia +Y local."""
-    return Partes([("tuerca_ext", cyl(4.6, 2.5, (0, -2.5, 0), (0, 1, 0)), DORADO),
-                   ("cuerpo", cyl(3.2, 14, (0, 0, 0), (0, 1, 0)), DORADO),
-                   ("tuerca_int", cyl(4.6, 2.5, (0, 3, 0), (0, 1, 0)), DORADO)], _m("pasamuros_antena"))
-
-
-def antena():
-    """Antena 2 dBi del AR9271, girada vertical. Origen en el conector."""
-    return [("rotula", cyl(4.5, 14, (0, 0, 0), (0, 0, 1)), NEGRO),
-            ("antena", cyl(5.0, 95, (0, 0, 14), (0, 0, 1)), NEGRO)]
-
-
 def arandela_pasacables(r_int, r_ext=None, d=(0, 1, 0)):
     """Pasacables de goma (kit de 7 tamaños). Origen en el centro del agujero."""
     r_ext = r_ext or r_int + 3
@@ -356,7 +362,8 @@ FUENTES = {
     "fuente": "Mean Well LRS-50-5: 99 x 82 x 30, 2 x M3 abajo (penetración máx. 3 mm), regleta de 5 bornes (ficha LRS-50)",
     "c14": "Toma C14 con portafusibles y sin interruptor (ASIN B07CQ54BY4): medidas típicas del formato de atornillar (brida 44,7 × 33,1, recorte 31,5 × 27,25, tornillos a 36 mm), confirmar al recibirla",
     "ze29a": "Winsen ZE29A: 85 x 33 mm (manual V1.1); celda, bomba, condensador, sensor de presión y J1 medidos sobre las fotos del anuncio (a confirmar)",
-    "wifi": "AR9271 VBESTLIFE (ASIN B0CBW6THN1): adaptador de pincho con RP-SMA (fotos del anuncio)",
+    "modem": "Huawei E3372h-320: 88 × 28 × 11,5 mm (ficha de Huawei); dos tomas CRC9 bajo la tapa (sitio aproximado, a medir)",
+    "antena": "Antena FPC 4G 698–2700 MHz: 99 × 14 mm (ficha de Ebyte TX4G-FPC-9914); la que se compre puede variar unos mm",
     "wago": "WAGO 221-415: 29,9 x 18,6 x 8,3 mm (ficha WAGO)",
     "usb": "Borne USB-A (ASIN B07V86XPL4): 50 mm, bloque de bornes de 21 mm, cuerpo de 19 × 12 (foto con cotas del anuncio)",
     "portafusible": "Portafusibles MINI en línea (ASIN B07Q495GQG): 23,5 × 12,5 × 13 mm (foto con cotas), hilo de 16 AWG",

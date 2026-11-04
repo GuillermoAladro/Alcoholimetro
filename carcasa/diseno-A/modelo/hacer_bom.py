@@ -21,12 +21,15 @@ FIJAS = {
     "E19": (1, "UART y 5 V del sensor"),
     "E20": (1, "Fusibles de los 4 ramales: 3 A (Pi, Solo, pantalla) y 2 A (sensor)"),
     "E21": (1, ""), "E22": (1, "Cable de red del bar a la máquina"),
+    "E23": (1, "Une la toma CRC9 principal del módem con el SMA macho del cable de la antena (no dibujado). Precio orientativo: elegir anuncio"),
+    "H19": (1, "Se cortan las dos placas de la antena 4G: A-V03 (carcasa) y A-S05 (cajón). Precio orientativo: elegir anuncio"),
+    "H20": (1, "Pega las dos placas de 2 mm (A-V03 y A-S05) y la antena plana si no trae adhesivo. Precio orientativo: elegir anuncio"),
     "H08": (4, "Separadores de la cámara (dibujados con la cámara)"),
     "H11": (1, "Se cortan los frontales de policarbonato (pieza V01)"),
     "H13": (1, "Perfil de goma en los cantos del hueco del cajón de pajitas"),
-    "H14": (18, "18 tirafondos a la pared (no dibujados), por los agujeros Ø6,5 de la trasera; se aprietan desde dentro con llave de vaso de 10"),
+    "H14": (18, "18 tirafondos Ø6×80 DIN 571 por los agujeros Ø6,5 de la trasera; llave de vaso 10 mm. Proveedor, lote y precio POR VERIFICAR; 0 € NO significa gratuito"),
     "H15": (18, "Una por tirafondo"),
-    "H16": (18, "Uno por tirafondo; broca de 8 mm y 60 mm de profundidad"),
+    "H16": (18, "18 tacos fischer SX Plus 8×65 L ref. 568108; broca Ø8, ficha h1 mínimo 75 mm; perforación de 85 mm en soporte macizo apto para Ø6×80. Ver guía ANCLAJE-PARED-8x65.md. Precio POR VERIFICAR"),
 }
 # Material de montaje de la lista v7 (componentes-electronica.md), no dibujado
 MONTAJE = [
@@ -40,7 +43,9 @@ MONTAJE = [
     ("M08", "Cables Dupont (120 uds.)", "B01NGTXASZ", 9.99, 1, 120, "Pines de la Pi"),
     ("M09", "Crimpadora + punteras (herramienta)", "B0FQP6KDL4", 15.98, 1, None, "Herramienta: solo la primera vez"),
 ]
-PACK = {"E15": 4, "H17": 20, "H14": 30, "H15": 25, "H16": 100, "E17": 1, "H01": 4, "H06": 20, "H07": 20, "H09": 350, "H10": 260, "E12": 2, "E09": 2, "E18": 6, "E08": 25}
+PACK = {"E15": 4, "H17": 20, "H15": 25, "H16": 50, "E17": 1, "H01": 4, "H06": 20, "H07": 20, "H09": 350, "H10": 260, "E09": 2, "E18": 6, "E08": 25}
+# H14: formato de venta pendiente; no asumir el lote anterior 6×60.
+ENLACES_FABRICANTE = {"H16": "https://shop.fischer.es/collections/accesorios-para-anclaje-de-tubos-en-hormigon/products/taco-sx-plus-8x65-largo-sin-tornillo-50-unidades"}
 
 AR = "Arial"
 F = Font(name=AR, size=10)
@@ -73,26 +78,30 @@ for L in sorted(R):
     # ---------------- piezas a fabricar
     ws = wb.create_sheet(f"{L} Fabricar")
     ws["A1"] = f"Diseño {L} · {d['nombre']} — piezas a fabricar"; ws["A1"].font = FT
-    ws["A2"] = "Cada fila es una forma geométrica: una chapa plana (láser) o la placa de policarbonato. Archivos dentro de la carpeta CAD del diseño."
+    ws["A2"] = ("Cada fila es una pieza: chapa plegada (láser + plegado; largo × ancho = desarrollo plano), chapa plana o policarbonato. "
+                "Las piezas iguales llevan el mismo código de plano. Archivos dentro de la carpeta CAD del diseño.")
     ws["A2"].font = F
-    cols = ["Nº pieza", "Pieza", "Grupo", "Material", "Proceso", "Largo (mm)", "Ancho (mm)", "Espesor (mm)", "Masa (g)", "Archivo DXF", "Archivo STEP", "Notas"]
-    cab(ws, 4, cols, [10, 34, 20, 22, 18, 11, 11, 11, 10, 24, 26, 60])
+    cols = ["Nº pieza", "Pieza", "Grupo", "Material", "Proceso", "Pliegues", "Largo (mm)", "Ancho (mm)", "Espesor (mm)", "Masa (g)",
+            "Código de plano", "Archivo DXF", "Archivo STEP", "Notas"]
+    cab(ws, 4, cols, [10, 34, 20, 22, 18, 9, 11, 11, 11, 10, 12, 24, 26, 60])
     r0 = 5
     for i, f in enumerate(d["fabricadas"]):
         r = r0 + i
-        vals = [f["id"], f["nombre"], f["grupo"], f["material"], f["proceso"], f["largo"], f["ancho"], f["espesor"], f["masa_g"], f["dxf"], f["step"], f["notas"]]
+        vals = [f["id"], f["nombre"], f["grupo"], f["material"], f["proceso"], f.get("pliegues", 0), f["largo"], f["ancho"], f["espesor"],
+                f["masa_g"], f.get("codigo", f["id"]), f["dxf"], f["step"], f["notas"]]
         for j, v in enumerate(vals, 1):
             c = ws.cell(row=r, column=j, value=v); c.font = F; c.border = BOX; c.alignment = WRAP
-        for j in (6, 7, 8):
+        for j in (7, 8, 9):
             ws.cell(row=r, column=j).number_format = "0.0"
-        ws.cell(row=r, column=9).number_format = "#,##0"
+        ws.cell(row=r, column=10).number_format = "#,##0"
     r1 = r0 + len(d["fabricadas"]) - 1
     rt = r1 + 1
     ws.cell(row=rt, column=1, value="Total").font = FB
     ws.cell(row=rt, column=2, value=f"=COUNTA(A{r0}:A{r1})&\" piezas\"").font = FB
-    ws.cell(row=rt, column=9, value=f"=SUM(I{r0}:I{r1})").font = FB
-    ws.cell(row=rt, column=9).number_format = "#,##0"
-    for j in range(1, 13):
+    ws.cell(row=rt, column=6, value=f"=SUM(F{r0}:F{r1})").font = FB
+    ws.cell(row=rt, column=10, value=f"=SUM(J{r0}:J{r1})").font = FB
+    ws.cell(row=rt, column=10).number_format = "#,##0"
+    for j in range(1, 15):
         ws.cell(row=rt, column=j).fill = FILL_TOT
     ws.freeze_panes = "B5"
     hojas[(L, "fab")] = (ws.title, r0, r1, rt)
@@ -128,7 +137,11 @@ for L in sorted(R):
             nota = "La leva recta se corta a 20,5 mm (ver documento)"
         if ref == "E16":
             nota = "Si el cable que trae la pantalla ya es acodado, este sobra"
-        filas.append([ref, n, asin, f"https://www.amazon.es/dp/{asin}" if asin else "", uds, PACK.get(ref), None, precio, None, ids, nota])
+        if ref == "E05":
+            nota = "Versión HiLink (la Pi lo ve como red USB). Precio orientativo: elegir anuncio. Hace falta una SIM de datos, que no se compra en Amazon"
+        if ref == "E12":
+            nota = "Que cubra 698–2700 MHz (bandas 20, 3, 7 y 8), de unos 100 × 15 mm y con SMA macho. Precio orientativo: elegir anuncio"
+        filas.append([ref, n, asin, ENLACES_FABRICANTE.get(ref, f"https://www.amazon.es/dp/{asin}" if asin else ""), uds, PACK.get(ref), None, precio, None, ids, nota])
     for m_ in MONTAJE:
         ref, n, asin, precio, uds, pack, nota = m_
         filas.append([ref, n, asin, f"https://www.amazon.es/dp/{asin}", uds, pack, None, precio, None, "(material de montaje)", nota])
@@ -176,7 +189,7 @@ for i, L in enumerate(sorted(R)):
            "Abatible hacia la derecha, 1 cerradura" if d["tapa"] == "lateral" else "Se quita (lengüetas detrás), 2 cerraduras"
     chk = sum(d["barridos"].values()) + d["choques"] + d["zonas"]
     vals = [L, d["nombre"], d["cotas"]["W"], d["cotas"]["D"], d["cotas"]["H"], tapa,
-            f"=COUNTA('{tf}'!A{f0}:A{f1})", f"='{tf}'!I{ft}/1000", f"='{tc}'!I{ct}", f"='{tc}'!I{ct + 1}",
+            f"=COUNTA('{tf}'!A{f0}:A{f1})", f"='{tf}'!J{ft}/1000", f"='{tc}'!I{ct}", f"='{tc}'!I{ct + 1}",
             ("0 choques · tapa, tapa interior, cajón y pajitas sin roces" if chk == 0 else f"{chk} avisos"), d["descripcion"]]
     for j, v in enumerate(vals, 1):
         c = res.cell(row=r, column=j, value=v); c.font = F; c.border = BOX; c.alignment = WRAP
@@ -187,10 +200,11 @@ for i, L in enumerate(sorted(R)):
         res.cell(row=r, column=j).number_format = "0"
 res["A10"] = "Notas"; res["A10"].font = FB
 notas = [
-    "Hay dos policarbonatos de 5 mm: uno delante del panel frontal y otro detrás, entre el panel y el cajón de componentes. Todas las piezas de chapa son planas (acero DC01 1,5 mm, corte láser) y se unen por soldadura por puntos o remaches: no hay plegados.",
+    "Hay dos policarbonatos de 5 mm: uno delante del panel frontal y otro detrás, entre el panel y el cajón de componentes. Las piezas de chapa son de acero DC01 cortado por láser y plegado a 90°: de 3 mm la carcasa, la tapa, la bandeja, el cajón de pajitas y los soportes, y de 1,5 mm el cajón de componentes y la tapa interior (desde el 04-11-2026). Se unen por soldadura por puntos sobre pestañas; anillas, asideros, pestaña de tope y apoyo trasero de la tapa interior, con MIG.",
     "Los números de pieza son los mismos en el visor 3D, en los STEP (STEP_piezas/<nº>.step) y en los DXF (DXF_corte/<nº>.dxf).",
     "Las compras salen del modelo 3D (cuántas veces aparece cada pieza) más lo que no se dibuja (tubo, fusibles, cables, microSD...).",
     "Paquetes a pedir: si el anuncio no dice cuántas unidades trae, se pone 1 en amarillo para revisarlo.",
+    "ATENCIÓN: H14 (tirafondo 6×80) y H16 (fischer SX Plus 8×65) carecen de precio verificado: 0 € es MARCADOR PENDIENTE, NO coste real. El total de compras será incompleto hasta actualizar estas celdas.",
 ]
 for i, t in enumerate(notas):
     c = res.cell(row=11 + i, column=1, value="• " + t); c.font = F

@@ -8,7 +8,7 @@ def bbox_overlap(a, b, tol=0.0):
                 or a.zmax <= b.zmin + tol or b.zmax <= a.zmin + tol)
 
 
-PARES_BUSCADOS = [("Tuerca", "Espárrago"), ("Tuerca M4", "Tornillo de seguridad"), ("Separador", "Espárrago"), ("Pasacables", ""), ("AR9271", "Raspberry"),
+PARES_BUSCADOS = [("Tuerca", "Espárrago"), ("Tuerca M4", "Tornillo de seguridad"), ("Separador", "Espárrago"), ("Pasacables", ""), ("Módem 4G", "Raspberry"),
                   ("Clavija", "Pantalla 7"), ("Clavija HDMI recta", "Raspberry"), ("Clavija micro-USB", "Raspberry"), ("Clavija USB-A del cable", "Borne USB-A"), ("Clavija XH", "Sensor ZE29A"), ("Silentblock", "Bandeja"), ("Silentblock", "Base del cajón"),
                   ("Cerradura", "Faldón"), ("Pasamuros", "Tira trasera"), ("Pasamuros", "Tapa superior"),
                   ("Tirador", "Tapa (cierra"), ("Separador sensor", "Sensor ZE29A"), ("Espárrago", "Frente del cajón"),

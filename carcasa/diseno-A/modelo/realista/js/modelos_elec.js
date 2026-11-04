@@ -655,25 +655,26 @@ const MOD = (() => {
     return { g, anclas, aCAD: RX90.clone(), nombre: "Winsen ZE29A" };
   }
 
-  // ================================================================ E05 · adaptador Wi-Fi USB AR9271
-  function wifiAR9271() {
-    // natural: tumbado; x = largo (clavija en x = 0), y = ancho 22, z = grosor 11 (centrado)
+  // ================================================================ E05 · módem 4G USB (Huawei E3372h-320)
+  function modem4G() {
+    // Huawei E3372h-320 (pincho 4G con la SIM dentro), 88 × 28 × 11,5 mm con la clavija. Sin logotipos.
+    // natural: tumbado; x = largo (clavija en x = 0), y = ancho 28, z = grosor 11,5 (centrado). La tapa de arriba (+Z)
+    // se ha quitado para enchufar la antena: se ven la ranura de la SIM y las dos tomas CRC9.
     const g = new THREE.Group();
     g.add(manguito(0, 12.3, -6, 6, -2.25, 2.25, 0.3, M.niquel(), M.negro(), -1));
     g.add(caja(0.3, 11.7, -5.4, 5.4, -1.95, -0.25, M.blanco()));
-    // cuerpo negro facetado (contorno metido 0,8 por el bisel)
-    const perfil = [[12.8, -9.2], [20.6, -10.2], [79.6, -10.2], [83.2, -7.6], [83.2, 7.6], [79.6, 10.2], [20.6, 10.2], [12.8, 9.2]];
-    const cuerpo = extruir(perfil, 11 - 1.6, M.negroBrillo(), { bisel: 0.8 }); cuerpo.position.z = -5.5 + 0.8; g.add(cuerpo);
-    for (let i = 0; i < 6; i++) g.add(caja(28 + i * 8, 33 + i * 8, -11.85, -11.4, -1.5, 1.5, M.negroMate()));
-    for (let i = 0; i < 5; i++) {   // relieve de rombos
-      const x = 26 + i * 11; const r = new THREE.Mesh(new THREE.OctahedronGeometry(4.2, 0), M.negro()); r.scale.set(1.2, 1.6, 0.18); r.position.set(x, 0, 6.3); g.add(r);
+    g.add(caja(12.0, 88.0, -14, 14, -5.75, 3.2, M.blanco(), 2.2));                       // cuerpo (sin la tapa)
+    g.add(caja(12.0, 22.0, -13.6, 13.6, 3.0, 5.75, M.blanco(), 1.2));                     // trozo fijo de la tapa junto a la clavija
+    g.add(caja(24.0, 60.0, -9.5, 9.5, 3.15, 3.35, M.negroMate()));                        // ranura de la SIM
+    g.add(caja(26.0, 56.0, -8.0, 8.0, 3.35, 3.55, L3.phys("sim", { color: L3.C("#c9a640"), metalness: 0.7, roughness: 0.35 })));   // tarjeta SIM
+    for (const yy of [-6, 6]) {                                                           // tomas CRC9 (principal en y = −6)
+      g.add(cil(2.2, 1.0, [74, yy, 3.2], [0, 0, 1], M.negroMate(), 24));
+      g.add(cil(1.6, 3.6, [74, yy, 3.2], [0, 0, 1], M.oro(), 24));
     }
-    // RP-SMA hembra dorado en x = 84
-    g.add(cil(3.1, 9, [84, 0, 0], [1, 0, 0], M.oro(), 28), hexa(6.4, 2.2, [84.3, 0, 0], [1, 0, 0], M.oro()));
-    for (let i = 0; i < 10; i++) g.add(cil(3.2, 0.3, [87 + i * 0.55, 0, 0], [1, 0, 0], M.oro(), 28));
-    const anclas = { usb: anc([-0.2, 0, 0], [-1, 0, 0]), rpsma: anc([93.2, 0, 0], [1, 0, 0]) };
-    // al CAD: grosor en Y local de comp.py, ancho en Z
-    return { g, anclas, aCAD: RX90.clone(), nombre: "Adaptador Wi-Fi AR9271" };
+    g.add(cil(0.9, 0.4, [84, 9, 3.2], [0, 0, 1], L3.phys("led", { color: L3.C("#3fa9ff"), emissive: L3.C("#1d6fd6"), roughness: 0.3 }), 16));
+    const anclas = { usb: anc([-0.2, 0, 0], [-1, 0, 0]), crc9: anc([74, -6, 7.0], [0, 0, 1]) };
+    // al CAD: grosor en Y local de comp.py, ancho en Z (la cara +Z natural mira hacia −Y, hacia el frente)
+    return { g, anclas, aCAD: RX90.clone(), nombre: "Módem 4G USB (Huawei E3372h-320)" };
   }
 
   // ---------------------------------------------------------------- registro
@@ -681,7 +682,7 @@ const MOD = (() => {
   const O = [0, 0, 0], EX = [1, 0, 0], EY = [0, 1, 0];
   const suelto = (nombre, f) => (...a) => ({ g: f(...a), anclas: {}, aCAD: ident(), nombre });
   const REG = { raspberry, camara, pantalla, solo, fuente, toma_c14: tomaC14, wago_415: wago415, wago_412: wago412, borne_usb: borneUSB,
-    portafusible, ze29a, wifi_ar9271: wifiAR9271, microsd: () => ({ g: microSD(), anclas: {}, aCAD: ident(), nombre: "microSD" }),
+    portafusible, ze29a, modem_4g: modem4G, microsd: () => ({ g: microSD(), anclas: {}, aCAD: ident(), nombre: "microSD" }),
     clavija_hdmi90_pantalla: () => ({ g: clavijaHDMI90([-0.5, 25.5, -10.65], [-1, 0, 0], [0, 0, -1]), anclas: {}, aCAD: RX90.clone(), nombre: "Clavija HDMI acodada" }),
     clavija_usbc90_pantalla: () => ({ g: clavijaUSBC90([-0.5, 47, -9.35], [-1, 0, 0], [0, 0, -1]), anclas: {}, aCAD: RX90.clone(), nombre: "Clavija USB-C acodada" }),
     clavija_hdmi_recta: suelto("Clavija HDMI recta", () => clavijaHDMIrecta(O, EX, EY)),

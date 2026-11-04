@@ -100,24 +100,6 @@ const HERR = (() => {
     g.add(cable(pts, 2.5, M.cromo(), { tipo: "catmullrom", tension: 0.1, lados: 16 }));
     return { g, aCAD: ident(), nombre: "Candado de latón 30 mm" };
   }
-  // ---------------------------------------------------------------- E12 pasamuros RP-SMA (alargo RG316) con la antena girada hacia abajo
-  // origen: cara exterior de la chapa; +Y local hacia dentro; la antena queda fuera (−Y) y cuelga hacia −Z
-  function pasamurosAntena() {
-    const g = new THREE.Group();
-    g.add(hexa(8, 2.4, [0, -2.4, 0], [0, 1, 0], M.oro(), 3.4), cil(3.25, 14, [0, -1.5, 0], [0, 1, 0], M.oro(), 28));
-    g.add(hexa(8, 2.4, [0, 3.0, 0], [0, 1, 0], M.oro(), 3.4), cil(4.6, 0.6, [0, 2.3, 0], [0, 1, 0], M.oro(), 28));
-    g.add(cil(3.0, 6, [0, 12.5, 0], [0, 1, 0], M.oro(), 24, 2.4), cil(1.5, 8, [0, 18, 0], [0, 1, 0], M.rg316(), 14));
-    // antena: rótula negra con tuerca moleteada dorada, codo, varilla de goma con capuchón
-    g.add(cil(4.1, 4.2, [0, -2.4, 0], [0, -1, 0], M.oro(), 28));
-    for (let i = 0; i < 12; i++) g.add(cil(4.25, 0.25, [0, -2.7 - i * 0.32, 0], [0, -1, 0], M.oro(), 28));
-    g.add(cil(4.5, 9.5, [0, -6.6, 0], [0, -1, 0], M.negroMate(), 28, 4.3));
-    g.add(new THREE.Mesh(new THREE.SphereGeometry(4.7, 28, 18), M.negroMate()).translateY(-14).translateZ(0));
-    g.add(cil(4.4, 2.0, [0, -14, -3.4], [0, 0, -1], M.negroMate(), 28));
-    g.add(torno([[0, 0], [4.9, 0], [5.0, 4], [5.0, 85], [4.6, 90], [3.5, 93.5], [0, 94.5]], [0, -14, -5.4], [0, 0, -1], M.goma(), 32));
-    for (let i = 0; i < 3; i++) g.add(cil(5.08, 0.6, [0, -14, -12 - i * 1.4], [0, 0, -1], M.negroMate(), 32));
-    const anclas = { coax: { p: [0, 26, 0], d: [0, 1, 0] } };
-    return { g, anclas, aCAD: ident(), nombre: "Alargo RP-SMA con antena 2 dBi" };
-  }
   // ---------------------------------------------------------------- E14 racor en T para tubo de 6 mm (PP translúcido)
   // centro en el origen; paso por ±X, derivación por +Z
   function te6() {
@@ -144,6 +126,6 @@ const HERR = (() => {
   // tramo de tubo de silicona de 4 mm (propuesta para la barrera) — lo dibuja el cableado
   // ---------------------------------------------------------------- boquilla del panel (pasacables + tubo)
   const REG = { silentblock, tope_goma: tope, cerradura_leva: cerradura, esparrago_m4: esparrago, separador, arandela_pasacables: pasacables,
-    torx_m4: torx, tuerca_m4: tuerca, candado_30: candado, pasamuros_antena: pasamurosAntena, te_6mm: te6, reductor_6_4: reductor };
+    torx_m4: torx, tuerca_m4: tuerca, candado_30: candado, te_6mm: te6, reductor_6_4: reductor };
   return { REG, rosca, orientar };
 })();

@@ -14,8 +14,8 @@ Una carpeta por componente del alcoholímetro, con su ficha técnica, documentos
 | 8 | Tubo de silicona de 6 mm | Lleva el aliento de la boquilla al sensor | [tubo-silicona-6mm](tubo-silicona-6mm/README.md) |
 | 9 | SumUp Solo con base de carga | Cobro con tarjeta (Cloud API) | [sumup-solo](sumup-solo/README.md) |
 | 10 | Cable USB-A a USB-C acodado 90°, 30 cm | Alimenta el SumUp Solo desde el borne USB-A | [cable-usb-a-usb-c-90-30cm](cable-usb-a-usb-c-90-30cm/README.md) |
-| 12 | Adaptador Wi-Fi USB AR9271 | Wi-Fi de la Pi con la antena fuera de la chapa | [adaptador-wifi-ar9271](adaptador-wifi-ar9271/README.md) |
-| 13 | Alargo de antena RP-SMA, 30 cm | Saca la antena Wi-Fi por el techo de la chapa | [alargo-antena-rp-sma-30cm](alargo-antena-rp-sma-30cm/README.md) |
+| 12 | Módem 4G USB Huawei E3372h-320 (HiLink) | Internet de la Pi con una SIM de datos (desde el 01-11-2026) | [modem-4g-huawei-e3372h](modem-4g-huawei-e3372h/README.md) |
+| 13 | Antena 4G plana (FPC) y latiguillo CRC9 → SMA | Antena del módem, pegada dentro del cajón detrás de una ventana: no sobresale nada | [antena-4g-plana-fpc](antena-4g-plana-fpc/README.md) |
 | 14 | Fuente Mean Well LRS-50-5 (5 V, 10 A) | Fuente única de 5 V de la máquina (230 V) | [meanwell-lrs-50-5](meanwell-lrs-50-5/README.md) |
 | 15 | Toma C14 con portafusibles, sin interruptor (cambiada el 25-10-2026; la ficha estudió la de interruptor) | Entrada de red 230 V de la máquina | [modulo-c14-fusible-interruptor](modulo-c14-fusible-interruptor/README.md) |
 | 16 | Fusibles cerámicos 5×20 T2,5A | Protección de la entrada de red | [fusibles-ceramicos-5x20-t2-5a](fusibles-ceramicos-5x20-t2-5a/README.md) |
@@ -41,3 +41,5 @@ No hay número 11: era el pulsador de inicio y se quitó porque la máquina no l
 Lo que las fichas dejan abierto (decisiones, medidas por hacer y documentos que faltan) está reunido en [pendientes.md](pendientes.md).
 
 Cada ficha indica de dónde sale cada dato y marca lo que no está verificado. Los enlaces a PDF y páginas están reunidos en el `enlaces.md` de cada carpeta.
+
+**Retirados el 01-11-2026** (en [retirados](retirados/)): el adaptador Wi-Fi AR9271 y el alargo de antena RP-SMA, que sacaban la antena por fuera de la chapa.
