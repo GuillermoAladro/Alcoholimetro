@@ -1,0 +1,29 @@
+{
+  "scene": "00082.2",
+  "duration": 14.4,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "posesAt120Hz": 1729,
+    "contactErrorsPx": [
+      5.684341886080802e-14,
+      0,
+      0,
+      0.000004185216502590232
+    ],
+    "rotationErrorsRad": [
+      4.898587196589413e-16,
+      0
+    ]
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.024,
+    7.344,
+    11.088000000000001
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
