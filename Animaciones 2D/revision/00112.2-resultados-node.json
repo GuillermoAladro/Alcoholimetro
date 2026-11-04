@@ -1,0 +1,63 @@
+{
+  "scene": "00112.2",
+  "duration": 14.45,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "quarterTurnVisiblePixels": [
+      {
+        "who": "g",
+        "width": 106,
+        "count": 19716,
+        "solidFraction": 0.9485696895922093
+      },
+      {
+        "who": "r",
+        "width": 96,
+        "count": 19952,
+        "solidFraction": 0.9576984763432237
+      }
+    ],
+    "phaseJoinMaxPx": {
+      "g": [
+        0.00003141593128930299,
+        0.00002795023690199535,
+        0.0000857242247470499,
+        0.00006249563506345057,
+        0.00007945007240789573,
+        0.00011923995639070993
+      ],
+      "r": [
+        0.00003908139063018415,
+        0.00003648226866777898,
+        0.00007689554473700563,
+        0.00006664567388275081,
+        0.00006238856964610905,
+        0.00010821840152981908
+      ]
+    },
+    "handOnTiltedStoolPx": 5.684341886080802e-14,
+    "plantedFeetFreezePx": 0,
+    "seatSupportPx": 8.409939411535561e-14,
+    "gripOnSeatErrorPx": 1.2710574864626038e-13,
+    "feetOverRingPx": 0,
+    "stoolRevolutions": 3,
+    "flightRevolutions": 1.4999999999999993,
+    "launchSpeedJoins": [
+      0.011533472843439085,
+      0.00039770591264698396
+    ],
+    "finalStarError": 0,
+    "maxWristRatio": 1.073492725777281
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.0344999999999995,
+    7.3694999999999995,
+    11.1265
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
