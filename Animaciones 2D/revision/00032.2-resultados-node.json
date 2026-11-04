@@ -1,0 +1,192 @@
+{
+  "scene": "00032.2",
+  "renderer": "Node/Skia @napi-rs/canvas",
+  "durationSeconds": 14.6,
+  "results": [
+    {
+      "name": "Atlas de Guillermo y Ander cargados",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Geometría finita a 120 Hz",
+      "passed": true,
+      "details": {
+        "samples": 1753
+      }
+    },
+    {
+      "name": "Cuatro muñecas conectadas",
+      "passed": true,
+      "details": {
+        "maxGapPx": 2.710572699212796e-7
+      }
+    },
+    {
+      "name": "Siete cambios de mano y mesa conservan posición y ángulo",
+      "passed": true,
+      "details": {
+        "maxGapPx": 0,
+        "maxAngleRad": 0
+      }
+    },
+    {
+      "name": "La punta de la guindilla llega a la boca al comerla entera",
+      "passed": true,
+      "details": {
+        "maxGapPx": 5.684341886080802e-14
+      }
+    },
+    {
+      "name": "El pico de la jarra y el borde del vaso siguen el labio",
+      "passed": true,
+      "details": {
+        "maxGapPx": 1.1368683772161603e-13
+      }
+    },
+    {
+      "name": "Ambas bebidas se consumen hasta vaciarse",
+      "passed": true,
+      "details": [
+        0.88,
+        0,
+        0.85,
+        0
+      ]
+    },
+    {
+      "name": "La mano acompaña al vaso durante el empuje",
+      "passed": true,
+      "details": {
+        "maxGapPx": 0
+      }
+    },
+    {
+      "name": "El vaso conserva su velocidad al soltarse",
+      "passed": true,
+      "details": {
+        "velocityDifference": 0.006463505997089669
+      }
+    },
+    {
+      "name": "La muñeca gira progresivamente al levantar y bajar la jarra",
+      "passed": true,
+      "details": {
+        "maxRadiansPer120HzStep": 0.18323927014859456
+      }
+    },
+    {
+      "name": "Postura continua en transiciones exactas y muestreo regular",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "Búsqueda directa y rebobinado deterministas",
+      "passed": true
+    },
+    {
+      "name": "Reproducción idéntica a 30, 60 y 120 fps",
+      "passed": true,
+      "details": [
+        {
+          "fps": 30,
+          "ok": true
+        },
+        {
+          "fps": 60,
+          "ok": true
+        },
+        {
+          "fps": 120,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "name": "Secuencia completa renderizada a 60 fps",
+      "passed": true,
+      "details": {
+        "frames": 877
+      }
+    },
+    {
+      "name": "Negro inicial y final",
+      "passed": true,
+      "details": [
+        {
+          "t": 0,
+          "max": 0
+        },
+        {
+          "t": 0.016666666666666666,
+          "max": 0
+        },
+        {
+          "t": 0.03333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.05,
+          "max": 0
+        },
+        {
+          "t": 0.06666666666666667,
+          "max": 0
+        },
+        {
+          "t": 0.08333333333333333,
+          "max": 0
+        },
+        {
+          "t": 0.1,
+          "max": 0
+        },
+        {
+          "t": 0.11666666666666667,
+          "max": 0
+        },
+        {
+          "t": 14.483333333333333,
+          "max": 0
+        },
+        {
+          "t": 14.5,
+          "max": 0
+        },
+        {
+          "t": 14.516666666666667,
+          "max": 0
+        },
+        {
+          "t": 14.533333333333333,
+          "max": 0
+        },
+        {
+          "t": 14.55,
+          "max": 0
+        },
+        {
+          "t": 14.566666666666666,
+          "max": 0
+        },
+        {
+          "t": 14.583333333333334,
+          "max": 0
+        },
+        {
+          "t": 14.6,
+          "max": 0
+        }
+      ]
+    },
+    {
+      "name": "Sin cortes visuales aislados",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "passed": true,
+  "limitations": [
+    "No se han probado los controles HTML en un navegador ni la Raspberry Pi física."
+  ]
+}
