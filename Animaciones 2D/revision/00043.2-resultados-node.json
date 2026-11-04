@@ -76,7 +76,8 @@
         },
         "pelo": 135,
         "subsuelo": 0,
-        "perfil": 4889
+        "perfil": 5093,
+        "opacidad": 0.9018848872433524
       }
     }
   },
