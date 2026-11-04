@@ -1,0 +1,60 @@
+{
+  "scene": "00038.2",
+  "durationSeconds": 14.2,
+  "renderer": "Canvas 2D / Node-Skia",
+  "results": [
+    {
+      "name": "Unión de las muñecas",
+      "passed": true,
+      "details": {
+        "errorMaxPx": 2.3791165955629307e-7
+      }
+    },
+    {
+      "name": "Botes, recepción en la boca y vaso final",
+      "passed": true,
+      "details": {
+        "errorMaxPx": 5.684341886080802e-14
+      }
+    },
+    {
+      "name": "Seis contactos de los cinco malabares",
+      "passed": true,
+      "details": {
+        "errorMaxPx": 5.684341886080802e-14
+      }
+    },
+    {
+      "name": "Continuidad entre manos, vasos y vuelo",
+      "passed": true,
+      "details": {
+        "errorMaxPx": 0.0023415382584548268
+      }
+    },
+    {
+      "name": "Bola visible en el encuadre de la boca",
+      "passed": true
+    },
+    {
+      "name": "Rebobinado determinista",
+      "passed": true
+    },
+    {
+      "name": "Negro inicial y final",
+      "passed": true
+    },
+    {
+      "name": "Fin a 30 fps",
+      "passed": true
+    },
+    {
+      "name": "Fin a 60 fps",
+      "passed": true
+    },
+    {
+      "name": "Fin a 120 fps",
+      "passed": true
+    }
+  ],
+  "passed": true
+}
