@@ -1,0 +1,30 @@
+{
+  "scene": "00083.2",
+  "duration": 14.8,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "posesAt120Hz": 1777,
+    "wristErrorPx": 2.2432336199877133e-7,
+    "umbrellaHandoffsPx": [
+      0.004419440819028444,
+      0.0070782150735953266
+    ],
+    "gullLandingPx": 0,
+    "strawToLipPx": [
+      0,
+      0,
+      2.842170943040401e-14
+    ]
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.108,
+    7.548000000000001,
+    11.396
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
