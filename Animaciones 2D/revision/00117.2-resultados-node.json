@@ -1,0 +1,61 @@
+{
+  "scene": "00117.2",
+  "duration": 14.6,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "basketCounts": [
+      3,
+      2,
+      1
+    ],
+    "basketJoinPx": [
+      1.1368683772161603e-13,
+      0
+    ],
+    "handTransfersPx": [
+      1.2396639270662035e-11,
+      1.4999945729954334e-11
+    ],
+    "releaseJoinsPx": [
+      0.004352753212415368,
+      0.0037541219235500654,
+      0.0022654673027430717
+    ],
+    "flightPositionSpinJoins": [
+      0.0008783805678222674,
+      0.00020872601396796882,
+      0.001346390274704268,
+      0.000980741568434955,
+      0.0005792332367803958,
+      0.0010918119219888668
+    ],
+    "plushPositionScaleJoins": [
+      0.00004444444437012862,
+      0.0007563212354290042,
+      0.0012890648337594592
+    ],
+    "plushAnchorPx": 0,
+    "plushHairContactColumns": 17,
+    "hairProfileColumns": 87,
+    "firstArcClearancePx": 6.999999999999972,
+    "minHairClearancePx": 7.022261832232317,
+    "plushCrownPixelError": 0.34499999999998465,
+    "canContactErrorPx": 2.3092638912203256e-14,
+    "foreheadMarkContactErrorPx": 8.881784197001252e-15,
+    "prizeBallContactErrorPx": 8.881784197001252e-15,
+    "fallenCans": 10,
+    "untouchedCans": 6,
+    "maxArmRatio": 1.035
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.066,
+    7.446,
+    11.241999999999999
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
