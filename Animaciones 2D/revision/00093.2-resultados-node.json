@@ -1,0 +1,28 @@
+{
+  "scene": "00093.2",
+  "duration": 14.6,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "fallingBooks": 49,
+    "headHits": 2,
+    "headEdgeGapPx": 0,
+    "shelfReleaseError": 0,
+    "pileArrivalError": 2.220446049250313e-16,
+    "gripGapPx": 5.684341886080802e-14,
+    "tomeHandoffErrorPx": 0.00029479914681273715,
+    "roofAngleJumpRad": 2.681320612207827e-7,
+    "crouchingFootGapPx": 0.000047377671778245,
+    "maximumWristExcessPx": -1.6947334651630812
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.066,
+    7.446,
+    11.241999999999999
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
