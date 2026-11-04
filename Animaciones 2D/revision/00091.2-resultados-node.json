@@ -1,0 +1,26 @@
+{
+  "scene": "00091.2",
+  "duration": 14.8,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "samplesMilk": 402,
+    "emissionsTested": 61,
+    "flightSeconds": 0.379999999999999,
+    "rimGapPx": 0,
+    "shoeImpactGapPx": 0,
+    "finalFloorErrorPx": 0,
+    "stickTipGapPx": 8.038873388460929e-14,
+    "stickJoinJumpPx": 2.5573032246429713e-11
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.108,
+    7.548000000000001,
+    11.396
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
