@@ -3,6 +3,7 @@
   "duration": 14.6,
   "renderer": "Canvas 2D / Node-Skia",
   "checks": {
+    "headMarginPx": 20.31545325656782,
     "flyJoinsPx": [
       0.00008446859905517141,
       0.00006118992852889104,
