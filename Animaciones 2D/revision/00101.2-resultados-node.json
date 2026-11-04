@@ -1,0 +1,29 @@
+{
+  "scene": "00101.2",
+  "duration": 14.9,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "lampStickPx": 4.263256414560601e-14,
+    "lampScalpPx": 2.842170943040401e-14,
+    "pendulumJoinsPx": [
+      0.00004902861059892195,
+      0.000024235864556616755
+    ],
+    "stickLengthErrorPx": 2.842170943040401e-14,
+    "drumEvents": 23,
+    "slipAndClimbJoinPx": 0.00016249996519945983,
+    "stageRimSupportPx": 0,
+    "wristExcessPx": -3.096610443474271
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.129,
+    7.599,
+    11.473
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
