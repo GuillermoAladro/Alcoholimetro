@@ -1,0 +1,27 @@
+{
+  "scene": "00094.2",
+  "duration": 14.6,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "clipTransitions": 4,
+    "maximumClipJoinPx": 0.00002206722489051364,
+    "jawJoinRad": 0.0000018750000052025761,
+    "firstReleasePx": 0,
+    "rearSpikeGripErrorPx": 5.151434834260726e-13,
+    "hairTieJoinPx": 7.089441586479282e-8,
+    "hairTieFinalGapPx": 0,
+    "maximumWristExcessPx": -1.967025894741793,
+    "posesAt120Hz": 1753
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.066,
+    7.446,
+    11.241999999999999
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
