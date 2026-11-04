@@ -1,0 +1,23 @@
+{
+  "scene": "00084.2",
+  "duration": 15,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "posesAt120Hz": 1801,
+    "palmImpactPx": 0,
+    "reachOverLimit": -21,
+    "arrivalAngleError": 0,
+    "launchAngleStep": 4.2496283078966024e-7
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.15,
+    7.65,
+    11.55
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}

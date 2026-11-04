@@ -8,7 +8,7 @@ async function load(scene, actor='marcos-bombero'){
   set src(v){pending.push(new Promise((resolve,reject)=>{const a=this.onload,b=this.onerror;this.onload=()=>{a?.();resolve()};this.onerror=e=>{b?.(e);reject(e)};super.src=fs.readFileSync(path.join(ROOT,v))}));}
   get src(){return super.src;}
  }
- const context={console,Image,document:{createElement:()=>C.createCanvas(300,150)},performance};context.window=context;
+ const context={console,Image,DOMMatrix:C.DOMMatrix,DOMPoint:C.DOMPoint,document:{createElement:()=>C.createCanvas(300,150)},performance};context.window=context;
  const ctx=vm.createContext(context);
  const files=['motor/base2d.js','motor/recortes.js','personajes/guillermo-aladro/piezas.js','personajes/guillermo-aladro/guillermo.js','personajes/comun/personaje.js','personajes/'+actor+'/piezas.js','personajes/'+actor+'/'+actor+'.js',scene];
  for(const f of files)vm.runInContext(fs.readFileSync(path.join(ROOT,f),'utf8'),ctx,{filename:f});
