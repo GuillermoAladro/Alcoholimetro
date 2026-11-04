@@ -1,0 +1,80 @@
+{
+  "scene": "00122.2",
+  "duration": 14.6,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "phys": {
+      "hair": 4.189950439665047e-8,
+      "frac": 0.7710178573615849,
+      "separados": 1.1812772982011666e-13,
+      "gapBefore": 14.336000000000341,
+      "foot": 6.750155989720952e-14,
+      "plantado": 0,
+      "reach": 1.061890010562931,
+      "manoCuello": 8.038873388460929e-14,
+      "wipe": 1.2710574864626038e-13,
+      "dedos": [
+        {
+          "pulgar": 0,
+          "indice": 1,
+          "medio": 1,
+          "anular": 0,
+          "menique": 1
+        },
+        {
+          "pulgar": 0,
+          "indice": 1,
+          "medio": 0.592592592592595,
+          "anular": 0,
+          "menique": 1
+        },
+        {
+          "pulgar": 0,
+          "indice": 1,
+          "medio": 0,
+          "anular": 0,
+          "menique": 1
+        },
+        {
+          "pulgar": 0,
+          "indice": 1,
+          "medio": 0,
+          "anular": 0,
+          "menique": 1
+        }
+      ],
+      "amplitudes": [
+        0.36000000000000004,
+        0.72
+      ],
+      "periodos": [
+        0,
+        0
+      ]
+    },
+    "visibleHairOnCheek": [
+      0,
+      0.9915294117647059
+    ],
+    "impactFlash": [
+      0,
+      0.7450980392156863
+    ],
+    "redMarks": [
+      0,
+      6858,
+      9274
+    ]
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.066,
+    7.446,
+    11.241999999999999
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
