@@ -1,0 +1,27 @@
+{
+  "scene": "00092.2",
+  "duration": 14.8,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "releaseGapPx": 0,
+    "shoulderGapPx": 0,
+    "splitGapPx": 0,
+    "neckGapPx": 0,
+    "neckTrackingErrorPx": 1.2710574864626038e-13,
+    "bladeGripToCutPx": 22.627416997969522,
+    "openingAtSnipsRad": 0,
+    "stripePhaseJumpPx": 5.740719480342866e-9,
+    "sagJoinJumpPx": 0.000155555555434006
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.108,
+    7.548000000000001,
+    11.396
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
