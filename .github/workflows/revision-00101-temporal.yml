@@ -23,9 +23,15 @@ jobs:
             Animaciones 2D/personajes
       - name: Instalar dependencias de la comprobación
         run: |
-          if ! command -v ffmpeg >/dev/null; then sudo apt-get update -qq && sudo apt-get install -y ffmpeg; fi
-          python -m pip install --quiet playwright==1.55.0 Pillow==11.3.0
-          npm install --silent --no-save --prefix "$RUNNER_TEMP/qa-node" @napi-rs/canvas@0.1.80
+          set -euo pipefail
+          python -m pip install --quiet playwright==1.55.0 Pillow==11.3.0 imageio-ffmpeg==0.6.0
+          npm install --silent --no-save --prefix "$RUNNER_TEMP/qa-node" @napi-rs/canvas@0.1.80 @ffprobe-installer/ffprobe@2
+          mkdir -p "$RUNNER_TEMP/video-bin"
+          ln -s "$(python -c 'import imageio_ffmpeg; print(imageio_ffmpeg.get_ffmpeg_exe())')" "$RUNNER_TEMP/video-bin/ffmpeg"
+          ln -s "$(NODE_PATH="$RUNNER_TEMP/qa-node/node_modules" node -p "require('@ffprobe-installer/ffprobe').path")" "$RUNNER_TEMP/video-bin/ffprobe"
+          "$RUNNER_TEMP/video-bin/ffmpeg" -version > /dev/null
+          "$RUNNER_TEMP/video-bin/ffprobe" -version > /dev/null
+          echo "$RUNNER_TEMP/video-bin" >> "$GITHUB_PATH"
       - name: Comprobar los contactos de la escena
         run: NODE_PATH="$RUNNER_TEMP/qa-node/node_modules" node "Animaciones 2D/herramientas/validar-00139.2-node.cjs" > "$RUNNER_TEMP/resultados-node.json" && cat "$RUNNER_TEMP/resultados-node.json"
       - name: Reproducir y exportar los 876 fotogramas en Chromium

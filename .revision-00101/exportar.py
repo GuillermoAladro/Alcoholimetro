@@ -36,7 +36,7 @@ with sync_playwright() as browser_api:
         x, y = index%4*240, index//4*160
         sheet.paste(pic.resize((240,141),Image.Resampling.LANCZOS),(x,y))
         draw.text((x+5,y+143),f"{t:.2f} s",fill="#ddd")
-    sheet.save(sheet_path)
+    # La lámina se completa con los fotogramas del MP4.
     probes = [dur*.25,dur*.5,dur*.75]
     initial = [hashlib.sha256(frame(t)).digest() for t in probes]
     assert len(set(initial)) == 3
@@ -78,3 +78,16 @@ stream = json.loads(subprocess.check_output(["ffprobe","-v","error","-of","json"
 assert (stream["codec_name"],stream["width"],stream["height"],stream["r_frame_rate"],int(stream["nb_frames"])) == ("h264",1024,600,"60/1",n)
 print(json.dumps(stream))
 # Comprobar la frente sobre el retrato con su expresión
+
+# Cotejar los fotogramas decodificados del MP4 con los mismos instantes del visor.
+for index, seconds in enumerate(times):
+    frame_number = min(n-1, round(seconds*60))
+    raw = subprocess.check_output(["ffmpeg","-v","error","-ss",f"{frame_number/60:.9f}","-i",str(movie),
+                                  "-frames:v","1","-f","rawvideo","-pix_fmt","rgb24","pipe:1"])
+    visual = Image.frombytes("RGB",(1024,600),raw)
+    if index in (0,len(times)-1):
+        assert visual.getbbox() is None, ("El negro no se conserva en el MP4",frame_number)
+    else:
+        assert visual.getbbox(), ("Fotograma decodificado vacío",frame_number)
+    sheet.paste(visual.resize((240,141),Image.Resampling.LANCZOS),(index%4*240,index//4*160))
+sheet.save(sheet_path)
