@@ -1,0 +1,71 @@
+{
+  "scene": "00105.2",
+  "duration": 14.6,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "geometryJoinsPx": {
+      "pone0": 0.000010875370551428822,
+      "plato": 0.000003926990814306919,
+      "mano": 0,
+      "sale": 0.00011687329542789496,
+      "b1": 0.0001105248648027312,
+      "b2": 0.00011892095726448734,
+      "b3": 0.00015059079645524798,
+      "b4": 0.00002163737973590508,
+      "coge": 0.00003909517711449303,
+      "toma": 1.9173197527161376e-8,
+      "pone2": 0.00000392698876795037
+    },
+    "impacts": [
+      {
+        "target": "estantería",
+        "errorPx": 0
+      },
+      {
+        "target": "lámina",
+        "errorPx": 0
+      },
+      {
+        "target": "lámpara",
+        "errorPx": 0
+      },
+      {
+        "target": "altavoz",
+        "errorPx": 0
+      }
+    ],
+    "lampJoinRad": 1.8106123040977085e-7,
+    "printJoinRad": 5.829996955287068e-7,
+    "speakerBefore": 0,
+    "speakerAfter": 0.029565383727487248,
+    "flightMarginPx": 96.07993838764108,
+    "fingerHolePx": 0,
+    "spinAtHandoff": 3.1179137940245587e-13,
+    "needleLift": [
+      1,
+      1
+    ],
+    "needleDown": [
+      0,
+      0
+    ],
+    "knuckleSeparationPx": 9.900000000000029,
+    "notes": {
+      "cleanBefore": 8,
+      "scratch": 19,
+      "cleanAfter": 6
+    },
+    "wristExcessPx": -2.5036211356699254
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.066,
+    7.446,
+    11.241999999999999
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
