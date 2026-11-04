@@ -1,0 +1,30 @@
+{
+  "scene": "00100.2",
+  "duration": 15,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "spinAndStepJoinsPx": 0.0003004840804710532,
+    "panHookAndGrabPx": 0,
+    "armWheelDegrees": 360.00000000000006,
+    "spoonGripTransferPx": 0.00009184517020556028,
+    "spoonRimPx": 0,
+    "sackJoinsPx": 0.00023206961460638199,
+    "flourImpactPx": 0,
+    "emptySackFloorDriftPx": 0,
+    "passingRelativeX": [
+      100,
+      -406
+    ]
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.15,
+    7.65,
+    11.55
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
