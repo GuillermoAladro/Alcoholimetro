@@ -862,8 +862,12 @@
   }
 
   /* ---------- cámara ---------- */
-  const PLANOS = [[0, 1.0, 512, 300], [2.5, 1.0, 512, 300], [3.4, 1.1, 505, 330], [3.85, 1.1, 505, 330], [4.35, 1.1, 448, 334], [5.0, 1.1, 448, 334],
-    [5.7, 1.1, 505, 330], [10.0, 1.1, 505, 330], [11.6, 1.17, 520, 346], [DUR, 1.18, 522, 348]];
+  const PLANOS = [
+    [0, 1, 512, 272], [1.85, 1, 512, 272], [2.5, 1, 512, 300],
+    [3.4, 1.1, 505, 330], [3.65, 1.1, 505, 330], [4.17, 1.1, 428, 334], [5, 1.1, 428, 334],
+    [5.7, 1.1, 505, 330], [7.18, 1.1, 505, 330], [7.55, 1.1, 478, 330], [8.4, 1.1, 478, 330],
+    [8.9, 1.1, 505, 330], [10, 1.1, 505, 330], [11.6, 1.17, 520, 346], [DUR, 1.18, 522, 348]
+  ];
   function camara(t) {
     let i = 0; while (i < PLANOS.length - 2 && t > PLANOS[i + 1][0]) i++;
     const a = PLANOS[i], b = PLANOS[i + 1], k = suave(fase(t, a[0], b[0]));
@@ -939,5 +943,5 @@
     o.gC = dist(G, v.g, "cerca"); o.gL = dist(G, v.g, "lejos"); o.pC = dist(P, v.p, "cerca"); o.pL = dist(P, v.p, "lejos");
     return o;
   }
-  window.__A2D_00103_2 = { pose, T, DUR, diag, moscaEn, haloCentro, enPantalla, globoMoco, NARIZ_G, angCana, TOCS, cadena, puntoAnillo, ondaHalo, yemaManotazo, bocaCana, GRIFO, EJE_CANA };
+  window.__A2D_00103_2 = { pose, T, DUR, diag, moscaEn, haloCentro, enPantalla, globoMoco, NARIZ_G, angCana, TOCS, cadena, puntoAnillo, camara, ondaHalo, yemaManotazo, bocaCana, GRIFO, EJE_CANA };
 })();

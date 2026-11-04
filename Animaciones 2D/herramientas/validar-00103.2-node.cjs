@@ -13,9 +13,25 @@ const {load, C} = require('./canvas-node.cjs');
     const ring = D.puntoAnillo(D.haloCentro(T.halo),T.halo,Math.PI*1.1);
     const haloContact = distance(fly(T.halo),ring), waveBefore = D.ondaHalo(T.halo-0.02);
     let closest = Infinity, grip = 0, shoeJump = 0, reach = -Infinity;
+    const headClearance = (t) => {
+      const {g,p}=D.pose(t), camera=D.camara(t);
+      let gap=Infinity;
+      for (const [rig,body] of [[Guillermo,g],[Paradigma,p]]) {
+        const head=rig.cabeza(body), piece=rig.A.datos.piezas.cabeza;
+        const [x,y]=piece.origen,[width,height]=piece.tam_hoja;
+        for (const [sx,sy] of [[x,y],[x+width,y],[x+width,y+height],[x,y+height]]) {
+          const h=head.a({x:sx,y:sy}), point=rig===Guillermo ? D.enPantalla(body,h) : rig.aPantalla(body,h);
+          const px=512+(point.x-camera.x)*camera.k, py=300+(point.y-camera.y)*camera.k;
+          gap=Math.min(gap,px,py,1024-px,600-py);
+        }
+      }
+      return gap;
+    };
+    let headMargin=Infinity;
     const turn = t => Math.cos(Math.PI*D.pose(t).g.cruz.lejos.zr);
     for(let i=0;i<=Math.ceil(D.DUR*120);i++) {
       const t=i/120, {g,p}=D.pose(t);
+      headMargin=Math.min(headMargin,headClearance(t));
       if(t>=T.mano0 && t<=T.mano1) {
         for(const finger of [[6.9,14.5,0.17],[2.3,16,0.05],[-2.3,15,-0.07],[-6.7,12,-0.2]]) {
           closest=Math.min(closest,distance(D.yemaManotazo(g,...finger),fly(t)));
@@ -34,9 +50,9 @@ const {load, C} = require('./canvas-node.cjs');
     const bubbleJoin=distance(before.c,after.c), bubbleDrift=distance(after.c,later.c);
     const bambooDrop = Math.min(...D.TOCS.map(t=>D.bocaCana(t).y-D.bocaCana(t-0.2).y));
     const spoutClearance = D.bocaCana(0).y-D.GRIFO.y, exitY=fly(T.saleMosca).y;
-    if (Math.max(...joins,haloContact,waveBefore,grip,bubbleJoin,bubbleDrift)>0.02 ||
-        closest<12 || closest>23 || shoeJump>0.15 || bambooDrop<35 || spoutClearance<10 || exitY> -30 || reach>0) throw Error('Movimiento discontinuo o contacto incorrecto en La meditación');
-    return {flyJoinsPx:joins,haloContactPx:haloContact,waveBeforeImpact:waveBefore,nearestFingerPx:closest,ankleGripPx:grip,largestShoeProjectionStep:shoeJump,bubbleJoinPortraitUnits:bubbleJoin,bubbleDriftPortraitUnits:bubbleDrift,bambooMouthDropPx:bambooDrop,spoutToMouthPx:spoutClearance,flyExitY:exitY,wristExcessPx:reach};
+    if (Math.max(...joins,haloContact,waveBefore,grip,bubbleJoin,bubbleDrift)>0.02 || headMargin < 16 ||
+        closest<12 || closest>23 || shoeJump>0.15 || bambooDrop<35 || spoutClearance<10 || exitY> -30 || reach>0) throw Error('Encuadre, movimiento o contacto incorrectos en La meditación');
+    return {headMarginPx:headMargin,flyJoinsPx:joins,haloContactPx:haloContact,waveBeforeImpact:waveBefore,nearestFingerPx:closest,ankleGripPx:grip,largestShoeProjectionStep:shoeJump,bubbleJoinPortraitUnits:bubbleJoin,bubbleDriftPortraitUnits:bubbleDrift,bambooMouthDropPx:bambooDrop,spoutToMouthPx:spoutClearance,flyExitY:exitY,wristExcessPx:reach};
   })()`);
   const hash = canvas => crypto.createHash('sha256').update(canvas.data()).digest('hex');
   const background = C.createCanvas(1024, 600);
