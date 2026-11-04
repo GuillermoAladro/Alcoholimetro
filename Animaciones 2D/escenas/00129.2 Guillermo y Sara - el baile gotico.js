@@ -433,8 +433,15 @@
     const pwx = paseo(t);
     let wC = pieDe(PIES_G.cerca, t, { alto: 16, apoyo: 0.02 }), wL = pieDe(PIES_G.lejos, t, { alto: 16, apoyo: 0.02 });
     wC = Object.assign({}, wC, { x: wC.x + pwx }); wL = Object.assign({}, wL, { x: wL.x + pwx });
+    const eje=(wC.x+wL.x)/2;
+    // Dentro de la nube la cabeza puede viajar a la derecha, pero los dos zapatos
+    // frenan delante del lateral rígido. La rodilla absorbe el desplazamiento restante.
+    if(t>=T.tufo0)for(const w of [wC,wL]){
+      const limite=MAQ.x0+G.rotP(TALON_GOLPE,w.a).x*ESC-2;
+      if(w.x>limite-8)w.x=limite-8*Math.exp(-(w.x-limite+8)/8);
+    }
     const p = {
-      x: (wC.x + wL.x) / 2, suelo: SUELO, s: ESC, espejo: true, tirasLimpias: true, ikContinuo: true,
+      x: eje, suelo: SUELO, s: ESC, espejo: true, tirasLimpias: true, ikContinuo: true,
       hombrosContinuos: true, hombrosRecortados: true,
       pelvis: { x: G.PELVIS.x + b.dx + 18 * kSp * Math.sin((t - T.gSpook0) * 2.1) + 16 * wob + 10 * mareo * Math.sin(t * 6),
         y: G.PELVIS.y + b.pel + respira * 1.2 - salto(t)/ESC + 10 * kSp * (0.5 + 0.5 * Math.cos((t - T.gSpook0) * 4.2)) },
@@ -446,7 +453,7 @@
     const kPeri = campana(t, T.peri0, T.peri1);
     p.cabeza.ang += 0.42 * kPeri * Math.sin((t - T.peri0) / (T.peri1 - T.peri0) * TAU);
     // como una aleta: al deslizarse, los pinchos se inclinan hacia atrás
-    p.cabeza.ang += clamp((paseo(t) - paseo(t - 0.1)) / 0.1 * 0.0032, -0.3, 0.3);
+    p.cabeza.ang += clamp((paseo(t) - paseo(t - 0.1)) / 0.1 * 0.0015, -0.15, 0.15);
     p.piernas.cerca = aPierna(G, p, wC, "cerca"); p.piernas.lejos = aPierna(G, p, wL, "lejos");
     // dentro de la niebla: su altura se ajusta para que los pinchos asomen lo justo
     const kAj = tramo(t, T.gAgacha1 - 0.3, T.gAgacha1) * (1 - tramo(t, T.sSuelta, T.sSuelta + 0.14));
