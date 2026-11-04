@@ -1,0 +1,52 @@
+{
+  "scene": "00119.2",
+  "duration": 14.8,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "peeledMaskPixels": [
+      5563,
+      5804,
+      5806,
+      4759,
+      3668
+    ],
+    "shoeRasterErrors": [
+      0.5,
+      0.1743788230313612,
+      0.5
+    ],
+    "packetSpawnErrorsPx": [
+      0,
+      0
+    ],
+    "separateSpawnPointsPx": 3.6730302988989196,
+    "mouthCatchErrorsPx": [
+      0.0007866013020602312,
+      0.0007614838630196679
+    ],
+    "shoeHeightErrorPx": 1.6697754290362354e-13,
+    "maxLiftPx": 26,
+    "chinPinchErrorPx": 8.038873388460929e-14,
+    "largeBubbleBurstJoinPx": 0.00010092885537460461,
+    "smallBubbleTouchesNosePx": 2.3092638912203256e-14,
+    "radii": [
+      42,
+      0,
+      133.25160640630418,
+      0,
+      11
+    ],
+    "maxArmRatio": 1.032117013744087
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.108,
+    7.548000000000001,
+    11.396
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
