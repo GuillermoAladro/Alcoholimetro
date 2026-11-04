@@ -1,0 +1,67 @@
+{
+  "scene": "00035.2",
+  "durationSeconds": 14.3,
+  "renderer": "Canvas 2D / Node-Skia",
+  "results": [
+    {
+      "name": "Unión de las cuatro muñecas",
+      "passed": true,
+      "details": {
+        "errorMaxPx": 2.1892155834905838e-7
+      }
+    },
+    {
+      "name": "Longitud rígida de los dos tacos",
+      "passed": true,
+      "details": {
+        "errorMaxPx": 1.1368683772161603e-13
+      }
+    },
+    {
+      "name": "Contacto en el instante de cada tiro",
+      "passed": true,
+      "details": {
+        "errorMaxPx": 1.2434497875801753e-14
+      }
+    },
+    {
+      "name": "Contacto entre blanca y amarilla",
+      "passed": true,
+      "details": {
+        "errorMaxPx": 1.7763568394002505e-15
+      }
+    },
+    {
+      "name": "Choques con lámpara, techo y cabeza",
+      "passed": true,
+      "details": {
+        "errorMaxPx": 0
+      }
+    },
+    {
+      "name": "Las dos bolas entran en sus troneras",
+      "passed": true
+    },
+    {
+      "name": "Rebobinado determinista",
+      "passed": true
+    },
+    {
+      "name": "Negro inicial y final",
+      "passed": true
+    },
+    {
+      "name": "Fin a 30 fps",
+      "passed": true
+    },
+    {
+      "name": "Fin a 60 fps",
+      "passed": true
+    },
+    {
+      "name": "Fin a 120 fps",
+      "passed": true
+    }
+  ],
+  "passed": true
+}
