@@ -4,13 +4,13 @@ from playwright.sync_api import sync_playwright
 import base64, hashlib, io, json, os, shutil, subprocess
 
 root = Path("Animaciones 2D").resolve()
-scene_id = "00139.2"
+scene_id = "00140.2"
 stem = next((root / "escenas").glob(scene_id + " *.js")).stem
 out = Path(os.environ["RUNNER_TEMP"]) / "export"
 out.mkdir()
 shutil.copyfile(Path(os.environ["RUNNER_TEMP"]) / "resultados-node.json",out / "resultados-node.json")
 movie, sheet_path = out / (stem + ".mp4"), out / (stem + " - fotogramas.png")
-times = [0,0.8,1.76,3.11,3.46,5.34,6.21,7.94,8.36,8.67,9.65,10.08,12.5,12.84,13.78,14.59]
+times = [0,1.67,2.02,3.31,3.52,4.59,5.89,6.03,6.28,6.44,7.1,7.54,8.65,9.63,12.04,14.29]
 sheet = Image.new("RGB", (960, 640), "#16181c")
 draw = ImageDraw.Draw(sheet)
 errors = []
@@ -20,13 +20,21 @@ with sync_playwright() as browser_api:
     browser = browser_api.chromium.launch(executable_path=chrome, args=["--no-sandbox", "--allow-file-access-from-files"])
     pg = browser.new_page(viewport={"width":1024,"height":600})
     pg.on("pageerror", lambda err: errors.append(str(err)))
+    original_id = scene_id.split(".")[0]
+    pg.goto((root / "ver.html").as_uri() + "?id=" + original_id + "&pausa")
+    pg.wait_for_function("window.A2D && A2D.listo() && Recortes.listos()")
+    assert pg.locator("#escena").input_value() == original_id
+    pg.locator("#bucle").uncheck()
+    pg.locator("#play").click()
+    pg.wait_for_function("document.querySelector('#play').textContent === 'Play' && parseFloat(document.querySelector('#tiempo').textContent) >= A2D.dur() - 0.01", timeout=60000)
+    print("El visor ha reproducido el original", original_id, pg.locator("#tiempo").inner_text())
     pg.goto((root / "ver.html").as_uri() + "?id=" + scene_id + "&pausa")
     pg.wait_for_function("window.A2D && A2D.listo() && Recortes.listos()")
     assert pg.locator("#escena").input_value() == scene_id
     def frame(t):
         return base64.b64decode(pg.evaluate("(t) => {A2D.cuadro(t);return document.querySelector('#lienzo').toDataURL('image/png').split(',')[1]}", t))
     dur = pg.evaluate("A2D.dur()")
-    assert abs(dur - 14.6) < 1e-8
+    assert abs(dur - 14.3) < 1e-8
     for index, t in enumerate(times):
         pic = Image.open(io.BytesIO(frame(t))).convert("RGB")
         if index in [0,len(times)-1]:
@@ -36,7 +44,7 @@ with sync_playwright() as browser_api:
         x, y = index%4*240, index//4*160
         sheet.paste(pic.resize((240,141),Image.Resampling.LANCZOS),(x,y))
         draw.text((x+5,y+143),f"{t:.2f} s",fill="#ddd")
-    # La lámina se completa con los fotogramas del MP4.
+    # La lámina se completará con las imágenes decodificadas del MP4.
     probes = [dur*.25,dur*.5,dur*.75]
     initial = [hashlib.sha256(frame(t)).digest() for t in probes]
     assert len(set(initial)) == 3
@@ -54,7 +62,7 @@ with sync_playwright() as browser_api:
         ret = ff.wait()
     assert ret == 0
     pg.locator("#barra").evaluate("(el) => {el.value='500';el.dispatchEvent(new Event('input'))}")
-    pg.wait_for_function("document.querySelector('#tiempo').textContent.includes('7.30')")
+    pg.wait_for_function("document.querySelector('#tiempo').textContent.includes('7.15')")
     pg.locator("#reinicio").click()
     pg.wait_for_function("document.querySelector('#tiempo').textContent.startsWith('0.00')")
     assert not errors, errors
@@ -77,8 +85,6 @@ subprocess.run(["ffmpeg","-v","error","-xerror","-i",str(movie),"-f","null","-"]
 stream = json.loads(subprocess.check_output(["ffprobe","-v","error","-of","json","-show_entries","stream=codec_name,width,height,r_frame_rate,nb_frames",str(movie)]))["streams"][0]
 assert (stream["codec_name"],stream["width"],stream["height"],stream["r_frame_rate"],int(stream["nb_frames"])) == ("h264",1024,600,"60/1",n)
 print(json.dumps(stream))
-# Comprobar la frente sobre el retrato con su expresión
-
 # Cotejar los fotogramas decodificados del MP4 con los mismos instantes del visor.
 for index, seconds in enumerate(times):
     frame_number = min(n-1, round(seconds*60))
