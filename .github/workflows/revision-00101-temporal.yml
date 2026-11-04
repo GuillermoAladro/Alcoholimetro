@@ -1,79 +1,30 @@
-name: Verificar el visor de la escena 00044.2
+name: Preparar la referencia original de 00045
 on:
   push:
     branches: [revision-2d-00101-paradigma]
-    paths:
-      - '.github/workflows/revision-00101-temporal.yml'
-      - '.revision-00101/exportar.py'
+    paths: ['.github/workflows/revision-00101-temporal.yml','.revision-00101/exportar.py']
 permissions:
-  contents: read
+  contents: write
 jobs:
-  verificar:
+  referencia:
     runs-on: ubuntu-latest
-    timeout-minutes: 14
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
         with:
-          persist-credentials: false
           sparse-checkout: |
             .revision-00101
             Animaciones 2D/escenas
             Animaciones 2D/herramientas
             Animaciones 2D/motor
             Animaciones 2D/personajes
-      - name: Instalar dependencias de la comprobación
-        run: |
+            Animaciones 2D/ver.html
+      - run: python -m pip install --quiet playwright==1.55.0 Pillow==11.3.0
+      - run: python .revision-00101/exportar.py
+      - run: |
           set -euo pipefail
-          python -m pip install --quiet playwright==1.55.0 Pillow==11.3.0 imageio-ffmpeg==0.6.0
-          npm install --silent --no-save --prefix "$RUNNER_TEMP/qa-node" @napi-rs/canvas@0.1.80 @ffprobe-installer/ffprobe@2
-          mkdir -p "$RUNNER_TEMP/video-bin"
-          ln -s "$(python -c 'import imageio_ffmpeg; print(imageio_ffmpeg.get_ffmpeg_exe())')" "$RUNNER_TEMP/video-bin/ffmpeg"
-          ln -s "$(NODE_PATH="$RUNNER_TEMP/qa-node/node_modules" node -p "require('@ffprobe-installer/ffprobe').path")" "$RUNNER_TEMP/video-bin/ffprobe"
-          "$RUNNER_TEMP/video-bin/ffmpeg" -version > /dev/null
-          "$RUNNER_TEMP/video-bin/ffprobe" -version > /dev/null
-          echo "$RUNNER_TEMP/video-bin" >> "$GITHUB_PATH"
-      - name: Comprobar los contactos de la escena
-        run: NODE_PATH="$RUNNER_TEMP/qa-node/node_modules" node "Animaciones 2D/herramientas/validar-00044.2-node.cjs" > "$RUNNER_TEMP/resultados-node.json" && cat "$RUNNER_TEMP/resultados-node.json"
-      - name: Reproducir y exportar los 816 fotogramas en Chromium
-        run: python .revision-00101/exportar.py
-      - uses: actions/upload-artifact@v4
-        with:
-          name: fotogramas-00044
-          path: ${{ runner.temp }}/export/
-          if-no-files-found: error
-          retention-days: 1
-  guardar:
-    needs: verificar
-    permissions:
-      contents: write
-    runs-on: ubuntu-latest
-    timeout-minutes: 3
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          sparse-checkout: |
-            .revision-00101
-      - uses: actions/download-artifact@v4
-        with:
-          name: fotogramas-00044
-          path: ${{ runner.temp }}/resultado
-      - name: Guardar solo los archivos verificados en la rama de revisión
-        run: |
-          set -euo pipefail
-          rama='revision-2d-00101-paradigma'
-          destino='Animaciones 2D/vista previa'
-          nombre='00044.2 Guillermo y Carla - la melena'
-          mkdir -p "$destino"
-          for final in '.mp4' ' - fotogramas.png'; do
-            test -s "$RUNNER_TEMP/resultado/$nombre$final"
-            cp "$RUNNER_TEMP/resultado/$nombre$final" "$destino/$nombre$final"
-            git add --sparse -- "$destino/$nombre$final"
-          done
-          informe='Animaciones 2D/revision/00044.2-resultados-node.json'
-          mkdir -p "$(dirname "$informe")"
-          cp "$RUNNER_TEMP/resultado/resultados-node.json" "$informe"
-          git add --sparse -- "$informe"
+          git add --sparse -- '.revision-00101/base-00045.png'
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Guardar el vídeo y los fotogramas verificados de 00044.2"
-          git push origin "HEAD:refs/heads/$rama"
+          git commit -m 'Preparar la vista de referencia de 00045'
+          git push origin HEAD:refs/heads/revision-2d-00101-paradigma
