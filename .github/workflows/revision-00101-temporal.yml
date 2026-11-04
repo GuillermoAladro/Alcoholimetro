@@ -1,0 +1,69 @@
+name: Verificar el visor de la escena 00101.2
+on:
+  push:
+    branches: [revision-2d-00101-paradigma]
+    paths:
+      - '.github/workflows/revision-00101-temporal.yml'
+      - '.revision-00101/exportar.py'
+permissions:
+  contents: read
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          sparse-checkout: |
+            .revision-00101
+            Animaciones 2D/escenas
+            Animaciones 2D/herramientas
+            Animaciones 2D/motor
+            Animaciones 2D/personajes
+      - name: Instalar dependencias de la comprobación
+        run: |
+          if ! command -v ffmpeg >/dev/null; then sudo apt-get update -qq && sudo apt-get install -y ffmpeg; fi
+          python -m pip install --quiet playwright==1.55.0 Pillow==11.3.0
+          npm install --silent --no-save --prefix "$RUNNER_TEMP/qa-node" @napi-rs/canvas@0.1.80
+      - name: Comprobar los contactos de la escena
+        run: NODE_PATH="$RUNNER_TEMP/qa-node/node_modules" node "Animaciones 2D/herramientas/validar-00101.2-node.cjs"
+      - name: Reproducir y exportar los 894 fotogramas en Chromium
+        run: python .revision-00101/exportar.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fotogramas-00101
+          path: ${{ runner.temp }}/export/
+          if-no-files-found: error
+          retention-days: 1
+  guardar:
+    needs: verificar
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            .revision-00101
+      - uses: actions/download-artifact@v4
+        with:
+          name: fotogramas-00101
+          path: ${{ runner.temp }}/resultado
+      - name: Guardar solo los dos archivos verificados en la rama de revisión
+        run: |
+          set -euo pipefail
+          rama='revision-2d-00101-paradigma'
+          destino='Animaciones 2D/vista previa'
+          nombre='00101.2 Guillermo y Paradigma - el air guitar'
+          mkdir -p "$destino"
+          for final in '.mp4' ' - fotogramas.png'; do
+            test -s "$RUNNER_TEMP/resultado/$nombre$final"
+            cp "$RUNNER_TEMP/resultado/$nombre$final" "$destino/$nombre$final"
+            git add --sparse -- "$destino/$nombre$final"
+          done
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Guardar el vídeo y los fotogramas verificados de 00101.2"
+          git push origin "HEAD:refs/heads/$rama"
