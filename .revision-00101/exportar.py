@@ -4,13 +4,13 @@ from playwright.sync_api import sync_playwright
 import base64, hashlib, io, json, os, shutil, subprocess
 
 root = Path("Animaciones 2D").resolve()
-scene_id = "00106.2"
+scene_id = "00107.2"
 stem = next((root / "escenas").glob(scene_id + " *.js")).stem
 out = Path(os.environ["RUNNER_TEMP"]) / "export"
 out.mkdir()
 shutil.copyfile(Path(os.environ["RUNNER_TEMP"]) / "resultados-node.json",out / "resultados-node.json")
 movie, sheet_path = out / (stem + ".mp4"), out / (stem + " - fotogramas.png")
-times = [0,0.88,1.48,2.03,2.64,3.2,3.9,4.3,4.86,6.83,7.98,8.55,9.18,10.15,12.52,14.59]
+times = [0,0.75,2.62,3.57,5.62,6.5,7.55,8.05,8.94,9.78,10.09,10.49,11.37,12.32,13.48,14.69]
 sheet = Image.new("RGB", (960, 640), "#16181c")
 draw = ImageDraw.Draw(sheet)
 errors = []
@@ -26,7 +26,7 @@ with sync_playwright() as browser_api:
     def frame(t):
         return base64.b64decode(pg.evaluate("(t) => {A2D.cuadro(t);return document.querySelector('#lienzo').toDataURL('image/png').split(',')[1]}", t))
     dur = pg.evaluate("A2D.dur()")
-    assert abs(dur - 14.6) < 1e-8
+    assert abs(dur - 14.7) < 1e-8
     for index, t in enumerate(times):
         pic = Image.open(io.BytesIO(frame(t))).convert("RGB")
         if index in [0,len(times)-1]:
@@ -54,7 +54,7 @@ with sync_playwright() as browser_api:
         ret = ff.wait()
     assert ret == 0
     pg.locator("#barra").evaluate("(el) => {el.value='500';el.dispatchEvent(new Event('input'))}")
-    pg.wait_for_function("document.querySelector('#tiempo').textContent.includes('7.30')")
+    pg.wait_for_function("document.querySelector('#tiempo').textContent.includes('7.35')")
     pg.locator("#reinicio").click()
     pg.wait_for_function("document.querySelector('#tiempo').textContent.startsWith('0.00')")
     assert not errors, errors
