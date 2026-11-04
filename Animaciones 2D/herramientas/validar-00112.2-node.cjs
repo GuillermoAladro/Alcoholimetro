@@ -37,9 +37,9 @@ const {load, C} = require('./canvas-node.cjs');
     for(const [who,R] of [['g',Guillermo],['r',Rodri]]){
       const c=document.createElement('canvas');c.width=1024;c.height=600;const g=c.getContext('2d');
       D.dibPersonaje(g,R,D.pose(quarter)[who],quarter);
-      const data=g.getImageData(0,0,1024,600).data;let xmin=1024,xmax=-1,count=0;
-      for(let y=0;y<600;y++)for(let x=0;x<1024;x++)if(data[4*(1024*y+x)+3]>75){xmin=Math.min(x,xmin);xmax=Math.max(x,xmax);count++;}
-      const width=xmax-xmin+1;if(width<24||count<600)throw Error('Personaje perdido durante el giro '+who+' '+JSON.stringify({width,count}));profiles.push({who,width,count});
+      const data=g.getImageData(0,0,1024,600).data;let xmin=1024,xmax=-1,count=0,solid=0;
+      for(let y=0;y<600;y++)for(let x=0;x<1024;x++)if(data[4*(1024*y+x)+3]>75){xmin=Math.min(x,xmin);xmax=Math.max(x,xmax);count++;if(data[4*(1024*y+x)+3]>225)solid++;}
+      const width=xmax-xmin+1;if(width<58||count<1000||solid/count<.70)throw Error('Personaje perdido durante el giro '+who+' '+JSON.stringify({width,count}));profiles.push({who,width,count,solidFraction:solid/count});
     }
     if(Math.max(...jumps.g,...jumps.r,grip,freeze,hip,rim,ring,angle,Math.abs(spin-3),Math.abs(turn-1.5))>.02||Math.max(...xz)>.028||wrist>1.08)throw Error(JSON.stringify({jumps,grip,freeze,hip,rim,ring,angle,spin,turn,xz,wrist}));
     return {quarterTurnVisiblePixels:profiles,phaseJoinMaxPx:jumps,handOnTiltedStoolPx:grip,plantedFeetFreezePx:freeze,seatSupportPx:hip,gripOnSeatErrorPx:rim,feetOverRingPx:ring,stoolRevolutions:spin,flightRevolutions:turn,launchSpeedJoins:xz,finalStarError:angle,maxWristRatio:wrist};

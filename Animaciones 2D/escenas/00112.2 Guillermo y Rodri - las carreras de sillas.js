@@ -992,8 +992,8 @@
   }
   // Al pasar de frente, las dos siluetas se funden con el mismo eje. Los centros siguen
   // recorriendo su órbita y se distingue al que pasa por delante del asiento.
-  const PERFIL = 0.26;
-  let vistaPerfil = null;
+  const PERFIL = 0.46;
+  let vistaPerfil = null, mezclaPerfil = null;
   function dibPersonaje(g, R, o, t) {
     const { p, rot } = o, pp = pelvisPant(R, p), pos = proyeccion(R, o);
     const w = Math.abs(pos.f);
@@ -1004,14 +1004,23 @@
       if (!vistaPerfil) {
         vistaPerfil = document.createElement("canvas");
         vistaPerfil.width = W; vistaPerfil.height = H;
+        mezclaPerfil = document.createElement("canvas"); mezclaPerfil.width = W; mezclaPerfil.height = H;
       }
       const c = vistaPerfil.getContext("2d");
       c.setTransform(1,0,0,1,0,0); c.clearRect(0,0,W,H); R.dibujar(c, p, t);
-      const mezcla = suave((pos.f / PERFIL + 1) / 2), alfa = g.globalAlpha;
-      g.scale(PERFIL, 1);
-      g.globalAlpha = alfa * mezcla; g.drawImage(vistaPerfil, -pp.x, -pp.y);
-      g.scale(-1, 1);
-      g.globalAlpha = alfa * (1-mezcla); g.drawImage(vistaPerfil, -pp.x, -pp.y);
+      const mezcla = suave((pos.f / 0.21 + 1) / 2);
+      const q = mezclaPerfil.getContext("2d");
+      q.setTransform(1,0,0,1,0,0); q.clearRect(0,0,W,H);
+      q.save(); q.translate(pp.x,pp.y); q.scale(PERFIL,1); q.globalCompositeOperation = "lighter";
+      q.globalAlpha = mezcla; q.drawImage(vistaPerfil,-pp.x,-pp.y);
+      q.scale(-1,1); q.globalAlpha = 1-mezcla; q.drawImage(vistaPerfil,-pp.x,-pp.y); q.restore();
+      // Conserva opacidad en las zonas presentes en una sola orientación.
+      const refuerzo = 4 * mezcla * (1-mezcla);
+      if (refuerzo > 0.001) {
+        q.save(); q.globalAlpha = refuerzo;
+        q.drawImage(mezclaPerfil,0,0); q.drawImage(mezclaPerfil,0,0); q.restore();
+      }
+      g.drawImage(mezclaPerfil,-pp.x,-pp.y);
     }
     g.restore();
   }
