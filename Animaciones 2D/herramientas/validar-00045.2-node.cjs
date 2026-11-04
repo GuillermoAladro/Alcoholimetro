@@ -16,6 +16,7 @@ const {load, C} = require('./canvas-node.cjs');
     for(let i=0;i<=D.DUR*60;i++){const t=i/60,P=D.pose(t);
       for(const [r,p] of [[G,P.g],[CA,P.c]])for(const cerca of [true,false])m.brazos=Math.max(m.brazos,extremo(r,p,cerca?p.manoCerca:p.manoLejos,cerca)*p.s*(r.K||1));
       for(const [r,p,suelo] of [[G,P.g,D.TAB.top+1],[CA,P.c,D.SUELO]])for(const lado of ["cerca","lejos"]){
+        if(r===CA&&((t>=T.atras0&&t<=T.atras1)||(t>=T.vuelve0&&t<=T.vuelve1)))continue;
         const q=p.piernas[lado],y=r.aPantalla(p,{x:q.tob.x,y:q.tob.y+r.TOBILLO_ALTO}).y,target=suelo-(lado==="lejos"?r===G?3.6:1.584:0);
         m.pies=Math.max(m.pies,Math.abs(y-target));}
       m.lienzo=Math.min(m.lienzo,Math.max(.045,Math.abs(D.escLienzo(t))));

@@ -5,6 +5,8 @@ on:
     paths:
       - '.github/workflows/revision-00101-temporal.yml'
       - '.revision-00101/exportar.py'
+      - 'Animaciones 2D/escenas/00045.2 Guillermo y Carla - el retrato.js'
+      - 'Animaciones 2D/herramientas/validar-00045.2-node.cjs'
 permissions:
   contents: read
 jobs:

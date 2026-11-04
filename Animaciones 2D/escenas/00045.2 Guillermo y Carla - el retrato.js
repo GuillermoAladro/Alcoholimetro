@@ -142,7 +142,7 @@
   // color de la punta: cambia en cada mojada
   const MOJADAS = [2.32, 3.52, 6.1, 6.92];
   const colorPunta = t => { let i = 0; for (const m of MOJADAS) if (t >= m) i++; return COLORES[(i + 1) % COLORES.length]; };
-  function pincel(b, color) {
+  function pincel(b,color,largo=L_PUNTA){
     return g => {
       const dx = Math.cos(b), dy = Math.sin(b), nx = -dy, ny = dx;
       g.save(); g.lineCap = "round"; g.lineJoin = "round";
@@ -154,7 +154,7 @@
       g.strokeStyle = "#0b0a0e"; g.lineWidth = 8.4; g.beginPath(); g.moveTo(26 * dx, 26 * dy); g.lineTo(33 * dx, 33 * dy); g.stroke();
       g.strokeStyle = "#c9ced6"; g.lineWidth = 5.4; g.stroke();
       // pelo del pincel con pintura
-      g.beginPath(); g.moveTo(33 * dx + nx * 4, 33 * dy + ny * 4); g.quadraticCurveTo(40 * dx + nx * 4.4, 40 * dy + ny * 4.4, L_PUNTA * dx, L_PUNTA * dy);
+      g.beginPath(); g.moveTo(33 * dx + nx * 4, 33 * dy + ny * 4); g.quadraticCurveTo(40 * dx + nx * 4.4, 40 * dy + ny * 4.4, largo*dx,largo*dy);
       g.quadraticCurveTo(40 * dx - nx * 4.4, 40 * dy - ny * 4.4, 33 * dx - nx * 4, 33 * dy - ny * 4); g.closePath();
       g.fillStyle = color; g.fill(); g.strokeStyle = "#0b0a0e"; g.lineWidth = 1.8; g.stroke();
       g.restore();
@@ -240,10 +240,14 @@
     p.cara = cara(ex, parpadeo(t, [1.55, 3.9, 5.45, 8.0, 9.6, 10.9, 12.85]));
     p.cara.rubor = 0.45 * dentro(t, T.orgullo, T.orgullo + 0.3, 13.6, 14) + 0.25 * dentro(t, T.flor0, T.flor0 + 0.2, T.agarra, T.agarra + 0.3);
     manosC(p,t);ajustaBrazos(CA,p);p.pincel.x=p.manoLejos.x;p.pincel.y=p.manoLejos.y;
+    const cor=dentro(t,T.corazon0-.25,T.corazon0,T.corazon1,T.corazon1+.2);
+    if(cor>0){const q=puntoCorazon(fase(t,T.corazon0,T.corazon1)),objetivo=CA.aHoja(p,{x:LZ.x+q.x,y:LZ.y+q.y});
+      p.pincel.b=Math.atan2(objetivo.y-p.pincel.y,objetivo.x-p.pincel.x);p.pincel.largo=Math.hypot(objetivo.x-p.pincel.x,objetivo.y-p.pincel.y)/CA.JK;
+      p.manoLejos.objeto=pincel(p.pincel.b,"#e2453a",p.pincel.largo);}
     return p;
   }
   // punta del pincel (pantalla) para una mano dada
-  const puntaPincel = (p, m) => CA.aPantalla(p, { x: m.x + Math.cos(m.b) * L_PUNTA * CA.JK, y: m.y + Math.sin(m.b) * L_PUNTA * CA.JK });
+  const puntaPincel=(p,m)=>CA.aPantalla(p,{x:m.x+Math.cos(m.b)*(m.largo||L_PUNTA)*CA.JK,y:m.y+Math.sin(m.b)*(m.largo||L_PUNTA)*CA.JK});
   function manoPincel(p, t) {
     const m = pista(CLAVES_C, t);
     // pinceladas detrás del lienzo: arriba y abajo con algún zigzag
