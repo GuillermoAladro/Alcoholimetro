@@ -1,0 +1,51 @@
+{
+  "scene": "00118.2",
+  "duration": 14.8,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "wrapToChainJoinPx": 0,
+    "wrappedLengthErrorPx": 0,
+    "apexHoldErrorRad": [
+      0,
+      0,
+      0
+    ],
+    "shoeContourSamples": [
+      184,
+      184
+    ],
+    "standJoinsPx": [
+      6.764366844436154e-12,
+      9.755397260444056e-12,
+      1.0992406147795748e-11,
+      0.00001944795366174411,
+      0
+    ],
+    "angleJoinsRad": [
+      0.000001402139083708376,
+      4.3396022331165796e-7,
+      1.566746732351021e-12
+    ],
+    "maxFloorPenetrationPx": 1.1368683772161603e-13,
+    "plantedFootErrorPx": 0,
+    "chainGripErrorPx": 3.013788371160183e-13,
+    "pushFingertipSoleErrorPx": 0,
+    "handClearAfterReleasePx": 339.45105976793894,
+    "topCrossingsErrorRad": [
+      0,
+      1.3322676295501878e-15
+    ],
+    "maxArmRatio": 1.001
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.108,
+    7.548000000000001,
+    11.396
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
