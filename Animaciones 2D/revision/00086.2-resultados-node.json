@@ -1,0 +1,32 @@
+{
+  "scene": "00086.2",
+  "duration": 14.6,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "posesAt120Hz": 1753,
+    "minimumFlightMarginPx": 7.472474919650153,
+    "maximumTipStepAt120HzPx": 24.47415354720834,
+    "handHairFlightJoinsPx": [
+      0.0002575392329464414,
+      0.000009916217255878767,
+      2.7352107888775078e-9,
+      0.000003844999904679841,
+      0.000004286112304648721
+    ],
+    "jarJoinsPx": [
+      0,
+      1.2710574864626038e-13
+    ]
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.066,
+    7.446,
+    11.241999999999999
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
