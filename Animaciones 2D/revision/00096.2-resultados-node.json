@@ -1,0 +1,33 @@
+{
+  "scene": "00096.2",
+  "duration": 14.9,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "kernelsHeld": [
+      5,
+      4,
+      3,
+      2,
+      1,
+      1
+    ],
+    "numberOfFlights": 4,
+    "launchGapPx": 0,
+    "mouthGapPx": 0,
+    "bagReleasePx": 0,
+    "bagLandingJoinPx": 0.00009020284175089552,
+    "keyAndStartContactPx": 1.1368683772161603e-13,
+    "maximumWristExcessPx": -4.8005360622474935
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.129,
+    7.599,
+    11.473
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
