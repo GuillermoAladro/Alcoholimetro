@@ -1,0 +1,29 @@
+{
+  "scene": "00089.2",
+  "duration": 14.6,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "posesAt120Hz": 1753,
+    "helmetJoinsPx": [
+      0.000007935807879519309,
+      0.000012958590671096638,
+      0.000007586177318002769
+    ],
+    "helmetTurns": -0.95201867006772,
+    "wristOverLimit": -7,
+    "maximumWheelGripErrorPx": 0,
+    "teethToFingertipsPx": 0,
+    "bugReleasePx": 0
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.066,
+    7.446,
+    11.241999999999999
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
