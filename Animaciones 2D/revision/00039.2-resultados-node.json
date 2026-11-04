@@ -1,0 +1,71 @@
+{
+  "scene": "00039.2",
+  "durationSeconds": 14,
+  "renderer": "Canvas 2D / Node-Skia",
+  "results": [
+    {
+      "name": "Cuatro mangas unidas a las muñecas",
+      "passed": true,
+      "details": {
+        "errorMaxPx": 2.4379307125124115e-7
+      }
+    },
+    {
+      "name": "Agarre durante todos los saltos en corro",
+      "passed": true,
+      "details": {
+        "errorMaxPx": 5.684341886080802e-14
+      }
+    },
+    {
+      "name": "Salida y llegada de la espuma",
+      "passed": true,
+      "details": {
+        "errorMaxPx": 0
+      }
+    },
+    {
+      "name": "Borde de la caña en los labios",
+      "passed": true,
+      "details": {
+        "errorMaxPx": 0
+      }
+    },
+    {
+      "name": "Entrada y salida de la suspensión en el aire",
+      "passed": true,
+      "details": {
+        "errorMaxPx": 0.00014062504760337818
+      }
+    },
+    {
+      "name": "El marcador pasa de 0–0 a 1–0 y vuelve a 0–0",
+      "passed": true
+    },
+    {
+      "name": "La repetición se detiene en el pase y se ve la tele entera al anular el gol",
+      "passed": true
+    },
+    {
+      "name": "Rebobinado determinista",
+      "passed": true
+    },
+    {
+      "name": "Negro inicial y final",
+      "passed": true
+    },
+    {
+      "name": "Fin a 30 fps",
+      "passed": true
+    },
+    {
+      "name": "Fin a 60 fps",
+      "passed": true
+    },
+    {
+      "name": "Fin a 120 fps",
+      "passed": true
+    }
+  ],
+  "passed": true
+}
