@@ -1,0 +1,77 @@
+{
+  "scene": "00036.2",
+  "durationSeconds": 15,
+  "renderer": "Canvas 2D / Node-Skia",
+  "results": [
+    {
+      "name": "Unión de las cuatro muñecas",
+      "passed": true,
+      "details": {
+        "errorMaxPx": 2.2473501025730374e-7
+      }
+    },
+    {
+      "name": "Etiqueta del premio en la mano de Ander",
+      "passed": true,
+      "details": {
+        "errorMaxPx": 1.2710574864626038e-13
+      }
+    },
+    {
+      "name": "Abrazo de Guillermo",
+      "passed": true,
+      "details": {
+        "errorMaxPx": 0
+      }
+    },
+    {
+      "name": "Salida de la moneda",
+      "passed": true,
+      "details": {
+        "errorMaxPx": 0
+      }
+    },
+    {
+      "name": "Entrada de la moneda en la ranura",
+      "passed": true,
+      "details": {
+        "errorMaxPx": 0.0001494112182597777
+      }
+    },
+    {
+      "name": "Continuidad del premio en las tres entregas",
+      "passed": true,
+      "details": {
+        "errorMaxPx": 0.0007346152298331077
+      }
+    },
+    {
+      "name": "Suelta del gatito y del pollito",
+      "passed": true,
+      "details": {
+        "errorMaxPx": 0.0005319561860867901
+      }
+    },
+    {
+      "name": "Rebobinado determinista",
+      "passed": true
+    },
+    {
+      "name": "Negro inicial y final",
+      "passed": true
+    },
+    {
+      "name": "Fin a 30 fps",
+      "passed": true
+    },
+    {
+      "name": "Fin a 60 fps",
+      "passed": true
+    },
+    {
+      "name": "Fin a 120 fps",
+      "passed": true
+    }
+  ],
+  "passed": true
+}
