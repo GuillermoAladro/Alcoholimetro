@@ -1,0 +1,103 @@
+{
+  "scene": "00040.2",
+  "durationSeconds": 13.6,
+  "renderer": "Canvas 2D / Node-Skia",
+  "results": [
+    {
+      "name": "Cuatro muñecas unidas",
+      "passed": true,
+      "details": {
+        "errorMax": 2.2957128982171384e-7
+      }
+    },
+    {
+      "name": "La cuerda conserva su longitud desde la rotura al final",
+      "passed": true,
+      "details": {
+        "errorMax": 0.0038968593196102574
+      }
+    },
+    {
+      "name": "La cuerda alcanza la punta de la nariz y acompaña el primer retroceso",
+      "passed": true,
+      "details": {
+        "errorMax": 1.8198773652309366e-13
+      }
+    },
+    {
+      "name": "La cuerda sigue sujeta a la cejuela",
+      "passed": true,
+      "details": {
+        "errorMax": 0
+      }
+    },
+    {
+      "name": "La mano lejana sigue los acordes",
+      "passed": true,
+      "details": {
+        "errorMax": 0
+      }
+    },
+    {
+      "name": "El cabo suelto sale del puente",
+      "passed": true,
+      "details": {
+        "errorMax": 0
+      }
+    },
+    {
+      "name": "Continuidad al tocar y soltar la nariz",
+      "passed": true,
+      "details": {
+        "errorMax": 0.0004979305267616465
+      }
+    },
+    {
+      "name": "La última nota nace en la boca de la guitarra",
+      "passed": true,
+      "details": {
+        "errorMax": 0
+      }
+    },
+    {
+      "name": "Silencio entre la rotura y el último rasgueo",
+      "passed": true,
+      "details": {
+        "errorMax": 0
+      }
+    },
+    {
+      "name": "Golpe completo dentro del plano",
+      "passed": true
+    },
+    {
+      "name": "El perro aúlla, se tapa las orejas y se esconde",
+      "passed": true
+    },
+    {
+      "name": "Vibración y nota ascendente en el último acorde",
+      "passed": true
+    },
+    {
+      "name": "Rebobinado determinista",
+      "passed": true
+    },
+    {
+      "name": "Negro inicial y final",
+      "passed": true
+    },
+    {
+      "name": "Fin a 30 fps",
+      "passed": true
+    },
+    {
+      "name": "Fin a 60 fps",
+      "passed": true
+    },
+    {
+      "name": "Fin a 120 fps",
+      "passed": true
+    }
+  ],
+  "passed": true
+}
