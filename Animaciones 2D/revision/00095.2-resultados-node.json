@@ -1,0 +1,26 @@
+{
+  "scene": "00095.2",
+  "duration": 14.8,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "testedSwats": 4,
+    "maximumRenderedPawGapPx": 0,
+    "pawReachRequiredPx": 23.71896816991141,
+    "pawReachAvailablePx": 30.845,
+    "rodHandoffGapPx": 1.1552752632091663e-8,
+    "ropeExcessPx": 7.105427357601002e-14,
+    "catTransitionError": 0.00032291772511099223,
+    "maximumWristExcessPx": -4.797265172795596
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.108,
+    7.548000000000001,
+    11.396
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
