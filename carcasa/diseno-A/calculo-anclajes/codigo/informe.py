@@ -124,11 +124,11 @@ def construir(A, O, carpeta, salida, extra):
         f"<b>Recomendación.</b> Fabricar la trasera con el patrón <b>{nG}</b>: {G['n']} agujeros Ø6,5 en las coordenadas de la "
         f"tabla 5 (x desde el eje, z desde la base). En el modelo de elementos finitos (chapa flexible + contacto con la pared, "
         f"envolvente de bordes) su factor de carga frente a la envolvente de diseño es <b>λ = {f2(G['lam'])}</b>, frente a "
-        f"<b>{f2(A[nC]['lam'])}</b> del patrón actual de GitHub (C), {f2(A[nA]['lam'])} del A y {f2(A[nB]['lam'])} del B: "
-        f"<b>{f0(100 * (G['lam'] / A[nC]['lam'] - 1))} % más capacidad que el actual</b> con el mismo número de tornillos, sin tocar la "
+        f"<b>{f2(A[nC]['lam'])}</b> del patrón anterior de 3 × 6 (C), {f2(A[nA]['lam'])} del A y {f2(A[nB]['lam'])} del B: "
+        f"<b>{f0(100 * (G['lam'] / A[nC]['lam'] - 1))} % más capacidad que el anterior</b> con el mismo número de tornillos, sin tocar la "
         f"electrónica, pestañas, soldaduras ni cajones. La mejora sale de llevar los tornillos junto a las partes rígidas de la caja "
-        f"(pliegues laterales, pestaña de la bandeja y canto superior) en vez de repartirlos por el centro de la chapa, que con 2 mm "
-        f"es flexible y hace palanca contra la pared. "
+        f"(pliegues laterales, pestaña de la bandeja y canto superior) en vez de repartirlos por el centro de la chapa, que aun con 3 mm "
+        f"es flexible y hace palanca contra la pared. Es simétrico, así que se replantea y se comprueba fácil. "
         f"Es el mejor patrón encontrado por una búsqueda heurística reproducible; <b>no está demostrado que sea el óptimo global</b>."))
     s.append(Spacer(1, 6))
     filas = [["", nC, nA, nB, nG]]
@@ -145,20 +145,26 @@ def construir(A, O, carpeta, salida, extra):
     filas.append(["Capacidad que queda sin los 2 tornillos peores"] + [f"{f0(100 * A[k]['perdidas']['menos_2']['peor_rel'])} %" for k in orden])
     s.append(tabla(filas, [58, 29, 29, 29, 29]))
     s.append(P("Tabla 1. Resumen. λ = F<sub>rec</sub> / (fuerza máxima en un tornillo) para el peor caso de la envolvente (tirones de 500 N en "
-               "esquinas, centro, base, oblicuos y laterales, y una persona de 80 kg colgada con factor dinámico 2, todo con el peso propio de 15 kg). "
+               "esquinas, centro, base, oblicuos y laterales, y una persona de 80 kg colgada con factor dinámico 2, todo con un peso propio de cálculo de 18 kg). "
                "Los tirones admisibles se calculan con el peso fijo y la carga recomendada de fischer de un taco SX Plus 8×65 (que ya incluye "
                "sus coeficientes de seguridad). No son cargas certificadas del conjunto.", "pc"))
-    s.append(P("Lo que cambia respecto a los estudios anteriores", "h2"))
+    s.append(P("Lo que cambia respecto al cálculo con chapa de 2 mm (03-11-2026)", "h2"))
     t3c = A[nC]["tiron300"]
-    s += L([f"Los 61,9 / 66,0 / 83,0 N previos venían de un modelo simplificado. Recalculado con chapa flexible, el patrón actual C da "
-            f"<b>{f0(t3c['TR']['FEM'])} N</b> (esquina derecha) y {f0(t3c['TL']['FEM'])} N (izquierda) para 300 N; con chapa rígida, "
-            f"{f0(t3c['TR']['rigido'])} N. La chapa de 2 mm <b>no</b> se comporta como rígida: el reparto real es mucho más desigual (§2.2 y §6).",
+    s += L([f"<b>Chapa:</b> la trasera pasa de 2 a 3 mm (rigidez a flexión × 3,4) y el cajón de componentes y la tapa interior, de 2 a 1,5 mm. "
+            f"La masa de cálculo sube de 15 a 18 kg (12,5 kg de acero, 15,5 kg estimados con todo).",
+            "<b>Geometría:</b> las guías traseras ya no son angulares sino pletinas planas de 12 mm en x = ±70, y el apoyo trasero de la "
+            "tapa interior es una pletina plana soldada con MIG por su canto (z = 404,5–407,5). Las zonas para taladrar cambian (§1) y los "
+            "agujeros de x = ±85 de A, B y C quedan pegados a las guías nuevas (la arandela toca su canto): <b>esos tres patrones ya no se "
+            "podrían taladrar tal cual</b>; se calculan sólo como referencia.",
+            f"<b>Búsqueda:</b> se repite sólo para n = 18 (el número de tornillos no cambia), con 7 recocidos y el óptimo de 2 mm (P18-O) como "
+            f"candidato. Ahora gana un patrón <b>simétrico</b>: llega al {f0(100 * extra['sel_ratio'])} % del mejor libre con la malla fina, por "
+            f"encima del 95 % que se pedía para preferirlo.",
+            f"Con chapa flexible, el patrón C da <b>{f0(t3c['TR']['FEM'])} N</b> en el tornillo más cargado con 300 N en la esquina derecha "
+            f"y {f0(t3c['TL']['FEM'])} N en la izquierda; con chapa rígida, {f0(t3c['TR']['rigido'])} N. La chapa de 3 mm sigue sin "
+            f"comportarse como rígida (§2.2 y §6).",
             "La caja no es simétrica: bajo z = 150 el lateral izquierdo no existe (hueco del cajón de pajitas) y el suelo plegado sólo está "
-            "unido a la caja por la esquina derecha. Por eso el tirón en la esquina superior <b>derecha</b> gobierna en A, B y C; en el ganador "
-            "empata con la persona colgada del borde.",
-            "El patrón A no cumple la separación mínima supuesta de 50 mm (filas a 345 y 391,5 mm: 46,5 mm).",
-            "En hormigón no llega a mandar el taco: la chapa de 2 mm se deforma de forma permanente junto a las arandelas superiores "
-            "bastante antes (fila de la tabla 1; §6). Se arregla con una pletina local, no moviendo tornillos.",
+            "unido a la caja por la esquina derecha. " + extra["gob_txt"],
+            extra["chapa_txt"],
             "El tipo de pared manda más que el patrón: el mismo patrón admite tirones unas 4 veces menores en ladrillo perforado que en hormigón, "
             "y en ladrillo hueco horizontal y en pladur fischer no da valores para este taco (§5)."])
     s.append(PageBreak())
@@ -167,13 +173,13 @@ def construir(A, O, carpeta, salida, extra):
     s.append(P("1. Datos de partida: comprobados, de fabricante, estimados e hipótesis", "h1"))
     filas = [["Dato", "Valor", "Estado / fuente"],
              ["Carcasa (ancho × fondo × alto)", "220 × 100 × 442,5 mm", "Comprobado en diseno.py / specs.py (W, D, Hw + T)"],
-             ["Trasera: alto de chapa", "440,5 mm (Hw = 407,5 + 2 + 31)", "Comprobado: Ktop = 401,5; zi0 = 407,5; BANDA = 31"],
-             ["Chapa", "DC01, 2 mm, pliegues 90°, radio interior 2 mm", "Comprobado (T = 2,0; Lista_piezas_chapa.xlsx)"],
-             ["Masa de chapa", f"{f2(extra['m_acero'])} kg", "Calculado: suma de las 21 piezas de la lista de chapa (≈ 9,9 kg ✓)"],
-             ["Chapa + policarbonato", f"{f2(extra['m_acero'] + extra['m_pc'])} kg", "Calculado: + 4 piezas de PC (0,578 kg) (≈ 10,4 kg ✓)"],
-             ["Masa con electrónica y herrajes", f"≈ {f1(extra['m_est'])} kg", "Estimado (tabla 2); cálculo con 15 kg"],
-             ["Centro de gravedad", "x ≈ 0; z ≈ 220 mm; a 51 mm de la pared", "Estimado por reparto de masas; cálculo a 55 mm (sensibilidad 45–65)"],
-             ["Patrón actual (C)", "x = −85, 0, 85; z = 25, 75, 125, 205, 295, 391,5", "Comprobado: fijaciones_pared(W, Ktop − 10)"],
+             ["Trasera: alto de chapa", "439,5 mm (Hw = 407,5 + 1,5 + 30,5)", "Comprobado: Ktop = 401,5; zi0 = 407,5; TK = 1,5; BANDA = 30,5"],
+             ["Chapa", "DC01; trasera y caja de 3 mm, cajón de componentes y tapa interior de 1,5 mm; pliegues 90°, radio interior = espesor", "Comprobado (T = 3,0, TK = 1,5; Lista_de_piezas.xlsx del 04-11-2026)"],
+             ["Masa de chapa", f"{f2(extra['m_acero'])} kg", "Calculado: suma de las 29 piezas de acero de la lista (24 de 3 mm y 5 de 1,5 mm)"],
+             ["Chapa + policarbonato", f"{f2(extra['m_acero'] + extra['m_pc'])} kg", "Calculado: + 4 piezas de PC (0,57 kg)"],
+             ["Masa con electrónica y herrajes", f"≈ {f1(extra['m_est'])} kg", "Estimado (tabla 2); cálculo con 18 kg"],
+             ["Centro de gravedad", "x ≈ 0; z ≈ 210 mm; a unos 50 mm de la pared", "Estimado por reparto de masas; cálculo a 55 mm (sensibilidad 45–65)"],
+             ["Patrón anterior (C)", "x = −85, 0, 85; z = 25, 75, 125, 205, 295, 391,5", "Comprobado: fijaciones_pared(W, Ktop − 10) hasta el 03-11-2026"],
              ["Agujeros / taco / tornillo / arandela", "Ø6,5 / SX Plus 8×65 / DIN 571 6×80 / DIN 9021 M6 (Ø18)", "Comprobado (ANCLAJE-PARED-8x65.md)"],
              ["SX Plus 8×65: taladro, h1, h<sub>ef</sub>, tornillo", "Ø8; ≥ 75 mm; 65 mm; Ø4,5–6,0", "Fischer (ficha técnica SX Plus, 16/05/2023)"],
              ["SX Plus 8×65: c<sub>min</sub> en hormigón", "50 mm", "Fischer (tabla de cargas SX Plus)"],
@@ -186,7 +192,7 @@ def construir(A, O, carpeta, salida, extra):
     s.append(P("Tabla 1b. Datos de partida.", "pc"))
     s.append(P("Masa estimada con electrónica (tabla 2)", "h2"))
     filas = [["Grupo", "Masa (kg)", "Base de la estimación"]] + [[a, f2(b), c] for a, b, c in extra["masas"]]
-    filas.append(["<b>Total estimado</b>", f"<b>{f2(sum(b for _, b, _ in extra['masas']))}</b>", "Se calcula con <b>15 kg</b> (≈ +16 % de margen)"])
+    filas.append(["<b>Total estimado</b>", f"<b>{f2(sum(b for _, b, _ in extra['masas']))}</b>", "Se calcula con <b>18 kg</b> (≈ +16 % de margen)"])
     s.append(tabla(filas, [62, 18, 94]))
     s.append(P("Tabla 2. Las masas de chapa y policarbonato son datos del repositorio; el resto son estimaciones de orden de magnitud "
                "(no proceden de fichas técnicas) y deberían sustituirse por la pesada del primer prototipo.", "pc"))
@@ -201,16 +207,18 @@ def construir(A, O, carpeta, salida, extra):
     s.append(P("Zonas donde se puede taladrar", "h2"))
     s.append(P("Se ha recorrido la geometría de diseno.py para dejar libres todas las piezas que tocan la trasera por dentro. El centro de "
                "cada agujero debe quedar a ≥ 11 mm (radio de la arandela + 2 mm) de cualquier pestaña o soldadura y en la parte plana:"))
-    s += L(["<b>Z1</b> (detrás del cajón de pajitas): x ∈ [−95, 95], z ∈ [18, 139,5]. Debajo, el pliegue del suelo; encima, la pestaña de "
-            "13 mm de la bandeja soldada a la trasera (z = 150,5–163,5). Las cabezas (≈ 5,6 mm) caben en los 8 mm libres detrás del cajón.",
-            "<b>Z2</b> (detrás del cajón de componentes): x ∈ [−95, 95], z ∈ [174,5, 394,5], excepto |x| entre 51 y 81 mm (alas de 10 mm "
-            "de las guías traseras soldadas en x = ±61…71, z = 173,5–391,5) y un círculo de 16 mm alrededor del espárrago de tierra "
-            "(50; 376,5). Arriba, el ala del apoyo trasero de la tapa interior (z = 405,5–417,5). Holgura cabeza–cajón: 9,5 mm.",
-            "<b>Z3</b> (franja superior, encima del apoyo de la tapa interior): z ∈ [427,5, 430,5]. Accesible con la tapa abierta; el canto "
-            "superior es libre (la tapa sólo apoya). Distancia al canto ≥ 10 mm = 1,5 d<sub>0</sub>.",
-            "|x| ≤ 95: la cara interior de los laterales está en ±108 y el pliegue (radio 2) termina en ±106; con la arandela de Ø18 y una "
+    s += L(["<b>Z1</b> (detrás del cajón de pajitas): x ∈ [−93, 93], z ∈ [20, 139,5]. Debajo, el pliegue del suelo (radio 3); encima, la "
+            "pestaña de 13 mm de la bandeja soldada a la trasera (z = 150,5–163,5). Las cabezas (≈ 5,6 mm con la arandela) caben en los 8 mm "
+            "libres detrás del cajón (quedan 3,4 mm).",
+            "<b>Z2</b> (detrás del cajón de componentes): x ∈ [−93, 93], z ∈ [174,5, 393,5], excepto |x| entre 54 y 86 mm a la altura de las "
+            "guías traseras (pletinas planas de 12 mm soldadas por puntos en x = ±64…76, z = 173,5–391,5) y un círculo de 16 mm alrededor del "
+            "espárrago de tierra (50; 376,5). Arriba, el apoyo trasero de la tapa interior (pletina de 3 mm en z = 404,5–407,5, soldada con "
+            "MIG por su canto). Holgura cabeza–cajón: 3,9 mm.",
+            "<b>Z3</b> (franja superior, encima del cordón del apoyo de la tapa interior): z ∈ [420,5, 429,5]. Accesible con la tapa abierta; "
+            "el canto superior es libre (la tapa sólo apoya). Distancia al canto ≥ 10 mm = 1,5 d<sub>0</sub>.",
+            "|x| ≤ 93: la cara interior de los laterales está en ±107 y el pliegue (radio 3) termina en ±104; con la arandela de Ø18 y una "
             "llave de vaso o de estrella de 10 mm no conviene acercarse más.",
-            "Para llegar a los agujeros hay que sacar los dos cajones (el procedimiento actual ya lo exige)."])
+            "Para llegar a los agujeros hay que sacar los dos cajones (el procedimiento de montaje ya lo exige)."])
     s.append(fig(carpeta, "fig1_patrones.png", pie="Figura 1. Los cuatro patrones a la misma escala sobre la trasera vista desde delante."))
     s.append(PageBreak())
 
@@ -221,12 +229,12 @@ def construir(A, O, carpeta, salida, extra):
                "o desplazada del eje genera momentos M = F·e que se reparten entre tracciones de anclajes y compresión de la chapa contra la pared."))
     s.append(P("Acciones generalizadas sobre la caja: Q<sub>n</sub> = ΣF<sub>n</sub>; M<sub>vuelco</sub> = Σ(z·F<sub>n</sub> − n·F<sub>z</sub>); "
                "M<sub>vertical</sub> = Σ(x·F<sub>n</sub> − n·F<sub>x</sub>); y en el plano V<sub>x</sub>, V<sub>z</sub> y el torsor "
-               "T = Σ(z·F<sub>x</sub> − x·F<sub>z</sub>). Ejemplo: peso propio 15 kg → F = 147 N a 55 mm → M = 147 × 0,055 = 8,1 N·m."))
+               "T = Σ(z·F<sub>x</sub> − x·F<sub>z</sub>). Ejemplo: peso propio de cálculo 18 kg → F = 177 N a 55 mm → M = 177 × 0,055 = 9,7 N·m."))
     s.append(P("2.1 Modelo de elementos finitos (resultados «FEM»)", "h2"))
-    s += L(["Chapa trasera de 2 mm como placa delgada de Kirchhoff con elementos rectangulares ACM de 12 GDL (malla de 2,5 a 20 mm). "
+    s += L(["Chapa trasera de 3 mm como placa delgada de Kirchhoff con elementos rectangulares ACM de 12 GDL (malla de 2,5 a 20 mm). "
             "Verificación: placa cuadrada apoyada con carga central, error 0,2 % con 32×32 elementos frente a Timoshenko (0,0116·P·a²/D).",
-            "La caja (laterales, frontal, bandeja, tapa) es un sólido rígido unido a la chapa en las líneas reales: pliegue derecho (z = 4–439,6), "
-            "pliegue izquierdo sólo en z = 150–440,5, franja de la pestaña soldada de la bandeja (z = 150,5–163,5). El suelo plegado es una "
+            "La caja (laterales, frontal, bandeja, tapa) es un sólido rígido unido a la chapa en las líneas reales: pliegue derecho (z = 6–438), "
+            "pliegue izquierdo sólo en z = 150–439,5, franja de la pestaña soldada de la bandeja (z = 150,5–163,5). El suelo plegado es una "
             "viga rígida en su plano unida a la caja sólo en la esquina derecha (puede girar). Canto superior y canto izquierdo bajo z = 150: libres.",
             "Bordes laterales: dos hipótesis extremas — <b>apoyado</b> (el pliegue gira libre) y <b>empotrado</b> (el lateral, soldado al frontal, "
             "impide el giro). Todos los resultados de diseño toman <b>el peor de los dos</b>.",
@@ -248,11 +256,9 @@ def construir(A, O, carpeta, salida, extra):
             filas.append([f"Esquina sup. {'izqda.' if k == 'TL' else 'dcha.'}", nom, f1(t["FEM"]), f1(t["rigido"]), f1(t["clasico"]["pivote_inf"]),
                           f1(t["clasico"]["pivote_inf_mas_lateral"]), f1(t["clasico"]["navier"])])
     s.append(tabla(filas, [32, 34, 22, 18, 22, 26, 20]))
-    s.append(P("Tabla 4. Tracción máxima en un tornillo (N) con los tres niveles de modelo. Los 61,9 / 66,0 / 83,0 N preliminares (A / B / C) "
-               "caen dentro del abanico de los modelos de chapa rígida (40–104 N según la hipótesis de pivote), aunque no he podido "
-               "reproducirlos exactamente sin conocer sus hipótesis. El FEM da entre 1,4 y 3 veces más que el modelo rígido porque la chapa se curva entre las líneas "
-               "rígidas y los tornillos, y la parte de chapa que queda más allá de cada tornillo empuja contra la pared (efecto palanca): "
-               "la suma de tracciones supera la fuerza aplicada y la diferencia la devuelve la pared en compresión.", "pc"))
+    s.append(P("Tabla 4. Tracción máxima en un tornillo (N) con los tres niveles de modelo. " + extra["fem_rig_txt"] + " La chapa se curva "
+               "entre las líneas rígidas y los tornillos, y la parte de chapa que queda más allá de cada tornillo empuja contra la pared "
+               "(efecto palanca): la suma de tracciones supera la fuerza aplicada y la diferencia la devuelve la pared en compresión.", "pc"))
     s.append(fig(carpeta, "fig8_convergencia.png", ancho=150, titulo="2.3 Convergencia de malla", pie="Figura 2. Fuerza máxima del caso gobernante frente al tamaño de elemento "
                  "(2,5–20 mm, con arandela rígida). La diferencia entre 5 y 2,5 mm es " + extra["conv_txt"] + ". Diseño y tablas: malla de 10 mm; "
                  "búsqueda: malla de 20 mm sin arandela (≈ 5 % por debajo, mismo orden de patrones)."))
@@ -262,8 +268,7 @@ def construir(A, O, carpeta, salida, extra):
         filas.append([v["variante"]] + [f2(A[k]["sensibilidad"][i]["lam"]) for k in orden])
     s.append(tabla(filas, [52, 30, 30, 30, 30]))
     s.append(P("Tabla 5a. λ de la envolvente al variar la rigidez del anclaje, la del contacto y la posición del CdG. La rigidez de los tacos "
-               "es la hipótesis más influyente (tacos más rígidos atraen más carga y aumentan la palanca), pero <b>el ganador es el mejor en "
-               "todas las variantes</b>, con entre 1,7 y 2,2 veces la λ del mejor de los otros tres.", "pc"))
+               "es la hipótesis más influyente (tacos más rígidos atraen más carga y aumentan la palanca), pero " + extra["sens_txt"], "pc"))
     s.append(PageBreak())
 
     # ------------------------------------------------------------------ 3. optimización
@@ -273,23 +278,23 @@ def construir(A, O, carpeta, salida, extra):
             "como penalización. Patrones libres (asimétricos) y simétricos respecto a x = 0.",
             "Objetivo: maximizar λ = mín sobre 9 casos de diseño × 2 hipótesis de borde de F<sub>rec</sub>/F<sub>máx</sub>. No se optimiza "
             "solo la tracción: la resultante incluye el cortante y entran casos de cuelgue y laterales.",
-            f"Algoritmo: recocido simulado con pulido final por coordenadas. n = 17 y 18: 2 arranques libres y 1 simétrico de 2000 "
-            f"iteraciones; n = 16: 2 libres de 2000 y 1 simétrico de 1200; n = 6 a 15: 1 libre y 1 simétrico de 1200. Para n = 18, segunda "
-            f"fase de 4 recocidos de {extra['iters2']} iteraciones (2 desde las mejores soluciones, 2 desde arranques nuevos). "
+            f"Algoritmo: recocido simulado con pulido final por coordenadas, sólo para n = 18. Primera fase: 2 arranques libres y 1 "
+            f"simétrico de 2000 iteraciones; además, el óptimo de 2 mm (P18-O) llevado a las zonas nuevas como candidato. Segunda fase: "
+            f"4 recocidos de {extra['iters2']} iteraciones (2 desde las mejores soluciones, libre y simétrica, y 2 desde arranques nuevos). "
             f"Cada evaluación resuelve 18 problemas de contacto FEM (malla 20 mm, Cholesky en banda + Schur).",
             "Es un método heurístico. La dispersión entre arranques (figura 3) indica que <b>no se puede afirmar que el resultado sea el óptimo "
             "global</b>; sí que es claramente mejor que los tres candidatos previos con cualquiera de las hipótesis ensayadas."])
-    s.append(fig(carpeta, "fig3_lambda_n.png", ancho=150, pie="Figura 3. Mejor λ encontrado según el número de tornillos (malla de búsqueda de 20 mm, sin arandela). "
-                 "Los rombos son A, B y C con su n real. Para n ≤ 15 la búsqueda fue más corta (1200 iteraciones): esos valores son cotas "
-                 "inferiores de lo alcanzable, y el salto entre 15 y 16 se debe en parte a ello."))
+    s.append(fig(carpeta, "fig3_lambda_n.png", ancho=150, pie="Figura 3. λ de cada arranque de la búsqueda con n = 18 (malla de búsqueda de 20 mm, "
+                 "sin arandela) y de los patrones de referencia con la misma malla. El P18-O de 2 mm, llevado a las zonas de 3 mm, deja dos "
+                 "pares de agujeros a menos de 50 mm (48,4 y 49,5) y queda descartado. Con 3 mm no se ha repetido el barrido de 6 a 17 tornillos del estudio de 2 mm."))
     s.append(P("3.2 Lo que ha aprendido la búsqueda", "h2"))
-    s += L(["Los tornillos útiles son los que están <b>pegados a las partes rígidas</b>: columnas a ±95 mm (junto a los pliegues laterales), "
-            "filas justo por encima y por debajo de la pestaña de la bandeja, y la franja Z3 bajo el canto superior (mayor brazo de palanca y "
-            "menos chapa en voladizo).",
-            "La columna central x = 0 del patrón actual trabaja muy poco en los tirones: la chapa entre los pliegues se curva y en el centro "
+    s += L(["Los tornillos útiles son los que están <b>pegados a las partes rígidas</b>: columnas a ±87…93 mm (junto a los pliegues "
+            "laterales), filas justo por encima y por debajo de la pestaña de la bandeja, y la franja Z3 bajo el canto superior (mayor brazo "
+            "de palanca y menos chapa en voladizo). Es la misma lección que con 2 mm.",
+            "La columna central x = 0 del patrón C trabaja muy poco en los tirones: la chapa entre los pliegues se curva y en el centro "
             "aprieta contra la pared (figura 5).",
-            "Más tornillos siempre ayudan, pero con rendimientos decrecientes (figura 3): un patrón optimizado de 8 tornillos ya iguala "
-            "al actual de 18 en la malla de búsqueda."])
+            "Con 3 mm, el mejor simétrico se acerca más al mejor libre que con 2 mm (96 % frente a 90 %); probablemente porque la chapa más "
+            "rígida reparte mejor y la asimetría de la caja pesa menos. El límite |x| ≤ 93 sigue activo."])
     s.append(PageBreak())
     s.append(P(f"3.3 Patrón ganador: {nG}", "h2"))
     filas = [["Nº", "x (mm, desde el eje)", "z (mm, desde la base)", "x desde el canto izqdo. (mm)", "Zona", "F en tirón 500 N dcha. (N)"]]
@@ -304,7 +309,7 @@ def construir(A, O, carpeta, salida, extra):
                "máquina, z desde la cara inferior; trasera vista desde delante.", "pc"))
     V = extra.get("variantes", {})
     if V:
-        s.append(P("3.3b Alternativas: versión simétrica y versión para mampostería", "h2"))
+        s.append(P("3.3b Alternativas: versión libre y versión para mampostería", "h2"))
         fmt0 = "Ladrillo macizo/perforado 24x11,5x5"
         filas = [["Patrón", "n", "s<sub>mín</sub> (mm)", "λ (FEM)", "Tirón adm. dcha. hormigón / HLz 12 (N)",
                   "Ladrillo 24×11,5×5: P(≥ 1 en junta) / máx. por pieza"]]
@@ -316,9 +321,10 @@ def construir(A, O, carpeta, salida, extra):
                           f"{f0(v['admisibles']['Hormigón ≥ C20/25'])} / {f0(v['admisibles']['Ladrillo perforado vertical ≥ HLz 12'])}",
                           f"{f0(100 * v['juntas'][fmt0]['p_alguno'])} % / {v['juntas'][fmt0]['max_por_pieza']}"])
         s.append(tabla(filas, [44, 8, 18, 16, 44, 44]))
-        s.append(P("Tabla 5b. La versión simétrica es más fácil de comprobar a ojo pero rinde menos porque la caja no es simétrica. La "
-                   "versión para mampostería separa los tacos ≥ 100 mm para que haya menos por pieza de ladrillo; tiene menos tornillos y "
-                   "por tanto menos capacidad en hormigón. Coordenadas de ambas en el anexo.", "pc"))
+        s.append(P("Tabla 5b. La alternativa libre (asimétrica) rinde algo más, pero no llega al 5 % de ventaja que se pedía para "
+                   "renunciar a la simetría, que facilita replantear y comprobar los agujeros. La versión para mampostería separa los tacos "
+                   "≥ 100 mm para que haya menos por pieza de ladrillo; con esa separación sólo caben 12 sin penalización en las zonas, así "
+                   "que tiene bastante menos capacidad en hormigón. Coordenadas de ambas en el anexo.", "pc"))
     s.append(fig(carpeta, "fig2_fuerzas.png", titulo="3.4 Distribución de fuerzas", pie="Figura 4. Tracción por tornillo con el tirón que gobierna."))
     conc = []
     for nom in orden:
@@ -344,7 +350,7 @@ def construir(A, O, carpeta, salida, extra):
         filas.append(fila)
     s.append(tabla(filas, [30, 36, 36, 36, 36]))
     s.append(P("Tabla 6. Fuerza máxima en un tornillo (N). «CdG»: toda la carga en el centro de gravedad (equivale a una máquina de esa masa). "
-               "«Borde»: 15 kg propios + esa masa colgada del borde delantero superior (n = 100 mm). Incluye el cortante.", "pc"))
+               "«Borde»: 18 kg propios + esa masa colgada del borde delantero superior (n = 100 mm). Incluye el cortante.", "pc"))
     s.append(fig(carpeta, "fig5_verticales.png", ancho=165, pie="Figura 6. Cargas verticales."))
     s.append(P("4.2 Tirones horizontales (normales a la pared) de 100, 200, 300 y 500 N", "h2"))
     filas = [["Punto de tirón", "F (N)"] + orden]
@@ -405,7 +411,8 @@ def construir(A, O, carpeta, salida, extra):
             filas.append([pared if j == 0 else "", et] + [f0(A[nom]["admisibles"][pared][acc]) for nom in orden])
     s.append(tabla(filas, [50, 32, 23, 23, 23, 23]))
     s.append(P("Tabla 10. Acción admisible de diseño (N) con el peso propio fijo, hasta que el tornillo más cargado alcanza la carga "
-               "recomendada de fischer para ese soporte. 785 N = una persona de 80 kg colgada sin impulso.", "pc"))
+               "recomendada de fischer para ese soporte. 785 N = una persona de 80 kg colgada sin impulso. Sólo se comprueban los tacos: con "
+               "pesos colgados tan grandes mandarían antes la chapa, las soldaduras o la propia caja, que no se calculan aquí.", "pc"))
     s.append(fig(carpeta, "fig7_paredes.png", ancho=165, pie="Figura 9. Tirón admisible en la esquina superior derecha según la pared."))
     s.append(P("5.1 Juntas y piezas de mampostería (Monte Carlo)", "h2"))
     filas = [["Formato", "Patrón", "En junta (media / máx.)", "Máx. por pieza", "λ sin ajuste: mediana / p05", "λ con ajuste de altura: mediana / p05"]]
@@ -425,6 +432,16 @@ def construir(A, O, carpeta, salida, extra):
                "«Con ajuste»: el instalador sube o baja la máquina dentro de una hilada (pasos de 10 mm) hasta la posición que deja más "
                "capacidad. p05 = percentil 5 (1 de cada 20 instalaciones queda por debajo).", "pc"))
     s.append(P("5.2 Qué patrón usar en cada pared", "h2"))
+    fm = [f for f in A[nG]["juntas"] if not f.startswith("_")]
+    if JA.get(nG) and JA.get(nC):
+        r_aj = [JA[nG][f]["ajuste_p05"] / JA[nC][f]["ajuste_p05"] for f in fm]
+        juntas_txt = (f"Con esa regla el ganador conserva, en el percentil 5, entre {f1(min(r_aj))} y {f1(max(r_aj))} veces la capacidad "
+                      f"del patrón C.")
+    else:
+        juntas_txt = ""
+    sG, sC = 1500 * A[nG]["juntas"][fm[0]]["lam_p05"], 1500 * A[nC]["juntas"][fm[0]]["lam_p05"]
+    juntas_txt += (f" Incluso sin ajustar, en ladrillo de 5 cm su percentil 5 es {f1(sG)} frente a {f1(sC)} del C." if sG > sC else
+                   f" Sin ajustar, en ladrillo de 5 cm su percentil 5 queda en {f1(sG)} frente a {f1(sC)} del C: conviene ajustar.")
     s += L(["<b>Hormigón ≥ C20/25 y silicocalcáreo macizo KS 12</b> (F<sub>rec</sub> 1,5 kN): el patrón ganador tal cual. La interacción entre "
             "tacos no limita: con h<sub>ef</sub> = 65 mm, el cono de hormigón fisurado de un taco aislado da ≈ 20 kN (k = 7,7 del método de "
             "EN 1992-4) y, aun repartiendo el área de conos solapados de 9 tacos a 50 mm, quedan ≈ 5 kN por taco, más de 3 veces F<sub>rec</sub>. "
@@ -432,9 +449,8 @@ def construir(A, O, carpeta, salida, extra):
             "<b>Ladrillo macizo Mz 12</b> (0,8 kN) y <b>perforado KSL/HLz</b> (0,8 / 0,4 kN): con juntas cada 6–8 cm es casi seguro que "
             "varios agujeros caigan en junta (tabla 11), y los del ganador que están a la misma altura (franja superior) caen juntos. "
             "<b>Regla de montaje:</b> localizar las juntas (o hacer un taladro piloto de Ø4 en los agujeros de la franja superior) y subir o "
-            "bajar la máquina hasta que esa fila caiga en ladrillo; los tacos que aun así caigan en junta se omiten. Con esa regla el ganador "
-            "conserva, en el percentil 5, entre 1,7 y 2,3 veces la capacidad del patrón actual. Sin ajuste, en ladrillo de 5 cm su percentil "
-            "5 queda algo por debajo del actual (2,1 frente a 2,4); si no se puede ajustar, la variante simétrica es más regular (3,0). Taladrar sin percusión en perforado. "
+            "bajar la máquina hasta que esa fila caiga en ladrillo; los tacos que aun así caigan en junta se omiten. " + juntas_txt +
+            " Taladrar sin percusión en perforado. "
             "La capacidad de cada pieza de ladrillo frente a extracción no la da fischer: no más de 2–3 tacos por pieza si se puede elegir.",
             "<b>Ladrillo hueco horizontal</b> (tabiques de hueco doble/sencillo, «Forato»): fischer no da carga para el 8×65 (para el 8×40, 0,10 kN "
             "en pared enlucida). <b>No es un soporte válido</b> para esta máquina con estos tacos: usar anclaje químico con tamiz o pasante "
@@ -463,11 +479,12 @@ def construir(A, O, carpeta, salida, extra):
     filas.append(["Torsor admisible en el plano de la pared (N·m)"] + [f0(A[k]["momentos_adm_Nm"]["torsión en el plano"]) for k in orden])
     s.append(tabla(filas, [74, 25, 25, 25, 25]))
     s.append(P("Tabla 12. Tensiones elásticas de flexión (placa lineal); el pico está en el borde de la arandela de un tornillo superior. DC01: "
-               "Re ≤ 280 MPa sin mínimo garantizado, 140 MPa como mínimo de cálculo. <b>En hormigón y ladrillo macizo la chapa de 2 mm "
+               "Re ≤ 280 MPa sin mínimo garantizado, 140 MPa como mínimo de cálculo. <b>En hormigón y ladrillo macizo la chapa de 3 mm "
                "plastifica localmente antes de que el taco llegue a su carga recomendada</b>: deformación permanente alrededor de la arandela, "
-               "no rotura (el arrancamiento de la arandela de Ø18 a través de 2 mm exige del orden de π·18·2·0,6·270 ≈ 18 kN). "
+               "no rotura (el arrancamiento de la arandela de Ø18 a través de 3 mm exige del orden de π·18·3·0,6·270 ≈ 27 kN). Con 2 mm la "
+               "plastificación empezaba a la mitad de carga, más o menos. "
                "El pico de presión es local, en la línea de un pliegue, y depende de la rigidez de contacto supuesta.", "pc"))
-    s.append(P("Si se quiere que en hormigón mande el taco y no la chapa, la medida eficaz es local: una pletina de 3–4 mm soldada por "
+    s.append(P("Si se quiere que en hormigón mande el taco y no la chapa, la medida eficaz es local: una pletina de 4–5 mm soldada por "
                "dentro bajo la franja superior y bajo la fila de la bandeja (o arandelas de mayor diámetro), sin cambiar el espesor general. "
                "En ladrillo perforado, bloque o celular manda el taco y la chapa no limita.", "p"))
     s.append(P("La hipótesis de chapa rígida <b>no se cumple</b>: con los mismos tornillos, la fuerza máxima del FEM es entre 1,4 y 3 veces "
@@ -488,7 +505,7 @@ def construir(A, O, carpeta, salida, extra):
     s.append(P("8. Conclusión y verificaciones antes de fabricar", "h1"))
     s.append(caja(
         f"<b>Elegiría {nG}</b> para fabricar la carcasa: es el que más carga admite en el caso que gobierna (λ = {f2(G['lam'])} frente a "
-        f"{f2(A[nC]['lam'])} del actual), mantiene la ventaja con todas las hipótesis de rigidez probadas, es " + extra["robustez_txt"] +
+        f"{f2(A[nC]['lam'])} del anterior), mantiene la ventaja con todas las hipótesis de rigidez probadas, es " + extra["robustez_txt"] +
         f" y respeta todas las holguras de la geometría (separación mínima {f1(G['geometria']['s_min'])} mm). En hormigón admite del orden de "
         f"{f0(adm(nG, 'Hormigón ≥ C20/25', 'Tirón normal TR'))} N de tirón en la esquina más desfavorable con el criterio de fischer; en ladrillo "
         f"perforado HLz 12, unos {f0(adm(nG, 'Ladrillo perforado vertical ≥ HLz 12', 'Tirón normal TR'))} N."))
@@ -500,19 +517,19 @@ def construir(A, O, carpeta, salida, extra):
             "pasante con contraplaca o refuerzo detrás del pladur).",
             "Una persona de 80 kg que se deja caer colgada del borde (1570 N con factor 2) queda cubierta por los cuatro patrones en todas "
             "las paredes con dato de fischer salvo hormigón celular AAC 2, donde sólo la cubre el ganador (tabla 10).",
-            "En hormigón, el límite práctico lo pone la chapa de 2 mm, que plastifica localmente junto a las arandelas superiores a partir de "
+            "En hormigón, el límite práctico lo pone la chapa de 3 mm, que plastifica localmente junto a las arandelas superiores a partir de "
             f"≈ {f0(A[nG]['chapa_TR']['F_fluencia_140'])} N de tirón en la esquina con el ganador (≈ {f0(A[nC]['chapa_TR']['F_fluencia_140'])} N con el "
-            "actual), mucho antes que los tacos. No es una rotura, pero sí una deformación permanente; ver §6 para reforzarla localmente.",
+            "patrón C), bastante antes que los tacos. No es una rotura, pero sí una deformación permanente; ver §6 para reforzarla localmente.",
             "Si se quiere más margen frente a golpes (tabla 8), el siguiente paso no es mover tornillos sino cambiar de anclaje (metálico "
             "con evaluación técnica) o añadir rigidez a la trasera (pliegues o un perfil soldado entre los pliegues laterales)."])
     s.append(P("Verificaciones pendientes antes de fabricar", "h2"))
-    s += L(["Comprobar en el CAD (diseno.py → fijaciones_pared) las nuevas coordenadas: que no tocan rejillas, cables, el espárrago de tierra "
-            "ni los topes de goma, y regenerar DXF A-C02 y planos (no se han modificado los archivos de GitHub).",
-            "Pesar el primer prototipo completo y medir su centro de gravedad; repetir el cálculo si supera 15 kg o 65 mm de la pared.",
+    s += L(["Hecho (04-11-2026): el P18-3 está en el CAD (diseno.py → FIJACIONES_PARED), con 0 choques entre piezas y barridos de los "
+            "cajones limpios; DXF A-C02, STEP, planos y lista regenerados.",
+            "Pesar el primer prototipo completo y medir su centro de gravedad; repetir el cálculo si supera 18 kg o 65 mm de la pared.",
             "Ensayo de arrancamiento in situ (tracción sobre 3–5 tacos de prueba) en cada tipo de pared nueva, y uno del conjunto con la "
             "máquina montada (tirón lateral y en esquina) para validar el modelo de chapa flexible.",
             "Confirmar con el taller el radio de plegado y la soldadura de la pestaña de la bandeja (el modelo la trata como unión rígida).",
-            "Comprobar el acceso con llave de 10 mm a las columnas de ±95 mm (13 mm del lateral) y a la franja Z3 con la tapa abierta.",
+            "Comprobar el acceso con llave de 10 mm a los agujeros de ±93 mm (14 mm de la cara interior del lateral) y a la franja Z3 con la tapa abierta.",
             "Pedir a fischer la separación mínima entre tacos y, si es posible, la curva carga–desplazamiento del SX Plus 8×65."])
     if V:
         s.append(P("Anexo. Coordenadas de las alternativas (x desde el eje, z desde la base, mm)", "h2"))
@@ -526,10 +543,10 @@ def construir(A, O, carpeta, salida, extra):
             "fischer España, ficha de producto SX Plus 8×65 (567857): Ø8, h1 ≥ 75 mm, tornillo Ø4,5–6,0.",
             "thyssenkrupp Materials Services, Werkstoffdatenblatt DC01–DC07 (EN 10130): Re ≤ 280 MPa, Rm 270–410 MPa, mín. de cálculo 140 MPa.",
             "S. Timoshenko, S. Woinowsky-Krieger, Theory of Plates and Shells (verificación del elemento de placa).",
-            "Repositorio GuillermoAladro/Alcoholimetro, rama programa-raspberry: carcasa/diseno-A/modelo/diseno.py, specs.py, "
-            "Lista_piezas_chapa.xlsx, ANCLAJE-PARED-8x65.md (consultados, no modificados).",
-            "Archivos: patron_ganador.csv (coordenadas), anclajes_codigo.zip (nucleo.py, evaluacion.py, optimizar.py, intensificar.py, "
-            "analisis.py, figuras.py, informe.py, LEEME.md), patrones_comparados.png."])
+            "Repositorio GuillermoAladro/Alcoholimetro, rama programa-raspberry (04-11-2026): carcasa/diseno-A/modelo/diseno.py, specs.py, "
+            "Lista_de_piezas.xlsx, ANCLAJE-PARED-8x65.md.",
+            "Carpeta carcasa/diseno-A/calculo-anclajes/: patron_ganador.csv (coordenadas), codigo/ (todo el cálculo), resultados/ (JSON de "
+            "esta ejecución), figuras/ y, en historico-2mm/, el estudio con la trasera de 2 mm."])
     doc.build(s, onFirstPage=pie_pagina, onLaterPages=pie_pagina)
 
 

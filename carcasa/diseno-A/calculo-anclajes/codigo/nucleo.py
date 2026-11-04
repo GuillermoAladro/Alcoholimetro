@@ -25,35 +25,35 @@ G_ACC = 9.81
 
 # ----------------------------------------------------------------------------- geometría (verificada en diseno.py)
 W = 220.0                 # ancho exterior
-HW = 440.5                # alto de la trasera (Hw = zi0 + T + BANDA = 407,5 + 2 + 31)
+HW = 439.5                # alto de la trasera (Hw = zi0 + TK + BANDA = 407,5 + 1,5 + 30,5)
 H_TOT = 442.5             # alto total con la tapa (Hw + T)
 D_FONDO = 100.0           # fondo exterior
-T = 2.0                   # chapa DC01
+T = 3.0                   # chapa DC01 de la trasera (04-11-2026: de 2 a 3 mm)
 E_ACERO = 210000.0
 NU = 0.3
 D_PLACA = E_ACERO * T ** 3 / (12 * (1 - NU ** 2))
 R_ARANDELA = 9.0          # DIN 9021 M6: Ø18
 Z_HUECO = 150.0           # el lateral izquierdo no existe por debajo (hueco del cajón de pajitas)
 Z_BANDEJA = (150.5, 163.5)   # pestaña trasera de la bandeja, soldada a la trasera (ZS1 - 13 ... ZS1)
-Z_APOYO = (405.5, 417.5)     # ala del apoyo trasero de la tapa interior (soldada)
-Z_LAT_DER = (4.0, 439.6)     # pliegue trasera-lateral derecho (rangos=(RT, Hr - BAJA_D))
-Z_LAT_IZQ = (150.0, 440.5)   # pliegue trasera-lateral izquierdo (rangos=(Z_HUECO, Hw))
-X_SUELO = 106.0              # el suelo va de -W/2+RT a W/2-RT
-GUIAS = [(-71.0, -61.0), (61.0, 71.0)]   # alas de las guías traseras soldadas, z de 173,5 a 391,5
+Z_APOYO = (404.5, 407.5)     # apoyo trasero de la tapa interior: pletina de 3 mm soldada con MIG por su canto (zi0 - T ... zi0)
+Z_LAT_DER = (6.0, 438.0)     # pliegue trasera-lateral derecho (rangos=(RT, Hr - BAJA_D)), RT = 2T, BAJA_D = 1,5
+Z_LAT_IZQ = (150.0, 439.5)   # pliegue trasera-lateral izquierdo (rangos=(Z_HUECO, Hw))
+X_SUELO = 104.0              # el suelo va de -W/2+RT a W/2-RT (RT = 2T = 6)
+GUIAS = [(-76.0, -64.0), (64.0, 76.0)]   # guías traseras: pletinas planas de 12 mm soldadas por puntos (x = ±70 ± 6), z de 173,5 a 391,5
 Z_GUIAS = (173.5, 391.5)
 ESPARRAGO = (50.0, 376.5)    # espárrago de tierra M4 en la trasera
 
 # ----------------------------------------------------------------------------- zonas admisibles para el CENTRO del agujero
-X_MAX = 95.0                 # arandela Ø18 en la zona plana (cara interior del lateral en ±108, radio de pliegue 2) + llave
+X_MAX = 93.0                 # arandela Ø18 en la zona plana (cara interior del lateral en ±107, radio de pliegue 3: plana hasta ±104) + llave
 ZONAS = [
-    dict(nombre="Z1 detrás del cajón de pajitas", x=(-X_MAX, X_MAX), z=(18.0, 139.5)),
-    dict(nombre="Z2 detrás del cajón de componentes", x=(-X_MAX, X_MAX), z=(174.5, 394.5)),
-    dict(nombre="Z3 franja superior (entre apoyo de la tapa interior y canto)", x=(-X_MAX, X_MAX), z=(427.5, 430.5)),
+    dict(nombre="Z1 detrás del cajón de pajitas", x=(-X_MAX, X_MAX), z=(20.0, 139.5)),
+    dict(nombre="Z2 detrás del cajón de componentes", x=(-X_MAX, X_MAX), z=(174.5, 393.5)),
+    dict(nombre="Z3 franja superior (entre apoyo de la tapa interior y canto)", x=(-X_MAX, X_MAX), z=(420.5, 429.5)),   # apoyo + cordón MIG de 3 mm + arandela
 ]
 HOLG = 11.0                  # radio arandela 9 + 2 mm a pestañas/soldaduras
 EXCL_RECT = [  # (x0, x1, z0, z1): el centro no puede caer dentro
-    (-71.0 - HOLG + 1, -61.0 + HOLG - 1, Z_GUIAS[0] - HOLG, Z_GUIAS[1] + HOLG),   # guía izquierda: |x| en (51, 81)
-    (61.0 - HOLG + 1, 71.0 + HOLG - 1, Z_GUIAS[0] - HOLG, Z_GUIAS[1] + HOLG),
+    (GUIAS[0][0] - HOLG + 1, GUIAS[0][1] + HOLG - 1, Z_GUIAS[0] - HOLG, Z_GUIAS[1] + HOLG),   # guía izquierda: |x| en (51,5; 81,5)
+    (GUIAS[1][0] - HOLG + 1, GUIAS[1][1] + HOLG - 1, Z_GUIAS[0] - HOLG, Z_GUIAS[1] + HOLG),
 ]
 EXCL_CIRC = [(ESPARRAGO[0], ESPARRAGO[1], 16.0)]  # espárrago de tierra + ojal + arandela
 
@@ -157,7 +157,7 @@ class ModeloFEM:
         self.empotrado = empotrado
         Dp = D_PLACA * (1e4 if rigida else 1.0)
         xl = [-W / 2, W / 2, -X_SUELO, X_SUELO, 0.0]
-        zl = [0.0, HW, Z_BANDEJA[0], Z_BANDEJA[1], Z_APOYO[0], Z_APOYO[1], Z_HUECO, 4.0]
+        zl = [0.0, HW, Z_BANDEJA[0], Z_BANDEJA[1], Z_APOYO[0], Z_APOYO[1], Z_HUECO, Z_LAT_DER[0]]
         self.xs, self.zs = _rejilla(xl, h), _rejilla(zl, h)
         nx, nz = len(self.xs), len(self.zs)
         self.nx, self.nz = nx, nz

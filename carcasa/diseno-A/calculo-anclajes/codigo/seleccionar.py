@@ -59,8 +59,8 @@ sim = max([e for e in evals if e["sim"]], key=lambda e: e["lam_fino"])
 gan = sim if sim["lam_fino"] >= 0.95 * libre["lam_fino"] else libre
 print("ganador:", "simétrico" if gan["sim"] else "libre", gan["lam_fino"])
 pats = {k: f() for k, f in REFERENCIAS.items()}
-pats = {"C (GitHub actual)": pats["C (GitHub actual)"], "A (algebraico anterior)": pats["A (algebraico anterior)"],
-        "B (P18 anterior)": pats["B (P18 anterior)"], "Óptimo P18-O": gan["pts"]}
+pats = {"C (3 × 6, anterior)": pats["C (3 × 6, anterior)"], "A (algebraico anterior)": pats["A (algebraico anterior)"],
+        "B (P18 anterior)": pats["B (P18 anterior)"], "Óptimo P18-3": gan["pts"]}
 json.dump(pats, open(sys.argv[3], "w"))
 json.dump(dict(evals=evals, ganador=gan, lam_rap_ref={k: lam_rap(v) for k, v in pats.items()},
                alternativa=(libre if gan is sim else sim)), open("seleccion.json", "w"))

@@ -1,6 +1,7 @@
 # Diseño A completo para FreeCAD
 
 `Alcoholimetro_A_completo.step` es la máquina entera en un solo archivo STEP (AP214, en mm): 220 × 100 × 442,5 mm.
+Actualizado el 04-11-2026: chapa de 3 mm por fuera, cajón de componentes y tapa interior de 1,5 mm, y los 18 agujeros de la trasera con el patrón P18-3.
 
 **Cómo abrirlo:** en FreeCAD, *Archivo → Abrir* y elige el `.step`. Sirve igual en Fusion 360, SolidWorks, Onshape, etc.
 
@@ -23,4 +24,4 @@
 - Las chapas sueltas para fabricar siguen en `../CAD_A_Compacta/` (un STEP por pieza y los DXF de corte con los pliegues) y en `../presupuesto/Carcasa_plegada/` (los planos en PDF).
 
 **Cómo se genera:** `python modelo/exportar_freecad.py FreeCAD/Alcoholimetro_A_completo.step` (sale del mismo modelo que el resto; si cambia `specs.py`, se vuelve a generar).
-- Las vistas `vista-exterior.png` (lado izquierdo, con la ventana de la antena) y `vista-interior.png` (carcasa y cajón transparentes) salen del visor 3D, que se genera del mismo modelo.
+- Las vistas `vista-exterior.png` (lado izquierdo, con la ventana de la antena) y `vista-interior.png` (carcasa y cajón transparentes) salen del visor 3D, que se genera del mismo modelo. Son del 03-11-2026 (chapa de 2 mm); con la de 3 mm casi no cambian: las diferencias son de unos milímetros o quedan en la trasera (guías, apoyo y agujeros), que no se ve desde esos lados.

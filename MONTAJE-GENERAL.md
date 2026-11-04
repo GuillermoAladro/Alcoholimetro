@@ -206,7 +206,7 @@ Techo, separador y bandeja ya tienen tierra por estar soldados al cuerpo. En el 
 - **Bornes USB-A:** corriente que aguantan (1 a 1,5 A) y si el Solo reconoce el puente D+/D− como cargador. Si no lo reconoce, carga a 0,5 A, que basta (W14) ([fichas #9, #10 y #18](componentes/borne-usb-a-hembra-tornillo/README.md)).
 - **Sección del cable de tierra:** 1,5 o 2,5 mm² ([ficha #22](componentes/cable-h05vv-f-3g1-5-5m/README.md) y [ficha #23](componentes/terminales-ojal-m4/README.md)).
 - **Un solo espárrago con cinco ojales:** punto único de fallo ([ficha #25](componentes/esparragos-soldar-m4x20/README.md)).
-- **Cómo soldar el espárrago:** probablemente sea de descarga de condensador y una soldadora de puntos normal no sirva (razonamiento de la ficha). Faltan el material y el espesor de la chapa.
+- **Cómo soldar el espárrago:** probablemente sea de descarga de condensador y una soldadora de puntos normal no sirva (razonamiento de la ficha). La chapa ya está decidida (04-11-2026): acero DC01 de 3 mm en la carcasa y de 1,5 mm en el cajón de componentes, los dos por encima del mínimo que dan los fabricantes de CD. Falta el acabado y el proceso del taller.
 - **Calibre definitivo de los fusibles por rama:** 3 / 2 / 2 / 1 A son calibres de papel; se confirman con la pinza (apartado 4, punto 8).
 - **−V frente a tierra:** W12b lo une en un solo punto. Es una propuesta mía: decide si la aceptas. Si no, hay que aislar el jack RP-SMA del techo ([fichas #13](componentes/retirados/alargo-antena-rp-sma-30cm/README.md) y [#30](componentes/separadores-nylon-m2-5/README.md)).
 - **Señal Wi-Fi entre la Pi (caja interior de chapa) y el Solo (caja de arriba):** no se puede calcular con fiabilidad; se mide (apartado 4, punto 14). Plan B en W29.

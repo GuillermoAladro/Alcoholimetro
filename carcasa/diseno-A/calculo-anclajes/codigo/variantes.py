@@ -14,7 +14,7 @@ S = json.load(open(sys.argv[1]))
 M = json.load(open(sys.argv[2]))
 cs = casos_diseno()
 out = {}
-variantes = {"Simétrica (alternativa)": S["alternativa"]["pts"]}
+variantes = {"Libre (alternativa)": S["alternativa"]["pts"]}
 for n in sorted(set(r["n"] for r in M)):
     rs = [r for r in M if r["n"] == n and r["pen"] == 0]
     if rs:

@@ -13,12 +13,13 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle, Circle
 import numpy as np
 
-from nucleo import (W, HW, H_TOT, ZONAS, Z_BANDEJA, Z_APOYO, GUIAS, Z_GUIAS, ESPARRAGO, Z_HUECO, ModeloFEM, EXCL_RECT, EXCL_CIRC)
+from nucleo import (W, HW, H_TOT, ZONAS, Z_BANDEJA, Z_APOYO, GUIAS, Z_GUIAS, ESPARRAGO, Z_HUECO, ModeloFEM, EXCL_RECT, EXCL_CIRC,
+                    Z_LAT_DER, X_SUELO)
 from matplotlib.ticker import FuncFormatter
 
 def dc(v, d=2):
     return f"{v:.{d}f}".replace(".", ",")
-from evaluacion import casos_diseno, evaluar
+from evaluacion import casos_diseno, evaluar, M_DISENO
 
 # paleta categórica de referencia (orden fijo) y tinta
 COL = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100"]
@@ -51,9 +52,9 @@ def dibujar_trasera(ax, pts=None, titulo="", color=COL[0], fuerzas=None, fmax=No
         ax.add_patch(Rectangle((x0, Z_GUIAS[0]), x1 - x0, Z_GUIAS[1] - Z_GUIAS[0], fc="#b9b8b2", ec="none", zorder=2))
     ax.add_patch(Circle(ESPARRAGO, 4, fc="#6b6a66", zorder=3))
     # líneas rígidas (pliegues y pestaña soldada)
-    ax.plot([W / 2, W / 2], [4, HW - 1], color="#3b3a37", lw=2.2, zorder=3)
+    ax.plot([W / 2, W / 2], list(Z_LAT_DER), color="#3b3a37", lw=2.2, zorder=3)
     ax.plot([-W / 2, -W / 2], [Z_HUECO, HW], color="#3b3a37", lw=2.2, zorder=3)
-    ax.plot([-106, 106], [0, 0], color="#3b3a37", lw=2.2, zorder=3)
+    ax.plot([-X_SUELO, X_SUELO], [0, 0], color="#3b3a37", lw=2.2, zorder=3)
     ax.plot([-W / 2, -W / 2], [0, Z_HUECO], color="#3b3a37", lw=0.8, ls=(0, (3, 2)), zorder=3)
     if pts is not None:
         P = np.asarray(pts)
@@ -102,7 +103,7 @@ def fig_fuerzas(A, carpeta, orden, caso="Tirón normal 500 N TR"):
         dibujar_trasera(ax, A[nom]["pts"], f"{nom}\nmáx. {max(e['N']):.0f} N · ΣN = {sum(e['N']):.0f} N",
                         fuerzas=e["N"], fmax=fm)
     axs[0].set_ylabel("z (mm)")
-    fig.text(0.01, 0.005, "Tracción por tornillo (N), tirón normal de 500 N en la esquina superior derecha + peso propio de 15 kg; FEM 10 mm "
+    fig.text(0.01, 0.005, f"Tracción por tornillo (N), tirón normal de 500 N en la esquina superior derecha + peso propio de {M_DISENO:.0f} kg; FEM 10 mm "
              "con arandela,\npeor de borde apoyado/empotrado. Mismo color en los cuatro: blanco = sin tracción, azul oscuro = más carga. "
              "ΣN > 500 N por el efecto palanca.", fontsize=6.3, color=TXT2)
     fig.tight_layout(rect=(0, 0.06, 1, 1))
@@ -111,21 +112,44 @@ def fig_fuerzas(A, carpeta, orden, caso="Tirón normal 500 N TR"):
 
 
 def fig_lambda_n(O, A, carpeta, orden):
-    fig, ax = plt.subplots(figsize=(6.6, 3.0))
-    ns = sorted(set(r["n"] for r in O))
-    libre = [max([r["lam"] for r in O if r["n"] == n and not r["sim"]] or [np.nan]) for n in ns]
-    sim = [max([r["lam"] for r in O if r["n"] == n and r["sim"]] or [np.nan]) for n in ns]
-    peor = [min([r["lam"] for r in O if r["n"] == n and not r["sim"]] or [np.nan]) for n in ns]
-    ax.plot(ns, libre, color=COL[3], marker="o", ms=4.5, label="Optimizado libre (mejor arranque)")
-    ax.plot(ns, sim, color=COL[0], marker="s", ms=4.5, label="Optimizado simétrico")
-    ax.fill_between(ns, peor, libre, color=COL[3], alpha=0.15, lw=0, label="Dispersión entre arranques (libre)")
-    for k, nom in enumerate(orden[:3]):
-        r = A[nom]
-        ax.plot([r["n"]], [r["lam_rapido"]], marker="D", ms=6, color=COL[k], ls="none", label=f"{nom}")
-    ax.set_xlabel("número de tornillos")
-    ax.set_ylabel("λ (malla 20 mm, hormigón)")
-    ax.set_xticks(ns)
-    ax.legend(fontsize=6.6, loc="upper left", ncol=2)
+    """Trasera de 3 mm: sólo se ha buscado n = 18. Un punto por arranque del recocido (malla de búsqueda) y, en gris,
+    los patrones de referencia con la misma malla."""
+    def etq(r):
+        if r.get("origen") == "P18-O 2 mm proyectado":
+            return "P18-O (óptimo de 2 mm) llevado a las zonas de 3 mm"
+        tipo = "simétrico" if r["sim"] else "libre"
+        if r.get("fase") == 2:
+            return f"Fase 2 · {tipo} · " + ("desde el mejor de la fase 1" if r.get("origen") == "refinado" else "arranque nuevo")
+        return f"Fase 1 · {tipo} · semilla {r['seed']}"
+    try:
+        S = json.load(open("seleccion.json"))
+        marca = {round(S["ganador"]["lam_busqueda"], 6): "  → P18-3", round(S["alternativa"]["lam_busqueda"], 6): "  → alternativa libre"}
+    except (OSError, KeyError):
+        marca = {}
+    filas = [(etq(r), r["lam"], ("sim" if r["sim"] else "libre"), r.get("pen", 0) > 0, marca.get(round(r["lam"], 6), ""))
+             for r in O if r["n"] == 18]
+    filas += [(f"{nom} (referencia)", A[nom]["lam_rapido"], "ref", False, "") for nom in orden[:3]]
+    filas.sort(key=lambda f: f[1])
+    fig, ax = plt.subplots(figsize=(6.6, 3.3))
+    ys = np.arange(len(filas))
+    colores = {"libre": COL[3], "sim": COL[0], "ref": "#8a8984"}
+    for y, (et, lam, tipo, pen, mc) in zip(ys, filas):
+        ax.plot([0, lam], [y, y], color=GRID, lw=1.0, zorder=1)
+        mk = "D" if tipo == "ref" else ("s" if tipo == "sim" else "o")
+        ax.plot([lam], [y], marker=mk, ms=6.5, color=colores[tipo], mfc=("white" if pen else colores[tipo]), mew=1.6, ls="none", zorder=3)
+        ax.text(lam + 0.35, y, dc(lam) + ("  (s < 50 mm)" if pen else "") + mc, va="center", fontsize=7,
+                color=TXT if mc else TXT2, fontweight="bold" if mc else "normal")
+    ax.set_yticks(ys)
+    ax.set_yticklabels([f[0] for f in filas], fontsize=7, color=TXT)
+    ax.set_xlim(0, max(f[1] for f in filas) * 1.75)
+    ax.set_xticks(range(0, int(max(f[1] for f in filas)) + 3, 2))
+    ax.set_xlabel("λ (n = 18, malla 20 mm, hormigón)")
+    ax.grid(axis="y", visible=False)
+    from matplotlib.lines import Line2D
+    ax.legend(handles=[Line2D([], [], marker="o", color=COL[3], ls="none", label="libre"),
+                       Line2D([], [], marker="s", color=COL[0], ls="none", label="simétrico"),
+                       Line2D([], [], marker="D", color="#8a8984", ls="none", label="referencia (A, B, C)")],
+              fontsize=6.8, loc="lower right")
     fig.tight_layout()
     fig.savefig(os.path.join(carpeta, "fig3_lambda_n.png"), dpi=220)
     plt.close(fig)
@@ -141,7 +165,7 @@ def fig_tirones(A, carpeta, orden):
             ax.axhline(fr, color="#9a9993", lw=0.8, ls=(0, (4, 3)))
             ax.text(105, fr + 8, f"F_rec {lab} = {fr:.0f} N", fontsize=6, color=TXT2)
         ax.set_title(f"Tirón normal en la esquina superior {'izquierda' if k == 'TL' else 'derecha'}", fontsize=8, loc="left")
-        ax.set_xlabel("tirón (N), con peso propio 15 kg")
+        ax.set_xlabel(f"tirón (N), con peso propio {M_DISENO:.0f} kg")
     axs[0].set_ylabel("fuerza máx. en un tornillo (N)")
     axs[0].legend(fontsize=6.5)
     fig.tight_layout()
@@ -152,7 +176,7 @@ def fig_tirones(A, carpeta, orden):
 def fig_verticales(A, carpeta, orden):
     fig, axs = plt.subplots(1, 2, figsize=(7.0, 2.9), sharey=True)
     for ax, k, t in zip(axs, ("vertical_cg", "vertical_frente"),
-                        ("Carga vertical total en el CdG (n = 55 mm)", "15 kg propios + carga en el borde delantero")):
+                        ("Carga vertical total en el CdG (n = 55 mm)", f"{M_DISENO:.0f} kg propios + carga en el borde delantero")):
         for i, nom in enumerate(orden):
             d = A[nom]["escenarios"][k]
             ax.plot([a for a, _ in d], [o["Fmax"] for _, o in d], color=COL[i], marker="o", ms=4, label=nom)

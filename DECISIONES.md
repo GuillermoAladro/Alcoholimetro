@@ -2,6 +2,42 @@
 
 Decisiones que afectan a todo el proyecto. Lo más nuevo va arriba. Si un documento del repositorio dice otra cosa, manda lo que pone aquí.
 
+## 04-11-2026
+
+### Carcasa de 3 mm; cajón de componentes y tapa interior de 1,5 mm
+
+Guillermo pide chapa de 3 mm en todo lo de fuera y 1,5 mm en la chapa de dentro que protege la electrónica.
+- **3 mm:** cuerpo, panel frontal, bandeja, guías, apoyo de la tapa interior, anillas, tapa, pestaña de tope, cajón de pajitas, pletinas de la pantalla, repisa y contraplaca del Solo, y los asideros (que ya eran de 3).
+- **1,5 mm:** el cajón de componentes (frente K01, trasera K02, cuerpo K03 y caja de red K06) y la tapa interior T01.
+- **Medidas por fuera, iguales:** 220 × 100 × 442,5 mm. El faldón de la tapa baja a 30,5 mm para que el alto total no cambie (tapa interior 1,5 + faldón 30,5 + tapa 3 = 35 mm sobre el apoyo).
+- **Pliegues:** radio interior igual al espesor (3 o 1,5 mm) y K = 0,33. Todos los desarrollos, DXF, STEP, planos, la lista de piezas, el visor 3D y el STEP de FreeCAD se han regenerado. 37 pliegues por máquina (antes 40).
+- **Peso:** 12,5 kg de acero (10,7 de 3 mm y 1,9 de 1,5 mm; antes 9,9) y 13,1 kg con los policarbonatos. Con la electrónica, unos 15,5 kg estimados.
+- **Cambios para que todo siga cabiendo y se pueda plegar** (con 3 mm la pestaña más corta que se puede plegar es de unos 12 mm):
+  - **Guías traseras (C04):** ya no son angulares con un ala de 6 mm, sino pletinas planas de 12 mm soldadas por puntos contra la trasera; la altura la dan dos topes de goma pegados uno encima de otro (6 mm), que quedan a 0,5 mm del cajón. Van en x = ±70.
+  - **Apoyo trasero de la tapa interior (C06):** ya no es un angular, sino una pletina plana de 8 × 207 mm soldada con MIG por su canto a la trasera.
+  - **Pestaña de arriba del panel frontal (C01):** de 7 a 12 mm, con dos muescas de 14 mm donde se queda en 7,5 mm para que pasen los topes delanteros del cajón al sacarlo (pasan a 1 mm). La tapa interior pisa ahora 6,3 mm el apoyo de delante (1,8 en las muescas).
+  - **Tabiques del cajón de pajitas (P02):** pestañas de 12 mm (antes 10). **Repisa del Solo (S03):** pliegue a tramos, porque la muesca del USB‑C lo corta.
+  - **Cajón de componentes:** por fuera mantiene sus holguras (11,5 delante, 3,5 a la izquierda, 7 a la derecha, 9,5 detrás); por dentro es 1 mm más estrecho (200,5 mm) y tiene 1 mm menos de fondo útil (70 mm). Las ventanas de la antena, el W12, una rama de fusible y el puente de tierra se han movido 0,5–1 mm.
+  - **Ranura de la tapa interior:** 2,1 × 85,5 mm; deja 6 mm de chapa detrás (antes 7,5) para que la tapa interior siga pisando 1,8 mm el apoyo trasero.
+  - **Ranura de la leva:** 4 × 17 mm (3 mm más hacia abajo): con el lateral de 3 mm la leva barría el canto.
+  - **Policarbonatos:** los dos 0,5 mm más bajos (223 mm) y el interior (V02) además 5 mm más estrecho (201 mm), para no tocar los radios de los pliegues del panel.
+  - El puente de tierra pasa entre el cajón y el apoyo trasero por un hueco de 3 mm.
+- **Comprobado:** 0 choques entre las 131 piezas; barridos limpios de la tapa, la tapa interior y los dos cajones; los cables, con los 5 avisos de siempre (tubos del soplido). Lo mismo con las 18 cabezas de los tirafondos y sus arandelas añadidas en una prueba (en el 3D sólo están los agujeros).
+- **A confirmar con el taller:** que pueden plegar la pestaña de 12 mm con muescas del panel (en las muescas se queda en 7,5); la soldadura MIG de la pletina del apoyo trasero por su canto; el agarre de los remaches de la bisagra con chapa de 3 mm.
+- **A revisar en compras:**
+  - Los tornillos de seguridad M4 × 16 de los policarbonatos llegan, con el panel de 3 mm, justo al ras de la tuerca (roscan 3 de sus 3,2 mm). Con fijador aguanta, pero lo normal es que asome algo: mejor una tuerca baja (DIN 439, 2,2 mm) o un M4 × 18. Un M4 × 20 no cabe: tocaría el cajón.
+  - Los espárragos del Solo salen de 26 mm (antes 25) y el kit es de M4 × 20: hay que pedirlos más largos (ya pasaba con 2 mm).
+- El paquete `Carcasa_alcoholimetro_plegada.zip` y los planos pasan a ser los de 3 y 1,5 mm. **Los planos de 2 mm que se hayan mandado a talleres ya no valen.**
+
+### Patrón de anclaje P18-3 aplicado a la trasera
+
+Con la trasera de 3 mm y las guías nuevas se ha repetido el cálculo del patrón (`carcasa/diseno-A/calculo-anclajes/`) y **se aplica el ganador, P18-3, al CAD**: `modelo/diseno.py` (`FIJACIONES_PARED`), DXF y STEP de A-C02, planos y lista.
+- Siguen siendo 18 agujeros Ø6,5 con tirafondo 6 × 80, taco SX Plus 8 × 65 y arandela M6 DIN 9021. Patrón simétrico: 5 por lado junto a los pliegues laterales (x = ±87…93, uno de ellos en la franja de arriba), 4 justo encima y debajo de la bandeja, 2 entre las guías y 2 abajo.
+- **Resultado** (FEM con la chapa flexible, peso de cálculo 18 kg): factor de carga λ = 10,56 frente a 5,79 del patrón de 3 × 6 (+82 %). Tirón admisible en la esquina más desfavorable con el criterio de fischer: ≈ 6,0 kN en hormigón, 3,2 kN en ladrillo macizo y 1,6 kN en ladrillo perforado (el 3 × 6: 3,0 / 1,6 / 0,8 kN). En hormigón la chapa empieza a deformarse junto a las arandelas de arriba a partir de ≈ 1,8 kN de tirón en la esquina (con 2 mm, ≈ 0,9 kN).
+- Se elige el simétrico aunque la mejor solución libre daba un 4 % más (λ 10,94): es más fácil de replantear y de comprobar, y la regla era aceptarlo si llegaba al 95 %. La búsqueda es heurística: no demuestra que sea el óptimo global.
+- El cálculo con 2 mm (P18-O, que no llegó a pasarse al CAD) queda en `calculo-anclajes/historico-2mm/`.
+- El patrón de 3 columnas × 6 filas ya no vale: sus agujeros de x = ±85 quedan pegados a las guías nuevas.
+
 ## 03-11-2026
 
 ### Actualización de anclaje: tacos SX Plus 8×65 y tirafondos 6×80

@@ -26,11 +26,11 @@ import os
 S_MIN = float(os.environ.get("S_MIN", "50"))               # distancia mínima entre tacos: NO publicada por fischer -> hipótesis = c_min
 
 # ----------------------------------------------------------------------------- masa y centro de gravedad
-M_ACERO = 9.850            # suma de masas de las piezas de chapa (Lista_piezas_chapa.xlsx), kg
-M_PC = 0.578               # policarbonatos (Lista_de_piezas.xlsx), kg
-M_ESTIMADA = 12.9          # con electrónica, herrajes, pintura y consumibles (estimación, ver informe)
-M_DISENO = 15.0            # masa de cálculo con margen
-CG = (0.0, 55.0, 220.0)    # (x, n, z) estimado; n = 51 calculado -> 55 de cálculo
+M_ACERO = 12.521           # suma de masas de las piezas de chapa con 3 / 1,5 mm (modelo CadQuery, 04-11-2026), kg
+M_PC = 0.570               # policarbonatos (modelo CadQuery), kg
+M_ESTIMADA = 15.5          # con electrónica, herrajes, pintura y consumibles (estimación, ver informe)
+M_DISENO = 18.0            # masa de cálculo con margen (+16 %, como con 2 mm)
+CG = (0.0, 55.0, 210.0)    # (x, n, z) estimado; chapa sola a 47 mm de la pared, con la electrónica de delante ≈ 50 -> 55 de cálculo
 
 ESQ = dict(TL=(-W / 2, H_TOT), TR=(W / 2, H_TOT), C=(0.0, H_TOT / 2), B=(0.0, 0.0))
 
@@ -111,7 +111,7 @@ def patron_B():
     return p + [(-85, 215), (85, 215)]
 
 
-REFERENCIAS = {"C (GitHub actual)": patron_C, "A (algebraico anterior)": patron_A, "B (P18 anterior)": patron_B}
+REFERENCIAS = {"C (3 × 6, anterior)": patron_C, "A (algebraico anterior)": patron_A, "B (P18 anterior)": patron_B}
 
 
 def comprobar_geometria(pts):

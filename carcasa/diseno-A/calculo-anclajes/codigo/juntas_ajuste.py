@@ -8,8 +8,8 @@ from evaluacion import casos_diseno, evaluar
 
 pats = json.load(open("patrones.json"))
 V = json.load(open("variantes.json"))
-pats["Simétrica (alternativa)"] = V["Simétrica (alternativa)"]["pts"]
-pats["Mampostería n=14 (s ≥ 100)"] = V["Mampostería n=14 (s ≥ 100)"]["pts"]
+for nom_v, v in V.items():          # la alternativa libre y las variantes de mampostería que hayan salido sin penalización
+    pats[nom_v] = v["pts"]
 cs = casos_diseno()
 m = FEMRapido(h=20.0, empotrado=False)
 rng = np.random.default_rng(3)

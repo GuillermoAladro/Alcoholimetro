@@ -16,7 +16,8 @@ Los cables se dibujan con puntos de paso; sus extremos salen de la boca, borne o
 import comp as C
 from geo import place_parts
 
-T = 2.0          # chapa (igual que diseno.T)
+T = 3.0          # chapa de la carcasa (igual que diseno.T)
+TK = 1.5         # chapa del cajón de componentes (igual que diseno.TK)
 GRIS_CABLE = (0.15, 0.15, 0.16)
 ROJO, NEGRO_C, AZUL, MARRON, VERDE_AM = (0.85, 0.15, 0.12), (0.08, 0.08, 0.08), (0.15, 0.35, 0.85), (0.50, 0.30, 0.12), (0.55, 0.75, 0.15)
 BLANCO_C, AMARILLO = (0.92, 0.92, 0.90), (0.92, 0.78, 0.12)
@@ -74,7 +75,7 @@ def puntos(L):
     Yin, Xin1 = L["Yin"], L["Xin1"]
     py = Yin - C.PI["pcb"] - C.PI["sep"]
     c14y, c14z = L["c14"]
-    Kx1 = Xin1 + T
+    Kx1 = Xin1 + TK
     P = dict(
         # pantalla: salidas del cable de las clavijas acodadas (hacia +Y)
         hdmi_pant=(sx - 6.9, 31.65, sz + 25.5), usbc_pant=(sx - 5.1, 26.85, sz + 47.0),
@@ -155,7 +156,7 @@ def agujeros_comunes(L):
 # (que se ha corrido 2 mm a la derecha) chocaba con el lateral de la caja de red.
 def layout_A(k):
     Yin, Xin1 = k["Yin"], k["Xin1"]
-    yf = Yin - 36 - T                                    # cara delantera de la caja de red
+    yf = Yin - 36 - TK                                   # cara delantera de la caja de red
     yc = yf - 0.2                                        # plano donde se apoyan las piezas de pie del reparto de 5 V
     L = dict(Yin=Yin, Xin1=Xin1,
              pantalla=(-82.5, 12.0), solo=(3.0, 136.0), camara=(-67.5, 185.5), boquilla=(-55.0, 150.0),
@@ -166,7 +167,7 @@ def layout_A(k):
              wago=[wago_de_pie(-28.0, 78.6, yc), wago_de_pie(4.0, 78.6, yc)],
              usb=[usb_de_pie(27.0, 65.0, yc), usb_de_pie(77.0, 65.0, yc)],
              fusibles=[fusible_de_pie(-22.0, 2.0 + 14 * i, yc) for i in range(4)],
-             empalmes=[tumbado(0.0, 38.0, 88.0 + T), tumbado(20.0, 38.0, 88.0 + T)],
+             empalmes=[tumbado(0.0, 38.0, 88.0 + TK), tumbado(20.0, 38.0, 88.0 + TK)],
              bridas_trasera=[(-80.0, 75.0), (-10.0, 120.0), (60.0, 150.0)],
              topes_frente=[-80.0, 80.0], rejillas_izq=[(12.0, 40.0), (176.0, 196.0)], rejillas_der=[(186.0, 212.0)],
              # neumática (centros): T de presión, reductores y T de alcohol, en línea a y = 40, z = 205
@@ -264,13 +265,13 @@ def layout_A(k):
             # ---- troncal de 5 V (cable 2 × 0,75 mm²) por el pasacables del frente de la caja de red
             ("W11 · +5 V troncal: fuente +V → WAGO +5 V (polo 1)", [ent["psu_pos"], mas(ent["psu_pos"], XP, 4), (54, 44, 31), (50, 39, 32), (40, 37.0, 34), (0, 37.0, 39), (-30, 37.4, 43), (-38, 38.8, 44), (-45, 38.8, 45), (-45, 33.5, 45), (-45, 28.5, 45), (-44, 24, 50), (-40, 19, 62), (-34, 18, 90)] + entra(P["wago0_1"], UP, 7.2), 1.2, ROJO, "cable",
              X(estilo="pvc", w="W11", de="LRS-50-5 · borne 5 (+V)", a="WAGO +5 V · polo 1")),
-            ("W12 · 0 V troncal: fuente −V → WAGO GND (polo 1)", [ent["psu_neg"], mas(ent["psu_neg"], XP, 4), (54, 45, 38), (50, 39.5, 39.5), (40, 38.2, 41), (0, 38.2, 43), (-34, 38.6, 45), (-40, 39.2, 46), (-46.5, 39.0, 46.5), (-46.5, 33.5, 46.5), (-46.5, 28.5, 46.5), (-40, 23, 52), (-10, 17.5, 70), (-3, 18, 90)] + entra(P["wago1_1"], UP, 7.2), 1.2, NEGRO_C, "cable",
+            ("W12 · 0 V troncal: fuente −V → WAGO GND (polo 1)", [ent["psu_neg"], mas(ent["psu_neg"], XP, 4), (54, 44, 38), (50, 38.5, 39.5), (40, 37.2, 41), (0, 37.2, 43), (-34, 37.6, 45), (-40, 38.2, 46), (-46.5, 38.0, 46.5), (-46.5, 33.5, 46.5), (-46.5, 28.5, 46.5), (-40, 23, 52), (-10, 17.5, 70), (-3, 18, 90)] + entra(P["wago1_1"], UP, 7.2), 1.2, NEGRO_C, "cable",
              X(estilo="pvc", w="W12", de="LRS-50-5 · borne 4 (−V)", a="WAGO GND · polo 1")),
         ]
         # ---- entradas de los portafusibles (hilo rojo de 16 AWG que trae cada portafusibles) desde los polos 2 a 5 de la WAGO +5 V
         ramas = ["Pi", "Solo", "pantalla", "sensor"]
         for kf in range(4):
-            w = P[f"wago0_{kf + 2}"]; a = P[f"fus{kf}_a"]; yv = 16.5 + 1.6 * kf
+            w = P[f"wago0_{kf + 2}"]; a = P[f"fus{kf}_a"]; yv = 16.0 + 1.6 * kf      # 04-11-2026: 0,5 mm más adelante, como la WAGO
             lista.append((f"Rama {ramas[kf]}: WAGO +5 V (polo {kf + 2}) → portafusibles", [w, mas(w, UP, 7.2), (w[0], yv, 89), (w[0] + 3, yv, 70), (-36, yv, a[2] + 6), (-30, a[1] - 3, a[2]), mas(a, (-1, 0, 0), 4), a], 1.45, ROJO, "cable",
                           X(estilo="pvc", w=["W13", "W14", "W16", "W18"][kf], de=f"WAGO +5 V · polo {kf + 2}", a=f"Portafusibles {ramas[kf]} · entrada")))
         b0, b1, b2, b3 = (P[f"fus{i}_b"] for i in range(4))
@@ -329,7 +330,7 @@ def layout_A(k):
              X(estilo="trenzado", w="W15", de="Borne USB del Solo · USB-A", a="SumUp Solo · USB-C")),
             ("W24 · Cinta de la cámara (FFC 15 vías, 200 mm)", [P["cam"], mas(P["cam"], DN, 7), (-55, 18, 168), (-55.5, 30, 140), (-56, 42, 116)] + entra(P["csi_pi"], FW, 6), 8.0, FFC, "cinta",
              X(estilo="ffc", w="W24", de="Camera Module 3 · J1", a="Raspberry Pi · CSI (CAMERA)", n0=[0, 1, 0], n1=[1, 0, 0])),
-            ("W10 · Puente de tierra cajón → carcasa (faston)", [punta["W10"], (88, 62, 125), (75, 68.5, 155), (60, 69, 165), (60, 69, 215), (60, 69, kt - 2), (60, 69.3, kt + 1.2), (60, 70.5, kt + 2.1), (60, 72, kt + 2.1), (60, yw - 9.5, kt + 2.1), (56, yw - 6.5, kt + 2.1), (51, yw - 2.5, kt - 3.5), (pcl[0], pcl[1], pcl[2] + 3), pcl], 1.5, VERDE_AM, "puente",
+            ("W10 · Puente de tierra cajón → carcasa (faston)", [punta["W10"], (88, 62, 125), (75, 68.5, 155), (60, 69, 165), (60, 69, 215), (60, 69, kt - 2), (60, 69.3, kt + 1.2), (60, 70.5, kt + 2.1), (60, 72, kt + 2.1), (60, yw - 9.5, kt + 2.1), (56, yw - 6.5, kt - 1.0), (51, yw - 2.5, kt - 4.0), (pcl[0], pcl[1], pcl[2] + 3), pcl], 1.5, VERDE_AM, "puente",
              X(estilo="verdeamarillo", w="W10", de="Espárrago M4 del cajón", a="Espárrago M4 de la carcasa")),
             ("W26 · Coaxial de la antena 4G (todo dentro del cajón)", [ant, mas(ant, UP, 4), (-96, 30, 163), (-85, 35, 158), (-55, 36.5, 153), (-20, 37, 150), (10, 38, 145), (35, 40, 134), (46, 42, 125)] + entra(P["crc9"], FW, 5), 0.8, COAX, "cable",
              X(estilo="coax", w="W26", de="Antena 4G plana · cable con SMA macho", a="Módem 4G · toma CRC9 (con el latiguillo CRC9 → SMA)")),
@@ -343,7 +344,7 @@ def layout_A(k):
             ("W28 · T de presión → reductor 6 → 4", [(tp[0] - 5, yv, zv), (ra - 15, yv, zv)], 4.0, SILICONA, "tubo", X(estilo="silicona", w="W28")),
             ("W28 · Tubo de 4 mm entre reductores (falta en la lista)", [(ra - 25, yv, zv), (rb + 25, yv, zv)], 3.0, SILICONA, "tubo", X(estilo="silicona", w="W28")),
             ("W28 · reductor 4 → 6 → T de alcohol", [(rb + 15, yv, zv), (ta[0] + 5, yv, zv)], 4.0, SILICONA, "tubo", X(estilo="silicona", w="W28")),
-            ("W28 · Escape del soplido", [(ta[0] - 5, yv, zv), (ta[0] - 16, yv, zv), (-96, 43, 207), (-101, 48, 211), (k["Xin0"] + 0.5, 50, 212), (k["Xin0"] - T, 50, 212)], 4.0, SILICONA, "tubo",
+            ("W28 · Escape del soplido", [(ta[0] - 5, yv, zv), (ta[0] - 16, yv, zv), (-96, 43, 207), (-101, 48, 211), (k["Xin0"] + 0.5, 50, 212), (k["Xin0"] - TK, 50, 212)], 4.0, SILICONA, "tubo",
              X(estilo="silicona", w="W28", de="T de alcohol", a="Rejilla de escape del lateral izquierdo")),
             ("W28 · Toma de presión (reducción 6 → 2,5, falta en la lista)", [(tp[0], yv, zv - 5), (tp[0], yv, zv - 15)], 3.6, SILICONA, "tubo", X(estilo="silicona", w="W28")),
             ("W28 · Toma de presión: tubo de 2 × 4 mm", [(tp[0], yv, zv - 15), (tp[0], yv, zv - 19), (30, 43, 188), (-20, 44, 192), (P["ze_pre"][0] + 4, 44.5, P["ze_pre"][2] + 1), (P["ze_pre"][0], P["ze_pre"][1] - 6, P["ze_pre"][2]), (P["ze_pre"][0], P["ze_pre"][1] + 2.5, P["ze_pre"][2])], 2.0, SILICONA, "tubo",
@@ -358,6 +359,6 @@ def layout_A(k):
     return L
 
 
-SPEC_A = dict(letra="A", nombre="Compacta", W=220.0, D=100.0, gb=9.5,   # 03-11-2026: era 11; con chapa de 2 mm el cajón conserva sus 71 mm de fondo útil
+SPEC_A = dict(letra="A", nombre="Compacta", W=220.0, D=100.0, gb=9.5,   # 9,5 mm detrás del cajón: guías planas de 3 mm + topes de 6 mm + 0,5 de aire, y sitio para las cabezas de los tirafondos. 04-11-2026: con carcasa de 3 mm y cajón de 1,5 el fondo útil del cajón baja de 71 a 70 mm
               Hk=228.0, tapa="lateral", bisagra="izq", asa="x", layout=layout_A,
               descripcion="Cámara y Solo arriba, pantalla debajo. Policarbonato delante y detrás del panel. Tapa abatible con cerradura y faldón derecho; tapa interior plana que entra deslizando por una ranura del lateral derecho; cajón de pajitas con dos candados. Sin botón.")
