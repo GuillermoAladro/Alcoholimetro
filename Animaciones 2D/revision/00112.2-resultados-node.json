@@ -6,13 +6,15 @@
     "quarterTurnVisiblePixels": [
       {
         "who": "g",
-        "width": 60,
-        "count": 10788
+        "width": 106,
+        "count": 19716,
+        "solidFraction": 0.9485696895922093
       },
       {
         "who": "r",
-        "width": 54,
-        "count": 10974
+        "width": 96,
+        "count": 19952,
+        "solidFraction": 0.9576984763432237
       }
     ],
     "phaseJoinMaxPx": {
