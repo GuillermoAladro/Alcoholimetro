@@ -271,7 +271,7 @@
   let reg = BANCO.find(b => b.id === q.get("id")) || BANCO[0], esc = reg.crear();
   $("escena").value = reg.id;
   let reproduce = !q.has("pausa"), ultimo = null, velocidad = 1;
-  const listo = () => !window.Recortes || Recortes.listos();
+  const listo = () => typeof Recortes === "undefined" || Recortes.listos();
 
   function dibuja() {
     esc.dibujar(g);

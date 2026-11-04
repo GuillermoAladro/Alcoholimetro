@@ -894,6 +894,15 @@
     for (let i = 0; i < 6; i++) { const y = lerp(ESP.y0 + 18, ESP.y1 - 14, i / 5); b.push(P2(ESP.x0 - 11, y), P2(ESP.x1 + 11, y)); }
     return b;
   })();
+  function rectanguloRedondeado(g, x, y, w, h, r) {
+    if (typeof g.roundRect === "function") { g.roundRect(x, y, w, h, r); return; }
+    g.moveTo(x + r, y);
+    g.arcTo(x + w, y, x + w, y + h, r);
+    g.arcTo(x + w, y + h, x, y + h, r);
+    g.arcTo(x, y + h, x, y, r);
+    g.arcTo(x, y, x + w, y, r);
+    g.closePath();
+  }
   function creaFondo() {
     const c = document.createElement("canvas"); c.width = W + 120; c.height = H + 120;
     const g = c.getContext("2d"); g.translate(60, 60);
@@ -1011,15 +1020,15 @@
     for (let i = 0; i < 5; i++) { const x = ENC.x0 + 20 + i * 44; g.beginPath(); g.moveTo(x, ENC.top + 2); g.quadraticCurveTo(x + 12, ENC.top + 6, x + 26, ENC.frente - 2); g.stroke(); }
     // cosas en la encimera: perfume, vaso de brochas y toallas dobladas
     g.save(); g.translate(522, ENC.top);
-    g.fillStyle = "rgba(230,190,200,0.85)"; g.beginPath(); g.roundRect(-9, -24, 18, 24, 4); g.fill(); g.strokeStyle = TINTA; g.lineWidth = 1.3; g.stroke();
+    g.fillStyle = "rgba(230,190,200,0.85)"; g.beginPath(); rectanguloRedondeado(g, -9, -24, 18, 24, 4); g.fill(); g.strokeStyle = TINTA; g.lineWidth = 1.3; g.stroke();
     g.fillStyle = "#c9a24a"; g.fillRect(-4, -31, 8, 7); g.strokeRect(-4, -31, 8, 7); g.fillStyle = "rgba(255,255,255,0.6)"; g.fillRect(-6, -20, 3, 14);
     g.restore();
     g.save(); g.translate(554, ENC.top);
     for (const [dx, a, c] of [[-4, -0.2, "#3b2a24"], [1, 0.05, "#d8a28e"], [5, 0.25, "#1f1b1d"]]) { g.save(); g.translate(dx, -16); g.rotate(a); g.fillStyle = "#c9a24a"; g.fillRect(-1.5, -18, 3, 18); g.fillStyle = c; g.beginPath(); g.ellipse(0, -22, 3.5, 6, 0, 0, TAU); g.fill(); g.restore(); }
-    g.fillStyle = "#2d2a30"; g.beginPath(); g.roundRect(-9, -18, 18, 18, 3); g.fill(); g.strokeStyle = TINTA; g.lineWidth = 1.2; g.stroke();
+    g.fillStyle = "#2d2a30"; g.beginPath(); rectanguloRedondeado(g, -9, -18, 18, 18, 3); g.fill(); g.strokeStyle = TINTA; g.lineWidth = 1.2; g.stroke();
     g.restore();
     g.save(); g.translate(598, ENC.top);
-    for (let i = 0; i < 3; i++) { g.fillStyle = i % 2 ? "#f6f2ea" : "#e9e2d6"; g.beginPath(); g.roundRect(-18, -9 - i * 9, 36, 9, 3); g.fill(); g.strokeStyle = "rgba(60,50,40,0.6)"; g.lineWidth = 1; g.stroke();
+    for (let i = 0; i < 3; i++) { g.fillStyle = i % 2 ? "#f6f2ea" : "#e9e2d6"; g.beginPath(); rectanguloRedondeado(g, -18, -9 - i * 9, 36, 9, 3); g.fill(); g.strokeStyle = "rgba(60,50,40,0.6)"; g.lineWidth = 1; g.stroke();
       g.fillStyle = "#93a98a"; g.fillRect(-18, -6 - i * 9, 36, 2); }
     g.restore();
     // tapa del bote de gomina, abierta en la encimera
@@ -1034,7 +1043,7 @@
   function dibBote(g, hoyo, x = BOTE.x) { g.save(); g.translate(x, ENC.top); dibBoteEn(g, hoyo); g.restore(); }
   function dibBoteEn(g, hoyo) {
     g.save(); g.lineJoin = "round";
-    g.fillStyle = "rgba(60,150,200,0.85)"; g.beginPath(); g.roundRect(-14, -21, 28, 21, 5); g.fill(); g.strokeStyle = TINTA; g.lineWidth = 1.5; g.stroke();
+    g.fillStyle = "rgba(60,150,200,0.85)"; g.beginPath(); rectanguloRedondeado(g, -14, -21, 28, 21, 5); g.fill(); g.strokeStyle = TINTA; g.lineWidth = 1.5; g.stroke();
     g.fillStyle = "#37a9df"; g.beginPath(); g.ellipse(0, -19, 13, 3.6, 0, 0, TAU); g.fill();
     if (hoyo > 0.01) { g.fillStyle = "#1d7fae"; g.beginPath(); g.ellipse(-2, -18.6, 6 * hoyo, 2 * hoyo, 0, 0, TAU); g.fill(); }
     g.strokeStyle = "#dbe5ec"; g.lineWidth = 2.2; g.beginPath(); g.ellipse(0, -20, 14, 4, 0, 0, TAU); g.stroke();
