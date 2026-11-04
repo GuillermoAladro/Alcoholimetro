@@ -1,0 +1,56 @@
+{
+  "scene": "00116.2",
+  "duration": 14.6,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "sleeveInkPixels": [
+      81,
+      81,
+      81
+    ],
+    "pickStockJoinsPx": [
+      5.684341886080802e-14,
+      0
+    ],
+    "stockCounts": [
+      7,
+      6,
+      5
+    ],
+    "thrownStickJoinPx": 1.1368683772161603e-13,
+    "embeddedStickJoinPx": 0.000021600044988190348,
+    "stickLengthErrorPx": 1.2079226507921703e-13,
+    "embeddedOffsetPx": 6.394884621840902e-14,
+    "floorPenetrationPx": 0,
+    "restDriftPx": 0,
+    "stickImpactTime": 9.450312354811466,
+    "crossTime": 2.9222139072418205,
+    "realDuelHits": 8,
+    "hitErrorPx": 0,
+    "missDistancePx": 39.088116655067296,
+    "oliveTransferErrors": [
+      0,
+      0,
+      0,
+      0,
+      0.0007484480608508198
+    ],
+    "releaseVelocityErrorPxPerSec": 0.010636958558414473,
+    "feathersSpawnErrorPx": 0,
+    "settledFeathersDrift": 0.00009577039975283697,
+    "sneezeJoinError": 0.004543826473293633,
+    "noseContactErrorPx": 0,
+    "maxArmRatio": 1
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.066,
+    7.446,
+    11.241999999999999
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
