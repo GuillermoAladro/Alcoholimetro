@@ -1,0 +1,59 @@
+{
+  "scene": "00111.2",
+  "duration": 14.5,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "fingertipEdgeAlpha": [
+      0,
+      255
+    ],
+    "flickToForeheadPx": 8.526512829121202e-14,
+    "threeThumbTapsPx": [
+      3.552713678800501e-15,
+      3.552713678800501e-15,
+      3.552713678800501e-15
+    ],
+    "sparksBeforeAfterTaps": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "bowClearance": 15.526557196677807,
+    "pinCompression": [
+      -4.440892098500626e-14,
+      1.9994854113600447
+    ],
+    "cheatingFingerContactError": 5.939693181744587e-14,
+    "closeWideFingerErrorPx": 5.684341886080802e-14,
+    "missingHandWeight": 0,
+    "handOnForeheadPx": 2.9993696301960426,
+    "blowTargetErrorPx": 0,
+    "smokeAtFingerPx": 0,
+    "zoomJoinPx": 1.9065862296939058e-13,
+    "whistleSpeed": [
+      0.8999999999999275,
+      1.799999999999935
+    ],
+    "maxWristRatio": 1.067
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.045,
+    7.3950000000000005,
+    11.165000000000001
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
