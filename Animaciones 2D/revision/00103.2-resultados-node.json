@@ -1,0 +1,35 @@
+{
+  "scene": "00103.2",
+  "duration": 14.6,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "headMarginPx": 20.31545325656782,
+    "flyJoinsPx": [
+      0.00008446859905517141,
+      0.00006118992852889104,
+      0.00003798384959180384
+    ],
+    "haloContactPx": 0,
+    "waveBeforeImpact": 0,
+    "nearestFingerPx": 14.293456356932374,
+    "ankleGripPx": 1.0231815394945442e-14,
+    "largestShoeProjectionStep": 0.10615873147957475,
+    "bubbleJoinPortraitUnits": 0.0000217577715678435,
+    "bubbleDriftPortraitUnits": 0,
+    "bambooMouthDropPx": 41.389518646135,
+    "spoutToMouthPx": 22.37429353638663,
+    "flyExitY": -64,
+    "wristExcessPx": -1.442409319241558
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.066,
+    7.446,
+    11.241999999999999
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
