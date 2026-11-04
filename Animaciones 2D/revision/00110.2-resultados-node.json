@@ -1,0 +1,33 @@
+{
+  "scene": "00110.2",
+  "duration": 14.7,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "entryInkFraction": 0.775255391600454,
+    "entryInkPixels": 881,
+    "chipThrowJoinsPx": 0.00014048381153091577,
+    "chipToMouthPx": 0.00010118512046529411,
+    "chipToBeakPx": 0.00002874315327973127,
+    "chipAtBeakRad": 7.194245199571014e-14,
+    "crumbJoinsPx": 0.00008368524075390079,
+    "bottleToLipPx": 8.526512829121202e-14,
+    "bottleToSunLinePx": 1.7763568394002505e-14,
+    "sunPassPx": 1.4270274741446634,
+    "pigeonLandingJoin": 0.0000049400810931222915,
+    "perchErrorPx": 0,
+    "finalTiltErrorRad": 0,
+    "maxSunColorChange": 1,
+    "maxWristRatio": 0.98
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.0869999999999997,
+    7.497,
+    11.318999999999999
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
