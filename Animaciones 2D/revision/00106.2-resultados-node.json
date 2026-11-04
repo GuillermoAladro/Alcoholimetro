@@ -1,0 +1,74 @@
+{
+  "scene": "00106.2",
+  "duration": 14.6,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "fiveTurns": [
+      {
+        "i": 2,
+        "contact": 0,
+        "marks": 1
+      },
+      {
+        "i": 1,
+        "contact": 0,
+        "marks": 1
+      },
+      {
+        "i": 0,
+        "contact": 5.684341886080802e-14,
+        "marks": 1
+      },
+      {
+        "i": 3,
+        "contact": 0,
+        "marks": 1
+      },
+      {
+        "i": 4,
+        "contact": 0,
+        "marks": 1
+      }
+    ],
+    "toolJoinsPx": 0.0000912105403436684,
+    "handAndWristJoinsPx": 0.000014957985442621904,
+    "handoffErrorPx": 0,
+    "handoffSpacingPx": 37.720000000000006,
+    "clickOpenClosed": [
+      [
+        0.98,
+        0.08
+      ],
+      [
+        0.98,
+        0.08
+      ]
+    ],
+    "flightJoinsPx": 0.00008124875074817715,
+    "jetErrors": [
+      {
+        "start": 0,
+        "angle": 0.0000011285951966311103,
+        "end": 0
+      },
+      {
+        "start": 0,
+        "angle": 0.0000023141535768766985,
+        "end": 0
+      }
+    ],
+    "biteErrorPx": 0,
+    "wristExcessPx": -3.9915783928609128
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.066,
+    7.446,
+    11.241999999999999
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
