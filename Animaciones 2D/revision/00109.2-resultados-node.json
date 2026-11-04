@@ -1,0 +1,36 @@
+{
+  "scene": "00109.2",
+  "duration": 15,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "nearMissRenderedPx": 9,
+    "overlappingPixels": 0,
+    "handoffJoinsPx": 0.0005266432426667418,
+    "wallSurfaceErrorPx": 0,
+    "knotInHandPx": 5.684341886080802e-14,
+    "palmSupportPx": 5.684341886080802e-14,
+    "scalpSupportPx": 0,
+    "strawToMouthPx": 5.684341886080802e-14,
+    "waterStartPx": 0,
+    "waterEndPx": 0,
+    "largeBallTopMarginPx": 19.856002820683216,
+    "closedEyesAtCatch": [
+      1,
+      1
+    ],
+    "wetBefore": 0,
+    "wetAfter": 1,
+    "maxWristRatio": 1.077
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.15,
+    7.65,
+    11.55
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
