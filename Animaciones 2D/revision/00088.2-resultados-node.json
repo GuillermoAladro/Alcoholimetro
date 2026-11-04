@@ -1,0 +1,31 @@
+{
+  "scene": "00088.2",
+  "duration": 14.6,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "posesAt120Hz": 1753,
+    "maximumPropHandoffDifference": 0.0001322219009125547,
+    "soleToHandlePx": 1.2710574864626038e-13,
+    "compressionBeforeFoot": 0,
+    "residualAlarmOrGroundError": 0,
+    "bounceHeightsPx": [
+      26,
+      24.4,
+      22.8,
+      21.2,
+      19.6,
+      9
+    ]
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.066,
+    7.446,
+    11.241999999999999
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
