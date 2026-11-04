@@ -377,7 +377,7 @@
       [T.pone1, T.triunfo + 0.1, { scr: () => gf.agarre, ref: PINZA, mu: 2.2, dedos: PINZA_D, dobla: 1 }],
       [T.triunfo + 0.12, T.triunfo + 0.42, { scr: W_(-24, -166), ref: PALMA, mu: -1.9, dedos: RELAJA, dobla: 1 }],
       // ¡zas!: brazos al aire y la mano al suelo, detrás
-      [T.cae0, T.cae0 + 0.2, { scr: W_(-34, -392), ref: PALMA, mu: 1.4, dedos: ABIERTA, dobla: 1 }, salida],
+      [T.cae0, T.cae0 + 0.2, { scr: W_(-119, -366), ref: PALMA, mu: 1.4, dedos: ABIERTA, dobla: 1 }, salida],
       [T.cae1 - 0.12, T.cae1 + 0.08, { scr: W_(-43, 0), ref: sueloMano(-1.4), mu: -1.4, dedos: ABIERTA, dobla: 1 }],
       // pañuelo blanco: del bolsillo, arriba, y lo ondea
       [T.panSaca0, T.panSaca0 + 0.18, { bols: true, hondo: 10, dedos: PINZA_D, dobla: 1 }],

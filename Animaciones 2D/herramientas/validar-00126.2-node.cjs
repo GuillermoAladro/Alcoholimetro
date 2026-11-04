@@ -37,14 +37,17 @@ const {load, C} = require('./canvas-node.cjs');
       return count;
     }
     const visible=collarPixels(2.1),hidden=collarPixels(12.65);
-    const p=D.poseG(hit);center(lens,5);Guillermo.dibujar(ctx,p,hit);
-    const pix=ctx.getImageData(75,75,11,11).data;let blue=0;
-    for(let i=0;i<pix.length;i+=4)if(pix[i+2]>pix[i]+9&&pix[i+3]>190)blue++;
+    const lenses=[T.g4+.38,T.g4+.45,T.g4+.55,T.g4+.65].map(t=>{
+      const g=D.poseG(t),q=D.lenteCercana(t);center(q,5);Guillermo.dibujar(ctx,g,t);
+      const pix=ctx.getImageData(75,75,11,11).data;let n=0;
+      for(let i=0;i<pix.length;i+=4)if(pix[i+2]>pix[i]+9&&pix[i+3]>190)n++;
+      return {n,center:[...pix.slice(240,244)]};});
+    const blue=Math.min(...lenses.map(v=>v.n));
     const t0=T.cae1+.28,br=D.poseG(t0);center(apoyo(t0),4);Guillermo.dibujar(ctx,br,t0);
     const pads=ctx.getImageData(75,71,11,10).data;let hand=0;for(let i=3;i<pads.length;i+=4)if(pads[i]>95)hand++;
-    if(visible<35||hidden>8||blue<16||hand<20)throw Error(JSON.stringify({visible,hidden,blue,hand}));
+    if(visible<35||hidden>8||blue<16||hand<20)throw Error(JSON.stringify({visible,hidden,blue,hand,lenses}));
     if(Math.max(grip,chain,seat,toque,flagPin,join,...cameraJoins)>.005||footAir<23||reach>1.08||slip<10||cm.dy!==0||end.dy<58||!before||apen!==0||am<=0||am>=1||area<1400)throw Error(JSON.stringify(m));
-    return {m,visible,hidden,blue,hand};
+    return {m,visible,hidden,blue,hand,lenses};
   })()`);
   const hash = canvas => crypto.createHash('sha256').update(canvas.data()).digest('hex');
   const background = C.createCanvas(1024, 600);
