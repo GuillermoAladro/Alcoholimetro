@@ -234,6 +234,7 @@ Animaciones para la pantalla de la máquina hechas con los **avatares 2D** de [`
 | 00138 | Guillermo y Yorgi · La mancuerna | 14,4 s | [MP4 60 fps](vista%20previa/00138%20Guillermo%20y%20Yorgi%20-%20la%20mancuerna.mp4) · [fotogramas](vista%20previa/00138%20Guillermo%20y%20Yorgi%20-%20la%20mancuerna%20-%20fotogramas.png) |
 | 00138.2 | Guillermo y Yorgi · La mancuerna | 14,4 s | [MP4 60 fps](vista%20previa/00138.2%20Guillermo%20y%20Yorgi%20-%20la%20mancuerna.mp4) · [fotogramas](vista%20previa/00138.2%20Guillermo%20y%20Yorgi%20-%20la%20mancuerna%20-%20fotogramas.png) · [revisión](revision/00138.2-revision.md) |
 | 00139 | Guillermo y Yorgi · La siesta | 14,6 s | [MP4 60 fps](vista%20previa/00139%20Guillermo%20y%20Yorgi%20-%20la%20siesta.mp4) · [fotogramas](vista%20previa/00139%20Guillermo%20y%20Yorgi%20-%20la%20siesta%20-%20fotogramas.png) |
+| 00139.2 | Guillermo y Yorgi · La siesta | 14,6 s | [MP4 60 fps](vista%20previa/00139.2%20Guillermo%20y%20Yorgi%20-%20la%20siesta.mp4) · [fotogramas](vista%20previa/00139.2%20Guillermo%20y%20Yorgi%20-%20la%20siesta%20-%20fotogramas.png) · [revisión](revision/00139.2-revision.md) |
 | 00140 | Guillermo y Yorgi · El selfie del gimnasio | 14,3 s | [MP4 60 fps](vista%20previa/00140%20Guillermo%20y%20Yorgi%20-%20el%20selfie%20del%20gimnasio.mp4) · [fotogramas](vista%20previa/00140%20Guillermo%20y%20Yorgi%20-%20el%20selfie%20del%20gimnasio%20-%20fotogramas.png) |
 
 ### 00001 · Guillermo y la jarra
