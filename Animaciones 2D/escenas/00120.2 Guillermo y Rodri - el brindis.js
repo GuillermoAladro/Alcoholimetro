@@ -467,17 +467,32 @@
   const lienzoComo = (w, h, o) => { if (!o || o.width !== w || o.height !== h) { o = document.createElement("canvas"); o.width = w; o.height = h; } return o; };
   const RF = 0.5;
   // huecos limpios en la capa de espuma: ojos (desde el parpadeo) y boca (desde la risa; tras relamerse, el labio)
-  function huecos(f, base, rig, p, quien, ojo, boca, labio) {
-    const M = base.multiply(afinRetrato(rig, p));
-    f.setTransform(M);
-    f.beginPath();
-    if (ojo > 0.01) for (const o of OJOS[quien]) { f.moveTo(o.c.x + o.rx * ojo, o.c.y); f.ellipse(o.c.x, o.c.y, o.rx * ojo, o.ry * ojo, 0.2, 0, TAU); }
-    const B = BOCA[quien];
-    if (boca > 0.01) {
-      f.save(); f.translate(B.c.x, B.c.y); f.rotate(B.ang); f.scale(B.k, B.k);
-      f.moveTo(48 * boca, 4); f.ellipse(0, 4, 48 * boca, 26 * boca, 0, 0, TAU);
-      if (labio > 0.01) { f.moveTo(58, -16); f.ellipse(0, -16, 58, 16 * labio, 0, 0, TAU); }
-      f.restore();
+  function huecos(f, cam, rig, p, quien, ojo, boca, labio) {
+    // FL está a media resolución. Proyectar aquí evita heredar la matriz del patrón de burbujas.
+    const cabeza = rig.cabeza(p);
+    const proyecta = q => {
+      const m = rig.aPantalla(p,cabeza.a(q));
+      return P(RF*(cam.a*m.x+cam.c*m.y+cam.e), RF*(cam.b*m.x+cam.d*m.y+cam.f));
+    };
+    function elipse(cx,cy,rx,ry,ang) {
+      const c = Math.cos(ang), s = Math.sin(ang);
+      for (let i=0;i<40;i++) {
+        const a = TAU*i/40, x = rx*Math.cos(a), y = ry*Math.sin(a);
+        const q = proyecta(P(cx+c*x-s*y,cy+s*x+c*y));
+        if (i===0) f.moveTo(q.x,q.y); else f.lineTo(q.x,q.y);
+      }
+      f.closePath();
+    }
+    f.setTransform(1,0,0,1,0,0); f.beginPath();
+    if (ojo>0.01) for (const o of OJOS[quien]) elipse(o.c.x,o.c.y,o.rx*ojo,o.ry*ojo,0.2);
+    if (boca>0.01) {
+      const B = BOCA[quien];
+      const labios = (y,rx,ry) => {
+        const q = rot(P(0,y*B.k),B.ang);
+        elipse(B.c.x+q.x,B.c.y+q.y,rx*B.k,ry*B.k,B.ang);
+      };
+      labios(4,48*boca,26*boca);
+      if (labio>0.01) labios(-16,58,16*labio);
     }
     f.fill();
   }
@@ -507,7 +522,6 @@
     for (const [y, a] of [[150, 0.8], [198, 0.6], [232 + baja, 0.38], [262 + baja, 0.3], [290 + baja, 0.24], [318 + baja, 0.1], [352 + baja, 0.04], [420, 0.02], [560, 0.01]]) gr.addColorStop(st(y), `rgba(255,250,236,${a})`);
     f.fillStyle = gr; f.fillRect(fx0, fy0, fw, fh);
     f.globalCompositeOperation = "source-atop";
-    const base = new DOMMatrix().scale(RF, RF).multiply(Mt);
     f.setTransform(1, 0, 0, 1, 0, 0);
     if (!BURB) BURB = creaBurbujas();
     f.globalAlpha = 0.4; f.fillStyle = f.createPattern(BURB, "repeat"); f.fillRect(fx0, fy0, fw, fh);
@@ -516,8 +530,8 @@
     const bocaG = tramo(t, T.gPff - 0.05, T.gPff + 0.2), bocaR = tramo(t, T.rPff - 0.05, T.rPff + 0.2);
     const labG = tramo(t, T.gLame0 + 0.1, T.gLame1 - 0.05), labR = tramo(t, T.rLame0 + 0.1, T.rLame1 - 0.05);
     f.globalAlpha = 1; f.globalCompositeOperation = "destination-out"; f.fillStyle = "#000";
-    if (ojoG + bocaG > 0.01) huecos(f, base, G, pG, "g", ojoG, bocaG, labG);
-    if (ojoR + bocaR > 0.01) huecos(f, base, R, pR, "r", ojoR, bocaR, labR);
+    if (ojoG + bocaG > 0.01) huecos(f, Mt, G, pG, "g", ojoG, bocaG, labG);
+    if (ojoR + bocaR > 0.01) huecos(f, Mt, R, pR, "r", ojoR, bocaR, labR);
     f.setTransform(1, 0, 0, 1, 0, 0);
     // 4) a la pantalla: los dos y, encima, la espuma en «screen» (aclara sin borrar las líneas)
     g.save(); g.setTransform(1, 0, 0, 1, 0, 0);
