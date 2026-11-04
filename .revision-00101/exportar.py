@@ -97,3 +97,4 @@ for index, seconds in enumerate(times):
         assert visual.getbbox(), ("Fotograma decodificado vacío",frame_number)
     sheet.paste(visual.resize((240,141),Image.Resampling.LANCZOS),(index%4*240,index//4*160))
 sheet.save(sheet_path)
+# Mantener una sola silueta opaca durante el giro de Carla

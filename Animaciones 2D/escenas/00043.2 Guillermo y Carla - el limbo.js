@@ -730,8 +730,27 @@
       const a=capaPaso.getContext("2d"),b=capaGiro.getContext("2d"),k=tramo(pc.giro,.36,.64);
       a.clearRect(0,0,W,H+64);b.clearRect(0,0,W,H+64);
       vistaCarla(a,poseC(t,false),t);vistaCarla(b,poseC(t,true),t);
-      a.save();a.globalCompositeOperation="destination-in";a.fillStyle="rgba(255,255,255,"+(1-k)+")";a.fillRect(0,0,W,H+64);
-      a.globalCompositeOperation="lighter";a.globalAlpha=k;a.drawImage(capaGiro,0,0);a.restore();g.drawImage(capaPaso,0,0);
+      const x=Math.floor(pc.x)-118, y=74, w=236, h=504;
+      const A=a.getImageData(x,y,w,h),B=b.getImageData(x,y,w,h),perfil=a.createImageData(w,h);
+      // Emparejar el contorno de cada fila mantiene una sola silueta opaca al girar.
+      for(let fila=0;fila<h;fila++) {
+        const base=fila*w,iz=[],de=[];
+        for(let j=0;j<w;j++){const i=4*(base+j);if(A.data[i+3]>8)iz.push(j);if(B.data[i+3]>8)de.push(j);}
+        if(!iz.length&&!de.length)continue;
+        if(!iz.length||!de.length){const solo=iz.length?A:B,factor=iz.length?1-k:k;
+          for(const j of iz.length?iz:de){const z=4*(base+j);perfil.data.set(solo.data.subarray(z,z+4),z);perfil.data[z+3]*=factor;}continue;}
+        const n=Math.max(iz.length,de.length);
+        let xa=-1,xb=-1,xp=-1;
+        for(let j=0;j<n;j++) {
+          const u=n===1?0:j/(n-1),ia=iz[Math.round(u*(iz.length-1))],ib=de[Math.round(u*(de.length-1))];
+          const xx=Math.round(lerp(ia,ib,k)),iA=4*(base+ia),iB=4*(base+ib);
+          const primero=xp>=0&&ia-xa<=2&&ib-xb<=2?Math.min(xx,xp+1):xx;
+          for(let col=primero;col<=xx;col++)for(let canal=0;canal<4;canal++)
+            perfil.data[4*(base+col)+canal]=lerp(A.data[iA+canal],B.data[iB+canal],k);
+          xa=ia;xb=ib;xp=xx;
+        }
+      }
+      a.clearRect(0,0,W,H+64);a.putImageData(perfil,x,y);g.drawImage(capaPaso,0,0);
       return;
     }
     if(t<=T.baja0||t>=T.sube1){vistaCarla(g,pc,t);return;}
