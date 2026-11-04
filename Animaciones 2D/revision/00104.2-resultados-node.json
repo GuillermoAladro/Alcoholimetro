@@ -1,0 +1,41 @@
+{
+  "scene": "00104.2",
+  "duration": 14.6,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "wigInsideBoxPx": 7.318012481990877,
+    "turnJoinsPx": [
+      0.08020911030123323,
+      0.04412966939585667,
+      0.022475708898127177
+    ],
+    "transferJoinsPx": {
+      "lanza": 0.00029593632840031953,
+      "aterriza": 0.0001191669671190605,
+      "despega": 0.0000717758918255913,
+      "llega": 0.00006834952120042943
+    },
+    "turnsRelativeToHeads": -1.0000000000000007,
+    "reverseAngleRad": 0,
+    "flightMarginsPx": {
+      "vuelo1": 49.71154075558033,
+      "vuelo2": 18.518096823633982
+    },
+    "handGripPx": 5.684341886080802e-14,
+    "mirrorThumbMarginPx": 24.317373714056544,
+    "stepTowardMirrorPx": 26,
+    "settledHairRad": 0.10914802551269531,
+    "wristExcessPx": -6.250725431327214
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.066,
+    7.446,
+    11.241999999999999
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
