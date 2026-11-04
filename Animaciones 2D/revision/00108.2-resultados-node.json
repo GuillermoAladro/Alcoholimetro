@@ -1,0 +1,40 @@
+{
+  "scene": "00108.2",
+  "duration": 14.5,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "cardsInPlay": 4,
+    "cardCountError": 0,
+    "uniqueAceSuits": 4,
+    "acesJoinPx": 0,
+    "gripErrorPx": 0,
+    "fanToStackPx": 2.9344640777572534e-12,
+    "twoAndThreeJoinsPx": 9.347002774616115e-11,
+    "tableChips": 84,
+    "chipCountError": 0,
+    "allIn": 1000,
+    "call": 1000,
+    "firstSweepJumpPx": 5.964226480780887e-12,
+    "rakeToHandPx": 0,
+    "chipFlightJoinsPx": 0.000056387910627724526,
+    "sipToLipPx": 0,
+    "impactPoint": {
+      "x": 509.55770004620257,
+      "y": 365.99999999999994
+    },
+    "faceAtImpactPx": 5.684341886080802e-14,
+    "facePenetrationPx": 0,
+    "maxWristRatio": 1.0160555861341327
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.045,
+    7.3950000000000005,
+    11.165000000000001
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
