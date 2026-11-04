@@ -1,0 +1,56 @@
+{
+  "scene": "00034.2",
+  "durationSeconds": 14.1,
+  "renderer": "Canvas 2D / Node-Skia",
+  "results": [
+    {
+      "name": "Unión de las cuatro muñecas",
+      "passed": true,
+      "details": {
+        "errorMaxPx": 2.2191491402542943e-7
+      }
+    },
+    {
+      "name": "Punta del rotulador sobre ambos trazos",
+      "passed": true,
+      "details": {
+        "errorMaxPx": 5.684341886080802e-14
+      }
+    },
+    {
+      "name": "Capuchón en los labios en ambas entregas",
+      "passed": true,
+      "details": {
+        "errorMaxPx": 5.684341886080802e-14
+      }
+    },
+    {
+      "name": "Apoyos continuos al caminar hacia el espejo",
+      "passed": true,
+      "details": {
+        "errorMaxPx": 0.009134782570089485
+      }
+    },
+    {
+      "name": "Rebobinado determinista",
+      "passed": true
+    },
+    {
+      "name": "Negro inicial y final",
+      "passed": true
+    },
+    {
+      "name": "Fin a 30 fps",
+      "passed": true
+    },
+    {
+      "name": "Fin a 60 fps",
+      "passed": true
+    },
+    {
+      "name": "Fin a 120 fps",
+      "passed": true
+    }
+  ],
+  "passed": true
+}
