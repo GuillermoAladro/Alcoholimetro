@@ -1,0 +1,34 @@
+{
+  "scene": "00102.2",
+  "duration": 14.6,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "poseJoinsPx": {
+      "salta": 0.0002843527698486535,
+      "aterriza": 0.00011966157946784702,
+      "sube0": 0.000010127380761069368,
+      "lanza": 0.0003305667479308419,
+      "seto": 0.00012244875186284075
+    },
+    "roadContactPx": 0,
+    "tyrePenetrationPx": 0,
+    "frontRisePx": 209.4303680494702,
+    "rearReboundPx": 28.009584278087345,
+    "jacketGripPx": 0,
+    "railGripPx": 0,
+    "throttleGripPx": 0,
+    "glassesJoinPx": 3.1910630129259784e-8,
+    "wristExcessPx": -4.498945365840063
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.066,
+    7.446,
+    11.241999999999999
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
