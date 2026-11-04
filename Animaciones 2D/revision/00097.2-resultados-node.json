@@ -1,0 +1,31 @@
+{
+  "scene": "00097.2",
+  "duration": 14.4,
+  "renderer": "Canvas 2D / Node-Skia",
+  "checks": {
+    "brakeAndWristJoinPx": 0.00011599728782160828,
+    "joinedHandsPx": 1.1368683772161603e-13,
+    "umbrellaGripPx": 0,
+    "cheekGapPx": 0.0805722951439334,
+    "waterReleaseAndHairContactPx": 0,
+    "hairImpactTimes": [
+      12.479999999999999,
+      12.569999999999999
+    ],
+    "rainInRightEdgeDuringGust": [
+      12,
+      4
+    ]
+  },
+  "blackSamples": 16,
+  "seekSamples": [
+    3.024,
+    7.344,
+    11.088000000000001
+  ],
+  "playbackRates": [
+    30,
+    60,
+    120
+  ]
+}
