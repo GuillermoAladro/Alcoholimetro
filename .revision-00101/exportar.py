@@ -4,13 +4,13 @@ from playwright.sync_api import sync_playwright
 import base64, hashlib, io, json, os, shutil, subprocess
 
 root = Path("Animaciones 2D").resolve()
-scene_id = "00102.2"
+scene_id = "00103.2"
 stem = next((root / "escenas").glob(scene_id + " *.js")).stem
 out = Path(os.environ["RUNNER_TEMP"]) / "export"
 out.mkdir()
 shutil.copyfile(Path(os.environ["RUNNER_TEMP"]) / "resultados-node.json",out / "resultados-node.json")
 movie, sheet_path = out / (stem + ".mp4"), out / (stem + " - fotogramas.png")
-times = [0,1.48,2.2,2.6,3.64,4.05,5.56,5.81,6.02,6.96,8.85,9.44,9.91,10.42,11.82,14.59]
+times = [0,1.11,2.24,2.88,3.77,4.35,5.28,6.29,7.066666666666666,7.62,8.06,10.83,12.6,12.96,13.55,14.59]
 sheet = Image.new("RGB", (960, 640), "#16181c")
 draw = ImageDraw.Draw(sheet)
 errors = []
