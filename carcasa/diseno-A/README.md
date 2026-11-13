@@ -48,7 +48,7 @@
 | Chapa y policarbonato | 13,1 kg (12,5 kg de acero: 10,7 de 3 mm y 1,9 de 1,5 mm) |
 | Botón | Ninguno en todo el proyecto, tampoco interruptor de red: el SumUp Solo está siempre esperando tarjeta y la prueba empieza al pagar; la máquina se apaga desenchufándola |
 | Primer pedido de compras | ~937 € era la referencia anterior; **no es un presupuesto actualizado**: H14 y H16 cambian y están pendientes de cotización |
-| Anclaje a la pared | 18 tirafondos DIN 571 Ø6 × 80 mm, tacos fischer SX Plus Ø8 × 65 mm (H16) y arandelas anchas M6, en el patrón P18-4 (ver la sección 4); no vale en tabique de ladrillo hueco ni en pladur |
+| Anclaje a la pared | 18 tirafondos DIN 571 Ø6 × 80 mm de acero inoxidable A2, tacos fischer SX Plus Ø8 × 65 mm (H16) y arandelas anchas M6, en el patrón P18-4 (ver la sección 4); no vale en tabique de ladrillo hueco ni en pladur |
 
 **Altura de montaje:** con la boquilla a 1,45 m del suelo, la base de la máquina queda a 1,12 m.
 
@@ -198,8 +198,8 @@
   - 3 arriba, entre el apoyo de la tapa interior y el canto; 6 por costado, junto a los pliegues laterales; 3 abajo, junto al pliegue del suelo.
   - 8 tornillos quedan detrás del cajón de componentes, 7 detrás del cajón de pajitas y 3 en la franja de arriba.
   - Esquivan la bandeja, el apoyo de la tapa interior, las guías traseras y el espárrago de tierra.
-  - Por qué este patrón y cuánto aguanta en cada pared: [estudio del bloque 2](../../anclaje/ESTUDIO-ANCLAJE.md). Coeficiente de seguridad frente a la carga recomendada de fischer, en el peor de 26 casos supuestos: 1,37 en ladrillo macizo, 0,94 en perforado y 0,11 en tabique de ladrillo hueco. **En ladrillo hueco y en pladur no se cuelga con estos tacos.**
-- **Material:** 18 tirafondos hexagonales **Ø6 × 80 mm (DIN 571)**, 18 tacos **fischer SX Plus Ø8 × 65 mm** (ref. 568108, H16) y 18 arandelas anchas **M6 DIN 9021**. Ver la [ficha de anclaje y montaje](ANCLAJE-PARED-8x65.md).
+  - Por qué este patrón y cuánto aguanta en cada pared: [estudio del bloque 2](../../anclaje/ESTUDIO-ANCLAJE.md). Coeficiente de seguridad frente a la carga recomendada de fischer, en el peor de 26 casos supuestos: 1,71 en ladrillo macizo, 0,94 en perforado y 0,11 en tabique de ladrillo hueco. **En ladrillo hueco y en pladur no se cuelga con estos tacos.**
+- **Material:** 18 tirafondos hexagonales **Ø6 × 80 mm (DIN 571) de acero inoxidable A2**, 18 tacos **fischer SX Plus Ø8 × 65 mm** (ref. 568108, H16) y 18 arandelas anchas **M6 DIN 9021**. Ver la [ficha de anclaje y montaje](ANCLAJE-PARED-8x65.md).
 - **Montaje** (el detalle, con el orden de apriete, en la [ficha](ANCLAJE-PARED-8x65.md)):
   1. Imprime la plantilla de taladros a escala 1:1 ([`anclaje/plantilla/`](../../anclaje/plantilla/): 3 hojas A4 o una A2) y comprueba sus reglas de 100 mm. Ya no se usa el DXF de `A-C02` como plantilla.
   2. Identifica la pared y comprueba que no hay instalaciones detrás. Pega la plantilla a nivel y marca las 18 cruces. Con tres taladros piloto de Ø4 arriba se ve si la fila cae en junta; si es así, se sube o se baja la plantilla 25–30 mm.

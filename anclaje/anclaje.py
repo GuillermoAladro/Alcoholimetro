@@ -53,9 +53,12 @@ except Exception:                      # valores de la ejecución del 13-11-2026
 M_CALC = 18.0                          # masa de cálculo: la del CAD + 15 % (funda, cableado real, tolerancias)   [suposición]
 CG = (0.0, 55.0, 210.0)                # centro de gravedad de cálculo: 5 mm más lejos de la pared que el del CAD  [suposición]
 
-# --- tornillo: tirafondo hexagonal DIN 571 Ø6 (6 × 80 con el taco 8 × 65; 6 × 60 con el 8 × 40)
+# --- tornillo: tirafondo hexagonal DIN 571 Ø6 en INOXIDABLE A2 (decisión del 13-11-2026; antes cincado, 400 MPa)
+#     (6 × 80 con el taco 8 × 65; 6 × 60 con el 8 × 40)
 D_CANA, D_NUCLEO = 6.0, 4.2            # caña lisa y núcleo de la rosca                                          [norma DIN 571]
-FU_TORNILLO = 400.0                    # MPa. DIN 571 no fija clase de resistencia; acero cincado corriente ≈ 4.8   [suposición]
+FU_CINCADO = 400.0                     # MPa, el tirafondo cincado que había: se guarda para comparar              [suposición]
+FU_TORNILLO = 500.0                    # MPa. Inoxidable A2: el mínimo de su clase más baja (A2-50, ISO 3506).
+#                                        Si llega marcado A2-70 son 700 y hay más margen                           [suposición]
 AS_NUCLEO = math.pi * D_NUCLEO ** 2 / 4
 W_CANA = math.pi * D_CANA ** 3 / 32
 GAMMA_F = 1.4                          # coeficiente de acciones que fischer mete en sus «cargas recomendadas»      [hoja]
@@ -79,10 +82,10 @@ def _n_pb(largo, grueso_muro, fvk0):
 
 
 PAREDES = {
-    "macizo": dict(nombre="Medio pie de ladrillo macizo", corto="Macizo", taco="SX Plus 8 × 65 + tirafondo 6 × 80",
+    "macizo": dict(nombre="Medio pie de ladrillo macizo", corto="Macizo", taco="SX Plus 8 × 65 + tirafondo 6 × 80 inox A2",
                    F_rec=800.0, formato=(240.0, 50.0, 10.0), grueso=115.0, hef=65.0 - T_YESO, s_cr=(150.0, 150.0),
                    kappa=2.4, fvk0=0.20, origen="fischer: ladrillo macizo ≥ Mz 12"),
-    "perforado": dict(nombre="Medio pie de ladrillo perforado", corto="Perforado", taco="SX Plus 8 × 65 + tirafondo 6 × 80",
+    "perforado": dict(nombre="Medio pie de ladrillo perforado", corto="Perforado", taco="SX Plus 8 × 65 + tirafondo 6 × 80 inox A2",
                       F_rec=400.0, formato=(240.0, 70.0, 10.0), grueso=115.0, hef=65.0 - T_YESO, s_cr=(150.0, 150.0),
                       kappa=2.4, fvk0=0.20, origen="fischer: ladrillo perforado vertical ≥ HLz 12"),
     "hueco": dict(nombre="Tabique de ladrillo hueco doble (7 cm, a panderete)", corto="Hueco doble", taco="SX Plus 8 × 40 + tirafondo 6 × 60",
@@ -671,9 +674,10 @@ def _dibujo_plantilla(pts):
            ("TEXTO", W - 2, -6.5, 3.2, "DERECHA: lado del enchufe y de la cerradura", "der"),
            ("TEXTO", 2, -6.5, 3.2, "Esquina inferior izquierda = origen (X 0, Z 0)", "izq"),
            ("TEXTO", W / 2 + 5, HW + 46, 3.6, f"Broca Ø{D_BROCA:g} mm · profundidad {PROF_TALADRO:g} mm desde el enlucido", "izq"),
-           ("TEXTO", W / 2 + 5, HW + 40, 3.2, "Taco fischer SX Plus 8 × 65 · tirafondo 6 × 80 DIN 571 · arandela M6 DIN 9021", "izq"),
-           ("TEXTO", W / 2 + 5, HW + 34, 3.2, "Vista MIRANDO A LA PARED (no es espejo). Cotas en mm desde la esquina", "izq"),
-           ("TEXTO", W / 2 + 5, HW + 29, 3.2, "inferior izquierda de la trasera (220 × 439,5 mm).", "izq"),
+           ("TEXTO", W / 2 + 5, HW + 40, 3.2, "Taco fischer SX Plus 8 × 65 · arandela ancha M6 DIN 9021", "izq"),
+           ("TEXTO", W / 2 + 5, HW + 35, 3.2, "Tirafondo hexagonal 6 × 80 DIN 571 de acero inoxidable A2", "izq"),
+           ("TEXTO", W / 2 + 5, HW + 29, 3.2, "Vista MIRANDO A LA PARED (no es espejo). Cotas en mm desde la esquina", "izq"),
+           ("TEXTO", W / 2 + 5, HW + 24, 3.2, "inferior izquierda de la trasera (220 × 439,5 mm).", "izq"),
            ("TEXTO", 2, HW + 76, 5.0, "ALCOHOLÍMETRO · PLANTILLA DE TALADROS A LA PARED · ESCALA 1:1", "izq"),
            ("TEXTO", 2, HW + 69, 3.2, f"Diseño A · trasera A-C02 · {len(pts)} taladros · patrón {NOMBRE_PLANTILLA} · 13-11-2026 · imprimir al 100 % (sin «ajustar a página»)", "izq")]
     return Ls, Cs, Ts
@@ -1047,12 +1051,36 @@ def principal(rapido=False):
              paredes={w: {k: v for k, v in p.items()} for w, p in PAREDES.items()}, casos=[dict(clave=c["clave"], nombre=c["nombre"], grupo=c["grupo"],
              Q=c["Q"].tolist(), plano=list(c["plano"])) for c in CASOS])
     pats = dict(PATRONES)
+    ya = {}                                                  # evaluaciones finas ya hechas, para no repetirlas
     if b18:
-        mejor = max(b18, key=lambda b: b["mejora"])
-        pats[NOMBRE_NUEVO] = [tuple(p) for p in mejor["pts"]]
+        # Las búsquedas puntúan con el modelo rápido. Dos formas distintas pueden empatar ahí y no con el modelo fino, que
+        # es el que da las cifras del estudio. Por eso, entre las que quedan a menos de 0,01 de la mejor, decide el fino.
+        print(f"[{time.time() - t0:5.0f} s] desempate de las búsquedas con el modelo fino…", flush=True)
+        ya[NOMBRE_ACTUAL] = evaluar_fino(PATRONES[NOMBRE_ACTUAL])
+        tope = max(b["mejora"] for b in b18)
+        cand = {}
+        for bq in sorted(b18, key=lambda b: (-b["mejora"], b["semilla"])):
+            clave = tuple(sorted(map(tuple, bq["pts"])))
+            if bq["mejora"] < tope - 0.01:
+                continue
+            if clave in cand:
+                cand[clave]["semillas"].append(bq["semilla"])
+                continue
+            ef = evaluar_fino([tuple(q) for q in bq["pts"]])
+            cand[clave] = dict(b=bq, fino=ef, semillas=[bq["semilla"]],
+                               j=min(ef["cs"][w] / ya[NOMBRE_ACTUAL]["cs"][w] for w in PAREDES_OPT) if not ef["problemas"] else 0.0)
+        elegido = max(cand.values(), key=lambda c: (round(c["j"], 4), c["b"]["mejora"]))
+        mejor = elegido["b"]
+        pats[NOMBRE_NUEVO] = [tuple(q) for q in mejor["pts"]]
+        ya[NOMBRE_NUEVO] = elegido["fino"]
+        R["candidatos"] = [dict(n_pares=c["b"]["n_pares"], n_eje=c["b"]["n_eje"], semillas=c["semillas"], mejora_rapido=c["b"]["mejora"],
+                                mejora_fino=c["j"], cs_fino=c["fino"]["cs"], elegido=c is elegido) for c in cand.values()]
+        for c in R["candidatos"]:
+            print(f"        {c['n_pares']} parejas + {c['n_eje']} en el eje, semillas {c['semillas']}: rápido {c['mejora_rapido']:.4f} · fino {c['mejora_fino']:.4f}"
+                  + ("  <- elegido" if c["elegido"] else ""), flush=True)
         R["busqueda"] = [dict(n=b["n"], n_pares=b["n_pares"], n_eje=b["n_eje"], semilla=b["semilla"], mejora=b["mejora"], evals=b["evals"], t=b["t"], hist=b["hist"]) for b in busq]
     print(f"[{time.time() - t0:5.0f} s] evaluación fina de {len(pats)} patrones…", flush=True)
-    R["patrones"] = {nm: evaluar_fino(p) for nm, p in pats.items()}
+    R["patrones"] = {nm: (ya[nm] if nm in ya else evaluar_fino(p)) for nm, p in pats.items()}
     R["actual"] = NOMBRE_ACTUAL
     gan = NOMBRE_ACTUAL
     if NOMBRE_NUEVO in R["patrones"]:
@@ -1244,7 +1272,9 @@ def tarea_saltos(clave, n_saltos, semilla, desde_mejor=False):
 
 
 def optimizar_todo():
-    """La búsqueda completa tal como se hizo el 13-11-2026 (alrededor de una hora con 2 núcleos, lanzada en serie)."""
+    """La búsqueda completa tal como se hizo el 13-11-2026 (alrededor de una hora con 2 núcleos, lanzada en serie).
+    Se hizo con el tirafondo cincado; al pasar al inoxidable A2 se repitieron las dos de 18 anclajes con las semillas
+    301 y 302 (--saltos 18a,12,301 y --saltos 18b,8,302). El ganador lo elige principal() con el modelo fino."""
     tarea_saltos("18a", 12, 201)         # coordenadas + saltos desde el perímetro (8 parejas + 2 en el eje)
     tarea_saltos("18b", 8, 202)          # ídem con 9 parejas y ninguno en el eje
     tarea_de(8, 2, 2, gens=60)           # evolución diferencial sembrada con lo anterior: ¿encuentra algo mejor?
@@ -1298,8 +1328,11 @@ if __name__ == "__main__":
         tarea_saltos(v[0], int(v[1]), int(v[2]), desde_mejor=a.desde_mejor)
         sys.exit(0)
     if a.mano:
-        b = [x for x in cargar_busquedas() if x["n"] == 18 and x["penal"] == 0]
-        pts = max(b, key=lambda x: x["mejora"])["pts"] if b else P18_3
+        f = os.path.join(RES, "resumen.json")                # el patrón ganador es el del último cálculo completo
+        pts = P18_3
+        if os.path.exists(f):
+            Rm = json.load(open(f))
+            pts = Rm["patrones"][Rm["ganador"]]["pts"]
         for m in contraste_a_mano(pts):
             print(f"{m['caso']}\n   {m['formula']}\n   {m['sustitucion']}\n   a mano {m['mano']:.2f} N · código {m['codigo']:.2f} N")
         sys.exit(0)

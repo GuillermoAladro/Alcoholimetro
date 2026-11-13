@@ -27,7 +27,7 @@ FIJAS = {
     "H08": (4, "Separadores de la cámara (dibujados con la cámara)"),
     "H11": (1, "Se cortan los frontales de policarbonato (pieza V01)"),
     "H13": (1, "Perfil de goma en los cantos del hueco del cajón de pajitas"),
-    "H14": (18, "18 tirafondos Ø6×80 DIN 571 por los agujeros Ø6,5 de la trasera; llave de vaso 10 mm. Proveedor, lote y precio POR VERIFICAR; 0 € NO significa gratuito"),
+    "H14": (18, "18 tirafondos Ø6×80 DIN 571 de acero INOXIDABLE A2 (decisión del 13-11-2026; no vale el cincado) por los agujeros Ø6,5 de la trasera; llave de 10 mm. Proveedor, lote y precio POR VERIFICAR; 0 € NO significa gratuito"),
     "H15": (18, "Una por tirafondo"),
     "H16": (18, "18 tacos fischer SX Plus 8×65 L ref. 568108; broca Ø8, ficha h1 mínimo 75 mm; perforación de 85 mm en soporte macizo apto para Ø6×80. Ver guía ANCLAJE-PARED-8x65.md. Precio POR VERIFICAR"),
 }
@@ -204,7 +204,7 @@ notas = [
     "Los números de pieza son los mismos en el visor 3D, en los STEP (STEP_piezas/<nº>.step) y en los DXF (DXF_corte/<nº>.dxf).",
     "Las compras salen del modelo 3D (cuántas veces aparece cada pieza) más lo que no se dibuja (tubo, fusibles, cables, microSD...).",
     "Paquetes a pedir: si el anuncio no dice cuántas unidades trae, se pone 1 en amarillo para revisarlo.",
-    "ATENCIÓN: H14 (tirafondo 6×80) y H16 (fischer SX Plus 8×65) carecen de precio verificado: 0 € es MARCADOR PENDIENTE, NO coste real. El total de compras será incompleto hasta actualizar estas celdas.",
+    "ATENCIÓN: H14 (tirafondo 6×80 inoxidable A2) y H16 (fischer SX Plus 8×65) carecen de precio verificado: 0 € es MARCADOR PENDIENTE, NO coste real. El total de compras será incompleto hasta actualizar estas celdas.",
 ]
 for i, t in enumerate(notas):
     c = res.cell(row=11 + i, column=1, value="• " + t); c.font = F

@@ -8,8 +8,8 @@ El cálculo, sus suposiciones y sus límites están en [`anclaje/ESTUDIO-ANCLAJE
 
 | Pared (con enlucido de yeso de 10–15 mm) | ¿Vale? | Coeficiente de seguridad calculado |
 |---|---|---|
-| Hormigón o pilar | Sí | ≈ 1,4 |
-| Medio pie de ladrillo macizo | Sí | 1,37 (0,94 típico contando las juntas) |
+| Hormigón o pilar | Sí | ≈ 1,7 |
+| Medio pie de ladrillo macizo | Sí | 1,71 (0,94 típico contando las juntas) |
 | Medio pie de ladrillo perforado | Justo: vale para colgarse y tirar; los golpes laterales más fuertes pasan de lo que fischer recomienda | 0,94 (0,59 típico contando las juntas) |
 | **Tabique de ladrillo hueco** (4 a 9 cm) | **No.** Ningún patrón llega con tacos de nailon | 0,11 |
 | **Pladur** | **No** con estos tacos | — |
@@ -21,8 +21,8 @@ El coeficiente es la carga recomendada de fischer para un taco dividida por lo q
 | Elemento | Elección | Observaciones |
 |---|---|---|
 | H16 | 18 tacos fischer **SX Plus 8 × 65**, ref. **568108** (caja de 50) | Ø8 × 65 mm; tornillo de Ø4,5 a 6 según fischer |
-| H14 | 18 tirafondos hexagonales **DIN 571 Ø6 × 80 mm** | Mejor en **inoxidable A2**: no se oxidan y aguantan más doblándose en el yeso. Proveedor y precio, pendientes |
-| H15 | 18 arandelas anchas **M6 DIN 9021** (Ø18 × 1,6) | Una por tornillo |
+| H14 | 18 tirafondos hexagonales **DIN 571 Ø6 × 80 mm de acero inoxidable A2** | Decidido el 13-11-2026. **No valen los cincados:** se oxidan y aguantan menos doblándose en el yeso (el cálculo cuenta con 500 MPa). Pedirlos con el marcado A2. Proveedor y precio, pendientes |
+| H15 | 18 arandelas anchas **M6 DIN 9021** (Ø18 × 1,6), inoxidables | Una por tornillo. Del mismo material que el tirafondo |
 | Agujero en la chapa | **Ø6,5 mm** | Ya viene cortado en la trasera (pieza A-C02) |
 | Broca | **Ø8 mm**, de widia | Sin percutor en ladrillo perforado |
 | Profundidad del taladro | **85 mm** desde la superficie del enlucido | fischer pide 75 mm como mínimo; con 85 el tirafondo de 80 no hace tope |
@@ -109,7 +109,8 @@ Sin ensayo, lo anterior es cálculo. Detalle en el apartado 12 del estudio; en c
 
 - Las cargas de fischer son para **un taco aislado**; no se multiplican por 18. El reparto entre tacos sale de un modelo, no de un ensayo.
 - Con enlucidos de más de 15 mm, el taco trabaja menos en el ladrillo y el tornillo se dobla más: hay que usar tirafondo y taladro más largos y meter el taco hasta el ladrillo.
-- H14 y H16 siguen sin precio ni proveedor verificados en la lista de piezas (0 € es «pendiente», no «gratis»).
+- H14 y H16 siguen sin precio ni proveedor verificados en la lista de piezas (0 € es «pendiente», no «gratis»). El tirafondo DIN 571 de 6 × 80 en inoxidable A2 es un artículo de catálogo (cajas de 100), pero no he podido comprobar que se pueda pedir en Amazon.
+- El acero del tirafondo se ha supuesto de 500 MPa, el mínimo del A2 más flojo (A2-50). DIN 571 no fija la resistencia: apuntar lo que diga el proveedor.
 - Quitar la máquina solo se puede desde dentro: por fuera no queda ninguna cabeza a la vista.
 
 ## Fuentes

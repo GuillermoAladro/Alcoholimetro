@@ -4,6 +4,26 @@ Decisiones que afectan a todo el proyecto. Lo más nuevo va arriba. Si un docume
 
 ## 13-11-2026
 
+### Tirafondos de pared en acero inoxidable A2 (bloque 2)
+
+Guillermo elige el tirafondo de 6 × 80 en inoxidable A2 en vez del cincado. Era la opción E del apartado 10 del [estudio](anclaje/ESTUDIO-ANCLAJE.md). **Nada está verificado con hardware.**
+- **Qué cambia:** solo el material de los 18 tirafondos H14: **DIN 571 Ø6 × 80 mm de acero inoxidable A2**. Mismo tamaño y misma cabeza (llave de 10). No cambian los agujeros Ø6,5, el taco fischer SX Plus 8 × 65, la arandela M6 DIN 9021 (que ya era inoxidable), el taladro (Ø8 × 85 mm), las medidas exteriores ni el material de la carcasa.
+- **Motivo:** no se oxida, y aguanta más doblándose en el tramo de yeso, que es lo que manda en ladrillo macizo.
+- **Cálculo:** resistencia a rotura supuesta de 500 MPa, el mínimo del A2 más flojo (A2-50); el cincado se suponía de 400 **[suposición las dos: DIN 571 no fija el acero]**. Tornillo a tracción, 2639 → 3299 N; a cortante con el brazo del yeso, 597 → 746 N.
+- **Resultado** con el patrón P18-4 (coeficiente de seguridad, peor de 26 casos supuestos):
+
+  | Pared | Cincado | Inoxidable A2 |
+  |---|---|---|
+  | Medio pie de ladrillo macizo | 1,37 | **1,71** |
+  | Medio pie de ladrillo perforado | 0,94 | 0,94 |
+  | Tabique de ladrillo hueco doble | 0,11 | 0,11 |
+
+  Solo mejora el macizo sin juntas. En perforado, en hueco y en macizo con las juntas donde caigan (0,94 típico) manda el taco o el ladrillo, no el tornillo: ahí no cambia nada. El tabique de ladrillo hueco sigue sin valer.
+- **El patrón de agujeros no cambia: sigue el P18-4.** Repetí la búsqueda desde cero con el tornillo nuevo. La forma de 8 parejas + 2 en el eje vuelve al mismo anillo (filas que se mueven 1–3 mm, resultado igual hasta la tercera cifra). Una forma de 9 parejas sin eje empata con el modelo rápido pero con el fino queda un 6 % por debajo en perforado (0,88 frente a 0,94). La plantilla 1:1 conserva las mismas 18 coordenadas; solo cambia el rótulo del tirafondo.
+- **En el script:** `anclaje/anclaje.py` elige ahora el ganador con el modelo fino cuando varias búsquedas empatan con el rápido.
+- **Actualizado:** estudio y tablas, plantilla (rótulo), `modelo/diseno.py` (H14 y nota de A-C02), `modelo/hacer_bom.py`, `Lista_de_piezas.xlsx`, planos en PDF y lista de chapa, visor 3D, `README.md` del diseño A y `ANCLAJE-PARED-8x65.md`.
+- **Pendiente:** proveedor y precio de H14 (y de H16). El DIN 571 de 6 × 80 en A2 es un artículo de catálogo (cajas de 100), pero no he podido comprobar que se pueda pedir en Amazon. Pedirlo con el marcado A2 y apuntar la resistencia que dé el proveedor.
+
 ### Patrón de anclaje P18-4 (bloque 2)
 
 Sustituye al P18-3 del 04-11. Estudio completo, con sus límites, en [`anclaje/ESTUDIO-ANCLAJE.md`](anclaje/ESTUDIO-ANCLAJE.md). **Nada está verificado con hardware.**
@@ -12,11 +32,13 @@ Sustituye al P18-3 del 04-11. Estudio completo, con sus límites, en [`anclaje/E
 - **Motivo:** el P18-3 se calculó el 04-11 con tirones y cuelgues, y ahí sigue siendo bueno. El bloque 2 añade golpes laterales, empujes y combinaciones (26 casos, todos supuestos). Con un golpe lateral fuerte abajo, los 2 únicos tornillos de abajo del P18-3 pasan un 59 % de la carga recomendada del taco en ladrillo perforado. El P18-4 pone 3 abajo y 3 arriba.
 - **Resultado** (coeficiente de seguridad = carga recomendada de fischer / lo que le llega al anclaje más cargado, peor caso):
 
-  | Pared | P18-3 | P18-4 |
+  | Pared (con el tirafondo cincado de entonces) | P18-3 | P18-4 |
   |---|---|---|
   | Medio pie de ladrillo macizo | 0,92 | 1,37 |
   | Medio pie de ladrillo perforado | 0,63 | 0,94 |
   | Tabique de ladrillo hueco doble | 0,08 | 0,11 |
+
+  Con el tirafondo inoxidable de la entrada de arriba, el macizo pasa a 1,15 y 1,71; lo demás no cambia.
 
   En tirones y cuelgues los dos patrones quedan parecidos (el P18-4, de un 12 % peor a un 13 % mejor según el caso). Con el criterio del 04-11, sin golpes laterales, el P18-3 reparte un 18 % mejor el tirón desde una esquina (λ 10,56 frente a 8,64).
 - **Lo que limita es el taco y la pared, no el patrón.** En tabique de ladrillo hueco doble no se debe colgar la máquina con estos tacos: ningún patrón llega. Con las juntas donde caigan (bajo el yeso no se ven), el coeficiente típico baja a 0,94 en macizo y a 0,59 en perforado. Con 12 anclajes se pierde un 30 %; con 24 se gana un 2–9 %.
@@ -25,7 +47,7 @@ Sustituye al P18-3 del 04-11. Estudio completo, con sus límites, en [`anclaje/E
 - **Comprobado** (`anclaje/aplicar_cad.py --comprobar`): 0 choques entre las 131 piezas con las 18 cabezas y arandelas añadidas; barridos limpios de la tapa, la tapa interior y los dos cajones; ningún cable pasa por una cabeza; las cabezas quedan a 3,4 mm del cajón de pajitas y a 3,9 mm del de componentes.
 - **Montaje:** orden de apriete y ensayo de arrancamiento en [`carcasa/diseno-A/ANCLAJE-PARED-8x65.md`](carcasa/diseno-A/ANCLAJE-PARED-8x65.md).
 - **Si se mandaron a algún taller los planos de 3 mm del 04-11, la trasera A-C02 de aquel zip ya no vale:** cambian sus 18 agujeros. El resto de piezas no cambia.
-- **Pendiente de decidir (Guillermo):** qué se hace en tabique de ladrillo hueco (no instalar, anclaje químico con ensayo o varilla pasante) y si los tirafondos se piden en inoxidable A2. Opciones, coste y riesgo en el apartado 10 del estudio.
+- **Pendiente de decidir (Guillermo):** qué se hace en tabique de ladrillo hueco (no instalar, anclaje químico con ensayo o varilla pasante). Opciones, coste y riesgo en el apartado 10 del estudio. Los tirafondos en inoxidable A2 quedaron decididos el mismo día (entrada de arriba).
 - **Sin tocar:** el estudio del 04-11 (`carcasa/diseno-A/calculo-anclajes/`) se queda como estaba; su modelo de elementos finitos es el que usa el estudio nuevo. Los componentes eléctricos del bloque 1 siguen sin pasar a este documento.
 
 ## 04-11-2026

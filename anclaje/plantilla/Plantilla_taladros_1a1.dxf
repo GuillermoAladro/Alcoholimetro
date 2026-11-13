@@ -489,7 +489,7 @@ $SKPOLY
   9
 $TDCREATE
  40
-2461358.7127662036
+2461358.8263310185
   9
 $TDUCREATE
  40
@@ -497,7 +497,7 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2461358.7127662036
+2461358.8263310185
   9
 $TDUUPDATE
  40
@@ -549,7 +549,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-120
+121
   9
 $SURFTAB1
  70
@@ -929,11 +929,11 @@ $PSTYLEMODE
   9
 $FINGERPRINTGUID
   2
-{F5F48A04-5599-4DE4-AF99-631CF10F1C5D}
+{BFA73102-5F61-4CDB-B600-5130C08B4C48}
   9
 $VERSIONGUID
   2
-{C533E533-C955-4334-9D4B-C1267E662999}
+{090AA0D8-FEF0-4277-ABAA-FD4875A94E79}
   9
 $EXTNAMES
 290
@@ -1323,9 +1323,9 @@ ISM
   0
 CLASS
   1
-LAYOUT
+ACDBPLACEHOLDER
   2
-AcDbLayout
+AcDbPlaceHolder
   3
 ObjectDBX Classes
  90
@@ -1339,9 +1339,9 @@ ObjectDBX Classes
   0
 CLASS
   1
-ACDBPLACEHOLDER
+LAYOUT
   2
-AcDbPlaceHolder
+AcDbLayout
   3
 ObjectDBX Classes
  90
@@ -3277,7 +3277,7 @@ ACAD
   0
 APPID
   5
-11D
+11E
 330
 3
 100
@@ -3291,7 +3291,7 @@ HATCHBACKGROUNDCOLOR
   0
 APPID
   5
-11E
+11F
 330
 3
 100
@@ -8901,7 +8901,7 @@ AcDbText
  40
 3.2
   1
-Taco fischer SX Plus 8 × 65 · tirafondo 6 × 80 DIN 571 · arandela M6 DIN 9021
+Taco fischer SX Plus 8 × 65 · arandela ancha M6 DIN 9021
  11
 115.0
  21
@@ -8925,17 +8925,17 @@ AcDbText
  10
 115.0
  20
-473.5
+474.5
  30
 0.0
  40
 3.2
   1
-Vista MIRANDO A LA PARED (no es espejo). Cotas en mm desde la esquina
+Tirafondo hexagonal 6 × 80 DIN 571 de acero inoxidable A2
  11
 115.0
  21
-473.5
+474.5
  31
 0.0
 100
@@ -8961,7 +8961,7 @@ AcDbText
  40
 3.2
   1
-inferior izquierda de la trasera (220 × 439,5 mm).
+Vista MIRANDO A LA PARED (no es espejo). Cotas en mm desde la esquina
  11
 115.0
  21
@@ -8974,6 +8974,36 @@ AcDbText
 TEXT
   5
 11B
+330
+17
+100
+AcDbEntity
+  8
+TEXTO
+100
+AcDbText
+ 10
+115.0
+ 20
+463.5
+ 30
+0.0
+ 40
+3.2
+  1
+inferior izquierda de la trasera (220 × 439,5 mm).
+ 11
+115.0
+ 21
+463.5
+ 31
+0.0
+100
+AcDbText
+  0
+TEXT
+  5
+11C
 330
 17
 100
@@ -9003,7 +9033,7 @@ AcDbText
   0
 TEXT
   5
-11C
+11D
 330
 17
 100
@@ -10121,7 +10151,7 @@ CREATED_BY_EZDXF
   3
 WRITTEN_BY_EZDXF
 350
-11F
+120
   0
 DICTIONARYVAR
   5
@@ -10133,7 +10163,7 @@ DictionaryVariables
 280
 0
   1
-1.4.5 @ 2026-11-13T16:06:23.362774+00:00
+1.4.5 @ 2026-11-13T18:49:55.403721+00:00
   0
 VISUALSTYLE
   5
@@ -10837,7 +10867,7 @@ X-Ray
   0
 DICTIONARYVAR
   5
-11F
+120
 330
 2D
 100
@@ -10845,7 +10875,7 @@ DictionaryVariables
 280
 0
   1
-1.4.5 @ 2026-11-13T16:06:23.371473+00:00
+1.4.5 @ 2026-11-13T18:49:55.412742+00:00
   0
 ENDSEC
   0

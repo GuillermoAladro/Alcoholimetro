@@ -1,6 +1,6 @@
 # Bloque 2 · Anclaje a pared: estudio y plantilla de taladros
 
-13-11-2026 · diseño A · trasera de chapa DC01 de 3 mm · 18 tirafondos puestos desde dentro.
+13-11-2026 · diseño A · trasera de chapa DC01 de 3 mm · 18 tirafondos de acero inoxidable A2 puestos desde dentro.
 
 **Es trabajo de papel.** No hay ninguna máquina montada ni ningún taco ensayado. Cada dato lleva su origen:
 **[CAD]** sale de `diseno.py` / `specs.py` · **[hoja]** leído en la hoja del fabricante · **[norma]** · **[cálculo]** lo saca `anclaje.py` y se puede repetir · **[estimación]** cifra razonada · **[suposición]** lo doy por cierto sin poder comprobarlo.
@@ -10,17 +10,18 @@
 ## 0. Lo que tienes que saber en un minuto
 
 1. **El encargo partía de un dato viejo.** Decía que la fijación era una rejilla de 3 × 6 «sin ningún cálculo», con tirafondo 6 × 60 y taco 8 × 40. `DECISIONES.md` dice otra cosa y manda: desde el 03-11 son **tirafondo 6 × 80 y taco SX Plus 8 × 65**, y desde el 04-11 el CAD lleva el **patrón P18-3**, que salió de un cálculo por elementos finitos (`carcasa/diseno-A/calculo-anclajes/`). He partido de ahí, no de la rejilla.
-2. **Patrón nuevo: P18-4.** Un anillo pegado al perímetro: 3 arriba, 3 abajo y 6 en cada costado. Con las cargas de este estudio su coeficiente de seguridad es **un 49 % mayor** que el del P18-3 (1,37 frente a 0,92 en ladrillo macizo; 0,94 frente a 0,63 en perforado).
+2. **Patrón nuevo: P18-4.** Un anillo pegado al perímetro: 3 arriba, 3 abajo y 6 en cada costado. Con las cargas de este estudio su coeficiente de seguridad es **un 49 % mayor** que el del P18-3 (1,71 frente a 1,15 en ladrillo macizo; 0,94 frente a 0,63 en perforado).
    - Toda la ganancia viene de un caso que el cálculo del 04-11 no miraba: **un golpe lateral fuerte abajo**. El P18-3 solo tiene 2 tornillos abajo y, en ladrillo perforado, se llevan un 59 % más de lo recomendado.
    - En tirones y cuelgues los dos patrones quedan parecidos: según el caso, el P18-4 va de un 12 % peor a un 13 % mejor. Si quitas el golpe lateral bajo, empatan (0,94 y 0,93 en perforado).
 3. **Lo que limita no es el patrón, es el taco y la pared.**
-   - **Ladrillo macizo:** cumple con margen (CS 1,37).
+   - **Ladrillo macizo:** cumple con margen (CS 1,71).
    - **Ladrillo perforado:** justo (CS 0,94). Los golpes laterales más fuertes pasan un 6 % de la carga recomendada del taco.
    - **Tabique de ladrillo hueco doble: no vale** (CS 0,11). Con tacos de nailon ningún patrón lo arregla; con anclaje químico sube a 0,31, que sigue sin llegar. Ahí no se debe colgar la máquina (apartado 10).
 4. **Las juntas quitan mucho.** Bajo el yeso no se ven. De media, 5 o 6 de los 18 tacos tocan una junta. Con eso el coeficiente típico baja a 0,94 en macizo y a 0,59 en perforado.
 5. **La chapa no es rígida.** La fórmula del encargo (placa rígida) se queda corta: la tracción real del tornillo más cargado es entre 1,4 y 2,6 veces mayor. Los resultados usan la chapa flexible.
 6. **18 está bien elegido.** Con 12 se pierde un 30 %; con 24 se gana un 2 % en perforado y un 9 % en macizo.
-7. **Hecho:** plantilla 1:1 (DXF, PDF A2 y PDF en 3 hojas A4), CAD actualizado (0 choques con las 18 cabezas puestas), `DECISIONES.md` e instrucciones de montaje con orden de apriete. Todo en la rama `bloque-2-anclaje`, sin fusionar.
+7. **Tirafondos en inoxidable A2** (decisión tuya del 13-11, en vez de cincados). Mismo tamaño, 6 × 80; no cambian los agujeros ni el patrón, que sigue siendo el mejor con este tornillo. En ladrillo macizo sin juntas el coeficiente pasa de 1,37 a 1,71. Con las juntas donde caigan no cambia (0,94): ahí manda el taco, no el tornillo. En perforado y en hueco tampoco cambia.
+8. **Hecho:** plantilla 1:1 (DXF, PDF A2 y PDF en 3 hojas A4), CAD actualizado (0 choques con las 18 cabezas puestas), `DECISIONES.md` e instrucciones de montaje con orden de apriete. Todo en la rama `bloque-2-anclaje`, sin fusionar.
 
 **Qué significa aquí «coeficiente de seguridad» (CS).** Es la resistencia recomendada por el fabricante dividida por lo que le llega al anclaje más cargado, en el peor caso. La carga recomendada de fischer ya lleva dentro su propio margen (en sus tacos de nailon, del orden de 7 veces sobre el arrancamiento medio **[estimación, por sus tablas de la serie SX]**). Así que CS < 1 no significa «se cae»: significa «fuera de lo que el fabricante garantiza». CS ≥ 1 con cargas tan brutas como las de este estudio es un buen resultado.
 
@@ -36,9 +37,9 @@
 | Masa | **15,63 kg**: 12,53 de acero, 0,57 de policarbonato, 1,52 de componentes y 1,01 de cables, pintura, pajitas y tornillería | [cálculo] `masa_cdg.py`: volumen de cada pieza del CAD × densidad; componentes por hoja o estimados |
 | Centro de gravedad | x = −1,7 mm, z = 207 mm, a **49,7 mm de la pared** | [cálculo] `masa_cdg.py` |
 | Valores de cálculo | **18 kg** (+15 %) a 55 mm de la pared y z = 210 mm | [suposición] margen por funda, cableado real y tolerancias |
-| Fijación que consta en el repo | 18 agujeros Ø6,5 · tirafondo hexagonal **6 × 80** DIN 571 · taco fischer **SX Plus 8 × 65** (ref. 568108) · arandela ancha M6 DIN 9021 · patrón **P18-3** | [CAD] `FIJACIONES_PARED` y `DECISIONES.md` (03-11 y 04-11) |
+| Fijación que constaba en el repo | 18 agujeros Ø6,5 · tirafondo hexagonal **6 × 80** DIN 571 cincado · taco fischer **SX Plus 8 × 65** (ref. 568108) · arandela ancha M6 DIN 9021 · patrón **P18-3** | [CAD] `FIJACIONES_PARED` y `DECISIONES.md` (03-11 y 04-11) |
 | Lo que decía el encargo | 6 × 60, taco 8 × 40, rejilla x = −85 / 0 / +85 y z = 25 / 75 / 125 / 205 / 295 / 391,5 | Era lo vigente hasta el 03-11. **Ya no vale:** los agujeros de x = ±85 caen sobre las guías traseras nuevas |
-| Tornillo | Caña lisa Ø6, núcleo de rosca Ø4,2. Resistencia a rotura 400 MPa | [norma] DIN 571 para las medidas · [suposición] para el acero: la norma no fija clase |
+| Tornillo (desde el 13-11) | Tirafondo DIN 571 6 × 80 de **acero inoxidable A2**. Caña lisa Ø6, núcleo de rosca Ø4,2. Resistencia a rotura 500 MPa | [norma] DIN 571 para las medidas · [suposición] para el acero: 500 MPa es el mínimo de la clase más baja del A2 (A2-50); el cincado que había se suponía de 400 |
 | Arandela | Ø18 × 1,6 mm | [norma] DIN 9021 |
 | Holgura de las cabezas | Sobresalen 5,6 mm. Quedan 3,4 mm hasta el cajón de pajitas y 3,9 mm hasta el de componentes | [cálculo] `aplicar_cad.py` |
 
@@ -194,17 +195,17 @@ La chapa no manda en ningún caso. El único aviso es el último: con tirones de
 |---|---|---|
 | **Taco:** arrancamiento o cortante | √(N² + V²) ≤ α · F_rec | F_rec de fischer [hoja]; α = 1, o 0,5 / 0,3 si cae en junta |
 | **Cono de ladrillo** con tacos cercanos | N ≤ α · κ · F_rec · ψ_i | ψ_i = parte de su trozo de pared que le queda a cada taco |
-| **Tornillo:** tracción más flexión en el yeso | N / N_s + V / V_s ≤ 1 | N_s = 2639 N, V_s = 597 N [cálculo] |
+| **Tornillo:** tracción más flexión en el yeso | N / N_s + V / V_s ≤ 1 | N_s = 3299 N, V_s = 746 N [cálculo] |
 | **Ladrillo entero arrancado** | Suma de N de los tacos del mismo ladrillo ≤ N_pb | 1577 N o 480 N (apartado 2). Solo se puede comprobar sabiendo dónde caen las juntas: entra en el Monte Carlo |
 
 **Solape de conos (ψ).** A cada taco le toca el trozo de pared que está más cerca de él que de cualquier otro, recortado a un rectángulo s_cr centrado en el taco. ψ = ese área / (s_cr,x · s_cr,z). En el P18-4, ψ va de 0,33 a 0,54 en ladrillo macizo: con 18 tacos en 220 × 440 mm, todos se pisan.
 
 **Tornillo.**
 
-- Tracción: N_s = A_s · f_u / (1,5 · 1,4) → 13,85 · 400 / 2,1 → **2639 N**.
-- Cortante con brazo de palanca (EN 1992-4). Brazo l = yeso + media chapa + medio diámetro = 15 + 1,5 + 3 = 19,5 mm. Momento resistente M = 1,2 · W · f_u = 1,2 · 21,2 · 400 = 10 179 N·mm. V_s = 2 · M / l / (1,25 · 1,4) → 2 · 10 179 / 19,5 / 1,75 → **597 N**.
+- Tracción: N_s = A_s · f_u / (1,5 · 1,4) → 13,85 · 500 / 2,1 → **3299 N**.
+- Cortante con brazo de palanca (EN 1992-4). Brazo l = yeso + media chapa + medio diámetro = 15 + 1,5 + 3 = 19,5 mm. Momento resistente M = 1,2 · W · f_u = 1,2 · 21,2 · 500 = 12 723 N·mm. V_s = 2 · M / l / (1,25 · 1,4) → 2 · 12 723 / 19,5 / 1,75 → **746 N**. (Con el tirafondo cincado de 400 MPa eran 597 N.)
 
-En ladrillo macizo manda este modo y no el taco: la resistencia del tornillo doblándose en el yeso (597 N) es menor que la del taco (800 N).
+En ladrillo macizo sigue mandando este modo y no el taco, aunque ya por poco: la resistencia del tornillo doblándose en el yeso (746 N) queda cerca de la del taco (800 N).
 
 ### 4.4 Coeficiente de seguridad de un patrón
 
@@ -214,7 +215,7 @@ CS = mínimo, sobre los 26 casos, las dos hipótesis de borde, los 18 anclajes y
 
 - Del modelo: N = 85 N, V = 417 N.
 - Ladrillo perforado, taco: √(85² + 417²) / 400 = 425,6 / 400 = 1,06 → **CS = 0,94**.
-- Ladrillo macizo, tornillo: 85 / 2639 + 417 / 597 = 0,03 + 0,70 = 0,73 → **CS = 1,37**. (El taco iría a 425,6 / 800 = 0,53.)
+- Ladrillo macizo, tornillo: 85 / 3299 + 417 / 746 = 0,03 + 0,56 = 0,585 → **CS = 1,71**. (El taco iría a 425,6 / 800 = 0,53.)
 - Ladrillo hueco, donde manda otro caso (tirón en esquina + empuje lateral, anclaje n.º 5): N = 400 N; cono: 400 / (100 · 1 · 0,45) = 8,9 → **CS = 0,11**.
 
 ---
@@ -251,6 +252,18 @@ Unidades revisadas: fuerzas en N, longitudes en mm, momentos en N·mm; masa × 9
 
 Dos formas distintas de patrón llegan al mismo valor (1,49) y la evolución diferencial no lo mejora: es un buen indicio, **no una demostración** de óptimo global.
 
+**Repetida con el tirafondo inoxidable (13-11).** Esas búsquedas se hicieron con el tirafondo cincado. Al cambiar a inoxidable A2 repetí desde cero las dos de coordenadas y saltos:
+
+| Búsqueda con tirafondo inoxidable | Evaluaciones | Tiempo | Mejora con el modelo rápido | Mejora con el modelo fino |
+|---|---|---|---|---|
+| Coordenadas + 12 saltos, 8 parejas + 2 en el eje | 5521 | 6 min | 1,4912 | 1,4894 |
+| Coordenadas + 8 saltos, 9 parejas sin eje | 4005 | 5 min | 1,4917 | 1,3970 |
+| P18-4, el que ya estaba en el CAD | — | — | 1,4915 | **1,4896** |
+
+- **El patrón no cambia.** La de 8 parejas + 2 vuelve a caer en el mismo anillo: tres filas de los costados se mueven entre 1 y 3 mm y el resultado es igual hasta la tercera cifra.
+- La de 9 parejas sin eje empata con el modelo rápido (el que usa la búsqueda) pero con el fino, que es el que da las cifras de este estudio, queda un 6 % por debajo en ladrillo perforado (0,88 frente a 0,94). Desde el 13-11 el script desempata con el modelo fino.
+- Tiene su lógica: en perforado manda el taco y ahí el tornillo no interviene; en macizo sigue mandando el tornillo, y el nuevo sube un 25 % tanto el P18-3 (0,92 → 1,15) como el P18-4 (1,37 → 1,71), así que la relación entre los dos no cambia.
+
 **Simetría.** Soltando la simetría y moviendo cada agujero por separado desde el P18-4, la mejora pasa de 1,4915 a 1,4928 (+0,1 %). No compensa: se queda simétrico.
 
 ### Patrones comparados
@@ -259,18 +272,18 @@ Modelo fino (malla de 10 mm, arandela rígida), 26 casos.
 
 | Patrón | Cabe | Sep. mín. (mm) | CS macizo | CS perforado | CS hueco doble | Caso que manda (perforado) | Modo de fallo que manda (perforado) | CS con placa rígida (perforado) |
 |---|---|---|---|---|---|---|---|---|
-| Rejilla 3 × 6 (la del encargo; ya no cabe) | no | 50,0 | 1,04 | 0,64 | 0,10 | Combinación: tirón de 1000 N en la esquina de arriba dcha. + empuje lateral de 1000 N | taco (arrancamiento o cortante) | 0,74 |
-| Rejilla 3 × 6 adaptada (x = ±89,5) | sí | 50,0 | 1,06 | 0,65 | 0,11 | Combinación: tirón de 1000 N en la esquina de arriba dcha. + empuje lateral de 1000 N | taco (arrancamiento o cortante) | 0,75 |
-| Solo perímetro | sí | 53,0 | 1,17 | 0,80 | 0,11 | Patada lateral (4500 N) en el costado dcho., abajo | taco (arrancamiento o cortante) | 0,81 |
-| Perímetro + centro | sí | 53,0 | 0,99 | 0,68 | 0,11 | Patada lateral (4500 N) en el costado dcho., abajo | taco (arrancamiento o cortante) | 0,69 |
-| Tresbolillo | sí | 71,5 | 1,13 | 0,63 | 0,08 | Combinación: tirón de 1000 N en la esquina de arriba dcha. + empuje lateral de 1000 N | taco (arrancamiento o cortante) | 0,80 |
+| Rejilla 3 × 6 (la del encargo; ya no cabe) | no | 50,0 | 1,28 | 0,64 | 0,10 | Combinación: tirón de 1000 N en la esquina de arriba dcha. + empuje lateral de 1000 N | taco (arrancamiento o cortante) | 0,74 |
+| Rejilla 3 × 6 adaptada (x = ±89,5) | sí | 50,0 | 1,30 | 0,65 | 0,11 | Combinación: tirón de 1000 N en la esquina de arriba dcha. + empuje lateral de 1000 N | taco (arrancamiento o cortante) | 0,75 |
+| Solo perímetro | sí | 53,0 | 1,47 | 0,80 | 0,11 | Patada lateral (4500 N) en el costado dcho., abajo | taco (arrancamiento o cortante) | 0,81 |
+| Perímetro + centro | sí | 53,0 | 1,24 | 0,68 | 0,11 | Patada lateral (4500 N) en el costado dcho., abajo | taco (arrancamiento o cortante) | 0,69 |
+| Tresbolillo | sí | 71,5 | 1,25 | 0,63 | 0,08 | Combinación: tirón de 1000 N en la esquina de arriba dcha. + empuje lateral de 1000 N | taco (arrancamiento o cortante) | 0,80 |
 | Concentrado arriba y abajo | no | 45,0 | 1,11 | 0,55 | 0,06 | Combinación: tirón de 1000 N en la esquina de arriba izda. + empuje lateral de 1000 N | taco (arrancamiento o cortante) | 0,90 |
-| P18-3 (el del CAD, 04-11) | sí | 50,0 | 0,92 | 0,63 | 0,08 | Patada lateral (4500 N) en el costado dcho., abajo | taco (arrancamiento o cortante) | 0,63 |
-| P18-4 (óptimo numérico) | sí | 50,0 | 1,37 | 0,94 | 0,11 | Patada lateral (4500 N) en el costado dcho., abajo | taco (arrancamiento o cortante) | 0,93 |
+| P18-3 (el del CAD, 04-11) | sí | 50,0 | 1,15 | 0,63 | 0,08 | Patada lateral (4500 N) en el costado dcho., abajo | taco (arrancamiento o cortante) | 0,63 |
+| P18-4 (óptimo numérico) | sí | 50,0 | 1,71 | 0,94 | 0,11 | Patada lateral (4500 N) en el costado dcho., abajo | taco (arrancamiento o cortante) | 0,93 |
 
 ![Los patrones a la misma escala](figuras/fig1_patrones.png)
 
-Coeficiente de cada caso en cada patrón (ladrillo perforado). La carga de fallo de un caso es su carga supuesta multiplicada por el coeficiente. En ladrillo macizo, los casos en los que manda el taco o el cono salen al doble; los de golpe lateral, donde manda el tornillo, alrededor de un 46 % más (tablas del apartado 7).
+Coeficiente de cada caso en cada patrón (ladrillo perforado). La carga de fallo de un caso es su carga supuesta multiplicada por el coeficiente. En ladrillo macizo, los casos en los que manda el taco o el cono salen al doble; los de golpe lateral, donde manda el tornillo, alrededor de un 80 % más (tablas del apartado 7).
 
 | Caso · carga supuesta | Rejilla 3 × 6 | Rejilla 3 × 6 adaptada | Solo perímetro | Perímetro + centro | Tresbolillo | Concentrado arriba y abajo | P18-3 | P18-4 |
 |---|---|---|---|---|---|---|---|---|
@@ -306,41 +319,41 @@ Coeficiente de cada caso en cada patrón (ladrillo perforado). La carga de fallo
 
 | Caso | Carga supuesta | CS macizo | CS perforado | CS hueco | Carga que agota (macizo) | Carga que agota (perforado) | Modo que manda (perforado) |
 |---|---|---|---|---|---|---|---|
-| Peso propio | 18 kg | 51,91 | 32,49 | 6,00 | 934 kg | 585 kg | taco (arrancamiento o cortante) |
-| Persona colgada del borde de arriba (se deja caer, ×2) | 120 kg | 2,41 | 1,45 | 0,24 | 290 kg | 174 kg | taco (arrancamiento o cortante) |
+| Peso propio | 18 kg | 64,89 | 32,49 | 6,00 | 1168 kg | 585 kg | taco (arrancamiento o cortante) |
+| Persona colgada del borde de arriba (se deja caer, ×2) | 120 kg | 2,89 | 1,45 | 0,24 | 347 kg | 174 kg | taco (arrancamiento o cortante) |
 | Tirón hacia fuera, arriba o abajo en el centro | 1000 N | 2,86 | 1,43 | 0,13 | 2862 N | 1431 N | cono de ladrillo (tacos juntos) |
 | Tirón hacia fuera desde una esquina | 1000 N | 2,29 | 1,15 | 0,13 | 2294 N | 1147 N | cono de ladrillo (tacos juntos) |
 | Tirón de un lado, a media altura (torsión) | 1000 N | 2,81 | 1,40 | 0,19 | 2806 N | 1403 N | taco (arrancamiento o cortante) |
-| Empuje lateral arriba | 1000 N | 3,49 | 2,34 | 0,42 | 3490 N | 2337 N | taco (arrancamiento o cortante) |
-| Empuje hacia arriba | 1000 N | 10,28 | 5,63 | 0,55 | 10278 N | 5627 N | taco (arrancamiento o cortante) |
-| Patada lateral abajo | 4500 N | 1,37 | 0,94 | 0,19 | 6151 N | 4227 N | taco (arrancamiento o cortante) |
-| Puñetazo lateral arriba | 3000 N | 1,37 | 0,94 | 0,24 | 4107 N | 2820 N | taco (arrancamiento o cortante) |
-| Patada de abajo arriba | 3000 N | 3,31 | 2,13 | 0,29 | 9940 N | 6402 N | taco (arrancamiento o cortante) |
+| Empuje lateral arriba | 1000 N | 4,36 | 2,34 | 0,42 | 4363 N | 2337 N | taco (arrancamiento o cortante) |
+| Empuje hacia arriba | 1000 N | 11,25 | 5,63 | 0,55 | 11255 N | 5627 N | taco (arrancamiento o cortante) |
+| Patada lateral abajo | 4500 N | 1,71 | 0,94 | 0,19 | 7689 N | 4227 N | taco (arrancamiento o cortante) |
+| Puñetazo lateral arriba | 3000 N | 1,71 | 0,94 | 0,24 | 5133 N | 2820 N | taco (arrancamiento o cortante) |
+| Patada de abajo arriba | 3000 N | 4,14 | 2,13 | 0,29 | 12425 N | 6402 N | taco (arrancamiento o cortante) |
 | Golpe de frente | 5000 N | 5,48 | 2,74 | 0,25 | 27380 N | 13690 N | taco (arrancamiento o cortante) |
 | Colgado (120 kg, sin golpe) + tirón de 1000 N | 1177 N + 1000 N | 2,14 | 1,07 | 0,12 | las dos × 2,14 | las dos × 1,07 | cono de ladrillo (tacos juntos) |
-| Colgado de una esquina + empuje lateral | 1177 N + 1000 N | 3,95 | 2,13 | 0,29 | las dos × 3,95 | las dos × 2,13 | taco (arrancamiento o cortante) |
+| Colgado de una esquina + empuje lateral | 1177 N + 1000 N | 4,26 | 2,13 | 0,29 | las dos × 4,26 | las dos × 2,13 | taco (arrancamiento o cortante) |
 | Tirón en esquina + empuje lateral | 1000 N + 1000 N | 1,90 | 0,95 | 0,11 | las dos × 1,90 | las dos × 0,95 | taco (arrancamiento o cortante) |
-| **Mínimo** | | **1,37** | **0,94** | **0,11** | | | |
+| **Mínimo** | | **1,71** | **0,94** | **0,11** | | | |
 
 **P18-3 (el que había)**
 
 | Caso | Carga supuesta | CS macizo | CS perforado | CS hueco | Carga que agota (macizo) | Carga que agota (perforado) | Modo que manda (perforado) |
 |---|---|---|---|---|---|---|---|
-| Peso propio | 18 kg | 53,37 | 34,71 | 6,92 | 961 kg | 625 kg | taco (arrancamiento o cortante) |
-| Persona colgada del borde de arriba (se deja caer, ×2) | 120 kg | 2,15 | 1,40 | 0,27 | 258 kg | 168 kg | taco (arrancamiento o cortante) |
+| Peso propio | 18 kg | 66,71 | 34,71 | 6,92 | 1201 kg | 625 kg | taco (arrancamiento o cortante) |
+| Persona colgada del borde de arriba (se deja caer, ×2) | 120 kg | 2,69 | 1,40 | 0,27 | 323 kg | 168 kg | taco (arrancamiento o cortante) |
 | Tirón hacia fuera, arriba o abajo en el centro | 1000 N | 2,51 | 1,26 | 0,10 | 2513 N | 1257 N | cono de ladrillo (tacos juntos) |
 | Tirón hacia fuera desde una esquina | 1000 N | 2,19 | 1,09 | 0,08 | 2189 N | 1094 N | cono de ladrillo (tacos juntos) |
 | Tirón de un lado, a media altura (torsión) | 1000 N | 3,00 | 1,50 | 0,12 | 2995 N | 1498 N | cono de ladrillo (tacos juntos) |
-| Empuje lateral arriba | 1000 N | 3,40 | 2,31 | 0,26 | 3395 N | 2311 N | taco (arrancamiento o cortante) |
-| Empuje hacia arriba | 1000 N | 10,20 | 5,51 | 0,44 | 10198 N | 5508 N | taco (arrancamiento o cortante) |
-| Patada lateral abajo | 4500 N | 0,92 | 0,63 | 0,11 | 4129 N | 2837 N | taco (arrancamiento o cortante) |
-| Puñetazo lateral arriba | 3000 N | 1,35 | 0,93 | 0,17 | 4064 N | 2794 N | taco (arrancamiento o cortante) |
-| Patada de abajo arriba | 3000 N | 3,30 | 2,11 | 0,23 | 9893 N | 6332 N | taco (arrancamiento o cortante) |
+| Empuje lateral arriba | 1000 N | 4,24 | 2,31 | 0,26 | 4244 N | 2311 N | taco (arrancamiento o cortante) |
+| Empuje hacia arriba | 1000 N | 11,02 | 5,51 | 0,44 | 11016 N | 5508 N | taco (arrancamiento o cortante) |
+| Patada lateral abajo | 4500 N | 1,15 | 0,63 | 0,11 | 5162 N | 2837 N | taco (arrancamiento o cortante) |
+| Puñetazo lateral arriba | 3000 N | 1,69 | 0,93 | 0,17 | 5080 N | 2794 N | taco (arrancamiento o cortante) |
+| Patada de abajo arriba | 3000 N | 4,12 | 2,11 | 0,23 | 12366 N | 6332 N | taco (arrancamiento o cortante) |
 | Golpe de frente | 5000 N | 4,57 | 2,29 | 0,18 | 22853 N | 11427 N | cono de ladrillo (tacos juntos) |
 | Colgado (120 kg, sin golpe) + tirón de 1000 N | 1177 N + 1000 N | 2,32 | 1,16 | 0,14 | las dos × 2,32 | las dos × 1,16 | cono de ladrillo (tacos juntos) |
-| Colgado de una esquina + empuje lateral | 1177 N + 1000 N | 4,10 | 2,42 | 0,28 | las dos × 4,10 | las dos × 2,42 | taco (arrancamiento o cortante) |
+| Colgado de una esquina + empuje lateral | 1177 N + 1000 N | 4,84 | 2,42 | 0,28 | las dos × 4,84 | las dos × 2,42 | taco (arrancamiento o cortante) |
 | Tirón en esquina + empuje lateral | 1000 N + 1000 N | 1,99 | 1,00 | 0,09 | las dos × 1,99 | las dos × 1,00 | cono de ladrillo (tacos juntos) |
-| **Mínimo** | | **0,92** | **0,63** | **0,08** | | | |
+| **Mínimo** | | **1,15** | **0,63** | **0,08** | | | |
 
 ![Coeficiente de seguridad por caso](figuras/fig3_casos.png)
 
@@ -364,10 +377,10 @@ Lectura:
 
 | Pared | Patrón | Tacos en junta (media / máx.) | CS mediana | CS percentil 5 | CS mínimo | Tacos que ceden (media) |
 |---|---|---|---|---|---|---|
-| Macizo | P18-3 (el del CAD, 04-11) | 6,5 / 11 | 0,81 | 0,55 | 0,48 | 2,2 |
-| Macizo | P18-4 (óptimo numérico) | 6,0 / 12 | 0,94 | 0,57 | 0,56 | 3,6 |
-| Macizo | Rejilla 3 × 6 adaptada (x = ±89,5) | 6,4 / 13 | 0,82 | 0,52 | 0,44 | 3,4 |
-| Macizo | Solo perímetro | 6,3 / 18 | 0,93 | 0,62 | 0,53 | 2,7 |
+| Macizo | P18-3 (el del CAD, 04-11) | 6,5 / 11 | 0,89 | 0,55 | 0,48 | 3,6 |
+| Macizo | P18-4 (óptimo numérico) | 6,0 / 12 | 0,94 | 0,57 | 0,56 | 3,7 |
+| Macizo | Rejilla 3 × 6 adaptada (x = ±89,5) | 6,4 / 13 | 0,88 | 0,52 | 0,44 | 3,6 |
+| Macizo | Solo perímetro | 6,3 / 18 | 0,95 | 0,62 | 0,53 | 2,7 |
 | Perforado | P18-3 (el del CAD, 04-11) | 5,1 / 10 | 0,46 | 0,27 | 0,27 | 3,3 |
 | Perforado | P18-4 (óptimo numérico) | 5,3 / 13 | 0,59 | 0,36 | 0,28 | 3,6 |
 | Perforado | Rejilla 3 × 6 adaptada (x = ±89,5) | 5,1 / 11 | 0,46 | 0,28 | 0,22 | 3,1 |
@@ -390,9 +403,9 @@ Cada vez se quita el anclaje cuya falta más baja el coeficiente.
 
 | Patrón | Pared | Intacto | Sin 1 | Sin 2 | Sin 3 | Sin 4 | Anclajes quitados (n.º de plantilla) |
 |---|---|---|---|---|---|---|---|
-| P18-3 (el del CAD, 04-11) | Macizo | 0,92 | 0,74 | 0,65 | 0,57 | 0,51 | 17, 16, 15, 14 |
+| P18-3 (el del CAD, 04-11) | Macizo | 1,15 | 0,93 | 0,81 | 0,71 | 0,64 | 17, 16, 15, 14 |
 | P18-3 (el del CAD, 04-11) | Perforado | 0,63 | 0,51 | 0,45 | 0,39 | 0,35 | 17, 16, 15, 14 |
-| P18-4 (óptimo numérico) | Macizo | 1,37 | 1,17 | 0,97 | 0,82 | 0,67 | 1, 3, 4, 5 |
+| P18-4 (óptimo numérico) | Macizo | 1,71 | 1,47 | 1,22 | 1,02 | 0,84 | 1, 3, 4, 5 |
 | P18-4 (óptimo numérico) | Perforado | 0,94 | 0,76 | 0,62 | 0,51 | 0,43 | 3, 7, 9, 11 |
 
 El P18-4 sin sus 2 peores anclajes (0,62 en perforado) aguanta lo mismo que el P18-3 intacto (0,63). Con 4 fallados conserva el 46 %.
@@ -401,28 +414,28 @@ El P18-4 sin sus 2 peores anclajes (0,62 en perforado) aguanta lo mismo que el P
 
 | Suposición | Patrón | CS macizo (modo) | CS perforado (modo) | CS hueco (modo) |
 |---|---|---|---|---|
-| Base | P18-3 | 0,92 (tornillo) | 0,63 (taco) | 0,08 (cono de ladrillo) |
-| Base | P18-4 | 1,37 (tornillo) | 0,94 (taco) | 0,11 (cono de ladrillo) |
+| Base | P18-3 | 1,15 (tornillo) | 0,63 (taco) | 0,08 (cono de ladrillo) |
+| Base | P18-4 | 1,71 (tornillo) | 0,94 (taco) | 0,11 (cono de ladrillo) |
 | Ladrillo un 50 % más flojo | P18-3 | 0,63 (taco) | 0,32 (taco) | 0,04 (cono de ladrillo) |
 | Ladrillo un 50 % más flojo | P18-4 | 0,94 (taco) | 0,47 (taco) | 0,06 (cono de ladrillo) |
-| Ladrillo un 50 % más fuerte | P18-3 | 0,92 (tornillo) | 0,92 (tornillo) | 0,12 (cono de ladrillo) |
-| Ladrillo un 50 % más fuerte | P18-4 | 1,37 (tornillo) | 1,37 (tornillo) | 0,17 (cono de ladrillo) |
-| Cono de ladrillo un 50 % más flojo (κ × 0,5) | P18-3 | 0,92 (tornillo) | 0,49 (cono de ladrillo) | 0,04 (cono de ladrillo) |
+| Ladrillo un 50 % más fuerte | P18-3 | 1,15 (tornillo) | 0,95 (taco) | 0,12 (cono de ladrillo) |
+| Ladrillo un 50 % más fuerte | P18-4 | 1,71 (tornillo) | 1,41 (taco) | 0,17 (cono de ladrillo) |
+| Cono de ladrillo un 50 % más flojo (κ × 0,5) | P18-3 | 0,97 (cono de ladrillo) | 0,49 (cono de ladrillo) | 0,04 (cono de ladrillo) |
 | Cono de ladrillo un 50 % más flojo (κ × 0,5) | P18-4 | 0,96 (cono de ladrillo) | 0,48 (cono de ladrillo) | 0,06 (cono de ladrillo) |
-| Cono de ladrillo un 50 % más fuerte (κ × 1,5) | P18-3 | 0,92 (tornillo) | 0,63 (taco) | 0,12 (cono de ladrillo) |
-| Cono de ladrillo un 50 % más fuerte (κ × 1,5) | P18-4 | 1,37 (tornillo) | 0,94 (taco) | 0,17 (cono de ladrillo) |
-| Enlucido de 10 mm en vez de 15 | P18-3 | 1,22 (tornillo) | 0,63 (taco) | 0,08 (cono de ladrillo) |
-| Enlucido de 10 mm en vez de 15 | P18-4 | 1,81 (tornillo) | 0,94 (taco) | 0,11 (cono de ladrillo) |
+| Cono de ladrillo un 50 % más fuerte (κ × 1,5) | P18-3 | 1,15 (tornillo) | 0,63 (taco) | 0,12 (cono de ladrillo) |
+| Cono de ladrillo un 50 % más fuerte (κ × 1,5) | P18-4 | 1,71 (tornillo) | 0,94 (taco) | 0,17 (cono de ladrillo) |
+| Enlucido de 10 mm en vez de 15 | P18-3 | 1,26 (taco) | 0,63 (taco) | 0,08 (cono de ladrillo) |
+| Enlucido de 10 mm en vez de 15 | P18-4 | 1,88 (taco) | 0,94 (taco) | 0,11 (cono de ladrillo) |
 | Si el yeso sí sujetara el tornillo (sin flexión) | P18-3 | 1,26 (taco) | 0,63 (taco) | 0,08 (cono de ladrillo) |
 | Si el yeso sí sujetara el tornillo (sin flexión) | P18-4 | 1,88 (taco) | 0,94 (taco) | 0,11 (cono de ladrillo) |
-| Sin el caso de la patada lateral baja | P18-3 | 1,36 (tornillo) | 0,93 (taco) | 0,08 (cono de ladrillo) |
-| Sin el caso de la patada lateral baja | P18-4 | 1,37 (tornillo) | 0,94 (taco) | 0,11 (cono de ladrillo) |
-| Sin patada lateral baja y sin efecto de cono (κ × 3) | P18-3 | 1,36 (tornillo) | 0,93 (taco) | 0,23 (taco) |
-| Sin patada lateral baja y sin efecto de cono (κ × 3) | P18-4 | 1,37 (tornillo) | 0,94 (taco) | 0,24 (taco) |
+| Sin el caso de la patada lateral baja | P18-3 | 1,69 (tornillo) | 0,93 (taco) | 0,08 (cono de ladrillo) |
+| Sin el caso de la patada lateral baja | P18-4 | 1,71 (tornillo) | 0,94 (taco) | 0,11 (cono de ladrillo) |
+| Sin patada lateral baja y sin efecto de cono (κ × 3) | P18-3 | 1,69 (tornillo) | 0,93 (taco) | 0,23 (taco) |
+| Sin patada lateral baja y sin efecto de cono (κ × 3) | P18-4 | 1,71 (tornillo) | 0,94 (taco) | 0,24 (taco) |
 
-- **Ladrillo ±50 %:** el CS en perforado va de 0,47 a 1,37. La resistencia del ladrillo pesa mucho más que el patrón.
-- **El P18-4 queda por encima del P18-3 o empatado en todas las variantes.** El único empate a la baja: 0,48 frente a 0,49 en perforado con el cono un 50 % más flojo.
-- **El yeso importa en macizo.** Con 10 mm en vez de 15, el CS sube de 1,37 a 1,81.
+- **Ladrillo ±50 %:** el CS en perforado va de 0,47 a 1,41. La resistencia del ladrillo pesa mucho más que el patrón.
+- **El P18-4 queda por encima del P18-3 o empatado en todas las variantes.** El único empate a la baja es con el cono un 50 % más flojo: 0,96 frente a 0,97 en macizo y 0,48 frente a 0,49 en perforado.
+- **El yeso importa en macizo, pero menos que con el tornillo cincado.** Con 10 mm en vez de 15, el CS sube de 1,71 a 1,88, y ahí ya manda el taco.
 
 ---
 
@@ -432,14 +445,14 @@ Cada número con su mejor patrón, buscado con el mismo método.
 
 | N.º | CS macizo | CS perforado | CS hueco | Respecto a 18 (perforado) |
 |---|---|---|---|---|
-| 12 | 0,95 | 0,65 | 0,12 | -30 % |
-| 18 | 1,37 | 0,94 | 0,11 | 0 % |
-| 24 | 1,49 | 0,96 | 0,09 | 2 % |
+| 12 | 1,19 | 0,65 | 0,12 | -30 % |
+| 18 | 1,71 | 0,94 | 0,11 | 0 % |
+| 24 | 1,86 | 0,96 | 0,09 | 2 % |
 
 ![Coeficiente según el número de anclajes](figuras/fig5_numero.png)
 
 - **12:** se pierde un 30 %. Doce bien puestos (0,65 en perforado) igualan a los 18 del P18-3 (0,63).
-- **24:** casi no gana. En perforado, +2 %; en macizo, +9 %; en hueco, peor (se estorban más).
+- **24:** casi no gana. En perforado, +2 %; en macizo, +9 % (1,86 frente a 1,71); en hueco, peor (se estorban más).
 - **18 es buen número.** Más tacos no arreglan una pared floja.
 
 ---
@@ -448,12 +461,12 @@ Cada número con su mejor patrón, buscado con el mismo método.
 
 | Pared | CS del P18-4 | CS típico con juntas | Veredicto |
 |---|---|---|---|
-| Hormigón (no era del encargo; F_rec 1500 N) | El tornillo manda, como en macizo: ≈ 1,4 | — | Vale |
-| Medio pie de ladrillo macizo | 1,37 | 0,94 (0,57 en el 5 % peor) | **Vale** |
+| Hormigón (no era del encargo; F_rec 1500 N) | El tornillo manda, como en macizo: ≈ 1,7 | — | Vale |
+| Medio pie de ladrillo macizo | 1,71 | 0,94 (0,57 en el 5 % peor) | **Vale** |
 | Medio pie de ladrillo perforado | 0,94 | 0,59 (0,36 en el 5 % peor) | **Justo.** Vale para colgarse y tirar; los golpes laterales más fuertes pasan de lo recomendado |
 | Tabique de hueco doble | 0,11 | 0,11 (0,06) | **No vale** |
 
-**Alternativas. No he comprado ni cambiado nada: son decisiones tuyas.**
+**Alternativas.** La E ya está decidida (13-11). De las demás no he comprado ni cambiado nada: son decisiones tuyas.
 
 | Opción | Qué es | Coste por máquina | Riesgo | Mi consejo |
 |---|---|---|---|---|
@@ -461,7 +474,7 @@ Cada número con su mejor patrón, buscado con el mismo método.
 | B | **Anclaje químico con tamiz** en hueco: resina fischer FIS V o FIS VL, tamiz FIS H 12 × 50 K (tabique de 7 cm) y varilla M6 con tuerca baja. Solo en los 8 agujeros que distan 100 mm o más (n.º 2, 3, 6, 7, 10, 11, 16 y 18) | Unos 25–35 € **[estimación; tamices a 28 € las 50 uds. en ManoMano; Amazon sin comprobar]** | CS 0,31 con el dato de fischer para ladrillo perforado, que no es el hueco español: hace falta ensayo. La tuerca y la punta de la varilla tienen que caber en 8 mm | Solo como último recurso, y con ensayo |
 | C | **Varilla pasante** M6 a través del tabique con contraplaca al otro lado | Unos 10 € | Hace falta acceso al otro lado | Si se puede, es lo que más aguanta |
 | D | **Taco más gordo** (SX Plus 10 × 80, tirafondo de 8): +25 % en perforado y +75 % en macizo **[hoja]** | Parecido | Agujeros de Ø8,5–9 y cabeza más alta: no cabe en los 8 mm de detrás del cajón de pajitas sin tocar el CAD | No ahora. Si el ensayo en perforado sale flojo, se estudia en el bloque 3 |
-| E | **Tirafondo inoxidable A2** en vez de cincado | Céntimos | Ninguno | Sí: no se oxida y sube el modo que manda en macizo (el tornillo doblándose en el yeso). Con 500 MPa en vez de 400, el CS en macizo pasa de 1,37 a unos 1,7 **[cálculo a mano]**. En perforado no cambia nada: ahí manda el taco |
+| E | **Tirafondo inoxidable A2** en vez de cincado | Céntimos | Hay que comprobar que el 6 × 80 DIN 571 en A2 se puede pedir en Amazon (no lo he podido abrir) | **Decidido el 13-11.** No se oxida y sube el modo que manda en macizo (el tornillo doblándose en el yeso): de 1,37 a 1,71 sin juntas. Con las juntas donde caigan y en perforado no cambia nada: ahí manda el taco |
 
 ---
 
@@ -527,7 +540,7 @@ Nada de lo anterior está verificado con hardware. Para validar el modelo, por o
 - **Las cargas son suposiciones.** Los golpes laterales son los que mandan y son los más inciertos.
 - **Las resistencias de la pared son las recomendadas de fischer para un taco aislado.** El reparto entre tacos, el solape de conos (κ, s_cr) y el efecto de las juntas (α) son suposiciones mías.
 - **El ladrillo hueco español no está en la tabla de fischer.** Uso el «Forato F8» italiano como el más parecido.
-- **El acero del tirafondo** se supone de 400 MPa; DIN 571 no lo fija.
+- **El acero del tirafondo** se supone de 500 MPa, el mínimo del inoxidable A2 más flojo; DIN 571 no lo fija. Conviene pedirlo con el marcado A2 y apuntar lo que diga el proveedor.
 - **La rigidez del taco** (2000 N/mm) viene del estudio del 04-11 y fischer no la publica. Aquel estudio vio que cambiarla entre 500 y 10 000 N/mm mueve el resultado entre un +9 % y un −13 %, sin cambiar el orden de los patrones.
 - La caja se supone rígida, y la pestaña de la bandeja, una unión rígida.
 - No se cuenta el rozamiento ni el apriete (a favor de la seguridad).
