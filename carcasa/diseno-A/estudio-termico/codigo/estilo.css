@@ -1,0 +1,76 @@
+@page {
+  size: A4; margin: 19mm 18mm 19mm 18mm;
+  @bottom-left { content: "Estudio térmico del alcoholímetro · diseño A · 13-11-2026"; font: 7.6pt Inter, sans-serif; color: #898781; }
+  @bottom-right { content: counter(page) " / " counter(pages); font: 7.6pt Inter, sans-serif; color: #898781; }
+}
+@page :first { margin: 0; @bottom-left { content: none } @bottom-right { content: none } }
+* { box-sizing: border-box; }
+html { font: 9.4pt/1.47 Inter, "Liberation Sans", sans-serif; color: #0b0b0b; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { margin: 0; }
+p { margin: 0 0 6.5pt; orphans: 3; widows: 3; }
+h1 { font-size: 17pt; line-height: 1.2; font-weight: 650; margin: 20pt 0 9pt; padding-top: 9pt; border-top: 0.6pt solid #e1e0d9; letter-spacing: -0.2pt; break-after: avoid; }
+h1.pb { break-before: page; margin-top: 0; padding-top: 0; border-top: 0; }
+.portada + h1 { margin-top: 0; padding-top: 0; border-top: 0; }
+h1 .n { color: #2a78d6; margin-right: 7pt; font-weight: 600; }
+h2 { font-size: 11.2pt; line-height: 1.25; font-weight: 650; margin: 13pt 0 5pt; break-after: avoid; }
+h3 { font-size: 9.6pt; font-weight: 650; margin: 9pt 0 3pt; break-after: avoid; }
+ul, ol { margin: 0 0 7pt; padding-left: 14pt; }
+li { margin: 0 0 2.6pt; }
+li > ul { margin-top: 2.6pt; margin-bottom: 0; }
+strong { font-weight: 650; }
+a { color: #1c5cab; text-decoration: none; }
+.lead { font-size: 10.4pt; line-height: 1.45; color: #52514e; margin-bottom: 10pt; }
+.tag { font-size: 6.9pt; font-weight: 600; letter-spacing: 0.2pt; color: #52514e; background: #f1f0ec; border-radius: 3pt; padding: 0.6pt 3.2pt; white-space: nowrap; vertical-align: 1pt; }
+/* portada */
+.portada { height: 297mm; padding: 34mm 22mm 20mm; display: flex; flex-direction: column; break-after: page; background: #fcfcfb; }
+.portada .sup { font-size: 9pt; letter-spacing: 1.2pt; text-transform: uppercase; color: #52514e; font-weight: 600; }
+.portada h0 { display: block; font-size: 33pt; line-height: 1.08; font-weight: 700; letter-spacing: -0.9pt; margin: 9mm 0 5mm; }
+.portada .sub { font-size: 13.5pt; line-height: 1.35; color: #52514e; max-width: 135mm; }
+.portada .tiles { display: grid; grid-template-columns: repeat(2, 1fr); gap: 5mm; margin-top: 16mm; }
+.tile { border: 0.6pt solid #e1e0d9; border-radius: 5pt; padding: 5mm 5.5mm 4.5mm; background: #fff; }
+.tile .l { font-size: 8.6pt; color: #52514e; }
+.tile .v { font-size: 26pt; font-weight: 650; letter-spacing: -0.6pt; line-height: 1.15; margin: 1mm 0 0.6mm; }
+.tile .d { font-size: 8.4pt; color: #52514e; line-height: 1.35; }
+.portada .pie { margin-top: auto; font-size: 8.8pt; color: #52514e; line-height: 1.5; border-top: 0.6pt solid #e1e0d9; padding-top: 4mm; }
+/* tablas */
+table { border-collapse: collapse; width: 100%; margin: 5pt 0 9pt; font-size: 8.5pt; line-height: 1.34; break-inside: avoid; }
+th { text-align: left; font-weight: 650; color: #52514e; border-bottom: 0.9pt solid #c3c2b7; padding: 3.2pt 5pt 3.2pt 0; vertical-align: bottom; }
+td { border-bottom: 0.5pt solid #e1e0d9; padding: 3.2pt 5pt 3.2pt 0; vertical-align: top; }
+td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+td.c, th.c { text-align: center; font-variant-numeric: tabular-nums; white-space: nowrap; }
+table.larga { break-inside: auto; }
+table.larga tr { break-inside: avoid; }
+thead { display: table-header-group; }
+.st { display: block; border-radius: 3pt; padding: 1.2pt 3pt; text-align: center; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.st.ok { background: #e3f4e3; } .st.justo { background: #fdf0cc; } .st.mal { background: #f8dcdc; }
+td.cel { padding: 2pt 2pt; }
+.ley { font-size: 8pt; color: #52514e; margin: -4pt 0 8pt; }
+.ley span { display: inline-block; border-radius: 3pt; padding: 0.6pt 5pt; margin-right: 5pt; color: #0b0b0b; }
+/* figuras */
+figure { margin: 8pt 0 10pt; break-inside: avoid; }
+figure img { display: block; width: 100%; border: 0.6pt solid #e1e0d9; border-radius: 4pt; }
+figure.estrecha img { width: 62%; margin: 0 auto; }
+figure.duo { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
+figure.duo img { height: 78mm; width: 100%; object-fit: cover; }
+figure.duo figcaption { grid-column: 1 / -1; }
+figcaption { font-size: 8.2pt; color: #52514e; margin-top: 4pt; line-height: 1.38; }
+figcaption b { color: #0b0b0b; font-weight: 650; }
+/* cajas */
+.caja { border-left: 2.2pt solid #2a78d6; background: #f5f8fd; padding: 6pt 9pt 2.5pt; margin: 7pt 0 9pt; border-radius: 0 4pt 4pt 0; break-inside: avoid; }
+.caja.aviso { border-left-color: #d03b3b; background: #fbf1f1; }
+.caja.ok { border-left-color: #0ca30c; background: #f1f8f1; }
+.caja h3 { margin-top: 0; }
+.calc { border: 0.6pt solid #e1e0d9; border-radius: 4pt; margin: 6pt 0 9pt; break-inside: avoid; font-size: 8.7pt; }
+.calc .t { font-weight: 650; padding: 4pt 8pt; border-bottom: 0.6pt solid #e1e0d9; background: #f7f7f5; border-radius: 4pt 4pt 0 0; }
+.calc .r { display: grid; grid-template-columns: 23mm 1fr; padding: 3pt 8pt; border-bottom: 0.5pt solid #eeede8; }
+.calc .r:last-child { border-bottom: 0; }
+.calc .r > span:first-child { color: #898781; font-size: 7.6pt; text-transform: uppercase; letter-spacing: 0.4pt; padding-top: 1pt; }
+.calc .res { font-weight: 650; }
+.f { font-family: "DejaVu Serif", "Liberation Serif", serif; font-size: 8.9pt; }
+.dos { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; }
+.nb { break-inside: avoid; }
+.indice { columns: 2; column-gap: 10mm; font-size: 9pt; margin-top: 4pt; }
+.indice div { break-inside: avoid; padding: 1.6pt 0; border-bottom: 0.5pt solid #eeede8; display: flex; justify-content: space-between; }
+.indice span.n { color: #2a78d6; font-weight: 600; margin-right: 6pt; }
+.fuentes li { font-size: 8.3pt; line-height: 1.38; margin-bottom: 3pt; overflow-wrap: anywhere; }
+.peq { font-size: 8.3pt; color: #52514e; }
