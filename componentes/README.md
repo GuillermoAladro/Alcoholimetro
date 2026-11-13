@@ -38,6 +38,8 @@ Una carpeta por componente del alcoholímetro, con su ficha técnica, documentos
 
 No hay número 11: era el pulsador de inicio y se quitó porque la máquina no lleva botón (el SumUp Solo está siempre esperando tarjeta, ver [DECISIONES](../DECISIONES.md)).
 
+**Cobro, alternativas al SumUp Solo (13-11-2026):** 20 opciones con precios, opinión y orden de recomendación en [alternativas-cobro](alternativas-cobro/README.md). Es una investigación, no una decisión: el componente 9 sigue siendo el SumUp Solo.
+
 ## Carcasa: componentes propuestos (no incluidos en los 32 eléctricos)
 
 | Estado | Componente | Función | Ficha |

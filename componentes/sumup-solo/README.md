@@ -226,6 +226,8 @@ Flujo mínimo (propuesta mía, no probada): comprobar `status` del lector (`ONLI
 
 ### Alternativas pensadas para desatendido
 
+> **Actualización 13-11-2026.** Esta tabla quedó sin verificar. La comparación hecha con las páginas de los proveedores abiertas (20 alternativas, precios y orden de recomendación) está en [alternativas-cobro](../alternativas-cobro/README.md).
+
 **No he podido consultar las páginas de los otros proveedores** (permiso de acceso no concedido a tiempo) y se agotó el presupuesto de búsquedas. Esta tabla es una lista de comprobación, no una comparación: lo que pone en la segunda columna es lo que recuerdo, **sin verificar hoy**.
 
 | Proveedor | Para qué se usa (de memoria, sin verificar) | Qué preguntar | Fuente consultada |
