@@ -74,7 +74,7 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 ## Otras fichas del repositorio consultadas
 
-- [Módulo C14](../modulo-c14-fusible-interruptor/README.md), [cables JST-XH](../cables-jst-xh-4-pin/README.md) (apartados 5.11 y 6), [pulsador](../pulsador-arcade-30mm/README.md) (9.3), [ojales M4](../terminales-ojal-m4/README.md) (5.1), [faston](../kit-faston-aislados/README.md) (4.1), [WAGO 221](../wago-221-surtido/README.md), [bornes USB-A](../borne-usb-a-hembra-tornillo/README.md), [cable 2 × 0,75 mm²](../cable-2x0-75-rojo-negro-10m/README.md), [cable H05VV-F](../cable-h05vv-f-3g1-5-5m/README.md), [fuente LRS-50-5](../meanwell-lrs-50-5/README.md).
+- [Módulo C14](../modulo-c14-fusible-interruptor/README.md), [cables JST-XH](../cables-jst-xh-4-pin/README.md) (apartados 5.11 y 6), [ojales M4](../terminales-ojal-m4/README.md) (5.1), [faston](../kit-faston-aislados/README.md) (4.1), [WAGO 221](../wago-221-surtido/README.md), [bornes USB-A](../borne-usb-a-hembra-tornillo/README.md), [cable 2 × 0,75 mm²](../cable-2x0-75-rojo-negro-10m/README.md), [cable H05VV-F](../cable-h05vv-f-3g1-5-5m/README.md), [fuente LRS-50-5](../meanwell-lrs-50-5/README.md).
 
 ## Otros enlaces citados en la ficha
 

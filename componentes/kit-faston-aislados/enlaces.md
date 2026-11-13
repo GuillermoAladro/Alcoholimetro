@@ -79,10 +79,6 @@ Las normas están de pago. Solo extractos y alcances.
 - [Nexans: H05VV-F 3G1,5](https://www.nexans.fr/en/products/Building/Residential/Flexibles-wires/H05VV-F-536932484/product~10264568~.html) (exterior máximo 9,8 mm; no da el diámetro de cada hilo)
 - Otros H05VV-F (no abiertos): [Nexans.no](https://www.nexans.no/en/products/Building-Wires-and-Cables/Standard-wires-and-cables/Standard-Installation-cables-and-wires/PL---PMH/H05VV-F-%28C-536932484.html), [elektrikshop.de](https://www.elektrikshop.de/h05vv-f-3g1-5-pvc-schlauchleitung-weiss.html)
 
-## Pulsador
-
-- [Adafruit: botones arcade](https://learn.adafruit.com/arcade-buttons?view=all) (PID 1152, hilos "quick-connect" de 0,11"; soldar a los conectores es válido; no da calibre de hilo)
-
 ## Fallos, casos y foros
 
 - [Boating Magazine: Don't Stack Wire Connections](https://boatingmag.com/dont-stack-wire-connections/) (conexiones crimpadas apiladas y flojas, resistencia y calor; no es 230 V)
@@ -94,7 +90,6 @@ Las normas están de pago. Solo extractos y alcances.
 ## Otras fichas del proyecto citadas
 
 - [Ficha del módulo C14 (#15)](../modulo-c14-fusible-interruptor/README.md)
-- [Ficha del pulsador arcade (#11)](../pulsador-arcade-30mm/README.md)
 - [IET: ensayo de continuidad de tierra](https://electrical.theiet.org/media/1658/in-service-inspection-and-testing-of-electrical-equipment-the-earth-continuity-test.pdf) ([copia local](../documentos-compartidos/normas/in-service-inspection-and-testing-of-electrical-equipment-the-earth-continuity-test.pdf)) (citado desde la ficha del C14)
 
 ## Copias locales de los documentos

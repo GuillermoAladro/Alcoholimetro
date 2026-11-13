@@ -1,0 +1,14 @@
+{
+  "name": "alcoholimetro",
+  "version": "2.0.0",
+  "description": "Programa del alcoholímetro (Raspberry Pi 3B+): cobro con SumUp Solo, sensor Winsen ZE29A, foto y ranking. Sin dependencias.",
+  "private": true,
+  "license": "UNLICENSED",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node pi/principal.js",
+    "gratis": "node pi/principal.js --gratis",
+    "simular": "node pi/principal.js --simular",
+    "test": "node --test pruebas/*.test.js"
+  }
+}

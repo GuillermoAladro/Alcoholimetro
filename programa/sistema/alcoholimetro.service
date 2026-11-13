@@ -1,0 +1,28 @@
+# Programa del alcoholímetro (cobro, sensor, cámara, ranking y servidor de la pantalla).
+# Lo instala sistema/instalar.sh (cambia __USUARIO__ y __DIR__). Se reinicia solo si se cae.
+[Unit]
+Description=Alcoholimetro - programa
+# No se espera a tener la hora de internet (sin red la máquina tiene que arrancar igual y decir "no
+# disponible"): el programa mide las duraciones con el reloj monotónico y no borra fotos sin hora válida.
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+User=__USUARIO__
+Group=__USUARIO__
+SupplementaryGroups=dialout video render
+WorkingDirectory=__DIR__
+Environment=NODE_ENV=production
+Environment=UV_THREADPOOL_SIZE=8
+RuntimeDirectory=alcoholimetro
+ExecStart=__NODE__ --max-old-space-size=160 __DIR__/pi/principal.js
+Restart=always
+RestartSec=2
+TimeoutStopSec=12
+MemoryMax=400M
+OOMScoreAdjust=-500
+Nice=-2
+
+[Install]
+WantedBy=multi-user.target

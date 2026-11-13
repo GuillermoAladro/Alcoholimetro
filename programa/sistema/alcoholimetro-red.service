@@ -1,0 +1,6 @@
+[Unit]
+Description=Alcoholimetro - vigia de la salida a internet (modem 4G)
+
+[Service]
+Type=oneshot
+ExecStart=__DIR__/sistema/vigia-red.sh eth1
