@@ -228,7 +228,7 @@ Guillermo pide bajar el fondo a 100 mm. Queda en **220 × 100 × 443 mm**, más 
   - Los datos de SumUp van en `~/.config/alcoholimetro/sumup.json`; `instalar.sh` deja la plantilla.
   - `--gratis` arranca pruebas sin cobrar, para el banco.
   - Probado con un lector simulado; con el Solo real, no.
-- **Pendiente con el Solo real** (prueba P6.14 del [PASO A PASO](MONTAJE-PASO-A-PASO.md)):
+- **Pendiente con el Solo real** (prueba P6.14 del [PASO A PASO](historico/MONTAJE-PASO-A-PASO.md)):
   - Cuánto dura de verdad un cobro abierto.
   - Que SumUp acepta consultar el estado cada 3 s; no publica límites.
   - Qué hacer si el sensor falla después de cobrar (reembolso).
@@ -257,8 +257,8 @@ Guillermo pide bajar el fondo a 100 mm. Queda en **220 × 100 × 443 mm**, más 
 | [`componentes/`](componentes/README.md) | Borrada la ficha del pulsador (sigue en el historial de git, commit `dca2723`). El índice explica el hueco del número 11 |
 | Fichas de componentes | **Cables Dupont:** solo pines 8 y 10, con un alojamiento de 1 × 2. **Kit faston:** solo para 230 V. También limpias las fichas de la crimpadora, el C14, los pasacables y la pantalla |
 | [Pendientes](componentes/pendientes.md) | Revisados el 7 y el 18. Fuera la medida de los faston del pulsador; las medidas siguientes se renumeran |
-| [MONTAJE GENERAL](MONTAJE-GENERAL.md) | Fuera W21, W22, la pieza 11, el agujero de Ø30 del panel y el pull-up. El punto 10 del apartado 4 pasa a ser la comprobación del cobro continuo. Figuras 2, 3 y 4 rehechas |
-| [MONTAJE PASO A PASO](MONTAJE-PASO-A-PASO.md) | Fuera la prueba P1.11 y la fase 3.3; las pruebas y apartados siguientes se renumeran. Nueva prueba P6.14 de cobro continuo |
+| [MONTAJE GENERAL](historico/MONTAJE-GENERAL.md) | Fuera W21, W22, la pieza 11, el agujero de Ø30 del panel y el pull-up. El punto 10 del apartado 4 pasa a ser la comprobación del cobro continuo. Figuras 2, 3 y 4 rehechas |
+| [MONTAJE PASO A PASO](historico/MONTAJE-PASO-A-PASO.md) | Fuera la prueba P1.11 y la fase 3.3; las pruebas y apartados siguientes se renumeran. Nueva prueba P6.14 de cobro continuo |
 | [Anuncios de Amazon.es](montaje-general/anuncios-amazon-21-10-2026.md) | Fuera el anuncio del pulsador |
 | [CAD del diseño A](carcasa/diseno-A/README.md) | No tenía pulsador. Tenía el interruptor rojo de la toma C14, que se quita (apartado anterior). La cerradura de la tapa se dibuja con su llave para que no parezca un botón |
 
@@ -297,7 +297,7 @@ El CAD está en [`carcasa/diseno-A/`](carcasa/diseno-A/README.md): visor 3D, STE
   - el cajón de componentes al subir;
   - el cajón de pajitas al salir.
 
-**Pendiente:** [MONTAJE GENERAL](MONTAJE-GENERAL.md), [MONTAJE PASO A PASO](MONTAJE-PASO-A-PASO.md) y la [LISTA DE COMPRA](LISTA-DE-COMPRA.md) todavía siguen el diseño anterior (19 y 20 de octubre). Ya no tienen el pulsador, pero falta pasarlos al diseño A. Cambian sobre todo:
+**Pendiente:** [MONTAJE GENERAL](historico/MONTAJE-GENERAL.md), [MONTAJE PASO A PASO](historico/MONTAJE-PASO-A-PASO.md) y la [LISTA DE COMPRA](LISTA-DE-COMPRA.md) todavía siguen el diseño anterior (19 y 20 de octubre). Ya no tienen el pulsador, pero falta pasarlos al diseño A. Cambian sobre todo:
 - la colocación;
 - la tierra;
 - los fusibles por rama;

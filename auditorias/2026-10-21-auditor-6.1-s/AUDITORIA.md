@@ -30,7 +30,7 @@ Se distinguen tres clases de afirmación: **verificada documentalmente**, cuando
 
 ## 3. Documento de montaje y diseño de referencia
 
-El documento buscado es [MONTAJE-GENERAL.md](../../MONTAJE-GENERAL.md). Contiene W1-W29, los cuatro dibujos y un apartado 6.3 con diferencias respecto al «diseño A». El propio texto declara que nada está montado ni medido.
+El documento buscado es [MONTAJE-GENERAL.md](../../historico/MONTAJE-GENERAL.md). Contiene W1-W29, los cuatro dibujos y un apartado 6.3 con diferencias respecto al «diseño A». El propio texto declara que nada está montado ni medido.
 
 Esta auditoría reconstruye el cableado que sí está completo en Git: el diseño de 19-20 de octubre presentado en MONTAJE. El «diseño A» se analiza como variante resumida, sin dar por disponibles `diseno-cajon-A.md`, `decisiones-diseno.md`, `cajon/specs.py`, `Lista_de_piezas.xlsx` ni la guía v2 externa: **esos originales no están en este árbol**. No se inventan sus cotas ni se decide en nombre del autor cuál de las dos carcasas es la definitiva.
 

@@ -6,7 +6,7 @@ Resumen de lo que las fichas dejan abierto: decisiones tuyas, medidas que hay qu
 
 | # | Decisión | Por qué está abierta | Fichas |
 |---|---|---|---|
-| 1 | ~~Protección del raíl de 5 V~~ **Resuelto en papel el 21-10-2026:** portafusibles en línea (#32) con fusible rápido en el +5 V de cada rama, 3 / 2 / 2 / 1 A ([MONTAJE GENERAL](../MONTAJE-GENERAL.md), W13 a W18). Queda confirmar los calibres con la pinza | La LRS-50-5 limita entre 10,6 y 14,4 A y el cable de 0,75 mm² está dado para 6 A | [#14](meanwell-lrs-50-5/README.md), [#21](cable-2x0-75-rojo-negro-10m/README.md) |
+| 1 | ~~Protección del raíl de 5 V~~ **Resuelto en papel el 21-10-2026:** portafusibles en línea (#32) con fusible rápido en el +5 V de cada rama, 3 / 2 / 2 / 1 A ([MONTAJE GENERAL](../historico/MONTAJE-GENERAL.md), W13 a W18). Queda confirmar los calibres con la pinza | La LRS-50-5 limita entre 10,6 y 14,4 A y el cable de 0,75 mm² está dado para 6 A | [#14](meanwell-lrs-50-5/README.md), [#21](cable-2x0-75-rojo-negro-10m/README.md) |
 | 2 | Sección del conductor de tierra: 1,5 mm² (guía) o 2,5 mm² | La ITC-BT-19 §2.3 pide 2,5 mm² (con protección mecánica) o 4 mm² (sin ella) para conductores de protección fuera del cable de alimentación, en instalación fija. Lo que exige EN 60335-1 cl. 27 no se pudo leer. Los ojales M4 de la hoja son de 0,5 a 1,5 mm² | [#22](cable-h05vv-f-3g1-5-5m/README.md), [#23](terminales-ojal-m4/README.md) |
 | 3 | Un solo espárrago de tierra con cinco ojales, o dos espárragos / bloque de tierra | Un solo punto y una sola soldadura es el punto único de fallo; la única guía encontrada recomienda 2-3 ojales por espárrago | [#23](terminales-ojal-m4/README.md), [#24](arandelas-dentadas-m4/README.md), [#25](esparragos-soldar-m4x20/README.md) |
 | 4 | Cómo soldar el espárrago: pistola de descarga de condensador en un taller de chapa, o alternativa (tuerca soldada, remache roscado) | Probablemente el espárrago sea de descarga de condensador y una soldadora de puntos normal no sirve (razonamiento de la ficha). La chapa ya está decidida (04-11-2026): DC01 de 3 mm en la carcasa y de 1,5 mm en el cajón de componentes. Falta el acabado y el proceso del taller | [#25](esparragos-soldar-m4x20/README.md) |
@@ -82,7 +82,7 @@ Leídos en el navegador integrado. Cada dato lleva su origen en [`montaje-genera
 
 ## 6. Las cuatro auditorías del repositorio (21-10-2026)
 
-Auditor 6.1-S, Auditor 6-A, Auditor P y Auditor 5.6 revisaron el commit `84be976` y dictaminan **no energizar**. Lo que piden y cómo queda está en la tabla 7.2 del [MONTAJE GENERAL](../MONTAJE-GENERAL.md). Lo que esas auditorías dejan como decisión o ensayo y no está en las tablas de arriba:
+Auditor 6.1-S, Auditor 6-A, Auditor P y Auditor 5.6 revisaron el commit `84be976` y dictaminan **no energizar**. Lo que piden y cómo queda está en la tabla 7.2 del [MONTAJE GENERAL](../historico/MONTAJE-GENERAL.md). Lo que esas auditorías dejan como decisión o ensayo y no está en las tablas de arriba:
 
 - Norma de producto y expediente de conformidad (5.6 C-09; P H5): decidir con un laboratorio o persona competente antes de instalar nada en público.
 - Compartimento de red cerrado, barreras y alivio de tracción (5.6 C-07; P H4).

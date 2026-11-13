@@ -1,20 +1,20 @@
 # MONTAJE GENERAL
 
-Cómo se conecta cada componente de la máquina con los demás: de qué puerto, borne o pin sale cada cable y adónde llega. Es el cableado de la guía de montaje eléctrico (v2, 20-10-2026) corregido con lo que han dejado las 31 fichas de [`componentes/`](componentes/README.md) y los documentos que descargaste.
+Cómo se conecta cada componente de la máquina con los demás: de qué puerto, borne o pin sale cada cable y adónde llega. Es el cableado de la guía de montaje eléctrico (v2, 20-10-2026) corregido con lo que han dejado las 31 fichas de [`componentes/`](../componentes/README.md) y los documentos que descargaste.
 
-**Cambio del 01-11-2026:** la Pi sale a internet por 4G con la antena por dentro del cajón. Cambian W25, W26 y W30 y las piezas #12 y #13; lo que este documento dice más abajo del AR9271, del alargo RP-SMA y de su jack de panel ya no vale ([DECISIONES](DECISIONES.md)).
+**Cambio del 01-11-2026:** la Pi sale a internet por 4G con la antena por dentro del cajón. Cambian W25, W26 y W30 y las piezas #12 y #13; lo que este documento dice más abajo del AR9271, del alargo RP-SMA y de su jack de panel ya no vale ([DECISIONES](../DECISIONES.md)).
 
-**Estado a 21-10-2026: es un esquema de papel. Nada se ha montado ni medido todavía.** Hoy he leído los anuncios de Amazon.es de ocho piezas ([resumen](montaje-general/anuncios-amazon-21-10-2026.md)). Cierran los tornillos del borne USB-A, los puertos de la pantalla y la posición del USB-C del Solo. Lo que sigue sin confirmar lleva ⚠ y está reunido en el apartado 5. Dos de esas dudas pueden cambiar el cableado: el esquema interno del módulo C14 y el tipo de conector del ZE29A.
+**Estado a 21-10-2026: es un esquema de papel. Nada se ha montado ni medido todavía.** Hoy he leído los anuncios de Amazon.es de ocho piezas ([resumen](../montaje-general/anuncios-amazon-21-10-2026.md)). Cierran los tornillos del borne USB-A, los puertos de la pantalla y la posición del USB-C del Solo. Lo que sigue sin confirmar lleva ⚠ y está reunido en el apartado 5. Dos de esas dudas pueden cambiar el cableado: el esquema interno del módulo C14 y el tipo de conector del ZE29A.
 
 **Última corrección (21-10-2026, al escribir el paso a paso):** el cálculo de la tensión en la Pi olvidaba la caída del troncal. Con ella, colgando de la regleta, la Pi se quedaba en 4,88 V en uso normal y 4,62 V en el pico. Ahora **la Pi va directa a los bornes de la fuente con su fusible** (W13) y el troncal lleva un F 5 A (W11).
 
 **Revisión del 21-10-2026 (noche), contra las dos auditorías.** He contrastado este documento con `analisis-auditoria.md` y `analisis-auditoria-2.md` (Project) y con las hojas de datos locales de la fuente, del ZE29A y de la Pi. Lo que cambia respecto a la versión de esta tarde: la fuente se ajusta a **5,10 V** y no a 5,20 V (H13); **un fusible por rama de 5 V** con un portafusibles en línea, que es la pieza nueva #32 (H04); **el Solo se conecta a una Wi-Fi que crea la propia Pi**, no al router del bar (H16); la pantalla cuenta como **1 A**, no 0,5 A; el tubo de soplido lleva **dos tomas y una barrera** (W28), porque el manual del ZE29A lo exige; el −V se une a tierra en un solo punto (W12b, propuesta); y se añaden las pruebas de arranque del Solo y de señal Wi-Fi. El apartado 7 dice qué hallazgo de cada auditoría queda cerrado aquí y cuál no.
 
-**Después han llegado al repositorio cuatro auditorías más** (carpeta [`auditorias/`](auditorias/) y tres zips en la raíz): Auditor 6.1-S, Auditor 6-A, Auditor P y Auditor 5.6, todas del 21-10-2026 sobre el commit `84be976`. Las cuatro dictaminan **no energizar** con los documentos de entonces. Coinciden en lo que este documento ya cambiaba y añaden lo que ahora incorporo: fusible también en el troncal; el C14 genérico se sustituye por una entrada bipolar documentada, sin «aceptar el riesgo»; tapa para los bornes de 230 V de la fuente; la nota 7 de la hoja de la fuente (rizado fuera de especificación por debajo del 50 % de carga); el Solo se valida primero con su propio cargador; resistencias para el apagado parcial de la UART; tornillos de la fuente (3 mm en la base, 5 mm en el lateral); fijación M2 de la cámara, que no está en la lista; y la frase «la Pi no alimenta nada», que era falsa. Lo que las auditorías dejan como ensayo de banco sigue siendo ensayo de banco: **este documento es un esquema de papel y ninguna auditoría ha aprobado energizar.** Tabla completa en el apartado 7.2.
+**Después han llegado al repositorio cuatro auditorías más** (carpeta [`auditorias/`](../auditorias/) y tres zips en la raíz): Auditor 6.1-S, Auditor 6-A, Auditor P y Auditor 5.6, todas del 21-10-2026 sobre el commit `84be976`. Las cuatro dictaminan **no energizar** con los documentos de entonces. Coinciden en lo que este documento ya cambiaba y añaden lo que ahora incorporo: fusible también en el troncal; el C14 genérico se sustituye por una entrada bipolar documentada, sin «aceptar el riesgo»; tapa para los bornes de 230 V de la fuente; la nota 7 de la hoja de la fuente (rizado fuera de especificación por debajo del 50 % de carga); el Solo se valida primero con su propio cargador; resistencias para el apagado parcial de la UART; tornillos de la fuente (3 mm en la base, 5 mm en el lateral); fijación M2 de la cámara, que no está en la lista; y la frase «la Pi no alimenta nada», que era falsa. Lo que las auditorías dejan como ensayo de banco sigue siendo ensayo de banco: **este documento es un esquema de papel y ninguna auditoría ha aprobado energizar.** Tabla completa en el apartado 7.2.
 
-**Este documento sigue el diseño anterior.** El cableado y la colocación de abajo siguen la guía de cableado y `decisiones-diseno.md` (19 y 20 de octubre). Desde el 22-10-2026 manda el diseño A (`diseno-cajon-A.md`, CAD en [`carcasa/diseno-A/`](carcasa/diseno-A/README.md)), que cambia las medidas y añade un portafusibles por rama. Las diferencias están en el apartado 6.3 y llevan la marca «diseño A»; falta rehacer este documento sobre él.
+**Este documento sigue el diseño anterior.** El cableado y la colocación de abajo siguen la guía de cableado y `decisiones-diseno.md` (19 y 20 de octubre). Desde el 22-10-2026 manda el diseño A (`diseno-cajon-A.md`, CAD en [`carcasa/diseno-A/`](../carcasa/diseno-A/README.md)), que cambia las medidas y añade un portafusibles por rama. Las diferencias están en el apartado 6.3 y llevan la marca «diseño A»; falta rehacer este documento sobre él.
 
-> **Sin botón.** La máquina no lleva pulsador: el SumUp Solo está siempre esperando tarjeta y la prueba empieza al pagar ([DECISIONES](DECISIONES.md)). Por eso no hay pieza #11 ni conexiones W21 y W22.
+> **Sin botón.** La máquina no lleva pulsador: el SumUp Solo está siempre esperando tarjeta y la prueba empieza al pagar ([DECISIONES](../DECISIONES.md)). Por eso no hay pieza #11 ni conexiones W21 y W22.
 
 **El orden de montaje y las pruebas de cada fase están en [MONTAJE PASO A PASO](MONTAJE-PASO-A-PASO.md).**
 
@@ -26,21 +26,21 @@ Números entre paréntesis, como (#14), son los de la lista de componentes. Los 
 
 **Figura 1. Alimentación (230 V → 5 V) y tierra.** Cada borne de la fuente, cada polo de las WAGO y cada destino.
 
-[![Figura 1: alimentación y tierra](montaje-general/1-alimentacion-y-tierra.svg)](montaje-general/1-alimentacion-y-tierra.png)
+[![Figura 1: alimentación y tierra](../montaje-general/1-alimentacion-y-tierra.svg)](montaje-general/1-alimentacion-y-tierra.png)
 
 **Figura 2. Puertos de la Raspberry Pi y señales.** Qué sale de cada puerto de la Pi y adónde va, y cómo se hablan la Pi y el SumUp Solo (sin cable).
 
-[![Figura 2: puertos de la Pi y señales](montaje-general/2-pi-puertos-y-senales.svg)](montaje-general/2-pi-puertos-y-senales.png)
+[![Figura 2: puertos de la Pi y señales](../montaje-general/2-pi-puertos-y-senales.svg)](montaje-general/2-pi-puertos-y-senales.png)
 
 **Figura 3. Conector GPIO de 40 pines.** Los dos pines que se usan (8 y 10, la UART) y los errores que estropean la Pi o el sensor.
 
-[![Figura 3: conector GPIO](montaje-general/3-gpio-40-pines.svg)](montaje-general/3-gpio-40-pines.png)
+[![Figura 3: conector GPIO](../montaje-general/3-gpio-40-pines.svg)](montaje-general/3-gpio-40-pines.png)
 
 **Figura 4. Dónde está cada pieza.** Alzado de la máquina con las alturas decididas, qué cruza el separador y lo que ningún documento ha decidido todavía.
 
-[![Figura 4: dónde está cada pieza](montaje-general/4-donde-va-cada-pieza.svg)](montaje-general/4-donde-va-cada-pieza.png)
+[![Figura 4: dónde está cada pieza](../montaje-general/4-donde-va-cada-pieza.svg)](montaje-general/4-donde-va-cada-pieza.png)
 
-Cada figura está en SVG (el que se ve arriba) y en PNG (pincha en la imagen) dentro de [`montaje-general/`](montaje-general/).
+Cada figura está en SVG (el que se ve arriba) y en PNG (pincha en la imagen) dentro de [`montaje-general/`](../montaje-general/).
 
 ## 1. Resumen
 
@@ -117,37 +117,37 @@ Techo, separador y bandeja ya tienen tierra por estar soldados al cuerpo. En el 
 
 | # | Componente | Dónde se conecta | Comprar (Amazon.es) |
 |---|---|---|---|
-| 1 | [Raspberry Pi 3B+](componentes/raspberry-pi-3b-plus/README.md) | micro-USB (W13), HDMI (W23), CSI (W24), USB (W25), pines 8 y 10 (W19 y W20) y microSD (W27) | [B0BNJPL4MW](https://www.amazon.es/dp/B0BNJPL4MW) |
-| 2 | [SanDisk High Endurance](componentes/sandisk-high-endurance-32gb/README.md) | Ranura microSD de la Pi (W27) | [B07P14QHB7](https://www.amazon.es/dp/B07P14QHB7) |
-| 3 | [Camera Module 3](componentes/raspberry-pi-camera-module-3/README.md) | Conector J1 → FFC → CSI de la Pi (W24). El objetivo asoma por el agujero de Ø10 del panel. Recibe 3,3 V por el CSI: cuenta en la rama de la Pi. ⚠ Sus taladros son de 2,2 mm (plano RP-008153): hace falta tornillería **M2**, que no está en la lista (auditoría 6.1-S F16) | [B0BRY6MVXL](https://www.amazon.es/dp/B0BRY6MVXL) |
-| 4 | [Cable FFC 50 cm](componentes/cable-ffc-camara-50cm/README.md) | Entre el J1 de la cámara y el CSI de la Pi (W24) | [B07DKB4M1H](https://www.amazon.es/dp/B07DKB4M1H) |
-| 5 | [Pantalla 7"](componentes/pantalla-geeekpi-7-hdmi/README.md) | HDMI desde la Pi (W23) y USB-C «Power IN» desde el borne nº 2 (W17) | [B0CHMBCCJB](https://www.amazon.es/dp/B0CHMBCCJB) |
-| 6 | [ZE29A](componentes/winsen-ze29a/README.md) | Pines 1 y 2 a las WAGO (W18), pin 4 a Pi 8 y pin 3 a Pi 10 (W19, W20), toma de aire al tubo (W28) | [B0H8NVXVG5](https://www.amazon.es/dp/B0H8NVXVG5) |
-| 7 | [Cables JST-XH](componentes/cables-jst-xh-4-pin/README.md) | La clavija de 4 pines del ZE29A: llevan los hilos W18 a W20. Vienen 25 clavijas con hilo y 25 conectores sin hilo | [B0CBWZNP6Z](https://www.amazon.es/dp/B0CBWZNP6Z) |
-| 8 | [Tubo de silicona](componentes/tubo-silicona-6mm/README.md) | Boquilla del panel → toma de aire del ZE29A (W28) | [B0D9FJY1SG](https://www.amazon.es/dp/B0D9FJY1SG) |
-| 9 | [SumUp Solo](componentes/sumup-solo/README.md) | Puerto USB-C del canto de abajo (W15) y Wi-Fi (W29) | [B0C9V3LXTF](https://www.amazon.es/dp/B0C9V3LXTF) |
-| 10 | [Cable USB-A → USB-C](componentes/cable-usb-a-usb-c-90-30cm/README.md) | Del borne USB-A nº 1 al USB-C del Solo (W15) | [B0C8FS5FV2](https://www.amazon.es/dp/B0C8FS5FV2) |
-| 12 | [Módem 4G Huawei E3372h-320](componentes/modem-4g-huawei-e3372h/README.md) | Un USB de la Pi (W25) y la antena (W26). Es la salida a internet (W30); el Wi-Fi interno de la Pi es el punto de acceso del Solo (W29) | sin elegir |
-| 13 | [Antena 4G plana y latiguillo](componentes/antena-4g-plana-fpc/README.md) | Del módem a la antena pegada en el lateral izquierdo del cajón (W26) | sin elegir |
-| 14 | [Fuente LRS-50-5](componentes/meanwell-lrs-50-5/README.md) | Bornes 1 y 2 (W2, W3), 3 (W7), 4 (W12 y el negro de la Pi, W13) y 5 (W11 y el rojo de la Pi, W13), con puntera doble en 4 y 5. Ajustada a 5,10 V | [B06XWRCWZ9](https://www.amazon.es/dp/B06XWRCWZ9) |
-| 15 | [Toma C14](componentes/modulo-c14-fusible-interruptor/README.md) | Cordón (W1), salidas a la fuente (W2, W3) y tierra (W6). Con portafusibles y sin interruptor | [B07CQ54BY4](https://www.amazon.es/dp/B07CQ54BY4) |
-| 16 | [Fusibles T2,5A](componentes/fusibles-ceramicos-5x20-t2-5a/README.md) | En el portafusibles del C14 | [B0956XYTN6](https://www.amazon.es/dp/B0956XYTN6) |
-| 17 | [Cordón Schuko-C13](componentes/cable-schuko-c13-2m/README.md) | Toma de pared → C14 (W1) | [B00AOAJAUC](https://www.amazon.es/dp/B00AOAJAUC) |
-| 18 | [Bornes USB-A](componentes/borne-usb-a-hembra-tornillo/README.md) | Dos bornes: WAGO → cable del Solo (W14, W15) y WAGO → cable de la pantalla (W16, W17) | [B07V86XPL4](https://www.amazon.es/dp/B07V86XPL4) |
-| 19 | [Latiguillos micro-USB](componentes/latiguillo-micro-usb-22awg/README.md) | Uno, de WAGO a micro-USB de la Pi (W13). Los otros cinco sobran | [B0DP2NT8LY](https://www.amazon.es/dp/B0DP2NT8LY) |
-| 20 | [WAGO 221](componentes/wago-221-surtido/README.md) | Dos 221-415: una de +5 V y otra de GND (W11, W14 a W18; el polo 2 queda libre); una 221-413 para el −V y su unión a tierra (W12, W12b); cinco 221-412: una en el troncal (W11), tres en la rama de la Pi (W13) y una en la del sensor (W18). El surtido trae 25 de 2 vías, 25 de 3 y 25 de 5 | [B09XB58ZXJ](https://www.amazon.es/dp/B09XB58ZXJ) |
-| 21 | [Cable 2 × 0,75 mm²](componentes/cable-2x0-75-rojo-negro-10m/README.md) | Troncal y ramas de 5 V (W11 a W18) | [B0D12QPF4Y](https://www.amazon.es/dp/B0D12QPF4Y) |
-| 22 | [Manguera H05VV-F 3G1,5](componentes/cable-h05vv-f-3g1-5-5m/README.md) | Sus hilos marrón, azul y verde-amarillo son los de 230 V y tierra (W2 a W10) | [B07BDHJGKG](https://www.amazon.es/dp/B07BDHJGKG) |
-| 23 | [Ojales M4](componentes/terminales-ojal-m4/README.md) | Extremos de los cables de tierra en el espárrago (W6 a W10) | [B0CVW7Y2P4](https://www.amazon.es/dp/B0CVW7Y2P4) |
-| 24 | [Arandelas dentadas M4](componentes/arandelas-dentadas-m4/README.md) | En el espárrago, bajo cada ojal y bajo la tuerca | [B0B77J5FZS](https://www.amazon.es/dp/B0B77J5FZS) |
-| 25 | [Espárrago M4 × 20](componentes/esparragos-soldar-m4x20/README.md) | Punto de tierra, soldado al cuerpo (W6 a W10) | [B0GSCLY4D7](https://www.amazon.es/dp/B0GSCLY4D7) |
-| 26 | [Tornillería inox](componentes/tornilleria-inox-m3-m6/README.md) | Fijaciones (fuente, C14, pantalla). Sin función eléctrica. **En la LRS-50-5 la penetración máxima del tornillo M3 es de 3 mm por la base (99 × 82) y de 5 mm por el lateral (99 × 30)**: plano de la hoja de datos, p. 4, «2-M3 L=3.0» y «2-M3 L=5», comprobado en la imagen; la guía y la ficha #26 lo tenían al revés (auditorías 6.1-S F17 y 6-A A6A-14). Como la fuente va tumbada y se fija por la base, el tornillo entra 3 mm como máximo, descontando chapa y arandelas | [B0BGRY2JGX](https://www.amazon.es/dp/B0BGRY2JGX) |
-| 27 | [Kit faston](componentes/kit-faston-aislados/README.md) | Toma C14 (W2, W3, W6) | [B0B4H54KPS](https://www.amazon.es/dp/B0B4H54KPS) |
-| 28 | [Crimpadora y punteras](componentes/crimpadora-y-punteras/README.md) | Punteras en los bornes de la fuente y en las WAGO (W2, W3, W7, W11 a W14, W16, W18). En los bornes 4 y 5, **punteras dobles de 2 × 0,75 mm²** (W11 a W13): comprobar si el kit las trae | [B0FQP6KDL4](https://www.amazon.es/dp/B0FQP6KDL4) |
-| 29 | [Cables Dupont](componentes/cables-dupont-elegoo-120/README.md) | Extremo de la Pi de los hilos de los pines 8 y 10 (W19 y W20) | [B01NGTXASZ](https://www.amazon.es/dp/B01NGTXASZ) |
-| 30 | [Separadores de nailon M2,5](componentes/separadores-nylon-m2-5/README.md) | Fijan la Pi y el sensor a la caja interior sin unir masas | [B0G4G7WQRM](https://www.amazon.es/dp/B0G4G7WQRM) |
-| 31 | [Pasacables de goma](componentes/pasacables-goma/README.md) | En cada agujero de chapa por donde pase un cable | [B0B5DLWVZ2](https://www.amazon.es/dp/B0B5DLWVZ2) |
-| 32 | [Portafusibles en línea 5 × 20 + fusibles](componentes/portafusibles-en-linea-5x20/README.md) | **Pieza nueva (auditoría 1.0, H04; las cuatro auditorías del repositorio piden protección por rama y del troncal).** Cinco portafusibles: F 5 A en el troncal (W11), F 3 A Pi (W13, directa a la fuente), F 2 A Solo (W14), F 2 A pantalla (W16), F 1 A ZE29A (W18). El kit trae exactamente 5 portafusibles con hilo de 16 AWG y 150 fusibles rápidos de vidrio (15 de cada valor: 0,5, 1, 2, 3, 4, 5, 8, 10, 15 y 20 A): no sobra ninguno | [B07KQ46H6K](https://www.amazon.es/dp/B07KQ46H6K) |
+| 1 | [Raspberry Pi 3B+](../componentes/raspberry-pi-3b-plus/README.md) | micro-USB (W13), HDMI (W23), CSI (W24), USB (W25), pines 8 y 10 (W19 y W20) y microSD (W27) | [B0BNJPL4MW](https://www.amazon.es/dp/B0BNJPL4MW) |
+| 2 | [SanDisk High Endurance](../componentes/sandisk-high-endurance-32gb/README.md) | Ranura microSD de la Pi (W27) | [B07P14QHB7](https://www.amazon.es/dp/B07P14QHB7) |
+| 3 | [Camera Module 3](../componentes/raspberry-pi-camera-module-3/README.md) | Conector J1 → FFC → CSI de la Pi (W24). El objetivo asoma por el agujero de Ø10 del panel. Recibe 3,3 V por el CSI: cuenta en la rama de la Pi. ⚠ Sus taladros son de 2,2 mm (plano RP-008153): hace falta tornillería **M2**, que no está en la lista (auditoría 6.1-S F16) | [B0BRY6MVXL](https://www.amazon.es/dp/B0BRY6MVXL) |
+| 4 | [Cable FFC 50 cm](../componentes/cable-ffc-camara-50cm/README.md) | Entre el J1 de la cámara y el CSI de la Pi (W24) | [B07DKB4M1H](https://www.amazon.es/dp/B07DKB4M1H) |
+| 5 | [Pantalla 7"](../componentes/pantalla-geeekpi-7-hdmi/README.md) | HDMI desde la Pi (W23) y USB-C «Power IN» desde el borne nº 2 (W17) | [B0CHMBCCJB](https://www.amazon.es/dp/B0CHMBCCJB) |
+| 6 | [ZE29A](../componentes/winsen-ze29a/README.md) | Pines 1 y 2 a las WAGO (W18), pin 4 a Pi 8 y pin 3 a Pi 10 (W19, W20), toma de aire al tubo (W28) | [B0H8NVXVG5](https://www.amazon.es/dp/B0H8NVXVG5) |
+| 7 | [Cables JST-XH](../componentes/cables-jst-xh-4-pin/README.md) | La clavija de 4 pines del ZE29A: llevan los hilos W18 a W20. Vienen 25 clavijas con hilo y 25 conectores sin hilo | [B0CBWZNP6Z](https://www.amazon.es/dp/B0CBWZNP6Z) |
+| 8 | [Tubo de silicona](../componentes/tubo-silicona-6mm/README.md) | Boquilla del panel → toma de aire del ZE29A (W28) | [B0D9FJY1SG](https://www.amazon.es/dp/B0D9FJY1SG) |
+| 9 | [SumUp Solo](../componentes/sumup-solo/README.md) | Puerto USB-C del canto de abajo (W15) y Wi-Fi (W29) | [B0C9V3LXTF](https://www.amazon.es/dp/B0C9V3LXTF) |
+| 10 | [Cable USB-A → USB-C](../componentes/cable-usb-a-usb-c-90-30cm/README.md) | Del borne USB-A nº 1 al USB-C del Solo (W15) | [B0C8FS5FV2](https://www.amazon.es/dp/B0C8FS5FV2) |
+| 12 | [Módem 4G Huawei E3372h-320](../componentes/modem-4g-huawei-e3372h/README.md) | Un USB de la Pi (W25) y la antena (W26). Es la salida a internet (W30); el Wi-Fi interno de la Pi es el punto de acceso del Solo (W29) | sin elegir |
+| 13 | [Antena 4G plana y latiguillo](../componentes/antena-4g-plana-fpc/README.md) | Del módem a la antena pegada en el lateral izquierdo del cajón (W26) | sin elegir |
+| 14 | [Fuente LRS-50-5](../componentes/meanwell-lrs-50-5/README.md) | Bornes 1 y 2 (W2, W3), 3 (W7), 4 (W12 y el negro de la Pi, W13) y 5 (W11 y el rojo de la Pi, W13), con puntera doble en 4 y 5. Ajustada a 5,10 V | [B06XWRCWZ9](https://www.amazon.es/dp/B06XWRCWZ9) |
+| 15 | [Toma C14](../componentes/modulo-c14-fusible-interruptor/README.md) | Cordón (W1), salidas a la fuente (W2, W3) y tierra (W6). Con portafusibles y sin interruptor | [B07CQ54BY4](https://www.amazon.es/dp/B07CQ54BY4) |
+| 16 | [Fusibles T2,5A](../componentes/fusibles-ceramicos-5x20-t2-5a/README.md) | En el portafusibles del C14 | [B0956XYTN6](https://www.amazon.es/dp/B0956XYTN6) |
+| 17 | [Cordón Schuko-C13](../componentes/cable-schuko-c13-2m/README.md) | Toma de pared → C14 (W1) | [B00AOAJAUC](https://www.amazon.es/dp/B00AOAJAUC) |
+| 18 | [Bornes USB-A](../componentes/borne-usb-a-hembra-tornillo/README.md) | Dos bornes: WAGO → cable del Solo (W14, W15) y WAGO → cable de la pantalla (W16, W17) | [B07V86XPL4](https://www.amazon.es/dp/B07V86XPL4) |
+| 19 | [Latiguillos micro-USB](../componentes/latiguillo-micro-usb-22awg/README.md) | Uno, de WAGO a micro-USB de la Pi (W13). Los otros cinco sobran | [B0DP2NT8LY](https://www.amazon.es/dp/B0DP2NT8LY) |
+| 20 | [WAGO 221](../componentes/wago-221-surtido/README.md) | Dos 221-415: una de +5 V y otra de GND (W11, W14 a W18; el polo 2 queda libre); una 221-413 para el −V y su unión a tierra (W12, W12b); cinco 221-412: una en el troncal (W11), tres en la rama de la Pi (W13) y una en la del sensor (W18). El surtido trae 25 de 2 vías, 25 de 3 y 25 de 5 | [B09XB58ZXJ](https://www.amazon.es/dp/B09XB58ZXJ) |
+| 21 | [Cable 2 × 0,75 mm²](../componentes/cable-2x0-75-rojo-negro-10m/README.md) | Troncal y ramas de 5 V (W11 a W18) | [B0D12QPF4Y](https://www.amazon.es/dp/B0D12QPF4Y) |
+| 22 | [Manguera H05VV-F 3G1,5](../componentes/cable-h05vv-f-3g1-5-5m/README.md) | Sus hilos marrón, azul y verde-amarillo son los de 230 V y tierra (W2 a W10) | [B07BDHJGKG](https://www.amazon.es/dp/B07BDHJGKG) |
+| 23 | [Ojales M4](../componentes/terminales-ojal-m4/README.md) | Extremos de los cables de tierra en el espárrago (W6 a W10) | [B0CVW7Y2P4](https://www.amazon.es/dp/B0CVW7Y2P4) |
+| 24 | [Arandelas dentadas M4](../componentes/arandelas-dentadas-m4/README.md) | En el espárrago, bajo cada ojal y bajo la tuerca | [B0B77J5FZS](https://www.amazon.es/dp/B0B77J5FZS) |
+| 25 | [Espárrago M4 × 20](../componentes/esparragos-soldar-m4x20/README.md) | Punto de tierra, soldado al cuerpo (W6 a W10) | [B0GSCLY4D7](https://www.amazon.es/dp/B0GSCLY4D7) |
+| 26 | [Tornillería inox](../componentes/tornilleria-inox-m3-m6/README.md) | Fijaciones (fuente, C14, pantalla). Sin función eléctrica. **En la LRS-50-5 la penetración máxima del tornillo M3 es de 3 mm por la base (99 × 82) y de 5 mm por el lateral (99 × 30)**: plano de la hoja de datos, p. 4, «2-M3 L=3.0» y «2-M3 L=5», comprobado en la imagen; la guía y la ficha #26 lo tenían al revés (auditorías 6.1-S F17 y 6-A A6A-14). Como la fuente va tumbada y se fija por la base, el tornillo entra 3 mm como máximo, descontando chapa y arandelas | [B0BGRY2JGX](https://www.amazon.es/dp/B0BGRY2JGX) |
+| 27 | [Kit faston](../componentes/kit-faston-aislados/README.md) | Toma C14 (W2, W3, W6) | [B0B4H54KPS](https://www.amazon.es/dp/B0B4H54KPS) |
+| 28 | [Crimpadora y punteras](../componentes/crimpadora-y-punteras/README.md) | Punteras en los bornes de la fuente y en las WAGO (W2, W3, W7, W11 a W14, W16, W18). En los bornes 4 y 5, **punteras dobles de 2 × 0,75 mm²** (W11 a W13): comprobar si el kit las trae | [B0FQP6KDL4](https://www.amazon.es/dp/B0FQP6KDL4) |
+| 29 | [Cables Dupont](../componentes/cables-dupont-elegoo-120/README.md) | Extremo de la Pi de los hilos de los pines 8 y 10 (W19 y W20) | [B01NGTXASZ](https://www.amazon.es/dp/B01NGTXASZ) |
+| 30 | [Separadores de nailon M2,5](../componentes/separadores-nylon-m2-5/README.md) | Fijan la Pi y el sensor a la caja interior sin unir masas | [B0G4G7WQRM](https://www.amazon.es/dp/B0G4G7WQRM) |
+| 31 | [Pasacables de goma](../componentes/pasacables-goma/README.md) | En cada agujero de chapa por donde pase un cable | [B0B5DLWVZ2](https://www.amazon.es/dp/B0B5DLWVZ2) |
+| 32 | [Portafusibles en línea 5 × 20 + fusibles](../componentes/portafusibles-en-linea-5x20/README.md) | **Pieza nueva (auditoría 1.0, H04; las cuatro auditorías del repositorio piden protección por rama y del troncal).** Cinco portafusibles: F 5 A en el troncal (W11), F 3 A Pi (W13, directa a la fuente), F 2 A Solo (W14), F 2 A pantalla (W16), F 1 A ZE29A (W18). El kit trae exactamente 5 portafusibles con hilo de 16 AWG y 150 fusibles rápidos de vidrio (15 de cada valor: 0,5, 1, 2, 3, 4, 5, 8, 10, 15 y 20 A): no sobra ninguno | [B07KQ46H6K](https://www.amazon.es/dp/B07KQ46H6K) |
 
 ## 4. Antes de dar tensión
 
@@ -166,7 +166,7 @@ Techo, separador y bandeja ya tienen tierra por estar soldados al cuerpo. En el 
 7. **Latiguillo micro-USB:** polaridad (rojo = VBUS) y caída de tensión con carga.
 8. **Fusibles por rama:** con una pinza amperimétrica de continua, apunta la corriente típica y la de arranque de cada rama (Pi, Solo cargando desde vacío, pantalla, ZE29A tomando una muestra). El fusible de cada rama tiene que estar por encima del pico con margen; si uno funde al arrancar, sube un escalón (3 → 4 A, 2 → 3 A). Los valores de los fusibles del kit se leen mal en el cristal: fíate de la etiqueta de la caja.
 9. **ZE29A:** mide con calibre el paso del J1 (2,5 mm si es XH), mira que el pin 1 es el extremo «5V» de la serigrafía y que su TX en reposo da unos 3,3 V. Mira en la clavija qué color cae en cada posición y apúntalo.
-10. **Cobro continuo del Solo:** con el Solo emparejado a la Cloud API y el programa (`programa/`) en marcha, el lector tiene que estar **siempre** esperando tarjeta con el precio en pantalla: míralo durante 10 minutos y comprueba que, cuando un cobro caduca, aparece otro solo en unos segundos. Después haz un pago real y su reembolso (ficha [#9](componentes/sumup-solo/README.md), apartado 4).
+10. **Cobro continuo del Solo:** con el Solo emparejado a la Cloud API y el programa (`programa/`) en marcha, el lector tiene que estar **siempre** esperando tarjeta con el precio en pantalla: míralo durante 10 minutos y comprueba que, cuando un cobro caduca, aparece otro solo en unos segundos. Después haz un pago real y su reembolso (ficha [#9](../componentes/sumup-solo/README.md), apartado 4).
 11. **GPIO:** con el alojamiento Dupont puesto, ningún hilo en un pin de 5 V (pines 2 y 4). Mide con la Pi apagada. El alojamiento de los pines 8 y 10 se puede poner corrido o girado (auditoría P, H11): marca los hilos, haz una foto con el alojamiento puesto y compárala con la figura 3 antes de cada encendido; mejor aún, un conector con polarización mecánica.
 12. **Cable FFC:** con el cable plano sobre la mesa, el metal de una punta tiene que verse por arriba y el de la otra por abajo («caras opuestas»). Lado de la Pi: contactos hacia el conector HDMI. Lado de la cámara: contactos hacia su placa. Siempre con la Pi apagada.
 13. **Tubo de soplido:** con el ZE29A en «esperando soplido» (0x33), sopla por la boquilla: tiene que pasar a «soplando» (0x34). Si no, la barrera no crea presión suficiente o la toma de presión está detrás de la barrera. El umbral se lee con 0x92 (por defecto 8) y se puede bajar con 0x93; antes de bajarlo, mejora la barrera.
@@ -196,19 +196,19 @@ Techo, separador y bandeja ya tienen tierra por estar soldados al cuerpo. En el 
 
 ### 5.2 Sigue sin confirmar
 
-- **Qué polo lleva el fusible de la toma C14:** se mide (apartado 4, punto 1). Con un enchufe Schuko, que se puede insertar de las dos maneras, un fusible en un solo polo puede quedar en la fase o en el neutro ([ficha #15](componentes/modulo-c14-fusible-interruptor/README.md), §4 y §5). **Cierra con una entrada de portafusibles de dos polos con esquema documentado.**
-- **Toma C14 nueva (B07CQ54BY4):** no he podido leer su anuncio. La tienda de Cablepelado dice que no trae fusible y que las pestañas son de 4,8 mm; el T2,5A de 5 × 20 (#16) se compra aparte. Brida, recorte y tornillos son los típicos del formato: **se miden al recibirla** ([ficha #27](componentes/kit-faston-aislados/README.md)).
+- **Qué polo lleva el fusible de la toma C14:** se mide (apartado 4, punto 1). Con un enchufe Schuko, que se puede insertar de las dos maneras, un fusible en un solo polo puede quedar en la fase o en el neutro ([ficha #15](../componentes/modulo-c14-fusible-interruptor/README.md), §4 y §5). **Cierra con una entrada de portafusibles de dos polos con esquema documentado.**
+- **Toma C14 nueva (B07CQ54BY4):** no he podido leer su anuncio. La tienda de Cablepelado dice que no trae fusible y que las pestañas son de 4,8 mm; el T2,5A de 5 × 20 (#16) se compra aparte. Brida, recorte y tornillos son los típicos del formato: **se miden al recibirla** ([ficha #27](../componentes/kit-faston-aislados/README.md)).
 - **Paso y tipo del J1 del ZE29A:** el manual solo da los 4 pines. **Se mide con calibre.**
-- **Cara de los contactos del FFC:** el anuncio no la dice ([ficha #4](componentes/cable-ffc-camara-50cm/README.md)). **Se ve al recibirlo.**
-- **Polaridad del latiguillo micro-USB:** rojo y negro sin más ([ficha #19](componentes/latiguillo-micro-usb-22awg/README.md)). **Se mide.**
-- **Cable de la pantalla:** A → C o C → C ([ficha #5](componentes/pantalla-geeekpi-7-hdmi/README.md)). **Se ve al recibirlo.**
-- **Cable acodado del Solo:** qué punta es la acodada y los 56 kΩ ([ficha #10](componentes/cable-usb-a-usb-c-90-30cm/README.md)).
-- **Bornes USB-A:** corriente que aguantan (1 a 1,5 A) y si el Solo reconoce el puente D+/D− como cargador. Si no lo reconoce, carga a 0,5 A, que basta (W14) ([fichas #9, #10 y #18](componentes/borne-usb-a-hembra-tornillo/README.md)).
-- **Sección del cable de tierra:** 1,5 o 2,5 mm² ([ficha #22](componentes/cable-h05vv-f-3g1-5-5m/README.md) y [ficha #23](componentes/terminales-ojal-m4/README.md)).
-- **Un solo espárrago con cinco ojales:** punto único de fallo ([ficha #25](componentes/esparragos-soldar-m4x20/README.md)).
+- **Cara de los contactos del FFC:** el anuncio no la dice ([ficha #4](../componentes/cable-ffc-camara-50cm/README.md)). **Se ve al recibirlo.**
+- **Polaridad del latiguillo micro-USB:** rojo y negro sin más ([ficha #19](../componentes/latiguillo-micro-usb-22awg/README.md)). **Se mide.**
+- **Cable de la pantalla:** A → C o C → C ([ficha #5](../componentes/pantalla-geeekpi-7-hdmi/README.md)). **Se ve al recibirlo.**
+- **Cable acodado del Solo:** qué punta es la acodada y los 56 kΩ ([ficha #10](../componentes/cable-usb-a-usb-c-90-30cm/README.md)).
+- **Bornes USB-A:** corriente que aguantan (1 a 1,5 A) y si el Solo reconoce el puente D+/D− como cargador. Si no lo reconoce, carga a 0,5 A, que basta (W14) ([fichas #9, #10 y #18](../componentes/borne-usb-a-hembra-tornillo/README.md)).
+- **Sección del cable de tierra:** 1,5 o 2,5 mm² ([ficha #22](../componentes/cable-h05vv-f-3g1-5-5m/README.md) y [ficha #23](../componentes/terminales-ojal-m4/README.md)).
+- **Un solo espárrago con cinco ojales:** punto único de fallo ([ficha #25](../componentes/esparragos-soldar-m4x20/README.md)).
 - **Cómo soldar el espárrago:** probablemente sea de descarga de condensador y una soldadora de puntos normal no sirva (razonamiento de la ficha). La chapa ya está decidida (04-11-2026): acero DC01 de 3 mm en la carcasa y de 1,5 mm en el cajón de componentes, los dos por encima del mínimo que dan los fabricantes de CD. Falta el acabado y el proceso del taller.
 - **Calibre definitivo de los fusibles por rama:** 3 / 2 / 2 / 1 A son calibres de papel; se confirman con la pinza (apartado 4, punto 8).
-- **−V frente a tierra:** W12b lo une en un solo punto. Es una propuesta mía: decide si la aceptas. Si no, hay que aislar el jack RP-SMA del techo ([fichas #13](componentes/retirados/alargo-antena-rp-sma-30cm/README.md) y [#30](componentes/separadores-nylon-m2-5/README.md)).
+- **−V frente a tierra:** W12b lo une en un solo punto. Es una propuesta mía: decide si la aceptas. Si no, hay que aislar el jack RP-SMA del techo ([fichas #13](../componentes/retirados/alargo-antena-rp-sma-30cm/README.md) y [#30](../componentes/separadores-nylon-m2-5/README.md)).
 - **Señal Wi-Fi entre la Pi (caja interior de chapa) y el Solo (caja de arriba):** no se puede calcular con fiabilidad; se mide (apartado 4, punto 14). Plan B en W29.
 - **El Solo tras un corte de luz:** nadie ha comprobado que se encienda solo al volver la alimentación (apartado 4, punto 15).
 - **Cómo son las dos tomas de aire del ZE29A:** racor, tubito o agujero; se ve al recibirlo (W28).
@@ -218,10 +218,10 @@ Techo, separador y bandeja ya tienen tierra por estar soldados al cuerpo. En el 
 - **Resistencias de 1 kΩ** para la UART (W19, W20): decisión pendiente; tampoco están en la lista.
 - **Carga del Solo:** se valida primero con su cargador y cable oficiales; la rama del borne USB-A se prueba después (W14).
 - **Calibre del fusible de troncal (5 A) frente al hipo de la fuente:** un fusible no limita al instante y el hipo puede retrasar la fusión (auditoría 6.1-S F04). Se confirma en banco con cargas ficticias, nunca con la Pi o el Solo de carga.
-- **Cómo se conectan los pines 8 y 10:** alojamiento Dupont de 1 × 2 o placa de bornes, y la herramienta para crimpar Dupont ([ficha #29](componentes/cables-dupont-elegoo-120/README.md) y [ficha #7](componentes/cables-jst-xh-4-pin/README.md)).
-- **Conexión a masa del jack RP-SMA de panel:** une la malla del coaxial a tierra ([ficha #13](componentes/retirados/alargo-antena-rp-sma-30cm/README.md)).
+- **Cómo se conectan los pines 8 y 10:** alojamiento Dupont de 1 × 2 o placa de bornes, y la herramienta para crimpar Dupont ([ficha #29](../componentes/cables-dupont-elegoo-120/README.md) y [ficha #7](../componentes/cables-jst-xh-4-pin/README.md)).
+- **Conexión a masa del jack RP-SMA de panel:** une la malla del coaxial a tierra ([ficha #13](../componentes/retirados/alargo-antena-rp-sma-30cm/README.md)).
 
-La lista completa de decisiones y medidas está en [`componentes/pendientes.md`](componentes/pendientes.md).
+La lista completa de decisiones y medidas está en [`componentes/pendientes.md`](../componentes/pendientes.md).
 
 ## 6. Dónde va cada cosa dentro de la máquina
 
@@ -285,7 +285,7 @@ Las dos auditorías (`analisis-auditoria.md`, 20-10-2026, y `analisis-auditoria-
 | H13 | Ajustar a 5,10 V, no 5,20 V | **Cerrado:** W11 y apartado 4, punto 3, con la regla de ≥ 4,90 V en la Pi |
 | H16 | El Solo queda dentro de acero: la Pi como punto de acceso | **Cerrado en papel:** W29 y W30, figura 2. Falta medir la señal |
 | Pantalla 1 A (auditoría 2.0) | La pantalla consume 5 W | **Cerrado:** W16 y pico total 5 A |
-| Fusible I²t (auditoría 2.0) | Quitar los 1,5 / 22 A²s sin fuente | No aparecen en este documento; el T2,5A se comprueba enchufando la fuente sola cinco veces (apartado 4, punto 3). La [ficha #16](componentes/fusibles-ceramicos-5x20-t2-5a/README.md) da el I²t con fuente |
+| Fusible I²t (auditoría 2.0) | Quitar los 1,5 / 22 A²s sin fuente | No aparecen en este documento; el T2,5A se comprueba enchufando la fuente sola cinco veces (apartado 4, punto 3). La [ficha #16](../componentes/fusibles-ceramicos-5x20-t2-5a/README.md) da el I²t con fuente |
 | C14 (auditoría 2.0) | Comprobar que corta los dos polos | **Ya no aplica:** desde el 25-10-2026 la toma no tiene interruptor. Queda qué polo lleva el fusible (apartado 4, punto 1) |
 | Crimpado (auditoría 2.0) | La crimpadora de punteras no vale para faston ni ojales | En 5.2 y en `pendientes.md`: hace falta una matriz para terminales aislados |
 | Kit WAGO (auditoría 2.0) | Son 25 de 2, 25 de 3 y 25 de 5 vías | **Cerrado:** fila 20 del apartado 3; la 221-413 de W12b sale de ahí |
@@ -302,7 +302,7 @@ Las dos auditorías (`analisis-auditoria.md`, 20-10-2026, y `analisis-auditoria-
 
 ### 7.2 Las cuatro auditorías del repositorio (21-10-2026)
 
-Están en [`auditorias/2026-10-21-auditor-6.1-s/`](auditorias/2026-10-21-auditor-6.1-s/AUDITORIA.md), [`auditorias/auditor-6-a/`](auditorias/auditor-6-a/AUDITORIA-AUDITOR-6-A.md) y en los zips `Auditoria- Auditor P.zip` y `Auditoria_Alcoholimetro_Auditor_5_6.zip` de la raíz. Las cuatro revisaron el commit `84be976` (la versión de esta tarde, antes de los fusibles y de la Wi-Fi de la Pi) y las cuatro dicen **no energizar**. El Auditor 6.1-S corrigió además la ficha #14 y la del cable de 0,75 mm², que tenían los bornes de la fuente al revés (1 = −V…); este documento siempre tuvo la numeración buena, y hoy la he vuelto a comprobar en el plano de la hoja de datos.
+Están en [`auditorias/2026-10-21-auditor-6.1-s/`](../auditorias/2026-10-21-auditor-6.1-s/AUDITORIA.md), [`auditorias/auditor-6-a/`](../auditorias/auditor-6-a/AUDITORIA-AUDITOR-6-A.md) y en los zips `Auditoria- Auditor P.zip` y `Auditoria_Alcoholimetro_Auditor_5_6.zip` de la raíz. Las cuatro revisaron el commit `84be976` (la versión de esta tarde, antes de los fusibles y de la Wi-Fi de la Pi) y las cuatro dicen **no energizar**. El Auditor 6.1-S corrigió además la ficha #14 y la del cable de 0,75 mm², que tenían los bornes de la fuente al revés (1 = −V…); este documento siempre tuvo la numeración buena, y hoy la he vuelto a comprobar en el plano de la hoja de datos.
 
 | Lo que piden las cuatro | Qué hago aquí | Qué sigue abierto |
 |---|---|---|
@@ -332,11 +332,11 @@ Están en [`auditorias/2026-10-21-auditor-6.1-s/`](auditorias/2026-10-21-auditor
 - Guía de montaje eléctrico v2 (20-10-2026), apartados 1, 4, 5 y 8: lista de compra, dónde va cada cosa, cableado punto a punto y orden de pruebas.
 - `decisiones-diseno.md` (20-10-2026): medidas de la carcasa, alturas, ventanas y pendientes de la caja interior.
 - `diseno-cajon-A.md` (21-10-2026) y `cajon/specs.py`, del Project: el diseño A del apartado 6.3.
-- Anuncios de Amazon.es de las piezas #4, #5, #6, #7, #9, #10, #18 y #19, leídos el 21-10-2026: [resumen y origen de cada dato](montaje-general/anuncios-amazon-21-10-2026.md).
-- Las 31 fichas de [`componentes/`](componentes/README.md), con sus discrepancias con la guía.
-- Datasheet LRS-50 de Mean Well ([copia local](componentes/meanwell-lrs-50-5/datasheets/LRS-50-SPEC.pdf), versión 2025-04-07): numeración de los bornes (1 AC/L, 2 AC/N, 3 FG, 4 DC −V, 5 DC +V), rizado 80 mVp-p, regulación de carga ±1 %, ajuste 4,5–5,5 V, sobrecarga 110–150 % en modo hipo, arranque en frío 45 A, aislamiento salida–FG 1,25 kVAC.
-- Manual V1.1 del ZE29A de Winsen ([copia local](componentes/winsen-ze29a/datasheets/ze29a-c2h5oh.pdf)): pines 1 Vin, 2 GND, 3 TXD y 4 RXD, UART a 3,3 V TTL, 5 V ±0,3 V, < 500 mA; tramas y checksum; notas 1, 4 y 6 sobre el tubo de soplido (barrera, orden de las tomas, entrada sin bloquear).
-- Auditorías del repositorio, 21-10-2026, sobre el commit `84be976`: [Auditor 6.1-S](auditorias/2026-10-21-auditor-6.1-s/AUDITORIA.md), [Auditor 6-A](auditorias/auditor-6-a/AUDITORIA-AUDITOR-6-A.md) con sus [anexos](auditorias/auditor-6-a/anexos/), Auditor P (`Auditoria- Auditor P.zip`) y Auditor 5.6 (`Auditoria_Alcoholimetro_Auditor_5_6.zip`).
+- Anuncios de Amazon.es de las piezas #4, #5, #6, #7, #9, #10, #18 y #19, leídos el 21-10-2026: [resumen y origen de cada dato](../montaje-general/anuncios-amazon-21-10-2026.md).
+- Las 31 fichas de [`componentes/`](../componentes/README.md), con sus discrepancias con la guía.
+- Datasheet LRS-50 de Mean Well ([copia local](../componentes/meanwell-lrs-50-5/datasheets/LRS-50-SPEC.pdf), versión 2025-04-07): numeración de los bornes (1 AC/L, 2 AC/N, 3 FG, 4 DC −V, 5 DC +V), rizado 80 mVp-p, regulación de carga ±1 %, ajuste 4,5–5,5 V, sobrecarga 110–150 % en modo hipo, arranque en frío 45 A, aislamiento salida–FG 1,25 kVAC.
+- Manual V1.1 del ZE29A de Winsen ([copia local](../componentes/winsen-ze29a/datasheets/ze29a-c2h5oh.pdf)): pines 1 Vin, 2 GND, 3 TXD y 4 RXD, UART a 3,3 V TTL, 5 V ±0,3 V, < 500 mA; tramas y checksum; notas 1, 4 y 6 sobre el tubo de soplido (barrera, orden de las tomas, entrada sin bloquear).
+- Auditorías del repositorio, 21-10-2026, sobre el commit `84be976`: [Auditor 6.1-S](../auditorias/2026-10-21-auditor-6.1-s/AUDITORIA.md), [Auditor 6-A](../auditorias/auditor-6-a/AUDITORIA-AUDITOR-6-A.md) con sus [anexos](../auditorias/auditor-6-a/anexos/), Auditor P (`Auditoria- Auditor P.zip`) y Auditor 5.6 (`Auditoria_Alcoholimetro_Auditor_5_6.zip`).
 - Hoja LRS-50, p. 2, nota 7 (modo ráfaga con carga del 0 al 50 % en los modelos de 3,3 y 5 V) y p. 4, plano («2-M3 L=3.0» en la base de 99 × 82, «2-M3 L=5» en el lateral de 99 × 30; bornes 1 AC/L, 2 AC/N, 3 FG, 4 DC −V, 5 DC +V), leídos en la imagen de la copia local el 21-10-2026.
 - `analisis-auditoria.md` y `analisis-auditoria-2.md` (Project, 20-10-2026): hallazgos H04, H13, H16, H25, H37, H41, H43 y las correcciones a la guía (pantalla 1 A, kit WAGO, crimpado, C14, Pi como punto de acceso, firmware del Solo).
 - `programa/` (repositorio, 26-10-2026): protocolo del ZE29A, puerto serie y cobro continuo con el Solo. Sustituye a `ze29a.py` y `main.py` del Project.

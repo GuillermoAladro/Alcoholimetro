@@ -1,12 +1,12 @@
 # Lista de compra (Amazon.es)
 
-Los 31 componentes del alcoholímetro con su enlace de compra (30 de la guía, sin el pulsador, más el kit de fusibles por rama que añadió la auditoría). El orden de montaje y las pruebas están en [MONTAJE PASO A PASO](MONTAJE-PASO-A-PASO.md); para el banco hace falta además el material de su fase 0. Es la lista de la guía de montaje eléctrico v2 (20-10-2026, del Project), con la misma numeración que las fichas de [`componentes/`](componentes/README.md) y que el [MONTAJE GENERAL](MONTAJE-GENERAL.md).
+Los 31 componentes del alcoholímetro con su enlace de compra (30 de la guía, sin el pulsador, más el kit de fusibles por rama que añadió la auditoría). El orden de montaje y las pruebas están en [MONTAJE PASO A PASO](historico/MONTAJE-PASO-A-PASO.md); para el banco hace falta además el material de su fase 0. Es la lista de la guía de montaje eléctrico v2 (20-10-2026, del Project), con la misma numeración que las fichas de [`componentes/`](componentes/README.md) y que el [MONTAJE GENERAL](historico/MONTAJE-GENERAL.md).
 
 - Enlace de cada pieza: `https://www.amazon.es/dp/<ASIN>`. El ASIN es la referencia fija; **los precios son los vistos en Amazon.es el 19 y 20-10-2026 y cambian a menudo.**
 - Todo se puede pedir en Amazon.es, que es la regla del proyecto.
 - La columna «Nota» es la de la guía, corregida donde los anuncios leídos el 21-10-2026 dicen otra cosa ([lectura de los anuncios](montaje-general/anuncios-amazon-21-10-2026.md)).
 
-> **Esta lista es la del diseño de 20-10-2026.** El Project tiene además `diseno-cajon-A.md` (21-10-2026), que cita su propia `Lista_de_piezas.xlsx` y añade piezas que aquí no están (por ejemplo cuatro portafusibles de pie). Esa hoja no está en el repositorio. Ver [MONTAJE GENERAL, apartado 6.3](MONTAJE-GENERAL.md).
+> **Esta lista es la del diseño de 20-10-2026.** El Project tiene además `diseno-cajon-A.md` (21-10-2026), que cita su propia `Lista_de_piezas.xlsx` y añade piezas que aquí no están (por ejemplo cuatro portafusibles de pie). Esa hoja no está en el repositorio. Ver [MONTAJE GENERAL, apartado 6.3](historico/MONTAJE-GENERAL.md).
 
 > **Sin botón.** La máquina no lleva pulsador: el SumUp Solo está siempre esperando tarjeta y la prueba empieza al pagar. Por eso falta el número 11, que era el pulsador ([DECISIONES](DECISIONES.md)).
 
@@ -70,7 +70,7 @@ Desde el 01-11-2026 la máquina sale a internet por 4G de serie (#12 y #13), con
 - **#15 Toma C14:** desde el 25-10-2026 es la de Cablepelado sin interruptor (B07CQ54BY4). No trae fusible: se compra el T2,5A (#16) y se mide qué pestaña lleva el fusible antes de cablearla.
 - **#7 Clavija XH:** la guía la compra «por si el ZE29A no trae su cable»; el anuncio del ZE29A no dice si lo trae.
 - **#9 SumUp Solo:** el USB-C está en el canto de abajo (foto del anuncio).
-- **#32 (nuevo):** la auditoría 1.0 (H04) y las cuatro auditorías del repositorio piden fusible en el troncal y en cada rama de 5 V. El kit B07KQ46H6K trae 5 portafusibles y fusibles de 1, 2, 3 y 5 A; detalle en [MONTAJE GENERAL](MONTAJE-GENERAL.md), W11 a W18.
+- **#32 (nuevo):** la auditoría 1.0 (H04) y las cuatro auditorías del repositorio piden fusible en el troncal y en cada rama de 5 V. El kit B07KQ46H6K trae 5 portafusibles y fusibles de 1, 2, 3 y 5 A; detalle en [MONTAJE GENERAL](historico/MONTAJE-GENERAL.md), W11 a W18.
 - **Piezas que las auditorías del 21-10-2026 piden y que no están en esta lista** (ver MONTAJE GENERAL, 5.2): tapa aislante para los bornes de 230 V de la fuente; dos punteras dobles de 2 × 0,75 mm² para los bornes 4 y 5 de la fuente, si el kit #28 no las trae; tornillería M2 para la cámara (sus taladros son de 2,2 mm); resistencias de 1 kΩ para la UART si se adoptan; y, si se decide, una entrada C14 con portafusibles de dos polos documentada que sustituya a la #15.
 
 ## Carcasa: adhesivo transparente pendiente de compra (fuera de los 32 componentes)

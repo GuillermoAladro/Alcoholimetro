@@ -2,9 +2,9 @@
 
 Cómo montar el circuito del alcoholímetro por fases: con qué piezas y qué probar antes de pasar a la fase siguiente. Las conexiones (W1 a W30) y los números de pieza (#1 a #32) son los del [MONTAJE GENERAL](MONTAJE-GENERAL.md). Aquel documento dice qué va con qué; este dice en qué orden se monta y cómo se comprueba cada paso.
 
-**Estado a 21-10-2026: es un procedimiento de papel. No se ha montado nada.** Sigue el diseño del MONTAJE GENERAL (guía de cableado y `decisiones-diseno.md`). Desde el 22-10-2026 manda el diseño A (CAD en [`carcasa/diseno-A/`](carcasa/diseno-A/README.md)); con él cambia sobre todo la fase 8 (colocación y tierra), que falta rehacer.
+**Estado a 21-10-2026: es un procedimiento de papel. No se ha montado nada.** Sigue el diseño del MONTAJE GENERAL (guía de cableado y `decisiones-diseno.md`). Desde el 22-10-2026 manda el diseño A (CAD en [`carcasa/diseno-A/`](../carcasa/diseno-A/README.md)); con él cambia sobre todo la fase 8 (colocación y tierra), que falta rehacer.
 
-> **Sin botón.** La máquina no lleva pulsador: el SumUp Solo está siempre esperando tarjeta y la prueba empieza al pagar ([DECISIONES](DECISIONES.md)). El cobro continuo se prueba en P6.14.
+> **Sin botón.** La máquina no lleva pulsador: el SumUp Solo está siempre esperando tarjeta y la prueba empieza al pagar ([DECISIONES](../DECISIONES.md)). El cobro continuo se prueba en P6.14.
 
 **La idea:** ir de lo que no puede romper nada a lo que sí, y probar cada parte por separado antes de juntarla. El orden sigue el plan de banco de las auditorías (Auditor 6.1-S §9, 6-A §8, P §8 y 5.6 §9):
 
@@ -166,7 +166,7 @@ Conecta el HDMI de la pantalla a la Pi (W23). Alimenta la pantalla por su USB-C 
 
 ### 3.3 Módem 4G (#12) y la salida a internet
 
-Desde el 01-11-2026 la Pi sale a internet por 4G ([DECISIONES](DECISIONES.md)). Mete la SIM de datos en el módem, conéctalo a un USB de la Pi (W25) y enchufa la antena plana con su latiguillo (W26).
+Desde el 01-11-2026 la Pi sale a internet por 4G ([DECISIONES](../DECISIONES.md)). Mete la SIM de datos en el módem, conéctalo a un USB de la Pi (W25) y enchufa la antena plana con su latiguillo (W26).
 
 | Prueba | Cómo | Pasa si | Si no pasa |
 |---|---|---|---|
@@ -443,9 +443,9 @@ Copia esta tabla y añade una fila por prueba. Una prueba sin apuntar cuenta com
 ## Fuentes
 
 - [MONTAJE GENERAL](MONTAJE-GENERAL.md): conexiones W1 a W30, apartado 4 (medidas antes de dar tensión) y apartado 7 (auditorías).
-- Manual V1.1 del ZE29A ([copia local](componentes/winsen-ze29a/datasheets/ze29a-c2h5oh.pdf)): tensión 5 V ±0,3 V, menos de 500 mA, UART a 3,3 V, estados 0x31 a 0x37 y sus tiempos, tramas, alarma por debajo de 20 mg/100 mL y notas sobre el tubo de soplido.
-- Hoja de la LRS-50 ([copia local](componentes/meanwell-lrs-50-5/datasheets/LRS-50-SPEC.pdf)): bornes, rizado y sus notas 2 y 7, protección por hipo, arranque de 45 A y tornillos M3 (p. 4).
-- Esquema reducido de la Pi 3B+ ([copia local](componentes/raspberry-pi-3b-plus/datasheets/RP-008339-DS-1-raspberry-pi-3-b-plus-reduced-schematics.pdf)): el pin 1 del micro-USB pasa por el polifusible F1 (MF-MSMF250) a la red de 5 V, y el pin 5 es GND.
+- Manual V1.1 del ZE29A ([copia local](../componentes/winsen-ze29a/datasheets/ze29a-c2h5oh.pdf)): tensión 5 V ±0,3 V, menos de 500 mA, UART a 3,3 V, estados 0x31 a 0x37 y sus tiempos, tramas, alarma por debajo de 20 mg/100 mL y notas sobre el tubo de soplido.
+- Hoja de la LRS-50 ([copia local](../componentes/meanwell-lrs-50-5/datasheets/LRS-50-SPEC.pdf)): bornes, rizado y sus notas 2 y 7, protección por hipo, arranque de 45 A y tornillos M3 (p. 4).
+- Esquema reducido de la Pi 3B+ ([copia local](../componentes/raspberry-pi-3b-plus/datasheets/RP-008339-DS-1-raspberry-pi-3-b-plus-reduced-schematics.pdf)): el pin 1 del micro-USB pasa por el polifusible F1 (MF-MSMF250) a la red de 5 V, y el pin 5 es GND.
 - Guía de montaje eléctrico v2 (20-10-2026), §7 y §8: configuración de la Pi y orden de pruebas.
-- Auditorías del repositorio ([6.1-S](auditorias/2026-10-21-auditor-6.1-s/AUDITORIA.md), [6-A](auditorias/auditor-6-a/AUDITORIA-AUDITOR-6-A.md), Auditor P y Auditor 5.6) y las dos del Project: planes de banco, orden de las cargas, apagado parcial y criterios de tierra.
+- Auditorías del repositorio ([6.1-S](../auditorias/2026-10-21-auditor-6.1-s/AUDITORIA.md), [6-A](../auditorias/auditor-6-a/AUDITORIA-AUDITOR-6-A.md), Auditor P y Auditor 5.6) y las dos del Project: planes de banco, orden de las cargas, apagado parcial y criterios de tierra.
 - [Tutorial de Raspberry Pi: punto de acceso con dos radios](https://www.raspberrypi.com/tutorials/host-a-hotel-wifi-hotspot/) y [Cloud API de SumUp](https://developer.sumup.com/terminal-payments/cloud-api).

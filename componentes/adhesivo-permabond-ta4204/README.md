@@ -6,7 +6,7 @@
 
 Unir por la cara interior de la carcasa metálica los protectores transparentes de **policarbonato compacto de 5 mm** o, si se cambia el diseño, de **metacrilato (PMMA)**, sin tornillos visibles por delante y **sin cinta adhesiva**.
 
-El diseño A, descrito en [MONTAJE GENERAL, apartado 6.3](../../MONTAJE-GENERAL.md), especifica dos huecos de ventana:
+El diseño A, descrito en [MONTAJE GENERAL, apartado 6.3](../../historico/MONTAJE-GENERAL.md), especifica dos huecos de ventana:
 - Pantalla: **159 × 91 mm** (hueco). **179 × 111 mm** sería el corte preliminar con 10 mm de solape en los cuatro lados.
 - Terminal de pago: **85 × 85 mm** (hueco). **105 × 105 mm** sería el corte preliminar con 10 mm de solape en los cuatro lados.
 
@@ -66,4 +66,4 @@ Fuente: ficha técnica oficial Permabond TA4204 (revisión global 9, 23-02-2018)
 - [TDS oficial de Permabond TA4204 (PDF)](https://www.permabond.com/wp-content/uploads/2022/09/TA4204_TDS.pdf)
 - [Página del fabricante del cartucho 50 ml](https://www.permabond.co.uk/product-page/ta4204-1-x-50ml-cartridge-with-mixing-nozzle)
 - [Oferta de Lijmenwinkel (precio y existencias variables)](https://www.lijmenwinkel.nl/de/permabond-ta-4204.html)
-- [Diseño mecánico comparado del alcoholímetro](../../MONTAJE-GENERAL.md#63-qué-cambia-con-el-diseño-a-diseno-cajon-amd-21-10-2026)
+- [Diseño mecánico comparado del alcoholímetro](../../historico/MONTAJE-GENERAL.md#63-qué-cambia-con-el-diseño-a-diseno-cajon-amd-21-10-2026)
