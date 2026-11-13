@@ -16,7 +16,7 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 - [Modelo 3D STEP, ZIP (RP-008154-DS-1)](https://pip-assets.raspberrypi.com/categories/1207-design-files/documents/RP-008154-DS-1-camera-module-3-step.zip) ([copia local](datasheets/RP-008154-DS-1-camera-module-3-step.zip))
 - [Esquema de referencia (RP-008969-SD-3)](https://pip-assets.raspberrypi.com/categories/1207-design-files/documents/RP-008969-SD-3-Raspberry%20Pi%20Camera%20Module%203%20Reference%20Schematic.pdf) ([copia local](datasheets/RP-008969-SD-3-Raspberry_Pi_Camera_Module_3_Reference_Schematic.pdf))
 - [BOM de referencia, XLSX (RP-008970-BM-2)](https://pip-assets.raspberrypi.com/categories/1207-design-files/documents/RP-008970-BM-2-RASPBERRY%20PI%20CAMERA%20MODULE%203%20Reference%20Design%20BOM.xlsx) ([copia local](datasheets/RP-008970-BM-2-RASPBERRY_PI_CAMERA_MODULE_3_Reference_Design_BOM.xlsx))
-- [Plano del cable de 200 mm (RP-008146-DS-1)](https://pip-assets.raspberrypi.com/categories/786-raspberry-pi-camera-module-3/documents/RP-008146-DS-1-standard-camera-cable-200mm-reference-drawing.pdf) ([copia local](../cable-ffc-camara-50cm/datasheets/RP-008146-DS-1-standard-camera-cable-200mm-reference-drawing.pdf))
+- [Plano del cable de 200 mm (RP-008146-DS-1)](https://pip-assets.raspberrypi.com/categories/786-raspberry-pi-camera-module-3/documents/RP-008146-DS-1-standard-camera-cable-200mm-reference-drawing.pdf) ([copia local](../retirados/cable-ffc-camara-50cm/datasheets/RP-008146-DS-1-standard-camera-cable-200mm-reference-drawing.pdf))
 - [Manual de Picamera2 (RP-008156-DS-6)](https://pip-assets.raspberrypi.com/categories/786-raspberry-pi-camera-module-3/documents/RP-008156-DS-6-picamera2-manual.pdf)
 - [PCN 42: IMX708 con OTP preprogramada (RP-009691-PC-1)](https://pip-assets.raspberrypi.com/categories/1321-pcn/documents/RP-009691-PC-1-PCN%2042_%20IMX708%20Preprogrammed%20OTP.pdf) ([copia local](datasheets/RP-009691-PC-1-PCN_42__IMX708_Preprogrammed_OTP.pdf))
 - [PCN 43: eliminación de la EEPROM (RP-009692-PC-1)](https://pip-assets.raspberrypi.com/categories/1321-pcn/documents/RP-009692-PC-1-PCN%2043_%20Camera%20Module%203%20Internal%20EEPROM%20removal.pdf) ([copia local](datasheets/RP-009692-PC-1-PCN_43__Camera_Module_3_Internal_EEPROM_removal.pdf))
@@ -53,4 +53,4 @@ Documentos descargados el 21-10-2026 y guardados en el repositorio. Si un docume
 
 **Citados en esta ficha y guardados en otra carpeta:**
 
-- [RP-008146-DS-1-standard-camera-cable-200mm-reference-drawing.pdf](../cable-ffc-camara-50cm/datasheets/RP-008146-DS-1-standard-camera-cable-200mm-reference-drawing.pdf): Raspberry Pi, cable de cámara estándar de 200 mm: plano de referencia (RP-008146-DS-1)
+- [RP-008146-DS-1-standard-camera-cable-200mm-reference-drawing.pdf](../retirados/cable-ffc-camara-50cm/datasheets/RP-008146-DS-1-standard-camera-cable-200mm-reference-drawing.pdf): Raspberry Pi, cable de cámara estándar de 200 mm: plano de referencia (RP-008146-DS-1)

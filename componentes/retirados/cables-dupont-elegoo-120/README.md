@@ -4,7 +4,7 @@ Kit de 120 puentes con terminales Dupont de 2,54 mm: tres cintas separables de 4
 
 - **Compra:** ASIN B01NGTXASZ, 9,99 € (precio de la hoja de componentes del 19-20/10/2026). Unos 0,083 € por hilo (cálculo mío).
 - **Fabricante y modelo:** ELEGOO, EL-CP-004 según Hackster y eBay (ver [2.1](#21-el-kit-según-las-tiendas)).
-- **Fichas relacionadas:** [cables JST-XH](../cables-jst-xh-4-pin/README.md) (la unión sensor a Pi: 4.2, 5.11, 6.5) y [Raspberry Pi 3B+](../raspberry-pi-3b-plus/README.md). Aquí no repito lo que ya dicen.
+- **Fichas relacionadas:** [cables JST-XH](../../cables-jst-xh-4-pin/README.md) (la unión sensor a Pi: 4.2, 5.11, 6.5) y [Raspberry Pi 3B+](../../raspberry-pi-3b-plus/README.md). Aquí no repito lo que ya dicen.
 
 > Investigación hecha el 21-10-2026. Cada dato indica de dónde sale. Lo que no he podido comprobar está marcado como **sin verificar**. Amazon bloquea el acceso a mis herramientas y no intenté abrir el anuncio: el precio y el ASIN son los de tu hoja. Leí las páginas con una herramienta que devuelve resúmenes, no el texto original: donde una cifra importa, doy el enlace. Hice 13 búsquedas web; la 14.ª fue rechazada porque se agotó el presupuesto compartido. Lo pendiente está en la [sección 8](#8-lo-que-no-he-podido-verificar).
 
@@ -90,19 +90,19 @@ Dos conclusiones que salen de esas cifras (cálculos míos):
 
 | Característica | Valor | Fuente |
 |---|---|---|
-| Tipo | Conector J8, macho, 2 × 20 pines, "40W 0.1" PIN HDR" | [Esquema reducido RP-008339-DS-1](../raspberry-pi-3b-plus/datasheets/RP-008339-DS-1-raspberry-pi-3-b-plus-reduced-schematics.pdf) (lo leí en el texto extraído de la hoja "GPIO EXPANSION") |
+| Tipo | Conector J8, macho, 2 × 20 pines, "40W 0.1" PIN HDR" | [Esquema reducido RP-008339-DS-1](../../raspberry-pi-3b-plus/datasheets/RP-008339-DS-1-raspberry-pi-3-b-plus-reduced-schematics.pdf) (lo leí en el texto extraído de la hoja "GPIO EXPANSION") |
 | Paso | 0,1" (2,54 mm) | [Documentación de hardware de Raspberry Pi](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html) ("0.1in (2.54 mm) pin pitch") |
 | Pin | 0,64 mm (0,025") cuadrado es la medida estándar de las cabeceras de 2,54 mm (Harwin da ese valor para sus contactos). **La documentación de Raspberry Pi que abrí no la da para la Pi.** Mídelo con calibre | Harwin; **sin verificar** en la Pi |
-| Altura sobre la placa | 8,5 mm ("Z-Height = 8.5") en el bloque de unos 51 mm junto al borde de la placa, que identifico como la cabecera por su tamaño | [Plano mecánico RP-008337-DS-2](../raspberry-pi-3b-plus/datasheets/RP-008337-DS-2-raspberry-pi-3-b-plus-mechanical-drawing.pdf), leído en imagen; la identificación es deducción mía |
+| Altura sobre la placa | 8,5 mm ("Z-Height = 8.5") en el bloque de unos 51 mm junto al borde de la placa, que identifico como la cabecera por su tamaño | [Plano mecánico RP-008337-DS-2](../../raspberry-pi-3b-plus/datasheets/RP-008337-DS-2-raspberry-pi-3-b-plus-mechanical-drawing.pdf), leído en imagen; la identificación es deducción mía |
 | Lógica | 3,3 V en todos los GPIO; no toleran 5 V | [Documentación de Raspberry Pi](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html) ("Do not use 5V for 3.3V components"), [pinout.xyz, UART](https://pinout.xyz/pinout/uart) ("The UART pins are 3.3v and are not level shifted") |
 | Pines 5 a 12 | 5 = GPIO3, 6 = GND, 7 = GPIO4, 8 = **GPIO14 (TXD0)**, 9 = GND, 10 = **GPIO15 (RXD0)**, 11 = GPIO17, 12 = GPIO18 | Esquema (J8); [pinout.xyz, pin 8](https://pinout.xyz/pinout/pin8_gpio14) para los nombres |
-| Pines de 5 V | 2 y 4 | [Ficha de los JST-XH, 3](../cables-jst-xh-4-pin/README.md) (lectura del esquema en imagen); en el texto extraído del esquema no vi los nombres de los pines de alimentación |
+| Pines de 5 V | 2 y 4 | [Ficha de los JST-XH, 3](../../cables-jst-xh-4-pin/README.md) (lectura del esquema en imagen); en el texto extraído del esquema no vi los nombres de los pines de alimentación |
 
-Aviso del product brief de la Pi: la conexión de dispositivos incompatibles al GPIO "may affect compliance, result in damage to the unit, and invalidate the warranty", y los cables y conectores de los periféricos "must have adequate insulation" ([RP-008338-DS-2](../raspberry-pi-3b-plus/datasheets/RP-008338-DS-2-raspberry-pi-3-b-plus-product-brief.pdf), sección de advertencias).
+Aviso del product brief de la Pi: la conexión de dispositivos incompatibles al GPIO "may affect compliance, result in damage to the unit, and invalidate the warranty", y los cables y conectores de los periféricos "must have adequate insulation" ([RP-008338-DS-2](../../raspberry-pi-3b-plus/datasheets/RP-008338-DS-2-raspberry-pi-3-b-plus-product-brief.pdf), sección de advertencias).
 
 ### 2.4 Cálculos de resistencia y de tiempo (míos)
 
-Con las resistencias por kilómetro de la tabla AWG de la [ficha de los JST-XH (2.3)](../cables-jst-xh-4-pin/README.md#23-calibres-referencia-para-comprobar-el-cable) y el 55 % más del aluminio cobreado que citan [Fluke](https://de.flukenetworks.com/blog/cabling-chronicles/cca-not-worth-savings-or-risk) y [Belden](https://cn.belden.com/blog/not-in-my-network-copper-clad-aluminum-recipe-for-failure) (es un dato de cableado de red, no de este cable):
+Con las resistencias por kilómetro de la tabla AWG de la [ficha de los JST-XH (2.3)](../../cables-jst-xh-4-pin/README.md#23-calibres-referencia-para-comprobar-el-cable) y el 55 % más del aluminio cobreado que citan [Fluke](https://de.flukenetworks.com/blog/cabling-chronicles/cca-not-worth-savings-or-risk) y [Belden](https://cn.belden.com/blog/not-in-my-network-copper-clad-aluminum-recipe-for-failure) (es un dato de cableado de red, no de este cable):
 
 | Hilo de 20 cm | Cobre | CCA (+55 %) |
 |---|---|---|
@@ -126,8 +126,8 @@ No hay ficha técnica, manual ni declaración de conformidad de ELEGOO para este
 | Harwin M20, hoja del contacto de crimpado hembra | DRG-00379 (M20-118) | PDF | [descargar](https://content.harwin.com/asset/d742d022-1905-41c8-b996-8feb2ed262c8/DRG-00379-Technical-Drawing-Datasheet-M20-118-pdf.pdf) (**no la abrí**; enlace visto en la página del producto) |
 | Harwin M20, hoja de la carcasa de 2+2 posiciones | DRG-00377 (M20-107) | PDF | [descargar](https://content.harwin.com/asset/b4f1d83e-6b34-4617-ba41-3cc2c2450892/DRG-00377-Technical-Drawing-Datasheet-M20-107-pdf.pdf) (**no pude abrirla**: la herramienta la bloqueó) |
 | Harwin, catálogo M20 | 2898005 | PDF | [descargar](https://www.farnell.com/datasheets/2898005.pdf) (**no pude abrirlo**: bloqueado) |
-| Esquema reducido de la Pi 3B+ (conector J8) | RP-008339-DS-1 | PDF | [descargar](https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008339-DS-1-raspberry-pi-3-b-plus-reduced-schematics.pdf) · copia local en [`../raspberry-pi-3b-plus/datasheets/`](../raspberry-pi-3b-plus/datasheets/RP-008339-DS-1-raspberry-pi-3-b-plus-reduced-schematics.pdf) |
-| Plano mecánico de la Pi 3B+ | RP-008337-DS-2 | PDF | [descargar](https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008337-DS-2-raspberry-pi-3-b-plus-mechanical-drawing.pdf) · copia local en [`../raspberry-pi-3b-plus/datasheets/`](../raspberry-pi-3b-plus/datasheets/RP-008337-DS-2-raspberry-pi-3-b-plus-mechanical-drawing.pdf) |
+| Esquema reducido de la Pi 3B+ (conector J8) | RP-008339-DS-1 | PDF | [descargar](https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008339-DS-1-raspberry-pi-3-b-plus-reduced-schematics.pdf) · copia local en [`../raspberry-pi-3b-plus/datasheets/`](../../raspberry-pi-3b-plus/datasheets/RP-008339-DS-1-raspberry-pi-3-b-plus-reduced-schematics.pdf) |
+| Plano mecánico de la Pi 3B+ | RP-008337-DS-2 | PDF | [descargar](https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008337-DS-2-raspberry-pi-3-b-plus-mechanical-drawing.pdf) · copia local en [`../raspberry-pi-3b-plus/datasheets/`](../../raspberry-pi-3b-plus/datasheets/RP-008337-DS-2-raspberry-pi-3-b-plus-mechanical-drawing.pdf) |
 | Product brief de la Pi 3B+ | RP-008338-DS-2 | PDF | [descargar](https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008338-DS-2-raspberry-pi-3-b-plus-product-brief.pdf) |
 | Documentación de hardware de Raspberry Pi (GPIO) | | Web | [raspberrypi.com](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html) |
 | IWISS SN-28B, crimpadora Dupont/JST (AWG 28-18) | SN-28B | Web | [iwiss.com](https://iwiss.com/products/sn-28b-dupont-crimping-tool-for-3-96mm-2-54mm-2-5mm-pitch-dupont-jst-xh-vh-connectors-awg-18-to-28) |
@@ -194,7 +194,7 @@ El peor caso es el segundo, y es fácil de cometer si se cuentan las columnas de
 
 ### 4.3 UART con Dupont: qué pasa cuando el contacto falla
 
-- **Condiciones de la línea:** 9600 baudios, 8N1, 3,3 V TTL, tramas de 9 bytes con suma de comprobación (guía §2.4; manual de Winsen en la [ficha de JST-XH](../cables-jst-xh-4-pin/README.md#22-lado-del-sensor-ze29a-lo-que-importa-al-cable)). Un cable de 20 cm no introduce problemas de integridad de señal a esa velocidad (deducción mía): lo que cuenta es el contacto.
+- **Condiciones de la línea:** 9600 baudios, 8N1, 3,3 V TTL, tramas de 9 bytes con suma de comprobación (guía §2.4; manual de Winsen en la [ficha de JST-XH](../../cables-jst-xh-4-pin/README.md#22-lado-del-sensor-ze29a-lo-que-importa-al-cable)). Un cable de 20 cm no introduce problemas de integridad de señal a esa velocidad (deducción mía): lo que cuenta es el contacto.
 - **TX de la Pi (pin 8) abierto:** el sensor no recibe órdenes. La guía dice que el módulo no arranca solo y hay que enviarle una trama de arranque, así que **se queda inactivo**.
 - **RX de la Pi (pin 10) abierto:** la Pi no recibe respuesta. Cómo se comporta la entrada sin conectar depende de la resistencia interna que fije el sistema; no lo he comprobado. El software debe tratar "sin trama" como **fallo del sensor** y no como lectura de 0.
 - **Contacto intermitente:** tramas truncadas o con bits cambiados. La suma de comprobación de 8 bits rechaza casi todas, pero **una trama corrupta de cada unas 256 la pasaría** si los errores fueran aleatorios (1/256, cálculo mío). En un instrumento que da un número, no es despreciable si la conexión falla a menudo.
@@ -210,13 +210,13 @@ Cuándo hace falta: para poner un terminal Dupont hembra en los hilos de 22 AWG 
   - **IWISS SN-28B:** ratchet, AWG 28 a 18, terminales de 2,5, 2,54 y 3,96 mm; 16,99 USD en la tienda de IWISS ([iwiss.com](https://iwiss.com/products/sn-28b-dupont-crimping-tool-for-3-96mm-2-54mm-2-5mm-pitch-dupont-jst-xh-vh-connectors-awg-18-to-28)). Las matrices vienen sin marcar y la tensión del ratchet se ajusta con una prueba de tirón.
   - **Engineer PA-09:** sin ratchet, AWG 32 a 20, la más recomendada en la [guía de microcontrollerslab](https://microcontrollerslab.com/best-crimping-tools-for-jst-dupont-connectors-buying-guide/). No vi su precio.
   - Para contactos propios de FCI: herramientas 10164488-001 (AWG 20-22) y 10164489-001 (AWG 22-30) de la [hoja de Amphenol](https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/boardwiretoboard/fci-basics-handtool-dubox-ctw.pdf) ([copia local](datasheets/fci-basics-handtool-dubox-ctw.pdf)). Son para esos contactos, no un estándar de Dupont.
-  - La crimpadora autoajustable de la hoja (#28) parece de punteras ([ficha de JST-XH, 5.11](../cables-jst-xh-4-pin/README.md#511-falta-una-herramienta-para-el-extremo-dupont)); no la he visto.
+  - La crimpadora autoajustable de la hoja (#28) parece de punteras ([ficha de JST-XH, 5.11](../../cables-jst-xh-4-pin/README.md#511-falta-una-herramienta-para-el-extremo-dupont)); no la he visto.
 - **Consejos de los foros y guías:**
   - Pelar unos 2 mm (microcontrollerslab); pelar más deja las garras del aislante sobre cobre desnudo y sin alivio de tracción. El valor exacto lo da el terminal: mira su hoja.
   - **No estañar el hilo antes de crimpar** ("DO NOT TIN THE WIRES IF YOU ARE GOING TO CRIMP THEM", Ya'akov en [All About Circuits](https://forum.allaboutcircuits.com/threads/need-suggestions-for-suitable-jumpers.193586/post-1819576)).
   - Una soldadura "concentra cada ciclo de flexión en un punto rígido" ([Team FDM](https://www.teamfdm.com/blogs/entry/10-3d-printer-connectors-molex-jst-crimping/)).
   - Cuenta con malograr de 10 a 20 terminales hasta tomarle el punto (microcontrollerslab). En el Arduino Forum, un usuario cuenta una media de 1,5 a 2 pines por crimpado bueno.
-  - **Tira de cada terminal** y repite si el hilo se mueve (Team FDM, microcontrollerslab). Las fuerzas de arranque de referencia para 26 y 28 AWG están en la tabla de la [ficha de JST-XH (6.2)](../cables-jst-xh-4-pin/README.md#62-qué-comprobar-al-recibir-el-lote).
+  - **Tira de cada terminal** y repite si el hilo se mueve (Team FDM, microcontrollerslab). Las fuerzas de arranque de referencia para 26 y 28 AWG están en la tabla de la [ficha de JST-XH (6.2)](../../cables-jst-xh-4-pin/README.md#62-qué-comprobar-al-recibir-el-lote).
 - **Dónde comprar terminales y carcasas:** no he visto un kit concreto en Amazon.es que pueda recomendar. El contacto Harwin M20-1160042 figura en CPC Farnell a 0,09 £ (desde 5 unidades) y 0,05 £ (desde 100), sin IVA, según la página del 21-10-2026; para una máquina con dos hilos el gasto es mínimo. **Sin verificar** disponibilidad y envío, y si ese contacto es el que lleva la carcasa que elijas.
 
 ### 4.5 Comprobación antes de dar tensión
@@ -276,7 +276,7 @@ No encontré pruebas independientes de este kit en concreto (mediciones, desmont
 
 ### 5.4 Sin bloqueo y vibración
 
-- [Team FDM](https://www.teamfdm.com/blogs/entry/10-3d-printer-connectors-molex-jst-crimping/): "Nothing holds them in place except friction on a square pin". Lo clasifica como "Bench prototyping only, never on motion". Dice que la vibración los saca "a fraction of a millimeter per hour" hasta que el contacto es marginal y que un Dupont medio fuera dobló un pin en su ejemplo. Es una afirmación del artículo, sin medición. Ese mismo artículo da al JST-XH como conector con enclavamiento; JST lo clasifica como "friction lock" (ver [ficha de JST-XH, 2.1](../cables-jst-xh-4-pin/README.md#21-conector-jst-serie-xh-original)). **No coinciden**; manda JST.
+- [Team FDM](https://www.teamfdm.com/blogs/entry/10-3d-printer-connectors-molex-jst-crimping/): "Nothing holds them in place except friction on a square pin". Lo clasifica como "Bench prototyping only, never on motion". Dice que la vibración los saca "a fraction of a millimeter per hour" hasta que el contacto es marginal y que un Dupont medio fuera dobló un pin en su ejemplo. Es una afirmación del artículo, sin medición. Ese mismo artículo da al JST-XH como conector con enclavamiento; JST lo clasifica como "friction lock" (ver [ficha de JST-XH, 2.1](../../cables-jst-xh-4-pin/README.md#21-conector-jst-serie-xh-original)). **No coinciden**; manda JST.
 - **[Foro V1E](https://forum.v1e.com/t/having-trouble-keeping-the-end-stops-plugged-in/42105) (25-1-2024):** enchufes de final de carrera Dupont que se sueltan. Propuestas: quitar la guía de plástico del conector de la placa para que asienten mejor, carcasas Dupont con bloqueo, cables prensados de fábrica, pegamento termofusible ("it shouldn't really happen though"), JST-XH ("the best way") y bridas como alivio de tracción. El autor del hilo pensó en pegamento (termofusible o rápido) pero creyó que "would make things worse". No dice qué probó.
 - **Hojas de datos:** ni Dubox ni Harwin M20 listan enclavamiento (2.2).
 - **Aquí:** la guía suspende la caja interior (§4) sobre muelles (§5.1), así que la Pi y el arnés se mueven respecto a la caja de arriba. Cuanto mejor se fije el cable a la propia caja interior, menos relativo se moverá el arnés respecto al conector (deducción mía).
@@ -288,7 +288,7 @@ Ver [4.2](#42-geometría-de-la-cabecera-y-alojamientos). Es una deducción mía 
 ### 5.6 Oxidación y contactos de bajo nivel
 
 - En un hilo de All About Circuits, DonBradman dice haber visto **oxidarse los conectores con el tiempo**. Un solo testimonio.
-- Dubox lista contacto de oro o de estaño ([2.2](#22-conector-dupont-de-referencia-no-es-el-de-elegoo)). El material y el baño de los terminales de ELEGOO **no se publican**. Una unión de 3,3 V y microamperios es una carga de bajo nivel, el caso que trata la [ficha de los JST-XH (5.9)](../cables-jst-xh-4-pin/README.md#59-contactos-de-estaño-con-señales-de-bajo-nivel). No he encontrado cifras concretas para Dupont.
+- Dubox lista contacto de oro o de estaño ([2.2](#22-conector-dupont-de-referencia-no-es-el-de-elegoo)). El material y el baño de los terminales de ELEGOO **no se publican**. Una unión de 3,3 V y microamperios es una carga de bajo nivel, el caso que trata la [ficha de los JST-XH (5.9)](../../cables-jst-xh-4-pin/README.md#59-contactos-de-estaño-con-señales-de-bajo-nivel). No he encontrado cifras concretas para Dupont.
 - Tampoco sé el chapado de los pines de la cabecera de la Pi 3B+ (no lo da ninguno de los documentos que abrí). Sin verificar.
 
 ### 5.7 Aislante y carcasas
@@ -300,7 +300,7 @@ Ver [4.2](#42-geometría-de-la-cabecera-y-alojamientos). Es una deducción mía 
 
 ### 5.8 Faltan terminales y herramienta
 
-Ver [4.4](#44-terminar-los-extremos) y la [ficha de los JST-XH, 5.11](../cables-jst-xh-4-pin/README.md#511-falta-una-herramienta-para-el-extremo-dupont).
+Ver [4.4](#44-terminar-los-extremos) y la [ficha de los JST-XH, 5.11](../../cables-jst-xh-4-pin/README.md#511-falta-una-herramienta-para-el-extremo-dupont).
 
 ### 5.9 Datos del anuncio inconsistentes y ASIN
 
@@ -351,7 +351,7 @@ Hazlo con los hilos que vayas a usar, con tres o cuatro más de repuesto y una m
 | Resistencia | Escala de 200 Ω, restando la lectura con las puntas juntas | Un cobre de 26 a 28 AWG de 20 cm da unos 0,03 a 0,04 Ω (cálculo mío): un polímetro normal no lo ve. Descarta lo que pase de unos 0,5 Ω netos (criterio mío; MarkT, Arduino Forum, dice que más de 1 Ω es "junk") |
 | Flexión | Continuidad mientras doblas el cable cerca de la carcasa y tiras de ella (consejo de Ian.M, EEVblog) | Lectura estable |
 | Material | Pelar 5 mm de 2 o 3 hilos sacrificados y cortar una hebra en sección; imán (Ian.M); Ian.M también propone una prueba a la llama | Cobre = naranja en toda la sección; núcleo blanco o plateado bajo una capa de cobre = aluminio (criterio mío); si el imán lo atrae = acero |
-| Calibre | Calibre o pie de rey sobre el cobre pelado y sobre el aislante | Apunta los valores. 26 AWG = 0,40 mm y 28 AWG = 0,32 mm en macizo; algo más trenzado ([ficha JST-XH, 2.3](../cables-jst-xh-4-pin/README.md#23-calibres-referencia-para-comprobar-el-cable)) |
+| Calibre | Calibre o pie de rey sobre el cobre pelado y sobre el aislante | Apunta los valores. 26 AWG = 0,40 mm y 28 AWG = 0,32 mm en macizo; algo más trenzado ([ficha JST-XH, 2.3](../../cables-jst-xh-4-pin/README.md#23-calibres-referencia-para-comprobar-el-cable)) |
 | Ajuste al pin | Enchufa cada hembra a usar en un pin de 0,64 mm de repuesto (una tira de cabecera suelta) | Se nota fricción; no cae por su peso. Si tienes báscula: aguanta al menos 0,3 N (30 g colgados en vertical, referencia Dubox) |
 | Tirón del terminal | Tirar con suavidad de cada hilo desde la carcasa | El hilo no se mueve (Team FDM) |
 | Aislante | Doblar y soltar varias veces en el punto de uso | Sin grietas (mikrocontroller.net) |

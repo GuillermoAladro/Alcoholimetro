@@ -24,6 +24,30 @@ Antena del [módem 4G](../modem-4g-huawei-e3372h/README.md). Es una lámina adhe
 - Lo que sobra de cable se recoge con una brida, sin doblarlo a menos de 1 cm de radio.
 - Los dos topes de goma de abajo a la izquierda van en la carcasa, debajo de la ventana. Si fueran en el cajón, al subirlo rozarían la placa A-V03.
 
+## Revisión del 13-11-2026: la ventana es una ranura
+
+Análisis de la [revisión de componentes](../REVISION-13-11-2026.md), apartado 6.3. Es cálculo, no medida.
+
+- **La ventana de la carcasa mide 36 × 112 mm.** Una ranura en chapa deja pasar bien las ondas cuya media longitud de onda cabe en su largo: 112 mm corresponden a unos 1340 MHz. Por encima (1800, 2100 y 2600 MHz) pasa bien. **Por debajo (700, 800 y 900 MHz) pasa mal**, y son las bandas que mejor entran en interiores.
+
+  | Banda | Media longitud de onda |
+  |---|---|
+  | B28, 700 MHz | 197 mm |
+  | B20, 800 MHz | 183 mm |
+  | B8, 900 MHz | 159 mm |
+  | B3, 1800 MHz | 83 mm |
+  | B1, 2100 MHz | 70 mm |
+  | B7, 2600 MHz | 57 mm |
+
+- **La antena va a lo largo de la ranura.** Una antena lineal acopla mejor con una ranura cuando está cruzada, no paralela. Y el fabricante de la antena de referencia pide unos 15 mm de separación del metal: aquí tiene 4 mm en las puntas.
+- **No se resuelve calculando.** En un bar de ciudad con buena cobertura de 1800 MHz funcionará; en un sótano o un local de muros gruesos, puede que no.
+
+**Qué se hace:**
+
+1. **Prueba por bandas (C3).** Con la caja cerrada, fijar en el módem una banda cada vez y apuntar señal y calidad. Criterio: al menos dos bandas con RSRP mejor que −105 dBm y SINR mayor que 5 dB.
+2. **Comparar dos montajes:** (a) esta antena con su latiguillo CRC9; (b) el [propio módem detrás de la ventana](../modem-4g-huawei-e3372h/README.md), con un [alargador USB](../alargador-usb/README.md). Se queda el que mida mejor. **Hasta entonces, esta antena y el latiguillo se compran solo para la prueba.**
+3. **Agrandar la ventana** todo lo que deje el CAD, sobre todo a lo ancho. Entra con la carcasa.
+
 ## Avisos
 
 - **La ventana es estrecha**, porque detrás está la Pi, pegada a ese lateral. Antes de cortar chapa hay que probar la cobertura con el módem y la antena montados y todo cerrado, en un bar. La señal se ve en la página del módem (http://192.168.8.1). Si va justa, se agrandan las dos ventanas.

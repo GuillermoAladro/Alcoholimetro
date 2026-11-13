@@ -1,15 +1,15 @@
 # GeeekPi cable FFC de 15 pines, 50 cm (cable plano para cámara Raspberry Pi)
 
-Cable plano (FFC) que une la [Raspberry Pi Camera Module 3](../raspberry-pi-camera-module-3/README.md) con el conector CSI "CAMERA" de la [Raspberry Pi 3B+](../raspberry-pi-3b-plus/README.md). La cámara queda en la caja de arriba y la Pi en la caja interior suspendida, así que el cable de 200 mm que trae la cámara no llega.
+Cable plano (FFC) que une la [Raspberry Pi Camera Module 3](../../raspberry-pi-camera-module-3/README.md) con el conector CSI "CAMERA" de la [Raspberry Pi 3B+](../../raspberry-pi-3b-plus/README.md). La cámara queda en la caja de arriba y la Pi en la caja interior suspendida, así que el cable de 200 mm que trae la cámara no llega.
 
 - **Compra:** ASIN B07DKB4M1H, 7,99 € (precio de la hoja de componentes del 19-20-10-2026). Es la pieza 4 de la hoja.
 - **Marca en la hoja:** GeeekPi. No he podido confirmar que el anuncio coincida con ninguna ficha de fabricante (ver [sección 3](#3-el-producto-geeekpi-y-su-documentación)).
 
 > Investigación hecha el 21-10-2026. Cada dato indica de dónde sale. Lo que no he podido comprobar está marcado como **sin verificar**. Amazon bloquea el acceso automático (no he intentado eludirlo) y las búsquedas por el ASIN no devolvieron el anuncio, así que no he podido ver el anuncio concreto: la referencia y el precio son los de tu hoja, y **no sé qué pone el anuncio sobre paso, tipo de contactos ni anchura**.
 
-> **Actualización 21-10-2026 (anuncio de Amazon.es leído).** Después de escribir esta ficha pude abrir el anuncio con el navegador integrado, así que lo que dice arriba de que Amazon bloquea el acceso ya no vale para esta pieza. Lo que cambia: es un pack de tres cables (50, 100 y 200 cm), de 15 pines y paso 1,0 mm. No dice si los contactos están en la misma cara o en caras opuestas. Ver el [detalle y origen de cada dato](../../montaje-general/anuncios-amazon-21-10-2026.md).
+> **Actualización 21-10-2026 (anuncio de Amazon.es leído).** Después de escribir esta ficha pude abrir el anuncio con el navegador integrado, así que lo que dice arriba de que Amazon bloquea el acceso ya no vale para esta pieza. Lo que cambia: es un pack de tres cables (50, 100 y 200 cm), de 15 pines y paso 1,0 mm. No dice si los contactos están en la misma cara o en caras opuestas. Ver el [detalle y origen de cada dato](../../../montaje-general/anuncios-amazon-21-10-2026.md).
 >
-> No repito aquí lo que ya dice la [ficha de la cámara](../raspberry-pi-camera-module-3/README.md) sobre el cable (apartado 5.5: el comentario de integridad de señal, el kit de extensión HDMI y el hilo de element14). Esta ficha profundiza.
+> No repito aquí lo que ya dice la [ficha de la cámara](../../raspberry-pi-camera-module-3/README.md) sobre el cable (apartado 5.5: el comentario de integridad de señal, el kit de extensión HDMI y el hilo de element14). Esta ficha profundiza.
 
 ## Índice
 
@@ -45,9 +45,9 @@ Cable plano (FFC) que une la [Raspberry Pi Camera Module 3](../raspberry-pi-came
 | Característica | Valor | Fuente |
 |---|---|---|
 | Conector de la Pi (CSI "CAMERA") | 15 pines, "estándar"; es el de todas las Pi hasta la Pi 4 incluida | [documentación oficial de cámaras](https://www.raspberrypi.com/documentation/accessories/camera.html) |
-| Conector de la cámara | FPC de 15 × 1 mm; cable incluido de 200 mm | [product brief RP-008151-DS-1](https://pip-assets.raspberrypi.com/categories/786-raspberry-pi-camera-module-3/documents/RP-008151-DS-1-camera-module-3-product-brief.pdf) ([copia local](../raspberry-pi-camera-module-3/datasheets/RP-008151-DS-1-camera-module-3-product-brief.pdf)) |
+| Conector de la cámara | FPC de 15 × 1 mm; cable incluido de 200 mm | [product brief RP-008151-DS-1](https://pip-assets.raspberrypi.com/categories/786-raspberry-pi-camera-module-3/documents/RP-008151-DS-1-camera-module-3-product-brief.pdf) ([copia local](../../raspberry-pi-camera-module-3/datasheets/RP-008151-DS-1-camera-module-3-product-brief.pdf)) |
 | Paso del conector estándar | 1 mm, 15 vías | [Kiwi Electronics](https://www.kiwi-electronics.com/en/raspberry-pi-camera-accessories-133/raspberry-pi-camera-cable-standard-mini-500mm-11590) (tienda), coincide con el brief |
-| Conector J1 del módulo 3 | Amphenol SFW15R-1STE1LF: 1 mm, 15 contactos, ZIF, contacto inferior ("bottom") | [esquema RP-008969-SD-3](https://pip-assets.raspberrypi.com/categories/1207-design-files/documents/RP-008969-SD-3-Raspberry%20Pi%20Camera%20Module%203%20Reference%20Schematic.pdf) ([copia local](../raspberry-pi-camera-module-3/datasheets/RP-008969-SD-3-Raspberry_Pi_Camera_Module_3_Reference_Schematic.pdf)), [RS Components](https://uk.rs-online.com/web/p/fpc-connectors/1822728P) |
+| Conector J1 del módulo 3 | Amphenol SFW15R-1STE1LF: 1 mm, 15 contactos, ZIF, contacto inferior ("bottom") | [esquema RP-008969-SD-3](https://pip-assets.raspberrypi.com/categories/1207-design-files/documents/RP-008969-SD-3-Raspberry%20Pi%20Camera%20Module%203%20Reference%20Schematic.pdf) ([copia local](../../raspberry-pi-camera-module-3/datasheets/RP-008969-SD-3-Raspberry_Pi_Camera_Module_3_Reference_Schematic.pdf)), [RS Components](https://uk.rs-online.com/web/p/fpc-connectors/1822728P) |
 | Carriles | La Pi 3B+ usa CAM1 con dos carriles de datos y el reloj. El conector de 15 vías solo soporta los carriles 0 y 1 | [esquema reducido RP-008339-DS-1](https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008339-DS-1-raspberry-pi-3-b-plus-reduced-schematics.pdf), esquema del módulo 3 |
 | Diferenciales | 3 pares (D0, D1, CK); un GND entre pares | pinout de [Microchip](https://onlinedocs.microchip.com/oxy/GUID-BABA2044-2D69-4FCC-A1E3-98FD36992888-en-US-3/GUID-3B439A68-A4F9-43C5-AB4C-78DD6E1D8D7F.html), [Zephyr](https://docs.zephyrproject.org/latest/build/dts/api/bindings/gpio/raspberrypi,csi-connector.html), [Arducam](https://blog.arducam.com/?p=20543) |
 
@@ -118,8 +118,8 @@ Son datos de fabricantes de FFC, no de este cable.
 | Documento | Referencia | Formato | Enlace |
 |---|---|---|---|
 | Plano del cable oficial de cámara, 200 mm | RP-008146-DS-1 | PDF | [descargar](https://pip-assets.raspberrypi.com/categories/786-raspberry-pi-camera-module-3/documents/RP-008146-DS-1-standard-camera-cable-200mm-reference-drawing.pdf) ([copia local](datasheets/RP-008146-DS-1-standard-camera-cable-200mm-reference-drawing.pdf)) |
-| Product brief de la Camera Module 3 | RP-008151-DS-1 | PDF | [descargar](https://pip-assets.raspberrypi.com/categories/786-raspberry-pi-camera-module-3/documents/RP-008151-DS-1-camera-module-3-product-brief.pdf) ([copia local](../raspberry-pi-camera-module-3/datasheets/RP-008151-DS-1-camera-module-3-product-brief.pdf)) |
-| Esquema de referencia de la Camera Module 3 (conector J1) | RP-008969-SD-3 | PDF | [descargar](https://pip-assets.raspberrypi.com/categories/1207-design-files/documents/RP-008969-SD-3-Raspberry%20Pi%20Camera%20Module%203%20Reference%20Schematic.pdf) ([copia local](../raspberry-pi-camera-module-3/datasheets/RP-008969-SD-3-Raspberry_Pi_Camera_Module_3_Reference_Schematic.pdf)) |
+| Product brief de la Camera Module 3 | RP-008151-DS-1 | PDF | [descargar](https://pip-assets.raspberrypi.com/categories/786-raspberry-pi-camera-module-3/documents/RP-008151-DS-1-camera-module-3-product-brief.pdf) ([copia local](../../raspberry-pi-camera-module-3/datasheets/RP-008151-DS-1-camera-module-3-product-brief.pdf)) |
+| Esquema de referencia de la Camera Module 3 (conector J1) | RP-008969-SD-3 | PDF | [descargar](https://pip-assets.raspberrypi.com/categories/1207-design-files/documents/RP-008969-SD-3-Raspberry%20Pi%20Camera%20Module%203%20Reference%20Schematic.pdf) ([copia local](../../raspberry-pi-camera-module-3/datasheets/RP-008969-SD-3-Raspberry_Pi_Camera_Module_3_Reference_Schematic.pdf)) |
 | Esquema reducido de la Pi 3B+ | RP-008339-DS-1 | PDF | [descargar](https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008339-DS-1-raspberry-pi-3-b-plus-reduced-schematics.pdf) |
 | Product brief de la Pi 3B+ | RP-008338-DS-2 | PDF | [descargar](https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008338-DS-2-raspberry-pi-3-b-plus-product-brief.pdf) |
 | Dibujo Molex SD-15267-001, FFC de 1,00 mm (tipos A y D), rev. B | SD-15267-001 | PDF | [descargar](https://www.farnell.com/cad/4000125.pdf) ([copia local](datasheets/4000125.pdf)) |
@@ -362,7 +362,7 @@ El paso de 1 mm exige puntas finas o un adaptador FFC a pines. **No aprietes: se
 
 Primero con el cable oficial de 200 mm, para saber que cámara y Pi van bien; después con el de 50 cm, en la ruta final.
 
-1. `rpicam-hello --list-cameras` debe listar el `imx708` (ver [ficha de la cámara](../raspberry-pi-camera-module-3/README.md#6-recomendaciones-para-el-alcoholímetro)). Una cámara "desaparecida" es un cable mal asentado, de tipo equivocado o dañado.
+1. `rpicam-hello --list-cameras` debe listar el `imx708` (ver [ficha de la cámara](../../raspberry-pi-camera-module-3/README.md#6-recomendaciones-para-el-alcoholímetro)). Una cámara "desaparecida" es un cable mal asentado, de tipo equivocado o dañado.
 2. `dmesg` sin errores de la cámara, y `vcgencmd get_throttled` en `0x0`.
 3. Deja la vista previa corriendo horas (`rpicam-hello -t 0`) con el cable en su ruta final, moviéndolo suavemente y golpeando la caja. Si hay imágenes cortadas, rayas o pérdidas de la cámara, cambia de cable antes de culpar a la cámara.
 4. Si falla solo con 50 cm y va con 20 cm, el cable o la longitud es el problema. Prueba con otro cable de la misma longitud y con uno de 30 cm.

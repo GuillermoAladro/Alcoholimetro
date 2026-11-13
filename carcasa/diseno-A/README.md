@@ -2,6 +2,8 @@
 
 > Copia en el repositorio del paquete `Alcoholimetro_A.zip`. Los números de pieza (A-C01, A-T01…) son los de los STEP, los DXF y el visor de esta carpeta. Decisiones generales en [DECISIONES](../../DECISIONES.md).
 
+> **Parte eléctrica revisada el 13-11-2026.** El cableado vigente es [CABLEADO.md](../../CABLEADO.md) y la lista de compra, [LISTA-DE-COMPRA.md](../../LISTA-DE-COMPRA.md). Los textos de esta página ya llevan los valores nuevos, pero **el modelo 3D todavía no** (visor, `Conexiones_3D.html`, `Lista_de_piezas.xlsx`): sigue con cuatro portafusibles, la Pi por micro-USB, sin ventiladores y sin la placa de bornes. Se actualiza con la carcasa. Detalle en la [revisión de componentes](../../componentes/REVISION-13-11-2026.md).
+
 21-10-2026 · Guillermo · actualizado el 22-10-2026 (tapa interior deslizante, faldón derecho de la tapa, antena hacia abajo) el 25-10-2026 (sin botón: el Solo espera tarjeta todo el rato, y la toma C14 ya no lleva interruptor) el 26-10-2026 (componentes a tamaño real y conexiones comprobadas) el 01-11-2026 (antena 4G por dentro: ya no sobresale nada) el 03-11-2026 (carcasa de chapa plegada: 29 piezas de acero en vez de 44) y el 04-11-2026 (chapa de 3 mm, cajón de componentes y tapa interior de 1,5 mm, y patrón de anclaje P18-3)
 
 ## 1. Qué hay en esta carpeta
@@ -106,7 +108,8 @@
 
 **Tierra.**
 - C14 → espárrago del cajón → borne FG de la fuente.
-- Puente con faston al espárrago de la carcasa (M4 cortado a 8 mm), detrás del cajón. El faston queda arriba, a mano.
+- Puente al espárrago de la carcasa (M4 cortado a 8 mm), detrás del cajón, **con ojal y tuerca en los dos extremos** (antes faston; cambiado el 13-11-2026). Queda arriba, a mano.
+- El −V de la fuente se une a tierra en un solo punto, en el espárrago del cajón.
 
 ## 3. La tapa
 
@@ -163,15 +166,16 @@
 4. **230 V y tierra** (1,5 mm²):
    - C14 L y N → fuente L y N.
    - Tierra de la C14 → espárrago del cajón → FG de la fuente.
-   - Ajusta la fuente a 5,20 V.
+   - Ajusta la fuente a 5,10 V (nunca más de 5,12 V).
 5. **Caja de red:**
    - Saca +5 V y GND por el pasacables.
    - Pon la tapa en U y apriétala con 2 tuercas M4 y arandela dentada.
 6. **Reparto de 5 V:**
    - Dos WAGO 221‑415 en la base (+5 V y GND).
-   - 4 portafusibles de pie contra la caja de red: Pi 3 A, Solo 3 A, pantalla 3 A y sensor 2 A.
+   - 6 portafusibles MINI: troncal 5 A y Pi 3 A (los dos salen del borne 5 de la fuente), y pantalla, Solo, sensor y ventiladores 2 A. El modelo 3D dibuja todavía cuatro.
+   - Condensador de 2200 µF entre las dos regletas.
    - 2 bornes USB‑A de pie, para la pantalla y el Solo.
-7. **Raspberry Pi** en la trasera, con separadores M2.5 de 6 mm. El módem 4G va en el USB de abajo, con la SIM dentro.
+7. **Raspberry Pi** en la trasera, con separadores M2.5 de 6 mm, y encima la placa de bornes del GPIO, atornillada. Los 5 V de la Pi entran por sus bornes «5V» y «GND», directos desde la fuente. El módem 4G va en el USB de abajo, con la SIM dentro.
    - **Antena 4G:** pega el soporte (A‑S05) por dentro del lateral izquierdo del cajón con cinta VHB, tapando su ventana, y pega encima la antena plana con el cable hacia arriba.
    - Quita la tapa del módem y enchufa el latiguillo CRC9 en la toma principal (sujétalo con una brida o cinta: entra a presión). Enrosca el SMA de la antena y recoge lo que sobra con una brida, sin doblarlo a menos de 1 cm de radio.
 8. **ZE29A** en la trasera, encima de la Pi, con 4 separadores.
@@ -185,11 +189,11 @@
 
 **Meter el cajón.**
 1. Bájalo, cogido por los asideros, hasta los silentblocks.
-2. Conecta el faston de tierra.
+2. Atornilla el ojal del puente de tierra.
 3. Mete la tapa interior por la ranura del lateral derecho hasta el tope.
 4. Cierra la tapa y enchufa.
 
-**Sacarlo.** Se hace al revés: desenchufar, abrir la tapa, sacar la tapa interior por la derecha, soltar el faston de tierra y levantar el cajón con dos dedos en cada asidero.
+**Sacarlo.** Se hace al revés: desenchufar, abrir la tapa, sacar la tapa interior por la derecha, soltar el ojal del puente de tierra y levantar el cajón con dos dedos en cada asidero.
 
 **Cambiar un policarbonato.** Saca el cajón: las tuercas quedan a la vista por dentro. Se sueltan y los tornillos salen por delante.
 
@@ -237,15 +241,16 @@
 
 ## 6. Verificación de la electrónica
 
-**5 V:** fuente LRS‑50‑5 de 10 A, ajustada a 5,20 V.
+**5 V:** fuente LRS‑50‑5 de 10 A, ajustada a 5,10 V. Valores del 13-11-2026; la tabla completa, con el origen de cada dato, está en [CABLEADO.md](../../CABLEADO.md).
 
-| Rama | Consumo | Fusible | Cable |
+| Rama | Consumo | Fusible MINI | Cable |
 |---|---|---|---|
-| Pi 3B+ + cámara + módem 4G | 1,7 A normal, 2,8 A de máximo (estimado: el módem gasta algo más que el AR9271) | 3 A | Latiguillo micro‑USB 22 AWG, corto |
-| Pantalla 7" | 1 A (5 W) | 3 A | Borne USB‑A + USB‑C |
-| SumUp Solo (cargando) | Hasta ~1,5 A (sin dato oficial) | 3 A | Borne USB‑A + USB‑C |
+| Pi 3B+ + cámara + módem 4G | 1,3 A normal, 2,1 A de pico | 3 A | 0,75 mm² directo de la fuente a la placa de bornes del GPIO |
+| Pantalla 7" | 0,8–1 A (5 W) | 2 A | Borne USB‑A + USB‑C |
+| SumUp Solo (cargando) | Hasta ~1,5 A (sin dato oficial) | 2 A | Borne USB‑A + USB‑C |
 | ZE29A | Menos de 0,5 A | 2 A | JST‑XH |
-| **Total** | **~5,8 A de pico; la fuente va al 58 %** | | Troncal 0,75 mm² |
+| 2 ventiladores | 0,1 A | 2 A | El suyo |
+| **Total** | **2,5 A normales y 5,2 A de pico; la fuente va al 52 %** | Troncal 5 A | Troncal 0,75 mm² |
 
 **230 V.** Fusible cerámico T2,5A en la C14. El cable de 1,5 mm² no sale de la caja de red.
 
@@ -254,7 +259,7 @@
 **Señales:**
 - HDMI: de la Pi a la pantalla.
 - CSI: de la cámara a la Pi, con la cinta de 200 mm que trae la cámara.
-- UART de 3,3 V: de la Pi (pines 8 y 10) al ZE29A, directa.
+- UART de 3,3 V: de la Pi (pines 8 y 10, por la placa de bornes) al ZE29A, con 1 kΩ en serie en cada hilo.
 - Internet: la Pi sale por el módem 4G (la ve como una red USB, `eth1`). El Solo se conecta al punto de acceso de la Pi o usa su propia SIM.
 
 **Proceso de una prueba:**
@@ -267,7 +272,7 @@
 7. Resultado con la foto en pantalla.
 8. Vuelta a reposo.
 
-Todo lo necesario está conectado. En uso normal ninguna rama pasa del 50 % de su fusible; la Pi llega al 93 % en su pico máximo con el módem 4G. El sensor recibe 5,1–5,2 V, y su máximo es 5,3 V.
+En uso normal ninguna rama pasa del 45 % de su fusible; en el pico, la del Solo llega al 75 % y la de la Pi al 70 %. El sensor recibe hasta 5,21 V en continua y su máximo es 5,3 V: el rizado no puede pasar de 186 mVpp y hay que medirlo.
 
 ## 7. Avisos y decisiones para ti
 

@@ -81,12 +81,12 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 ## Otras fichas del repositorio (consultadas para datos de cables y chapa)
 
-- [Cable FFC de 15 pines, 50 cm](../cable-ffc-camara-50cm/README.md): ancho de 16 mm y propuesta de ranura de 18 × 3 mm.
+- [Cable FFC de 15 pines, 50 cm](../retirados/cable-ffc-camara-50cm/README.md): ancho de 16 mm y propuesta de ranura de 18 × 3 mm.
 - [Cable USB-A a USB-C acodado](../cable-usb-a-usb-c-90-30cm/README.md): ranura de 14 × 9 mm del separador.
 - [Manguera H05VV-F 3G1,5](../cable-h05vv-f-3g1-5-5m/README.md): diámetro exterior, radio de curvatura y aislamiento de 0,7 mm de los hilos.
 - [Cable 2 × 0,75 mm² rojo/negro](../cable-2x0-75-rojo-negro-10m/README.md): dimensiones y radio de curvatura.
 - [Tubo de silicona de 6 mm](../tubo-silicona-6mm/README.md): diámetro interior o exterior sin aclarar.
-- [Latiguillo micro-USB](../latiguillo-micro-usb-22awg/README.md): choque entre "15 cm" y "holgura".
+- [Latiguillo micro-USB](../retirados/latiguillo-micro-usb-22awg/README.md): choque entre "15 cm" y "holgura".
 - [Módulo C14](../modulo-c14-fusible-interruptor/README.md) y [alargo de antena RP-SMA](../retirados/alargo-antena-rp-sma-30cm/README.md): el grosor de la chapa no consta en la guía.
 
 ## Copias locales de los documentos

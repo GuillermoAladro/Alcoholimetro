@@ -10,7 +10,7 @@ Pieza nueva del 21-10-2026. Sale del hallazgo H04 de la auditoría técnica 1.0 
 
 - **Qué es:** un kit con 5 portafusibles en línea para fusible de 5 × 20 mm (cuerpo de rosca con dos hilos) y 150 fusibles rápidos de vidrio, 15 de cada valor: 0,5, 1, 2, 3, 4, 5, 8, 10, 15 y 20 A.
 - **Para qué:** un portafusibles en el troncal de +5 V, pegado a la fuente (F 5 A), y uno en el +5 V de cada una de las cuatro ramas: Pi (F 3 A, en su propia línea desde los bornes de la fuente), SumUp Solo (F 2 A), pantalla (F 2 A) y ZE29A (F 1 A). Se usan los cinco; sobran fusibles de todos los valores. Las cuatro auditorías del repositorio (6.1-S F04, 6-A A6A-03, P H2, 5.6 C-03) piden protección del troncal además de la de cada rama.
-- **Dónde va:** el del troncal entre el borne 5 de la fuente y el polo 1 de la WAGO «+5 V» (W11); el de la Pi en su línea propia desde el borne 5 (W13); los demás entre los polos 3 a 5 de la WAGO «+5 V» y la carga, lo más cerca posible de la WAGO ([MONTAJE GENERAL](../../historico/MONTAJE-GENERAL.md), W13, W14, W16 y W18). Solo en el +5 V, nunca en el GND.
+- **Dónde va:** el del troncal entre el borne 5 de la fuente y el polo 1 de la WAGO «+5 V» (W11); el de la Pi en su línea propia desde el borne 5 (W13); los demás entre los polos 3 a 5 de la WAGO «+5 V» y la carga, lo más cerca posible de la WAGO ([MONTAJE GENERAL](../../../historico/MONTAJE-GENERAL.md), W13, W14, W16 y W18). Solo en el +5 V, nunca en el GND.
 - **Compra:** [B07KQ46H6K](https://www.amazon.es/dp/B07KQ46H6K), 9,99 € el 21-10-2026.
 
 ## 2. Lo que dice el anuncio
@@ -56,4 +56,4 @@ Los hilos de 16 AWG entran en la WAGO 221 (admite de 0,14 a 4 mm²) sin puntera,
 
 - Anuncio B07KQ46H6K de Amazon.es, leído el 21-10-2026 (texto, ficha técnica y reseñas con compra verificada).
 - `analisis-auditoria.md` y `analisis-auditoria-2.md` (Project): hallazgo H04.
-- Datasheet LRS-50 de Mean Well ([copia local](../meanwell-lrs-50-5/datasheets/LRS-50-SPEC.pdf)): sobrecarga 110–150 % en modo hipo.
+- Datasheet LRS-50 de Mean Well ([copia local](../../meanwell-lrs-50-5/datasheets/LRS-50-SPEC.pdf)): sobrecarga 110–150 % en modo hipo.

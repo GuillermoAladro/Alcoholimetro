@@ -1,5 +1,7 @@
 # MONTAJE PASO A PASO
 
+> **HISTÓRICO (13-11-2026).** Sigue el diseño del 20-10-2026. El cableado vigente es [CABLEADO.md](../CABLEADO.md) y las pruebas que deciden hoy están en la [revisión de componentes](../componentes/REVISION-13-11-2026.md), apartado 9. Las comprobaciones de cada pieza al recibirla y las pruebas P de este documento siguen sirviendo de referencia hasta que se rehaga el montaje sobre el diseño A.
+
 Cómo montar el circuito del alcoholímetro por fases: con qué piezas y qué probar antes de pasar a la fase siguiente. Las conexiones (W1 a W30) y los números de pieza (#1 a #32) son los del [MONTAJE GENERAL](MONTAJE-GENERAL.md). Aquel documento dice qué va con qué; este dice en qué orden se monta y cómo se comprueba cada paso.
 
 **Estado a 21-10-2026: es un procedimiento de papel. No se ha montado nada.** Sigue el diseño del MONTAJE GENERAL (guía de cableado y `decisiones-diseno.md`). Desde el 22-10-2026 manda el diseño A (CAD en [`carcasa/diseno-A/`](../carcasa/diseno-A/README.md)); con él cambia sobre todo la fase 8 (colocación y tierra), que falta rehacer.

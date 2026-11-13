@@ -35,9 +35,9 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 ## Raspberry Pi 3B+ (cabecera y UART)
 
-- [Esquema reducido RP-008339-DS-1](https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008339-DS-1-raspberry-pi-3-b-plus-reduced-schematics.pdf), con [copia local](../raspberry-pi-3b-plus/datasheets/RP-008339-DS-1-raspberry-pi-3-b-plus-reduced-schematics.pdf): J8 "40W 0.1" PIN HDR", pines 5 a 12 con sus nombres (leído con pdftotext sobre la copia local)
-- [Plano mecánico RP-008337-DS-2](https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008337-DS-2-raspberry-pi-3-b-plus-mechanical-drawing.pdf), con [copia local](../raspberry-pi-3b-plus/datasheets/RP-008337-DS-2-raspberry-pi-3-b-plus-mechanical-drawing.pdf): bloque de cabecera junto al borde con "Z-Height = 8.5" (leído en imagen)
-- [Product brief RP-008338-DS-2](https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008338-DS-2-raspberry-pi-3-b-plus-product-brief.pdf), con [copia local](../raspberry-pi-3b-plus/datasheets/RP-008338-DS-2-raspberry-pi-3-b-plus-product-brief.pdf): advertencias sobre el GPIO y el aislamiento de cables
+- [Esquema reducido RP-008339-DS-1](https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008339-DS-1-raspberry-pi-3-b-plus-reduced-schematics.pdf), con [copia local](../../raspberry-pi-3b-plus/datasheets/RP-008339-DS-1-raspberry-pi-3-b-plus-reduced-schematics.pdf): J8 "40W 0.1" PIN HDR", pines 5 a 12 con sus nombres (leído con pdftotext sobre la copia local)
+- [Plano mecánico RP-008337-DS-2](https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008337-DS-2-raspberry-pi-3-b-plus-mechanical-drawing.pdf), con [copia local](../../raspberry-pi-3b-plus/datasheets/RP-008337-DS-2-raspberry-pi-3-b-plus-mechanical-drawing.pdf): bloque de cabecera junto al borde con "Z-Height = 8.5" (leído en imagen)
+- [Product brief RP-008338-DS-2](https://pip-assets.raspberrypi.com/categories/532-raspberry-pi-3-model-b/documents/RP-008338-DS-2-raspberry-pi-3-b-plus-product-brief.pdf), con [copia local](../../raspberry-pi-3b-plus/datasheets/RP-008338-DS-2-raspberry-pi-3-b-plus-product-brief.pdf): advertencias sobre el GPIO y el aislamiento de cables
 - [Documentación de hardware de Raspberry Pi](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html) (paso de 0,1" y GPIO de 3,3 V; no da orientación de filas ni tamaño del pin; solo leí los primeros 100.000 caracteres)
 - [pinout.xyz, pin 8 (GPIO14)](https://pinout.xyz/pinout/pin8_gpio14), [pinout.xyz, UART](https://pinout.xyz/pinout/uart) y [pinout.xyz, inicio](https://pinout.xyz/) (nombres de pines; UART a 3,3 V sin conversión de nivel; el texto no da la orientación de las filas)
 - [Wikipedia, Raspberry Pi](https://en.wikipedia.org/wiki/Raspberry_Pi) (J8, 40 pines; sin orientación de filas)
@@ -68,7 +68,7 @@ Todas las páginas consultadas para la [ficha](README.md), reunidas el 21-10-202
 
 - [IWISS SN-28B, crimpadora Dupont/JST (AWG 28-18)](https://iwiss.com/products/sn-28b-dupont-crimping-tool-for-3-96mm-2-54mm-2-5mm-pitch-dupont-jst-xh-vh-connectors-awg-18-to-28) (16,99 USD; abierto; la página dice que es para venta al por mayor y remite a icrimptools.com)
 - [Microcontrollerslab: mejores crimpadoras para JST y Dupont](https://microcontrollerslab.com/best-crimping-tools-for-jst-dupont-connectors-buying-guide/) (Engineer PA-09, iCrimp SN-28B y otros; errores típicos; pelar unos 2 mm)
-- [Ficha de los JST-XH, 6.2](../cables-jst-xh-4-pin/README.md#62-qué-comprobar-al-recibir-el-lote) (tabla de fuerzas mínimas de arranque por calibre; no la repito)
+- [Ficha de los JST-XH, 6.2](../../cables-jst-xh-4-pin/README.md#62-qué-comprobar-al-recibir-el-lote) (tabla de fuerzas mínimas de arranque por calibre; no la repito)
 
 ## Alternativas: placas de bornes para la cabecera
 

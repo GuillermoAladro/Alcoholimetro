@@ -1,5 +1,24 @@
 # Pendientes que salen de las fichas de componentes
 
+> **Revisión del 13-11-2026.** La [revisión de componentes](REVISION-13-11-2026.md) cierra en papel varios puntos de esta lista. Donde no coincidan, manda la revisión y [CABLEADO](../CABLEADO.md).
+>
+> | Punto de esta lista | Cómo queda |
+> |---|---|
+> | Decisión 1, fusibles del raíl de 5 V | Cuchilla MINI: troncal 5 A, Pi 3 A, pantalla, Solo, sensor y ventiladores 2 A |
+> | Decisión 5, herramienta de crimpado | Entra una [crimpadora de carraca para terminales preaislados](crimpadora-terminales-aislados/README.md) |
+> | Decisión 7, conexión de la UART | [Placa de bornes en el GPIO](placa-bornes-gpio/README.md). Ya no hay Dupont |
+> | Decisión 8, borne USB-A del Solo y la pantalla | Se queda, con fusible de 2 A y la clavija sujeta con brida. Sigue pendiente la prueba con el Solo |
+> | Decisión 9, −V a tierra | Unido en un solo punto (W12b) |
+> | Decisión 13, fusible de la C14 en un solo polo | Segundo portafusibles de 250 V en el otro polo si lo pide el electricista |
+> | Decisión 15, ajuste de la fuente | 5,10 V, tope 5,12; baja a 5,05 si el rizado en el sensor pasa de 150 mVpp |
+> | Decisión 17, tapa de los bornes de la fuente | Pieza de policarbonato de 2 mm; entra en el CAD con la carcasa |
+> | Decisión 18, resistencias de la UART | Sí: [1 kΩ en cada hilo](resistencias-1k/README.md) |
+> | Decisión 19, tornillería M2 de la cámara | En la lista de compra |
+> | Medidas 8 y 21, latiguillo micro-USB | Ya no aplican: la Pi entra por la placa de bornes. Se mantiene el objetivo de 4,90 V o más en sus pines |
+> | Medida 23, arranque del Solo tras un corte | Es la prueba A1 de la revisión, con corte de 1 minuto, de 4 horas y con la batería agotada |
+>
+> Siguen abiertas las decisiones 2, 3, 4, 6, 10 y 11 (tierra, espárragos, faston, pasacables y separación de 230 V), que revisa el electricista o se cierran con la carcasa, y todas las medidas con la pieza en la mano.
+
 Resumen de lo que las fichas dejan abierto: decisiones tuyas, medidas que hay que tomar con calibre o polímetro, y documentos que faltan. Cada punto remite a la ficha donde está el detalle y la fuente. Esta lista se ha reunido el 21-10-2026 a partir de las fichas; si una ficha cambia, manda la ficha. Ese mismo día se leyeron los anuncios de Amazon.es de diez piezas ([resumen](../montaje-general/anuncios-amazon-21-10-2026.md)): lo que cerró y lo que sigue abierto está en el apartado 5.
 
 ## 1. Decisiones de diseño
@@ -10,9 +29,9 @@ Resumen de lo que las fichas dejan abierto: decisiones tuyas, medidas que hay qu
 | 2 | Sección del conductor de tierra: 1,5 mm² (guía) o 2,5 mm² | La ITC-BT-19 §2.3 pide 2,5 mm² (con protección mecánica) o 4 mm² (sin ella) para conductores de protección fuera del cable de alimentación, en instalación fija. Lo que exige EN 60335-1 cl. 27 no se pudo leer. Los ojales M4 de la hoja son de 0,5 a 1,5 mm² | [#22](cable-h05vv-f-3g1-5-5m/README.md), [#23](terminales-ojal-m4/README.md) |
 | 3 | Un solo espárrago de tierra con cinco ojales, o dos espárragos / bloque de tierra | Un solo punto y una sola soldadura es el punto único de fallo; la única guía encontrada recomienda 2-3 ojales por espárrago | [#23](terminales-ojal-m4/README.md), [#24](arandelas-dentadas-m4/README.md), [#25](esparragos-soldar-m4x20/README.md) |
 | 4 | Cómo soldar el espárrago: pistola de descarga de condensador en un taller de chapa, o alternativa (tuerca soldada, remache roscado) | Probablemente el espárrago sea de descarga de condensador y una soldadora de puntos normal no sirve (razonamiento de la ficha). La chapa ya está decidida (04-11-2026): DC01 de 3 mm en la carcasa y de 1,5 mm en el cajón de componentes. Falta el acabado y el proceso del taller | [#25](esparragos-soldar-m4x20/README.md) |
-| 5 | Herramienta de crimpado para terminales preaislados (ojales y faston) y para Dupont/JST | La crimpadora de la hoja es para punteras; no hay fuente que respalde que crimpe bien ojales ni faston | [#23](terminales-ojal-m4/README.md), [#27](kit-faston-aislados/README.md), [#28](crimpadora-y-punteras/README.md), [#29](cables-dupont-elegoo-120/README.md) |
+| 5 | Herramienta de crimpado para terminales preaislados (ojales y faston) y para Dupont/JST | La crimpadora de la hoja es para punteras; no hay fuente que respalde que crimpe bien ojales ni faston | [#23](terminales-ojal-m4/README.md), [#27](kit-faston-aislados/README.md), [#28](crimpadora-y-punteras/README.md), [#29](retirados/cables-dupont-elegoo-120/README.md) |
 | 6 | Terminal faston para el cable de 1,5 mm²: azul de nailon, o rojo solo si el envase dice "hasta 1,5 mm²" | 1,5 mm² cae justo entre el rojo y el azul y los fabricantes no coinciden | [#27](kit-faston-aislados/README.md) |
-| 7 | Conexión de la Pi a la UART (pines 8 y 10): alojamiento Dupont 1×2 o placa de bornes | Los pines 8 y 10 van seguidos en la misma fila, así que basta un alojamiento 1×2; sigue el riesgo de ponerlo corrido o girado (MONTAJE GENERAL, apartado 4, punto 11) | [#29](cables-dupont-elegoo-120/README.md), [#7](cables-jst-xh-4-pin/README.md) |
+| 7 | Conexión de la Pi a la UART (pines 8 y 10): alojamiento Dupont 1×2 o placa de bornes | Los pines 8 y 10 van seguidos en la misma fila, así que basta un alojamiento 1×2; sigue el riesgo de ponerlo corrido o girado (MONTAJE GENERAL, apartado 4, punto 11) | [#29](retirados/cables-dupont-elegoo-120/README.md), [#7](cables-jst-xh-4-pin/README.md) |
 | 8 | Alimentación del Solo y de la pantalla por borne USB-A | El pico de 2 A de la guía supera la clasificación habitual de 1 a 1,5 A de un USB-A. Nada confirma que el Solo reconozca el puente D+/D− como cargador | [#18](borne-usb-a-hembra-tornillo/README.md), [#9](sumup-solo/README.md) |
 | 9 | Unir o no el −V (masa de 5 V) a tierra, y en qué punto. **Propuesta del 21-10-2026:** unirlo en un solo punto con una WAGO 221-413 (MONTAJE GENERAL, W12b). Desde el 01-11-2026 ya no hay jack RP-SMA en la chapa: si no se hace W12b, el −V queda flotante | La fuente aísla 1,25 kVAC entre salida y tierra, así que el −V flota. Unirlo debe ser una decisión en un solo punto, no un efecto de los tornillos | [#30](separadores-nylon-m2-5/README.md), [#14](meanwell-lrs-50-5/README.md) |
 | 10 | Pasacables: tipo según el grosor real de la chapa | Los de uso general sirven para chapa de hasta 1,6 mm; para 2 a 6 mm hay que comprar por grosor. El "marco de 2,6 mm" de la guía es un solape, no el grosor | [#31](pasacables-goma/README.md) |
@@ -36,21 +55,21 @@ Resumen de lo que las fichas dejan abierto: decisiones tuyas, medidas que hay qu
 | 4 | Espesor y material de la chapa del cuerpo | Desconocido; de él dependen espárrago y pasacables | [#25](esparragos-soldar-m4x20/README.md), [#31](pasacables-goma/README.md) |
 | 5 | Lazo de 10 m del cable de 0,75 mm² (dos conductores unidos, método de cuatro hilos) | 0,46 a 0,52 Ω con cobre; CCA saldría con 0,67 a 0,71 Ω (cálculo de la ficha) | [#21](cable-2x0-75-rojo-negro-10m/README.md) |
 | 6 | 1 m de H05VV-F 3G1,5 (cuatro hilos, 2 A) | Máximo 13,3 mΩ a 20 °C; 23 a 27 mV en la medida | [#22](cable-h05vv-f-3g1-5-5m/README.md) |
-| 7 | Calibre y material (CCA) de los Dupont de ELEGOO | Ninguna fuente da el calibre; cinco tiendas dicen aluminio cobreado | [#29](cables-dupont-elegoo-120/README.md) |
-| 8 | Polaridad, asiento y caída del latiguillo micro-USB; rascado para CCA | Tabla de 10 medidas en la ficha | [#19](latiguillo-micro-usb-22awg/README.md) |
+| 7 | Calibre y material (CCA) de los Dupont de ELEGOO | Ninguna fuente da el calibre; cinco tiendas dicen aluminio cobreado | [#29](retirados/cables-dupont-elegoo-120/README.md) |
+| 8 | Polaridad, asiento y caída del latiguillo micro-USB; rascado para CCA | Tabla de 10 medidas en la ficha | [#19](retirados/latiguillo-micro-usb-22awg/README.md) |
 | 9 | Tirón de crimpados de ojal y faston (5 de prueba por herramienta) | Al menos 133 N para 16 AWG | [#23](terminales-ojal-m4/README.md), [#27](kit-faston-aislados/README.md) |
 | 10 | Tirón de punteras de 0,75 y 1,5 mm² | 30 N y 40 N como mínimo (IEC 60999-1, según Phoenix) | [#28](crimpadora-y-punteras/README.md) |
 | 11 | Longitud de los tornillos y profundidad de los agujeros M3 de la LRS-50-5 | **Resuelto en el plano (21-10-2026):** «2-M3 L=3.0» en la base de 99 × 82 y «2-M3 L=5» en el lateral de 99 × 30 (hoja LRS-50, p. 4). La guía y la ficha #26 lo tenían al revés. Queda medir la penetración real descontando chapa y arandelas | [#26](tornilleria-inox-m3-m6/README.md), [#14](meanwell-lrs-50-5/README.md) |
 | 12 | Pestañas de la toma C14 (anchura y grosor), qué polo lleva el fusible y medidas de brida, recorte y tornillos | Toma nueva del 25-10-2026, sin anuncio leído. Protocolo en el MONTAJE GENERAL, apartado 4, punto 1 | [#15](modulo-c14-fusible-interruptor/README.md), [#27](kit-faston-aislados/README.md) |
 | 13 | Temperatura del separador (junto a la fuente) y de la caja | Sin dato de fabricante; condiciona el material del pasacables y del cable | [#31](pasacables-goma/README.md), [#22](cable-h05vv-f-3g1-5-5m/README.md) |
-| 14 | Tensión de salida de la fuente y tensión en los pines de la Pi con carga | Pi: umbral de 4,63 V según comentarios de usuarios (no oficial) | [#14](meanwell-lrs-50-5/README.md), [#19](latiguillo-micro-usb-22awg/README.md) |
+| 14 | Tensión de salida de la fuente y tensión en los pines de la Pi con carga | Pi: umbral de 4,63 V según comentarios de usuarios (no oficial) | [#14](meanwell-lrs-50-5/README.md), [#19](retirados/latiguillo-micro-usb-22awg/README.md) |
 | 15 | Continuidad de tierra de cada pieza metálica hasta el borne de entrada | 0,1 Ω máximo con 10 a 25 A | [#25](esparragos-soldar-m4x20/README.md), [#24](arandelas-dentadas-m4/README.md) |
 | 16 | Imanes, calibre y marcado de la tornillería inox al recibirla | Protocolo en la ficha | [#26](tornilleria-inox-m3-m6/README.md) |
 | 17 | Paso y tipo del conector J1 del ZE29A con calibre; que el pin 1 sea el extremo «5V» y que el TX en reposo dé unos 3,3 V | Serigrafía «Rx Tx GND 5V» en una foto del anuncio | [#6](winsen-ze29a/README.md), [#7](cables-jst-xh-4-pin/README.md) |
-| 18 | Cara de los contactos del cable FFC | El anuncio no la dice; hace falta «caras opuestas» | [#4](cable-ffc-camara-50cm/README.md) |
+| 18 | Cara de los contactos del cable FFC | El anuncio no la dice; hace falta «caras opuestas» | [#4](retirados/cable-ffc-camara-50cm/README.md) |
 | 19 | Continuidad del borne USB-A: tornillo «+» al pin 1 y «−» al pin 4 | Tornillos S, +, D−, D+ y − (anuncio) | [#18](borne-usb-a-hembra-tornillo/README.md) |
-| 20 | Corriente típica y de arranque de cada rama de 5 V con pinza, para confirmar los fusibles 3 / 2 / 2 / 1 A | Calibres de papel | [#32](portafusibles-en-linea-5x20/README.md) |
-| 21 | Tensión en la Pi (pin 4 frente a pin 6) con todo encendido: ≥ 4,90 V con la fuente a 5,10 V | Caída estimada de 0,12 a 0,26 V en latiguillo, micro-USB y polifusible | [#1](raspberry-pi-3b-plus/README.md), [#19](latiguillo-micro-usb-22awg/README.md) |
+| 20 | Corriente típica y de arranque de cada rama de 5 V con pinza, para confirmar los fusibles 3 / 2 / 2 / 1 A | Calibres de papel | [#32](retirados/portafusibles-en-linea-5x20/README.md) |
+| 21 | Tensión en la Pi (pin 4 frente a pin 6) con todo encendido: ≥ 4,90 V con la fuente a 5,10 V | Caída estimada de 0,12 a 0,26 V en latiguillo, micro-USB y polifusible | [#1](raspberry-pi-3b-plus/README.md), [#19](retirados/latiguillo-micro-usb-22awg/README.md) |
 | 22 | Señal Wi-Fi del Solo asociado a la Pi, con la máquina cerrada (`iw dev wlan0 station dump`): mejor que −70 dBm | La Pi está dentro de la caja interior de chapa | [#9](sumup-solo/README.md) |
 | 23 | Que el Solo se encienda solo al volver la corriente y quede `ONLINE` | Sin dato de SumUp; sin ello la máquina no cobra tras un corte de luz | [#9](sumup-solo/README.md) |
 | 24 | Cómo son las dos tomas de aire del ZE29A (presión y muestra) y que con la boquilla montada pasa de 0x33 a 0x34 al soplar | El manual exige barrera y orden de las tomas; no dice cómo son físicamente | [#6](winsen-ze29a/README.md), [#8](tubo-silicona-6mm/README.md) |

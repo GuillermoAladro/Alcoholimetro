@@ -2,6 +2,37 @@
 
 Decisiones que afectan a todo el proyecto. Lo más nuevo va arriba. Si un documento del repositorio dice otra cosa, manda lo que pone aquí.
 
+## 13-11-2026
+
+### Una sola rama, una tabla de cableado y una lista de compra
+
+Guillermo pide ordenar el repositorio antes de seguir (encargo del 13-11-2026, paso 0) y aprueba el plan.
+- **`main` es la única rama de trabajo.** Se ha fusionado en ella `programa-raspberry` (carcasa, programa, DECISIONES y documentos al día) con las animaciones y los avatares que ya tenía. Tres archivos tocados en las dos ramas se resolvieron conservando lo de ambas.
+- **Ramas que sobran:** `programa-raspberry` y `diseno-a-sin-boton` están enteras dentro de la historia de `main`. `revision-2d-00101-paradigma` tiene el mismo contenido que `main` (las 44 revisiones de animación son idénticas) más 32 archivos de trabajo y 165 commits intermedios que **no** están en `main`. Desde la sesión del 13-11 no se pudieron crear etiquetas ni borrar ramas: **las borra Guillermo**, y la de revisión, después de etiquetarla si quiere conservar esos commits.
+- **Cableado:** [CABLEADO.md](CABLEADO.md) es la única tabla vigente. `MONTAJE-GENERAL.md` y `MONTAJE-PASO-A-PASO.md` pasan a [`historico/`](historico/README.md): siguen el diseño del 20-10-2026.
+- **Compras:** [LISTA-DE-COMPRA.md](LISTA-DE-COMPRA.md) es la única lista vigente; la del 20-10 queda en `historico/`. La hoja de compras de `carcasa/diseno-A/Lista_de_piezas.xlsx` se regenera con la carcasa y el presupuesto; hasta entonces manda la lista.
+- **Auditorías:** los ocho zips de la raíz pasan a `auditorias/zips/`.
+- **Pantalla v3 del programa (12-11-2026):** sigue fuera del repositorio; falta que Guillermo pase su zip. **Sus vídeos (298 MB) no irán dentro del historial:** se guardará el guion que los genera a partir de las vistas previas de `Animaciones 2D/` y el paquete se colgará como archivo de una versión de GitHub. Motivo: `main` ya pesa 1,3 GB comprimido y cada regeneración añadiría otros 298 MB para siempre.
+- Comprobado: 76 de 76 pruebas del programa en la rama fusionada, y ningún enlace relativo roto antes ni después de mover archivos.
+
+### Componentes eléctricos revisados
+
+Revisión completa en [`componentes/REVISION-13-11-2026.md`](componentes/REVISION-13-11-2026.md). Es papel y cálculo: no hay nada montado.
+- **Fuente a 5,10 V** (tope 5,12; baja a 5,05 si el rizado medido en el sensor pasa de 150 mVpp).
+- **La Pi se alimenta por una placa de bornes atornillada al GPIO**, directa a los bornes 4 y 5 de la fuente con fusible de 3 A. Sustituye al latiguillo micro-USB. Motivo: 59 mΩ en la rama en vez de 115, y contactos atornillados. Dos auditorías pedían no saltarse el polifusible de la Pi; su papel lo hace ese fusible.
+- **El módem sigue en el USB de la Pi.** Se descarta darle rama propia (E1 de la verificación del 12-11): la Pi le corta la alimentación con `uhubctl` cuando se cuelga.
+- **Fusibles MINI de cuchilla:** troncal 5 A, Pi 3 A, pantalla 2 A, Solo 2 A, sensor 2 A, ventiladores 2 A. Seis portafusibles (el CAD lleva cuatro).
+- **Dos ventiladores Noctua NF-A4x10 5V,** entrada junto al Solo y el sensor y salida por la caja de red, con tacómetro a los GPIO 22 y 23. Motivo: sin ellos el cálculo da de 17 a 24 °C sobre el bar (unos 16 W dentro), y el Solo, el sensor y el módem tienen el límite en 40 °C. Cambia la chapa.
+- **Confirmados de la verificación del 12-11:** condensador de 2200 µF en el reparto (E2), −V a tierra en un punto (E3), 1 kΩ en la UART (E4) y entrada de 230 V a revisar por el electricista (E5).
+- **Soplido:** tubo siempre cuesta abajo, T hacia arriba y filtro de PTFE en las dos tomas del sensor. Los filtros están sin validar.
+- **Módem:** anuncio B085RDTZMP. Devolver si llega el E3372-325.
+- **Antena, sin cerrar:** la ventana de 36 × 112 mm deja pasar mal las bandas de 700 a 900 MHz. Se decide con una prueba por bandas entre la antena plana y el propio módem detrás de la ventana.
+- **SumUp Solo: se queda** hasta ver tres pruebas con un Solo real (arranque tras un corte largo, pago a través de los dos policarbonatos y respuesta de SumUp por escrito). Decidido por Guillermo. Plan B si no arranca solo: un servo que pulse su botón.
+- **Pantalla GeeekPi: se queda,** condicionada a que arranque sola, recuerde el brillo y se apague sin señal. Plan B: Raspberry Pi Touch Display 2.
+- **Raspberry Pi 3B+: se queda,** con vídeo y no dibujo en vivo. Plan B: Pi 4B de 2 GB.
+- **Salen de la lista:** latiguillo micro-USB, cables Dupont, portafusibles de vidrio de 5 × 20 y cable FFC de 50 cm (fichas en `componentes/retirados/`).
+- **Sin hacer:** el modelo 3D (visor, `Conexiones_3D.html`, lista de piezas) no lleva todavía ninguno de estos cambios; entran con la carcasa. Los precios de las piezas nuevas son estimaciones: el 13-11 no se pudo leer Amazon.es.
+
 ## 04-11-2026
 
 ### Carcasa de 3 mm; cajón de componentes y tapa interior de 1,5 mm
@@ -253,7 +284,7 @@ Guillermo pide bajar el fondo a 100 mm. Queda en **220 × 100 × 443 mm**, más 
 
 | Dónde | Qué ha cambiado |
 |---|---|
-| [LISTA DE COMPRA](LISTA-DE-COMPRA.md) | Fuera la línea 11 (pulsador, 10,88 €). Quedan 31 componentes y el primer pedido baja a 635,69 € (636,02 € con la toma C14 nueva) |
+| [LISTA DE COMPRA](historico/LISTA-DE-COMPRA-20-10-2026.md) | Fuera la línea 11 (pulsador, 10,88 €). Quedan 31 componentes y el primer pedido baja a 635,69 € (636,02 € con la toma C14 nueva) |
 | [`componentes/`](componentes/README.md) | Borrada la ficha del pulsador (sigue en el historial de git, commit `dca2723`). El índice explica el hueco del número 11 |
 | Fichas de componentes | **Cables Dupont:** solo pines 8 y 10, con un alojamiento de 1 × 2. **Kit faston:** solo para 230 V. También limpias las fichas de la crimpadora, el C14, los pasacables y la pantalla |
 | [Pendientes](componentes/pendientes.md) | Revisados el 7 y el 18. Fuera la medida de los faston del pulsador; las medidas siguientes se renumeran |
@@ -297,7 +328,7 @@ El CAD está en [`carcasa/diseno-A/`](carcasa/diseno-A/README.md): visor 3D, STE
   - el cajón de componentes al subir;
   - el cajón de pajitas al salir.
 
-**Pendiente:** [MONTAJE GENERAL](historico/MONTAJE-GENERAL.md), [MONTAJE PASO A PASO](historico/MONTAJE-PASO-A-PASO.md) y la [LISTA DE COMPRA](LISTA-DE-COMPRA.md) todavía siguen el diseño anterior (19 y 20 de octubre). Ya no tienen el pulsador, pero falta pasarlos al diseño A. Cambian sobre todo:
+**Pendiente:** [MONTAJE GENERAL](historico/MONTAJE-GENERAL.md), [MONTAJE PASO A PASO](historico/MONTAJE-PASO-A-PASO.md) y la [LISTA DE COMPRA](historico/LISTA-DE-COMPRA-20-10-2026.md) todavía siguen el diseño anterior (19 y 20 de octubre). Ya no tienen el pulsador, pero falta pasarlos al diseño A. Cambian sobre todo:
 - la colocación;
 - la tierra;
 - los fusibles por rama;

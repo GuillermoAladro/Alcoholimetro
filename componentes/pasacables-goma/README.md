@@ -174,9 +174,9 @@ Fuente: guía de montaje, §1 filas 10, 13 y 31, §2.3, §4, §5.1 y §5.3, más
 
 | # | Paso | Qué lo atraviesa | Tamaño conocido | Observación |
 |---|---|---|---|---|
-| 1 | Separador → caja interior suspendida ("paso de cables", movido a x ≈ +30 mm) | Cables de la Pi (latiguillo micro-USB), del ZE29A (hilos de la clavija JST-XH) y tierra flexible | No consta | La guía dice que salen "con holgura". El latiguillo de 15 cm no deja holgura (ficha del [latiguillo](../latiguillo-micro-usb-22awg/README.md)) |
+| 1 | Separador → caja interior suspendida ("paso de cables", movido a x ≈ +30 mm) | Cables de la Pi (latiguillo micro-USB), del ZE29A (hilos de la clavija JST-XH) y tierra flexible | No consta | La guía dice que salen "con holgura". El latiguillo de 15 cm no deja holgura (ficha del [latiguillo](../retirados/latiguillo-micro-usb-22awg/README.md)) |
 | 2 | Separador, ranura del Solo | Conector USB-A → USB-C acodado del Solo | **14 × 9 mm** (guía §1 fila 10) | Es una ranura, no un agujero redondo |
-| 3 | Pi (caja interior) → cámara (caja de arriba) | Cable plano FFC de 15 pines | **16 mm de ancho** (ficha del [FFC](../cable-ffc-camara-50cm/README.md)); la ficha propone una ranura de unos 18 × 3 mm | Propuesta de esa ficha, no de la guía |
+| 3 | Pi (caja interior) → cámara (caja de arriba) | Cable plano FFC de 15 pines | **16 mm de ancho** (ficha del [FFC](../retirados/cable-ffc-camara-50cm/README.md)); la ficha propone una ranura de unos 18 × 3 mm | Propuesta de esa ficha, no de la guía |
 | 4 | Panel → caja suspendida | Tubo de silicona de la boquilla al ZE29A (opción A de la guía §4) | "6 mm", sin saber si interior o exterior (ficha del [tubo](../tubo-silicona-6mm/README.md)) | Pasa un tubo, no un cable: el pasacables tiene que ceñir su diámetro exterior, que hay que medir |
 | 5 | Pi → pantalla | HDMI de tamaño completo (desde la Pi) y cable USB-C de alimentación de la pantalla (desde su borne USB-A, guía §1 fila 5 y §5.2) | Conector HDMI de tamaño completo: no cabe en los tamaños pequeños (observación mía, sin fuente) | El recorrido no consta |
 | 6 | Caja suspendida → techo | Adaptador Wi-Fi AR9271 y alargo RP-SMA | El taladro de Ø6,5 mm del techo lleva conector con tuerca (ficha del [alargo](../retirados/alargo-antena-rp-sma-30cm/README.md)), no pasacables | El recorrido hasta el techo no consta |
