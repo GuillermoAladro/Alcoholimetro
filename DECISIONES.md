@@ -2,6 +2,32 @@
 
 Decisiones que afectan a todo el proyecto. Lo más nuevo va arriba. Si un documento del repositorio dice otra cosa, manda lo que pone aquí.
 
+## 13-11-2026
+
+### Patrón de anclaje P18-4 (bloque 2)
+
+Sustituye al P18-3 del 04-11. Estudio completo, con sus límites, en [`anclaje/ESTUDIO-ANCLAJE.md`](anclaje/ESTUDIO-ANCLAJE.md). **Nada está verificado con hardware.**
+- **Qué cambia:** solo la posición de los 18 agujeros Ø6,5 de la trasera. Siguen el tirafondo 6 × 80 DIN 571, el taco fischer SX Plus 8 × 65 y la arandela M6 DIN 9021. No cambian las medidas exteriores ni el material.
+- **Patrón:** un anillo pegado al perímetro, simétrico. Mirando a la pared, x desde el eje y z desde la base: (0; 429,5) · (±84; 420,5) · (±93; 363,5) · (±93; 300) · (±93; 236) · (±93; 174,5) · (±93; 96,5) · (±93; 46) · (±50; 20) · (0; 20). Separación mínima 50 mm.
+- **Motivo:** el P18-3 se calculó el 04-11 con tirones y cuelgues, y ahí sigue siendo bueno. El bloque 2 añade golpes laterales, empujes y combinaciones (26 casos, todos supuestos). Con un golpe lateral fuerte abajo, los 2 únicos tornillos de abajo del P18-3 pasan un 59 % de la carga recomendada del taco en ladrillo perforado. El P18-4 pone 3 abajo y 3 arriba.
+- **Resultado** (coeficiente de seguridad = carga recomendada de fischer / lo que le llega al anclaje más cargado, peor caso):
+
+  | Pared | P18-3 | P18-4 |
+  |---|---|---|
+  | Medio pie de ladrillo macizo | 0,92 | 1,37 |
+  | Medio pie de ladrillo perforado | 0,63 | 0,94 |
+  | Tabique de ladrillo hueco doble | 0,08 | 0,11 |
+
+  En tirones y cuelgues los dos patrones quedan parecidos (el P18-4, de un 12 % peor a un 13 % mejor según el caso). Con el criterio del 04-11, sin golpes laterales, el P18-3 reparte un 18 % mejor el tirón desde una esquina (λ 10,56 frente a 8,64).
+- **Lo que limita es el taco y la pared, no el patrón.** En tabique de ladrillo hueco doble no se debe colgar la máquina con estos tacos: ningún patrón llega. Con las juntas donde caigan (bajo el yeso no se ven), el coeficiente típico baja a 0,94 en macizo y a 0,59 en perforado. Con 12 anclajes se pierde un 30 %; con 24 se gana un 2–9 %.
+- **Plantilla de taladros 1:1** en `anclaje/plantilla/` (DXF, PDF en A2 y PDF en 3 hojas A4). Sustituye al DXF de A-C02 como plantilla.
+- **En el CAD:** `modelo/diseno.py` (`FIJACIONES_PARED`). Regenerados el DXF y el STEP de A-C02, los conjuntos STEP, el PDF de planos, las listas, el zip `Carcasa_alcoholimetro_plegada.zip`, el STEP de FreeCAD y el visor 3D.
+- **Comprobado** (`anclaje/aplicar_cad.py --comprobar`): 0 choques entre las 131 piezas con las 18 cabezas y arandelas añadidas; barridos limpios de la tapa, la tapa interior y los dos cajones; ningún cable pasa por una cabeza; las cabezas quedan a 3,4 mm del cajón de pajitas y a 3,9 mm del de componentes.
+- **Montaje:** orden de apriete y ensayo de arrancamiento en [`carcasa/diseno-A/ANCLAJE-PARED-8x65.md`](carcasa/diseno-A/ANCLAJE-PARED-8x65.md).
+- **Si se mandaron a algún taller los planos de 3 mm del 04-11, la trasera A-C02 de aquel zip ya no vale:** cambian sus 18 agujeros. El resto de piezas no cambia.
+- **Pendiente de decidir (Guillermo):** qué se hace en tabique de ladrillo hueco (no instalar, anclaje químico con ensayo o varilla pasante) y si los tirafondos se piden en inoxidable A2. Opciones, coste y riesgo en el apartado 10 del estudio.
+- **Sin tocar:** el estudio del 04-11 (`carcasa/diseno-A/calculo-anclajes/`) se queda como estaba; su modelo de elementos finitos es el que usa el estudio nuevo. Los componentes eléctricos del bloque 1 siguen sin pasar a este documento.
+
 ## 04-11-2026
 
 ### Carcasa de 3 mm; cajón de componentes y tapa interior de 1,5 mm

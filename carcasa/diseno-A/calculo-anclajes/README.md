@@ -4,6 +4,8 @@
 
 Este documento explica **paso a paso cómo se calculó** el patrón de agujeros de la trasera (**P18-3**): de dónde salen los datos, qué modelo mecánico se usó, cómo se buscó el patrón, cómo se comprobó y qué queda sin verificar. Los resultados completos están en el [informe técnico en PDF](Informe_anclajes_alcoholimetro.pdf) y las coordenadas en [`patron_ganador.csv`](patron_ganador.csv).
 
+> **13-11-2026: el patrón del CAD ya no es el P18-3, es el P18-4** (bloque 2, [`anclaje/ESTUDIO-ANCLAJE.md`](../../../anclaje/ESTUDIO-ANCLAJE.md)). Este documento se conserva tal cual: explica el cálculo del 04-11 y el modelo de elementos finitos que el estudio nuevo reutiliza.
+>
 > **Estado:** aplicado al CAD el 04-11-2026 (`modelo/diseno.py` → `FIJACIONES_PARED`, DXF y STEP de A-C02, planos y lista). El cálculo anterior, con la trasera de 2 mm y el patrón P18-O, está en [`historico-2mm/`](historico-2mm/README.md): el método es el mismo.
 
 ## Índice

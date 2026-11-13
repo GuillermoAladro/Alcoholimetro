@@ -158,27 +158,29 @@ COMPRAS = {
 BOCALLAVE = (19.0, 6.5, 20.0)        # Ø de paso (cabeza + arandela ancha), ancho y largo de la ranura
 
 
-# 18 agujeros Ø6,5 para la pared (patrón P18-3, 04-11-2026): calculado con la trasera de 3 mm para que el tornillo más cargado
-# lleve lo menos posible en el peor caso (tirones de 500 N, persona colgada...). Ver calculo-anclajes/README.md.
+# 18 agujeros Ø6,5 para la pared (patrón P18-4, 13-11-2026; el anterior, del 04-11-2026, era el P18-3). Sale del estudio
+# del bloque 2 (anclaje/ESTUDIO-ANCLAJE.md): un anillo pegado al perímetro, con 3 arriba, 3 abajo y 6 en cada costado junto a
+# los pliegues. Reparte mejor los golpes laterales y el peso colgado de una esquina (con el patrón anterior, los dos tornillos
+# de abajo se llevaban demasiado cortante). La plantilla de taladros 1:1 está en anclaje/plantilla/.
 # (x desde el eje de la máquina, z desde la base; simétrico respecto a x = 0)
 FIJACIONES_PARED = [
-    (-87.5, 428.5), (87.5, 428.5),
-    (-87.0, 376.5), (87.0, 376.5),
-    (-91.5, 325.5), (91.5, 325.5),
-    (-93.0, 275.5), (93.0, 275.5),
-    (-93.0, 224.5), (93.0, 224.5),
-    (-38.5, 223.5), (38.5, 223.5),
-    (-54.0, 175.5), (54.0, 175.5),
-    (-93.0, 139.5), (93.0, 139.5),
-    (-47.5, 22.0), (47.5, 22.0),
+    (0.0, 429.5),
+    (-84.0, 420.5), (84.0, 420.5),
+    (-93.0, 363.5), (93.0, 363.5),
+    (-93.0, 300.0), (93.0, 300.0),
+    (-93.0, 236.0), (93.0, 236.0),
+    (-93.0, 174.5), (93.0, 174.5),
+    (-93.0, 96.5), (93.0, 96.5),
+    (-93.0, 46.0), (93.0, 46.0),
+    (-50.0, 20.0), (0.0, 20.0), (50.0, 20.0),
 ]
 
 
 def fijaciones_pared(W, z_arriba):
-    """18 agujeros redondos Ø6,5 para la pared (patrón P18-3). Van pegados a las partes rígidas de la caja: columnas junto a
-    los pliegues laterales, filas justo encima y debajo de la pestaña de la bandeja y una fila en la franja de arriba,
-    entre el apoyo de la tapa interior y el canto. Esquivan las guías traseras, el espárrago de tierra y las soldaduras.
-    W y z_arriba se mantienen por compatibilidad; el patrón ya no depende de ellos."""
+    """18 agujeros redondos Ø6,5 para la pared (patrón P18-4). Van en anillo, pegados a las partes rígidas de la caja:
+    seis por costado junto a los pliegues laterales (x = ±93), tres abajo junto al pliegue del suelo (z = 20) y tres en la
+    franja de arriba, entre el apoyo de la tapa interior y el canto. Esquivan la bandeja, las guías traseras, el espárrago
+    de tierra y las soldaduras. W y z_arriba se mantienen por compatibilidad; el patrón no depende de ellos."""
     return [(x, z, False) for x, z in FIJACIONES_PARED]
 
 
@@ -330,7 +332,7 @@ def construir(spec):
         m.compra("H12", "Tuerca M4 con fijador de roscas", [("tuerca", tuerca_m4((x, T + PC_T, z)), C.METAL)],
                  modelo=dict(n="tuerca_m4", a=[[0, 1, 0]], tf=dict(ex=[1, 0, 0], ey=[0, 1, 0], ez=[0, 0, 1], at=[x, T + PC_T, z])))
     m.cotas["pc"] = (pcx1 - pcx0, pcz1 - pcz0)
-    # trasera: 18 tornillos a la pared (patrón P18-3), agujeros redondos; se aprietan desde dentro con arandela ancha
+    # trasera: 18 tornillos a la pared (patrón P18-4), agujeros redondos; se aprietan desde dentro con arandela ancha
     fij = fijaciones_pared(W, Ktop - 10.0)
     cuts_t = [keyhole_y(x, z, BOCALLAVE[0], BOCALLAVE[1], BOCALLAVE[2]) if bl else hole_y(x, z, 6.5) for x, z, bl in fij]
     # alivios: a la izquierda el pliegue empieza encima del hueco del cajón de pajitas; abajo a la derecha, esquina con el suelo
@@ -387,7 +389,7 @@ def construir(spec):
             [box(sg * (W / 2 - T - RT) - (0 if sg > 0 else 5), sg * (W / 2 - T - RT) + (5 if sg > 0 else 0), 0, RT + 0.5, -1, T + 1) for sg in (-1, 1)])  # radio de las pestañas del panel
     ch.pliegue("trasera", "izq", rangos=[(Z_HUECO, Hw)]).pliegue("trasera", "der", rangos=[(RT, Hr - BAJA_D)]).pliegue("trasera", "suelo")
     m.fab("C", "Cuerpo (trasera, laterales y suelo)", None, COL_CHAPA, chapa=ch,
-          notas="Una sola chapa en cruz con 3 pliegues. Trasera: 18 agujeros Ø6,5 para la pared, patrón P18-3 (tirafondo 6 × 80 DIN 571 con taco fischer SX Plus 8 × 65 y arandela "
+          notas="Una sola chapa en cruz con 3 pliegues. Trasera: 18 agujeros Ø6,5 para la pared, patrón P18-4 (tirafondo 6 × 80 DIN 571 con taco fischer SX Plus 8 × 65 y arandela "
                 "ancha M6, apretados desde dentro). Lateral izquierdo: hueco del cajón de pajitas, rejilla de escape, rejillas y ventana de la "
                 f"antena 4G ({VA_Y[1] - VA_Y[0]:.0f} × {VA_Z[1] - VA_Z[0]:.0f}). Lateral derecho: ventana de la C14 ({VENT_C14[0]:.0f} × "
                 f"{VENT_C14[1]:.0f}), rejillas, ranura {zr1 - zr0:.1f} × {ys1 - ys0:.0f} de la tapa interior con muesca R8 y ranura 4 × 14 de la leva")

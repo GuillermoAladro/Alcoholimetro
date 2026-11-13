@@ -1,7 +1,7 @@
 # Diseño A completo para FreeCAD
 
 `Alcoholimetro_A_completo.step` es la máquina entera en un solo archivo STEP (AP214, en mm): 220 × 100 × 442,5 mm.
-Actualizado el 04-11-2026: chapa de 3 mm por fuera, cajón de componentes y tapa interior de 1,5 mm, y los 18 agujeros de la trasera con el patrón P18-3.
+Actualizado el 13-11-2026: los 18 agujeros de la trasera pasan al patrón P18-4 (bloque 2, `anclaje/ESTUDIO-ANCLAJE.md`). Del 04-11-2026: chapa de 3 mm por fuera, cajón de componentes y tapa interior de 1,5 mm.
 
 **Cómo abrirlo:** en FreeCAD, *Archivo → Abrir* y elige el `.step`. Sirve igual en Fusion 360, SolidWorks, Onshape, etc.
 

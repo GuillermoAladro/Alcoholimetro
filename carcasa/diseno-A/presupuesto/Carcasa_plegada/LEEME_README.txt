@@ -16,7 +16,7 @@ ES
   Las guías traseras (A-C04) son pletinas planas soldadas por puntos a la trasera. El apoyo trasero de la tapa interior (A-C06)
   es una pletina plana soldada con MIG por su canto a la trasera. Anillas de candado, asideros y pestaña de tope, con MIG.
   Algunos espárragos M4 soldados.
-- La trasera (A-C02) lleva 18 agujeros Ø6,5 para colgar la máquina en la pared (patrón P18-3).
+- La trasera (A-C02) lleva 18 agujeros Ø6,5 para colgar la máquina en la pared (patrón P18-4, del 13-11-2026; plantilla de taladros en anclaje/plantilla/).
 - Acabado: precio en bruto y, aparte, con pintura en polvo.
 - Cantidades: 1 prototipo y precio por unidad para 10, 50 y 100.
 - Entrega en Madrid.
@@ -35,7 +35,7 @@ EN
 - Joining: spot welding on the flanges, in 4 sub-assemblies (body, lid, two drawers).
   The rear guides (A-C04) are flat strips spot-welded to the back panel. The inner-lid rear support (A-C06) is a flat strip
   MIG-welded by its edge to the back panel. Padlock eyes, handles and opening stop are MIG welded. A few weld-on M4 studs.
-- The back panel (A-C02) has 18 Ø6.5 holes for wall mounting (pattern P18-3).
+- The back panel (A-C02) has 18 Ø6.5 holes for wall mounting (pattern P18-4, 13-11-2026).
 - Finish: price raw, and separately with powder coating.
 - Quantities: 1 prototype, and unit price for 10, 50 and 100.
 - Delivery to Madrid, Spain.
