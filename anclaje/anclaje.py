@@ -656,7 +656,7 @@ def _dibujo_plantilla(pts):
     Ls += [("TEXTO", xa, za, xa, za + 30), ("TEXTO", xa, za + 30, xa - 6, za + 20), ("TEXTO", xa, za + 30, xa + 6, za + 20)]
     Ts += [("TEXTO", xa + 9, za + 14, 9.0, "ARRIBA", "izq")]
     # reglas de control de 100 mm (vertical a la derecha y horizontal arriba)
-    xr, zr = W + 14, 180.0
+    xr, zr = W + 6, 180.0
     Ls += [("REGLA", xr, zr, xr, zr + 100)]
     for k in range(11):
         Ls += [("REGLA", xr, zr + 10 * k, xr + (6 if k % 5 == 0 else 3.5), zr + 10 * k)]
