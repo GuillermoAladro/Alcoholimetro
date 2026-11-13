@@ -34,20 +34,20 @@ for nom, q, off in marc:
     y = R["conf"]["fan60"]["dT"] if q == 14.0 else np.interp(q, d["Qs"], d["dT"])  # el de 60 mm gasta más: usa su propio caso
     punto(ax, q, y, S1, ms=7)
     ax.annotate(f"{nom}\n+{coma(y)} K", (q, y), xytext=off, textcoords="offset points", fontsize=7.8, color=INK, va="bottom", ha="left" if off[0] > 1 else "center", linespacing=1.15)
-ax.set_xlim(0, 16); ax.set_ylim(0, 22); ax.set_xlabel("Caudal real de aire (m³/h)"); ax.set_ylabel("Calentamiento del aire que sale (K)")
-ax.set_title("Lo que enfría cada caudal (16 W)")
+ax.set_xlim(0, 16); ax.set_ylim(0, 22); ax.set_yticks([0, 5, 10, 15, 20]); ax.set_xlabel("Caudal real de aire (m³/h)"); ax.set_ylabel("Calentamiento del aire que sale (K)")
+ax.set_title("Lo que enfría cada caudal (21 W)")
 guardar(fig, "f_fan")
 
 # ---------------------------------------------------------------- transitorios
 t = np.load("../resultados/trans.npz")
 fig, axs = plt.subplots(1, 2, figsize=(6.7, 3.0), sharey=True, gridspec_kw=dict(wspace=0.08))
 ax = axs[0]
-ax.plot(t["frio_actual_t"], t["frio_actual_solo"], color=S1, label="Diseño actual", zorder=3)
+ax.plot(t["frio_actual_t"], t["frio_actual_solo"], color=S1, label="Sin ventilador", zorder=3)
 ax.plot(t["frio_fan2_t"], t["frio_fan2_solo"], color=S3, label="2 ventiladores", zorder=3)
-ax.set_xlim(0, 8); ax.set_ylim(20, 62); ax.set_xlabel("Horas desde que se enchufa"); ax.set_ylabel("Aire junto al Solo (°C), bar a 25 °C")
+ax.set_xlim(0, 8); ax.set_ylim(20, 66); ax.set_xlabel("Horas desde que se enchufa"); ax.set_ylabel("Aire junto al sensor (°C), bar a 25 °C")
 ax.set_title("Arranque en frío")
-ax.axhline(40, color=CRIT, lw=1.0, zorder=2); ax.annotate("límite del Solo: 40 °C", (7.9, 40), xytext=(0, 3), textcoords="offset points", ha="right", fontsize=7.8, color=INK2)
-ax.annotate("Diseño actual", (8, t["frio_actual_solo"][-1]), xytext=(-4, -9), textcoords="offset points", ha="right", va="top", fontsize=8, color=INK)
+ax.axhline(40, color=CRIT, lw=1.0, zorder=2); ax.annotate("límite del sensor: 40 °C", (7.9, 40), xytext=(0, 3), textcoords="offset points", ha="right", fontsize=7.8, color=INK2)
+ax.annotate("Sin ventilador", (8, t["frio_actual_solo"][-1]), xytext=(-4, -9), textcoords="offset points", ha="right", va="top", fontsize=8, color=INK)
 ax.annotate("2 ventiladores", (8, t["frio_fan2_solo"][-1]), xytext=(-4, 5), textcoords="offset points", ha="right", va="bottom", fontsize=8, color=INK)
 t40 = R["trans"]["actual_t40"]
 punto(ax, t40, 40, S1, ms=7); ax.annotate(f"{int(round(t40 * 60))} min", (t40, 40), xytext=(8, -11), textcoords="offset points", fontsize=8, color=INK)
@@ -66,6 +66,7 @@ fig, ax = plt.subplots(figsize=(6.7, 3.0))
 ax.plot([-30, 50, 70, 70], [100, 100, 60, 0], color=INK2, zorder=3, lw=1.7)
 ax.fill_between([-30, 50, 70], [100, 100, 60], color=NEUTRO, alpha=0.18, lw=0)
 ax.set_xlim(0, 80); ax.set_ylim(0, 110); ax.set_xlabel("Temperatura del aire alrededor de la fuente (°C)"); ax.set_ylabel("Carga admitida (% de 50 W)")
+LO, HI = 32, 59            # carga de la LRS-50-12: típica y de pico
 ax.annotate("zona admitida por Mean Well (230 V)", (12, 86), fontsize=8, color=INK2)
 pts = []
 for k in ("actual", "fan2"):
@@ -73,20 +74,20 @@ for k in ("actual", "fan2"):
         x = Ta + C[k]["local"]["fuente"]
         pts.append((k, Ta, x))
 for k, Ta, x in pts:
-    ax.plot([x, x], [25, 52], color=C_CONF[k], lw=2.2, zorder=4, solid_capstyle="round")
-    punto(ax, x, 25, C_CONF[k], ms=6.5)
+    ax.plot([x, x], [LO, HI], color=C_CONF[k], lw=2.2, zorder=4, solid_capstyle="round")
+    punto(ax, x, LO, C_CONF[k], ms=6.5)
     if k == "fan2":
-        ax.annotate(f"bar a {Ta} °C", (x, 52), xytext=(0, 5), textcoords="offset points", ha="center", fontsize=7.8, color=INK)
+        ax.annotate(f"bar a {Ta} °C", (x, HI), xytext=(0, 5), textcoords="offset points", ha="center", fontsize=7.8, color=INK)
     else:
-        ax.annotate(f"bar a {Ta} °C", (x, 25), xytext=(0, -7), textcoords="offset points", ha="center", va="top", fontsize=7.8, color=INK)
-ax.plot([], [], color=S1, lw=2.2, label="Diseño actual: del 25 % (típico) al 52 % (pico)"); ax.plot([], [], color=S3, lw=2.2, label="2 ventiladores")
+        ax.annotate(f"bar a {Ta} °C", (x, LO), xytext=(0, -7), textcoords="offset points", ha="center", va="top", fontsize=7.8, color=INK)
+ax.plot([], [], color=S1, lw=2.2, label="Sin ventilador: del 32 % (típico) al 59 % (pico)"); ax.plot([], [], color=S3, lw=2.2, label="2 ventiladores")
 ax.legend(loc="upper left", handlelength=1.6, bbox_to_anchor=(-0.01, -0.2), ncol=2, columnspacing=2.0)
 guardar(fig, "f_fuente")
 
 # ---------------------------------------------------------------- funda y sol
 casos = [("base", "Sin funda,\na la sombra"), ("funda2", "Funda de 2 mm\nbien ajustada"), ("funda_tapa", "Funda que tapa\nlas aberturas"), ("sol150", "Sol débil u oblicuo\n(150 W/m²)"), ("sol300", "Sol directo\n(300 W/m²)")]
 fig, ax = plt.subplots(figsize=(6.7, 3.1))
-ax.set_xlim(-0.6, len(casos) - 0.4); ax.set_ylim(0, 46)
+ax.set_xlim(-0.6, len(casos) - 0.4); ax.set_ylim(0, 52)
 r = rad(ax)
 w = 0.26
 for i, (kk, nom) in enumerate(casos):
@@ -97,7 +98,7 @@ for i, (kk, nom) in enumerate(casos):
         ax.annotate("+" + coma(v, 0), (x, v), xytext=(0, 3), textcoords="offset points", ha="center", fontsize=8.2, color=INK)
 ax.set_xticks(range(len(casos))); ax.set_xticklabels([c[1] for c in casos], color=INK); ax.grid(axis="x", visible=False)
 ax.set_ylabel("Calentamiento medio del aire interior (K)")
-ax.plot([], [], color=S1, lw=6, label="Diseño actual"); ax.plot([], [], color=S3, lw=6, label="2 ventiladores")
+ax.plot([], [], color=S1, lw=6, label="Sin ventilador"); ax.plot([], [], color=S3, lw=6, label="2 ventiladores")
 ax.legend(loc="upper left", handlelength=1.4, ncol=2)
 guardar(fig, "f_ext")
 print("ok c")

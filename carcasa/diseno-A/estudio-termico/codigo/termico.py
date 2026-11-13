@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Modelo térmico nodal del alcoholímetro (diseño A, chapa 3 mm / cajón 1,5 mm, 04-11-2026).
 
+Dos variantes de cobro: sigma=False, SumUp Solo detrás del policarbonato (revisión 1 del estudio);
+sigma=True, terminal myPOS Sigma en un hueco del frente, con su cara al bar (revisión 2).
+
 Todo es CÁLCULO. No hay nada medido. Unidades SI. Temperaturas en °C salvo donde se indica K.
 """
 from dataclasses import dataclass, field, replace
@@ -58,11 +61,18 @@ def h_rad(e1, e2, t1, t2, F=1.0):
 class P:
     # ---- ambiente
     Ta: float = 25.0
-    # ---- potencia (W): fuente (pérdidas), pantalla, resto (Pi+cámara, módem, Solo, sensor)
+    # ---- potencia (W): fuente (pérdidas, y las del convertidor 12→5 V si lo hay), pantalla, resto (Pi+cámara, módem, sensor y el Solo si lo hay)
     P_psu: float = 3.45
     P_scr: float = 4.08
     P_rest: float = 8.16
     P_fans: float = 0.0
+    # ---- terminal de cobro myPOS Sigma (146 × 101 × 57 mm, hueco de 108,7 × 86,4 mm) en el frente
+    sigma: bool = False
+    P_sig: float = 0.0          # W que disipa el terminal
+    A_sig_in: float = 0.022     # superficie del cuerpo que queda dentro del cajón (contorno × 32 mm + trasera)
+    A_sig_out: float = 0.01475  # cara delantera, al bar (146 × 101 mm)
+    R_sig: float = 0.03         # m²K/W entre el interior del terminal y cada una de sus caras (plástico de 3 mm y aire interior)
+    a_sig_sol: float = 0.9      # absorción solar de su cara (cristal negro)
     # ---- geometría (m)
     W: float = 0.220
     D: float = 0.100
@@ -85,6 +95,8 @@ class P:
     # ventanas del panel: (z0, z1, ancho)
     win_scr: tuple = (0.1915, 0.2825, 0.159)
     win_solo: tuple = (0.3105, 0.3955, 0.085)
+    win_sigma: tuple = (0.2995, 0.4005, 0.146)   # zona del frente que ocupa el marco del Sigma (tumbado: 101 de alto × 146 de ancho)
+    hueco_sigma: tuple = (0.1087, 0.0864)        # hueco en panel y cajón
     N: int = 11
     # ---- materiales
     k_s: float = 50.0
@@ -128,7 +140,15 @@ class P:
 
     @property
     def P_tot(self):
-        return self.P_psu + self.P_scr + self.P_rest + self.P_fans
+        return self.P_psu + self.P_scr + self.P_rest + self.P_fans + (self.P_sig if self.sigma else 0.0)
+
+    @property
+    def win_cobro(self):        # zona del frente del lector de tarjetas
+        return self.win_sigma if self.sigma else self.win_solo
+
+    @property
+    def A_hueco_cobro(self):    # hueco del frente del cajón para el lector
+        return self.hueco_sigma[0] * self.hueco_sigma[1] if self.sigma else 0.081 ** 2
 
 
 def caudal_natural(p, dT_col):
@@ -148,6 +168,8 @@ def caudal_natural(p, dT_col):
 
 def _nodos(p):
     names = ["Ti", "Tc", "Scr", "Psu", "Kf", "Kl", "Kr", "Kb", "Kbase", "Tin", "Roof", "Floor", "Band"]
+    if p.sigma:
+        names.append("Sig")
     for f in "FLRB":
         names += [f"{f}{j}" for j in range(p.N)]
     return names, {n: i for i, n in enumerate(names)}
@@ -191,13 +213,17 @@ def ensamblar(p, T, ix, on=True):
         b[ix["Scr"]] += p.P_scr
         b[ix["Tc"]] += p.P_rest
         b[ix["Ti"]] += p.P_fans
+        if p.sigma:
+            b[ix["Sig"]] += p.P_sig
     # ---------------- interior: componentes ↔ aire
     link("Tc", "Ti", p.h_cc * fm * p.A_c)
     link("Scr", "Ti", p.h_cc * fm * p.A_scr)
     link("Psu", "Ti", 0.8 * p.h_cc * fm * p.A_psu)
     link("Psu", "Kb", p.G_psu_kb)
+    if p.sigma:                # cuerpo del terminal ↔ aire del cajón
+        link("Sig", "Ti", p.A_sig_in / (p.R_sig + 1 / (p.h_cc * fm)))
     # ---------------- interior: aire ↔ paredes del cajón y tapa interior
-    Aw = dict(Kf=p.wk * p.hk - p.win_scr[2] * (p.win_scr[1] - p.win_scr[0]) - 0.081 ** 2,
+    Aw = dict(Kf=p.wk * p.hk - p.win_scr[2] * (p.win_scr[1] - p.win_scr[0]) - p.A_hueco_cobro,
               Kl=p.dk * p.hk, Kr=p.dk * p.hk, Kb=p.wk * p.hk * 0.72, Kbase=p.wk * p.dk * 0.63,
               Tin=(p.W - 2 * p.t_s) * (p.D - 2 * p.t_s))
     Asum = sum(Aw.values())
@@ -207,6 +233,8 @@ def ensamblar(p, T, ix, on=True):
         link("Tc", w, sh * p.A_c * h_rad(p.e_c, p.e_k, t("Tc"), t(w), p.F_rad))
         link("Scr", w, sh * p.A_scr * h_rad(p.e_c, p.e_k, t("Scr"), t(w), p.F_rad))
         link("Psu", w, sh * p.A_psu * h_rad(p.e_k, p.e_k, t("Psu"), t(w), p.F_rad))
+        if p.sigma:
+            link("Sig", w, sh * p.A_sig_in * h_rad(p.e_c, p.e_k, t("Sig"), t(w), p.F_rad))
     # conducción entre caras del cajón (1,5 mm)
     kt = p.k_s * p.t_k
     Ldk = (p.dk + p.wk) / 2
@@ -224,10 +252,18 @@ def ensamblar(p, T, ix, on=True):
     Uwin = 1 / (Rg1 + p.t_pc / p.k_pc + Rg2 + p.t_pc / p.k_pc + 1 / ho_pc)
     Awin_s = p.win_scr[2] * (p.win_scr[1] - p.win_scr[0])
     amb("Scr", Uwin * Awin_s)
-    amb("Tc", Uwin * 0.081 ** 2)
-    if p.q_sol > 0:            # sol que entra por las ventanas y lo absorben la pantalla (negra) y el Solo
+    if p.sigma:                # la cara del terminal da al bar: sin policarbonato delante
+        G_sig_out = p.A_sig_out / (p.R_sig + 1 / ho_pc)
+        amb("Sig", G_sig_out)
+        info["G_sig_out"] = G_sig_out
+    else:
+        amb("Tc", Uwin * 0.081 ** 2)
+    if p.q_sol > 0:            # sol que entra por las ventanas y lo absorben la pantalla (negra) y el lector
         b[ix["Scr"]] += p.q_sol * Awin_s
-        b[ix["Tc"]] += p.q_sol * 0.081 ** 2 * 0.5
+        if p.sigma:
+            b[ix["Sig"]] += p.q_sol * p.A_sig_out * p.a_sig_sol
+        else:
+            b[ix["Tc"]] += p.q_sol * 0.081 ** 2 * 0.5
     info["Uwin"] = Uwin
     # ---------------- cajón ↔ carcasa por los huecos
     for j in range(N):
@@ -239,7 +275,7 @@ def ensamblar(p, T, ix, on=True):
             ka = aire((tk_ + ts_) / 2)[0]
             h = p.nu_gap * ka / gap + h_rad(p.e_k, p.e_si, tk_, ts_)
             link(kf, f"{sf}{j}", h * wdt * o)
-        phi = (frac(p.win_scr[0], p.win_scr[1], j) * p.win_scr[2] + frac(p.win_solo[0], p.win_solo[1], j) * p.win_solo[2]) / p.wk
+        phi = (frac(p.win_scr[0], p.win_scr[1], j) * p.win_scr[2] + frac(p.win_cobro[0], p.win_cobro[1], j) * min(p.win_cobro[2], p.hueco_sigma[0] if p.sigma else 1.0)) / p.wk
         tk_, ts_ = t("Kf"), t(f"F{j}")
         ka = aire((tk_ + ts_) / 2)[0]
         R = 1 / (p.nu_gap * ka / p.g_fr_aire + h_rad(p.e_k, p.e_ext, tk_, ts_)) + p.t_pc / p.k_pc
@@ -285,7 +321,7 @@ def ensamblar(p, T, ix, on=True):
                 a_ = 0.018 * dz
             if f == "F":
                 pcf = frac(p.pc_z[0], p.pc_z[1], j)
-                phi = (frac(p.win_scr[0], p.win_scr[1], j) * p.win_scr[2] + frac(p.win_solo[0], p.win_solo[1], j) * p.win_solo[2]) / p.W
+                phi = (frac(p.win_scr[0], p.win_scr[1], j) * p.win_scr[2] + frac(p.win_cobro[0], p.win_cobro[1], j) * p.win_cobro[2]) / p.W
                 G = a_ * (1 - pcf) * ho + a_ * max(pcf - phi, 0) / (p.t_pc / p.k_pc + 1 / ho)
                 a_sol = a_ * (1 - phi)
             else:
@@ -335,7 +371,8 @@ def resolver(p, detalle=False, T0=None, itmax=400):
     res.update(dT=dT, G_tot=p.P_tot / dT if dT > 0 else np.nan, iters=it, **info)
     res["P_vent"] = info["G_vent"] * dT
     res["T_top"] = Ta + (p.c_top if p.Q_fan <= 0 else 1.0) * dT
-    res["P_win"] = info["Uwin"] * (p.win_scr[2] * (p.win_scr[1] - p.win_scr[0]) * (res["Scr"] - Ta) + 0.081 ** 2 * (res["Tc"] - Ta))
+    res["P_win"] = info["Uwin"] * (p.win_scr[2] * (p.win_scr[1] - p.win_scr[0]) * (res["Scr"] - Ta) + (0.0 if p.sigma else 0.081 ** 2 * (res["Tc"] - Ta)))
+    res["P_sig_out"] = info["G_sig_out"] * (res["Sig"] - Ta) if p.sigma else 0.0      # lo que el terminal echa al bar por su cara
     if detalle:
         res["_T"], res["_ix"], res["_names"] = T, ix, names
         res["_zc"] = (np.arange(p.N) + 0.5) * p.Hw / p.N
@@ -349,7 +386,9 @@ def capacidades(p, ix):
     rc_s, rc_pc = 7850 * 480.0, 1200 * 1170.0
     C = np.zeros(len(ix))
     C[ix["Ti"]] = 25.0
-    C[ix["Tc"]] = 430.0          # Pi, módem, Solo, sensor, cables y bornes: unos 0,43 kg
+    C[ix["Tc"]] = 400.0 if p.sigma else 430.0     # Pi, módem, sensor, cables y bornes (y el Solo si lo hay)
+    if p.sigma:
+        C[ix["Sig"]] = 450.0     # terminal de 0,49 kg
     C[ix["Scr"]] = 200.0
     C[ix["Psu"]] = 280.0         # fuente (0,23 kg) y caja de red
     Aw = dict(Kf=0.0254, Kl=p.dk * p.hk, Kr=p.dk * p.hk, Kb=p.wk * p.hk, Kbase=p.wk * p.dk, Tin=0.0201)
@@ -399,13 +438,15 @@ def caminos(p, r):
     for nme, i in ix.items():
         Gamb = A[i].sum()          # la fila suma el término al ambiente (los enlaces internos se cancelan)
         out[nme] = Gamb * (T[i] - Ta)
-    grupos = dict(frente=0.0, laterales=0.0, pared=0.0, techo=0.0, suelo=0.0, zona_baja=0.0, ventanas=0.0, aire=0.0)
+    grupos = dict(frente=0.0, laterales=0.0, pared=0.0, techo=0.0, suelo=0.0, zona_baja=0.0, ventanas=0.0, terminal=0.0, aire=0.0)
     jb = int(p.z_band / dz + 0.5)
     for nme, q in out.items():
         if nme == "Ti":
             grupos["aire"] += q
         elif nme in ("Scr", "Tc"):
             grupos["ventanas"] += q
+        elif nme == "Sig":
+            grupos["terminal"] += q
         elif nme == "Roof":
             grupos["techo"] += q
         elif nme == "Floor":
@@ -427,7 +468,7 @@ if __name__ == "__main__":
     p = P()
     r = resolver(p, detalle=True)
     print(f"P = {p.P_tot:.1f} W  Ta = {p.Ta} °C  → aire medio +{r['dT']:.1f} K, arriba +{r['T_top']-p.Ta:.1f} K, G = {r['G_tot']:.2f} W/K, iters {r['iters']}")
-    for k in ("Ti", "Tc", "Scr", "Psu", "Kf", "Kl", "Kr", "Kb", "Kbase", "Tin", "Roof", "Floor", "Band"):
+    for k in ("Ti", "Tc", "Scr", "Psu", "Kf", "Kl", "Kr", "Kb", "Kbase", "Tin", "Roof", "Floor", "Band") + (("Sig",) if p.sigma else ()):
         print(f"  {k:6s} {r[k]:6.1f} °C  (+{r[k]-p.Ta:5.1f})")
     for f in "FLRB":
         print("  ", f, " ".join(f"{r[f'{f}{j}']-p.Ta:5.1f}" for j in range(p.N)))

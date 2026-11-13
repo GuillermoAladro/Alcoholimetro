@@ -1,73 +1,100 @@
-# Estudio térmico del diseño A · cuánto se calienta y qué temperatura aguanta
+# Estudio térmico del diseño A · revisión 2, con el myPOS Sigma
 
-13-11-2026 · diseño A (Compacta), CAD del 04-11-2026 · cargas de la revisión de componentes del 13-11-2026 (Bloque 1): 15,7 W sin ventiladores, 16,3 W con dos.
+13-11-2026 · diseño A (Compacta), CAD del 04-11-2026 · cobro con **myPOS Sigma** en un hueco del frente (opción 3 del estudio de alternativas de cobro, rama `claude/alternativas-cobro`) y fuente de 12 V · cargas en 5 V de la revisión de componentes del 13-11-2026.
 
-El informe completo es [`Estudio_termico_alcoholimetro.pdf`](Estudio_termico_alcoholimetro.pdf) (31 páginas, 15 figuras). Aquí va el resumen y cómo repetir el cálculo.
+El informe completo es [`Estudio_termico_alcoholimetro.pdf`](Estudio_termico_alcoholimetro.pdf) (35 páginas, 15 figuras). Aquí va el resumen y cómo repetir el cálculo. La revisión 1, con el SumUp Solo, está en [`historico-solo/`](historico-solo/README.md).
 
-> **Estado: todo es cálculo, no hay nada montado ni medido.** Cada cifra lleva su margen en el informe y se valida con el ensayo del apartado 14. Ningún cambio de los que se proponen está aplicado todavía al CAD, al cableado ni al programa.
+> **Estado: todo es cálculo, no hay nada montado ni medido.** El consumo del Sigma no está publicado y va estimado (3 W, entre 1,5 y 6). El cambio de lector no está en el CAD ni en `DECISIONES.md`: es lo que Guillermo planea hacer. Ningún cambio de los que se proponen está aplicado todavía.
 
 ## Resultado
 
-![Calentamiento del aire junto al Solo en cada configuración](figuras/f_escalera.png)
+![Calentamiento del aire junto al sensor en cada configuración](figuras/f_escalera.png)
 
-Calentamiento sobre la temperatura del bar, en kelvin (1 K = 1 °C de diferencia):
+Calentamiento sobre la temperatura del bar, en kelvin (1 K = 1 °C de diferencia). Todas las filas, con el Sigma:
 
-| Configuración | Aire interior | Aire junto al Solo | Bar más caliente con todo en ficha |
+| Configuración | Calor dentro | Aire interior | Junto al sensor | Junto al módem | Bar más caliente con todo en ficha |
+|---|---|---|---|---|---|
+| **Sin ventilador** (rejillas de hoy, cajón sin pintar) | 20,0 W | +29,7 K de media | **+34,8 K** | +30,8 K | **5 °C** |
+| Sin ventilador, interior pintado | 20,0 W | +24,6 K de media | +28,8 K | +25,5 K | 11 °C |
+| Sin ninguna abertura | 20,0 W | +36,6 K de media | +42,9 K | +38,0 K | — |
+| 1 ventilador de 40 × 10 mm (4,2 m³/h reales) | 20,7 W | +8,9 K a la salida | +2,7 K | +6,2 K | 33 °C |
+| **2 ventiladores de 40 × 10 mm en serie** (5,2 m³/h reales) | 20,7 W | +7,5 K a la salida | **+2,2 K** | +5,2 K | **34 °C** |
+| 1 ventilador de 60 × 25 mm (14 m³/h; no cabe en los laterales) | 21,4 W | +3,3 K a la salida | +1,0 K | +2,3 K | 37 °C |
+
+- **El Sigma quita la pieza más frágil.** Trabaja de −20 a 70 °C, sin batería y sin el bloqueo permanente del Solo. No se sale de su ficha en ningún caso.
+- **Pero la máquina no se enfría.** Pasa de 15,7 a 20,0 W: el Sigma gasta unos 3 W (el Solo, 1) y convertir de 12 a 5 V cuesta otros 2. En el mejor caso (Sigma de 1,5 W y la fuente que menos pierde) son 16,3 W: lo mismo que con el Solo.
+- **Dentro siguen dos piezas de 40 °C, el sensor y el módem.** Sin ventilador el sensor queda a +35 K (entre +30 y +40 K en el 80 % de 1 500 casos al azar); con el Solo eran +31 K. El bar máximo sin ventilación baja de 8 a 5 °C.
+- **Los dos ventiladores de 40 mm siguen haciendo falta y siguen bastando.** El aire sale a +7,5 K (con el Solo, +6,3 K). Limita el módem: bar máximo de 34 °C, igual que antes (entre 32 y 36 °C en el 80 % de los casos). Ficha de instalación: **bares de 10 a 32 °C**.
+- **La entrada de aire cambia de sitio:** arriba a la izquierda, junto al sensor, en vez de arriba a la derecha junto al lector.
+- **Si los dos ventiladores se paran**, el sensor pasa de 40 °C en unos 9 minutos con el bar a 25 °C. Con el Solo se podía perder el lector; con el Sigma no se rompe nada, pero hay que dejar de vender pruebas.
+
+## Qué cambia respecto a la revisión 1 (Solo)
+
+| Punto | Con el Solo | Con el Sigma |
+|---|---|---|
+| Límite del lector | 0 a 40 °C, batería, bloqueo permanente | −20 a 70 °C, sin batería |
+| Calor dentro, sin ventiladores | 15,7 W | 20,0 W (de 15 a 27) |
+| Sin ventilador: aire junto a la pieza de 40 °C de arriba | +31,1 K | +34,8 K |
+| Sin ventilador: bar máximo | 8 °C | 5 °C |
+| Dos ventiladores: aire que sale | +6,3 K | +7,5 K |
+| Dos ventiladores: bar máximo | 34 °C | 34 °C |
+| Entrada de aire | Arriba a la derecha, junto al Solo | Arriba a la izquierda, junto al sensor |
+| Avería de la ventilación | El Solo puede bloquearse para siempre | Nada irreversible |
+
+## Qué fuente calienta menos
+
+| Opción | Calor dentro | Sin ventilador, junto al sensor | Dos ventiladores, aire que sale |
 |---|---|---|---|
-| **Diseño actual** (9 ranuras de 22 × 4 mm, cajón sin pintar) | +26,5 K de media | **+31,1 K** | **8 °C** |
-| Interior y cajón pintados | +21,7 K de media | +25,4 K | 14 °C |
-| Sin ninguna abertura | +32,9 K de media | +38,5 K | — |
-| 1 ventilador de 40 × 10 mm (4,2 m³/h reales) | +7,5 K a la salida | +2,2 K | 33 °C |
-| **2 ventiladores de 40 × 10 mm en serie** (5,2 m³/h reales) | +6,3 K a la salida | **+1,9 K** | **34 °C** |
-| 1 ventilador de 60 × 25 mm (14 m³/h; no cabe en los laterales) | +2,8 K a la salida | +0,8 K | 37 °C |
+| LRS-50-12 y convertidor de 12 a 5 V (caso base) | 20,0 W | +34,8 K | +7,5 K |
+| LRS-50-5, como hoy, y una fuente pequeña de 12 V solo para el Sigma | 18,2 W | +32,6 K | +6,9 K |
+| LRS-50-5 y un elevador de 5 a 12 V | 18,8 W | +33,2 K | +7,1 K |
+| Fuente de dos salidas RD-50A | 19,0 W | +33,5 K | +7,2 K |
 
-- **El diseño actual no vale tal cual.** Con el bar a 25 °C, el aire junto al SumUp Solo se queda en 56 °C, y su límite es 40 °C. En el 80 % de los 1 500 casos calculados al azar sale entre +26 y +36 K. Arrancando en frío con el bar a 25 °C llega a 40 °C en media hora.
-- **Por qué:** la doble pared (cajón dentro de carcasa) cuesta unos 10 K, el cajón sin pintar apenas radia, el frente es doble policarbonato y las ranuras solo dejan pasar 0,2 m³/h. Sin el cajón, el modelo da casi lo mismo que la regla de armarios de Rittal (+16,6 frente a +16,9 K).
-- **No se arregla sin ventilador:** con 16 veces más ranuras y todo pintado sigue en +10 K junto al Solo.
-- **Con dos ventiladores de 40 mm queda en +2 K junto al Solo** y el aire sale a +6 K (entre +5 y +9). Pasa a limitar el módem (40 °C, a media altura): bar máximo de 34 °C. Propuesta de ficha: **bares de 10 a 32 °C**.
-- **Frente a la revisión de componentes** (+24 K sin ventilador y +8 K con dos): la media sale parecida, +26,5 y +6,3 K. Lo nuevo es el reparto en altura: arriba, junto al Solo, son +31 K sin ventilador y +2 K con la entrada de aire a su lado.
-- **Si los dos ventiladores se paran**, el Solo llega a 40 °C en unos 12 minutos con el bar a 25 °C y en 5 o 6 con el bar a 30 °C. Por eso hacen falta una sonda y que el programa deje de cobrar.
+Entre la mejor y la peor hay 1,8 W. La fuente se elige por fiabilidad, sitio y cableado; el calor solo desempata.
 
 ## Qué habría que cambiar
 
 Por orden de importancia (tabla completa en el apartado 13 del informe):
 
-1. **Dos ventiladores de 40 mm**: entrada arriba a la derecha, junto al Solo; salida abajo a la izquierda. Aberturas de Ø38 con malla y lamas, y burlete entre cajón y carcasa.
-2. **Un fusible por ventilador** en vez de uno para los dos (W31).
-3. **Sonda de temperatura junto al Solo** (DS18B20) y umbrales en el programa: 36 °C avisa y baja el brillo, 38 °C avería, 40 °C deja de cobrar hasta bajar de 37 °C.
-4. Cajón e interior de la carcasa pintados en mate: 6 K menos cuando la ventilación falla.
-5. Ventiladores con control: parados por debajo de 25 °C, en marcha por encima de 30 °C.
-6. Reglas de instalación: nunca al sol, lejos de salidas de aire caliente, aberturas despejadas.
+1. **Dos ventiladores de 40 mm**, con la entrada arriba a la izquierda, junto al sensor, y la salida abajo a la izquierda. Aberturas de Ø38 con malla y lamas, y burlete entre cajón y carcasa.
+2. **Hueco del Sigma en el frente** (108,7 × 86,4 mm), con su junta.
+3. **Sonda de temperatura junto al sensor** (DS18B20) y umbrales en el programa: 36 °C avisa y baja el brillo, 38 °C avería, 40 °C deja de vender pruebas hasta bajar de 37 °C.
+4. **Poder parar el cobro desde la Pi**: preguntar a myPOS si una entrada del Sigma lo inhibe; si no, cortarle los 12 V.
+5. Un fusible por ventilador.
+6. Módem tras la ventana de la antena: queda bajo la entrada de aire y el bar máximo sube a unos 36 °C.
+7. Decidir la fuente; cajón e interior pintados; ventiladores con control; reglas de instalación; medir lo que gasta el Sigma.
 
-Lo que **no** cambiaría: la doble pared, el doble policarbonato, la fuente y la chapa de 3 mm.
+Lo que **no** cambiaría: los ventiladores, la doble pared, el doble policarbonato de la pantalla y la chapa de 3 mm.
 
-### Lo que el CAD no deja hacer como estaba pensado
+### Lo que sale de las cotas del CAD
 
-- La abertura de Ø38 «por la caja de red» **no cabe** junto a la toma C14: quedan 33 mm.
-- Un ventilador de 60 mm **no cabe** en los laterales: hay 49 mm de fondo entre las pestañas del cajón.
-- Las rejillas actuales **no valen como salida** de un ventilador: el caudal se queda en 2,0 m³/h y el aire sale a +12,8 K.
+- **El Sigma no cabe de pie** en el frente de hoy: su marco mide 146 mm de alto y sobre la ventana de la pantalla hay 120 mm. Tumbado cabe.
+- **El fondo es justo:** 57 mm de terminal en un cajón de 70 mm útiles, con el módem detrás. A comprobar con el aparato.
+- **La entrada de aire nueva cabe**, justo: 52 mm de alto y 49 mm de fondo sobre la placa de la antena, moviendo dos topes de goma.
+- Siguen valiendo las de la revisión 1: la abertura de Ø38 no cabe junto a la toma C14, un ventilador de 60 mm no cabe en los laterales y las rejillas actuales no valen como salida de un ventilador.
 
 ## Cómo está calculado
 
-- Red de 57 nodos (aire, electrónica, pantalla, fuente, caras del cajón y carcasa en 11 franjas de altura) con convección natural (Churchill–Chu, placas horizontales, Hollands), radiación entre grises, conducción por los huecos y por la chapa, tiro natural por las rejillas y caudal forzado.
-- Comprobaciones: balance de energía (15,69 W entran, 15,69 W salen), independencia de malla (26,51 / 26,54 / 26,55 K con 11 / 22 / 44 franjas) y contraste con la regla de armarios.
-- Incertidumbre: 1 500 casos al azar por configuración y sensibilidad parámetro a parámetro. La mayor incógnita es el consumo real (13–21 W), a medir con un vatímetro.
+- El modelo de la revisión 1 con un nodo más para el terminal (58 en total): recibe sus vatios, da calor al aire del cajón por detrás y al bar por su cara. Convección natural (Churchill–Chu, placas horizontales, Hollands), radiación entre grises, conducción por los huecos y por la chapa, tiro natural por las rejillas y caudal forzado.
+- Comprobaciones: balance de energía (lo que entra es lo que sale), independencia de malla con 11, 22 y 44 franjas, contraste con la regla de armarios de Rittal sobre la versión del Solo (+16,6 frente a +16,9 K) y la versión del Solo recalculada con este código, que da los números de la revisión 1. Las cifras están en el apartado 5.3 del informe.
+- Incertidumbre: 1 500 casos al azar por configuración y sensibilidad parámetro a parámetro. Las dos mayores incógnitas son el consumo total (15–27 W) y el del Sigma.
 - Ventiladores: curva de catálogo del Noctua NF-A4x10 5V contra la resistencia del recorrido (K = 14 de caso base).
-- Transitorios: arranque en frío, parada de ventiladores y corte de luz, con 6,5 kJ/K de capacidad térmica.
+- Transitorios: arranque en frío, parada de ventiladores y corte de luz.
 
 ## Qué hay en esta carpeta
 
 | Ruta | Contenido |
 |---|---|
-| `Estudio_termico_alcoholimetro.pdf` | El informe |
-| `codigo/termico.py` | El modelo. Todos los parámetros están en la clase `P` |
-| `codigo/analisis_conf.py` | Las seis configuraciones estudiadas |
+| `Estudio_termico_alcoholimetro.pdf` | El informe, revisión 2 |
+| `codigo/termico.py` | El modelo. Todos los parámetros están en la clase `P`; `sigma=True` añade el terminal |
+| `codigo/analisis_conf.py` | Cargas, fuentes y configuraciones, con el Sigma y con el Solo |
 | `codigo/analisis.py` | Corre todos los casos y escribe `resultados/` |
 | `codigo/calc.py` | Las cuentas paso a paso de los recuadros del informe |
 | `codigo/fig_*.py`, `codigo/estilo.py` | Las figuras |
 | `codigo/informe.py`, `codigo/estilo.css` | Montan el PDF con los números de `resultados/` |
 | `resultados/` | `resultados.json`, `calc.json` y las curvas (`.npz`) |
 | `figuras/` | Las 14 figuras calculadas, en SVG y PNG. Las dos vistas de la figura 1 son las de `../FreeCAD/` |
+| `historico-solo/` | El informe de la revisión 1, con el SumUp Solo |
 
 ## Cómo repetirlo
 
@@ -81,9 +108,9 @@ for f in fig_a fig_b fig_c fig_red fig_seccion; do python3 $f.py; done
 python3 informe.py           # escribe ../Estudio_termico_alcoholimetro.pdf
 ```
 
-- **Con datos medidos:** cambiar en `analisis_conf.py` la potencia (`P_psu`, `P_scr`, `P_rest`) y el caudal (`Q_fan`), y en `termico.py` los coeficientes que el ensayo corrija.
+- **Con datos medidos:** cambiar en `analisis_conf.py` el consumo del Sigma (`P_SIGMA`), las cargas en 5 V (`C5`), los rendimientos y el caudal (`Q_fan`), y en `termico.py` los coeficientes que el ensayo corrija.
 - **Si cambia la geometría:** las cotas están al principio de la clase `P`, con los mismos valores que `carcasa/diseno-A/modelo/diseno.py`. No se leen de ahí: hay que cambiarlas a mano.
 
 ## Fuentes
 
-Lista completa, con enlaces, en la última página del informe. Las cargas salen de la revisión de componentes del 13-11-2026 ([`componentes/REVISION-13-11-2026.md`](../../../componentes/REVISION-13-11-2026.md), el «Bloque 1»); la geometría, de `carcasa/diseno-A/modelo/diseno.py`; los límites de temperatura, de las fichas de `componentes/` y de las hojas de los fabricantes.
+Lista completa, con enlaces, en las últimas páginas del informe. Los datos del Sigma salen de la ficha de myPOS y de la del Nexgo UN20, con el que coincide en medidas, hueco, alimentación y puertos; las cargas en 5 V, de [`componentes/REVISION-13-11-2026.md`](../../../componentes/REVISION-13-11-2026.md); la geometría, de `carcasa/diseno-A/modelo/diseno.py`; los límites de temperatura, de las fichas de `componentes/` y de las hojas de los fabricantes.

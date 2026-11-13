@@ -3,11 +3,13 @@ from estilo import *
 R = json.load(open("../resultados/resultados.json"))
 
 # ---------------------------------------------------------------- Fig. potencia: rango y valor típico por componente
-filas = [  # nombre, mín, típ (Bloque 1), máx, origen
-    ("Raspberry Pi 3B+ y cámara", 2.1, 4.6, 7.1), ("Pantalla 7″", 2.5, 4.1, 5.1), ("Fuente (pérdidas)", 2.0, 3.5, 5.0),
-    ("Módem 4G", 0.8, 2.0, 3.5), ("SumUp Solo", 0.3, 1.0, 2.0), ("Sensor ZE29A", 0.1, 0.5, 1.0), ("2 ventiladores", 0.44, 0.46, 0.50),
+K = json.load(open("../resultados/calc.json"))["potencia"]
+filas = [  # nombre, mín, valor de cálculo, máx
+    ("Raspberry Pi 3B+ y cámara", 2.1, 4.6, 7.1), ("Pantalla 7″", 2.5, 4.1, 5.1), ("Fuente de 12 V (pérdidas)", 2.6, K["p_psu"], 5.6),
+    ("myPOS Sigma", 1.5, K["sigma"], 6.0), ("Módem 4G", 0.8, 2.0, 3.5), ("Convertidor 12→5 V (pérdidas)", 0.7, K["p_dcdc"], 3.5),
+    ("Sensor ZE29A", 0.1, 0.5, 1.0), ("2 ventiladores", 0.44, 0.46, 0.50),
 ]
-fig, ax = plt.subplots(figsize=(6.7, 2.75))
+fig, ax = plt.subplots(figsize=(6.7, 3.0))
 ax.set_xlim(0, 8); ax.set_ylim(-0.6, len(filas) - 0.4); ax.invert_yaxis()
 rr = _radios = None
 from estilo import _radios as rad
@@ -20,22 +22,22 @@ ax.set_yticks(range(len(filas))); ax.set_yticklabels([f[0] for f in filas]); ax.
 ax.grid(axis="y", visible=False); ax.set_xlabel("Potencia que se convierte en calor dentro de la carcasa (W)")
 ax.xaxis.set_major_formatter(fmt_coma())
 # leyenda manual
-ax.plot([], [], marker="o", ms=6.5, mfc=S1, mec=SURF, mew=1.5, ls="none", label="Valor de proyecto (Bloque 1)")
+ax.plot([], [], marker="o", ms=6.5, mfc=S1, mec=SURF, mew=1.5, ls="none", label="Valor de cálculo")
 ax.plot([], [], color=SEQ[2], lw=6, solid_capstyle="round", label="Rango plausible (mín. – máx. sostenido)")
 ax.legend(loc="lower right", handlelength=1.6)
 guardar(fig, "f_potencia")
 
 # ---------------------------------------------------------------- Fig. límites de temperatura por pieza
 piezas = [  # nombre, máx
-    ("SumUp Solo", 40), ("Sensor ZE29A", 40), ("Módem 4G E3372h", 40), ("Raspberry Pi 3B+", 50), ("Cámara Module 3", 50),
-    ("Fuente LRS-50-5 (hasta el 60 % de carga)", 70), ("Ventiladores Noctua", 70), ("Cable de PVC (H05VV-F)", 70), ("microSD High Endurance", 85),
-    ("Bornes WAGO 221", 85), ("Cinta VHB (uso continuo)", 93), ("Policarbonato (uso continuo)", 115),
+    ("Sensor ZE29A", 40), ("Módem 4G E3372h", 40), ("Raspberry Pi 3B+", 50), ("Cámara Module 3", 50), ("myPOS Sigma", 70),
+    ("Fuente LRS-50-12 (hasta el 60 % de carga)", 70), ("Convertidor 12→5 V (reduce carga desde 55 °C)", 70), ("Ventiladores Noctua", 70),
+    ("Cable de PVC (H05VV-F)", 70), ("microSD High Endurance", 85), ("Bornes WAGO 221", 85), ("Cinta VHB (uso continuo)", 93), ("Policarbonato (uso continuo)", 115),
 ]
-fig, ax = plt.subplots(figsize=(6.7, 4.2))
+fig, ax = plt.subplots(figsize=(6.7, 4.5))
 ax.set_xlim(20, 125); ax.set_ylim(-2.1, len(piezas) - 0.4); ax.invert_yaxis()
 ta = 25.0
-xa = ta + R["conf"]["actual"]["local"]["solo"]; xf = ta + R["conf"]["fan2"]["local"]["solo"]
-for x, txt, col, ha in ((xa, f"Aire junto al Solo con el bar a 25 °C,\ndiseño actual: {coma(xa,0)} °C", CRIT, "left"), (xf, f"Lo mismo con\n2 ventiladores: {coma(xf,0)} °C", GOOD, "left")):
+xa = ta + R["conf"]["actual"]["local"]["sensor"]; xf = ta + R["conf"]["fan2"]["local"]["sensor"]
+for x, txt, col, ha in ((xa, f"Aire junto al sensor con el bar a 25 °C,\nsin ventilador: {coma(xa,0)} °C", CRIT, "left"), (xf, f"Lo mismo con\n2 ventiladores: {coma(xf,0)} °C", GOOD, "left")):
     ax.axvline(x, color=col, lw=1.0, zorder=2)
     ax.annotate(txt, (x, -1.25), xytext=(5, 0), textcoords="offset points", ha=ha, va="center", fontsize=8, color=INK2)
 for i, (n, b) in enumerate(piezas):

@@ -21,7 +21,7 @@ SEQ = ["#cde2fb", "#b7d3f6", "#9ec5f4", "#86b6ef", "#6da7ec", "#5598e7", "#3987e
 NEUTRO = "#c3c2b7"
 # color por configuración (sigue a la entidad en todo el informe)
 C_CONF = dict(actual=S1, pintado=S2, fan2=S3, fan1=S4, fan60=S5)
-N_CONF = dict(actual="Diseño actual", pintado="Actual, interior pintado", fan2="2 ventiladores 40 mm", fan1="1 ventilador 40 mm", fan60="1 ventilador 60 mm")
+N_CONF = dict(actual="Sin ventilador", pintado="Sin ventilador, pintado por dentro", fan2="2 ventiladores 40 mm", fan1="1 ventilador 40 mm", fan60="1 ventilador 60 mm")
 
 plt.rcParams.update({
     "font.family": "Inter", "font.size": 8.5, "axes.edgecolor": AXIS, "axes.labelcolor": INK2, "text.color": INK,

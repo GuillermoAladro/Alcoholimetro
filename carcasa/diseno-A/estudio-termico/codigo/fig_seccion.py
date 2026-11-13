@@ -45,15 +45,16 @@ def carcasa_frente(ax, titulo):
 
 def flecha(ax, x0, x1, z, s, ha):
     ax.annotate("", (x1, z), (x0, z), arrowprops=dict(arrowstyle="-|>", color=S1, lw=1.2, mutation_scale=7))
-    txt(ax, (x0 if ha == "right" else x1) , z + 13, s, size=6.3, color=INK2, ha="center")
+    txt(ax, min(x0, x1) + 12, z + 13, s, size=6.3, color=INK2, ha="center")
 
 
 # ---------------- A: lo que va contra el frente
 ax = axs[0]
 carcasa_frente(ax, "Delante (contra el frente)")
 rect(ax, -82.5, 82.5, 187, 287, fc=CAL, ec=S2, lw=0.9); txt(ax, 0, 237, "Pantalla 7″\n4,1 W")
-rect(ax, 3, 86, 311, 394, fc=CAL, ec=S2, lw=0.9); txt(ax, 44.5, 352, "SumUp Solo\n1,0 W"); lim40(ax, 78, 386)
-rect(ax, -67.5, -42.5, 360.5, 384.5, fc=CAL, ec=S2, lw=0.9); txt(ax, -38, 372, "cámara", size=6.3, ha="left", color=INK2)
+rect(ax, -39.4, 106.6, 299.5, 400.5, fc="none", ec=S2, lw=0.9, ls=(0, (3, 2)), z=4)      # marco del Sigma, tumbado (146 × 101)
+rect(ax, -20.7, 88, 306.8, 393.2, fc=CAL, ec=S2, lw=0.9); txt(ax, 33.6, 350, "myPOS Sigma\n3,0 W")
+rect(ax, -67.5, -42.5, 360.5, 384.5, fc=CAL, ec=S2, lw=0.9); txt(ax, -55, 353, "cámara", size=6.3, ha="center", color=INK2)
 ax.plot([-55], [325], marker="o", ms=4, mfc=SURF, mec=INK2, mew=0.9, zorder=5); txt(ax, -47, 325, "boquilla", size=6.3, ha="left", color=INK2)
 flecha(ax, -142, -114, 201, "entra", "right"); flecha(ax, -114, -142, 361, "sale", "left"); flecha(ax, 114, 142, 374, "sale", "left")
 ax.annotate("", (-110, -10), (110, -10), arrowprops=dict(arrowstyle="<->", color=MUTED, lw=0.7)); txt(ax, 0, -19, "220 mm", size=6.3, color=INK2)
@@ -62,8 +63,9 @@ ax.annotate("", (-110, -10), (110, -10), arrowprops=dict(arrowstyle="<->", color
 ax = axs[1]
 carcasa_frente(ax, "Detrás (contra la trasera)")
 rect(ax, -54, 98.5, 175, 263, fc="none", ec=CHAPA, lw=0.9, ls=(0, (3, 2)))                    # caja de red
-rect(ax, -4, 95, 179.5, 250, fc=CAL, ec=S2, lw=0.9); txt(ax, 45.5, 215, "Fuente\n3,5 W")
-txt(ax, -49, 185, "caja\nde red", size=6.0, ha="left", va="bottom", color=INK2)
+rect(ax, -4, 95, 179.5, 250, fc=CAL, ec=S2, lw=0.9); txt(ax, 45.5, 215, "Fuente 12 V\n3,8 W")
+rect(ax, -50, -9, 183, 243, fc=CAL, ec=S2, lw=0.9, ls=(0, (3, 2))); txt(ax, -29.5, 213, "conv.\n12→5 V\n2,0 W", size=6.0)
+txt(ax, -52, 268.5, "caja de red", size=6.0, ha="left", va="center", color=INK2)
 rect(ax, -99, -14, 274, 330, fc=CAL, ec=S2, lw=0.9); txt(ax, -56.5, 302, "Raspberry Pi\n4,6 W")
 rect(ax, -6, 82, 290, 302, fc=CAL, ec=S2, lw=0.9); txt(ax, 38, 314, "Módem 2,0 W", size=6.3); lim40(ax, 76, 296)
 rect(ax, -80, 5, 337, 370, fc=CAL, ec=S2, lw=0.9); txt(ax, -41, 353.5, "Sensor 0,5 W"); lim40(ax, -3, 363)
@@ -83,10 +85,11 @@ rect(ax, -5, 0, 180, 403, fc=PC, ec=S1, lw=0.4); rect(ax, 3, 8, 180, 403, fc=PC,
 rect(ax, 14.5, 87.5, 173.5, 401.5, fc=SURF, ec="none", z=1)
 for x0, x1, z0, z1 in ((14.5, 16, 173.5, 401.5), (86, 87.5, 173.5, 401.5), (14.5, 87.5, 173.5, 175)):
     rect(ax, x0, x1, z0, z1, fc=CHAPA, ec="none", z=2)
-rect(ax, 16, 25, 187, 287, fc=CAL, ec=S2, lw=0.8); rect(ax, 16, 33.6, 311, 394, fc=CAL, ec=S2, lw=0.8)
+rect(ax, 16, 25, 187, 287, fc=CAL, ec=S2, lw=0.8)
+rect(ax, -17, -5, 299.5, 400.5, fc=CAL, ec=S2, lw=0.8, z=5); rect(ax, -5, 48, 306.8, 393.2, fc=CAL, ec=S2, lw=0.8, z=5)      # Sigma: marco por fuera y cuerpo que atraviesa el frente
 rect(ax, 56, 86, 179.5, 261.5, fc=CAL, ec=S2, lw=0.8); rect(ax, 68, 80, 274, 330, fc=CAL, ec=S2, lw=0.8); rect(ax, 68, 86, 337, 370, fc=CAL, ec=S2, lw=0.8)
 txt(ax, 71, 222, "fuente", size=6.0, rot=90); txt(ax, 58, 302, "Pi", size=6.0); txt(ax, 60, 353, "sensor", size=6.0, rot=90)
-txt(ax, 42, 352, "Solo", size=6.0, rot=90); txt(ax, 33, 237, "pantalla", size=6.0, rot=90)
+txt(ax, 26, 350, "Sigma", size=6.0, rot=90); txt(ax, 33, 237, "pantalla", size=6.0, rot=90)
 txt(ax, 50, 80, "cajón de\npajitas", color=MUTED, size=6.5)
 
 
@@ -95,9 +98,10 @@ def cota(x, z, s, tx, tz, ha="right"):
                 arrowprops=dict(arrowstyle="-", color=MUTED, lw=0.6, shrinkA=2, shrinkB=1))
 
 
-cota(-2.5, 330, "dos policarbonatos\nde 5 mm con el panel\nde 3 mm en medio", -14, 330)
-cota(11, 250, "hueco delantero:\n3,3 mm de aire", -14, 250)
-cota(15.2, 195, "chapa del cajón:\n1,5 mm", -14, 195)
+cota(-2.5, 293, "dos policarbonatos\nde 5 mm con el panel\nde 3 mm en medio", -22, 318)
+cota(-11, 380, "el Sigma atraviesa\nel frente: su cara\nda al bar", -22, 380)
+cota(11, 262, "hueco delantero:\n3,3 mm de aire", -22, 266)
+cota(15.2, 195, "chapa del cajón:\n1,5 mm", -22, 192)
 cota(20, 168.5, "hueco inferior: 10 mm", -14, 150)
 cota(1.5, 60, "carcasa: 3 mm", -14, 60)
 cota(50, 424, "cámara: 30,5 mm", -14, 424)

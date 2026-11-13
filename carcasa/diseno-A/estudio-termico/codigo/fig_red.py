@@ -43,7 +43,7 @@ flecha((xs[3] + W / 2, Y), (xs[4] + W / 2, Y), rad=0.42)
 rot((xs[3] + xs[4] + W) / 2, Y - 7.6, f"a través de la pared:\n{coma(c['caminos']['pared'])} W")
 # por arriba: ventanas y rejillas
 flecha((xs[0] + W / 2, Y + H), (xs[4] + W / 2 + 2.5, Y + H), rad=-0.30)
-rot((xs[0] + xs[4] + W + 2.5) / 2, Y + H + 13.1, f"ventanas del frente (pantalla y Solo, tras el doble policarbonato): {coma(f['win'])} W")
+rot((xs[0] + xs[4] + W + 2.5) / 2, Y + H + 13.1, f"por el frente, sin pasar por la carcasa: ventana de la pantalla {coma(f['win'])} W y cara del Sigma {coma(f['sig_out'])} W")
 flecha((xs[1] + W / 2, Y + H), (xs[4] + W / 2 - 2.5, Y + H), rad=-0.24)
 rot((xs[1] + xs[4] + W - 2.5) / 2, Y + H + 7.7, f"aire caliente que sale por las rejillas: {coma(f['vent'])} W")
 guardar(fig, "f_red", pad=0.05)
